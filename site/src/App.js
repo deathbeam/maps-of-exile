@@ -68,9 +68,9 @@ function getCardValue(card) {
 }
 
 function calculateScore(dataset) {
-  dataset = dataset.filter(m => m["value"] > 0)
-  const min = Math.min(...dataset.map(o => o["value"]))
-  const max = Math.max(...dataset.map(o => o["value"])) - min
+  const nonzerodataset = dataset.filter(m => m["value"] > 0)
+  const min = Math.min(...nonzerodataset.map(o => o["value"]))
+  const max = Math.max(...nonzerodataset.map(o => o["value"])) - min
 
   for (let entry of dataset) {
     entry["score"] = 100 * (entry["value"] - min) / max
@@ -117,7 +117,10 @@ function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bo
   }
 
   return calculateScore(out)
-    .filter(m => !searchInput || m["name"].toLowerCase().includes(searchInput.toLowerCase()))
+    .filter(m => !searchInput
+      || m["name"].toLowerCase().includes(searchInput.toLowerCase())
+      || m["cards"].find(c => c.toLowerCase().includes(searchInput.toLowerCase()))
+    )
     .sort((a, b) => b["score"] - a["score"])
 }
 
@@ -134,7 +137,7 @@ function App() {
         <div className="row">
           <div className="col">
             <label className="form-label text-light">Search</label>
-            <input className="form-control bg-dark text-light" type="search" placeholder="Type to search..." value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map or card" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Layout weight</label>

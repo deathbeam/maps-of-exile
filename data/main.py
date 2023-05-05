@@ -49,7 +49,7 @@ def get_card_data(key, league, config):
 			card["rate"] = Decimal(100) * Decimal(rate_card[3]) / Decimal(total)
 		else:
 			print(f"Rate for card {card['name']} not found")
-			card["rate"] = Decimal(0)
+			card["rate"] = None
 
 		out.append(card)
 
@@ -71,10 +71,10 @@ def get_map_data(map_data, cards, config):
 	body = table.find("tbody")
 	rows = body.find_all("tr")
 
-	map_data["layout"] = 0
-	map_data["density"] = 0
+	map_data["layout"] = None
+	map_data["density"] = None
 	map_data["boss"] = {
-		"rating": 0
+		"rating": None
 	}
 
 	for row in rows:

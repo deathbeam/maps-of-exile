@@ -20,12 +20,17 @@ function tierColor(map) {
 function ratingBadge(rating) {
   let badgeClass = "bg-danger"
 
-  if (rating >= 7) {
-    badgeClass = "bg-success"
-  } else if (rating >= 5) {
-    badgeClass = "bg-info"
-  } else if (rating >= 3) {
-    badgeClass = "bg-warning"
+  if (rating == null) {
+    badgeClass = "bg-secondary"
+    rating = "?"
+  } else {
+    if (rating >= 7) {
+      badgeClass = "bg-success"
+    } else if (rating >= 5) {
+      badgeClass = "bg-info"
+    } else if (rating >= 3) {
+      badgeClass = "bg-warning"
+    }
   }
 
   badgeClass = `badge badge-pill text-dark ${badgeClass}`
@@ -62,7 +67,7 @@ function cardDisplay(card) {
 }
 
 function getCardValue(card) {
-  if (!card) {
+  if (!card || !card["rate"]) {
     return 0
   }
 
@@ -70,7 +75,7 @@ function getCardValue(card) {
 }
 
 function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(m => m["value"] > 0)
+  const nonzerodataset = dataset.filter(m => m["value"] != null)
   const min = Math.min(...nonzerodataset.map(o => o["value"]))
   const max = Math.max(...nonzerodataset.map(o => o["value"])) - min
 
@@ -100,9 +105,9 @@ function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bo
   let out = []
 
   for (let map of foundMaps) {
-    const layoutValue = map["layout"] * layoutInput
-    const densityValue = map["density"] * densityInput
-    const bossValue = map["boss"]["rating"] * bossInput
+    const layoutValue = (map["layout"] || 0) * layoutInput
+    const densityValue = (map["density"] || 0) * densityInput
+    const bossValue = (map["boss"]["rating"] || 0) * bossInput
     let cardValue = 0
 
     for (let card of map["cards"]) {

@@ -1,0 +1,21 @@
+data:
+  league: Crucible
+  google-api-key: 'REDACTED'
+
+  maps:
+    list: https://poedb.tw/us/Maps#MapsList
+    cards: https://www.poewiki.net/api.php?action=parse&prop=text&format=json&page={}
+    poedb: https://poedb.tw/us/{}
+    wiki: https://www.poewiki.net/wiki/{}
+  cards:
+    decks:
+      sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
+      sheet-name: Decks 3.21
+    prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league={}
+    ninja: https://poe.ninja/{league}/divination-cards/{id}
+
+  rating:
+    layout: 3
+    density: 2
+    boss: 0.5
+    card: 40

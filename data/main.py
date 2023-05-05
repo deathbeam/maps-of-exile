@@ -64,9 +64,13 @@ def get_map_data(map_data, cards, config):
 	soup = BeautifulSoup(r.content, "html.parser")
 	tabcontent = soup.find("div", class_="tab-content")
 	children = tabcontent.findChildren("div", recursive=False)
+	offset = 0
 
 	# Boss data
-	data = children[0]
+	data = children[offset]
+	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
+		offset += 1
+		data = children[offset]
 	table = data.find("table")
 	body = table.find("tbody")
 	rows = body.find_all("tr")
@@ -95,7 +99,11 @@ def get_map_data(map_data, cards, config):
 			map_data["tileset"] = value
 
 	# Extra data
-	data = children[1]
+	offset += 1
+	data = children[offset]
+	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
+		offset += 1
+		data = children[offset]
 	table = data.find("table")
 	body = table.find("tbody")
 	rows = body.find_all("tr")

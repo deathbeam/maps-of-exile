@@ -44,13 +44,13 @@ function cardDisplay(card) {
   let badgeClass = "bg-secondary"
   const score = card["score"]
 
-  if (score > 60) {
+  if (score >= 50) {
     badgeClass = "bg-danger"
-  } else if (score > 40) {
+  } else if (score >= 20) {
     badgeClass = "bg-warning"
-  } else if (score > 20) {
+  } else if (score >= 10) {
     badgeClass = "bg-info"
-  } else if (score > 5) {
+  } else if (score >= 2) {
     badgeClass = "bg-primary"
   }
 

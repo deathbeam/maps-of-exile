@@ -97,7 +97,6 @@ function mapAndRateCards(foundCards) {
 }
 
 function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossInput, cardInput) {
-  foundMaps = foundMaps.filter(m => !!m["layout"])
   let out = []
 
   for (let map of foundMaps) {

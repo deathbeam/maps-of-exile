@@ -45,10 +45,12 @@ function cardDisplay(card) {
   const score = card["score"]
 
   if (score > 60) {
-    badgeClass = "bg-success"
+    badgeClass = "bg-danger"
   } else if (score > 40) {
-    badgeClass = "bg-info"
+    badgeClass = "bg-warning"
   } else if (score > 20) {
+    badgeClass = "bg-info"
+  } else if (score > 5) {
     badgeClass = "bg-primary"
   }
 

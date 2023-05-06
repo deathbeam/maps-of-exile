@@ -167,6 +167,7 @@ function calculateScore(dataset) {
 function mapAndRateCards(foundCards) {
   return calculateScore(preparedCards)
     .filter(c => foundCards.find(fc => fc.name === c.name))
+    .sort((a, b) => b.price - a.price)
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 

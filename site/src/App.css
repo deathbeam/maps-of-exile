@@ -1,4 +1,20 @@
-.tooltip-inner {
-    min-width: 100px;
+.tooltip-tag .tooltip-tag-text {
+    padding: 8px 5px;
+    visibility: hidden;
+    min-width: 200px;
     max-width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    line-height: normal;
+    font-size: smaller;
+    position: absolute;
+    pointer-events: none;
 }
+
+.tooltip-tag:hover .tooltip-tag-text {
+    visibility: visible;
+}
+
+

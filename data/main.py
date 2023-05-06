@@ -49,7 +49,6 @@ def get_card_data(key, league, config):
 			card["rate"] = Decimal(100) * Decimal(rate_card[3]) / Decimal(total)
 		else:
 			print(f"Rate for card {card['name']} not found")
-			card["rate"] = None
 
 		out.append(card)
 
@@ -74,29 +73,34 @@ def get_map_data(map_data, cards, config):
 	table = data.find("table")
 	body = table.find("tbody")
 	rows = body.find_all("tr")
-
-	map_data["layout"] = None
-	map_data["density"] = None
-	map_data["boss"] = {
-		"rating": None
-	}
+	map_data["boss"] = {}
 
 	for row in rows:
 		cols = row.find_all("td")
-		name = cols[0].text
+		name = cols[0].text.strip().lower()
 		value = cols[1].text.strip()
-		if name == "Clearing Ability":
+		if name == "clearing ability":
 			map_data["layout"] = int(value)
-		elif name == "Mob Count":
+		elif name == "mob count":
 			map_data["density"] = int(value)
-		elif name == "Boss Difficulty":
-			map_data["boss"]["rating"] = 10 - int(re.sub("-.+", "", value))
-		elif name == "Boss Based On":
+		elif name == "boss difficulty":
+			map_data["boss"]["difficulty"] = int(re.sub("-.+", "", value))
+		elif name == "boss based on":
 			map_data["boss"]["based_on"] = value
-		elif name == "Boss notes":
+		elif name == "boss notes":
 			map_data["boss"]["notes"] = value
-		elif name == "Tileset":
+		elif name == "boss not in own room" and value == "x":
+			map_data["boss"]["separated"] = True
+		elif name == "tileset":
 			map_data["tileset"] = value
+		elif name == "few obstacles" and value == "o":
+			map_data["few_obstacles"] = True
+		elif name == "outdoors" and value == "o":
+			map_data["outdoors"] = True
+		elif name == "linear" and value == "o":
+			map_data["linear"] = True
+		elif name == "additional notes" and "pantheon" in value.lower():
+			map_data["pantheon"] = value.replace("Pantheon-", "").replace("Pantheon -", "").strip()
 
 	# Extra data
 	offset += 1
@@ -110,9 +114,9 @@ def get_map_data(map_data, cards, config):
 
 	for row in rows:
 		cols = row.find_all("td")
-		name = cols[0].text
+		name = cols[0].text.strip().lower()
 		value = cols[1]
-		if name == "Boss":
+		if name == "boss":
 			map_data["boss"]["name"] = ", ".join(map(lambda x: x.text, value.find_all("a")))
 
 	# Card data

@@ -2,11 +2,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
-import Tooltip from './Tooltip'
-import {useState} from 'react'
+import {useState, Fragment} from 'react'
 
 function tierColor(map) {
-  const naturalTier = map["tiers"][0]
+  const naturalTier = map.tiers[0]
 
   if (naturalTier >= 11) {
     return "text-danger"
@@ -17,18 +16,43 @@ function tierColor(map) {
   }
 }
 
-function ratingBadge(rating) {
+function buildTags(map) {
+  const tags = []
+  if (map.boss.separated) {
+    tags.push("boss separated")
+  }
+  if (map.few_obstacles) {
+    tags.push("few obstacles")
+  }
+  if (map.outdoors) {
+    tags.push("outdoors")
+  }
+  if (map.linear) {
+    tags.push("linear")
+  }
+  if (map.pantheon) {
+    tags.push(map.pantheon)
+  }
+
+  return tags.map(t => <Fragment>
+    <span className="badge badge-pill text-dark bg-secondary">{t}</span>
+    {' '}
+  </Fragment>)
+}
+
+function ratingBadge(rating, inverse) {
   let badgeClass = "bg-danger"
 
   if (rating == null) {
     badgeClass = "bg-secondary"
     rating = "?"
   } else {
-    if (rating >= 7) {
+    const rat = inverse ? 10 - rating : rating
+    if (rat >= 7) {
       badgeClass = "bg-success"
-    } else if (rating >= 5) {
+    } else if (rat >= 5) {
       badgeClass = "bg-info"
-    } else if (rating >= 3) {
+    } else if (rat >= 3) {
       badgeClass = "bg-warning"
     }
   }
@@ -38,16 +62,23 @@ function ratingBadge(rating) {
 }
 
 function bossDisplay(map) {
-  return <Tooltip text={map["boss"]["notes"] || ""}>
-    <div>
-      {ratingBadge(map["boss"]["rating"])} {map["boss"]["name"]}
-    </div>
-  </Tooltip>
+  const out = <Fragment>
+    {ratingBadge(map.boss.difficulty, true)} {map.boss.name}
+  </Fragment>
+
+  if (map.boss.notes) {
+    return <span className="tooltip-tag">
+      <span className="tooltip-tag-text">{map.boss.notes}</span>
+      {out}
+    </span>
+  }
+
+  return out
 }
 
 function cardDisplay(card) {
   let badgeClass = "bg-secondary"
-  const score = card["score"]
+  const score = card.score
 
   if (score >= 50) {
     badgeClass = "bg-danger"
@@ -60,27 +91,24 @@ function cardDisplay(card) {
   }
 
   badgeClass = `badge badge-pill text-dark ${badgeClass}`
-
-  return <span>
-    <a className={badgeClass} href={card["ninja"]} target="_blank">{card["name"]}</a>{' '}
-</span>
+  return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">{card.name}</a>{' '}</Fragment>
 }
 
 function getCardValue(card) {
-  if (!card || !card["rate"]) {
+  if (!card || !card.rate) {
     return 0
   }
 
-  return (parseFloat(card["price"]) * parseFloat(card["rate"]))
+  return (parseFloat(card.price) * parseFloat(card.rate))
 }
 
 function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(m => m["value"] != null)
-  const min = Math.min(...nonzerodataset.map(o => o["value"]))
-  const max = Math.max(...nonzerodataset.map(o => o["value"])) - min
+  const nonzerodataset = dataset.filter(m => m.value != null)
+  const min = Math.min(...nonzerodataset.map(o => o.value))
+  const max = Math.max(...nonzerodataset.map(o => o.value)) - min
 
   for (let entry of dataset) {
-    entry["score"] = 100 * (entry["value"] - min) / max
+    entry.score = 100 * (entry.value - min) / max
   }
 
   return dataset
@@ -97,21 +125,21 @@ function mapAndRateCards(foundCards) {
   }
 
   return calculateScore(out)
-    .filter(c => foundCards.includes(c["name"]))
-    .sort((a, b) => b["score"] - a["score"])
+    .filter(c => foundCards.includes(c.name))
+    .sort((a, b) => b.score - a.score)
 }
 
 function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossInput, cardInput) {
   let out = []
 
   for (let map of foundMaps) {
-    const layoutValue = (map["layout"] || 0) * layoutInput
-    const densityValue = (map["density"] || 0) * densityInput
-    const bossValue = (map["boss"]["rating"] || 0) * bossInput
+    const layoutValue = (map.layout || 0) * layoutInput
+    const densityValue = (map.density || 0) * densityInput
+    const bossValue = (10 - (map.boss.difficulty || 10)) * bossInput
     let cardValue = 0
 
-    for (let card of map["cards"]) {
-      const cardData = cards.find(c => c["name"] === card)
+    for (let card of map.cards) {
+      const cardData = cards.find(c => c.name === card)
       cardValue += getCardValue(cardData)
     }
 
@@ -124,10 +152,10 @@ function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bo
 
   return calculateScore(out)
     .filter(m => !searchInput
-      || m["name"].toLowerCase().includes(searchInput.toLowerCase())
-      || m["cards"].find(c => c.toLowerCase().includes(searchInput.toLowerCase()))
+      || m.name.toLowerCase().includes(searchInput.toLowerCase())
+      || m.cards.find(c => c.toLowerCase().includes(searchInput.toLowerCase()))
     )
-    .sort((a, b) => b["score"] - a["score"])
+    .sort((a, b) => b.score - a.score)
 }
 
 function App() {
@@ -170,19 +198,21 @@ function App() {
           <th scope="col">Map</th>
           <th scope="col">Layout</th>
           <th scope="col">Density</th>
-          <th scope="col">Boss</th>
+          <th scope="col">Boss Difficulty</th>
+          <th scope="col">Tags</th>
           <th scope="col">Cards</th>
         </tr>
         </thead>
         <tbody>
         {filterAndRateMaps(maps, searchInput, layoutInput, densityInput, bossInput, cardInput).map(m =>
           <tr>
-            <td><b>{Math.round(m["score"])}</b></td>
-            <td><a href={m["wiki"]} target="_blank" className={tierColor(m)}>{m["name"]}</a></td>
-            <td>{ratingBadge(m["layout"])}</td>
-            <td>{ratingBadge(m["density"])}</td>
+            <td><b>{Math.round(m.score)}</b></td>
+            <td><a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a></td>
+            <td>{ratingBadge(m.layout)}</td>
+            <td>{ratingBadge(m.density)}</td>
             <td>{bossDisplay(m)}</td>
-            <td>{mapAndRateCards(m["cards"]).map(c => cardDisplay(c))}</td>
+            <td>{buildTags(m)}</td>
+            <td>{mapAndRateCards(m.cards).map(c => cardDisplay(c))}</td>
           </tr>
         )}
         </tbody>

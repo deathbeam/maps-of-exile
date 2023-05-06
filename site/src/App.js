@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
+import {useState, Fragment, useMemo} from 'react'
+import debounce from 'lodash.debounce'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
-import {useState, Fragment} from 'react'
 import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
+import Loader from './components/loader'
 
 const preparedCards = cards.map(card => {
   return {
@@ -213,37 +215,63 @@ function filterMaps(ratedMaps, searchInput) {
 }
 
 function App() {
+  const [loading, setLoading] = useState(false)
+  const withLoading = (val, callback) => {
+    setLoading(val)
+    return callback
+  }
+
   const [searchInput, setSearchInput] = useState('')
+  const handleSearch = e => withLoading(false, setSearchInput)(e.target.value)
+  const debouncedSearch = useMemo(() => debounce(handleSearch, 300), [])
+  const startSearch = e => withLoading(true, debouncedSearch)(e)
+
   const [layoutInput, setLayoutInput] = useState('3')
+  const handleLayout = e => withLoading(false, setLayoutInput)(e.target.value)
+  const debouncedLayout = useMemo(() => debounce(handleLayout, 300), [])
+  const startLayout = e => withLoading(true, debouncedLayout)(e)
+
   const [densityInput, setDensityInput] = useState('2')
+  const handleDensity = e => withLoading(false, setDensityInput)(e.target.value)
+  const debouncedDensity = useMemo(() => debounce(handleDensity, 300), [])
+  const startDensity = e => withLoading(true, debouncedDensity)(e)
+
   const [bossInput, setBossInput] = useState('0.2')
+  const handleBoss = e => withLoading(false, setBossInput)(e.target.value)
+  const debouncedBoss = useMemo(() => debounce(handleBoss, 300), [])
+  const startBoss = e => withLoading(true, debouncedBoss)(e)
+
   const [cardInput, setCardInput] = useState('0.5')
+  const handleCard = e => withLoading(false, setCardInput)(e.target.value)
+  const debouncedCard = useMemo(() => debounce(handleCard, 300), [])
+  const startCard = e => withLoading(true, debouncedCard)(e)
 
   const ratedMaps = mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput)
 
   return (
     <div className="bg-dark">
+      <Loader loading={loading}/>
       <div className="container-fluid p-4">
         <div className="row">
           <div className="col">
             <label className="form-label text-light">Search</label>
-            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" onChange={startSearch}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Layout weight</label>
-            <input className="form-control bg-dark text-light" type="number" value={layoutInput} onChange={e => setLayoutInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={layoutInput} onChange={startLayout}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Density weight</label>
-            <input className="form-control bg-dark text-light" type="number" value={densityInput} onChange={e => setDensityInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={densityInput} onChange={startDensity}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Boss weight</label>
-            <input className="form-control bg-dark text-light" type="number" value={bossInput} onChange={e => setBossInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={bossInput} onChange={startBoss}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Card weight</label>
-            <input className="form-control bg-dark text-light" type="number" value={cardInput} onChange={e => setCardInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={cardInput} onChange={startCard}/>
           </div>
         </div>
       </div>

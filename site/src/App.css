@@ -1,10 +1,8 @@
-/* Tooltip container */
 .tooltip-tag {
     position: relative;
     display: inline-block;
 }
 
-/* Tooltip text */
 .tooltip-tag .tooltip-tag-text {
     visibility: hidden;
     min-width: 300px;

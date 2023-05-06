@@ -8,7 +8,7 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import Loader from './components/loader'
+import Loader from './components/Loader'
 
 const preparedCards = cards.map(card => {
   return {

@@ -1508,7 +1508,8 @@
         "layout": null,
         "density": null,
         "boss": {
-            "rating": null
+            "rating": null,
+            "name": "The Apex Assembly"
         },
         "cards": [
             "Monochrome",
@@ -2357,11 +2358,15 @@
             16
         ],
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
-        "layout": null,
-        "density": null,
+        "layout": 8,
+        "density": 5,
         "boss": {
-            "rating": null
+            "rating": 4,
+            "based_on": "Redblade Warbands",
+            "notes": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities",
+            "name": "Uruk Baleh, El'Abin, Bloodeater, Leli Goya, Daughter of Ash, Bin'aia, Crimson Rain"
         },
+        "tileset": "The Beacon",
         "cards": [
             "Her Mask",
             "Hope",
@@ -3019,7 +3024,8 @@
         "layout": null,
         "density": null,
         "boss": {
-            "rating": null
+            "rating": null,
+            "name": "Talin, Faithbreaker"
         },
         "cards": [
             "Imperial Legacy",
@@ -3632,11 +3638,15 @@
             16
         ],
         "poedb": "https://poedb.tw/us/Shipyard_Map",
-        "layout": null,
-        "density": null,
+        "layout": 5,
+        "density": 3,
         "boss": {
-            "rating": null
+            "rating": 3,
+            "based_on": "Brinerot Warbands",
+            "notes": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy.",
+            "name": "Musky \"Two-Eyes\" Grenn, Susara, Siren of Pondium, Lussi \"Rotmother\" Roth"
         },
+        "tileset": "The Docks",
         "cards": [
             "Her Mask",
             "Hope",

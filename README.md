@@ -19,3 +19,11 @@ https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api
 
 **Card drops** from **PoeWiki**:  
 https://www.poewiki.net/wiki/Colonnade_Map  
+
+## TODO (maybe, if ever)
+
+- Boss length (short/long bosses, for mapping, e.g bosses with phases are bad)
+- Boss spawn (spawned in at start of map or not, for altars)
+- Layouts good for league mechanics (legion/breach/stuff like that, mostly
+    pretty open, even though this is already partially covered with outdoors
+    tag)

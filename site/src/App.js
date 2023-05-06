@@ -232,6 +232,9 @@ function App() {
         )}
         </tbody>
       </table>
+      <div className="container-fluid p-4 text-light text-end">
+        Contribute on <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
     </div>
   );
 }

@@ -222,28 +222,23 @@ function App() {
   }
 
   const [searchInput, setSearchInput] = useState('')
-  const handleSearch = e => withLoading(false, setSearchInput)(e.target.value)
-  const debouncedSearch = useMemo(() => debounce(handleSearch, 300), [])
+  const debouncedSearch = useMemo(() => debounce(e => withLoading(false, setSearchInput)(e.target.value), 300), [])
   const startSearch = e => withLoading(true, debouncedSearch)(e)
 
   const [layoutInput, setLayoutInput] = useState('3')
-  const handleLayout = e => withLoading(false, setLayoutInput)(e.target.value)
-  const debouncedLayout = useMemo(() => debounce(handleLayout, 300), [])
+  const debouncedLayout = useMemo(() => debounce(e => withLoading(false, setLayoutInput)(e.target.value), 300), [])
   const startLayout = e => withLoading(true, debouncedLayout)(e)
 
   const [densityInput, setDensityInput] = useState('2')
-  const handleDensity = e => withLoading(false, setDensityInput)(e.target.value)
-  const debouncedDensity = useMemo(() => debounce(handleDensity, 300), [])
+  const debouncedDensity = useMemo(() => debounce(e => withLoading(false, setDensityInput)(e.target.value), 300), [])
   const startDensity = e => withLoading(true, debouncedDensity)(e)
 
   const [bossInput, setBossInput] = useState('0.2')
-  const handleBoss = e => withLoading(false, setBossInput)(e.target.value)
-  const debouncedBoss = useMemo(() => debounce(handleBoss, 300), [])
+  const debouncedBoss = useMemo(() => debounce(e => withLoading(false, setBossInput)(e.target.value), 300), [])
   const startBoss = e => withLoading(true, debouncedBoss)(e)
 
   const [cardInput, setCardInput] = useState('0.5')
-  const handleCard = e => withLoading(false, setCardInput)(e.target.value)
-  const debouncedCard = useMemo(() => debounce(handleCard, 300), [])
+  const debouncedCard = useMemo(() => debounce(e => withLoading(false, setCardInput)(e.target.value), 300), [])
   const startCard = e => withLoading(true, debouncedCard)(e)
 
   const ratedMaps = mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput)

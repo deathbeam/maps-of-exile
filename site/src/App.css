@@ -19,6 +19,12 @@
     font-size: smaller;
 }
 
+
+.tooltip-tag-compact .tooltip-tag-text {
+    min-width: 125px;
+    text-align: left;
+}
+
 .tooltip-tag-left .tooltip-tag-text {
     top: -5px;
     right: 105%;

@@ -143,10 +143,11 @@ function cardDisplay(card) {
   }
 
   badgeClass = `badge text-dark m-1 ${badgeClass}`
-  return <span className="tooltip-tag tooltip-tag-left">
+  return <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
     <span className="tooltip-tag-text">
-      <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/><br/>
-      {card.value > 0 && <Fragment><b>Score</b>: {Math.round(card.value * 100) / 100}</Fragment>}
+      <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/>
+      {card.rate && <Fragment><br/><b>* Rate</b>: {Math.round(card.rate * 10000) / 10000} %</Fragment>}
+      {card.value > 0 && <Fragment><br/><b>= Score</b>: {Math.round(card.value * 100) / 100}</Fragment>}
     </span>
     <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
      <img src={img} alt="" width="16" height="16" /> {card.name}

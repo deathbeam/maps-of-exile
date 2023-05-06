@@ -203,7 +203,7 @@ function App() {
   const [searchInput, setSearchInput] = useState('')
   const [layoutInput, setLayoutInput] = useState('3')
   const [densityInput, setDensityInput] = useState('2')
-  const [bossInput, setBossInput] = useState('0.5')
+  const [bossInput, setBossInput] = useState('0.2')
   const [cardInput, setCardInput] = useState('0.5')
 
   return (

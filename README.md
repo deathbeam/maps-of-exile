@@ -27,3 +27,39 @@ https://www.poewiki.net/wiki/Colonnade_Map
 - Layouts good for league mechanics (legion/breach/stuff like that, mostly
     pretty open, even though this is already partially covered with outdoors
     tag)
+
+## So what it actually does?
+
+The site is split to 2 parts, data generator and then the actual site.
+
+### Data generator
+
+First, it grabs all card price data from Poe ninja. This builds the initial card list.
+
+Then it grabs data from stacked deck spreadsheet, calculates card chance for every card listed in that spreadsheet compared to total stacked decks opened, then matches this chance with cards from ninja and assign this as new metadata for cards. This spreadsheet does not have every card tracked just the more important ones, but for purposes of the site its enough.
+
+This card list with "drop chance" metadata is stored to be used in site in .json
+
+Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDB (this is layout, density, boss info, some other misc info) and cards found in the map from Poe wiki.
+
+This map list with PoeDB and PoeWiki metadata is also stored to be used in site in .json.
+
+## Site
+
+Site simply displays all the maps with metadata, builds some tags from misc info from maps and then matches the card metadata from cards .json with card names found in map in map .json.
+
+Then it builds filter and score on top.
+
+There are 4 factors for score:
+
+Layout, Density, Boss, Cards
+
+Layout, Density and Boss is simple, each is number from 0 to 10.
+
+Cards is a bit more complicated.
+
+I multiply price of every card by its drop chance, then add all the card "values" together to build card score for map. The card display for every map is also sorted by card score. Actually its not that complicated nvm.
+
+And on top of this you can assign "weight" to every part of the score, so Layout weight simply multiplies the Layout value by x etc etc.
+
+In the end every part of the score is added together and then recalculated to be in between 0 and 100 (for nicer display,do not rly changes anything). And then maps are sorted by that.

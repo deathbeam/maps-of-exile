@@ -1,5 +1,7 @@
 import json
+import os
 import re
+import sys
 from decimal import Decimal
 
 import requests
@@ -12,11 +14,6 @@ class DecimalEncoder(json.JSONEncoder):
 		if isinstance(o, Decimal):
 			return str(o)
 		return super(DecimalEncoder, self).default(o)
-
-
-def load_config():
-	with open ("config.yaml", "r") as f:
-		return yaml.safe_load(f)
 
 
 def get_card_data(key, league, config):
@@ -100,7 +97,7 @@ def get_map_data(map_data, cards, config):
 		elif name == "linear" and value == "o":
 			map_data["linear"] = True
 		elif name == "additional notes" and "pantheon" in value.lower():
-			map_data["pantheon"] = value.replace("Pantheon-", "").replace("Pantheon -", "").strip()
+			map_data["pantheon"] = re.sub("[.].+", "", value.replace("Pantheon-", "").replace("Pantheon -", "").strip())
 
 	# Extra data
 	offset += 1
@@ -172,18 +169,35 @@ def get_maps(config):
 
 
 def main():
-	config = load_config()
+	dir_path = os.path.dirname(os.path.realpath(__file__))
+	with open (dir_path + "/config.yaml", "r") as f:
+		config = yaml.safe_load(f)
+
+	args = sys.argv
+	fetch_cards = True
+	fetch_maps = True
+
+	if len(args) > 1:
+		if args[1] == 'cards':
+			fetch_maps = False
+
+		if args[1] == 'maps':
+			fetch_cards = False
+
 	config = config["data"]
+	api_key = os.environ['GOOGLE_API_KEY']
 
-	cards = get_card_data(config["google-api-key"], config["league"], config["cards"])
-	with open("../site/src/data/cards.json", "w") as f:
-		f.write(json.dumps(cards, indent=4, cls=DecimalEncoder))
+	cards = get_card_data(api_key, config["league"], config["cards"])
+	if fetch_cards:
+		with open(dir_path + "/../site/src/data/cards.json", "w") as f:
+			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder))
 
-	maps = get_maps(config["maps"])
-	maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))
+	if fetch_maps:
+		maps = get_maps(config["maps"])
+		maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))
 
-	with open("../site/src/data/maps.json", "w") as f:
-		f.write(json.dumps(maps, indent=4, cls=DecimalEncoder))
+		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
+			f.write(json.dumps(maps, indent=4, cls=DecimalEncoder))
 
 
 if __name__ == "__main__":

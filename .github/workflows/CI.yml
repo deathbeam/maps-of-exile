@@ -16,18 +16,32 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Build data
+        if: ${{ github.event_name == 'push' }}
+        run: python main.py cards
+        working-directory: data
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      - name: Install
+      - name: Install Site
         run: npm ci
+        working-directory: site
 
-      - name: Build
+      - name: Build Site
         run: npm run build
+        working-directory: site
 
-      - name: Deploy
+      - name: Deploy Site
         if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@v4
 

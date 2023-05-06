@@ -3,6 +3,9 @@ import './App.css'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
 import {useState, Fragment} from 'react'
+import chaos from './img/chaos.png'
+import exalt from './img/exalt.png'
+import divine from './img/divine.png'
 
 function tierColor(map) {
   const naturalTier = map.tiers[0]
@@ -78,20 +81,32 @@ function bossDisplay(map) {
 
 function cardDisplay(card) {
   let badgeClass = "bg-secondary"
-  const score = card.score
 
-  if (score >= 50) {
+  if (card.score >= 50) {
     badgeClass = "bg-danger"
-  } else if (score >= 20) {
+  } else if (card.score >= 20) {
     badgeClass = "bg-warning"
-  } else if (score >= 10) {
+  } else if (card.score >= 10) {
     badgeClass = "bg-info"
-  } else if (score >= 2) {
+  } else if (card.score >= 2) {
     badgeClass = "bg-primary"
   }
 
+  let img = null
+
+  if (card.price >= 100) {
+    img = divine
+  } else if (card.price >= 50) {
+    img = exalt
+  } else if (card.price >= 5) {
+    img = chaos
+  }
+
   badgeClass = `badge badge-pill text-dark ${badgeClass}`
-  return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">{card.name}</a>{' '}</Fragment>
+  return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
+    {img && <img src={img} width="16" height="16" />} {card.name}
+  </a>{' '}
+  </Fragment>
 }
 
 function getCardValue(card) {

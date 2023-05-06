@@ -68,9 +68,7 @@ function tierColor(map) {
 }
 
 function buildTags(map) {
-  return map.tags.map(t => <Fragment>
-    <span className="badge badge-pill text-dark bg-secondary m-1">{t}</span>
-  </Fragment>)
+  return map.tags.map(t => <span className="badge rounded-pill text-dark bg-secondary me-1">{t}</span>)
 }
 
 function ratingBadge(rating, inverse) {
@@ -90,23 +88,33 @@ function ratingBadge(rating, inverse) {
     }
   }
 
-  badgeClass = `badge badge-pill text-dark ${badgeClass}`
+  badgeClass = `badge text-dark ${badgeClass}`
   return <span className={badgeClass}>{rating}</span>
 }
 
 function bossDisplay(map) {
-  const out = <Fragment>
-    {ratingBadge(map.boss.difficulty, true)} {map.boss.name}
-  </Fragment>
+  const out = ratingBadge(map.boss.difficulty, true)
 
-  if (map.boss.notes) {
-    return <span className="tooltip-tag">
-      <span className="tooltip-tag-text">{map.boss.notes}</span>
+  if (map.boss.names || map.boss.notes) {
+    return <span className="tooltip-tag tooltip-tag-right">
+      <span className="tooltip-tag-text">
+        <p>
+          {map.boss.names.map(b => <span className="badge text-dark bg-info me-1"><b>{b}</b></span>)}
+        </p>
+        {map.boss.notes}
+      </span>
       {out}
     </span>
   }
 
   return out
+}
+
+function connectedDisplay(map, ratedMaps) {
+  return (map.connected || []).map(m => <span className="badge text-dark bg-secondary me-1">
+    <b>{Math.round((ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0) + ' '}</b>
+    {m}
+  </span>)
 }
 
 function cardDisplay(card) {
@@ -132,8 +140,8 @@ function cardDisplay(card) {
     img = chaos
   }
 
-  badgeClass = `badge badge-pill text-dark m-1 ${badgeClass}`
-  return <span className="tooltip-tag">
+  badgeClass = `badge text-dark m-1 ${badgeClass}`
+  return <span className="tooltip-tag tooltip-tag-left">
     <span className="tooltip-tag-text">
       <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/><br/>
       {card.value > 0 && <Fragment><b>Score</b>: {Math.round(card.value * 100) / 100}</Fragment>}
@@ -171,7 +179,7 @@ function mapAndRateCards(foundCards) {
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
-function mapAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossInput, cardInput) {
+function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
   let out = []
 
   for (let map of foundMaps) {
@@ -192,6 +200,10 @@ function mapAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossI
   }
 
   return calculateScore(out)
+}
+
+function filterMaps(ratedMaps, searchInput) {
+  return ratedMaps
     .filter(m => !searchInput
       || m.name.toLowerCase().includes(searchInput.toLowerCase())
       || m.cards.find(c => c.name.toLowerCase().includes(searchInput.toLowerCase()))
@@ -206,6 +218,8 @@ function App() {
   const [densityInput, setDensityInput] = useState('2')
   const [bossInput, setBossInput] = useState('0.2')
   const [cardInput, setCardInput] = useState('0.5')
+
+  const ratedMaps = mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput)
 
   return (
     <div className="bg-dark">
@@ -236,23 +250,60 @@ function App() {
       <table className="table table-dark mb-0">
         <thead>
         <tr>
-          <th scope="col">Score</th>
-          <th scope="col">Map</th>
-          <th scope="col">Layout</th>
-          <th scope="col">Density</th>
-          <th scope="col">Boss Difficulty</th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and <b>Card</b> score, accounting for weights at top.
+              </span>
+              Score
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Map name, colored based on natural tier (red, yellow, white).
+              </span>
+              Map
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                How easy is the map to clear, e.g backtracking etc. Do not accounts for league mechanics, for that you probably want to look at outdoors tag.
+              </span>
+              Layout
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Monster count in maps. Do not counts for amount of monsters per square in map just total mob count.
+              </span>
+              Density
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Boss difficulty, e.g how scary it is to kill. This rating do not includes boss fight lengtht (phases for example).
+              </span>
+              Boss
+            </span>
+          </th>
+          <th scope="col">Connected Maps</th>
           <th scope="col">Tags</th>
           <th scope="col">Cards</th>
         </tr>
         </thead>
         <tbody>
-        {mapAndRateMaps(preparedMaps, searchInput, layoutInput, densityInput, bossInput, cardInput).map(m =>
+        {filterMaps(ratedMaps, searchInput).map(m =>
           <tr>
             <td><b>{Math.round(m.score || 0)}</b></td>
             <td><a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a></td>
             <td>{ratingBadge(m.layout)}</td>
             <td>{ratingBadge(m.density)}</td>
             <td>{bossDisplay(m)}</td>
+            <td>{connectedDisplay(m, ratedMaps)}</td>
             <td>{buildTags(m)}</td>
             <td>{mapAndRateCards(m.cards).map(c => cardDisplay(c))}</td>
           </tr>

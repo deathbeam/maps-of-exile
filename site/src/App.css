@@ -15,23 +15,40 @@
     border-radius: 5px;
     position: absolute;
     z-index: 999;
-    top: -5px;
-    right: 105%;
     pointer-events: none;
     line-height: normal;
     font-weight: normal;
     font-size: smaller;
 }
 
+.tooltip-tag-left .tooltip-tag-text {
+    top: -5px;
+    right: 105%;
+}
+
+.tooltip-tag-right .tooltip-tag-text {
+    top: -5px;
+    left: 105%;
+}
+
 .tooltip-tag .tooltip-tag-text::after {
     content: " ";
     position: absolute;
-    top: 18px;
-    left: 100%; /* To the right of the tooltip */
     margin-top: -5px;
     border-width: 5px;
     border-style: solid;
+}
+
+.tooltip-tag-left .tooltip-tag-text::after {
+    top: 18px;
+    left: 100%;
     border-color: transparent transparent transparent black;
+}
+
+.tooltip-tag-right .tooltip-tag-text::after {
+    top: 18px;
+    right: 100%;
+    border-color: transparent black transparent transparent;
 }
 
 .tooltip-tag:hover .tooltip-tag-text {

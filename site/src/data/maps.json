@@ -10,8 +10,14 @@
         ],
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "boss": {
-            "name": "Rose, Thorn"
+            "names": [
+                "Rose",
+                "Thorn"
+            ]
         },
+        "connected": [
+            "Overgrown Shrine Map"
+        ],
         "cards": [
             "The Craving",
             "The Encroaching Darkness",
@@ -37,13 +43,19 @@
             "difficulty": 2,
             "based_on": "Utula",
             "notes": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles",
-            "name": "Calderus"
+            "names": [
+                "Calderus"
+            ]
         },
         "layout": 8,
         "density": 5,
         "tileset": "Oriath Square",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Excavation Map",
+            "Stagnation Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "Assassin's Favour",
@@ -84,12 +96,20 @@
             "based_on": "The Weaver",
             "notes": "Same as Jungle Valley boss except now significantly stronger. Boss will disappear and reappear throughout fight. Also can now summon rare spiders which may have dangerous auras.",
             "separated": true,
-            "name": "Spinner of False Hope"
+            "names": [
+                "Spinner of False Hope"
+            ]
         },
         "layout": 6,
         "density": 4,
         "tileset": "The Weaver's Chambers",
         "few_obstacles": true,
+        "connected": [
+            "Pier Map",
+            "Fungal Hollow Map",
+            "Geode Map",
+            "Ramparts Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -122,13 +142,20 @@
             "based_on": "Black Death",
             "notes": "Viper Strike inflicts Poison. Summons swarms of small spiders. Will periodically enshroud the arena in web, lowering your attack, cast and movement speed as well as your damage. You can drag yourself through the nearby fires to remove the debuff.",
             "separated": true,
-            "name": "Hybrid Widow"
+            "names": [
+                "Hybrid Widow"
+            ]
         },
         "layout": 7,
         "density": 3,
         "tileset": "The Temple of Decay Level 1",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Siege Map",
+            "Chateau Map",
+            "Forbidden Woods Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -158,12 +185,21 @@
             "difficulty": 3,
             "based_on": "The Voltaic Seal, \nThe Infernal Seal",
             "notes": "Flammability and Conductivity lower resists so overcap or bring curse removal. Weak elemental spells",
-            "name": "Herald of Ashes, Herald of Thunder"
+            "names": [
+                "Herald of Ashes",
+                "Herald of Thunder"
+            ]
         },
         "layout": 3,
         "density": 3,
         "tileset": "The Marketplace",
         "outdoors": true,
+        "connected": [
+            "Cemetery Map",
+            "Phantasmagoria Map",
+            "Orchard Map",
+            "Pit Map"
+        ],
         "cards": [
             "Assassin's Favour",
             "Her Mask",
@@ -200,13 +236,21 @@
             "based_on": "Oozeback Bloom",
             "notes": "Chaos degen aura and Physical charge attack. Breaking Rhoa nests heals and enrages boss. Boss becomes much more difficult when enraged. Enraged boss drops more loot",
             "separated": true,
-            "name": "Drought-Maddened Rhoa"
+            "names": [
+                "Drought-Maddened Rhoa"
+            ]
         },
         "layout": 8,
         "density": 3,
         "tileset": "The Fetid Pool",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Desert Spring Map",
+            "Dungeon Map",
+            "Necropolis Map",
+            "Barrows Map"
+        ],
         "cards": [
             "The Fishmonger",
             "The Rabid Rhoa",
@@ -235,12 +279,18 @@
             "difficulty": 2,
             "based_on": "General Gravicius",
             "notes": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities.",
-            "name": "Warmonger"
+            "names": [
+                "Warmonger"
+            ]
         },
         "layout": 5,
         "density": 7,
         "tileset": "Mansion Annex",
         "linear": true,
+        "connected": [
+            "Pier Map",
+            "Coral Ruins Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -272,12 +322,18 @@
             "based_on": "Animated Sword",
             "notes": "Waves of Animated Weapons until boss appears. Fast but manageable Physical Cyclone and Lacerate attacks. Cascade of weak Physical projectiles.",
             "separated": true,
-            "name": "The Steel Soul"
+            "names": [
+                "The Steel Soul"
+            ]
         },
         "layout": 4,
         "density": 9,
         "tileset": "The Grain Gate",
         "outdoors": true,
+        "connected": [
+            "Tropical Island Map",
+            "Core Map"
+        ],
         "cards": [
             "Dying Anguish",
             "Her Mask",
@@ -317,7 +373,9 @@
             "based_on": "Kuduku",
             "notes": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being chain stunned. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
             "separated": true,
-            "name": "Puruna, the Challenger"
+            "names": [
+                "Puruna, the Challenger"
+            ]
         },
         "layout": 9,
         "density": 1,
@@ -326,6 +384,12 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of the Brine King.",
+        "connected": [
+            "Pit Map",
+            "Port Map",
+            "Maelstr\u00f6m of Chaos",
+            "Promenade Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -363,12 +427,19 @@
             "based_on": "The Great White Beast",
             "notes": "Physical attacks - charge and telegraphed slam. When boss sits down rocks fall from ceiling.",
             "separated": true,
-            "name": "Beast of the Pits"
+            "names": [
+                "Beast of the Pits"
+            ]
         },
         "layout": 5,
         "density": 10,
         "tileset": "The Wetlands",
         "outdoors": true,
+        "connected": [
+            "Thicket Map",
+            "Arid Lake Map",
+            "Tropical Island Map"
+        ],
         "cards": [
             "The Bear Woman",
             "Her Mask",
@@ -402,7 +473,9 @@
             "based_on": "Hailrake",
             "notes": "Spams Cold spells. Bring Freeze immunity if you have low health",
             "separated": true,
-            "name": "Glace"
+            "names": [
+                "Glace"
+            ]
         },
         "layout": 9,
         "density": 2,
@@ -410,6 +483,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Desert Spring Map",
+            "Underground Sea Map",
+            "Factory Map",
+            "Jungle Valley Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -442,7 +521,9 @@
             "based_on": "Act V Kitava",
             "notes": "Too many mechanics/phases to describe. Best to consult a mechanics video on Act V Kitava. Most of Kitava's attacks are telegraphed but can be hard to avoid and mistakes are costly. If you have enough damage it is easy to transition from boss phase to phase quickly.",
             "separated": true,
-            "name": "Lord of the Grey"
+            "names": [
+                "Lord of the Grey"
+            ]
         },
         "layout": 8,
         "density": 4,
@@ -450,6 +531,11 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Primordial Blocks Map",
+            "Strand Map",
+            "Scriptorium Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -478,12 +564,19 @@
             "difficulty": 2,
             "based_on": "Necromancer",
             "notes": "Resummons nearby minions. Casts Spirit Offering and Vaal Summon Skeletons. Focus on killing the boss over the unique skeletons as these can be revived by the boss.",
-            "name": "Xixic, High Necromancer"
+            "names": [
+                "Xixic, High Necromancer"
+            ]
         },
         "layout": 5,
         "density": 5,
         "tileset": "The Crypt",
         "linear": true,
+        "connected": [
+            "Olmec's Sanctum",
+            "Grotto Map",
+            "Silo Map"
+        ],
         "cards": [
             "The Craving",
             "The Lich",
@@ -521,8 +614,15 @@
         ],
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
-            "name": "Winterfang, Storm Eye, Solus, Pack Alpha"
+            "names": [
+                "Winterfang",
+                "Storm Eye",
+                "Solus, Pack Alpha"
+            ]
         },
+        "connected": [
+            "Underground River Map"
+        ],
         "cards": [
             "Loyalty",
             "Monochrome",
@@ -553,12 +653,20 @@
             "based_on": "Kaom",
             "notes": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health.",
             "separated": true,
-            "name": "The Infernal King"
+            "names": [
+                "The Infernal King"
+            ]
         },
         "layout": 6,
         "density": 4,
         "tileset": "Kaom's Dream",
         "outdoors": true,
+        "connected": [
+            "Wasteland Map",
+            "Cursed Crypt Map",
+            "Chateau Map",
+            "Siege Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -594,7 +702,10 @@
             "difficulty": 9,
             "based_on": "Eypecker, Steelchaw",
             "notes": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
-            "name": "Gnar, Eater of Carrion, Stonebeak, Battle Fowl"
+            "names": [
+                "Gnar, Eater of Carrion",
+                "Stonebeak, Battle Fowl"
+            ]
         },
         "layout": 9,
         "density": 3,
@@ -602,6 +713,13 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Toxic Sewer Map",
+            "Waste Pool Map",
+            "Shipyard Map",
+            "Crystal Ore Map",
+            "Shore Map"
+        ],
         "cards": [
             "Bowyer's Dream",
             "The Fletcher",
@@ -639,13 +757,20 @@
             "based_on": "Kraityn",
             "notes": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
             "separated": true,
-            "name": "Leif, the Swift-Handed"
+            "names": [
+                "Leif, the Swift-Handed"
+            ]
         },
         "layout": 7,
         "density": 7,
         "tileset": "The Broken Bridge",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "City Square Map",
+            "Residence Map",
+            "Coral Ruins Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -680,11 +805,18 @@
             "difficulty": 7,
             "based_on": "Fire Fury",
             "notes": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks",
-            "name": "Shavronne the Sickening"
+            "names": [
+                "Shavronne the Sickening"
+            ]
         },
         "layout": 1,
         "density": 8,
         "tileset": "The Crematorium",
+        "connected": [
+            "Cold River Map",
+            "Frozen Cabins Map",
+            "Crimson Township Map"
+        ],
         "cards": [
             "Harmony of Souls",
             "The Aesthete",
@@ -721,13 +853,23 @@
             "based_on": "Gruthkul, Mother of Despair",
             "notes": "Deals strong Physical melee attacks. Avoid telegraphed slam and dark patches of ground that deal DoT. Boss will channel for several seconds summoning short lived Physical projectiles from all directions.  As boss loses life player gains stack of Despair debuff (unremovable) which slows you, reduces your light radius and increases damage taken. Therefore the boss becomes much more deadly as the fight progresses, pays to try to save burst damage/flasks for towards the end of the fight.",
             "separated": true,
-            "name": "Erebix, Light's Bane"
+            "names": [
+                "Erebix, Light's Bane"
+            ]
         },
         "layout": 6,
         "density": 5,
         "tileset": "The Fellshrine Ruins",
         "outdoors": true,
         "pantheon": "Soul of Gruthkul",
+        "connected": [
+            "Hallowed Ground",
+            "Marshes Map",
+            "Lair Map",
+            "Arcade Map",
+            "Primordial Blocks Map",
+            "Overgrown Shrine Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -771,12 +913,20 @@
             "difficulty": 4,
             "based_on": "Perpetus",
             "notes": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap.",
-            "name": "Hephaeus, The Hammer"
+            "names": [
+                "Hephaeus, The Hammer"
+            ]
         },
         "layout": 3,
         "density": 6,
         "tileset": "Estate Walkways",
         "outdoors": true,
+        "connected": [
+            "Pit Map",
+            "Arachnid Tomb Map",
+            "Caldera Map",
+            "Promenade Map"
+        ],
         "cards": [
             "The Scavenger",
             "Boon of Justice",
@@ -809,13 +959,23 @@
             "difficulty": 8,
             "based_on": "The Matriach, Twisted Effigy",
             "notes": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first.",
-            "name": "Carius, the Unnatural, Pileah, Corpse Burner, Pileah, Burning Corpse"
+            "names": [
+                "Pileah, Burning Corpse",
+                "Carius, the Unnatural",
+                "Pileah, Corpse Burner"
+            ]
         },
         "layout": 9,
         "density": 3,
         "tileset": "Oriath Square",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Toxic Sewer Map",
+            "Castle Ruins Map",
+            "Laboratory Map",
+            "Vaal Pyramid Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -849,8 +1009,18 @@
         ],
         "poedb": "https://poedb.tw/us/Cold_River_Map",
         "boss": {
-            "name": "Ara, Sister of Light, Khor, Sister of Shadows"
+            "names": [
+                "Ara, Sister of Light",
+                "Khor, Sister of Shadows"
+            ]
         },
+        "connected": [
+            "Flooded Mine Map",
+            "Plaza Map",
+            "Cells Map",
+            "Factory Map",
+            "Crimson Temple Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "Forbidden Power",
@@ -896,13 +1066,20 @@
             "based_on": "General Gravicius",
             "notes": "Much stronger than Armoury Gravicius. His Firestorm, Fire trap and Molten Shell abilities hit hard so ensure you have adequate fire mitigation. Gravicius has a large ES pool (cannot be bypassed by Chaos damage). At 2/3 and 1/3 life Gravicius will return to his tent regaining all his ES back. This fight can be long so you may need to portal to get back flask charges.",
             "separated": true,
-            "name": "Tyrant"
+            "names": [
+                "Tyrant"
+            ]
         },
         "layout": 6,
         "density": 6,
         "tileset": "The Battlefront",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Dry Sea Map",
+            "Excavation Map",
+            "Dunes Map"
+        ],
         "cards": [
             "Dying Anguish",
             "Gemcutter's Promise",
@@ -944,13 +1121,21 @@
             "based_on": "Daresso",
             "notes": "Quick Physical/Cold attacks. Kneels to heal at 25%/50%/75% health. After healing gains 75% increased attack speed for 6 seconds. AoE Reave has Resolute Technique. Always be wary of spinning blades that contiually spawn, they deal serious Physical DoT. Decoy Totem work wonders in this fight.",
             "separated": true,
-            "name": "Ambrius, Legion Slayer"
+            "names": [
+                "Ambrius, Legion Slayer"
+            ]
         },
         "layout": 5,
         "density": 5,
         "tileset": "Daresso's Dream",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Maze Map",
+            "Volcano Map",
+            "Dig Map",
+            "Terrace Map"
+        ],
         "cards": [
             "The Arena Champion",
             "Her Mask",
@@ -991,12 +1176,19 @@
             "based_on": "Hector Titucius, Eternal Servant",
             "notes": "Shield Charges, leaving behind weak Physical projectiles.",
             "separated": true,
-            "name": "The Forgotten Soldier"
+            "names": [
+                "The Forgotten Soldier"
+            ]
         },
         "layout": 5,
         "density": 5,
         "tileset": "The Bath House",
         "few_obstacles": true,
+        "connected": [
+            "Defiled Cathedral Map",
+            "Frozen Cabins Map",
+            "Crimson Township Map"
+        ],
         "cards": [
             "Boon of Justice",
             "Brotherhood in Exile",
@@ -1028,13 +1220,21 @@
             "difficulty": 5,
             "based_on": "Gemling Legionnaire",
             "notes": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack.",
-            "name": "Captain Tanner Lightfoot"
+            "names": [
+                "Captain Tanner Lightfoot"
+            ]
         },
         "layout": 5,
         "density": 8,
         "tileset": "The Brine King's Reef",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Toxic Sewer Map",
+            "Castle Ruins Map",
+            "Armoury Map",
+            "Crystal Ore Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1072,12 +1272,18 @@
             "based_on": "Act IV Maligaro, the Inquisitor\nAct IV Doedre Darktongue\nAct IV Shavronne of Umbra\nMalachai, the Nightmare",
             "notes": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss.",
             "separated": true,
-            "name": "Eater of Souls, Eater of Souls"
+            "names": [
+                "Eater of Souls"
+            ]
         },
         "layout": 3,
         "density": 6,
         "tileset": "The Harvest",
         "linear": true,
+        "connected": [
+            "Arsenal Map",
+            "Dungeon Map"
+        ],
         "cards": [
             "A Modest Request",
             "Broken Promises",
@@ -1121,13 +1327,22 @@
             "based_on": "Imperator Stantius Bitterblade,\nDraconarius Wilhelm Flamebrand,\nCompulsor Octavia Sparkfist",
             "notes": "One casts Spark Totems and Lightning Warps, one Cyclones leaving Chilled Ground and the other Leap Slams + casts multiple Fireballs. Fight is relatively easy if you isolate each boss individually. Leap Slammer is most dangerous.",
             "separated": true,
-            "name": "Oriath's Virtue, Oriath's Vengeance, Oriath's Vigil"
+            "names": [
+                "Oriath's Vigil",
+                "Oriath's Vengeance",
+                "Oriath's Virtue"
+            ]
         },
         "layout": 6,
         "density": 3,
         "tileset": "The Imperial Gardens",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Port Map",
+            "Orchard Map",
+            "Pit Map"
+        ],
         "cards": [
             "Emperor's Luck",
             "Her Mask",
@@ -1170,13 +1385,20 @@
             "difficulty": 6,
             "based_on": "Pirate Ghost, Stone Golem",
             "notes": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately.",
-            "name": "Telvar, the Inebriated, Pirate Treasure"
+            "names": [
+                "Telvar, the Inebriated",
+                "Pirate Treasure"
+            ]
         },
         "layout": 7,
         "density": 4,
         "tileset": "Coves Map",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Tropical Island Map",
+            "Racecourse Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "Her Mask",
@@ -1212,8 +1434,16 @@
         ],
         "poedb": "https://poedb.tw/us/Crater_Map",
         "boss": {
-            "name": "Megaera"
+            "names": [
+                "Megaera"
+            ]
         },
+        "connected": [
+            "Maze Map",
+            "Museum Map",
+            "Wharf Map",
+            "Terrace Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1242,12 +1472,20 @@
             "based_on": "Fire Fury",
             "notes": "Throws Physical projectiles. AoE summons bats, curses nearby enemies with Temporal Chains. Red ground bubbles spawn which burst for small Physical damage after a time.",
             "separated": true,
-            "name": "The Sanguine Siren"
+            "names": [
+                "The Sanguine Siren"
+            ]
         },
         "layout": 6,
         "density": 4,
         "tileset": "The Templar Courts",
         "linear": true,
+        "connected": [
+            "Cold River Map",
+            "Sulphur Vents Map",
+            "Siege Map",
+            "Forbidden Woods Map"
+        ],
         "cards": [
             "The Cacophony",
             "Her Mask",
@@ -1284,8 +1522,16 @@
         ],
         "poedb": "https://poedb.tw/us/Crimson_Township_Map",
         "boss": {
-            "name": "Kadaris, Crimson Mayor"
+            "names": [
+                "Kadaris, Crimson Mayor"
+            ]
         },
+        "connected": [
+            "Jungle Valley Map",
+            "Factory Map",
+            "Cells Map",
+            "Conservatory Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1321,11 +1567,21 @@
             "based_on": "Pocked Goliath, Pikerivet,\nThe Burning Man",
             "notes": "Bosses have Phylacteral Link, which means only one can be damaged at a time (indicated by shiny aura around boss). Burning Man has Righteous Fire and throws Fire projectiles which leave a powerful Burning Ground. On death the Burning Man explodes for massive Fire damage that always Ignites so stand clear. Pikerivet has a Physical Cascade attack. The Pocked Goliath has a powerful short-range Ground Slam and spawns Miners. The small arena can make this boss fight hard to manoeuvre, however ranged characters may be able to offscreen from certain positions.",
             "separated": true,
-            "name": "Lord of the Hollows, Messenger of the Hollows, Champion of the Hollows"
+            "names": [
+                "Lord of the Hollows",
+                "Champion of the Hollows",
+                "Messenger of the Hollows"
+            ]
         },
         "layout": 5,
         "density": 7,
         "tileset": "The Mines Level 1",
+        "connected": [
+            "Canyon Map",
+            "Pier Map",
+            "Ramparts Map",
+            "Coral Ruins Map"
+        ],
         "cards": [
             "The Mind's Eyes",
             "A Sea of Blue",
@@ -1367,11 +1623,18 @@
             "difficulty": 3,
             "based_on": "Archbishop Geofri the Abashed",
             "notes": "Similar to Relic Chambers boss. Turn off curses when facing this boss - when a curse expires he unleashes a deadly nova (damage type based on colour of curse gem) which can one shot. Without curses this boss is non-threatening. He spawns spiders (including rare ones), inflicts curses (can break curse limit) and deals strong telegraphed Physical attacks.",
-            "name": "Pagan Bishop of Agony"
+            "names": [
+                "Pagan Bishop of Agony"
+            ]
         },
         "layout": 2,
         "density": 4,
         "tileset": "The Crypt",
+        "connected": [
+            "The Coward's Trial",
+            "Caldera Map",
+            "Promenade Map"
+        ],
         "cards": [
             "Grave Knowledge",
             "Her Mask",
@@ -1405,8 +1668,13 @@
         ],
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "boss": {
-            "name": "Avatar of Apocalypse"
+            "names": [
+                "Avatar of Apocalypse"
+            ]
         },
+        "connected": [
+            "Necropolis Map"
+        ],
         "cards": [
             "Monochrome",
             "The Encroaching Darkness",
@@ -1430,13 +1698,21 @@
             "based_on": "Act X Avarius",
             "notes": "Boss has strong Physical Cleave and telegraphed projectile. Also fires three weak Physical projectiles. Summons slow moving statues that deal massive Physical damage. Summons several beams, either in a line from the back of the room, or in a circle from the centre of the room. These beams inflict a massive Physical DoT that lasts two seconds.",
             "separated": true,
-            "name": "Woad, Mockery of Man"
+            "names": [
+                "Woad, Mockery of Man"
+            ]
         },
         "layout": 8,
         "density": 5,
         "tileset": "The Chamber of Innocence",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Maze Map",
+            "Temple Map",
+            "Conservatory Map",
+            "Wharf Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1477,7 +1753,9 @@
             "based_on": "Shakira",
             "notes": "Tail Strike inflicts debuff causing you to create Caustic Clouds at your location, move around to remove the debuff. Burrows towards your location. Charged Tail Slam that can easily one shot. In Phase 2 boss gains new abilities. Quicksand in arena will slow your movement speed. Boss will become invulnerable and Sunder towards you from the centre of the arena while summoning poisonous scorpions. At low life boss will start diving around dealing significant Physical damage. Keep mobile when this is happening.",
             "separated": true,
-            "name": "Terror of the Infinite Drifts, Terror of the Infinite Drifts"
+            "names": [
+                "Terror of the Infinite Drifts"
+            ]
         },
         "layout": 8,
         "density": 7,
@@ -1486,6 +1764,12 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of Shakira",
+        "connected": [
+            "Thicket Map",
+            "Geode Map",
+            "Arid Lake Map",
+            "Beach Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -1521,7 +1805,9 @@
             "based_on": "Garukhan",
             "notes": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these.",
             "separated": true,
-            "name": "Stalker of the Endless Dunes"
+            "names": [
+                "Stalker of the Endless Dunes"
+            ]
         },
         "layout": 5,
         "density": 6,
@@ -1529,6 +1815,10 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of Garukhan",
+        "connected": [
+            "Underground River Map",
+            "Colosseum Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -1564,7 +1854,9 @@
         ],
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "boss": {
-            "name": "The Apex Assembly"
+            "names": [
+                "The Apex Assembly"
+            ]
         },
         "cards": [
             "Monochrome",
@@ -1586,8 +1878,15 @@
         ],
         "poedb": "https://poedb.tw/us/Dry_Sea_Map",
         "boss": {
-            "name": "Gazuul, Droughtspawn"
+            "names": [
+                "Gazuul, Droughtspawn"
+            ]
         },
+        "connected": [
+            "Colonnade Map",
+            "Fields Map",
+            "Infested Valley Map"
+        ],
         "cards": [
             "A Note in the Wind",
             "Acclimatisation",
@@ -1623,7 +1922,9 @@
             "difficulty": 4,
             "based_on": "Hillock",
             "notes": "Strong Physical melee attacks. At half health heals to full and gains a Leap Slam ability that summons zombies which release poison clouds on death. Staying in melee range prevents use of Leap Slam.",
-            "name": "The Blacksmith"
+            "names": [
+                "The Blacksmith"
+            ]
         },
         "layout": 9,
         "density": 2,
@@ -1631,6 +1932,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Colonnade Map",
+            "Shrine Map",
+            "Fields Map",
+            "Pillars of Arun"
+        ],
         "cards": [
             "A Note in the Wind",
             "Acclimatisation",
@@ -1673,11 +1980,18 @@
             "based_on": "Brutus, Lord Incarcerator",
             "notes": "Physical Slam has low accuracy but hits hard. Watch out for spikes coming out of the ground",
             "separated": true,
-            "name": "Penitentiary Incarcerator"
+            "names": [
+                "Penitentiary Incarcerator"
+            ]
         },
         "layout": 1,
         "density": 8,
         "tileset": "The Lower Prison",
+        "connected": [
+            "Core Map",
+            "Arid Lake Map",
+            "Leyline Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1713,12 +2027,20 @@
             "based_on": "Voidscream, Hammerstorm",
             "notes": "Each boss in a separate room. Shrieker summons sandstorms. Breaker uses strong Spectral Throw and Vaal Spectral Throw.",
             "separated": true,
-            "name": "Shrieker Eihal, Breaker Toruul"
+            "names": [
+                "Shrieker Eihal",
+                "Breaker Toruul"
+            ]
         },
         "layout": 6,
         "density": 7,
         "tileset": "The Mines Level 1",
         "few_obstacles": true,
+        "connected": [
+            "Colonnade Map",
+            "Shrine Map",
+            "Alleyways Map"
+        ],
         "cards": [
             "The Cacophony",
             "The Mind's Eyes",
@@ -1755,13 +2077,21 @@
             "difficulty": 7,
             "based_on": "General Adus",
             "notes": "Stay out of Lightning beams which deal heavy Lightning DoT. Adus has strong Physical attacks including  Earthquake. Periodically Adus will leap in the air performing a more powerful Earthquake that has several aftershocks which deal heavy Physical and Lightning damage. The real danger in this fight comes from his 'Living Bomb' attack where he charges up and discharges a huge amount of Lightning damage which always Shocks and can potentially one shot. Avoid these telegraphed AoE abilities at all costs.",
-            "name": "Pesquin, the Mad Baron"
+            "names": [
+                "Pesquin, the Mad Baron"
+            ]
         },
         "layout": 7,
         "density": 6,
         "tileset": "The Refinery",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Overgrown Ruin Map",
+            "Cold River Map",
+            "Beach Map",
+            "Crimson Township Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1799,7 +2129,9 @@
             "based_on": "Greust, Lord of the Forest",
             "notes": "Familiar Act 7 fight. Melee acolytes will constantly spawn and wall archers will fire maiming Blast Rain throughout duration of fight. After a while two doggos will appear, then Gruest. Gruest fires a spear which deals Physical damage and inflicts a Strong bleed. Periodically Gruest will gain an enrage buff which increases his damage and allows him to use a very quick barrage of spears that should be evaded.",
             "separated": true,
-            "name": "Drek, Apex Hunter"
+            "names": [
+                "Drek, Apex Hunter"
+            ]
         },
         "layout": 7,
         "density": 3,
@@ -1807,6 +2139,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "pantheon": "Soul of Ralakesh",
+        "connected": [
+            "Dry Sea Map",
+            "Dunes Map",
+            "Laboratory Map",
+            "Vaal Pyramid Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -1840,11 +2178,19 @@
             "difficulty": 3,
             "based_on": "Stone Golem",
             "notes": "Summon tornadoes, Earthquake attack.",
-            "name": "The Eroding One"
+            "names": [
+                "The Eroding One"
+            ]
         },
         "layout": 2,
         "density": 8,
         "tileset": "The Caverns",
+        "connected": [
+            "Overgrown Ruin Map",
+            "Sulphur Vents Map",
+            "Relic Chambers Map",
+            "Cold River Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "The Mind's Eyes",
@@ -1885,8 +2231,18 @@
         ],
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "boss": {
-            "name": "Skictis, Frostkeeper, Takatax Brittlethorn, Corruptor Eedaiak"
+            "names": [
+                "Takatax Brittlethorn",
+                "Corruptor Eedaiak",
+                "Skictis, Frostkeeper"
+            ]
         },
+        "connected": [
+            "Crimson Temple Map",
+            "Phantasmagoria Map",
+            "Arachnid Tomb Map",
+            "Pit Map"
+        ],
         "cards": [
             "Call to the First Ones",
             "Her Mask",
@@ -1930,7 +2286,9 @@
             "based_on": "n/a",
             "notes": "Cannot be slowed. Physical attacks. Very strong Cyclone. Will charge up then release a massive Fire explosion (large AoE) that will probably one-shot. Every 10% life lost the player loses 1% maximum Fire resistance. Phoenixes are summoned which fire Fire projectiles, they revive a few seconds after being killed. More phoenixes are spawned as the boss loses health. Small fire tornadoes travel around the room dealing Fire DoT, again the less health the boss has the more tornadoes are spawned.",
             "separated": true,
-            "name": "Guardian of the Phoenix"
+            "names": [
+                "Guardian of the Phoenix"
+            ]
         },
         "layout": 6,
         "density": 4,
@@ -1962,8 +2320,16 @@
         ],
         "poedb": "https://poedb.tw/us/Foundry_Map",
         "boss": {
-            "name": "The Shifting Ire, Ciergan, Shadow Alchemist"
+            "names": [
+                "Ciergan, Shadow Alchemist",
+                "The Shifting Ire"
+            ]
         },
+        "connected": [
+            "Wasteland Map",
+            "Siege Map",
+            "Malformation Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -1999,8 +2365,16 @@
         ],
         "poedb": "https://poedb.tw/us/Frozen_Cabins_Map",
         "boss": {
-            "name": "Captain Clayborne, The Accursed"
+            "names": [
+                "Captain Clayborne, The Accursed"
+            ]
         },
+        "connected": [
+            "Plaza Map",
+            "Conservatory Map",
+            "Cells Map",
+            "Wharf Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2031,8 +2405,14 @@
         ],
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "boss": {
-            "name": "Aulen Greychain"
+            "names": [
+                "Aulen Greychain"
+            ]
         },
+        "connected": [
+            "Necropolis Map",
+            "Arachnid Nest Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2062,12 +2442,20 @@
             "based_on": "Chaos Sentinel",
             "notes": "More powerful version of Grotto boss. In addition to Chaos-storm and Ground Slam summons large whirlwinds which deal Chaos DoT. Pocked miners can release powerful Chaos Sentinels from the walls. Fight can be difficult due to small size of room.",
             "separated": true,
-            "name": "Avatar of Undoing"
+            "names": [
+                "Avatar of Undoing"
+            ]
         },
         "layout": 5,
         "density": 6,
         "tileset": "The Quarry",
         "outdoors": true,
+        "connected": [
+            "Desert Spring Map",
+            "Underground Sea Map",
+            "Necropolis Map",
+            "Arachnid Nest Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "Buried Treasure",
@@ -2106,12 +2494,19 @@
             "difficulty": 5,
             "based_on": "Chaos Sentinel",
             "notes": "Chaos-storm and Ground Slam attack. Summons Pocked Miners after a time.",
-            "name": "Void Anomaly"
+            "names": [
+                "Void Anomaly"
+            ]
         },
         "layout": 4,
         "density": 8,
         "tileset": "The Caverns",
         "few_obstacles": true,
+        "connected": [
+            "Bone Crypt Map",
+            "Primordial Pool Map",
+            "Lair Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "The Mind's Eyes",
@@ -2163,8 +2558,13 @@
         ],
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "boss": {
-            "name": "Maker of Mires"
+            "names": [
+                "Maker of Mires"
+            ]
         },
+        "connected": [
+            "Cemetery Map"
+        ],
         "cards": [
             "Monochrome"
         ],
@@ -2185,7 +2585,9 @@
             "based_on": "Ryslatha, the Puppet Mistress",
             "notes": "Start off by killing the three nests, then the boss will spawn on the central platform. Ryslatha fires projectiles that deal significant Chaos damage and leave green pools that do DoT. The boss' hits also Poison, so bring a Poison removal flask. This fight can be very difficult for characters with low regeneration/sustain.",
             "separated": true,
-            "name": "Gorulis, Will-Thief"
+            "names": [
+                "Gorulis, Will-Thief"
+            ]
         },
         "layout": 9,
         "density": 5,
@@ -2194,6 +2596,11 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of Ryslatha",
+        "connected": [
+            "Dry Sea Map",
+            "Moon Temple Map",
+            "Laboratory Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -2228,7 +2635,9 @@
             "based_on": "The Weaver",
             "notes": "Spiders continually spawn during fight. The boss appears after a while and uses a strong Ethereal Knives ability. The boss is relatively weak, with Flicker Striking spiders representing the real danger in this fight.",
             "separated": true,
-            "name": "Queen of the Great Tangle"
+            "names": [
+                "Queen of the Great Tangle"
+            ]
         },
         "layout": 8,
         "density": 4,
@@ -2236,6 +2645,11 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Thicket Map",
+            "Beach Map",
+            "Crimson Township Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2269,12 +2683,20 @@
             "based_on": "The Unshaped",
             "notes": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT.- this is likely a one shot. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead.",
             "separated": true,
-            "name": "Riftwalker"
+            "names": [
+                "Riftwalker"
+            ]
         },
         "layout": 6,
         "density": 5,
         "tileset": "The Reliquary",
         "linear": true,
+        "connected": [
+            "City Square Map",
+            "Residence Map",
+            "Fields Map",
+            "Infested Valley Map"
+        ],
         "cards": [
             "Azyran's Reward",
             "Her Mask",
@@ -2312,7 +2734,9 @@
             "based_on": "Rigwald",
             "notes": "Annoying boss as Rigwald spends most of his time in invulnerable or near invulnerable states. Channels a Barrage of wolf projectiles that do massive Physical damage. While channelling Rigwald takes 50% less damage. Get behind a nearby obstacle to dodge the projectiles. Rigwald also transforms into wolf form for 8 seconds where he becomes immune to damage and chases your character. Keep moving as in wolf form Rigwald hits hard and inflicts a deadly Bleed.",
             "separated": true,
-            "name": "Lycius, Midnight's Howl"
+            "names": [
+                "Lycius, Midnight's Howl"
+            ]
         },
         "layout": 7,
         "density": 8,
@@ -2320,6 +2744,12 @@
         "few_obstacles": true,
         "linear": true,
         "pantheon": "Soul of Lunaris",
+        "connected": [
+            "Cemetery Map",
+            "Grotto Map",
+            "Lighthouse Map",
+            "Silo Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2364,7 +2794,9 @@
             "based_on": "n/a",
             "notes": "Cannot be slowed. Half Physical, half Cold ranged attacks. Powerful telegraphed Barrage. Blast Rain directly in front of boss. Temporarily disappears summoning minions that leave Vortex ground on death. When the boss reappears, she does an extremely powerful Fork shot. Always try to position your character behind the boss (stay in close range to do this easily). Throughout the fight a constant stream of slow Frostbolts projectiles travel across the arena. More projectiles as the boss gets closer to death.",
             "separated": true,
-            "name": "Guardian of the Hydra"
+            "names": [
+                "Guardian of the Hydra"
+            ]
         },
         "layout": 7,
         "density": 3,
@@ -2400,13 +2832,19 @@
             "based_on": "Nightwane",
             "notes": "Mirror Arrow and Blink Arrow. The real boss is the one that moves around, the copies will always stay still.",
             "separated": true,
-            "name": "Mirage of Bones"
+            "names": [
+                "Mirage of Bones"
+            ]
         },
         "layout": 8,
         "density": 5,
         "tileset": "The Boiling Lake",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Necropolis Map",
+            "Dungeon Map"
+        ],
         "cards": [
             "Bowyer's Dream",
             "The Fletcher",
@@ -2437,7 +2875,12 @@
             "difficulty": 6,
             "based_on": "Redblade Warbands",
             "notes": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities",
-            "name": "Uruk Baleh, El'Abin, Bloodeater, Leli Goya, Daughter of Ash, Bin'aia, Crimson Rain"
+            "names": [
+                "Uruk Baleh",
+                "El'Abin, Bloodeater",
+                "Bin'aia, Crimson Rain",
+                "Leli Goya, Daughter of Ash"
+            ]
         },
         "layout": 8,
         "density": 5,
@@ -2445,6 +2888,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Mineral Pools Map",
+            "Marshes Map",
+            "Primordial Pool Map",
+            "Lair Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2473,8 +2922,14 @@
         ],
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "boss": {
-            "name": "Merveil, the Reflection, Merveil, the Returned"
+            "names": [
+                "Merveil, the Returned",
+                "Merveil, the Reflection"
+            ]
         },
+        "connected": [
+            "Atoll Map"
+        ],
         "cards": [
             "Divine Beauty",
             "The Cacophony",
@@ -2511,13 +2966,21 @@
             "based_on": "Act IV Piety",
             "notes": "Spawns Eyes, Physical Cleave at close range, large Ball Lightning that you should avoid. Spinning Lightning Beam deals massive Lightning damage. If it does not one-shot you it also inflicts a powerful Physical Bleed they must be instantly removed. As this fight is mechanical it is usually not too bad. However, it becomes extremely dangerous with map mods like double boss, boss attack/cast speed or multiple projectiles.",
             "separated": true,
-            "name": "Nightmare Manifest"
+            "names": [
+                "Nightmare Manifest"
+            ]
         },
         "layout": 7,
         "density": 7,
         "tileset": "The Belly of the Beast",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Plaza Map",
+            "Foundry Map",
+            "Museum Map",
+            "Wharf Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2546,8 +3009,13 @@
         ],
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "boss": {
-            "name": "Fairgraves, Never Dying"
+            "names": [
+                "Fairgraves, Never Dying"
+            ]
         },
+        "connected": [
+            "Shore Map"
+        ],
         "cards": [
             "The Skeleton",
             "Abandoned Wealth",
@@ -2578,12 +3046,19 @@
             "based_on": "Barkhul",
             "notes": "Fire/Physical damage. Cyclone leaves Burning Ground. Sunder attack.",
             "separated": true,
-            "name": "Tore, Towering Ancient"
+            "names": [
+                "Tore, Towering Ancient"
+            ]
         },
         "layout": 5,
         "density": 8,
         "tileset": "Maligaro's Sanctum",
         "outdoors": true,
+        "connected": [
+            "Cemetery Map",
+            "Phantasmagoria Map",
+            "Lighthouse Map"
+        ],
         "cards": [
             "Death",
             "Her Mask",
@@ -2612,12 +3087,19 @@
             "difficulty": 6,
             "based_on": "Vaal Oversoul",
             "notes": "Same as Act 2 fight. Kite when boss starts shooting laser beams. Avoid telegraphed slam at all costs.",
-            "name": "Shadow of the Vaal"
+            "names": [
+                "Shadow of the Vaal"
+            ]
         },
         "layout": 3,
         "density": 6,
         "tileset": "The Ancient Pyramid",
         "pantheon": "Soul of Solaris",
+        "connected": [
+            "Colosseum Map",
+            "Defiled Cathedral Map",
+            "Crater Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2657,7 +3139,9 @@
             "based_on": "n/a",
             "notes": "Cannot be slowed. 30% of Physical damage converted to Lightning. Powerful telegraphed slam. Slam area leaves behind falling rocks. Burrows underground and springs upon target with powerful attack. Minotaur always Burrows in a straight line so step to the side when you see it happen. Every 20% health lost a Lightning Wall activates which when touched, applies a temporary, unremovable Shock that slows the player and deals Lightning DoT. Stone Golems are summoned to regain flask charges.",
             "separated": true,
-            "name": "Guardian of the Minotaur"
+            "names": [
+                "Guardian of the Minotaur"
+            ]
         },
         "layout": 8,
         "density": 3,
@@ -2693,12 +3177,21 @@
             "based_on": "Merveil",
             "notes": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
             "separated": true,
-            "name": "Shock and Horror"
+            "names": [
+                "Shock and Horror"
+            ]
         },
         "layout": 2,
         "density": 4,
         "tileset": "The Cavern of Anger",
         "outdoors": true,
+        "connected": [
+            "Tower Map",
+            "Waste Pool Map",
+            "Lighthouse Map",
+            "Shore Map",
+            "Phantasmagoria Map"
+        ],
         "cards": [
             "Divine Beauty",
             "A Sea of Blue",
@@ -2741,13 +3234,20 @@
             "based_on": "Dusk, Harbinger of Lunaris",
             "notes": "Fires Ice shots which Chill the player. When damaged fires more projectiles including some that home in on the player. The orb casts dark Frostbolts which leave patches of hard to see Vortex on the ground dealing cold DoT.",
             "separated": true,
-            "name": "Sebbert, Crescent's Point"
+            "names": [
+                "Sebbert, Crescent's Point"
+            ]
         },
         "layout": 5,
         "density": 10,
         "tileset": "The Lunaris Temple Level 1",
         "few_obstacles": true,
         "pantheon": "Soul of Lunaris",
+        "connected": [
+            "Residence Map",
+            "The Twilight Temple",
+            "Infested Valley Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -2784,11 +3284,18 @@
             "based_on": "Act IV Maligaro",
             "notes": "Heavy and hard to avoid Chaos and Physical damage. Fills room with nasty Chaos cluster traps. Also uses Desecrate and Detonate Dead so keep moving and try to stay out of all the chaos.",
             "separated": true,
-            "name": "He of Many Pieces"
+            "names": [
+                "He of Many Pieces"
+            ]
         },
         "layout": 3,
         "density": 8,
         "tileset": "The Library",
+        "connected": [
+            "The Putrid Cloister",
+            "Crater Map",
+            "Malformation Map"
+        ],
         "cards": [
             "A Dab of Ink",
             "Blind Venture",
@@ -2832,12 +3339,21 @@
             "based_on": "Giant Bonestalker",
             "notes": "Throws three strong Physical projectiles. Summons Animated Weapons. Creates a circular frost wall around your character that prevents movement. Places Bonespire ground beneath your feet that inflicts a stackable, unremovable physical DoT. It is imperative you move out of this quickly. Always bring some form of movement skill (not Shield Charge) that allows you to escape the Frost Wall. Frost Wall + Bonespire ground equates to death.",
             "separated": true,
-            "name": "Burtok, Conjurer of Bones"
+            "names": [
+                "Burtok, Conjurer of Bones"
+            ]
         },
         "layout": 4,
         "density": 7,
         "tileset": "The Crypt",
         "linear": true,
+        "connected": [
+            "Geode Map",
+            "Arid Lake Map",
+            "Fungal Hollow Map",
+            "Death and Taxes",
+            "Leyline Map"
+        ],
         "cards": [
             "The Lich",
             "Grave Knowledge",
@@ -2869,8 +3385,13 @@
         ],
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "boss": {
-            "name": "Olmec, the All Stone"
+            "names": [
+                "Olmec, the All Stone"
+            ]
         },
+        "connected": [
+            "Bone Crypt Map"
+        ],
         "cards": [
             "Monochrome",
             "The Encroaching Darkness",
@@ -2894,12 +3415,20 @@
             "based_on": "Goddess of Justice",
             "notes": "Mortar of Fire based projectiles that can shotgun the player. Summons skeletons and places offerings which deal Chaos or Fire DoT. Channels a laser beam that deals significant Fire DoT. Run behind a pillar to interrupt the beam. Green circle teleports players standing in it - potentially onto labynith traps on around the arena.",
             "separated": true,
-            "name": "Vision of Justice"
+            "names": [
+                "Vision of Justice"
+            ]
         },
         "layout": 5,
         "density": 8,
         "tileset": "The Imperial Gardens",
         "outdoors": true,
+        "connected": [
+            "Primordial Blocks Map",
+            "Strand Map",
+            "Arcade Map",
+            "Courtyard Map"
+        ],
         "cards": [
             "Boon of Justice",
             "Brotherhood in Exile",
@@ -2941,11 +3470,19 @@
             "based_on": "Act VII Maligaro",
             "notes": "Maligaro deals telegraphed Physical attacks that Maim and Poison. When damaged Maligaro will summon the spider Akaveesh and his sex slave Mun'eh. Akaveesh's projectiles are particularly deadly, dealing large amounts of Chaos damage and leaving Chaos DoT ground. When almost dead Maligaro will assault the player with several clones which must be tanked through.",
             "separated": true,
-            "name": "Visceris"
+            "names": [
+                "Visceris"
+            ]
         },
         "layout": 4,
         "density": 7,
         "tileset": "The Chamber of Sins Level 1",
+        "connected": [
+            "Shipyard Map",
+            "Factory Map",
+            "Underground Sea Map",
+            "Flooded Mine Map"
+        ],
         "cards": [
             "Echoes of Love",
             "Emperor of Purity",
@@ -2989,13 +3526,21 @@
             "based_on": "Act IX Maligaro",
             "notes": "Leaves purple spikes on the ground which after a short time deals a Chaos/Physical rain. Maligaro deals modest Physical and Chaos damage with melee attacks and a Spectral Throw projectile. At low life Maligaro splits into several apparitions. These apparitions can be lethal if you let them engage you all at once.",
             "separated": true,
-            "name": "Maligaro the Mutilator"
+            "names": [
+                "Maligaro the Mutilator"
+            ]
         },
         "layout": 7,
         "density": 4,
         "tileset": "The Chamber of Sins Level 1",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Cemetery Map",
+            "Acton's Nightmare",
+            "Precinct Map",
+            "Silo Map"
+        ],
         "cards": [
             "Harmony of Souls",
             "Echoes of Love",
@@ -3037,12 +3582,21 @@
             "based_on": "Act IV Doedre",
             "notes": "Try not to stand in more than one curse aura (Vulnerability being particulary dangerous). Avoid strong physical projectiles.",
             "separated": true,
-            "name": "Erythrophagia"
+            "names": [
+                "Erythrophagia"
+            ]
         },
         "layout": 6,
         "density": 4,
         "tileset": "The Belly of the Beast",
         "linear": true,
+        "connected": [
+            "Sulphur Vents Map",
+            "Marshes Map",
+            "Mineral Pools Map",
+            "Arcade Map",
+            "Forbidden Woods Map"
+        ],
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
@@ -3081,12 +3635,19 @@
             "based_on": "Undying Worker",
             "notes": "Similar to the Bazaar boss without the statues. During the fight small spikes will appear from the ground. At 2/3 and 1/3 health will teleport. You have to traverse a mini trap gauntlet to get to the next area. Don't be afraid to teleport back to your hideout to refresh flask charges.",
             "separated": true,
-            "name": "Ancient Architect"
+            "names": [
+                "Ancient Architect"
+            ]
         },
         "layout": 5,
         "density": 8,
         "tileset": "The Docks",
         "outdoors": true,
+        "connected": [
+            "Armoury Map",
+            "Crystal Ore Map",
+            "Arachnid Nest Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3118,8 +3679,13 @@
         ],
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "boss": {
-            "name": "Talin, Faithbreaker"
+            "names": [
+                "Talin, Faithbreaker"
+            ]
         },
+        "connected": [
+            "Dunes Map"
+        ],
         "cards": [
             "Imperial Legacy",
             "Monochrome",
@@ -3144,13 +3710,22 @@
             "based_on": "Barkhul",
             "notes": "Same as Marshes boss. Strong Physical Cyclone and Physical/Fire Ground Slam. Taunts you, reducing your damage against other enemies. Many waves of enemies spawn in congested room so be careful not to be overwhelmed.",
             "separated": true,
-            "name": "Olof, Son of the Headsman"
+            "names": [
+                "Olof, Son of the Headsman"
+            ]
         },
         "layout": 5,
         "density": 3,
         "tileset": "Daresso's Dream",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Chateau Map",
+            "Courtyard Map",
+            "Forbidden Woods Map",
+            "Arcade Map",
+            "Atoll Map"
+        ],
         "cards": [
             "The Arena Champion",
             "Her Mask",
@@ -3184,7 +3759,9 @@
             "based_on": "n/a",
             "notes": "Cannot be slowed. Modest physical attacks including Flicker Strike and a Flicker Lance that inflicts Bleeding. When he places a red circle beneath him get out - he will perform a flurry of attacks against targets in the area. Throughout the fight are three minion phases where you face waves of powerful adds ending with a mini-boss. Most dangerous ability is the Chimera Smoke Phase - used after any of the add phases. The Chimera disappears into one of many smoke clouds - to uncover the Chimera you must run through the clouds until you find him. While in the Smoke Phase Chimera will constantly deal hard to avoid melee Physical damage attacks. Save flasks for this phase, it especially helps to pop a Basalt/Granite flask. Sometimes you will be unlucky and the Chimera will be hiding in the last smoke cloud :(",
             "separated": true,
-            "name": "Guardian of the Chimera"
+            "names": [
+                "Guardian of the Chimera"
+            ]
         },
         "layout": 7,
         "density": 6,
@@ -3226,7 +3803,10 @@
             "based_on": "Kuduku and Kadaka",
             "notes": "Atoll boss, along with another totem that uses a variety of Lightning spells. Once one is killed the other will restore to full health, gaining new abilities and more damage. For melee characters I advise killing Purina first (cold one) and for ranged characters killing Poporo (lightning one) first. Purina maintains a powerful Ice Nova that can one shot. Poporo has an extremely powerful Vaal Storm Call which you need to get out of asap.",
             "separated": true,
-            "name": "Puruna, the Challenger, Poporo, the Highest Spire"
+            "names": [
+                "Poporo, the Highest Spire",
+                "Puruna, the Challenger"
+            ]
         },
         "layout": 9,
         "density": 2,
@@ -3234,6 +3814,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Toxic Sewer Map",
+            "Waste Pool Map",
+            "Tower Map",
+            "Vaal Pyramid Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3265,11 +3851,19 @@
             "difficulty": 6,
             "based_on": "Goddess of Justice",
             "notes": "Same as Orchard boss except with some Spiky Pillar Labyrinth traps. This time when she channels her deadly beam get behind one of the pillars either side of the room.",
-            "name": "The Goddess"
+            "names": [
+                "The Goddess"
+            ]
         },
         "layout": 3,
         "density": 6,
         "tileset": "The Imperial Gardens",
+        "connected": [
+            "Cold River Map",
+            "Frozen Cabins Map",
+            "Siege Map",
+            "Malformation Map"
+        ],
         "cards": [
             "Boon of Justice",
             "Brotherhood in Exile",
@@ -3301,8 +3895,13 @@
         ],
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "boss": {
-            "name": "Mistress Hyseria"
+            "names": [
+                "Mistress Hyseria"
+            ]
         },
+        "connected": [
+            "Temple Map"
+        ],
         "cards": [
             "The Dreamland",
             "The Encroaching Darkness",
@@ -3333,13 +3932,20 @@
             "based_on": "Knitted Horror",
             "notes": "Like a Russian doll; kill one boss, a smaller one spawns (4 times). Powerful Puncture and Blast Rain.",
             "separated": true,
-            "name": "Unravelling Horror, Unravelling Horror, Unravelling Horror, Unravelling Horror, Unravelling Horror"
+            "names": [
+                "Unravelling Horror"
+            ]
         },
         "layout": 7,
         "density": 6,
         "tileset": "The Quay",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Strand Map",
+            "Atoll Map",
+            "Courtyard Map"
+        ],
         "cards": [
             "Assassin's Favour",
             "Dying Anguish",
@@ -3382,13 +3988,26 @@
             "difficulty": 8,
             "based_on": "2-6 Rogue Exiles",
             "notes": "These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one.",
-            "name": "Orra Greengate, Torr Olgosso, Damoi Tui, Eoin Greyfur, Wilorin Demontamer, Augustina Solaria, Igna Phoenix"
+            "names": [
+                "Orra Greengate",
+                "Torr Olgosso",
+                "Igna Phoenix",
+                "Damoi Tui",
+                "Wilorin Demontamer",
+                "Eoin Greyfur",
+                "Augustina Solaria"
+            ]
         },
         "layout": 6,
         "density": 8,
         "tileset": "The Slums",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Primordial Blocks Map",
+            "Overgrown Shrine Map",
+            "Scriptorium Map"
+        ],
         "cards": [
             "Dying Anguish",
             "Her Mask",
@@ -3422,8 +4041,16 @@
         ],
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "boss": {
-            "name": "High Lithomancer"
+            "names": [
+                "High Lithomancer"
+            ]
         },
+        "connected": [
+            "Cemetery Map",
+            "Orchard Map",
+            "Belfry Map",
+            "Precinct Map"
+        ],
         "cards": [
             "A Sea of Blue",
             "Her Mask",
@@ -3459,7 +4086,9 @@
             "based_on": "Malachai",
             "notes": "Phase 2 Malachai without the hearts/adds and much more room to manoeuvre. Avoid standing on the Fire Traps. Move out of the AoE from his Mortar projectile. His most dangerous attacks are the channelled \"You are being selfish\" tentacles and telegraphed teleport slam which most likely will one-shot. It pays to stay closer to the boss so you can always see when these two abilities are coming.",
             "separated": true,
-            "name": "Nightmare's Omen"
+            "names": [
+                "Nightmare's Omen"
+            ]
         },
         "layout": 8,
         "density": 1,
@@ -3467,6 +4096,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Tower Map",
+            "Stagnation Map",
+            "Lighthouse Map",
+            "Grotto Map"
+        ],
         "cards": [
             "A Modest Request",
             "The Prince of Darkness",
@@ -3500,7 +4135,10 @@
             "difficulty": 5,
             "based_on": "Captain Arteri, Blackguard Mage",
             "notes": "Avenger deals simple Physical Cleave and Double Strike attacks. Mage casts weak Sparks and Conductivity auras on the ground. The Mage also will cast a large, slow-moving Ball Lightning that deals heavy damage so stand clear. The Mage casts Lightning Thorns on the Avenger which reflects Lightning damage back to the attacker. Again, this is extremely dangerous for fast attacking builds so always pay attention (the mage does not cast it on herself so it is usually safest to kill her first).",
-            "name": "Blackguard Avenger, Blackguard Tempest"
+            "names": [
+                "Blackguard Avenger",
+                "Blackguard Tempest"
+            ]
         },
         "layout": 8,
         "density": 4,
@@ -3508,6 +4146,11 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Cursed Crypt Map",
+            "Chateau Map",
+            "Atoll Map"
+        ],
         "cards": [
             "Dying Anguish",
             "Gemcutter's Promise",
@@ -3550,7 +4193,11 @@
             "based_on": "Shackled Hellion, Fighting Bull, Mad Gladiator",
             "notes": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal.",
             "separated": true,
-            "name": "Shredder of Gladiators, Crusher of Gladiators, Bringer of Blood"
+            "names": [
+                "Crusher of Gladiators",
+                "Bringer of Blood",
+                "Shredder of Gladiators"
+            ]
         },
         "layout": 10,
         "density": 1,
@@ -3558,6 +4205,11 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Volcano Map",
+            "Coves Map",
+            "Temple Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3588,7 +4240,9 @@
             "based_on": "Blackguard Duelist",
             "notes": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT.",
             "separated": true,
-            "name": "The Reaver"
+            "names": [
+                "The Reaver"
+            ]
         },
         "layout": 7,
         "density": 6,
@@ -3596,6 +4250,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Shipyard Map",
+            "Crystal Ore Map",
+            "Underground Sea Map",
+            "Arachnid Nest Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3631,12 +4291,19 @@
             "difficulty": 1,
             "based_on": "Colossal Bonestalker",
             "notes": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise",
-            "name": "Litanius, the Black Prayer"
+            "names": [
+                "Litanius, the Black Prayer"
+            ]
         },
         "layout": 5,
         "density": 6,
         "tileset": "The Reliquary",
         "linear": true,
+        "connected": [
+            "Shipyard Map",
+            "Flooded Mine Map",
+            "Shore Map"
+        ],
         "cards": [
             "Azyran's Reward",
             "Blind Venture",
@@ -3672,12 +4339,19 @@
             "based_on": "Caliga, Imperatrix",
             "notes": "Throws powerful Lightning and Fire traps. Beware of Bear trap that can immobilize you, allowing the boss to spam traps at your location.",
             "separated": true,
-            "name": "Excellis Aurafix"
+            "names": [
+                "Excellis Aurafix"
+            ]
         },
         "layout": 4,
         "density": 8,
         "tileset": "The Sceptre of God",
         "few_obstacles": true,
+        "connected": [
+            "Castle Ruins Map",
+            "Moon Temple Map",
+            "Laboratory Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3719,11 +4393,18 @@
             "based_on": "Act IV Shavronne",
             "notes": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die.",
             "separated": true,
-            "name": "Gisale, Thought Thief"
+            "names": [
+                "Gisale, Thought Thief"
+            ]
         },
         "layout": 3,
         "density": 7,
         "tileset": "The Library",
+        "connected": [
+            "Belfry Map",
+            "Precinct Map",
+            "Silo Map"
+        ],
         "cards": [
             "The Aesthete",
             "The Offering",
@@ -3763,12 +4444,22 @@
             "difficulty": 7,
             "based_on": "Brinerot Warbands",
             "notes": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy.",
-            "name": "Musky \"Two-Eyes\" Grenn, Susara, Siren of Pondium, Lussi \"Rotmother\" Roth"
+            "names": [
+                "Susara, Siren of Pondium",
+                "Lussi \"Rotmother\" Roth",
+                "Musky \"Two-Eyes\" Grenn"
+            ]
         },
         "layout": 5,
         "density": 3,
         "tileset": "The Docks",
         "outdoors": true,
+        "connected": [
+            "Canyon Map",
+            "Overgrown Ruin Map",
+            "Ramparts Map",
+            "Relic Chambers Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3802,7 +4493,9 @@
             "difficulty": 3,
             "based_on": "Fairgraves Eternal",
             "notes": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
-            "name": "Belcer, the Pirate Lord"
+            "names": [
+                "Belcer, the Pirate Lord"
+            ]
         },
         "layout": 9,
         "density": 1,
@@ -3810,6 +4503,13 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Sulphur Vents Map",
+            "Canyon Map",
+            "Mao Kun",
+            "Relic Chambers Map",
+            "Mineral Pools Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3850,11 +4550,20 @@
             "based_on": "Act III Piety",
             "notes": "Weak Arc and Ball Lightning. Stay out of Vaal Storm Call. Some builds can tank her fire form, if not just kite. In ice form take cover behind the pillars as her Ice Shot does significant damage.",
             "separated": true,
-            "name": "Piety the Empyrean, Piety the Empyrean"
+            "names": [
+                "Piety the Empyrean"
+            ]
         },
         "layout": 3,
         "density": 10,
         "tileset": "The Lunaris Temple Level 1",
+        "connected": [
+            "Tower Map",
+            "Dunes Map",
+            "Stagnation Map",
+            "Excavation Map",
+            "Vaal Pyramid Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3885,7 +4594,9 @@
             "difficulty": 8,
             "based_on": "Tukohama",
             "notes": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain.",
-            "name": "Tahsin, Warmaker"
+            "names": [
+                "Tahsin, Warmaker"
+            ]
         },
         "layout": 8,
         "density": 9,
@@ -3894,6 +4605,13 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of Tukohama",
+        "connected": [
+            "Arachnid Tomb Map",
+            "Caldera Map",
+            "Plaza Map",
+            "Foundry Map",
+            "Crimson Temple Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -3923,8 +4641,16 @@
         ],
         "poedb": "https://poedb.tw/us/Silo_Map",
         "boss": {
-            "name": "Renkarr, The Kiln Keeper"
+            "names": [
+                "Renkarr, The Kiln Keeper"
+            ]
         },
+        "connected": [
+            "Bone Crypt Map",
+            "Overgrown Shrine Map",
+            "Lair Map",
+            "Scriptorium Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -3958,8 +4684,15 @@
         ],
         "poedb": "https://poedb.tw/us/Stagnation_Map",
         "boss": {
-            "name": "Murgeth Bogsong"
+            "names": [
+                "Murgeth Bogsong"
+            ]
         },
+        "connected": [
+            "Primordial Pool Map",
+            "Shrine Map",
+            "Alleyways Map"
+        ],
         "cards": [
             "The Bitter Blossom",
             "The Offspring",
@@ -3996,7 +4729,10 @@
             "based_on": "Calaf, Headstaver,\nKraityn",
             "notes": "Kraityn can hit hard and fast. In particular watch out for his Blade Flurry. Calaf is fairly unthreatening as well as being easy to kite.",
             "separated": true,
-            "name": "Master of the Blade, Massier"
+            "names": [
+                "Massier",
+                "Master of the Blade"
+            ]
         },
         "layout": 10,
         "density": 1,
@@ -4004,6 +4740,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Whakawairua Tuahu",
+            "Orchard Map",
+            "Port Map",
+            "Belfry Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -4049,13 +4791,21 @@
             "based_on": "The Basilisk",
             "notes": "Telegraphed Flamethrower and Petrify attacks, keep behind the boss. Weak projectile barrage. After killing boss, petrified monsters are freed.",
             "separated": true,
-            "name": "The Gorgon"
+            "names": [
+                "The Gorgon"
+            ]
         },
         "layout": 7,
         "density": 5,
         "tileset": "The Boiling Lake",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Flooded Mine Map",
+            "Crimson Temple Map",
+            "Phantasmagoria Map",
+            "Shore Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -4081,7 +4831,9 @@
         ],
         "poedb": "https://poedb.tw/us/Synthesised_Map",
         "boss": {
-            "name": "Tahsin, Warmaker"
+            "names": [
+                "Tahsin, Warmaker"
+            ]
         },
         "cards": [],
         "wiki": "https://www.poewiki.net/wiki/Synthesised_Map"
@@ -4101,13 +4853,22 @@
             "based_on": "Dawn, Harbinger of Solaris",
             "notes": "Scorching Ray, debuffs Fire resistance. Casts Bladefall. Throws Fire based projectile that splits into smaller ones. Sun orb casts a fire laser that leaves Burning Ground.",
             "separated": true,
-            "name": "Jorus, Sky's Edge"
+            "names": [
+                "Jorus, Sky's Edge"
+            ]
         },
         "layout": 6,
         "density": 5,
         "tileset": "The Solaris Temple Level 1",
         "few_obstacles": true,
         "pantheon": "Soul of Solaris",
+        "connected": [
+            "Racecourse Map",
+            "Tropical Island Map",
+            "Poorjoy's Asylum",
+            "Thicket Map",
+            "Defiled Cathedral Map"
+        ],
         "cards": [
             "Forbidden Power",
             "Boundless Realms",
@@ -4150,7 +4911,9 @@
             "based_on": "Yugul",
             "notes": "Leap Slam. Charge attack. Powerful telegraphed \"Cone Strike' deals Physical and Cold damage. After 90% life summons Mercury totems that summon piercing projectiles which explode for Cold damage after 3 seconds (only one totem active at a time). Every 5% life lost a small invulnerable white orb is spawned which chills and applies cold DoT on contact. At 2/3 and 1/3 health Yugul disappears summoning several weak clones of Yugul that use basic melee attacks.",
             "separated": true,
-            "name": "Varhesh, Shimmering Aberration"
+            "names": [
+                "Varhesh, Shimmering Aberration"
+            ]
         },
         "layout": 6,
         "density": 6,
@@ -4158,6 +4921,11 @@
         "outdoors": true,
         "linear": true,
         "pantheon": "Soul of Yugul",
+        "connected": [
+            "Underground River Map",
+            "Crater Map",
+            "Colosseum Map"
+        ],
         "cards": [
             "Ambitious Obsession",
             "More is Never Enough",
@@ -4193,8 +4961,13 @@
         ],
         "poedb": "https://poedb.tw/us/The_Cowards_Trial",
         "boss": {
-            "name": "Infector of Dreams"
+            "names": [
+                "Infector of Dreams"
+            ]
         },
+        "connected": [
+            "Cursed Crypt Map"
+        ],
         "cards": [
             "The Craving",
             "Grave Knowledge",
@@ -4220,8 +4993,13 @@
         ],
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "boss": {
-            "name": "Headmistress Braeta"
+            "names": [
+                "Headmistress Braeta"
+            ]
         },
+        "connected": [
+            "Museum Map"
+        ],
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
@@ -4248,8 +5026,14 @@
         ],
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "boss": {
-            "name": "Helial, the Day Unending, Selenia, the Endless Night"
+            "names": [
+                "Helial, the Day Unending",
+                "Selenia, the Endless Night"
+            ]
         },
+        "connected": [
+            "Moon Temple Map"
+        ],
         "cards": [
             "Forbidden Power",
             "The Progeny of Lunaris",
@@ -4280,7 +5064,9 @@
         ],
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "boss": {
-            "name": "Avatar of Thunder"
+            "names": [
+                "Avatar of Thunder"
+            ]
         },
         "cards": [
             "Monochrome",
@@ -4304,11 +5090,19 @@
             "based_on": "Blood Chieftain",
             "notes": "Summons small monkeys and frenzies allies. Physical Sunder attack. Will periodically start spamming Sunder which can dish out extreme physical damage if caught unaware. Just kite the boss in a circle when this starts happening.",
             "separated": true,
-            "name": "The Primal One"
+            "names": [
+                "The Primal One"
+            ]
         },
         "layout": 5,
         "density": 4,
         "tileset": "The Dread Thicket",
+        "connected": [
+            "Desert Spring Map",
+            "Temple Map",
+            "Jungle Valley Map",
+            "Barrows Map"
+        ],
         "cards": [
             "Call to the First Ones",
             "Her Mask",
@@ -4345,12 +5139,21 @@
             "based_on": "Act VI Shavronne/Brutus",
             "notes": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus.",
             "separated": true,
-            "name": "Liantra, Bazur"
+            "names": [
+                "Bazur",
+                "Liantra"
+            ]
         },
         "layout": 4,
         "density": 7,
         "tileset": "Shavronne's Tower",
         "linear": true,
+        "connected": [
+            "Mineral Pools Map",
+            "Primordial Pool Map",
+            "Shrine Map",
+            "Plateau Map"
+        ],
         "cards": [
             "The Aesthete",
             "The Offering",
@@ -4386,7 +5189,9 @@
             "difficulty": 6,
             "based_on": "Black Death",
             "notes": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
-            "name": "Arachnoxia"
+            "names": [
+                "Arachnoxia"
+            ]
         },
         "layout": 9,
         "density": 6,
@@ -4394,6 +5199,12 @@
         "few_obstacles": true,
         "linear": true,
         "pantheon": "Soul of Arakaali",
+        "connected": [
+            "City Square Map",
+            "Canyon Map",
+            "Coral Ruins Map",
+            "Plateau Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -4431,7 +5242,9 @@
             "difficulty": 2,
             "based_on": "Chieftain, Aidan the Frenzied, Nadia the Soothing",
             "notes": "Has 'allies deal substantial extra physical damage' aura. Summons monkeys and frenzies allies. Boss itself is slow and does little damage. At 50% health summons two small unique monkeys with Haste and slowing auras.",
-            "name": "Blood Progenitor"
+            "names": [
+                "Blood Progenitor"
+            ]
         },
         "layout": 9,
         "density": 1,
@@ -4439,6 +5252,12 @@
         "few_obstacles": true,
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Coves Map",
+            "Temple Map",
+            "Arsenal Map",
+            "Barrows Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -4476,13 +5295,20 @@
             "based_on": "Q'uru",
             "notes": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage.",
             "separated": true,
-            "name": "It That Fell"
+            "names": [
+                "It That Fell"
+            ]
         },
         "layout": 7,
         "density": 3,
         "tileset": "The Caverns",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Caer Blaidd, Wolfpack's Den",
+            "Dig Map",
+            "Terrace Map"
+        ],
         "cards": [
             "The Scavenger",
             "Her Mask",
@@ -4517,11 +5343,21 @@
             "based_on": "Merveil (First Form)",
             "notes": "Ice based spells and Chilled ground. Avoid Icestorm and Ice Spear attacks. Take along some form of Freeze immunity.",
             "separated": true,
-            "name": "Merveil, the Reflection, Merveil, the Returned"
+            "names": [
+                "Merveil, the Returned",
+                "Merveil, the Reflection"
+            ]
         },
         "layout": 5,
         "density": 10,
         "tileset": "The Cavern of Anger",
+        "connected": [
+            "Geode Map",
+            "Ramparts Map",
+            "Beach Map",
+            "Oba's Cursed Trove",
+            "Overgrown Ruin Map"
+        ],
         "cards": [
             "Divine Beauty",
             "The Cacophony",
@@ -4567,11 +5403,22 @@
             "based_on": "Alal the Terrifying, Kali the Crazed, Orcus the Reaver",
             "notes": "Bosses spawn one at a time, after a delay of around 5-10 seconds. The first boss, the Whipping Miscreation is most dangerous inflicting Vulnerabililty and dealing massive Physical damage. The Tentacle Miscareation buffs nearby enemies and shoots easily avoidable projectiles. The Reaver has a large AoE but doesn't deal substantial damage. Try to kill each boss before the next spawns.",
             "separated": true,
-            "name": "The Broken Prince, The Fallen Queen, The Hollow Lady"
+            "names": [
+                "The Fallen Queen",
+                "The Hollow Lady",
+                "The Broken Prince"
+            ]
         },
         "layout": 3,
         "density": 7,
         "tileset": "The Ancient Pyramid",
+        "connected": [
+            "Fields Map",
+            "Vaults of Atziri",
+            "Plateau Map",
+            "City Square Map",
+            "Shrine Map"
+        ],
         "cards": [
             "Arrogance of the Vaal",
             "Her Mask",
@@ -4612,7 +5459,11 @@
             "based_on": "A'alai, Q'ura, Y'ara'az",
             "notes": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
             "separated": true,
-            "name": "K'aj Q'ura, K'aj Y'ara'az, K'aj A'alai"
+            "names": [
+                "K'aj Q'ura",
+                "K'aj A'alai",
+                "K'aj Y'ara'az"
+            ]
         },
         "layout": 3,
         "density": 7,
@@ -4649,6 +5500,9 @@
         ],
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "boss": {},
+        "connected": [
+            "Vaal Pyramid Map"
+        ],
         "cards": [
             "Atziri's Arsenal",
             "Monochrome",
@@ -4684,12 +5538,18 @@
             "difficulty": 4,
             "based_on": "Torchoak Grove",
             "notes": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage.",
-            "name": "Forest of Flames"
+            "names": [
+                "Forest of Flames"
+            ]
         },
         "layout": 4,
         "density": 6,
         "tileset": "Kaom's Dream",
         "outdoors": true,
+        "connected": [
+            "Colosseum Map",
+            "Racecourse Map"
+        ],
         "cards": [
             "Her Mask",
             "Hope",
@@ -4727,13 +5587,20 @@
             "based_on": "Act VIII Doedre",
             "notes": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
             "separated": true,
-            "name": "Portentia, the Foul"
+            "names": [
+                "Portentia, the Foul"
+            ]
         },
         "layout": 8,
         "density": 2,
         "tileset": "Doedre's Cesspool",
         "few_obstacles": true,
         "linear": true,
+        "connected": [
+            "Mineral Pools Map",
+            "Canyon Map",
+            "Plateau Map"
+        ],
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
@@ -4770,13 +5637,19 @@
             "difficulty": 5,
             "based_on": "Voll, Emperor of Purity",
             "notes": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable.",
-            "name": "The Brittle Emperor"
+            "names": [
+                "The Brittle Emperor"
+            ]
         },
         "layout": 4,
         "density": 5,
         "tileset": "The Dried Lake",
         "few_obstacles": true,
         "outdoors": true,
+        "connected": [
+            "Foundry Map",
+            "Caldera Map"
+        ],
         "cards": [
             "The Brittle Emperor",
             "Her Mask",
@@ -4805,8 +5678,13 @@
         ],
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "boss": {
-            "name": "Tormented Temptress"
+            "names": [
+                "Tormented Temptress"
+            ]
         },
+        "connected": [
+            "Strand Map"
+        ],
         "cards": [
             "Divine Beauty",
             "Lantador's Lost Love",
@@ -4840,13 +5718,21 @@
             "difficulty": 2,
             "based_on": "Lightning Golem",
             "notes": "Weak Lightning spells. Summons 6 Flood Orbs which use an unthreatening Cyclone. Boss is tanky.",
-            "name": "Stone of the Currents"
+            "names": [
+                "Stone of the Currents"
+            ]
         },
         "layout": 7,
         "density": 5,
         "tileset": "The Docks",
         "outdoors": true,
         "linear": true,
+        "connected": [
+            "Defiled Cathedral Map",
+            "Crater Map",
+            "Frozen Cabins Map",
+            "Malformation Map"
+        ],
         "cards": [
             "Terrible Secret of Space",
             "Her Mask",

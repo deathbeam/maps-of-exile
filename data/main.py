@@ -114,7 +114,9 @@ def get_map_data(map_data, cards, config):
 		name = cols[0].text.strip().lower()
 		value = cols[1]
 		if name == "boss":
-			map_data["boss"]["name"] = ", ".join(map(lambda x: x.text, value.find_all("a")))
+			map_data["boss"]["names"] = list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+		elif name == "atlas linked":
+			map_data["connected"] = list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
 
 	# Card data
 	wiki_name = map_data["name"].replace(" ", "_")

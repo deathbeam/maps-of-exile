@@ -134,7 +134,7 @@ function cardDisplay(card) {
 
   badgeClass = `badge badge-pill text-dark ${badgeClass}`
   return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-    {img && <img src={img} alt="" width="16" height="16" />} {card.name} {card.score}
+    {img && <img src={img} alt="" width="16" height="16" />} {card.name}
   </a>{' '}
   </Fragment>
 }

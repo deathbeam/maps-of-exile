@@ -3,6 +3,7 @@ import './App.css'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
 import {useState, Fragment} from 'react'
+import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
@@ -68,8 +69,7 @@ function tierColor(map) {
 
 function buildTags(map) {
   return map.tags.map(t => <Fragment>
-    <span className="badge badge-pill text-dark bg-secondary">{t}</span>
-    {' '}
+    <span className="badge badge-pill text-dark bg-secondary m-1">{t}</span>
   </Fragment>)
 }
 
@@ -122,7 +122,7 @@ function cardDisplay(card) {
     badgeClass = "bg-primary"
   }
 
-  let img = null
+  let img = alch
 
   if (card.price >= 100) {
     img = divine
@@ -132,11 +132,16 @@ function cardDisplay(card) {
     img = chaos
   }
 
-  badgeClass = `badge badge-pill text-dark ${badgeClass}`
-  return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-    {img && <img src={img} alt="" width="16" height="16" />} {card.name}
-  </a>{' '}
-  </Fragment>
+  badgeClass = `badge badge-pill text-dark m-1 ${badgeClass}`
+  return <span className="tooltip-tag">
+    <span className="tooltip-tag-text">
+      <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/><br/>
+      {card.value > 0 && <Fragment><b>Score</b>: {Math.round(card.value * 100) / 100}</Fragment>}
+    </span>
+    <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
+     <img src={img} alt="" width="16" height="16" /> {card.name}
+    </a>
+  </span>
 }
 
 function calculateScore(dataset) {

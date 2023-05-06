@@ -1,20 +1,40 @@
+/* Tooltip container */
+.tooltip-tag {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
 .tooltip-tag .tooltip-tag-text {
-    padding: 8px 5px;
     visibility: hidden;
-    min-width: 200px;
-    max-width: 400px;
+    min-width: 300px;
     background-color: black;
     color: #fff;
     text-align: center;
+    padding: 8px 5px;
     border-radius: 5px;
-    line-height: normal;
-    font-size: smaller;
     position: absolute;
+    z-index: 999;
+    top: -5px;
+    right: 105%;
     pointer-events: none;
+    line-height: normal;
+    font-weight: normal;
+    font-size: smaller;
+}
+
+.tooltip-tag .tooltip-tag-text::after {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    left: 100%; /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
 }
 
 .tooltip-tag:hover .tooltip-tag-text {
     visibility: visible;
 }
-
 

@@ -41,7 +41,7 @@ def get_card_data(key, league, config):
 		card = {
 			"name": price_card["name"],
 			"price": price_card["chaosValue"],
-			"ninja": config["ninja"].replace("{league}", league.lower()).replace("{id}", price_card["detailsId"])
+			"ninja": config["ninja"].replace("{}", price_card["detailsId"])
 		}
 
 		rate_card = next((x for x in rates if x[0] == card["name"]), None)

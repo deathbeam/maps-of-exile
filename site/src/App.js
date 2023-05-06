@@ -248,7 +248,7 @@ function App() {
         <tbody>
         {mapAndRateMaps(preparedMaps, searchInput, layoutInput, densityInput, bossInput, cardInput).map(m =>
           <tr>
-            <td><b>{Math.round(m.score)}</b></td>
+            <td><b>{Math.round(m.score || 0)}</b></td>
             <td><a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a></td>
             <td>{ratingBadge(m.layout)}</td>
             <td>{ratingBadge(m.density)}</td>

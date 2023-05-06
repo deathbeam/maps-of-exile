@@ -6,16 +6,16 @@ difficulty but that usually isn't the deciding factor.
 
 ## Sources of data
 
-**Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:
+**Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  
 https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4/edit
 
-**Map metadata** from **PoeDB**:
-https://poedb.tw/us/Maps#MapsList
-https://poedb.tw/us/Colonnade_Map (example of single map)
+**Map metadata** from **PoeDB**:  
+https://poedb.tw/us/Maps#MapsList  
+https://poedb.tw/us/Colonnade_Map (example of single map)  
 
-**Card prices** from **PoeNinja**:
-https://poe.ninja/challenge/divination-cards
-https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
+**Card prices** from **PoeNinja**:  
+https://poe.ninja/challenge/divination-cards  
+https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)  
 
-**Card drops** from **PoeWiki**:
-https://www.poewiki.net/wiki/Colonnade_Map
+**Card drops** from **PoeWiki**:  
+https://www.poewiki.net/wiki/Colonnade_Map  

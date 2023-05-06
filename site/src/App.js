@@ -7,6 +7,53 @@ import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
 
+const preparedCards = cards.map(card => {
+  return {
+    value: card.rate ? parseFloat(card.price) * parseFloat(card.rate) : null,
+    ...card
+  }
+})
+
+const preparedMaps = maps.map(map => {
+  const mapCards = []
+
+  for (let card of map.cards) {
+    const cardData = preparedCards.find(c => c.name === card)
+    if (cardData) {
+      mapCards.push({
+        ...cardData
+      })
+    } else {
+      mapCards.push({
+        name: card
+      })
+    }
+  }
+
+  const mapTags = []
+  if (map.boss.separated) {
+    mapTags.push("boss separated")
+  }
+  if (map.few_obstacles) {
+    mapTags.push("few obstacles")
+  }
+  if (map.outdoors) {
+    mapTags.push("outdoors")
+  }
+  if (map.linear) {
+    mapTags.push("linear")
+  }
+  if (map.pantheon) {
+    mapTags.push(map.pantheon)
+  }
+
+  return {
+    ...map,
+    cards: mapCards,
+    tags: mapTags
+  }
+})
+
 function tierColor(map) {
   const naturalTier = map.tiers[0]
 
@@ -20,24 +67,7 @@ function tierColor(map) {
 }
 
 function buildTags(map) {
-  const tags = []
-  if (map.boss.separated) {
-    tags.push("boss separated")
-  }
-  if (map.few_obstacles) {
-    tags.push("few obstacles")
-  }
-  if (map.outdoors) {
-    tags.push("outdoors")
-  }
-  if (map.linear) {
-    tags.push("linear")
-  }
-  if (map.pantheon) {
-    tags.push(map.pantheon)
-  }
-
-  return tags.map(t => <Fragment>
+  return map.tags.map(t => <Fragment>
     <span className="badge badge-pill text-dark bg-secondary">{t}</span>
     {' '}
   </Fragment>)
@@ -104,47 +134,38 @@ function cardDisplay(card) {
 
   badgeClass = `badge badge-pill text-dark ${badgeClass}`
   return <Fragment><a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-    {img && <img src={img} width="16" height="16" />} {card.name}
+    {img && <img src={img} alt="" width="16" height="16" />} {card.name} {card.score}
   </a>{' '}
   </Fragment>
 }
 
-function getCardValue(card) {
-  if (!card || !card.rate) {
-    return 0
-  }
-
-  return (parseFloat(card.price) * parseFloat(card.rate))
-}
-
 function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(m => m.value != null)
+  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
   const min = Math.min(...nonzerodataset.map(o => o.value))
   const max = Math.max(...nonzerodataset.map(o => o.value)) - min
+  const out = []
 
   for (let entry of dataset) {
-    entry.score = 100 * (entry.value - min) / max
+    if (entry.value) {
+      out.push({
+        ...entry,
+        score: 100 * (entry.value - min) / max
+      })
+    } else {
+      out.push(entry)
+    }
   }
 
-  return dataset
+  return out
 }
 
 function mapAndRateCards(foundCards) {
-  let out = []
-
-  for (let card of cards) {
-    out.push({
-      ...card,
-      value: getCardValue(card)
-    })
-  }
-
-  return calculateScore(out)
-    .filter(c => foundCards.includes(c.name))
-    .sort((a, b) => b.score - a.score)
+  return calculateScore(preparedCards)
+    .filter(c => foundCards.find(fc => fc.name === c.name))
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
-function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossInput, cardInput) {
+function mapAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bossInput, cardInput) {
   let out = []
 
   for (let map of foundMaps) {
@@ -154,8 +175,7 @@ function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bo
     let cardValue = 0
 
     for (let card of map.cards) {
-      const cardData = cards.find(c => c.name === card)
-      cardValue += getCardValue(cardData)
+      cardValue += (card.value || 0)
     }
 
     cardValue = cardValue * cardInput
@@ -168,9 +188,10 @@ function filterAndRateMaps(foundMaps, searchInput, layoutInput, densityInput, bo
   return calculateScore(out)
     .filter(m => !searchInput
       || m.name.toLowerCase().includes(searchInput.toLowerCase())
-      || m.cards.find(c => c.toLowerCase().includes(searchInput.toLowerCase()))
+      || m.cards.find(c => c.name.toLowerCase().includes(searchInput.toLowerCase()))
+      || m.tags.find(t => t.toLowerCase().includes(searchInput.toLowerCase()))
     )
-    .sort((a, b) => b.score - a.score)
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
 function App() {
@@ -186,7 +207,7 @@ function App() {
         <div className="row">
           <div className="col">
             <label className="form-label text-light">Search</label>
-            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map or card" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
+            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Layout weight</label>
@@ -219,7 +240,7 @@ function App() {
         </tr>
         </thead>
         <tbody>
-        {filterAndRateMaps(maps, searchInput, layoutInput, densityInput, bossInput, cardInput).map(m =>
+        {mapAndRateMaps(preparedMaps, searchInput, layoutInput, densityInput, bossInput, cardInput).map(m =>
           <tr>
             <td><b>{Math.round(m.score)}</b></td>
             <td><a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a></td>

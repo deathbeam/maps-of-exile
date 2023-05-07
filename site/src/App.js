@@ -58,6 +58,8 @@ const preparedMaps = maps.map(map => {
 
   return {
     ...map,
+    name: map.name.replace(" Map", ""),
+    connected: (map.connected || []).map(c => c.replace(" Map", "")),
     cards: mapCards,
     tags: mapTags
   }
@@ -125,10 +127,10 @@ const MapBoss = ({ boss }) => {
 }
 
 const ConnectedMaps = ({ connected, ratedMaps }) => {
-  return (connected || []).map(m => <span className="badge text-dark bg-secondary me-1">
+  return (connected || []).map(m => <><span className="badge text-dark bg-secondary me-1">
     <b>{Math.round((ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0) + ' '}</b>
     {m}
-  </span>)
+  </span><br/></>)
 }
 
 const MapCard = ({ card }) => {
@@ -336,7 +338,7 @@ function App() {
               Boss
             </span>
           </th>
-          <th scope="col">Connected Maps</th>
+          <th scope="col">Connected</th>
           <th scope="col">Cards</th>
         </tr>
         </thead>

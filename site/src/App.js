@@ -114,9 +114,7 @@ const MapBoss = ({ boss }) => {
   if (boss.names || boss.notes) {
     return <span className="tooltip-tag tooltip-tag-right">
       <span className="tooltip-tag-text">
-        <p>
-          {boss.names.map(b => <span className="badge bg-info me-1"><b>{b}</b></span>)}
-        </p>
+        {boss.names.map(b => <b>{b}<br/></b>)}
         {boss.notes}
       </span>
       {badge}

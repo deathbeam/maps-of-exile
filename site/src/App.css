@@ -1,3 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .tooltip-tag {
     position: relative;
     display: inline-block;

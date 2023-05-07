@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {useState, Fragment, useMemo} from 'react'
+import {useState, useMemo} from 'react'
 import debounce from 'lodash.debounce'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
@@ -69,11 +69,7 @@ function tierColor(map) {
   }
 }
 
-function buildTags(map) {
-  return map.tags.map(t => <span className="badge rounded-pill text-dark bg-secondary me-1">{t}</span>)
-}
-
-function ratingBadge(rating, inverse) {
+const RatingBadge = ({ rating, inverse = false }) => {
   let badgeClass = "bg-danger"
 
   if (rating == null) {
@@ -94,32 +90,36 @@ function ratingBadge(rating, inverse) {
   return <span className={badgeClass}>{rating}</span>
 }
 
-function bossDisplay(map) {
-  const out = ratingBadge(map.boss.difficulty, true)
+const MapTags = ({ tags }) => {
+  return tags.map(t => <span className="badge rounded-pill text-dark bg-secondary me-1">{t}</span>)
+}
 
-  if (map.boss.names || map.boss.notes) {
+const MapBoss = ({ boss }) => {
+  const badge = <RatingBadge rating={boss.difficulty} inverse={true} />
+
+  if (boss.names || boss.notes) {
     return <span className="tooltip-tag tooltip-tag-right">
       <span className="tooltip-tag-text">
         <p>
-          {map.boss.names.map(b => <span className="badge text-dark bg-info me-1"><b>{b}</b></span>)}
+          {boss.names.map(b => <span className="badge text-dark bg-info me-1"><b>{b}</b></span>)}
         </p>
-        {map.boss.notes}
+        {boss.notes}
       </span>
-      {out}
+      {badge}
     </span>
   }
 
-  return out
+  return badge
 }
 
-function connectedDisplay(map, ratedMaps) {
-  return (map.connected || []).map(m => <span className="badge text-dark bg-secondary me-1">
+const ConnectedMaps = ({ connected, ratedMaps }) => {
+  return (connected || []).map(m => <span className="badge text-dark bg-secondary me-1">
     <b>{Math.round((ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0) + ' '}</b>
     {m}
   </span>)
 }
 
-function cardDisplay(card) {
+const MapCard = ({ card }) => {
   let badgeClass = "bg-secondary"
 
   if (card.score >= 50) {
@@ -146,13 +146,19 @@ function cardDisplay(card) {
   return <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
     <span className="tooltip-tag-text">
       <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/>
-      {card.rate && <Fragment><br/><b>* Rate</b>: {Math.round(card.rate * 10000) / 10000} %</Fragment>}
-      {card.value > 0 && <Fragment><br/><b>= Score</b>: {Math.round(card.value * 100) / 100}</Fragment>}
+      {card.rate && <><br/><b>* Rate</b>: {Math.round(card.rate * 10000) / 10000} %</>}
+      {card.value > 0 && <><br/><b>= Score</b>: {Math.round(card.value * 100) / 100}</>}
     </span>
     <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
      <img src={img} alt="" width="16" height="16" /> {card.name}
     </a>
   </span>
+}
+
+const MapCards = ({ cards, ratedCards }) => {
+  return ratedCards
+    .filter(c => cards.find(fc => fc.name === c.name))
+    .map(c => <MapCard key={c.name} card={c}/>)
 }
 
 function calculateScore(dataset) {
@@ -176,8 +182,7 @@ function calculateScore(dataset) {
 }
 
 function mapAndRateCards(foundCards) {
-  return calculateScore(preparedCards)
-    .filter(c => foundCards.find(fc => fc.name === c.name))
+  return calculateScore(foundCards)
     .sort((a, b) => b.price - a.price)
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
@@ -242,7 +247,8 @@ function App() {
   const debouncedCard = useMemo(() => debounce(e => withLoading(false, setCardInput)(e.target.value), 300), [])
   const startCard = e => withLoading(true, debouncedCard)(e)
 
-  const ratedMaps = mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput)
+  const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [preparedMaps, layoutInput, densityInput, bossInput, cardInput])
+  const ratedCards = useMemo(() => mapAndRateCards(preparedCards), [preparedCards])
 
   return (
     <div className="bg-dark">
@@ -320,18 +326,18 @@ function App() {
         </thead>
         <tbody>
         {filterMaps(ratedMaps, searchInput).map(m =>
-          <tr>
+          <tr key={m.name}>
             <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
             <td>
               <a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a>
               <br/>
-              {buildTags(m)}
+              <MapTags tags={m.tags}/>
             </td>
-            <td className="text-center">{ratingBadge(m.layout)}</td>
-            <td className="text-center">{ratingBadge(m.density)}</td>
-            <td className="text-center">{bossDisplay(m)}</td>
-            <td>{connectedDisplay(m, ratedMaps)}</td>
-            <td>{mapAndRateCards(m.cards).map(c => cardDisplay(c))}</td>
+            <td className="text-center"><RatingBadge rating={m.layout}/></td>
+            <td className="text-center"><RatingBadge rating={m.density}/></td>
+            <td className="text-center"><MapBoss boss={m.boss}/></td>
+            <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
+            <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>
           </tr>
         )}
         </tbody>

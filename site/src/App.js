@@ -309,7 +309,7 @@ function App() {
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right">
               <span className="tooltip-tag-text">
-                Boss difficulty, e.g how scary it is to kill. This rating do not includes boss fight lengtht (phases for example).
+                Boss difficulty, e.g how scary it is to kill. This rating do not includes boss fight length (phases for example).
               </span>
               Boss
             </span>

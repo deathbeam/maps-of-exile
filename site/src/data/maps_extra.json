@@ -274,14 +274,11 @@
         "name": "Cold River Map",
         "filled": true,
         "layout": {
-            "rating": 6,
-            "density": 5,
             "outdoors": true,
             "good_for_open_mechanics": true,
             "good_for_deli_mirror": false
         },
         "boss": {
-            "difficulty": 8,
             "spawn_at_load": true,
             "close_to_start": true,
             "phases": false
@@ -408,15 +405,12 @@
         "name": "Crimson Township Map",
         "filled": true,
         "layout": {
-            "rating": 7,
-            "density": 4,
             "linear": true,
             "outdoors": true,
             "good_for_open_mechanics": false,
             "good_for_deli_mirror": false
         },
         "boss": {
-            "difficulty": 6,
             "spawn_at_load": true,
             "close_to_start": false,
             "phases": false
@@ -515,13 +509,11 @@
         "name": "Dry Sea Map",
         "filled": true,
         "layout": {
-            "rating": 6,
-            "density": 6,
+            "outdoors": true,
             "good_for_open_mechanics": true,
             "good_for_deli_mirror": false
         },
         "boss": {
-            "difficulty": 4,
             "spawn_at_load": true,
             "close_to_start": false,
             "phases": false
@@ -555,86 +547,95 @@
     },
     {
         "name": "Excavation Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Factory Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Fields Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Flooded Mine Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Forbidden Woods Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "outdoors": true,
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Forge of the Phoenix Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Foundry Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {

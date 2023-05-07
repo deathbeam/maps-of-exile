@@ -49,6 +49,12 @@ const preparedMaps = maps.map(map => {
   if (map.pantheon) {
     mapTags.push(map.pantheon)
   }
+  if (map.boss.names) {
+    const names =map.boss.names.filter(n => !n.includes('Merveil'))
+    if (names.length > 1) {
+      mapTags.push(`${names.length} bosses`)
+    }
+  }
 
   return {
     ...map,
@@ -224,31 +230,23 @@ const ratedCards = mapAndRateCards(preparedCards)
 
 function App() {
   const [loading, setLoading] = useState(false)
-  const withLoading = (val, callback) => {
+  const withLoading = (val, callback, ...args) => {
     setLoading(val)
-    return callback
+    return callback(...args)
   }
 
-  const [searchInput, setSearchInput] = useState('')
-  const debouncedSearch = useMemo(() => debounce(e => withLoading(false, setSearchInput)(e.target.value), 300), [])
-  const startSearch = e => withLoading(true, debouncedSearch)(e)
+  const useDebouncedState = (def) => {
+    const [val, setVal] = useState(def)
+    const debouncedVal = useMemo(() => debounce(e => withLoading(false, setVal, e.target.value), 300), [])
+    const startDebouncedVal = e => withLoading(true, debouncedVal, e)
+    return [val, startDebouncedVal]
+  }
 
-  const [layoutInput, setLayoutInput] = useState('3')
-  const debouncedLayout = useMemo(() => debounce(e => withLoading(false, setLayoutInput)(e.target.value), 300), [])
-  const startLayout = e => withLoading(true, debouncedLayout)(e)
-
-  const [densityInput, setDensityInput] = useState('2')
-  const debouncedDensity = useMemo(() => debounce(e => withLoading(false, setDensityInput)(e.target.value), 300), [])
-  const startDensity = e => withLoading(true, debouncedDensity)(e)
-
-  const [bossInput, setBossInput] = useState('0.2')
-  const debouncedBoss = useMemo(() => debounce(e => withLoading(false, setBossInput)(e.target.value), 300), [])
-  const startBoss = e => withLoading(true, debouncedBoss)(e)
-
-  const [cardInput, setCardInput] = useState('0.5')
-  const debouncedCard = useMemo(() => debounce(e => withLoading(false, setCardInput)(e.target.value), 300), [])
-  const startCard = e => withLoading(true, debouncedCard)(e)
-
+  const [searchInput, setSearchInput] = useDebouncedState('')
+  const [layoutInput, setLayoutInput] = useDebouncedState('3')
+  const [densityInput, setDensityInput] = useDebouncedState('2')
+  const [bossInput, setBossInput] = useDebouncedState('0.2')
+  const [cardInput, setCardInput] = useDebouncedState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
   return (
@@ -256,25 +254,25 @@ function App() {
       <Loader loading={loading}/>
       <div className="container-fluid p-4">
         <div className="row">
-          <div className="col">
+          <div className="col-2">
             <label className="form-label text-light">Search</label>
-            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" onChange={startSearch}/>
+            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Layout weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={layoutInput} onChange={startLayout}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Density weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={densityInput} onChange={startDensity}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={densityInput} onChange={setDensityInput}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Boss weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={bossInput} onChange={startBoss}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={bossInput} onChange={setBossInput}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Card weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={cardInput} onChange={startCard}/>
+            <input className="form-control bg-dark text-light" type="number" placeholder={cardInput} onChange={setCardInput}/>
           </div>
         </div>
       </div>

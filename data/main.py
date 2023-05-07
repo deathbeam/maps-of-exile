@@ -223,10 +223,10 @@ def main():
 
 	if len(args) > 1:
 		if 'cards' in args[1]:
-			fetch_maps = True
-
-		if  'maps' in args[1]:
 			fetch_cards = True
+
+		if 'maps' in args[1]:
+			fetch_maps = True
 
 		if 'template' in args[1]:
 			fetch_template = True

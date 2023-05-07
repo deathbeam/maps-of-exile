@@ -220,6 +220,8 @@ function filterMaps(ratedMaps, searchInput) {
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
+const ratedCards = mapAndRateCards(preparedCards)
+
 function App() {
   const [loading, setLoading] = useState(false)
   const withLoading = (val, callback) => {
@@ -248,7 +250,6 @@ function App() {
   const startCard = e => withLoading(true, debouncedCard)(e)
 
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
-  const ratedCards = useMemo(() => mapAndRateCards(preparedCards), [])
 
   return (
     <div className="bg-dark">

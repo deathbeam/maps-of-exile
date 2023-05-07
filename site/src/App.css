@@ -36,6 +36,14 @@ a:hover {
     font-size: smaller;
 }
 
+.tooltip-tag .tooltip-tag-fill {
+    padding: 2px;
+    border-radius: 0;
+}
+
+.tooltip-tag .tooltip-tag-fill img {
+    max-width: 400px;
+}
 
 .tooltip-tag-compact .tooltip-tag-text {
     min-width: 125px;

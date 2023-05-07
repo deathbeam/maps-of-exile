@@ -2,8 +2,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import {useState, useMemo} from 'react'
 import debounce from 'lodash.debounce'
+import merge from 'lodash.merge'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
+import maps_extra from './data/maps_extra.json'
 import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
@@ -18,6 +20,11 @@ const preparedCards = cards.map(card => {
 })
 
 const preparedMaps = maps.map(map => {
+  const mapExtra = maps_extra.find(m => m.name === map.name)
+  if (mapExtra) {
+    map = merge(map, mapExtra)
+  }
+
   const mapCards = []
 
   for (let card of map.cards) {
@@ -34,25 +41,43 @@ const preparedMaps = maps.map(map => {
   }
 
   const mapTags = []
-  if (map.boss.separated) {
-    mapTags.push("boss separated")
-  }
-  if (map.few_obstacles) {
+  if (map.layout.few_obstacles) {
     mapTags.push("few obstacles")
   }
-  if (map.outdoors) {
+  if (map.layout.outdoors) {
     mapTags.push("outdoors")
   }
-  if (map.linear) {
+  if (map.layout.linear) {
     mapTags.push("linear")
   }
   if (map.pantheon) {
     mapTags.push(map.pantheon.toLowerCase())
   }
+  if (map.layout.good_for_open_mechanics) {
+    mapTags.push("+league mechanics")
+  }
+  if (map.layout.good_for_deli_mirror) {
+    mapTags.push("+delirium mirror")
+  }
+
   if (map.boss.names) {
-    const names =map.boss.names.filter(n => !n.includes('Merveil'))
+    const names = map.boss.names.filter(n => !n.includes('Merveil'))
     if (names.length > 1) {
       mapTags.push(`${names.length} bosses`)
+    }
+  }
+  if (map.boss.separated) {
+    mapTags.push("boss separated")
+  }
+  if (map.filled) {
+    if (!map.boss.spawn_at_load) {
+      mapTags.push("boss not spawned")
+    }
+    if (map.boss.close_to_start) {
+      mapTags.push("boss rushable")
+    }
+    if (map.boss.phases) {
+      mapTags.push("-boss with phases")
     }
   }
 
@@ -61,7 +86,7 @@ const preparedMaps = maps.map(map => {
     name: map.name.replace(" Map", ""),
     connected: (map.connected || []).map(c => c.replace(" Map", "")),
     cards: mapCards,
-    tags: mapTags
+    tags: mapTags,
   }
 })
 
@@ -70,18 +95,6 @@ const possibleTags = [...new Set(preparedMaps
   .map(t => t.replace(/\d+ bosses/, "bosses"))
   .map(t => t.replace(/soul of .+/, "soul of"))
 )].sort()
-
-function tierColor(map) {
-  const naturalTier = map.tiers[0]
-
-  if (naturalTier >= 11) {
-    return "text-danger"
-  } else if (naturalTier >= 6) {
-    return "text-warning"
-  } else {
-    return "text-light"
-  }
-}
 
 const RatingBadge = ({ rating, inverse = false }) => {
   let badgeClass = "bg-danger"
@@ -104,8 +117,40 @@ const RatingBadge = ({ rating, inverse = false }) => {
   return <span className={badgeClass}>{rating}</span>
 }
 
-const MapTags = ({ tags }) => {
-  return tags.map(t => <span className="badge rounded-pill text-dark bg-secondary me-1">{t}</span>)
+const Tags = ({ tags }) => {
+  return tags.map(t => {
+    const color = t.startsWith("+") ? "bg-info" : t.startsWith("-") ? "bg-warning" : "bg-secondary"
+    const clazz = "badge rounded-pill text-dark me-1 " + color
+    return <span className={clazz}>{t}</span>
+  })
+}
+
+const MapName = ({ map }) => {
+  const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replace(" ", "_") + ".png"
+  let tierColor = "text-light"
+  if (map.tier >= 11) {
+    tierColor = "text-danger"
+  } else if (map.tier >= 6) {
+    tierColor = "text-warning"
+  }
+
+  const name = <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>{map.name}</a>
+  const tags = <Tags tags={map.tags}/>
+
+  return map.filled ? <>
+    <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+      <span className="tooltip-tag-text tooltip-tag-fill">
+        <img src={mapImage} alt="" loading="lazy"/>
+      </span>
+      {name}
+    </span>
+    <br/>
+    {tags}
+  </> : <>
+    {name}
+    <br/>
+    {tags}
+  </>
 }
 
 const MapBoss = ({ boss }) => {
@@ -167,10 +212,10 @@ const MapCard = ({ card }) => {
   </span>
 }
 
-const MapCards = ({ cards, ratedCards }) => {
+const MapCards = ({cards, ratedCards }) => {
   return ratedCards
     .filter(c => cards.find(fc => fc.name === c.name))
-    .map(c => <MapCard key={c.name} card={c}/>)
+    .map(c => <MapCard card={c}/>)
 }
 
 function calculateScore(dataset) {
@@ -203,8 +248,8 @@ function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInp
   let out = []
 
   for (let map of foundMaps) {
-    const layoutValue = (map.layout || 0) * layoutInput
-    const densityValue = (map.density || 0) * densityInput
+    const layoutValue = (map.layout.rating || 0) * layoutInput
+    const densityValue = (map.layout.density || 0) * densityInput
     const bossValue = (10 - (map.boss.difficulty || 10)) * bossInput
     let cardValue = 0
 
@@ -254,6 +299,7 @@ function App() {
   const [bossInput, setBossInput] = useDebouncedState('0.2')
   const [cardInput, setCardInput] = useDebouncedState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
+  const filteredMaps = useMemo(() => filterMaps(ratedMaps, searchInput), [ratedMaps, searchInput])
 
   return (
     <>
@@ -265,7 +311,7 @@ function App() {
               <div className="input-group-text">Search</div>
               <input className="form-control" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
             </div>
-            <span className="small">tags:</span> <MapTags tags={possibleTags}/>
+            <span className="small">tags:</span> <Tags tags={possibleTags}/>
           </div>
           <div className="col">
             <div className="input-group">
@@ -356,16 +402,12 @@ function App() {
         </tr>
         </thead>
         <tbody>
-        {filterMaps(ratedMaps, searchInput).map(m =>
+        {filteredMaps.map(m =>
           <tr key={m.name}>
             <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
-            <td>
-              <a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a>
-              <br/>
-              <MapTags tags={m.tags}/>
-            </td>
-            <td className="text-center"><RatingBadge rating={m.layout}/></td>
-            <td className="text-center"><RatingBadge rating={m.density}/></td>
+            <td><MapName map={m}/></td>
+            <td className="text-center"><RatingBadge rating={m.layout.rating}/></td>
+            <td className="text-center"><RatingBadge rating={m.layout.density}/></td>
             <td className="text-center"><MapBoss boss={m.boss}/></td>
             <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
             <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>

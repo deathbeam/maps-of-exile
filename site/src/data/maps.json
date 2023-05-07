@@ -1,13 +1,7 @@
 [
     {
         "name": "Acton's Nightmare",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "boss": {
             "names": [
@@ -15,6 +9,7 @@
                 "Thorn"
             ]
         },
+        "layout": {},
         "connected": [
             "Overgrown Shrine Map"
         ],
@@ -31,13 +26,7 @@
     },
     {
         "name": "Alleyways Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
+        "tier": 1,
         "poedb": "https://poedb.tw/us/Alleyways_Map",
         "boss": {
             "difficulty": 2,
@@ -47,11 +36,13 @@
                 "Calderus"
             ]
         },
-        "layout": 8,
-        "density": 5,
-        "tileset": "Oriath Square",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 5,
+            "tileset": "Oriath Square",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Excavation Map",
             "Stagnation Map"
@@ -85,13 +76,7 @@
     },
     {
         "name": "Arachnid Nest Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Arachnid_Nest_Map",
         "boss": {
             "difficulty": 7,
@@ -102,10 +87,12 @@
                 "Spinner of False Hope"
             ]
         },
-        "layout": 6,
-        "density": 4,
-        "tileset": "The Weaver's Chambers",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 6,
+            "density": 4,
+            "tileset": "The Weaver's Chambers",
+            "few_obstacles": true
+        },
         "connected": [
             "Fungal Hollow Map",
             "Geode Map",
@@ -131,13 +118,7 @@
     },
     {
         "name": "Arachnid Tomb Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Arachnid_Tomb_Map",
         "pantheon": "Soul of Arakaali",
         "boss": {
@@ -149,11 +130,13 @@
                 "Hybrid Widow"
             ]
         },
-        "layout": 7,
-        "density": 3,
-        "tileset": "The Temple of Decay Level 1",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 3,
+            "tileset": "The Temple of Decay Level 1",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Chateau Map",
             "Forbidden Woods Map",
@@ -177,13 +160,7 @@
     },
     {
         "name": "Arcade Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Arcade_Map",
         "boss": {
             "difficulty": 3,
@@ -194,10 +171,12 @@
                 "Herald of Thunder"
             ]
         },
-        "layout": 3,
-        "density": 3,
-        "tileset": "The Marketplace",
-        "outdoors": true,
+        "layout": {
+            "rating": 3,
+            "density": 3,
+            "tileset": "The Marketplace",
+            "outdoors": true
+        },
         "connected": [
             "Cemetery Map",
             "Orchard Map",
@@ -228,13 +207,7 @@
     },
     {
         "name": "Arid Lake Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 13,
         "poedb": "https://poedb.tw/us/Arid_Lake_Map",
         "boss": {
             "difficulty": 1,
@@ -245,11 +218,13 @@
                 "Drought-Maddened Rhoa"
             ]
         },
-        "layout": 8,
-        "density": 3,
-        "tileset": "The Fetid Pool",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 8,
+            "density": 3,
+            "tileset": "The Fetid Pool",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -272,13 +247,7 @@
     },
     {
         "name": "Armoury Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Armoury_Map",
         "boss": {
             "difficulty": 2,
@@ -288,10 +257,12 @@
                 "Warmonger"
             ]
         },
-        "layout": 5,
-        "density": 7,
-        "tileset": "Mansion Annex",
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 7,
+            "tileset": "Mansion Annex",
+            "linear": true
+        },
         "connected": [
             "Coral Ruins Map",
             "Pier Map"
@@ -316,13 +287,7 @@
     },
     {
         "name": "Arsenal Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Arsenal_Map",
         "boss": {
             "difficulty": 4,
@@ -333,10 +298,12 @@
                 "The Steel Soul"
             ]
         },
-        "layout": 4,
-        "density": 9,
-        "tileset": "The Grain Gate",
-        "outdoors": true,
+        "layout": {
+            "rating": 4,
+            "density": 9,
+            "tileset": "The Grain Gate",
+            "outdoors": true
+        },
         "connected": [
             "Core Map",
             "Tropical Island Map"
@@ -370,13 +337,7 @@
     },
     {
         "name": "Atoll Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Atoll_Map",
         "pantheon": "Soul of the Brine King",
         "boss": {
@@ -388,12 +349,14 @@
                 "Puruna, the Challenger"
             ]
         },
-        "layout": 9,
-        "density": 1,
-        "tileset": "The Ledge",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 1,
+            "tileset": "The Ledge",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Maelstr\u00f6m of Chaos",
             "Pit Map",
@@ -425,13 +388,7 @@
     },
     {
         "name": "Barrows Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Barrows_Map",
         "boss": {
             "difficulty": 4,
@@ -442,10 +399,12 @@
                 "Beast of the Pits"
             ]
         },
-        "layout": 5,
-        "density": 10,
-        "tileset": "The Wetlands",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 10,
+            "tileset": "The Wetlands",
+            "outdoors": true
+        },
         "connected": [
             "Arid Lake Map",
             "Thicket Map",
@@ -471,13 +430,7 @@
     },
     {
         "name": "Beach Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Beach_Map",
         "boss": {
             "difficulty": 2,
@@ -488,12 +441,14 @@
                 "Glace"
             ]
         },
-        "layout": 9,
-        "density": 2,
-        "tileset": "The Beacon",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 2,
+            "tileset": "The Beacon",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Desert Spring Map",
             "Factory Map",
@@ -519,13 +474,7 @@
     },
     {
         "name": "Belfry Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Belfry_Map",
         "boss": {
             "difficulty": 8,
@@ -536,12 +485,14 @@
                 "Lord of the Grey"
             ]
         },
-        "layout": 8,
-        "density": 4,
-        "tileset": "The Cathedral Rooftop",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 4,
+            "tileset": "The Cathedral Rooftop",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Primordial Blocks Map",
             "Scriptorium Map",
@@ -565,13 +516,7 @@
     },
     {
         "name": "Bone Crypt Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
+        "tier": 1,
         "poedb": "https://poedb.tw/us/Bone_Crypt_Map",
         "boss": {
             "difficulty": 2,
@@ -581,10 +526,12 @@
                 "Xixic, High Necromancer"
             ]
         },
-        "layout": 5,
-        "density": 5,
-        "tileset": "The Crypt",
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 5,
+            "tileset": "The Crypt",
+            "linear": true
+        },
         "connected": [
             "Grotto Map",
             "Olmec's Sanctum",
@@ -618,13 +565,7 @@
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
             "names": [
@@ -633,6 +574,7 @@
                 "Winterfang"
             ]
         },
+        "layout": {},
         "connected": [
             "Underground River Map"
         ],
@@ -653,13 +595,7 @@
     },
     {
         "name": "Caldera Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Caldera_Map",
         "pantheon": "Soul of Solaris",
         "boss": {
@@ -671,10 +607,12 @@
                 "The Infernal King"
             ]
         },
-        "layout": 6,
-        "density": 4,
-        "tileset": "Kaom's Dream",
-        "outdoors": true,
+        "layout": {
+            "rating": 6,
+            "density": 4,
+            "tileset": "Kaom's Dream",
+            "outdoors": true
+        },
         "connected": [
             "Chateau Map",
             "Cursed Crypt Map",
@@ -704,13 +642,7 @@
     },
     {
         "name": "Canyon Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Canyon_Map",
         "boss": {
             "difficulty": 9,
@@ -721,12 +653,14 @@
                 "Stonebeak, Battle Fowl"
             ]
         },
-        "layout": 9,
-        "density": 3,
-        "tileset": "Prisoner's Gate",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 3,
+            "tileset": "Prisoner's Gate",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Crystal Ore Map",
             "Shipyard Map",
@@ -758,13 +692,7 @@
     },
     {
         "name": "Castle Ruins Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Castle_Ruins_Map",
         "boss": {
             "difficulty": 6,
@@ -775,11 +703,13 @@
                 "Leif, the Swift-Handed"
             ]
         },
-        "layout": 7,
-        "density": 7,
-        "tileset": "The Broken Bridge",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 7,
+            "density": 7,
+            "tileset": "The Broken Bridge",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "City Square Map",
             "Coral Ruins Map",
@@ -808,13 +738,7 @@
     },
     {
         "name": "Cells Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Cells_Map",
         "boss": {
             "difficulty": 7,
@@ -824,9 +748,11 @@
                 "Shavronne the Sickening"
             ]
         },
-        "layout": 1,
-        "density": 8,
-        "tileset": "The Crematorium",
+        "layout": {
+            "rating": 1,
+            "density": 8,
+            "tileset": "The Crematorium"
+        },
         "connected": [
             "Cold River Map",
             "Crimson Township Map",
@@ -855,13 +781,7 @@
     },
     {
         "name": "Cemetery Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Cemetery_Map",
         "pantheon": "Soul of Gruthkul",
         "boss": {
@@ -873,10 +793,12 @@
                 "Erebix, Light's Bane"
             ]
         },
-        "layout": 6,
-        "density": 5,
-        "tileset": "The Fellshrine Ruins",
-        "outdoors": true,
+        "layout": {
+            "rating": 6,
+            "density": 5,
+            "tileset": "The Fellshrine Ruins",
+            "outdoors": true
+        },
         "connected": [
             "Arcade Map",
             "Hallowed Ground",
@@ -916,13 +838,7 @@
     },
     {
         "name": "Chateau Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Chateau_Map",
         "boss": {
             "difficulty": 4,
@@ -932,10 +848,12 @@
                 "Hephaeus, The Hammer"
             ]
         },
-        "layout": 3,
-        "density": 6,
-        "tileset": "Estate Walkways",
-        "outdoors": true,
+        "layout": {
+            "rating": 3,
+            "density": 6,
+            "tileset": "Estate Walkways",
+            "outdoors": true
+        },
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -963,13 +881,7 @@
     },
     {
         "name": "City Square Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/City_Square_Map",
         "boss": {
             "difficulty": 8,
@@ -981,11 +893,13 @@
                 "Pileah, Corpse Burner"
             ]
         },
-        "layout": 9,
-        "density": 3,
-        "tileset": "Oriath Square",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 9,
+            "density": 3,
+            "tileset": "Oriath Square",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -1016,13 +930,7 @@
     },
     {
         "name": "Cold River Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Cold_River_Map",
         "pantheon": "Soul of Lunaris",
         "boss": {
@@ -1031,6 +939,7 @@
                 "Khor, Sister of Shadows"
             ]
         },
+        "layout": {},
         "connected": [
             "Cells Map",
             "Crimson Temple Map",
@@ -1069,13 +978,7 @@
     },
     {
         "name": "Colonnade Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
+        "tier": 1,
         "poedb": "https://poedb.tw/us/Colonnade_Map",
         "boss": {
             "difficulty": 6,
@@ -1086,11 +989,13 @@
                 "Tyrant"
             ]
         },
-        "layout": 6,
-        "density": 6,
-        "tileset": "The Battlefront",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 6,
+            "tileset": "The Battlefront",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Dry Sea Map",
             "Dunes Map",
@@ -1124,13 +1029,7 @@
     },
     {
         "name": "Colosseum Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Colosseum_Map",
         "boss": {
             "difficulty": 7,
@@ -1141,11 +1040,13 @@
                 "Ambrius, Legion Slayer"
             ]
         },
-        "layout": 5,
-        "density": 5,
-        "tileset": "Daresso's Dream",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 5,
+            "tileset": "Daresso's Dream",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Dig Map",
             "Maze Map",
@@ -1180,13 +1081,7 @@
     },
     {
         "name": "Conservatory Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Conservatory_Map",
         "boss": {
             "difficulty": 2,
@@ -1197,10 +1092,12 @@
                 "The Forgotten Soldier"
             ]
         },
-        "layout": 5,
-        "density": 5,
-        "tileset": "The Bath House",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 5,
+            "density": 5,
+            "tileset": "The Bath House",
+            "few_obstacles": true
+        },
         "connected": [
             "Crimson Township Map",
             "Defiled Cathedral Map",
@@ -1227,13 +1124,7 @@
     },
     {
         "name": "Coral Ruins Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Coral_Ruins_Map",
         "pantheon": "Soul of the Brine King",
         "boss": {
@@ -1244,11 +1135,13 @@
                 "Captain Tanner Lightfoot"
             ]
         },
-        "layout": 5,
-        "density": 8,
-        "tileset": "The Brine King's Reef",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 8,
+            "tileset": "The Brine King's Reef",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Armoury Map",
             "Castle Ruins Map",
@@ -1281,13 +1174,7 @@
     },
     {
         "name": "Core Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Core_Map",
         "boss": {
             "difficulty": 10,
@@ -1298,10 +1185,12 @@
                 "Eater of Souls"
             ]
         },
-        "layout": 3,
-        "density": 6,
-        "tileset": "The Harvest",
-        "linear": true,
+        "layout": {
+            "rating": 3,
+            "density": 6,
+            "tileset": "The Harvest",
+            "linear": true
+        },
         "connected": [
             "Arsenal Map",
             "Dungeon Map"
@@ -1338,13 +1227,7 @@
     },
     {
         "name": "Courtyard Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Courtyard_Map",
         "boss": {
             "difficulty": 5,
@@ -1357,11 +1240,13 @@
                 "Oriath's Virtue"
             ]
         },
-        "layout": 6,
-        "density": 3,
-        "tileset": "The Imperial Gardens",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 3,
+            "tileset": "The Imperial Gardens",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Orchard Map",
             "Pit Map",
@@ -1398,13 +1283,7 @@
     },
     {
         "name": "Coves Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Coves_Map",
         "pantheon": "Soul of the Brine King",
         "boss": {
@@ -1416,11 +1295,13 @@
                 "Telvar, the Inebriated"
             ]
         },
-        "layout": 7,
-        "density": 4,
-        "tileset": "Coves Map",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 4,
+            "tileset": "Coves Map",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Racecourse Map",
             "Tropical Island Map"
@@ -1453,13 +1334,7 @@
     },
     {
         "name": "Crater Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 13,
         "poedb": "https://poedb.tw/us/Crater_Map",
         "pantheon": "Soul of Abberath",
         "boss": {
@@ -1467,6 +1342,7 @@
                 "Megaera"
             ]
         },
+        "layout": {},
         "connected": [
             "Maze Map",
             "Museum Map",
@@ -1488,13 +1364,7 @@
     },
     {
         "name": "Crimson Temple Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Crimson_Temple_Map",
         "boss": {
             "difficulty": 5,
@@ -1505,10 +1375,12 @@
                 "The Sanguine Siren"
             ]
         },
-        "layout": 6,
-        "density": 4,
-        "tileset": "The Templar Courts",
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 4,
+            "tileset": "The Templar Courts",
+            "linear": true
+        },
         "connected": [
             "Cold River Map",
             "Forbidden Woods Map",
@@ -1542,19 +1414,14 @@
     },
     {
         "name": "Crimson Township Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Crimson_Township_Map",
         "boss": {
             "names": [
                 "Kadaris, Crimson Mayor"
             ]
         },
+        "layout": {},
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -1584,13 +1451,7 @@
     },
     {
         "name": "Crystal Ore Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Crystal_Ore_Map",
         "boss": {
             "difficulty": 9,
@@ -1603,9 +1464,11 @@
                 "Messenger of the Hollows"
             ]
         },
-        "layout": 5,
-        "density": 7,
-        "tileset": "The Mines Level 1",
+        "layout": {
+            "rating": 5,
+            "density": 7,
+            "tileset": "The Mines Level 1"
+        },
         "connected": [
             "Canyon Map",
             "Coral Ruins Map",
@@ -1642,13 +1505,7 @@
     },
     {
         "name": "Cursed Crypt Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Cursed_Crypt_Map",
         "boss": {
             "difficulty": 3,
@@ -1658,9 +1515,11 @@
                 "Pagan Bishop of Agony"
             ]
         },
-        "layout": 2,
-        "density": 4,
-        "tileset": "The Crypt",
+        "layout": {
+            "rating": 2,
+            "density": 4,
+            "tileset": "The Crypt"
+        },
         "connected": [
             "Caldera Map",
             "Promenade Map",
@@ -1690,19 +1549,14 @@
     },
     {
         "name": "Death and Taxes",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "boss": {
             "names": [
                 "Avatar of Apocalypse"
             ]
         },
+        "layout": {},
         "connected": [
             "Necropolis Map"
         ],
@@ -1716,13 +1570,7 @@
     },
     {
         "name": "Defiled Cathedral Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 13,
         "poedb": "https://poedb.tw/us/Defiled_Cathedral_Map",
         "boss": {
             "difficulty": 8,
@@ -1733,11 +1581,13 @@
                 "Woad, Mockery of Man"
             ]
         },
-        "layout": 8,
-        "density": 5,
-        "tileset": "The Chamber of Innocence",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 5,
+            "tileset": "The Chamber of Innocence",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Conservatory Map",
             "Maze Map",
@@ -1772,13 +1622,7 @@
     },
     {
         "name": "Desert Spring Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Desert_Spring_Map",
         "pantheon": "Soul of Shakari",
         "boss": {
@@ -1790,12 +1634,14 @@
                 "Terror of the Infinite Drifts"
             ]
         },
-        "layout": 8,
-        "density": 7,
-        "tileset": "The Oasis",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 7,
+            "tileset": "The Oasis",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Arid Lake Map",
             "Beach Map",
@@ -1825,13 +1671,7 @@
     },
     {
         "name": "Dig Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Dig_Map",
         "pantheon": "Soul of Garukhan",
         "boss": {
@@ -1843,11 +1683,13 @@
                 "Stalker of the Endless Dunes"
             ]
         },
-        "layout": 5,
-        "density": 6,
-        "tileset": "The Quarry",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 6,
+            "tileset": "The Quarry",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Colosseum Map",
             "Underground River Map"
@@ -1878,19 +1720,14 @@
     },
     {
         "name": "Doryani's Machinarium",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "boss": {
             "names": [
                 "The Apex Assembly"
             ]
         },
+        "layout": {},
         "wiki": "https://www.poewiki.net/wiki/Doryani's_Machinarium",
         "cards": [
             "Monochrome",
@@ -1905,19 +1742,14 @@
     },
     {
         "name": "Dry Sea Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Dry_Sea_Map",
         "boss": {
             "names": [
                 "Gazuul, Droughtspawn"
             ]
         },
+        "layout": {},
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -1947,13 +1779,7 @@
     },
     {
         "name": "Dunes Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Dunes_Map",
         "boss": {
             "difficulty": 4,
@@ -1963,12 +1789,14 @@
                 "The Blacksmith"
             ]
         },
-        "layout": 9,
-        "density": 2,
-        "tileset": "The Vastiri Desert",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 2,
+            "tileset": "The Vastiri Desert",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2003,13 +1831,7 @@
     },
     {
         "name": "Dungeon Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Dungeon_Map",
         "boss": {
             "difficulty": 7,
@@ -2020,9 +1842,11 @@
                 "Penitentiary Incarcerator"
             ]
         },
-        "layout": 1,
-        "density": 8,
-        "tileset": "The Lower Prison",
+        "layout": {
+            "rating": 1,
+            "density": 8,
+            "tileset": "The Lower Prison"
+        },
         "connected": [
             "Arid Lake Map",
             "Core Map",
@@ -2051,13 +1875,7 @@
     },
     {
         "name": "Excavation Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Excavation_Map",
         "boss": {
             "difficulty": 2,
@@ -2069,10 +1887,12 @@
                 "Shrieker Eihal"
             ]
         },
-        "layout": 6,
-        "density": 7,
-        "tileset": "The Mines Level 1",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 6,
+            "density": 7,
+            "tileset": "The Mines Level 1",
+            "few_obstacles": true
+        },
         "connected": [
             "Alleyways Map",
             "Colonnade Map",
@@ -2103,13 +1923,7 @@
     },
     {
         "name": "Factory Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Factory_Map",
         "boss": {
             "difficulty": 7,
@@ -2119,11 +1933,13 @@
                 "Pesquin, the Mad Baron"
             ]
         },
-        "layout": 7,
-        "density": 6,
-        "tileset": "The Refinery",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 6,
+            "tileset": "The Refinery",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Beach Map",
             "Cold River Map",
@@ -2156,13 +1972,7 @@
     },
     {
         "name": "Fields Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Fields_Map",
         "pantheon": "Soul of Ralakesh",
         "boss": {
@@ -2174,11 +1984,13 @@
                 "Drek, Apex Hunter"
             ]
         },
-        "layout": 7,
-        "density": 3,
-        "tileset": "The Imperial Fields",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 7,
+            "density": 3,
+            "tileset": "The Imperial Fields",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Dry Sea Map",
             "Dunes Map",
@@ -2207,13 +2019,7 @@
     },
     {
         "name": "Flooded Mine Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Flooded_Mine_Map",
         "boss": {
             "difficulty": 3,
@@ -2223,9 +2029,11 @@
                 "The Eroding One"
             ]
         },
-        "layout": 2,
-        "density": 8,
-        "tileset": "The Caverns",
+        "layout": {
+            "rating": 2,
+            "density": 8,
+            "tileset": "The Caverns"
+        },
         "connected": [
             "Cold River Map",
             "Overgrown Ruin Map",
@@ -2264,13 +2072,7 @@
     },
     {
         "name": "Forbidden Woods Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "boss": {
             "names": [
@@ -2279,6 +2081,7 @@
                 "Takatax Brittlethorn"
             ]
         },
+        "layout": {},
         "connected": [
             "Arachnid Tomb Map",
             "Crimson Temple Map",
@@ -2315,13 +2118,7 @@
     },
     {
         "name": "Forge of the Phoenix Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Forge_of_the_Phoenix_Map",
         "boss": {
             "difficulty": 10,
@@ -2332,10 +2129,12 @@
                 "Guardian of the Phoenix"
             ]
         },
-        "layout": 6,
-        "density": 4,
-        "tileset": "The Crematorium",
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 4,
+            "tileset": "The Crematorium",
+            "linear": true
+        },
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
         "cards": [
             "Burning Blood",
@@ -2353,13 +2152,7 @@
     },
     {
         "name": "Foundry Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Foundry_Map",
         "boss": {
             "names": [
@@ -2367,6 +2160,7 @@
                 "The Shifting Ire"
             ]
         },
+        "layout": {},
         "connected": [
             "Malformation Map",
             "Siege Map",
@@ -2399,13 +2193,7 @@
     },
     {
         "name": "Frozen Cabins Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Frozen_Cabins_Map",
         "pantheon": "Soul of Lunaris",
         "boss": {
@@ -2413,6 +2201,7 @@
                 "Captain Clayborne, The Accursed"
             ]
         },
+        "layout": {},
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -2440,19 +2229,14 @@
     },
     {
         "name": "Fungal Hollow Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "boss": {
             "names": [
                 "Aulen Greychain"
             ]
         },
+        "layout": {},
         "connected": [
             "Arachnid Nest Map",
             "Necropolis Map"
@@ -2475,13 +2259,7 @@
     },
     {
         "name": "Geode Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Geode_Map",
         "boss": {
             "difficulty": 7,
@@ -2492,10 +2270,12 @@
                 "Avatar of Undoing"
             ]
         },
-        "layout": 5,
-        "density": 6,
-        "tileset": "The Quarry",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 6,
+            "tileset": "The Quarry",
+            "outdoors": true
+        },
         "connected": [
             "Arachnid Nest Map",
             "Desert Spring Map",
@@ -2529,13 +2309,7 @@
     },
     {
         "name": "Grotto Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Grotto_Map",
         "boss": {
             "difficulty": 5,
@@ -2545,10 +2319,12 @@
                 "Void Anomaly"
             ]
         },
-        "layout": 4,
-        "density": 8,
-        "tileset": "The Caverns",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 4,
+            "density": 8,
+            "tileset": "The Caverns",
+            "few_obstacles": true
+        },
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -2596,19 +2372,14 @@
     },
     {
         "name": "Hallowed Ground",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "boss": {
             "names": [
                 "Maker of Mires"
             ]
         },
+        "layout": {},
         "connected": [
             "Cemetery Map"
         ],
@@ -2620,13 +2391,7 @@
     },
     {
         "name": "Infested Valley Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Infested_Valley_Map",
         "pantheon": "Soul of Ryslatha",
         "boss": {
@@ -2638,12 +2403,14 @@
                 "Gorulis, Will-Thief"
             ]
         },
-        "layout": 9,
-        "density": 5,
-        "tileset": "The Wetlands",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 5,
+            "tileset": "The Wetlands",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Dry Sea Map",
             "Laboratory Map",
@@ -2672,13 +2439,7 @@
     },
     {
         "name": "Jungle Valley Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Jungle_Valley_Map",
         "pantheon": "Soul of Arakaali",
         "boss": {
@@ -2690,12 +2451,14 @@
                 "Queen of the Great Tangle"
             ]
         },
-        "layout": 8,
-        "density": 4,
-        "tileset": "The Riverways",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 4,
+            "tileset": "The Riverways",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Beach Map",
             "Crimson Township Map",
@@ -2721,13 +2484,7 @@
     },
     {
         "name": "Laboratory Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Laboratory_Map",
         "boss": {
             "difficulty": 7,
@@ -2738,10 +2495,12 @@
                 "Riftwalker"
             ]
         },
-        "layout": 6,
-        "density": 5,
-        "tileset": "The Reliquary",
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 5,
+            "tileset": "The Reliquary",
+            "linear": true
+        },
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -2774,13 +2533,7 @@
     },
     {
         "name": "Lair Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Lair_Map",
         "boss": {
             "difficulty": 10,
@@ -2791,11 +2544,13 @@
                 "Lycius, Midnight's Howl"
             ]
         },
-        "layout": 7,
-        "density": 8,
-        "tileset": "The Caverns",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 8,
+            "tileset": "The Caverns",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Cemetery Map",
             "Grotto Map",
@@ -2834,13 +2589,7 @@
     },
     {
         "name": "Lair of the Hydra Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Lair_of_the_Hydra_Map",
         "boss": {
             "difficulty": 10,
@@ -2851,11 +2600,13 @@
                 "Guardian of the Hydra"
             ]
         },
-        "layout": 7,
-        "density": 3,
-        "tileset": "The Sewers",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 3,
+            "tileset": "The Sewers",
+            "few_obstacles": true,
+            "linear": true
+        },
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
         "cards": [
             "Her Mask",
@@ -2873,13 +2624,7 @@
     },
     {
         "name": "Leyline Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 13,
         "poedb": "https://poedb.tw/us/Leyline_Map",
         "boss": {
             "difficulty": 3,
@@ -2890,11 +2635,13 @@
                 "Mirage of Bones"
             ]
         },
-        "layout": 8,
-        "density": 5,
-        "tileset": "The Boiling Lake",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 8,
+            "density": 5,
+            "tileset": "The Boiling Lake",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Dungeon Map",
             "Necropolis Map"
@@ -2918,13 +2665,7 @@
     },
     {
         "name": "Lighthouse Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
         "pantheon": "Soul of Solaris",
         "boss": {
@@ -2938,12 +2679,14 @@
                 "Uruk Baleh"
             ]
         },
-        "layout": 8,
-        "density": 5,
-        "tileset": "The Beacon",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 5,
+            "tileset": "The Beacon",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Lair Map",
             "Marshes Map",
@@ -2970,13 +2713,7 @@
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "boss": {
             "names": [
@@ -2984,6 +2721,7 @@
                 "Merveil, the Returned"
             ]
         },
+        "layout": {},
         "connected": [
             "Atoll Map"
         ],
@@ -3012,13 +2750,7 @@
     },
     {
         "name": "Malformation Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
+        "tier": 11,
         "poedb": "https://poedb.tw/us/Malformation_Map",
         "boss": {
             "difficulty": 8,
@@ -3029,11 +2761,13 @@
                 "Nightmare Manifest"
             ]
         },
-        "layout": 7,
-        "density": 7,
-        "tileset": "The Belly of the Beast",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 7,
+            "tileset": "The Belly of the Beast",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Foundry Map",
             "Museum Map",
@@ -3061,19 +2795,14 @@
     },
     {
         "name": "Mao Kun",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "boss": {
             "names": [
                 "Fairgraves, Never Dying"
             ]
         },
+        "layout": {},
         "connected": [
             "Shore Map"
         ],
@@ -3096,13 +2825,7 @@
     },
     {
         "name": "Marshes Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Marshes_Map",
         "boss": {
             "difficulty": 4,
@@ -3113,10 +2836,12 @@
                 "Tore, Towering Ancient"
             ]
         },
-        "layout": 5,
-        "density": 8,
-        "tileset": "Maligaro's Sanctum",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 8,
+            "tileset": "Maligaro's Sanctum",
+            "outdoors": true
+        },
         "connected": [
             "Cemetery Map",
             "Lighthouse Map",
@@ -3138,13 +2863,7 @@
     },
     {
         "name": "Maze Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Maze_Map",
         "boss": {
             "difficulty": 6,
@@ -3154,9 +2873,11 @@
                 "Shadow of the Vaal"
             ]
         },
-        "layout": 3,
-        "density": 6,
-        "tileset": "The Ancient Pyramid",
+        "layout": {
+            "rating": 3,
+            "density": 6,
+            "tileset": "The Ancient Pyramid"
+        },
         "connected": [
             "Colosseum Map",
             "Crater Map",
@@ -3188,13 +2909,7 @@
     },
     {
         "name": "Maze of the Minotaur Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Maze_of_the_Minotaur_Map",
         "boss": {
             "difficulty": 10,
@@ -3205,11 +2920,13 @@
                 "Guardian of the Minotaur"
             ]
         },
-        "layout": 8,
-        "density": 3,
-        "tileset": "The Caverns",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 3,
+            "tileset": "The Caverns",
+            "few_obstacles": true,
+            "linear": true
+        },
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
         "cards": [
             "Her Mask",
@@ -3227,13 +2944,7 @@
     },
     {
         "name": "Mineral Pools Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Mineral_Pools_Map",
         "boss": {
             "difficulty": 6,
@@ -3244,10 +2955,12 @@
                 "Shock and Horror"
             ]
         },
-        "layout": 2,
-        "density": 4,
-        "tileset": "The Cavern of Anger",
-        "outdoors": true,
+        "layout": {
+            "rating": 2,
+            "density": 4,
+            "tileset": "The Cavern of Anger",
+            "outdoors": true
+        },
         "connected": [
             "Lighthouse Map",
             "Phantasmagoria Map",
@@ -3285,13 +2998,7 @@
     },
     {
         "name": "Moon Temple Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Moon_Temple_Map",
         "pantheon": "Soul of Lunaris",
         "boss": {
@@ -3303,10 +3010,12 @@
                 "Sebbert, Crescent's Point"
             ]
         },
-        "layout": 5,
-        "density": 10,
-        "tileset": "The Lunaris Temple Level 1",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 5,
+            "density": 10,
+            "tileset": "The Lunaris Temple Level 1",
+            "few_obstacles": true
+        },
         "connected": [
             "Infested Valley Map",
             "Residence Map",
@@ -3337,13 +3046,7 @@
     },
     {
         "name": "Museum Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Museum_Map",
         "boss": {
             "difficulty": 8,
@@ -3354,9 +3057,11 @@
                 "He of Many Pieces"
             ]
         },
-        "layout": 3,
-        "density": 8,
-        "tileset": "The Library",
+        "layout": {
+            "rating": 3,
+            "density": 8,
+            "tileset": "The Library"
+        },
         "connected": [
             "Crater Map",
             "Malformation Map",
@@ -3395,13 +3100,7 @@
     },
     {
         "name": "Necropolis Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Necropolis_Map",
         "boss": {
             "difficulty": 7,
@@ -3412,10 +3111,12 @@
                 "Burtok, Conjurer of Bones"
             ]
         },
-        "layout": 4,
-        "density": 7,
-        "tileset": "The Crypt",
-        "linear": true,
+        "layout": {
+            "rating": 4,
+            "density": 7,
+            "tileset": "The Crypt",
+            "linear": true
+        },
         "connected": [
             "Arid Lake Map",
             "Death and Taxes",
@@ -3445,19 +3146,14 @@
     },
     {
         "name": "Olmec's Sanctum",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
+        "tier": 1,
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "boss": {
             "names": [
                 "Olmec, the All Stone"
             ]
         },
+        "layout": {},
         "connected": [
             "Bone Crypt Map"
         ],
@@ -3471,13 +3167,7 @@
     },
     {
         "name": "Orchard Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Orchard_Map",
         "boss": {
             "difficulty": 6,
@@ -3488,10 +3178,12 @@
                 "Vision of Justice"
             ]
         },
-        "layout": 5,
-        "density": 8,
-        "tileset": "The Imperial Gardens",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 8,
+            "tileset": "The Imperial Gardens",
+            "outdoors": true
+        },
         "connected": [
             "Arcade Map",
             "Courtyard Map",
@@ -3527,13 +3219,7 @@
     },
     {
         "name": "Overgrown Ruin Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Overgrown_Ruin_Map",
         "boss": {
             "difficulty": 7,
@@ -3544,9 +3230,11 @@
                 "Visceris"
             ]
         },
-        "layout": 4,
-        "density": 7,
-        "tileset": "The Chamber of Sins Level 1",
+        "layout": {
+            "rating": 4,
+            "density": 7,
+            "tileset": "The Chamber of Sins Level 1"
+        },
         "connected": [
             "Factory Map",
             "Flooded Mine Map",
@@ -3583,13 +3271,7 @@
     },
     {
         "name": "Overgrown Shrine Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Overgrown_Shrine_Map",
         "pantheon": "Soul of Arakaali",
         "boss": {
@@ -3601,11 +3283,13 @@
                 "Maligaro the Mutilator"
             ]
         },
-        "layout": 7,
-        "density": 4,
-        "tileset": "The Chamber of Sins Level 1",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 4,
+            "tileset": "The Chamber of Sins Level 1",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Acton's Nightmare",
             "Cemetery Map",
@@ -3641,13 +3325,7 @@
     },
     {
         "name": "Phantasmagoria Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Phantasmagoria_Map",
         "boss": {
             "difficulty": 7,
@@ -3658,10 +3336,12 @@
                 "Erythrophagia"
             ]
         },
-        "layout": 6,
-        "density": 4,
-        "tileset": "The Belly of the Beast",
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 4,
+            "tileset": "The Belly of the Beast",
+            "linear": true
+        },
         "connected": [
             "Arcade Map",
             "Forbidden Woods Map",
@@ -3697,13 +3377,7 @@
     },
     {
         "name": "Pier Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Pier_Map",
         "boss": {
             "difficulty": 5,
@@ -3714,10 +3388,12 @@
                 "Ancient Architect"
             ]
         },
-        "layout": 5,
-        "density": 8,
-        "tileset": "The Docks",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 8,
+            "tileset": "The Docks",
+            "outdoors": true
+        },
         "connected": [
             "Arachnid Nest Map",
             "Armoury Map",
@@ -3747,19 +3423,14 @@
     },
     {
         "name": "Pillars of Arun",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "boss": {
             "names": [
                 "Talin, Faithbreaker"
             ]
         },
+        "layout": {},
         "connected": [
             "Dunes Map"
         ],
@@ -3775,13 +3446,7 @@
     },
     {
         "name": "Pit Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Pit_Map",
         "boss": {
             "difficulty": 3,
@@ -3792,11 +3457,13 @@
                 "Olof, Son of the Headsman"
             ]
         },
-        "layout": 5,
-        "density": 3,
-        "tileset": "Daresso's Dream",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 3,
+            "tileset": "Daresso's Dream",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Arcade Map",
             "Atoll Map",
@@ -3825,13 +3492,7 @@
     },
     {
         "name": "Pit of the Chimera Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Pit_of_the_Chimera_Map",
         "boss": {
             "difficulty": 10,
@@ -3842,11 +3503,13 @@
                 "Guardian of the Chimera"
             ]
         },
-        "layout": 7,
-        "density": 6,
-        "tileset": "Daresso's Dream",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 6,
+            "tileset": "Daresso's Dream",
+            "outdoors": true,
+            "linear": true
+        },
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
         "cards": [
             "A Familiar Call",
@@ -3870,13 +3533,7 @@
     },
     {
         "name": "Plateau Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Plateau_Map",
         "boss": {
             "difficulty": 7,
@@ -3888,12 +3545,14 @@
                 "Puruna, the Challenger"
             ]
         },
-        "layout": 9,
-        "density": 2,
-        "tileset": "The Ledge",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 2,
+            "tileset": "The Ledge",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Tower Map",
             "Toxic Sewer Map",
@@ -3921,13 +3580,7 @@
     },
     {
         "name": "Plaza Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Plaza_Map",
         "boss": {
             "difficulty": 6,
@@ -3937,9 +3590,11 @@
                 "The Goddess"
             ]
         },
-        "layout": 3,
-        "density": 6,
-        "tileset": "The Imperial Gardens",
+        "layout": {
+            "rating": 3,
+            "density": 6,
+            "tileset": "The Imperial Gardens"
+        },
         "connected": [
             "Cold River Map",
             "Frozen Cabins Map",
@@ -3968,19 +3623,14 @@
     },
     {
         "name": "Poorjoy's Asylum",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "boss": {
             "names": [
                 "Mistress Hyseria"
             ]
         },
+        "layout": {},
         "connected": [
             "Temple Map"
         ],
@@ -4003,13 +3653,7 @@
     },
     {
         "name": "Port Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Port_Map",
         "boss": {
             "difficulty": 8,
@@ -4020,11 +3664,13 @@
                 "Unravelling Horror"
             ]
         },
-        "layout": 7,
-        "density": 6,
-        "tileset": "The Quay",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 6,
+            "tileset": "The Quay",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Atoll Map",
             "Courtyard Map",
@@ -4062,13 +3708,7 @@
     },
     {
         "name": "Precinct Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Precinct_Map",
         "boss": {
             "difficulty": 8,
@@ -4084,11 +3724,13 @@
                 "Wilorin Demontamer"
             ]
         },
-        "layout": 6,
-        "density": 8,
-        "tileset": "The Slums",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 6,
+            "density": 8,
+            "tileset": "The Slums",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Overgrown Shrine Map",
             "Primordial Blocks Map",
@@ -4121,19 +3763,14 @@
     },
     {
         "name": "Primordial Blocks Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "boss": {
             "names": [
                 "High Lithomancer"
             ]
         },
+        "layout": {},
         "connected": [
             "Belfry Map",
             "Cemetery Map",
@@ -4163,13 +3800,7 @@
     },
     {
         "name": "Primordial Pool Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Primordial_Pool_Map",
         "boss": {
             "difficulty": 7,
@@ -4180,12 +3811,14 @@
                 "Nightmare's Omen"
             ]
         },
-        "layout": 8,
-        "density": 1,
-        "tileset": "The Fetid Pool",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 1,
+            "tileset": "The Fetid Pool",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Grotto Map",
             "Lighthouse Map",
@@ -4213,13 +3846,7 @@
     },
     {
         "name": "Promenade Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Promenade_Map",
         "boss": {
             "difficulty": 5,
@@ -4230,12 +3857,14 @@
                 "Blackguard Tempest"
             ]
         },
-        "layout": 8,
-        "density": 4,
-        "tileset": "The Grand Promenade",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 4,
+            "tileset": "The Grand Promenade",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Atoll Map",
             "Chateau Map",
@@ -4270,13 +3899,7 @@
     },
     {
         "name": "Racecourse Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Racecourse_Map",
         "boss": {
             "difficulty": 7,
@@ -4289,12 +3912,14 @@
                 "Shredder of Gladiators"
             ]
         },
-        "layout": 10,
-        "density": 1,
-        "tileset": "The Grand Arena",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 10,
+            "density": 1,
+            "tileset": "The Grand Arena",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Coves Map",
             "Temple Map",
@@ -4318,13 +3943,7 @@
     },
     {
         "name": "Ramparts Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Ramparts_Map",
         "boss": {
             "difficulty": 5,
@@ -4335,12 +3954,14 @@
                 "The Reaver"
             ]
         },
-        "layout": 7,
-        "density": 6,
-        "tileset": "The Sarn Ramparts",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 6,
+            "tileset": "The Sarn Ramparts",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Arachnid Nest Map",
             "Crystal Ore Map",
@@ -4370,13 +3991,7 @@
     },
     {
         "name": "Relic Chambers Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Relic_Chambers_Map",
         "boss": {
             "difficulty": 1,
@@ -4386,10 +4001,12 @@
                 "Litanius, the Black Prayer"
             ]
         },
-        "layout": 5,
-        "density": 6,
-        "tileset": "The Reliquary",
-        "linear": true,
+        "layout": {
+            "rating": 5,
+            "density": 6,
+            "tileset": "The Reliquary",
+            "linear": true
+        },
         "connected": [
             "Flooded Mine Map",
             "Shipyard Map",
@@ -4418,13 +4035,7 @@
     },
     {
         "name": "Residence Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/Residence_Map",
         "boss": {
             "difficulty": 4,
@@ -4435,10 +4046,12 @@
                 "Excellis Aurafix"
             ]
         },
-        "layout": 4,
-        "density": 8,
-        "tileset": "The Sceptre of God",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 4,
+            "density": 8,
+            "tileset": "The Sceptre of God",
+            "few_obstacles": true
+        },
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -4476,13 +4089,7 @@
     },
     {
         "name": "Scriptorium Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
+        "tier": 1,
         "poedb": "https://poedb.tw/us/Scriptorium_Map",
         "boss": {
             "difficulty": 6,
@@ -4493,9 +4100,11 @@
                 "Gisale, Thought Thief"
             ]
         },
-        "layout": 3,
-        "density": 7,
-        "tileset": "The Library",
+        "layout": {
+            "rating": 3,
+            "density": 7,
+            "tileset": "The Library"
+        },
         "connected": [
             "Belfry Map",
             "Precinct Map",
@@ -4528,13 +4137,7 @@
     },
     {
         "name": "Shipyard Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
+        "tier": 8,
         "poedb": "https://poedb.tw/us/Shipyard_Map",
         "boss": {
             "difficulty": 7,
@@ -4546,10 +4149,12 @@
                 "Susara, Siren of Pondium"
             ]
         },
-        "layout": 5,
-        "density": 3,
-        "tileset": "The Docks",
-        "outdoors": true,
+        "layout": {
+            "rating": 5,
+            "density": 3,
+            "tileset": "The Docks",
+            "outdoors": true
+        },
         "connected": [
             "Canyon Map",
             "Overgrown Ruin Map",
@@ -4580,13 +4185,7 @@
     },
     {
         "name": "Shore Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Shore_Map",
         "boss": {
             "difficulty": 3,
@@ -4596,12 +4195,14 @@
                 "Belcer, the Pirate Lord"
             ]
         },
-        "layout": 9,
-        "density": 1,
-        "tileset": "The Coast",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 1,
+            "tileset": "The Coast",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Canyon Map",
             "Mao Kun",
@@ -4636,13 +4237,7 @@
     },
     {
         "name": "Shrine Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Shrine_Map",
         "boss": {
             "difficulty": 6,
@@ -4653,9 +4248,11 @@
                 "Piety the Empyrean"
             ]
         },
-        "layout": 3,
-        "density": 10,
-        "tileset": "The Lunaris Temple Level 1",
+        "layout": {
+            "rating": 3,
+            "density": 10,
+            "tileset": "The Lunaris Temple Level 1"
+        },
         "connected": [
             "Dunes Map",
             "Excavation Map",
@@ -4682,13 +4279,7 @@
     },
     {
         "name": "Siege Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Siege_Map",
         "pantheon": "Soul of Tukohama",
         "boss": {
@@ -4699,12 +4290,14 @@
                 "Tahsin, Warmaker"
             ]
         },
-        "layout": 8,
-        "density": 9,
-        "tileset": "The Canals",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 9,
+            "tileset": "The Canals",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -4734,19 +4327,14 @@
     },
     {
         "name": "Silo Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Silo_Map",
         "boss": {
             "names": [
                 "Renkarr, The Kiln Keeper"
             ]
         },
+        "layout": {},
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -4778,19 +4366,14 @@
     },
     {
         "name": "Stagnation Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
+        "tier": 2,
         "poedb": "https://poedb.tw/us/Stagnation_Map",
         "boss": {
             "names": [
                 "Murgeth Bogsong"
             ]
         },
+        "layout": {},
         "connected": [
             "Alleyways Map",
             "Primordial Pool Map",
@@ -4820,13 +4403,7 @@
     },
     {
         "name": "Strand Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Strand_Map",
         "boss": {
             "difficulty": 6,
@@ -4838,12 +4415,14 @@
                 "Master of the Blade"
             ]
         },
-        "layout": 10,
-        "density": 1,
-        "tileset": "The Twilight Strand",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 10,
+            "density": 1,
+            "tileset": "The Twilight Strand",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Belfry Map",
             "Orchard Map",
@@ -4883,13 +4462,7 @@
     },
     {
         "name": "Sulphur Vents Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/Sulphur_Vents_Map",
         "boss": {
             "difficulty": 3,
@@ -4900,11 +4473,13 @@
                 "The Gorgon"
             ]
         },
-        "layout": 7,
-        "density": 5,
-        "tileset": "The Boiling Lake",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 5,
+            "tileset": "The Boiling Lake",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Crimson Temple Map",
             "Flooded Mine Map",
@@ -4927,31 +4502,20 @@
     },
     {
         "name": "Synthesised Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Synthesised_Map",
         "boss": {
             "names": [
                 "Tahsin, Warmaker"
             ]
         },
+        "layout": {},
         "wiki": "https://www.poewiki.net/wiki/Synthesised_Map",
         "cards": []
     },
     {
         "name": "Temple Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Temple_Map",
         "pantheon": "Soul of Solaris",
         "boss": {
@@ -4963,10 +4527,12 @@
                 "Jorus, Sky's Edge"
             ]
         },
-        "layout": 6,
-        "density": 5,
-        "tileset": "The Solaris Temple Level 1",
-        "few_obstacles": true,
+        "layout": {
+            "rating": 6,
+            "density": 5,
+            "tileset": "The Solaris Temple Level 1",
+            "few_obstacles": true
+        },
         "connected": [
             "Defiled Cathedral Map",
             "Poorjoy's Asylum",
@@ -5003,13 +4569,7 @@
     },
     {
         "name": "Terrace Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 14,
         "poedb": "https://poedb.tw/us/Terrace_Map",
         "pantheon": "Soul of Yugul",
         "boss": {
@@ -5021,11 +4581,13 @@
                 "Varhesh, Shimmering Aberration"
             ]
         },
-        "layout": 6,
-        "density": 6,
-        "tileset": "The High Gardens",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 6,
+            "density": 6,
+            "tileset": "The High Gardens",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Colosseum Map",
             "Crater Map",
@@ -5059,19 +4621,14 @@
     },
     {
         "name": "The Coward's Trial",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
+        "tier": 7,
         "poedb": "https://poedb.tw/us/The_Cowards_Trial",
         "boss": {
             "names": [
                 "Infector of Dreams"
             ]
         },
+        "layout": {},
         "connected": [
             "Cursed Crypt Map"
         ],
@@ -5091,19 +4648,14 @@
     },
     {
         "name": "The Putrid Cloister",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "boss": {
             "names": [
                 "Headmistress Braeta"
             ]
         },
+        "layout": {},
         "connected": [
             "Museum Map"
         ],
@@ -5127,13 +4679,7 @@
     },
     {
         "name": "The Twilight Temple",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "boss": {
             "names": [
@@ -5141,6 +4687,7 @@
                 "Selenia, the Endless Night"
             ]
         },
+        "layout": {},
         "connected": [
             "Moon Temple Map"
         ],
@@ -5167,19 +4714,14 @@
     },
     {
         "name": "The Vinktar Square",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
+        "tier": 5,
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "boss": {
             "names": [
                 "Avatar of Thunder"
             ]
         },
+        "layout": {},
         "wiki": "https://www.poewiki.net/wiki/The_Vinktar_Square",
         "cards": [
             "Monochrome",
@@ -5191,13 +4733,7 @@
     },
     {
         "name": "Thicket Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 13,
         "poedb": "https://poedb.tw/us/Thicket_Map",
         "boss": {
             "difficulty": 5,
@@ -5208,9 +4744,11 @@
                 "The Primal One"
             ]
         },
-        "layout": 5,
-        "density": 4,
-        "tileset": "The Dread Thicket",
+        "layout": {
+            "rating": 5,
+            "density": 4,
+            "tileset": "The Dread Thicket"
+        },
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -5240,13 +4778,7 @@
     },
     {
         "name": "Tower Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Tower_Map",
         "boss": {
             "difficulty": 9,
@@ -5258,10 +4790,12 @@
                 "Liantra"
             ]
         },
-        "layout": 4,
-        "density": 7,
-        "tileset": "Shavronne's Tower",
-        "linear": true,
+        "layout": {
+            "rating": 4,
+            "density": 7,
+            "tileset": "Shavronne's Tower",
+            "linear": true
+        },
         "connected": [
             "Mineral Pools Map",
             "Plateau Map",
@@ -5291,13 +4825,7 @@
     },
     {
         "name": "Toxic Sewer Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Toxic_Sewer_Map",
         "boss": {
             "difficulty": 6,
@@ -5307,11 +4835,13 @@
                 "Arachnoxia"
             ]
         },
-        "layout": 9,
-        "density": 6,
-        "tileset": "The Sewers",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 6,
+            "tileset": "The Sewers",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Canyon Map",
             "City Square Map",
@@ -5343,13 +4873,7 @@
     },
     {
         "name": "Tropical Island Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Tropical_Island_Map",
         "boss": {
             "difficulty": 2,
@@ -5359,12 +4883,14 @@
                 "Blood Progenitor"
             ]
         },
-        "layout": 9,
-        "density": 1,
-        "tileset": "The Southern Forest",
-        "few_obstacles": true,
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 9,
+            "density": 1,
+            "tileset": "The Southern Forest",
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Arsenal Map",
             "Barrows Map",
@@ -5395,13 +4921,7 @@
     },
     {
         "name": "Underground River Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 15,
         "poedb": "https://poedb.tw/us/Underground_River_Map",
         "boss": {
             "difficulty": 4,
@@ -5412,11 +4932,13 @@
                 "It That Fell"
             ]
         },
-        "layout": 7,
-        "density": 3,
-        "tileset": "The Caverns",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 3,
+            "tileset": "The Caverns",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Caer Blaidd, Wolfpack's Den",
             "Dig Map",
@@ -5444,13 +4966,7 @@
     },
     {
         "name": "Underground Sea Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
+        "tier": 10,
         "poedb": "https://poedb.tw/us/Underground_Sea_Map",
         "boss": {
             "difficulty": 4,
@@ -5462,9 +4978,11 @@
                 "Merveil, the Returned"
             ]
         },
-        "layout": 5,
-        "density": 10,
-        "tileset": "The Cavern of Anger",
+        "layout": {
+            "rating": 5,
+            "density": 10,
+            "tileset": "The Cavern of Anger"
+        },
         "connected": [
             "Beach Map",
             "Geode Map",
@@ -5505,13 +5023,7 @@
     },
     {
         "name": "Vaal Pyramid Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Vaal_Pyramid_Map",
         "boss": {
             "difficulty": 6,
@@ -5524,9 +5036,11 @@
                 "The Hollow Lady"
             ]
         },
-        "layout": 3,
-        "density": 7,
-        "tileset": "The Ancient Pyramid",
+        "layout": {
+            "rating": 3,
+            "density": 7,
+            "tileset": "The Ancient Pyramid"
+        },
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -5561,13 +5075,7 @@
     },
     {
         "name": "Vaal Temple Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Vaal_Temple_Map",
         "boss": {
             "difficulty": 9,
@@ -5580,9 +5088,11 @@
                 "K'aj Y'ara'az"
             ]
         },
-        "layout": 3,
-        "density": 7,
-        "tileset": "The Ancient Pyramid",
+        "layout": {
+            "rating": 3,
+            "density": 7,
+            "tileset": "The Ancient Pyramid"
+        },
         "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map",
         "cards": [
             "Beauty Through Death",
@@ -5606,15 +5116,10 @@
     },
     {
         "name": "Vaults of Atziri",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
+        "tier": 4,
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "boss": {},
+        "layout": {},
         "connected": [
             "Vaal Pyramid Map"
         ],
@@ -5643,13 +5148,7 @@
     },
     {
         "name": "Volcano Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
+        "tier": 16,
         "poedb": "https://poedb.tw/us/Volcano_Map",
         "boss": {
             "difficulty": 4,
@@ -5659,10 +5158,12 @@
                 "Forest of Flames"
             ]
         },
-        "layout": 4,
-        "density": 6,
-        "tileset": "Kaom's Dream",
-        "outdoors": true,
+        "layout": {
+            "rating": 4,
+            "density": 6,
+            "tileset": "Kaom's Dream",
+            "outdoors": true
+        },
         "connected": [
             "Colosseum Map",
             "Racecourse Map"
@@ -5691,13 +5192,7 @@
     },
     {
         "name": "Waste Pool Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
+        "tier": 6,
         "poedb": "https://poedb.tw/us/Waste_Pool_Map",
         "boss": {
             "difficulty": 7,
@@ -5708,11 +5203,13 @@
                 "Portentia, the Foul"
             ]
         },
-        "layout": 8,
-        "density": 2,
-        "tileset": "Doedre's Cesspool",
-        "few_obstacles": true,
-        "linear": true,
+        "layout": {
+            "rating": 8,
+            "density": 2,
+            "tileset": "Doedre's Cesspool",
+            "few_obstacles": true,
+            "linear": true
+        },
         "connected": [
             "Canyon Map",
             "Mineral Pools Map",
@@ -5743,13 +5240,7 @@
     },
     {
         "name": "Wasteland Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
+        "tier": 9,
         "poedb": "https://poedb.tw/us/Wasteland_Map",
         "boss": {
             "difficulty": 5,
@@ -5759,11 +5250,13 @@
                 "The Brittle Emperor"
             ]
         },
-        "layout": 4,
-        "density": 5,
-        "tileset": "The Dried Lake",
-        "few_obstacles": true,
-        "outdoors": true,
+        "layout": {
+            "rating": 4,
+            "density": 5,
+            "tileset": "The Dried Lake",
+            "few_obstacles": true,
+            "outdoors": true
+        },
         "connected": [
             "Caldera Map",
             "Foundry Map"
@@ -5787,19 +5280,14 @@
     },
     {
         "name": "Whakawairua Tuahu",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
+        "tier": 3,
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "boss": {
             "names": [
                 "Tormented Temptress"
             ]
         },
+        "layout": {},
         "connected": [
             "Strand Map"
         ],
@@ -5827,13 +5315,7 @@
     },
     {
         "name": "Wharf Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
+        "tier": 12,
         "poedb": "https://poedb.tw/us/Wharf_Map",
         "boss": {
             "difficulty": 2,
@@ -5843,11 +5325,13 @@
                 "Stone of the Currents"
             ]
         },
-        "layout": 7,
-        "density": 5,
-        "tileset": "The Docks",
-        "outdoors": true,
-        "linear": true,
+        "layout": {
+            "rating": 7,
+            "density": 5,
+            "tileset": "The Docks",
+            "outdoors": true,
+            "linear": true
+        },
         "connected": [
             "Crater Map",
             "Defiled Cathedral Map",

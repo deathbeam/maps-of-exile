@@ -71,15 +71,24 @@ def get_map_data(map_data, cards, config):
 	body = table.find("tbody")
 	rows = body.find_all("tr")
 	map_data["boss"] = {}
+	map_data["layout"] = {}
 
 	for row in rows:
 		cols = row.find_all("td")
 		name = cols[0].text.strip().lower()
 		value = cols[1].text.strip()
 		if name == "clearing ability":
-			map_data["layout"] = int(value)
+			map_data["layout"]["rating"] = int(value)
 		elif name == "mob count":
-			map_data["density"] = int(value)
+			map_data["layout"]["density"] = int(value)
+		elif name == "few obstacles" and value == "o":
+			map_data["layout"]["few_obstacles"] = True
+		elif name == "outdoors" and value == "o":
+			map_data["layout"]["outdoors"] = True
+		elif name == "linear" and value == "o":
+			map_data["layout"]["linear"] = True
+		elif name == "tileset":
+			map_data["layout"]["tileset"] = value
 		elif name == "boss difficulty":
 			map_data["boss"]["difficulty"] = int(re.sub("-.+", "", value))
 		elif name == "boss based on":
@@ -88,14 +97,6 @@ def get_map_data(map_data, cards, config):
 			map_data["boss"]["notes"] = value
 		elif name == "boss not in own room" and value == "x":
 			map_data["boss"]["separated"] = True
-		elif name == "tileset":
-			map_data["tileset"] = value
-		elif name == "few obstacles" and value == "o":
-			map_data["few_obstacles"] = True
-		elif name == "outdoors" and value == "o":
-			map_data["outdoors"] = True
-		elif name == "linear" and value == "o":
-			map_data["linear"] = True
 
 	# Extra data
 	map_cards = set([])
@@ -160,10 +161,10 @@ def get_maps(config):
 		map_url = cols[3].find('a').attrs['href']
 		map_url = map_url.replace("/us/", "")
 		map_url = config["poedb"].replace("{}", map_url)
-		tiers = list(map(lambda x: int(x.strip()), cols[4].text.split(",")))
+		tier = next(map(lambda x: int(x.strip()), cols[4].text.split(",")))
 		out.append({
 			"name": name,
-			"tiers": tiers,
+			"tier": tier,
 			"poedb": map_url
 		})
 
@@ -192,21 +193,43 @@ def get_maps(config):
 	return sorted(out, key=lambda d: d["name"])
 
 
+def get_maps_template(maps):
+	out = []
+	for map in maps:
+		out.append({
+			"name": map["name"],
+			"layout": {
+				"good_for_open_mechanics": None,
+				"good_for_deli_mirror": None
+			},
+			"boss": {
+				"spawn_at_load": None,
+				"close_to_start": None,
+				"phases": None
+			}
+		})
+	return out
+
+
 def main():
 	dir_path = os.path.dirname(os.path.realpath(__file__))
 	with open (dir_path + "/config.yaml", "r") as f:
 		config = yaml.safe_load(f)
 
 	args = sys.argv
-	fetch_cards = True
-	fetch_maps = True
+	fetch_cards = False
+	fetch_maps = False
+	fetch_template = False
 
 	if len(args) > 1:
-		if args[1] == 'cards':
-			fetch_maps = False
+		if 'cards' in args[1]:
+			fetch_maps = True
 
-		if args[1] == 'maps':
-			fetch_cards = False
+		if  'maps' in args[1]:
+			fetch_cards = True
+
+		if 'template' in args[1]:
+			fetch_template = True
 
 	config = config["data"]
 	api_key = os.environ['GOOGLE_API_KEY']
@@ -218,8 +241,12 @@ def main():
 
 	if fetch_maps:
 		maps = get_maps(config["maps"])
-		maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))
 
+		if fetch_template:
+			with open(dir_path + "/../maps/maps_template.json", "w") as f:
+				f.write(json.dumps(get_maps_template(maps), indent=4, cls=DecimalEncoder))
+
+		maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
 			f.write(json.dumps(maps, indent=4, cls=DecimalEncoder))
 

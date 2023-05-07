@@ -47,7 +47,7 @@ const preparedMaps = maps.map(map => {
     mapTags.push("linear")
   }
   if (map.pantheon) {
-    mapTags.push(map.pantheon)
+    mapTags.push(map.pantheon.toLowerCase())
   }
   if (map.boss.names) {
     const names =map.boss.names.filter(n => !n.includes('Merveil'))
@@ -62,6 +62,12 @@ const preparedMaps = maps.map(map => {
     tags: mapTags
   }
 })
+
+const possibleTags = [...new Set(preparedMaps
+  .flatMap(m => m.tags)
+  .map(t => t.replace(/\d+ bosses/, "bosses"))
+  .map(t => t.replace(/soul of .+/, "soul of"))
+)].sort()
 
 function tierColor(map) {
   const naturalTier = map.tiers[0]
@@ -254,9 +260,10 @@ function App() {
       <Loader loading={loading}/>
       <div className="container-fluid p-4">
         <div className="row">
-          <div className="col-2">
+          <div className="col col-4">
             <label className="form-label text-light">Search</label>
             <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
+            <span className="text-light small">tags:</span> <MapTags tags={possibleTags}/>
           </div>
           <div className="col">
             <label className="form-label text-light">Layout weight</label>

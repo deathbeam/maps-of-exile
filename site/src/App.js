@@ -271,7 +271,7 @@ function App() {
           </div>
         </div>
       </div>
-      <table className="table table-dark mb-0">
+      <table className="table table-dark table-striped mb-0">
         <thead>
         <tr>
           <th scope="col">
@@ -315,20 +315,22 @@ function App() {
             </span>
           </th>
           <th scope="col">Connected Maps</th>
-          <th scope="col">Tags</th>
           <th scope="col">Cards</th>
         </tr>
         </thead>
         <tbody>
         {filterMaps(ratedMaps, searchInput).map(m =>
           <tr>
-            <td><b>{Math.round(m.score || 0)}</b></td>
-            <td><a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a></td>
-            <td>{ratingBadge(m.layout)}</td>
-            <td>{ratingBadge(m.density)}</td>
-            <td>{bossDisplay(m)}</td>
+            <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
+            <td>
+              <a href={m.wiki} target="_blank" rel="noreferrer" className={tierColor(m)}>{m.name}</a>
+              <br/>
+              {buildTags(m)}
+            </td>
+            <td className="text-center">{ratingBadge(m.layout)}</td>
+            <td className="text-center">{ratingBadge(m.density)}</td>
+            <td className="text-center">{bossDisplay(m)}</td>
             <td>{connectedDisplay(m, ratedMaps)}</td>
-            <td>{buildTags(m)}</td>
             <td>{mapAndRateCards(m.cards).map(c => cardDisplay(c))}</td>
           </tr>
         )}

@@ -112,7 +112,7 @@ const MapBoss = ({ boss }) => {
   const badge = <RatingBadge rating={boss.difficulty} inverse={true} />
 
   if (boss.names || boss.notes) {
-    return <span className="tooltip-tag tooltip-tag-right">
+    return <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
       <span className="tooltip-tag-text">
         {boss.names.map(b => <b>{b}<br/></b>)}
         {boss.notes}
@@ -297,7 +297,7 @@ function App() {
         <thead>
         <tr>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and <b>Card</b> score, accounting for weights at top.
               </span>
@@ -305,7 +305,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Map name, colored based on natural tier (red, yellow, white).
               </span>
@@ -313,7 +313,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 How easy is the map to clear, e.g backtracking etc. Do not accounts for league mechanics, for that you probably want to look at outdoors tag.
               </span>
@@ -321,7 +321,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Monster count in maps. Do not counts for amount of monsters per square in map just total mob count.
               </span>
@@ -329,7 +329,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Boss difficulty, e.g how scary it is to kill. This rating do not includes boss fight length (phases for example).
               </span>
@@ -337,7 +337,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Maps adjacent to this map on atlas with score on left.
               </span>
@@ -345,7 +345,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
                 it might not necessarily be higher priority because of its lower drop rate.

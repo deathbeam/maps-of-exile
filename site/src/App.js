@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {useState, useMemo} from 'react'
-import debounce from 'lodash.debounce'
+import {useState, useMemo, useTransition} from 'react'
 import merge from 'lodash.merge'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
@@ -280,30 +279,23 @@ function filterMaps(ratedMaps, searchInput) {
 const ratedCards = mapAndRateCards(preparedCards)
 
 function App() {
-  const [loading, setLoading] = useState(false)
-  const withLoading = (val, callback, ...args) => {
-    setLoading(val)
-    return callback(...args)
-  }
+  const [isPending, startTransition] = useTransition()
 
-  const useDebouncedState = (def) => {
+  const useTransitionState = (def) => {
     const [val, setVal] = useState(def)
-    const debouncedVal = useMemo(() => debounce(e => withLoading(false, setVal, e.target.value), 300), [])
-    const startDebouncedVal = e => withLoading(true, debouncedVal, e)
-    return [val, startDebouncedVal]
+    return [val, (e) => startTransition(() => setVal(e.target.value))]
   }
 
-  const [searchInput, setSearchInput] = useDebouncedState('')
-  const [layoutInput, setLayoutInput] = useDebouncedState('3')
-  const [densityInput, setDensityInput] = useDebouncedState('2')
-  const [bossInput, setBossInput] = useDebouncedState('0.2')
-  const [cardInput, setCardInput] = useDebouncedState('0.5')
+  const [searchInput, setSearchInput] = useTransitionState('')
+  const [layoutInput, setLayoutInput] = useTransitionState('3')
+  const [densityInput, setDensityInput] = useTransitionState('2')
+  const [bossInput, setBossInput] = useTransitionState('0.2')
+  const [cardInput, setCardInput] = useTransitionState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
-  const filteredMaps = useMemo(() => filterMaps(ratedMaps, searchInput), [ratedMaps, searchInput])
 
   return (
     <>
-      <Loader loading={loading}/>
+      <Loader loading={isPending}/>
       <div className="container-fluid p-4">
         <div className="row">
           <div className="col col-4">
@@ -402,17 +394,17 @@ function App() {
         </tr>
         </thead>
         <tbody>
-        {filteredMaps.map(m =>
-          <tr key={m.name}>
-            <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
-            <td><MapName map={m}/></td>
-            <td className="text-center"><RatingBadge rating={m.layout.rating}/></td>
-            <td className="text-center"><RatingBadge rating={m.layout.density}/></td>
-            <td className="text-center"><MapBoss boss={m.boss}/></td>
-            <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
-            <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>
-          </tr>
-        )}
+          {filterMaps(ratedMaps, searchInput).map(m =>
+            <tr key={m.name}>
+              <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
+              <td><MapName map={m}/></td>
+              <td className="text-center"><RatingBadge rating={m.layout.rating}/></td>
+              <td className="text-center"><RatingBadge rating={m.layout.density}/></td>
+              <td className="text-center"><MapBoss boss={m.boss}/></td>
+              <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
+              <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>
+            </tr>
+          )}
         </tbody>
       </table>
       <div className="container-fluid p-4 text-end">

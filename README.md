@@ -27,6 +27,7 @@ https://www.poewiki.net/wiki/Colonnade_Map
 - Layouts good for league mechanics (legion/breach/stuff like that, mostly
     pretty open, even though this is already partially covered with outdoors
     tag)
+- Show and add filter for multiple bosses (boss rushing/metamorph)
 
 ## So what it actually does?
 

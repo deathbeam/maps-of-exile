@@ -96,8 +96,6 @@ def get_map_data(map_data, cards, config):
 			map_data["outdoors"] = True
 		elif name == "linear" and value == "o":
 			map_data["linear"] = True
-		elif name == "additional notes" and "pantheon" in value.lower():
-			map_data["pantheon"] = re.sub("[.].+", "", value.replace("Pantheon-", "").replace("Pantheon -", "").strip())
 
 	# Extra data
 	map_cards = set([])
@@ -168,6 +166,28 @@ def get_maps(config):
 			"tiers": tiers,
 			"poedb": map_url
 		})
+
+	url = config["pantheon"]
+	print(f"Getting pantheon data from url {url}")
+	r = requests.get(url)
+	soup = BeautifulSoup(r.content, "html.parser")
+	pantheonlist = soup.find(id="ThePantheon")
+	table = pantheonlist.find("table")
+	body = table.find("tbody")
+	rows = body.find_all("tr")
+
+	for row in rows:
+		value = row.find_all("td")[1]
+		pantheon_name = value.find_all("a")[0].text.strip()
+		pantheon_maps = value.find_all("a", class_="itemclass_map")
+
+		for pantheon_map in pantheon_maps:
+			txt = pantheon_map.text.strip()
+			for o in out:
+				if o["name"] == txt:
+					print(f"Found pantheon {pantheon_name} for map {txt}")
+					o["pantheon"] = pantheon_name
+					break
 
 	return sorted(out, key=lambda d: d["name"])
 

@@ -3,6 +3,7 @@ data:
 
   maps:
     list: https://poedb.tw/us/Maps#MapsList
+    pantheon: https://poedb.tw/us/The_Pantheon#ThePantheon
     cards: https://www.poewiki.net/api.php?action=parse&prop=text&format=json&page={}
     poedb: https://poedb.tw/us/{}
     wiki: https://www.poewiki.net/wiki/{}

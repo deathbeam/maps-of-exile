@@ -247,8 +247,8 @@ function App() {
   const debouncedCard = useMemo(() => debounce(e => withLoading(false, setCardInput)(e.target.value), 300), [])
   const startCard = e => withLoading(true, debouncedCard)(e)
 
-  const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [preparedMaps, layoutInput, densityInput, bossInput, cardInput])
-  const ratedCards = useMemo(() => mapAndRateCards(preparedCards), [preparedCards])
+  const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
+  const ratedCards = useMemo(() => mapAndRateCards(preparedCards), [])
 
   return (
     <div className="bg-dark">

@@ -338,8 +338,23 @@ function App() {
               Boss
             </span>
           </th>
-          <th scope="col">Connected</th>
-          <th scope="col">Cards</th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Maps adjacent to this map on atlas with score on left.
+              </span>
+              Connected
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right">
+              <span className="tooltip-tag-text">
+                Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
+                it might not necessarily be higher priority because of its lower drop rate.
+              </span>
+              Cards
+            </span>
+          </th>
         </tr>
         </thead>
         <tbody>

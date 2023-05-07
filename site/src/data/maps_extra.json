@@ -462,38 +462,41 @@
     },
     {
         "name": "Defiled Cathedral Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Desert Spring Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Dig Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
@@ -510,38 +513,44 @@
     },
     {
         "name": "Dry Sea Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "rating": 6,
+            "density": 6,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "difficulty": 4,
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Dunes Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": true
         }
     },
     {
         "name": "Dungeon Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {

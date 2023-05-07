@@ -243,7 +243,7 @@ def main():
 		maps = get_maps(config["maps"])
 
 		if fetch_template:
-			with open(dir_path + "/../maps/maps_template.json", "w") as f:
+			with open(dir_path + "/../site/src/data/maps_extra_template.json", "w") as f:
 				f.write(json.dumps(get_maps_template(maps), indent=4, cls=DecimalEncoder))
 
 		maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))

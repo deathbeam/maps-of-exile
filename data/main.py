@@ -100,6 +100,7 @@ def get_map_data(map_data, cards, config):
 			map_data["pantheon"] = re.sub("[.].+", "", value.replace("Pantheon-", "").replace("Pantheon -", "").strip())
 
 	# Extra data
+	map_cards = set([])
 	offset += 1
 	data = children[offset]
 	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
@@ -114,9 +115,11 @@ def get_map_data(map_data, cards, config):
 		name = cols[0].text.strip().lower()
 		value = cols[1]
 		if name == "boss":
-			map_data["boss"]["names"] = list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+			map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
 		elif name == "atlas linked":
-			map_data["connected"] = list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+			map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
+		elif name == "card tags":
+			map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
 
 	# Card data
 	wiki_name = map_data["name"].replace(" ", "_")
@@ -128,13 +131,12 @@ def get_map_data(map_data, cards, config):
 	soup = BeautifulSoup(r, "html.parser")
 	all_cards = map(lambda x: x.text.strip(), soup.find_all("span", class_="divicard-header"))
 
-	map_cards = []
-	map_data["cards"] = map_cards
 	map_data["wiki"] = config["wiki"].replace("{}", wiki_name)
 	for child_card in all_cards:
 		card = next((x for x in cards if x["name"] == child_card), None)
 		if card:
-			map_cards.append(card["name"])
+			map_cards.add(card["name"])
+	map_data["cards"] = sorted(list(map_cards))
 	return map_data
 
 

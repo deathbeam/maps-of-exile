@@ -18,16 +18,16 @@
         "connected": [
             "Overgrown Shrine Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Acton's_Nightmare",
         "cards": [
+            "Jack in the Box",
+            "Monochrome",
             "The Craving",
             "The Encroaching Darkness",
-            "Jack in the Box",
             "The Void",
-            "Monochrome",
             "The Wilted Rose",
             "The Wretched"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Acton's_Nightmare"
+        ]
     },
     {
         "name": "Alleyways Map",
@@ -56,30 +56,32 @@
             "Excavation Map",
             "Stagnation Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Alleyways_Map",
         "cards": [
-            "Terrible Secret of Space",
+            "A Dusty Memory",
             "Assassin's Favour",
+            "Boundless Realms",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
+            "Terrible Secret of Space",
             "The Blazing Fire",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journalist",
             "The Life Thief",
+            "The Long Watch",
             "The Poet",
             "The Saint's Treasure",
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial",
-            "Home",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Alleyways_Map"
+        ]
     },
     {
         "name": "Arachnid Nest Map",
@@ -105,27 +107,27 @@
         "tileset": "The Weaver's Chambers",
         "few_obstacles": true,
         "connected": [
-            "Pier Map",
             "Fungal Hollow Map",
             "Geode Map",
+            "Pier Map",
             "Ramparts Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Arachnid_Nest_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
-            "The Web",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Arachnid_Nest_Map"
+            "The Void",
+            "The Web"
+        ]
     },
     {
         "name": "Arachnid Tomb Map",
@@ -152,24 +154,25 @@
         "few_obstacles": true,
         "linear": true,
         "connected": [
-            "Siege Map",
             "Chateau Map",
-            "Forbidden Woods Map"
+            "Forbidden Woods Map",
+            "Siege Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Arachnid_Tomb_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Parasitic Passengers",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
+            "The Long Watch",
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial",
-            "The Web",
-            "Parasitic Passengers"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Arachnid_Tomb_Map"
+            "The Web"
+        ]
     },
     {
         "name": "Arcade Map",
@@ -196,30 +199,31 @@
         "outdoors": true,
         "connected": [
             "Cemetery Map",
-            "Phantasmagoria Map",
             "Orchard Map",
+            "Phantasmagoria Map",
             "Pit Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Arcade_Map",
         "cards": [
+            "A Dusty Memory",
             "Assassin's Favour",
+            "Boundless Realms",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Poet",
             "The Saint's Treasure",
             "The Tinkerer's Table",
             "The Trial",
             "The Tyrant",
-            "Home",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Arcade_Map"
+        ]
     },
     {
         "name": "Arid Lake Map",
@@ -246,24 +250,24 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
+            "Barrows Map",
             "Desert Spring Map",
             "Dungeon Map",
-            "Necropolis Map",
-            "Barrows Map"
+            "Necropolis Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Arid_Lake_Map",
         "cards": [
-            "The Fishmonger",
-            "The Rabid Rhoa",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Fishmonger",
             "The Gambler",
+            "The Rabid Rhoa",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Arid_Lake_Map"
+        ]
     },
     {
         "name": "Armoury Map",
@@ -288,24 +292,26 @@
         "tileset": "Mansion Annex",
         "linear": true,
         "connected": [
-            "Pier Map",
-            "Coral Ruins Map"
+            "Coral Ruins Map",
+            "Pier Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Armoury_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Merciless Armament",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
+            "The Long Watch",
             "The Patient",
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial",
             "The Warlord"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Armoury_Map"
+        ]
     },
     {
         "name": "Arsenal Map",
@@ -331,10 +337,14 @@
         "tileset": "The Grain Gate",
         "outdoors": true,
         "connected": [
-            "Tropical Island Map",
-            "Core Map"
+            "Core Map",
+            "Tropical Island Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Arsenal_Map",
         "cards": [
+            "A Dusty Memory",
+            "Abandoned Wealth",
+            "Boundless Realms",
             "Dying Anguish",
             "Her Mask",
             "Hope",
@@ -342,21 +352,20 @@
             "Lingering Remnants",
             "Merciless Armament",
             "Rats",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Patient",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warlord",
-            "Three Faces in the Dark",
             "The Return of the Rat",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Arsenal_Map"
+            "The Tinkerer's Table",
+            "The Tireless Extractor",
+            "The Trial",
+            "The Void",
+            "The Warlord",
+            "Three Faces in the Dark"
+        ]
     },
     {
         "name": "Atoll Map",
@@ -385,32 +394,33 @@
         "linear": true,
         "pantheon": "Soul of the Brine King.",
         "connected": [
+            "Maelstr\u00f6m of Chaos",
             "Pit Map",
             "Port Map",
-            "Maelstr\u00f6m of Chaos",
             "Promenade Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Atoll_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journey",
+            "The Old Man",
             "The Spark and the Flame",
             "The Tinkerer's Table",
             "The Trial",
-            "The Wind",
-            "The Catch",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Atoll_Map"
+            "The Void",
+            "The Wind"
+        ]
     },
     {
         "name": "Barrows Map",
@@ -436,27 +446,27 @@
         "tileset": "The Wetlands",
         "outdoors": true,
         "connected": [
-            "Thicket Map",
             "Arid Lake Map",
+            "Thicket Map",
             "Tropical Island Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Barrows_Map",
         "cards": [
-            "The Bear Woman",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Loyalty",
             "Pride of the First Ones",
+            "The Bear Woman",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Fox",
             "The Gambler",
             "The One With All",
+            "The Shepherd's Sandals",
             "The Tinkerer's Table",
-            "The Trial",
-            "The Shepherd's Sandals"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Barrows_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Beach Map",
@@ -485,26 +495,26 @@
         "linear": true,
         "connected": [
             "Desert Spring Map",
-            "Underground Sea Map",
             "Factory Map",
-            "Jungle Valley Map"
+            "Jungle Valley Map",
+            "Underground Sea Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Beach_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
+            "The Destination",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Journey",
             "The Tinkerer's Table",
-            "The Trial",
-            "The Catch",
-            "The Destination"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Beach_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Belfry Map",
@@ -533,13 +543,16 @@
         "linear": true,
         "connected": [
             "Primordial Blocks Map",
-            "Strand Map",
-            "Scriptorium Map"
+            "Scriptorium Map",
+            "Strand Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Belfry_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
+            "The Demon",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enlightened",
@@ -547,8 +560,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Wrath"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Belfry_Map"
+        ]
     },
     {
         "name": "Bone Crypt Map",
@@ -573,35 +585,35 @@
         "tileset": "The Crypt",
         "linear": true,
         "connected": [
-            "Olmec's Sanctum",
             "Grotto Map",
+            "Olmec's Sanctum",
             "Silo Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Bone_Crypt_Map",
         "cards": [
-            "The Craving",
-            "The Lich",
-            "The Mind's Eyes",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Coveted Possession",
             "Grave Knowledge",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Celestial Justicar",
+            "The Craving",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Forsaken",
             "The Gambler",
+            "The Lich",
+            "The Mind's Eyes",
+            "The Rabbit's Foot",
             "The Summoner",
             "The Tinkerer's Table",
             "The Trial",
-            "The Wretched",
-            "The Rabbit's Foot",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Bone_Crypt_Map"
+            "The Void",
+            "The Wretched"
+        ]
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
@@ -615,28 +627,28 @@
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
             "names": [
-                "Winterfang",
+                "Solus, Pack Alpha",
                 "Storm Eye",
-                "Solus, Pack Alpha"
+                "Winterfang"
             ]
         },
         "connected": [
             "Underground River Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Caer_Blaidd,_Wolfpack's_Den",
         "cards": [
+            "Hunter's Reward",
+            "Jack in the Box",
             "Loyalty",
             "Monochrome",
             "Pride of the First Ones",
             "The Cursed King",
-            "The Wolf's Shadow",
-            "Treasure Hunter",
-            "Hunter's Reward",
-            "The Shepherd's Sandals",
             "The Encroaching Darkness",
-            "Jack in the Box",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Caer_Blaidd,_Wolfpack's_Den"
+            "The Shepherd's Sandals",
+            "The Void",
+            "The Wolf's Shadow",
+            "Treasure Hunter"
+        ]
     },
     {
         "name": "Caldera Map",
@@ -662,12 +674,16 @@
         "tileset": "Kaom's Dream",
         "outdoors": true,
         "connected": [
-            "Wasteland Map",
-            "Cursed Crypt Map",
             "Chateau Map",
-            "Siege Map"
+            "Cursed Crypt Map",
+            "Siege Map",
+            "Wasteland Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Caldera_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "From Bone to Ashes",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
@@ -675,18 +691,14 @@
             "The Battle Born",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The King's Heart",
             "The Mad King",
             "The Tinkerer's Table",
             "The Trial",
-            "From Bone to Ashes",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Caldera_Map"
+        ]
     },
     {
         "name": "Canyon Map",
@@ -714,33 +726,33 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Toxic Sewer Map",
-            "Waste Pool Map",
-            "Shipyard Map",
             "Crystal Ore Map",
-            "Shore Map"
+            "Shipyard Map",
+            "Shore Map",
+            "Toxic Sewer Map",
+            "Waste Pool Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Canyon_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Bowyer's Dream",
-            "The Fletcher",
-            "The Scavenger",
-            "The Whiteout",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
+            "The Fletcher",
             "The Gambler",
+            "The Price of Protection",
+            "The Scavenger",
+            "The Surveyor",
             "The Tinkerer's Table",
             "The Trial",
-            "The Surveyor",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Canyon_Map"
+            "The Void",
+            "The Whiteout"
+        ]
     },
     {
         "name": "Castle Ruins Map",
@@ -768,9 +780,10 @@
         "outdoors": true,
         "connected": [
             "City Square Map",
-            "Residence Map",
-            "Coral Ruins Map"
+            "Coral Ruins Map",
+            "Residence Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Castle_Ruins_Map",
         "cards": [
             "Her Mask",
             "Hope",
@@ -782,14 +795,14 @@
             "The Fox",
             "The Gambler",
             "The Harvester",
+            "The Long Watch",
             "The Mercenary",
             "The Road to Power",
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial",
             "The Tyrant"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Castle_Ruins_Map"
+        ]
     },
     {
         "name": "Cells Map",
@@ -814,29 +827,29 @@
         "tileset": "The Crematorium",
         "connected": [
             "Cold River Map",
-            "Frozen Cabins Map",
-            "Crimson Township Map"
+            "Crimson Township Map",
+            "Frozen Cabins Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Cells_Map",
         "cards": [
             "Harmony of Souls",
-            "The Aesthete",
-            "The Offering",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Aesthete",
             "The Chains that Bind",
             "The Dragon's Heart",
+            "The Dungeon Master",
             "The Encroaching Darkness",
             "The Gambler",
             "The Nurse",
+            "The Offering",
             "The Penitent",
             "The Soul",
             "The Tinkerer's Table",
             "The Trial",
-            "The Warden",
-            "The Dungeon Master"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Cells_Map"
+            "The Warden"
+        ]
     },
     {
         "name": "Cemetery Map",
@@ -863,41 +876,41 @@
         "outdoors": true,
         "pantheon": "Soul of Gruthkul",
         "connected": [
-            "Hallowed Ground",
-            "Marshes Map",
-            "Lair Map",
             "Arcade Map",
-            "Primordial Blocks Map",
-            "Overgrown Shrine Map"
+            "Hallowed Ground",
+            "Lair Map",
+            "Marshes Map",
+            "Overgrown Shrine Map",
+            "Primordial Blocks Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Cemetery_Map",
         "cards": [
+            "A Dusty Memory",
             "Ambitious Obsession",
-            "More is Never Enough",
-            "The Bear Woman",
-            "The Cacophony",
+            "Boundless Realms",
+            "Brother's Gift",
             "Brother's Stash",
             "Cursed Words",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Man With Bear",
+            "More is Never Enough",
             "Struck by Lightning",
+            "The Arena Champion",
+            "The Bear Woman",
+            "The Cacophony",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The One With All",
             "The Tinkerer's Table",
             "The Trial",
             "The Union",
-            "Man With Bear",
-            "Brother's Gift",
-            "The Arena Champion",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Cemetery_Map"
+        ]
     },
     {
         "name": "Chateau Map",
@@ -922,28 +935,29 @@
         "tileset": "Estate Walkways",
         "outdoors": true,
         "connected": [
-            "Pit Map",
             "Arachnid Tomb Map",
             "Caldera Map",
+            "Pit Map",
             "Promenade Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Chateau_Map",
         "cards": [
-            "The Scavenger",
             "Boon of Justice",
             "Brotherhood in Exile",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Lord of Celebration",
             "The Opulent",
+            "The Scavenger",
             "The Tinkerer's Table",
-            "The Trial",
-            "Home"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Chateau_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "City Square Map",
@@ -960,8 +974,8 @@
             "based_on": "The Matriach, Twisted Effigy",
             "notes": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first.",
             "names": [
-                "Pileah, Burning Corpse",
                 "Carius, the Unnatural",
+                "Pileah, Burning Corpse",
                 "Pileah, Corpse Burner"
             ]
         },
@@ -971,32 +985,32 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
-            "Toxic Sewer Map",
             "Castle Ruins Map",
             "Laboratory Map",
+            "Toxic Sewer Map",
             "Vaal Pyramid Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/City_Square_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
             "The Blazing Fire",
             "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journalist",
             "The Life Thief",
             "The Tinkerer's Table",
             "The Trial",
-            "Three Voices",
-            "Home",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/City_Square_Map"
+            "The Void",
+            "Three Voices"
+        ]
     },
     {
         "name": "Cold River Map",
@@ -1015,41 +1029,40 @@
             ]
         },
         "connected": [
-            "Flooded Mine Map",
-            "Plaza Map",
             "Cells Map",
+            "Crimson Temple Map",
             "Factory Map",
-            "Crimson Temple Map"
+            "Flooded Mine Map",
+            "Plaza Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Cold_River_Map",
         "cards": [
+            "A Chilling Wind",
+            "A Dusty Memory",
             "Ambitious Obsession",
-            "Forbidden Power",
-            "More is Never Enough",
-            "The Progeny of Lunaris",
             "Boundless Realms",
             "Dialla's Subjugation",
+            "Forbidden Power",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Mitts",
+            "More is Never Enough",
+            "The Arena Champion",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Lunaris Priestess",
+            "The Progeny of Lunaris",
             "The Sun",
             "The Tinkerer's Table",
             "The Trial",
             "The Twilight Moon",
             "The Twins",
-            "Wealth and Power",
-            "A Chilling Wind",
-            "The Arena Champion",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Cold_River_Map"
+            "The Void",
+            "Wealth and Power"
+        ]
     },
     {
         "name": "Colonnade Map",
@@ -1077,10 +1090,13 @@
         "linear": true,
         "connected": [
             "Dry Sea Map",
-            "Excavation Map",
-            "Dunes Map"
+            "Dunes Map",
+            "Excavation Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Colonnade_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Dying Anguish",
             "Gemcutter's Promise",
             "Her Mask",
@@ -1089,22 +1105,19 @@
             "Lingering Remnants",
             "Merciless Armament",
             "Struck by Lightning",
+            "The Arena Champion",
             "The Carrion Crow",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Patient",
             "The Tinkerer's Table",
             "The Trial",
-            "The Warlord",
-            "The Arena Champion",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Colonnade_Map"
+            "The Void",
+            "The Warlord"
+        ]
     },
     {
         "name": "Colosseum Map",
@@ -1131,19 +1144,24 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Maze Map",
-            "Volcano Map",
             "Dig Map",
-            "Terrace Map"
+            "Maze Map",
+            "Terrace Map",
+            "Volcano Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Colosseum_Map",
         "cards": [
-            "The Arena Champion",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Arena Champion",
+            "The Carrion Crow",
             "The Deceiver",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Gladiator",
             "The King's Blade",
@@ -1153,13 +1171,9 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Visionary",
-            "Unchained",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Colosseum_Map"
+            "The Void",
+            "Unchained"
+        ]
     },
     {
         "name": "Conservatory Map",
@@ -1185,26 +1199,28 @@
         "tileset": "The Bath House",
         "few_obstacles": true,
         "connected": [
+            "Crimson Township Map",
             "Defiled Cathedral Map",
-            "Frozen Cabins Map",
-            "Crimson Township Map"
+            "Frozen Cabins Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Conservatory_Map",
         "cards": [
             "Boon of Justice",
             "Brotherhood in Exile",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Enforcer",
             "The Gambler",
             "The Lord of Celebration",
             "The Opulent",
             "The Tinkerer's Table",
             "The Trial",
             "The Undaunted"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Conservatory_Map"
+        ]
     },
     {
         "name": "Coral Ruins Map",
@@ -1230,32 +1246,34 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Toxic Sewer Map",
-            "Castle Ruins Map",
             "Armoury Map",
-            "Crystal Ore Map"
+            "Castle Ruins Map",
+            "Crystal Ore Map",
+            "Toxic Sewer Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Coral_Ruins_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
             "The Deep Ones",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journey",
+            "The Old Man",
             "The Tinkerer's Table",
             "The Trial",
             "The Tyrant",
             "The Vast",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Coral_Ruins_Map"
+        ]
     },
     {
         "name": "Core Map",
@@ -1284,18 +1302,19 @@
             "Arsenal Map",
             "Dungeon Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Core_Map",
         "cards": [
             "A Modest Request",
             "Broken Promises",
             "Brush, Paint and Palette",
             "Doedre's Madness",
-            "The Aesthete",
-            "The Offering",
-            "The Prince of Darkness",
             "Echoes of Love",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Shard of Fate",
+            "The Aesthete",
+            "The Beast",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -1303,14 +1322,15 @@
             "The Insatiable",
             "The Nurse",
             "The Oath",
+            "The Offering",
+            "The Prince of Darkness",
             "The Soul",
             "The Surveyor",
             "The Tinkerer's Table",
             "The Trial",
             "Vile Power",
             "Vinia's Token"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Core_Map"
+        ]
     },
     {
         "name": "Courtyard Map",
@@ -1328,8 +1348,8 @@
             "notes": "One casts Spark Totems and Lightning Warps, one Cyclones leaving Chilled Ground and the other Leap Slams + casts multiple Fireballs. Fight is relatively easy if you isolate each boss individually. Leap Slammer is most dangerous.",
             "separated": true,
             "names": [
-                "Oriath's Vigil",
                 "Oriath's Vengeance",
+                "Oriath's Vigil",
                 "Oriath's Virtue"
             ]
         },
@@ -1339,11 +1359,16 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Port Map",
             "Orchard Map",
-            "Pit Map"
+            "Pit Map",
+            "Port Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Courtyard_Map",
         "cards": [
+            "A Dusty Memory",
+            "A Mother's Parting Gift",
+            "Boundless Realms",
+            "Cartographer's Delight",
             "Emperor's Luck",
             "Her Mask",
             "Hope",
@@ -1355,21 +1380,17 @@
             "The Dragon's Heart",
             "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
+            "The Fox in the Brambles",
             "The Gambler",
             "The Porcupine",
             "The Stormcaller",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "Three Voices",
-            "Thunderous Skies",
-            "The Fox in the Brambles",
-            "Cartographer's Delight",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Courtyard_Map"
+            "Thunderous Skies"
+        ]
     },
     {
         "name": "Coves Map",
@@ -1386,8 +1407,8 @@
             "based_on": "Pirate Ghost, Stone Golem",
             "notes": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately.",
             "names": [
-                "Telvar, the Inebriated",
-                "Pirate Treasure"
+                "Pirate Treasure",
+                "Telvar, the Inebriated"
             ]
         },
         "layout": 7,
@@ -1396,32 +1417,34 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Tropical Island Map",
-            "Racecourse Map"
+            "Racecourse Map",
+            "Tropical Island Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Coves_Map",
         "cards": [
-            "Terrible Secret of Space",
+            "A Stone Perfected",
+            "From Bone to Ashes",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
             "Scholar of the Seas",
+            "Terrible Secret of Space",
+            "The Catch",
             "The Deep Ones",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Formless Sea",
             "The Gambler",
             "The Journey",
+            "The Old Man",
             "The Primordial",
             "The Rite of Elements",
             "The Tinkerer's Table",
             "The Trial",
-            "The Catch",
-            "A Stone Perfected",
-            "From Bone to Ashes"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Coves_Map"
+            "The Vast"
+        ]
     },
     {
         "name": "Crater Map",
@@ -1441,9 +1464,10 @@
         "connected": [
             "Maze Map",
             "Museum Map",
-            "Wharf Map",
-            "Terrace Map"
+            "Terrace Map",
+            "Wharf Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Crater_Map",
         "cards": [
             "Her Mask",
             "Hope",
@@ -1454,8 +1478,7 @@
             "The Standoff",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Crater_Map"
+        ]
     },
     {
         "name": "Crimson Temple Map",
@@ -1482,20 +1505,25 @@
         "linear": true,
         "connected": [
             "Cold River Map",
-            "Sulphur Vents Map",
+            "Forbidden Woods Map",
             "Siege Map",
-            "Forbidden Woods Map"
+            "Sulphur Vents Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Crimson_Temple_Map",
         "cards": [
-            "The Cacophony",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Seven Years Bad Luck",
+            "The Apothecary",
             "The Blazing Fire",
+            "The Cacophony",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enlightened",
+            "The Explorer",
             "The Gambler",
             "The Journalist",
             "The Life Thief",
@@ -1503,13 +1531,8 @@
             "The Opulent",
             "The Tinkerer's Table",
             "The Trial",
-            "The Apothecary",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Crimson_Temple_Map"
+        ]
     },
     {
         "name": "Crimson Township Map",
@@ -1527,30 +1550,31 @@
             ]
         },
         "connected": [
-            "Jungle Valley Map",
-            "Factory Map",
             "Cells Map",
-            "Conservatory Map"
+            "Conservatory Map",
+            "Factory Map",
+            "Jungle Valley Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Crimson_Township_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
+            "The Apothecary",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Lord of Celebration",
             "The Opulent",
             "The Tinkerer's Table",
             "The Trial",
-            "The Apothecary",
-            "Home",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Crimson_Township_Map"
+        ]
     },
     {
         "name": "Crystal Ore Map",
@@ -1568,8 +1592,8 @@
             "notes": "Bosses have Phylacteral Link, which means only one can be damaged at a time (indicated by shiny aura around boss). Burning Man has Righteous Fire and throws Fire projectiles which leave a powerful Burning Ground. On death the Burning Man explodes for massive Fire damage that always Ignites so stand clear. Pikerivet has a Physical Cascade attack. The Pocked Goliath has a powerful short-range Ground Slam and spawns Miners. The small arena can make this boss fight hard to manoeuvre, however ranged characters may be able to offscreen from certain positions.",
             "separated": true,
             "names": [
-                "Lord of the Hollows",
                 "Champion of the Hollows",
+                "Lord of the Hollows",
                 "Messenger of the Hollows"
             ]
         },
@@ -1578,18 +1602,20 @@
         "tileset": "The Mines Level 1",
         "connected": [
             "Canyon Map",
+            "Coral Ruins Map",
             "Pier Map",
-            "Ramparts Map",
-            "Coral Ruins Map"
+            "Ramparts Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Crystal_Ore_Map",
         "cards": [
-            "The Mind's Eyes",
             "A Sea of Blue",
+            "Bijoux",
             "Buried Treasure",
             "Gift of Asenath",
             "Gift of the Gemling Queen",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Drunken Aristocrat",
@@ -1598,16 +1624,15 @@
             "The Gambler",
             "The Jeweller's Boon",
             "The Messenger",
+            "The Mind's Eyes",
             "The Tinkerer's Table",
             "The Trial",
             "The Wolf",
             "Three Voices",
             "Time-Lost Relic",
             "Treasure Hunter",
-            "Volatile Power",
-            "Bijoux"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Crystal_Ore_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Cursed Crypt Map",
@@ -1631,31 +1656,31 @@
         "density": 4,
         "tileset": "The Crypt",
         "connected": [
-            "The Coward's Trial",
             "Caldera Map",
-            "Promenade Map"
+            "Promenade Map",
+            "The Coward's Trial"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Cursed_Crypt_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Grave Knowledge",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Arena Champion",
             "The Celestial Justicar",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Forsaken",
             "The Gambler",
+            "The Rabbit's Foot",
             "The Tinkerer's Table",
             "The Trial",
-            "The Wretched",
-            "The Rabbit's Foot",
-            "The Arena Champion",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Cursed_Crypt_Map"
+            "The Void",
+            "The Wretched"
+        ]
     },
     {
         "name": "Death and Taxes",
@@ -1675,13 +1700,13 @@
         "connected": [
             "Necropolis Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Death_and_Taxes",
         "cards": [
+            "Jack in the Box",
             "Monochrome",
             "The Encroaching Darkness",
-            "Jack in the Box",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Death_and_Taxes"
+        ]
     },
     {
         "name": "Defiled Cathedral Map",
@@ -1708,35 +1733,36 @@
         "few_obstacles": true,
         "linear": true,
         "connected": [
+            "Conservatory Map",
             "Maze Map",
             "Temple Map",
-            "Conservatory Map",
             "Wharf Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Defiled_Cathedral_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lachrymal Necrosis",
             "Lingering Remnants",
             "Seven Years Bad Luck",
+            "The Apothecary",
             "The Blazing Fire",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enlightened",
+            "The Explorer",
             "The Gambler",
             "The Innocent",
             "The Journalist",
             "The Life Thief",
             "The Tinkerer's Table",
             "The Trial",
-            "The Apothecary",
             "The Tumbleweed",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Defiled_Cathedral_Map"
+        ]
     },
     {
         "name": "Desert Spring Map",
@@ -1765,30 +1791,31 @@
         "linear": true,
         "pantheon": "Soul of Shakira",
         "connected": [
-            "Thicket Map",
-            "Geode Map",
             "Arid Lake Map",
-            "Beach Map"
+            "Beach Map",
+            "Geode Map",
+            "Thicket Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Desert_Spring_Map",
         "cards": [
-            "Ambitious Obsession",
-            "More is Never Enough",
             "A Note in the Wind",
             "Acclimatisation",
+            "Ambitious Obsession",
             "Baited Expectations",
             "Earth Drinker",
             "Her Mask",
             "Hope",
             "Imperial Legacy",
             "Lingering Remnants",
+            "More is Never Enough",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
             "The Tumbleweed"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Desert_Spring_Map"
+        ]
     },
     {
         "name": "Dig Map",
@@ -1816,32 +1843,32 @@
         "linear": true,
         "pantheon": "Soul of Garukhan",
         "connected": [
-            "Underground River Map",
-            "Colosseum Map"
+            "Colosseum Map",
+            "Underground River Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Dig_Map",
         "cards": [
             "Ambitious Obsession",
-            "More is Never Enough",
-            "The Mind's Eyes",
+            "Bijoux",
             "Buried Treasure",
             "Gift of Asenath",
             "Gift of the Gemling Queen",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "More is Never Enough",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Endurance",
             "The Gambler",
+            "The Mind's Eyes",
             "The Ruthless Ceinture",
             "The Tinkerer's Table",
             "The Trial",
             "The Wolf",
             "Time-Lost Relic",
-            "Volatile Power",
-            "Bijoux"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Dig_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Doryani's Machinarium",
@@ -1858,14 +1885,17 @@
                 "The Apex Assembly"
             ]
         },
+        "wiki": "https://www.poewiki.net/wiki/Doryani's_Machinarium",
         "cards": [
             "Monochrome",
             "The Admirer",
             "The Catalyst",
+            "The Damned",
+            "The Forward Gaze",
+            "The Hive of Knowledge",
             "The Inventor",
-            "The Forward Gaze"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Doryani's_Machinarium"
+            "Unrequited Love"
+        ]
     },
     {
         "name": "Dry Sea Map",
@@ -1887,10 +1917,13 @@
             "Fields Map",
             "Infested Valley Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Dry_Sea_Map",
         "cards": [
+            "A Dusty Memory",
             "A Note in the Wind",
             "Acclimatisation",
             "Baited Expectations",
+            "Boundless Realms",
             "Earth Drinker",
             "Her Mask",
             "Hope",
@@ -1898,15 +1931,13 @@
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
+            "The Tumbleweed",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Dry_Sea_Map"
+        ]
     },
     {
         "name": "Dunes Map",
@@ -1934,36 +1965,35 @@
         "linear": true,
         "connected": [
             "Colonnade Map",
-            "Shrine Map",
             "Fields Map",
-            "Pillars of Arun"
+            "Pillars of Arun",
+            "Shrine Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Dunes_Map",
         "cards": [
+            "A Dusty Memory",
             "A Note in the Wind",
             "Acclimatisation",
             "Baited Expectations",
+            "Boundless Realms",
             "Earth Drinker",
             "Her Mask",
             "Hope",
             "Imperial Legacy",
             "Lingering Remnants",
+            "Lost Worlds",
             "Sambodhi's Wisdom",
             "The Dragon's Heart",
+            "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
+            "The Price of Protection",
             "The Tinkerer's Table",
             "The Trial",
             "The Tumbleweed",
-            "Lost Worlds",
-            "The Trial",
-            "The Easy Stroll",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Dunes_Map"
+        ]
     },
     {
         "name": "Dungeon Map",
@@ -1988,29 +2018,30 @@
         "density": 8,
         "tileset": "The Lower Prison",
         "connected": [
-            "Core Map",
             "Arid Lake Map",
+            "Core Map",
             "Leyline Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Dungeon_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Chains that Bind",
             "The Dragon's Heart",
+            "The Dungeon Master",
             "The Encroaching Darkness",
+            "The Enforcer",
+            "The Explorer",
             "The Gambler",
             "The Penitent",
             "The Tinkerer's Table",
             "The Trial",
-            "The Warden",
-            "The Dungeon Master",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Dungeon_Map"
+            "The Void",
+            "The Warden"
+        ]
     },
     {
         "name": "Excavation Map",
@@ -2028,8 +2059,8 @@
             "notes": "Each boss in a separate room. Shrieker summons sandstorms. Breaker uses strong Spectral Throw and Vaal Spectral Throw.",
             "separated": true,
             "names": [
-                "Shrieker Eihal",
-                "Breaker Toruul"
+                "Breaker Toruul",
+                "Shrieker Eihal"
             ]
         },
         "layout": 6,
@@ -2037,31 +2068,32 @@
         "tileset": "The Mines Level 1",
         "few_obstacles": true,
         "connected": [
+            "Alleyways Map",
             "Colonnade Map",
-            "Shrine Map",
-            "Alleyways Map"
+            "Shrine Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Excavation_Map",
         "cards": [
-            "The Cacophony",
-            "The Mind's Eyes",
+            "Bijoux",
             "Buried Treasure",
             "Gift of the Gemling Queen",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
+            "The Cacophony",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Endurance",
             "The Gambler",
+            "The Mind's Eyes",
             "The Tinkerer's Table",
             "The Trial",
             "The Wolf",
             "Time-Lost Relic",
             "Treasure Hunter",
-            "Volatile Power",
-            "Bijoux"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Excavation_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Factory Map",
@@ -2087,32 +2119,34 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Overgrown Ruin Map",
-            "Cold River Map",
             "Beach Map",
-            "Crimson Township Map"
+            "Cold River Map",
+            "Crimson Township Map",
+            "Overgrown Ruin Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Factory_Map",
         "cards": [
+            "A Dusty Memory",
+            "Abandoned Wealth",
+            "Azure Rage",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Rats",
+            "Soul Quenched",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Faces in the Dark",
-            "The Tireless Extractor",
-            "Azure Rage",
-            "The Return of the Rat",
-            "Soul Quenched",
-            "Boundless Realms",
             "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Factory_Map"
+            "The Gambler",
+            "The Return of the Rat",
+            "The Tinkerer's Table",
+            "The Tireless Extractor",
+            "The Trial",
+            "The Void",
+            "Three Faces in the Dark"
+        ]
     },
     {
         "name": "Fields Map",
@@ -2145,13 +2179,15 @@
             "Laboratory Map",
             "Vaal Pyramid Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Fields_Map",
         "cards": [
             "Ambitious Obsession",
-            "More is Never Enough",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "More is Never Enough",
             "Rain of Chaos",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Fox",
@@ -2161,8 +2197,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "Tranquillity"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Fields_Map"
+        ]
     },
     {
         "name": "Flooded Mine Map",
@@ -2186,26 +2221,30 @@
         "density": 8,
         "tileset": "The Caverns",
         "connected": [
+            "Cold River Map",
             "Overgrown Ruin Map",
-            "Sulphur Vents Map",
             "Relic Chambers Map",
-            "Cold River Map"
+            "Sulphur Vents Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Flooded_Mine_Map",
         "cards": [
-            "Terrible Secret of Space",
-            "The Mind's Eyes",
+            "A Stone Perfected",
+            "Bijoux",
             "Buried Treasure",
             "Gift of Asenath",
             "Gift of the Gemling Queen",
             "Glimmer of Hope",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
+            "Terrible Secret of Space",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Endurance",
             "The Fathomless Depths",
             "The Gambler",
+            "The Mind's Eyes",
             "The Primordial",
             "The Rite of Elements",
             "The Survivalist",
@@ -2214,11 +2253,8 @@
             "The Wolf",
             "Time-Lost Relic",
             "Treasure Hunter",
-            "Volatile Power",
-            "A Stone Perfected",
-            "Bijoux"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Flooded_Mine_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Forbidden Woods Map",
@@ -2232,18 +2268,23 @@
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "boss": {
             "names": [
-                "Takatax Brittlethorn",
                 "Corruptor Eedaiak",
-                "Skictis, Frostkeeper"
+                "Skictis, Frostkeeper",
+                "Takatax Brittlethorn"
             ]
         },
         "connected": [
+            "Arachnid Tomb Map",
             "Crimson Temple Map",
             "Phantasmagoria Map",
-            "Arachnid Tomb Map",
             "Pit Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Forbidden_Woods_Map",
         "cards": [
+            "A Chilling Wind",
+            "A Dusty Memory",
+            "Alivia's Grace",
+            "Boundless Realms",
             "Call to the First Ones",
             "Her Mask",
             "Hope",
@@ -2254,22 +2295,17 @@
             "The Dragon",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Flora's Gift",
             "The Gambler",
             "The Pack Leader",
+            "The Scout",
             "The Tinkerer's Table",
             "The Trial",
-            "Three Voices",
-            "The Scout",
-            "Alivia's Grace",
-            "A Chilling Wind",
             "The Tumbleweed",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Forbidden_Woods_Map"
+            "The Void",
+            "Three Voices"
+        ]
     },
     {
         "name": "Forge of the Phoenix Map",
@@ -2294,11 +2330,12 @@
         "density": 4,
         "tileset": "The Crematorium",
         "linear": true,
+        "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
         "cards": [
-            "Perfection",
             "Burning Blood",
             "Her Mask",
             "Lingering Remnants",
+            "Perfection",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Eye of the Dragon",
@@ -2306,8 +2343,7 @@
             "The Standoff",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map"
+        ]
     },
     {
         "name": "Foundry Map",
@@ -2326,33 +2362,34 @@
             ]
         },
         "connected": [
-            "Wasteland Map",
+            "Malformation Map",
             "Siege Map",
-            "Malformation Map"
+            "Wasteland Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Foundry_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "Further Invention",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Lost Worlds",
+            "Soul Quenched",
+            "The Carrion Crow",
             "The Dragon's Heart",
+            "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Fiend",
             "The Gambler",
+            "The Price of Protection",
+            "The Professor",
             "The Thaumaturgist",
             "The Tinkerer's Table",
             "The Trial",
-            "Further Invention",
-            "Soul Quenched",
-            "Lost Worlds",
-            "The Trial",
-            "The Easy Stroll",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Foundry_Map"
+        ]
     },
     {
         "name": "Frozen Cabins Map",
@@ -2370,12 +2407,16 @@
             ]
         },
         "connected": [
-            "Plaza Map",
-            "Conservatory Map",
             "Cells Map",
+            "Conservatory Map",
+            "Plaza Map",
             "Wharf Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Frozen_Cabins_Map",
         "cards": [
+            "A Chilling Wind",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Humility",
@@ -2383,16 +2424,12 @@
             "Mitts",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
-            "A Chilling Wind",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Frozen_Cabins_Map"
+        ]
     },
     {
         "name": "Fungal Hollow Map",
@@ -2410,22 +2447,24 @@
             ]
         },
         "connected": [
-            "Necropolis Map",
-            "Arachnid Nest Map"
+            "Arachnid Nest Map",
+            "Necropolis Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Fungal_Hollow_Map",
         "cards": [
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
             "The Betrayal",
+            "The Destination",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
             "Treasure Hunter"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Fungal_Hollow_Map"
+        ]
     },
     {
         "name": "Geode Map",
@@ -2451,19 +2490,22 @@
         "tileset": "The Quarry",
         "outdoors": true,
         "connected": [
+            "Arachnid Nest Map",
             "Desert Spring Map",
-            "Underground Sea Map",
             "Necropolis Map",
-            "Arachnid Nest Map"
+            "Underground Sea Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Geode_Map",
         "cards": [
-            "Terrible Secret of Space",
+            "A Stone Perfected",
+            "Bijoux",
             "Buried Treasure",
             "Gift of Asenath",
             "Gift of the Gemling Queen",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Terrible Secret of Space",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Endurance",
@@ -2475,10 +2517,8 @@
             "The Watcher",
             "The Wolf",
             "Time-Lost Relic",
-            "Volatile Power",
-            "Bijoux"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Geode_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Grotto Map",
@@ -2504,48 +2544,48 @@
         "few_obstacles": true,
         "connected": [
             "Bone Crypt Map",
-            "Primordial Pool Map",
-            "Lair Map"
+            "Lair Map",
+            "Primordial Pool Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Grotto_Map",
         "cards": [
-            "Terrible Secret of Space",
-            "The Mind's Eyes",
+            "A Dusty Memory",
             "A Sea of Blue",
+            "A Stone Perfected",
+            "Bijoux",
+            "Boundless Realms",
             "Buried Treasure",
             "Gift of Asenath",
             "Gift of the Gemling Queen",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
+            "Lost Worlds",
             "Loyalty",
             "Pride of the First Ones",
+            "Terrible Secret of Space",
             "The Dragon's Heart",
+            "The Easy Stroll",
             "The Encroaching Darkness",
             "The Endurance",
+            "The Explorer",
             "The Gambler",
             "The Jeweller's Boon",
+            "The Mind's Eyes",
+            "The Price of Protection",
             "The Primordial",
             "The Rite of Elements",
+            "The Shepherd's Sandals",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "The Watcher",
             "The Wolf",
             "Time-Lost Relic",
             "Treasure Hunter",
-            "Volatile Power",
-            "A Stone Perfected",
-            "Bijoux",
-            "The Shepherd's Sandals",
-            "Lost Worlds",
-            "The Trial",
-            "The Easy Stroll",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Grotto_Map"
+            "Volatile Power"
+        ]
     },
     {
         "name": "Hallowed Ground",
@@ -2565,10 +2605,11 @@
         "connected": [
             "Cemetery Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Hallowed_Ground",
         "cards": [
-            "Monochrome"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Hallowed_Ground"
+            "Monochrome",
+            "The Enforcer"
+        ]
     },
     {
         "name": "Infested Valley Map",
@@ -2598,27 +2639,29 @@
         "pantheon": "Soul of Ryslatha",
         "connected": [
             "Dry Sea Map",
-            "Moon Temple Map",
-            "Laboratory Map"
+            "Laboratory Map",
+            "Moon Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Infested_Valley_Map",
         "cards": [
             "Ambitious Obsession",
-            "More is Never Enough",
-            "The Offspring",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "More is Never Enough",
+            "Parasitic Passengers",
             "Struck by Lightning",
+            "The Bitter Blossom",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
+            "The Long Watch",
+            "The Offspring",
             "The Side Quest",
             "The Tinkerer's Table",
-            "The Trial",
-            "Parasitic Passengers"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Infested_Valley_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Jungle Valley Map",
@@ -2646,11 +2689,13 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Thicket Map",
             "Beach Map",
-            "Crimson Township Map"
+            "Crimson Township Map",
+            "Thicket Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Jungle_Valley_Map",
         "cards": [
+            "Alivia's Grace",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
@@ -2659,14 +2704,12 @@
             "The Flora's Gift",
             "The Gambler",
             "The Pack Leader",
+            "The Scout",
             "The Tinkerer's Table",
             "The Trial",
             "The Web",
-            "The Wind",
-            "The Scout",
-            "Alivia's Grace"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Jungle_Valley_Map"
+            "The Wind"
+        ]
     },
     {
         "name": "Laboratory Map",
@@ -2693,17 +2736,24 @@
         "linear": true,
         "connected": [
             "City Square Map",
-            "Residence Map",
             "Fields Map",
-            "Infested Valley Map"
+            "Infested Valley Map",
+            "Residence Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Laboratory_Map",
         "cards": [
+            "A Dusty Memory",
             "Azyran's Reward",
+            "Boundless Realms",
+            "Cartographer's Delight",
+            "Further Invention",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Lord of Celebration",
             "The Opulent",
@@ -2711,13 +2761,8 @@
             "The Thaumaturgist",
             "The Tinkerer's Table",
             "The Trial",
-            "Cartographer's Delight",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Laboratory_Map"
+        ]
     },
     {
         "name": "Lair Map",
@@ -2750,34 +2795,35 @@
             "Lighthouse Map",
             "Silo Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Lair_Map",
         "cards": [
+            "A Dusty Memory",
+            "Alivia's Grace",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
             "Loyalty",
             "Pride of the First Ones",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Flora's Gift",
             "The Gambler",
             "The Master",
             "The Pack Leader",
+            "The Scout",
+            "The Shepherd's Sandals",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "The Wolf's Shadow",
             "The Wolven King's Bite",
             "The Wolverine",
             "Treasure Hunter",
-            "The Scout",
-            "The Shepherd's Sandals",
-            "Alivia's Grace",
-            "Triskaidekaphobia",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Lair_Map"
+            "Triskaidekaphobia"
+        ]
     },
     {
         "name": "Lair of the Hydra Map",
@@ -2803,10 +2849,12 @@
         "tileset": "The Sewers",
         "few_obstacles": true,
         "linear": true,
+        "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
         "cards": [
-            "Perfection",
             "Her Mask",
             "Lingering Remnants",
+            "Perfection",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Feast",
@@ -2814,8 +2862,7 @@
             "The Throne",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map"
+        ]
     },
     {
         "name": "Leyline Map",
@@ -2842,24 +2889,25 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
-            "Necropolis Map",
-            "Dungeon Map"
+            "Dungeon Map",
+            "Necropolis Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Leyline_Map",
         "cards": [
             "Bowyer's Dream",
-            "The Fletcher",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Struck by Lightning",
+            "The Carrion Crow",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Fletcher",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Leyline_Map"
+        ]
     },
     {
         "name": "Lighthouse Map",
@@ -2876,10 +2924,10 @@
             "based_on": "Redblade Warbands",
             "notes": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities",
             "names": [
-                "Uruk Baleh",
-                "El'Abin, Bloodeater",
                 "Bin'aia, Crimson Rain",
-                "Leli Goya, Daughter of Ash"
+                "El'Abin, Bloodeater",
+                "Leli Goya, Daughter of Ash",
+                "Uruk Baleh"
             ]
         },
         "layout": 8,
@@ -2889,17 +2937,19 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Mineral Pools Map",
+            "Lair Map",
             "Marshes Map",
-            "Primordial Pool Map",
-            "Lair Map"
+            "Mineral Pools Map",
+            "Primordial Pool Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Lighthouse_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -2908,8 +2958,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Wind"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Lighthouse_Map"
+        ]
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
@@ -2923,33 +2972,35 @@
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "boss": {
             "names": [
-                "Merveil, the Returned",
-                "Merveil, the Reflection"
+                "Merveil, the Reflection",
+                "Merveil, the Returned"
             ]
         },
         "connected": [
             "Atoll Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Maelstr\u00f6m_of_Chaos",
         "cards": [
             "Divine Beauty",
-            "The Cacophony",
+            "Jack in the Box",
             "Lantador's Lost Love",
             "Lysah's Respite",
             "Monochrome",
             "Prosperity",
             "The Avenger",
             "The Cache",
+            "The Cacophony",
+            "The Catch",
             "The Emptiness",
+            "The Encroaching Darkness",
             "The Hoarder",
             "The Journey",
-            "The Lover",
-            "The Siren",
             "The Leviathan",
-            "The Encroaching Darkness",
-            "Jack in the Box",
+            "The Lover",
+            "The Old Man",
+            "The Siren",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Maelstr\u00f6m_of_Chaos"
+        ]
     },
     {
         "name": "Malformation Map",
@@ -2976,27 +3027,29 @@
         "few_obstacles": true,
         "linear": true,
         "connected": [
-            "Plaza Map",
             "Foundry Map",
             "Museum Map",
+            "Plaza Map",
             "Wharf Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Malformation_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Beast",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Hunger",
+            "The Insatiable",
             "The Oath",
             "The Surveyor",
             "The Tinkerer's Table",
             "The Trial",
             "Vile Power",
             "Vinia's Token"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Malformation_Map"
+        ]
     },
     {
         "name": "Mao Kun",
@@ -3016,20 +3069,22 @@
         "connected": [
             "Shore Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Mao_Kun",
         "cards": [
-            "The Skeleton",
             "Abandoned Wealth",
+            "Jack in the Box",
             "Lantador's Lost Love",
             "Monochrome",
             "Prosperity",
+            "Scholar of the Seas",
+            "The Catch",
+            "The Encroaching Darkness",
             "The Journey",
             "The Landing",
-            "Scholar of the Seas",
-            "The Encroaching Darkness",
-            "Jack in the Box",
+            "The Old Man",
+            "The Skeleton",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Mao_Kun"
+        ]
     },
     {
         "name": "Marshes Map",
@@ -3056,9 +3111,10 @@
         "outdoors": true,
         "connected": [
             "Cemetery Map",
-            "Phantasmagoria Map",
-            "Lighthouse Map"
+            "Lighthouse Map",
+            "Phantasmagoria Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Marshes_Map",
         "cards": [
             "Death",
             "Her Mask",
@@ -3070,8 +3126,7 @@
             "The Inoculated",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Marshes_Map"
+        ]
     },
     {
         "name": "Maze Map",
@@ -3097,10 +3152,13 @@
         "pantheon": "Soul of Solaris",
         "connected": [
             "Colosseum Map",
-            "Defiled Cathedral Map",
-            "Crater Map"
+            "Crater Map",
+            "Defiled Cathedral Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Maze_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
@@ -3109,20 +3167,17 @@
             "The Damned",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Hive of Knowledge",
             "The Inventor",
+            "The Price of Protection",
+            "The Surveyor",
             "The Tinkerer's Table",
             "The Trial",
-            "Unrequited Love",
-            "The Surveyor",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Maze_Map"
+            "The Void",
+            "Unrequited Love"
+        ]
     },
     {
         "name": "Maze of the Minotaur Map",
@@ -3148,10 +3203,12 @@
         "tileset": "The Caverns",
         "few_obstacles": true,
         "linear": true,
+        "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
         "cards": [
-            "Perfection",
             "Her Mask",
+            "Hunter's Reward",
             "Lingering Remnants",
+            "Perfection",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -3159,8 +3216,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "Treasure Hunter"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map"
+        ]
     },
     {
         "name": "Mineral Pools Map",
@@ -3186,15 +3242,18 @@
         "tileset": "The Cavern of Anger",
         "outdoors": true,
         "connected": [
-            "Tower Map",
-            "Waste Pool Map",
             "Lighthouse Map",
+            "Phantasmagoria Map",
             "Shore Map",
-            "Phantasmagoria Map"
+            "Tower Map",
+            "Waste Pool Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Mineral_Pools_Map",
         "cards": [
-            "Divine Beauty",
+            "A Dusty Memory",
             "A Sea of Blue",
+            "Boundless Realms",
+            "Divine Beauty",
             "Glimmer of Hope",
             "Her Mask",
             "Hope",
@@ -3204,20 +3263,18 @@
             "The Cache",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Fathomless Depths",
             "The Gambler",
             "The Hoarder",
             "The Jeweller's Boon",
+            "The Long Watch",
             "The Side Quest",
             "The Survivalist",
             "The Tinkerer's Table",
             "The Trial",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Mineral_Pools_Map"
+        ]
     },
     {
         "name": "Moon Temple Map",
@@ -3244,30 +3301,32 @@
         "few_obstacles": true,
         "pantheon": "Soul of Lunaris",
         "connected": [
+            "Infested Valley Map",
             "Residence Map",
-            "The Twilight Temple",
-            "Infested Valley Map"
+            "The Twilight Temple"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Moon_Temple_Map",
         "cards": [
+            "A Dusty Memory",
+            "Astral Protection",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Enlightened",
+            "The Explorer",
             "The Gambler",
             "The Lunaris Priestess",
             "The Tinkerer's Table",
             "The Trial",
             "The Twilight Moon",
             "The Twins",
-            "Wealth and Power",
-            "Astral Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Moon_Temple_Map"
+            "The Void",
+            "Wealth and Power"
+        ]
     },
     {
         "name": "Museum Map",
@@ -3292,22 +3351,29 @@
         "density": 8,
         "tileset": "The Library",
         "connected": [
-            "The Putrid Cloister",
             "Crater Map",
-            "Malformation Map"
+            "Malformation Map",
+            "The Putrid Cloister"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Museum_Map",
         "cards": [
             "A Dab of Ink",
+            "A Dusty Memory",
             "Blind Venture",
+            "Boundless Realms",
+            "Checkmate",
             "Costly Curio",
             "Destined to Crumble",
+            "Echoes of Love",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Shard of Fate",
             "The Academic",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enthusiasts",
+            "The Explorer",
             "The Gambler",
             "The Polymath",
             "The Professor",
@@ -3315,14 +3381,10 @@
             "The Soul",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "Thirst for Knowledge",
-            "Checkmate",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Museum_Map"
+            "Turn the Other Cheek"
+        ]
     },
     {
         "name": "Necropolis Map",
@@ -3348,31 +3410,31 @@
         "tileset": "The Crypt",
         "linear": true,
         "connected": [
-            "Geode Map",
             "Arid Lake Map",
-            "Fungal Hollow Map",
             "Death and Taxes",
+            "Fungal Hollow Map",
+            "Geode Map",
             "Leyline Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Necropolis_Map",
         "cards": [
-            "The Lich",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Grave Knowledge",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Forsaken",
             "The Gambler",
+            "The Lich",
             "The Tinkerer's Table",
             "The Trial",
-            "The Wretched",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Necropolis_Map"
+            "The Void",
+            "The Wretched"
+        ]
     },
     {
         "name": "Olmec's Sanctum",
@@ -3392,13 +3454,13 @@
         "connected": [
             "Bone Crypt Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Olmec's_Sanctum",
         "cards": [
+            "Jack in the Box",
             "Monochrome",
             "The Encroaching Darkness",
-            "Jack in the Box",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Olmec's_Sanctum"
+        ]
     },
     {
         "name": "Orchard Map",
@@ -3424,13 +3486,17 @@
         "tileset": "The Imperial Gardens",
         "outdoors": true,
         "connected": [
-            "Primordial Blocks Map",
-            "Strand Map",
             "Arcade Map",
-            "Courtyard Map"
+            "Courtyard Map",
+            "Primordial Blocks Map",
+            "Strand Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Orchard_Map",
         "cards": [
+            "A Dusty Memory",
+            "A Mother's Parting Gift",
             "Boon of Justice",
+            "Boundless Realms",
             "Brotherhood in Exile",
             "Emperor's Luck",
             "Her Mask",
@@ -3441,19 +3507,16 @@
             "The Dragon's Heart",
             "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
+            "The Fox in the Brambles",
             "The Gambler",
             "The Porcupine",
             "The Road to Power",
             "The Tinkerer's Table",
             "The Trial",
-            "The Fox in the Brambles",
-            "Triskaidekaphobia",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Orchard_Map"
+            "The Void",
+            "Triskaidekaphobia"
+        ]
     },
     {
         "name": "Overgrown Ruin Map",
@@ -3478,38 +3541,38 @@
         "density": 7,
         "tileset": "The Chamber of Sins Level 1",
         "connected": [
-            "Shipyard Map",
             "Factory Map",
-            "Underground Sea Map",
-            "Flooded Mine Map"
+            "Flooded Mine Map",
+            "Shipyard Map",
+            "Underground Sea Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Overgrown_Ruin_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Echoes of Love",
             "Emperor of Purity",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Lost Worlds",
+            "Poisoned Faith",
             "Shard of Fate",
+            "The Artist",
             "The Dark Mage",
             "The Dragon's Heart",
+            "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Garish Power",
+            "The Price of Protection",
             "The Sigil",
             "The Surgeon",
             "The Tinkerer's Table",
             "The Trial",
-            "Poisoned Faith",
-            "Lost Worlds",
-            "The Trial",
-            "The Easy Stroll",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Overgrown_Ruin_Map"
+        ]
     },
     {
         "name": "Overgrown Shrine Map",
@@ -3536,22 +3599,28 @@
         "few_obstacles": true,
         "linear": true,
         "connected": [
-            "Cemetery Map",
             "Acton's Nightmare",
+            "Cemetery Map",
             "Precinct Map",
             "Silo Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Overgrown_Shrine_Map",
         "cards": [
-            "Harmony of Souls",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Echoes of Love",
             "Emperor of Purity",
+            "Harmony of Souls",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "Rain Tempter",
             "Shard of Fate",
+            "The Artist",
             "The Dark Mage",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Garish Power",
             "The Sigil",
@@ -3559,13 +3628,8 @@
             "The Surgeon",
             "The Tinkerer's Table",
             "The Trial",
-            "Rain Tempter",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Overgrown_Shrine_Map"
+        ]
     },
     {
         "name": "Phantasmagoria Map",
@@ -3591,34 +3655,37 @@
         "tileset": "The Belly of the Beast",
         "linear": true,
         "connected": [
-            "Sulphur Vents Map",
+            "Arcade Map",
+            "Forbidden Woods Map",
             "Marshes Map",
             "Mineral Pools Map",
-            "Arcade Map",
-            "Forbidden Woods Map"
+            "Sulphur Vents Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Phantasmagoria_Map",
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Beast",
+            "The Brawny Battle Mage",
             "The Doctor",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Hunger",
             "The Incantation",
+            "The Insatiable",
             "The Oath",
             "The Soul",
             "The Surveyor",
+            "The Sustenance",
             "The Tinkerer's Table",
             "The Trial",
             "The Witch",
-            "Vile Power",
-            "The Brawny Battle Mage"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Phantasmagoria_Map"
+            "Vile Power"
+        ]
     },
     {
         "name": "Pier Map",
@@ -3644,17 +3711,21 @@
         "tileset": "The Docks",
         "outdoors": true,
         "connected": [
+            "Arachnid Nest Map",
             "Armoury Map",
-            "Crystal Ore Map",
-            "Arachnid Nest Map"
+            "Crystal Ore Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Pier_Map",
         "cards": [
+            "Divine Beauty",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Lucky Connections",
             "Prosperity",
+            "The Carrion Crow",
+            "The Catch",
             "The Dragon's Heart",
             "The Drunken Aristocrat",
             "The Encroaching Darkness",
@@ -3663,10 +3734,8 @@
             "The Old Man",
             "The Pact",
             "The Tinkerer's Table",
-            "The Trial",
-            "Divine Beauty"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Pier_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Pillars of Arun",
@@ -3686,14 +3755,15 @@
         "connected": [
             "Dunes Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Pillars_of_Arun",
         "cards": [
+            "A Note in the Wind",
             "Imperial Legacy",
+            "Jack in the Box",
             "Monochrome",
             "The Encroaching Darkness",
-            "Jack in the Box",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Pillars_of_Arun"
+        ]
     },
     {
         "name": "Pit Map",
@@ -3720,17 +3790,19 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
+            "Arcade Map",
+            "Atoll Map",
             "Chateau Map",
             "Courtyard Map",
-            "Forbidden Woods Map",
-            "Arcade Map",
-            "Atoll Map"
+            "Forbidden Woods Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Pit_Map",
         "cards": [
-            "The Arena Champion",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Arena Champion",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -3741,8 +3813,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "Unchained"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Pit_Map"
+        ]
     },
     {
         "name": "Pit of the Chimera Map",
@@ -3768,13 +3839,15 @@
         "tileset": "Daresso's Dream",
         "outdoors": true,
         "linear": true,
+        "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
         "cards": [
             "A Familiar Call",
-            "Perfection",
-            "The Arena Champion",
             "Boon of the First Ones",
             "Her Mask",
             "Lingering Remnants",
+            "Perfection",
+            "The Arena Champion",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -3785,8 +3858,7 @@
             "The Tinkerer's Table",
             "The Trial",
             "Unchained"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map"
+        ]
     },
     {
         "name": "Plateau Map",
@@ -3815,27 +3887,29 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Toxic Sewer Map",
-            "Waste Pool Map",
             "Tower Map",
-            "Vaal Pyramid Map"
+            "Toxic Sewer Map",
+            "Vaal Pyramid Map",
+            "Waste Pool Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Plateau_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Journey",
+            "The Old Man",
             "The Spark and the Flame",
             "The Tinkerer's Table",
             "The Trial",
             "The Wind"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Plateau_Map"
+        ]
     },
     {
         "name": "Plaza Map",
@@ -3861,28 +3935,28 @@
         "connected": [
             "Cold River Map",
             "Frozen Cabins Map",
-            "Siege Map",
-            "Malformation Map"
+            "Malformation Map",
+            "Siege Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Plaza_Map",
         "cards": [
+            "A Dusty Memory",
             "Boon of Justice",
+            "Boundless Realms",
             "Brotherhood in Exile",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Porcupine",
             "The Tinkerer's Table",
             "The Trial",
-            "Triskaidekaphobia",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Plaza_Map"
+            "The Void",
+            "Triskaidekaphobia"
+        ]
     },
     {
         "name": "Poorjoy's Asylum",
@@ -3902,20 +3976,22 @@
         "connected": [
             "Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Poorjoy's_Asylum",
         "cards": [
-            "The Dreamland",
-            "The Encroaching Darkness",
-            "Jack in the Box",
-            "The Void",
             "Chaotic Disposition",
             "Deadly Joy",
+            "Jack in the Box",
             "Monochrome",
             "The Army of Blood",
+            "The Carrion Crow",
+            "The Dreamland",
+            "The Encroaching Darkness",
             "The Fiend",
             "The Last Supper",
-            "The Thaumaturgist"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Poorjoy's_Asylum"
+            "The Professor",
+            "The Thaumaturgist",
+            "The Void"
+        ]
     },
     {
         "name": "Port Map",
@@ -3942,12 +4018,15 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Strand Map",
             "Atoll Map",
-            "Courtyard Map"
+            "Courtyard Map",
+            "Strand Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Port_Map",
         "cards": [
+            "A Dusty Memory",
             "Assassin's Favour",
+            "Boundless Realms",
             "Dying Anguish",
             "Her Mask",
             "Hope",
@@ -3956,8 +4035,11 @@
             "Lingering Remnants",
             "Lucky Connections",
             "Prosperity",
+            "The Carrion Crow",
+            "The Catch",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journey",
             "The Messenger",
@@ -3967,12 +4049,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Tyrant",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Port_Map"
+        ]
     },
     {
         "name": "Precinct Map",
@@ -3989,13 +4067,13 @@
             "based_on": "2-6 Rogue Exiles",
             "notes": "These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one.",
             "names": [
+                "Augustina Solaria",
+                "Damoi Tui",
+                "Eoin Greyfur",
+                "Igna Phoenix",
                 "Orra Greengate",
                 "Torr Olgosso",
-                "Igna Phoenix",
-                "Damoi Tui",
-                "Wilorin Demontamer",
-                "Eoin Greyfur",
-                "Augustina Solaria"
+                "Wilorin Demontamer"
             ]
         },
         "layout": 6,
@@ -4004,18 +4082,24 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
-            "Primordial Blocks Map",
             "Overgrown Shrine Map",
+            "Primordial Blocks Map",
             "Scriptorium Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Precinct_Map",
         "cards": [
+            "A Dusty Memory",
+            "Anarchy's Price",
+            "Boundless Realms",
             "Dying Anguish",
             "Her Mask",
             "Hope",
             "Jack in the Box",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Gentleman",
             "The Saint's Treasure",
@@ -4023,12 +4107,9 @@
             "The Trial",
             "The Tyrant",
             "The Undaunted",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
+            "The Valkyrie",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Precinct_Map"
+        ]
     },
     {
         "name": "Primordial Blocks Map",
@@ -4046,30 +4127,31 @@
             ]
         },
         "connected": [
+            "Belfry Map",
             "Cemetery Map",
             "Orchard Map",
-            "Belfry Map",
             "Precinct Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Primordial_Blocks_Map",
         "cards": [
+            "A Dusty Memory",
             "A Sea of Blue",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Avenger",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Jeweller's Boon",
+            "The Long Watch",
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Primordial_Blocks_Map"
+        ]
     },
     {
         "name": "Primordial Pool Map",
@@ -4097,29 +4179,29 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Tower Map",
-            "Stagnation Map",
+            "Grotto Map",
             "Lighthouse Map",
-            "Grotto Map"
+            "Stagnation Map",
+            "Tower Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Primordial_Pool_Map",
         "cards": [
+            "A Dusty Memory",
             "A Modest Request",
-            "The Prince of Darkness",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Inoculated",
+            "The Prince of Darkness",
             "The Tinkerer's Table",
             "The Trial",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Primordial_Pool_Map"
+        ]
     },
     {
         "name": "Promenade Map",
@@ -4147,11 +4229,14 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Cursed Crypt Map",
+            "Atoll Map",
             "Chateau Map",
-            "Atoll Map"
+            "Cursed Crypt Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Promenade_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Dying Anguish",
             "Gemcutter's Promise",
             "Her Mask",
@@ -4159,24 +4244,21 @@
             "Jack in the Box",
             "Lingering Remnants",
             "Merciless Armament",
+            "Rain Tempter",
             "Struck by Lightning",
             "The Carrion Crow",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Patient",
             "The Tinkerer's Table",
             "The Traitor",
             "The Trial",
-            "The Warlord",
-            "Rain Tempter",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Promenade_Map"
+            "The Void",
+            "The Warlord"
+        ]
     },
     {
         "name": "Racecourse Map",
@@ -4194,8 +4276,8 @@
             "notes": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal.",
             "separated": true,
             "names": [
-                "Crusher of Gladiators",
                 "Bringer of Blood",
+                "Crusher of Gladiators",
                 "Shredder of Gladiators"
             ]
         },
@@ -4206,14 +4288,16 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Volcano Map",
             "Coves Map",
-            "Temple Map"
+            "Temple Map",
+            "Volcano Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Racecourse_Map",
         "cards": [
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Deceiver",
             "The Dragon's Heart",
             "The Encroaching Darkness",
@@ -4222,8 +4306,7 @@
             "The Trial",
             "The Visionary",
             "Three Voices"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Racecourse_Map"
+        ]
     },
     {
         "name": "Ramparts Map",
@@ -4251,12 +4334,14 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Shipyard Map",
+            "Arachnid Nest Map",
             "Crystal Ore Map",
-            "Underground Sea Map",
-            "Arachnid Nest Map"
+            "Shipyard Map",
+            "Underground Sea Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Ramparts_Map",
         "cards": [
+            "Alivia's Grace",
             "Her Mask",
             "Hope",
             "Hunter's Resolve",
@@ -4269,13 +4354,11 @@
             "The Flora's Gift",
             "The Gambler",
             "The Pack Leader",
+            "The Scout",
             "The Tinkerer's Table",
             "The Traitor",
-            "The Trial",
-            "The Scout",
-            "Alivia's Grace"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Ramparts_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Relic Chambers Map",
@@ -4300,10 +4383,11 @@
         "tileset": "The Reliquary",
         "linear": true,
         "connected": [
-            "Shipyard Map",
             "Flooded Mine Map",
+            "Shipyard Map",
             "Shore Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Relic_Chambers_Map",
         "cards": [
             "Azyran's Reward",
             "Blind Venture",
@@ -4313,6 +4397,7 @@
             "Lingering Remnants",
             "Might is Right",
             "No Traces",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
@@ -4321,8 +4406,7 @@
             "The Polymath",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Relic_Chambers_Map"
+        ]
     },
     {
         "name": "Residence Map",
@@ -4349,34 +4433,38 @@
         "few_obstacles": true,
         "connected": [
             "Castle Ruins Map",
-            "Moon Temple Map",
-            "Laboratory Map"
+            "Laboratory Map",
+            "Moon Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Residence_Map",
         "cards": [
+            "A Dusty Memory",
+            "A Modest Request",
+            "Boundless Realms",
+            "Desperate Crusade",
             "Her Mask",
+            "Home",
             "Hope",
             "Light and Truth",
             "Lingering Remnants",
+            "The Carrion Crow",
+            "The Conduit",
             "The Dapper Prodigy",
             "The Dragon's Heart",
             "The Drunken Aristocrat",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Golden Era",
             "The Lord of Celebration",
             "The Opulent",
+            "The Sephirot",
             "The Tinkerer's Table",
             "The Tower",
             "The Trial",
             "The Unexpected Prize",
-            "Desperate Crusade",
-            "Home",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Residence_Map"
+        ]
     },
     {
         "name": "Scriptorium Map",
@@ -4405,30 +4493,30 @@
             "Precinct Map",
             "Silo Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Scriptorium_Map",
         "cards": [
-            "The Aesthete",
-            "The Offering",
             "A Dab of Ink",
+            "Checkmate",
             "Destined to Crumble",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Academic",
+            "The Aesthete",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enthusiasts",
             "The Gambler",
             "The Nurse",
+            "The Offering",
             "The Professor",
             "The Scholar",
+            "The Soul",
             "The Tinkerer's Table",
             "The Trial",
             "Thirst for Knowledge",
-            "Checkmate",
-            "The Aesthete",
-            "The Offering"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Scriptorium_Map"
+            "Turn the Other Cheek"
+        ]
     },
     {
         "name": "Shipyard Map",
@@ -4445,9 +4533,9 @@
             "based_on": "Brinerot Warbands",
             "notes": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy.",
             "names": [
-                "Susara, Siren of Pondium",
                 "Lussi \"Rotmother\" Roth",
-                "Musky \"Two-Eyes\" Grenn"
+                "Musky \"Two-Eyes\" Grenn",
+                "Susara, Siren of Pondium"
             ]
         },
         "layout": 5,
@@ -4460,24 +4548,27 @@
             "Ramparts Map",
             "Relic Chambers Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Shipyard_Map",
         "cards": [
             "Her Mask",
             "Hope",
+            "Lantador's Lost Love",
             "Lingering Remnants",
             "Lucky Connections",
             "Prosperity",
             "Struck by Lightning",
+            "The Carrion Crow",
+            "The Catch",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Journey",
+            "The Old Man",
             "The Pact",
             "The Tinkerer's Table",
-            "The Trial",
-            "The Catch"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Shipyard_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Shore Map",
@@ -4504,20 +4595,27 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Sulphur Vents Map",
             "Canyon Map",
             "Mao Kun",
+            "Mineral Pools Map",
             "Relic Chambers Map",
-            "Mineral Pools Map"
+            "Sulphur Vents Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Shore_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "From Bone to Ashes",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
+            "The Destination",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journey",
             "The Landing",
@@ -4525,15 +4623,8 @@
             "The Road to Power",
             "The Tinkerer's Table",
             "The Trial",
-            "The Catch",
-            "From Bone to Ashes",
-            "The Destination",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Shore_Map"
+        ]
     },
     {
         "name": "Shrine Map",
@@ -4558,12 +4649,13 @@
         "density": 10,
         "tileset": "The Lunaris Temple Level 1",
         "connected": [
-            "Tower Map",
             "Dunes Map",
-            "Stagnation Map",
             "Excavation Map",
+            "Stagnation Map",
+            "Tower Map",
             "Vaal Pyramid Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Shrine_Map",
         "cards": [
             "Her Mask",
             "Hope",
@@ -4573,12 +4665,12 @@
             "The Encroaching Darkness",
             "The Fiend",
             "The Gambler",
+            "The Professor",
             "The Thaumaturgist",
             "The Tinkerer's Table",
             "The Trial",
             "Vinia's Token"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Shrine_Map"
+        ]
     },
     {
         "name": "Siege Map",
@@ -4608,27 +4700,29 @@
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
-            "Plaza Map",
+            "Crimson Temple Map",
             "Foundry Map",
-            "Crimson Temple Map"
+            "Plaza Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Siege_Map",
         "cards": [
             "Ambitious Obsession",
-            "More is Never Enough",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
+            "More is Never Enough",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
+            "The Long Watch",
             "The Lord of Celebration",
             "The Side Quest",
             "The Spark and the Flame",
             "The Tinkerer's Table",
-            "The Trial",
-            "Home"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Siege_Map"
+            "The Trial"
+        ]
     },
     {
         "name": "Silo Map",
@@ -4647,31 +4741,32 @@
         },
         "connected": [
             "Bone Crypt Map",
-            "Overgrown Shrine Map",
             "Lair Map",
+            "Overgrown Shrine Map",
             "Scriptorium Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Silo_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "Cartographer's Delight",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "The Blazing Fire",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Journalist",
             "The Life Thief",
             "The Standoff",
             "The Tinkerer's Table",
-            "The Trial",
             "The Tireless Extractor",
-            "Cartographer's Delight",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
+            "The Trial",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Silo_Map"
+        ]
     },
     {
         "name": "Stagnation Map",
@@ -4689,30 +4784,31 @@
             ]
         },
         "connected": [
+            "Alleyways Map",
             "Primordial Pool Map",
-            "Shrine Map",
-            "Alleyways Map"
+            "Shrine Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Stagnation_Map",
         "cards": [
-            "The Bitter Blossom",
-            "The Offspring",
+            "Alivia's Grace",
             "Azyran's Reward",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Struck by Lightning",
+            "The Bitter Blossom",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Flora's Gift",
             "The Gambler",
             "The Inoculated",
+            "The Offspring",
             "The Pack Leader",
-            "The Tinkerer's Table",
-            "The Trial",
             "The Scout",
-            "Alivia's Grace"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Stagnation_Map"
+            "The Tinkerer's Table",
+            "The Trial"
+        ]
     },
     {
         "name": "Strand Map",
@@ -4741,12 +4837,16 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Whakawairua Tuahu",
+            "Belfry Map",
             "Orchard Map",
             "Port Map",
-            "Belfry Map"
+            "Whakawairua Tuahu"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Strand_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "From Bone to Ashes",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
@@ -4754,27 +4854,24 @@
             "Prosperity",
             "Scholar of the Seas",
             "The Betrayal",
+            "The Catch",
             "The Deep Ones",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Formless Sea",
             "The Gambler",
             "The Journey",
             "The Landing",
+            "The Mercenary",
             "The Old Man",
+            "The One That Got Away",
             "The Stormcaller",
             "The Tinkerer's Table",
             "The Trial",
-            "Thunderous Skies",
-            "The Catch",
-            "The One That Got Away",
-            "From Bone to Ashes",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Strand_Map"
+            "The Void",
+            "Thunderous Skies"
+        ]
     },
     {
         "name": "Sulphur Vents Map",
@@ -4801,11 +4898,12 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Flooded Mine Map",
             "Crimson Temple Map",
+            "Flooded Mine Map",
             "Phantasmagoria Map",
             "Shore Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Sulphur_Vents_Map",
         "cards": [
             "Her Mask",
             "Hope",
@@ -4817,8 +4915,7 @@
             "The Inoculated",
             "The Tinkerer's Table",
             "The Trial"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Sulphur_Vents_Map"
+        ]
     },
     {
         "name": "Synthesised Map",
@@ -4835,8 +4932,8 @@
                 "Tahsin, Warmaker"
             ]
         },
-        "cards": [],
-        "wiki": "https://www.poewiki.net/wiki/Synthesised_Map"
+        "wiki": "https://www.poewiki.net/wiki/Synthesised_Map",
+        "cards": []
     },
     {
         "name": "Temple Map",
@@ -4863,22 +4960,28 @@
         "few_obstacles": true,
         "pantheon": "Soul of Solaris",
         "connected": [
-            "Racecourse Map",
-            "Tropical Island Map",
+            "Defiled Cathedral Map",
             "Poorjoy's Asylum",
+            "Racecourse Map",
             "Thicket Map",
-            "Defiled Cathedral Map"
+            "Tropical Island Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Temple_Map",
         "cards": [
-            "Forbidden Power",
+            "A Dusty Memory",
             "Boundless Realms",
+            "Cartographer's Delight",
             "Dialla's Subjugation",
+            "Forbidden Power",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Enlightened",
+            "The Explorer",
+            "The Forgotten Treasure",
             "The Gambler",
             "The Lord of Celebration",
             "The Opulent",
@@ -4887,14 +4990,8 @@
             "The Trial",
             "The Twilight Moon",
             "The Twins",
-            "The Forgotten Treasure",
-            "Cartographer's Delight",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Temple_Map"
+        ]
     },
     {
         "name": "Terrace Map",
@@ -4922,33 +5019,35 @@
         "linear": true,
         "pantheon": "Soul of Yugul",
         "connected": [
-            "Underground River Map",
+            "Colosseum Map",
             "Crater Map",
-            "Colosseum Map"
+            "Underground River Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Terrace_Map",
         "cards": [
+            "A Dusty Memory",
+            "A Mother's Parting Gift",
             "Ambitious Obsession",
-            "More is Never Enough",
+            "Boundless Realms",
             "Emperor's Luck",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "More is Never Enough",
             "Peaceful Moments",
             "Rain Tempter",
+            "The Carrion Crow",
             "The Dragon's Heart",
             "The Easy Stroll",
             "The Encroaching Darkness",
+            "The Explorer",
+            "The Fox in the Brambles",
             "The Gambler",
             "The Porcupine",
             "The Tinkerer's Table",
             "The Trial",
-            "The Fox in the Brambles",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Terrace_Map"
+        ]
     },
     {
         "name": "The Coward's Trial",
@@ -4968,19 +5067,19 @@
         "connected": [
             "Cursed Crypt Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/The_Coward's_Trial",
         "cards": [
-            "The Craving",
             "Grave Knowledge",
+            "Jack in the Box",
             "Monochrome",
             "The Celestial Justicar",
-            "The Forsaken",
-            "The Wretched",
-            "The Rabbit's Foot",
+            "The Craving",
             "The Encroaching Darkness",
-            "Jack in the Box",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/The_Coward's_Trial"
+            "The Forsaken",
+            "The Rabbit's Foot",
+            "The Void",
+            "The Wretched"
+        ]
     },
     {
         "name": "The Putrid Cloister",
@@ -5000,20 +5099,23 @@
         "connected": [
             "Museum Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/The_Putrid_Cloister",
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
-            "The Professor",
-            "The Encroaching Darkness",
             "Jack in the Box",
-            "The Void",
             "Monochrome",
+            "The Brawny Battle Mage",
+            "The Carrion Crow",
             "The Doctor",
+            "The Encroaching Darkness",
             "The Incantation",
-            "The Witch",
-            "The Brawny Battle Mage"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/The_Putrid_Cloister"
+            "The Professor",
+            "The Soul",
+            "The Sustenance",
+            "The Void",
+            "The Witch"
+        ]
     },
     {
         "name": "The Twilight Temple",
@@ -5034,24 +5136,26 @@
         "connected": [
             "Moon Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/The_Twilight_Temple",
         "cards": [
-            "Forbidden Power",
-            "The Progeny of Lunaris",
             "Boundless Realms",
             "Dialla's Subjugation",
+            "Forbidden Power",
             "Haunting Shadows",
             "Heterochromia",
+            "Jack in the Box",
             "Monochrome",
+            "The Encroaching Darkness",
+            "The Enlightened",
+            "The Lord of Celebration",
             "The Lunaris Priestess",
             "The Opulent",
+            "The Progeny of Lunaris",
             "The Sun",
-            "The Twins",
             "The Twilight Moon",
-            "The Encroaching Darkness",
-            "Jack in the Box",
+            "The Twins",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/The_Twilight_Temple"
+        ]
     },
     {
         "name": "The Vinktar Square",
@@ -5068,12 +5172,14 @@
                 "Avatar of Thunder"
             ]
         },
+        "wiki": "https://www.poewiki.net/wiki/The_Vinktar_Square",
         "cards": [
             "Monochrome",
             "Struck by Lightning",
+            "The Carrion Crow",
+            "The Stormcaller",
             "Thunderous Skies"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/The_Vinktar_Square"
+        ]
     },
     {
         "name": "Thicket Map",
@@ -5098,12 +5204,16 @@
         "density": 4,
         "tileset": "The Dread Thicket",
         "connected": [
+            "Barrows Map",
             "Desert Spring Map",
-            "Temple Map",
             "Jungle Valley Map",
-            "Barrows Map"
+            "Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Thicket_Map",
         "cards": [
+            "A Dusty Memory",
+            "Alivia's Grace",
+            "Boundless Realms",
             "Call to the First Ones",
             "Her Mask",
             "Hope",
@@ -5111,18 +5221,14 @@
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Explorer",
+            "The Flora's Gift",
             "The Gambler",
             "The Pack Leader",
+            "The Scout",
             "The Tinkerer's Table",
             "The Trial",
-            "The Scout",
-            "Alivia's Grace",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Thicket_Map"
+        ]
     },
     {
         "name": "Tower Map",
@@ -5150,30 +5256,30 @@
         "linear": true,
         "connected": [
             "Mineral Pools Map",
+            "Plateau Map",
             "Primordial Pool Map",
-            "Shrine Map",
-            "Plateau Map"
+            "Shrine Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Tower_Map",
         "cards": [
-            "The Aesthete",
-            "The Offering",
             "Her Mask",
+            "Home",
             "Hope",
             "Lingering Remnants",
             "Struck by Lightning",
+            "The Aesthete",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Gambler",
             "The Nurse",
+            "The Offering",
             "The Soul",
             "The Stormcaller",
             "The Tinkerer's Table",
             "The Tower",
             "The Trial",
-            "Thunderous Skies",
-            "Home"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Tower_Map"
+            "Thunderous Skies"
+        ]
     },
     {
         "name": "Toxic Sewer Map",
@@ -5200,33 +5306,33 @@
         "linear": true,
         "pantheon": "Soul of Arakaali",
         "connected": [
-            "City Square Map",
             "Canyon Map",
+            "City Square Map",
             "Coral Ruins Map",
             "Plateau Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Toxic_Sewer_Map",
         "cards": [
+            "A Dusty Memory",
+            "Azure Rage",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
+            "Left to Fate",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Feast",
             "The Gambler",
+            "The Price of Protection",
             "The Throne",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "The Web",
-            "Vile Power",
-            "The Price of Protection",
-            "Azure Rage",
-            "Left to Fate",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Toxic_Sewer_Map"
+            "Vile Power"
+        ]
     },
     {
         "name": "Tropical Island Map",
@@ -5253,17 +5359,21 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Coves Map",
-            "Temple Map",
             "Arsenal Map",
-            "Barrows Map"
+            "Barrows Map",
+            "Coves Map",
+            "Temple Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Tropical_Island_Map",
         "cards": [
+            "Alivia's Grace",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
             "Lingering Remnants",
             "Prosperity",
+            "The Catch",
+            "The Destination",
             "The Dragon's Heart",
             "The Encroaching Darkness",
             "The Flora's Gift",
@@ -5271,14 +5381,10 @@
             "The Journey",
             "The Old Man",
             "The Pack Leader",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Catch",
             "The Scout",
-            "The Destination",
-            "Alivia's Grace"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Tropical_Island_Map"
+            "The Tinkerer's Table",
+            "The Trial"
+        ]
     },
     {
         "name": "Underground River Map",
@@ -5309,24 +5415,25 @@
             "Dig Map",
             "Terrace Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Underground_River_Map",
         "cards": [
-            "The Scavenger",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
+            "The Scavenger",
             "The Tinkerer's Table",
             "The Trial",
-            "Treasure Hunter",
             "The Tumbleweed",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Underground_River_Map"
+            "The Void",
+            "Treasure Hunter"
+        ]
     },
     {
         "name": "Underground Sea Map",
@@ -5344,49 +5451,50 @@
             "notes": "Ice based spells and Chilled ground. Avoid Icestorm and Ice Spear attacks. Take along some form of Freeze immunity.",
             "separated": true,
             "names": [
-                "Merveil, the Returned",
-                "Merveil, the Reflection"
+                "Merveil, the Reflection",
+                "Merveil, the Returned"
             ]
         },
         "layout": 5,
         "density": 10,
         "tileset": "The Cavern of Anger",
         "connected": [
-            "Geode Map",
-            "Ramparts Map",
             "Beach Map",
+            "Geode Map",
             "Oba's Cursed Trove",
-            "Overgrown Ruin Map"
+            "Overgrown Ruin Map",
+            "Ramparts Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Underground_Sea_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
             "Divine Beauty",
-            "The Cacophony",
             "Glimmer of Hope",
             "Her Mask",
             "Hope",
+            "Hunter's Reward",
             "Lingering Remnants",
             "Lysah's Respite",
             "The Avenger",
             "The Cache",
+            "The Cacophony",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Fathomless Depths",
             "The Gambler",
             "The Hoarder",
             "The Lover",
+            "The Price of Protection",
             "The Siren",
+            "The Surveyor",
             "The Survivalist",
             "The Tinkerer's Table",
             "The Trial",
-            "Treasure Hunter",
-            "The Surveyor",
-            "The Price of Protection",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Underground_Sea_Map"
+            "The Void",
+            "Treasure Hunter"
+        ]
     },
     {
         "name": "Vaal Pyramid Map",
@@ -5404,23 +5512,26 @@
             "notes": "Bosses spawn one at a time, after a delay of around 5-10 seconds. The first boss, the Whipping Miscreation is most dangerous inflicting Vulnerabililty and dealing massive Physical damage. The Tentacle Miscareation buffs nearby enemies and shoots easily avoidable projectiles. The Reaver has a large AoE but doesn't deal substantial damage. Try to kill each boss before the next spawns.",
             "separated": true,
             "names": [
+                "The Broken Prince",
                 "The Fallen Queen",
-                "The Hollow Lady",
-                "The Broken Prince"
+                "The Hollow Lady"
             ]
         },
         "layout": 3,
         "density": 7,
         "tileset": "The Ancient Pyramid",
         "connected": [
-            "Fields Map",
-            "Vaults of Atziri",
-            "Plateau Map",
             "City Square Map",
-            "Shrine Map"
+            "Fields Map",
+            "Plateau Map",
+            "Shrine Map",
+            "Vaults of Atziri"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Vaal_Pyramid_Map",
         "cards": [
+            "A Dusty Memory",
             "Arrogance of the Vaal",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
@@ -5429,20 +5540,17 @@
             "The Damned",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Hive of Knowledge",
             "The Inventor",
             "The Spoiled Prince",
             "The Tinkerer's Table",
             "The Trial",
+            "The Void",
             "Three Voices",
-            "Unrequited Love",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Vaal_Pyramid_Map"
+            "Unrequited Love"
+        ]
     },
     {
         "name": "Vaal Temple Map",
@@ -5460,14 +5568,15 @@
             "notes": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
             "separated": true,
             "names": [
-                "K'aj Q'ura",
                 "K'aj A'alai",
+                "K'aj Q'ura",
                 "K'aj Y'ara'az"
             ]
         },
         "layout": 3,
         "density": 7,
         "tileset": "The Ancient Pyramid",
+        "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map",
         "cards": [
             "Beauty Through Death",
             "Her Mask",
@@ -5486,8 +5595,7 @@
             "The Trial",
             "Three Voices",
             "Unrequited Love"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map"
+        ]
     },
     {
         "name": "Vaults of Atziri",
@@ -5503,26 +5611,28 @@
         "connected": [
             "Vaal Pyramid Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Vaults_of_Atziri",
         "cards": [
             "Atziri's Arsenal",
+            "Jack in the Box",
             "Monochrome",
             "The Admirer",
             "The Adventuring Spirit",
             "The Cache",
             "The Catalyst",
             "The Damned",
+            "The Encroaching Darkness",
+            "The Hive of Knowledge",
             "The Hoarder",
             "The Inventor",
+            "The Lord of Celebration",
             "The Opulent",
             "The Queen",
+            "The Void",
             "The Wolf's Legacy",
             "Treasure Hunter",
-            "The Admirer",
-            "The Encroaching Darkness",
-            "Jack in the Box",
-            "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Vaults_of_Atziri"
+            "Unrequited Love"
+        ]
     },
     {
         "name": "Volcano Map",
@@ -5550,27 +5660,27 @@
             "Colosseum Map",
             "Racecourse Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Volcano_Map",
         "cards": [
+            "A Dusty Memory",
+            "Boundless Realms",
+            "From Bone to Ashes",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Pride Before the Fall",
+            "Rain Tempter",
             "The Battle Born",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The King's Heart",
             "The Mountain",
             "The Tinkerer's Table",
             "The Trial",
-            "From Bone to Ashes",
-            "Rain Tempter",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Volcano_Map"
+        ]
     },
     {
         "name": "Waste Pool Map",
@@ -5597,16 +5707,18 @@
         "few_obstacles": true,
         "linear": true,
         "connected": [
-            "Mineral Pools Map",
             "Canyon Map",
+            "Mineral Pools Map",
             "Plateau Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Waste_Pool_Map",
         "cards": [
             "Brush, Paint and Palette",
             "Doedre's Madness",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Brawny Battle Mage",
             "The Doctor",
             "The Dragon's Heart",
             "The Encroaching Darkness",
@@ -5614,14 +5726,13 @@
             "The Gambler",
             "The Incantation",
             "The Soul",
+            "The Sustenance",
             "The Throne",
             "The Tinkerer's Table",
             "The Trial",
             "The Witch",
-            "Vile Power",
-            "The Brawny Battle Mage"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Waste_Pool_Map"
+            "Vile Power"
+        ]
     },
     {
         "name": "Wasteland Map",
@@ -5647,25 +5758,25 @@
         "few_obstacles": true,
         "outdoors": true,
         "connected": [
-            "Foundry Map",
-            "Caldera Map"
+            "Caldera Map",
+            "Foundry Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Wasteland_Map",
         "cards": [
-            "The Brittle Emperor",
+            "A Dusty Memory",
+            "Boundless Realms",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
+            "The Brittle Emperor",
             "The Dragon's Heart",
             "The Encroaching Darkness",
+            "The Explorer",
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial",
-            "Boundless Realms",
-            "The Explorer",
-            "A Dusty Memory",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Wasteland_Map"
+        ]
     },
     {
         "name": "Whakawairua Tuahu",
@@ -5685,24 +5796,27 @@
         "connected": [
             "Strand Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Whakawairua_Tuahu",
         "cards": [
             "Divine Beauty",
+            "Jack in the Box",
             "Lantador's Lost Love",
             "Monochrome",
             "Prosperity",
             "Scholar of the Seas",
+            "The Avenger",
+            "The Catch",
             "The Darkest Dream",
             "The Deep Ones",
             "The Doppelganger",
+            "The Encroaching Darkness",
             "The Formless Sea",
             "The Journey",
             "The Landing",
+            "The Old Man",
             "The Undaunted",
-            "The Encroaching Darkness",
-            "Jack in the Box",
             "The Void"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Whakawairua_Tuahu"
+        ]
     },
     {
         "name": "Wharf Map",
@@ -5728,13 +5842,14 @@
         "outdoors": true,
         "linear": true,
         "connected": [
-            "Defiled Cathedral Map",
             "Crater Map",
+            "Defiled Cathedral Map",
             "Frozen Cabins Map",
             "Malformation Map"
         ],
+        "wiki": "https://www.poewiki.net/wiki/Wharf_Map",
         "cards": [
-            "Terrible Secret of Space",
+            "A Stone Perfected",
             "Her Mask",
             "Hope",
             "Lantador's Lost Love",
@@ -5742,6 +5857,9 @@
             "Lucky Connections",
             "Prosperity",
             "Struck by Lightning",
+            "Terrible Secret of Space",
+            "The Carrion Crow",
+            "The Catch",
             "The Coming Storm",
             "The Dragon's Heart",
             "The Encroaching Darkness",
@@ -5752,9 +5870,7 @@
             "The Primordial",
             "The Rite of Elements",
             "The Tinkerer's Table",
-            "The Trial",
-            "A Stone Perfected"
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Wharf_Map"
+            "The Trial"
+        ]
     }
 ]

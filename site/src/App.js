@@ -73,11 +73,11 @@ function tierColor(map) {
   const naturalTier = map.tiers[0]
 
   if (naturalTier >= 11) {
-    return "text-danger"
+    return "text-danger text-decoration-none"
   } else if (naturalTier >= 6) {
-    return "text-warning"
+    return "text-warning text-decoration-none"
   } else {
-    return "text-light"
+    return "text-light text-decoration-none"
   }
 }
 
@@ -154,7 +154,7 @@ const MapCard = ({ card }) => {
     img = chaos
   }
 
-  badgeClass = `badge text-dark m-1 ${badgeClass}`
+  badgeClass = `badge text-dark m-1 text-decoration-none ${badgeClass}`
   return <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
     <span className="tooltip-tag-text">
       <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/>

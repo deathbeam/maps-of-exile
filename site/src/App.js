@@ -113,7 +113,7 @@ const MapBoss = ({ boss }) => {
     return <span className="tooltip-tag tooltip-tag-right">
       <span className="tooltip-tag-text">
         <p>
-          {boss.names.map(b => <span className="badge text-dark bg-info me-1"><b>{b}</b></span>)}
+          {boss.names.map(b => <span className="badge bg-info me-1"><b>{b}</b></span>)}
         </p>
         {boss.notes}
       </span>
@@ -256,34 +256,44 @@ function App() {
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
   return (
-    <div className="bg-dark">
+    <>
       <Loader loading={loading}/>
       <div className="container-fluid p-4">
         <div className="row">
           <div className="col col-4">
-            <label className="form-label text-light">Search</label>
-            <input className="form-control bg-dark text-light" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
-            <span className="text-light small">tags:</span> <MapTags tags={possibleTags}/>
+            <div className="input-group">
+              <div className="input-group-text">Search</div>
+              <input className="form-control" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
+            </div>
+            <span className="small">tags:</span> <MapTags tags={possibleTags}/>
           </div>
           <div className="col">
-            <label className="form-label text-light">Layout weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
+            <div className="input-group">
+              <div className="input-group-text">Layout weight</div>
+              <input className="form-control" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
+            </div>
           </div>
           <div className="col">
-            <label className="form-label text-light">Density weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={densityInput} onChange={setDensityInput}/>
+            <div className="input-group">
+              <div className="input-group-text">Density weight</div>
+              <input className="form-control" type="number" placeholder={densityInput} onChange={setDensityInput}/>
+            </div>
           </div>
           <div className="col">
-            <label className="form-label text-light">Boss weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={bossInput} onChange={setBossInput}/>
+            <div className="input-group">
+              <div className="input-group-text">Boss weight</div>
+              <input className="form-control" type="number" placeholder={bossInput} onChange={setBossInput}/>
+            </div>
           </div>
           <div className="col">
-            <label className="form-label text-light">Card weight</label>
-            <input className="form-control bg-dark text-light" type="number" placeholder={cardInput} onChange={setCardInput}/>
+            <div className="input-group">
+              <div className="input-group-text">Card weight</div>
+              <input className="form-control" type="number" placeholder={cardInput} onChange={setCardInput}/>
+            </div>
           </div>
         </div>
       </div>
-      <table className="table table-dark table-striped mb-0">
+      <table className="table table-striped mb-0">
         <thead>
         <tr>
           <th scope="col">
@@ -348,10 +358,10 @@ function App() {
         )}
         </tbody>
       </table>
-      <div className="container-fluid p-4 text-light text-end">
+      <div className="container-fluid p-4 text-end">
         Contribute on <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">GitHub</a>
       </div>
-    </div>
+    </>
   );
 }
 

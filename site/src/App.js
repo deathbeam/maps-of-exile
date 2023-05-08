@@ -102,7 +102,7 @@ const RatingBadge = ({ rating }) => {
     badgeClass = "bg-secondary"
     rating = "?"
   } else {
-    if (rating >= 4) {
+    if (rating >= 5) {
       badgeClass = "bg-success"
     } else if (rating >= 3) {
       badgeClass = "bg-info"

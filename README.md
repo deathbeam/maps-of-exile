@@ -35,7 +35,7 @@ Then it grabs data from stacked deck spreadsheet, calculates card chance for eve
 
 This card list with "drop chance" metadata is stored to be used in site in .json
 
-Then it grabs map ratings from spreadsheet.
+Then it grabs map ratings from spreadsheet (layout, density, boss).
 
 Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDD, cards found in the map from Poe wiki and matches map ratings with map name.
 

@@ -295,7 +295,7 @@
         "boss": {
             "spawn_at_load": true,
             "close_to_start": false,
-            "phases": true
+            "soft_phases": true
         }
     },
     {
@@ -531,7 +531,7 @@
         "boss": {
             "spawn_at_load": true,
             "close_to_start": true,
-            "phases": true
+            "soft_phases": true
         }
     },
     {
@@ -653,7 +653,7 @@
             "separated": true,
             "spawn_at_load": true,
             "close_to_start": false,
-            "phases": true
+            "soft_phases": true
         }
     },
     {
@@ -710,26 +710,28 @@
     },
     {
         "name": "Infested Valley Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Jungle Valley Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": false,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {

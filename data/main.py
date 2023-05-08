@@ -225,7 +225,8 @@ def get_maps_template(maps):
 			"boss": {
 				"spawn_at_load": None,
 				"close_to_start": None,
-				"phases": None
+				"phases": None,
+				"soft_phases": None
 			}
 		})
 	return out

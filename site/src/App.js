@@ -78,6 +78,9 @@ const preparedMaps = maps.map(map => {
     if (map.boss.phases) {
       mapTags.push("-boss with phases")
     }
+    if (map.boss.soft_phases) {
+      mapTags.push("boss with soft phases")
+    }
   }
 
   return {

@@ -111,15 +111,17 @@ const RatingBadge = ({ rating }) => {
   return <span className={badgeClass}>{rating}</span>
 }
 
-const Tags = ({ tags, addToInput }) => {
+const Tags = ({ tags, currentInput, addToInput }) => {
   return tags.map(t => {
-    const color = t.startsWith("+") ? "bg-info" : t.startsWith("-") ? "bg-warning" : "bg-secondary"
+    const searched = currentInput.toLowerCase().includes(t)
+    const color = searched ? "bg-primary" : t.startsWith("+") ? "bg-success" : t.startsWith("-") ? "bg-danger" : "bg-secondary"
+    const suff = searched ? " X" : ""
     const clazz = "badge rounded-pill text-dark me-1 " + color
-    return <button className={clazz} onClick={() => addToInput(t)}>{t}</button>
+    return <button className={clazz} onClick={() => addToInput(t)}>{t + suff}</button>
   })
 }
 
-const MapName = ({ map, addToInput }) => {
+const MapName = ({ map, currentInput, addToInput }) => {
   const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replaceAll(" ", "_") + ".png"
   let tierColor = "text-light"
   if (map.tier >= 11) {
@@ -129,7 +131,7 @@ const MapName = ({ map, addToInput }) => {
   }
 
   const name = <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>{map.name}</a>
-  const tags = <Tags tags={map.tags} addToInput={addToInput}/>
+  const tags = <Tags tags={map.tags} currentInput={currentInput} addToInput={addToInput}/>
 
   return map.image ? <>
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
@@ -260,7 +262,7 @@ function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInp
 }
 
 function filterMaps(ratedMaps, searchInput) {
-  const split = (searchInput || "").split(",")
+  const split = (searchInput || "").split(",").filter(e => e.trim())
   return ratedMaps
     .filter(m => !searchInput
       || split.find(s => m.name.toLowerCase().includes(s.trim().toLowerCase()))
@@ -318,7 +320,7 @@ function App() {
           <div className="col col-lg-4 col-md-12">
             <label className="form-label">Search</label>
             <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} onChange={setSearchInput}/>
-            <span className="small">tags:</span> <Tags tags={possibleTags} addToInput={addToInput}/>
+            <span className="small">tags:</span> <Tags tags={possibleTags} currentInput={searchInput} addToInput={addToInput}/>
           </div>
           <div className="col col-lg-8 col-md-12">
             <div className="row g-2">
@@ -436,7 +438,7 @@ function App() {
           {filterMaps(ratedMaps, searchInput).map(m =>
             <tr key={m.name} id={m.name}>
               <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
-              <td><MapName map={m} addToInput={addToInput}/></td>
+              <td><MapName map={m} currentInput={searchInput} addToInput={addToInput}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
               <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>

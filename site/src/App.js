@@ -421,7 +421,7 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+            <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
                 it might not necessarily be higher priority because of its lower drop rate.

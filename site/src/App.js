@@ -95,19 +95,18 @@ const possibleTags = [...new Set(preparedMaps
   .map(t => t.replace(/soul of .+/, "soul of"))
 )].sort()
 
-const RatingBadge = ({ rating, inverse = false }) => {
+const RatingBadge = ({ rating }) => {
   let badgeClass = "bg-danger"
 
   if (rating == null) {
     badgeClass = "bg-secondary"
     rating = "?"
   } else {
-    const rat = inverse ? 10 - rating : rating
-    if (rat >= 7) {
+    if (rating >= 4) {
       badgeClass = "bg-success"
-    } else if (rat >= 5) {
+    } else if (rating >= 3) {
       badgeClass = "bg-info"
-    } else if (rat >= 3) {
+    } else if (rating >= 2) {
       badgeClass = "bg-warning"
     }
   }
@@ -152,8 +151,8 @@ const MapName = ({ map }) => {
   </>
 }
 
-const MapBoss = ({ boss }) => {
-  const badge = <RatingBadge rating={boss.difficulty} inverse={true} />
+const MapBoss = ({ boss, rating }) => {
+  const badge = <RatingBadge rating={rating} />
 
   if (boss.names || boss.notes) {
     return <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
@@ -247,9 +246,9 @@ function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInp
   let out = []
 
   for (let map of foundMaps) {
-    const layoutValue = (map.layout.rating || 0) * layoutInput
-    const densityValue = (map.layout.density || 0) * densityInput
-    const bossValue = (10 - (map.boss.difficulty || 10)) * bossInput
+    const layoutValue = (map.rating.layout || 0) * layoutInput
+    const densityValue = (map.rating.density || 0) * densityInput
+    const bossValue = (map.rating.boss || 0) * bossInput
     let cardValue = 0
 
     for (let card of map.cards) {
@@ -287,9 +286,9 @@ function App() {
   }
 
   const [searchInput, setSearchInput] = useTransitionState('')
-  const [layoutInput, setLayoutInput] = useTransitionState('3')
-  const [densityInput, setDensityInput] = useTransitionState('2')
-  const [bossInput, setBossInput] = useTransitionState('0.2')
+  const [layoutInput, setLayoutInput] = useTransitionState('5')
+  const [densityInput, setDensityInput] = useTransitionState('4')
+  const [bossInput, setBossInput] = useTransitionState('1')
   const [cardInput, setCardInput] = useTransitionState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
@@ -350,30 +349,9 @@ function App() {
               Map
             </span>
           </th>
-          <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-              <span className="tooltip-tag-text">
-                How easy is the map to clear, e.g backtracking etc. Do not accounts for league mechanics, for that you probably want to look at outdoors tag.
-              </span>
-              Layout
-            </span>
-          </th>
-          <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-              <span className="tooltip-tag-text">
-                Monster count in maps. Do not counts for amount of monsters per square in map just total mob count.
-              </span>
-              Density
-            </span>
-          </th>
-          <th scope="col">
-            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-              <span className="tooltip-tag-text">
-                Boss difficulty, e.g how scary it is to kill. This rating do not includes boss fight length (phases for example).
-              </span>
-              Boss
-            </span>
-          </th>
+          <th scope="col">Layout</th>
+          <th scope="col">Density</th>
+          <th scope="col">Boss</th>
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
@@ -398,9 +376,9 @@ function App() {
             <tr key={m.name}>
               <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
               <td><MapName map={m}/></td>
-              <td className="text-center"><RatingBadge rating={m.layout.rating}/></td>
-              <td className="text-center"><RatingBadge rating={m.layout.density}/></td>
-              <td className="text-center"><MapBoss boss={m.boss}/></td>
+              <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>
+              <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
+              <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
               <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
               <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>
             </tr>

@@ -1,6 +1,5 @@
 import json
 import os
-import re
 import sys
 from decimal import Decimal
 
@@ -52,7 +51,25 @@ def get_card_data(key, league, config):
 	return sorted(out, key=lambda d: d["name"])
 
 
-def get_map_data(map_data, cards, config):
+def get_map_ratings(key, config):
+	id = config["ratings"]["sheet-id"]
+	name = config["ratings"]["sheet-name"]
+	range = config["ratings"]["sheet-range"]
+	print(f"Getting map ratings from {name}")
+	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}!{range}?key={key}"
+	r = requests.get(url)
+	r = r.json()
+	ratings = r["values"]
+	ratings.pop(0)
+	return list(map(lambda x: {
+		"name": x[0],
+		"layout": x[2],
+		"density": x[3],
+		"boss": x[5]
+	}, ratings))
+
+
+def get_map_data(map_data, cards, ratings, config):
 	url = map_data["poedb"]
 
 	print(f"Getting map data for {map_data['name']} from url {url}")
@@ -72,16 +89,17 @@ def get_map_data(map_data, cards, config):
 	rows = body.find_all("tr")
 	map_data["boss"] = {}
 	map_data["layout"] = {}
+	map_data["rating"] = next(map(lambda x: {
+		"layout": x["layout"],
+		"density": x["density"],
+		"boss": x["boss"]
+	}, filter(lambda x: x["name"] == map_data["name"].replace(" Map", ""), ratings)), {})
 
 	for row in rows:
 		cols = row.find_all("td")
 		name = cols[0].text.strip().lower()
 		value = cols[1].text.strip()
-		if name == "clearing ability":
-			map_data["layout"]["rating"] = int(value)
-		elif name == "mob count":
-			map_data["layout"]["density"] = int(value)
-		elif name == "few obstacles" and value == "o":
+		if name == "few obstacles" and value == "o":
 			map_data["layout"]["few_obstacles"] = True
 		elif name == "outdoors" and value == "o":
 			map_data["layout"]["outdoors"] = True
@@ -89,8 +107,6 @@ def get_map_data(map_data, cards, config):
 			map_data["layout"]["linear"] = True
 		elif name == "tileset":
 			map_data["layout"]["tileset"] = value
-		elif name == "boss difficulty":
-			map_data["boss"]["difficulty"] = int(re.sub("-.+", "", value))
 		elif name == "boss based on":
 			map_data["boss"]["based_on"] = value
 		elif name == "boss notes":
@@ -119,6 +135,8 @@ def get_map_data(map_data, cards, config):
 			map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
 		elif name == "card tags":
 			map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
+		elif name == "the pantheon":
+			map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
 
 	# Card data
 	wiki_name = map_data["name"].replace(" ", "_")
@@ -167,28 +185,6 @@ def get_maps(config):
 			"tier": tier,
 			"poedb": map_url
 		})
-
-	url = config["pantheon"]
-	print(f"Getting pantheon data from url {url}")
-	r = requests.get(url)
-	soup = BeautifulSoup(r.content, "html.parser")
-	pantheonlist = soup.find(id="ThePantheon")
-	table = pantheonlist.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-
-	for row in rows:
-		value = row.find_all("td")[1]
-		pantheon_name = value.find_all("a")[0].text.strip()
-		pantheon_maps = value.find_all("a", class_="itemclass_map")
-
-		for pantheon_map in pantheon_maps:
-			txt = pantheon_map.text.strip()
-			for o in out:
-				if o["name"] == txt:
-					print(f"Found pantheon {pantheon_name} for map {txt}")
-					o["pantheon"] = pantheon_name
-					break
 
 	return sorted(out, key=lambda d: d["name"])
 
@@ -246,7 +242,8 @@ def main():
 			with open(dir_path + "/../site/src/data/maps_extra_template.json", "w") as f:
 				f.write(json.dumps(get_maps_template(maps), indent=4, cls=DecimalEncoder))
 
-		maps = list(map(lambda x: get_map_data(x, cards, config["maps"]), maps))
+		map_ratings = get_map_ratings(api_key, config["maps"])
+		maps = list(map(lambda x: get_map_data(x, cards, map_ratings, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
 			f.write(json.dumps(maps, indent=4, cls=DecimalEncoder))
 

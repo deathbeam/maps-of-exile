@@ -3,19 +3,16 @@ data:
 
   maps:
     list: https://poedb.tw/us/Maps#MapsList
-    pantheon: https://poedb.tw/us/The_Pantheon#ThePantheon
     cards: https://www.poewiki.net/api.php?action=parse&prop=text&format=json&page={}
     poedb: https://poedb.tw/us/{}
     wiki: https://www.poewiki.net/wiki/{}
+    ratings:
+      sheet-id: 1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
+      sheet-name: 2.Atlas
+      sheet-range: AH3:AN149
   cards:
     decks:
       sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
       sheet-name: Decks 3.21
     prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league={}
     ninja: https://poe.ninja/challenge/divination-cards/{}
-
-  rating:
-    layout: 3
-    density: 2
-    boss: 0.5
-    card: 40

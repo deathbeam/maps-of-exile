@@ -7,11 +7,14 @@ difficulty but that usually isn't the deciding factor.
 ## Sources of data
 
 **Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  
-https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4/edit
+https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
 
 **Map metadata** from **PoeDB**:  
 https://poedb.tw/us/Maps#MapsList  
-https://poedb.tw/us/Colonnade_Map (example of single map)  
+https://poedb.tw/us/Colonnade_Map (example of single map)
+
+**Map ratings spreadsheet** by **FixFaxer**:
+https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
 
 **Card prices** from **PoeNinja**:  
 https://poe.ninja/challenge/divination-cards  
@@ -19,15 +22,6 @@ https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api
 
 **Card drops** from **PoeWiki**:  
 https://www.poewiki.net/wiki/Colonnade_Map  
-
-## TODO (maybe, if ever)
-
-- Boss length (short/long bosses, for mapping, e.g bosses with phases are bad)
-- Boss spawn (spawned in at start of map or not, for altars)
-- Layouts good for league mechanics (legion/breach/stuff like that, mostly
-    pretty open, even though this is already partially covered with outdoors
-    tag)
-- Show and add filter for multiple bosses (boss rushing/metamorph)
 
 ## So what it actually does?
 
@@ -41,11 +35,13 @@ Then it grabs data from stacked deck spreadsheet, calculates card chance for eve
 
 This card list with "drop chance" metadata is stored to be used in site in .json
 
-Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDB (this is layout, density, boss info, some other misc info) and cards found in the map from Poe wiki.
+Then it grabs map ratings from spreadsheet.
 
-This map list with PoeDB and PoeWiki metadata is also stored to be used in site in .json.
+Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDD, cards found in the map from Poe wiki and matches map ratings with map name.
 
-## Site
+This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.
+
+### Site
 
 Site simply displays all the maps with metadata, builds some tags from misc info from maps and then matches the card metadata from cards .json with card names found in map in map .json.
 
@@ -55,7 +51,7 @@ There are 4 factors for score:
 
 Layout, Density, Boss, Cards
 
-Layout, Density and Boss is simple, each is number from 0 to 10.
+Layout, Density and Boss is simple, each is number from 0 to 5.
 
 Cards is a bit more complicated.
 

@@ -59,7 +59,6 @@ const preparedMaps = maps.map(map => {
   if (map.layout.good_for_deli_mirror) {
     mapTags.push("+delirium mirror")
   }
-
   if (map.boss.names) {
     const names = map.boss.names.filter(n => !n.includes('Merveil'))
     if (names.length > 1) {
@@ -86,7 +85,7 @@ const preparedMaps = maps.map(map => {
     name: map.name.replace(" Map", ""),
     connected: (map.connected || []).map(c => c.replace(" Map", "")),
     cards: mapCards,
-    tags: mapTags,
+    tags: mapTags.sort(),
   }
 })
 
@@ -265,7 +264,7 @@ function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInp
 }
 
 function filterMaps(ratedMaps, searchInput) {
-  const split = searchInput.split(",")
+  const split = (searchInput || "").split(",")
   return ratedMaps
     .filter(m => !searchInput
       || split.find(s => m.name.toLowerCase().includes(s.trim().toLowerCase()))

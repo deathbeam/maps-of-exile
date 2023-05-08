@@ -357,9 +357,9 @@ function App() {
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">unknown</span>
                 <span className="badge bg-danger text-dark me-1">bad</span>
-                <span className="badge bg-warning text-dark me-1">neutral</span>
-                <span className="badge bg-info text-dark me-1">good</span>
-                <span className="badge bg-success text-dark me-1">great</span>
+                <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
+                <span className="badge bg-info text-dark me-1">>=5 good</span>
+                <span className="badge bg-success text-dark me-1">>=7 great</span>
               </span>
               Layout
             </span>
@@ -371,9 +371,9 @@ function App() {
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">unknown</span>
                 <span className="badge bg-danger text-dark me-1">bad</span>
-                <span className="badge bg-warning text-dark me-1">neutral</span>
-                <span className="badge bg-info text-dark me-1">good</span>
-                <span className="badge bg-success text-dark me-1">great</span>
+                <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
+                <span className="badge bg-info text-dark me-1">>=5 good</span>
+                <span className="badge bg-success text-dark me-1">>=7 great</span>
               </span>
               Density
             </span>
@@ -385,9 +385,9 @@ function App() {
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">unknown</span>
                 <span className="badge bg-danger text-dark me-1">hard/annoying</span>
-                <span className="badge bg-warning text-dark me-1">neutral</span>
-                <span className="badge bg-info text-dark me-1">alright</span>
-                <span className="badge bg-success text-dark me-1">easy/fast</span>
+                <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
+                <span className="badge bg-info text-dark me-1">>=5 alright</span>
+                <span className="badge bg-success text-dark me-1">>=7 easy/fast</span>
               </span>
               Boss
             </span>
@@ -407,10 +407,10 @@ function App() {
                 it might not necessarily be higher priority because of its lower drop rate.
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">not very good</span>
-                <span className="badge bg-primary text-dark me-1">decent</span>
-                <span className="badge bg-info text-dark me-1">good</span>
-                <span className="badge bg-warning text-dark me-1">great</span>
-                <span className="badge bg-danger text-dark me-1">amazing</span>
+                <span className="badge bg-primary text-dark me-1">>=1 decent</span>
+                <span className="badge bg-info text-dark me-1">>=5 good</span>
+                <span className="badge bg-warning text-dark me-1">>=10 great</span>
+                <span className="badge bg-danger text-dark me-1">>=20 amazing</span>
               </span>
               Cards
             </span>

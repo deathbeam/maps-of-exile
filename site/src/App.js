@@ -120,7 +120,7 @@ const Tags = ({ tags, addToInput }) => {
   return tags.map(t => {
     const color = t.startsWith("+") ? "bg-info" : t.startsWith("-") ? "bg-warning" : "bg-secondary"
     const clazz = "badge rounded-pill text-dark me-1 " + color
-    return <a className={clazz} onClick={() => addToInput(t)}>{t}</a>
+    return <button className={clazz} onClick={() => addToInput(t)}>{t}</button>
   })
 }
 

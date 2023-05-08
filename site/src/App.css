@@ -2,6 +2,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+}
+
 a:hover {
     text-decoration: underline;
 }

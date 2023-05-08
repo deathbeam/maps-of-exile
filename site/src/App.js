@@ -169,10 +169,10 @@ const MapBoss = ({ boss, rating }) => {
 }
 
 const ConnectedMaps = ({ connected, ratedMaps }) => {
-  return (connected || []).map(m => <><span className="badge text-dark bg-secondary me-1">
+  return (connected || []).map(m => <><a className="badge text-dark bg-secondary me-1" href={'#' + m}>
     <b>{Math.round((ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0) + ' '}</b>
     {m}
-  </span><br/></>)
+  </a><br/></>)
 }
 
 const MapCard = ({ card }) => {
@@ -419,7 +419,7 @@ function App() {
         </thead>
         <tbody>
           {filterMaps(ratedMaps, searchInput).map(m =>
-            <tr key={m.name}>
+            <tr key={m.name} id={m.name}>
               <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
               <td><MapName map={m}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>

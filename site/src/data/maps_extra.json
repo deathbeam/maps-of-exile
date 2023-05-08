@@ -279,6 +279,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
+            "separated": true,
             "spawn_at_load": true,
             "close_to_start": true,
             "phases": false
@@ -411,6 +412,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
+            "separated": true,
             "spawn_at_load": true,
             "close_to_start": false,
             "phases": false
@@ -633,6 +635,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
+            "separated": true,
             "spawn_at_load": true,
             "close_to_start": false,
             "phases": false
@@ -640,50 +643,57 @@
     },
     {
         "name": "Frozen Cabins Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "separated": true,
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Fungal Hollow Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "separated": true,
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Geode Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Grotto Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {

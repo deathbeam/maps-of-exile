@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {useState, useMemo, useTransition} from 'react'
+import {useState, useMemo, useTransition, useRef} from 'react'
 import merge from 'lodash.merge'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
@@ -116,15 +116,15 @@ const RatingBadge = ({ rating }) => {
   return <span className={badgeClass}>{rating}</span>
 }
 
-const Tags = ({ tags }) => {
+const Tags = ({ tags, addToInput }) => {
   return tags.map(t => {
     const color = t.startsWith("+") ? "bg-info" : t.startsWith("-") ? "bg-warning" : "bg-secondary"
     const clazz = "badge rounded-pill text-dark me-1 " + color
-    return <span className={clazz}>{t}</span>
+    return <a className={clazz} onClick={() => addToInput(t)}>{t}</a>
   })
 }
 
-const MapName = ({ map }) => {
+const MapName = ({ map, addToInput }) => {
   const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replaceAll(" ", "_") + ".png"
   let tierColor = "text-light"
   if (map.tier >= 11) {
@@ -134,7 +134,7 @@ const MapName = ({ map }) => {
   }
 
   const name = <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>{map.name}</a>
-  const tags = <Tags tags={map.tags}/>
+  const tags = <Tags tags={map.tags} addToInput={addToInput}/>
 
   return map.filled ? <>
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
@@ -265,11 +265,12 @@ function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInp
 }
 
 function filterMaps(ratedMaps, searchInput) {
+  const split = searchInput.split(",")
   return ratedMaps
     .filter(m => !searchInput
-      || m.name.toLowerCase().includes(searchInput.toLowerCase())
-      || m.cards.find(c => c.name.toLowerCase().includes(searchInput.toLowerCase()))
-      || m.tags.find(t => t.toLowerCase().includes(searchInput.toLowerCase()))
+      || split.find(s => m.name.toLowerCase().includes(s.trim().toLowerCase()))
+      || m.cards.find(c => split.find(s => c.name.toLowerCase().includes(s.trim().toLowerCase())))
+      || split.every(s => m.tags.find(t => t.toLowerCase().includes(s.trim().toLowerCase())))
     )
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
@@ -282,12 +283,37 @@ function App() {
     return [val, (e) => startTransition(() => setVal(e.target.value))]
   }
 
+  const searchRef = useRef(null)
   const [searchInput, setSearchInput] = useTransitionState('')
   const [layoutInput, setLayoutInput] = useTransitionState('3')
   const [densityInput, setDensityInput] = useTransitionState('2')
   const [bossInput, setBossInput] = useTransitionState('1')
   const [cardInput, setCardInput] = useTransitionState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
+
+  const setSearch = (v) => {
+    searchRef.current.value = v
+    setSearchInput({
+      target: {
+        value: v
+      }
+    })
+  }
+
+  const addToInput = (v) => {
+    if (!searchInput) {
+      setSearch(v)
+    } else if (!searchInput.includes(v)) {
+      setSearch(searchRef.current.value + ", " + v)
+    } else {
+      setSearch(searchRef.current.value
+        .replace(", " + v, "")
+        .replace("," + v, "")
+        .replace(v + ", ", "")
+        .replace(v + ",", "")
+        .replace(v, ""))
+    }
+  }
 
   return (
     <>
@@ -297,9 +323,9 @@ function App() {
           <div className="col col-4">
             <div className="input-group">
               <div className="input-group-text">Search</div>
-              <input className="form-control" type="search" placeholder="Search for map name, tag or card" onChange={setSearchInput}/>
+              <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} onChange={setSearchInput}/>
             </div>
-            <span className="small">tags:</span> <Tags tags={possibleTags}/>
+            <span className="small">tags:</span> <Tags tags={possibleTags} addToInput={addToInput}/>
           </div>
           <div className="col">
             <div className="input-group">
@@ -421,7 +447,7 @@ function App() {
           {filterMaps(ratedMaps, searchInput).map(m =>
             <tr key={m.name} id={m.name}>
               <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
-              <td><MapName map={m}/></td>
+              <td><MapName map={m} addToInput={addToInput}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
               <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>

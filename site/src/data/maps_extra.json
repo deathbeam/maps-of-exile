@@ -923,14 +923,15 @@
     },
     {
         "name": "Necropolis Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
@@ -947,62 +948,67 @@
     },
     {
         "name": "Orchard Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Overgrown Ruin Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Overgrown Shrine Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Phantasmagoria Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Pier Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
@@ -1019,50 +1025,55 @@
     },
     {
         "name": "Pit Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Pit of the Chimera Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Plateau Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
         "name": "Plaza Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         }
     },
     {
@@ -1079,62 +1090,68 @@
     },
     {
         "name": "Port Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Precinct Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Primordial Blocks Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "separated": true,
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         }
     },
     {
         "name": "Primordial Pool Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {
         "name": "Promenade Map",
+        "filled": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         }
     },
     {

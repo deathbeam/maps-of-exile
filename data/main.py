@@ -218,6 +218,7 @@ def get_maps_template(maps):
 	for map in maps:
 		out.append({
 			"name": map["name"],
+			"filled": False,
 			"layout": {
 				"good_for_open_mechanics": None,
 				"good_for_deli_mirror": None

@@ -198,6 +198,8 @@ const MapCard = ({ card }) => {
   badgeClass = `badge text-dark m-1 ${badgeClass}`
   return <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
     <span className="tooltip-tag-text">
+      <b>Reward</b>: {card.reward}<br/>
+      <b>Stack size</b>: {card.stack}<br/>
       <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16"/>
       {card.rate && <><br/><b>* Rate</b>: {Math.round(card.rate * 10000) / 10000} %</>}
       {card.value > 0 && <><br/><b>= Score</b>: {Math.round(card.value * 100) / 100}</>}

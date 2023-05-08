@@ -1,5 +1,6 @@
 import json
 import os
+import re
 import sys
 from decimal import Decimal
 from math import ceil
@@ -59,9 +60,15 @@ def get_card_data(key, league, config):
 
 	out = []
 	for price_card in prices:
+		reward = ""
+		if price_card.get("explicitModifiers", []):
+			reward = re.sub("<[^>]+>", "", price_card["explicitModifiers"][0]["text"]).replace("{", "").replace("}", "").replace("\n", ", ")
+
 		card = {
 			"name": price_card["name"],
 			"price": price_card["chaosValue"],
+			"stack": price_card.get("stackSize", 1),
+			"reward": reward,
 			"ninja": config["ninja"].replace("{}", price_card["detailsId"])
 		}
 

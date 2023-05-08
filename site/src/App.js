@@ -115,9 +115,9 @@ const Tags = ({ tags, currentInput, addToInput }) => {
   return tags.map(t => {
     const searched = currentInput.toLowerCase().includes(t)
     const color = searched ? "bg-primary" : t.startsWith("+") ? "bg-success" : t.startsWith("-") ? "bg-danger" : "bg-secondary"
-    const suff = searched ? " X" : ""
+    const suff = searched ? <>{' '}<span className="text-danger-emphasis">x</span></> : null
     const clazz = "badge rounded-pill text-dark me-1 " + color
-    return <button className={clazz} onClick={() => addToInput(t)}>{t + suff}</button>
+    return <button className={clazz} onClick={() => addToInput(t)}>{t}{suff}</button>
   })
 }
 

@@ -344,14 +344,57 @@ function App() {
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
-                Map name, colored based on natural tier (red, yellow, white).
+                Map name, colored based on natural tier.
+                <br/>
+                <span className="badge bg-light text-dark me-1">tier 1-5</span>
+                <span className="badge bg-warning text-dark me-1">tier 6-10</span>
+                <span className="badge bg-danger text-dark me-1">tier 11-16</span>
               </span>
               Map
             </span>
           </th>
-          <th scope="col">Layout</th>
-          <th scope="col">Density</th>
-          <th scope="col">Boss</th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+              <span className="tooltip-tag-text">
+                How straightforward is the map to clear or how good it is for league mechanics.
+                <br/>
+                <span className="badge bg-secondary text-dark me-1">unknown</span>
+                <span className="badge bg-danger text-dark me-1">bad</span>
+                <span className="badge bg-warning text-dark me-1">neutral</span>
+                <span className="badge bg-info text-dark me-1">good</span>
+                <span className="badge bg-success text-dark me-1">great</span>
+              </span>
+              Layout
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+              <span className="tooltip-tag-text">
+                How many mobs does the map have accounting for its layout.
+                <br/>
+                <span className="badge bg-secondary text-dark me-1">unknown</span>
+                <span className="badge bg-danger text-dark me-1">bad</span>
+                <span className="badge bg-warning text-dark me-1">neutral</span>
+                <span className="badge bg-info text-dark me-1">good</span>
+                <span className="badge bg-success text-dark me-1">great</span>
+              </span>
+              Density
+            </span>
+          </th>
+          <th scope="col">
+            <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+              <span className="tooltip-tag-text">
+                How annoying/dangerous is the boss to kill.
+                <br/>
+                <span className="badge bg-secondary text-dark me-1">unknown</span>
+                <span className="badge bg-danger text-dark me-1">hard/annoying</span>
+                <span className="badge bg-warning text-dark me-1">neutral</span>
+                <span className="badge bg-info text-dark me-1">alright</span>
+                <span className="badge bg-success text-dark me-1">easy/fast</span>
+              </span>
+              Boss
+            </span>
+          </th>
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
@@ -365,6 +408,12 @@ function App() {
               <span className="tooltip-tag-text">
                 Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
                 it might not necessarily be higher priority because of its lower drop rate.
+                <br/>
+                <span className="badge bg-secondary text-dark me-1">not very good</span>
+                <span className="badge bg-primary text-dark me-1">decent</span>
+                <span className="badge bg-info text-dark me-1">good</span>
+                <span className="badge bg-warning text-dark me-1">great</span>
+                <span className="badge bg-danger text-dark me-1">amazing</span>
               </span>
               Cards
             </span>

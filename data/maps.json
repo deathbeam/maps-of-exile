@@ -1246,184 +1246,189 @@
     },
     {
         "name": "Racecourse Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
         "name": "Ramparts Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Relic Chambers Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Residence Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Scriptorium Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
         "name": "Shipyard Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Shore Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
         "name": "Shrine Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": true
         }
     },
     {
         "name": "Siege Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
         "name": "Silo Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true,
+            "linear": true,
+            "few obstacles": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false,
+            "separated": true
         }
     },
     {
         "name": "Stagnation Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false,
+            "outdoors": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false,
+            "separated": true
         }
     },
     {
         "name": "Strand Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Sulphur Vents Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -1442,30 +1447,30 @@
     },
     {
         "name": "Temple Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Terrace Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -1526,114 +1531,114 @@
     },
     {
         "name": "Thicket Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Tower Map",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
         "name": "Toxic Sewer Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Tropical Island Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Underground River Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
         "name": "Underground Sea Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
         "name": "Vaal Pyramid Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
         "name": "Vaal Temple Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -1652,44 +1657,44 @@
     },
     {
         "name": "Volcano Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
         "name": "Waste Pool Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
         "name": "Wasteland Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -1708,16 +1713,16 @@
     },
     {
         "name": "Wharf Map",
-        "image": false,
+        "image": true,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": null,
-            "close_to_start": null,
-            "phases": null,
-            "soft_phases": null
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         }
     }
 ]

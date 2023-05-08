@@ -4594,13 +4594,19 @@
                 "Bringer of Blood",
                 "Crusher of Gladiators",
                 "Shredder of Gladiators"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Grand Arena",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -4627,7 +4633,7 @@
             "The Visionary",
             "Three Voices"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Ramparts Map",
@@ -4639,13 +4645,19 @@
             "separated": true,
             "names": [
                 "The Reaver"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Sarn Ramparts",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -4678,7 +4690,7 @@
             "The Traitor",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Relic Chambers Map",
@@ -4689,11 +4701,17 @@
             "notes": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise",
             "names": [
                 "Litanius, the Black Prayer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Reliquary",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4725,7 +4743,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Residence Map",
@@ -4737,11 +4755,17 @@
             "separated": true,
             "names": [
                 "Excellis Aurafix"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Sceptre of God",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4782,7 +4806,7 @@
             "The Unexpected Prize",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Scriptorium Map",
@@ -4794,10 +4818,16 @@
             "separated": true,
             "names": [
                 "Gisale, Thought Thief"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
-            "tileset": "The Library"
+            "tileset": "The Library",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -4833,7 +4863,7 @@
             "Thirst for Knowledge",
             "Turn the Other Cheek"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Shipyard Map",
@@ -4846,11 +4876,17 @@
                 "Lussi \"Rotmother\" Roth",
                 "Musky \"Two-Eyes\" Grenn",
                 "Susara, Siren of Pondium"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Docks",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -4884,7 +4920,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Shore Map",
@@ -4895,13 +4931,19 @@
             "notes": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
             "names": [
                 "Belcer, the Pirate Lord"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Coast",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -4939,7 +4981,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Shrine Map",
@@ -4951,10 +4993,16 @@
             "separated": true,
             "names": [
                 "Piety the Empyrean"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": true
         },
         "layout": {
-            "tileset": "The Lunaris Temple Level 1"
+            "tileset": "The Lunaris Temple Level 1",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -4984,7 +5032,7 @@
             "The Trial",
             "Vinia's Token"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Siege Map",
@@ -4995,13 +5043,19 @@
             "notes": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain.",
             "names": [
                 "Tahsin, Warmaker"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Canals",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5035,7 +5089,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Silo Map",
@@ -5044,9 +5098,19 @@
         "boss": {
             "names": [
                 "Renkarr, The Kiln Keeper"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true,
+            "linear": true,
+            "few obstacles": true
+        },
         "rating": {
             "layout": 8,
             "density": 4,
@@ -5080,7 +5144,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Stagnation Map",
@@ -5089,9 +5153,18 @@
         "boss": {
             "names": [
                 "Murgeth Bogsong"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false,
+            "outdoors": true
+        },
         "rating": {
             "layout": 6,
             "density": 4,
@@ -5123,7 +5196,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Strand Map",
@@ -5136,13 +5209,19 @@
             "names": [
                 "Massier",
                 "Master of the Blade"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Twilight Strand",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -5185,7 +5264,7 @@
             "The Void",
             "Thunderous Skies"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Sulphur Vents Map",
@@ -5197,12 +5276,18 @@
             "separated": true,
             "names": [
                 "The Gorgon"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Boiling Lake",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5228,7 +5313,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Synthesised Map",
@@ -5255,11 +5340,17 @@
             "separated": true,
             "names": [
                 "Jorus, Sky's Edge"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Solaris Temple Level 1",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5300,7 +5391,7 @@
             "The Twins",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Terrace Map",
@@ -5312,12 +5403,18 @@
             "separated": true,
             "names": [
                 "Varhesh, Shimmering Aberration"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The High Gardens",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -5355,7 +5452,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "The Coward's Trial",
@@ -5487,10 +5584,16 @@
             "separated": true,
             "names": [
                 "The Primal One"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
-            "tileset": "The Dread Thicket"
+            "tileset": "The Dread Thicket",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5523,7 +5626,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Tower Map",
@@ -5536,11 +5639,17 @@
             "names": [
                 "Bazur",
                 "Liantra"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Shavronne's Tower",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -5584,12 +5693,18 @@
             "notes": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
             "names": [
                 "Arachnoxia"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Sewers",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -5624,7 +5739,7 @@
             "The Web",
             "Vile Power"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Tropical Island Map",
@@ -5635,13 +5750,19 @@
             "notes": "Has 'allies deal substantial extra physical damage' aura. Summons monkeys and frenzies allies. Boss itself is slow and does little damage. At 50% health summons two small unique monkeys with Haste and slowing auras.",
             "names": [
                 "Blood Progenitor"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Southern Forest",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -5675,7 +5796,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Underground River Map",
@@ -5687,12 +5808,18 @@
             "separated": true,
             "names": [
                 "It That Fell"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Caverns",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -5723,7 +5850,7 @@
             "The Void",
             "Treasure Hunter"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Underground Sea Map",
@@ -5736,10 +5863,16 @@
             "names": [
                 "Merveil, the Reflection",
                 "Merveil, the Returned"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
-            "tileset": "The Cavern of Anger"
+            "tileset": "The Cavern of Anger",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5783,7 +5916,7 @@
             "The Void",
             "Treasure Hunter"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Vaal Pyramid Map",
@@ -5797,10 +5930,16 @@
                 "The Broken Prince",
                 "The Fallen Queen",
                 "The Hollow Lady"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
-            "tileset": "The Ancient Pyramid"
+            "tileset": "The Ancient Pyramid",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -5838,7 +5977,7 @@
             "Three Voices",
             "Unrequited Love"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Vaal Temple Map",
@@ -5852,10 +5991,16 @@
                 "K'aj A'alai",
                 "K'aj Q'ura",
                 "K'aj Y'ara'az"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
-            "tileset": "The Ancient Pyramid"
+            "tileset": "The Ancient Pyramid",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -5882,7 +6027,7 @@
             "Three Voices",
             "Unrequited Love"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Vaults of Atziri",
@@ -5927,11 +6072,17 @@
             "notes": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage.",
             "names": [
                 "Forest of Flames"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Kaom's Dream",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5963,7 +6114,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Waste Pool Map",
@@ -5975,12 +6126,18 @@
             "separated": true,
             "names": [
                 "Portentia, the Foul"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Doedre's Cesspool",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -6014,7 +6171,7 @@
             "The Witch",
             "Vile Power"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Wasteland Map",
@@ -6025,12 +6182,18 @@
             "notes": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable.",
             "names": [
                 "The Brittle Emperor"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Dried Lake",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -6057,7 +6220,7 @@
             "The Trial",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Whakawairua Tuahu",
@@ -6105,12 +6268,18 @@
             "notes": "Weak Lightning spells. Summons 6 Flood Orbs which use an unthreatening Cyclone. Boss is tanky.",
             "names": [
                 "Stone of the Currents"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Docks",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -6148,6 +6317,6 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
-        "image": false
+        "image": true
     }
 ]

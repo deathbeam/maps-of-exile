@@ -93,10 +93,11 @@ def get_map_ratings(key, config):
 	r = r.json()
 	ratings = r["values"]
 	ratings = list(map(lambda x: {
-		"name": x[0],
+		"name": x[0].strip().replace("Bazzar", "Bazaar"),
 		"layout": rescale(int(x[2]), 0, 5, 10),
 		"density": rescale(int(x[3]), 0, 5, 10),
-		"boss": rescale(int(x[5]), 0, 5, 10)
+		"boss": rescale(int(x[5]), 0, 5, 10),
+		"density_unreliable": True
 	}, ratings))
 
 	id = config["density"]["sheet-id"]
@@ -114,9 +115,15 @@ def get_map_ratings(key, config):
 	density_max = max(density_values_new)
 
 	for density in densities:
-		rating = next(filter(lambda x: x["name"] == density[0], ratings), None)
+		dens_name = density[0].strip().lower().replace("flooded mines", "flooded mine").replace("overgrown ruins", "overgrown ruin")
+		rating = next(filter(lambda x: x["name"].lower() == dens_name, ratings), None)
 		if rating:
 			rating["density"] = rescale(int(density[1]), density_min, density_max, 10)
+			rating["density_unreliable"] = False
+
+	for rating in ratings:
+		if rating["density_unreliable"]:
+			print("Density rating is unreliable for " + rating["name"])
 	return ratings
 
 

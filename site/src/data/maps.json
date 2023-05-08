@@ -23,7 +23,8 @@
             "The Void",
             "The Wilted Rose",
             "The Wretched"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Alleyways Map",
@@ -34,12 +35,17 @@
             "notes": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles",
             "names": [
                 "Calderus"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Oriath Square",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -75,7 +81,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Arachnid Nest Map",
@@ -87,11 +94,16 @@
             "separated": true,
             "names": [
                 "Spinner of False Hope"
-            ]
+            ],
+            "spawn_at_load": false,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Weaver's Chambers",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -119,7 +131,8 @@
             "The Trial",
             "The Void",
             "The Web"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Arachnid Tomb Map",
@@ -131,12 +144,17 @@
             "separated": true,
             "names": [
                 "Hybrid Widow"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Temple of Decay Level 1",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 6,
@@ -163,7 +181,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Web"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Arcade Map",
@@ -175,11 +194,16 @@
             "names": [
                 "Herald of Ashes",
                 "Herald of Thunder"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Marketplace",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -212,7 +236,8 @@
             "The Trial",
             "The Tyrant",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Arid Lake Map",
@@ -224,12 +249,17 @@
             "separated": true,
             "names": [
                 "Drought-Maddened Rhoa"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Fetid Pool",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -254,7 +284,8 @@
             "The Rabid Rhoa",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Armoury Map",
@@ -265,11 +296,16 @@
             "notes": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities.",
             "names": [
                 "Warmonger"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Mansion Annex",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -296,7 +332,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Warlord"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Arsenal Map",
@@ -308,11 +345,16 @@
             "separated": true,
             "names": [
                 "The Steel Soul"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Grain Gate",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -348,7 +390,8 @@
             "The Void",
             "The Warlord",
             "Three Faces in the Dark"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Atoll Map",
@@ -360,13 +403,18 @@
             "separated": true,
             "names": [
                 "Puruna, the Challenger"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         },
         "layout": {
             "tileset": "The Ledge",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -401,7 +449,8 @@
             "The Trial",
             "The Void",
             "The Wind"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Barrows Map",
@@ -413,11 +462,16 @@
             "separated": true,
             "names": [
                 "Beast of the Pits"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Wetlands",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -445,7 +499,8 @@
             "The Shepherd's Sandals",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Beach Map",
@@ -457,13 +512,18 @@
             "separated": true,
             "names": [
                 "Glace"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Beacon",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -491,7 +551,8 @@
             "The Journey",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Belfry Map",
@@ -503,13 +564,18 @@
             "separated": true,
             "names": [
                 "Lord of the Grey"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": true
         },
         "layout": {
             "tileset": "The Cathedral Rooftop",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -535,7 +601,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Wrath"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Bone Crypt Map",
@@ -546,11 +613,16 @@
             "notes": "Resummons nearby minions. Casts Spirit Offering and Vaal Summon Skeletons. Focus on killing the boss over the unique skeletons as these can be revived by the boss.",
             "names": [
                 "Xixic, High Necromancer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Crypt",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -586,7 +658,8 @@
             "The Trial",
             "The Void",
             "The Wretched"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
@@ -617,7 +690,8 @@
             "The Void",
             "The Wolf's Shadow",
             "Treasure Hunter"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Caldera Map",
@@ -629,11 +703,16 @@
             "separated": true,
             "names": [
                 "The Infernal King"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Kaom's Dream",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -666,7 +745,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Canyon Map",
@@ -678,13 +758,18 @@
             "names": [
                 "Gnar, Eater of Carrion",
                 "Stonebeak, Battle Fowl"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Prisoner's Gate",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -718,7 +803,8 @@
             "The Trial",
             "The Void",
             "The Whiteout"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Castle Ruins Map",
@@ -730,12 +816,17 @@
             "separated": true,
             "names": [
                 "Leif, the Swift-Handed"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Broken Bridge",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -766,7 +857,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Tyrant"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Cells Map",
@@ -777,10 +869,15 @@
             "notes": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks",
             "names": [
                 "Shavronne the Sickening"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Crematorium"
+            "tileset": "The Crematorium",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -811,7 +908,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Warden"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Cemetery Map",
@@ -823,11 +921,16 @@
             "separated": true,
             "names": [
                 "Erebix, Light's Bane"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         },
         "layout": {
             "tileset": "The Fellshrine Ruins",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -870,7 +973,8 @@
             "The Trial",
             "The Union",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Chateau Map",
@@ -881,11 +985,16 @@
             "notes": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap.",
             "names": [
                 "Hephaeus, The Hammer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Estate Walkways",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -915,7 +1024,8 @@
             "The Scavenger",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "City Square Map",
@@ -928,12 +1038,17 @@
                 "Carius, the Unnatural",
                 "Pileah, Burning Corpse",
                 "Pileah, Corpse Burner"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         },
         "layout": {
             "tileset": "Oriath Square",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -966,7 +1081,8 @@
             "The Trial",
             "The Void",
             "Three Voices"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Cold River Map",
@@ -976,9 +1092,17 @@
             "names": [
                 "Ara, Sister of Light",
                 "Khor, Sister of Shadows"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false,
+            "outdoors": true
+        },
         "rating": {
             "layout": 6,
             "density": 6,
@@ -1019,7 +1143,8 @@
             "The Twins",
             "The Void",
             "Wealth and Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Colonnade Map",
@@ -1031,12 +1156,18 @@
             "separated": true,
             "names": [
                 "Tyrant"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Battlefront",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 6,
@@ -1072,7 +1203,8 @@
             "The Trial",
             "The Void",
             "The Warlord"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Colosseum Map",
@@ -1084,12 +1216,17 @@
             "separated": true,
             "names": [
                 "Ambrius, Legion Slayer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "Daresso's Dream",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1126,7 +1263,8 @@
             "The Visionary",
             "The Void",
             "Unchained"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Conservatory Map",
@@ -1138,11 +1276,16 @@
             "separated": true,
             "names": [
                 "The Forgotten Soldier"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Bath House",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1171,7 +1314,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Undaunted"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Coral Ruins Map",
@@ -1182,12 +1326,17 @@
             "notes": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack.",
             "names": [
                 "Captain Tanner Lightfoot"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Brine King's Reef",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1223,7 +1372,8 @@
             "The Tyrant",
             "The Vast",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Core Map",
@@ -1235,11 +1385,16 @@
             "separated": true,
             "names": [
                 "Eater of Souls"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Harvest",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1278,7 +1433,8 @@
             "The Trial",
             "Vile Power",
             "Vinia's Token"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Courtyard Map",
@@ -1292,12 +1448,17 @@
                 "Oriath's Vengeance",
                 "Oriath's Vigil",
                 "Oriath's Virtue"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Imperial Gardens",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1336,7 +1497,8 @@
             "The Void",
             "Three Voices",
             "Thunderous Skies"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Coves Map",
@@ -1348,12 +1510,17 @@
             "names": [
                 "Pirate Treasure",
                 "Telvar, the Inebriated"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         },
         "layout": {
             "tileset": "Coves Map",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1389,7 +1556,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Vast"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Crater Map",
@@ -1398,9 +1566,15 @@
         "boss": {
             "names": [
                 "Megaera"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
+        },
         "rating": {
             "layout": 6,
             "density": 10,
@@ -1424,7 +1598,8 @@
             "The Standoff",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Crimson Temple Map",
@@ -1436,11 +1611,16 @@
             "separated": true,
             "names": [
                 "The Sanguine Siren"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Templar Courts",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1476,7 +1656,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Crimson Township Map",
@@ -1485,9 +1666,18 @@
         "boss": {
             "names": [
                 "Kadaris, Crimson Mayor"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false,
+            "linear": true,
+            "outdoors": true
+        },
         "rating": {
             "layout": 6,
             "density": 6,
@@ -1518,7 +1708,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Crystal Ore Map",
@@ -1532,10 +1723,15 @@
                 "Champion of the Hollows",
                 "Lord of the Hollows",
                 "Messenger of the Hollows"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
-            "tileset": "The Mines Level 1"
+            "tileset": "The Mines Level 1",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -1574,7 +1770,8 @@
             "Time-Lost Relic",
             "Treasure Hunter",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Cursed Crypt Map",
@@ -1585,10 +1782,15 @@
             "notes": "Similar to Relic Chambers boss. Turn off curses when facing this boss - when a curse expires he unleashes a deadly nova (damage type based on colour of curse gem) which can one shot. Without curses this boss is non-threatening. He spawns spiders (including rare ones), inflicts curses (can break curse limit) and deals strong telegraphed Physical attacks.",
             "names": [
                 "Pagan Bishop of Agony"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Crypt"
+            "tileset": "The Crypt",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1620,7 +1822,8 @@
             "The Trial",
             "The Void",
             "The Wretched"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Death and Taxes",
@@ -1642,7 +1845,8 @@
             "Monochrome",
             "The Encroaching Darkness",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Defiled Cathedral Map",
@@ -1654,12 +1858,17 @@
             "separated": true,
             "names": [
                 "Woad, Mockery of Man"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Chamber of Innocence",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -1696,7 +1905,8 @@
             "The Trial",
             "The Tumbleweed",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Desert Spring Map",
@@ -1708,13 +1918,18 @@
             "separated": true,
             "names": [
                 "Terror of the Infinite Drifts"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Oasis",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1747,7 +1962,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Tumbleweed"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Dig Map",
@@ -1759,12 +1975,17 @@
             "separated": true,
             "names": [
                 "Stalker of the Endless Dunes"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Quarry",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1798,7 +2019,8 @@
             "The Wolf",
             "Time-Lost Relic",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Doryani's Machinarium",
@@ -1821,7 +2043,8 @@
             "The Hive of Knowledge",
             "The Inventor",
             "Unrequited Love"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Dry Sea Map",
@@ -1830,9 +2053,16 @@
         "boss": {
             "names": [
                 "Gazuul, Droughtspawn"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false,
+            "outdoors": true
+        },
         "rating": {
             "layout": 6,
             "density": 6,
@@ -1863,7 +2093,8 @@
             "The Trial",
             "The Tumbleweed",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Dunes Map",
@@ -1874,13 +2105,19 @@
             "notes": "Strong Physical melee attacks. At half health heals to full and gains a Leap Slam ability that summons zombies which release poison clouds on death. Staying in melee range prevents use of Leap Slam.",
             "names": [
                 "The Blacksmith"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Vastiri Desert",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -1917,7 +2154,8 @@
             "The Trial",
             "The Tumbleweed",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Dungeon Map",
@@ -1929,10 +2167,15 @@
             "separated": true,
             "names": [
                 "Penitentiary Incarcerator"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Lower Prison"
+            "tileset": "The Lower Prison",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -1963,7 +2206,8 @@
             "The Trial",
             "The Void",
             "The Warden"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Excavation Map",
@@ -1976,11 +2220,16 @@
             "names": [
                 "Breaker Toruul",
                 "Shrieker Eihal"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Mines Level 1",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2013,7 +2262,8 @@
             "Time-Lost Relic",
             "Treasure Hunter",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Factory Map",
@@ -2024,12 +2274,17 @@
             "notes": "Stay out of Lightning beams which deal heavy Lightning DoT. Adus has strong Physical attacks including  Earthquake. Periodically Adus will leap in the air performing a more powerful Earthquake that has several aftershocks which deal heavy Physical and Lightning damage. The real danger in this fight comes from his 'Living Bomb' attack where he charges up and discharges a huge amount of Lightning damage which always Shocks and can potentially one shot. Avoid these telegraphed AoE abilities at all costs.",
             "names": [
                 "Pesquin, the Mad Baron"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Refinery",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -2064,7 +2319,8 @@
             "The Trial",
             "The Void",
             "Three Faces in the Dark"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Fields Map",
@@ -2076,12 +2332,17 @@
             "separated": true,
             "names": [
                 "Drek, Apex Hunter"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Imperial Fields",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -2113,7 +2374,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Tranquillity"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Flooded Mine Map",
@@ -2124,10 +2386,15 @@
             "notes": "Summon tornadoes, Earthquake attack.",
             "names": [
                 "The Eroding One"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Caverns"
+            "tileset": "The Caverns",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -2168,7 +2435,8 @@
             "Time-Lost Relic",
             "Treasure Hunter",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Forbidden Woods Map",
@@ -2179,9 +2447,17 @@
                 "Corruptor Eedaiak",
                 "Skictis, Frostkeeper",
                 "Takatax Brittlethorn"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false,
+            "outdoors": true,
+            "linear": true
+        },
         "rating": {
             "layout": 4,
             "density": 6,
@@ -2219,7 +2495,8 @@
             "The Tumbleweed",
             "The Void",
             "Three Voices"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Forge of the Phoenix Map",
@@ -2231,11 +2508,17 @@
             "separated": true,
             "names": [
                 "Guardian of the Phoenix"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Crematorium",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
@@ -2251,7 +2534,8 @@
             "The Standoff",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Foundry Map",
@@ -2261,9 +2545,16 @@
             "names": [
                 "Ciergan, Shadow Alchemist",
                 "The Shifting Ire"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
+        },
         "rating": {
             "layout": 6,
             "density": 4,
@@ -2297,7 +2588,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Frozen Cabins Map",
@@ -2306,9 +2598,18 @@
         "boss": {
             "names": [
                 "Captain Clayborne, The Accursed"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true,
+            "linear": true
+        },
         "rating": {
             "layout": 8,
             "density": 6,
@@ -2338,7 +2639,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Fungal Hollow Map",
@@ -2347,9 +2649,16 @@
         "boss": {
             "names": [
                 "Aulen Greychain"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
+        },
         "rating": {
             "layout": 8,
             "density": 2,
@@ -2373,7 +2682,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Treasure Hunter"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Geode Map",
@@ -2385,11 +2695,16 @@
             "separated": true,
             "names": [
                 "Avatar of Undoing"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Quarry",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2425,7 +2740,8 @@
             "The Wolf",
             "Time-Lost Relic",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Grotto Map",
@@ -2436,11 +2752,16 @@
             "notes": "Chaos-storm and Ground Slam attack. Summons Pocked Miners after a time.",
             "names": [
                 "Void Anomaly"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Caverns",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2490,7 +2811,8 @@
             "Time-Lost Relic",
             "Treasure Hunter",
             "Volatile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Hallowed Ground",
@@ -2510,7 +2832,8 @@
         "cards": [
             "Monochrome",
             "The Enforcer"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Infested Valley Map",
@@ -2522,13 +2845,18 @@
             "separated": true,
             "names": [
                 "Gorulis, Will-Thief"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Wetlands",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2560,7 +2888,8 @@
             "The Side Quest",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Jungle Valley Map",
@@ -2572,13 +2901,18 @@
             "separated": true,
             "names": [
                 "Queen of the Great Tangle"
-            ]
+            ],
+            "spawn_at_load": false,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Riverways",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -2607,7 +2941,8 @@
             "The Trial",
             "The Web",
             "The Wind"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Laboratory Map",
@@ -2619,11 +2954,16 @@
             "separated": true,
             "names": [
                 "Riftwalker"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Reliquary",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -2658,7 +2998,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Lair Map",
@@ -2670,12 +3011,18 @@
             "separated": true,
             "names": [
                 "Lycius, Midnight's Howl"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Caverns",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2716,7 +3063,8 @@
             "The Wolverine",
             "Treasure Hunter",
             "Triskaidekaphobia"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Lair of the Hydra Map",
@@ -2728,12 +3076,18 @@
             "separated": true,
             "names": [
                 "Guardian of the Hydra"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Sewers",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
@@ -2749,7 +3103,8 @@
             "The Throne",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Leyline Map",
@@ -2761,12 +3116,17 @@
             "separated": true,
             "names": [
                 "Mirage of Bones"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Boiling Lake",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2792,7 +3152,8 @@
             "The Gambler",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Lighthouse Map",
@@ -2806,13 +3167,18 @@
                 "El'Abin, Bloodeater",
                 "Leli Goya, Daughter of Ash",
                 "Uruk Baleh"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Beacon",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2842,7 +3208,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Wind"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
@@ -2880,7 +3247,8 @@
             "The Old Man",
             "The Siren",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Malformation Map",
@@ -2892,12 +3260,17 @@
             "separated": true,
             "names": [
                 "Nightmare Manifest"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Belly of the Beast",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2927,7 +3300,8 @@
             "The Trial",
             "Vile Power",
             "Vinia's Token"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Mao Kun",
@@ -2958,7 +3332,8 @@
             "The Old Man",
             "The Skeleton",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Marshes Map",
@@ -2970,11 +3345,16 @@
             "separated": true,
             "names": [
                 "Tore, Towering Ancient"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Maligaro's Sanctum",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2998,7 +3378,8 @@
             "The Inoculated",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Maze Map",
@@ -3009,10 +3390,15 @@
             "notes": "Same as Act 2 fight. Kite when boss starts shooting laser beams. Avoid telegraphed slam at all costs.",
             "names": [
                 "Shadow of the Vaal"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Ancient Pyramid"
+            "tileset": "The Ancient Pyramid",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -3046,7 +3432,8 @@
             "The Trial",
             "The Void",
             "Unrequited Love"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Maze of the Minotaur Map",
@@ -3058,12 +3445,18 @@
             "separated": true,
             "names": [
                 "Guardian of the Minotaur"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Caverns",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
@@ -3079,7 +3472,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Treasure Hunter"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Mineral Pools Map",
@@ -3091,11 +3485,16 @@
             "separated": true,
             "names": [
                 "Shock and Horror"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Cavern of Anger",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -3135,7 +3534,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Moon Temple Map",
@@ -3147,11 +3547,16 @@
             "separated": true,
             "names": [
                 "Sebbert, Crescent's Point"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Lunaris Temple Level 1",
-            "few_obstacles": true
+            "few_obstacles": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3185,7 +3590,8 @@
             "The Twins",
             "The Void",
             "Wealth and Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Museum Map",
@@ -3197,10 +3603,15 @@
             "separated": true,
             "names": [
                 "He of Many Pieces"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Library"
+            "tileset": "The Library",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -3241,7 +3652,8 @@
             "The Void",
             "Thirst for Knowledge",
             "Turn the Other Cheek"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Necropolis Map",
@@ -3253,11 +3665,16 @@
             "separated": true,
             "names": [
                 "Burtok, Conjurer of Bones"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Crypt",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -3289,7 +3706,8 @@
             "The Trial",
             "The Void",
             "The Wretched"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Olmec's Sanctum",
@@ -3311,7 +3729,8 @@
             "Monochrome",
             "The Encroaching Darkness",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Orchard Map",
@@ -3323,11 +3742,16 @@
             "separated": true,
             "names": [
                 "Vision of Justice"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Imperial Gardens",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3365,7 +3789,8 @@
             "The Trial",
             "The Void",
             "Triskaidekaphobia"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Overgrown Ruin Map",
@@ -3377,10 +3802,15 @@
             "separated": true,
             "names": [
                 "Visceris"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
-            "tileset": "The Chamber of Sins Level 1"
+            "tileset": "The Chamber of Sins Level 1",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3419,7 +3849,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Overgrown Shrine Map",
@@ -3431,12 +3862,17 @@
             "separated": true,
             "names": [
                 "Maligaro the Mutilator"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Chamber of Sins Level 1",
             "few_obstacles": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3475,7 +3911,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Phantasmagoria Map",
@@ -3487,11 +3924,16 @@
             "separated": true,
             "names": [
                 "Erythrophagia"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Belly of the Beast",
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3529,7 +3971,8 @@
             "The Trial",
             "The Witch",
             "Vile Power"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Pier Map",
@@ -3541,11 +3984,16 @@
             "separated": true,
             "names": [
                 "Ancient Architect"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Docks",
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -3577,7 +4025,8 @@
             "The Pact",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Pillars of Arun",
@@ -3601,7 +4050,8 @@
             "Monochrome",
             "The Encroaching Darkness",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Pit Map",
@@ -3613,12 +4063,17 @@
             "separated": true,
             "names": [
                 "Olof, Son of the Headsman"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "Daresso's Dream",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -3649,7 +4104,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Unchained"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Pit of the Chimera Map",
@@ -3661,12 +4117,17 @@
             "separated": true,
             "names": [
                 "Guardian of the Chimera"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "Daresso's Dream",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
@@ -3688,7 +4149,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Unchained"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Plateau Map",
@@ -3701,13 +4163,19 @@
             "names": [
                 "Poporo, the Highest Spire",
                 "Puruna, the Challenger"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false,
+            "soft_phases": true
         },
         "layout": {
             "tileset": "The Ledge",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3737,7 +4205,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Wind"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Plaza Map",
@@ -3748,10 +4217,15 @@
             "notes": "Same as Orchard boss except with some Spiky Pillar Labyrinth traps. This time when she channels her deadly beam get behind one of the pillars either side of the room.",
             "names": [
                 "The Goddess"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": true,
+            "phases": false
         },
         "layout": {
-            "tileset": "The Imperial Gardens"
+            "tileset": "The Imperial Gardens",
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -3782,7 +4256,8 @@
             "The Trial",
             "The Void",
             "Triskaidekaphobia"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Poorjoy's Asylum",
@@ -3813,7 +4288,8 @@
             "The Professor",
             "The Thaumaturgist",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Port Map",
@@ -3825,12 +4301,17 @@
             "separated": true,
             "names": [
                 "Unravelling Horror"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true
         },
         "layout": {
             "tileset": "The Quay",
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3870,7 +4351,8 @@
             "The Trial",
             "The Tyrant",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Precinct Map",
@@ -3887,12 +4369,17 @@
                 "Orra Greengate",
                 "Torr Olgosso",
                 "Wilorin Demontamer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Slums",
             "few_obstacles": true,
-            "outdoors": true
+            "outdoors": true,
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3927,7 +4414,8 @@
             "The Undaunted",
             "The Valkyrie",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Primordial Blocks Map",
@@ -3936,9 +4424,16 @@
         "boss": {
             "names": [
                 "High Lithomancer"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": true,
+            "separated": true
         },
-        "layout": {},
+        "layout": {
+            "good_for_open_mechanics": false,
+            "good_for_deli_mirror": false
+        },
         "rating": {
             "layout": 4,
             "density": 9,
@@ -3969,7 +4464,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Primordial Pool Map",
@@ -3981,13 +4477,18 @@
             "separated": true,
             "names": [
                 "Nightmare's Omen"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Fetid Pool",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -4017,7 +4518,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Promenade Map",
@@ -4029,13 +4531,18 @@
             "names": [
                 "Blackguard Avenger",
                 "Blackguard Tempest"
-            ]
+            ],
+            "spawn_at_load": true,
+            "close_to_start": false,
+            "phases": false
         },
         "layout": {
             "tileset": "The Grand Promenade",
             "few_obstacles": true,
             "outdoors": true,
-            "linear": true
+            "linear": true,
+            "good_for_open_mechanics": true,
+            "good_for_deli_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -4072,7 +4579,8 @@
             "The Trial",
             "The Void",
             "The Warlord"
-        ]
+        ],
+        "image": true
     },
     {
         "name": "Racecourse Map",
@@ -4118,7 +4626,8 @@
             "The Trial",
             "The Visionary",
             "Three Voices"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Ramparts Map",
@@ -4168,7 +4677,8 @@
             "The Tinkerer's Table",
             "The Traitor",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Relic Chambers Map",
@@ -4214,7 +4724,8 @@
             "The Polymath",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Residence Map",
@@ -4270,7 +4781,8 @@
             "The Trial",
             "The Unexpected Prize",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Scriptorium Map",
@@ -4320,7 +4832,8 @@
             "The Trial",
             "Thirst for Knowledge",
             "Turn the Other Cheek"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Shipyard Map",
@@ -4370,7 +4883,8 @@
             "The Pact",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Shore Map",
@@ -4424,7 +4938,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Shrine Map",
@@ -4468,7 +4983,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "Vinia's Token"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Siege Map",
@@ -4518,7 +5034,8 @@
             "The Spark and the Flame",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Silo Map",
@@ -4562,7 +5079,8 @@
             "The Tireless Extractor",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Stagnation Map",
@@ -4604,7 +5122,8 @@
             "The Scout",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Strand Map",
@@ -4665,7 +5184,8 @@
             "The Trial",
             "The Void",
             "Thunderous Skies"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Sulphur Vents Map",
@@ -4707,7 +5227,8 @@
             "The Inoculated",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Synthesised Map",
@@ -4721,7 +5242,8 @@
         "layout": {},
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Synthesised_Map",
-        "cards": []
+        "cards": [],
+        "image": false
     },
     {
         "name": "Temple Map",
@@ -4777,7 +5299,8 @@
             "The Twilight Moon",
             "The Twins",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Terrace Map",
@@ -4831,7 +5354,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "The Coward's Trial",
@@ -4859,7 +5383,8 @@
             "The Rabbit's Foot",
             "The Void",
             "The Wretched"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "The Putrid Cloister",
@@ -4891,7 +5416,8 @@
             "The Sustenance",
             "The Void",
             "The Witch"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "The Twilight Temple",
@@ -4927,7 +5453,8 @@
             "The Twilight Moon",
             "The Twins",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "The Vinktar Square",
@@ -4947,7 +5474,8 @@
             "The Carrion Crow",
             "The Stormcaller",
             "Thunderous Skies"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Thicket Map",
@@ -4994,7 +5522,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Tower Map",
@@ -5043,7 +5572,8 @@
             "The Tower",
             "The Trial",
             "Thunderous Skies"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Toxic Sewer Map",
@@ -5093,7 +5623,8 @@
             "The Void",
             "The Web",
             "Vile Power"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Tropical Island Map",
@@ -5143,7 +5674,8 @@
             "The Scout",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Underground River Map",
@@ -5190,7 +5722,8 @@
             "The Tumbleweed",
             "The Void",
             "Treasure Hunter"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Underground Sea Map",
@@ -5249,7 +5782,8 @@
             "The Trial",
             "The Void",
             "Treasure Hunter"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Vaal Pyramid Map",
@@ -5303,7 +5837,8 @@
             "The Void",
             "Three Voices",
             "Unrequited Love"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Vaal Temple Map",
@@ -5346,7 +5881,8 @@
             "The Trial",
             "Three Voices",
             "Unrequited Love"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Vaults of Atziri",
@@ -5379,7 +5915,8 @@
             "The Wolf's Legacy",
             "Treasure Hunter",
             "Unrequited Love"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Volcano Map",
@@ -5425,7 +5962,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Waste Pool Map",
@@ -5475,7 +6013,8 @@
             "The Trial",
             "The Witch",
             "Vile Power"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Wasteland Map",
@@ -5517,7 +6056,8 @@
             "The Tinkerer's Table",
             "The Trial",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Whakawairua Tuahu",
@@ -5553,7 +6093,8 @@
             "The Old Man",
             "The Undaunted",
             "The Void"
-        ]
+        ],
+        "image": false
     },
     {
         "name": "Wharf Map",
@@ -5606,6 +6147,7 @@
             "The Rite of Elements",
             "The Tinkerer's Table",
             "The Trial"
-        ]
+        ],
+        "image": false
     }
 ]

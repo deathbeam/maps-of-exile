@@ -1,10 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import {useState, useMemo, useTransition, useRef} from 'react'
-import merge from 'lodash.merge'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
-import maps_extra from './data/maps_extra.json'
 import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
@@ -20,11 +18,6 @@ const preparedCards = cards.map(card => {
   .sort((a, b) => (b.value || 0) - (a.value || 0))
 
 const preparedMaps = maps.map(map => {
-  const mapExtra = maps_extra.find(m => m.name === map.name)
-  if (mapExtra) {
-    map = merge(map, mapExtra)
-  }
-
   const mapCards = []
 
   for (let card of map.cards) {
@@ -68,7 +61,7 @@ const preparedMaps = maps.map(map => {
   if (map.boss.separated) {
     mapTags.push("boss separated")
   }
-  if (map.filled) {
+  if (map.image) {
     if (!map.boss.spawn_at_load) {
       mapTags.push("boss not spawned")
     }
@@ -138,7 +131,7 @@ const MapName = ({ map, addToInput }) => {
   const name = <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>{map.name}</a>
   const tags = <Tags tags={map.tags} addToInput={addToInput}/>
 
-  return map.filled ? <>
+  return map.image ? <>
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
       <span className="tooltip-tag-text tooltip-tag-fill">
         <img src={mapImage} alt="" loading="lazy"/>

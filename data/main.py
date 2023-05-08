@@ -20,6 +20,26 @@ def rescale(value, min_value, max_value, scale):
 	return min(ceil(scale * (value - min_value) / (max_value - min_value)), scale)
 
 
+def clean(d):
+	if isinstance(d, dict):
+		return {k: clean(v) for k, v in d.items() if v is not None}
+	elif isinstance(d, list):
+		return [clean(v) for v in d]
+	else:
+		return d
+
+
+def merge(source, destination):
+	for key, value in source.items():
+		if isinstance(value, dict):
+			node = destination.setdefault(key, {})
+			merge(value, node)
+		else:
+			destination[key] = value
+
+	return destination
+
+
 def get_card_data(key, league, config):
 	id = config["decks"]["sheet-id"]
 	name = config["decks"]["sheet-name"]
@@ -93,7 +113,7 @@ def get_map_ratings(key, config):
 	return ratings
 
 
-def get_map_data(map_data, cards, ratings, config):
+def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	url = map_data["poedb"]
 
 	print(f"Getting map data for {map_data['name']} from url {url}")
@@ -178,6 +198,11 @@ def get_map_data(map_data, cards, ratings, config):
 		if card:
 			map_cards.add(card["name"])
 	map_data["cards"] = sorted(list(map_cards))
+
+	# Extra data
+	existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
+	if existing:
+		merge(existing, map_data)
 	return map_data
 
 
@@ -213,12 +238,13 @@ def get_maps(config):
 	return sorted(out, key=lambda d: d["name"])
 
 
-def get_maps_template(maps):
-	out = []
+def get_maps_template(maps, existing_maps):
+	out = existing_maps.copy()
+
 	for map in maps:
-		out.append({
+		new_map = {
 			"name": map["name"],
-			"filled": False,
+			"image": False,
 			"layout": {
 				"good_for_open_mechanics": None,
 				"good_for_deli_mirror": None
@@ -229,7 +255,14 @@ def get_maps_template(maps):
 				"phases": None,
 				"soft_phases": None
 			}
-		})
+		}
+
+		existing_map = next(filter(lambda x: x["name"] == map["name"], out), None)
+		if existing_map:
+			merge(existing_map, new_map)
+			out.remove(existing_map)
+		out.append(new_map)
+
 	return out
 
 
@@ -241,7 +274,6 @@ def main():
 	args = sys.argv
 	fetch_cards = False
 	fetch_maps = False
-	fetch_template = False
 
 	if len(args) > 1:
 		if 'cards' in args[1]:
@@ -249,9 +281,6 @@ def main():
 
 		if 'maps' in args[1]:
 			fetch_maps = True
-
-		if 'template' in args[1]:
-			fetch_template = True
 
 	config = config["data"]
 	api_key = os.environ['GOOGLE_API_KEY']
@@ -264,14 +293,17 @@ def main():
 	if fetch_maps:
 		maps = get_maps(config["maps"])
 
-		if fetch_template:
-			with open(dir_path + "/../site/src/data/maps_extra_template.json", "w") as f:
-				f.write(json.dumps(get_maps_template(maps), indent=4, cls=DecimalEncoder))
+		print("Merging extra map data")
+		with open(dir_path + "/maps.json", "r") as f:
+			map_extra = get_maps_template(maps, json.load(f))
+
+		with open(dir_path + "/maps.json", "w") as f:
+			f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder))
 
 		map_ratings = get_map_ratings(api_key, config["maps"])
-		maps = list(map(lambda x: get_map_data(x, cards, map_ratings, config["maps"]), maps))
+		maps = list(map(lambda x: get_map_data(x, map_extra, cards, map_ratings, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
-			f.write(json.dumps(maps, indent=4, cls=DecimalEncoder))
+			f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder))
 
 
 if __name__ == "__main__":

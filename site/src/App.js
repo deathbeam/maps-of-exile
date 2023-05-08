@@ -124,7 +124,7 @@ const Tags = ({ tags }) => {
 }
 
 const MapName = ({ map }) => {
-  const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replace(" ", "_") + ".png"
+  const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replaceAll(" ", "_") + ".png"
   let tierColor = "text-light"
   if (map.tier >= 11) {
     tierColor = "text-danger"

@@ -314,36 +314,30 @@ function App() {
     <>
       <Loader loading={isPending}/>
       <div className="container-fluid p-4">
-        <div className="row">
-          <div className="col col-4">
-            <div className="input-group">
-              <div className="input-group-text">Search</div>
-              <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} onChange={setSearchInput}/>
-            </div>
+        <div className="row g-2">
+          <div className="col col-lg-4 col-md-12">
+            <label className="form-label">Search</label>
+            <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} onChange={setSearchInput}/>
             <span className="small">tags:</span> <Tags tags={possibleTags} addToInput={addToInput}/>
           </div>
-          <div className="col">
-            <div className="input-group">
-              <div className="input-group-text">Layout weight</div>
-              <input className="form-control" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
-            </div>
-          </div>
-          <div className="col">
-            <div className="input-group">
-              <div className="input-group-text">Density weight</div>
-              <input className="form-control" type="number" placeholder={densityInput} onChange={setDensityInput}/>
-            </div>
-          </div>
-          <div className="col">
-            <div className="input-group">
-              <div className="input-group-text">Boss weight</div>
-              <input className="form-control" type="number" placeholder={bossInput} onChange={setBossInput}/>
-            </div>
-          </div>
-          <div className="col">
-            <div className="input-group">
-              <div className="input-group-text">Card weight</div>
-              <input className="form-control" type="number" placeholder={cardInput} onChange={setCardInput}/>
+          <div className="col col-lg-8 col-md-12">
+            <div className="row g-2">
+              <div className="col col-lg-3 col-md-6">
+                <label className="form-label">Layout weight</label>
+                <input className="form-control" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <label className="form-label">Density weight</label>
+                <input className="form-control" type="number" placeholder={densityInput} onChange={setDensityInput}/>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <label className="form-label">Boss weight</label>
+                <input className="form-control" type="number" placeholder={bossInput} onChange={setBossInput}/>
+              </div>
+              <div className="col col-lg-3 col-md-6">
+                <label className="form-label">Card weight</label>
+                <input className="form-control" type="number" placeholder={cardInput} onChange={setCardInput}/>
+              </div>
             </div>
           </div>
         </div>

@@ -42,9 +42,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "5"
+            "layout": 8,
+            "density": 6,
+            "boss": 10
         },
         "connected": [
             "Excavation Map",
@@ -94,9 +94,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "1"
+            "layout": 6,
+            "density": 5,
+            "boss": 2
         },
         "connected": [
             "Fungal Hollow Map",
@@ -139,9 +139,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "4"
+            "layout": 6,
+            "density": 5,
+            "boss": 8
         },
         "pantheon": "Soul of Arakaali",
         "connected": [
@@ -182,9 +182,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "5"
+            "layout": 8,
+            "density": 6,
+            "boss": 10
         },
         "connected": [
             "Cemetery Map",
@@ -232,9 +232,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "4"
+            "layout": 8,
+            "density": 7,
+            "boss": 8
         },
         "connected": [
             "Barrows Map",
@@ -272,9 +272,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "4"
+            "layout": 8,
+            "density": 9,
+            "boss": 8
         },
         "connected": [
             "Coral Ruins Map",
@@ -315,9 +315,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "2"
+            "layout": 4,
+            "density": 10,
+            "boss": 4
         },
         "connected": [
             "Core Map",
@@ -369,9 +369,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "2",
-            "boss": "4"
+            "layout": 8,
+            "density": 1,
+            "boss": 8
         },
         "pantheon": "Soul of the Brine King",
         "connected": [
@@ -420,9 +420,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "5"
+            "layout": 8,
+            "density": 8,
+            "boss": 10
         },
         "connected": [
             "Arid Lake Map",
@@ -466,9 +466,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "4",
-            "boss": "5"
+            "layout": 10,
+            "density": 3,
+            "boss": 10
         },
         "connected": [
             "Desert Spring Map",
@@ -512,9 +512,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "0"
+            "layout": 10,
+            "density": 6,
+            "boss": 0
         },
         "connected": [
             "Primordial Blocks Map",
@@ -553,9 +553,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "4"
+            "layout": 4,
+            "density": 6,
+            "boss": 8
         },
         "connected": [
             "Grotto Map",
@@ -636,9 +636,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 6,
+            "boss": 8
         },
         "pantheon": "Soul of Solaris",
         "connected": [
@@ -687,9 +687,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "4",
-            "boss": "3"
+            "layout": 10,
+            "density": 4,
+            "boss": 6
         },
         "connected": [
             "Crystal Ore Map",
@@ -738,9 +738,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 7,
+            "boss": 8
         },
         "connected": [
             "City Square Map",
@@ -783,9 +783,9 @@
             "tileset": "The Crematorium"
         },
         "rating": {
-            "layout": "2",
-            "density": "5",
-            "boss": "4"
+            "layout": 4,
+            "density": 9,
+            "boss": 8
         },
         "connected": [
             "Cold River Map",
@@ -830,9 +830,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "2"
+            "layout": 10,
+            "density": 5,
+            "boss": 4
         },
         "pantheon": "Soul of Gruthkul",
         "connected": [
@@ -888,9 +888,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "3",
-            "density": "4",
-            "boss": "5"
+            "layout": 6,
+            "density": 7,
+            "boss": 10
         },
         "connected": [
             "Arachnid Tomb Map",
@@ -936,9 +936,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "3"
+            "layout": 8,
+            "density": 4,
+            "boss": 6
         },
         "connected": [
             "Castle Ruins Map",
@@ -980,9 +980,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "2"
+            "layout": 6,
+            "density": 6,
+            "boss": 4
         },
         "pantheon": "Soul of Lunaris",
         "connected": [
@@ -1039,9 +1039,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "4",
-            "boss": "3"
+            "layout": 6,
+            "density": 7,
+            "boss": 6
         },
         "connected": [
             "Dry Sea Map",
@@ -1092,9 +1092,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "1"
+            "layout": 6,
+            "density": 10,
+            "boss": 2
         },
         "connected": [
             "Dig Map",
@@ -1145,9 +1145,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "4"
+            "layout": 4,
+            "density": 6,
+            "boss": 8
         },
         "connected": [
             "Crimson Township Map",
@@ -1190,9 +1190,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "2"
+            "layout": 6,
+            "density": 6,
+            "boss": 4
         },
         "pantheon": "Soul of the Brine King",
         "connected": [
@@ -1242,9 +1242,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "0"
+            "layout": 4,
+            "density": 5,
+            "boss": 0
         },
         "connected": [
             "Arsenal Map",
@@ -1300,9 +1300,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 4,
+            "boss": 6
         },
         "connected": [
             "Orchard Map",
@@ -1356,9 +1356,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "4"
+            "layout": 8,
+            "density": 4,
+            "boss": 8
         },
         "pantheon": "Soul of the Brine King",
         "connected": [
@@ -1402,9 +1402,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "5",
-            "boss": "5"
+            "layout": 6,
+            "density": 10,
+            "boss": 10
         },
         "pantheon": "Soul of Abberath",
         "connected": [
@@ -1443,9 +1443,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "5"
+            "layout": 8,
+            "density": 4,
+            "boss": 10
         },
         "connected": [
             "Cold River Map",
@@ -1489,9 +1489,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Cells Map",
@@ -1538,9 +1538,9 @@
             "tileset": "The Mines Level 1"
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "2"
+            "layout": 8,
+            "density": 8,
+            "boss": 4
         },
         "connected": [
             "Canyon Map",
@@ -1591,9 +1591,9 @@
             "tileset": "The Crypt"
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "3"
+            "layout": 4,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Caldera Map",
@@ -1662,9 +1662,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "5"
+            "layout": 8,
+            "density": 5,
+            "boss": 10
         },
         "connected": [
             "Conservatory Map",
@@ -1717,9 +1717,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "1"
+            "layout": 8,
+            "density": 10,
+            "boss": 2
         },
         "pantheon": "Soul of Shakari",
         "connected": [
@@ -1767,9 +1767,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "2"
+            "layout": 8,
+            "density": 5,
+            "boss": 4
         },
         "pantheon": "Soul of Garukhan",
         "connected": [
@@ -1834,9 +1834,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "4"
+            "layout": 6,
+            "density": 6,
+            "boss": 8
         },
         "connected": [
             "Colonnade Map",
@@ -1883,9 +1883,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "5"
+            "layout": 10,
+            "density": 4,
+            "boss": 10
         },
         "connected": [
             "Colonnade Map",
@@ -1935,9 +1935,9 @@
             "tileset": "The Lower Prison"
         },
         "rating": {
-            "layout": "1",
-            "density": "4",
-            "boss": "4"
+            "layout": 2,
+            "density": 7,
+            "boss": 8
         },
         "connected": [
             "Arid Lake Map",
@@ -1983,9 +1983,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "2"
+            "layout": 8,
+            "density": 8,
+            "boss": 4
         },
         "connected": [
             "Alleyways Map",
@@ -2032,9 +2032,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "3"
+            "layout": 4,
+            "density": 7,
+            "boss": 6
         },
         "connected": [
             "Beach Map",
@@ -2084,9 +2084,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "3"
+            "layout": 10,
+            "density": 4,
+            "boss": 6
         },
         "pantheon": "Soul of Ralakesh",
         "connected": [
@@ -2130,9 +2130,9 @@
             "tileset": "The Caverns"
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Cold River Map",
@@ -2183,9 +2183,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "3"
+            "layout": 4,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Arachnid Tomb Map",
@@ -2265,9 +2265,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "2",
-            "boss": "2"
+            "layout": 6,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Malformation Map",
@@ -2310,9 +2310,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 6,
+            "boss": 8
         },
         "pantheon": "Soul of Lunaris",
         "connected": [
@@ -2351,9 +2351,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "5"
+            "layout": 8,
+            "density": 2,
+            "boss": 10
         },
         "connected": [
             "Arachnid Nest Map",
@@ -2392,9 +2392,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 6,
+            "boss": 8
         },
         "connected": [
             "Arachnid Nest Map",
@@ -2443,9 +2443,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "4"
+            "layout": 8,
+            "density": 8,
+            "boss": 8
         },
         "connected": [
             "Bone Crypt Map",
@@ -2531,9 +2531,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "3"
+            "layout": 8,
+            "density": 6,
+            "boss": 6
         },
         "pantheon": "Soul of Ryslatha",
         "connected": [
@@ -2581,9 +2581,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "4",
-            "boss": "3"
+            "layout": 10,
+            "density": 6,
+            "boss": 6
         },
         "pantheon": "Soul of Arakaali",
         "connected": [
@@ -2626,9 +2626,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "2",
-            "density": "2",
-            "boss": "1"
+            "layout": 4,
+            "density": 6,
+            "boss": 2
         },
         "connected": [
             "City Square Map",
@@ -2678,9 +2678,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "3"
+            "layout": 8,
+            "density": 8,
+            "boss": 6
         },
         "connected": [
             "Cemetery Map",
@@ -2769,9 +2769,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "3"
+            "layout": 8,
+            "density": 5,
+            "boss": 6
         },
         "connected": [
             "Dungeon Map",
@@ -2815,9 +2815,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "3"
+            "layout": 8,
+            "density": 5,
+            "boss": 6
         },
         "pantheon": "Soul of Solaris",
         "connected": [
@@ -2900,9 +2900,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "1"
+            "layout": 8,
+            "density": 6,
+            "boss": 2
         },
         "connected": [
             "Foundry Map",
@@ -2977,9 +2977,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "4"
+            "layout": 8,
+            "density": 8,
+            "boss": 8
         },
         "connected": [
             "Cemetery Map",
@@ -3015,9 +3015,9 @@
             "tileset": "The Ancient Pyramid"
         },
         "rating": {
-            "layout": "1",
-            "density": "3",
-            "boss": "3"
+            "layout": 2,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Colosseum Map",
@@ -3098,9 +3098,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "2",
-            "density": "2",
-            "boss": "3"
+            "layout": 4,
+            "density": 5,
+            "boss": 6
         },
         "connected": [
             "Lighthouse Map",
@@ -3154,9 +3154,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "3",
-            "density": "5",
-            "boss": "4"
+            "layout": 6,
+            "density": 8,
+            "boss": 8
         },
         "pantheon": "Soul of Lunaris",
         "connected": [
@@ -3203,9 +3203,9 @@
             "tileset": "The Library"
         },
         "rating": {
-            "layout": "1",
-            "density": "3",
-            "boss": "3"
+            "layout": 2,
+            "density": 8,
+            "boss": 6
         },
         "connected": [
             "Crater Map",
@@ -3260,9 +3260,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "1",
-            "density": "4",
-            "boss": "4"
+            "layout": 2,
+            "density": 8,
+            "boss": 8
         },
         "connected": [
             "Arid Lake Map",
@@ -3330,9 +3330,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "2"
+            "layout": 6,
+            "density": 10,
+            "boss": 4
         },
         "connected": [
             "Arcade Map",
@@ -3383,9 +3383,9 @@
             "tileset": "The Chamber of Sins Level 1"
         },
         "rating": {
-            "layout": "3",
-            "density": "2",
-            "boss": "2"
+            "layout": 6,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Factory Map",
@@ -3439,9 +3439,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "2"
+            "layout": 6,
+            "density": 5,
+            "boss": 4
         },
         "pantheon": "Soul of Arakaali",
         "connected": [
@@ -3494,9 +3494,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "2"
+            "layout": 8,
+            "density": 5,
+            "boss": 4
         },
         "connected": [
             "Arcade Map",
@@ -3548,9 +3548,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "1"
+            "layout": 8,
+            "density": 8,
+            "boss": 2
         },
         "connected": [
             "Arachnid Nest Map",
@@ -3621,9 +3621,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "2"
+            "layout": 4,
+            "density": 10,
+            "boss": 4
         },
         "connected": [
             "Arcade Map",
@@ -3710,9 +3710,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "3"
+            "layout": 8,
+            "density": 3,
+            "boss": 6
         },
         "connected": [
             "Tower Map",
@@ -3754,9 +3754,9 @@
             "tileset": "The Imperial Gardens"
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "3"
+            "layout": 4,
+            "density": 7,
+            "boss": 6
         },
         "connected": [
             "Cold River Map",
@@ -3833,9 +3833,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "3"
+            "layout": 8,
+            "density": 7,
+            "boss": 6
         },
         "connected": [
             "Atoll Map",
@@ -3895,9 +3895,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 10,
+            "boss": 6
         },
         "connected": [
             "Overgrown Shrine Map",
@@ -3940,9 +3940,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "1"
+            "layout": 4,
+            "density": 9,
+            "boss": 2
         },
         "connected": [
             "Belfry Map",
@@ -3990,9 +3990,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 1,
+            "boss": 8
         },
         "connected": [
             "Grotto Map",
@@ -4038,9 +4038,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "3"
+            "layout": 10,
+            "density": 4,
+            "boss": 6
         },
         "connected": [
             "Atoll Map",
@@ -4095,9 +4095,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "3"
+            "layout": 8,
+            "density": 3,
+            "boss": 6
         },
         "connected": [
             "Coves Map",
@@ -4139,9 +4139,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "5"
+            "layout": 8,
+            "density": 7,
+            "boss": 10
         },
         "connected": [
             "Arachnid Nest Map",
@@ -4186,9 +4186,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Flooded Mine Map",
@@ -4233,9 +4233,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "3",
-            "density": "4",
-            "boss": "3"
+            "layout": 6,
+            "density": 9,
+            "boss": 6
         },
         "connected": [
             "Castle Ruins Map",
@@ -4288,9 +4288,9 @@
             "tileset": "The Library"
         },
         "rating": {
-            "layout": "2",
-            "density": "3",
-            "boss": "4"
+            "layout": 4,
+            "density": 7,
+            "boss": 8
         },
         "connected": [
             "Belfry Map",
@@ -4340,9 +4340,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "2"
+            "layout": 8,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Canyon Map",
@@ -4390,9 +4390,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "2",
-            "boss": "5"
+            "layout": 8,
+            "density": 4,
+            "boss": 10
         },
         "connected": [
             "Canyon Map",
@@ -4442,9 +4442,9 @@
             "tileset": "The Lunaris Temple Level 1"
         },
         "rating": {
-            "layout": "2",
-            "density": "4",
-            "boss": "3"
+            "layout": 4,
+            "density": 10,
+            "boss": 6
         },
         "connected": [
             "Dunes Map",
@@ -4488,9 +4488,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "3"
+            "layout": 8,
+            "density": 8,
+            "boss": 6
         },
         "pantheon": "Soul of Tukohama",
         "connected": [
@@ -4531,9 +4531,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "4",
-            "density": "2",
-            "boss": "2"
+            "layout": 8,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Bone Crypt Map",
@@ -4575,9 +4575,9 @@
         },
         "layout": {},
         "rating": {
-            "layout": "3",
-            "density": "2",
-            "boss": "2"
+            "layout": 6,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Alleyways Map",
@@ -4626,9 +4626,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "1",
-            "boss": "5"
+            "layout": 10,
+            "density": 0,
+            "boss": 10
         },
         "connected": [
             "Belfry Map",
@@ -4685,9 +4685,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "4"
+            "layout": 8,
+            "density": 5,
+            "boss": 8
         },
         "connected": [
             "Crimson Temple Map",
@@ -4740,9 +4740,9 @@
             "few_obstacles": true
         },
         "rating": {
-            "layout": "3",
-            "density": "4",
-            "boss": "4"
+            "layout": 6,
+            "density": 8,
+            "boss": 8
         },
         "pantheon": "Soul of Solaris",
         "connected": [
@@ -4797,9 +4797,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "2"
+            "layout": 8,
+            "density": 6,
+            "boss": 4
         },
         "pantheon": "Soul of Yugul",
         "connected": [
@@ -4965,9 +4965,9 @@
             "tileset": "The Dread Thicket"
         },
         "rating": {
-            "layout": "3",
-            "density": "5",
-            "boss": "4"
+            "layout": 6,
+            "density": 6,
+            "boss": 8
         },
         "connected": [
             "Barrows Map",
@@ -5014,9 +5014,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "3",
-            "boss": "2"
+            "layout": 8,
+            "density": 9,
+            "boss": 4
         },
         "connected": [
             "Mineral Pools Map",
@@ -5062,9 +5062,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "5",
-            "boss": "5"
+            "layout": 10,
+            "density": 10,
+            "boss": 10
         },
         "connected": [
             "Canyon Map",
@@ -5113,9 +5113,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "5"
+            "layout": 10,
+            "density": 5,
+            "boss": 10
         },
         "connected": [
             "Arsenal Map",
@@ -5163,9 +5163,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "3",
-            "boss": "2"
+            "layout": 10,
+            "density": 4,
+            "boss": 4
         },
         "connected": [
             "Caer Blaidd, Wolfpack's Den",
@@ -5209,9 +5209,9 @@
             "tileset": "The Cavern of Anger"
         },
         "rating": {
-            "layout": "4",
-            "density": "5",
-            "boss": "3"
+            "layout": 8,
+            "density": 9,
+            "boss": 6
         },
         "connected": [
             "Beach Map",
@@ -5269,9 +5269,9 @@
             "tileset": "The Ancient Pyramid"
         },
         "rating": {
-            "layout": "1",
-            "density": "3",
-            "boss": "2"
+            "layout": 2,
+            "density": 8,
+            "boss": 4
         },
         "connected": [
             "City Square Map",
@@ -5323,9 +5323,9 @@
             "tileset": "The Ancient Pyramid"
         },
         "rating": {
-            "layout": "1",
-            "density": "3",
-            "boss": "1"
+            "layout": 2,
+            "density": 6,
+            "boss": 2
         },
         "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map",
         "cards": [
@@ -5397,9 +5397,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "3",
-            "density": "4",
-            "boss": "4"
+            "layout": 6,
+            "density": 7,
+            "boss": 8
         },
         "connected": [
             "Colosseum Map",
@@ -5445,9 +5445,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "5",
-            "density": "4",
-            "boss": "2"
+            "layout": 10,
+            "density": 3,
+            "boss": 4
         },
         "connected": [
             "Canyon Map",
@@ -5494,9 +5494,9 @@
             "outdoors": true
         },
         "rating": {
-            "layout": "3",
-            "density": "3",
-            "boss": "3"
+            "layout": 6,
+            "density": 7,
+            "boss": 6
         },
         "connected": [
             "Caldera Map",
@@ -5572,9 +5572,9 @@
             "linear": true
         },
         "rating": {
-            "layout": "4",
-            "density": "4",
-            "boss": "3"
+            "layout": 8,
+            "density": 6,
+            "boss": 6
         },
         "connected": [
             "Crater Map",

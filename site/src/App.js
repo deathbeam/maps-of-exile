@@ -16,7 +16,8 @@ const preparedCards = cards.map(card => {
     value: card.rate ? parseFloat(card.price) * parseFloat(card.rate) : null,
     ...card
   }
-})
+}).sort((a, b) => b.price - a.price)
+  .sort((a, b) => (b.value || 0) - (a.value || 0))
 
 const preparedMaps = maps.map(map => {
   const mapExtra = maps_extra.find(m => m.name === map.name)
@@ -102,11 +103,11 @@ const RatingBadge = ({ rating }) => {
     badgeClass = "bg-secondary"
     rating = "?"
   } else {
-    if (rating >= 5) {
+    if (rating >= 7) {
       badgeClass = "bg-success"
-    } else if (rating >= 3) {
+    } else if (rating >= 5) {
       badgeClass = "bg-info"
-    } else if (rating >= 2) {
+    } else if (rating >= 3) {
       badgeClass = "bg-warning"
     }
   }
@@ -177,13 +178,13 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
 const MapCard = ({ card }) => {
   let badgeClass = "bg-secondary"
 
-  if (card.score >= 50) {
+  if (card.value >= 20) {
     badgeClass = "bg-danger"
-  } else if (card.score >= 20) {
+  } else if (card.value >= 10) {
     badgeClass = "bg-warning"
-  } else if (card.score >= 10) {
+  } else if (card.value >= 5) {
     badgeClass = "bg-info"
-  } else if (card.score >= 2) {
+  } else if (card.value >= 1) {
     badgeClass = "bg-primary"
   }
 
@@ -210,23 +211,27 @@ const MapCard = ({ card }) => {
   </span>
 }
 
-const MapCards = ({cards, ratedCards }) => {
-  return ratedCards
+const MapCards = ({ cards }) => {
+  return preparedCards
     .filter(c => cards.find(fc => fc.name === c.name))
     .map(c => <MapCard card={c}/>)
+}
+
+function rescale(value, minValue, maxValue, scale) {
+  return Math.min(scale * (value - minValue) / (maxValue - minValue), scale)
 }
 
 function calculateScore(dataset) {
   const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
   const min = Math.min(...nonzerodataset.map(o => o.value))
-  const max = Math.max(...nonzerodataset.map(o => o.value)) - min
+  const max = Math.max(...nonzerodataset.map(o => o.value))
   const out = []
 
   for (let entry of dataset) {
     if (entry.value) {
       out.push({
         ...entry,
-        score: 100 * (entry.value - min) / max
+        score: rescale(entry.value, min, max, 100)
       })
     } else {
       out.push(entry)
@@ -234,12 +239,6 @@ function calculateScore(dataset) {
   }
 
   return out
-}
-
-function mapAndRateCards(foundCards) {
-  return calculateScore(foundCards)
-    .sort((a, b) => b.price - a.price)
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
 function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
@@ -275,8 +274,6 @@ function filterMaps(ratedMaps, searchInput) {
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
-const ratedCards = mapAndRateCards(preparedCards)
-
 function App() {
   const [isPending, startTransition] = useTransition()
 
@@ -286,8 +283,8 @@ function App() {
   }
 
   const [searchInput, setSearchInput] = useTransitionState('')
-  const [layoutInput, setLayoutInput] = useTransitionState('5')
-  const [densityInput, setDensityInput] = useTransitionState('4')
+  const [layoutInput, setLayoutInput] = useTransitionState('3')
+  const [densityInput, setDensityInput] = useTransitionState('2')
   const [bossInput, setBossInput] = useTransitionState('1')
   const [cardInput, setCardInput] = useTransitionState('0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
@@ -370,7 +367,7 @@ function App() {
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
-                How many mobs does the map have accounting for its layout.
+                How many total mobs does the map have.
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">unknown</span>
                 <span className="badge bg-danger text-dark me-1">bad</span>
@@ -429,7 +426,7 @@ function App() {
               <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
               <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
               <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
-              <td><MapCards cards={m.cards} ratedCards={ratedCards}/></td>
+              <td><MapCards cards={m.cards}/></td>
             </tr>
           )}
         </tbody>

@@ -2,6 +2,7 @@ import json
 import os
 import sys
 from decimal import Decimal
+from math import ceil
 
 import requests
 import yaml
@@ -13,6 +14,10 @@ class DecimalEncoder(json.JSONEncoder):
 		if isinstance(o, Decimal):
 			return str(o)
 		return super(DecimalEncoder, self).default(o)
+
+
+def rescale(value, min_value, max_value, scale):
+	return min(ceil(scale * (value - min_value) / (max_value - min_value)), scale)
 
 
 def get_card_data(key, league, config):
@@ -60,13 +65,32 @@ def get_map_ratings(key, config):
 	r = requests.get(url)
 	r = r.json()
 	ratings = r["values"]
-	ratings.pop(0)
-	return list(map(lambda x: {
+	ratings = list(map(lambda x: {
 		"name": x[0],
-		"layout": x[2],
-		"density": x[3],
-		"boss": x[5]
+		"layout": rescale(int(x[2]), 0, 5, 10),
+		"density": rescale(int(x[3]), 0, 5, 10),
+		"boss": rescale(int(x[5]), 0, 5, 10)
 	}, ratings))
+
+	id = config["density"]["sheet-id"]
+	name = config["density"]["sheet-name"]
+	range = config["density"]["sheet-range"]
+	print(f"Getting map density from {name}")
+	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}!{range}?key={key}"
+	r = requests.get(url)
+	r = r.json()
+	densities = r["values"]
+	density_values = list(map(lambda x: int(x[1]), densities))
+	density_min = min(density_values)
+	density_values_new = set(density_values)
+	density_values_new.remove(max(density_values_new))
+	density_max = max(density_values_new)
+
+	for density in densities:
+		rating = next(filter(lambda x: x["name"] == density[0], ratings), None)
+		if rating:
+			rating["density"] = rescale(int(density[1]), density_min, density_max, 10)
+	return ratings
 
 
 def get_map_data(map_data, cards, ratings, config):

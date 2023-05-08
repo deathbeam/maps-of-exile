@@ -9,18 +9,21 @@ difficulty but that usually isn't the deciding factor.
 **Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  
 https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
 
+**Map ratings spreadsheet** by **FixFaxer**:
+https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
+
+**Mob count spreadsheet** by **not_Shorex**:
+https://docs.google.com/spreadsheets/d/10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
+
+**Card prices** from **PoeNinja**:  
+https://poe.ninja/challenge/divination-cards  
+https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
+
 **Map metadata** from **PoeDB**:  
 https://poedb.tw/us/Maps#MapsList  
 https://poedb.tw/us/Colonnade_Map (example of single map)
 
-**Map ratings spreadsheet** by **FixFaxer**:
-https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
-
-**Card prices** from **PoeNinja**:  
-https://poe.ninja/challenge/divination-cards  
-https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)  
-
-**Card drops** from **PoeWiki**:  
+**Map card drops** from **PoeWiki**:  
 https://www.poewiki.net/wiki/Colonnade_Map  
 
 ## So what it actually does?
@@ -37,7 +40,9 @@ This card list with "drop chance" metadata is stored to be used in site in .json
 
 Then it grabs map ratings from spreadsheet (layout, density, boss).
 
-Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDD, cards found in the map from Poe wiki and matches map ratings with map name.
+Then it grabs map density from spreadsheet (in raw mob count).
+
+Then it grabs list of maps from PoeDB. Then iterates every map, for every map it grabs metadata for the map from PoeDD, cards found in the map from Poe wiki and matches map ratings and map density with map name.
 
 This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.
 
@@ -51,7 +56,7 @@ There are 4 factors for score:
 
 Layout, Density, Boss, Cards
 
-Layout, Density and Boss is simple, each is number from 0 to 5.
+Layout, Density and Boss is simple, each is number from 0 to 10.
 
 Cards is a bit more complicated.
 

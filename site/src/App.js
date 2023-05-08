@@ -300,12 +300,13 @@ function App() {
   }
 
   const addToInput = (v) => {
-    if (!searchInput) {
+    const inS = searchRef.current.value
+    if (!inS) {
       setSearch(v)
-    } else if (!searchInput.includes(v)) {
-      setSearch(searchRef.current.value + ", " + v)
+    } else if (!inS.includes(v)) {
+      setSearch(inS + ", " + v)
     } else {
-      setSearch(searchRef.current.value
+      setSearch(inS
         .replace(", " + v, "")
         .replace("," + v, "")
         .replace(v + ", ", "")

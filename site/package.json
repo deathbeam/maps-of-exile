@@ -10,9 +10,15 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "fix": "eslint --fix src && prettier --write '{*,public/*,src/**,src/**/*,src/**/**/*}.{js,css,scss,md,html}'",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -30,5 +36,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8",
+    "pretty-quick": "^3.1.3"
   }
 }

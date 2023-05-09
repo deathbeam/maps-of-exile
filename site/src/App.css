@@ -1,90 +1,90 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    border: none;
+  border: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .tooltip-tag {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip-tag-notice::after {
-    content: "*";
-    color: rgba(0, 150, 150, 0.7);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    position: absolute;
-    margin-top: -5px;
-    left: 105%;
+  content: '*';
+  color: rgba(0, 150, 150, 0.7);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  position: absolute;
+  margin-top: -5px;
+  left: 105%;
 }
 
 .tooltip-tag .tooltip-tag-text {
-    visibility: hidden;
-    min-width: 300px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 8px 5px;
-    border-radius: 5px;
-    position: absolute;
-    z-index: 999;
-    pointer-events: none;
-    line-height: normal;
-    font-weight: normal;
-    font-size: smaller;
+  visibility: hidden;
+  min-width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 8px 5px;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+  line-height: normal;
+  font-weight: normal;
+  font-size: smaller;
 }
 
 .tooltip-tag .tooltip-tag-fill {
-    padding: 2px;
-    border-radius: 0;
+  padding: 2px;
+  border-radius: 0;
 }
 
 .tooltip-tag .tooltip-tag-fill img {
-    max-width: 400px;
+  max-width: 400px;
 }
 
 .tooltip-tag-compact .tooltip-tag-text {
-    min-width: 200px;
-    text-align: left;
+  min-width: 200px;
+  text-align: left;
 }
 
 .tooltip-tag-left .tooltip-tag-text {
-    top: -5px;
-    right: 105%;
+  top: -5px;
+  right: 105%;
 }
 
 .tooltip-tag-right .tooltip-tag-text {
-    top: -5px;
-    left: 105%;
+  top: -5px;
+  left: 105%;
 }
 
 .tooltip-tag .tooltip-tag-text::after {
-    content: " ";
-    position: absolute;
-    margin-top: -5px;
-    border-width: 5px;
-    border-style: solid;
+  content: ' ';
+  position: absolute;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .tooltip-tag-left .tooltip-tag-text::after {
-    top: 18px;
-    left: 100%;
-    border-color: transparent transparent transparent black;
+  top: 18px;
+  left: 100%;
+  border-color: transparent transparent transparent black;
 }
 
 .tooltip-tag-right .tooltip-tag-text::after {
-    top: 18px;
-    right: 100%;
-    border-color: transparent black transparent transparent;
+  top: 18px;
+  right: 100%;
+  border-color: transparent black transparent transparent;
 }
 
 .tooltip-tag:hover .tooltip-tag-text {
-    visibility: visible;
+  visibility: visible;
 }
-

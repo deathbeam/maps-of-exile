@@ -1,93 +1,92 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import {useState, useMemo, useTransition, useRef, useEffect} from 'react'
-import cards from './data/cards.json'
-import maps from './data/maps.json'
 import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
+import { preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 
-const preparedCards = cards.map(card => {
-  return {
-    value: card.rate ? parseFloat(card.price) * parseFloat(card.rate) : null,
-    ...card
-  }
-}).sort((a, b) => b.price - a.price)
-  .sort((a, b) => (b.value || 0) - (a.value || 0))
+function rescale(value, minValue, maxValue, scale) {
+  return Math.min(scale * (value - minValue) / (maxValue - minValue), scale)
+}
 
-const preparedMaps = maps.map(map => {
-  const mapCards = []
+function calculateScore(dataset) {
+  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
+  const min = Math.min(...nonzerodataset.map(o => o.value))
+  const max = Math.max(...nonzerodataset.map(o => o.value))
+  const out = []
 
-  for (let card of map.cards) {
-    const cardData = preparedCards.find(c => c.name === card)
-    if (cardData) {
-      mapCards.push({
-        ...cardData
+  for (let entry of dataset) {
+    if (entry.value) {
+      out.push({
+        ...entry,
+        score: rescale(entry.value, min, max, 100)
       })
     } else {
-      mapCards.push({
-        name: card
-      })
+      out.push(entry)
     }
   }
 
-  const mapTags = []
-  if (map.layout.few_obstacles) {
-    mapTags.push("few obstacles")
-  }
-  if (map.layout.outdoors) {
-    mapTags.push("outdoors")
-  }
-  if (map.layout.linear) {
-    mapTags.push("linear")
-  }
-  if (map.pantheon) {
-    mapTags.push(map.pantheon.toLowerCase())
-  }
-  if (map.layout.good_for_open_mechanics) {
-    mapTags.push("+league mechanics")
-  }
-  if (map.layout.good_for_deli_mirror) {
-    mapTags.push("+delirium mirror")
-  }
-  if (map.boss.names) {
-    const names = map.boss.names.filter(n => !n.includes('Merveil'))
-    if (names.length > 1) {
-      mapTags.push(`${names.length} bosses`)
+  return out
+}
+
+function rateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
+  let out = []
+
+  for (let map of foundMaps) {
+    const layoutValue = (map.rating.layout || 0) * layoutInput
+    const densityValue = (map.rating.density || 0) * densityInput
+    const bossValue = (map.rating.boss || 0) * bossInput
+    let cardValue = 0
+
+    for (let card of map.cards) {
+      cardValue += (card.value || 0)
     }
-  }
-  if (map.boss.separated) {
-    mapTags.push("boss separated")
-  }
-  if (map.boss.not_spawned) {
-    mapTags.push("boss not spawned")
-  }
-  if (map.boss.close_to_start) {
-    mapTags.push("boss rushable")
-  }
-  if (map.boss.phases) {
-    mapTags.push("-boss with phases")
-  }
-  if (map.boss.soft_phases) {
-    mapTags.push("boss with soft phases")
+
+    cardValue = cardValue * cardInput
+    out.push({
+      ...map,
+      value: layoutValue + densityValue + bossValue + cardValue
+    })
   }
 
-  return {
-    ...map,
-    name: map.name.replace(" Map", ""),
-    connected: (map.connected || []).map(c => c.replace(" Map", "")),
-    cards: mapCards,
-    tags: mapTags.sort(),
-  }
-})
+  return calculateScore(out)
+}
 
-const possibleTags = [...new Set(preparedMaps
-  .flatMap(m => m.tags)
-  .map(t => t.replace(/\d+ bosses/, "bosses"))
-  .map(t => t.replace(/soul of .+/, "soul of"))
-)].sort()
+function filterMaps(ratedMaps, searchInput) {
+  const split = (searchInput || "").split(",").filter(e => e.trim())
+  return ratedMaps
+    .filter(m => !searchInput
+      || split.find(s => m.name.toLowerCase().includes(s.trim().toLowerCase()))
+      || m.cards.find(c => split.find(s => c.name.toLowerCase().includes(s.trim().toLowerCase())))
+      || split.every(s => m.tags.find(t => t.toLowerCase().includes(s.trim().toLowerCase())))
+    )
+    .sort((a, b) => (b.score || 0) - (a.score || 0))
+}
+
+const useTransitionState = (key, def, startTransition) => {
+  const [val, setVal] = useState(() => {
+    try {
+      const item = localStorage.getItem(key)
+      return item && item !== "" ? JSON.parse(item) : def
+    } catch (e) {
+      console.warn(e)
+      return def
+    }
+  })
+
+  useEffect(() => {
+    try {
+      localStorage.setItem(key, JSON.stringify(val))
+    } catch (e) {
+      console.warn(e)
+    }
+  }, [key, val])
+
+  return [val, (e) => startTransition(() => setVal(e.target.value === "" ? def : e.target.value))]
+}
 
 const RatingBadge = ({ rating }) => {
   let badgeClass = "bg-danger"
@@ -220,99 +219,17 @@ const MapCards = ({ cards, hideLowValueCards }) => {
     .map(c => <MapCard card={c}/>)
 }
 
-function rescale(value, minValue, maxValue, scale) {
-  return Math.min(scale * (value - minValue) / (maxValue - minValue), scale)
-}
-
-function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
-  const min = Math.min(...nonzerodataset.map(o => o.value))
-  const max = Math.max(...nonzerodataset.map(o => o.value))
-  const out = []
-
-  for (let entry of dataset) {
-    if (entry.value) {
-      out.push({
-        ...entry,
-        score: rescale(entry.value, min, max, 100)
-      })
-    } else {
-      out.push(entry)
-    }
-  }
-
-  return out
-}
-
-function mapAndRateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
-  let out = []
-
-  for (let map of foundMaps) {
-    const layoutValue = (map.rating.layout || 0) * layoutInput
-    const densityValue = (map.rating.density || 0) * densityInput
-    const bossValue = (map.rating.boss || 0) * bossInput
-    let cardValue = 0
-
-    for (let card of map.cards) {
-      cardValue += (card.value || 0)
-    }
-
-    cardValue = cardValue * cardInput
-    out.push({
-      ...map,
-      value: layoutValue + densityValue + bossValue + cardValue
-    })
-  }
-
-  return calculateScore(out)
-}
-
-function filterMaps(ratedMaps, searchInput) {
-  const split = (searchInput || "").split(",").filter(e => e.trim())
-  return ratedMaps
-    .filter(m => !searchInput
-      || split.find(s => m.name.toLowerCase().includes(s.trim().toLowerCase()))
-      || m.cards.find(c => split.find(s => c.name.toLowerCase().includes(s.trim().toLowerCase())))
-      || split.every(s => m.tags.find(t => t.toLowerCase().includes(s.trim().toLowerCase())))
-    )
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
-}
-
 function App() {
   const [isPending, startTransition] = useTransition()
 
-  const useTransitionState = (key, def) => {
-    const [val, setVal] = useState(() => {
-      try {
-        const item = localStorage.getItem(key)
-        return item && item !== "" ? JSON.parse(item) : def
-      } catch (e) {
-        console.warn(e)
-        return def
-      }
-    })
-
-    useEffect(() => {
-      try {
-        localStorage.setItem(key, JSON.stringify(val))
-      } catch (e) {
-        console.warn(e)
-      }
-    }, [key, val])
-
-    return [val, (e) => startTransition(() => {
-      setVal(e.target.value === "" ? def : e.target.value)
-    })]
-  }
-
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = useTransitionState('searchInput', '')
-  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput',  3)
-  const [densityInput, setDensityInput] = useTransitionState('densityInput', 2)
-  const [bossInput, setBossInput] = useTransitionState('bossInput', 1)
-  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.5)
+  const [searchInput, setSearchInput] = useTransitionState('searchInput', '', startTransition)
+  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput',  3, startTransition)
+  const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
+  const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
+  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.5, startTransition)
   const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false)
-  const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
+  const ratedMaps = useMemo(() => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
   const setSearch = (v) => {
     searchRef.current.value = v
@@ -347,7 +264,7 @@ function App() {
           <div className="col col-lg-4 col-12">
             <label className="form-label">Search</label>
             <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} defaultValue={searchInput} onChange={setSearchInput}/>
-            <span className="small">tags:</span> <Tags tags={possibleTags} currentInput={searchInput} addToInput={addToInput}/>
+            <span className="small">tags:</span> <Tags tags={preparedTags} currentInput={searchInput} addToInput={addToInput}/>
           </div>
           <div className="col col-lg-8 col-12">
             <div className="row g-2">

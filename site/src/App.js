@@ -137,12 +137,16 @@ const MapName = ({ map, currentInput, addToInput }) => {
       <span className="tooltip-tag-text tooltip-tag-fill">
         <img src={mapImage} alt="" loading="lazy"/>
       </span>
-      {name} <small>{map.tiers.join(", ")}</small>
+      {name}
     </span>
+    <br/>
+    <small>{map.tiers.join(", ")}</small>
     <br/>
     {tags}
   </> : <>
     {name}
+    <br/>
+    <small>{map.tiers.join(", ")}</small>
     <br/>
     {tags}
   </>

@@ -389,7 +389,7 @@ function App() {
               Map
             </span>
           </th>
-          <th scope="col">
+          <th scope="col" className="d-none d-md-table-cell">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 How straightforward is the map to clear or how good it is for league mechanics.
@@ -403,7 +403,7 @@ function App() {
               Layout
             </span>
           </th>
-          <th scope="col">
+          <th scope="col" className="d-none d-md-table-cell">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 How many total mobs does the map have.
@@ -417,7 +417,7 @@ function App() {
               Density
             </span>
           </th>
-          <th scope="col">
+          <th scope="col" className="d-none d-md-table-cell">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 How annoying/dangerous is the boss to kill.
@@ -431,7 +431,7 @@ function App() {
               Boss
             </span>
           </th>
-          <th scope="col" className="d-none d-md-table-cell">
+          <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Maps adjacent to this map on atlas with score on left.
@@ -467,12 +467,22 @@ function App() {
         <tbody>
           {filterMaps(ratedMaps, searchInput).map(m =>
             <tr key={m.name} id={m.name}>
-              <td className="text-center"><b>{Math.round(m.score || 0)}</b></td>
+              <td className="text-center">
+                <div className=" d-none d-md-table-cell">
+                  <b>{Math.round(m.score || 0)}</b>
+                </div>
+                <div className="d-block d-md-none">
+                  <b>Total</b>: {Math.round(m.score || 0)}<br/>
+                  <b>Layout</b>: <RatingBadge rating={m.rating.layout}/><br/>
+                  <b>Density</b>: <RatingBadge rating={m.rating.density}/><br/>
+                  <b>Boss</b>: <RatingBadge rating={m.rating.boss}/><br/>
+                </div>
+              </td>
               <td><MapName map={m} currentInput={searchInput} addToInput={addToInput}/></td>
-              <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>
-              <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
-              <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
-              <td className="d-none d-md-table-cell"><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
+              <td className="text-center d-none d-md-table-cell"><RatingBadge rating={m.rating.layout}/></td>
+              <td className="text-center d-none d-md-table-cell"><RatingBadge rating={m.rating.density}/></td>
+              <td className="text-center d-none d-md-table-cell"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
+              <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
               <td><MapCards cards={m.cards} hideLowValueCards={hideLowValueCards}/></td>
             </tr>
           )}

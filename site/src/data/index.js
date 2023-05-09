@@ -31,10 +31,7 @@ export const preparedMaps = maps.map(map => {
     const tag = source[key]
 
     if (tag) {
-      const val =
-        typeof tag == 'boolean'
-          ? name || key.replaceAll('_', ' ')
-          : tag.toLowerCase()
+      const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
       const out = {
         name: val
       }
@@ -49,13 +46,7 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')
   pushTag(map.info, mapTags, map.layout, 'linear')
-  pushTag(
-    map.info,
-    mapTags,
-    map.layout,
-    'league_mechanics',
-    '+league mechanics'
-  )
+  pushTag(map.info, mapTags, map.layout, 'league_mechanics', '+league mechanics')
   pushTag(map.info, mapTags, map.layout, 'delirium_mirror', '+delirium mirror')
 
   pushTag(map.info, mapTags, map.boss, 'separated', 'boss separated')
@@ -87,9 +78,7 @@ const preparedTagsMap = new Map()
 for (const item of preparedMaps
   .flatMap(m => m.tags)
   .map(t => ({
-    name: t.name
-      .replace(/\d+ bosses/, 'bosses')
-      .replace(/soul of .+/, 'soul of')
+    name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of')
   }))
   .sort((a, b) => a.name.localeCompare(b.name))) {
   if (!preparedTagsMap.has(item.name)) {

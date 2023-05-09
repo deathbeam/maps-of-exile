@@ -13,9 +13,7 @@ function rescale(value, minValue, maxValue, scale) {
 }
 
 function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(
-    m => m.value !== undefined && m.value != null
-  )
+  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
   const min = Math.min(...nonzerodataset.map(o => o.value))
   const max = Math.max(...nonzerodataset.map(o => o.value))
   const out = []
@@ -57,23 +55,14 @@ function rateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
   return calculateScore(out)
 }
 
-function filterMaps(ratedMaps, searchInput) {
-  const split = (searchInput || '').split(',').filter(e => e.trim())
+function filterMaps(ratedMaps, currentInput) {
   return ratedMaps
     .filter(
       m =>
-        !searchInput ||
-        split.find(s =>
-          m.name.toLowerCase().includes(s.trim().toLowerCase())
-        ) ||
-        m.cards.find(c =>
-          split.find(s => c.name.toLowerCase().includes(s.trim().toLowerCase()))
-        ) ||
-        split.every(s =>
-          m.tags.find(t =>
-            t.name.toLowerCase().includes(s.trim().toLowerCase())
-          )
-        )
+        !currentInput ||
+        currentInput.find(s => m.name.toLowerCase().includes(s)) ||
+        m.cards.find(c => currentInput.find(s => c.name.toLowerCase().includes(s))) ||
+        currentInput.every(s => m.tags.find(t => t.name.includes(s)))
     )
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
@@ -97,13 +86,7 @@ function useTransitionState(key, def, startTransition) {
     }
   }, [key, val])
 
-  return [
-    val,
-    e =>
-      startTransition(() =>
-        setVal(e.target.value === '' ? def : e.target.value)
-      )
-  ]
+  return [val, e => startTransition(() => setVal(e.target.value === '' ? def : e.target.value))]
 }
 
 const RatingBadge = ({ rating }) => {
@@ -131,7 +114,7 @@ const Tags = ({ tags, currentInput, addToInput }) => {
     const val = t.name
     const info = t.info
 
-    const searched = currentInput.toLowerCase().includes(val)
+    const searched = currentInput.find(c => c === val)
     let color = 'bg-secondary'
     if (searched) {
       color = 'bg-primary'
@@ -182,11 +165,7 @@ const Tags = ({ tags, currentInput, addToInput }) => {
 }
 
 const MapName = ({ map, currentInput, addToInput }) => {
-  const mapImage =
-    process.env.PUBLIC_URL +
-    '/layout/' +
-    map.name.toLowerCase().replaceAll(' ', '_') +
-    '.png'
+  const mapImage = process.env.PUBLIC_URL + '/layout/' + map.name.toLowerCase().replaceAll(' ', '_') + '.png'
   const tier = map.tiers[0]
   let tierColor = 'text-light'
   if (tier >= 11) {
@@ -200,9 +179,7 @@ const MapName = ({ map, currentInput, addToInput }) => {
       {map.name}
     </a>
   )
-  const tags = (
-    <Tags tags={map.tags} currentInput={currentInput} addToInput={addToInput} />
-  )
+  const tags = <Tags tags={map.tags} currentInput={currentInput} addToInput={addToInput} />
 
   return map.image ? (
     <>
@@ -257,11 +234,7 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
       <a className="badge text-dark bg-secondary me-1" href={'#' + m}>
         <b>
           {Math.round(
-            (
-              ratedMaps.find(
-                rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()
-              ) || {}
-            ).score || 0
+            (ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0
           ) + ' '}
         </b>
         {m}
@@ -302,8 +275,7 @@ const MapCard = ({ card }) => {
         <br />
         <b>Stack size</b>: {card.stack}
         <br />
-        <b>Price</b>: {card.price}{' '}
-        <img src={chaos} alt="c" width="16" height="16" />
+        <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
         {card.rate && (
           <>
             <br />
@@ -317,12 +289,7 @@ const MapCard = ({ card }) => {
           </>
         )}
       </span>
-      <a
-        className={badgeClass}
-        href={card.ninja}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
         <img src={img} alt="" width="16" height="16" /> {card.name}
       </a>
     </span>
@@ -340,40 +307,20 @@ function App() {
   const [isPending, startTransition] = useTransition()
 
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = useTransitionState(
-    'searchInput',
-    '',
-    startTransition
-  )
-  const [layoutInput, setLayoutInput] = useTransitionState(
-    'layoutInput',
-    3,
-    startTransition
-  )
-  const [densityInput, setDensityInput] = useTransitionState(
-    'densityInput',
-    2,
-    startTransition
-  )
-  const [bossInput, setBossInput] = useTransitionState(
-    'bossInput',
-    1,
-    startTransition
-  )
-  const [cardInput, setCardInput] = useTransitionState(
-    'cardInput',
-    0.5,
-    startTransition
-  )
-  const [hideLowValueCards, setHideLowValueCards] = useTransitionState(
-    'hideLowValueCards',
-    false
-  )
+  const [searchInput, setSearchInput] = useTransitionState('searchInput', '', startTransition)
+  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput', 3, startTransition)
+  const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
+  const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
+  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.5, startTransition)
+  const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false)
   const ratedMaps = useMemo(
-    () =>
-      rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
+    () => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
     [layoutInput, densityInput, bossInput, cardInput]
   )
+  const currentInput = (searchInput || '')
+    .split(',')
+    .map(e => e.trim().toLowerCase())
+    .filter(e => e)
 
   const setSearch = v => {
     searchRef.current.value = v
@@ -418,11 +365,7 @@ function App() {
               onChange={setSearchInput}
             />
             <span className="small">tags:</span>{' '}
-            <Tags
-              tags={preparedTags}
-              currentInput={searchInput}
-              addToInput={addToInput}
-            />
+            <Tags tags={preparedTags} currentInput={currentInput} addToInput={addToInput} />
           </div>
           <div className="col col-lg-8 col-12">
             <div className="row g-2">
@@ -476,8 +419,8 @@ function App() {
             <th scope="col">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and{' '}
-                  <b>Card</b> score, accounting for weights at top.
+                  Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and <b>Card</b> score, accounting for weights at
+                  top.
                 </span>
                 Score
               </span>
@@ -485,18 +428,11 @@ function App() {
             <th scope="col">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  Map name, colored based on natural tier with map tiers for
-                  each voidstone next to it.
+                  Map name, colored based on natural tier with map tiers for each voidstone next to it.
                   <br />
-                  <span className="badge bg-light text-dark me-1">
-                    tier 1-5
-                  </span>
-                  <span className="badge bg-warning text-dark me-1">
-                    tier 6-10
-                  </span>
-                  <span className="badge bg-danger text-dark me-1">
-                    tier 11-16
-                  </span>
+                  <span className="badge bg-light text-dark me-1">tier 1-5</span>
+                  <span className="badge bg-warning text-dark me-1">tier 6-10</span>
+                  <span className="badge bg-danger text-dark me-1">tier 11-16</span>
                 </span>
                 Map
               </span>
@@ -504,20 +440,13 @@ function App() {
             <th scope="col" className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  How straightforward is the map to clear or how good it is for
-                  league mechanics.
+                  How straightforward is the map to clear or how good it is for league mechanics.
                   <br />
-                  <span className="badge bg-secondary text-dark me-1">
-                    unknown
-                  </span>
+                  <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
-                  <span className="badge bg-warning text-dark me-1">
-                    >=3 neutral
-                  </span>
+                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
                   <span className="badge bg-info text-dark me-1">>=5 good</span>
-                  <span className="badge bg-success text-dark me-1">
-                    >=7 great
-                  </span>
+                  <span className="badge bg-success text-dark me-1">>=7 great</span>
                 </span>
                 Layout
               </span>
@@ -527,17 +456,11 @@ function App() {
                 <span className="tooltip-tag-text">
                   How many total mobs does the map have.
                   <br />
-                  <span className="badge bg-secondary text-dark me-1">
-                    unknown
-                  </span>
+                  <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
-                  <span className="badge bg-warning text-dark me-1">
-                    >=3 neutral
-                  </span>
+                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
                   <span className="badge bg-info text-dark me-1">>=5 good</span>
-                  <span className="badge bg-success text-dark me-1">
-                    >=7 great
-                  </span>
+                  <span className="badge bg-success text-dark me-1">>=7 great</span>
                 </span>
                 Density
               </span>
@@ -547,30 +470,18 @@ function App() {
                 <span className="tooltip-tag-text">
                   How annoying/dangerous is the boss to kill.
                   <br />
-                  <span className="badge bg-secondary text-dark me-1">
-                    unknown
-                  </span>
-                  <span className="badge bg-danger text-dark me-1">
-                    hard/annoying
-                  </span>
-                  <span className="badge bg-warning text-dark me-1">
-                    >=3 neutral
-                  </span>
-                  <span className="badge bg-info text-dark me-1">
-                    >=5 alright
-                  </span>
-                  <span className="badge bg-success text-dark me-1">
-                    >=7 easy/fast
-                  </span>
+                  <span className="badge bg-secondary text-dark me-1">unknown</span>
+                  <span className="badge bg-danger text-dark me-1">hard/annoying</span>
+                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
+                  <span className="badge bg-info text-dark me-1">>=5 alright</span>
+                  <span className="badge bg-success text-dark me-1">>=7 easy/fast</span>
                 </span>
                 Boss
               </span>
             </th>
             <th scope="col">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-                <span className="tooltip-tag-text">
-                  Maps adjacent to this map on atlas with score on left.
-                </span>
+                <span className="tooltip-tag-text">Maps adjacent to this map on atlas with score on left.</span>
                 Connected
               </span>
             </th>
@@ -578,26 +489,15 @@ function App() {
               <div className="d-md-flex justify-content-between">
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
-                    Cards that drop in the map sorted by <b>drop rate</b> and{' '}
-                    <b>price</b>. This means that even though card might be more
-                    expensive, it might not necessarily be higher priority
-                    because of its lower drop rate.
+                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though
+                    card might be more expensive, it might not necessarily be higher priority because of its lower drop
+                    rate.
                     <br />
-                    <span className="badge bg-secondary text-dark me-1">
-                      not very good
-                    </span>
-                    <span className="badge bg-dark border border-1 border-info text-info me-1">
-                      >=1 decent
-                    </span>
-                    <span className="badge bg-info text-dark me-1">
-                      >=5 good
-                    </span>
-                    <span className="badge bg-primary text-light me-1">
-                      >=10 great
-                    </span>
-                    <span className="badge bg-light text-dark me-1">
-                      >=20 amazing
-                    </span>
+                    <span className="badge bg-secondary text-dark me-1">not very good</span>
+                    <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
+                    <span className="badge bg-info text-dark me-1">>=5 good</span>
+                    <span className="badge bg-primary text-light me-1">>=10 great</span>
+                    <span className="badge bg-light text-dark me-1">>=20 amazing</span>
                   </span>
                   Cards
                 </span>
@@ -612,16 +512,14 @@ function App() {
                       })
                     }
                   />
-                  <label className="form-check-label small">
-                    Hide low value cards
-                  </label>
+                  <label className="form-check-label small">Hide low value cards</label>
                 </div>
               </div>
             </th>
           </tr>
         </thead>
         <tbody>
-          {filterMaps(ratedMaps, searchInput).map(m => (
+          {filterMaps(ratedMaps, currentInput).map(m => (
             <tr key={m.name} id={m.name}>
               <td className="text-center">
                 <div className=" d-none d-md-table-cell">
@@ -639,11 +537,7 @@ function App() {
                 </div>
               </td>
               <td>
-                <MapName
-                  map={m}
-                  currentInput={searchInput}
-                  addToInput={addToInput}
-                />
+                <MapName map={m} currentInput={currentInput} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <RatingBadge rating={m.rating.layout} />
@@ -658,10 +552,7 @@ function App() {
                 <ConnectedMaps connected={m.connected} ratedMaps={ratedMaps} />
               </td>
               <td>
-                <MapCards
-                  cards={m.cards}
-                  hideLowValueCards={hideLowValueCards}
-                />
+                <MapCards cards={m.cards} hideLowValueCards={hideLowValueCards} />
               </td>
             </tr>
           ))}
@@ -669,11 +560,7 @@ function App() {
       </table>
       <div className="container-fluid p-4 text-end">
         Contribute on{' '}
-        <a
-          href="https://github.com/deathbeam/poe-tools"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
           GitHub
         </a>
       </div>

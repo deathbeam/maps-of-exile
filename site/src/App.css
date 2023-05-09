@@ -18,8 +18,7 @@ a:hover {
 .tooltip-tag-notice::after {
   content: '*';
   color: rgba(0, 150, 150, 0.7);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   position: absolute;
   margin-top: -5px;
   left: 105%;

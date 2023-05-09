@@ -208,9 +208,10 @@ const MapCard = ({ card }) => {
   </span>
 }
 
-const MapCards = ({ cards }) => {
+const MapCards = ({ cards, hideLowValueCards }) => {
   return preparedCards
     .filter(c => cards.find(fc => fc.name === c.name))
+    .filter(c => !hideLowValueCards || c.price >= 10)
     .map(c => <MapCard card={c}/>)
 }
 
@@ -299,10 +300,11 @@ function App() {
 
   const searchRef = useRef(null)
   const [searchInput, setSearchInput] = useTransitionState('searchInput', '')
-  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput',  '3')
-  const [densityInput, setDensityInput] = useTransitionState('densityInput', '2')
-  const [bossInput, setBossInput] = useTransitionState('bossInput', '1')
-  const [cardInput, setCardInput] = useTransitionState('cardInput', '0.5')
+  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput',  3)
+  const [densityInput, setDensityInput] = useTransitionState('densityInput', 2)
+  const [bossInput, setBossInput] = useTransitionState('bossInput', 1)
+  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.5)
+  const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false)
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
   const setSearch = (v) => {
@@ -436,19 +438,27 @@ function App() {
             </span>
           </th>
           <th scope="col">
-            <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
-              <span className="tooltip-tag-text">
-                Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
-                it might not necessarily be higher priority because of its lower drop rate.
-                <br/>
-                <span className="badge bg-secondary text-dark me-1">not very good</span>
-                <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
-                <span className="badge bg-info text-dark me-1">>=5 good</span>
-                <span className="badge bg-primary text-light me-1">>=10 great</span>
-                <span className="badge bg-light text-dark me-1">>=20 amazing</span>
+            <div className="d-md-flex justify-content-between">
+              <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
+                <span className="tooltip-tag-text">
+                  Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though card might be more expensive,
+                  it might not necessarily be higher priority because of its lower drop rate.
+                  <br/>
+                  <span className="badge bg-secondary text-dark me-1">not very good</span>
+                  <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
+                  <span className="badge bg-info text-dark me-1">>=5 good</span>
+                  <span className="badge bg-primary text-light me-1">>=10 great</span>
+                  <span className="badge bg-light text-dark me-1">>=20 amazing</span>
+                </span>
+                Cards
               </span>
-              Cards
-            </span>
+              <div className="form-check">
+                <input className="form-check-input" type="checkbox" defaultChecked={hideLowValueCards} onChange={() => setHideLowValueCards({ target: { value: !hideLowValueCards } })}/>
+                <label className="form-check-label small">
+                  Hide low value cards
+                </label>
+              </div>
+            </div>
           </th>
         </tr>
         </thead>
@@ -461,7 +471,7 @@ function App() {
               <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
               <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
               <td className="d-none d-md-table-cell"><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
-              <td><MapCards cards={m.cards}/></td>
+              <td><MapCards cards={m.cards} hideLowValueCards={hideLowValueCards}/></td>
             </tr>
           )}
         </tbody>

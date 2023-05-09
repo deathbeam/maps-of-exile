@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import {useState, useMemo, useTransition, useRef} from 'react'
+import {useState, useMemo, useTransition, useRef, useEffect} from 'react'
 import cards from './data/cards.json'
 import maps from './data/maps.json'
 import alch from './img/alch.png'
@@ -275,17 +275,34 @@ function filterMaps(ratedMaps, searchInput) {
 function App() {
   const [isPending, startTransition] = useTransition()
 
-  const useTransitionState = (def) => {
-    const [val, setVal] = useState(def)
+  const useTransitionState = (key, def) => {
+    const [val, setVal] = useState(() => {
+      try {
+        const item = localStorage.getItem(key)
+        return item ? JSON.parse(item) : def
+      } catch (e) {
+        console.warn(e)
+        return def
+      }
+    })
+
+    useEffect(() => {
+      try {
+        localStorage.setItem(key, JSON.stringify(val))
+      } catch (e) {
+        console.warn(e)
+      }
+    }, [val])
+
     return [val, (e) => startTransition(() => setVal(e.target.value))]
   }
 
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = useTransitionState('')
-  const [layoutInput, setLayoutInput] = useTransitionState('3')
-  const [densityInput, setDensityInput] = useTransitionState('2')
-  const [bossInput, setBossInput] = useTransitionState('1')
-  const [cardInput, setCardInput] = useTransitionState('0.5')
+  const [searchInput, setSearchInput] = useTransitionState('searchInput', '')
+  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput',  '3')
+  const [densityInput, setDensityInput] = useTransitionState('densityInput', '2')
+  const [bossInput, setBossInput] = useTransitionState('bossInput', '1')
+  const [cardInput, setCardInput] = useTransitionState('cardInput', '0.5')
   const ratedMaps = useMemo(() => mapAndRateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput), [layoutInput, densityInput, bossInput, cardInput])
 
   const setSearch = (v) => {
@@ -320,7 +337,7 @@ function App() {
         <div className="row g-2">
           <div className="col col-lg-4 col-12">
             <label className="form-label">Search</label>
-            <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} onChange={setSearchInput}/>
+            <input className="form-control" type="search" placeholder="Search for map name, tag or card, comma separated" ref={searchRef} defaultValue={searchInput} onChange={setSearchInput}/>
             <span className="small">tags:</span> <Tags tags={possibleTags} currentInput={searchInput} addToInput={addToInput}/>
           </div>
           <div className="col col-lg-8 col-12">

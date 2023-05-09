@@ -22,6 +22,7 @@ https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api
 **Map metadata** from **PoeDB**:  
 https://poedb.tw/us/Maps#MapsList  
 https://poedb.tw/us/Colonnade_Map (example of single map)
+https://docs.google.com/spreadsheets/d/1BQVhe_4f2ujyzhQ9uKbAkU_j1bOUKCDxpjwdVx8MfV4 (original source of some PoeDB metadata)
 
 **Map card drops** from **PoeWiki**:  
 https://www.poewiki.net/wiki/Colonnade_Map  

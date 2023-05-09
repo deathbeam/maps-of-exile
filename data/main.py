@@ -163,10 +163,6 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 			map_data["layout"]["outdoors"] = True
 		elif name == "linear" and value == "o":
 			map_data["layout"]["linear"] = True
-		elif name == "tileset":
-			map_data["layout"]["tileset"] = value
-		elif name == "boss based on":
-			map_data["boss"]["based_on"] = value
 		elif name == "boss notes":
 			map_data["boss"]["notes"] = value
 		elif name == "boss not in own room" and value == "x":

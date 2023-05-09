@@ -412,7 +412,7 @@ function App() {
               Boss
             </span>
           </th>
-          <th scope="col">
+          <th scope="col" className="d-none d-md-table-cell">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
                 Maps adjacent to this map on atlas with score on left.
@@ -445,7 +445,7 @@ function App() {
               <td className="text-center"><RatingBadge rating={m.rating.layout}/></td>
               <td className="text-center"><RatingBadge rating={m.rating.density}/></td>
               <td className="text-center"><MapBoss boss={m.boss} rating={m.rating.boss}/></td>
-              <td><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
+              <td className="d-none d-md-table-cell"><ConnectedMaps connected={m.connected} ratedMaps={ratedMaps}/></td>
               <td><MapCards cards={m.cards}/></td>
             </tr>
           )}

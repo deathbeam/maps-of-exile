@@ -66,7 +66,7 @@ function filterMaps(ratedMaps, searchInput) {
     .sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
-const useTransitionState = (key, def, startTransition) => {
+function useTransitionState(key, def, startTransition) {
   const [val, setVal] = useState(() => {
     try {
       const item = localStorage.getItem(key)

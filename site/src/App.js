@@ -171,16 +171,16 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
 }
 
 const MapCard = ({ card }) => {
-  let badgeClass = "bg-secondary"
+  let badgeClass = "bg-secondary text-dark"
 
   if (card.value >= 20) {
-    badgeClass = "bg-danger"
+    badgeClass = "bg-light text-dark"
   } else if (card.value >= 10) {
-    badgeClass = "bg-warning"
+    badgeClass = "bg-primary text-light"
   } else if (card.value >= 5) {
-    badgeClass = "bg-info"
+    badgeClass = "bg-info text-dark"
   } else if (card.value >= 1) {
-    badgeClass = "bg-primary"
+    badgeClass = "bg-dark text-info border border-1 border-info"
   }
 
   let img = alch
@@ -193,7 +193,7 @@ const MapCard = ({ card }) => {
     img = chaos
   }
 
-  badgeClass = `badge text-dark m-1 ${badgeClass}`
+  badgeClass = `badge m-1 ${badgeClass}`
   return <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
     <span className="tooltip-tag-text">
       <b>Reward</b>: {card.reward}<br/>
@@ -425,10 +425,10 @@ function App() {
                 it might not necessarily be higher priority because of its lower drop rate.
                 <br/>
                 <span className="badge bg-secondary text-dark me-1">not very good</span>
-                <span className="badge bg-primary text-dark me-1">>=1 decent</span>
+                <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
                 <span className="badge bg-info text-dark me-1">>=5 good</span>
-                <span className="badge bg-warning text-dark me-1">>=10 great</span>
-                <span className="badge bg-danger text-dark me-1">>=20 amazing</span>
+                <span className="badge bg-primary text-light me-1">>=10 great</span>
+                <span className="badge bg-light text-dark me-1">>=20 amazing</span>
               </span>
               Cards
             </span>

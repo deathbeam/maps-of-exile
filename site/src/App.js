@@ -5,7 +5,7 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import { preparedCards, preparedMaps, preparedTags } from './data'
+import {assumedNaturalDrops, cardMinPrice, cardBossMulti, preparedCards, preparedMaps, preparedTags} from './data'
 import Loader from './components/Loader'
 
 function rescale(value, minValue, maxValue, scale) {
@@ -276,16 +276,24 @@ const MapCard = ({ card }) => {
         <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        {card.rate && (
+        {!!card.rate && (
           <>
             <br />
-            <b>* Rate</b>: {Math.round(card.rate * 10000) / 10000} %
+            <b>* Rate</b>: {Math.round(card.rate * 100000) / 100000} %
           </>
         )}
-        {card.value > 0 && (
+        {!!card.value && (
           <>
             <br />
-            <b>= Score</b>: {Math.round(card.value * 100) / 100}
+            <b>* Drops</b>: {assumedNaturalDrops}
+            {card.boss && (
+              <>
+                <br />
+                <b>/ Boss drop</b>: {cardBossMulti}
+              </>
+            )}
+            <br />
+            <b>= Value</b>: {Math.round(card.value * 1000) / 1000}
           </>
         )}
       </span>
@@ -311,7 +319,7 @@ function App() {
   const [layoutInput, setLayoutInput] = useTransitionState('layoutInput', 3, startTransition)
   const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
   const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
-  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.5, startTransition)
+  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.6, startTransition)
   const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false)
   const ratedMaps = useMemo(
     () => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
@@ -489,9 +497,10 @@ function App() {
               <div className="d-md-flex justify-content-between">
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
-                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. This means that even though
-                    card might be more expensive, it might not necessarily be higher priority because of its lower drop
-                    rate.
+                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>.
+                    Cards under <b>{cardMinPrice}c</b> are filtered out from rating.
+                    The drop chance of card is multiplied by <b>{assumedNaturalDrops}</b> as its assuming you get that many
+                    natural drops per map. This number can be lower or higher depending on your mapping strategy.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>

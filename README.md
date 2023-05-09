@@ -9,6 +9,9 @@ difficulty but that usually isn't the deciding factor.
 **Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  
 https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
 
+**Estimated Divination Card weights spreadsheet** from **Prohibited Library** discord:
+https://docs.google.com/spreadsheets/d/1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
+
 **Map ratings spreadsheet** by **FixFaxer**:
 https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
 

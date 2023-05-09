@@ -1,11 +1,19 @@
 import cards from './cards.json'
 import maps from './maps.json'
 
+export const cardMinPrice = 10
+export const assumedNaturalDrops = 500
+export const cardBossMulti = 3.5
+
 export const preparedCards = cards
   .map(card => {
+    const rate = parseFloat(card.natural_chance)
     return {
-      value: card.rate ? parseFloat(card.price) * parseFloat(card.rate) : null,
-      ...card
+      ...card,
+      rate: rate,
+      value: card.price >= cardMinPrice
+        ? (rate * assumedNaturalDrops * card.price * (card.boss ? (1 / cardBossMulti) : 1)) / 100
+        : 0
     }
   })
   .sort((a, b) => b.price - a.price)

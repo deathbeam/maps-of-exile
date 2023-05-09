@@ -49,14 +49,49 @@ def get_card_data(key, league, config):
 	r = requests.get(url)
 	r = r.json()
 	rates = r["values"]
-	total = rates.pop(0)[0]
-	rates = list(filter(lambda x: len(x) > 0, rates))
+	rates_total = rates.pop(0)[0]
+	rates = list(map(lambda x: {
+		"name": x[0].strip(),
+		"value": int(x[3])
+	}, filter(lambda x: len(x) > 0, rates)))
+
+	id = config["weights"]["sheet-id"]
+	name = config["weights"]["sheet-name"]
+	print(f"Getting card weights from {name}")
+	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+	r = requests.get(url)
+	r = r.json()
+	weights = r["values"]
+	weights.pop(0)
+	weights.pop(0)
+	weights = list(map(lambda x: {
+		"name": x[1].strip(),
+		"value": int(x[2])
+	}, weights))
+	weights_total = sum(list(map(lambda x: x["value"], weights)))
+
+	patient_rate_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
+	patient_weight_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
 
 	url = config["prices"].replace("{}", league)
 	print(f"Getting card prices from {url}")
 	r = requests.get(url)
 	r = r.json()
 	prices = r["lines"]
+
+	for price_card in prices:
+		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
+		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
+
+		if rate_card and not weight_card:
+			rate =  Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(1.3)
+			weight_rate = round(Decimal(patient_weight_baseline) / rate)
+			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
+			weights.append({
+				"name": price_card["name"],
+				"value": weight_rate
+			})
+			weights_total += weight_rate
 
 	out = []
 	for price_card in prices:
@@ -69,14 +104,21 @@ def get_card_data(key, league, config):
 			"price": price_card["chaosValue"],
 			"stack": price_card.get("stackSize", 1),
 			"reward": reward,
-			"ninja": config["ninja"].replace("{}", price_card["detailsId"])
+			"ninja": config["ninja"].replace("{}", price_card["detailsId"]),
+			"boss": price_card["name"] in config["boss-only"]
 		}
 
-		rate_card = next((x for x in rates if x[0] == card["name"]), None)
+		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
 		if rate_card:
-			card["rate"] = Decimal(100) * Decimal(rate_card[3]) / Decimal(total)
+			card["rate"] = Decimal(100) * (Decimal(rate_card) / Decimal(rates_total))
 		else:
 			print(f"Rate for card {card['name']} not found")
+
+		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
+		if weight_card:
+			card["natural_chance"] = Decimal(100) * (Decimal(weight_card) / Decimal(weights_total))
+		else:
+			print(f"Weight for card {card['name']} not found")
 
 		out.append(card)
 

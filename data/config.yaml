@@ -16,8 +16,14 @@ data:
       sheet-range: C3:G140
 
   cards:
+    boss-only:
+      - "The Sephirot"
+      - "Divine Beauty"
     decks:
       sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
       sheet-name: Decks 3.21
+    weights:
+      sheet-id: 1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
+      sheet-name: NaturalCardWeights
     prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league={}
     ninja: https://poe.ninja/challenge/divination-cards/{}

@@ -134,7 +134,7 @@
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "close_to_start": true,
             "phases": false,
             "soft_phases": false
         }

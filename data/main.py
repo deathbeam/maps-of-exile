@@ -264,7 +264,7 @@ def get_maps_template(maps, existing_maps):
 				"good_for_deli_mirror": None
 			},
 			"boss": {
-				"spawn_at_load": None,
+				"not_spawned": None,
 				"close_to_start": None,
 				"phases": None,
 				"soft_phases": None

@@ -7,7 +7,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -21,10 +21,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -35,10 +35,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": false,
+            "not_spawned": true,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -49,10 +49,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -63,10 +63,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -77,10 +77,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -91,10 +91,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -105,10 +105,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -119,10 +119,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -133,10 +133,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -147,10 +147,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -161,10 +161,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -175,10 +175,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -189,7 +189,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -203,10 +203,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -217,10 +217,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -231,10 +231,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -245,10 +245,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -259,10 +259,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -273,10 +273,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -287,10 +287,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -302,10 +302,10 @@
             "outdoors": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null,
+            "soft_phases": false,
             "separated": true
         }
     },
@@ -317,7 +317,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -331,10 +331,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -345,10 +345,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -359,10 +359,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -373,10 +373,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -387,10 +387,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -401,10 +401,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -415,10 +415,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -429,10 +429,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -445,10 +445,10 @@
             "outdoors": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null,
+            "soft_phases": false,
             "separated": true
         }
     },
@@ -460,10 +460,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -474,10 +474,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -488,7 +488,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -502,10 +502,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -516,10 +516,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -530,10 +530,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -544,7 +544,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -559,10 +559,10 @@
             "outdoors": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -573,7 +573,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
             "soft_phases": true
@@ -587,10 +587,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -601,10 +601,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -615,10 +615,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -629,10 +629,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -643,10 +643,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -659,10 +659,10 @@
             "linear": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -673,7 +673,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -687,10 +687,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null,
+            "soft_phases": false,
             "separated": true
         }
     },
@@ -703,7 +703,7 @@
             "linear": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true,
@@ -718,10 +718,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null,
+            "soft_phases": false,
             "separated": true
         }
     },
@@ -733,10 +733,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -747,10 +747,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -761,7 +761,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -775,10 +775,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -789,10 +789,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": false,
+            "not_spawned": true,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -803,10 +803,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -817,7 +817,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -831,7 +831,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -845,10 +845,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -859,10 +859,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -873,7 +873,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -887,10 +887,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -901,7 +901,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -915,10 +915,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -929,10 +929,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -943,7 +943,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -957,10 +957,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -971,10 +971,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -985,10 +985,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -999,10 +999,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1013,7 +1013,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1027,10 +1027,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1041,10 +1041,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1055,10 +1055,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1069,10 +1069,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1083,10 +1083,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1097,7 +1097,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1111,10 +1111,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1125,10 +1125,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1139,7 +1139,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1153,10 +1153,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1167,7 +1167,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1181,10 +1181,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1195,10 +1195,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1209,10 +1209,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
-            "soft_phases": null,
+            "soft_phases": false,
             "separated": true
         }
     },
@@ -1224,10 +1224,10 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1238,10 +1238,10 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
-            "soft_phases": null
+            "soft_phases": false
         }
     },
     {
@@ -1252,7 +1252,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1266,7 +1266,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1280,7 +1280,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1294,7 +1294,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1308,7 +1308,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1322,7 +1322,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1336,7 +1336,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1350,7 +1350,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": true
@@ -1364,7 +1364,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1380,7 +1380,7 @@
             "few obstacles": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false,
@@ -1396,7 +1396,7 @@
             "outdoors": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false,
@@ -1411,7 +1411,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1425,7 +1425,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1439,7 +1439,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1453,7 +1453,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1467,7 +1467,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1481,7 +1481,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1495,7 +1495,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1509,7 +1509,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1523,7 +1523,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1537,7 +1537,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1551,7 +1551,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1565,7 +1565,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1579,7 +1579,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1593,7 +1593,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1607,7 +1607,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1621,7 +1621,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1635,7 +1635,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1649,7 +1649,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1663,7 +1663,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1677,7 +1677,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -1691,7 +1691,7 @@
             "good_for_deli_mirror": false
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -1705,7 +1705,7 @@
             "good_for_deli_mirror": null
         },
         "boss": {
-            "spawn_at_load": null,
+            "not_spawned": null,
             "close_to_start": null,
             "phases": null,
             "soft_phases": null
@@ -1719,7 +1719,7 @@
             "good_for_deli_mirror": true
         },
         "boss": {
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false

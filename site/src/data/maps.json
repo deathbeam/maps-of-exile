@@ -36,9 +36,10 @@
             "names": [
                 "Calderus"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Oriath Square",
@@ -95,9 +96,10 @@
             "names": [
                 "Spinner of False Hope"
             ],
-            "spawn_at_load": false,
+            "not_spawned": true,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Weaver's Chambers",
@@ -145,9 +147,10 @@
             "names": [
                 "Hybrid Widow"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Temple of Decay Level 1",
@@ -195,9 +198,10 @@
                 "Herald of Ashes",
                 "Herald of Thunder"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Marketplace",
@@ -250,9 +254,10 @@
             "names": [
                 "Drought-Maddened Rhoa"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Fetid Pool",
@@ -297,9 +302,10 @@
             "names": [
                 "Warmonger"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Mansion Annex",
@@ -346,9 +352,10 @@
             "names": [
                 "The Steel Soul"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Grain Gate",
@@ -404,9 +411,10 @@
             "names": [
                 "Puruna, the Challenger"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Ledge",
@@ -463,9 +471,10 @@
             "names": [
                 "Beast of the Pits"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Wetlands",
@@ -513,9 +522,10 @@
             "names": [
                 "Glace"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Beacon",
@@ -565,9 +575,10 @@
             "names": [
                 "Lord of the Grey"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Cathedral Rooftop",
@@ -614,9 +625,10 @@
             "names": [
                 "Xixic, High Necromancer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Crypt",
@@ -704,9 +716,10 @@
             "names": [
                 "The Infernal King"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Kaom's Dream",
@@ -759,9 +772,10 @@
                 "Gnar, Eater of Carrion",
                 "Stonebeak, Battle Fowl"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Prisoner's Gate",
@@ -817,9 +831,10 @@
             "names": [
                 "Leif, the Swift-Handed"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Broken Bridge",
@@ -870,9 +885,10 @@
             "names": [
                 "Shavronne the Sickening"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Crematorium",
@@ -922,9 +938,10 @@
             "names": [
                 "Erebix, Light's Bane"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Fellshrine Ruins",
@@ -986,9 +1003,10 @@
             "names": [
                 "Hephaeus, The Hammer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Estate Walkways",
@@ -1039,9 +1057,10 @@
                 "Pileah, Burning Corpse",
                 "Pileah, Corpse Burner"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Oriath Square",
@@ -1093,9 +1112,10 @@
                 "Ara, Sister of Light",
                 "Khor, Sister of Shadows"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
+            "soft_phases": false,
             "separated": true
         },
         "layout": {
@@ -1157,7 +1177,7 @@
             "names": [
                 "Tyrant"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -1217,9 +1237,10 @@
             "names": [
                 "Ambrius, Legion Slayer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Daresso's Dream",
@@ -1277,9 +1298,10 @@
             "names": [
                 "The Forgotten Soldier"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Bath House",
@@ -1327,9 +1349,10 @@
             "names": [
                 "Captain Tanner Lightfoot"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Brine King's Reef",
@@ -1386,9 +1409,10 @@
             "names": [
                 "Eater of Souls"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Harvest",
@@ -1449,9 +1473,10 @@
                 "Oriath's Vigil",
                 "Oriath's Virtue"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Imperial Gardens",
@@ -1511,9 +1536,10 @@
                 "Pirate Treasure",
                 "Telvar, the Inebriated"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Coves Map",
@@ -1567,9 +1593,10 @@
             "names": [
                 "Megaera"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "good_for_open_mechanics": false,
@@ -1612,9 +1639,10 @@
             "names": [
                 "The Sanguine Siren"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Templar Courts",
@@ -1667,9 +1695,10 @@
             "names": [
                 "Kadaris, Crimson Mayor"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
+            "soft_phases": false,
             "separated": true
         },
         "layout": {
@@ -1724,9 +1753,10 @@
                 "Lord of the Hollows",
                 "Messenger of the Hollows"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Mines Level 1",
@@ -1783,9 +1813,10 @@
             "names": [
                 "Pagan Bishop of Agony"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Crypt",
@@ -1859,9 +1890,10 @@
             "names": [
                 "Woad, Mockery of Man"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Chamber of Innocence",
@@ -1919,9 +1951,10 @@
             "names": [
                 "Terror of the Infinite Drifts"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Oasis",
@@ -1976,9 +2009,10 @@
             "names": [
                 "Stalker of the Endless Dunes"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Quarry",
@@ -2054,9 +2088,10 @@
             "names": [
                 "Gazuul, Droughtspawn"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "good_for_open_mechanics": true,
@@ -2106,7 +2141,7 @@
             "names": [
                 "The Blacksmith"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
             "phases": false,
             "soft_phases": true
@@ -2168,9 +2203,10 @@
             "names": [
                 "Penitentiary Incarcerator"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Lower Prison",
@@ -2221,9 +2257,10 @@
                 "Breaker Toruul",
                 "Shrieker Eihal"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Mines Level 1",
@@ -2275,9 +2312,10 @@
             "names": [
                 "Pesquin, the Mad Baron"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Refinery",
@@ -2333,9 +2371,10 @@
             "names": [
                 "Drek, Apex Hunter"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Imperial Fields",
@@ -2387,9 +2426,10 @@
             "names": [
                 "The Eroding One"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Caverns",
@@ -2448,9 +2488,10 @@
                 "Skictis, Frostkeeper",
                 "Takatax Brittlethorn"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "good_for_open_mechanics": true,
@@ -2509,7 +2550,7 @@
             "names": [
                 "Guardian of the Phoenix"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -2546,9 +2587,10 @@
                 "Ciergan, Shadow Alchemist",
                 "The Shifting Ire"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
+            "soft_phases": false,
             "separated": true
         },
         "layout": {
@@ -2599,7 +2641,7 @@
             "names": [
                 "Captain Clayborne, The Accursed"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true,
@@ -2650,9 +2692,10 @@
             "names": [
                 "Aulen Greychain"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
+            "soft_phases": false,
             "separated": true
         },
         "layout": {
@@ -2696,9 +2739,10 @@
             "names": [
                 "Avatar of Undoing"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Quarry",
@@ -2753,9 +2797,10 @@
             "names": [
                 "Void Anomaly"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Caverns",
@@ -2846,9 +2891,10 @@
             "names": [
                 "Gorulis, Will-Thief"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Wetlands",
@@ -2902,9 +2948,10 @@
             "names": [
                 "Queen of the Great Tangle"
             ],
-            "spawn_at_load": false,
+            "not_spawned": true,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Riverways",
@@ -2955,9 +3002,10 @@
             "names": [
                 "Riftwalker"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Reliquary",
@@ -3012,7 +3060,7 @@
             "names": [
                 "Lycius, Midnight's Howl"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -3077,7 +3125,7 @@
             "names": [
                 "Guardian of the Hydra"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -3117,9 +3165,10 @@
             "names": [
                 "Mirage of Bones"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Boiling Lake",
@@ -3168,9 +3217,10 @@
                 "Leli Goya, Daughter of Ash",
                 "Uruk Baleh"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Beacon",
@@ -3261,9 +3311,10 @@
             "names": [
                 "Nightmare Manifest"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Belly of the Beast",
@@ -3346,9 +3397,10 @@
             "names": [
                 "Tore, Towering Ancient"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Maligaro's Sanctum",
@@ -3391,9 +3443,10 @@
             "names": [
                 "Shadow of the Vaal"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Ancient Pyramid",
@@ -3446,7 +3499,7 @@
             "names": [
                 "Guardian of the Minotaur"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -3486,9 +3539,10 @@
             "names": [
                 "Shock and Horror"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Cavern of Anger",
@@ -3548,9 +3602,10 @@
             "names": [
                 "Sebbert, Crescent's Point"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Lunaris Temple Level 1",
@@ -3604,9 +3659,10 @@
             "names": [
                 "He of Many Pieces"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Library",
@@ -3666,9 +3722,10 @@
             "names": [
                 "Burtok, Conjurer of Bones"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Crypt",
@@ -3743,9 +3800,10 @@
             "names": [
                 "Vision of Justice"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Imperial Gardens",
@@ -3803,9 +3861,10 @@
             "names": [
                 "Visceris"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Chamber of Sins Level 1",
@@ -3863,9 +3922,10 @@
             "names": [
                 "Maligaro the Mutilator"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Chamber of Sins Level 1",
@@ -3925,9 +3985,10 @@
             "names": [
                 "Erythrophagia"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Belly of the Beast",
@@ -3985,9 +4046,10 @@
             "names": [
                 "Ancient Architect"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Docks",
@@ -4064,9 +4126,10 @@
             "names": [
                 "Olof, Son of the Headsman"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Daresso's Dream",
@@ -4118,9 +4181,10 @@
             "names": [
                 "Guardian of the Chimera"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "Daresso's Dream",
@@ -4164,7 +4228,7 @@
                 "Poporo, the Highest Spire",
                 "Puruna, the Challenger"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -4218,9 +4282,10 @@
             "names": [
                 "The Goddess"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": true,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Imperial Gardens",
@@ -4302,9 +4367,10 @@
             "names": [
                 "Unravelling Horror"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": true
+            "phases": true,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Quay",
@@ -4370,9 +4436,10 @@
                 "Torr Olgosso",
                 "Wilorin Demontamer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Slums",
@@ -4425,9 +4492,10 @@
             "names": [
                 "High Lithomancer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
+            "soft_phases": false,
             "separated": true
         },
         "layout": {
@@ -4478,9 +4546,10 @@
             "names": [
                 "Nightmare's Omen"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Fetid Pool",
@@ -4532,9 +4601,10 @@
                 "Blackguard Avenger",
                 "Blackguard Tempest"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
-            "phases": false
+            "phases": false,
+            "soft_phases": false
         },
         "layout": {
             "tileset": "The Grand Promenade",
@@ -4595,7 +4665,7 @@
                 "Crusher of Gladiators",
                 "Shredder of Gladiators"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -4646,7 +4716,7 @@
             "names": [
                 "The Reaver"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -4702,7 +4772,7 @@
             "names": [
                 "Litanius, the Black Prayer"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -4756,7 +4826,7 @@
             "names": [
                 "Excellis Aurafix"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -4819,7 +4889,7 @@
             "names": [
                 "Gisale, Thought Thief"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -4877,7 +4947,7 @@
                 "Musky \"Two-Eyes\" Grenn",
                 "Susara, Siren of Pondium"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -4932,7 +5002,7 @@
             "names": [
                 "Belcer, the Pirate Lord"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -4994,7 +5064,7 @@
             "names": [
                 "Piety the Empyrean"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": true
@@ -5044,7 +5114,7 @@
             "names": [
                 "Tahsin, Warmaker"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -5099,7 +5169,7 @@
             "names": [
                 "Renkarr, The Kiln Keeper"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false,
@@ -5154,7 +5224,7 @@
             "names": [
                 "Murgeth Bogsong"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false,
@@ -5210,7 +5280,7 @@
                 "Massier",
                 "Master of the Blade"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5277,7 +5347,7 @@
             "names": [
                 "The Gorgon"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5341,7 +5411,7 @@
             "names": [
                 "Jorus, Sky's Edge"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5404,7 +5474,7 @@
             "names": [
                 "Varhesh, Shimmering Aberration"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -5585,7 +5655,7 @@
             "names": [
                 "The Primal One"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5640,7 +5710,7 @@
                 "Bazur",
                 "Liantra"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -5694,7 +5764,7 @@
             "names": [
                 "Arachnoxia"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5751,7 +5821,7 @@
             "names": [
                 "Blood Progenitor"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -5809,7 +5879,7 @@
             "names": [
                 "It That Fell"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -5864,7 +5934,7 @@
                 "Merveil, the Reflection",
                 "Merveil, the Returned"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -5931,7 +6001,7 @@
                 "The Fallen Queen",
                 "The Hollow Lady"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": true
@@ -5992,7 +6062,7 @@
                 "K'aj Q'ura",
                 "K'aj Y'ara'az"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -6073,7 +6143,7 @@
             "names": [
                 "Forest of Flames"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -6127,7 +6197,7 @@
             "names": [
                 "Portentia, the Foul"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": true,
             "soft_phases": false
@@ -6183,7 +6253,7 @@
             "names": [
                 "The Brittle Emperor"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false
@@ -6269,7 +6339,7 @@
             "names": [
                 "Stone of the Currents"
             ],
-            "spawn_at_load": true,
+            "not_spawned": false,
             "close_to_start": false,
             "phases": false,
             "soft_phases": false

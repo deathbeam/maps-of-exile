@@ -61,19 +61,17 @@ const preparedMaps = maps.map(map => {
   if (map.boss.separated) {
     mapTags.push("boss separated")
   }
-  if (map.image) {
-    if (!map.boss.spawn_at_load) {
-      mapTags.push("boss not spawned")
-    }
-    if (map.boss.close_to_start) {
-      mapTags.push("boss rushable")
-    }
-    if (map.boss.phases) {
-      mapTags.push("-boss with phases")
-    }
-    if (map.boss.soft_phases) {
-      mapTags.push("boss with soft phases")
-    }
+  if (map.boss.not_spawned) {
+    mapTags.push("boss not spawned")
+  }
+  if (map.boss.close_to_start) {
+    mapTags.push("boss rushable")
+  }
+  if (map.boss.phases) {
+    mapTags.push("-boss with phases")
+  }
+  if (map.boss.soft_phases) {
+    mapTags.push("boss with soft phases")
   }
 
   return {

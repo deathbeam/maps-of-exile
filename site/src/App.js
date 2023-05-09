@@ -280,7 +280,7 @@ function App() {
     const [val, setVal] = useState(() => {
       try {
         const item = localStorage.getItem(key)
-        return item ? JSON.parse(item) : def
+        return item && item !== "" ? JSON.parse(item) : def
       } catch (e) {
         console.warn(e)
         return def
@@ -293,9 +293,11 @@ function App() {
       } catch (e) {
         console.warn(e)
       }
-    }, [val])
+    }, [key, val])
 
-    return [val, (e) => startTransition(() => setVal(e.target.value))]
+    return [val, (e) => startTransition(() => {
+      setVal(e.target.value === "" ? def : e.target.value)
+    })]
   }
 
   const searchRef = useRef(null)
@@ -346,19 +348,19 @@ function App() {
             <div className="row g-2">
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Layout weight</label>
-                <input className="form-control" type="number" placeholder={layoutInput} onChange={setLayoutInput}/>
+                <input className="form-control" type="number" placeholder={layoutInput} defaultValue={layoutInput} onChange={setLayoutInput}/>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Density weight</label>
-                <input className="form-control" type="number" placeholder={densityInput} onChange={setDensityInput}/>
+                <input className="form-control" type="number" placeholder={densityInput} defaultValue={densityInput} onChange={setDensityInput}/>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Boss weight</label>
-                <input className="form-control" type="number" placeholder={bossInput} onChange={setBossInput}/>
+                <input className="form-control" type="number" placeholder={bossInput} defaultValue={bossInput} onChange={setBossInput}/>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Card weight</label>
-                <input className="form-control" type="number" placeholder={cardInput} onChange={setCardInput}/>
+                <input className="form-control" type="number" placeholder={cardInput} defaultValue={cardInput} onChange={setCardInput}/>
               </div>
             </div>
           </div>

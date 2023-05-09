@@ -121,10 +121,11 @@ const Tags = ({ tags, currentInput, addToInput }) => {
 
 const MapName = ({ map, currentInput, addToInput }) => {
   const mapImage = process.env.PUBLIC_URL + "/layout/" + map.name.toLowerCase().replaceAll(" ", "_") + ".png"
+  const tier = map.tiers[0]
   let tierColor = "text-light"
-  if (map.tier >= 11) {
+  if (tier >= 11) {
     tierColor = "text-danger"
-  } else if (map.tier >= 6) {
+  } else if (tier >= 6) {
     tierColor = "text-warning"
   }
 
@@ -136,7 +137,7 @@ const MapName = ({ map, currentInput, addToInput }) => {
       <span className="tooltip-tag-text tooltip-tag-fill">
         <img src={mapImage} alt="" loading="lazy"/>
       </span>
-      {name}
+      {name} <small>{map.tiers.join(", ")}</small>
     </span>
     <br/>
     {tags}
@@ -380,7 +381,7 @@ function App() {
           <th scope="col">
             <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
               <span className="tooltip-tag-text">
-                Map name, colored based on natural tier.
+                Map name, colored based on natural tier with map tiers for each voidstone next to it.
                 <br/>
                 <span className="badge bg-light text-dark me-1">tier 1-5</span>
                 <span className="badge bg-warning text-dark me-1">tier 6-10</span>

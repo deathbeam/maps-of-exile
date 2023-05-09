@@ -242,10 +242,10 @@ def get_maps(config):
 		map_url = cols[3].find('a').attrs['href']
 		map_url = map_url.replace("/us/", "")
 		map_url = config["poedb"].replace("{}", map_url)
-		tier = next(map(lambda x: int(x.strip()), cols[4].text.split(",")))
+		tiers = list(map(lambda x: int(x.strip()), cols[4].text.split(",")))
 		out.append({
 			"name": name,
-			"tier": tier,
+			"tiers": tiers,
 			"poedb": map_url
 		})
 

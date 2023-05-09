@@ -1,7 +1,13 @@
 [
     {
         "name": "Acton's Nightmare",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "boss": {
             "names": [
@@ -28,7 +34,13 @@
     },
     {
         "name": "Alleyways Map",
-        "tier": 1,
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Alleyways_Map",
         "boss": {
             "based_on": "Utula",
@@ -87,7 +99,13 @@
     },
     {
         "name": "Arachnid Nest Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Arachnid_Nest_Map",
         "boss": {
             "based_on": "The Weaver",
@@ -138,7 +156,13 @@
     },
     {
         "name": "Arachnid Tomb Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Arachnid_Tomb_Map",
         "boss": {
             "based_on": "Black Death",
@@ -189,7 +213,13 @@
     },
     {
         "name": "Arcade Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Arcade_Map",
         "boss": {
             "based_on": "The Voltaic Seal, \nThe Infernal Seal",
@@ -245,7 +275,13 @@
     },
     {
         "name": "Arid Lake Map",
-        "tier": 13,
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Arid_Lake_Map",
         "boss": {
             "based_on": "Oozeback Bloom",
@@ -294,7 +330,13 @@
     },
     {
         "name": "Armoury Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Armoury_Map",
         "boss": {
             "based_on": "General Gravicius",
@@ -343,7 +385,13 @@
     },
     {
         "name": "Arsenal Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Arsenal_Map",
         "boss": {
             "based_on": "Animated Sword",
@@ -402,7 +450,13 @@
     },
     {
         "name": "Atoll Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Atoll_Map",
         "boss": {
             "based_on": "Kuduku",
@@ -462,7 +516,13 @@
     },
     {
         "name": "Barrows Map",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Barrows_Map",
         "boss": {
             "based_on": "The Great White Beast",
@@ -513,7 +573,13 @@
     },
     {
         "name": "Beach Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Beach_Map",
         "boss": {
             "based_on": "Hailrake",
@@ -566,7 +632,13 @@
     },
     {
         "name": "Belfry Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Belfry_Map",
         "boss": {
             "based_on": "Act V Kitava",
@@ -617,7 +689,13 @@
     },
     {
         "name": "Bone Crypt Map",
-        "tier": 1,
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Bone_Crypt_Map",
         "boss": {
             "based_on": "Necromancer",
@@ -675,7 +753,13 @@
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
             "names": [
@@ -707,7 +791,13 @@
     },
     {
         "name": "Caldera Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Caldera_Map",
         "boss": {
             "based_on": "Kaom",
@@ -763,7 +853,13 @@
     },
     {
         "name": "Canyon Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Canyon_Map",
         "boss": {
             "based_on": "Eypecker, Steelchaw",
@@ -822,7 +918,13 @@
     },
     {
         "name": "Castle Ruins Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Castle_Ruins_Map",
         "boss": {
             "based_on": "Kraityn",
@@ -877,7 +979,13 @@
     },
     {
         "name": "Cells Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Cells_Map",
         "boss": {
             "based_on": "Fire Fury",
@@ -929,7 +1037,13 @@
     },
     {
         "name": "Cemetery Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Cemetery_Map",
         "boss": {
             "based_on": "Gruthkul, Mother of Despair",
@@ -995,7 +1109,13 @@
     },
     {
         "name": "Chateau Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Chateau_Map",
         "boss": {
             "based_on": "Perpetus",
@@ -1047,7 +1167,13 @@
     },
     {
         "name": "City Square Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/City_Square_Map",
         "boss": {
             "based_on": "The Matriach, Twisted Effigy",
@@ -1105,7 +1231,13 @@
     },
     {
         "name": "Cold River Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Cold_River_Map",
         "boss": {
             "names": [
@@ -1168,7 +1300,13 @@
     },
     {
         "name": "Colonnade Map",
-        "tier": 1,
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Colonnade_Map",
         "boss": {
             "based_on": "General Gravicius",
@@ -1228,7 +1366,13 @@
     },
     {
         "name": "Colosseum Map",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Colosseum_Map",
         "boss": {
             "based_on": "Daresso",
@@ -1289,7 +1433,13 @@
     },
     {
         "name": "Conservatory Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Conservatory_Map",
         "boss": {
             "based_on": "Hector Titucius, Eternal Servant",
@@ -1341,7 +1491,13 @@
     },
     {
         "name": "Coral Ruins Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Coral_Ruins_Map",
         "boss": {
             "based_on": "Gemling Legionnaire",
@@ -1400,7 +1556,13 @@
     },
     {
         "name": "Core Map",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Core_Map",
         "boss": {
             "based_on": "Act IV Maligaro, the Inquisitor\nAct IV Doedre Darktongue\nAct IV Shavronne of Umbra\nMalachai, the Nightmare",
@@ -1462,7 +1624,13 @@
     },
     {
         "name": "Courtyard Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Courtyard_Map",
         "boss": {
             "based_on": "Imperator Stantius Bitterblade,\nDraconarius Wilhelm Flamebrand,\nCompulsor Octavia Sparkfist",
@@ -1527,7 +1695,13 @@
     },
     {
         "name": "Coves Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Coves_Map",
         "boss": {
             "based_on": "Pirate Ghost, Stone Golem",
@@ -1587,7 +1761,13 @@
     },
     {
         "name": "Crater Map",
-        "tier": 13,
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Crater_Map",
         "boss": {
             "names": [
@@ -1630,7 +1810,13 @@
     },
     {
         "name": "Crimson Temple Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Crimson_Temple_Map",
         "boss": {
             "based_on": "Fire Fury",
@@ -1689,7 +1875,13 @@
     },
     {
         "name": "Crimson Township Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Crimson_Township_Map",
         "boss": {
             "names": [
@@ -1742,7 +1934,13 @@
     },
     {
         "name": "Crystal Ore Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Crystal_Ore_Map",
         "boss": {
             "based_on": "Pocked Goliath, Pikerivet,\nThe Burning Man",
@@ -1805,7 +2003,13 @@
     },
     {
         "name": "Cursed Crypt Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Cursed_Crypt_Map",
         "boss": {
             "based_on": "Archbishop Geofri the Abashed",
@@ -1858,7 +2062,13 @@
     },
     {
         "name": "Death and Taxes",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "boss": {
             "names": [
@@ -1881,7 +2091,13 @@
     },
     {
         "name": "Defiled Cathedral Map",
-        "tier": 13,
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Defiled_Cathedral_Map",
         "boss": {
             "based_on": "Act X Avarius",
@@ -1942,7 +2158,13 @@
     },
     {
         "name": "Desert Spring Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Desert_Spring_Map",
         "boss": {
             "based_on": "Shakira",
@@ -2000,7 +2222,13 @@
     },
     {
         "name": "Dig Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Dig_Map",
         "boss": {
             "based_on": "Garukhan",
@@ -2058,7 +2286,13 @@
     },
     {
         "name": "Doryani's Machinarium",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "boss": {
             "names": [
@@ -2082,7 +2316,13 @@
     },
     {
         "name": "Dry Sea Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Dry_Sea_Map",
         "boss": {
             "names": [
@@ -2133,7 +2373,13 @@
     },
     {
         "name": "Dunes Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Dunes_Map",
         "boss": {
             "based_on": "Hillock",
@@ -2194,7 +2440,13 @@
     },
     {
         "name": "Dungeon Map",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Dungeon_Map",
         "boss": {
             "based_on": "Brutus, Lord Incarcerator",
@@ -2247,7 +2499,13 @@
     },
     {
         "name": "Excavation Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Excavation_Map",
         "boss": {
             "based_on": "Voidscream, Hammerstorm",
@@ -2304,7 +2562,13 @@
     },
     {
         "name": "Factory Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Factory_Map",
         "boss": {
             "based_on": "General Adus",
@@ -2362,7 +2626,13 @@
     },
     {
         "name": "Fields Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Fields_Map",
         "boss": {
             "based_on": "Greust, Lord of the Forest",
@@ -2418,7 +2688,13 @@
     },
     {
         "name": "Flooded Mine Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Flooded_Mine_Map",
         "boss": {
             "based_on": "Stone Golem",
@@ -2480,7 +2756,13 @@
     },
     {
         "name": "Forbidden Woods Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "boss": {
             "names": [
@@ -2541,7 +2823,13 @@
     },
     {
         "name": "Forge of the Phoenix Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Forge_of_the_Phoenix_Map",
         "boss": {
             "based_on": "n/a",
@@ -2580,7 +2868,13 @@
     },
     {
         "name": "Foundry Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Foundry_Map",
         "boss": {
             "names": [
@@ -2635,7 +2929,13 @@
     },
     {
         "name": "Frozen Cabins Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Frozen_Cabins_Map",
         "boss": {
             "names": [
@@ -2686,7 +2986,13 @@
     },
     {
         "name": "Fungal Hollow Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "boss": {
             "names": [
@@ -2730,7 +3036,13 @@
     },
     {
         "name": "Geode Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Geode_Map",
         "boss": {
             "based_on": "Chaos Sentinel",
@@ -2789,7 +3101,13 @@
     },
     {
         "name": "Grotto Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Grotto_Map",
         "boss": {
             "based_on": "Chaos Sentinel",
@@ -2861,7 +3179,13 @@
     },
     {
         "name": "Hallowed Ground",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "boss": {
             "names": [
@@ -2882,7 +3206,13 @@
     },
     {
         "name": "Infested Valley Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Infested_Valley_Map",
         "boss": {
             "based_on": "Ryslatha, the Puppet Mistress",
@@ -2939,7 +3269,13 @@
     },
     {
         "name": "Jungle Valley Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Jungle_Valley_Map",
         "boss": {
             "based_on": "The Weaver",
@@ -2993,7 +3329,13 @@
     },
     {
         "name": "Laboratory Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Laboratory_Map",
         "boss": {
             "based_on": "The Unshaped",
@@ -3051,7 +3393,13 @@
     },
     {
         "name": "Lair Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Lair_Map",
         "boss": {
             "based_on": "Rigwald",
@@ -3116,7 +3464,13 @@
     },
     {
         "name": "Lair of the Hydra Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Lair_of_the_Hydra_Map",
         "boss": {
             "based_on": "n/a",
@@ -3156,7 +3510,13 @@
     },
     {
         "name": "Leyline Map",
-        "tier": 13,
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Leyline_Map",
         "boss": {
             "based_on": "Nightwane",
@@ -3206,7 +3566,13 @@
     },
     {
         "name": "Lighthouse Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
         "boss": {
             "based_on": "Redblade Warbands",
@@ -3263,7 +3629,13 @@
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "boss": {
             "names": [
@@ -3302,7 +3674,13 @@
     },
     {
         "name": "Malformation Map",
-        "tier": 11,
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Malformation_Map",
         "boss": {
             "based_on": "Act IV Piety",
@@ -3356,7 +3734,13 @@
     },
     {
         "name": "Mao Kun",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "boss": {
             "names": [
@@ -3388,7 +3772,13 @@
     },
     {
         "name": "Marshes Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Marshes_Map",
         "boss": {
             "based_on": "Barkhul",
@@ -3435,7 +3825,13 @@
     },
     {
         "name": "Maze Map",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Maze_Map",
         "boss": {
             "based_on": "Vaal Oversoul",
@@ -3490,7 +3886,13 @@
     },
     {
         "name": "Maze of the Minotaur Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Maze_of_the_Minotaur_Map",
         "boss": {
             "based_on": "n/a",
@@ -3530,7 +3932,13 @@
     },
     {
         "name": "Mineral Pools Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Mineral_Pools_Map",
         "boss": {
             "based_on": "Merveil",
@@ -3593,7 +4001,13 @@
     },
     {
         "name": "Moon Temple Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Moon_Temple_Map",
         "boss": {
             "based_on": "Dusk, Harbinger of Lunaris",
@@ -3650,7 +4064,13 @@
     },
     {
         "name": "Museum Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Museum_Map",
         "boss": {
             "based_on": "Act IV Maligaro",
@@ -3713,7 +4133,13 @@
     },
     {
         "name": "Necropolis Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Necropolis_Map",
         "boss": {
             "based_on": "Giant Bonestalker",
@@ -3768,7 +4194,13 @@
     },
     {
         "name": "Olmec's Sanctum",
-        "tier": 1,
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "boss": {
             "names": [
@@ -3791,7 +4223,13 @@
     },
     {
         "name": "Orchard Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Orchard_Map",
         "boss": {
             "based_on": "Goddess of Justice",
@@ -3852,7 +4290,13 @@
     },
     {
         "name": "Overgrown Ruin Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Overgrown_Ruin_Map",
         "boss": {
             "based_on": "Act VII Maligaro",
@@ -3913,7 +4357,13 @@
     },
     {
         "name": "Overgrown Shrine Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Overgrown_Shrine_Map",
         "boss": {
             "based_on": "Act IX Maligaro",
@@ -3976,7 +4426,13 @@
     },
     {
         "name": "Phantasmagoria Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Phantasmagoria_Map",
         "boss": {
             "based_on": "Act IV Doedre",
@@ -4037,7 +4493,13 @@
     },
     {
         "name": "Pier Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Pier_Map",
         "boss": {
             "based_on": "Undying Worker",
@@ -4092,7 +4554,13 @@
     },
     {
         "name": "Pillars of Arun",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "boss": {
             "names": [
@@ -4117,7 +4585,13 @@
     },
     {
         "name": "Pit Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Pit_Map",
         "boss": {
             "based_on": "Barkhul",
@@ -4172,7 +4646,13 @@
     },
     {
         "name": "Pit of the Chimera Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Pit_of_the_Chimera_Map",
         "boss": {
             "based_on": "n/a",
@@ -4218,7 +4698,13 @@
     },
     {
         "name": "Plateau Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Plateau_Map",
         "boss": {
             "based_on": "Kuduku and Kadaka",
@@ -4274,7 +4760,13 @@
     },
     {
         "name": "Plaza Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Plaza_Map",
         "boss": {
             "based_on": "Goddess of Justice",
@@ -4326,7 +4818,13 @@
     },
     {
         "name": "Poorjoy's Asylum",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "boss": {
             "names": [
@@ -4358,7 +4856,13 @@
     },
     {
         "name": "Port Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Port_Map",
         "boss": {
             "based_on": "Knitted Horror",
@@ -4422,7 +4926,13 @@
     },
     {
         "name": "Precinct Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Precinct_Map",
         "boss": {
             "based_on": "2-6 Rogue Exiles",
@@ -4486,7 +4996,13 @@
     },
     {
         "name": "Primordial Blocks Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "boss": {
             "names": [
@@ -4537,7 +5053,13 @@
     },
     {
         "name": "Primordial Pool Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Primordial_Pool_Map",
         "boss": {
             "based_on": "Malachai",
@@ -4592,7 +5114,13 @@
     },
     {
         "name": "Promenade Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Promenade_Map",
         "boss": {
             "based_on": "Captain Arteri, Blackguard Mage",
@@ -4654,7 +5182,13 @@
     },
     {
         "name": "Racecourse Map",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Racecourse_Map",
         "boss": {
             "based_on": "Shackled Hellion, Fighting Bull, Mad Gladiator",
@@ -4707,7 +5241,13 @@
     },
     {
         "name": "Ramparts Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Ramparts_Map",
         "boss": {
             "based_on": "Blackguard Duelist",
@@ -4764,7 +5304,13 @@
     },
     {
         "name": "Relic Chambers Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Relic_Chambers_Map",
         "boss": {
             "based_on": "Colossal Bonestalker",
@@ -4817,7 +5363,13 @@
     },
     {
         "name": "Residence Map",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Residence_Map",
         "boss": {
             "based_on": "Caliga, Imperatrix",
@@ -4880,7 +5432,13 @@
     },
     {
         "name": "Scriptorium Map",
-        "tier": 1,
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Scriptorium_Map",
         "boss": {
             "based_on": "Act IV Shavronne",
@@ -4937,7 +5495,13 @@
     },
     {
         "name": "Shipyard Map",
-        "tier": 8,
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Shipyard_Map",
         "boss": {
             "based_on": "Brinerot Warbands",
@@ -4994,7 +5558,13 @@
     },
     {
         "name": "Shore Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Shore_Map",
         "boss": {
             "based_on": "Fairgraves Eternal",
@@ -5055,7 +5625,13 @@
     },
     {
         "name": "Shrine Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Shrine_Map",
         "boss": {
             "based_on": "Act III Piety",
@@ -5106,7 +5682,13 @@
     },
     {
         "name": "Siege Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Siege_Map",
         "boss": {
             "based_on": "Tukohama",
@@ -5163,7 +5745,13 @@
     },
     {
         "name": "Silo Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Silo_Map",
         "boss": {
             "names": [
@@ -5218,7 +5806,13 @@
     },
     {
         "name": "Stagnation Map",
-        "tier": 2,
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Stagnation_Map",
         "boss": {
             "names": [
@@ -5270,7 +5864,13 @@
     },
     {
         "name": "Strand Map",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Strand_Map",
         "boss": {
             "based_on": "Calaf, Headstaver,\nKraityn",
@@ -5338,7 +5938,13 @@
     },
     {
         "name": "Sulphur Vents Map",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Sulphur_Vents_Map",
         "boss": {
             "based_on": "The Basilisk",
@@ -5387,7 +5993,13 @@
     },
     {
         "name": "Synthesised Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Synthesised_Map",
         "boss": {
             "names": [
@@ -5402,7 +6014,13 @@
     },
     {
         "name": "Temple Map",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Temple_Map",
         "boss": {
             "based_on": "Dawn, Harbinger of Solaris",
@@ -5465,7 +6083,13 @@
     },
     {
         "name": "Terrace Map",
-        "tier": 14,
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Terrace_Map",
         "boss": {
             "based_on": "Yugul",
@@ -5526,7 +6150,13 @@
     },
     {
         "name": "The Coward's Trial",
-        "tier": 7,
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/The_Cowards_Trial",
         "boss": {
             "names": [
@@ -5555,7 +6185,13 @@
     },
     {
         "name": "The Putrid Cloister",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "boss": {
             "names": [
@@ -5588,7 +6224,13 @@
     },
     {
         "name": "The Twilight Temple",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "boss": {
             "names": [
@@ -5625,7 +6267,13 @@
     },
     {
         "name": "The Vinktar Square",
-        "tier": 5,
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "boss": {
             "names": [
@@ -5646,7 +6294,13 @@
     },
     {
         "name": "Thicket Map",
-        "tier": 13,
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Thicket_Map",
         "boss": {
             "based_on": "Blood Chieftain",
@@ -5700,7 +6354,13 @@
     },
     {
         "name": "Tower Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Tower_Map",
         "boss": {
             "based_on": "Act VI Shavronne/Brutus",
@@ -5756,7 +6416,13 @@
     },
     {
         "name": "Toxic Sewer Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Toxic_Sewer_Map",
         "boss": {
             "based_on": "Black Death",
@@ -5813,7 +6479,13 @@
     },
     {
         "name": "Tropical Island Map",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Tropical_Island_Map",
         "boss": {
             "based_on": "Chieftain, Aidan the Frenzied, Nadia the Soothing",
@@ -5870,7 +6542,13 @@
     },
     {
         "name": "Underground River Map",
-        "tier": 15,
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Underground_River_Map",
         "boss": {
             "based_on": "Q'uru",
@@ -5924,7 +6602,13 @@
     },
     {
         "name": "Underground Sea Map",
-        "tier": 10,
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Underground_Sea_Map",
         "boss": {
             "based_on": "Merveil (First Form)",
@@ -5990,7 +6674,13 @@
     },
     {
         "name": "Vaal Pyramid Map",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Vaal_Pyramid_Map",
         "boss": {
             "based_on": "Alal the Terrifying, Kali the Crazed, Orcus the Reaver",
@@ -6051,7 +6741,13 @@
     },
     {
         "name": "Vaal Temple Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Vaal_Temple_Map",
         "boss": {
             "based_on": "A'alai, Q'ura, Y'ara'az",
@@ -6101,7 +6797,13 @@
     },
     {
         "name": "Vaults of Atziri",
-        "tier": 4,
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "boss": {},
         "layout": {},
@@ -6135,7 +6837,13 @@
     },
     {
         "name": "Volcano Map",
-        "tier": 16,
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Volcano_Map",
         "boss": {
             "based_on": "Torchoak Grove",
@@ -6188,7 +6896,13 @@
     },
     {
         "name": "Waste Pool Map",
-        "tier": 6,
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Waste_Pool_Map",
         "boss": {
             "based_on": "Act VIII Doedre",
@@ -6245,7 +6959,13 @@
     },
     {
         "name": "Wasteland Map",
-        "tier": 9,
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Wasteland_Map",
         "boss": {
             "based_on": "Voll, Emperor of Purity",
@@ -6294,7 +7014,13 @@
     },
     {
         "name": "Whakawairua Tuahu",
-        "tier": 3,
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "boss": {
             "names": [
@@ -6331,7 +7057,13 @@
     },
     {
         "name": "Wharf Map",
-        "tier": 12,
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "poedb": "https://poedb.tw/us/Wharf_Map",
         "boss": {
             "based_on": "Lightning Golem",

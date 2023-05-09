@@ -70,7 +70,9 @@ function filterMaps(ratedMaps, searchInput) {
           split.find(s => c.name.toLowerCase().includes(s.trim().toLowerCase()))
         ) ||
         split.every(s =>
-          m.tags.find(t => t.toLowerCase().includes(s.trim().toLowerCase()))
+          m.tags.find(t =>
+            t.name.toLowerCase().includes(s.trim().toLowerCase())
+          )
         )
     )
     .sort((a, b) => (b.score || 0) - (a.score || 0))
@@ -126,27 +128,56 @@ const RatingBadge = ({ rating }) => {
 
 const Tags = ({ tags, currentInput, addToInput }) => {
   return tags.map(t => {
-    const searched = currentInput.toLowerCase().includes(t)
-    const color = searched
-      ? 'bg-primary'
-      : t.startsWith('+')
-      ? 'bg-success'
-      : t.startsWith('-')
-      ? 'bg-danger'
-      : 'bg-secondary'
-    const suff = searched ? (
+    const val = t.name
+    const info = t.info
+
+    const searched = currentInput.toLowerCase().includes(val)
+    let color = 'bg-secondary'
+    if (searched) {
+      color = 'bg-primary'
+    } else {
+      if (val.startsWith('+')) {
+        color = 'bg-success'
+      } else if (val.startsWith('-')) {
+        color = 'bg-danger'
+      } else if (val.startsWith('soul')) {
+        color = 'bg-info'
+      }
+    }
+
+    const noticeSuff = info ? (
+      <>
+        {' '}
+        <b>*</b>
+      </>
+    ) : null
+
+    const searchedSuff = searched ? (
       <>
         {' '}
         <span className="text-danger-emphasis">x</span>
       </>
     ) : null
+
     const clazz = 'badge rounded-pill text-dark me-1 ' + color
-    return (
-      <button className={clazz} onClick={() => addToInput(t)}>
-        {t}
-        {suff}
+    const out = (
+      <button className={clazz} onClick={() => addToInput(val)}>
+        {val}
+        {noticeSuff}
+        {searchedSuff}
       </button>
     )
+
+    if (info) {
+      return (
+        <span className="tooltip-tag tooltip-tag-right">
+          <span className="tooltip-tag-text">{info}</span>
+          {out}
+        </span>
+      )
+    }
+
+    return out
   })
 }
 

@@ -256,12 +256,12 @@ def get_maps_template(maps, existing_maps):
 			"name": map["name"],
 			"image": False,
 			"layout": {
-				"good_for_open_mechanics": None,
-				"good_for_deli_mirror": None
+				"league_mechanics": None,
+				"delirium_mirror": None
 			},
 			"boss": {
 				"not_spawned": None,
-				"close_to_start": None,
+				"rushable": None,
 				"phases": None,
 				"soft_phases": None
 			}

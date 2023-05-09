@@ -48,15 +48,15 @@
                 "Calderus"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -112,14 +112,14 @@
                 "Spinner of False Hope"
             ],
             "not_spawned": true,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -167,15 +167,15 @@
                 "Hybrid Widow"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 6,
@@ -222,14 +222,14 @@
                 "Herald of Thunder"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -282,15 +282,15 @@
                 "Drought-Maddened Rhoa"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -334,14 +334,14 @@
                 "Warmonger"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -388,14 +388,14 @@
                 "The Steel Soul"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -451,7 +451,7 @@
                 "Puruna, the Challenger"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
@@ -459,8 +459,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -515,14 +515,14 @@
                 "Beast of the Pits"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -570,7 +570,7 @@
                 "Glace"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -578,8 +578,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -627,7 +627,7 @@
                 "Lord of the Grey"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": true,
             "soft_phases": false
         },
@@ -635,8 +635,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -681,14 +681,14 @@
                 "Xixic, High Necromancer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -782,14 +782,14 @@
                 "The Infernal King"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -842,7 +842,7 @@
                 "Stonebeak, Battle Fowl"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -850,8 +850,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -905,15 +905,15 @@
                 "Leif, the Swift-Handed"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -963,13 +963,13 @@
                 "Shavronne the Sickening"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1020,14 +1020,14 @@
                 "Erebix, Light's Bane"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -1089,14 +1089,14 @@
                 "Hephaeus, The Hammer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1147,15 +1147,15 @@
                 "Pileah, Corpse Burner"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -1207,14 +1207,14 @@
                 "Khor, Sister of Shadows"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "rating": {
@@ -1277,15 +1277,15 @@
                 "Tyrant"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 6,
@@ -1341,15 +1341,15 @@
                 "Ambrius, Legion Slayer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1406,14 +1406,14 @@
                 "The Forgotten Soldier"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1461,15 +1461,15 @@
                 "Captain Tanner Lightfoot"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1525,14 +1525,14 @@
                 "Eater of Souls"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": true,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -1572,7 +1572,10 @@
             "Vile Power",
             "Vinia's Token"
         ],
-        "image": true
+        "image": true,
+        "info": {
+            "rushable": "Only rushable in elder guardian maps where bosses are already dead."
+        }
     },
     {
         "name": "Courtyard Map",
@@ -1593,15 +1596,15 @@
                 "Oriath's Virtue"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1660,15 +1663,15 @@
                 "Telvar, the Inebriated"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1722,13 +1725,13 @@
                 "Megaera"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -1773,14 +1776,14 @@
                 "The Sanguine Siren"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -1834,14 +1837,14 @@
                 "Kadaris, Crimson Mayor"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false,
+            "league_mechanics": false,
+            "delirium_mirror": false,
             "linear": true,
             "outdoors": true
         },
@@ -1897,13 +1900,13 @@
                 "Messenger of the Hollows"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -1961,13 +1964,13 @@
                 "Pagan Bishop of Agony"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -2048,15 +2051,15 @@
                 "Woad, Mockery of Man"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2113,7 +2116,7 @@
                 "Terror of the Infinite Drifts"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
@@ -2121,8 +2124,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2175,15 +2178,15 @@
                 "Stalker of the Endless Dunes"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -2265,13 +2268,13 @@
                 "Gazuul, Droughtspawn"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "rating": {
@@ -2323,7 +2326,7 @@
                 "The Blacksmith"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": true
         },
@@ -2331,8 +2334,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -2389,13 +2392,13 @@
                 "Penitentiary Incarcerator"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -2447,14 +2450,14 @@
                 "Shrieker Eihal"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2506,15 +2509,15 @@
                 "Pesquin, the Mad Baron"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -2569,15 +2572,15 @@
                 "Drek, Apex Hunter"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -2628,13 +2631,13 @@
                 "The Eroding One"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -2695,13 +2698,13 @@
                 "Takatax Brittlethorn"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true,
             "linear": true
         },
@@ -2762,14 +2765,14 @@
                 "Guardian of the Phoenix"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
@@ -2804,14 +2807,14 @@
                 "The Shifting Ire"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -2864,14 +2867,14 @@
                 "Captain Clayborne, The Accursed"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true,
+            "league_mechanics": false,
+            "delirium_mirror": true,
             "linear": true
         },
         "rating": {
@@ -2921,14 +2924,14 @@
                 "Aulen Greychain"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -2973,14 +2976,14 @@
                 "Avatar of Undoing"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -3035,14 +3038,14 @@
                 "Void Anomaly"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -3139,7 +3142,7 @@
                 "Gorulis, Will-Thief"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
@@ -3147,8 +3150,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3200,7 +3203,7 @@
                 "Queen of the Great Tangle"
             ],
             "not_spawned": true,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
@@ -3208,8 +3211,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -3258,14 +3261,14 @@
                 "Riftwalker"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -3320,15 +3323,15 @@
                 "Lycius, Midnight's Howl"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3389,15 +3392,15 @@
                 "Guardian of the Hydra"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
@@ -3433,15 +3436,15 @@
                 "Mirage of Bones"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -3489,7 +3492,7 @@
                 "Uruk Baleh"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -3497,8 +3500,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -3593,15 +3596,15 @@
                 "Nightmare Manifest"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3689,14 +3692,14 @@
                 "Tore, Towering Ancient"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -3739,13 +3742,13 @@
                 "Shadow of the Vaal"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -3799,15 +3802,15 @@
                 "Guardian of the Minotaur"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
@@ -3843,14 +3846,14 @@
                 "Shock and Horror"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -3910,14 +3913,14 @@
                 "Sebbert, Crescent's Point"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -3971,13 +3974,13 @@
                 "He of Many Pieces"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -4038,14 +4041,14 @@
                 "Burtok, Conjurer of Bones"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -4126,14 +4129,14 @@
                 "Vision of Justice"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4191,13 +4194,13 @@
                 "Visceris"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4256,15 +4259,15 @@
                 "Maligaro the Mutilator"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4323,14 +4326,14 @@
                 "Erythrophagia"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -4388,14 +4391,14 @@
                 "Ancient Architect"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -4478,15 +4481,15 @@
                 "Olof, Son of the Headsman"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -4537,15 +4540,15 @@
                 "Guardian of the Chimera"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
@@ -4588,7 +4591,7 @@
                 "Puruna, the Challenger"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
@@ -4596,8 +4599,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -4646,13 +4649,13 @@
                 "The Goddess"
             ],
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -4741,15 +4744,15 @@
                 "Unravelling Horror"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -4814,15 +4817,15 @@
                 "Wilorin Demontamer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -4875,14 +4878,14 @@
                 "High Lithomancer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -4934,7 +4937,7 @@
                 "Nightmare's Omen"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -4942,8 +4945,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -4993,7 +4996,7 @@
                 "Blackguard Tempest"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -5001,8 +5004,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -5061,7 +5064,7 @@
                 "Shredder of Gladiators"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
@@ -5069,8 +5072,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -5116,7 +5119,7 @@
                 "The Reaver"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -5124,8 +5127,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -5176,14 +5179,14 @@
                 "Litanius, the Black Prayer"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5234,14 +5237,14 @@
                 "Excellis Aurafix"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5301,13 +5304,13 @@
                 "Gisale, Thought Thief"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -5363,14 +5366,14 @@
                 "Susara, Siren of Pondium"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5422,7 +5425,7 @@
                 "Belcer, the Pirate Lord"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
@@ -5430,8 +5433,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5488,13 +5491,13 @@
                 "Piety the Empyrean"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 4,
@@ -5542,7 +5545,7 @@
                 "Tahsin, Warmaker"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
@@ -5550,8 +5553,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5602,14 +5605,14 @@
                 "Renkarr, The Kiln Keeper"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true,
+            "league_mechanics": false,
+            "delirium_mirror": true,
             "linear": true,
             "few obstacles": true
         },
@@ -5663,14 +5666,14 @@
                 "Murgeth Bogsong"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false,
+            "league_mechanics": false,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "rating": {
@@ -5724,7 +5727,7 @@
                 "Master of the Blade"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -5732,8 +5735,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -5795,15 +5798,15 @@
                 "The Gorgon"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -5869,14 +5872,14 @@
                 "Jorus, Sky's Edge"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -5936,15 +5939,15 @@
                 "Varhesh, Shimmering Aberration"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -6145,13 +6148,13 @@
                 "The Primal One"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -6204,14 +6207,14 @@
                 "Liantra"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,
@@ -6262,15 +6265,15 @@
                 "Arachnoxia"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -6323,7 +6326,7 @@
                 "Blood Progenitor"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
@@ -6331,8 +6334,8 @@
             "few_obstacles": true,
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -6385,15 +6388,15 @@
                 "It That Fell"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 10,
@@ -6444,13 +6447,13 @@
                 "Merveil, the Returned"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 8,
@@ -6515,13 +6518,13 @@
                 "The Hollow Lady"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -6580,13 +6583,13 @@
                 "K'aj Y'ara'az"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 2,
@@ -6671,14 +6674,14 @@
                 "Forest of Flames"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -6729,15 +6732,15 @@
                 "Portentia, the Foul"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "linear": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 10,
@@ -6789,15 +6792,15 @@
                 "The Brittle Emperor"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "rating": {
             "layout": 6,
@@ -6885,15 +6888,15 @@
                 "Stone of the Currents"
             ],
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
             "outdoors": true,
             "linear": true,
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "rating": {
             "layout": 8,

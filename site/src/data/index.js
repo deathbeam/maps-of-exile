@@ -27,45 +27,50 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
+  function pushTag(info, destination, source, key, name = null) {
+    const tag = source[key]
+
+    if (tag) {
+      const val =
+        typeof tag == 'boolean'
+          ? name || key.replaceAll('_', ' ')
+          : tag.toLowerCase()
+      const out = {
+        name: val
+      }
+      if (info && info[key]) {
+        out.info = info[key]
+      }
+      destination.push(out)
+    }
+  }
+
   const mapTags = []
-  if (map.layout.few_obstacles) {
-    mapTags.push('few obstacles')
-  }
-  if (map.layout.outdoors) {
-    mapTags.push('outdoors')
-  }
-  if (map.layout.linear) {
-    mapTags.push('linear')
-  }
-  if (map.pantheon) {
-    mapTags.push(map.pantheon.toLowerCase())
-  }
-  if (map.layout.good_for_open_mechanics) {
-    mapTags.push('+league mechanics')
-  }
-  if (map.layout.good_for_deli_mirror) {
-    mapTags.push('+delirium mirror')
-  }
+  pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
+  pushTag(map.info, mapTags, map.layout, 'outdoors')
+  pushTag(map.info, mapTags, map.layout, 'linear')
+  pushTag(
+    map.info,
+    mapTags,
+    map.layout,
+    'league_mechanics',
+    '+league mechanics'
+  )
+  pushTag(map.info, mapTags, map.layout, 'delirium_mirror', '+delirium mirror')
+
+  pushTag(map.info, mapTags, map.boss, 'separated', 'boss separated')
+  pushTag(map.info, mapTags, map.boss, 'not_spawned', '+boss not spawned')
+  pushTag(map.info, mapTags, map.boss, 'rushable', '+boss rushable')
+  pushTag(map.info, mapTags, map.boss, 'phases', '-boss with phases')
+  pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
+
+  pushTag(map.info, mapTags, map, 'pantheon')
+
   if (map.boss.names) {
     const names = map.boss.names.filter(n => !n.includes('Merveil'))
     if (names.length > 1) {
-      mapTags.push(`${names.length} bosses`)
+      mapTags.push({ name: `${names.length} bosses` })
     }
-  }
-  if (map.boss.separated) {
-    mapTags.push('boss separated')
-  }
-  if (map.boss.not_spawned) {
-    mapTags.push('boss not spawned')
-  }
-  if (map.boss.close_to_start) {
-    mapTags.push('boss rushable')
-  }
-  if (map.boss.phases) {
-    mapTags.push('-boss with phases')
-  }
-  if (map.boss.soft_phases) {
-    mapTags.push('boss with soft phases')
   }
 
   return {
@@ -73,15 +78,24 @@ export const preparedMaps = maps.map(map => {
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     cards: mapCards,
-    tags: mapTags.sort()
+    tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
   }
 })
 
-export const preparedTags = [
-  ...new Set(
-    preparedMaps
-      .flatMap(m => m.tags)
-      .map(t => t.replace(/\d+ bosses/, 'bosses'))
-      .map(t => t.replace(/soul of .+/, 'soul of'))
-  )
-].sort()
+export const preparedTags = []
+const preparedTagsMap = new Map()
+for (const item of preparedMaps
+  .flatMap(m => m.tags)
+  .map(t => ({
+    name: t.name
+      .replace(/\d+ bosses/, 'bosses')
+      .replace(/soul of .+/, 'soul of')
+  }))
+  .sort((a, b) => a.name.localeCompare(b.name))) {
+  if (!preparedTagsMap.has(item.name)) {
+    preparedTagsMap.set(item.name, true)
+    preparedTags.push({
+      name: item.name
+    })
+  }
+}

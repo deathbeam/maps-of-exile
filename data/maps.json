@@ -3,12 +3,12 @@
         "name": "Acton's Nightmare",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -17,12 +17,12 @@
         "name": "Alleyways Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -31,12 +31,12 @@
         "name": "Arachnid Nest Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": true,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -45,12 +45,12 @@
         "name": "Arachnid Tomb Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -59,12 +59,12 @@
         "name": "Arcade Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -73,12 +73,12 @@
         "name": "Arid Lake Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -87,12 +87,12 @@
         "name": "Armoury Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -101,12 +101,12 @@
         "name": "Arsenal Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -115,12 +115,12 @@
         "name": "Atoll Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -129,12 +129,12 @@
         "name": "Barrows Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -143,12 +143,12 @@
         "name": "Beach Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -157,12 +157,12 @@
         "name": "Belfry Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": true,
             "soft_phases": false
         }
@@ -171,12 +171,12 @@
         "name": "Bone Crypt Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -185,12 +185,12 @@
         "name": "Caer Blaidd, Wolfpack's Den",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -199,12 +199,12 @@
         "name": "Caldera Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -213,12 +213,12 @@
         "name": "Canyon Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -227,12 +227,12 @@
         "name": "Castle Ruins Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -241,12 +241,12 @@
         "name": "Cells Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -255,12 +255,12 @@
         "name": "Cemetery Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -269,12 +269,12 @@
         "name": "Chateau Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -283,12 +283,12 @@
         "name": "City Square Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -297,13 +297,13 @@
         "name": "Cold River Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false,
             "separated": true
@@ -313,12 +313,12 @@
         "name": "Colonnade Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -327,12 +327,12 @@
         "name": "Colosseum Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -341,12 +341,12 @@
         "name": "Conservatory Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -355,12 +355,12 @@
         "name": "Coral Ruins Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -369,26 +369,29 @@
         "name": "Core Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": true,
             "phases": true,
             "soft_phases": false
+        },
+        "info": {
+            "rushable": "Only rushable in elder guardian maps where bosses are already dead."
         }
     },
     {
         "name": "Courtyard Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -397,12 +400,12 @@
         "name": "Coves Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -411,12 +414,12 @@
         "name": "Crater Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -425,12 +428,12 @@
         "name": "Crimson Temple Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -439,14 +442,14 @@
         "name": "Crimson Township Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false,
+            "league_mechanics": false,
+            "delirium_mirror": false,
             "linear": true,
             "outdoors": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
@@ -456,12 +459,12 @@
         "name": "Crystal Ore Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -470,12 +473,12 @@
         "name": "Cursed Crypt Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -484,12 +487,12 @@
         "name": "Death and Taxes",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -498,12 +501,12 @@
         "name": "Defiled Cathedral Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -512,12 +515,12 @@
         "name": "Desert Spring Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -526,12 +529,12 @@
         "name": "Dig Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -540,12 +543,12 @@
         "name": "Doryani's Machinarium",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -554,13 +557,13 @@
         "name": "Dry Sea Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -569,12 +572,12 @@
         "name": "Dunes Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": true
         }
@@ -583,12 +586,12 @@
         "name": "Dungeon Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -597,12 +600,12 @@
         "name": "Excavation Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -611,12 +614,12 @@
         "name": "Factory Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -625,12 +628,12 @@
         "name": "Fields Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -639,12 +642,12 @@
         "name": "Flooded Mine Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -653,14 +656,14 @@
         "name": "Forbidden Woods Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false,
+            "league_mechanics": true,
+            "delirium_mirror": false,
             "outdoors": true,
             "linear": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -669,12 +672,12 @@
         "name": "Forge of the Phoenix Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -683,12 +686,12 @@
         "name": "Foundry Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
@@ -698,13 +701,13 @@
         "name": "Frozen Cabins Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true,
+            "league_mechanics": false,
+            "delirium_mirror": true,
             "linear": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true,
             "separated": true
@@ -714,12 +717,12 @@
         "name": "Fungal Hollow Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
@@ -729,12 +732,12 @@
         "name": "Geode Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -743,12 +746,12 @@
         "name": "Grotto Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -757,12 +760,12 @@
         "name": "Hallowed Ground",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -771,12 +774,12 @@
         "name": "Infested Valley Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -785,12 +788,12 @@
         "name": "Jungle Valley Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": true,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -799,12 +802,12 @@
         "name": "Laboratory Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -813,12 +816,12 @@
         "name": "Lair Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -827,12 +830,12 @@
         "name": "Lair of the Hydra Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -841,12 +844,12 @@
         "name": "Leyline Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -855,12 +858,12 @@
         "name": "Lighthouse Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -869,12 +872,12 @@
         "name": "Maelstr\u00f6m of Chaos",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -883,12 +886,12 @@
         "name": "Malformation Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -897,12 +900,12 @@
         "name": "Mao Kun",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -911,12 +914,12 @@
         "name": "Marshes Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -925,12 +928,12 @@
         "name": "Maze Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -939,12 +942,12 @@
         "name": "Maze of the Minotaur Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -953,12 +956,12 @@
         "name": "Mineral Pools Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -967,12 +970,12 @@
         "name": "Moon Temple Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -981,12 +984,12 @@
         "name": "Museum Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -995,12 +998,12 @@
         "name": "Necropolis Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1009,12 +1012,12 @@
         "name": "Olmec's Sanctum",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1023,12 +1026,12 @@
         "name": "Orchard Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1037,12 +1040,12 @@
         "name": "Overgrown Ruin Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1051,12 +1054,12 @@
         "name": "Overgrown Shrine Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1065,12 +1068,12 @@
         "name": "Phantasmagoria Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1079,12 +1082,12 @@
         "name": "Pier Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1093,12 +1096,12 @@
         "name": "Pillars of Arun",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1107,12 +1110,12 @@
         "name": "Pit Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1121,12 +1124,12 @@
         "name": "Pit of the Chimera Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1135,12 +1138,12 @@
         "name": "Plateau Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -1149,12 +1152,12 @@
         "name": "Plaza Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": true,
+            "rushable": true,
             "phases": false,
             "soft_phases": false
         }
@@ -1163,12 +1166,12 @@
         "name": "Poorjoy's Asylum",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1177,12 +1180,12 @@
         "name": "Port Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1191,12 +1194,12 @@
         "name": "Precinct Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1205,12 +1208,12 @@
         "name": "Primordial Blocks Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false,
             "separated": true
@@ -1220,12 +1223,12 @@
         "name": "Primordial Pool Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1234,12 +1237,12 @@
         "name": "Promenade Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1248,12 +1251,12 @@
         "name": "Racecourse Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -1262,12 +1265,12 @@
         "name": "Ramparts Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1276,12 +1279,12 @@
         "name": "Relic Chambers Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1290,12 +1293,12 @@
         "name": "Residence Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1304,12 +1307,12 @@
         "name": "Scriptorium Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -1318,12 +1321,12 @@
         "name": "Shipyard Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1332,12 +1335,12 @@
         "name": "Shore Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -1346,12 +1349,12 @@
         "name": "Shrine Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": true
         }
@@ -1360,12 +1363,12 @@
         "name": "Siege Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1374,14 +1377,14 @@
         "name": "Silo Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true,
+            "league_mechanics": false,
+            "delirium_mirror": true,
             "linear": true,
             "few obstacles": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false,
             "separated": true
@@ -1391,13 +1394,13 @@
         "name": "Stagnation Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false,
+            "league_mechanics": false,
+            "delirium_mirror": false,
             "outdoors": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false,
             "separated": true
@@ -1407,12 +1410,12 @@
         "name": "Strand Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1421,12 +1424,12 @@
         "name": "Sulphur Vents Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": false
+            "league_mechanics": true,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1435,12 +1438,12 @@
         "name": "Synthesised Map",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1449,12 +1452,12 @@
         "name": "Temple Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1463,12 +1466,12 @@
         "name": "Terrace Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1477,12 +1480,12 @@
         "name": "The Coward's Trial",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1491,12 +1494,12 @@
         "name": "The Putrid Cloister",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1505,12 +1508,12 @@
         "name": "The Twilight Temple",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1519,12 +1522,12 @@
         "name": "The Vinktar Square",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1533,12 +1536,12 @@
         "name": "Thicket Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1547,12 +1550,12 @@
         "name": "Tower Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1561,12 +1564,12 @@
         "name": "Toxic Sewer Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1575,12 +1578,12 @@
         "name": "Tropical Island Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1589,12 +1592,12 @@
         "name": "Underground River Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": true
+            "league_mechanics": false,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1603,12 +1606,12 @@
         "name": "Underground Sea Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1617,12 +1620,12 @@
         "name": "Vaal Pyramid Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": true
         }
@@ -1631,12 +1634,12 @@
         "name": "Vaal Temple Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1645,12 +1648,12 @@
         "name": "Vaults of Atziri",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1659,12 +1662,12 @@
         "name": "Volcano Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1673,12 +1676,12 @@
         "name": "Waste Pool Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": true,
             "soft_phases": false
         }
@@ -1687,12 +1690,12 @@
         "name": "Wasteland Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": false,
-            "good_for_deli_mirror": false
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }
@@ -1701,12 +1704,12 @@
         "name": "Whakawairua Tuahu",
         "image": false,
         "layout": {
-            "good_for_open_mechanics": null,
-            "good_for_deli_mirror": null
+            "league_mechanics": null,
+            "delirium_mirror": null
         },
         "boss": {
             "not_spawned": null,
-            "close_to_start": null,
+            "rushable": null,
             "phases": null,
             "soft_phases": null
         }
@@ -1715,12 +1718,12 @@
         "name": "Wharf Map",
         "image": true,
         "layout": {
-            "good_for_open_mechanics": true,
-            "good_for_deli_mirror": true
+            "league_mechanics": true,
+            "delirium_mirror": true
         },
         "boss": {
             "not_spawned": false,
-            "close_to_start": false,
+            "rushable": false,
             "phases": false,
             "soft_phases": false
         }

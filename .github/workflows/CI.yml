@@ -29,7 +29,7 @@ jobs:
 
       - name: Build data
         if: ${{ github.event_name == 'push' }}
-        run: python main.py cards
+        run: python main.py cards,maps
         working-directory: data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}

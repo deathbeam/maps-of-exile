@@ -3,15 +3,15 @@ import maps from './maps.json'
 
 export const cardMinPrice = 10
 export const cardBossMulti = 3.5
-export const cardNameBaseline = "The Chains that Bind"
+export const cardNameBaseline = 'The Chains that Bind'
 export const cardWeightBaseline = cards.find(c => c.name === cardNameBaseline).weight
 
-function slipFloor(num){
-  let f = Math.floor(num);
-  if(num - f < 0.5){
-    return f;
+function slipFloor(num) {
+  let f = Math.floor(num)
+  if (num - f < 0.5) {
+    return f
   }
-  return f + 0.5;
+  return f + 0.5
 }
 
 function rescale(value, minValue, maxValue, scale) {
@@ -38,20 +38,23 @@ export function calculateScore(dataset, range) {
   return out
 }
 
-export const preparedCards = calculateScore(cards
-  .map(card => {
-    let rate = 0
-    if (card.price >= cardMinPrice) {
-      rate = card.weight / cardWeightBaseline
-    }
+export const preparedCards = calculateScore(
+  cards
+    .map(card => {
+      let rate = 0
+      if (card.price >= cardMinPrice) {
+        rate = card.weight / cardWeightBaseline
+      }
 
-    return {
-      ...card,
-      value: rate * card.price * (card.boss ? (1 / cardBossMulti) : 1)
-    }
-  })
-  .sort((a, b) => b.price - a.price)
-  .sort((a, b) => b.value - a.value), 10)
+      return {
+        ...card,
+        value: rate * card.price * (card.boss ? 1 / cardBossMulti : 1)
+      }
+    })
+    .sort((a, b) => b.price - a.price)
+    .sort((a, b) => b.value - a.value),
+  10
+)
 
 export const preparedMaps = maps.map(map => {
   const mapCards = []

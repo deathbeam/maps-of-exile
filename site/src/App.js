@@ -283,7 +283,7 @@ const MapCard = ({ card }) => {
             <br />
             <b>Weight</b>: {card.weight}
           </>
-          )}
+        )}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
         <img src={img} alt="" width="16" height="16" /> {card.name}
@@ -485,10 +485,10 @@ function App() {
               <div className="d-md-flex justify-content-between">
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
-                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>.
-                    Cards under <b>{cardMinPrice}c</b> are filtered out from rating.
-                    Value calculation assumes that you drop <b>1 {cardNameBaseline}</b> per map on average and derives the chance
-                    to drop other cards from that. This assumes unoptimized farming strategy without focus on farming cards.
+                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
+                    <b>{cardMinPrice}c</b> are filtered out from rating. Value calculation assumes that you drop{' '}
+                    <b>1 {cardNameBaseline}</b> per map on average and derives the chance to drop other cards from that.
+                    This assumes unoptimized farming strategy without focus on farming cards.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>
@@ -558,13 +558,19 @@ function App() {
       <div className="container-fluid p-4 text-end">
         <div className="d-md-flex justify-content-between">
           <div>
-            For raw data see:
-            {' '}
-            <a href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/cards.json" target="_blank" rel="noreferrer">
+            For raw data see:{' '}
+            <a
+              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/cards.json"
+              target="_blank"
+              rel="noreferrer"
+            >
               cards.json
-            </a>
-            {' '}
-            <a href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/maps.json" target="_blank" rel="noreferrer">
+            </a>{' '}
+            <a
+              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/maps.json"
+              target="_blank"
+              rel="noreferrer"
+            >
               maps.json
             </a>
           </div>

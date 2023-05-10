@@ -6,7 +6,39 @@ export const cardBossMulti = 3.5
 export const cardNameBaseline = "The Chains that Bind"
 export const cardWeightBaseline = cards.find(c => c.name === cardNameBaseline).weight
 
-export const preparedCards = cards
+function slipFloor(num){
+  let f = Math.floor(num);
+  if(num - f < 0.5){
+    return f;
+  }
+  return f + 0.5;
+}
+
+function rescale(value, minValue, maxValue, scale) {
+  return slipFloor(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale))
+}
+
+export function calculateScore(dataset, range) {
+  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
+  const min = Math.min(...nonzerodataset.map(o => o.value))
+  const max = Math.max(...nonzerodataset.map(o => o.value))
+  const out = []
+
+  for (let entry of dataset) {
+    if (entry.value) {
+      out.push({
+        ...entry,
+        score: rescale(entry.value, min, max, range)
+      })
+    } else {
+      out.push(entry)
+    }
+  }
+
+  return out
+}
+
+export const preparedCards = calculateScore(cards
   .map(card => {
     let rate = 0
     if (card.price >= cardMinPrice) {
@@ -19,7 +51,7 @@ export const preparedCards = cards
     }
   })
   .sort((a, b) => b.price - a.price)
-  .sort((a, b) => b.value - a.value)
+  .sort((a, b) => b.value - a.value), 10)
 
 export const preparedMaps = maps.map(map => {
   const mapCards = []

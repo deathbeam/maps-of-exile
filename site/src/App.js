@@ -12,33 +12,10 @@ import {
   preparedCards,
   preparedMaps,
   preparedTags,
-  cardNameBaseline
+  cardNameBaseline,
+  calculateScore
 } from './data'
 import Loader from './components/Loader'
-
-function rescale(value, minValue, maxValue, scale) {
-  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
-}
-
-function calculateScore(dataset) {
-  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
-  const min = Math.min(...nonzerodataset.map(o => o.value))
-  const max = Math.max(...nonzerodataset.map(o => o.value))
-  const out = []
-
-  for (let entry of dataset) {
-    if (entry.value) {
-      out.push({
-        ...entry,
-        score: rescale(entry.value, min, max, 100)
-      })
-    } else {
-      out.push(entry)
-    }
-  }
-
-  return out
-}
 
 function rateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
   let out = []
@@ -60,7 +37,7 @@ function rateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
     })
   }
 
-  return calculateScore(out)
+  return calculateScore(out, 100)
 }
 
 function filterMaps(ratedMaps, currentInput) {
@@ -255,13 +232,13 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
 const MapCard = ({ card }) => {
   let badgeClass = 'bg-secondary text-dark'
 
-  if (card.value >= 5) {
+  if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
-  } else if (card.value >= 3) {
+  } else if (card.score >= 5) {
     badgeClass = 'bg-primary text-light'
-  } else if (card.value >= 1.5) {
+  } else if (card.score >= 2) {
     badgeClass = 'bg-info text-dark'
-  } else if (card.value >= 1) {
+  } else if (card.score >= 0.5) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   }
 
@@ -284,22 +261,29 @@ const MapCard = ({ card }) => {
         <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        <br />
-        <b>* Weight</b>: {card.weight}
-        <br />
-        <b>/ Baseline</b>: {cardWeightBaseline}
-        {card.boss && (
+        {card.score ? (
           <>
             <br />
-            <b>/ Boss drop</b>: {cardBossMulti}
-          </>
-        )}
-        {!!card.value && (
-          <>
+            <b>* Weight</b>: {card.weight}
+            <br />
+            <b>/ Baseline</b>: {cardWeightBaseline}
+            {card.boss && (
+              <>
+                <br />
+                <b>/ Boss drop</b>: {cardBossMulti}
+              </>
+            )}
             <br />
             <b>= Value</b>: {Math.round(card.value * 1000) / 1000} <img src={chaos} alt="c" width="16" height="16" />
+            <br />
+            <b>= Score</b>: {card.score}
           </>
-        )}
+        ) : (
+          <>
+            <br />
+            <b>Weight</b>: {card.weight}
+          </>
+          )}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
         <img src={img} alt="" width="16" height="16" /> {card.name}
@@ -507,10 +491,10 @@ function App() {
                     to drop other cards from that. This assumes unoptimized farming strategy without focus on farming cards.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
-                    <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
-                    <span className="badge bg-info text-dark me-1">>=1.5 good</span>
-                    <span className="badge bg-primary text-light me-1">>=3 great</span>
-                    <span className="badge bg-light text-dark me-1">>=5 amazing</span>
+                    <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>
+                    <span className="badge bg-info text-dark me-1">>=2 good</span>
+                    <span className="badge bg-primary text-light me-1">>=5 great</span>
+                    <span className="badge bg-light text-dark me-1">>=8 amazing</span>
                   </span>
                   Cards
                 </span>

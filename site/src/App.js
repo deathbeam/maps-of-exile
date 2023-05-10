@@ -261,7 +261,7 @@ const MapCard = ({ card }) => {
         <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        {card.score ? (
+        {card.value > 0 ? (
           <>
             <br />
             <b>* Weight</b>: {card.weight}

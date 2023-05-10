@@ -6,16 +6,8 @@ export const cardBossMulti = 3.5
 export const cardNameBaseline = 'The Chains that Bind'
 export const cardWeightBaseline = cards.find(c => c.name === cardNameBaseline).weight
 
-function slipFloor(num) {
-  let f = Math.floor(num)
-  if (num - f < 0.5) {
-    return f
-  }
-  return f + 0.5
-}
-
 function rescale(value, minValue, maxValue, scale) {
-  return slipFloor(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale))
+  return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
 }
 
 export function calculateScore(dataset, range) {

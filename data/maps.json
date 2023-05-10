@@ -1,16 +1,16 @@
 [
     {
         "name": "Acton's Nightmare",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -183,16 +183,16 @@
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -485,16 +485,16 @@
     },
     {
         "name": "Death and Taxes",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -758,16 +758,16 @@
     },
     {
         "name": "Hallowed Ground",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -899,16 +899,16 @@
     },
     {
         "name": "Mao Kun",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -1010,17 +1010,31 @@
         }
     },
     {
-        "name": "Olmec's Sanctum",
-        "image": false,
+        "name": "Oba's Cursed Trove",
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
+        }
+    },
+    {
+        "name": "Olmec's Sanctum",
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
+        "boss": {
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -1097,14 +1111,14 @@
         "name": "Pillars of Arun",
         "image": false,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {
@@ -1165,16 +1179,16 @@
     },
     {
         "name": "Poorjoy's Asylum",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -1479,16 +1493,16 @@
     },
     {
         "name": "The Coward's Trial",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -1647,16 +1661,16 @@
     },
     {
         "name": "Vaults of Atziri",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {
@@ -1703,16 +1717,16 @@
     },
     {
         "name": "Whakawairua Tuahu",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {

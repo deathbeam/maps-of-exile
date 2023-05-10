@@ -74,7 +74,7 @@ function useTransitionState(key, def, startTransition) {
   return [val, e => startTransition(() => setVal(e.target.value === '' ? def : e.target.value))]
 }
 
-const RatingBadge = ({ rating }) => {
+const RatingBadge = ({ rating, tooltip }) => {
   let badgeClass = 'bg-danger'
 
   if (rating == null) {
@@ -91,7 +91,18 @@ const RatingBadge = ({ rating }) => {
   }
 
   badgeClass = `badge text-dark ${badgeClass}`
-  return <span className={badgeClass}>{rating}</span>
+  const badge = <span className={badgeClass}>{rating}</span>
+
+  if (tooltip) {
+    return <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+        <span className="tooltip-tag-text">
+          {tooltip}
+        </span>
+      {badge}
+      </span>
+  }
+
+  return badge
 }
 
 const Tags = ({ tags, currentInput, addToInput }) => {
@@ -541,10 +552,10 @@ function App() {
                 <MapName map={m} currentInput={currentInput} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.layout} />
+                <RatingBadge rating={m.rating.layout} tooltip={m.info.layout}/>
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.density} />
+                <RatingBadge rating={m.rating.density} tooltip={m.info.density} />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <MapBoss boss={m.boss} rating={m.rating.boss} />

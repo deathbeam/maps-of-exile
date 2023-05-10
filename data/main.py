@@ -164,6 +164,7 @@ def get_map_ratings(key, config):
 def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	url = map_data["poedb"]
 
+	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content, "html.parser")
@@ -171,7 +172,6 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	children = tabcontent.findChildren("div", recursive=False)
 	offset = 0
 
-	# Boss data
 	data = children[offset]
 	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
 		offset += 1
@@ -181,11 +181,6 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	rows = body.find_all("tr")
 	map_data["boss"] = {}
 	map_data["layout"] = {}
-	map_data["rating"] = next(map(lambda x: {
-		"layout": x["layout"],
-		"density": x["density"],
-		"boss": x["boss"]
-	}, filter(lambda x: x["name"] == map_data["name"].replace(" Map", ""), ratings)), {})
 
 	for row in rows:
 		cols = row.find_all("td")
@@ -202,7 +197,6 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 		elif name == "boss not in own room" and value == "x":
 			map_data["boss"]["separated"] = True
 
-	# Extra data
 	map_cards = set([])
 	offset += 1
 	data = children[offset]
@@ -226,7 +220,7 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 		elif name == "the pantheon":
 			map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
 
-	# Card data
+	# Wiki card data
 	wiki_name = map_data["name"].replace(" ", "_")
 	url = config["cards"].replace("{}", wiki_name)
 	print(f"Getting card data for {map_data['name']} from url {url}")
@@ -244,6 +238,18 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	map_data["cards"] = sorted(list(map_cards))
 
 	# Extra data
+	map_data["info"] = {}
+	map_data["rating"] = {}
+	rating = next(filter(lambda x: x["name"] == map_data["name"].replace(" Map", ""), ratings), None)
+	if rating:
+		if rating["density_unreliable"]:
+			map_data["info"]["density"] = "Missing exact mob count, density rating might be unreliable"
+		map_data["rating"] = {
+			"layout": rating["layout"],
+			"density": rating["density"],
+			"boss": rating["boss"]
+		}
+
 	if not map_data["name"].endswith(" Map"):
 		map_data["unique"] = True
 

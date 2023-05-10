@@ -23,7 +23,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Overgrown Shrine Map"
         ],
@@ -37,6 +36,8 @@
             "The Wilted Rose",
             "The Wretched"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -65,11 +66,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 10
         },
         "connected": [
             "Excavation Map",
@@ -101,6 +97,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -129,11 +131,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 5,
-            "boss": 2
-        },
         "connected": [
             "Fungal Hollow Map",
             "Geode Map",
@@ -156,6 +153,12 @@
             "The Void",
             "The Web"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 5,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -185,11 +188,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 6,
-            "density": 5,
-            "boss": 8
-        },
         "pantheon": "Soul of Arakaali",
         "connected": [
             "Chateau Map",
@@ -211,6 +209,12 @@
             "The Trial",
             "The Web"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 5,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -239,11 +243,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 10
-        },
         "connected": [
             "Cemetery Map",
             "Orchard Map",
@@ -271,6 +270,12 @@
             "The Tyrant",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -300,11 +305,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 7,
-            "boss": 8
-        },
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -324,6 +324,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 7,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -351,11 +357,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 9,
-            "boss": 8
-        },
         "connected": [
             "Coral Ruins Map",
             "Pier Map"
@@ -377,6 +378,12 @@
             "The Trial",
             "The Warlord"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 9,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -404,11 +411,6 @@
             "outdoors": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 10,
-            "boss": 4
         },
         "connected": [
             "Core Map",
@@ -440,6 +442,12 @@
             "The Warlord",
             "Three Faces in the Dark"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 10,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -470,11 +478,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 1,
-            "boss": 8
-        },
         "pantheon": "Soul of the Brine King",
         "connected": [
             "Maelstr\u00f6m of Chaos",
@@ -504,6 +507,12 @@
             "The Void",
             "The Wind"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 1,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -532,11 +541,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 10
-        },
         "connected": [
             "Arid Lake Map",
             "Thicket Map",
@@ -559,6 +563,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -589,11 +599,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 3,
-            "boss": 10
-        },
         "connected": [
             "Desert Spring Map",
             "Factory Map",
@@ -616,6 +621,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 3,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -646,11 +657,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 10,
-            "density": 6,
-            "boss": 0
-        },
         "connected": [
             "Primordial Blocks Map",
             "Scriptorium Map",
@@ -671,6 +677,12 @@
             "The Trial",
             "The Wrath"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 6,
+            "boss": 0
+        },
         "image": true
     },
     {
@@ -697,11 +709,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 6,
-            "boss": 8
         },
         "connected": [
             "Grotto Map",
@@ -733,6 +740,12 @@
             "The Void",
             "The Wretched"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -760,7 +773,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Underground River Map"
         ],
@@ -778,6 +790,8 @@
             "The Wolf's Shadow",
             "Treasure Hunter"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -807,11 +821,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 8
-        },
         "pantheon": "Soul of Solaris",
         "connected": [
             "Chateau Map",
@@ -839,6 +848,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -869,11 +884,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 4,
-            "boss": 6
-        },
         "connected": [
             "Crystal Ore Map",
             "Shipyard Map",
@@ -902,6 +912,12 @@
             "The Void",
             "The Whiteout"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 4,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -931,11 +947,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 7,
-            "boss": 8
-        },
         "connected": [
             "City Square Map",
             "Coral Ruins Map",
@@ -961,6 +972,12 @@
             "The Trial",
             "The Tyrant"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 7,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -987,11 +1004,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 4,
-            "density": 9,
-            "boss": 8
-        },
         "connected": [
             "Cold River Map",
             "Crimson Township Map",
@@ -1017,6 +1029,12 @@
             "The Trial",
             "The Warden"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 9,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -1044,11 +1062,6 @@
             "outdoors": true,
             "league_mechanics": true,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 10,
-            "density": 5,
-            "boss": 4
         },
         "pantheon": "Soul of Gruthkul",
         "connected": [
@@ -1087,6 +1100,12 @@
             "The Union",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 5,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -1114,11 +1133,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 7,
-            "boss": 10
-        },
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -1143,6 +1157,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 7,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -1173,11 +1193,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 6
-        },
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -1205,6 +1220,12 @@
             "The Void",
             "Three Voices"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -1232,11 +1253,6 @@
             "league_mechanics": true,
             "delirium_mirror": false,
             "outdoors": true
-        },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 4
         },
         "pantheon": "Soul of Lunaris",
         "connected": [
@@ -1274,6 +1290,14 @@
             "The Void",
             "Wealth and Power"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -1302,11 +1326,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 6,
-            "density": 7,
-            "boss": 6
         },
         "connected": [
             "Dry Sea Map",
@@ -1338,6 +1357,12 @@
             "The Void",
             "The Warlord"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 7,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -1366,11 +1391,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 10,
-            "boss": 2
         },
         "connected": [
             "Dig Map",
@@ -1403,6 +1423,12 @@
             "The Void",
             "Unchained"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 10,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -1431,11 +1457,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 4,
-            "density": 6,
-            "boss": 8
-        },
         "connected": [
             "Crimson Township Map",
             "Defiled Cathedral Map",
@@ -1459,6 +1480,12 @@
             "The Trial",
             "The Undaunted"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -1486,11 +1513,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 4
         },
         "pantheon": "Soul of the Brine King",
         "connected": [
@@ -1522,6 +1544,12 @@
             "The Vast",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -1549,11 +1577,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 5,
-            "boss": 0
         },
         "connected": [
             "Arsenal Map",
@@ -1588,10 +1611,15 @@
             "Vile Power",
             "Vinia's Token"
         ],
-        "image": true,
         "info": {
             "rushable": "Only rushable in elder guardian maps where bosses are already dead."
-        }
+        },
+        "rating": {
+            "layout": 4,
+            "density": 5,
+            "boss": 0
+        },
+        "image": true
     },
     {
         "name": "Courtyard Map",
@@ -1621,11 +1649,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 4,
-            "boss": 6
         },
         "connected": [
             "Orchard Map",
@@ -1660,6 +1683,12 @@
             "Three Voices",
             "Thunderous Skies"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 4,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -1688,11 +1717,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 8
         },
         "pantheon": "Soul of the Brine King",
         "connected": [
@@ -1724,6 +1748,12 @@
             "The Trial",
             "The Vast"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -1749,11 +1779,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 10,
-            "boss": 10
-        },
         "pantheon": "Soul of Abberath",
         "connected": [
             "Maze Map",
@@ -1773,6 +1798,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 10,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -1800,11 +1831,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 10
         },
         "connected": [
             "Cold River Map",
@@ -1836,6 +1862,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -1864,11 +1896,6 @@
             "linear": true,
             "outdoors": true
         },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 6
-        },
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -1895,6 +1922,14 @@
             "The Trial",
             "The Void"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -1923,11 +1958,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 4
         },
         "connected": [
             "Canyon Map",
@@ -1962,6 +1992,12 @@
             "Treasure Hunter",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -1987,11 +2023,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 6,
-            "boss": 6
         },
         "connected": [
             "Caldera Map",
@@ -2019,6 +2050,12 @@
             "The Void",
             "The Wretched"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -2044,7 +2081,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Necropolis Map"
         ],
@@ -2055,6 +2091,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -2084,11 +2122,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 10
         },
         "connected": [
             "Conservatory Map",
@@ -2121,6 +2154,12 @@
             "The Tumbleweed",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -2151,11 +2190,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 10,
-            "boss": 2
-        },
         "pantheon": "Soul of Shakari",
         "connected": [
             "Arid Lake Map",
@@ -2183,6 +2217,12 @@
             "The Trial",
             "The Tumbleweed"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 10,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -2212,11 +2252,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 4
-        },
         "pantheon": "Soul of Garukhan",
         "connected": [
             "Colosseum Map",
@@ -2245,6 +2280,12 @@
             "Time-Lost Relic",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -2263,7 +2304,6 @@
             ]
         },
         "layout": {},
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Doryani's_Machinarium",
         "cards": [
             "Monochrome",
@@ -2275,6 +2315,8 @@
             "The Inventor",
             "Unrequited Love"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": false
     },
@@ -2302,11 +2344,6 @@
             "delirium_mirror": false,
             "outdoors": true
         },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 8
-        },
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2333,6 +2370,14 @@
             "The Tumbleweed",
             "The Void"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -2361,11 +2406,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 10,
-            "density": 4,
-            "boss": 10
         },
         "connected": [
             "Colonnade Map",
@@ -2398,6 +2438,12 @@
             "The Tumbleweed",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 4,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -2425,11 +2471,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 2,
-            "density": 7,
-            "boss": 8
-        },
         "connected": [
             "Arid Lake Map",
             "Core Map",
@@ -2455,6 +2496,12 @@
             "The Void",
             "The Warden"
         ],
+        "info": {},
+        "rating": {
+            "layout": 2,
+            "density": 7,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -2484,11 +2531,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 4
-        },
         "connected": [
             "Alleyways Map",
             "Colonnade Map",
@@ -2516,6 +2558,12 @@
             "Treasure Hunter",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -2543,11 +2591,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 7,
-            "boss": 6
         },
         "connected": [
             "Beach Map",
@@ -2578,6 +2621,12 @@
             "The Void",
             "Three Faces in the Dark"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 7,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -2607,11 +2656,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 4,
-            "boss": 6
-        },
         "pantheon": "Soul of Ralakesh",
         "connected": [
             "Dry Sea Map",
@@ -2638,6 +2682,12 @@
             "The Trial",
             "Tranquillity"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 4,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -2663,11 +2713,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 9,
-            "boss": 6
         },
         "connected": [
             "Cold River Map",
@@ -2704,6 +2749,12 @@
             "Treasure Hunter",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 9,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -2732,11 +2783,6 @@
             "delirium_mirror": false,
             "outdoors": true,
             "linear": true
-        },
-        "rating": {
-            "layout": 4,
-            "density": 6,
-            "boss": 6
         },
         "connected": [
             "Arachnid Tomb Map",
@@ -2771,6 +2817,14 @@
             "The Void",
             "Three Voices"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 4,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -2799,7 +2853,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
         "cards": [
             "Burning Blood",
@@ -2814,6 +2867,8 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {},
         "image": true
     },
     {
@@ -2840,11 +2895,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 4,
-            "boss": 4
         },
         "connected": [
             "Malformation Map",
@@ -2875,6 +2925,14 @@
             "The Trial",
             "The Void"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 6,
+            "density": 4,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -2902,11 +2960,6 @@
             "delirium_mirror": true,
             "linear": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 8
-        },
         "pantheon": "Soul of Lunaris",
         "connected": [
             "Cells Map",
@@ -2932,6 +2985,14 @@
             "The Trial",
             "The Void"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -2958,11 +3019,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 2,
-            "boss": 10
-        },
         "connected": [
             "Arachnid Nest Map",
             "Necropolis Map"
@@ -2982,6 +3038,12 @@
             "The Trial",
             "Treasure Hunter"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 2,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -3009,11 +3071,6 @@
             "outdoors": true,
             "league_mechanics": true,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 8
         },
         "connected": [
             "Arachnid Nest Map",
@@ -3045,6 +3102,12 @@
             "Time-Lost Relic",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -3071,11 +3134,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 8
         },
         "connected": [
             "Bone Crypt Map",
@@ -3121,6 +3179,12 @@
             "Treasure Hunter",
             "Volatile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -3146,7 +3210,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Cemetery Map"
         ],
@@ -3155,6 +3218,8 @@
             "Monochrome",
             "The Enforcer"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -3186,11 +3251,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 6
-        },
         "pantheon": "Soul of Ryslatha",
         "connected": [
             "Dry Sea Map",
@@ -3217,6 +3277,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3247,11 +3313,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 6,
-            "boss": 6
-        },
         "pantheon": "Soul of Arakaali",
         "connected": [
             "Beach Map",
@@ -3275,6 +3336,12 @@
             "The Web",
             "The Wind"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3302,11 +3369,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 6,
-            "boss": 2
         },
         "connected": [
             "City Square Map",
@@ -3337,6 +3399,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 6,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -3365,11 +3433,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 6
         },
         "connected": [
             "Cemetery Map",
@@ -3406,6 +3469,12 @@
             "Treasure Hunter",
             "Triskaidekaphobia"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3435,7 +3504,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
         "cards": [
             "Her Mask",
@@ -3450,6 +3518,8 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {},
         "image": true
     },
     {
@@ -3479,11 +3549,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 6
-        },
         "connected": [
             "Dungeon Map",
             "Necropolis Map"
@@ -3504,6 +3569,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3536,11 +3607,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 6
-        },
         "pantheon": "Soul of Solaris",
         "connected": [
             "Lair Map",
@@ -3565,6 +3631,12 @@
             "The Trial",
             "The Wind"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3592,7 +3664,6 @@
             "delirium_mirror": false,
             "linear": true
         },
-        "rating": {},
         "connected": [
             "Atoll Map"
         ],
@@ -3618,6 +3689,8 @@
             "The Siren",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -3648,11 +3721,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 2
-        },
         "connected": [
             "Foundry Map",
             "Museum Map",
@@ -3677,6 +3745,12 @@
             "Vile Power",
             "Vinia's Token"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -3702,7 +3776,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Shore Map"
         ],
@@ -3722,6 +3795,8 @@
             "The Skeleton",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -3751,11 +3826,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 8
-        },
         "connected": [
             "Cemetery Map",
             "Lighthouse Map",
@@ -3774,6 +3844,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -3799,11 +3875,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 2,
-            "density": 6,
-            "boss": 6
         },
         "connected": [
             "Colosseum Map",
@@ -3833,6 +3904,12 @@
             "The Void",
             "Unrequited Love"
         ],
+        "info": {},
+        "rating": {
+            "layout": 2,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3862,7 +3939,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
         "cards": [
             "Her Mask",
@@ -3877,6 +3953,8 @@
             "The Trial",
             "Treasure Hunter"
         ],
+        "info": {},
+        "rating": {},
         "image": true
     },
     {
@@ -3904,11 +3982,6 @@
             "outdoors": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 5,
-            "boss": 6
         },
         "connected": [
             "Lighthouse Map",
@@ -3944,6 +4017,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 5,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -3971,11 +4050,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 8,
-            "boss": 8
         },
         "pantheon": "Soul of Lunaris",
         "connected": [
@@ -4005,6 +4079,12 @@
             "The Void",
             "Wealth and Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 8,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -4031,11 +4111,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 2,
-            "density": 8,
-            "boss": 6
         },
         "connected": [
             "Crater Map",
@@ -4072,6 +4147,12 @@
             "Thirst for Knowledge",
             "Turn the Other Cheek"
         ],
+        "info": {},
+        "rating": {
+            "layout": 2,
+            "density": 8,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -4100,11 +4181,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 2,
-            "density": 8,
-            "boss": 8
-        },
         "connected": [
             "Arid Lake Map",
             "Death and Taxes",
@@ -4131,6 +4207,12 @@
             "The Void",
             "The Wretched"
         ],
+        "info": {},
+        "rating": {
+            "layout": 2,
+            "density": 8,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -4156,7 +4238,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Bone Crypt Map"
         ],
@@ -4167,6 +4248,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -4195,11 +4278,6 @@
             "outdoors": true,
             "league_mechanics": true,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 10,
-            "boss": 4
         },
         "connected": [
             "Arcade Map",
@@ -4233,6 +4311,12 @@
             "The Void",
             "Triskaidekaphobia"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 10,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -4259,11 +4343,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 4
         },
         "connected": [
             "Factory Map",
@@ -4298,6 +4377,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -4326,11 +4411,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 5,
-            "boss": 4
         },
         "pantheon": "Soul of Arakaali",
         "connected": [
@@ -4365,6 +4445,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 5,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -4392,11 +4478,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 4
         },
         "connected": [
             "Arcade Map",
@@ -4430,6 +4511,12 @@
             "The Witch",
             "Vile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -4458,11 +4545,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 2
-        },
         "connected": [
             "Arachnid Nest Map",
             "Armoury Map",
@@ -4488,6 +4570,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -4513,7 +4601,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Dunes Map"
         ],
@@ -4526,6 +4613,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -4556,11 +4645,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 4,
-            "density": 10,
-            "boss": 4
-        },
         "connected": [
             "Arcade Map",
             "Atoll Map",
@@ -4586,6 +4670,12 @@
             "The Trial",
             "Unchained"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 10,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -4615,7 +4705,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
         "cards": [
             "A Familiar Call",
@@ -4636,6 +4725,8 @@
             "The Trial",
             "Unchained"
         ],
+        "info": {},
+        "rating": {},
         "image": true
     },
     {
@@ -4667,11 +4758,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 3,
-            "boss": 6
-        },
         "connected": [
             "Tower Map",
             "Toxic Sewer Map",
@@ -4696,6 +4782,12 @@
             "The Trial",
             "The Wind"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 3,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -4722,11 +4814,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 4,
-            "density": 7,
-            "boss": 6
-        },
         "connected": [
             "Cold River Map",
             "Frozen Cabins Map",
@@ -4752,6 +4839,12 @@
             "The Void",
             "Triskaidekaphobia"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 7,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -4777,7 +4870,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Temple Map"
         ],
@@ -4797,6 +4889,8 @@
             "The Thaumaturgist",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -4826,11 +4920,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 7,
-            "boss": 6
         },
         "connected": [
             "Atoll Map",
@@ -4866,6 +4955,12 @@
             "The Tyrant",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 7,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -4900,11 +4995,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 10,
-            "boss": 6
-        },
         "connected": [
             "Overgrown Shrine Map",
             "Primordial Blocks Map",
@@ -4934,6 +5024,12 @@
             "The Valkyrie",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 10,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -4959,11 +5055,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 9,
-            "boss": 2
         },
         "connected": [
             "Belfry Map",
@@ -4991,6 +5082,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 9,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -5021,11 +5118,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 1,
-            "boss": 8
-        },
         "connected": [
             "Grotto Map",
             "Lighthouse Map",
@@ -5050,6 +5142,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 1,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -5079,11 +5177,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 10,
-            "density": 4,
-            "boss": 6
         },
         "connected": [
             "Atoll Map",
@@ -5116,6 +5209,12 @@
             "The Void",
             "The Warlord"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 4,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5148,11 +5247,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 3,
-            "boss": 6
-        },
         "connected": [
             "Coves Map",
             "Temple Map",
@@ -5173,6 +5267,12 @@
             "The Visionary",
             "Three Voices"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 3,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5203,11 +5303,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 7,
-            "boss": 10
-        },
         "connected": [
             "Arachnid Nest Map",
             "Crystal Ore Map",
@@ -5234,6 +5329,12 @@
             "The Traitor",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 7,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -5261,11 +5362,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 6
-        },
         "connected": [
             "Flooded Mine Map",
             "Shipyard Map",
@@ -5291,6 +5387,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5318,11 +5420,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 9,
-            "boss": 6
         },
         "connected": [
             "Castle Ruins Map",
@@ -5358,6 +5455,12 @@
             "The Unexpected Prize",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 9,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5384,11 +5487,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 4,
-            "density": 7,
-            "boss": 8
         },
         "connected": [
             "Belfry Map",
@@ -5419,6 +5517,12 @@
             "Thirst for Knowledge",
             "Turn the Other Cheek"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 7,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -5448,11 +5552,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 4
-        },
         "connected": [
             "Canyon Map",
             "Overgrown Ruin Map",
@@ -5480,6 +5579,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -5508,11 +5613,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 10
         },
         "connected": [
             "Canyon Map",
@@ -5545,6 +5645,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -5572,11 +5678,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 4,
-            "density": 10,
-            "boss": 6
-        },
         "connected": [
             "Dunes Map",
             "Excavation Map",
@@ -5600,6 +5701,12 @@
             "The Trial",
             "Vinia's Token"
         ],
+        "info": {},
+        "rating": {
+            "layout": 4,
+            "density": 10,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5629,11 +5736,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 8,
-            "boss": 6
-        },
         "pantheon": "Soul of Tukohama",
         "connected": [
             "Arachnid Tomb Map",
@@ -5661,6 +5763,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 8,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -5688,11 +5796,6 @@
             "delirium_mirror": true,
             "linear": true,
             "few obstacles": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 4,
-            "boss": 4
         },
         "connected": [
             "Bone Crypt Map",
@@ -5722,6 +5825,14 @@
             "The Trial",
             "The Void"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 8,
+            "density": 4,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -5749,11 +5860,6 @@
             "delirium_mirror": false,
             "outdoors": true
         },
-        "rating": {
-            "layout": 6,
-            "density": 4,
-            "boss": 4
-        },
         "connected": [
             "Alleyways Map",
             "Primordial Pool Map",
@@ -5780,6 +5886,14 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 6,
+            "density": 4,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -5810,11 +5924,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 10,
-            "density": 0,
-            "boss": 10
         },
         "connected": [
             "Belfry Map",
@@ -5852,6 +5961,12 @@
             "The Void",
             "Thunderous Skies"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 0,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -5881,11 +5996,6 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 8,
-            "density": 5,
-            "boss": 8
-        },
         "connected": [
             "Crimson Temple Map",
             "Flooded Mine Map",
@@ -5905,6 +6015,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 5,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -5923,9 +6039,10 @@
             ]
         },
         "layout": {},
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/Synthesised_Map",
         "cards": [],
+        "info": {},
+        "rating": {},
         "image": false
     },
     {
@@ -5953,11 +6070,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 6,
-            "density": 8,
-            "boss": 8
         },
         "pantheon": "Soul of Solaris",
         "connected": [
@@ -5993,6 +6105,12 @@
             "The Twins",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 8,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -6021,11 +6139,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 4
         },
         "pantheon": "Soul of Yugul",
         "connected": [
@@ -6058,6 +6171,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -6083,7 +6202,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Cursed Crypt Map"
         ],
@@ -6100,6 +6218,8 @@
             "The Void",
             "The Wretched"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -6119,7 +6239,6 @@
             ]
         },
         "layout": {},
-        "rating": {},
         "connected": [
             "Museum Map"
         ],
@@ -6140,6 +6259,8 @@
             "The Void",
             "The Witch"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": false
     },
@@ -6160,7 +6281,6 @@
             ]
         },
         "layout": {},
-        "rating": {},
         "connected": [
             "Moon Temple Map"
         ],
@@ -6184,6 +6304,8 @@
             "The Twins",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": false
     },
@@ -6203,7 +6325,6 @@
             ]
         },
         "layout": {},
-        "rating": {},
         "wiki": "https://www.poewiki.net/wiki/The_Vinktar_Square",
         "cards": [
             "Monochrome",
@@ -6212,6 +6333,8 @@
             "The Stormcaller",
             "Thunderous Skies"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": false
     },
@@ -6240,11 +6363,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 6,
-            "boss": 8
-        },
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -6271,6 +6389,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 6,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -6300,11 +6424,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 8,
-            "density": 9,
-            "boss": 4
-        },
         "connected": [
             "Mineral Pools Map",
             "Plateau Map",
@@ -6331,6 +6450,12 @@
             "The Trial",
             "Thunderous Skies"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 9,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -6358,11 +6483,6 @@
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 10,
-            "density": 7,
-            "boss": 10
         },
         "connected": [
             "Canyon Map",
@@ -6392,6 +6512,12 @@
             "The Web",
             "Vile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 7,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -6421,11 +6547,6 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 5,
-            "boss": 10
-        },
         "connected": [
             "Arsenal Map",
             "Barrows Map",
@@ -6453,6 +6574,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 5,
+            "boss": 10
+        },
         "image": true
     },
     {
@@ -6482,11 +6609,6 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
-        "rating": {
-            "layout": 10,
-            "density": 4,
-            "boss": 4
-        },
         "connected": [
             "Caer Blaidd, Wolfpack's Den",
             "Dig Map",
@@ -6511,6 +6633,12 @@
             "The Void",
             "Treasure Hunter"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 4,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -6538,11 +6666,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 8,
-            "density": 9,
-            "boss": 6
         },
         "connected": [
             "Beach Map",
@@ -6581,6 +6704,12 @@
             "The Void",
             "Treasure Hunter"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 9,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -6609,11 +6738,6 @@
         "layout": {
             "league_mechanics": false,
             "delirium_mirror": false
-        },
-        "rating": {
-            "layout": 2,
-            "density": 8,
-            "boss": 4
         },
         "connected": [
             "City Square Map",
@@ -6646,6 +6770,12 @@
             "Three Voices",
             "Unrequited Love"
         ],
+        "info": {},
+        "rating": {
+            "layout": 2,
+            "density": 8,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -6675,11 +6805,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 2,
-            "density": 6,
-            "boss": 2
-        },
         "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map",
         "cards": [
             "Beauty Through Death",
@@ -6700,6 +6825,14 @@
             "Three Voices",
             "Unrequited Love"
         ],
+        "info": {
+            "density": "Missing exact mob count, density rating might be unreliable"
+        },
+        "rating": {
+            "layout": 2,
+            "density": 6,
+            "boss": 2
+        },
         "image": true
     },
     {
@@ -6722,7 +6855,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Vaal Pyramid Map"
         ],
@@ -6748,6 +6880,8 @@
             "Treasure Hunter",
             "Unrequited Love"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -6776,11 +6910,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 7,
-            "boss": 8
-        },
         "connected": [
             "Colosseum Map",
             "Racecourse Map"
@@ -6806,6 +6935,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 7,
+            "boss": 8
+        },
         "image": true
     },
     {
@@ -6835,11 +6970,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 10,
-            "density": 3,
-            "boss": 4
-        },
         "connected": [
             "Canyon Map",
             "Mineral Pools Map",
@@ -6867,6 +6997,12 @@
             "The Witch",
             "Vile Power"
         ],
+        "info": {},
+        "rating": {
+            "layout": 10,
+            "density": 3,
+            "boss": 4
+        },
         "image": true
     },
     {
@@ -6895,11 +7031,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {
-            "layout": 6,
-            "density": 7,
-            "boss": 6
-        },
         "connected": [
             "Caldera Map",
             "Foundry Map"
@@ -6920,6 +7051,12 @@
             "The Trial",
             "The Void"
         ],
+        "info": {},
+        "rating": {
+            "layout": 6,
+            "density": 7,
+            "boss": 6
+        },
         "image": true
     },
     {
@@ -6945,7 +7082,6 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
-        "rating": {},
         "connected": [
             "Strand Map"
         ],
@@ -6970,6 +7106,8 @@
             "The Undaunted",
             "The Void"
         ],
+        "info": {},
+        "rating": {},
         "unique": true,
         "image": true
     },
@@ -6998,11 +7136,6 @@
             "linear": true,
             "league_mechanics": true,
             "delirium_mirror": true
-        },
-        "rating": {
-            "layout": 8,
-            "density": 6,
-            "boss": 6
         },
         "connected": [
             "Crater Map",
@@ -7035,6 +7168,12 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "info": {},
+        "rating": {
+            "layout": 8,
+            "density": 6,
+            "boss": 6
+        },
         "image": true
     }
 ]

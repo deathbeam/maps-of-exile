@@ -3,7 +3,7 @@ import os
 import re
 import sys
 from decimal import Decimal
-from math import ceil
+from math import ceil, floor
 
 import requests
 import yaml
@@ -84,7 +84,7 @@ def get_card_data(key, league, config):
 
 		if rate_card and not weight_card:
 			rate = Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(4 / 3)
-			weight_rate = round(Decimal(patient_weight_baseline) / rate)
+			weight_rate = floor(Decimal(patient_weight_baseline) / rate)
 			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
 			weights.append({
 				"name": price_card["name"],

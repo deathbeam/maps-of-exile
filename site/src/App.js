@@ -5,7 +5,15 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import {assumedNaturalDrops, cardMinPrice, cardBossMulti, preparedCards, preparedMaps, preparedTags} from './data'
+import {
+  cardMinPrice,
+  cardBossMulti,
+  cardWeightBaseline,
+  preparedCards,
+  preparedMaps,
+  preparedTags,
+  cardNameBaseline
+} from './data'
 import Loader from './components/Loader'
 
 function rescale(value, minValue, maxValue, scale) {
@@ -247,11 +255,11 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
 const MapCard = ({ card }) => {
   let badgeClass = 'bg-secondary text-dark'
 
-  if (card.value >= 20) {
+  if (card.value >= 5) {
     badgeClass = 'bg-light text-dark'
-  } else if (card.value >= 10) {
+  } else if (card.value >= 3) {
     badgeClass = 'bg-primary text-light'
-  } else if (card.value >= 5) {
+  } else if (card.value >= 1.5) {
     badgeClass = 'bg-info text-dark'
   } else if (card.value >= 1) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
@@ -276,24 +284,20 @@ const MapCard = ({ card }) => {
         <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        {!!card.rate && (
+        <br />
+        <b>* Weight</b>: {card.weight}
+        <br />
+        <b>/ Baseline</b>: {cardWeightBaseline}
+        {card.boss && (
           <>
             <br />
-            <b>* Rate</b>: {Math.round(card.rate * 100000) / 100000} %
+            <b>/ Boss drop</b>: {cardBossMulti}
           </>
         )}
         {!!card.value && (
           <>
             <br />
-            <b>* Drops</b>: {assumedNaturalDrops}
-            {card.boss && (
-              <>
-                <br />
-                <b>/ Boss drop</b>: {cardBossMulti}
-              </>
-            )}
-            <br />
-            <b>= Value</b>: {Math.round(card.value * 1000) / 1000}
+            <b>= Value</b>: {Math.round(card.value * 1000) / 1000} <img src={chaos} alt="c" width="16" height="16" />
           </>
         )}
       </span>
@@ -319,7 +323,7 @@ function App() {
   const [layoutInput, setLayoutInput] = useTransitionState('layoutInput', 3, startTransition)
   const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
   const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
-  const [cardInput, setCardInput] = useTransitionState('cardInput', 0.6, startTransition)
+  const [cardInput, setCardInput] = useTransitionState('cardWeightInput', 2, startTransition)
   const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false, startTransition)
   const ratedMaps = useMemo(
     () => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
@@ -499,14 +503,14 @@ function App() {
                   <span className="tooltip-tag-text">
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>.
                     Cards under <b>{cardMinPrice}c</b> are filtered out from rating.
-                    The drop chance of card is multiplied by <b>{assumedNaturalDrops}</b> as its assuming you get that many
-                    natural drops per map. This number can be lower or higher depending on your mapping strategy.
+                    Value calculation assumes that you drop <b>1 {cardNameBaseline}</b> per map on average and derives the chance
+                    to drop other cards from that. This assumes unoptimized farming strategy without focus on farming cards.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=1 decent</span>
-                    <span className="badge bg-info text-dark me-1">>=5 good</span>
-                    <span className="badge bg-primary text-light me-1">>=10 great</span>
-                    <span className="badge bg-light text-dark me-1">>=20 amazing</span>
+                    <span className="badge bg-info text-dark me-1">>=1.5 good</span>
+                    <span className="badge bg-primary text-light me-1">>=3 great</span>
+                    <span className="badge bg-light text-dark me-1">>=5 amazing</span>
                   </span>
                   Cards
                 </span>

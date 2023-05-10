@@ -2,25 +2,24 @@ import cards from './cards.json'
 import maps from './maps.json'
 
 export const cardMinPrice = 10
-export const assumedNaturalDrops = 500
 export const cardBossMulti = 3.5
+export const cardNameBaseline = "The Chains that Bind"
+export const cardWeightBaseline = cards.find(c => c.name === cardNameBaseline).weight
 
-const cardTotal = cards.reduce((a, b) => a + b.weight, 0)
 export const preparedCards = cards
   .map(card => {
     let rate = 0
     if (card.price >= cardMinPrice) {
-      rate = card.weight / cardTotal
+      rate = card.weight / cardWeightBaseline
     }
 
     return {
       ...card,
-      rate: rate * 100,
-      value: rate * assumedNaturalDrops * card.price * (card.boss ? (1 / cardBossMulti) : 1)
+      value: rate * card.price * (card.boss ? (1 / cardBossMulti) : 1)
     }
   })
   .sort((a, b) => b.price - a.price)
-  .sort((a, b) => (b.value || 0) - (a.value || 0))
+  .sort((a, b) => b.value - a.value)
 
 export const preparedMaps = maps.map(map => {
   const mapCards = []

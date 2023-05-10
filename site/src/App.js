@@ -320,7 +320,7 @@ function App() {
   const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
   const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
   const [cardInput, setCardInput] = useTransitionState('cardInput', 0.6, startTransition)
-  const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false)
+  const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false, startTransition)
   const ratedMaps = useMemo(
     () => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
     [layoutInput, densityInput, bossInput, cardInput]

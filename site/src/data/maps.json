@@ -3548,9 +3548,17 @@
             "names": [
                 "Merveil, the Reflection",
                 "Merveil, the Returned"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false,
+            "linear": true
+        },
         "rating": {},
         "connected": [
             "Atoll Map"
@@ -3577,7 +3585,7 @@
             "The Siren",
             "The Void"
         ],
-        "image": false
+        "image": true
     },
     {
         "name": "Malformation Map",

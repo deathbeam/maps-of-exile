@@ -4,6 +4,52 @@ Shows and filters map/card/map metadata from various sources. None of these data
 There are still some subjective data coming from PoeDB or missing data, especially the **Boss** column showing boss
 difficulty but that usually isn't the deciding factor.
 
+## Adding new map
+
+For new map, the ideal collection of attributes are:
+
+```
+image: <image>
+
+layout:
+  outdoors: true/false
+  linear: true/false
+  league mechanics: true/false
+  delirium mirror: true/false
+
+boss:
+  not spawned: true/false
+  rushable: true/false
+  phases: true/false
+  soft phases: true/false
+```
+
+**image**: is simply a screenshot, ideally of just the overlay avoiding
+UI/debuff icons etc. Try to clear the whole map and if possible try to take the
+screenshot in dark area so the overlay is visible. For overlay map settings,
+set:
+* **Landscape transparency** to max
+* **Map transparency** to max
+* **Map zoom** to minimum
+
+**layout**:
+**outdoors**: if map is outdoors or not
+**linear**: if map is basically just a line, doesnt matter if the line goes in
+circle or not
+**league mechanics**: if you feel like map is good for breach/legion
+**delirium mirror**: if you can reasonably hold delirium mirror through the map
+
+**boss**:
+**not spawned**: if boss do not spawns on load (testable with altars getting or
+not getting boss option). Filling this one out is not super necessary unless the
+boss is similar to Jungle Valley boss and then double check just in case
+**rushable**: if boss can be reasonably rushed way sooner than you would
+normally go through the map
+**phases**: if boss has forced phases that you have to wait for (wait time at
+start of fight counts too)
+**soft phases** if boss gets damage reduction or heals, but can be ignored with
+enough damage
+
 ## Sources of data
 
 **Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  

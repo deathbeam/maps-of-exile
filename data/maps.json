@@ -870,16 +870,17 @@
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false,
+            "linear": true
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {

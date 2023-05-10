@@ -13,9 +13,16 @@
             "names": [
                 "Rose",
                 "Thorn"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Overgrown Shrine Map"
@@ -30,7 +37,8 @@
             "The Wilted Rose",
             "The Wretched"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Alleyways Map",
@@ -742,9 +750,16 @@
                 "Solus, Pack Alpha",
                 "Storm Eye",
                 "Winterfang"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Underground River Map"
@@ -763,7 +778,8 @@
             "The Wolf's Shadow",
             "Treasure Hunter"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Caldera Map",
@@ -2018,9 +2034,16 @@
         "boss": {
             "names": [
                 "Avatar of Apocalypse"
-            ]
+            ],
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Necropolis Map"
@@ -2032,7 +2055,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Defiled Cathedral Map",
@@ -2251,6 +2275,7 @@
             "The Inventor",
             "Unrequited Love"
         ],
+        "unique": true,
         "image": false
     },
     {
@@ -3111,9 +3136,16 @@
         "boss": {
             "names": [
                 "Maker of Mires"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Cemetery Map"
@@ -3123,7 +3155,8 @@
             "Monochrome",
             "The Enforcer"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Infested Valley Map",
@@ -3585,6 +3618,7 @@
             "The Siren",
             "The Void"
         ],
+        "unique": true,
         "image": true
     },
     {
@@ -3658,9 +3692,16 @@
         "boss": {
             "names": [
                 "Fairgraves, Never Dying"
-            ]
+            ],
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Shore Map"
@@ -3681,7 +3722,8 @@
             "The Skeleton",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Marshes Map",
@@ -4104,9 +4146,16 @@
         "boss": {
             "names": [
                 "Olmec, the All Stone"
-            ]
+            ],
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Bone Crypt Map"
@@ -4118,7 +4167,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Orchard Map",
@@ -4453,9 +4503,16 @@
         "boss": {
             "names": [
                 "Talin, Faithbreaker"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": true
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Dunes Map"
@@ -4469,7 +4526,8 @@
             "The Encroaching Darkness",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Pit Map",
@@ -4709,9 +4767,16 @@
         "boss": {
             "names": [
                 "Mistress Hyseria"
-            ]
+            ],
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Temple Map"
@@ -4732,7 +4797,8 @@
             "The Thaumaturgist",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Port Map",
@@ -6007,9 +6073,16 @@
         "boss": {
             "names": [
                 "Infector of Dreams"
-            ]
+            ],
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Cursed Crypt Map"
@@ -6027,7 +6100,8 @@
             "The Void",
             "The Wretched"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "The Putrid Cloister",
@@ -6066,6 +6140,7 @@
             "The Void",
             "The Witch"
         ],
+        "unique": true,
         "image": false
     },
     {
@@ -6109,6 +6184,7 @@
             "The Twins",
             "The Void"
         ],
+        "unique": true,
         "image": false
     },
     {
@@ -6136,6 +6212,7 @@
             "The Stormcaller",
             "Thunderous Skies"
         ],
+        "unique": true,
         "image": false
     },
     {
@@ -6635,8 +6712,16 @@
             16
         ],
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
-        "boss": {},
-        "layout": {},
+        "boss": {
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
+        },
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Vaal Pyramid Map"
@@ -6663,7 +6748,8 @@
             "Treasure Hunter",
             "Unrequited Love"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Volcano Map",
@@ -6849,9 +6935,16 @@
         "boss": {
             "names": [
                 "Tormented Temptress"
-            ]
+            ],
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": true
         },
-        "layout": {},
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "rating": {},
         "connected": [
             "Strand Map"
@@ -6877,7 +6970,8 @@
             "The Undaunted",
             "The Void"
         ],
-        "image": false
+        "unique": true,
+        "image": true
     },
     {
         "name": "Wharf Map",

@@ -92,6 +92,7 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map.boss, 'phases', '-boss with phases')
   pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
 
+  pushTag(map.info, mapTags, map, 'unique')
   pushTag(map.info, mapTags, map, 'pantheon')
 
   if (map.boss.names) {

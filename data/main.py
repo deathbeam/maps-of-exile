@@ -244,6 +244,9 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	map_data["cards"] = sorted(list(map_cards))
 
 	# Extra data
+	if not map_data["name"].endswith(" Map"):
+		map_data["unique"] = True
+
 	existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
 	if existing:
 		merge(existing, map_data)
@@ -307,7 +310,7 @@ def get_maps_template(maps, existing_maps):
 			out.remove(existing_map)
 		out.append(new_map)
 
-	return out
+	return sorted(out, key=lambda d: d["name"])
 
 
 def main():

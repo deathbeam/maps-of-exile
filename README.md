@@ -6,7 +6,7 @@ difficulty but that usually isn't the deciding factor.
 
 ## Adding new map
 
-For new map, the ideal collection of attributes are:
+For new map, the ideal collection of attributes are:  
 
 ```
 image: <image>
@@ -27,28 +27,30 @@ boss:
 **image**: is simply a screenshot, ideally of just the overlay avoiding
 UI/debuff icons etc. Try to clear the whole map and if possible try to take the
 screenshot in dark area so the overlay is visible. For overlay map settings,
-set:
-* **Landscape transparency** to max
-* **Map transparency** to max
-* **Map zoom** to minimum
-
-**layout**:
-**outdoors**: if map is outdoors or not
+set:  
+* **Landscape transparency** to max  
+* **Map transparency** to max  
+* **Map zoom** to minimum  
+  
+**layout**:  
+**outdoors**: if map is outdoors or not  
 **linear**: if map is basically just a line, doesnt matter if the line goes in
-circle or not
-**league mechanics**: if you feel like map is good for breach/legion
-**delirium mirror**: if you can reasonably hold delirium mirror through the map
-
-**boss**:
+circle or not  
+**league mechanics**: if you feel like map is good for breach/legion  
+**delirium mirror**: if you can reasonably hold delirium mirror through the map  
+  
+**boss**:  
 **not spawned**: if boss do not spawns on load (testable with altars getting or
 not getting boss option). Filling this one out is not super necessary unless the
-boss is similar to Jungle Valley boss and then double check just in case
+boss is similar to Jungle Valley boss and then double check just in case  
 **rushable**: if boss can be reasonably rushed way sooner than you would
-normally go through the map
+normally go through the map  
 **phases**: if boss has forced phases that you have to wait for (wait time at
-start of fight counts too)
+start of fight counts too)  
 **soft phases** if boss gets damage reduction or heals, but can be ignored with
-enough damage
+enough damage  
+
+Then simply open new issue: https://github.com/deathbeam/poe-tools/issues/new/choose with this info.
 
 ## Sources of data
 

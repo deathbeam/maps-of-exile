@@ -1010,6 +1010,20 @@
         }
     },
     {
+        "name": "Oba's Cursed Trove",
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
+        "boss": {
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
+        }
+    },
+    {
         "name": "Olmec's Sanctum",
         "image": true,
         "layout": {

@@ -1179,16 +1179,16 @@
     },
     {
         "name": "Poorjoy's Asylum",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
         }
     },
     {

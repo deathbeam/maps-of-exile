@@ -568,10 +568,25 @@ function App() {
         </tbody>
       </table>
       <div className="container-fluid p-4 text-end">
-        Contribute on{' '}
-        <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+        <div className="d-md-flex justify-content-between">
+          <div>
+            For raw data see:
+            {' '}
+            <a href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/cards.json" target="_blank" rel="noreferrer">
+              cards.json
+            </a>
+            {' '}
+            <a href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/maps.json" target="_blank" rel="noreferrer">
+              maps.json
+            </a>
+          </div>
+          <div>
+            Contribute on{' '}
+            <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </>
   )

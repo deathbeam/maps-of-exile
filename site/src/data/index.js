@@ -5,15 +5,18 @@ export const cardMinPrice = 10
 export const assumedNaturalDrops = 500
 export const cardBossMulti = 3.5
 
+const cardTotal = cards.reduce((a, b) => a + b.weight, 0)
 export const preparedCards = cards
   .map(card => {
-    const rate = parseFloat(card.natural_chance)
+    let rate = 0
+    if (card.price >= cardMinPrice) {
+      rate = card.weight / cardTotal
+    }
+
     return {
       ...card,
-      rate: rate,
-      value: card.price >= cardMinPrice
-        ? (rate * assumedNaturalDrops * card.price * (card.boss ? (1 / cardBossMulti) : 1)) / 100
-        : 0
+      rate: rate * 100,
+      value: rate * assumedNaturalDrops * card.price * (card.boss ? (1 / cardBossMulti) : 1)
     }
   })
   .sort((a, b) => b.price - a.price)

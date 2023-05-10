@@ -49,7 +49,7 @@ def get_card_data(key, league, config):
 	r = requests.get(url)
 	r = r.json()
 	rates = r["values"]
-	rates_total = rates.pop(0)[0]
+	rates.pop(0)
 	rates = list(map(lambda x: {
 		"name": x[0].strip(),
 		"value": int(x[3])
@@ -68,7 +68,6 @@ def get_card_data(key, league, config):
 		"name": x[1].strip(),
 		"value": int(x[2])
 	}, weights))
-	weights_total = sum(list(map(lambda x: x["value"], weights)))
 
 	patient_rate_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
 	patient_weight_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
@@ -84,14 +83,13 @@ def get_card_data(key, league, config):
 		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
 
 		if rate_card and not weight_card:
-			rate =  Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(1.3)
+			rate = Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(4 / 3)
 			weight_rate = round(Decimal(patient_weight_baseline) / rate)
 			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
 			weights.append({
 				"name": price_card["name"],
 				"value": weight_rate
 			})
-			weights_total += weight_rate
 
 	out = []
 	for price_card in prices:
@@ -108,15 +106,9 @@ def get_card_data(key, league, config):
 			"boss": price_card["name"] in config["boss-only"]
 		}
 
-		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
-		if rate_card:
-			card["rate"] = Decimal(100) * (Decimal(rate_card) / Decimal(rates_total))
-		else:
-			print(f"Rate for card {card['name']} not found")
-
 		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
 		if weight_card:
-			card["natural_chance"] = Decimal(100) * (Decimal(weight_card) / Decimal(weights_total))
+			card["weight"] = weight_card
 		else:
 			print(f"Weight for card {card['name']} not found")
 

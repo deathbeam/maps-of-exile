@@ -1011,16 +1011,16 @@
     },
     {
         "name": "Olmec's Sanctum",
-        "image": false,
+        "image": true,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": true,
+            "rushable": false,
+            "phases": true,
+            "soft_phases": false
         }
     },
     {
@@ -1097,14 +1097,14 @@
         "name": "Pillars of Arun",
         "image": false,
         "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+            "league_mechanics": false,
+            "delirium_mirror": false
         },
         "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
+            "not_spawned": false,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": true
         }
     },
     {

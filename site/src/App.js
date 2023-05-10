@@ -307,7 +307,7 @@ const MapCard = ({ card }) => {
 const MapCards = ({ cards, hideLowValueCards }) => {
   return preparedCards
     .filter(c => cards.find(fc => fc.name === c.name))
-    .filter(c => !hideLowValueCards || c.price >= 10)
+    .filter(c => !hideLowValueCards || c.price >= cardMinPrice)
     .map(c => <MapCard card={c} />)
 }
 

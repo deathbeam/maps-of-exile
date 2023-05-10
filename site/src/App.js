@@ -151,12 +151,9 @@ const Tags = ({ tags, currentInput, addToInput }) => {
 
 const MapName = ({ map, currentInput, addToInput }) => {
   const mapImage = process.env.PUBLIC_URL + '/layout/' + map.name.toLowerCase()
+    .replace(/[^a-zA-Z0-9 ]/g, '')
     .replaceAll(' ', '_')
-    .replace(/^a-zA-Z0-9 ]/g, '')
-    .replace("\u00f6", "o")
     + '.png'
-
-  console.info(mapImage)
 
   const tier = map.tiers[0]
   let tierColor = 'text-light'

@@ -505,7 +505,7 @@ function App() {
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Average card drop per map (baseline)</label>
                 <SelectSearch
-                  options={preparedCards.map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
+                  options={preparedCards.sort((a, b) => b.weight - a.weight).map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
                   value={cardBaselineInput}
                   onChange={e => setCardBaselineInput({ target: { value: e } })}
                   search="true"

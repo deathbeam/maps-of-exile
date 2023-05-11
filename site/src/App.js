@@ -5,7 +5,7 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import { cardBossMulti, preparedCards, preparedMaps, preparedTags } from './data'
+import { cardBossMulti, defaultCardBaseline, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 import SelectSearch from 'react-select-search'
 
@@ -391,7 +391,7 @@ function App() {
   const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false, startTransition)
   const [cardBaselineInput, setCardBaselineInput] = useTransitionState(
     'cardBaselineInput',
-    'The Chains that Bind',
+    defaultCardBaseline,
     startTransition
   )
   const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
@@ -503,18 +503,41 @@ function App() {
                 />
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
-                <label className="form-label">Average card drop per map (baseline)</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The baseline card drop you are expecting to see every map. The drop chance per map for other cards
+                    is derived from this one.
+                    <br />
+                    So for example with the default <b>{defaultCardBaseline}</b> baseline you can expect to see{' '}
+                    <b>The Patient</b> around every <b>13</b> maps.
+                    <br />
+                    <b>{defaultCardBaseline}</b> baseline is good to simulate unoptimized atlas setup not focused on
+                    farming cards.
+                  </span>
+                  <label className="form-label">Average card drop per map</label>
+                </span>
                 <SelectSearch
-                  options={preparedCards.sort((a, b) => b.weight - a.weight).map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
+                  options={preparedCards
+                    .sort((a, b) => b.weight - a.weight)
+                    .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
                   value={cardBaselineInput}
                   onChange={e => setCardBaselineInput({ target: { value: e } })}
                   search="true"
                 />
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
-                <label className="form-label">
-                  Minimum card drop price (in <img src={chaos} alt="c" width="16" height="16" />)
-                </label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    Minimum price for the card to be considered as something that should be accounted for calculating
+                    map score and per map value.
+                    <br />
+                    Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot
+                    even though when you click on listings the data say something else.
+                  </span>
+                  <label className="form-label">
+                    Minimum card drop price (in <img src={chaos} alt="c" width="16" height="16" />)
+                  </label>
+                </span>
                 <input
                   className="form-control"
                   type="number"
@@ -606,7 +629,7 @@ function App() {
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
                     <b>{cardMinPriceInput}c</b> are filtered out from rating. Value calculation assumes that you drop{' '}
                     <b>1 {cardBaselineInput}</b> per map on average and derives the chance to drop other cards from
-                    that. This assumes unoptimized farming strategy without focus on farming cards.
+                    that.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>

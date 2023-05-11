@@ -1,6 +1,7 @@
 import cards from './cards.json'
 import maps from './maps.json'
 
+export const defaultCardBaseline = 'The Chains that Bind'
 export const cardBossMulti = 3.5
 export const preparedCards = cards
 export const preparedMaps = maps.map(map => {

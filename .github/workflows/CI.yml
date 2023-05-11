@@ -38,9 +38,7 @@ jobs:
 
       - name: Push data
         if: ${{ github.event_name == 'push' }}
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'Update map and card data [ci skip]'
+        uses: EndBug/add-and-commit@v9
 
       - name: Setup node
         uses: actions/setup-node@v3

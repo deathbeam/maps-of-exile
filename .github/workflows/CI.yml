@@ -38,7 +38,11 @@ jobs:
 
       - name: Push data
         if: ${{ github.event_name == 'push' }}
-        uses: EndBug/add-and-commit@v9
+        run: |
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+          git commit -am "Update maps and cards"
+          git push
 
       - name: Setup node
         uses: actions/setup-node@v3

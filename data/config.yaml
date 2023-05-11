@@ -2,9 +2,9 @@ data:
   league: Crucible
 
   maps:
-    list: https://poedb.tw/us/Maps#MapsList
+    list: /us/Maps
     cards: https://www.poewiki.net/api.php?action=parse&prop=text&format=json&page={}
-    poedb: https://poedb.tw/us/{}
+    poedb: https://poedb.tw{}
     wiki: https://www.poewiki.net/wiki/{}
     ratings:
       sheet-id: 1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU

@@ -21,6 +21,16 @@ def rescale(value, min_value, max_value, scale):
 	return min(ceil(scale * (value - min_value) / (max_value - min_value)), scale)
 
 
+def deduplicate(lst, prop):
+	seen_props = set()
+	new_list = []
+	for obj in lst:
+		if obj[prop] not in seen_props:
+			new_list.append(obj)
+			seen_props.add(obj[prop])
+	return new_list
+
+
 def clean(d):
 	if isinstance(d, dict):
 		return {k: clean(v) for k, v in d.items() if v is not None}
@@ -211,7 +221,17 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 		cols = row.find_all("td")
 		name = cols[0].text.strip().lower()
 		value = cols[1]
-		if name == "boss":
+		if name == "monster level":
+			value = int(value.text.strip())
+			tier = value - 67
+			map_data["tiers"] = [
+				tier,
+				min(tier + 3, 16),
+				min(tier + 7, 16),
+				min(tier + 11, 16),
+				min(tier + 15, 16)
+			]
+		elif name == "boss":
 			map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
 		elif name == "atlas linked":
 			map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
@@ -260,7 +280,7 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 
 
 def get_maps(config):
-	url = config["list"]
+	url = config["poedb"].replace("{}", config["list"])
 	print(f"Getting maps from url {url}")
 
 	r = requests.get(url)
@@ -279,16 +299,36 @@ def get_maps(config):
 			continue
 
 		map_url = cols[3].find('a').attrs['href']
-		map_url = map_url.replace("/us/", "")
 		map_url = config["poedb"].replace("{}", map_url)
-		tiers = list(map(lambda x: int(x.strip()), cols[4].text.split(",")))
 		out.append({
-			"name": name,
-			"tiers": tiers,
+			"name": name.strip(),
 			"poedb": map_url
 		})
 
-	return sorted(out, key=lambda d: d["name"])
+	mapslist = soup.find(id="MapsUnique")
+	table = mapslist.find("table")
+	body = table.find("tbody")
+	rows = body.find_all("tr")
+	names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
+
+	for row in rows:
+		cols = row.find_all("td")
+		href = cols[1].find('a')
+		name = href.text
+		map_url = href.attrs['href']
+		map_url = config["poedb"].replace("{}", map_url)
+
+		for n in names:
+			if not n.endswith(" Map") and not n.endswith("Ultimatum"):
+				continue
+			name = name.replace(n, "")
+
+		out.append({
+			"name": name.strip(),
+			"poedb": map_url
+		})
+
+	return deduplicate(sorted(out, key=lambda d: d["name"]), "name")
 
 
 def get_maps_template(maps, existing_maps):

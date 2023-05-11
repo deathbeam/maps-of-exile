@@ -1,13 +1,6 @@
 [
     {
         "name": "Acton's Nightmare",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "boss": {
             "names": [
@@ -23,6 +16,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Overgrown Shrine Map"
         ],
@@ -43,13 +43,6 @@
     },
     {
         "name": "Alleyways Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Alleyways_Map",
         "boss": {
             "notes": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles",
@@ -67,6 +60,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "connected": [
             "Excavation Map",
             "Stagnation Map"
@@ -106,14 +106,35 @@
         "image": true
     },
     {
-        "name": "Arachnid Nest Map",
+        "name": "Altered Distant Memory",
+        "poedb": "https://poedb.tw/us/Altered_Distant_Memory",
+        "boss": {
+            "names": [
+                "Altered Synthete"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            10,
-            13,
-            16,
-            16,
+            1,
+            4,
+            8,
+            12,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Altered_Distant_Memory",
+        "cards": [
+            "A Dusty Memory",
+            "Justified Ambition",
+            "Magnum Opus",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Arachnid Nest Map",
         "poedb": "https://poedb.tw/us/Arachnid_Nest_Map",
         "boss": {
             "notes": "Same as Jungle Valley boss except now significantly stronger. Boss will disappear and reappear throughout fight. Also can now summon rare spiders which may have dangerous auras.",
@@ -131,6 +152,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Fungal Hollow Map",
             "Geode Map",
@@ -163,13 +191,6 @@
     },
     {
         "name": "Arachnid Tomb Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Arachnid_Tomb_Map",
         "boss": {
             "notes": "Viper Strike inflicts Poison. Summons swarms of small spiders. Will periodically enshroud the arena in web, lowering your attack, cast and movement speed as well as your damage. You can drag yourself through the nearby fires to remove the debuff.",
@@ -188,6 +209,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "pantheon": "Soul of Arakaali",
         "connected": [
             "Chateau Map",
@@ -219,13 +247,6 @@
     },
     {
         "name": "Arcade Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Arcade_Map",
         "boss": {
             "notes": "Flammability and Conductivity lower resists so overcap or bring curse removal. Weak elemental spells",
@@ -243,6 +264,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Cemetery Map",
             "Orchard Map",
@@ -280,13 +308,6 @@
     },
     {
         "name": "Arid Lake Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Arid_Lake_Map",
         "boss": {
             "notes": "Chaos degen aura and Physical charge attack. Breaking Rhoa nests heals and enrages boss. Boss becomes much more difficult when enraged. Enraged boss drops more loot",
@@ -305,6 +326,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -334,13 +362,6 @@
     },
     {
         "name": "Armoury Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Armoury_Map",
         "boss": {
             "notes": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities.",
@@ -357,6 +378,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "connected": [
             "Coral Ruins Map",
             "Pier Map"
@@ -388,13 +416,6 @@
     },
     {
         "name": "Arsenal Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Arsenal_Map",
         "boss": {
             "notes": "Waves of Animated Weapons until boss appears. Fast but manageable Physical Cyclone and Lacerate attacks. Cascade of weak Physical projectiles.",
@@ -412,6 +433,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Core Map",
             "Tropical Island Map"
@@ -452,13 +480,6 @@
     },
     {
         "name": "Atoll Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Atoll_Map",
         "boss": {
             "notes": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being chain stunned. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
@@ -478,6 +499,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "pantheon": "Soul of the Brine King",
         "connected": [
             "Maelstr\u00f6m of Chaos",
@@ -516,14 +544,35 @@
         "image": true
     },
     {
-        "name": "Barrows Map",
+        "name": "Augmented Distant Memory",
+        "poedb": "https://poedb.tw/us/Augmented_Distant_Memory",
+        "boss": {
+            "names": [
+                "Augmented Synthete"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            14,
-            16,
-            16,
-            16,
+            1,
+            4,
+            8,
+            12,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Augmented_Distant_Memory",
+        "cards": [
+            "A Dusty Memory",
+            "Justified Ambition",
+            "Magnum Opus",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Barrows Map",
         "poedb": "https://poedb.tw/us/Barrows_Map",
         "boss": {
             "notes": "Physical attacks - charge and telegraphed slam. When boss sits down rocks fall from ceiling.",
@@ -541,6 +590,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arid Lake Map",
             "Thicket Map",
@@ -573,13 +629,6 @@
     },
     {
         "name": "Beach Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Beach_Map",
         "boss": {
             "notes": "Spams Cold spells. Bring Freeze immunity if you have low health",
@@ -599,6 +648,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Desert Spring Map",
             "Factory Map",
@@ -631,13 +687,6 @@
     },
     {
         "name": "Belfry Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Belfry_Map",
         "boss": {
             "notes": "Too many mechanics/phases to describe. Best to consult a mechanics video on Act V Kitava. Most of Kitava's attacks are telegraphed but can be hard to avoid and mistakes are costly. If you have enough damage it is easy to transition from boss phase to phase quickly.",
@@ -657,6 +706,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Primordial Blocks Map",
             "Scriptorium Map",
@@ -687,13 +743,6 @@
     },
     {
         "name": "Bone Crypt Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Bone_Crypt_Map",
         "boss": {
             "notes": "Resummons nearby minions. Casts Spirit Offering and Vaal Summon Skeletons. Focus on killing the boss over the unique skeletons as these can be revived by the boss.",
@@ -710,6 +759,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "connected": [
             "Grotto Map",
             "Olmec's Sanctum",
@@ -750,13 +806,6 @@
     },
     {
         "name": "Caer Blaidd, Wolfpack's Den",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
             "names": [
@@ -773,6 +822,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Underground River Map"
         ],
@@ -797,13 +853,6 @@
     },
     {
         "name": "Caldera Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Caldera_Map",
         "boss": {
             "notes": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health.",
@@ -821,6 +870,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "pantheon": "Soul of Solaris",
         "connected": [
             "Chateau Map",
@@ -858,13 +914,6 @@
     },
     {
         "name": "Canyon Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Canyon_Map",
         "boss": {
             "notes": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
@@ -884,6 +933,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Crystal Ore Map",
             "Shipyard Map",
@@ -922,13 +978,6 @@
     },
     {
         "name": "Castle Ruins Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Castle_Ruins_Map",
         "boss": {
             "notes": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
@@ -947,6 +996,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "City Square Map",
             "Coral Ruins Map",
@@ -982,13 +1038,6 @@
     },
     {
         "name": "Cells Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Cells_Map",
         "boss": {
             "notes": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks",
@@ -1004,6 +1053,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Cold River Map",
             "Crimson Township Map",
@@ -1039,13 +1095,6 @@
     },
     {
         "name": "Cemetery Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Cemetery_Map",
         "boss": {
             "notes": "Deals strong Physical melee attacks. Avoid telegraphed slam and dark patches of ground that deal DoT. Boss will channel for several seconds summoning short lived Physical projectiles from all directions.  As boss loses life player gains stack of Despair debuff (unremovable) which slows you, reduces your light radius and increases damage taken. Therefore the boss becomes much more deadly as the fight progresses, pays to try to save burst damage/flasks for towards the end of the fight.",
@@ -1063,6 +1112,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "pantheon": "Soul of Gruthkul",
         "connected": [
             "Arcade Map",
@@ -1110,13 +1166,6 @@
     },
     {
         "name": "Chateau Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Chateau_Map",
         "boss": {
             "notes": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap.",
@@ -1133,6 +1182,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -1167,13 +1223,6 @@
     },
     {
         "name": "City Square Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/City_Square_Map",
         "boss": {
             "notes": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first.",
@@ -1193,6 +1242,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -1230,13 +1286,6 @@
     },
     {
         "name": "Cold River Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Cold_River_Map",
         "boss": {
             "names": [
@@ -1254,6 +1303,13 @@
             "delirium_mirror": false,
             "outdoors": true
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Lunaris",
         "connected": [
             "Cells Map",
@@ -1302,13 +1358,6 @@
     },
     {
         "name": "Colonnade Map",
-        "tiers": [
-            1,
-            4,
-            8,
-            12,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Colonnade_Map",
         "boss": {
             "notes": "Much stronger than Armoury Gravicius. His Firestorm, Fire trap and Molten Shell abilities hit hard so ensure you have adequate fire mitigation. Gravicius has a large ES pool (cannot be bypassed by Chaos damage). At 2/3 and 1/3 life Gravicius will return to his tent regaining all his ES back. This fight can be long so you may need to portal to get back flask charges.",
@@ -1327,6 +1376,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "connected": [
             "Dry Sea Map",
             "Dunes Map",
@@ -1367,13 +1423,6 @@
     },
     {
         "name": "Colosseum Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Colosseum_Map",
         "boss": {
             "notes": "Quick Physical/Cold attacks. Kneels to heal at 25%/50%/75% health. After healing gains 75% increased attack speed for 6 seconds. AoE Reave has Resolute Technique. Always be wary of spinning blades that contiually spawn, they deal serious Physical DoT. Decoy Totem work wonders in this fight.",
@@ -1392,6 +1441,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Dig Map",
             "Maze Map",
@@ -1433,13 +1489,6 @@
     },
     {
         "name": "Conservatory Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Conservatory_Map",
         "boss": {
             "notes": "Shield Charges, leaving behind weak Physical projectiles.",
@@ -1457,6 +1506,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Crimson Township Map",
             "Defiled Cathedral Map",
@@ -1490,13 +1546,6 @@
     },
     {
         "name": "Coral Ruins Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Coral_Ruins_Map",
         "boss": {
             "notes": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack.",
@@ -1514,6 +1563,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "pantheon": "Soul of the Brine King",
         "connected": [
             "Armoury Map",
@@ -1554,13 +1610,6 @@
     },
     {
         "name": "Core Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Core_Map",
         "boss": {
             "notes": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss.",
@@ -1578,6 +1627,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arsenal Map",
             "Dungeon Map"
@@ -1622,14 +1678,39 @@
         "image": true
     },
     {
-        "name": "Courtyard Map",
+        "name": "Cortex",
+        "poedb": "https://poedb.tw/us/Cortex",
+        "boss": {
+            "names": [
+                "Venarius"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            5,
-            8,
             12,
+            15,
+            16,
             16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Cortex",
+        "cards": [
+            "A Dusty Memory",
+            "A Fate Worse Than Death",
+            "Dementophobia",
+            "Imperfect Memories",
+            "Justified Ambition",
+            "Magnum Opus",
+            "The Hook",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Courtyard Map",
         "poedb": "https://poedb.tw/us/Courtyard_Map",
         "boss": {
             "notes": "One casts Spark Totems and Lightning Warps, one Cyclones leaving Chilled Ground and the other Leap Slams + casts multiple Fireballs. Fight is relatively easy if you isolate each boss individually. Leap Slammer is most dangerous.",
@@ -1650,6 +1731,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Orchard Map",
             "Pit Map",
@@ -1693,13 +1781,6 @@
     },
     {
         "name": "Coves Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Coves_Map",
         "boss": {
             "notes": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately.",
@@ -1718,6 +1799,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of the Brine King",
         "connected": [
             "Racecourse Map",
@@ -1758,13 +1846,6 @@
     },
     {
         "name": "Crater Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Crater_Map",
         "boss": {
             "names": [
@@ -1779,6 +1860,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Abberath",
         "connected": [
             "Maze Map",
@@ -1808,13 +1896,6 @@
     },
     {
         "name": "Crimson Temple Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Crimson_Temple_Map",
         "boss": {
             "notes": "Throws Physical projectiles. AoE summons bats, curses nearby enemies with Temporal Chains. Red ground bubbles spawn which burst for small Physical damage after a time.",
@@ -1832,6 +1913,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "connected": [
             "Cold River Map",
             "Forbidden Woods Map",
@@ -1872,13 +1960,6 @@
     },
     {
         "name": "Crimson Township Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Crimson_Township_Map",
         "boss": {
             "names": [
@@ -1896,6 +1977,13 @@
             "linear": true,
             "outdoors": true
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -1934,13 +2022,6 @@
     },
     {
         "name": "Crystal Ore Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Crystal_Ore_Map",
         "boss": {
             "notes": "Bosses have Phylacteral Link, which means only one can be damaged at a time (indicated by shiny aura around boss). Burning Man has Righteous Fire and throws Fire projectiles which leave a powerful Burning Ground. On death the Burning Man explodes for massive Fire damage that always Ignites so stand clear. Pikerivet has a Physical Cascade attack. The Pocked Goliath has a powerful short-range Ground Slam and spawns Miners. The small arena can make this boss fight hard to manoeuvre, however ranged characters may be able to offscreen from certain positions.",
@@ -1959,6 +2040,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "connected": [
             "Canyon Map",
             "Coral Ruins Map",
@@ -2002,13 +2090,6 @@
     },
     {
         "name": "Cursed Crypt Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Cursed_Crypt_Map",
         "boss": {
             "notes": "Similar to Relic Chambers boss. Turn off curses when facing this boss - when a curse expires he unleashes a deadly nova (damage type based on colour of curse gem) which can one shot. Without curses this boss is non-threatening. He spawns spiders (including rare ones), inflicts curses (can break curse limit) and deals strong telegraphed Physical attacks.",
@@ -2024,6 +2105,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Caldera Map",
             "Promenade Map",
@@ -2060,13 +2148,6 @@
     },
     {
         "name": "Death and Taxes",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "boss": {
             "names": [
@@ -2081,6 +2162,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Necropolis Map"
         ],
@@ -2098,13 +2186,6 @@
     },
     {
         "name": "Defiled Cathedral Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Defiled_Cathedral_Map",
         "boss": {
             "notes": "Boss has strong Physical Cleave and telegraphed projectile. Also fires three weak Physical projectiles. Summons slow moving statues that deal massive Physical damage. Summons several beams, either in a line from the back of the room, or in a circle from the centre of the room. These beams inflict a massive Physical DoT that lasts two seconds.",
@@ -2123,6 +2204,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Conservatory Map",
             "Maze Map",
@@ -2164,13 +2252,6 @@
     },
     {
         "name": "Desert Spring Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Desert_Spring_Map",
         "boss": {
             "notes": "Tail Strike inflicts debuff causing you to create Caustic Clouds at your location, move around to remove the debuff. Burrows towards your location. Charged Tail Slam that can easily one shot. In Phase 2 boss gains new abilities. Quicksand in arena will slow your movement speed. Boss will become invulnerable and Sunder towards you from the centre of the arena while summoning poisonous scorpions. At low life boss will start diving around dealing significant Physical damage. Keep mobile when this is happening.",
@@ -2190,6 +2271,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Shakari",
         "connected": [
             "Arid Lake Map",
@@ -2227,13 +2315,6 @@
     },
     {
         "name": "Dig Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Dig_Map",
         "boss": {
             "notes": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these.",
@@ -2252,6 +2333,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Garukhan",
         "connected": [
             "Colosseum Map",
@@ -2290,13 +2378,6 @@
     },
     {
         "name": "Doryani's Machinarium",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "boss": {
             "names": [
@@ -2304,6 +2385,13 @@
             ]
         },
         "layout": {},
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Doryani's_Machinarium",
         "cards": [
             "Monochrome",
@@ -2322,13 +2410,6 @@
     },
     {
         "name": "Dry Sea Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Dry_Sea_Map",
         "boss": {
             "names": [
@@ -2344,6 +2425,13 @@
             "delirium_mirror": false,
             "outdoors": true
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2382,13 +2470,6 @@
     },
     {
         "name": "Dunes Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Dunes_Map",
         "boss": {
             "notes": "Strong Physical melee attacks. At half health heals to full and gains a Leap Slam ability that summons zombies which release poison clouds on death. Staying in melee range prevents use of Leap Slam.",
@@ -2407,6 +2488,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2448,13 +2536,6 @@
     },
     {
         "name": "Dungeon Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Dungeon_Map",
         "boss": {
             "notes": "Physical Slam has low accuracy but hits hard. Watch out for spikes coming out of the ground",
@@ -2471,6 +2552,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arid Lake Map",
             "Core Map",
@@ -2506,13 +2594,6 @@
     },
     {
         "name": "Excavation Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Excavation_Map",
         "boss": {
             "notes": "Each boss in a separate room. Shrieker summons sandstorms. Breaker uses strong Spectral Throw and Vaal Spectral Throw.",
@@ -2531,6 +2612,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Alleyways Map",
             "Colonnade Map",
@@ -2568,13 +2656,6 @@
     },
     {
         "name": "Factory Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Factory_Map",
         "boss": {
             "notes": "Stay out of Lightning beams which deal heavy Lightning DoT. Adus has strong Physical attacks including  Earthquake. Periodically Adus will leap in the air performing a more powerful Earthquake that has several aftershocks which deal heavy Physical and Lightning damage. The real danger in this fight comes from his 'Living Bomb' attack where he charges up and discharges a huge amount of Lightning damage which always Shocks and can potentially one shot. Avoid these telegraphed AoE abilities at all costs.",
@@ -2592,6 +2673,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Beach Map",
             "Cold River Map",
@@ -2631,13 +2719,6 @@
     },
     {
         "name": "Fields Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Fields_Map",
         "boss": {
             "notes": "Familiar Act 7 fight. Melee acolytes will constantly spawn and wall archers will fire maiming Blast Rain throughout duration of fight. After a while two doggos will appear, then Gruest. Gruest fires a spear which deals Physical damage and inflicts a Strong bleed. Periodically Gruest will gain an enrage buff which increases his damage and allows him to use a very quick barrage of spears that should be evaded.",
@@ -2656,6 +2737,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "pantheon": "Soul of Ralakesh",
         "connected": [
             "Dry Sea Map",
@@ -2692,13 +2780,6 @@
     },
     {
         "name": "Flooded Mine Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Flooded_Mine_Map",
         "boss": {
             "notes": "Summon tornadoes, Earthquake attack.",
@@ -2714,6 +2795,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "connected": [
             "Cold River Map",
             "Overgrown Ruin Map",
@@ -2759,13 +2847,6 @@
     },
     {
         "name": "Forbidden Woods Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "boss": {
             "names": [
@@ -2784,6 +2865,13 @@
             "outdoors": true,
             "linear": true
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Tomb Map",
             "Crimson Temple Map",
@@ -2829,13 +2917,6 @@
     },
     {
         "name": "Forge of the Phoenix Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Forge_of_the_Phoenix_Map",
         "boss": {
             "notes": "Cannot be slowed. Physical attacks. Very strong Cyclone. Will charge up then release a massive Fire explosion (large AoE) that will probably one-shot. Every 10% life lost the player loses 1% maximum Fire resistance. Phoenixes are summoned which fire Fire projectiles, they revive a few seconds after being killed. More phoenixes are spawned as the boss loses health. Small fire tornadoes travel around the room dealing Fire DoT, again the less health the boss has the more tornadoes are spawned.",
@@ -2853,6 +2934,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map",
         "cards": [
             "Burning Blood",
@@ -2873,13 +2961,6 @@
     },
     {
         "name": "Foundry Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Foundry_Map",
         "boss": {
             "names": [
@@ -2896,6 +2977,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Malformation Map",
             "Siege Map",
@@ -2937,13 +3025,6 @@
     },
     {
         "name": "Frozen Cabins Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Frozen_Cabins_Map",
         "boss": {
             "names": [
@@ -2960,6 +3041,13 @@
             "delirium_mirror": true,
             "linear": true
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Lunaris",
         "connected": [
             "Cells Map",
@@ -2997,13 +3085,6 @@
     },
     {
         "name": "Fungal Hollow Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "boss": {
             "names": [
@@ -3019,6 +3100,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Nest Map",
             "Necropolis Map"
@@ -3048,13 +3136,6 @@
     },
     {
         "name": "Geode Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Geode_Map",
         "boss": {
             "notes": "More powerful version of Grotto boss. In addition to Chaos-storm and Ground Slam summons large whirlwinds which deal Chaos DoT. Pocked miners can release powerful Chaos Sentinels from the walls. Fight can be difficult due to small size of room.",
@@ -3072,6 +3153,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Nest Map",
             "Desert Spring Map",
@@ -3112,13 +3200,6 @@
     },
     {
         "name": "Grotto Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Grotto_Map",
         "boss": {
             "notes": "Chaos-storm and Ground Slam attack. Summons Pocked Miners after a time.",
@@ -3135,6 +3216,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -3188,14 +3276,32 @@
         "image": true
     },
     {
-        "name": "Hallowed Ground",
+        "name": "Hall of Grandmasters",
+        "poedb": "https://poedb.tw/us/Hall_of_Grandmasters",
+        "boss": {},
+        "layout": {},
         "tiers": [
-            4,
-            7,
             11,
-            15,
+            14,
+            16,
+            16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Hall_of_Grandmasters",
+        "cards": [
+            "Jack in the Box",
+            "Monochrome",
+            "The Encroaching Darkness",
+            "The Immortal",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Hallowed Ground",
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "boss": {
             "names": [
@@ -3210,6 +3316,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Cemetery Map"
         ],
@@ -3225,13 +3338,6 @@
     },
     {
         "name": "Infested Valley Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Infested_Valley_Map",
         "boss": {
             "notes": "Start off by killing the three nests, then the boss will spawn on the central platform. Ryslatha fires projectiles that deal significant Chaos damage and leave green pools that do DoT. The boss' hits also Poison, so bring a Poison removal flask. This fight can be very difficult for characters with low regeneration/sustain.",
@@ -3251,6 +3357,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "pantheon": "Soul of Ryslatha",
         "connected": [
             "Dry Sea Map",
@@ -3286,14 +3399,33 @@
         "image": true
     },
     {
-        "name": "Jungle Valley Map",
+        "name": "Infused Beachhead",
+        "poedb": "https://poedb.tw/us/Infused_Beachhead",
+        "boss": {
+            "names": [
+                "<<>>"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            12,
-            15,
+            16,
+            16,
             16,
             16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Infused_Beachhead",
+        "cards": [
+            "Monochrome",
+            "The Endless Darkness"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Jungle Valley Map",
         "poedb": "https://poedb.tw/us/Jungle_Valley_Map",
         "boss": {
             "notes": "Spiders continually spawn during fight. The boss appears after a while and uses a strong Ethereal Knives ability. The boss is relatively weak, with Flicker Striking spiders representing the real danger in this fight.",
@@ -3313,6 +3445,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Arakaali",
         "connected": [
             "Beach Map",
@@ -3346,13 +3485,6 @@
     },
     {
         "name": "Laboratory Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Laboratory_Map",
         "boss": {
             "notes": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT.- this is likely a one shot. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead.",
@@ -3370,6 +3502,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -3409,13 +3548,6 @@
     },
     {
         "name": "Lair Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Lair_Map",
         "boss": {
             "notes": "Annoying boss as Rigwald spends most of his time in invulnerable or near invulnerable states. Channels a Barrage of wolf projectiles that do massive Physical damage. While channelling Rigwald takes 50% less damage. Get behind a nearby obstacle to dodge the projectiles. Rigwald also transforms into wolf form for 8 seconds where he becomes immune to damage and chases your character. Keep moving as in wolf form Rigwald hits hard and inflicts a deadly Bleed.",
@@ -3434,6 +3566,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Cemetery Map",
             "Grotto Map",
@@ -3479,13 +3618,6 @@
     },
     {
         "name": "Lair of the Hydra Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Lair_of_the_Hydra_Map",
         "boss": {
             "notes": "Cannot be slowed. Half Physical, half Cold ranged attacks. Powerful telegraphed Barrage. Blast Rain directly in front of boss. Temporarily disappears summoning minions that leave Vortex ground on death. When the boss reappears, she does an extremely powerful Fork shot. Always try to position your character behind the boss (stay in close range to do this easily). Throughout the fight a constant stream of slow Frostbolts projectiles travel across the arena. More projectiles as the boss gets closer to death.",
@@ -3504,6 +3636,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map",
         "cards": [
             "Her Mask",
@@ -3524,13 +3663,6 @@
     },
     {
         "name": "Leyline Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Leyline_Map",
         "boss": {
             "notes": "Mirror Arrow and Blink Arrow. The real boss is the one that moves around, the copies will always stay still.",
@@ -3549,6 +3681,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Dungeon Map",
             "Necropolis Map"
@@ -3579,13 +3718,6 @@
     },
     {
         "name": "Lighthouse Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
         "boss": {
             "notes": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities",
@@ -3607,6 +3739,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "pantheon": "Soul of Solaris",
         "connected": [
             "Lair Map",
@@ -3641,13 +3780,6 @@
     },
     {
         "name": "Maelstr\u00f6m of Chaos",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "boss": {
             "names": [
@@ -3664,6 +3796,13 @@
             "delirium_mirror": false,
             "linear": true
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Atoll Map"
         ],
@@ -3696,13 +3835,6 @@
     },
     {
         "name": "Malformation Map",
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Malformation_Map",
         "boss": {
             "notes": "Spawns Eyes, Physical Cleave at close range, large Ball Lightning that you should avoid. Spinning Lightning Beam deals massive Lightning damage. If it does not one-shot you it also inflicts a powerful Physical Bleed they must be instantly removed. As this fight is mechanical it is usually not too bad. However, it becomes extremely dangerous with map mods like double boss, boss attack/cast speed or multiple projectiles.",
@@ -3721,6 +3853,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Foundry Map",
             "Museum Map",
@@ -3755,13 +3894,6 @@
     },
     {
         "name": "Mao Kun",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "boss": {
             "names": [
@@ -3776,6 +3908,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Shore Map"
         ],
@@ -3802,13 +3941,6 @@
     },
     {
         "name": "Marshes Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Marshes_Map",
         "boss": {
             "notes": "Fire/Physical damage. Cyclone leaves Burning Ground. Sunder attack.",
@@ -3826,6 +3958,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Cemetery Map",
             "Lighthouse Map",
@@ -3854,13 +3993,6 @@
     },
     {
         "name": "Maze Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Maze_Map",
         "boss": {
             "notes": "Same as Act 2 fight. Kite when boss starts shooting laser beams. Avoid telegraphed slam at all costs.",
@@ -3876,6 +4008,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Colosseum Map",
             "Crater Map",
@@ -3914,13 +4053,6 @@
     },
     {
         "name": "Maze of the Minotaur Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Maze_of_the_Minotaur_Map",
         "boss": {
             "notes": "Cannot be slowed. 30% of Physical damage converted to Lightning. Powerful telegraphed slam. Slam area leaves behind falling rocks. Burrows underground and springs upon target with powerful attack. Minotaur always Burrows in a straight line so step to the side when you see it happen. Every 20% health lost a Lightning Wall activates which when touched, applies a temporary, unremovable Shock that slows the player and deals Lightning DoT. Stone Golems are summoned to regain flask charges.",
@@ -3939,6 +4071,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map",
         "cards": [
             "Her Mask",
@@ -3959,13 +4098,6 @@
     },
     {
         "name": "Mineral Pools Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Mineral_Pools_Map",
         "boss": {
             "notes": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
@@ -3983,6 +4115,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Lighthouse Map",
             "Phantasmagoria Map",
@@ -4027,13 +4166,6 @@
     },
     {
         "name": "Moon Temple Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Moon_Temple_Map",
         "boss": {
             "notes": "Fires Ice shots which Chill the player. When damaged fires more projectiles including some that home in on the player. The orb casts dark Frostbolts which leave patches of hard to see Vortex on the ground dealing cold DoT.",
@@ -4051,6 +4183,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "pantheon": "Soul of Lunaris",
         "connected": [
             "Infested Valley Map",
@@ -4089,13 +4228,6 @@
     },
     {
         "name": "Museum Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Museum_Map",
         "boss": {
             "notes": "Heavy and hard to avoid Chaos and Physical damage. Fills room with nasty Chaos cluster traps. Also uses Desecrate and Detonate Dead so keep moving and try to stay out of all the chaos.",
@@ -4112,6 +4244,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Crater Map",
             "Malformation Map",
@@ -4157,13 +4296,6 @@
     },
     {
         "name": "Necropolis Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Necropolis_Map",
         "boss": {
             "notes": "Throws three strong Physical projectiles. Summons Animated Weapons. Creates a circular frost wall around your character that prevents movement. Places Bonespire ground beneath your feet that inflicts a stackable, unremovable physical DoT. It is imperative you move out of this quickly. Always bring some form of movement skill (not Shield Charge) that allows you to escape the Frost Wall. Frost Wall + Bonespire ground equates to death.",
@@ -4181,6 +4313,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arid Lake Map",
             "Death and Taxes",
@@ -4216,14 +4355,42 @@
         "image": true
     },
     {
-        "name": "Olmec's Sanctum",
+        "name": "Oba's Cursed Trove",
+        "poedb": "https://poedb.tw/us/Obas_Cursed_Trove",
+        "boss": {
+            "not_spawned": true,
+            "rushable": false,
+            "phases": false,
+            "soft_phases": false
+        },
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        },
         "tiers": [
-            1,
-            4,
-            8,
-            12,
+            10,
+            13,
+            16,
+            16,
             16
         ],
+        "connected": [
+            "Underground Sea Map"
+        ],
+        "wiki": "https://www.poewiki.net/wiki/Oba's_Cursed_Trove",
+        "cards": [
+            "Jack in the Box",
+            "Monochrome",
+            "The Encroaching Darkness",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": true
+    },
+    {
+        "name": "Olmec's Sanctum",
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "boss": {
             "names": [
@@ -4238,6 +4405,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "connected": [
             "Bone Crypt Map"
         ],
@@ -4255,13 +4429,6 @@
     },
     {
         "name": "Orchard Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Orchard_Map",
         "boss": {
             "notes": "Mortar of Fire based projectiles that can shotgun the player. Summons skeletons and places offerings which deal Chaos or Fire DoT. Channels a laser beam that deals significant Fire DoT. Run behind a pillar to interrupt the beam. Green circle teleports players standing in it - potentially onto labynith traps on around the arena.",
@@ -4279,6 +4446,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Arcade Map",
             "Courtyard Map",
@@ -4321,13 +4495,6 @@
     },
     {
         "name": "Overgrown Ruin Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Overgrown_Ruin_Map",
         "boss": {
             "notes": "Maligaro deals telegraphed Physical attacks that Maim and Poison. When damaged Maligaro will summon the spider Akaveesh and his sex slave Mun'eh. Akaveesh's projectiles are particularly deadly, dealing large amounts of Chaos damage and leaving Chaos DoT ground. When almost dead Maligaro will assault the player with several clones which must be tanked through.",
@@ -4344,6 +4511,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Factory Map",
             "Flooded Mine Map",
@@ -4387,13 +4561,6 @@
     },
     {
         "name": "Overgrown Shrine Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Overgrown_Shrine_Map",
         "boss": {
             "notes": "Leaves purple spikes on the ground which after a short time deals a Chaos/Physical rain. Maligaro deals modest Physical and Chaos damage with melee attacks and a Spectral Throw projectile. At low life Maligaro splits into several apparitions. These apparitions can be lethal if you let them engage you all at once.",
@@ -4412,6 +4579,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "pantheon": "Soul of Arakaali",
         "connected": [
             "Acton's Nightmare",
@@ -4455,13 +4629,6 @@
     },
     {
         "name": "Phantasmagoria Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Phantasmagoria_Map",
         "boss": {
             "notes": "Try not to stand in more than one curse aura (Vulnerability being particulary dangerous). Avoid strong physical projectiles.",
@@ -4479,6 +4646,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Arcade Map",
             "Forbidden Woods Map",
@@ -4521,13 +4695,6 @@
     },
     {
         "name": "Pier Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Pier_Map",
         "boss": {
             "notes": "Similar to the Bazaar boss without the statues. During the fight small spikes will appear from the ground. At 2/3 and 1/3 health will teleport. You have to traverse a mini trap gauntlet to get to the next area. Don't be afraid to teleport back to your hideout to refresh flask charges.",
@@ -4545,6 +4712,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Nest Map",
             "Armoury Map",
@@ -4580,13 +4754,6 @@
     },
     {
         "name": "Pillars of Arun",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "boss": {
             "names": [
@@ -4601,6 +4768,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Dunes Map"
         ],
@@ -4620,13 +4794,6 @@
     },
     {
         "name": "Pit Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Pit_Map",
         "boss": {
             "notes": "Same as Marshes boss. Strong Physical Cyclone and Physical/Fire Ground Slam. Taunts you, reducing your damage against other enemies. Many waves of enemies spawn in congested room so be careful not to be overwhelmed.",
@@ -4645,6 +4812,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Arcade Map",
             "Atoll Map",
@@ -4680,13 +4854,6 @@
     },
     {
         "name": "Pit of the Chimera Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Pit_of_the_Chimera_Map",
         "boss": {
             "notes": "Cannot be slowed. Modest physical attacks including Flicker Strike and a Flicker Lance that inflicts Bleeding. When he places a red circle beneath him get out - he will perform a flurry of attacks against targets in the area. Throughout the fight are three minion phases where you face waves of powerful adds ending with a mini-boss. Most dangerous ability is the Chimera Smoke Phase - used after any of the add phases. The Chimera disappears into one of many smoke clouds - to uncover the Chimera you must run through the clouds until you find him. While in the Smoke Phase Chimera will constantly deal hard to avoid melee Physical damage attacks. Save flasks for this phase, it especially helps to pop a Basalt/Granite flask. Sometimes you will be unlucky and the Chimera will be hiding in the last smoke cloud :(",
@@ -4705,6 +4872,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map",
         "cards": [
             "A Familiar Call",
@@ -4731,13 +4905,6 @@
     },
     {
         "name": "Plateau Map",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Plateau_Map",
         "boss": {
             "notes": "Atoll boss, along with another totem that uses a variety of Lightning spells. Once one is killed the other will restore to full health, gaining new abilities and more damage. For melee characters I advise killing Purina first (cold one) and for ranged characters killing Poporo (lightning one) first. Purina maintains a powerful Ice Nova that can one shot. Poporo has an extremely powerful Vaal Storm Call which you need to get out of asap.",
@@ -4758,6 +4925,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Tower Map",
             "Toxic Sewer Map",
@@ -4792,13 +4966,6 @@
     },
     {
         "name": "Plaza Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Plaza_Map",
         "boss": {
             "notes": "Same as Orchard boss except with some Spiky Pillar Labyrinth traps. This time when she channels her deadly beam get behind one of the pillars either side of the room.",
@@ -4814,6 +4981,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Cold River Map",
             "Frozen Cabins Map",
@@ -4849,13 +5023,6 @@
     },
     {
         "name": "Poorjoy's Asylum",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "boss": {
             "names": [
@@ -4870,6 +5037,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Temple Map"
         ],
@@ -4896,13 +5070,6 @@
     },
     {
         "name": "Port Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Port_Map",
         "boss": {
             "notes": "Like a Russian doll; kill one boss, a smaller one spawns (4 times). Powerful Puncture and Blast Rain.",
@@ -4921,6 +5088,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Atoll Map",
             "Courtyard Map",
@@ -4965,13 +5139,6 @@
     },
     {
         "name": "Precinct Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Precinct_Map",
         "boss": {
             "notes": "These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one.",
@@ -4995,6 +5162,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Overgrown Shrine Map",
             "Primordial Blocks Map",
@@ -5034,13 +5208,6 @@
     },
     {
         "name": "Primordial Blocks Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "boss": {
             "names": [
@@ -5056,6 +5223,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Belfry Map",
             "Cemetery Map",
@@ -5092,13 +5266,6 @@
     },
     {
         "name": "Primordial Pool Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Primordial_Pool_Map",
         "boss": {
             "notes": "Phase 2 Malachai without the hearts/adds and much more room to manoeuvre. Avoid standing on the Fire Traps. Move out of the AoE from his Mortar projectile. His most dangerous attacks are the channelled \"You are being selfish\" tentacles and telegraphed teleport slam which most likely will one-shot. It pays to stay closer to the boss so you can always see when these two abilities are coming.",
@@ -5118,6 +5285,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Grotto Map",
             "Lighthouse Map",
@@ -5152,13 +5326,6 @@
     },
     {
         "name": "Promenade Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Promenade_Map",
         "boss": {
             "notes": "Avenger deals simple Physical Cleave and Double Strike attacks. Mage casts weak Sparks and Conductivity auras on the ground. The Mage also will cast a large, slow-moving Ball Lightning that deals heavy damage so stand clear. The Mage casts Lightning Thorns on the Avenger which reflects Lightning damage back to the attacker. Again, this is extremely dangerous for fast attacking builds so always pay attention (the mage does not cast it on herself so it is usually safest to kill her first).",
@@ -5178,6 +5345,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Atoll Map",
             "Chateau Map",
@@ -5219,13 +5393,6 @@
     },
     {
         "name": "Racecourse Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Racecourse_Map",
         "boss": {
             "notes": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal.",
@@ -5247,6 +5414,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Coves Map",
             "Temple Map",
@@ -5277,13 +5451,6 @@
     },
     {
         "name": "Ramparts Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Ramparts_Map",
         "boss": {
             "notes": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT.",
@@ -5303,6 +5470,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arachnid Nest Map",
             "Crystal Ore Map",
@@ -5339,13 +5513,6 @@
     },
     {
         "name": "Relic Chambers Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Relic_Chambers_Map",
         "boss": {
             "notes": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise",
@@ -5362,6 +5529,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Flooded Mine Map",
             "Shipyard Map",
@@ -5396,14 +5570,107 @@
         "image": true
     },
     {
-        "name": "Residence Map",
+        "name": "Replica Cortex",
+        "poedb": "https://poedb.tw/us/Replica_Cortex",
+        "boss": {
+            "names": [
+                "Venarius"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            5,
-            8,
             12,
+            15,
+            16,
             16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Replica_Cortex",
+        "cards": [
+            "Dementophobia",
+            "Eternal Bonds",
+            "Imperfect Memories",
+            "Magnum Opus",
+            "The Hook",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Replica Pillars of Arun",
+        "poedb": "https://poedb.tw/us/Replica_Pillars_of_Arun",
+        "boss": {
+            "names": [
+                "Talin, Faithbreaker"
+            ]
+        },
+        "layout": {},
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
+        "connected": [
+            "Dunes Map"
+        ],
+        "wiki": "https://www.poewiki.net/wiki/Replica_Pillars_of_Arun",
+        "cards": [
+            "A Note in the Wind",
+            "Imperial Legacy",
+            "Monochrome",
+            "The Forward Gaze",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Replica Poorjoy's Asylum",
+        "poedb": "https://poedb.tw/us/Replica_Poorjoys_Asylum",
+        "boss": {
+            "names": [
+                "Mistress Hyseria"
+            ]
+        },
+        "layout": {},
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
+        "connected": [
+            "Temple Map"
+        ],
+        "wiki": "https://www.poewiki.net/wiki/Replica_Poorjoy's_Asylum",
+        "cards": [
+            "Chaotic Disposition",
+            "Deadly Joy",
+            "Monochrome",
+            "The Army of Blood",
+            "The Carrion Crow",
+            "The Fiend",
+            "The Forward Gaze",
+            "The Last Supper",
+            "The Professor",
+            "The Thaumaturgist",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Residence Map",
         "poedb": "https://poedb.tw/us/Residence_Map",
         "boss": {
             "notes": "Throws powerful Lightning and Fire traps. Beware of Bear trap that can immobilize you, allowing the boss to spam traps at your location.",
@@ -5421,6 +5688,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -5464,7 +5738,14 @@
         "image": true
     },
     {
-        "name": "Scriptorium Map",
+        "name": "Rewritten Distant Memory",
+        "poedb": "https://poedb.tw/us/Rewritten_Distant_Memory",
+        "boss": {
+            "names": [
+                "Rewritten Synthete"
+            ]
+        },
+        "layout": {},
         "tiers": [
             1,
             4,
@@ -5472,6 +5753,20 @@
             12,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Rewritten_Distant_Memory",
+        "cards": [
+            "A Dusty Memory",
+            "Justified Ambition",
+            "Magnum Opus",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Scriptorium Map",
         "poedb": "https://poedb.tw/us/Scriptorium_Map",
         "boss": {
             "notes": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die.",
@@ -5488,6 +5783,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            1,
+            4,
+            8,
+            12,
+            16
+        ],
         "connected": [
             "Belfry Map",
             "Precinct Map",
@@ -5527,13 +5829,6 @@
     },
     {
         "name": "Shipyard Map",
-        "tiers": [
-            8,
-            11,
-            15,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Shipyard_Map",
         "boss": {
             "notes": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy.",
@@ -5552,6 +5847,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            8,
+            11,
+            15,
+            16,
+            16
+        ],
         "connected": [
             "Canyon Map",
             "Overgrown Ruin Map",
@@ -5589,13 +5891,6 @@
     },
     {
         "name": "Shore Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Shore_Map",
         "boss": {
             "notes": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
@@ -5614,6 +5909,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Canyon Map",
             "Mao Kun",
@@ -5655,13 +5957,6 @@
     },
     {
         "name": "Shrine Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Shrine_Map",
         "boss": {
             "notes": "Weak Arc and Ball Lightning. Stay out of Vaal Storm Call. Some builds can tank her fire form, if not just kite. In ice form take cover behind the pillars as her Ice Shot does significant damage.",
@@ -5678,6 +5973,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Dunes Map",
             "Excavation Map",
@@ -5711,13 +6013,6 @@
     },
     {
         "name": "Siege Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Siege_Map",
         "boss": {
             "notes": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain.",
@@ -5736,6 +6031,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Tukohama",
         "connected": [
             "Arachnid Tomb Map",
@@ -5773,13 +6075,6 @@
     },
     {
         "name": "Silo Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Silo_Map",
         "boss": {
             "names": [
@@ -5797,6 +6092,13 @@
             "linear": true,
             "few_obstacles": true
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -5837,13 +6139,6 @@
     },
     {
         "name": "Stagnation Map",
-        "tiers": [
-            2,
-            5,
-            9,
-            13,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Stagnation_Map",
         "boss": {
             "names": [
@@ -5860,6 +6155,13 @@
             "delirium_mirror": false,
             "outdoors": true
         },
+        "tiers": [
+            2,
+            5,
+            9,
+            13,
+            16
+        ],
         "connected": [
             "Alleyways Map",
             "Primordial Pool Map",
@@ -5898,13 +6200,6 @@
     },
     {
         "name": "Strand Map",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Strand_Map",
         "boss": {
             "notes": "Kraityn can hit hard and fast. In particular watch out for his Blade Flurry. Calaf is fairly unthreatening as well as being easy to kite.",
@@ -5925,6 +6220,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Belfry Map",
             "Orchard Map",
@@ -5971,13 +6273,6 @@
     },
     {
         "name": "Sulphur Vents Map",
-        "tiers": [
-            7,
-            10,
-            14,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Sulphur_Vents_Map",
         "boss": {
             "notes": "Telegraphed Flamethrower and Petrify attacks, keep behind the boss. Weak projectile barrage. After killing boss, petrified monsters are freed.",
@@ -5996,6 +6291,13 @@
             "league_mechanics": true,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Crimson Temple Map",
             "Flooded Mine Map",
@@ -6025,13 +6327,6 @@
     },
     {
         "name": "Synthesised Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Synthesised_Map",
         "boss": {
             "names": [
@@ -6039,6 +6334,13 @@
             ]
         },
         "layout": {},
+        "tiers": [
+            11,
+            14,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Synthesised_Map",
         "cards": [],
         "info": {},
@@ -6047,13 +6349,6 @@
     },
     {
         "name": "Temple Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Temple_Map",
         "boss": {
             "notes": "Scorching Ray, debuffs Fire resistance. Casts Bladefall. Throws Fire based projectile that splits into smaller ones. Sun orb casts a fire laser that leaves Burning Ground.",
@@ -6071,6 +6366,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Solaris",
         "connected": [
             "Defiled Cathedral Map",
@@ -6115,13 +6417,6 @@
     },
     {
         "name": "Terrace Map",
-        "tiers": [
-            14,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Terrace_Map",
         "boss": {
             "notes": "Leap Slam. Charge attack. Powerful telegraphed \"Cone Strike' deals Physical and Cold damage. After 90% life summons Mercury totems that summon piercing projectiles which explode for Cold damage after 3 seconds (only one totem active at a time). Every 5% life lost a small invulnerable white orb is spawned which chills and applies cold DoT on contact. At 2/3 and 1/3 health Yugul disappears summoning several weak clones of Yugul that use basic melee attacks.",
@@ -6140,6 +6435,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            14,
+            16,
+            16,
+            16,
+            16
+        ],
         "pantheon": "Soul of Yugul",
         "connected": [
             "Colosseum Map",
@@ -6180,14 +6482,32 @@
         "image": true
     },
     {
-        "name": "The Coward's Trial",
+        "name": "The Beachhead",
+        "poedb": "https://poedb.tw/us/The_Beachhead",
+        "boss": {
+            "names": [
+                "<<>>"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            7,
-            10,
-            14,
+            5,
+            8,
+            12,
             16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/The_Beachhead",
+        "cards": [
+            "The Endless Darkness"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "The Coward's Trial",
         "poedb": "https://poedb.tw/us/The_Cowards_Trial",
         "boss": {
             "names": [
@@ -6202,6 +6522,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            7,
+            10,
+            14,
+            16,
+            16
+        ],
         "connected": [
             "Cursed Crypt Map"
         ],
@@ -6225,13 +6552,6 @@
     },
     {
         "name": "The Putrid Cloister",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "boss": {
             "names": [
@@ -6239,6 +6559,13 @@
             ]
         },
         "layout": {},
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Museum Map"
         ],
@@ -6265,14 +6592,30 @@
         "image": false
     },
     {
-        "name": "The Twilight Temple",
+        "name": "The Tower of Ordeals",
+        "poedb": "https://poedb.tw/us/The_Tower_of_Ordeals",
+        "boss": {
+            "names": [
+                "The Trialmaster"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            4,
-            7,
-            11,
-            15,
+            16,
+            16,
+            16,
+            16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/The_Tower_of_Ordeals",
+        "cards": [],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "The Twilight Temple",
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "boss": {
             "names": [
@@ -6281,6 +6624,13 @@
             ]
         },
         "layout": {},
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Moon Temple Map"
         ],
@@ -6311,13 +6661,6 @@
     },
     {
         "name": "The Vinktar Square",
-        "tiers": [
-            5,
-            8,
-            12,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "boss": {
             "names": [
@@ -6325,6 +6668,13 @@
             ]
         },
         "layout": {},
+        "tiers": [
+            5,
+            8,
+            12,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/The_Vinktar_Square",
         "cards": [
             "Monochrome",
@@ -6340,13 +6690,6 @@
     },
     {
         "name": "Thicket Map",
-        "tiers": [
-            13,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Thicket_Map",
         "boss": {
             "notes": "Summons small monkeys and frenzies allies. Physical Sunder attack. Will periodically start spamming Sunder which can dish out extreme physical damage if caught unaware. Just kite the boss in a circle when this starts happening.",
@@ -6363,6 +6706,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            13,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -6399,13 +6749,6 @@
     },
     {
         "name": "Tower Map",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Tower_Map",
         "boss": {
             "notes": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus.",
@@ -6424,6 +6767,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Mineral Pools Map",
             "Plateau Map",
@@ -6460,13 +6810,6 @@
     },
     {
         "name": "Toxic Sewer Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Toxic_Sewer_Map",
         "boss": {
             "notes": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
@@ -6484,6 +6827,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Canyon Map",
             "City Square Map",
@@ -6522,13 +6872,6 @@
     },
     {
         "name": "Tropical Island Map",
-        "tiers": [
-            15,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Tropical_Island_Map",
         "boss": {
             "notes": "Has 'allies deal substantial extra physical damage' aura. Summons monkeys and frenzies allies. Boss itself is slow and does little damage. At 50% health summons two small unique monkeys with Haste and slowing auras.",
@@ -6547,6 +6890,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Arsenal Map",
             "Barrows Map",
@@ -6583,14 +6933,35 @@
         "image": true
     },
     {
-        "name": "Underground River Map",
+        "name": "Twisted Distant Memory",
+        "poedb": "https://poedb.tw/us/Twisted_Distant_Memory",
+        "boss": {
+            "names": [
+                "Twisted Synthete"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            15,
-            16,
-            16,
-            16,
+            1,
+            4,
+            8,
+            12,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Twisted_Distant_Memory",
+        "cards": [
+            "A Dusty Memory",
+            "Justified Ambition",
+            "Magnum Opus",
+            "The Void"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Underground River Map",
         "poedb": "https://poedb.tw/us/Underground_River_Map",
         "boss": {
             "notes": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage.",
@@ -6609,6 +6980,13 @@
             "league_mechanics": false,
             "delirium_mirror": true
         },
+        "tiers": [
+            15,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Caer Blaidd, Wolfpack's Den",
             "Dig Map",
@@ -6643,13 +7021,6 @@
     },
     {
         "name": "Underground Sea Map",
-        "tiers": [
-            10,
-            13,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Underground_Sea_Map",
         "boss": {
             "notes": "Ice based spells and Chilled ground. Avoid Icestorm and Ice Spear attacks. Take along some form of Freeze immunity.",
@@ -6667,6 +7038,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            10,
+            13,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Beach Map",
             "Geode Map",
@@ -6713,14 +7091,37 @@
         "image": true
     },
     {
-        "name": "Vaal Pyramid Map",
+        "name": "Untainted Paradise",
+        "poedb": "https://poedb.tw/us/Untainted_Paradise",
+        "boss": {
+            "names": [
+                "Clutch Queen",
+                "Colossal Spitter",
+                "Elder Devourer",
+                "Great Maw",
+                "Prime Ape",
+                "The First Rhoa"
+            ]
+        },
+        "layout": {},
         "tiers": [
-            4,
-            7,
+            8,
             11,
             15,
+            16,
             16
         ],
+        "wiki": "https://www.poewiki.net/wiki/Untainted_Paradise",
+        "cards": [
+            "The Old Man"
+        ],
+        "info": {},
+        "rating": {},
+        "unique": true,
+        "image": false
+    },
+    {
+        "name": "Vaal Pyramid Map",
         "poedb": "https://poedb.tw/us/Vaal_Pyramid_Map",
         "boss": {
             "notes": "Bosses spawn one at a time, after a delay of around 5-10 seconds. The first boss, the Whipping Miscreation is most dangerous inflicting Vulnerabililty and dealing massive Physical damage. The Tentacle Miscareation buffs nearby enemies and shoots easily avoidable projectiles. The Reaver has a large AoE but doesn't deal substantial damage. Try to kill each boss before the next spawns.",
@@ -6739,6 +7140,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -6780,13 +7188,6 @@
     },
     {
         "name": "Vaal Temple Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Vaal_Temple_Map",
         "boss": {
             "notes": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
@@ -6805,6 +7206,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map",
         "cards": [
             "Beauty Through Death",
@@ -6837,13 +7245,6 @@
     },
     {
         "name": "Vaults of Atziri",
-        "tiers": [
-            4,
-            7,
-            11,
-            15,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "boss": {
             "not_spawned": true,
@@ -6855,6 +7256,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            4,
+            7,
+            11,
+            15,
+            16
+        ],
         "connected": [
             "Vaal Pyramid Map"
         ],
@@ -6887,13 +7295,6 @@
     },
     {
         "name": "Volcano Map",
-        "tiers": [
-            16,
-            16,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Volcano_Map",
         "boss": {
             "notes": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage.",
@@ -6910,6 +7311,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            16,
+            16,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Colosseum Map",
             "Racecourse Map"
@@ -6945,13 +7353,6 @@
     },
     {
         "name": "Waste Pool Map",
-        "tiers": [
-            6,
-            9,
-            13,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Waste_Pool_Map",
         "boss": {
             "notes": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
@@ -6970,6 +7371,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            6,
+            9,
+            13,
+            16,
+            16
+        ],
         "connected": [
             "Canyon Map",
             "Mineral Pools Map",
@@ -7007,13 +7415,6 @@
     },
     {
         "name": "Wasteland Map",
-        "tiers": [
-            9,
-            12,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Wasteland_Map",
         "boss": {
             "notes": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable.",
@@ -7031,6 +7432,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            9,
+            12,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Caldera Map",
             "Foundry Map"
@@ -7061,13 +7469,6 @@
     },
     {
         "name": "Whakawairua Tuahu",
-        "tiers": [
-            3,
-            6,
-            10,
-            14,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "boss": {
             "names": [
@@ -7082,6 +7483,13 @@
             "league_mechanics": false,
             "delirium_mirror": false
         },
+        "tiers": [
+            3,
+            6,
+            10,
+            14,
+            16
+        ],
         "connected": [
             "Strand Map"
         ],
@@ -7113,13 +7521,6 @@
     },
     {
         "name": "Wharf Map",
-        "tiers": [
-            12,
-            15,
-            16,
-            16,
-            16
-        ],
         "poedb": "https://poedb.tw/us/Wharf_Map",
         "boss": {
             "notes": "Weak Lightning spells. Summons 6 Flood Orbs which use an unthreatening Cyclone. Boss is tanky.",
@@ -7137,6 +7538,13 @@
             "league_mechanics": true,
             "delirium_mirror": true
         },
+        "tiers": [
+            12,
+            15,
+            16,
+            16,
+            16
+        ],
         "connected": [
             "Crater Map",
             "Defiled Cathedral Map",

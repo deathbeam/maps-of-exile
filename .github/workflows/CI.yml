@@ -17,11 +17,13 @@ jobs:
           persist-credentials: false
 
       - name: Setup python
+        if: ${{ github.event_name == 'push' }}
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
       - name: Install data dependencies
+        if: ${{ github.event_name == 'push' }}
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
@@ -33,6 +35,12 @@ jobs:
         working-directory: data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
+      - name: Push data
+        if: ${{ github.event_name == 'push' }}
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'Update map and card data [ci skip]'
 
       - name: Setup node
         uses: actions/setup-node@v3

@@ -86,14 +86,38 @@ function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, c
   )
 }
 
-function filterMaps(ratedMaps, currentInput) {
-  return ratedMaps.filter(
-    m =>
-      !currentInput ||
-      currentInput.find(s => m.name.toLowerCase().includes(s)) ||
-      m.cards.find(c => currentInput.find(s => c.name.toLowerCase().includes(s))) ||
-      currentInput.every(s => m.tags.find(t => t.name.includes(s)))
-  )
+function parseSearch(s) {
+  return (s || '')
+    .split(',')
+    .map(e => e.trim().toLowerCase())
+    .filter(e => e)
+    .map(e => ({
+      value: e.replace(/[+-]/g, ''),
+      neg: e.startsWith('-')
+    }))
+}
+
+function buildSearch(s) {
+  return s.map(v => (v.neg ? '-' : '') + v.value).join(', ')
+}
+
+function filter(search, v) {
+  let posMatched = true
+  let negMatched = true
+
+  for (let s of search) {
+    if (s.neg) {
+      negMatched = negMatched && !v.some(m => m.trim().toLowerCase().includes(s.value))
+    } else {
+      posMatched = posMatched && v.some(m => m.trim().toLowerCase().includes(s.value))
+    }
+  }
+
+  return posMatched && negMatched
+}
+
+function filterMaps(ratedMaps, currentSearch) {
+  return ratedMaps.filter(m => !currentSearch || filter(currentSearch, m.search))
 }
 
 function useTransitionState(key, def, startTransition) {
@@ -149,62 +173,47 @@ const RatingBadge = ({ rating, tooltip }) => {
   return badge
 }
 
-const Tags = ({ tags, currentInput, addToInput }) => {
+const Tags = ({ tags, currentSearch, addToInput }) => {
   return tags.map(t => {
     const val = t.name
     const info = t.info
 
-    const searched = currentInput.find(c => c === val)
-    let color = 'bg-secondary'
+    const searched = currentSearch.find(c => c.value === val)
+    let color = 'btn-secondary'
     if (searched) {
-      color = 'bg-primary'
-    } else {
-      if (val.startsWith('+')) {
-        color = 'bg-success'
-      } else if (val.startsWith('-')) {
-        color = 'bg-danger'
-      } else if (val.startsWith('soul')) {
-        color = 'bg-info'
-      }
+      color = searched.neg ? 'btn-danger' : 'btn-success'
     }
 
-    const noticeSuff = info ? (
-      <>
-        {' '}
-        <b>*</b>
-      </>
-    ) : null
-
-    const searchedSuff = searched ? (
-      <>
-        {' '}
-        <span className="text-danger-emphasis">x</span>
-      </>
-    ) : null
-
-    const clazz = 'badge rounded-pill text-dark me-1 ' + color
-    const out = (
-      <button className={clazz} onClick={() => addToInput(val)}>
-        {val}
-        {noticeSuff}
-        {searchedSuff}
+    const buttons = []
+    buttons.push(
+      <button
+        className={'btn text-dark ' + color}
+        onClick={() => addToInput(val, searched ? !searched.neg : false, false)}
+      >
+        {val} {info && <b>*</b>}
       </button>
     )
 
-    if (info) {
-      return (
-        <span className="tooltip-tag tooltip-tag-right">
-          <span className="tooltip-tag-text">{info}</span>
-          {out}
-        </span>
+    if (searched) {
+      buttons.push(
+        <button className={'btn text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
+          <b>X</b>
+        </button>
       )
     }
 
-    return out
+    return info ? (
+      <span className="tooltip-tag tooltip-tag-right">
+        <span className="tooltip-tag-text tooltip-tag-fill">{info}</span>
+        <div className="btn-group btn-group-sm m-1">{buttons}</div>
+      </span>
+    ) : (
+      <div class="btn-group btn-group-sm m-1">{buttons}</div>
+    )
   })
 }
 
-const MapName = ({ map, currentInput, addToInput }) => {
+const MapName = ({ map, currentSearch, addToInput }) => {
   const mapImage =
     process.env.PUBLIC_URL +
     '/layout/' +
@@ -227,7 +236,7 @@ const MapName = ({ map, currentInput, addToInput }) => {
       {map.name}
     </a>
   )
-  const tags = <Tags tags={map.tags} currentInput={currentInput} addToInput={addToInput} />
+  const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
 
   return map.image ? (
     <>
@@ -410,10 +419,7 @@ function App() {
     [ratedCards, layoutInput, densityInput, bossInput, cardInput]
   )
 
-  const currentInput = (searchInput || '')
-    .split(',')
-    .map(e => e.trim().toLowerCase())
-    .filter(e => e)
+  const currentSearch = parseSearch(searchInput)
 
   const setSearch = v => {
     searchRef.current.value = v
@@ -424,22 +430,21 @@ function App() {
     })
   }
 
-  const addToInput = v => {
-    const inS = searchRef.current.value
-    if (!inS) {
-      setSearch(v)
-    } else if (!inS.includes(v)) {
-      setSearch(inS + ', ' + v)
+  const addToInput = (v, neg, remove) => {
+    let s = parseSearch(searchRef.current.value || '')
+
+    if (remove) {
+      s = s.filter(sv => sv.value !== v)
     } else {
-      setSearch(
-        inS
-          .replace(', ' + v, '')
-          .replace(',' + v, '')
-          .replace(v + ', ', '')
-          .replace(v + ',', '')
-          .replace(v, '')
-      )
+      const sv = s.find(sv => sv.value === v)
+      if (sv) {
+        sv.neg = neg
+      } else {
+        s.push({ value: v, neg: neg })
+      }
     }
+
+    setSearch(buildSearch(s))
   }
 
   return (
@@ -458,7 +463,7 @@ function App() {
               onChange={setSearchInput}
             />
             <span className="small">tags:</span>{' '}
-            <Tags tags={preparedTags} currentInput={currentInput} addToInput={addToInput} />
+            <Tags tags={preparedTags} currentSearch={currentSearch} addToInput={addToInput} />
           </div>
           <div className="col col-lg-8 col-12">
             <div className="row g-2">
@@ -657,7 +662,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {filterMaps(ratedMaps, currentInput).map(m => (
+          {filterMaps(ratedMaps, currentSearch).map(m => (
             <tr key={m.name} id={m.name}>
               <td className="text-center">
                 <div className=" d-none d-md-table-cell">
@@ -675,7 +680,7 @@ function App() {
                 </div>
               </td>
               <td>
-                <MapName map={m} currentInput={currentInput} addToInput={addToInput} />
+                <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <RatingBadge rating={m.rating.layout} tooltip={m.info.layout} />

@@ -24,13 +24,13 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')
   pushTag(map.info, mapTags, map.layout, 'linear')
-  pushTag(map.info, mapTags, map.layout, 'league_mechanics', '+league mechanics')
-  pushTag(map.info, mapTags, map.layout, 'delirium_mirror', '+delirium mirror')
+  pushTag(map.info, mapTags, map.layout, 'league_mechanics', 'league mechanics')
+  pushTag(map.info, mapTags, map.layout, 'delirium_mirror', 'delirium mirror')
 
   pushTag(map.info, mapTags, map.boss, 'separated', 'boss separated')
-  pushTag(map.info, mapTags, map.boss, 'not_spawned', '+boss not spawned')
-  pushTag(map.info, mapTags, map.boss, 'rushable', '+boss rushable')
-  pushTag(map.info, mapTags, map.boss, 'phases', '-boss with phases')
+  pushTag(map.info, mapTags, map.boss, 'not_spawned', 'boss not spawned')
+  pushTag(map.info, mapTags, map.boss, 'rushable', 'boss rushable')
+  pushTag(map.info, mapTags, map.boss, 'phases', 'boss with phases')
   pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
 
   pushTag(map.info, mapTags, map, 'unique')
@@ -43,12 +43,17 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  return {
+  const out = {
     ...map,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
   }
+
+  // Build search index
+  out.search = [out.name, ...out.connected, ...out.cards, ...out.tags.map(t => t.name)]
+
+  return out
 })
 
 export const preparedTags = []

@@ -1,8 +1,6 @@
 # poe-tools
 
-Shows and filters map/card/map metadata from various sources. None of these data are made up or manually inputted (by me).
-There are still some subjective data coming from PoeDB or missing data, especially the **Boss** column showing boss
-difficulty but that usually isn't the deciding factor.
+Shows and filters map/card/map metadata from various sources.
 
 ## Adding new map
 

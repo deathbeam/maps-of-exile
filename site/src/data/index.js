@@ -1,69 +1,9 @@
 import cards from './cards.json'
 import maps from './maps.json'
 
-export const cardMinPrice = 10
 export const cardBossMulti = 3.5
-export const cardNameBaseline = 'The Chains that Bind'
-export const cardWeightBaseline = cards.find(c => c.name === cardNameBaseline).weight
-
-function rescale(value, minValue, maxValue, scale) {
-  return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
-}
-
-export function calculateScore(dataset, range) {
-  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
-  const min = Math.min(...nonzerodataset.map(o => o.value))
-  const max = Math.max(...nonzerodataset.map(o => o.value))
-  const out = []
-
-  for (let entry of dataset) {
-    if (entry.value) {
-      out.push({
-        ...entry,
-        score: rescale(entry.value, min, max, range)
-      })
-    } else {
-      out.push(entry)
-    }
-  }
-
-  return out
-}
-
-export const preparedCards = calculateScore(
-  cards
-    .map(card => {
-      let rate = 0
-      if (card.price >= cardMinPrice) {
-        rate = card.weight / cardWeightBaseline
-      }
-
-      return {
-        ...card,
-        value: rate * card.price * (card.boss ? 1 / cardBossMulti : 1)
-      }
-    })
-    .sort((a, b) => b.price - a.price)
-    .sort((a, b) => b.value - a.value),
-  10
-)
-
+export const preparedCards = cards
 export const preparedMaps = maps.map(map => {
-  const mapCards = []
-
-  for (let card of map.cards) {
-    const cardData = preparedCards.find(c => c.name === card)
-    if (cardData) {
-      mapCards.push({
-        ...cardData
-      })
-    } else {
-      mapCards.push({
-        name: card
-      })
-    }
-  }
-
   function pushTag(info, destination, source, key, name = null) {
     const tag = source[key]
 
@@ -106,7 +46,6 @@ export const preparedMaps = maps.map(map => {
     ...map,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
-    cards: mapCards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
   }
 })

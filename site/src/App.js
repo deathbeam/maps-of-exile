@@ -5,51 +5,95 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import {
-  cardMinPrice,
-  cardBossMulti,
-  cardWeightBaseline,
-  preparedCards,
-  preparedMaps,
-  preparedTags,
-  cardNameBaseline,
-  calculateScore
-} from './data'
+import { cardBossMulti, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
+import SelectSearch from 'react-select-search'
 
-function rateMaps(foundMaps, layoutInput, densityInput, bossInput, cardInput) {
-  let out = []
+function rescale(value, minValue, maxValue, scale) {
+  return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
+}
 
-  for (let map of foundMaps) {
-    const layoutValue = (map.rating.layout || 0) * layoutInput
-    const densityValue = (map.rating.density || 0) * densityInput
-    const bossValue = (map.rating.boss || 0) * bossInput
-    let cardValue = 0
+export function calculateScore(dataset, range) {
+  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
+  const min = Math.min(...nonzerodataset.map(o => o.value))
+  const max = Math.max(...nonzerodataset.map(o => o.value))
+  const out = []
 
-    for (let card of map.cards) {
-      cardValue += card.value || 0
+  for (let entry of dataset) {
+    if (entry.value) {
+      out.push({
+        ...entry,
+        score: rescale(entry.value, min, max, range)
+      })
+    } else {
+      out.push(entry)
     }
-
-    cardValue = cardValue * cardInput
-    out.push({
-      ...map,
-      value: layoutValue + densityValue + bossValue + cardValue
-    })
   }
 
-  return calculateScore(out, 100)
+  return out.sort((a, b) => (b.score || 0) - (a.score || 0))
+}
+
+function rateCards(cards, cardWeightBaseline, cardMinPrice) {
+  return calculateScore(
+    cards
+      .map(card => {
+        let rate = 0
+        if (card.price >= cardMinPrice) {
+          rate = card.weight / cardWeightBaseline
+        }
+
+        return {
+          ...card,
+          value: rate * card.price * (card.boss ? 1 / cardBossMulti : 1)
+        }
+      })
+      .sort((a, b) => b.price - a.price),
+    10
+  )
+}
+
+function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput) {
+  return calculateScore(
+    foundMaps.map(map => {
+      const layoutValue = (map.rating.layout || 0) * layoutInput
+      const densityValue = (map.rating.density || 0) * densityInput
+      const bossValue = (map.rating.boss || 0) * bossInput
+      let cardValue = 0
+
+      const mapCards = []
+
+      for (let card of map.cards) {
+        const cardData = ratedCards.find(c => c.name === card)
+        if (!cardData) {
+          continue
+        }
+
+        mapCards.push({
+          ...cardData
+        })
+
+        cardValue += cardData.value || 0
+      }
+
+      cardValue = cardValue * cardInput
+      return {
+        ...map,
+        cards: mapCards,
+        value: layoutValue + densityValue + bossValue + cardValue
+      }
+    }),
+    100
+  )
 }
 
 function filterMaps(ratedMaps, currentInput) {
-  return ratedMaps
-    .filter(
-      m =>
-        !currentInput ||
-        currentInput.find(s => m.name.toLowerCase().includes(s)) ||
-        m.cards.find(c => currentInput.find(s => c.name.toLowerCase().includes(s))) ||
-        currentInput.every(s => m.tags.find(t => t.name.includes(s)))
-    )
-    .sort((a, b) => (b.score || 0) - (a.score || 0))
+  return ratedMaps.filter(
+    m =>
+      !currentInput ||
+      currentInput.find(s => m.name.toLowerCase().includes(s)) ||
+      m.cards.find(c => currentInput.find(s => c.name.toLowerCase().includes(s))) ||
+      currentInput.every(s => m.tags.find(t => t.name.includes(s)))
+  )
 }
 
 function useTransitionState(key, def, startTransition) {
@@ -94,12 +138,12 @@ const RatingBadge = ({ rating, tooltip }) => {
   const badge = <span className={badgeClass}>{rating}</span>
 
   if (tooltip) {
-    return <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-        <span className="tooltip-tag-text">
-          {tooltip}
-        </span>
-      {badge}
+    return (
+      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+        <span className="tooltip-tag-text">{tooltip}</span>
+        {badge}
       </span>
+    )
   }
 
   return badge
@@ -161,10 +205,14 @@ const Tags = ({ tags, currentInput, addToInput }) => {
 }
 
 const MapName = ({ map, currentInput, addToInput }) => {
-  const mapImage = process.env.PUBLIC_URL + '/layout/' + map.name.toLowerCase()
-    .replace(/[^a-zA-Z0-9 ]/g, '')
-    .replaceAll(' ', '_')
-    + '.png'
+  const mapImage =
+    process.env.PUBLIC_URL +
+    '/layout/' +
+    map.name
+      .toLowerCase()
+      .replace(/[^a-zA-Z0-9 ]/g, '')
+      .replaceAll(' ', '_') +
+    '.png'
 
   const tier = map.tiers[0]
   let tierColor = 'text-light'
@@ -244,7 +292,7 @@ const ConnectedMaps = ({ connected, ratedMaps }) => {
   ))
 }
 
-const MapCard = ({ card }) => {
+const MapCard = ({ card, cardWeightBaseline }) => {
   let badgeClass = 'bg-secondary text-dark'
 
   if (card.score >= 8) {
@@ -307,11 +355,28 @@ const MapCard = ({ card }) => {
   )
 }
 
-const MapCards = ({ cards, hideLowValueCards }) => {
-  return preparedCards
-    .filter(c => cards.find(fc => fc.name === c.name))
-    .filter(c => !hideLowValueCards || c.price >= cardMinPrice)
-    .map(c => <MapCard card={c} />)
+const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
+  const avg = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
+
+  return (
+    <div className="row g-0">
+      <div className="col-md-1 d-md-flex justify-content-end">
+        <span className="p-2 d-md-flex">
+          {avg}
+          <img src={chaos} alt="c" width="16" height="16" className="m-1" />
+        </span>
+      </div>
+      <div className="col-md-11">
+        {cards
+          .sort((a, b) => b.price - a.price)
+          .sort((a, b) => b.score - a.score)
+          .filter(c => !hideLowValueCards || c.value > 0)
+          .map(c => (
+            <MapCard card={c} cardWeightBaseline={cardWeightBaseline} />
+          ))}
+      </div>
+    </div>
+  )
 }
 
 function App() {
@@ -324,10 +389,27 @@ function App() {
   const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
   const [cardInput, setCardInput] = useTransitionState('cardWeightInput', 2, startTransition)
   const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false, startTransition)
-  const ratedMaps = useMemo(
-    () => rateMaps(preparedMaps, layoutInput, densityInput, bossInput, cardInput),
-    [layoutInput, densityInput, bossInput, cardInput]
+  const [cardBaselineInput, setCardBaselineInput] = useTransitionState(
+    'cardBaselineInput',
+    'The Chains that Bind',
+    startTransition
   )
+  const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
+  const cardWeightBaseline = useMemo(
+    () => preparedCards.find(c => c.name === cardBaselineInput).weight,
+    [cardBaselineInput]
+  )
+
+  const ratedCards = useMemo(
+    () => rateCards(preparedCards, cardWeightBaseline, cardMinPriceInput),
+    [cardWeightBaseline, cardMinPriceInput]
+  )
+
+  const ratedMaps = useMemo(
+    () => rateMaps(preparedMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput),
+    [ratedCards, layoutInput, densityInput, bossInput, cardInput]
+  )
+
   const currentInput = (searchInput || '')
     .split(',')
     .map(e => e.trim().toLowerCase())
@@ -420,6 +502,27 @@ function App() {
                   onChange={setCardInput}
                 />
               </div>
+              <div className="col col-lg-3 col-sm-6 col-12">
+                <label className="form-label">Average card drop per map (baseline)</label>
+                <SelectSearch
+                  options={preparedCards.map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
+                  value={cardBaselineInput}
+                  onChange={e => setCardBaselineInput({ target: { value: e } })}
+                  search="true"
+                />
+              </div>
+              <div className="col col-lg-3 col-sm-6 col-12">
+                <label className="form-label">
+                  Minimum card drop price (in <img src={chaos} alt="c" width="16" height="16" />)
+                </label>
+                <input
+                  className="form-control"
+                  type="number"
+                  placeholder={cardMinPriceInput}
+                  defaultValue={cardMinPriceInput}
+                  onChange={setCardMinPriceInput}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -501,9 +604,9 @@ function App() {
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
-                    <b>{cardMinPrice}c</b> are filtered out from rating. Value calculation assumes that you drop{' '}
-                    <b>1 {cardNameBaseline}</b> per map on average and derives the chance to drop other cards from that.
-                    This assumes unoptimized farming strategy without focus on farming cards.
+                    <b>{cardMinPriceInput}c</b> are filtered out from rating. Value calculation assumes that you drop{' '}
+                    <b>1 {cardBaselineInput}</b> per map on average and derives the chance to drop other cards from
+                    that. This assumes unoptimized farming strategy without focus on farming cards.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>
@@ -524,7 +627,7 @@ function App() {
                       })
                     }
                   />
-                  <label className="form-check-label small">Hide low value cards</label>
+                  <label className="form-check-label small">Hide cards under minimum price</label>
                 </div>
               </div>
             </th>
@@ -552,7 +655,7 @@ function App() {
                 <MapName map={m} currentInput={currentInput} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.layout} tooltip={m.info.layout}/>
+                <RatingBadge rating={m.rating.layout} tooltip={m.info.layout} />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <RatingBadge rating={m.rating.density} tooltip={m.info.density} />
@@ -564,7 +667,11 @@ function App() {
                 <ConnectedMaps connected={m.connected} ratedMaps={ratedMaps} />
               </td>
               <td>
-                <MapCards cards={m.cards} hideLowValueCards={hideLowValueCards} />
+                <MapCards
+                  cards={m.cards}
+                  cardWeightBaseline={cardWeightBaseline}
+                  hideLowValueCards={hideLowValueCards}
+                />
               </td>
             </tr>
           ))}

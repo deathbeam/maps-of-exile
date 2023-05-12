@@ -2,10 +2,14 @@ data:
   league: Crucible
 
   maps:
-    list: /us/Maps
-    cards: https://www.poewiki.net/api.php?action=parse&prop=text&format=json&page={}
-    poedb: https://poedb.tw{}
-    wiki: https://www.poewiki.net/wiki/{}
+    ignored:
+      - "Synthesised Map"
+    poedb:
+      base: https://poedb.tw{}
+      list: https://poedb.tw/us/Maps
+    wiki:
+      base: https://www.poewiki.net/wiki/{}
+      api: https://www.poewiki.net/w/api.php
     metadata:
       sheet-id: 10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0
       sheet-names:

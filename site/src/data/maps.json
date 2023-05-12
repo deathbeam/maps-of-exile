@@ -21,6 +21,7 @@
         "connected": [
             "Overgrown Shrine Map"
         ],
+        "id": "MapWorldsOvergrownShrineUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -29,6 +30,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 70,
         "name": "Acton's Nightmare",
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "rating": {},
@@ -79,6 +81,7 @@
             "Excavation Map",
             "Stagnation Map"
         ],
+        "id": "MapWorldsAlleyways",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -87,6 +90,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 68,
         "name": "Alleyways Map",
         "poedb": "https://poedb.tw/us/Alleyways_Map",
         "rating": {
@@ -102,6 +106,7 @@
             12,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Alleyways_Map"
     },
     {
@@ -112,10 +117,14 @@
         },
         "cards": [
             "A Dusty Memory",
-            "Magnum Opus"
+            "Ambitious Obsession",
+            "Magnum Opus",
+            "More is Never Enough"
         ],
+        "id": "Synthesis_MapGuardian1",
         "image": false,
         "layout": {},
+        "level": 68,
         "name": "Altered Distant Memory",
         "poedb": "https://poedb.tw/us/Altered_Distant_Memory",
         "rating": {},
@@ -158,6 +167,7 @@
             "Pier Map",
             "Ramparts Map"
         ],
+        "id": "MapWorldsArachnidNest",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -166,6 +176,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 77,
         "name": "Arachnid Nest Map",
         "poedb": "https://poedb.tw/us/Arachnid_Nest_Map",
         "rating": {
@@ -181,6 +192,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Arachnid_Nest_Map"
     },
     {
@@ -214,6 +226,7 @@
             "Forbidden Woods Map",
             "Siege Map"
         ],
+        "id": "MapWorldsArachnidTomb",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -222,6 +235,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 75,
         "name": "Arachnid Tomb Map",
         "pantheon": "Soul of Arakaali",
         "poedb": "https://poedb.tw/us/Arachnid_Tomb_Map",
@@ -238,6 +252,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Arachnid_Tomb_Map"
     },
     {
@@ -275,6 +290,7 @@
             "Phantasmagoria Map",
             "Pit Map"
         ],
+        "id": "MapWorldsArcade",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -283,6 +299,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 72,
         "name": "Arcade Map",
         "poedb": "https://poedb.tw/us/Arcade_Map",
         "rating": {
@@ -298,6 +315,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Arcade_Map"
     },
     {
@@ -330,6 +348,7 @@
             "Dungeon Map",
             "Necropolis Map"
         ],
+        "id": "MapWorldsAridLake",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -338,6 +357,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 80,
         "name": "Arid Lake Map",
         "poedb": "https://poedb.tw/us/Arid_Lake_Map",
         "rating": {
@@ -353,6 +373,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Arid_Lake_Map"
     },
     {
@@ -387,6 +408,7 @@
             "Coral Ruins Map",
             "Pier Map"
         ],
+        "id": "MapWorldsArmoury",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -395,6 +417,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 75,
         "name": "Armoury Map",
         "poedb": "https://poedb.tw/us/Armoury_Map",
         "rating": {
@@ -410,6 +433,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Armoury_Map"
     },
     {
@@ -449,6 +473,7 @@
             "Core Map",
             "Tropical Island Map"
         ],
+        "id": "MapWorldsArsenal",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -457,6 +482,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 83,
         "name": "Arsenal Map",
         "poedb": "https://poedb.tw/us/Arsenal_Map",
         "rating": {
@@ -472,6 +498,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Arsenal_Map"
     },
     {
@@ -509,6 +536,7 @@
             "Port Map",
             "Promenade Map"
         ],
+        "id": "MapWorldsAtoll",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -517,6 +545,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 72,
         "name": "Atoll Map",
         "pantheon": "Soul of the Brine King",
         "poedb": "https://poedb.tw/us/Atoll_Map",
@@ -533,6 +562,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Atoll_Map"
     },
     {
@@ -543,10 +573,14 @@
         },
         "cards": [
             "A Dusty Memory",
-            "Magnum Opus"
+            "Ambitious Obsession",
+            "Magnum Opus",
+            "More is Never Enough"
         ],
+        "id": "Synthesis_MapGuardian2",
         "image": false,
         "layout": {},
+        "level": 68,
         "name": "Augmented Distant Memory",
         "poedb": "https://poedb.tw/us/Augmented_Distant_Memory",
         "rating": {},
@@ -593,6 +627,7 @@
             "Thicket Map",
             "Tropical Island Map"
         ],
+        "id": "MapWorldsBarrows",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -601,6 +636,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 81,
         "name": "Barrows Map",
         "poedb": "https://poedb.tw/us/Barrows_Map",
         "rating": {
@@ -616,6 +652,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Barrows_Map"
     },
     {
@@ -651,6 +688,7 @@
             "Jungle Valley Map",
             "Underground Sea Map"
         ],
+        "id": "MapWorldsBeach",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -659,6 +697,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 78,
         "name": "Beach Map",
         "poedb": "https://poedb.tw/us/Beach_Map",
         "rating": {
@@ -674,6 +713,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Beach_Map"
     },
     {
@@ -707,6 +747,7 @@
             "Scriptorium Map",
             "Strand Map"
         ],
+        "id": "MapWorldsBelfry",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -715,6 +756,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 69,
         "name": "Belfry Map",
         "poedb": "https://poedb.tw/us/Belfry_Map",
         "rating": {
@@ -730,6 +772,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Belfry_Map"
     },
     {
@@ -769,6 +812,7 @@
             "Olmec's Sanctum",
             "Silo Map"
         ],
+        "id": "MapWorldsBoneCrypt",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -777,6 +821,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 68,
         "name": "Bone Crypt Map",
         "poedb": "https://poedb.tw/us/Bone_Crypt_Map",
         "rating": {
@@ -792,6 +837,7 @@
             12,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Bone_Crypt_Map"
     },
     {
@@ -821,6 +867,7 @@
         "connected": [
             "Underground River Map"
         ],
+        "id": "MapWorldsUndergroundRiverUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -829,6 +876,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 82,
         "name": "Caer Blaidd, Wolfpack's Den",
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "rating": {},
@@ -875,6 +923,7 @@
             "Siege Map",
             "Wasteland Map"
         ],
+        "id": "MapWorldsCaldera",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -883,6 +932,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 75,
         "name": "Caldera Map",
         "pantheon": "Soul of Solaris",
         "poedb": "https://poedb.tw/us/Caldera_Map",
@@ -899,6 +949,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Caldera_Map"
     },
     {
@@ -935,6 +986,7 @@
             "Toxic Sewer Map",
             "Waste Pool Map"
         ],
+        "id": "MapWorldsCanyon",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -943,6 +995,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 74,
         "name": "Canyon Map",
         "poedb": "https://poedb.tw/us/Canyon_Map",
         "rating": {
@@ -958,6 +1011,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Canyon_Map"
     },
     {
@@ -996,6 +1050,7 @@
             "Coral Ruins Map",
             "Residence Map"
         ],
+        "id": "MapWorldsCastleRuins",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1004,6 +1059,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 73,
         "name": "Castle Ruins Map",
         "poedb": "https://poedb.tw/us/Castle_Ruins_Map",
         "rating": {
@@ -1019,6 +1075,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Castle_Ruins_Map"
     },
     {
@@ -1057,6 +1114,7 @@
             "Crimson Township Map",
             "Frozen Cabins Map"
         ],
+        "id": "MapWorldsCells",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1065,6 +1123,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 77,
         "name": "Cells Map",
         "poedb": "https://poedb.tw/us/Cells_Map",
         "rating": {
@@ -1080,6 +1139,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Cells_Map"
     },
     {
@@ -1124,6 +1184,7 @@
             "Overgrown Shrine Map",
             "Primordial Blocks Map"
         ],
+        "id": "MapWorldsCemetery",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1132,6 +1193,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 71,
         "name": "Cemetery Map",
         "pantheon": "Soul of Gruthkul",
         "poedb": "https://poedb.tw/us/Cemetery_Map",
@@ -1148,6 +1210,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Cemetery_Map"
     },
     {
@@ -1185,6 +1248,7 @@
             "Pit Map",
             "Promenade Map"
         ],
+        "id": "MapWorldsChateau",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1193,6 +1257,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 74,
         "name": "Chateau Map",
         "poedb": "https://poedb.tw/us/Chateau_Map",
         "rating": {
@@ -1208,6 +1273,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Chateau_Map"
     },
     {
@@ -1246,6 +1312,7 @@
             "Toxic Sewer Map",
             "Vaal Pyramid Map"
         ],
+        "id": "MapWorldsCitySquare",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1254,6 +1321,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 72,
         "name": "City Square Map",
         "poedb": "https://poedb.tw/us/City_Square_Map",
         "rating": {
@@ -1269,6 +1337,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/City_Square_Map"
     },
     {
@@ -1313,12 +1382,14 @@
             "Flooded Mine Map",
             "Plaza Map"
         ],
+        "id": "MapWorldsColdRiver_",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": true,
             "outdoors": true
         },
+        "level": 76,
         "name": "Cold River Map",
         "pantheon": "Soul of Lunaris",
         "poedb": "https://poedb.tw/us/Cold_River_Map",
@@ -1335,6 +1406,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Cold_River_Map"
     },
     {
@@ -1373,6 +1445,7 @@
             "Dunes Map",
             "Excavation Map"
         ],
+        "id": "MapWorldsColonnade",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -1381,6 +1454,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 68,
         "name": "Colonnade Map",
         "poedb": "https://poedb.tw/us/Colonnade_Map",
         "rating": {
@@ -1396,6 +1470,7 @@
             12,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Colonnade_Map"
     },
     {
@@ -1436,6 +1511,7 @@
             "Terrace Map",
             "Volcano Map"
         ],
+        "id": "MapWorldsColosseum",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1444,6 +1520,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 82,
         "name": "Colosseum Map",
         "poedb": "https://poedb.tw/us/Colosseum_Map",
         "rating": {
@@ -1459,6 +1536,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Colosseum_Map"
     },
     {
@@ -1495,6 +1573,7 @@
             "Defiled Cathedral Map",
             "Frozen Cabins Map"
         ],
+        "id": "MapWorldsConservatory",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1503,6 +1582,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 79,
         "name": "Conservatory Map",
         "poedb": "https://poedb.tw/us/Conservatory_Map",
         "rating": {
@@ -1518,6 +1598,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Conservatory_Map"
     },
     {
@@ -1556,6 +1637,7 @@
             "Crystal Ore Map",
             "Toxic Sewer Map"
         ],
+        "id": "MapWorldsCoralRuins",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1564,6 +1646,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 74,
         "name": "Coral Ruins Map",
         "pantheon": "Soul of the Brine King",
         "poedb": "https://poedb.tw/us/Coral_Ruins_Map",
@@ -1580,6 +1663,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Coral_Ruins_Map"
     },
     {
@@ -1597,14 +1681,11 @@
         "cards": [
             "A Modest Request",
             "Broken Promises",
-            "Brush, Paint and Palette",
-            "Doedre's Madness",
             "Echoes of Love",
             "Her Mask",
             "Hope",
             "Lingering Remnants",
             "Shard of Fate",
-            "The Aesthete",
             "The Beast",
             "The Dragon's Heart",
             "The Encroaching Darkness",
@@ -1613,7 +1694,6 @@
             "The Insatiable",
             "The Nurse",
             "The Oath",
-            "The Offering",
             "The Prince of Darkness",
             "The Soul",
             "The Surveyor",
@@ -1626,6 +1706,7 @@
             "Arsenal Map",
             "Dungeon Map"
         ],
+        "id": "MapWorldsCore",
         "image": true,
         "info": {
             "rushable": "Only rushable in elder guardian maps where bosses are already dead."
@@ -1637,6 +1718,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 82,
         "name": "Core Map",
         "poedb": "https://poedb.tw/us/Core_Map",
         "rating": {
@@ -1652,6 +1734,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Core_Map"
     },
     {
@@ -1662,13 +1745,17 @@
         },
         "cards": [
             "A Dusty Memory",
+            "Ambitious Obsession",
             "Dementophobia",
             "Imperfect Memories",
             "Magnum Opus",
+            "More is Never Enough",
             "The Hook"
         ],
+        "id": "Synthesis_MapBoss",
         "image": false,
         "layout": {},
+        "level": 79,
         "name": "Cortex",
         "poedb": "https://poedb.tw/us/Cortex",
         "rating": {},
@@ -1723,6 +1810,7 @@
             "Pit Map",
             "Port Map"
         ],
+        "id": "MapWorldsCourtyard",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1731,6 +1819,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 72,
         "name": "Courtyard Map",
         "poedb": "https://poedb.tw/us/Courtyard_Map",
         "rating": {
@@ -1746,6 +1835,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Courtyard_Map"
     },
     {
@@ -1789,6 +1879,7 @@
             "Racecourse Map",
             "Tropical Island Map"
         ],
+        "id": "MapWorldsCoves",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -1797,6 +1888,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 83,
         "name": "Coves Map",
         "pantheon": "Soul of the Brine King",
         "poedb": "https://poedb.tw/us/Coves_Map",
@@ -1813,6 +1905,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Coves_Map"
     },
     {
@@ -1844,6 +1937,7 @@
             "Terrace Map",
             "Wharf Map"
         ],
+        "id": "MapWorldsTribunal",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -1852,6 +1946,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 80,
         "name": "Crater Map",
         "pantheon": "Soul of Abberath",
         "poedb": "https://poedb.tw/us/Crater_Map",
@@ -1868,6 +1963,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Crater_Map"
     },
     {
@@ -1907,6 +2003,7 @@
             "Siege Map",
             "Sulphur Vents Map"
         ],
+        "id": "MapWorldsCrimsonTemple",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -1915,6 +2012,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 75,
         "name": "Crimson Temple Map",
         "poedb": "https://poedb.tw/us/Crimson_Temple_Map",
         "rating": {
@@ -1930,6 +2028,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Crimson_Temple_Map"
     },
     {
@@ -1964,6 +2063,7 @@
             "Factory Map",
             "Jungle Valley Map"
         ],
+        "id": "MapWorldsCrimsonTownship",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -1971,6 +2071,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 78,
         "name": "Crimson Township Map",
         "poedb": "https://poedb.tw/us/Crimson_Township_Map",
         "rating": {
@@ -1986,6 +2087,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Crimson_Township_Map"
     },
     {
@@ -2034,6 +2136,7 @@
             "Pier Map",
             "Ramparts Map"
         ],
+        "id": "MapWorldsCrystalOre",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2042,6 +2145,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 75,
         "name": "Crystal Ore Map",
         "poedb": "https://poedb.tw/us/Crystal_Ore_Map",
         "rating": {
@@ -2057,6 +2161,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Crystal_Ore_Map"
     },
     {
@@ -2091,6 +2196,7 @@
             "Promenade Map",
             "The Coward's Trial"
         ],
+        "id": "MapWorldsCursedCrypt",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2099,6 +2205,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 74,
         "name": "Cursed Crypt Map",
         "poedb": "https://poedb.tw/us/Cursed_Crypt_Map",
         "rating": {
@@ -2114,6 +2221,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Cursed_Crypt_Map"
     },
     {
@@ -2134,6 +2242,7 @@
         "connected": [
             "Necropolis Map"
         ],
+        "id": "MapWorldsNecropolisUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2142,6 +2251,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 79,
         "name": "Death and Taxes",
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "rating": {},
@@ -2192,6 +2302,7 @@
             "Temple Map",
             "Wharf Map"
         ],
+        "id": "MapWorldsDefiledCathedral",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2200,6 +2311,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 80,
         "name": "Defiled Cathedral Map",
         "poedb": "https://poedb.tw/us/Defiled_Cathedral_Map",
         "rating": {
@@ -2215,6 +2327,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Defiled_Cathedral_Map"
     },
     {
@@ -2254,6 +2367,7 @@
             "Geode Map",
             "Thicket Map"
         ],
+        "id": "MapWorldsDesertSpring",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -2262,6 +2376,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 79,
         "name": "Desert Spring Map",
         "pantheon": "Soul of Shakari",
         "poedb": "https://poedb.tw/us/Desert_Spring_Map",
@@ -2278,6 +2393,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Desert_Spring_Map"
     },
     {
@@ -2318,6 +2434,7 @@
             "Colosseum Map",
             "Underground River Map"
         ],
+        "id": "MapWorldsDig",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -2326,6 +2443,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 83,
         "name": "Dig Map",
         "pantheon": "Soul of Garukhan",
         "poedb": "https://poedb.tw/us/Dig_Map",
@@ -2342,6 +2460,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Dig_Map"
     },
     {
@@ -2362,12 +2481,14 @@
             "The Inventor",
             "Unrequited Love"
         ],
+        "id": "MapWorldsMazeUnique",
         "image": false,
         "layout": {
             "few_obstacles": true,
             "linear": false,
             "outdoors": false
         },
+        "level": 81,
         "name": "Doryani's Machinarium",
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "rating": {},
@@ -2412,12 +2533,14 @@
             "Fields Map",
             "Infested Valley Map"
         ],
+        "id": "MapWorldsDrySea",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": true,
             "outdoors": true
         },
+        "level": 69,
         "name": "Dry Sea Map",
         "poedb": "https://poedb.tw/us/Dry_Sea_Map",
         "rating": {
@@ -2433,6 +2556,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Dry_Sea_Map"
     },
     {
@@ -2470,6 +2594,7 @@
             "Pillars of Arun",
             "Shrine Map"
         ],
+        "id": "MapWorldsDunes",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -2478,6 +2603,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 69,
         "name": "Dunes Map",
         "poedb": "https://poedb.tw/us/Dunes_Map",
         "rating": {
@@ -2493,6 +2619,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Dunes_Map"
     },
     {
@@ -2527,6 +2654,7 @@
             "Core Map",
             "Leyline Map"
         ],
+        "id": "MapWorldsDungeon",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2535,6 +2663,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 81,
         "name": "Dungeon Map",
         "poedb": "https://poedb.tw/us/Dungeon_Map",
         "rating": {
@@ -2550,6 +2679,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Dungeon_Map"
     },
     {
@@ -2592,6 +2722,7 @@
             "Colonnade Map",
             "Shrine Map"
         ],
+        "id": "MapWorldsExcavation",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2600,6 +2731,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 69,
         "name": "Excavation Map",
         "poedb": "https://poedb.tw/us/Excavation_Map",
         "rating": {
@@ -2615,6 +2747,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Excavation_Map"
     },
     {
@@ -2653,6 +2786,7 @@
             "Crimson Township Map",
             "Overgrown Ruin Map"
         ],
+        "id": "MapWorldsFactory",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2661,6 +2795,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 77,
         "name": "Factory Map",
         "poedb": "https://poedb.tw/us/Factory_Map",
         "rating": {
@@ -2676,6 +2811,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Factory_Map"
     },
     {
@@ -2714,6 +2850,7 @@
             "Laboratory Map",
             "Vaal Pyramid Map"
         ],
+        "id": "MapWorldsFields",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -2722,6 +2859,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 70,
         "name": "Fields Map",
         "pantheon": "Soul of Ralakesh",
         "poedb": "https://poedb.tw/us/Fields_Map",
@@ -2738,6 +2876,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Fields_Map"
     },
     {
@@ -2786,6 +2925,7 @@
             "Relic Chambers Map",
             "Sulphur Vents Map"
         ],
+        "id": "MapWorldsFloodedMine",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2794,6 +2934,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 75,
         "name": "Flooded Mine Map",
         "poedb": "https://poedb.tw/us/Flooded_Mine_Map",
         "rating": {
@@ -2809,6 +2950,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Flooded_Mine_Map"
     },
     {
@@ -2850,6 +2992,7 @@
             "Phantasmagoria Map",
             "Pit Map"
         ],
+        "id": "MapWorldsForbiddenWoods",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -2857,6 +3000,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 74,
         "name": "Forbidden Woods Map",
         "poedb": "https://poedb.tw/us/Forbidden_Woods_Map",
         "rating": {
@@ -2872,6 +3016,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Forbidden_Woods_Map"
     },
     {
@@ -2899,6 +3044,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "id": "MapWorldsPhoenix",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -2907,6 +3053,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 83,
         "name": "Forge of the Phoenix Map",
         "poedb": "https://poedb.tw/us/Forge_of_the_Phoenix_Map",
         "rating": {},
@@ -2917,6 +3064,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Forge_of_the_Phoenix_Map"
     },
     {
@@ -2952,11 +3100,13 @@
             "Siege Map",
             "Wasteland Map"
         ],
+        "id": "MapWorldsFoundry",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": false
         },
+        "level": 77,
         "name": "Foundry Map",
         "poedb": "https://poedb.tw/us/Foundry_Map",
         "rating": {
@@ -2972,6 +3122,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Foundry_Map"
     },
     {
@@ -3004,12 +3155,14 @@
             "Plaza Map",
             "Wharf Map"
         ],
+        "id": "MapWorldsFrozenCabins",
         "image": true,
         "layout": {
             "delirium_mirror": true,
             "league_mechanics": false,
             "linear": true
         },
+        "level": 78,
         "name": "Frozen Cabins Map",
         "pantheon": "Soul of Lunaris",
         "poedb": "https://poedb.tw/us/Frozen_Cabins_Map",
@@ -3026,6 +3179,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Frozen_Cabins_Map"
     },
     {
@@ -3058,6 +3212,7 @@
             "Arachnid Nest Map",
             "Necropolis Map"
         ],
+        "id": "MapWorldsSprings",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3066,6 +3221,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 78,
         "name": "Fungal Hollow Map",
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "rating": {
@@ -3081,6 +3237,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Fungal_Hollow_Map"
     },
     {
@@ -3124,6 +3281,7 @@
             "Necropolis Map",
             "Underground Sea Map"
         ],
+        "id": "MapWorldsGeode",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3132,6 +3290,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 78,
         "name": "Geode Map",
         "poedb": "https://poedb.tw/us/Geode_Map",
         "rating": {
@@ -3147,6 +3306,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Geode_Map"
     },
     {
@@ -3197,6 +3357,7 @@
             "Lair Map",
             "Primordial Pool Map"
         ],
+        "id": "MapWorldsGrotto",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3205,6 +3366,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 69,
         "name": "Grotto Map",
         "poedb": "https://poedb.tw/us/Grotto_Map",
         "rating": {
@@ -3220,6 +3382,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Grotto_Map"
     },
     {
@@ -3231,12 +3394,14 @@
             "Monochrome",
             "The Immortal"
         ],
+        "id": "MapWorldsPromenadeUnique",
         "image": false,
         "layout": {
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
         },
+        "level": 78,
         "name": "Hall of Grandmasters",
         "poedb": "https://poedb.tw/us/Hall_of_Grandmasters",
         "rating": {},
@@ -3269,6 +3434,7 @@
         "connected": [
             "Cemetery Map"
         ],
+        "id": "MapWorldsCemeteryUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3277,6 +3443,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 71,
         "name": "Hallowed Ground",
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "rating": {},
@@ -3326,6 +3493,7 @@
             "Laboratory Map",
             "Moon Temple Map"
         ],
+        "id": "MapWorldsInfestedValley",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3334,6 +3502,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 70,
         "name": "Infested Valley Map",
         "pantheon": "Soul of Ryslatha",
         "poedb": "https://poedb.tw/us/Infested_Valley_Map",
@@ -3350,6 +3519,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Infested_Valley_Map"
     },
     {
@@ -3362,8 +3532,10 @@
             "Monochrome",
             "The Endless Darkness"
         ],
+        "id": "MapWorldsHarbingerHigh",
         "image": false,
         "layout": {},
+        "level": 83,
         "name": "Infused Beachhead",
         "poedb": "https://poedb.tw/us/Infused_Beachhead",
         "rating": {},
@@ -3410,6 +3582,7 @@
             "Crimson Township Map",
             "Thicket Map"
         ],
+        "id": "MapWorldsJungleValley",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3418,6 +3591,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 79,
         "name": "Jungle Valley Map",
         "pantheon": "Soul of Arakaali",
         "poedb": "https://poedb.tw/us/Jungle_Valley_Map",
@@ -3434,6 +3608,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Jungle_Valley_Map"
     },
     {
@@ -3471,6 +3646,7 @@
             "Infested Valley Map",
             "Residence Map"
         ],
+        "id": "MapWorldsLaboratory",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3479,6 +3655,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 71,
         "name": "Laboratory Map",
         "poedb": "https://poedb.tw/us/Laboratory_Map",
         "rating": {
@@ -3494,6 +3671,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Laboratory_Map"
     },
     {
@@ -3537,6 +3715,7 @@
             "Lighthouse Map",
             "Silo Map"
         ],
+        "id": "MapWorldsLair",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3545,6 +3724,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 70,
         "name": "Lair Map",
         "poedb": "https://poedb.tw/us/Lair_Map",
         "rating": {
@@ -3560,6 +3740,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Lair_Map"
     },
     {
@@ -3587,6 +3768,7 @@
             "The Tinkerer's Table",
             "The Trial"
         ],
+        "id": "MapWorldsHydra",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3595,6 +3777,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 83,
         "name": "Lair of the Hydra Map",
         "poedb": "https://poedb.tw/us/Lair_of_the_Hydra_Map",
         "rating": {},
@@ -3605,6 +3788,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Lair_of_the_Hydra_Map"
     },
     {
@@ -3638,6 +3822,7 @@
             "Dungeon Map",
             "Necropolis Map"
         ],
+        "id": "MapWorldsLeyline",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3646,6 +3831,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 80,
         "name": "Leyline Map",
         "poedb": "https://poedb.tw/us/Leyline_Map",
         "rating": {
@@ -3661,6 +3847,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Leyline_Map"
     },
     {
@@ -3700,6 +3887,7 @@
             "Mineral Pools Map",
             "Primordial Pool Map"
         ],
+        "id": "MapWorldsLighthouse",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3708,6 +3896,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 71,
         "name": "Lighthouse Map",
         "pantheon": "Soul of Solaris",
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
@@ -3724,6 +3913,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Lighthouse_Map"
     },
     {
@@ -3758,12 +3948,14 @@
         "connected": [
             "Atoll Map"
         ],
+        "id": "MapWorldsAtollUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": false,
             "linear": true
         },
+        "level": 72,
         "name": "Maelstr\u00f6m of Chaos",
         "poedb": "https://poedb.tw/us/Maelstr%C3%B6m_of_Chaos",
         "rating": {},
@@ -3812,6 +4004,7 @@
             "Plaza Map",
             "Wharf Map"
         ],
+        "id": "MapWorldsMalformation",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3820,6 +4013,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 78,
         "name": "Malformation Map",
         "poedb": "https://poedb.tw/us/Malformation_Map",
         "rating": {
@@ -3835,6 +4029,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Malformation_Map"
     },
     {
@@ -3863,6 +4058,7 @@
         "connected": [
             "Shore Map"
         ],
+        "id": "MapWorldsShoreUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3871,6 +4067,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 73,
         "name": "Mao Kun",
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "rating": {},
@@ -3913,6 +4110,7 @@
             "Lighthouse Map",
             "Phantasmagoria Map"
         ],
+        "id": "MapWorldsMarshes",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -3921,6 +4119,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 72,
         "name": "Marshes Map",
         "poedb": "https://poedb.tw/us/Marshes_Map",
         "rating": {
@@ -3936,6 +4135,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Marshes_Map"
     },
     {
@@ -3971,6 +4171,7 @@
             "Crater Map",
             "Defiled Cathedral Map"
         ],
+        "id": "MapWorldsMaze",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -3979,6 +4180,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 81,
         "name": "Maze Map",
         "poedb": "https://poedb.tw/us/Maze_Map",
         "rating": {
@@ -3994,6 +4196,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Maze_Map"
     },
     {
@@ -4021,6 +4224,7 @@
             "The Trial",
             "Treasure Hunter"
         ],
+        "id": "MapWorldsMinotaur",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -4029,6 +4233,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 83,
         "name": "Maze of the Minotaur Map",
         "poedb": "https://poedb.tw/us/Maze_of_the_Minotaur_Map",
         "rating": {},
@@ -4039,6 +4244,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Maze_of_the_Minotaur_Map"
     },
     {
@@ -4082,6 +4288,7 @@
             "Tower Map",
             "Waste Pool Map"
         ],
+        "id": "MapWorldsMineralPools",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4090,6 +4297,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 72,
         "name": "Mineral Pools Map",
         "poedb": "https://poedb.tw/us/Mineral_Pools_Map",
         "rating": {
@@ -4105,6 +4313,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Mineral_Pools_Map"
     },
     {
@@ -4141,6 +4350,7 @@
             "Residence Map",
             "The Twilight Temple"
         ],
+        "id": "MapWorldsMoonTemple",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4149,6 +4359,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 71,
         "name": "Moon Temple Map",
         "pantheon": "Soul of Lunaris",
         "poedb": "https://poedb.tw/us/Moon_Temple_Map",
@@ -4165,6 +4376,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Moon_Temple_Map"
     },
     {
@@ -4209,6 +4421,7 @@
             "Malformation Map",
             "The Putrid Cloister"
         ],
+        "id": "MapWorldsMuseum",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4217,6 +4430,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 79,
         "name": "Museum Map",
         "poedb": "https://poedb.tw/us/Museum_Map",
         "rating": {
@@ -4232,6 +4446,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Museum_Map"
     },
     {
@@ -4267,6 +4482,7 @@
             "Geode Map",
             "Leyline Map"
         ],
+        "id": "MapWorldsNecropolis",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4275,6 +4491,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 79,
         "name": "Necropolis Map",
         "poedb": "https://poedb.tw/us/Necropolis_Map",
         "rating": {
@@ -4290,6 +4507,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Necropolis_Map"
     },
     {
@@ -4302,11 +4520,14 @@
             "soft_phases": false
         },
         "cards": [
-            "Monochrome"
+            "Divine Beauty",
+            "Monochrome",
+            "The Cacophony"
         ],
         "connected": [
             "Underground Sea Map"
         ],
+        "id": "MapWorldsTortureChamberUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4315,6 +4536,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 77,
         "name": "Oba's Cursed Trove",
         "poedb": "https://poedb.tw/us/Obas_Cursed_Trove",
         "rating": {},
@@ -4346,6 +4568,7 @@
         "connected": [
             "Bone Crypt Map"
         ],
+        "id": "MapWorldsBoneCryptUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4354,6 +4577,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 68,
         "name": "Olmec's Sanctum",
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "rating": {},
@@ -4405,6 +4629,7 @@
             "Primordial Blocks Map",
             "Strand Map"
         ],
+        "id": "MapWorldsOrchard",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4413,6 +4638,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 71,
         "name": "Orchard Map",
         "poedb": "https://poedb.tw/us/Orchard_Map",
         "rating": {
@@ -4428,6 +4654,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Orchard_Map"
     },
     {
@@ -4467,6 +4694,7 @@
             "Shipyard Map",
             "Underground Sea Map"
         ],
+        "id": "MapWorldsOvergrownRuin",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4475,6 +4703,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 76,
         "name": "Overgrown Ruin Map",
         "poedb": "https://poedb.tw/us/Overgrown_Ruin_Map",
         "rating": {
@@ -4490,6 +4719,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Overgrown_Ruin_Map"
     },
     {
@@ -4530,6 +4760,7 @@
             "Precinct Map",
             "Silo Map"
         ],
+        "id": "MapWorldsOvergrownShrine",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4538,6 +4769,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 70,
         "name": "Overgrown Shrine Map",
         "pantheon": "Soul of Arakaali",
         "poedb": "https://poedb.tw/us/Overgrown_Shrine_Map",
@@ -4554,6 +4786,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Overgrown_Shrine_Map"
     },
     {
@@ -4599,6 +4832,7 @@
             "Mineral Pools Map",
             "Sulphur Vents Map"
         ],
+        "id": "MapWorldsPhantasmagoria",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -4607,6 +4841,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 73,
         "name": "Phantasmagoria Map",
         "poedb": "https://poedb.tw/us/Phantasmagoria_Map",
         "rating": {
@@ -4622,6 +4857,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Phantasmagoria_Map"
     },
     {
@@ -4660,6 +4896,7 @@
             "Armoury Map",
             "Crystal Ore Map"
         ],
+        "id": "MapWorldsPier",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4668,6 +4905,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 76,
         "name": "Pier Map",
         "poedb": "https://poedb.tw/us/Pier_Map",
         "rating": {
@@ -4683,6 +4921,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Pier_Map"
     },
     {
@@ -4705,6 +4944,7 @@
         "connected": [
             "Dunes Map"
         ],
+        "id": "MapWorldsDunesUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4713,6 +4953,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 69,
         "name": "Pillars of Arun",
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "rating": {},
@@ -4762,6 +5003,7 @@
             "Courtyard Map",
             "Forbidden Woods Map"
         ],
+        "id": "MapWorldsPit",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4770,6 +5012,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 73,
         "name": "Pit Map",
         "poedb": "https://poedb.tw/us/Pit_Map",
         "rating": {
@@ -4785,6 +5028,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Pit_Map"
     },
     {
@@ -4818,6 +5062,7 @@
             "The Trial",
             "Unchained"
         ],
+        "id": "MapWorldsChimera",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -4826,6 +5071,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 83,
         "name": "Pit of the Chimera Map",
         "poedb": "https://poedb.tw/us/Pit_of_the_Chimera_Map",
         "rating": {},
@@ -4836,6 +5082,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Pit_of_the_Chimera_Map"
     },
     {
@@ -4874,6 +5121,7 @@
             "Vaal Pyramid Map",
             "Waste Pool Map"
         ],
+        "id": "MapWorldsPlateau",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -4882,6 +5130,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 72,
         "name": "Plateau Map",
         "poedb": "https://poedb.tw/us/Plateau_Map",
         "rating": {
@@ -4897,6 +5146,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Plateau_Map"
     },
     {
@@ -4930,6 +5180,7 @@
             "Malformation Map",
             "Siege Map"
         ],
+        "id": "MapWorldsPlaza",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4938,6 +5189,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 77,
         "name": "Plaza Map",
         "poedb": "https://poedb.tw/us/Plaza_Map",
         "rating": {
@@ -4953,6 +5205,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Plaza_Map"
     },
     {
@@ -4981,6 +5234,7 @@
         "connected": [
             "Temple Map"
         ],
+        "id": "MapWorldsTempleUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -4989,6 +5243,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 81,
         "name": "Poorjoy's Asylum",
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "rating": {},
@@ -5043,6 +5298,7 @@
             "Courtyard Map",
             "Strand Map"
         ],
+        "id": "MapWorldsPort",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -5051,6 +5307,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 71,
         "name": "Port Map",
         "poedb": "https://poedb.tw/us/Port_Map",
         "rating": {
@@ -5066,6 +5323,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Port_Map"
     },
     {
@@ -5110,6 +5368,7 @@
             "Primordial Blocks Map",
             "Scriptorium Map"
         ],
+        "id": "MapWorldsPrecinct",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5118,6 +5377,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 69,
         "name": "Precinct Map",
         "poedb": "https://poedb.tw/us/Precinct_Map",
         "rating": {
@@ -5133,6 +5393,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Precinct_Map"
     },
     {
@@ -5168,6 +5429,7 @@
             "Orchard Map",
             "Precinct Map"
         ],
+        "id": "MapWorldsTortureChamber",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5176,6 +5438,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 70,
         "name": "Primordial Blocks Map",
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "rating": {
@@ -5191,6 +5454,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Primordial_Blocks_Map"
     },
     {
@@ -5224,6 +5488,7 @@
             "Stagnation Map",
             "Tower Map"
         ],
+        "id": "MapWorldsPrimordialPool",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5232,6 +5497,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 70,
         "name": "Primordial Pool Map",
         "poedb": "https://poedb.tw/us/Primordial_Pool_Map",
         "rating": {
@@ -5247,6 +5513,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Primordial_Pool_Map"
     },
     {
@@ -5287,6 +5554,7 @@
             "Chateau Map",
             "Cursed Crypt Map"
         ],
+        "id": "MapWorldsPromenade",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -5295,6 +5563,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 73,
         "name": "Promenade Map",
         "poedb": "https://poedb.tw/us/Promenade_Map",
         "rating": {
@@ -5310,6 +5579,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Promenade_Map"
     },
     {
@@ -5345,6 +5615,7 @@
             "Temple Map",
             "Volcano Map"
         ],
+        "id": "MapWorldsRacecourse_",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -5353,6 +5624,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 82,
         "name": "Racecourse Map",
         "poedb": "https://poedb.tw/us/Racecourse_Map",
         "rating": {
@@ -5368,6 +5640,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Racecourse_Map"
     },
     {
@@ -5407,6 +5680,7 @@
             "Shipyard Map",
             "Underground Sea Map"
         ],
+        "id": "MapWorldsRamparts",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -5415,6 +5689,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 76,
         "name": "Ramparts Map",
         "poedb": "https://poedb.tw/us/Ramparts_Map",
         "rating": {
@@ -5430,6 +5705,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Ramparts_Map"
     },
     {
@@ -5468,6 +5744,7 @@
             "Shipyard Map",
             "Shore Map"
         ],
+        "id": "MapWorldsRelicChambers",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5476,6 +5753,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 74,
         "name": "Relic Chambers Map",
         "poedb": "https://poedb.tw/us/Relic_Chambers_Map",
         "rating": {
@@ -5491,6 +5769,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Relic_Chambers_Map"
     },
     {
@@ -5500,13 +5779,18 @@
             ]
         },
         "cards": [
+            "A Dusty Memory",
+            "Ambitious Obsession",
             "Dementophobia",
             "Imperfect Memories",
             "Magnum Opus",
+            "More is Never Enough",
             "The Hook"
         ],
+        "id": "Synthesis_MapBoss",
         "image": false,
         "layout": {},
+        "level": 79,
         "name": "Replica Cortex",
         "poedb": "https://poedb.tw/us/Replica_Cortex",
         "rating": {},
@@ -5534,8 +5818,10 @@
         "connected": [
             "Dunes Map"
         ],
+        "id": "MapWorldsDunesUnique",
         "image": false,
         "layout": {},
+        "level": 69,
         "name": "Replica Pillars of Arun",
         "poedb": "https://poedb.tw/us/Replica_Pillars_of_Arun",
         "rating": {},
@@ -5569,8 +5855,10 @@
         "connected": [
             "Temple Map"
         ],
+        "id": "MapWorldsTempleUnique",
         "image": false,
         "layout": {},
+        "level": 81,
         "name": "Replica Poorjoy's Asylum",
         "poedb": "https://poedb.tw/us/Replica_Poorjoys_Asylum",
         "rating": {},
@@ -5625,6 +5913,7 @@
             "Laboratory Map",
             "Moon Temple Map"
         ],
+        "id": "MapWorldsResidence",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5633,6 +5922,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 72,
         "name": "Residence Map",
         "poedb": "https://poedb.tw/us/Residence_Map",
         "rating": {
@@ -5648,6 +5938,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Residence_Map"
     },
     {
@@ -5658,10 +5949,14 @@
         },
         "cards": [
             "A Dusty Memory",
-            "Magnum Opus"
+            "Ambitious Obsession",
+            "Magnum Opus",
+            "More is Never Enough"
         ],
+        "id": "Synthesis_MapGuardian4",
         "image": false,
         "layout": {},
+        "level": 68,
         "name": "Rewritten Distant Memory",
         "poedb": "https://poedb.tw/us/Rewritten_Distant_Memory",
         "rating": {},
@@ -5715,6 +6010,7 @@
             "Precinct Map",
             "Silo Map"
         ],
+        "id": "MapWorldsScriptorium",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5723,6 +6019,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 68,
         "name": "Scriptorium Map",
         "poedb": "https://poedb.tw/us/Scriptorium_Map",
         "rating": {
@@ -5738,6 +6035,7 @@
             12,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Scriptorium_Map"
     },
     {
@@ -5780,6 +6078,7 @@
             "Ramparts Map",
             "Relic Chambers Map"
         ],
+        "id": "MapWorldsShipyard",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5788,6 +6087,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 75,
         "name": "Shipyard Map",
         "poedb": "https://poedb.tw/us/Shipyard_Map",
         "rating": {
@@ -5803,6 +6103,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Shipyard_Map"
     },
     {
@@ -5843,6 +6144,7 @@
             "Relic Chambers Map",
             "Sulphur Vents Map"
         ],
+        "id": "MapWorldsShore",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5851,6 +6153,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 73,
         "name": "Shore Map",
         "poedb": "https://poedb.tw/us/Shore_Map",
         "rating": {
@@ -5866,6 +6169,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Shore_Map"
     },
     {
@@ -5902,6 +6206,7 @@
             "Tower Map",
             "Vaal Pyramid Map"
         ],
+        "id": "MapWorldsShrine",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5910,6 +6215,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 70,
         "name": "Shrine Map",
         "poedb": "https://poedb.tw/us/Shrine_Map",
         "rating": {
@@ -5925,6 +6231,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Shrine_Map"
     },
     {
@@ -5964,6 +6271,7 @@
             "Foundry Map",
             "Plaza Map"
         ],
+        "id": "MapWorldsSiege",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -5972,6 +6280,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 76,
         "name": "Siege Map",
         "pantheon": "Soul of Tukohama",
         "poedb": "https://poedb.tw/us/Siege_Map",
@@ -5988,6 +6297,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Siege_Map"
     },
     {
@@ -6023,6 +6333,7 @@
             "Overgrown Shrine Map",
             "Scriptorium Map"
         ],
+        "id": "MapWorldsSilo",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6030,6 +6341,7 @@
             "league_mechanics": false,
             "linear": true
         },
+        "level": 69,
         "name": "Silo Map",
         "poedb": "https://poedb.tw/us/Silo_Map",
         "rating": {
@@ -6045,6 +6357,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Silo_Map"
     },
     {
@@ -6083,12 +6396,14 @@
             "Primordial Pool Map",
             "Shrine Map"
         ],
+        "id": "MapWorldsStagnation",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": false,
             "outdoors": true
         },
+        "level": 69,
         "name": "Stagnation Map",
         "poedb": "https://poedb.tw/us/Stagnation_Map",
         "rating": {
@@ -6104,6 +6419,7 @@
             13,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Stagnation_Map"
     },
     {
@@ -6150,6 +6466,7 @@
             "Port Map",
             "Whakawairua Tuahu"
         ],
+        "id": "MapWorldsStrand",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6158,6 +6475,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 70,
         "name": "Strand Map",
         "poedb": "https://poedb.tw/us/Strand_Map",
         "rating": {
@@ -6173,6 +6491,7 @@
             14,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Strand_Map"
     },
     {
@@ -6205,6 +6524,7 @@
             "Phantasmagoria Map",
             "Shore Map"
         ],
+        "id": "MapWorldsSulphurVents",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -6213,6 +6533,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 74,
         "name": "Sulphur Vents Map",
         "poedb": "https://poedb.tw/us/Sulphur_Vents_Map",
         "rating": {
@@ -6228,28 +6549,8 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Sulphur_Vents_Map"
-    },
-    {
-        "boss": {
-            "names": [
-                "Tahsin, Warmaker"
-            ]
-        },
-        "cards": [],
-        "image": false,
-        "layout": {},
-        "name": "Synthesised Map",
-        "poedb": "https://poedb.tw/us/Synthesised_Map",
-        "rating": {},
-        "tiers": [
-            11,
-            14,
-            16,
-            16,
-            16
-        ],
-        "wiki": "https://www.poewiki.net/wiki/Synthesised_Map"
     },
     {
         "boss": {
@@ -6291,6 +6592,7 @@
             "Thicket Map",
             "Tropical Island Map"
         ],
+        "id": "MapWorldsTemple",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -6299,6 +6601,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 81,
         "name": "Temple Map",
         "pantheon": "Soul of Solaris",
         "poedb": "https://poedb.tw/us/Temple_Map",
@@ -6315,6 +6618,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Temple_Map"
     },
     {
@@ -6354,6 +6658,7 @@
             "Crater Map",
             "Underground River Map"
         ],
+        "id": "MapWorldsTerrace",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6362,6 +6667,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 81,
         "name": "Terrace Map",
         "pantheon": "Soul of Yugul",
         "poedb": "https://poedb.tw/us/Terrace_Map",
@@ -6378,6 +6684,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Terrace_Map"
     },
     {
@@ -6387,10 +6694,13 @@
             ]
         },
         "cards": [
+            "Monochrome",
             "The Endless Darkness"
         ],
+        "id": "MapWorldsHarbingerLow",
         "image": false,
         "layout": {},
+        "level": 72,
         "name": "The Beachhead",
         "poedb": "https://poedb.tw/us/The_Beachhead",
         "rating": {},
@@ -6426,11 +6736,13 @@
         "connected": [
             "Cursed Crypt Map"
         ],
+        "id": "MapWorldsCursedCryptUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
             "league_mechanics": false
         },
+        "level": 74,
         "name": "The Coward's Trial",
         "poedb": "https://poedb.tw/us/The_Cowards_Trial",
         "rating": {},
@@ -6467,12 +6779,14 @@
         "connected": [
             "Museum Map"
         ],
+        "id": "MapWorldsMuseumUnique",
         "image": false,
         "layout": {
             "few_obstacles": false,
             "linear": true,
             "outdoors": false
         },
+        "level": 79,
         "name": "The Putrid Cloister",
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "rating": {},
@@ -6493,8 +6807,10 @@
             ]
         },
         "cards": [],
+        "id": "MapWorldsUltimatumBossArena",
         "image": false,
         "layout": {},
+        "level": 83,
         "name": "The Tower of Ordeals",
         "poedb": "https://poedb.tw/us/The_Tower_of_Ordeals",
         "rating": {},
@@ -6536,12 +6852,14 @@
         "connected": [
             "Moon Temple Map"
         ],
+        "id": "MapWorldsMoonTempleUnique",
         "image": false,
         "layout": {
             "few_obstacles": false,
             "linear": true,
             "outdoors": false
         },
+        "level": 71,
         "name": "The Twilight Temple",
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "rating": {},
@@ -6570,12 +6888,14 @@
             "The Stormcaller",
             "Thunderous Skies"
         ],
+        "id": "MapWorldsCourtyardUnique",
         "image": false,
         "layout": {
             "few_obstacles": false,
             "linear": true,
             "outdoors": true
         },
+        "level": 72,
         "name": "The Vinktar Square",
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "rating": {},
@@ -6623,6 +6943,7 @@
             "Jungle Valley Map",
             "Temple Map"
         ],
+        "id": "MapWorldsThicket",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -6631,6 +6952,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 80,
         "name": "Thicket Map",
         "poedb": "https://poedb.tw/us/Thicket_Map",
         "rating": {
@@ -6646,6 +6968,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Thicket_Map"
     },
     {
@@ -6686,6 +7009,7 @@
             "Primordial Pool Map",
             "Shrine Map"
         ],
+        "id": "MapWorldsTower",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6694,6 +7018,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 71,
         "name": "Tower Map",
         "poedb": "https://poedb.tw/us/Tower_Map",
         "rating": {
@@ -6709,6 +7034,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Tower_Map"
     },
     {
@@ -6743,6 +7069,7 @@
             "Coral Ruins Map",
             "Plateau Map"
         ],
+        "id": "MapWorldsToxicSewer",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -6751,6 +7078,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 73,
         "name": "Toxic Sewer Map",
         "poedb": "https://poedb.tw/us/Toxic_Sewer_Map",
         "rating": {
@@ -6766,6 +7094,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Toxic_Sewer_Map"
     },
     {
@@ -6806,6 +7135,7 @@
             "Coves Map",
             "Temple Map"
         ],
+        "id": "MapWorldsTropicalIsland",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6814,6 +7144,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 82,
         "name": "Tropical Island Map",
         "poedb": "https://poedb.tw/us/Tropical_Island_Map",
         "rating": {
@@ -6829,6 +7160,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Tropical_Island_Map"
     },
     {
@@ -6839,10 +7171,14 @@
         },
         "cards": [
             "A Dusty Memory",
-            "Magnum Opus"
+            "Ambitious Obsession",
+            "Magnum Opus",
+            "More is Never Enough"
         ],
+        "id": "Synthesis_MapGuardian3",
         "image": false,
         "layout": {},
+        "level": 68,
         "name": "Twisted Distant Memory",
         "poedb": "https://poedb.tw/us/Twisted_Distant_Memory",
         "rating": {},
@@ -6886,6 +7222,7 @@
             "Dig Map",
             "Terrace Map"
         ],
+        "id": "MapWorldsUndergroundRiver",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -6894,6 +7231,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 82,
         "name": "Underground River Map",
         "poedb": "https://poedb.tw/us/Underground_River_Map",
         "rating": {
@@ -6909,6 +7247,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Underground_River_Map"
     },
     {
@@ -6954,6 +7293,7 @@
             "Overgrown Ruin Map",
             "Ramparts Map"
         ],
+        "id": "MapWorldsUndergroundSea",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -6962,6 +7302,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 77,
         "name": "Underground Sea Map",
         "poedb": "https://poedb.tw/us/Underground_Sea_Map",
         "rating": {
@@ -6977,6 +7318,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Underground_Sea_Map"
     },
     {
@@ -6993,8 +7335,10 @@
         "cards": [
             "The Old Man"
         ],
+        "id": "MapWorldsTropicalIslandUnique",
         "image": false,
         "layout": {},
+        "level": 75,
         "name": "Untainted Paradise",
         "poedb": "https://poedb.tw/us/Untainted_Paradise",
         "rating": {},
@@ -7048,6 +7392,7 @@
             "Shrine Map",
             "Vaults of Atziri"
         ],
+        "id": "MapWorldsVaalPyramid",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7056,6 +7401,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 71,
         "name": "Vaal Pyramid Map",
         "poedb": "https://poedb.tw/us/Vaal_Pyramid_Map",
         "rating": {
@@ -7071,6 +7417,7 @@
             15,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Vaal_Pyramid_Map"
     },
     {
@@ -7106,6 +7453,7 @@
             "Three Voices",
             "Unrequited Love"
         ],
+        "id": "MapWorldsVaalTemple",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7114,6 +7462,7 @@
             "linear": false,
             "outdoors": false
         },
+        "level": 83,
         "name": "Vaal Temple Map",
         "poedb": "https://poedb.tw/us/Vaal_Temple_Map",
         "rating": {
@@ -7129,6 +7478,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Vaal_Temple_Map"
     },
     {
@@ -7159,6 +7509,7 @@
         "connected": [
             "Vaal Pyramid Map"
         ],
+        "id": "MapWorldsVaalPyramidUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7167,6 +7518,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 71,
         "name": "Vaults of Atziri",
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "rating": {},
@@ -7211,6 +7563,7 @@
             "Colosseum Map",
             "Racecourse Map"
         ],
+        "id": "MapWorldsVolcano",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7219,6 +7572,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 83,
         "name": "Volcano Map",
         "poedb": "https://poedb.tw/us/Volcano_Map",
         "rating": {
@@ -7234,6 +7588,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Volcano_Map"
     },
     {
@@ -7274,6 +7629,7 @@
             "Mineral Pools Map",
             "Plateau Map"
         ],
+        "id": "MapWorldsWastePool",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7282,6 +7638,7 @@
             "linear": true,
             "outdoors": false
         },
+        "level": 73,
         "name": "Waste Pool Map",
         "poedb": "https://poedb.tw/us/Waste_Pool_Map",
         "rating": {
@@ -7297,6 +7654,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Waste_Pool_Map"
     },
     {
@@ -7326,6 +7684,7 @@
             "Caldera Map",
             "Foundry Map"
         ],
+        "id": "MapWorldsWasteland",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7334,6 +7693,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 76,
         "name": "Wasteland Map",
         "poedb": "https://poedb.tw/us/Wasteland_Map",
         "rating": {
@@ -7349,6 +7709,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Wasteland_Map"
     },
     {
@@ -7383,6 +7744,7 @@
         "connected": [
             "Strand Map"
         ],
+        "id": "MapWorldsStrandUnique",
         "image": true,
         "layout": {
             "delirium_mirror": false,
@@ -7391,6 +7753,7 @@
             "linear": false,
             "outdoors": true
         },
+        "level": 70,
         "name": "Whakawairua Tuahu",
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "rating": {},
@@ -7446,6 +7809,7 @@
             "Frozen Cabins Map",
             "Malformation Map"
         ],
+        "id": "MapWorldsWharf",
         "image": true,
         "layout": {
             "delirium_mirror": true,
@@ -7454,6 +7818,7 @@
             "linear": true,
             "outdoors": true
         },
+        "level": 79,
         "name": "Wharf Map",
         "poedb": "https://poedb.tw/us/Wharf_Map",
         "rating": {
@@ -7469,6 +7834,7 @@
             16,
             16
         ],
+        "unique": false,
         "wiki": "https://www.poewiki.net/wiki/Wharf_Map"
     }
 ]

@@ -213,11 +213,135 @@ def get_map_ratings(key, config):
 	return ratings
 
 
-def get_map_data(map_data, extra_map_data, cards, config):
+def get_map_wiki(config):
+	print(f"Getting map metadata from wiki")
+	r = requests.get(config["wiki"]["api"], params={
+		"action": "cargoquery",
+		"format": "json",
+		"limit": "500",
+		"tables": "maps,items,areas",
+		"join_on": "items._pageID=maps._pageID,maps.area_id=areas.id",
+		"fields": "items.name,maps.area_id,maps.area_level,areas.boss_monster_ids,maps.unique_area_id",
+		"group_by": "items.name",
+		"where": "items.class_id='Map' AND maps.area_id LIKE '%MapWorlds%'"
+	})
+	wiki_maps = list(map(lambda x: x["title"], r.json()["cargoquery"]))
+	boss_ids = set([])
+	for wiki_map in wiki_maps:
+		if 'boss monster ids' in wiki_map:
+			boss_ids.update(wiki_map['boss monster ids'].split(','))
+
+	boss_cards = {}
+	for boss in boss_ids:
+		print(f"Getting card data for {boss} from wiki")
+		params = {
+			"action": "cargoquery",
+			"format": "json",
+			"limit": "500",
+			"tables": "items",
+			"fields": "items.name",
+			"where": f'items.drop_monsters HOLDS "{boss}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
+		}
+
+		r = requests.get(config["wiki"]["api"], params=params)
+		boss_cards[boss] = boss_cards.get(boss, [])
+		for card in r.json()["cargoquery"]:
+			boss_cards[boss].append(card["title"]["name"])
+
+	for existing_wiki in wiki_maps:
+		if "boss monster ids" in existing_wiki:
+			existing_wiki["cards"] = existing_wiki.get("cards", [])
+			for existing_boss in existing_wiki["boss monster ids"].split(","):
+				if existing_boss in boss_cards:
+					existing_wiki["cards"] = existing_wiki["cards"] + boss_cards[existing_boss]
+
+	return wiki_maps
+
+
+def get_maps(key, config):
+	meta = get_map_meta(key, config)
+	map_ratings = get_map_ratings(key, config)
+	map_wiki = get_map_wiki(config)
+
+	url = config["poedb"]["list"]
+	print(f"Getting maps from url {url}")
+
+	r = requests.get(url)
+	soup = BeautifulSoup(r.content, "html.parser")
+	mapslist = soup.find(id="MapsList")
+	table = mapslist.find("table")
+	body = table.find("tbody")
+	rows = body.find_all("tr")
+	out = []
+
+	for row in rows:
+		cols = row.find_all("td")
+		name = cols[3].text
+
+		if not name:
+			continue
+
+		map_url = cols[3].find('a').attrs['href']
+		map_url = config["poedb"]["base"].replace("{}", map_url)
+		out.append({
+			"name": name.strip(),
+			"poedb": map_url
+		})
+
+	mapslist = soup.find(id="MapsUnique")
+	table = mapslist.find("table")
+	body = table.find("tbody")
+	rows = body.find_all("tr")
+	names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
+
+	for row in rows:
+		cols = row.find_all("td")
+		href = cols[1].find('a')
+		name = href.text
+		map_url = href.attrs['href']
+		map_url = config["poedb"]["base"].replace("{}", map_url)
+
+		for n in names:
+			if not n.endswith(" Map") and not n.endswith("Ultimatum"):
+				continue
+			name = name.replace(n, "")
+
+		out.append({
+			"name": name.strip(),
+			"poedb": map_url
+		})
+
+	out = list(filter(lambda x: x["name"] not in config["ignored"], out))
+	out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
+
+	for m in out:
+		name = m["name"]
+		m["unique"] = not name.endswith(" Map")
+		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
+		if existing_meta:
+			merge(existing_meta, m)
+		existing_rating = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None)
+		if existing_rating:
+			existing_rating = existing_rating.copy()
+			existing_rating.pop("name")
+			m["rating"] = existing_rating
+		existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
+		if existing_wiki:
+			if m["unique"] and "unique area id" in existing_wiki:
+				m["id"] = existing_wiki["unique area id"]
+			else:
+				m["id"] = existing_wiki["area id"]
+			if "cards" in existing_wiki:
+				m["cards"] = existing_wiki["cards"]
+
+	return out
+
+
+def get_map_data(map_data, extra_map_data, config):
 	url = map_data["poedb"]
 	map_data["boss"] = map_data.get("boss", {})
 	map_data["rating"] = map_data.get("rating", {})
-	map_cards = set([])
+	map_cards = set(map_data.get("cards", []))
 
 	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
@@ -245,6 +369,7 @@ def get_map_data(map_data, extra_map_data, cards, config):
 				if map_data.get("tiers"):
 					continue
 				value = int(value.text.strip())
+				map_data["level"] = value
 				tier = value - 67
 				map_data["tiers"] = [
 					tier,
@@ -263,101 +388,29 @@ def get_map_data(map_data, extra_map_data, cards, config):
 				map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
 
 	# Wiki card data
-	wiki_name = map_data["name"].replace(" ", "_")
-	map_data["wiki"] = config["wiki"].replace("{}", wiki_name)
-	url = config["cards"].replace("{}", wiki_name)
-	print(f"Getting card data for {map_data['name']} from url {url}")
-	r = requests.get(url)
-	r = r.json()
-	r = r["parse"]["text"]["*"]
-	soup = BeautifulSoup(r, "html.parser")
-	tables = soup.select("table.wikitable.sortable.item-table")
+	map_data["wiki"] = config["wiki"]["base"].replace("{}", map_data["name"].replace(" ", "_"))
+	if map_data["id"]:
+		print(f"Getting card data for {map_data['name']} from wiki")
+		params = {
+			"action": "cargoquery",
+			"format": "json",
+			"limit": "500",
+			"tables": "items",
+			"fields": "items.name",
+			"where": f'items.drop_areas HOLDS "{map_data["id"]}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
+		}
 
-	for t in tables:
-		all_cards = map(lambda x: x.text.strip(), t.find_all("span", class_="divicard-header"))
-
-		for child_card in all_cards:
-			card = next((x for x in cards if x["name"] == child_card), None)
-			if card:
-				map_cards.add(card["name"])
+		r = requests.get(config["wiki"]["api"], params=params)
+		for card in r.json()["cargoquery"]:
+			map_cards.add(card["title"]["name"])
 
 	map_data["cards"] = sorted(list(map_cards))
-
-	if not map_data["name"].endswith(" Map"):
-		map_data["unique"] = True
 
 	# Merge existing data
 	existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
 	if existing:
 		merge(existing, map_data)
 	return map_data
-
-
-def get_maps(key, config):
-	meta = get_map_meta(key, config)
-	map_ratings = get_map_ratings(key, config)
-
-	url = config["poedb"].replace("{}", config["list"])
-	print(f"Getting maps from url {url}")
-
-	r = requests.get(url)
-	soup = BeautifulSoup(r.content, "html.parser")
-	mapslist = soup.find(id="MapsList")
-	table = mapslist.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-	out = []
-
-	for row in rows:
-		cols = row.find_all("td")
-		name = cols[3].text
-
-		if not name:
-			continue
-
-		map_url = cols[3].find('a').attrs['href']
-		map_url = config["poedb"].replace("{}", map_url)
-		out.append({
-			"name": name.strip(),
-			"poedb": map_url
-		})
-
-	mapslist = soup.find(id="MapsUnique")
-	table = mapslist.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-	names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
-
-	for row in rows:
-		cols = row.find_all("td")
-		href = cols[1].find('a')
-		name = href.text
-		map_url = href.attrs['href']
-		map_url = config["poedb"].replace("{}", map_url)
-
-		for n in names:
-			if not n.endswith(" Map") and not n.endswith("Ultimatum"):
-				continue
-			name = name.replace(n, "")
-
-		out.append({
-			"name": name.strip(),
-			"poedb": map_url
-		})
-
-	out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
-
-	for m in out:
-		existing_meta = next(filter(lambda x: x["name"] == m["name"], meta), None)
-		if existing_meta:
-			merge(existing_meta, m)
-		existing_rating = next(filter(lambda x: x["name"] == m["name"].replace(" Map", ""), map_ratings), None)
-		if existing_rating:
-			existing_rating = existing_rating.copy()
-			existing_rating.pop("name")
-			m["rating"] = existing_rating
-
-	return out
 
 
 def get_maps_template(maps, existing_maps):
@@ -407,22 +460,19 @@ def main():
 	config = config["data"]
 	api_key = os.environ['GOOGLE_API_KEY']
 
-	cards = get_card_data(api_key, config["league"], config["cards"])
 	if fetch_cards:
+		cards = get_card_data(api_key, config["league"], config["cards"])
 		with open(dir_path + "/../site/src/data/cards.json", "w") as f:
 			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
 
 	if fetch_maps:
 		maps = get_maps(api_key, config["maps"])
-
-		print("Merging extra map data")
 		with open(dir_path + "/maps.json", "r") as f:
 			map_extra = get_maps_template(maps, json.load(f))
-
 		with open(dir_path + "/maps.json", "w") as f:
 			f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder, sort_keys=True))
 
-		maps = list(map(lambda x: get_map_data(x, map_extra, cards, config["maps"]), maps))
+		maps = list(map(lambda x: get_map_data(x, map_extra, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
 			f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True))
 

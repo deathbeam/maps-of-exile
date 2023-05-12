@@ -264,19 +264,23 @@ def get_map_data(map_data, extra_map_data, cards, config):
 
 	# Wiki card data
 	wiki_name = map_data["name"].replace(" ", "_")
+	map_data["wiki"] = config["wiki"].replace("{}", wiki_name)
 	url = config["cards"].replace("{}", wiki_name)
 	print(f"Getting card data for {map_data['name']} from url {url}")
 	r = requests.get(url)
 	r = r.json()
 	r = r["parse"]["text"]["*"]
 	soup = BeautifulSoup(r, "html.parser")
-	all_cards = map(lambda x: x.text.strip(), soup.find_all("span", class_="divicard-header"))
+	tables = soup.select("table.wikitable.sortable.item-table")
 
-	map_data["wiki"] = config["wiki"].replace("{}", wiki_name)
-	for child_card in all_cards:
-		card = next((x for x in cards if x["name"] == child_card), None)
-		if card:
-			map_cards.add(card["name"])
+	for t in tables:
+		all_cards = map(lambda x: x.text.strip(), t.find_all("span", class_="divicard-header"))
+
+		for child_card in all_cards:
+			card = next((x for x in cards if x["name"] == child_card), None)
+			if card:
+				map_cards.add(card["name"])
+
 	map_data["cards"] = sorted(list(map_cards))
 
 	if not map_data["name"].endswith(" Map"):

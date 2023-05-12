@@ -734,7 +734,7 @@ function App() {
             Contribute on{' '}
             <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
               GitHub
-            </a>
+            </a>. Also contains sources for all data used on the site.
           </div>
         </div>
       </div>

@@ -689,10 +689,10 @@ function App() {
                 <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.layout} tooltip={m.info.layout} />
+                <RatingBadge rating={m.rating.layout}/>
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.density} tooltip={m.info.density} />
+                <RatingBadge rating={m.rating.density} tooltip={m.rating.density_unreliable && 'Missing exact mob count, density rating might be unreliable'} />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <MapBoss boss={m.boss} rating={m.rating.boss} />

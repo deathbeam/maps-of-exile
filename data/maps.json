@@ -1,1928 +1,1928 @@
 [
     {
-        "name": "Acton's Nightmare",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Alleyways Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
+        "name": "Acton's Nightmare"
     },
     {
-        "name": "Altered Distant Memory",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
         },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Alleyways Map"
+    },
+    {
         "boss": {
             "not_spawned": null,
-            "rushable": null,
             "phases": null,
+            "rushable": null,
             "soft_phases": null
-        }
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Altered Distant Memory"
     },
     {
-        "name": "Arachnid Nest Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": true,
-            "rushable": false,
             "phases": true,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Arachnid Tomb Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Arachnid Nest Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Arcade Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
+            "delirium_mirror": true,
+            "league_mechanics": false
         },
+        "name": "Arachnid Tomb Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Arid Lake Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
+            "delirium_mirror": true,
+            "league_mechanics": false
         },
+        "name": "Arcade Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Armoury Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": true,
+            "league_mechanics": true
         },
+        "name": "Arid Lake Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Arsenal Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Armoury Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": true,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Atoll Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Arsenal Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": true,
-            "phases": false,
             "soft_phases": false
-        }
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Atoll Map"
     },
     {
-        "name": "Augmented Distant Memory",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
         "boss": {
             "not_spawned": null,
-            "rushable": null,
             "phases": null,
+            "rushable": null,
             "soft_phases": null
-        }
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Augmented Distant Memory"
     },
     {
-        "name": "Barrows Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": true,
-            "phases": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Beach Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Belfry Map",
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": true,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Bone Crypt Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Caer Blaidd, Wolfpack's Den",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Caldera Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Canyon Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Castle Ruins Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Cells Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Cemetery Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": true,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Chateau Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "City Square Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": true,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Cold River Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
             "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Barrows Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Beach Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Belfry Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Bone Crypt Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Caer Blaidd, Wolfpack's Den"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Caldera Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Canyon Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Castle Ruins Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Cells Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Cemetery Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Chateau Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "City Square Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": true,
+            "separated": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true,
             "outdoors": true
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": true,
-            "phases": false,
-            "soft_phases": false,
-            "separated": true
-        }
+        "name": "Cold River Map"
     },
     {
-        "name": "Colonnade Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": true
-        }
-    },
-    {
-        "name": "Colosseum Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": true,
+            "league_mechanics": true
         },
+        "name": "Colonnade Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Conservatory Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
             "rushable": false,
-            "phases": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Coral Ruins Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Colosseum Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": false,
-            "phases": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Core Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Conservatory Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Coral Ruins Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
             "rushable": true,
-            "phases": true,
             "soft_phases": false
         },
+        "image": true,
         "info": {
             "rushable": "Only rushable in elder guardian maps where bosses are already dead."
-        }
+        },
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Core Map"
     },
     {
-        "name": "Cortex",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
         "boss": {
             "not_spawned": null,
-            "rushable": null,
             "phases": null,
+            "rushable": null,
             "soft_phases": null
-        }
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Cortex"
     },
     {
-        "name": "Courtyard Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Coves Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Courtyard Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": true,
-            "phases": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Crater Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Crimson Temple Map",
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Crimson Township Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
             "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Coves Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Crater Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Crimson Temple Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "separated": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false,
             "linear": true,
             "outdoors": true
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false,
-            "separated": true
-        }
+        "name": "Crimson Township Map"
     },
     {
-        "name": "Crystal Ore Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": true,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Cursed Crypt Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Crystal Ore Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Death and Taxes",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Cursed Crypt Map"
+    },
+    {
         "boss": {
             "not_spawned": true,
-            "rushable": false,
             "phases": true,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Defiled Cathedral Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
+        "name": "Death and Taxes"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Desert Spring Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
+        "name": "Defiled Cathedral Map"
     },
     {
-        "name": "Dig Map",
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
+            "delirium_mirror": true,
+            "league_mechanics": true
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
+        "name": "Desert Spring Map"
     },
     {
-        "name": "Doryani's Machinarium",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
         },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Dig Map"
+    },
+    {
         "boss": {
             "not_spawned": null,
-            "rushable": null,
             "phases": null,
+            "rushable": null,
             "soft_phases": null
-        }
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Doryani's Machinarium"
     },
     {
-        "name": "Dry Sea Map",
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
             "delirium_mirror": false,
+            "league_mechanics": true,
             "outdoors": true
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
+        "name": "Dry Sea Map"
     },
     {
-        "name": "Dunes Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": true,
-            "phases": false,
             "soft_phases": true
-        }
-    },
-    {
-        "name": "Dungeon Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
         },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Excavation Map",
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Factory Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Fields Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Flooded Mine Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Forbidden Woods Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false,
-            "outdoors": true,
-            "linear": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Forge of the Phoenix Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Foundry Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false,
-            "separated": true
-        }
-    },
-    {
-        "name": "Frozen Cabins Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
             "delirium_mirror": true,
-            "linear": true
+            "league_mechanics": true
         },
+        "name": "Dunes Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
-            "soft_phases": true,
-            "separated": true
-        }
-    },
-    {
-        "name": "Fungal Hollow Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
             "rushable": false,
-            "phases": false,
-            "soft_phases": false,
-            "separated": true
-        }
-    },
-    {
-        "name": "Geode Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Grotto Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Hall of Grandmasters",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Hallowed Ground",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Infested Valley Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Infused Beachhead",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Jungle Valley Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Laboratory Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Lair Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Lair of the Hydra Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Leyline Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Lighthouse Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Maelstr\u00f6m of Chaos",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
             "delirium_mirror": false,
-            "linear": true
+            "league_mechanics": false
         },
+        "name": "Dungeon Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
+            "phases": false,
             "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Excavation Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Factory Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
             "phases": true,
+            "rushable": false,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Malformation Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Mao Kun",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Marshes Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Maze Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Maze of the Minotaur Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Mineral Pools Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Moon Temple Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Museum Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Necropolis Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Oba's Cursed Trove",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Olmec's Sanctum",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Orchard Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Overgrown Ruin Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Overgrown Shrine Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Phantasmagoria Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Pier Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Pillars of Arun",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Pit Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Pit of the Chimera Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Plateau Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Plaza Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": true,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Poorjoy's Asylum",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Port Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Precinct Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Primordial Blocks Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false,
-            "separated": true
-        }
-    },
-    {
-        "name": "Primordial Pool Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Promenade Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Racecourse Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Ramparts Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Relic Chambers Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Replica Cortex",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Replica Pillars of Arun",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Replica Poorjoy's Asylum",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Residence Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Rewritten Distant Memory",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Scriptorium Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Shipyard Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Shore Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Shrine Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": true
-        }
-    },
-    {
-        "name": "Siege Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Silo Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
             "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Fields Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Flooded Mine Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true,
             "linear": true,
-            "few_obstacles": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false,
-            "separated": true
-        }
-    },
-    {
-        "name": "Stagnation Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false,
             "outdoors": true
         },
+        "name": "Forbidden Woods Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
-            "soft_phases": false,
-            "separated": true
-        }
-    },
-    {
-        "name": "Strand Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
             "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Sulphur Vents Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Synthesised Map",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Temple Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Terrace Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "The Beachhead",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "The Coward's Trial",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "The Putrid Cloister",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "The Tower of Ordeals",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "The Twilight Temple",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "The Vinktar Square",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Thicket Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Tower Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Toxic Sewer Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Tropical Island Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Twisted Distant Memory",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Underground River Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Underground Sea Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Untainted Paradise",
-        "image": false,
-        "layout": {
-            "league_mechanics": null,
-            "delirium_mirror": null
-        },
-        "boss": {
-            "not_spawned": null,
-            "rushable": null,
-            "phases": null,
-            "soft_phases": null
-        }
-    },
-    {
-        "name": "Vaal Pyramid Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
             "soft_phases": true
-        }
-    },
-    {
-        "name": "Vaal Temple Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": true,
+            "league_mechanics": false
         },
+        "name": "Forge of the Phoenix Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
+            "separated": true,
             "soft_phases": false
-        }
-    },
-    {
-        "name": "Vaults of Atziri",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
+            "delirium_mirror": false,
+            "league_mechanics": false
         },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
+        "name": "Foundry Map"
     },
     {
-        "name": "Volcano Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Waste Pool Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
             "rushable": false,
-            "phases": true,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Wasteland Map",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": false,
-            "rushable": false,
-            "phases": false,
-            "soft_phases": false
-        }
-    },
-    {
-        "name": "Whakawairua Tuahu",
-        "image": true,
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
-        },
-        "boss": {
-            "not_spawned": true,
-            "rushable": false,
-            "phases": false,
+            "separated": true,
             "soft_phases": true
-        }
-    },
-    {
-        "name": "Wharf Map",
+        },
         "image": true,
         "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": true
+            "delirium_mirror": true,
+            "league_mechanics": false,
+            "linear": true
         },
+        "name": "Frozen Cabins Map"
+    },
+    {
         "boss": {
             "not_spawned": false,
-            "rushable": false,
             "phases": false,
+            "rushable": false,
+            "separated": true,
             "soft_phases": false
-        }
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Fungal Hollow Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Geode Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Grotto Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Hall of Grandmasters"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Hallowed Ground"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Infested Valley Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Infused Beachhead"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Jungle Valley Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Laboratory Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Lair Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Lair of the Hydra Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Leyline Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Lighthouse Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false,
+            "linear": true
+        },
+        "name": "Maelstr\u00f6m of Chaos"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Malformation Map"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Mao Kun"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Marshes Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Maze Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Maze of the Minotaur Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Mineral Pools Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Moon Temple Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Museum Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Necropolis Map"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Oba's Cursed Trove"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Olmec's Sanctum"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Orchard Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Overgrown Ruin Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Overgrown Shrine Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Phantasmagoria Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Pier Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Pillars of Arun"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Pit Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Pit of the Chimera Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Plateau Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Plaza Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Poorjoy's Asylum"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Port Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Precinct Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "separated": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Primordial Blocks Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Primordial Pool Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Promenade Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Racecourse Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Ramparts Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Relic Chambers Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Replica Cortex"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Replica Pillars of Arun"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Replica Poorjoy's Asylum"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Residence Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Rewritten Distant Memory"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Scriptorium Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Shipyard Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Shore Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Shrine Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Siege Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "separated": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "few_obstacles": true,
+            "league_mechanics": false,
+            "linear": true
+        },
+        "name": "Silo Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "separated": true,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false,
+            "outdoors": true
+        },
+        "name": "Stagnation Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Strand Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": true
+        },
+        "name": "Sulphur Vents Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Synthesised Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Temple Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Terrace Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "The Beachhead"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "The Coward's Trial"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "The Putrid Cloister"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "The Tower of Ordeals"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "The Twilight Temple"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "The Vinktar Square"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Thicket Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Tower Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Toxic Sewer Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Tropical Island Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Twisted Distant Memory"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": false
+        },
+        "name": "Underground River Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Underground Sea Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "league_mechanics": null
+        },
+        "name": "Untainted Paradise"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Vaal Pyramid Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Vaal Temple Map"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Vaults of Atziri"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Volcano Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": true,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Waste Pool Map"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Wasteland Map"
+    },
+    {
+        "boss": {
+            "not_spawned": true,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": true
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": false,
+            "league_mechanics": false
+        },
+        "name": "Whakawairua Tuahu"
+    },
+    {
+        "boss": {
+            "not_spawned": false,
+            "phases": false,
+            "rushable": false,
+            "soft_phases": false
+        },
+        "image": true,
+        "layout": {
+            "delirium_mirror": true,
+            "league_mechanics": true
+        },
+        "name": "Wharf Map"
     }
 ]

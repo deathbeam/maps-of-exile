@@ -127,6 +127,48 @@ def get_card_data(key, league, config):
 	return sorted(out, key=lambda d: d["name"])
 
 
+def get_map_meta(key, config):
+	meta = []
+	for name in config["metadata"]["sheet-names"]:
+		id = config["metadata"]["sheet-id"]
+		print(f"Getting map metadata from {name}")
+		url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+		r = requests.get(url)
+		r = r.json()
+		r = r["values"]
+		r = list(filter(lambda x: x, r))
+		r.pop(0)
+		r.pop(0)
+		if "Unique" in name:
+			meta = meta + list(map(lambda x: {
+				"name": x[0].strip().replace(" Map", "").replace("’", "'"),
+				"boss": {
+					"notes": x[8].strip(),
+					"separated": x[11].strip() == "o"
+				},
+				"layout": {
+					"few_obstacles": x[10].strip() == "o",
+					"outdoors": x[12].strip() == "o",
+					"linear": x[13].strip() == "o"
+				}
+			}, r))
+		else:
+			meta = meta + list(map(lambda x: {
+				"name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
+				"boss": {
+					"notes": x[8].strip(),
+					"separated": x[12].strip() == "o"
+				},
+				"layout": {
+					"few_obstacles": x[11].strip() == "o",
+					"outdoors": x[13].strip() == "o",
+					"linear": x[14].strip() == "o"
+				}
+			}, r))
+
+	return meta
+
+
 def get_map_ratings(key, config):
 	id = config["ratings"]["sheet-id"]
 	name = config["ratings"]["sheet-name"]
@@ -171,9 +213,10 @@ def get_map_ratings(key, config):
 	return ratings
 
 
-def get_map_data(map_data, extra_map_data, cards, ratings, config):
+def get_map_data(map_data, extra_map_data, cards, config):
 	url = map_data["poedb"]
 	map_data["boss"] = map_data.get("boss", {})
+	map_data["rating"] = map_data.get("rating", {})
 	map_cards = set([])
 
 	# PoeDB map metadata
@@ -236,22 +279,10 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 			map_cards.add(card["name"])
 	map_data["cards"] = sorted(list(map_cards))
 
-	# Extra data
-	map_data["info"] = {}
-	map_data["rating"] = {}
-	rating = next(filter(lambda x: x["name"] == map_data["name"].replace(" Map", ""), ratings), None)
-	if rating:
-		if rating["density_unreliable"]:
-			map_data["info"]["density"] = "Missing exact mob count, density rating might be unreliable"
-		map_data["rating"] = {
-			"layout": rating["layout"],
-			"density": rating["density"],
-			"boss": rating["boss"]
-		}
-
 	if not map_data["name"].endswith(" Map"):
 		map_data["unique"] = True
 
+	# Merge existing data
 	existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
 	if existing:
 		merge(existing, map_data)
@@ -259,44 +290,8 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 
 
 def get_maps(key, config):
-	meta = []
-
-	for name in config["metadata"]["sheet-names"]:
-		id = config["metadata"]["sheet-id"]
-		print(f"Getting map metadata from {name}")
-		url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-		r = requests.get(url)
-		r = r.json()
-		r = r["values"]
-		r = list(filter(lambda x: x, r))
-		r.pop(0)
-		r.pop(0)
-		if "Unique" in name:
-			meta = meta + list(map(lambda x: {
-				"name": x[0].strip().replace(" Map", "").replace("’", "'"),
-				"boss": {
-					"notes": x[8].strip(),
-					"separated": x[11].strip() == "o"
-				},
-				"layout": {
-					"few_obstacles": x[10].strip() == "o",
-					"outdoors": x[12].strip() == "o",
-					"linear": x[13].strip() == "o"
-				}
-			}, r))
-		else:
-			meta = meta + list(map(lambda x: {
-				"name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
-				"boss": {
-					"notes": x[8].strip(),
-					"separated": x[12].strip() == "o"
-				},
-				"layout": {
-					"few_obstacles": x[11].strip() == "o",
-					"outdoors": x[13].strip() == "o",
-					"linear": x[14].strip() == "o"
-				}
-			}, r))
+	meta = get_map_meta(key, config)
+	map_ratings = get_map_ratings(key, config)
 
 	url = config["poedb"].replace("{}", config["list"])
 	print(f"Getting maps from url {url}")
@@ -349,9 +344,14 @@ def get_maps(key, config):
 	out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
 
 	for m in out:
-		existing = next(filter(lambda x: x["name"] == m["name"], meta), None)
-		if existing:
-			merge(existing, m)
+		existing_meta = next(filter(lambda x: x["name"] == m["name"], meta), None)
+		if existing_meta:
+			merge(existing_meta, m)
+		existing_rating = next(filter(lambda x: x["name"] == m["name"].replace(" Map", ""), map_ratings), None)
+		if existing_rating:
+			existing_rating = existing_rating.copy()
+			existing_rating.pop("name")
+			m["rating"] = existing_rating
 
 	return out
 
@@ -406,7 +406,7 @@ def main():
 	cards = get_card_data(api_key, config["league"], config["cards"])
 	if fetch_cards:
 		with open(dir_path + "/../site/src/data/cards.json", "w") as f:
-			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder))
+			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
 
 	if fetch_maps:
 		maps = get_maps(api_key, config["maps"])
@@ -416,12 +416,11 @@ def main():
 			map_extra = get_maps_template(maps, json.load(f))
 
 		with open(dir_path + "/maps.json", "w") as f:
-			f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder))
+			f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder, sort_keys=True))
 
-		map_ratings = get_map_ratings(api_key, config["maps"])
-		maps = list(map(lambda x: get_map_data(x, map_extra, cards, map_ratings, config["maps"]), maps))
+		maps = list(map(lambda x: get_map_data(x, map_extra, cards, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
-			f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder))
+			f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True))
 
 
 if __name__ == "__main__":

@@ -269,12 +269,13 @@ const MapBoss = ({ boss, rating }) => {
     return (
       <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
         <span className="tooltip-tag-text">
-          {boss.names && boss.names.map(b => (
-            <b>
-              {b}
-              <br />
-            </b>
-          ))}
+          {boss.names &&
+            boss.names.map(b => (
+              <b>
+                {b}
+                <br />
+              </b>
+            ))}
           {boss.notes}
         </span>
         {badge}
@@ -584,7 +585,8 @@ function App() {
                 <span className="tooltip-tag-text">
                   How straightforward is the map to clear or how good it is for league mechanics.
                   <br />
-                  This data is opinionated, if you disagree with any rating please open issue on GitHub with explanation.
+                  This data is opinionated, if you disagree with any rating please open issue on GitHub with
+                  explanation.
                   <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
@@ -598,9 +600,11 @@ function App() {
             <th scope="col" className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  How many total base mobs does the map have. Do not accounts for extra sources of mobs like league mechanics and sextants.
+                  How many total base mobs does the map have. Do not accounts for extra sources of mobs like league
+                  mechanics and sextants.
                   <br />
-                  This data is based on actual mob counts in maps counted using rampage. Some newer maps and unique maps might be missing data as they still need to be collected.
+                  This data is based on actual mob counts in maps counted using rampage. Some newer maps and unique maps
+                  might be missing data as they still need to be collected.
                   <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
@@ -616,7 +620,8 @@ function App() {
                 <span className="tooltip-tag-text">
                   How annoying/dangerous is the boss to kill.
                   <br />
-                  This data is opinionated, if you disagree with any rating please open issue on GitHub with explanation.
+                  This data is opinionated, if you disagree with any rating please open issue on GitHub with
+                  explanation.
                   <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">hard/annoying</span>
@@ -689,10 +694,13 @@ function App() {
                 <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.layout}/>
+                <RatingBadge rating={m.rating.layout} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.density} tooltip={m.rating.density_unreliable && 'Missing exact mob count, density rating might be unreliable'} />
+                <RatingBadge
+                  rating={m.rating.density}
+                  tooltip={m.rating.density_unreliable && 'Missing exact mob count, density rating might be unreliable'}
+                />
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <MapBoss boss={m.boss} rating={m.rating.boss} />
@@ -734,7 +742,8 @@ function App() {
             Contribute on{' '}
             <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
               GitHub
-            </a>. Also contains sources for all data used on the site.
+            </a>
+            . Also contains sources for all data used on the site.
           </div>
         </div>
       </div>

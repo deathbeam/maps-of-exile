@@ -269,7 +269,7 @@ const MapBoss = ({ boss, rating }) => {
     return (
       <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
         <span className="tooltip-tag-text">
-          {boss.names.map(b => (
+          {boss.names && boss.names.map(b => (
             <b>
               {b}
               <br />

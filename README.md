@@ -52,28 +52,30 @@ Then simply open new issue: https://github.com/deathbeam/poe-tools/issues/new/ch
 
 ## Sources of data
 
-**Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord:  
+**Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found, e.g newer cards):  
 https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
 
-**Estimated Divination Card weights spreadsheet** from **Prohibited Library** discord:
+**Estimated Divination Card weights spreadsheet for 3.20** from **Prohibited Library** discord (used for getting card weights):
 https://docs.google.com/spreadsheets/d/1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
 
-**Map ratings spreadsheet** by **FixFaxer**:
+**Map ratings spreadsheet** by **FixFaxer** (used for **Layout**, **Boss** and as fallback when mob count is not found):
 https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
 
-**Mob count spreadsheet** by **not_Shorex**:
+**Mob count spreadsheet** by **not_Shorex** (used for **Density**, contains exact mob counts per maps, averaged):
 https://docs.google.com/spreadsheets/d/10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
 
-**Card prices** from **PoeNinja**:  
+**Map reference spreadsheet** by **Anjerosan** (used for boss notes and various metadata about layout, like outdoors/linear etc):
+https://docs.google.com/spreadsheets/d/10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0
+
+**Card prices** from **PoeNinja** (used for listing all cards and assigning them prices + getting card data like stack size and rewards):  
 https://poe.ninja/challenge/divination-cards  
 https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
 
-**Map metadata** from **PoeDB**:  
+**Map metadata** from **PoeDB** (used for map tiers, map listings, boss names, card drops):  
 https://poedb.tw/us/Maps#MapsList  
 https://poedb.tw/us/Colonnade_Map (example of single map)
-https://docs.google.com/spreadsheets/d/1BQVhe_4f2ujyzhQ9uKbAkU_j1bOUKCDxpjwdVx8MfV4 (original source of some PoeDB metadata)
 
-**Map card drops** from **PoeWiki**:  
+**Map card drops** from **PoeWiki** (used to verify poedb card drops):  
 https://www.poewiki.net/wiki/Colonnade_Map  
 
 ## So what it actually does?

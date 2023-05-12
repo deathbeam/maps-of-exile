@@ -3,6 +3,8 @@
         "name": "Acton's Nightmare",
         "poedb": "https://poedb.tw/us/Actons_Nightmare",
         "boss": {
+            "notes": "The map is filled with skeletons that will not lie down. The Restless Dead map mod means that monsters come back to life 10 seconds after being killed unless their corpse is removed (via shatter or corpse explosion for example). The resurrected skeletons don\u2019t provide and experience or drop any loot. Bosses can resurrect any monster, even each other. This means the fight can go on unless you kill both bosses at approximately the same time or theo stopped reviving the other.",
+            "separated": false,
             "names": [
                 "Rose",
                 "Thorn"
@@ -13,6 +15,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -46,6 +51,7 @@
         "poedb": "https://poedb.tw/us/Alleyways_Map",
         "boss": {
             "notes": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles",
+            "separated": false,
             "names": [
                 "Calderus"
             ],
@@ -55,6 +61,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -113,7 +120,6 @@
                 "Altered Synthete"
             ]
         },
-        "layout": {},
         "tiers": [
             1,
             4,
@@ -131,7 +137,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Arachnid Nest Map",
@@ -149,6 +156,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -205,6 +214,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -250,6 +260,7 @@
         "poedb": "https://poedb.tw/us/Arcade_Map",
         "boss": {
             "notes": "Flammability and Conductivity lower resists so overcap or bring curse removal. Weak elemental spells",
+            "separated": false,
             "names": [
                 "Herald of Ashes",
                 "Herald of Thunder"
@@ -260,7 +271,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": true
         },
@@ -323,6 +336,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": true
         },
@@ -365,6 +379,7 @@
         "poedb": "https://poedb.tw/us/Armoury_Map",
         "boss": {
             "notes": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities.",
+            "separated": false,
             "names": [
                 "Warmonger"
             ],
@@ -374,6 +389,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -429,7 +446,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -482,7 +501,7 @@
         "name": "Atoll Map",
         "poedb": "https://poedb.tw/us/Atoll_Map",
         "boss": {
-            "notes": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being chain stunned. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
+            "notes": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being frozen. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
             "separated": true,
             "names": [
                 "Puruna, the Challenger"
@@ -551,7 +570,6 @@
                 "Augmented Synthete"
             ]
         },
-        "layout": {},
         "tiers": [
             1,
             4,
@@ -569,7 +587,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Barrows Map",
@@ -586,7 +605,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -689,7 +710,7 @@
         "name": "Belfry Map",
         "poedb": "https://poedb.tw/us/Belfry_Map",
         "boss": {
-            "notes": "Too many mechanics/phases to describe. Best to consult a mechanics video on Act V Kitava. Most of Kitava's attacks are telegraphed but can be hard to avoid and mistakes are costly. If you have enough damage it is easy to transition from boss phase to phase quickly.",
+            "notes": "Act V Kitava except with lower maximum life",
             "separated": true,
             "names": [
                 "Lord of the Grey"
@@ -746,6 +767,7 @@
         "poedb": "https://poedb.tw/us/Bone_Crypt_Map",
         "boss": {
             "notes": "Resummons nearby minions. Casts Spirit Offering and Vaal Summon Skeletons. Focus on killing the boss over the unique skeletons as these can be revived by the boss.",
+            "separated": false,
             "names": [
                 "Xixic, High Necromancer"
             ],
@@ -755,6 +777,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -808,6 +832,8 @@
         "name": "Caer Blaidd, Wolfpack's Den",
         "poedb": "https://poedb.tw/us/Caer_Blaidd%2C_Wolfpacks_Den",
         "boss": {
+            "notes": "The map contains two types of mobs. Firstly, wolves which Puncture inflicting a severe Bleed. Ensure you bring along a Bleed removal flask. Secondly, wolf cultists which deal use Caustic Arrow and Viper Strike to inflict chaos damage \u2013 these guys aren\u2019t too frightening. Walking through this linear Den you will encounter two unique wolves which deal substantial elemental damage. Winterbite has a powerful Ice Nova and creates Frost Bombs on the ground. Storm Eye casts a Lightning Storm as well as using a strong Lightning Strike attack. Both of them can also Leap Slam. \nAt the end of the Den is a Cave which contains Winterbite, Storm Eye and Solus, the most powerful wolf of the three. Solus deals exclusively in Fire spells, dishing out very fast Flameblasts and multiple projectile Magma Orbs. Because the cave is small there isn\u2019t really anywhere to hide. My recommendation is to keep moving, you may eventually be able to kite one of the wolves away from the others.",
+            "separated": true,
             "names": [
                 "Solus, Pack Alpha",
                 "Storm Eye",
@@ -819,6 +845,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": true,
+            "outdoors": false,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -866,7 +895,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -917,6 +948,7 @@
         "poedb": "https://poedb.tw/us/Canyon_Map",
         "boss": {
             "notes": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
+            "separated": false,
             "names": [
                 "Gnar, Eater of Carrion",
                 "Stonebeak, Battle Fowl"
@@ -993,6 +1025,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -1040,7 +1073,8 @@
         "name": "Cells Map",
         "poedb": "https://poedb.tw/us/Cells_Map",
         "boss": {
-            "notes": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks",
+            "notes": "Avoid large Ball Lightning and spray of small Lightning projectiles. Boss will lay a small circle on the ground then ghost Brutus will appear slamming the area for massive Physical/Lightning damage. Boss also summons small lightning orb minions and books which explode after a time.",
+            "separated": true,
             "names": [
                 "Shavronne the Sickening"
             ],
@@ -1050,6 +1084,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -1108,7 +1145,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -1168,7 +1207,8 @@
         "name": "Chateau Map",
         "poedb": "https://poedb.tw/us/Chateau_Map",
         "boss": {
-            "notes": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap.",
+            "notes": "Strong Physical attacks. Sunder. Doesn't feel as strong as Uber Labyrinth Argus, also isn't immune to status ailments. Enrages for 8 seconds (turns red) increasing damage, movement speed and attack speed by 100%. Decoy Totem comes in handy for casters and ranged characters.",
+            "separated": false,
             "names": [
                 "Hephaeus, The Hammer"
             ],
@@ -1178,7 +1218,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -1226,6 +1268,7 @@
         "poedb": "https://poedb.tw/us/City_Square_Map",
         "boss": {
             "notes": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first.",
+            "separated": false,
             "names": [
                 "Carius, the Unnatural",
                 "Pileah, Burning Corpse",
@@ -1239,6 +1282,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -1298,11 +1342,6 @@
             "soft_phases": false,
             "separated": true
         },
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false,
-            "outdoors": true
-        },
         "tiers": [
             9,
             12,
@@ -1354,7 +1393,12 @@
             "density": 6,
             "boss": 4
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": true,
+            "delirium_mirror": false,
+            "outdoors": true
+        }
     },
     {
         "name": "Colonnade Map",
@@ -1371,6 +1415,7 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,
@@ -1436,6 +1481,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -1503,6 +1549,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -1549,6 +1597,7 @@
         "poedb": "https://poedb.tw/us/Coral_Ruins_Map",
         "boss": {
             "notes": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack.",
+            "separated": false,
             "names": [
                 "Captain Tanner Lightfoot"
             ],
@@ -1558,6 +1607,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,
@@ -1623,6 +1673,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -1685,7 +1737,6 @@
                 "Venarius"
             ]
         },
-        "layout": {},
         "tiers": [
             12,
             15,
@@ -1707,7 +1758,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Courtyard Map",
@@ -1726,6 +1778,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -1784,6 +1837,7 @@
         "poedb": "https://poedb.tw/us/Coves_Map",
         "boss": {
             "notes": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately.",
+            "separated": false,
             "names": [
                 "Pirate Treasure",
                 "Telvar, the Inebriated"
@@ -1794,6 +1848,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,
@@ -1848,6 +1903,8 @@
         "name": "Crater Map",
         "poedb": "https://poedb.tw/us/Crater_Map",
         "boss": {
+            "notes": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks",
+            "separated": false,
             "names": [
                 "Megaera"
             ],
@@ -1857,6 +1914,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -1909,6 +1969,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -1971,12 +2033,6 @@
             "soft_phases": false,
             "separated": true
         },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true,
-            "linear": true,
-            "outdoors": true
-        },
         "tiers": [
             11,
             14,
@@ -2018,7 +2074,13 @@
             "density": 6,
             "boss": 6
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": true,
+            "linear": true,
+            "outdoors": true
+        }
     },
     {
         "name": "Crystal Ore Map",
@@ -2037,6 +2099,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2093,6 +2158,7 @@
         "poedb": "https://poedb.tw/us/Cursed_Crypt_Map",
         "boss": {
             "notes": "Similar to Relic Chambers boss. Turn off curses when facing this boss - when a curse expires he unleashes a deadly nova (damage type based on colour of curse gem) which can one shot. Without curses this boss is non-threatening. He spawns spiders (including rare ones), inflicts curses (can break curse limit) and deals strong telegraphed Physical attacks.",
+            "separated": false,
             "names": [
                 "Pagan Bishop of Agony"
             ],
@@ -2102,6 +2168,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2150,6 +2219,8 @@
         "name": "Death and Taxes",
         "poedb": "https://poedb.tw/us/Death_and_Taxes",
         "boss": {
+            "notes": "At the start of the map run along the walkways past all the orange portals. At the last platform running over portal will spawn the boss, the Avatar. In his first three forms the Avatar will use a range of powerful elemental spells of a single element. After killing each form the Avatar will become immune to all damage and start chasing the player. At this point you must kite the Avatar back the way you came to the orange portal on the next platform. Along the way animated weapons will spawn which can be used to regain flask charges. The Avatar has massive AoE, so watch out for the Flameblasts, Ice Nova (almost the whole screen) and Storm Calls. On the last platform, the Avatar will go from using a single element to using all three concurrently, effectively making the fight thrice as difficult. Pop all your flasks and kill him fast or he will kill you. Retreat behind the pillars if you need to recuperate but beware of his Ice Nova which has massive range.",
+            "separated": false,
             "names": [
                 "Avatar of Apocalypse"
             ],
@@ -2159,6 +2230,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": true,
+            "outdoors": false,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2200,6 +2274,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -2328,6 +2403,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -2380,11 +2456,17 @@
         "name": "Doryani's Machinarium",
         "poedb": "https://poedb.tw/us/Doryanis_Machinarium",
         "boss": {
+            "notes": "The map is basically an escort gauntlet map. At the end of every escort pillars, you can pick one out from the three options presented. Make sure to not misclick as the options can impact the difficulty of the boss fight.",
+            "separated": true,
             "names": [
                 "The Apex Assembly"
             ]
         },
-        "layout": {},
+        "layout": {
+            "few_obstacles": true,
+            "outdoors": false,
+            "linear": false
+        },
         "tiers": [
             14,
             16,
@@ -2419,11 +2501,6 @@
             "rushable": false,
             "phases": false,
             "soft_phases": false
-        },
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false,
-            "outdoors": true
         },
         "tiers": [
             2,
@@ -2466,13 +2543,19 @@
             "density": 6,
             "boss": 8
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": true,
+            "delirium_mirror": false,
+            "outdoors": true
+        }
     },
     {
         "name": "Dunes Map",
         "poedb": "https://poedb.tw/us/Dunes_Map",
         "boss": {
             "notes": "Strong Physical melee attacks. At half health heals to full and gains a Leap Slam ability that summons zombies which release poison clouds on death. Staying in melee range prevents use of Leap Slam.",
+            "separated": false,
             "names": [
                 "The Blacksmith"
             ],
@@ -2549,6 +2632,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2609,6 +2695,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2659,6 +2747,7 @@
         "poedb": "https://poedb.tw/us/Factory_Map",
         "boss": {
             "notes": "Stay out of Lightning beams which deal heavy Lightning DoT. Adus has strong Physical attacks including  Earthquake. Periodically Adus will leap in the air performing a more powerful Earthquake that has several aftershocks which deal heavy Physical and Lightning damage. The real danger in this fight comes from his 'Living Bomb' attack where he charges up and discharges a huge amount of Lightning damage which always Shocks and can potentially one shot. Avoid these telegraphed AoE abilities at all costs.",
+            "separated": false,
             "names": [
                 "Pesquin, the Mad Baron"
             ],
@@ -2668,6 +2757,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -2734,6 +2824,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": true
         },
@@ -2782,7 +2873,8 @@
         "name": "Flooded Mine Map",
         "poedb": "https://poedb.tw/us/Flooded_Mine_Map",
         "boss": {
-            "notes": "Summon tornadoes, Earthquake attack.",
+            "notes": "Summon tornadoes, Earthquake attack. Very easy to kill just make sure to keep your distance from the tornado.",
+            "separated": false,
             "names": [
                 "The Eroding One"
             ],
@@ -2792,6 +2884,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -2859,12 +2954,6 @@
             "phases": false,
             "soft_phases": false
         },
-        "layout": {
-            "league_mechanics": true,
-            "delirium_mirror": false,
-            "outdoors": true,
-            "linear": true
-        },
         "tiers": [
             7,
             10,
@@ -2913,7 +3002,13 @@
             "density": 6,
             "boss": 6
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": true,
+            "delirium_mirror": false,
+            "outdoors": true,
+            "linear": true
+        }
     },
     {
         "name": "Forge of the Phoenix Map",
@@ -2930,6 +3025,8 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -2972,10 +3069,6 @@
             "phases": false,
             "soft_phases": false,
             "separated": true
-        },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
         },
         "tiers": [
             10,
@@ -3021,7 +3114,11 @@
             "density": 4,
             "boss": 4
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        }
     },
     {
         "name": "Frozen Cabins Map",
@@ -3035,11 +3132,6 @@
             "phases": false,
             "soft_phases": true,
             "separated": true
-        },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true,
-            "linear": true
         },
         "tiers": [
             11,
@@ -3081,22 +3173,31 @@
             "density": 6,
             "boss": 8
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": true,
+            "linear": true
+        }
     },
     {
         "name": "Fungal Hollow Map",
         "poedb": "https://poedb.tw/us/Fungal_Hollow_Map",
         "boss": {
+            "notes": "Summons Warcheif Totems and adds. Casts Immortal Call for temporary immunity to Physical damage",
+            "separated": true,
             "names": [
                 "Aulen Greychain"
             ],
             "not_spawned": false,
             "rushable": false,
             "phases": false,
-            "soft_phases": false,
-            "separated": true
+            "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -3149,7 +3250,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -3203,6 +3306,7 @@
         "poedb": "https://poedb.tw/us/Grotto_Map",
         "boss": {
             "notes": "Chaos-storm and Ground Slam attack. Summons Pocked Miners after a time.",
+            "separated": false,
             "names": [
                 "Void Anomaly"
             ],
@@ -3213,6 +3317,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -3278,8 +3384,15 @@
     {
         "name": "Hall of Grandmasters",
         "poedb": "https://poedb.tw/us/Hall_of_Grandmasters",
-        "boss": {},
-        "layout": {},
+        "boss": {
+            "notes": "Probably the most unique out of all the unique maps. GGG has immortalized players who had purchased a Grandmaster supporter pack in the game by allowing them to add a character of theirs (mirrored gear and all) into this map. You fight about 30 waves of 5 grandmasters at a time. As you progress the waves become more difficult. The map is split into four halls which contain 50 grandmasters. At the end of each hall is a Grandmaster\u2019s Cache which are comparable to Izaro\u2019s chests at the end of Uber Labyrinth.\nThe fact of reality is that 90% of builds cannot complete this map. For example, many of the grandmasters are running Chaos Innoculation so pure chaos damage builds are ineffective. Some grandmasters do too much damage or are too tanky (Aegis Aurora + Max Block) for the majority of characters to kill. Do not do this map on Hardcore (seriously it is probably harder than the Shaper). If in Softcore try this map out for fun and see how far you can get. There are many caveats for a lot of the grandmasters which can\u2019t all be covered here. \nA few tips. Builds that use traps, mines or even Explosive Arrow can preload their abilities while the exiles are still immune. The super tank chracters with high regen/block can be partially countered with the block reduction support and frost bomb (to lower regen). Secondary damage can't be blocked so abilities like Scorching Ray are also extremely strong here. Watch out for some of the Necromancer exiles with buff zombies that leave poison clouds on death - these cloud will one shot you.",
+            "separated": false
+        },
+        "layout": {
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true
+        },
         "tiers": [
             11,
             14,
@@ -3304,6 +3417,8 @@
         "name": "Hallowed Ground",
         "poedb": "https://poedb.tw/us/Hallowed_Ground",
         "boss": {
+            "notes": "The monster level of this map can range from 70 to 79. Only five monsters are present in this map (Hey it\u2019s not as bad as Death and Taxes). Heading south you come to a large room where you will find Kole from the Lunaris Temple, at this point he cannot take damage so just run on past him. The map splits off into four branches. At the end of each branch is a sub-boss that when killed buffs Kole in some way. Only once all the sub-bosses are down only then can you kill Kole. The sub bosses are the Vaal Oversoul, Hillock (from the Dunes map), the Weaver and Loathe \u2013 these guys aren\u2019t too bad. When you return to the middle you find not one but TWO Koles. Luckily once you kill one the other dies. The Koles are hasted, have a heavy hitting ground smash and can grapple you from distance with their chains. Characters with good physical mitigation can simply tank them Squishy ranged characters will have to put in some effort trying to kite these two.",
+            "separated": false,
             "names": [
                 "Maker of Mires"
             ],
@@ -3313,6 +3428,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -3406,7 +3524,6 @@
                 "<<>>"
             ]
         },
-        "layout": {},
         "tiers": [
             16,
             16,
@@ -3422,7 +3539,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Jungle Valley Map",
@@ -3487,7 +3605,7 @@
         "name": "Laboratory Map",
         "poedb": "https://poedb.tw/us/Laboratory_Map",
         "boss": {
-            "notes": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT.- this is likely a one shot. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead.",
+            "notes": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead.",
             "separated": true,
             "names": [
                 "Riftwalker"
@@ -3498,6 +3616,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -3550,7 +3670,7 @@
         "name": "Lair Map",
         "poedb": "https://poedb.tw/us/Lair_Map",
         "boss": {
-            "notes": "Annoying boss as Rigwald spends most of his time in invulnerable or near invulnerable states. Channels a Barrage of wolf projectiles that do massive Physical damage. While channelling Rigwald takes 50% less damage. Get behind a nearby obstacle to dodge the projectiles. Rigwald also transforms into wolf form for 8 seconds where he becomes immune to damage and chases your character. Keep moving as in wolf form Rigwald hits hard and inflicts a deadly Bleed.",
+            "notes": "Channels a Barrage of wolf projectiles that do massive Physical damage. While channelling Rigwald takes 50% less damage. Get behind a nearby obstacle to dodge the projectiles. Rigwald also transforms into wolf form for 8 seconds where he becomes immune to damage and can inflicts massive bleeding damage",
             "separated": true,
             "names": [
                 "Lycius, Midnight's Howl"
@@ -3562,6 +3682,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -3632,6 +3753,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -3678,6 +3800,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -3721,6 +3844,7 @@
         "poedb": "https://poedb.tw/us/Lighthouse_Map",
         "boss": {
             "notes": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities",
+            "separated": false,
             "names": [
                 "Bin'aia, Crimson Rain",
                 "El'Abin, Bloodeater",
@@ -3791,11 +3915,6 @@
             "phases": true,
             "soft_phases": false
         },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false,
-            "linear": true
-        },
         "tiers": [
             5,
             8,
@@ -3831,7 +3950,12 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false,
+            "linear": true
+        }
     },
     {
         "name": "Malformation Map",
@@ -3849,6 +3973,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -3896,6 +4021,8 @@
         "name": "Mao Kun",
         "poedb": "https://poedb.tw/us/Mao_Kun",
         "boss": {
+            "notes": "Monsters deal 175-190% extra damage as lightning. Bring Topaz flasks. A Purity of Lightning is also recommended for the additional maximum lightning resistance. Clearing the trash mobs doesn\u2019t really matter; you can if you want but the loot isn\u2019t anything special. At the end of the island you will find the ghost of Fairgraves. Interact with him and all the remaining monsters in the map will die.\nRunning over monster corpses will resurrect them as ghosts. While running over corpses you will encounter Booty chests. When opened, these chests give lots of currency items and after a few seconds Fairgraves himself will appear. Note at this stage Fairgraves can\u2019t die so just run around for a while, dodging his Spectral Throw (which hits hard) \u2013 after 10-20 seconds he will disappear.\nKeep running around the map until you have found and opened all 8 Booty chests (this can be tedious, note some corpses may be in the water). On the 8th chest (it pays to count) the final form of Fairgraves will appear surrounded by ghost pirates. Finally mortal, Fairgraves is more dangerous than before. Avoid his Spectral/Vaal Spectral Throw as well as his Summon Raging Spirits. Kill him to complete the map \u2013 hopefully you found some good currency along the way.",
+            "separated": false,
             "names": [
                 "Fairgraves, Never Dying"
             ],
@@ -3905,6 +4032,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": true,
+            "outdoors": true,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -3954,7 +4084,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": true
         },
@@ -3996,6 +4128,7 @@
         "poedb": "https://poedb.tw/us/Maze_Map",
         "boss": {
             "notes": "Same as Act 2 fight. Kite when boss starts shooting laser beams. Avoid telegraphed slam at all costs.",
+            "separated": false,
             "names": [
                 "Shadow of the Vaal"
             ],
@@ -4005,6 +4138,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4067,6 +4203,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -4100,7 +4237,7 @@
         "name": "Mineral Pools Map",
         "poedb": "https://poedb.tw/us/Mineral_Pools_Map",
         "boss": {
-            "notes": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
+            "notes": "Summons five Lightning Warp totems which create Shocking Ground. Ignore them during the fight as the boss will just resummon them. Keep mobile so they do not all stack on top of you at once. The boss will periodically use a laser beam that deals considerable continuous Lightning damage. Take cover behind one of the pillars in the chamber to interrupt the beam. The beam is on a 20 second cooldown so use the downtime as an opportunity to quickly finish the boss.",
             "separated": true,
             "names": [
                 "Shock and Horror"
@@ -4111,7 +4248,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4180,6 +4319,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4241,6 +4382,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4309,6 +4453,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -4358,12 +4504,17 @@
         "name": "Oba's Cursed Trove",
         "poedb": "https://poedb.tw/us/Obas_Cursed_Trove",
         "boss": {
+            "notes": "In this map it pays to be fast. After nine minutes (6 if in a group) a 10 second countdown will be initiated. Any players remaining in the map after those 10 seconds are automatically killed. The map consists of 6 rooms. Each room contain a variety of monsters that must all be killed before moving through to the next room. The monster level of each subsequent room is increased by one.\nAfter completing the 5th room Oba states you are a mighty adventurer. At this point the clock stops and the map will no longer become deadly. Venture into the 6th room to find a small area with 5 strongboxes; 2 rare Ornate strongboxes and a unique Jeweller\u2019s, Gemcutter\u2019s and Arcanist\u2019s strongbox.",
+            "separated": false,
             "not_spawned": true,
             "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4393,6 +4544,8 @@
         "name": "Olmec's Sanctum",
         "poedb": "https://poedb.tw/us/Olmecs_Sanctum",
         "boss": {
+            "notes": "Similar to the Hallowed ground map except with mobs. You start in a large central room with four passages leading to boss rooms. Each passage contains mobs that deal a particular type of damage (Fire, Cold, Lightning and Chaos). The boss at the end of each passage is a unique totem that deals that type of damage. In particular, watch out for Izioc, the Abyss who can pump out serious Chaos damage with Ethereal Knives and Caustic Arrow if your Chaos resistance is low. Also, watch out for Achioc, the Glacier who can freeze your character easily with his Arctic Breath.\nAfter killing all four sub-bosses you will face Olmec in the middle of the central room. Olmec uses a variety of abilities of different types \u2013 none of which are too threatening. The dangerous part of the fight is that Olmec resummons copies of the four unique totems you just killed. Together they can provide a headache. Note that even after killing these totems Olmec will resummon them after a time. Therefore, it is best to focus on killing Olmec. The room is large so you can head to the corners to avoid engaging all the bosses at once.",
+            "separated": false,
             "names": [
                 "Olmec, the All Stone"
             ],
@@ -4402,6 +4555,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4442,7 +4598,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -4508,6 +4666,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4575,6 +4736,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -4642,6 +4804,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -4697,7 +4861,7 @@
         "name": "Pier Map",
         "poedb": "https://poedb.tw/us/Pier_Map",
         "boss": {
-            "notes": "Similar to the Bazaar boss without the statues. During the fight small spikes will appear from the ground. At 2/3 and 1/3 health will teleport. You have to traverse a mini trap gauntlet to get to the next area. Don't be afraid to teleport back to your hideout to refresh flask charges.",
+            "notes": "The boss arena has three areas, as 2/3 and 1/3 health it will teleport to the next area. During the fight small spikes will appear from the ground. You will have to traverse a trap gauntlet to get to the next area. With sufficient regen or life leech, you won't have any problem.",
             "separated": true,
             "names": [
                 "Ancient Architect"
@@ -4708,7 +4872,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4756,6 +4922,8 @@
         "name": "Pillars of Arun",
         "poedb": "https://poedb.tw/us/Pillars_of_Arun",
         "boss": {
+            "notes": "Bring a movement skill that allows you to traverse gaps such as Leap Slam, Flame Dash or Blink Arrow. Packs of Sand Warriors lie on each platform that use a Physical Spectral Throw. These monsters can only be damaged when you are on the platform. Be careful when jumping from the pillars to the platforms as the Sand Warriors can all Spectral Throw towards you at once. Tornadoes can also spawn on the pillars doing Physical DoT. In the opposite corner will be a portal to the arena consisting of four platforms. The boss uses Leap Slam, Spectral Throw and lays Burning Ground. She will jump around from platform to platform so you have to chase her. Frustrating fight but not really difficult. Overall a horrid, unrewarding map.",
+            "separated": true,
             "names": [
                 "Talin, Faithbreaker"
             ],
@@ -4765,6 +4933,9 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4809,6 +4980,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -4867,6 +5039,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -4969,6 +5142,7 @@
         "poedb": "https://poedb.tw/us/Plaza_Map",
         "boss": {
             "notes": "Same as Orchard boss except with some Spiky Pillar Labyrinth traps. This time when she channels her deadly beam get behind one of the pillars either side of the room.",
+            "separated": true,
             "names": [
                 "The Goddess"
             ],
@@ -4978,6 +5152,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5025,6 +5202,8 @@
         "name": "Poorjoy's Asylum",
         "poedb": "https://poedb.tw/us/Poorjoys_Asylum",
         "boss": {
+            "notes": "Hahahahahahahahahahahahahaha. Ahh, this map is pure chaos. 140-160% increased damage as well as the Fleet affix is not to be underestimated. The map is a large square based on the Lunaris Temple level 2. The mobs here are various Miscreations as well as Mortality Experimenters. For many characters this map is a case of get hit, you\u2019re dead. Mobs move fast and hide around corners. Even experienced players may have a hard time navigating this map deathless.\nWhipping Miscreations are quick, accurate and hit for a massive amount. They also inflict Vunerability so a second hit will likely spell death. Tentacle Miscreations destroy non-evasion based characters but are easily dodged.  Avoid standing on corpses as Mortality Expermienters use Detonate Dead \u2013 the increased life affix stacks with the increased damage affix on the map. My best advice is don\u2019t rush through this map. \nIn the top-left corner lies the boss, a unique Tentacle miscreation, that when compared to the rest of the mobs here doesn\u2019t feel too threatening. She drops 10-15 rare items of a specific class. Although the real reward from this map is the amount of experience you can gain, as long as you don\u2019t die\u2026",
+            "separated": false,
             "names": [
                 "Mistress Hyseria"
             ],
@@ -5034,6 +5213,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5083,6 +5265,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,
@@ -5141,7 +5324,8 @@
         "name": "Precinct Map",
         "poedb": "https://poedb.tw/us/Precinct_Map",
         "boss": {
-            "notes": "These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one.",
+            "notes": "The game randomly selects one to six rogue exiles. These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one.",
+            "separated": false,
             "names": [
                 "Augustina Solaria",
                 "Damoi Tui",
@@ -5159,6 +5343,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5210,16 +5395,20 @@
         "name": "Primordial Blocks Map",
         "poedb": "https://poedb.tw/us/Primordial_Blocks_Map",
         "boss": {
+            "notes": "Telegraphed projectile attack. Stay out of Donut Slam which can one shot. Summons Volatile Cores which explode on contact and trigger other Volatile Cores to also explode. At half health goes invulenerable and summons melee adds. During this phase boulders spawn from the four corners and spiral towards the center hole. Stay vigilant to avoid these as they deal massive amounts of quick physical damage.",
+            "separated": true,
             "names": [
                 "High Lithomancer"
             ],
             "not_spawned": false,
             "rushable": false,
             "phases": true,
-            "soft_phases": false,
-            "separated": true
+            "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5268,7 +5457,7 @@
         "name": "Primordial Pool Map",
         "poedb": "https://poedb.tw/us/Primordial_Pool_Map",
         "boss": {
-            "notes": "Phase 2 Malachai without the hearts/adds and much more room to manoeuvre. Avoid standing on the Fire Traps. Move out of the AoE from his Mortar projectile. His most dangerous attacks are the channelled \"You are being selfish\" tentacles and telegraphed teleport slam which most likely will one-shot. It pays to stay closer to the boss so you can always see when these two abilities are coming.",
+            "notes": "Phase 2 Malachai without the mobs and much more room to manoeuvre. Avoid standing on the Fire Traps. Move out of the AoE from his Mortar projectile. His most dangerous attacks are the channelled \"You are being selfish\" tentacles and telegraphed teleport slam which most likely will one-shot. It pays to stay closer to the boss so you can always see when these two abilities are coming.",
             "separated": true,
             "names": [
                 "Nightmare's Omen"
@@ -5329,6 +5518,7 @@
         "poedb": "https://poedb.tw/us/Promenade_Map",
         "boss": {
             "notes": "Avenger deals simple Physical Cleave and Double Strike attacks. Mage casts weak Sparks and Conductivity auras on the ground. The Mage also will cast a large, slow-moving Ball Lightning that deals heavy damage so stand clear. The Mage casts Lightning Thorns on the Avenger which reflects Lightning damage back to the attacker. Again, this is extremely dangerous for fast attacking builds so always pay attention (the mage does not cast it on herself so it is usually safest to kill her first).",
+            "separated": false,
             "names": [
                 "Blackguard Avenger",
                 "Blackguard Tempest"
@@ -5453,7 +5643,7 @@
         "name": "Ramparts Map",
         "poedb": "https://poedb.tw/us/Ramparts_Map",
         "boss": {
-            "notes": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT.",
+            "notes": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap.",
             "separated": true,
             "names": [
                 "The Reaver"
@@ -5516,6 +5706,7 @@
         "poedb": "https://poedb.tw/us/Relic_Chambers_Map",
         "boss": {
             "notes": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise",
+            "separated": false,
             "names": [
                 "Litanius, the Black Prayer"
             ],
@@ -5525,6 +5716,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -5577,7 +5770,6 @@
                 "Venarius"
             ]
         },
-        "layout": {},
         "tiers": [
             12,
             15,
@@ -5597,7 +5789,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Replica Pillars of Arun",
@@ -5607,7 +5800,6 @@
                 "Talin, Faithbreaker"
             ]
         },
-        "layout": {},
         "tiers": [
             2,
             5,
@@ -5629,7 +5821,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Replica Poorjoy's Asylum",
@@ -5639,7 +5832,6 @@
                 "Mistress Hyseria"
             ]
         },
-        "layout": {},
         "tiers": [
             14,
             16,
@@ -5667,7 +5859,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Residence Map",
@@ -5685,6 +5878,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5745,7 +5940,6 @@
                 "Rewritten Synthete"
             ]
         },
-        "layout": {},
         "tiers": [
             1,
             4,
@@ -5763,7 +5957,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Scriptorium Map",
@@ -5780,6 +5975,9 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -5832,6 +6030,7 @@
         "poedb": "https://poedb.tw/us/Shipyard_Map",
         "boss": {
             "notes": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy.",
+            "separated": false,
             "names": [
                 "Lussi \"Rotmother\" Roth",
                 "Musky \"Two-Eyes\" Grenn",
@@ -5843,7 +6042,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": true,
             "delirium_mirror": false
         },
@@ -5894,6 +6095,7 @@
         "poedb": "https://poedb.tw/us/Shore_Map",
         "boss": {
             "notes": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
+            "separated": false,
             "names": [
                 "Belcer, the Pirate Lord"
             ],
@@ -5970,6 +6172,9 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -6016,6 +6221,7 @@
         "poedb": "https://poedb.tw/us/Siege_Map",
         "boss": {
             "notes": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain.",
+            "separated": true,
             "names": [
                 "Tahsin, Warmaker"
             ],
@@ -6086,12 +6292,6 @@
             "soft_phases": false,
             "separated": true
         },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": true,
-            "linear": true,
-            "few_obstacles": true
-        },
         "tiers": [
             2,
             5,
@@ -6135,7 +6335,13 @@
             "density": 4,
             "boss": 4
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": true,
+            "linear": true,
+            "few_obstacles": true
+        }
     },
     {
         "name": "Stagnation Map",
@@ -6149,11 +6355,6 @@
             "phases": false,
             "soft_phases": false,
             "separated": true
-        },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false,
-            "outdoors": true
         },
         "tiers": [
             2,
@@ -6196,7 +6397,12 @@
             "density": 4,
             "boss": 4
         },
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false,
+            "outdoors": true
+        }
     },
     {
         "name": "Strand Map",
@@ -6286,6 +6492,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,
@@ -6333,7 +6540,6 @@
                 "Tahsin, Warmaker"
             ]
         },
-        "layout": {},
         "tiers": [
             11,
             14,
@@ -6345,7 +6551,8 @@
         "cards": [],
         "info": {},
         "rating": {},
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Temple Map",
@@ -6363,6 +6570,8 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -6430,6 +6639,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": false,
@@ -6489,7 +6699,6 @@
                 "<<>>"
             ]
         },
-        "layout": {},
         "tiers": [
             5,
             8,
@@ -6504,7 +6713,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "The Coward's Trial",
@@ -6517,10 +6727,6 @@
             "rushable": false,
             "phases": true,
             "soft_phases": false
-        },
-        "layout": {
-            "league_mechanics": false,
-            "delirium_mirror": false
         },
         "tiers": [
             7,
@@ -6548,17 +6754,27 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": true
+        "image": true,
+        "layout": {
+            "league_mechanics": false,
+            "delirium_mirror": false
+        }
     },
     {
         "name": "The Putrid Cloister",
         "poedb": "https://poedb.tw/us/The_Putrid_Cloister",
         "boss": {
+            "notes": "Man have I underestimated this map before. You are inflicted with 5 unremovable curses; Vulnerability, Flammability, Frostbite, Conductivity and Projectile Weakness. Make sure your elemental resistances are adequately overcapped and you have Bleed removal before entering. Pieties miscreations occupy the zone - they are fast and can burst you down quickly. You face Act 5 Doedre 3 times. She isn't too difficult, just dodge her telegraphed projectiles. Watch out as throughout the fight various miscreations will continually spawn. Each boss will drop a lot of Divination cards (not zone dependent), similar to a Diviner's Strongbox. You may just hit big if you are lucky.",
+            "separated": true,
             "names": [
                 "Headmistress Braeta"
             ]
         },
-        "layout": {},
+        "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": true
+        },
         "tiers": [
             12,
             15,
@@ -6599,7 +6815,6 @@
                 "The Trialmaster"
             ]
         },
-        "layout": {},
         "tiers": [
             16,
             16,
@@ -6612,18 +6827,25 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "The Twilight Temple",
         "poedb": "https://poedb.tw/us/The_Twilight_Temple",
         "boss": {
+            "notes": "Large Temple, half owned by Solaris Fanatics (Fire damage) and half by Lunaris Fanatics (Cold damage). On each side are three floor buttons that when pressed summon Solaris/Lunaris mobs and the Sun/Moon Orb from Act 8. These orbs can use some of Solaris and Lunaris' more powerful abilities like the cascade of falling rocks. You will also see the unique mini-bosses from Act 8: Nightbringer Lucius, Regulus, Dawn and Dusk. At the end of the map you can choose to face either Lunaris or Solaris as the final boss. They both deal high amounts of hard to avoid damage but have little health.",
+            "separated": true,
             "names": [
                 "Helial, the Day Unending",
                 "Selenia, the Endless Night"
             ]
         },
-        "layout": {},
+        "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": true
+        },
         "tiers": [
             4,
             7,
@@ -6663,11 +6885,17 @@
         "name": "The Vinktar Square",
         "poedb": "https://poedb.tw/us/The_Vinktar_Square",
         "boss": {
+            "notes": "Defeat the four mini-bosses (all have modest Lightning based abilities) located in each of the four corners. After they are all dead you will be able to face the Avatar of Thunder in his arena at the centre of the map. There are four boss phases and three add phases. During the boss phases, the Avatar will use a Physical Cyclone and a Physical/Lightning Earthquake. The Avatar will also charge up and then explode for massive Lightning AoE damage that always Shocks (but will most likely one-shot) - get out of the way when this happens. Three beams of light will also travel around the arena - these beams deal Lightning DoT and always Shock. In each of the add phases the Avatar will teleport out and summon one of his four guardians defeated previously. Each subsuquent add phase has an extra mini boss you have to kill (so one, then two, then three). Overall a long fight, but a large arena, so plenty of room to kite and avoid the dangerous boss abilities.",
+            "separated": true,
             "names": [
                 "Avatar of Thunder"
             ]
         },
-        "layout": {},
+        "layout": {
+            "few_obstacles": false,
+            "outdoors": true,
+            "linear": true
+        },
         "tiers": [
             5,
             8,
@@ -6703,6 +6931,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -6763,6 +6994,8 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -6813,6 +7046,7 @@
         "poedb": "https://poedb.tw/us/Toxic_Sewer_Map",
         "boss": {
             "notes": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
+            "separated": false,
             "names": [
                 "Arachnoxia"
             ],
@@ -6823,6 +7057,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -6874,7 +7109,8 @@
         "name": "Tropical Island Map",
         "poedb": "https://poedb.tw/us/Tropical_Island_Map",
         "boss": {
-            "notes": "Has 'allies deal substantial extra physical damage' aura. Summons monkeys and frenzies allies. Boss itself is slow and does little damage. At 50% health summons two small unique monkeys with Haste and slowing auras.",
+            "notes": "Has 'allies deal substantial extra physical damage' aura. Summons Blood Apes and frenzies allies, summons a magic pack of Blood Apes at 75%, and spawns two unique Blood Apes at 50% health. Boss itself is slow and does little damage.",
+            "separated": false,
             "names": [
                 "Blood Progenitor"
             ],
@@ -6940,7 +7176,6 @@
                 "Twisted Synthete"
             ]
         },
-        "layout": {},
         "tiers": [
             1,
             4,
@@ -6958,7 +7193,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Underground River Map",
@@ -6976,6 +7212,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": true
@@ -7023,7 +7260,7 @@
         "name": "Underground Sea Map",
         "poedb": "https://poedb.tw/us/Underground_Sea_Map",
         "boss": {
-            "notes": "Ice based spells and Chilled ground. Avoid Icestorm and Ice Spear attacks. Take along some form of Freeze immunity.",
+            "notes": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
             "separated": true,
             "names": [
                 "Merveil, the Reflection",
@@ -7035,6 +7272,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7103,7 +7343,6 @@
                 "The First Rhoa"
             ]
         },
-        "layout": {},
         "tiers": [
             8,
             11,
@@ -7118,7 +7357,8 @@
         "info": {},
         "rating": {},
         "unique": true,
-        "image": false
+        "image": false,
+        "layout": {}
     },
     {
         "name": "Vaal Pyramid Map",
@@ -7137,6 +7377,9 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7203,6 +7446,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7247,12 +7493,17 @@
         "name": "Vaults of Atziri",
         "poedb": "https://poedb.tw/us/Vaults_of_Atziri",
         "boss": {
+            "notes": "A map with no monsters whatsoever (although Tormented Spirits and Rogue Exiles can still spawn for some reason \u2013 who knows how they got into Atziri\u2019s vault?). This map contains only chests with 1800-2000% increased item rarity. Simply walk around the two large rooms and loot every chest. At the centre of the second room is a chest that contains large amounts of Sacrifice Fragments and Vaal skill gems.",
+            "separated": false,
             "not_spawned": true,
             "rushable": false,
             "phases": false,
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": false,
+            "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7298,6 +7549,7 @@
         "poedb": "https://poedb.tw/us/Volcano_Map",
         "boss": {
             "notes": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage.",
+            "separated": false,
             "names": [
                 "Forest of Flames"
             ],
@@ -7307,7 +7559,9 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7367,6 +7621,7 @@
         },
         "layout": {
             "few_obstacles": true,
+            "outdoors": false,
             "linear": true,
             "league_mechanics": false,
             "delirium_mirror": false
@@ -7418,6 +7673,7 @@
         "poedb": "https://poedb.tw/us/Wasteland_Map",
         "boss": {
             "notes": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable.",
+            "separated": false,
             "names": [
                 "The Brittle Emperor"
             ],
@@ -7429,6 +7685,7 @@
         "layout": {
             "few_obstacles": true,
             "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7471,6 +7728,8 @@
         "name": "Whakawairua Tuahu",
         "poedb": "https://poedb.tw/us/Whakawairua_Tuahu",
         "boss": {
+            "notes": "You arrive on a misty island similar to the Ship Graveyard and start with reduced light radius. Killing monsters increases your light radius and also your IIR and IIQ. Not killing monsters causes you light radius to fall. Once you have cleared the island make your way to the cave at the top of the island.\nInside the cave activate the Vaal seal. A Shade of an Exile will spawn depending on your class. This exile can be fast and dangerous so take caution in avoiding their attacks. After you have killed the exile you face the true boss of this map, the most annoying boss in all Path of Exile. I don\u2019t really want to ruin the surprise so play and find out.",
+            "separated": true,
             "names": [
                 "Tormented Temptress"
             ],
@@ -7480,6 +7739,9 @@
             "soft_phases": true
         },
         "layout": {
+            "few_obstacles": false,
+            "outdoors": true,
+            "linear": false,
             "league_mechanics": false,
             "delirium_mirror": false
         },
@@ -7523,7 +7785,8 @@
         "name": "Wharf Map",
         "poedb": "https://poedb.tw/us/Wharf_Map",
         "boss": {
-            "notes": "Weak Lightning spells. Summons 6 Flood Orbs which use an unthreatening Cyclone. Boss is tanky.",
+            "notes": "Weak lightning spells, and summons 6 Flood Orbs with Cyclone skill. Boss is tanky with the purple shield as it gives 50% reduced damage taken.",
+            "separated": false,
             "names": [
                 "Stone of the Currents"
             ],
@@ -7533,6 +7796,7 @@
             "soft_phases": false
         },
         "layout": {
+            "few_obstacles": false,
             "outdoors": true,
             "linear": true,
             "league_mechanics": true,

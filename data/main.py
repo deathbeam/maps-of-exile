@@ -173,6 +173,8 @@ def get_map_ratings(key, config):
 
 def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	url = map_data["poedb"]
+	map_data["boss"] = map_data.get("boss", {})
+	map_cards = set([])
 
 	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
@@ -180,65 +182,42 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	soup = BeautifulSoup(r.content, "html.parser")
 	tabcontent = soup.find("div", class_="tab-content")
 	children = tabcontent.findChildren("div", recursive=False)
-	offset = 0
 
-	data = children[offset]
-	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
-		offset += 1
-		data = children[offset]
-	table = data.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-	map_data["boss"] = {}
-	map_data["layout"] = {}
+	for data in children:
+		table = data.find("table")
+		if not table:
+			continue
+		body = table.find("tbody")
+		if not body:
+			continue
+		rows = body.find_all("tr")
+		if not rows:
+			continue
 
-	for row in rows:
-		cols = row.find_all("td")
-		name = cols[0].text.strip().lower()
-		value = cols[1].text.strip()
-		if name == "few obstacles" and value == "o":
-			map_data["layout"]["few_obstacles"] = True
-		elif name == "outdoors" and value == "o":
-			map_data["layout"]["outdoors"] = True
-		elif name == "linear" and value == "o":
-			map_data["layout"]["linear"] = True
-		elif name == "boss notes":
-			map_data["boss"]["notes"] = value
-		elif name == "boss not in own room" and value == "x":
-			map_data["boss"]["separated"] = True
-
-	map_cards = set([])
-	offset += 1
-	data = children[offset]
-	if "MapUnique" in data.get('id') or "Unique_Unique" in data.get('id'):
-		offset += 1
-		data = children[offset]
-	table = data.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-
-	for row in rows:
-		cols = row.find_all("td")
-		name = cols[0].text.strip().lower()
-		value = cols[1]
-		if name == "monster level":
-			value = int(value.text.strip())
-			tier = value - 67
-			map_data["tiers"] = [
-				tier,
-				min(tier + 3, 16),
-				min(tier + 7, 16),
-				min(tier + 11, 16),
-				min(tier + 15, 16)
-			]
-		elif name == "boss":
-			map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
-		elif name == "atlas linked":
-			map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
-		elif name == "card tags":
-			map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
-		elif name == "the pantheon":
-			map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
+		for row in rows:
+			cols = row.find_all("td")
+			name = cols[0].text.strip().lower()
+			value = cols[1]
+			if name == "monster level":
+				if map_data.get("tiers"):
+					continue
+				value = int(value.text.strip())
+				tier = value - 67
+				map_data["tiers"] = [
+					tier,
+					min(tier + 3, 16),
+					min(tier + 7, 16),
+					min(tier + 11, 16),
+					min(tier + 15, 16)
+				]
+			elif name == "boss":
+				map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
+			elif name == "atlas linked":
+				map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
+			elif name == "card tags":
+				map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
+			elif name == "the pantheon":
+				map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
 
 	# Wiki card data
 	wiki_name = map_data["name"].replace(" ", "_")
@@ -279,7 +258,46 @@ def get_map_data(map_data, extra_map_data, cards, ratings, config):
 	return map_data
 
 
-def get_maps(config):
+def get_maps(key, config):
+	meta = []
+
+	for name in config["metadata"]["sheet-names"]:
+		id = config["metadata"]["sheet-id"]
+		print(f"Getting map metadata from {name}")
+		url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+		r = requests.get(url)
+		r = r.json()
+		r = r["values"]
+		r = list(filter(lambda x: x, r))
+		r.pop(0)
+		r.pop(0)
+		if "Unique" in name:
+			meta = meta + list(map(lambda x: {
+				"name": x[0].strip().replace(" Map", "").replace("’", "'"),
+				"boss": {
+					"notes": x[8].strip(),
+					"separated": x[11].strip() == "o"
+				},
+				"layout": {
+					"few_obstacles": x[10].strip() == "o",
+					"outdoors": x[12].strip() == "o",
+					"linear": x[13].strip() == "o"
+				}
+			}, r))
+		else:
+			meta = meta + list(map(lambda x: {
+				"name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
+				"boss": {
+					"notes": x[8].strip(),
+					"separated": x[12].strip() == "o"
+				},
+				"layout": {
+					"few_obstacles": x[11].strip() == "o",
+					"outdoors": x[13].strip() == "o",
+					"linear": x[14].strip() == "o"
+				}
+			}, r))
+
 	url = config["poedb"].replace("{}", config["list"])
 	print(f"Getting maps from url {url}")
 
@@ -328,7 +346,14 @@ def get_maps(config):
 			"poedb": map_url
 		})
 
-	return deduplicate(sorted(out, key=lambda d: d["name"]), "name")
+	out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
+
+	for m in out:
+		existing = next(filter(lambda x: x["name"] == m["name"], meta), None)
+		if existing:
+			merge(existing, m)
+
+	return out
 
 
 def get_maps_template(maps, existing_maps):
@@ -384,7 +409,7 @@ def main():
 			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder))
 
 	if fetch_maps:
-		maps = get_maps(config["maps"])
+		maps = get_maps(api_key, config["maps"])
 
 		print("Merging extra map data")
 		with open(dir_path + "/maps.json", "r") as f:

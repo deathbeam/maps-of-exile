@@ -570,7 +570,7 @@ function App() {
             <th scope="col">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  Map name, colored based on natural tier with map tiers for each voidstone next to it.
+                  Map name, colored based on natural tier with map tiers for each Voidstone next to it.
                   <br />
                   <span className="badge bg-light text-dark me-1">tier 1-5</span>
                   <span className="badge bg-warning text-dark me-1">tier 6-10</span>
@@ -584,6 +584,8 @@ function App() {
                 <span className="tooltip-tag-text">
                   How straightforward is the map to clear or how good it is for league mechanics.
                   <br />
+                  This data is opinionated, if you disagree with any rating please open issue on GitHub with explanation.
+                  <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
                   <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
@@ -596,7 +598,9 @@ function App() {
             <th scope="col" className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
-                  How many total mobs does the map have.
+                  How many total base mobs does the map have. Do not accounts for extra sources of mobs like league mechanics and sextants.
+                  <br />
+                  This data is based on actual mob counts in maps counted using rampage. Some newer maps and unique maps might be missing data as they still need to be collected.
                   <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
@@ -611,6 +615,8 @@ function App() {
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   How annoying/dangerous is the boss to kill.
+                  <br />
+                  This data is opinionated, if you disagree with any rating please open issue on GitHub with explanation.
                   <br />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">hard/annoying</span>

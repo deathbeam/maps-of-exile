@@ -18,7 +18,8 @@ body:
   id: map_name
   attributes:
     label: Map name
-    description: Select map from dropdown or leave at **None** if title is properly filled.
+    description: Select map from dropdown or leave at **None** if title is properly
+      filled.
     options:
     - Acton's Nightmare
     - Alleyways

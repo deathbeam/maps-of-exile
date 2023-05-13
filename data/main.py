@@ -56,9 +56,7 @@ def get_card_data(key, league, config):
 	name = config["decks"]["sheet-name"]
 	print(f"Getting card rates from {name}")
 	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-	r = requests.get(url)
-	r = r.json()
-	rates = r["values"]
+	rates = requests.get(url).json()["values"]
 	rates.pop(0)
 	rates = list(map(lambda x: {
 		"name": x[0].strip(),
@@ -69,9 +67,7 @@ def get_card_data(key, league, config):
 	name = config["weights"]["sheet-name"]
 	print(f"Getting card weights from {name}")
 	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-	r = requests.get(url)
-	r = r.json()
-	weights = r["values"]
+	weights = requests.get(url).json()["values"]
 	weights.pop(0)
 	weights.pop(0)
 	weights = list(map(lambda x: {
@@ -84,22 +80,7 @@ def get_card_data(key, league, config):
 
 	url = config["prices"].replace("{}", league)
 	print(f"Getting card prices from {url}")
-	r = requests.get(url)
-	r = r.json()
-	prices = r["lines"]
-
-	for price_card in prices:
-		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
-		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
-
-		if rate_card and not weight_card:
-			rate = Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(4 / 3)
-			weight_rate = floor(Decimal(patient_weight_baseline) / rate)
-			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
-			weights.append({
-				"name": price_card["name"],
-				"value": weight_rate
-			})
+	prices = requests.get(url).json()["lines"]
 
 	out = []
 	for price_card in prices:
@@ -116,7 +97,15 @@ def get_card_data(key, league, config):
 			"boss": price_card["name"] in config["boss-only"]
 		}
 
+		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
 		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
+
+		if rate_card and not weight_card:
+			rate = Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(4 / 3)
+			weight_rate = floor(Decimal(patient_weight_baseline) / rate)
+			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
+			weight_card = weight_rate
+
 		if weight_card:
 			card["weight"] = weight_card
 		else:
@@ -128,19 +117,18 @@ def get_card_data(key, league, config):
 
 
 def get_map_meta(key, config):
-	meta = []
+	out = []
 	for name in config["metadata"]["sheet-names"]:
 		id = config["metadata"]["sheet-id"]
 		print(f"Getting map metadata from {name}")
 		url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-		r = requests.get(url)
-		r = r.json()
-		r = r["values"]
+		r = requests.get(url).json()["values"]
 		r = list(filter(lambda x: x, r))
 		r.pop(0)
 		r.pop(0)
+
 		if "Unique" in name:
-			meta = meta + list(map(lambda x: {
+			out = out + list(map(lambda x: {
 				"name": x[0].strip().replace(" Map", "").replace("’", "'"),
 				"boss": {
 					"notes": x[8].strip(),
@@ -153,7 +141,7 @@ def get_map_meta(key, config):
 				}
 			}, r))
 		else:
-			meta = meta + list(map(lambda x: {
+			out = out + list(map(lambda x: {
 				"name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
 				"boss": {
 					"notes": x[8].strip(),
@@ -166,7 +154,7 @@ def get_map_meta(key, config):
 				}
 			}, r))
 
-	return meta
+	return out
 
 
 def get_map_ratings(key, config):
@@ -175,9 +163,7 @@ def get_map_ratings(key, config):
 	range = config["ratings"]["sheet-range"]
 	print(f"Getting map ratings from {name}")
 	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}!{range}?key={key}"
-	r = requests.get(url)
-	r = r.json()
-	ratings = r["values"]
+	ratings = requests.get(url).json()["values"]
 	ratings = list(map(lambda x: {
 		"name": x[0].strip().replace("Bazzar", "Bazaar"),
 		"layout": rescale(int(x[2]), 0, 5, 10),
@@ -191,9 +177,7 @@ def get_map_ratings(key, config):
 	range = config["density"]["sheet-range"]
 	print(f"Getting map density from {name}")
 	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}!{range}?key={key}"
-	r = requests.get(url)
-	r = r.json()
-	densities = r["values"]
+	densities = requests.get(url).json()["values"]
 	density_values = list(map(lambda x: int(x[1]), densities))
 	density_min = min(density_values)
 	density_values_new = set(density_values)
@@ -215,7 +199,7 @@ def get_map_ratings(key, config):
 
 def get_map_wiki(config):
 	print(f"Getting map metadata from wiki")
-	r = requests.get(config["wiki"]["api"], params={
+	wiki_maps = requests.get(config["wiki"]["api"], params={
 		"action": "cargoquery",
 		"format": "json",
 		"limit": "500",
@@ -224,8 +208,8 @@ def get_map_wiki(config):
 		"fields": "items.name,maps.area_id,maps.area_level,areas.boss_monster_ids,maps.unique_area_id",
 		"group_by": "items.name",
 		"where": "items.class_id='Map' AND maps.area_id LIKE '%MapWorlds%'"
-	})
-	wiki_maps = list(map(lambda x: x["title"], r.json()["cargoquery"]))
+	}).json()["cargoquery"]
+	wiki_maps = list(map(lambda x: x["title"], wiki_maps))
 	boss_ids = set([])
 	for wiki_map in wiki_maps:
 		if 'boss monster ids' in wiki_map:
@@ -243,9 +227,9 @@ def get_map_wiki(config):
 			"where": f'items.drop_monsters HOLDS "{boss}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
 		}
 
-		r = requests.get(config["wiki"]["api"], params=params)
+		wiki_cards = requests.get(config["wiki"]["api"], params=params).json()["cargoquery"]
 		boss_cards[boss] = boss_cards.get(boss, [])
-		for card in r.json()["cargoquery"]:
+		for card in wiki_cards:
 			boss_cards[boss].append(card["title"]["name"])
 
 	for existing_wiki in wiki_maps:
@@ -263,18 +247,14 @@ def get_maps(key, config):
 	map_ratings = get_map_ratings(key, config)
 	map_wiki = get_map_wiki(config)
 
+	out = []
 	url = config["poedb"]["list"]
 	print(f"Getting maps from url {url}")
-
 	r = requests.get(url)
 	soup = BeautifulSoup(r.content, "html.parser")
-	mapslist = soup.find(id="MapsList")
-	table = mapslist.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-	out = []
+	mapslist = soup.find(id="MapsList").find("table").find("tbody").find_all("tr")
 
-	for row in rows:
+	for row in mapslist:
 		cols = row.find_all("td")
 		name = cols[3].text
 
@@ -288,20 +268,17 @@ def get_maps(key, config):
 			"poedb": map_url
 		})
 
-	mapslist = soup.find(id="MapsUnique")
-	table = mapslist.find("table")
-	body = table.find("tbody")
-	rows = body.find_all("tr")
-	names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
+	base_names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
+	mapslist = soup.find(id="MapsUnique").find("table").find("tbody").find_all("tr")
 
-	for row in rows:
+	for row in mapslist:
 		cols = row.find_all("td")
 		href = cols[1].find('a')
 		name = href.text
 		map_url = href.attrs['href']
 		map_url = config["poedb"]["base"].replace("{}", map_url)
 
-		for n in names:
+		for n in base_names:
 			if not n.endswith(" Map") and not n.endswith("Ultimatum"):
 				continue
 			name = name.replace(n, "")
@@ -346,18 +323,16 @@ def get_map_data(map_data, extra_map_data, config):
 	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
 	r = requests.get(url)
-	soup = BeautifulSoup(r.content, "html.parser")
-	tabcontent = soup.find("div", class_="tab-content")
-	children = tabcontent.findChildren("div", recursive=False)
+	maptabs = BeautifulSoup(r.content, "html.parser").find("div", class_="tab-content").findChildren("div", recursive=False)
 
-	for data in children:
+	for data in maptabs:
 		table = data.find("table")
 		if not table:
 			continue
-		body = table.find("tbody")
-		if not body:
+		tbody = table.find("tbody")
+		if not tbody:
 			continue
-		rows = body.find_all("tr")
+		rows = tbody.find_all("tr")
 		if not rows:
 			continue
 
@@ -391,17 +366,15 @@ def get_map_data(map_data, extra_map_data, config):
 	map_data["wiki"] = config["wiki"]["base"].replace("{}", map_data["name"].replace(" ", "_"))
 	if map_data["id"]:
 		print(f"Getting card data for {map_data['name']} from wiki")
-		params = {
+		wiki_cards = requests.get(config["wiki"]["api"], params={
 			"action": "cargoquery",
 			"format": "json",
 			"limit": "500",
 			"tables": "items",
 			"fields": "items.name",
 			"where": f'items.drop_areas HOLDS "{map_data["id"]}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
-		}
-
-		r = requests.get(config["wiki"]["api"], params=params)
-		for card in r.json()["cargoquery"]:
+		}).json()["cargoquery"]
+		for card in wiki_cards:
 			map_cards.add(card["title"]["name"])
 
 	map_data["cards"] = sorted(list(map_cards))
@@ -512,7 +485,7 @@ def get_issue_template(maps):
 		}
 
 	body.append(text_input("Issue description", "Write reasoning for this change below", "Reasoning for the change, e.g data are missing or I disagree with X or Y and here is why etc. You can also add extra info not contained in form here.", True))
-	body.append(dropdown_input("Map name", "Select map from dropdown or leave at None if **title** is properly filled.", map(lambda x: x["name"].replace(" Map", ""), maps)))
+	body.append(dropdown_input("Map name", "Select map from dropdown or leave at **None** if title is properly filled.", map(lambda x: x["name"].replace(" Map", ""), maps)))
 	body.append(text_input("Map image", "Map layout image. If you dont have one simply leave empty.", "Upload layout image here"))
 
 	body.append(number_input("Layout rating", "Map layout rating. If you dont know simply leave at None.", 10))

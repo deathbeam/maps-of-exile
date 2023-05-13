@@ -215,15 +215,15 @@ body:
     label: Layout
     description: Map layout metadata. If you dont know simply leave the box unchecked.
     options:
-    - label: '*League mechanics* - If map is good for league mechanics that require
+    - label: '**League mechanics** - If map is good for league mechanics that require
         some space (Breach, Legion)'
-    - label: Delirium mirror - If you can hold delirium mirror through whole map or
-        delirium mirror gets good value in it
-    - label: Outdoors - If map is outdoors or indoors (Dunes vs Cells for example)
-    - label: Linear - If map is linear instead of having multiple paths to take. Map
-        counts as linear even if the line goes in circle
-    - label: Few obstacles - If map does not have a lot of obstacles (so for example
-        is good for shield charging around)
+    - label: '**Delirium mirror** - If you can hold delirium mirror through whole
+        map or delirium mirror gets good value in it'
+    - label: '**Outdoors** - If map is outdoors or indoors (Dunes vs Cells for example)'
+    - label: '**Linear** - If map is linear instead of having multiple paths to take.
+        Map counts as linear even if the line goes in circle'
+    - label: '**Few obstacles** - If map does not have a lot of obstacles (so for
+        example is good for shield charging around)'
   validations:
     required: false
 - type: checkboxes
@@ -232,15 +232,16 @@ body:
     label: Boss
     description: Map boss metadata. If you dont know simply leave the box unchecked.
     options:
-    - label: Not spawned - If boss is not spawned on entering the map (important for
-        Altar farming, can be verified by checking for boss altars spawning or not)
-    - label: Rushable - If boss is close to map start or can be rushed quickly and
-        reliably, a lot quicker than completing whole map
-    - label: Phases - If boss has hard phases that force you to wait (delay on initial
-        boss spawn counts too)
-    - label: Soft phases - If boss has soft phases that can be bypassed with DPS (teleports
-        at certain threshold, heals, partial damage reduction)
-    - label: Separated - If boss room is separated from rest of the map
+    - label: '**Not spawned** - If boss is not spawned on entering the map (important
+        for Altar farming, can be verified by checking for boss altars spawning or
+        not)'
+    - label: '**Rushable** - If boss is close to map start or can be rushed quickly
+        and reliably, a lot quicker than completing whole map'
+    - label: '**Phases** - If boss has hard phases that force you to wait (delay on
+        initial boss spawn counts too)'
+    - label: '**Soft phases** - If boss has soft phases that can be bypassed with
+        DPS (teleports at certain threshold, heals, partial damage reduction)'
+    - label: '**Separated** - If boss room is separated from rest of the map'
   validations:
     required: false
 - type: textarea

@@ -465,7 +465,7 @@ def get_issue_template(maps):
 		}
 
 		if placeholder:
-			out["attributes"]["placeholder"]: placeholder
+			out["attributes"]["placeholder"] = placeholder
 
 		return out
 
@@ -519,19 +519,19 @@ def get_issue_template(maps):
 	body.append(number_input("Boss rating", "Map boss rating. If you dont know simply leave at None.", 10))
 
 	body.append(checkbox_input("Layout", "Map layout metadata. If you dont know simply leave the box unchecked.", [
-		"*League mechanics* - If map is good for league mechanics that require some space (Breach, Legion)",
-		"Delirium mirror - If you can hold delirium mirror through whole map or delirium mirror gets good value in it",
-		"Outdoors - If map is outdoors or indoors (Dunes vs Cells for example)",
-		"Linear - If map is linear instead of having multiple paths to take. Map counts as linear even if the line goes in circle",
-		"Few obstacles - If map does not have a lot of obstacles (so for example is good for shield charging around)"
+		"**League mechanics** - If map is good for league mechanics that require some space (Breach, Legion)",
+		"**Delirium mirror** - If you can hold delirium mirror through whole map or delirium mirror gets good value in it",
+		"**Outdoors** - If map is outdoors or indoors (Dunes vs Cells for example)",
+		"**Linear** - If map is linear instead of having multiple paths to take. Map counts as linear even if the line goes in circle",
+		"**Few obstacles** - If map does not have a lot of obstacles (so for example is good for shield charging around)"
 	]))
 
 	body.append(checkbox_input("Boss", "Map boss metadata. If you dont know simply leave the box unchecked.", [
-		"Not spawned - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
-		"Rushable - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
-		"Phases - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
-		"Soft phases - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
-		"Separated - If boss room is separated from rest of the map"
+		"**Not spawned** - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
+		"**Rushable** - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
+		"**Phases** - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
+		"**Soft phases** - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
+		"**Separated** - If boss room is separated from rest of the map"
 	]))
 
 	body.append(text_input("Boss Notes", "Map boss notes. If there isn't anything to add simply leave empty."))

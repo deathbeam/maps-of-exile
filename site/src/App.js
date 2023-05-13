@@ -535,7 +535,7 @@ function App() {
                     is derived from this one.
                     <br />
                     So for example with the default <b>{defaultCardBaseline}</b> baseline you can expect to see{' '}
-                    <b>The Patient</b> around every <b>13</b> maps.
+                    <b>The Patient</b> around every <b>14</b> maps.
                     <br />
                     <b>{defaultCardBaseline}</b> baseline is good to simulate unoptimized atlas setup not focused on
                     farming cards.

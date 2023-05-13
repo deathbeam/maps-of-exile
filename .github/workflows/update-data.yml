@@ -30,7 +30,6 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
       - name: Push data
-        if: ${{ github.event_name == 'push' }}
         run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
@@ -51,7 +50,6 @@ jobs:
         working-directory: site
 
       - name: Deploy site
-        if: ${{ github.event_name == 'push' }}
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

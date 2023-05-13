@@ -333,6 +333,18 @@ const MapCard = ({ card, cardWeightBaseline }) => {
     img = chaos
   }
 
+  let perMap = 1
+  let everyMap = 1 / (card.weight / cardWeightBaseline)
+
+  if (everyMap < 1) {
+    perMap = Math.floor(1 / everyMap)
+    everyMap = 1
+  } else {
+    everyMap = Math.ceil(everyMap)
+  }
+
+  let perMapSuf = everyMap > 1 ? 'maps' : 'map'
+
   badgeClass = `badge m-1 ${badgeClass}`
   return (
     <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
@@ -357,7 +369,7 @@ const MapCard = ({ card, cardWeightBaseline }) => {
             <br />
             <b>= Value</b>: {Math.round(card.value * 1000) / 1000} <img src={chaos} alt="c" width="16" height="16" />
             <br />
-            <b>= Score</b>: {card.score}
+            <b>= {perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
           </>
         ) : (
           <>

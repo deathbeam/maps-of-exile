@@ -589,7 +589,7 @@ function App() {
                   Map
                 </span>
                 <div>
-                  <small>
+                  <small className="fw-light">
                     <a href={issueTemplate} target="_blank" rel="noreferrer">
                       Data not valid or missing? Click here
                     </a>

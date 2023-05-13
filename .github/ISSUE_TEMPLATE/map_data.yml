@@ -248,6 +248,5 @@ body:
   attributes:
     label: Boss Notes
     description: Map boss notes. If there isn't anything to add simply leave empty.
-    placeholder: ''
   validations:
     required: false

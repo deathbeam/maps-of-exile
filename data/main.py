@@ -452,18 +452,22 @@ def get_issue_template(maps):
 	}
 
 	def text_input(name, description, placeholder="", required=False):
-		return {
+		out = {
 			"type": "textarea",
 			"id": name.lower().replace(" ", "_"),
 			"attributes": {
 				"label": name,
-				"description": description,
-				"placeholder": placeholder
+				"description": description
 			},
 			"validations": {
 				"required": required
 			}
 		}
+
+		if placeholder:
+			out["attributes"]["placeholder"]: placeholder
+
+		return out
 
 	def number_input(name, description, max, required=False):
 		return {

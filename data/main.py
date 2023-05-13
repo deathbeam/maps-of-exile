@@ -543,7 +543,7 @@ def main():
 
 		# Create github template
 		issue_template = get_issue_template(maps)
-		with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.md", "w") as f:
+		with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
 			f.write(yaml.dump(issue_template, default_flow_style=False, sort_keys=False))
 
 		maps = list(map(lambda x: get_map_data(x, map_extra, config["maps"]), maps))

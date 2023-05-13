@@ -11,8 +11,8 @@ Simplest way to add new map even if you are not knowledgeable about inner workin
 
 ### For developers
 
-[/data/maps.json contains extra map metadata](/data/maps.json)
-[/site/public/layout contains layout images](/site/public/layout/)
+[/data/maps.json](/data/maps.json) contains extra map metadata  
+[/site/public/layout](/site/public/layout/) contains layout images  
 
 Full format for map metadata is:
 
@@ -43,7 +43,7 @@ Full format for map metadata is:
 }
 ```
 
-See issue mentioned in [[#For-non-developers]] section for reference for fields.
+See issue mentioned in [For-non-developers](#for-non-developers) section for reference for fields.
 
 ## Sources of data
 

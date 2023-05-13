@@ -4,51 +4,46 @@ Shows and filters map/card/map metadata from various sources.
 
 ## Adding new map
 
-For new map, the ideal collection of attributes are:  
+### For non-developers
 
+Simplest way to add new map even if you are not knowledgeable about inner workings of the project or do not know how to code is to
+[open an issue](https://github.com/deathbeam/poe-tools/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here) and someone will implement it.  
+
+### For developers
+
+[/data/maps.json contains extra map metadata][/data/maps.json]
+[/site/public/layout contains layout images][/site/public/layout/]
+
+Full format for map metadata is:
+
+```json
+{
+  "name": "Map name",
+  "image": false,
+  "layout": {
+    "league_mechanics": false,
+    "delirium_mirror": false,
+    "outdoors": false,
+    "linear": false,
+    "few_obstacles": false
+  },
+  "boss": {
+    "not_spawned": false,
+    "rushable": false,
+    "phases": false,
+    "soft_phases": false,
+    "separated": false,
+    "notes": "boss notes"
+  },
+  "rating": {
+    "layout": 10,
+    "density": 10,
+    "boss": 10
+  }
+}
 ```
-image: <image>
 
-layout:
-  outdoors: true/false
-  linear: true/false
-  league mechanics: true/false
-  delirium mirror: true/false
-
-boss:
-  not spawned: true/false
-  rushable: true/false
-  phases: true/false
-  soft phases: true/false
-```
-
-**image**: is simply a screenshot, ideally of just the overlay avoiding
-UI/debuff icons etc. Try to clear the whole map and if possible try to take the
-screenshot in dark area so the overlay is visible. For overlay map settings,
-set:  
-* **Landscape transparency** to max  
-* **Map transparency** to max  
-* **Map zoom** to minimum  
-  
-**layout**:  
-**outdoors**: if map is outdoors or not  
-**linear**: if map is basically just a line, doesnt matter if the line goes in
-circle or not  
-**league mechanics**: if you feel like map is good for breach/legion  
-**delirium mirror**: if you can reasonably hold delirium mirror through the map  
-  
-**boss**:  
-**not spawned**: if boss do not spawns on load (testable with altars getting or
-not getting boss option). Filling this one out is not super necessary unless the
-boss is similar to Jungle Valley boss and then double check just in case  
-**rushable**: if boss can be reasonably rushed way sooner than you would
-normally go through the map  
-**phases**: if boss has forced phases that you have to wait for (wait time at
-start of fight counts too)  
-**soft phases** if boss gets damage reduction or heals, but can be ignored with
-enough damage  
-
-Then simply open new issue: https://github.com/deathbeam/poe-tools/issues/new/choose with this info.
+See issue mentioned in [[#For-non-developers]] section for reference for fields.
 
 ## Sources of data
 

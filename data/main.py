@@ -3,7 +3,7 @@ import os
 import re
 import sys
 from decimal import Decimal
-from math import ceil, floor
+from math import ceil
 
 import requests
 import yaml
@@ -57,14 +57,14 @@ def merge(source, destination):
 def get_card_data(key, league, config):
 	id = config["decks"]["sheet-id"]
 	name = config["decks"]["sheet-name"]
-	print(f"Getting card rates from {name}")
+	print(f"Getting card amounts from {name}")
 	url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-	rates = requests.get(url).json()["values"]
-	rates.pop(0)
-	rates = list(map(lambda x: {
+	amounts = requests.get(url).json()["values"]
+	amounts_total = int(amounts.pop(0)[0])
+	amounts = list(map(lambda x: {
 		"name": x[0].strip(),
 		"value": int(x[3])
-	}, filter(lambda x: len(x) > 0, rates)))
+	}, filter(lambda x: len(x) > 0, amounts)))
 
 	id = config["weights"]["sheet-id"]
 	name = config["weights"]["sheet-name"]
@@ -78,8 +78,9 @@ def get_card_data(key, league, config):
 		"value": int(x[2])
 	}, weights))
 
-	patient_rate_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
-	patient_weight_baseline = next(x["value"] for x in rates if x["name"] == "The Patient")
+	patient_amount = next(x["value"] for x in amounts if x["name"] == "The Patient")
+	patient_weight = next(x["value"] for x in weights if x["name"] == "The Patient")
+	sample_weight = Decimal(patient_weight) / (Decimal(patient_amount) / Decimal(amounts_total))
 
 	url = config["prices"].replace("{}", league)
 	print(f"Getting card prices from {url}")
@@ -100,14 +101,14 @@ def get_card_data(key, league, config):
 			"boss": price_card["name"] in config["boss-only"]
 		}
 
-		rate_card = next((x["value"] for x in rates if x["name"] == price_card["name"]), None)
+		amount_card = next((x["value"] for x in amounts if x["name"] == price_card["name"]), None)
 		weight_card = next((x["value"] for x in weights if x["name"] == price_card["name"]), None)
 
-		if rate_card and not weight_card:
-			rate = Decimal(patient_rate_baseline) / Decimal(rate_card) * Decimal(4 / 3)
-			weight_rate = floor(Decimal(patient_weight_baseline) / rate)
-			print(f"Making assumption for weight for {price_card['name']} based on The Patient ratio {rate}, setting it to {weight_rate}")
-			weight_card = weight_rate
+		if amount_card and not weight_card:
+			weight_mult = Decimal(amount_card) / Decimal(amounts_total)
+			# This is stupid but it works
+			weight_card = ceil(sample_weight * weight_mult / 2)
+			print(f"Making assumption for weight for {price_card['name']} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card}")
 
 		if weight_card:
 			card["weight"] = weight_card

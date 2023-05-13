@@ -1,4 +1,4 @@
-# poe-tools
+# Maps of Exile
 
 Shows and filters map/card/map metadata from various sources.
 
@@ -7,7 +7,7 @@ Shows and filters map/card/map metadata from various sources.
 ### For non-developers
 
 Simplest way to add new map even if you are not knowledgeable about inner workings of the project or do not know how to code is to
-[open an issue](https://github.com/deathbeam/poe-tools/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here) and someone will implement it.  
+[open an issue](https://github.com/deathbeam/maps-of-exile/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here) and someone will implement it.  
 
 ### For developers
 

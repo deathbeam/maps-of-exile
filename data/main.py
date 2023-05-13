@@ -451,7 +451,21 @@ def get_issue_template(maps):
 		"body": body
 	}
 
-	def number_input(name, description, max):
+	def text_input(name, description, placeholder="", required=False):
+		return {
+			"type": "textarea",
+			"id": name.lower().replace(" ", "_"),
+			"attributes": {
+				"label": name,
+				"description": description,
+				"placeholder": placeholder
+			},
+			"validations": {
+				"required": required
+			}
+		}
+
+	def number_input(name, description, max, required=False):
 		return {
 			"type": "dropdown",
 			"id": name.lower().replace(" ", "_"),
@@ -459,10 +473,13 @@ def get_issue_template(maps):
 				"label": name,
 				"description": description,
 				"options": list(range(1, max + 1))
+			},
+			"validations": {
+				"required": required
 			}
 		}
 
-	def checkbox_input(name, description, values):
+	def checkbox_input(name, description, values, required=False):
 		return {
 			"type": "checkboxes",
 			"id": name.lower().replace(" ", "_"),
@@ -470,10 +487,13 @@ def get_issue_template(maps):
 				"label": name,
 				"description": description,
 				"options": list(map(lambda x: { "label": x }, values))
+			},
+			"validations": {
+				"required": required
 			}
 		}
 
-	def dropdown_input(name, description, values):
+	def dropdown_input(name, description, values, required=False):
 		return {
 			"type": "dropdown",
 			"id": name.lower().replace(" ", "_"),
@@ -481,31 +501,36 @@ def get_issue_template(maps):
 				"label": name,
 				"description": description,
 				"options": list(values)
+			},
+			"validations": {
+				"required": required
 			}
 		}
 
-	body.append(dropdown_input("Map name", "Map name", map(lambda x: x["name"], maps)))
+	body.append(dropdown_input("Map name", "Select map from dropdown.", map(lambda x: x["name"], maps), True))
+	body.append(text_input("Map image", "Map layout image. If you dont have one simply leave empty.", "Upload layout image here"))
 
-	body.append(number_input("Layout rating", "Map layout rating", 10))
-	body.append(number_input("Density rating", "Map density rating", 10))
-	body.append(number_input("Boss rating", "Map boss rating", 10))
+	body.append(number_input("Layout rating", "Map layout rating. If you dont know simply leave at None.", 10))
+	body.append(number_input("Density rating", "Map density rating. If you dont know simply leave at None.", 10))
+	body.append(number_input("Boss rating", "Map boss rating. If you dont know simply leave at None.", 10))
 
-	body.append(checkbox_input("Layout", "Map layout metadata", [
-		"League mechanics",
-		"Delirium mirror",
-		"Outdoors",
-		"Linear",
-		"Few obstacles"
+	body.append(checkbox_input("Layout", "Map layout metadata. If you dont know simply leave the box unchecked.", [
+		"*League mechanics* - If map is good for league mechanics that require some space (Breach, Legion)",
+		"Delirium mirror - If you can hold delirium mirror through whole map or delirium mirror gets good value in it",
+		"Outdoors - If map is outdoors or indoors (Dunes vs Cells for example)",
+		"Linear - If map is linear instead of having multiple paths to take. Map counts as linear even if the line goes in circle",
+		"Few obstacles - If map does not have a lot of obstacles (so for example is good for shield charging around)"
 	]))
 
-	body.append(checkbox_input("Boss", "Map boss metadata", [
-		"Not spawned",
-		"Rushable",
-		"Phases",
-		"Soft phases",
-		"Separated"
+	body.append(checkbox_input("Boss", "Map boss metadata. If you dont know simply leave the box unchecked.", [
+		"Not spawned - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
+		"Rushable - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
+		"Phases - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
+		"Soft phases - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
+		"Separated - If boss room is separated from rest of the map"
 	]))
 
+	body.append(text_input("Boss Notes", "Map boss notes. If there isn't anything to add simply leave empty."))
 	return template
 
 

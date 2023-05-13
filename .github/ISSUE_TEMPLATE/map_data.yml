@@ -8,7 +8,7 @@ body:
   id: map_name
   attributes:
     label: Map name
-    description: Map name
+    description: Select map from dropdown.
     options:
     - Acton's Nightmare
     - Alleyways Map
@@ -145,11 +145,21 @@ body:
     - Wasteland Map
     - Whakawairua Tuahu
     - Wharf Map
+  validations:
+    required: true
+- type: textarea
+  id: map_image
+  attributes:
+    label: Map image
+    description: Map layout image. If you dont have one simply leave empty.
+    placeholder: Upload layout image here
+  validations:
+    required: false
 - type: dropdown
   id: layout_rating
   attributes:
     label: Layout rating
-    description: Map layout rating
+    description: Map layout rating. If you dont know simply leave at None.
     options:
     - 1
     - 2
@@ -161,11 +171,13 @@ body:
     - 8
     - 9
     - 10
+  validations:
+    required: false
 - type: dropdown
   id: density_rating
   attributes:
     label: Density rating
-    description: Map density rating
+    description: Map density rating. If you dont know simply leave at None.
     options:
     - 1
     - 2
@@ -177,11 +189,13 @@ body:
     - 8
     - 9
     - 10
+  validations:
+    required: false
 - type: dropdown
   id: boss_rating
   attributes:
     label: Boss rating
-    description: Map boss rating
+    description: Map boss rating. If you dont know simply leave at None.
     options:
     - 1
     - 2
@@ -193,25 +207,47 @@ body:
     - 8
     - 9
     - 10
+  validations:
+    required: false
 - type: checkboxes
   id: layout
   attributes:
     label: Layout
-    description: Map layout metadata
+    description: Map layout metadata. If you dont know simply leave the box unchecked.
     options:
-    - label: League mechanics
-    - label: Delirium mirror
-    - label: Outdoors
-    - label: Linear
-    - label: Few obstacles
+    - label: '*League mechanics* - If map is good for league mechanics that require
+        some space (Breach, Legion)'
+    - label: Delirium mirror - If you can hold delirium mirror through whole map or
+        delirium mirror gets good value in it
+    - label: Outdoors - If map is outdoors or indoors (Dunes vs Cells for example)
+    - label: Linear - If map is linear instead of having multiple paths to take. Map
+        counts as linear even if the line goes in circle
+    - label: Few obstacles - If map does not have a lot of obstacles (so for example
+        is good for shield charging around)
+  validations:
+    required: false
 - type: checkboxes
   id: boss
   attributes:
     label: Boss
-    description: Map boss metadata
+    description: Map boss metadata. If you dont know simply leave the box unchecked.
     options:
-    - label: Not spawned
-    - label: Rushable
-    - label: Phases
-    - label: Soft phases
-    - label: Separated
+    - label: Not spawned - If boss is not spawned on entering the map (important for
+        Altar farming, can be verified by checking for boss altars spawning or not)
+    - label: Rushable - If boss is close to map start or can be rushed quickly and
+        reliably, a lot quicker than completing whole map
+    - label: Phases - If boss has hard phases that force you to wait (delay on initial
+        boss spawn counts too)
+    - label: Soft phases - If boss has soft phases that can be bypassed with DPS (teleports
+        at certain threshold, heals, partial damage reduction)
+    - label: Separated - If boss room is separated from rest of the map
+  validations:
+    required: false
+- type: textarea
+  id: boss_notes
+  attributes:
+    label: Boss Notes
+    description: Map boss notes. If there isn't anything to add simply leave empty.
+    placeholder: ''
+  validations:
+    required: false

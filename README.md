@@ -2,7 +2,7 @@
 
 Shows and filters map/card/map metadata from various sources.
 
-## Adding new map
+## Adding or updating map metadata
 
 ### For non-developers
 

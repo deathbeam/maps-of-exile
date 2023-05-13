@@ -512,7 +512,7 @@ def get_issue_template(maps):
 		}
 
 	body.append(text_input("Issue description", "Write reasoning for this change below", "Reasoning for the change, e.g data are missing or I disagree with X or Y and here is why etc. You can also add extra info not contained in form here.", True))
-	body.append(dropdown_input("Map name", "Select map from dropdown or leave at See title if its properly filled.", ["See title"] + list(map(lambda x: x["name"].replace(" Map", ""), maps)), True))
+	body.append(dropdown_input("Map name", "Select map from dropdown or leave at None if **title** is properly filled.", list(map(lambda x: x["name"].replace(" Map", ""), maps))))
 	body.append(text_input("Map image", "Map layout image. If you dont have one simply leave empty.", "Upload layout image here"))
 
 	body.append(number_input("Layout rating", "Map layout rating. If you dont know simply leave at None.", 10))

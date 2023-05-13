@@ -18,7 +18,7 @@ body:
   id: map_name
   attributes:
     label: Map name
-    description: Select map from dropdown or leave at See title if its properly filled.
+    description: Select map from dropdown or leave at **None** if title is properly filled.
     options:
     - See title
     - Acton's Nightmare
@@ -157,7 +157,7 @@ body:
     - Whakawairua Tuahu
     - Wharf
   validations:
-    required: true
+    required: false
 - type: textarea
   id: map_image
   attributes:

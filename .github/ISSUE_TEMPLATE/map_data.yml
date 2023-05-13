@@ -2,7 +2,7 @@ name: Fill some extra info about map
 description: Enter missing or correct existing info about map
 title: '[Map] '
 labels:
-- map-data
+- map-info
 body:
 - type: dropdown
   id: map_name
@@ -11,140 +11,140 @@ body:
     description: Select map from dropdown.
     options:
     - Acton's Nightmare
-    - Alleyways Map
+    - Alleyways
     - Altered Distant Memory
-    - Arachnid Nest Map
-    - Arachnid Tomb Map
-    - Arcade Map
-    - Arid Lake Map
-    - Armoury Map
-    - Arsenal Map
-    - Atoll Map
+    - Arachnid Nest
+    - Arachnid Tomb
+    - Arcade
+    - Arid Lake
+    - Armoury
+    - Arsenal
+    - Atoll
     - Augmented Distant Memory
-    - Barrows Map
-    - Beach Map
-    - Belfry Map
-    - Bone Crypt Map
+    - Barrows
+    - Beach
+    - Belfry
+    - Bone Crypt
     - Caer Blaidd, Wolfpack's Den
-    - Caldera Map
-    - Canyon Map
-    - Castle Ruins Map
-    - Cells Map
-    - Cemetery Map
-    - Chateau Map
-    - City Square Map
-    - Cold River Map
-    - Colonnade Map
-    - Colosseum Map
-    - Conservatory Map
-    - Coral Ruins Map
-    - Core Map
+    - Caldera
+    - Canyon
+    - Castle Ruins
+    - Cells
+    - Cemetery
+    - Chateau
+    - City Square
+    - Cold River
+    - Colonnade
+    - Colosseum
+    - Conservatory
+    - Coral Ruins
+    - Core
     - Cortex
-    - Courtyard Map
-    - Coves Map
-    - Crater Map
-    - Crimson Temple Map
-    - Crimson Township Map
-    - Crystal Ore Map
-    - Cursed Crypt Map
+    - Courtyard
+    - Coves
+    - Crater
+    - Crimson Temple
+    - Crimson Township
+    - Crystal Ore
+    - Cursed Crypt
     - Death and Taxes
-    - Defiled Cathedral Map
-    - Desert Spring Map
-    - Dig Map
+    - Defiled Cathedral
+    - Desert Spring
+    - Dig
     - Doryani's Machinarium
-    - Dry Sea Map
-    - Dunes Map
-    - Dungeon Map
-    - Excavation Map
-    - Factory Map
-    - Fields Map
-    - Flooded Mine Map
-    - Forbidden Woods Map
-    - Forge of the Phoenix Map
-    - Foundry Map
-    - Frozen Cabins Map
-    - Fungal Hollow Map
-    - Geode Map
-    - Grotto Map
+    - Dry Sea
+    - Dunes
+    - Dungeon
+    - Excavation
+    - Factory
+    - Fields
+    - Flooded Mine
+    - Forbidden Woods
+    - Forge of the Phoenix
+    - Foundry
+    - Frozen Cabins
+    - Fungal Hollow
+    - Geode
+    - Grotto
     - Hall of Grandmasters
     - Hallowed Ground
-    - Infested Valley Map
+    - Infested Valley
     - Infused Beachhead
-    - Jungle Valley Map
-    - Laboratory Map
-    - Lair Map
-    - Lair of the Hydra Map
-    - Leyline Map
-    - Lighthouse Map
+    - Jungle Valley
+    - Laboratory
+    - Lair
+    - Lair of the Hydra
+    - Leyline
+    - Lighthouse
     - "Maelstr\xF6m of Chaos"
-    - Malformation Map
+    - Malformation
     - Mao Kun
-    - Marshes Map
-    - Maze Map
-    - Maze of the Minotaur Map
-    - Mineral Pools Map
-    - Moon Temple Map
-    - Museum Map
-    - Necropolis Map
+    - Marshes
+    - Maze
+    - Maze of the Minotaur
+    - Mineral Pools
+    - Moon Temple
+    - Museum
+    - Necropolis
     - Oba's Cursed Trove
     - Olmec's Sanctum
-    - Orchard Map
-    - Overgrown Ruin Map
-    - Overgrown Shrine Map
-    - Phantasmagoria Map
-    - Pier Map
+    - Orchard
+    - Overgrown Ruin
+    - Overgrown Shrine
+    - Phantasmagoria
+    - Pier
     - Pillars of Arun
-    - Pit Map
-    - Pit of the Chimera Map
-    - Plateau Map
-    - Plaza Map
+    - Pit
+    - Pit of the Chimera
+    - Plateau
+    - Plaza
     - Poorjoy's Asylum
-    - Port Map
-    - Precinct Map
-    - Primordial Blocks Map
-    - Primordial Pool Map
-    - Promenade Map
-    - Racecourse Map
-    - Ramparts Map
-    - Relic Chambers Map
+    - Port
+    - Precinct
+    - Primordial Blocks
+    - Primordial Pool
+    - Promenade
+    - Racecourse
+    - Ramparts
+    - Relic Chambers
     - Replica Cortex
     - Replica Pillars of Arun
     - Replica Poorjoy's Asylum
-    - Residence Map
+    - Residence
     - Rewritten Distant Memory
-    - Scriptorium Map
-    - Shipyard Map
-    - Shore Map
-    - Shrine Map
-    - Siege Map
-    - Silo Map
-    - Stagnation Map
-    - Strand Map
-    - Sulphur Vents Map
-    - Temple Map
-    - Terrace Map
+    - Scriptorium
+    - Shipyard
+    - Shore
+    - Shrine
+    - Siege
+    - Silo
+    - Stagnation
+    - Strand
+    - Sulphur Vents
+    - Temple
+    - Terrace
     - The Beachhead
     - The Coward's Trial
     - The Putrid Cloister
     - The Tower of Ordeals
     - The Twilight Temple
     - The Vinktar Square
-    - Thicket Map
-    - Tower Map
-    - Toxic Sewer Map
-    - Tropical Island Map
+    - Thicket
+    - Tower
+    - Toxic Sewer
+    - Tropical Island
     - Twisted Distant Memory
-    - Underground River Map
-    - Underground Sea Map
+    - Underground River
+    - Underground Sea
     - Untainted Paradise
-    - Vaal Pyramid Map
-    - Vaal Temple Map
+    - Vaal Pyramid
+    - Vaal Temple
     - Vaults of Atziri
-    - Volcano Map
-    - Waste Pool Map
-    - Wasteland Map
+    - Volcano
+    - Waste Pool
+    - Wasteland
     - Whakawairua Tuahu
-    - Wharf Map
+    - Wharf
   validations:
     required: true
 - type: textarea

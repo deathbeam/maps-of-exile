@@ -511,7 +511,7 @@ def get_issue_template(maps):
 			}
 		}
 
-	body.append(dropdown_input("Map name", "Select map from dropdown.", map(lambda x: x["name"], maps), True))
+	body.append(dropdown_input("Map name", "Select map from dropdown.", map(lambda x: x["name"].replace(" Map", ""), maps), True))
 	body.append(text_input("Map image", "Map layout image. If you dont have one simply leave empty.", "Upload layout image here"))
 
 	body.append(number_input("Layout rating", "Map layout rating. If you dont know simply leave at None.", 10))

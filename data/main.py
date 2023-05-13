@@ -446,8 +446,8 @@ def get_issue_template(maps):
 	template = {
 		"name": "Fill some extra info about map",
 		"description": "Enter missing or correct existing info about map",
-		"title": "[Map] ",
-		"labels": ["map-info"],
+		"title": "Enter map name here",
+		"labels": ["map-data"],
 		"body": body
 	}
 

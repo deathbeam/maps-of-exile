@@ -5,7 +5,7 @@ export const defaultCardBaseline = 'The Chains that Bind'
 export const cardBossMulti = 3.5
 export const preparedCards = cards
 export const githubRepo = 'https://github.com/deathbeam/poe-tools'
-export const issueTemplate = `${githubRepo}/issues/new?assignees=&labels=map-data&template=map_data.yml&title=[Map]+`
+export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 
 export const preparedMaps = maps.map(map => {
   function pushTag(info, destination, source, key, name = null) {

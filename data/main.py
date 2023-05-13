@@ -42,6 +42,9 @@ def clean(d):
 
 def merge(source, destination):
 	for key, value in source.items():
+		if value is None:
+			continue
+
 		if isinstance(value, dict):
 			node = destination.setdefault(key, {})
 			merge(value, node)
@@ -395,13 +398,18 @@ def get_maps_template(maps, existing_maps):
 			"image": False,
 			"layout": {
 				"league_mechanics": None,
-				"delirium_mirror": None
+				"delirium_mirror": None,
+				"outdoors": None,
+				"linear": None,
+				"few_obstacles": None
 			},
 			"boss": {
 				"not_spawned": None,
 				"rushable": None,
 				"phases": None,
-				"soft_phases": None
+				"soft_phases": None,
+				"separated": None,
+				"notes": None
 			}
 		}
 
@@ -549,6 +557,7 @@ def main():
 		with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
 			f.write(yaml.dump(issue_template, default_flow_style=False, sort_keys=False))
 
+		# Write detailed map data
 		maps = list(map(lambda x: get_map_data(x, map_extra, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:
 			f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True))

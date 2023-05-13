@@ -441,6 +441,74 @@ def get_maps_template(maps, existing_maps):
 	return sorted(out, key=lambda d: d["name"])
 
 
+def get_issue_template(maps):
+	body = []
+	template = {
+		"name": "Fill some extra info about map",
+		"description": "Enter missing or correct existing info about map",
+		"title": "[Map] ",
+		"labels": ["map-info"],
+		"body": body
+	}
+
+	def number_input(name, description, max):
+		return {
+			"type": "dropdown",
+			"id": name.lower().replace(" ", "_"),
+			"attributes": {
+				"label": name,
+				"description": description,
+				"options": list(range(1, max + 1))
+			}
+		}
+
+	def checkbox_input(name, description, values):
+		return {
+			"type": "checkboxes",
+			"id": name.lower().replace(" ", "_"),
+			"attributes": {
+				"label": name,
+				"description": description,
+				"options": list(map(lambda x: { "label": x }, values))
+			}
+		}
+
+	def dropdown_input(name, description, values):
+		return {
+			"type": "dropdown",
+			"id": name.lower().replace(" ", "_"),
+			"attributes": {
+				"label": name,
+				"description": description,
+				"options": list(values)
+			}
+		}
+
+	body.append(dropdown_input("Map name", "Map name", map(lambda x: x["name"], maps)))
+
+	body.append(number_input("Layout rating", "Map layout rating", 10))
+	body.append(number_input("Density rating", "Map density rating", 10))
+	body.append(number_input("Boss rating", "Map boss rating", 10))
+
+	body.append(checkbox_input("Layout", "Map layout metadata", [
+		"League mechanics",
+		"Delirium mirror",
+		"Outdoors",
+		"Linear",
+		"Few obstacles"
+	]))
+
+	body.append(checkbox_input("Boss", "Map boss metadata", [
+		"Not spawned",
+		"Rushable",
+		"Phases",
+		"Soft phases",
+		"Separated"
+	]))
+
+	return template
+
+
 def main():
 	dir_path = os.path.dirname(os.path.realpath(__file__))
 	with open (dir_path + "/config.yaml", "r") as f:
@@ -466,11 +534,17 @@ def main():
 			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
 
 	if fetch_maps:
+		# Get basic map data
 		maps = get_maps(api_key, config["maps"])
 		with open(dir_path + "/maps.json", "r") as f:
 			map_extra = get_maps_template(maps, json.load(f))
 		with open(dir_path + "/maps.json", "w") as f:
 			f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder, sort_keys=True))
+
+		# Create github template
+		issue_template = get_issue_template(maps)
+		with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.md", "w") as f:
+			f.write(yaml.dump(issue_template, default_flow_style=False, sort_keys=False))
 
 		maps = list(map(lambda x: get_map_data(x, map_extra, config["maps"]), maps))
 		with open(dir_path + "/../site/src/data/maps.json", "w") as f:

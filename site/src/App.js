@@ -5,7 +5,15 @@ import alch from './img/alch.png'
 import chaos from './img/chaos.png'
 import exalt from './img/exalt.png'
 import divine from './img/divine.png'
-import { cardBossMulti, defaultCardBaseline, preparedCards, preparedMaps, preparedTags } from './data'
+import {
+  cardBossMulti,
+  defaultCardBaseline,
+  githubRepo,
+  issueTemplate,
+  preparedCards,
+  preparedMaps,
+  preparedTags
+} from './data'
 import Loader from './components/Loader'
 import SelectSearch from 'react-select-search'
 
@@ -569,16 +577,25 @@ function App() {
               </span>
             </th>
             <th scope="col">
-              <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-                <span className="tooltip-tag-text">
-                  Map name, colored based on natural tier with map tiers for each Voidstone next to it.
-                  <br />
-                  <span className="badge bg-light text-dark me-1">tier 1-5</span>
-                  <span className="badge bg-warning text-dark me-1">tier 6-10</span>
-                  <span className="badge bg-danger text-dark me-1">tier 11-16</span>
+              <div className="d-md-flex justify-content-between align-items-end">
+                <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    Map name, colored based on natural tier with map tiers for each Voidstone next to it.
+                    <br />
+                    <span className="badge bg-light text-dark me-1">tier 1-5</span>
+                    <span className="badge bg-warning text-dark me-1">tier 6-10</span>
+                    <span className="badge bg-danger text-dark me-1">tier 11-16</span>
+                  </span>
+                  Map
                 </span>
-                Map
-              </span>
+                <div>
+                  <small>
+                    <a href={issueTemplate} target="_blank" rel="noreferrer">
+                      Data not valid or missing? Click here
+                    </a>
+                  </small>
+                </div>
+              </div>
             </th>
             <th scope="col" className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
@@ -639,7 +656,7 @@ function App() {
               </span>
             </th>
             <th scope="col">
-              <div className="d-md-flex justify-content-between">
+              <div className="d-md-flex justify-content-between align-items-end">
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
@@ -740,7 +757,7 @@ function App() {
           </div>
           <div>
             Contribute on{' '}
-            <a href="https://github.com/deathbeam/poe-tools" target="_blank" rel="noreferrer">
+            <a href={githubRepo} target="_blank" rel="noreferrer">
               GitHub
             </a>
             . Also contains sources for all data used on the site.

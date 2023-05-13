@@ -1,15 +1,26 @@
 name: Fill some extra info about map
 description: Enter missing or correct existing info about map
-title: 'Enter map name here'
+title: Enter map name here
 labels:
-- map-info
+- map-data
 body:
+- type: textarea
+  id: issue_description
+  attributes:
+    label: Issue description
+    description: Write reasoning for this change below
+    placeholder: Reasoning for the change, e.g data are missing or I disagree with
+      X or Y and here is why etc. You can also add extra info not contained in form
+      here.
+  validations:
+    required: true
 - type: dropdown
   id: map_name
   attributes:
     label: Map name
-    description: Select map from dropdown.
+    description: Select map from dropdown or leave at See title if its properly filled.
     options:
+    - See title
     - Acton's Nightmare
     - Alleyways
     - Altered Distant Memory

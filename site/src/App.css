@@ -33,6 +33,11 @@ button {
   background-color: #686664;
 }
 
+path.react-flow__edge-path {
+  stroke-dasharray: 5;
+  stroke-width: 2;
+}
+
 a:hover {
   text-decoration: underline;
 }

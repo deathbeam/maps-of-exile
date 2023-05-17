@@ -88,7 +88,7 @@ const Atlas = ({ maps, currentSearch }) => {
         fitView(flowRef.current, matchingNodes)
       }}
     >
-      <Controls position="bottom-right" />
+      <Controls position="bottom-right" showInteractive={false} />
     </ReactFlow>
   )
 }

@@ -70,7 +70,7 @@ const Atlas = ({ maps, currentSearch }) => {
   }, [matchingNodes, flow])
 
   return (
-    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick}>
+    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick} onInit={(flow) => flow.fitView()}>
       <Controls position="bottom-right" />
     </ReactFlow>
   )

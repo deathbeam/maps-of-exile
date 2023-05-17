@@ -33,12 +33,6 @@ button {
   background-color: #686664;
 }
 
-path.react-flow__edge-path {
-  stroke: black;
-  stroke-dasharray: 5;
-  stroke-width: 2;
-}
-
 a:hover {
   text-decoration: underline;
 }
@@ -275,4 +269,14 @@ body.is-light-mode .select-search-container {
 
 .react-flow__attribution {
   display: none;
+}
+
+.react-flow__controls-button {
+  color: black;
+}
+
+path.react-flow__edge-path {
+  stroke: black;
+  stroke-dasharray: 5;
+  stroke-width: 2;
 }

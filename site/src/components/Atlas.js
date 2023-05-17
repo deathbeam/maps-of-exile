@@ -72,8 +72,8 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
   )
 
   useEffect(() => {
-    fitView(flowRef.current, matchingNodes)
-  }, [matchingNodes])
+    setTimeout(() => fitView(flowRef.current, matchingNodes), 150)
+  }, [matchingNodes, atlasFull])
 
   return (
     <div

@@ -34,6 +34,7 @@ button {
 }
 
 path.react-flow__edge-path {
+  stroke: black;
   stroke-dasharray: 5;
   stroke-width: 2;
 }

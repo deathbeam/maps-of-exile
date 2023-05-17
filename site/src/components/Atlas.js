@@ -35,10 +35,7 @@ function toLinks(map) {
     id: map.name + '-' + c,
     source: map.name,
     target: c,
-    interactionWidth: 0,
-    style: {
-      stroke: 'black'
-    }
+    interactionWidth: 0
   }))
 }
 

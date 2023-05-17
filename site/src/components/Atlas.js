@@ -1,6 +1,8 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { filter } from '../common'
-import Graph from './Graph'
+import ReactFlow, { Controls, useReactFlow } from 'reactflow'
+
+import 'reactflow/dist/base.css'
 
 function toNode(map, matchingNodes) {
   const tier = map.tiers[0]
@@ -18,29 +20,30 @@ function toNode(map, matchingNodes) {
 
   return {
     id: map.name,
-    label: map.name,
-    color: color,
-    mass: tier,
-    x: map.x * 2,
-    y: map.y * 2
+    position: {
+      x: map.x * 2,
+      y: map.y * 2
+    },
+    data: {
+      label: map.name
+    },
+    style: {
+      color: color
+    },
+    className: 'badge bg-dark'
   }
 }
 
 function toLinks(map) {
   return (map.connected || []).map(c => ({
-    from: map.name,
-    to: c
+    id: map.name + '-' + c,
+    source: map.name,
+    target: c
   }))
 }
 
-function adjustNetwork(network, matchingNodes) {
-  console.info(matchingNodes)
-  network.fit({
-    nodes: matchingNodes
-  })
-}
-
 const Atlas = ({ maps, currentSearch }) => {
+  const flow = useReactFlow()
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 
   const matchingNodes = useMemo(
@@ -56,21 +59,17 @@ const Atlas = ({ maps, currentSearch }) => {
     [connectedMaps, matchingNodes]
   )
 
-  const options = {
-    interaction: {
-      dragNodes: false,
-      zoomView: false
-    },
-    physics: false,
-    nodes: {
-      shape: 'dot',
-      size: 12,
-      shadow: true,
-      font: '14px arial white'
-    }
-  }
+  useEffect(() => {
+    flow.fitView({
+      nodes: matchingNodes.map(n => ({ id: n }))
+    })
+  }, [matchingNodes, flow])
 
-  return <Graph data={data} options={options} getNetwork={n => adjustNetwork(n, matchingNodes)} />
+  return (
+    <ReactFlow nodes={data.nodes} edges={data.edges}>
+      <Controls position="bottom-right" />
+    </ReactFlow>
+  )
 }
 
 export default Atlas

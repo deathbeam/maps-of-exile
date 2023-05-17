@@ -259,6 +259,6 @@ body.is-light-mode .select-search-container {
   color: var(--select-search-selected);
 }
 
-.vis-network:focus {
-  outline: none;
+.react-flow__attribution {
+  display: none;
 }

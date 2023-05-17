@@ -180,7 +180,7 @@ function App() {
     <>
       <Loader loading={isPending} />
       <div
-        className="d-none d-md-block"
+        className="d-none d-md-block bg-atlas"
         style={{
           height: '50vh'
         }}

@@ -6,16 +6,15 @@ import 'reactflow/dist/base.css'
 
 function toNode(map, matchingNodes) {
   const tier = map.tiers[0]
-  let color = 'white'
-
+  let tierColor = 'text-light'
   if (!matchingNodes.includes(map.name)) {
-    color = 'grey'
+    tierColor = 'text-secondary'
   } else if (map.unique) {
-    color = 'brown'
+    tierColor = 'text-unique'
   } else if (tier >= 11) {
-    color = 'red'
+    tierColor = 'text-danger'
   } else if (tier >= 6) {
-    color = 'yellow'
+    tierColor = 'text-warning'
   }
 
   return {
@@ -27,10 +26,7 @@ function toNode(map, matchingNodes) {
     data: {
       label: map.name
     },
-    style: {
-      color: color
-    },
-    className: 'badge bg-dark'
+    className: `badge bg-dark border-1 ${tierColor}`
   }
 }
 

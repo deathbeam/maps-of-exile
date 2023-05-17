@@ -25,6 +25,10 @@ button {
   border-radius: var(--bs-badge-border-radius);
 }
 
+.text-unique {
+  color: #af6025;
+}
+
 a:hover {
   text-decoration: underline;
 }

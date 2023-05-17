@@ -12,7 +12,9 @@ const MapName = ({ map, currentSearch, addToInput }) => {
 
   const tier = map.tiers[0]
   let tierColor = 'text-light'
-  if (tier >= 11) {
+  if (map.unique) {
+    tierColor = 'text-unique'
+  } else if (tier >= 11) {
     tierColor = 'text-danger'
   } else if (tier >= 6) {
     tierColor = 'text-warning'

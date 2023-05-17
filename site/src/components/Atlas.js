@@ -3,6 +3,7 @@ import { filter } from '../common'
 import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 function toNode(map, matchingNodes) {
   const tier = map.tiers[0]
@@ -94,10 +95,10 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
       >
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="action">
-            <div>&#8634;</div>
+            <i className="fa-solid fa-fw fa-arrows-rotate" />
           </ControlButton>
           <ControlButton onClick={() => setAtlasFull(!atlasFull)} title="action">
-            <div>{atlasFull ? '\u21F1' : '\u21F2'}</div>
+            {atlasFull ? <i className="fa-solid fa-fw fa-minimize" /> : <i className="fa-solid fa-fw fa-expand" />}
           </ControlButton>
         </Controls>
       </ReactFlow>

@@ -133,7 +133,7 @@ function App() {
     startTransition
   )
   const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
-  const [atlasFull, setAtlasFull] = useState('atlasFull', false)
+  const [atlasFull, setAtlasFull] = useState(false)
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]

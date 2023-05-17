@@ -258,3 +258,7 @@ body.is-light-mode .select-search-container {
   font-weight: bold;
   color: var(--select-search-selected);
 }
+
+.vis-network:focus {
+  outline: none;
+}

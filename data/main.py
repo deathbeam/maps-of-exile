@@ -295,6 +295,18 @@ def get_maps(key, config):
 	out = list(filter(lambda x: x["name"] not in config["ignored"], out))
 	out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
 
+	mapssvg = soup.find(id="AtlasNodeSVG")
+	maplinks = mapssvg.find_all("a")
+	map_positions = []
+
+	for maplink in maplinks:
+		txt = maplink.find("text")
+		map_positions.append({
+			"name": txt.text.strip(),
+			"x": int(txt.attrs["x"]),
+			"y": int(txt.attrs["y"])
+		})
+
 	for m in out:
 		name = m["name"]
 		m["unique"] = not name.endswith(" Map")
@@ -314,6 +326,10 @@ def get_maps(key, config):
 				m["id"] = existing_wiki["area id"]
 			if "cards" in existing_wiki:
 				m["cards"] = existing_wiki["cards"]
+		existing_position = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None)
+		if existing_position:
+			m["x"] = existing_position["x"]
+			m["y"] = existing_position["y"]
 
 	return out
 

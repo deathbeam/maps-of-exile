@@ -1,10 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
+
 import { useState, useMemo, useTransition, useRef, useEffect } from 'react'
-import alch from './img/alch.png'
+import SelectSearch from 'react-select-search'
 import chaos from './img/chaos.png'
-import exalt from './img/exalt.png'
-import divine from './img/divine.png'
 import {
   cardBossMulti,
   defaultCardBaseline,
@@ -15,31 +14,14 @@ import {
   preparedTags
 } from './data'
 import Loader from './components/Loader'
-import SelectSearch from 'react-select-search'
-
-function rescale(value, minValue, maxValue, scale) {
-  return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
-}
-
-export function calculateScore(dataset, range) {
-  const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
-  const min = Math.min(...nonzerodataset.map(o => o.value))
-  const max = Math.max(...nonzerodataset.map(o => o.value))
-  const out = []
-
-  for (let entry of dataset) {
-    if (entry.value) {
-      out.push({
-        ...entry,
-        score: rescale(entry.value, min, max, range)
-      })
-    } else {
-      out.push(entry)
-    }
-  }
-
-  return out.sort((a, b) => (b.score || 0) - (a.score || 0))
-}
+import Atlas from './components/Atlas'
+import MapCards from './components/MapCards'
+import { calculateScore, filter } from './common'
+import Rating from './components/Rating'
+import MapBoss from './components/MapBoss'
+import MapConnected from './components/MapConnected'
+import MapName from './components/MapName'
+import Tags from './components/Tags'
 
 function rateCards(cards, cardWeightBaseline, cardMinPrice) {
   return calculateScore(
@@ -109,21 +91,6 @@ function buildSearch(s) {
   return s.map(v => (v.neg ? '-' : '') + v.value).join(', ')
 }
 
-function filter(search, v) {
-  let posMatched = true
-  let negMatched = true
-
-  for (let s of search) {
-    if (s.neg) {
-      negMatched = negMatched && !v.some(m => m.trim().toLowerCase().includes(s.value))
-    } else {
-      posMatched = posMatched && v.some(m => m.trim().toLowerCase().includes(s.value))
-    }
-  }
-
-  return posMatched && negMatched
-}
-
 function filterMaps(ratedMaps, currentSearch) {
   return ratedMaps.filter(m => !currentSearch || filter(currentSearch, m.search))
 }
@@ -148,265 +115,6 @@ function useTransitionState(key, def, startTransition) {
   }, [key, val])
 
   return [val, e => startTransition(() => setVal(e.target.value === '' ? def : e.target.value))]
-}
-
-const RatingBadge = ({ rating, tooltip }) => {
-  let badgeClass = 'bg-danger'
-
-  if (rating == null) {
-    badgeClass = 'bg-secondary'
-    rating = '?'
-  } else {
-    if (rating >= 7) {
-      badgeClass = 'bg-success'
-    } else if (rating >= 5) {
-      badgeClass = 'bg-info'
-    } else if (rating >= 3) {
-      badgeClass = 'bg-warning'
-    }
-  }
-
-  badgeClass = `badge text-dark ${badgeClass}`
-  const badge = <span className={badgeClass}>{rating}</span>
-
-  if (tooltip) {
-    return (
-      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-        <span className="tooltip-tag-text">{tooltip}</span>
-        {badge}
-      </span>
-    )
-  }
-
-  return badge
-}
-
-const Tags = ({ tags, currentSearch, addToInput }) => {
-  return tags.map(t => {
-    const val = t.name
-    const info = t.info
-
-    const searched = currentSearch.find(c => c.value === val)
-    let color = 'btn-secondary'
-    if (searched) {
-      color = searched.neg ? 'btn-danger' : 'btn-success'
-    }
-
-    const buttons = []
-    buttons.push(
-      <button
-        className={'btn text-dark ' + color}
-        onClick={() => addToInput(val, searched ? !searched.neg : false, false)}
-      >
-        {val} {info && <b>*</b>}
-      </button>
-    )
-
-    if (searched) {
-      buttons.push(
-        <button className={'btn text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
-          <b>X</b>
-        </button>
-      )
-    }
-
-    return info ? (
-      <span className="tooltip-tag tooltip-tag-right">
-        <span className="tooltip-tag-text tooltip-tag-fill">{info}</span>
-        <div className="btn-group btn-group-sm m-1">{buttons}</div>
-      </span>
-    ) : (
-      <div class="btn-group btn-group-sm m-1">{buttons}</div>
-    )
-  })
-}
-
-const MapName = ({ map, currentSearch, addToInput }) => {
-  const mapImage =
-    process.env.PUBLIC_URL +
-    '/layout/' +
-    map.name
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9 ]/g, '')
-      .replaceAll(' ', '_') +
-    '.png'
-
-  const tier = map.tiers[0]
-  let tierColor = 'text-light'
-  if (tier >= 11) {
-    tierColor = 'text-danger'
-  } else if (tier >= 6) {
-    tierColor = 'text-warning'
-  }
-
-  const name = (
-    <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>
-      {map.name}
-    </a>
-  )
-  const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-
-  return map.image ? (
-    <>
-      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-        <span className="tooltip-tag-text tooltip-tag-fill">
-          <img src={mapImage} alt="" loading="lazy" />
-        </span>
-        {name}
-      </span>
-      <br />
-      <small>{map.tiers.join(', ')}</small>
-      <br />
-      {tags}
-    </>
-  ) : (
-    <>
-      {name}
-      <br />
-      <small>{map.tiers.join(', ')}</small>
-      <br />
-      {tags}
-    </>
-  )
-}
-
-const MapBoss = ({ boss, rating }) => {
-  const badge = <RatingBadge rating={rating} />
-
-  if (boss.names || boss.notes) {
-    return (
-      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-        <span className="tooltip-tag-text">
-          {boss.names &&
-            boss.names.map(b => (
-              <b>
-                {b}
-                <br />
-              </b>
-            ))}
-          {boss.notes}
-        </span>
-        {badge}
-      </span>
-    )
-  }
-
-  return badge
-}
-
-const ConnectedMaps = ({ connected, ratedMaps }) => {
-  return (connected || []).map(m => (
-    <>
-      <a className="badge text-dark bg-secondary me-1" href={'#' + m}>
-        <b>
-          {Math.round(
-            (ratedMaps.find(rm => rm.name.toLowerCase().trim() === m.toLowerCase().trim()) || {}).score || 0
-          ) + ' '}
-        </b>
-        {m}
-      </a>
-      <br />
-    </>
-  ))
-}
-
-const MapCard = ({ card, cardWeightBaseline }) => {
-  let badgeClass = 'bg-secondary text-dark'
-
-  if (card.score >= 8) {
-    badgeClass = 'bg-light text-dark'
-  } else if (card.score >= 5) {
-    badgeClass = 'bg-primary text-light'
-  } else if (card.score >= 2) {
-    badgeClass = 'bg-info text-dark'
-  } else if (card.score >= 0.5) {
-    badgeClass = 'bg-dark text-info border border-1 border-info'
-  }
-
-  let img = alch
-
-  if (card.price >= 100) {
-    img = divine
-  } else if (card.price >= 50) {
-    img = exalt
-  } else if (card.price >= 5) {
-    img = chaos
-  }
-
-  let perMap = 1
-  let everyMap = 1 / (card.weight / cardWeightBaseline)
-
-  if (everyMap < 1) {
-    perMap = Math.floor(1 / everyMap)
-    everyMap = 1
-  } else {
-    everyMap = Math.ceil(everyMap)
-  }
-
-  let perMapSuf = everyMap > 1 ? 'maps' : 'map'
-
-  badgeClass = `badge m-1 ${badgeClass}`
-  return (
-    <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
-      <span className="tooltip-tag-text">
-        <b>Reward</b>: {card.reward}
-        <br />
-        <b>Stack size</b>: {card.stack}
-        <br />
-        <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        {card.value > 0 ? (
-          <>
-            <br />
-            <b>* Weight</b>: {card.weight}
-            <br />
-            <b>/ Baseline</b>: {cardWeightBaseline}
-            {card.boss && (
-              <>
-                <br />
-                <b>/ Boss drop</b>: {cardBossMulti}
-              </>
-            )}
-            <br />
-            <b>= Value</b>: {Math.round(card.value * 1000) / 1000} <img src={chaos} alt="c" width="16" height="16" />
-            <br />
-            <b>= {perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
-          </>
-        ) : (
-          <>
-            <br />
-            <b>Weight</b>: {card.weight}
-          </>
-        )}
-      </span>
-      <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-        <img src={img} alt="" width="16" height="16" /> {card.name}
-      </a>
-    </span>
-  )
-}
-
-const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
-  const avg = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
-
-  return (
-    <div className="row g-0">
-      <div className="col-md-1 d-md-flex justify-content-end">
-        <span className="p-2 d-md-flex">
-          {avg}
-          <img src={chaos} alt="c" width="16" height="16" className="m-1" />
-        </span>
-      </div>
-      <div className="col-md-11">
-        {cards
-          .sort((a, b) => b.price - a.price)
-          .sort((a, b) => b.score - a.score)
-          .filter(c => !hideLowValueCards || c.value > 0)
-          .map(c => (
-            <MapCard card={c} cardWeightBaseline={cardWeightBaseline} />
-          ))}
-      </div>
-    </div>
-  )
 }
 
 function App() {
@@ -440,7 +148,7 @@ function App() {
     [ratedCards, layoutInput, densityInput, bossInput, cardInput]
   )
 
-  const currentSearch = parseSearch(searchInput)
+  const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
   const setSearch = v => {
     searchRef.current.value = v
@@ -471,6 +179,14 @@ function App() {
   return (
     <>
       <Loader loading={isPending} />
+      <div
+        className="d-none d-md-block"
+        style={{
+          height: '50vh'
+        }}
+      >
+        <Atlas maps={preparedMaps} currentSearch={currentSearch} />
+      </div>
       <div className="container-fluid p-4">
         <div className="row g-2">
           <div className="col col-lg-4 col-12">
@@ -711,11 +427,11 @@ function App() {
                 <div className="d-block d-md-none">
                   <b>Total</b>: {Math.round(m.score || 0)}
                   <br />
-                  <b>Layout</b>: <RatingBadge rating={m.rating.layout} />
+                  <b>Layout</b>: <Rating rating={m.rating.layout} />
                   <br />
-                  <b>Density</b>: <RatingBadge rating={m.rating.density} />
+                  <b>Density</b>: <Rating rating={m.rating.density} />
                   <br />
-                  <b>Boss</b>: <RatingBadge rating={m.rating.boss} />
+                  <b>Boss</b>: <Rating rating={m.rating.boss} />
                   <br />
                 </div>
               </td>
@@ -723,10 +439,10 @@ function App() {
                 <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge rating={m.rating.layout} />
+                <Rating rating={m.rating.layout} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <RatingBadge
+                <Rating
                   rating={m.rating.density}
                   tooltip={m.rating.density_unreliable && 'Missing exact mob count, density rating might be unreliable'}
                 />
@@ -735,7 +451,7 @@ function App() {
                 <MapBoss boss={m.boss} rating={m.rating.boss} />
               </td>
               <td>
-                <ConnectedMaps connected={m.connected} ratedMaps={ratedMaps} />
+                <MapConnected connected={m.connected} ratedMaps={ratedMaps} />
               </td>
               <td>
                 <MapCards

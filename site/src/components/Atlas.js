@@ -1,6 +1,6 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { filter } from '../common'
-import ReactFlow, { Controls, useReactFlow } from 'reactflow'
+import ReactFlow, { Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 
@@ -47,13 +47,17 @@ function onNodeClick(e, node) {
 }
 
 function fitView(flow, matchingNodes) {
+  if (!flow) {
+    return
+  }
+
   flow.fitView({
     nodes: matchingNodes.map(n => ({ id: n }))
   })
 }
 
 const Atlas = ({ maps, currentSearch }) => {
-  const flow = useReactFlow()
+  const flowRef = useRef()
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 
   const matchingNodes = useMemo(
@@ -70,11 +74,19 @@ const Atlas = ({ maps, currentSearch }) => {
   )
 
   useEffect(() => {
-    fitView(flow, matchingNodes)
-  }, [matchingNodes, flow])
+    fitView(flowRef.current, matchingNodes)
+  }, [matchingNodes])
 
   return (
-    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick} onInit={(flow) => fitView(flow, matchingNodes)}>
+    <ReactFlow
+      nodes={data.nodes}
+      edges={data.edges}
+      onNodeClick={onNodeClick}
+      onInit={flow => {
+        flowRef.current = flow
+        fitView(flowRef.current, matchingNodes)
+      }}
+    >
       <Controls position="bottom-right" />
     </ReactFlow>
   )

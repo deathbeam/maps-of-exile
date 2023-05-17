@@ -22,7 +22,6 @@ import MapBoss from './components/MapBoss'
 import MapConnected from './components/MapConnected'
 import MapName from './components/MapName'
 import Tags from './components/Tags'
-import { ReactFlowProvider } from 'reactflow'
 
 function rateCards(cards, cardWeightBaseline, cardMinPrice) {
   return calculateScore(
@@ -186,9 +185,7 @@ function App() {
           height: '50vh'
         }}
       >
-        <ReactFlowProvider>
-          <Atlas maps={preparedMaps} currentSearch={currentSearch} />
-        </ReactFlowProvider>
+        <Atlas maps={preparedMaps} currentSearch={currentSearch} />
       </div>
       <div className="container-fluid p-4">
         <div className="row g-2">

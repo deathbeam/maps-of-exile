@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useState, useMemo, useTransition, useRef, useCallback } from 'react'
+import { useState, useMemo, useTransition, useRef } from 'react'
 import SelectSearch from 'react-select-search'
 import chaos from './img/chaos.png'
 import {
@@ -130,31 +130,28 @@ function App() {
 
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
-  const addToInput = useCallback(
-    () => (v, neg, remove) => {
-      let s = parseSearch(searchRef.current.value || '')
+  const addToInput = (v, neg, remove) => {
+    let s = parseSearch(searchRef.current.value || '')
 
-      if (remove) {
-        s = s.filter(sv => sv.value !== v)
+    if (remove) {
+      s = s.filter(sv => sv.value !== v)
+    } else {
+      const sv = s.find(sv => sv.value === v)
+      if (sv) {
+        sv.neg = neg
       } else {
-        const sv = s.find(sv => sv.value === v)
-        if (sv) {
-          sv.neg = neg
-        } else {
-          s.push({ value: v, neg: neg })
-        }
+        s.push({ value: v, neg: neg })
       }
+    }
 
-      const toSearch = buildSearch(s)
-      searchRef.current.value = toSearch
-      setSearchInput({
-        target: {
-          value: toSearch
-        }
-      })
-    },
-    [setSearchInput]
-  )
+    const toSearch = buildSearch(s)
+    searchRef.current.value = toSearch
+    setSearchInput({
+      target: {
+        value: toSearch
+      }
+    })
+  }
 
   return (
     <>

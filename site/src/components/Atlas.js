@@ -31,7 +31,7 @@ function toNode(map, matchingNodes) {
 }
 
 function toLinks(map) {
-  return (map.connected || []).map(c => ({
+  return map.connected.map(c => ({
     id: map.name + '-' + c,
     source: map.name,
     target: c,

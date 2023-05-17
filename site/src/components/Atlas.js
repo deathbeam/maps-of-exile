@@ -42,6 +42,10 @@ function toLinks(map) {
   }))
 }
 
+function onNodeClick(e, node) {
+  window.location.hash = node.id
+}
+
 const Atlas = ({ maps, currentSearch }) => {
   const flow = useReactFlow()
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
@@ -66,7 +70,7 @@ const Atlas = ({ maps, currentSearch }) => {
   }, [matchingNodes, flow])
 
   return (
-    <ReactFlow nodes={data.nodes} edges={data.edges}>
+    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick}>
       <Controls position="bottom-right" />
     </ReactFlow>
   )

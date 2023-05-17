@@ -35,8 +35,7 @@ function toLinks(map) {
   return map.connected.map(c => ({
     id: map.name + '-' + c,
     source: map.name,
-    target: c,
-    interactionWidth: 0
+    target: c
   }))
 }
 
@@ -85,6 +84,11 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
       <ReactFlow
         zoomOnScroll={atlasFull}
         preventScrolling={atlasFull}
+        nodesConnectable={false}
+        nodesDraggable={false}
+        nodesFocusable={false}
+        edgesFocusable={false}
+        elementsSelectable={false}
         nodes={data.nodes}
         edges={data.edges}
         onNodeClick={onNodeClick}

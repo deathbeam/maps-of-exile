@@ -4,6 +4,7 @@ import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import useKeyPress from '../hooks/useKeyPress'
 
 function toNode(map, matchingNodes) {
   const tier = map.tiers[0]
@@ -69,6 +70,12 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
     }),
     [connectedMaps, matchingNodes]
   )
+
+  useKeyPress(['Escape'], () => {
+    if (atlasFull) {
+      setAtlasFull(false)
+    }
+  })
 
   useEffect(() => {
     setTimeout(() => fitView(flowRef.current, matchingNodes), 150)

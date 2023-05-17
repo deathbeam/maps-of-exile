@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useState, useMemo, useTransition, useRef, useEffect, useCallback } from 'react'
+import { useState, useMemo, useTransition, useRef, useCallback } from 'react'
 import SelectSearch from 'react-select-search'
 import chaos from './img/chaos.png'
 import {
@@ -22,6 +22,7 @@ import MapBoss from './components/MapBoss'
 import MapConnected from './components/MapConnected'
 import MapName from './components/MapName'
 import Tags from './components/Tags'
+import useTransitionState from './hooks/useTransitionState'
 
 function rateCards(cards, cardWeightBaseline, cardMinPrice) {
   return calculateScore(
@@ -93,28 +94,6 @@ function buildSearch(s) {
 
 function filterMaps(ratedMaps, currentSearch) {
   return ratedMaps.filter(m => !currentSearch || filter(currentSearch, m.search))
-}
-
-function useTransitionState(key, def, startTransition) {
-  const [val, setVal] = useState(() => {
-    try {
-      const item = localStorage.getItem(key)
-      return item && item !== '' ? JSON.parse(item) : def
-    } catch (e) {
-      console.warn(e)
-      return def
-    }
-  })
-
-  useEffect(() => {
-    try {
-      localStorage.setItem(key, JSON.stringify(val))
-    } catch (e) {
-      console.warn(e)
-    }
-  }, [key, val])
-
-  return [val, e => startTransition(() => setVal(e.target.value === '' ? def : e.target.value))]
 }
 
 function App() {

@@ -53,7 +53,7 @@ function fitView(flow, matchingNodes) {
   })
 }
 
-const Atlas = ({ maps, currentSearch }) => {
+const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
   const flowRef = useRef()
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 
@@ -75,21 +75,33 @@ const Atlas = ({ maps, currentSearch }) => {
   }, [matchingNodes])
 
   return (
-    <ReactFlow
-      nodes={data.nodes}
-      edges={data.edges}
-      onNodeClick={onNodeClick}
-      onInit={flow => {
-        flowRef.current = flow
-        fitView(flowRef.current, matchingNodes)
+    <div
+      className="d-none d-md-block bg-atlas"
+      style={{
+        height: atlasFull ? '100vh' : '50vh'
       }}
     >
-      <Controls position="bottom-right" showInteractive={false}>
-        <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="action">
-          <div>↺</div>
-        </ControlButton>
-      </Controls>
-    </ReactFlow>
+      <ReactFlow
+        zoomOnScroll={false}
+        preventScrolling={false}
+        nodes={data.nodes}
+        edges={data.edges}
+        onNodeClick={onNodeClick}
+        onInit={flow => {
+          flowRef.current = flow
+          fitView(flowRef.current, matchingNodes)
+        }}
+      >
+        <Controls position="bottom-right" showInteractive={false} showFitView={false}>
+          <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="action">
+            <div>&#8634;</div>
+          </ControlButton>
+          <ControlButton onClick={() => setAtlasFull(!atlasFull)} title="action">
+            <div>{atlasFull ? '\u21F1' : '\u21F2'}</div>
+          </ControlButton>
+        </Controls>
+      </ReactFlow>
+    </div>
   )
 }
 

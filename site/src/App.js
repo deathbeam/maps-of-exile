@@ -133,6 +133,7 @@ function App() {
     startTransition
   )
   const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
+  const [atlasFull, setAtlasFull] = useState('atlasFull', false)
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]
@@ -179,14 +180,7 @@ function App() {
   return (
     <>
       <Loader loading={isPending} />
-      <div
-        className="d-none d-md-block bg-atlas"
-        style={{
-          height: '50vh'
-        }}
-      >
-        <Atlas maps={preparedMaps} currentSearch={currentSearch} />
-      </div>
+      <Atlas maps={preparedMaps} currentSearch={currentSearch} atlasFull={atlasFull} setAtlasFull={setAtlasFull} />
       <div className="container-fluid p-4">
         <div className="row g-2">
           <div className="col col-lg-4 col-12">

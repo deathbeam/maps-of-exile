@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react'
 import { filter } from '../common'
-import ReactFlow, { Controls } from 'reactflow'
+import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 
@@ -88,7 +88,11 @@ const Atlas = ({ maps, currentSearch }) => {
         fitView(flowRef.current, matchingNodes)
       }}
     >
-      <Controls position="bottom-right" showInteractive={false} />
+      <Controls position="bottom-right" showInteractive={false}>
+        <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="action">
+          <div>↺</div>
+        </ControlButton>
+      </Controls>
     </ReactFlow>
   )
 }

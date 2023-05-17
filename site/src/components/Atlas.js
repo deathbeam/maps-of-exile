@@ -83,8 +83,8 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
       }}
     >
       <ReactFlow
-        zoomOnScroll={false}
-        preventScrolling={false}
+        zoomOnScroll={atlasFull}
+        preventScrolling={atlasFull}
         nodes={data.nodes}
         edges={data.edges}
         onNodeClick={onNodeClick}

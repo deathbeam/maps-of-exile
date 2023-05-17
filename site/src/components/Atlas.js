@@ -46,6 +46,12 @@ function onNodeClick(e, node) {
   window.location.hash = node.id
 }
 
+function fitView(flow, matchingNodes) {
+  flow.fitView({
+    nodes: matchingNodes.map(n => ({ id: n }))
+  })
+}
+
 const Atlas = ({ maps, currentSearch }) => {
   const flow = useReactFlow()
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
@@ -64,13 +70,11 @@ const Atlas = ({ maps, currentSearch }) => {
   )
 
   useEffect(() => {
-    flow.fitView({
-      nodes: matchingNodes.map(n => ({ id: n }))
-    })
+    fitView(flow, matchingNodes)
   }, [matchingNodes, flow])
 
   return (
-    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick} onInit={(flow) => flow.fitView()}>
+    <ReactFlow nodes={data.nodes} edges={data.edges} onNodeClick={onNodeClick} onInit={(flow) => fitView(flow, matchingNodes)}>
       <Controls position="bottom-right" />
     </ReactFlow>
   )

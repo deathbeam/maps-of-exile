@@ -47,3 +47,36 @@ export function filter(search, v) {
 
   return posMatched && negMatched
 }
+
+export function ratingColor(rating, scale = 1) {
+  let color = 'danger'
+
+  if (rating == null) {
+    color = 'secondary'
+  } else {
+    if (rating >= 7 * scale) {
+      color = 'success'
+    } else if (rating >= 5 * scale) {
+      color = 'info'
+    } else if (rating >= 3 * scale) {
+      color = 'warning'
+    }
+  }
+
+  return color
+}
+
+export function tierColor(map) {
+  const tier = map.tiers[0]
+  let color = 'light'
+
+  if (map.unique) {
+    color = 'unique'
+  } else if (tier >= 11) {
+    color = 'danger'
+  } else if (tier >= 6) {
+    color = 'warning'
+  }
+
+  return color
+}

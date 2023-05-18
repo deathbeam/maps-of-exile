@@ -1,4 +1,5 @@
 import Tags from './Tags'
+import { tierColor } from '../common'
 
 const MapName = ({ map, currentSearch, addToInput }) => {
   const mapImage =
@@ -10,18 +11,10 @@ const MapName = ({ map, currentSearch, addToInput }) => {
       .replaceAll(' ', '_') +
     '.png'
 
-  const tier = map.tiers[0]
-  let tierColor = 'text-light'
-  if (map.unique) {
-    tierColor = 'text-unique'
-  } else if (tier >= 11) {
-    tierColor = 'text-danger'
-  } else if (tier >= 6) {
-    tierColor = 'text-warning'
-  }
+  const color = `text-${tierColor(map)}`
 
   const name = (
-    <a href={map.wiki} target="_blank" rel="noreferrer" className={tierColor}>
+    <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
       {map.name}
     </a>
   )

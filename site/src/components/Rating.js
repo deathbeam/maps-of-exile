@@ -1,20 +1,12 @@
-const Rating = ({ rating, tooltip }) => {
-  let badgeClass = 'bg-danger'
+import { ratingColor } from '../common'
+
+const Rating = ({ rating, tooltip, scale = 1 }) => {
+  const badgeClass = `badge text-dark bg-${ratingColor(rating, scale)}`
 
   if (rating == null) {
-    badgeClass = 'bg-secondary'
     rating = '?'
-  } else {
-    if (rating >= 7) {
-      badgeClass = 'bg-success'
-    } else if (rating >= 5) {
-      badgeClass = 'bg-info'
-    } else if (rating >= 3) {
-      badgeClass = 'bg-warning'
-    }
   }
 
-  badgeClass = `badge text-dark ${badgeClass}`
   const badge = <span className={badgeClass}>{rating}</span>
 
   if (tooltip) {

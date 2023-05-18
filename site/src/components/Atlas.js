@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { deduplicate, filter } from '../common'
+import { deduplicate, filter, ratingColor, tierColor } from '../common'
 import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
@@ -7,33 +7,13 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import useKeyPress from '../hooks/useKeyPress'
 
 function toNode(map, matchingNodes, scoreHeatmap) {
-  const tier = map.tiers[0]
-  const score = map.score
-  let mapColor = 'text-light'
+  let mapColor = 'text-secondary'
 
-  if (!matchingNodes.includes(map.name)) {
-    mapColor = 'text-secondary'
-  } else {
+  if (matchingNodes.includes(map.name)) {
     if (scoreHeatmap) {
-      if (score >= 70) {
-        mapColor = 'text-success'
-      } else if (score >= 50) {
-        mapColor = 'text-info'
-      } else if (score >= 30) {
-        mapColor = 'text-warning'
-      } else if (score > 0) {
-        mapColor = 'text-danger'
-      } else {
-        mapColor = 'text-secondary'
-      }
+      mapColor = `text-${ratingColor(map.score, 10)}`
     } else {
-      if (map.unique) {
-        mapColor = 'text-unique'
-      } else if (tier >= 11) {
-        mapColor = 'text-danger'
-      } else if (tier >= 6) {
-        mapColor = 'text-warning'
-      }
+      mapColor = `text-${tierColor(map)}`
     }
   }
 
@@ -44,7 +24,7 @@ function toNode(map, matchingNodes, scoreHeatmap) {
       y: map.y * 2
     },
     data: {
-      label: map.name
+      label: (scoreHeatmap ? map.score + ' ' : '') + map.name
     },
     className: `badge bg-dark border-1 ${mapColor}`
   }

@@ -279,6 +279,10 @@ body.is-light-mode .select-search-container {
   color: black;
 }
 
+.react-flow__node-default {
+  border-color: black !important;
+}
+
 path.react-flow__edge-path {
   stroke: black;
 }

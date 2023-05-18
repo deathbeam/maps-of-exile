@@ -391,10 +391,10 @@ function App() {
             <tr key={m.name} id={m.name}>
               <td className="text-center">
                 <div className=" d-none d-md-table-cell">
-                  <b>{m.score}</b>
+                  <Rating rating={m.score} scale={10} />
                 </div>
                 <div className="d-block d-md-none">
-                  <b>Total</b>: {m.score}
+                  <b>Total</b>: <Rating rating={m.score} scale={10} />
                   <br />
                   <b>Layout</b>: <Rating rating={m.rating.layout} />
                   <br />

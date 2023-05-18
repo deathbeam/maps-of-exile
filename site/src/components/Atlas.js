@@ -26,7 +26,7 @@ function toNode(map, matchingNodes, scoreHeatmap) {
     data: {
       label: (scoreHeatmap ? map.score + ' ' : '') + map.name
     },
-    className: `badge bg-dark border-1 ${mapColor}`
+    className: `btn btn-dark border-1 ${mapColor}`
   }
 }
 

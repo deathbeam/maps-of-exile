@@ -6,6 +6,10 @@ button {
   border: none;
 }
 
+hr {
+  margin: 4px;
+}
+
 .btn {
   --bs-badge-padding-x: 0.65em;
   --bs-badge-padding-y: 0.35em;
@@ -90,7 +94,8 @@ a:hover {
 }
 
 .tooltip-tag-compact .tooltip-tag-text {
-  min-width: 200px;
+  white-space: nowrap;
+  min-width: 0;
   text-align: left;
 }
 

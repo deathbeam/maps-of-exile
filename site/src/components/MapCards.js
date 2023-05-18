@@ -4,7 +4,7 @@ import exalt from '../img/exalt.png'
 import chaos from '../img/chaos.png'
 import { cardBossMulti } from '../data'
 
-const MapCard = ({ card, cardWeightBaseline }) => {
+const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
   let badgeClass = 'bg-secondary text-dark'
 
   if (card.score >= 8) {
@@ -29,15 +29,18 @@ const MapCard = ({ card, cardWeightBaseline }) => {
 
   let perMap = 1
   let everyMap = 1 / (card.weight / cardWeightBaseline)
-
   if (everyMap < 1) {
     perMap = Math.floor(1 / everyMap)
     everyMap = 1
   } else {
     everyMap = Math.ceil(everyMap)
   }
-
   let perMapSuf = everyMap > 1 ? 'maps' : 'map'
+
+  let missionRate = card.weight / totalWeight
+  let everyMission = Math.ceil(1 / missionRate)
+  let perMissionSuf = everyMission > 1 ? 'missions' : 'mission'
+  let missionValue = card.price * card.stack * missionRate
 
   badgeClass = `badge m-1 ${badgeClass}`
   return (
@@ -48,27 +51,22 @@ const MapCard = ({ card, cardWeightBaseline }) => {
         <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
-        {card.value > 0 ? (
+        <br />
+        <b>Weight</b>: {card.weight}
+        {card.value > 0 && (
           <>
-            <br />
-            <b>* Weight</b>: {card.weight}
-            <br />
-            <b>/ Baseline</b>: {cardWeightBaseline}
-            {card.boss && (
-              <>
-                <br />
-                <b>/ Boss drop</b>: {cardBossMulti}
-              </>
-            )}
-            <br />
-            <b>= Value</b>: {Math.round(card.value * 1000) / 1000} <img src={chaos} alt="c" width="16" height="16" />
-            <br />
-            <b>= {perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
-          </>
-        ) : (
-          <>
-            <br />
-            <b>Weight</b>: {card.weight}
+            <hr />
+            <b>Weight</b> / <b>Baseline</b>
+            <br />= <b>{card.weight}</b> / <b>{cardWeightBaseline}</b>
+            <br />= <b>{perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
+            <br />= <b>{Math.round(card.value * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
+            map
+            <hr />
+            <b>Weight</b> / <b>Map Weight</b>
+            <br />= <b>{card.weight}</b> / <b>{totalWeight}</b>
+            <br />= <b>1</b> every <b>{everyMission}</b> {perMissionSuf}
+            <br />= <b>{Math.round(missionValue * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" />{' '}
+            per mission
           </>
         )}
       </span>
@@ -81,6 +79,7 @@ const MapCard = ({ card, cardWeightBaseline }) => {
 
 const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
   const avg = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
+  const totalWeight = cards.reduce((a, b) => a + b.weight, 0)
 
   return (
     <div className="row g-0">
@@ -96,7 +95,7 @@ const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
           .sort((a, b) => b.score - a.score)
           .filter(c => !hideLowValueCards || c.value > 0)
           .map(c => (
-            <MapCard card={c} cardWeightBaseline={cardWeightBaseline} />
+            <MapCard card={c} cardWeightBaseline={cardWeightBaseline} totalWeight={totalWeight} />
           ))}
       </div>
     </div>

@@ -56,8 +56,7 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
         {card.value > 0 && (
           <>
             <hr />
-            <b>Weight</b> / <b>Baseline</b>
-            <br />= <b>{card.weight}</b> / <b>{cardWeightBaseline}</b>
+            <b>{card.weight}</b> (weight) / <b>{cardWeightBaseline}</b> (baseline)
             {card.boss && (
               <>
                 <br />/ <b>{cardBossMulti}</b> (boss drop)
@@ -67,9 +66,9 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
             <br />= <b>{Math.round(card.value * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
             map
             <hr />
-            <b>Weight</b> / <b>Map Weight</b>
-            <br />= <b>{card.weight}</b> / <b>{totalWeight}</b>
+            <b>{card.weight}</b> (weight) / <b>{totalWeight}</b> (total weight)
             <br />= <b>1</b> every <b>{everyMission}</b> {perMissionSuf}
+            <br />* <b>{card.stack}</b> (stack size)
             <br />= <b>{Math.round(missionValue * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" />{' '}
             per mission
           </>

@@ -43,7 +43,6 @@ const MapName = ({ map, currentSearch, addToInput }) => {
     <div className="d-md-flex flex-row">
       <div className="text-center pe-2 pb-2">
         {icon}
-        <br />
         {score}
       </div>
       <div>

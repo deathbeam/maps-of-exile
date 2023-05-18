@@ -207,26 +207,12 @@ function App() {
                   onChange={setCardInput}
                 />
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12 d-none">
+              <div className="col col-lg-3 col-sm-6 col-12">
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     The baseline card drop you are expecting to see every map on average. This is used for calculating
-                    baseline drop rate for cards in maps. Map baseline weight is calculated by summing all map card
-                    weights but filtering out card weights that are >= than configured <b>{cardWeightBaseline}</b>{' '}
-                    weight. Then it adds itself to resulting value.
-                    <hr />
-                    <b>Example:</b>
-                    <br />
-                    <b>10</b> cards with weight increasing by <b>1000</b> for every card with baseline weight{' '}
-                    <b>5500</b>
-                    <br />
-                    <b>Map weight:</b>
-                    <br />
-                    1000 + 2000 + 3000 + 4000 + 5000 + 6000 + 7000 + 8000 + 9000 + 10000 = <b>55000</b>
-                    <br />
-                    <b>Map baseline weight:</b>
-                    <br />
-                    1000 + 2000 + 3000 + 4000 + 5000 + 5500 = <b>25500</b>
+                    baseline drop rate for cards in maps. Map baseline weight is calculated by averaging all map card
+                    weights and adding this configured value to it.
                   </span>
                   <label className="form-label">Average card drop per map</label>
                 </span>

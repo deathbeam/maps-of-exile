@@ -50,8 +50,8 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   }
 
   const cards = [
-    calculateCardData(card, mapWeight, 'map weight')
-    // calculateCardData(card, baselineWeight, 'baseline weight')
+    calculateCardData(card, mapWeight, 'map weight'),
+    calculateCardData(card, baselineWeight, 'baseline weight')
   ]
 
   badgeClass = `badge m-1 ${badgeClass}`
@@ -87,8 +87,7 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
 
 const MapCards = ({ cards, hideLowValueCards, cardWeightBaseline }) => {
   const mapWeight = cards.reduce((a, b) => a + b.weight, 0)
-  const baselineWeight =
-    cards.reduce((a, b) => a + (b.weight >= cardWeightBaseline ? 0 : b.weight), 0) + cardWeightBaseline
+  const baselineWeight = Math.ceil(mapWeight / cards.length + cardWeightBaseline)
 
   return (
     <>

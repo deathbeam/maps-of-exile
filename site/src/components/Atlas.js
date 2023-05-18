@@ -7,14 +7,17 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import useKeyPress from '../hooks/useKeyPress'
 
 function toNode(map, matchingNodes, scoreHeatmap) {
-  let mapColor = 'text-secondary'
+  let mapColor
+  if (scoreHeatmap) {
+    mapColor = `text-${ratingColor(map.score, 10)}`
+  } else {
+    mapColor = `text-${tierColor(map)}`
+  }
 
-  if (matchingNodes.includes(map.name)) {
-    if (scoreHeatmap) {
-      mapColor = `text-${ratingColor(map.score, 10)}`
-    } else {
-      mapColor = `text-${tierColor(map)}`
-    }
+  let opacity = 1
+
+  if (!matchingNodes.includes(map.name)) {
+    opacity = 0.4
   }
 
   return {
@@ -26,7 +29,10 @@ function toNode(map, matchingNodes, scoreHeatmap) {
     data: {
       label: (scoreHeatmap ? map.score + ' ' : '') + map.name
     },
-    className: `btn btn-dark border-1 ${mapColor}`
+    className: `btn btn-dark border-1 ${mapColor}`,
+    style: {
+      opacity
+    }
   }
 }
 

@@ -58,6 +58,11 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
             <hr />
             <b>Weight</b> / <b>Baseline</b>
             <br />= <b>{card.weight}</b> / <b>{cardWeightBaseline}</b>
+            {card.boss && (
+              <>
+                <br />/ <b>{cardBossMulti}</b> (boss drop)
+              </>
+            )}
             <br />= <b>{perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
             <br />= <b>{Math.round(card.value * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
             map

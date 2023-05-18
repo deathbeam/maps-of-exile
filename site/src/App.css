@@ -279,6 +279,10 @@ body.is-light-mode .select-search-container {
   color: black;
 }
 
+.react-flow__controls {
+  opacity: 0.5;
+}
+
 .react-flow__node-default {
   border-color: black !important;
 }

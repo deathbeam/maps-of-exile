@@ -258,21 +258,12 @@ function App() {
       <table className="table table-striped mb-0">
         <thead>
           <tr>
-            <th scope="col" className="d-md-none">
-              <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-                <span className="tooltip-tag-text">
-                  Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and <b>Card</b> score, accounting for weights at
-                  top.
-                </span>
-                Score
-              </span>
-            </th>
             <th scope="col">
               <div className="d-md-flex justify-content-between align-items-end">
                 <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Map name, colored based on natural tier with map tiers for each Voidstone next to it.
-                    <br />
+                    <hr />
                     <span className="badge bg-light text-dark me-1">tier 1-5</span>
                     <span className="badge bg-warning text-dark me-1">tier 6-10</span>
                     <span className="badge bg-danger text-dark me-1">tier 11-16</span>
@@ -295,7 +286,7 @@ function App() {
                   <br />
                   This data is opinionated, if you disagree with any rating please open issue on GitHub with
                   explanation.
-                  <br />
+                  <hr />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
                   <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
@@ -313,7 +304,7 @@ function App() {
                   <br />
                   This data is based on actual mob counts in maps counted using rampage. Some newer maps and unique maps
                   might be missing data as they still need to be collected.
-                  <br />
+                  <hr />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">bad</span>
                   <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
@@ -330,7 +321,7 @@ function App() {
                   <br />
                   This data is opinionated, if you disagree with any rating please open issue on GitHub with
                   explanation.
-                  <br />
+                  <hr />
                   <span className="badge bg-secondary text-dark me-1">unknown</span>
                   <span className="badge bg-danger text-dark me-1">hard/annoying</span>
                   <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
@@ -352,7 +343,7 @@ function App() {
                   <span className="tooltip-tag-text">
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
                     <b>{cardMinPriceInput}c</b> are filtered out from rating.
-                    <br />
+                    <hr />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>
                     <span className="badge bg-info text-dark me-1">>=2 good</span>
@@ -377,17 +368,14 @@ function App() {
         <tbody>
           {filterMaps(ratedMaps, currentSearch).map(m => (
             <tr key={m.name} id={m.name}>
-              <td className="text-center d-md-none">
-                <b>Total</b>: <Rating rating={m.score} scale={10} />
-                <br />
-                <b>Layout</b>: <Rating rating={m.rating.layout} />
-                <br />
-                <b>Density</b>: <Rating rating={m.rating.density} />
-                <br />
-                <b>Boss</b>: <Rating rating={m.rating.boss} />
-              </td>
               <td>
                 <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
+                <div className="d-md-none mt-2">
+                  <Rating rating={m.score} scale={10} label="Total" />
+                  <Rating rating={m.rating.layout} label="Layout" />
+                  <Rating rating={m.rating.density} label="Density" />
+                  <Rating rating={m.rating.boss} label="Boss" />
+                </div>
               </td>
               <td className="text-center d-none d-md-table-cell">
                 <Rating rating={m.rating.layout} />

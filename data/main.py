@@ -381,6 +381,9 @@ def get_map_data(map_data, extra_map_data, config):
 				map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
 			elif name == "the pantheon":
 				map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
+			elif name == "tags":
+				if "cannot_be_twinned" in value.text.strip():
+					map_data["boss"]["not_twinnable"] = True
 
 	# Wiki card data
 	map_data["wiki"] = config["wiki"]["base"].replace("{}", map_data["name"].replace(" ", "_"))

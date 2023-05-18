@@ -744,6 +744,7 @@
                 "Lord of the Grey"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Act V Kitava except with lower maximum life",
             "phases": true,
             "rushable": true,
@@ -1184,6 +1185,7 @@
                 "Erebix, Light's Bane"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Deals strong Physical melee attacks. Avoid telegraphed slam and dark patches of ground that deal DoT. Boss will channel for several seconds summoning short lived Physical projectiles from all directions.  As boss loses life player gains stack of Despair debuff (unremovable) which slows you, reduces your light radius and increases damage taken. Therefore the boss becomes much more deadly as the fight progresses, pays to try to save burst damage/flasks for towards the end of the fight.",
             "phases": false,
             "rushable": true,
@@ -1657,6 +1659,7 @@
                 "Captain Tanner Lightfoot"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack.",
             "phases": false,
             "rushable": false,
@@ -2341,6 +2344,7 @@
                 "Woad, Mockery of Man"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Boss has strong Physical Cleave and telegraphed projectile. Also fires three weak Physical projectiles. Summons slow moving statues that deal massive Physical damage. Summons several beams, either in a line from the back of the room, or in a circle from the centre of the room. These beams inflict a massive Physical DoT that lasts two seconds.",
             "phases": false,
             "rushable": false,
@@ -2408,6 +2412,7 @@
                 "Terror of the Infinite Drifts"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Tail Strike inflicts debuff causing you to create Caustic Clouds at your location, move around to remove the debuff. Burrows towards your location. Charged Tail Slam that can easily one shot. In Phase 2 boss gains new abilities. Quicksand in arena will slow your movement speed. Boss will become invulnerable and Sunder towards you from the centre of the arena while summoning poisonous scorpions. At low life boss will start diving around dealing significant Physical damage. Keep mobile when this is happening.",
             "phases": true,
             "rushable": false,
@@ -2476,6 +2481,7 @@
                 "Stalker of the Endless Dunes"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these.",
             "phases": true,
             "rushable": false,
@@ -2907,6 +2913,7 @@
                 "Drek, Apex Hunter"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Familiar Act 7 fight. Melee acolytes will constantly spawn and wall archers will fire maiming Blast Rain throughout duration of fight. After a while two doggos will appear, then Gruest. Gruest fires a spear which deals Physical damage and inflicts a Strong bleed. Periodically Gruest will gain an enrage buff which increases his damage and allows him to use a very quick barrage of spears that should be evaded.",
             "phases": true,
             "rushable": false,
@@ -3052,6 +3059,7 @@
                 "Takatax Brittlethorn"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "phases": false,
             "rushable": false,
             "soft_phases": false
@@ -3118,6 +3126,7 @@
                 "Guardian of the Phoenix"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Cannot be slowed. Physical attacks. Very strong Cyclone. Will charge up then release a massive Fire explosion (large AoE) that will probably one-shot. Every 10% life lost the player loses 1% maximum Fire resistance. Phoenixes are summoned which fire Fire projectiles, they revive a few seconds after being killed. More phoenixes are spawned as the boss loses health. Small fire tornadoes travel around the room dealing Fire DoT, again the less health the boss has the more tornadoes are spawned.",
             "phases": false,
             "rushable": false,
@@ -3568,6 +3577,7 @@
                 "Gorulis, Will-Thief"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Start off by killing the three nests, then the boss will spawn on the central platform. Ryslatha fires projectiles that deal significant Chaos damage and leave green pools that do DoT. The boss' hits also Poison, so bring a Poison removal flask. This fight can be very difficult for characters with low regeneration/sustain.",
             "phases": true,
             "rushable": false,
@@ -3862,6 +3872,7 @@
                 "Guardian of the Hydra"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Cannot be slowed. Half Physical, half Cold ranged attacks. Powerful telegraphed Barrage. Blast Rain directly in front of boss. Temporarily disappears summoning minions that leave Vortex ground on death. When the boss reappears, she does an extremely powerful Fork shot. Always try to position your character behind the boss (stay in close range to do this easily). Throughout the fight a constant stream of slow Frostbolts projectiles travel across the arena. More projectiles as the boss gets closer to death.",
             "phases": false,
             "rushable": false,
@@ -4332,6 +4343,7 @@
                 "Guardian of the Minotaur"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Cannot be slowed. 30% of Physical damage converted to Lightning. Powerful telegraphed slam. Slam area leaves behind falling rocks. Burrows underground and springs upon target with powerful attack. Minotaur always Burrows in a straight line so step to the side when you see it happen. Every 20% health lost a Lightning Wall activates which when touched, applies a temporary, unremovable Shock that slows the player and deals Lightning DoT. Stone Golems are summoned to regain flask charges.",
             "phases": false,
             "rushable": false,
@@ -4804,6 +4816,7 @@
                 "Visceris"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Maligaro deals telegraphed Physical attacks that Maim and Poison. When damaged Maligaro will summon the spider Akaveesh and his sex slave Mun'eh. Akaveesh's projectiles are particularly deadly, dealing large amounts of Chaos damage and leaving Chaos DoT ground. When almost dead Maligaro will assault the player with several clones which must be tanked through.",
             "phases": true,
             "rushable": false,
@@ -5190,6 +5203,7 @@
                 "Guardian of the Chimera"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Cannot be slowed. Modest physical attacks including Flicker Strike and a Flicker Lance that inflicts Bleeding. When he places a red circle beneath him get out - he will perform a flurry of attacks against targets in the area. Throughout the fight are three minion phases where you face waves of powerful adds ending with a mini-boss. Most dangerous ability is the Chimera Smoke Phase - used after any of the add phases. The Chimera disappears into one of many smoke clouds - to uncover the Chimera you must run through the clouds until you find him. While in the Smoke Phase Chimera will constantly deal hard to avoid melee Physical damage attacks. Save flasks for this phase, it especially helps to pop a Basalt/Granite flask. Sometimes you will be unlucky and the Chimera will be hiding in the last smoke cloud :(",
             "phases": true,
             "rushable": false,
@@ -5565,6 +5579,7 @@
                 "High Lithomancer"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Telegraphed projectile attack. Stay out of Donut Slam which can one shot. Summons Volatile Cores which explode on contact and trigger other Volatile Cores to also explode. At half health goes invulenerable and summons melee adds. During this phase boulders spawn from the four corners and spiral towards the center hole. Stay vigilant to avoid these as they deal massive amounts of quick physical damage.",
             "phases": true,
             "rushable": false,
@@ -6425,6 +6440,7 @@
                 "Tahsin, Warmaker"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain.",
             "phases": true,
             "rushable": false,
@@ -6493,6 +6509,7 @@
                 "Renkarr, The Kiln Keeper"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "phases": true,
             "rushable": false,
             "separated": true,
@@ -6824,6 +6841,7 @@
                 "Varhesh, Shimmering Aberration"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Leap Slam. Charge attack. Powerful telegraphed \"Cone Strike' deals Physical and Cold damage. After 90% life summons Mercury totems that summon piercing projectiles which explode for Cold damage after 3 seconds (only one totem active at a time). Every 5% life lost a small invulnerable white orb is spawned which chills and applies cold DoT on contact. At 2/3 and 1/3 health Yugul disappears summoning several weak clones of Yugul that use basic melee attacks.",
             "phases": true,
             "rushable": false,
@@ -7185,6 +7203,7 @@
                 "Liantra"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus.",
             "phases": true,
             "rushable": false,
@@ -7647,6 +7666,7 @@
                 "K'aj Y'ara'az"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
             "phases": false,
             "rushable": false,
@@ -7820,6 +7840,7 @@
                 "Portentia, the Foul"
             ],
             "not_spawned": false,
+            "not_twinnable": true,
             "notes": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
             "phases": true,
             "rushable": false,

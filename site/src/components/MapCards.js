@@ -86,14 +86,9 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
 }
 
 const MapCards = ({ cards, hideLowValueCards, cardWeightBaseline }) => {
-  const mapWeight = Math.max(
-    cards.reduce((a, b) => a + b.weight, 0),
-    cardWeightBaseline
-  )
-  const baselineWeight = Math.max(
-    cards.reduce((a, b) => a + (b.weight >= cardWeightBaseline ? 0 : b.weight), 0),
-    cardWeightBaseline
-  )
+  const mapWeight = cards.reduce((a, b) => a + b.weight, 0)
+  const baselineWeight =
+    cards.reduce((a, b) => a + (b.weight >= cardWeightBaseline ? 0 : b.weight), 0) + cardWeightBaseline
 
   return (
     <>

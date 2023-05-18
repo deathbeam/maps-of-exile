@@ -23,7 +23,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   const mapName = map.image ? (
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
       <span className="tooltip-tag-text tooltip-tag-fill">
-        <img src={mapImage} alt="" loading="lazy" />
+        <img src={mapImage} onError={e => (e.target.src = '/map.webp')} alt="" loading="lazy" />
       </span>
       {name}
     </span>

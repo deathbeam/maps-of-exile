@@ -4,15 +4,7 @@ import './App.css'
 import { useMemo, useTransition, useRef } from 'react'
 import SelectSearch from 'react-select-search'
 import chaos from './img/chaos.png'
-import {
-  cardBossMulti,
-  defaultCardBaseline,
-  githubRepo,
-  issueTemplate,
-  preparedCards,
-  preparedMaps,
-  preparedTags
-} from './data'
+import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
 import MapCards from './components/MapCards'
@@ -26,12 +18,10 @@ import usePersistedState from './hooks/usePersistedState'
 
 function rateCards(cards, cardMinPrice) {
   return calculateScore(
-    cards
-      .map(card => ({
-        ...card,
-        value: (card.price >= cardMinPrice ? card.weight : 0) * card.price * (card.boss ? 1 / cardBossMulti : 1)
-      }))
-      .sort((a, b) => b.price - a.price),
+    cards.map(card => ({
+      ...card,
+      value: (card.price >= cardMinPrice ? card.weight : 0) * card.price
+    })),
     10
   )
 }
@@ -56,11 +46,24 @@ function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, c
         cardValue += cardData.score || 0
       }
 
+      for (let card of map.boss.cards || []) {
+        const cardData = ratedCards.find(c => c.name === card)
+        if (!cardData) {
+          continue
+        }
+
+        mapCards.push({
+          ...cardData,
+          boss: true
+        })
+        cardValue += (cardData.score || 0) / 5
+      }
+
       cardValue = cardValue * cardInput
 
       return {
         ...map,
-        cards: mapCards,
+        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.score - a.score),
         value: layoutValue + densityValue + bossValue + cardValue
       }
     }),

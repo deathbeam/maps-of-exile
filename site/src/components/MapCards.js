@@ -2,7 +2,6 @@ import alch from '../img/alch.png'
 import divine from '../img/divine.png'
 import exalt from '../img/exalt.png'
 import chaos from '../img/chaos.png'
-import { cardBossMulti } from '../data'
 
 const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
   let badgeClass = 'bg-secondary text-dark'
@@ -27,8 +26,9 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
     img = chaos
   }
 
+  let baseline = card.boss ? totalWeight : cardWeightBaseline
   let perMap = 1
-  let mapRate = card.weight / cardWeightBaseline
+  let mapRate = card.weight / baseline
   let everyMap = 1 / mapRate
   if (everyMap < 1) {
     perMap = Math.floor(1 / everyMap)
@@ -37,7 +37,7 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
     everyMap = Math.ceil(everyMap)
   }
   let perMapSuf = everyMap > 1 ? 'maps' : 'map'
-  let cardValue = (card.price * mapRate) / (card.boss ? cardBossMulti : 1)
+  let cardValue = card.price * mapRate
 
   let missionRate = card.weight / totalWeight
   let everyMission = Math.ceil(1 / missionRate)
@@ -58,12 +58,7 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
         {card.value > 0 && (
           <>
             <hr />
-            <b>{card.weight}</b> (weight) / <b>{cardWeightBaseline}</b> (baseline)
-            {card.boss && (
-              <>
-                <br />/ <b>{cardBossMulti}</b> (boss drop)
-              </>
-            )}
+            <b>{card.weight}</b> (weight) / <b>{baseline}</b> (baseline)
             <br />= <b>{perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
             <br />= <b>{Math.round(cardValue * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
             map

@@ -2,7 +2,6 @@ import cards from './cards.json'
 import maps from './maps.json'
 
 export const defaultCardBaseline = 'The Chains that Bind'
-export const cardBossMulti = 3.5
 export const preparedCards = cards
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`

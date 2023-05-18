@@ -97,8 +97,7 @@ def get_card_data(key, league, config):
 			"price": price_card["chaosValue"],
 			"stack": price_card.get("stackSize", 1),
 			"reward": reward,
-			"ninja": config["ninja"] + price_card["detailsId"],
-			"boss": price_card["name"] in config["boss-only"]
+			"ninja": config["ninja"] + price_card["detailsId"]
 		}
 
 		amount_card = next((x["value"] for x in amounts if x["name"] == price_card["name"]), None)
@@ -315,7 +314,11 @@ def get_maps(key, config):
 
 	for m in out:
 		name = m["name"]
+		m["boss"] = {}
+		m["layout"] = {}
+		m["rating"] = {}
 		m["unique"] = not name.endswith(" Map")
+
 		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
 		if existing_meta:
 			merge(existing_meta, m)
@@ -331,7 +334,7 @@ def get_maps(key, config):
 			else:
 				m["id"] = existing_wiki["area id"]
 			if "cards" in existing_wiki:
-				m["cards"] = existing_wiki["cards"]
+				m["boss"]["cards"] = sorted(list(set(existing_wiki["cards"])))
 		existing_position = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None)
 		if existing_position:
 			m["x"] = existing_position["x"]
@@ -342,9 +345,22 @@ def get_maps(key, config):
 
 def get_map_data(map_data, extra_map_data, config):
 	url = map_data["poedb"]
-	map_data["boss"] = map_data.get("boss", {})
-	map_data["rating"] = map_data.get("rating", {})
 	map_cards = set(map_data.get("cards", []))
+
+	# Wiki card data
+	map_data["wiki"] = config["wiki"]["base"] + map_data["name"].replace(" ", "_")
+	if map_data["id"]:
+		print(f"Getting card data for {map_data['name']} from wiki")
+		wiki_cards = requests.get(config["wiki"]["api"], params={
+			"action": "cargoquery",
+			"format": "json",
+			"limit": "500",
+			"tables": "items",
+			"fields": "items.name",
+			"where": f'items.drop_areas HOLDS "{map_data["id"]}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
+		}).json()["cargoquery"]
+		for card in wiki_cards:
+			map_cards.add(card["title"]["name"])
 
 	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
@@ -383,7 +399,7 @@ def get_map_data(map_data, extra_map_data, config):
 				map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
 			elif name == "atlas linked":
 				map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
-			elif name == "card tags":
+			elif name == "card tags" and len(map_cards) == 0:
 				map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
 			elif name == "the pantheon":
 				map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
@@ -394,21 +410,6 @@ def get_map_data(map_data, extra_map_data, config):
 				img = value.find("img")
 				if img:
 					map_data["icon"] = img.attrs["src"]
-
-	# Wiki card data
-	map_data["wiki"] = config["wiki"]["base"] + map_data["name"].replace(" ", "_")
-	if map_data["id"]:
-		print(f"Getting card data for {map_data['name']} from wiki")
-		wiki_cards = requests.get(config["wiki"]["api"], params={
-			"action": "cargoquery",
-			"format": "json",
-			"limit": "500",
-			"tables": "items",
-			"fields": "items.name",
-			"where": f'items.drop_areas HOLDS "{map_data["id"]}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"'
-		}).json()["cargoquery"]
-		for card in wiki_cards:
-			map_cards.add(card["title"]["name"])
 
 	map_data["cards"] = sorted(list(map_cards))
 

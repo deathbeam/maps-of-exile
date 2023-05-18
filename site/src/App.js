@@ -22,7 +22,7 @@ import MapBoss from './components/MapBoss'
 import MapConnected from './components/MapConnected'
 import MapName from './components/MapName'
 import Tags from './components/Tags'
-import useTransitionState from './hooks/useTransitionState'
+import usePersistedState from './hooks/usePersistedState'
 
 function rateCards(cards, cardWeightBaseline, cardMinPrice) {
   return calculateScore(
@@ -100,18 +100,18 @@ function App() {
   const [isPending, startTransition] = useTransition()
 
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = useTransitionState('searchInput', '', startTransition)
-  const [layoutInput, setLayoutInput] = useTransitionState('layoutInput', 3, startTransition)
-  const [densityInput, setDensityInput] = useTransitionState('densityInput', 2, startTransition)
-  const [bossInput, setBossInput] = useTransitionState('bossInput', 1, startTransition)
-  const [cardInput, setCardInput] = useTransitionState('cardWeightInput', 2, startTransition)
-  const [hideLowValueCards, setHideLowValueCards] = useTransitionState('hideLowValueCards', false, startTransition)
-  const [cardBaselineInput, setCardBaselineInput] = useTransitionState(
+  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition)
+  const [layoutInput, setLayoutInput] = usePersistedState('layoutInput', 3, startTransition)
+  const [densityInput, setDensityInput] = usePersistedState('densityInput', 2, startTransition)
+  const [bossInput, setBossInput] = usePersistedState('bossInput', 1, startTransition)
+  const [cardInput, setCardInput] = usePersistedState('cardWeightInput', 2, startTransition)
+  const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
+  const [cardBaselineInput, setCardBaselineInput] = usePersistedState(
     'cardBaselineInput',
     defaultCardBaseline,
     startTransition
   )
-  const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
+  const [cardMinPriceInput, setCardMinPriceInput] = usePersistedState('cardMinPriceInput', 10, startTransition)
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]
@@ -145,11 +145,7 @@ function App() {
 
     const toSearch = buildSearch(s)
     searchRef.current.value = toSearch
-    setSearchInput({
-      target: {
-        value: toSearch
-      }
-    })
+    setSearchInput(toSearch)
   }
 
   return (
@@ -232,7 +228,7 @@ function App() {
                     .sort((a, b) => b.weight - a.weight)
                     .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
                   value={cardBaselineInput}
-                  onChange={e => setCardBaselineInput({ target: { value: e } })}
+                  onChange={e => setCardBaselineInput(e)}
                   search="true"
                 />
               </div>
@@ -374,11 +370,7 @@ function App() {
                     className="form-check-input"
                     type="checkbox"
                     defaultChecked={hideLowValueCards}
-                    onChange={() =>
-                      setHideLowValueCards({
-                        target: { value: !hideLowValueCards }
-                      })
-                    }
+                    onChange={() => setHideLowValueCards(!hideLowValueCards)}
                   />
                   <label className="form-check-label small">Hide cards under minimum price</label>
                 </div>

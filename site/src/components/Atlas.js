@@ -4,8 +4,9 @@ import ReactFlow, { ControlButton, Controls, Panel } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import useKeyPress from '../hooks/useKeyPress'
 import { possibleVoidstones } from '../data'
+import useKeyPress from '../hooks/useKeyPress'
+import usePersistedState from '../hooks/usePersistedState'
 
 function toNode(map, matchingNodes, scoreHeatmap, voidstones) {
   let mapColor
@@ -67,8 +68,8 @@ function fitView(flow, matchingNodes) {
 const Atlas = ({ maps, currentSearch }) => {
   const flowRef = useRef()
   const [full, setFull] = useState(false)
-  const [scoreHeatmap, setScoreHeatmap] = useState(false)
-  const [voidstones, setVoidstones] = useState(false)
+  const [scoreHeatmap, setScoreHeatmap] = usePersistedState('scoreHeatmap', false)
+  const [voidstones, setVoidstones] = usePersistedState('voidstones', 0)
 
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 

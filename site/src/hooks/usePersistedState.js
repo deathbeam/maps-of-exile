@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export default function useTransitionState(key, def, startTransition) {
+export default function usePersistedState(key, def, startTransition) {
   const [val, setVal] = useState(() => {
     try {
       const item = localStorage.getItem(key)
@@ -19,5 +19,15 @@ export default function useTransitionState(key, def, startTransition) {
     }
   }, [key, val])
 
-  return [val, e => startTransition(() => setVal(e.target.value === '' ? def : e.target.value))]
+  return [
+    val,
+    e => {
+      const val = e.hasOwnProperty('target') ? e.target.value : e
+      if (startTransition) {
+        startTransition(() => setVal(val === '' ? def : val))
+      } else {
+        setVal(val === '' ? def : val)
+      }
+    }
+  ]
 }

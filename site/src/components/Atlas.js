@@ -104,7 +104,7 @@ const Atlas = ({ maps, currentSearch }) => {
       className="d-none d-md-block"
       style={{
         height: full ? '100vh' : '50vh',
-        background: `#686664 url(${poeBackground}) no-repeat center center`,
+        background: `#686664 url(${poeBackground}) no-repeat top center`,
         backgroundSize: 'cover'
       }}
     >

@@ -26,47 +26,52 @@ function rateCards(cards, cardMinPrice) {
   )
 }
 
-function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput) {
+function rateMaps(foundMaps, foundCards, layoutInput, densityInput, bossInput, cardInput) {
   return calculateScore(
     foundMaps.map(map => {
       const layoutValue = (map.rating.layout || 0) * layoutInput
       const densityValue = (map.rating.density || 0) * densityInput
       const bossValue = (map.rating.boss || 0) * bossInput
-      let cardValue = 0
 
       const mapCards = []
 
       for (let card of map.cards) {
-        const cardData = ratedCards.find(c => c.name === card)
+        const cardData = foundCards.find(c => c.name === card)
         if (!cardData) {
           continue
         }
 
-        mapCards.push(cardData)
-        cardValue += cardData.score || 0
+        mapCards.push({ ...cardData })
       }
 
       for (let card of map.boss.cards || []) {
-        const cardData = ratedCards.find(c => c.name === card)
+        const cardData = foundCards.find(c => c.name === card)
         if (!cardData) {
           continue
         }
 
-        const score = (cardData.score || 0) / 5
-        mapCards.push({
-          ...cardData,
-          score: score,
-          boss: true
-        })
-        cardValue += score
+        mapCards.push({ ...cardData, boss: true })
       }
 
-      cardValue = cardValue * cardInput
+      const totalWeight = mapCards.reduce((a, b) => a + b.weight, 0)
+      let cardScore = 0
+
+      for (let card of mapCards) {
+        if (card.value) {
+          const bossMulti = card.boss ? 5 : 1
+          card.value = (card.price * card.weight) / bossMulti / totalWeight
+          card.score = card.score / bossMulti
+        }
+
+        cardScore += card.score
+      }
+
+      cardScore = cardScore * cardInput
 
       return {
         ...map,
-        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.score - a.score),
-        value: layoutValue + densityValue + bossValue + cardValue
+        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value),
+        value: layoutValue + densityValue + bossValue + cardScore
       }
     }),
     100
@@ -346,9 +351,7 @@ function App() {
                 <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
-                    <b>{cardMinPriceInput}c</b> are filtered out from rating. Value calculation assumes that you drop{' '}
-                    <b>1 {cardBaselineInput}</b> per map on average and derives the chance to drop other cards from
-                    that.
+                    <b>{cardMinPriceInput}c</b> are filtered out from rating.
                     <br />
                     <span className="badge bg-secondary text-dark me-1">not very good</span>
                     <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>

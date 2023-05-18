@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { deduplicate, filter, ratingColor, tierColor } from '../common'
+import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
 import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
@@ -44,7 +44,7 @@ function toLinks(map) {
 }
 
 function onNodeClick(e, node) {
-  window.location.hash = node.id
+  scrollToElement(node.id)
 }
 
 function fitView(flow, matchingNodes) {

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { deduplicate, filter } from '../common'
 import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
@@ -6,17 +6,35 @@ import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import useKeyPress from '../hooks/useKeyPress'
 
-function toNode(map, matchingNodes) {
+function toNode(map, matchingNodes, scoreHeatmap) {
   const tier = map.tiers[0]
-  let tierColor = 'text-light'
+  const score = map.score
+  let mapColor = 'text-light'
+
   if (!matchingNodes.includes(map.name)) {
-    tierColor = 'text-secondary'
-  } else if (map.unique) {
-    tierColor = 'text-unique'
-  } else if (tier >= 11) {
-    tierColor = 'text-danger'
-  } else if (tier >= 6) {
-    tierColor = 'text-warning'
+    mapColor = 'text-secondary'
+  } else {
+    if (scoreHeatmap) {
+      if (score >= 70) {
+        mapColor = 'text-success'
+      } else if (score >= 50) {
+        mapColor = 'text-info'
+      } else if (score >= 30) {
+        mapColor = 'text-warning'
+      } else if (score > 0) {
+        mapColor = 'text-danger'
+      } else {
+        mapColor = 'text-secondary'
+      }
+    } else {
+      if (map.unique) {
+        mapColor = 'text-unique'
+      } else if (tier >= 11) {
+        mapColor = 'text-danger'
+      } else if (tier >= 6) {
+        mapColor = 'text-warning'
+      }
+    }
   }
 
   return {
@@ -28,7 +46,7 @@ function toNode(map, matchingNodes) {
     data: {
       label: map.name
     },
-    className: `badge bg-dark border-1 ${tierColor}`
+    className: `badge bg-dark border-1 ${mapColor}`
   }
 }
 
@@ -59,8 +77,11 @@ function fitView(flow, matchingNodes) {
   })
 }
 
-const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
+const Atlas = ({ maps, currentSearch }) => {
   const flowRef = useRef()
+  const [full, setFull] = useState(false)
+  const [scoreHeatmap, setScoreHeatmap] = useState(false)
+
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 
   const matchingNodes = useMemo(
@@ -70,35 +91,35 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
 
   const data = useMemo(
     () => ({
-      nodes: connectedMaps.map(m => toNode(m, matchingNodes)),
+      nodes: connectedMaps.map(m => toNode(m, matchingNodes, scoreHeatmap)),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [connectedMaps, matchingNodes]
+    [connectedMaps, matchingNodes, scoreHeatmap]
   )
 
   useKeyPress(['Escape'], () => {
-    if (atlasFull) {
-      setAtlasFull(false)
+    if (full) {
+      setFull(false)
     }
   })
 
   useEffect(() => {
     setTimeout(() => fitView(flowRef.current, matchingNodes), 150)
-  }, [matchingNodes, atlasFull])
+  }, [matchingNodes, full])
 
   return (
     <div
       className="d-none d-md-block bg-atlas"
       style={{
-        height: atlasFull ? '100vh' : '50vh'
+        height: full ? '100vh' : '50vh'
       }}
     >
       <ReactFlow
-        zoomOnScroll={atlasFull}
-        preventScrolling={atlasFull}
+        zoomOnScroll={full}
+        preventScrolling={full}
         nodesConnectable={false}
         nodesDraggable={false}
         nodesFocusable={false}
@@ -113,11 +134,19 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
         }}
       >
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
-          <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="action">
+          <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="Reset position">
             <i className="fa-solid fa-fw fa-arrows-rotate" />
           </ControlButton>
-          <ControlButton onClick={() => setAtlasFull(!atlasFull)} title="action">
-            {atlasFull ? <i className="fa-solid fa-fw fa-minimize" /> : <i className="fa-solid fa-fw fa-expand" />}
+          <ControlButton onClick={() => setScoreHeatmap(!scoreHeatmap)} title="Score heatmap">
+            <i
+              className="fa-solid fa-fw fa-sack-dollar"
+              style={{
+                color: scoreHeatmap ? 'green' : 'black'
+              }}
+            />
+          </ControlButton>
+          <ControlButton onClick={() => setFull(!full)} title="Fullscreen">
+            {full ? <i className="fa-solid fa-fw fa-minimize" /> : <i className="fa-solid fa-fw fa-expand" />}
           </ControlButton>
         </Controls>
       </ReactFlow>

@@ -20,10 +20,13 @@ export function calculateScore(dataset, range) {
     if (entry.value) {
       out.push({
         ...entry,
-        score: rescale(entry.value, min, max, range)
+        score: Math.round(rescale(entry.value, min, max, range))
       })
     } else {
-      out.push(entry)
+      out.push({
+        ...entry,
+        score: 0
+      })
     }
   }
 

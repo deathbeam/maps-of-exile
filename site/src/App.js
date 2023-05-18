@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useState, useMemo, useTransition, useRef } from 'react'
+import { useMemo, useTransition, useRef } from 'react'
 import SelectSearch from 'react-select-search'
 import chaos from './img/chaos.png'
 import {
@@ -112,7 +112,6 @@ function App() {
     startTransition
   )
   const [cardMinPriceInput, setCardMinPriceInput] = useTransitionState('cardMinPriceInput', 10, startTransition)
-  const [atlasFull, setAtlasFull] = useState(false)
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]
@@ -156,7 +155,7 @@ function App() {
   return (
     <>
       <Loader loading={isPending} />
-      <Atlas maps={preparedMaps} currentSearch={currentSearch} atlasFull={atlasFull} setAtlasFull={setAtlasFull} />
+      <Atlas maps={ratedMaps} currentSearch={currentSearch} />
       <div className="container-fluid p-4">
         <div className="row g-2">
           <div className="col col-lg-4 col-12">
@@ -392,10 +391,10 @@ function App() {
             <tr key={m.name} id={m.name}>
               <td className="text-center">
                 <div className=" d-none d-md-table-cell">
-                  <b>{Math.round(m.score || 0)}</b>
+                  <b>{m.score}</b>
                 </div>
                 <div className="d-block d-md-none">
-                  <b>Total</b>: {Math.round(m.score || 0)}
+                  <b>Total</b>: {m.score}
                   <br />
                   <b>Layout</b>: <Rating rating={m.rating.layout} />
                   <br />

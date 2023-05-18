@@ -45,8 +45,7 @@ function toLinks(map) {
     return {
       id: con[0] + '-' + con[1],
       source: con[0],
-      target: con[1],
-      type: 'simplebezier'
+      target: con[1]
     }
   })
 }
@@ -103,6 +102,7 @@ const Atlas = ({ maps, currentSearch }) => {
     <div
       className="d-none d-md-block"
       style={{
+        width: '100%',
         height: full ? '100vh' : '50vh',
         background: `#686664 url(${poeBackground}) no-repeat top center`,
         backgroundSize: 'cover'
@@ -111,15 +111,20 @@ const Atlas = ({ maps, currentSearch }) => {
       <ReactFlow
         zoomOnScroll={full}
         preventScrolling={full}
-        nodesConnectable={false}
         nodesDraggable={false}
+        nodesConnectable={false}
         nodesFocusable={false}
         edgesFocusable={false}
         elementsSelectable={false}
         nodes={data.nodes}
         edges={data.edges}
         onNodeClick={onNodeClick}
-        attributionPosition="bottom left"
+        defaultEdgeOptions={{
+          type: 'simplebezier'
+        }}
+        proOptions={{
+          hideAttribution: true
+        }}
         onInit={flow => {
           flowRef.current = flow
           fitView(flowRef.current, matchingNodes)

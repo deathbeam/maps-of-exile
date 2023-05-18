@@ -24,20 +24,13 @@ import MapName from './components/MapName'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
 
-function rateCards(cards, cardWeightBaseline, cardMinPrice) {
+function rateCards(cards, cardMinPrice) {
   return calculateScore(
     cards
-      .map(card => {
-        let rate = 0
-        if (card.price >= cardMinPrice) {
-          rate = card.weight / cardWeightBaseline
-        }
-
-        return {
-          ...card,
-          value: rate * card.price * (card.boss ? 1 / cardBossMulti : 1)
-        }
-      })
+      .map(card => ({
+        ...card,
+        value: (card.price >= cardMinPrice ? card.weight : 0) * card.price * (card.boss ? 1 / cardBossMulti : 1)
+      }))
       .sort((a, b) => b.price - a.price),
     10
   )
@@ -117,10 +110,7 @@ function App() {
     [cardBaselineInput]
   )
 
-  const ratedCards = useMemo(
-    () => rateCards(preparedCards, cardWeightBaseline, cardMinPriceInput),
-    [cardWeightBaseline, cardMinPriceInput]
-  )
+  const ratedCards = useMemo(() => rateCards(preparedCards, cardMinPriceInput), [cardMinPriceInput])
 
   const ratedMaps = useMemo(
     () => rateMaps(preparedMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput),

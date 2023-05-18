@@ -28,7 +28,8 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
   }
 
   let perMap = 1
-  let everyMap = 1 / (card.weight / cardWeightBaseline)
+  let mapRate = card.weight / cardWeightBaseline
+  let everyMap = 1 / mapRate
   if (everyMap < 1) {
     perMap = Math.floor(1 / everyMap)
     everyMap = 1
@@ -36,11 +37,12 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
     everyMap = Math.ceil(everyMap)
   }
   let perMapSuf = everyMap > 1 ? 'maps' : 'map'
+  let cardValue = (card.price * mapRate) / (card.boss ? cardBossMulti : 1)
 
   let missionRate = card.weight / totalWeight
   let everyMission = Math.ceil(1 / missionRate)
   let perMissionSuf = everyMission > 1 ? 'missions' : 'mission'
-  let missionValue = card.price * card.stack * missionRate
+  let missionValue = card.price * missionRate * card.stack
 
   badgeClass = `badge m-1 ${badgeClass}`
   return (
@@ -63,7 +65,7 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
               </>
             )}
             <br />= <b>{perMap}</b> every <b>{everyMap > 1 && everyMap}</b> {perMapSuf}
-            <br />= <b>{Math.round(card.value * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
+            <br />= <b>{Math.round(cardValue * 1000) / 1000}</b> <img src={chaos} alt="c" width="16" height="16" /> per
             map
             <hr />
             <b>{card.weight}</b> (weight) / <b>{totalWeight}</b> (total weight)
@@ -82,14 +84,14 @@ const MapCard = ({ card, cardWeightBaseline, totalWeight }) => {
 }
 
 const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
-  const avg = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
+  const totalValue = Math.round(cards.reduce((a, b) => a + b.value / cardWeightBaseline, 0) * 100) / 100
   const totalWeight = cards.reduce((a, b) => a + b.weight, 0)
 
   return (
     <div className="row g-0">
       <div className="col-md-1 d-md-flex justify-content-end">
         <span className="p-2 d-md-flex">
-          {avg}
+          {totalValue}
           <img src={chaos} alt="c" width="16" height="16" className="m-1" />
         </span>
       </div>

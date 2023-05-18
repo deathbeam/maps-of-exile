@@ -88,14 +88,12 @@ const MapCards = ({ cards, cardWeightBaseline, hideLowValueCards }) => {
   const totalWeight = cards.reduce((a, b) => a + b.weight, 0)
 
   return (
-    <div className="row g-0">
-      <div className="col-md-1 d-md-flex justify-content-end">
-        <span className="p-2 d-md-flex">
-          {totalValue}
-          <img src={chaos} alt="c" width="16" height="16" className="m-1" />
-        </span>
+    <div className="d-md-flex flex-row">
+      <div className="pe-2 pb-2 d-md-flex">
+        {totalValue}
+        <img src={chaos} alt="c" width="16" height="16" className="m-1" />
       </div>
-      <div className="col-md-11">
+      <div>
         {cards
           .sort((a, b) => b.price - a.price)
           .sort((a, b) => b.score - a.score)

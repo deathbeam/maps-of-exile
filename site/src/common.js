@@ -66,8 +66,8 @@ export function ratingColor(rating, scale = 1) {
   return color
 }
 
-export function tierColor(map) {
-  const tier = map.tiers[0]
+export function tierColor(map, voidstones = 0) {
+  const tier = map.tiers[parseInt(voidstones)]
   let color = 'light'
 
   if (map.unique) {

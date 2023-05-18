@@ -1,17 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
-import ReactFlow, { ControlButton, Controls } from 'reactflow'
+import ReactFlow, { ControlButton, Controls, Panel } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import useKeyPress from '../hooks/useKeyPress'
+import { possibleVoidstones } from '../data'
 
-function toNode(map, matchingNodes, scoreHeatmap) {
+function toNode(map, matchingNodes, scoreHeatmap, voidstones) {
   let mapColor
   if (scoreHeatmap) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map)}`
+    mapColor = `text-${tierColor(map, voidstones)}`
   }
 
   let opacity = 1
@@ -27,7 +28,7 @@ function toNode(map, matchingNodes, scoreHeatmap) {
       y: map.y * 2
     },
     data: {
-      label: (scoreHeatmap ? map.score + ' ' : '') + map.name
+      label: (scoreHeatmap ? map.score + ' ' : 'T' + map.tiers[parseInt(voidstones)] + ' ') + map.name
     },
     className: `btn btn-dark border-1 ${mapColor}`,
     style: {
@@ -67,6 +68,7 @@ const Atlas = ({ maps, currentSearch }) => {
   const flowRef = useRef()
   const [full, setFull] = useState(false)
   const [scoreHeatmap, setScoreHeatmap] = useState(false)
+  const [voidstones, setVoidstones] = useState(false)
 
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
 
@@ -77,13 +79,13 @@ const Atlas = ({ maps, currentSearch }) => {
 
   const data = useMemo(
     () => ({
-      nodes: connectedMaps.map(m => toNode(m, matchingNodes, scoreHeatmap)),
+      nodes: connectedMaps.map(m => toNode(m, matchingNodes, scoreHeatmap, voidstones)),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [connectedMaps, matchingNodes, scoreHeatmap]
+    [connectedMaps, matchingNodes, scoreHeatmap, voidstones]
   )
 
   useKeyPress(['Escape'], () => {
@@ -120,6 +122,23 @@ const Atlas = ({ maps, currentSearch }) => {
           fitView(flowRef.current, matchingNodes)
         }}
       >
+        <Panel position="bottom-left" className="card bg-light text-dark">
+          <div className="card-body p-1">
+            <i className="fa-solid fa-fw fa-gem" title="Voidstones" />{' '}
+            <div className="btn-group" role="group">
+              {possibleVoidstones.map(v => (
+                <>
+                  <button
+                    className={'btn ' + (v === voidstones ? 'btn-dark' : 'text-secondary btn-outline-dark')}
+                    onClick={e => setVoidstones(v)}
+                  >
+                    {v}
+                  </button>
+                </>
+              ))}
+            </div>
+          </div>
+        </Panel>
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="Reset position">
             <i className="fa-solid fa-fw fa-arrows-rotate" />

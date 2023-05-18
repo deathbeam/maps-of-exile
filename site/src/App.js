@@ -264,9 +264,9 @@ function App() {
                   <span className="tooltip-tag-text">
                     Map name, colored based on natural tier with map tiers for each Voidstone next to it.
                     <hr />
-                    <span className="badge bg-light text-dark me-1">tier 1-5</span>
-                    <span className="badge bg-warning text-dark me-1">tier 6-10</span>
-                    <span className="badge bg-danger text-dark me-1">tier 11-16</span>
+                    <span className="badge bg-light text-dark m-1">tier 1-5</span>
+                    <span className="badge bg-warning text-dark m-1">tier 6-10</span>
+                    <span className="badge bg-danger text-dark m-1">tier 11-16</span>
                   </span>
                   Map
                 </span>
@@ -287,11 +287,11 @@ function App() {
                   This data is opinionated, if you disagree with any rating please open issue on GitHub with
                   explanation.
                   <hr />
-                  <span className="badge bg-secondary text-dark me-1">unknown</span>
-                  <span className="badge bg-danger text-dark me-1">bad</span>
-                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
-                  <span className="badge bg-info text-dark me-1">>=5 good</span>
-                  <span className="badge bg-success text-dark me-1">>=7 great</span>
+                  <span className="badge bg-secondary text-dark m-1">unknown</span>
+                  <span className="badge bg-danger text-dark m-1">bad</span>
+                  <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
+                  <span className="badge bg-info text-dark m-1">>=5 good</span>
+                  <span className="badge bg-success text-dark m-1">>=7 great</span>
                 </span>
                 Layout
               </span>
@@ -305,11 +305,11 @@ function App() {
                   This data is based on actual mob counts in maps counted using rampage. Some newer maps and unique maps
                   might be missing data as they still need to be collected.
                   <hr />
-                  <span className="badge bg-secondary text-dark me-1">unknown</span>
-                  <span className="badge bg-danger text-dark me-1">bad</span>
-                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
-                  <span className="badge bg-info text-dark me-1">>=5 good</span>
-                  <span className="badge bg-success text-dark me-1">>=7 great</span>
+                  <span className="badge bg-secondary text-dark m-1">unknown</span>
+                  <span className="badge bg-danger text-dark m-1">bad</span>
+                  <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
+                  <span className="badge bg-info text-dark m-1">>=5 good</span>
+                  <span className="badge bg-success text-dark m-1">>=7 great</span>
                 </span>
                 Density
               </span>
@@ -322,11 +322,11 @@ function App() {
                   This data is opinionated, if you disagree with any rating please open issue on GitHub with
                   explanation.
                   <hr />
-                  <span className="badge bg-secondary text-dark me-1">unknown</span>
-                  <span className="badge bg-danger text-dark me-1">hard/annoying</span>
-                  <span className="badge bg-warning text-dark me-1">>=3 neutral</span>
-                  <span className="badge bg-info text-dark me-1">>=5 alright</span>
-                  <span className="badge bg-success text-dark me-1">>=7 easy/fast</span>
+                  <span className="badge bg-secondary text-dark m-1">unknown</span>
+                  <span className="badge bg-danger text-dark m-1">hard/annoying</span>
+                  <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
+                  <span className="badge bg-info text-dark m-1">>=5 alright</span>
+                  <span className="badge bg-success text-dark m-1">>=7 easy/fast</span>
                 </span>
                 Boss
               </span>
@@ -344,11 +344,11 @@ function App() {
                     Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
                     <b>{cardMinPriceInput}c</b> are filtered out from rating.
                     <hr />
-                    <span className="badge bg-secondary text-dark me-1">not very good</span>
-                    <span className="badge bg-dark border border-1 border-info text-info me-1">>=0.5 decent</span>
-                    <span className="badge bg-info text-dark me-1">>=2 good</span>
-                    <span className="badge bg-primary text-light me-1">>=5 great</span>
-                    <span className="badge bg-light text-dark me-1">>=8 amazing</span>
+                    <span className="badge bg-secondary text-dark m-1">not very good</span>
+                    <span className="badge bg-dark border border-1 border-info text-info m-1">>=0.5 decent</span>
+                    <span className="badge bg-info text-dark m-1">>=2 good</span>
+                    <span className="badge bg-primary text-light m-1">>=5 great</span>
+                    <span className="badge bg-light text-dark m-1">>=8 amazing</span>
                   </span>
                   Cards
                 </span>

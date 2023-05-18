@@ -248,7 +248,7 @@ function App() {
       <table className="table table-striped mb-0">
         <thead>
           <tr>
-            <th scope="col">
+            <th scope="col" className="d-md-none">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   Sum of <b>Layout</b>, <b>Density</b>, <b>Boss</b> and <b>Card</b> score, accounting for weights at
@@ -272,7 +272,7 @@ function App() {
                 <div>
                   <small className="fw-light">
                     <a href={issueTemplate} target="_blank" rel="noreferrer">
-                      Data not valid or missing? Click here
+                      Data not valid or missing?
                     </a>
                   </small>
                 </div>
@@ -369,20 +369,14 @@ function App() {
         <tbody>
           {filterMaps(ratedMaps, currentSearch).map(m => (
             <tr key={m.name} id={m.name}>
-              <td className="text-center">
-                <div className=" d-none d-md-table-cell">
-                  <Rating rating={m.score} scale={10} />
-                </div>
-                <div className="d-block d-md-none">
-                  <b>Total</b>: <Rating rating={m.score} scale={10} />
-                  <br />
-                  <b>Layout</b>: <Rating rating={m.rating.layout} />
-                  <br />
-                  <b>Density</b>: <Rating rating={m.rating.density} />
-                  <br />
-                  <b>Boss</b>: <Rating rating={m.rating.boss} />
-                  <br />
-                </div>
+              <td className="text-center d-md-none">
+                <b>Total</b>: <Rating rating={m.score} scale={10} />
+                <br />
+                <b>Layout</b>: <Rating rating={m.rating.layout} />
+                <br />
+                <b>Density</b>: <Rating rating={m.rating.density} />
+                <br />
+                <b>Boss</b>: <Rating rating={m.rating.boss} />
               </td>
               <td>
                 <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />

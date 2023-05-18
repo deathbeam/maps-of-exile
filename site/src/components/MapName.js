@@ -1,5 +1,6 @@
 import Tags from './Tags'
 import { tierColor } from '../common'
+import Rating from './Rating'
 
 const MapName = ({ map, currentSearch, addToInput }) => {
   const mapImage =
@@ -18,29 +19,41 @@ const MapName = ({ map, currentSearch, addToInput }) => {
       {map.name}
     </a>
   )
-  const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
 
-  return map.image ? (
-    <>
-      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-        <span className="tooltip-tag-text tooltip-tag-fill">
-          <img src={mapImage} alt="" loading="lazy" />
-        </span>
-        {name}
+  const mapName = map.image ? (
+    <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+      <span className="tooltip-tag-text tooltip-tag-fill">
+        <img src={mapImage} alt="" loading="lazy" />
       </span>
-      <br />
-      <small>{map.tiers.join(', ')}</small>
-      <br />
-      {tags}
-    </>
-  ) : (
-    <>
       {name}
-      <br />
-      <small>{map.tiers.join(', ')}</small>
-      <br />
-      {tags}
-    </>
+    </span>
+  ) : (
+    name
+  )
+
+  const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
+  const icon = <img src={map.icon} alt="" loading="lazy" width="47" height="47" />
+  const score = (
+    <span className="d-none d-md-block">
+      <Rating rating={map.score} scale={10} />
+    </span>
+  )
+
+  return (
+    <div className="d-md-flex flex-row">
+      <div className="text-center pe-2 pb-2">
+        {icon}
+        <br />
+        {score}
+      </div>
+      <div>
+        {mapName}
+        <br />
+        <small>{map.tiers.join(', ')}</small>
+        <br />
+        {tags}
+      </div>
+    </div>
   )
 }
 

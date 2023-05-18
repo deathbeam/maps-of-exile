@@ -82,7 +82,7 @@ def get_card_data(key, league, config):
 	patient_weight = next(x["value"] for x in weights if x["name"] == "The Patient")
 	sample_weight = Decimal(patient_weight) / (Decimal(patient_amount) / Decimal(amounts_total))
 
-	url = config["prices"].replace("{}", league)
+	url = config["prices"] + league
 	print(f"Getting card prices from {url}")
 	prices = requests.get(url).json()["lines"]
 
@@ -97,7 +97,7 @@ def get_card_data(key, league, config):
 			"price": price_card["chaosValue"],
 			"stack": price_card.get("stackSize", 1),
 			"reward": reward,
-			"ninja": config["ninja"].replace("{}", price_card["detailsId"]),
+			"ninja": config["ninja"] + price_card["detailsId"],
 			"boss": price_card["name"] in config["boss-only"]
 		}
 
@@ -261,16 +261,22 @@ def get_maps(key, config):
 	for row in mapslist:
 		cols = row.find_all("td")
 		name = cols[3].text
+		img = cols[2].find("img")
 
 		if not name:
 			continue
 
 		map_url = cols[3].find('a').attrs['href']
-		map_url = config["poedb"]["base"].replace("{}", map_url)
-		out.append({
+		map_url = config["poedb"]["base"] + map_url
+		out_map = {
 			"name": name.strip(),
 			"poedb": map_url
-		})
+		}
+
+		if img:
+			out_map["icon"] = img.attrs["src"]
+
+		out.append(out_map)
 
 	base_names = sorted(list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"])
 	mapslist = soup.find(id="MapsUnique").find("table").find("tbody").find_all("tr")
@@ -280,7 +286,7 @@ def get_maps(key, config):
 		href = cols[1].find('a')
 		name = href.text
 		map_url = href.attrs['href']
-		map_url = config["poedb"]["base"].replace("{}", map_url)
+		map_url = config["poedb"]["base"] + map_url
 
 		for n in base_names:
 			if not n.endswith(" Map") and not n.endswith("Ultimatum"):
@@ -384,9 +390,13 @@ def get_map_data(map_data, extra_map_data, config):
 			elif name == "tags":
 				if "cannot_be_twinned" in value.text.strip():
 					map_data["boss"]["not_twinnable"] = True
+			elif name == "icon":
+				img = value.find("img")
+				if img:
+					map_data["icon"] = img.attrs["src"]
 
 	# Wiki card data
-	map_data["wiki"] = config["wiki"]["base"].replace("{}", map_data["name"].replace(" ", "_"))
+	map_data["wiki"] = config["wiki"]["base"] + map_data["name"].replace(" ", "_")
 	if map_data["id"]:
 		print(f"Getting card data for {map_data['name']} from wiki")
 		wiki_cards = requests.get(config["wiki"]["api"], params={

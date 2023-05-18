@@ -37,6 +37,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Tooltips */
 .tooltip-tag {
   position: relative;
   display: inline-block;
@@ -130,6 +131,7 @@ a:hover {
   border-color: transparent transparent black transparent;
 }
 
+/* 3rd party */
 .select-search-container {
   --select-search-background: var(--bs-body-bg);
   --select-search-border: var(--bs-border-color);
@@ -142,24 +144,6 @@ a:hover {
   position: relative;
   color: var(--select-search-text);
   box-sizing: border-box;
-}
-
-body.is-dark-mode .select-search-container {
-  --select-search-background: #000;
-  --select-search-border: #313244;
-  --select-search-selected: #89b4fa;
-  --select-search-text: #fff;
-  --select-search-subtle-text: #a6adc8;
-  --select-search-highlight: #1e1e2e;
-}
-
-body.is-light-mode .select-search-container {
-  --select-search-background: #fff;
-  --select-search-border: #dce0e8;
-  --select-search-selected: #1e66f5;
-  --select-search-text: #000;
-  --select-search-subtle-text: #6c6f85;
-  --select-search-highlight: #eff1f5;
 }
 
 .select-search-container *,

@@ -4,7 +4,7 @@ import ReactFlow, { ControlButton, Controls, Panel } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import { poeBackground, possibleVoidstones } from '../data'
+import { possibleVoidstones } from '../data'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 
@@ -104,7 +104,7 @@ const Atlas = ({ maps, currentSearch }) => {
       style={{
         width: '100%',
         height: full ? '100vh' : '50vh',
-        background: `#686664 url(${poeBackground}) no-repeat top center`,
+        background: '#686664 url(/atlas.webp) no-repeat top center',
         backgroundSize: 'cover'
       }}
     >

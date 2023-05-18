@@ -5,10 +5,10 @@ data:
     ignored:
       - "Synthesised Map"
     poedb:
-      base: https://poedb.tw{}
+      base: https://poedb.tw
       list: https://poedb.tw/us/Maps
     wiki:
-      base: https://www.poewiki.net/wiki/{}
+      base: https://www.poewiki.net/wiki/
       api: https://www.poewiki.net/w/api.php
     metadata:
       sheet-id: 10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0
@@ -36,5 +36,5 @@ data:
     weights:
       sheet-id: 1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
       sheet-name: NaturalCardWeights
-    prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league={}
-    ninja: https://poe.ninja/challenge/divination-cards/{}
+    prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
+    ninja: https://poe.ninja/challenge/divination-cards/

@@ -2,6 +2,14 @@ function rescale(value, minValue, maxValue, scale) {
   return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
 }
 
+export function deduplicate(a, key) {
+  const seen = {}
+  return a.filter(function (item) {
+    const k = item[key]
+    return seen.hasOwnProperty(k) ? false : (seen[k] = true)
+  })
+}
+
 export function calculateScore(dataset, range) {
   const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
   const min = Math.min(...nonzerodataset.map(o => o.value))

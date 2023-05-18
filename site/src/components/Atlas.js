@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef } from 'react'
-import { filter } from '../common'
+import { deduplicate, filter } from '../common'
 import ReactFlow, { ControlButton, Controls } from 'reactflow'
 
 import 'reactflow/dist/base.css'
@@ -33,11 +33,16 @@ function toNode(map, matchingNodes) {
 }
 
 function toLinks(map) {
-  return map.connected.map(c => ({
-    id: map.name + '-' + c,
-    source: map.name,
-    target: c
-  }))
+  return map.connected.map(c => {
+    const con = [map.name, c].sort()
+
+    return {
+      id: con[0] + '-' + con[1],
+      source: con[0],
+      target: con[1],
+      type: 'simplebezier'
+    }
+  })
 }
 
 function onNodeClick(e, node) {
@@ -66,7 +71,10 @@ const Atlas = ({ maps, currentSearch, atlasFull, setAtlasFull }) => {
   const data = useMemo(
     () => ({
       nodes: connectedMaps.map(m => toNode(m, matchingNodes)),
-      edges: connectedMaps.flatMap(m => toLinks(m))
+      edges: deduplicate(
+        connectedMaps.flatMap(m => toLinks(m)),
+        'id'
+      )
     }),
     [connectedMaps, matchingNodes]
   )

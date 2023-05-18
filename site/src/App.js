@@ -207,7 +207,7 @@ function App() {
                   onChange={setCardInput}
                 />
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className="col col-lg-3 col-sm-6 col-12 d-none">
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     The baseline card drop you are expecting to see every map on average. This is used for calculating

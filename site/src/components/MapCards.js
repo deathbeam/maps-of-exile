@@ -50,8 +50,8 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   }
 
   const cards = [
-    calculateCardData(card, mapWeight, 'map weight'),
-    calculateCardData(card, baselineWeight, 'baseline weight')
+    calculateCardData(card, mapWeight, 'map weight')
+    // calculateCardData(card, baselineWeight, 'baseline weight')
   ]
 
   badgeClass = `badge m-1 ${badgeClass}`

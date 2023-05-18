@@ -7,6 +7,7 @@ export const preparedCards = cards
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 export const possibleVoidstones = [0, 1, 2, 3, 4]
+export const poeBackground = 'https://cdn.poedb.tw/image/Art/2DArt/Atlas/Atlas.webp'
 
 export const preparedMaps = maps.map(map => {
   function pushTag(info, destination, source, key, name = null) {

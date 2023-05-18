@@ -4,7 +4,7 @@ import ReactFlow, { ControlButton, Controls, Panel } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import { possibleVoidstones } from '../data'
+import { poeBackground, possibleVoidstones } from '../data'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 
@@ -101,9 +101,11 @@ const Atlas = ({ maps, currentSearch }) => {
 
   return (
     <div
-      className="d-none d-md-block bg-atlas"
+      className="d-none d-md-block"
       style={{
-        height: full ? '100vh' : '50vh'
+        height: full ? '100vh' : '50vh',
+        background: `#686664 url(${poeBackground}) no-repeat center center`,
+        backgroundSize: 'cover'
       }}
     >
       <ReactFlow

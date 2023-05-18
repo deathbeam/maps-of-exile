@@ -52,11 +52,13 @@ function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, c
           continue
         }
 
+        const score = (cardData.score || 0) / 5
         mapCards.push({
           ...cardData,
+          score: score,
           boss: true
         })
-        cardValue += (cardData.score || 0) / 5
+        cardValue += score
       }
 
       cardValue = cardValue * cardInput

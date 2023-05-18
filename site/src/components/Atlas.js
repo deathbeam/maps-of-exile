@@ -128,6 +128,7 @@ const Atlas = ({ maps, currentSearch }) => {
         nodes={data.nodes}
         edges={data.edges}
         onNodeClick={onNodeClick}
+        attributionPosition="bottom left"
         onInit={flow => {
           flowRef.current = flow
           fitView(flowRef.current, matchingNodes)

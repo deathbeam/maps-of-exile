@@ -268,7 +268,11 @@ body.is-light-mode .select-search-container {
 }
 
 .react-flow__attribution {
-  display: none;
+  background: none !important;
+}
+
+.react-flow__attribution a {
+  color: black !important;
 }
 
 .react-flow__controls-button {

@@ -2,6 +2,7 @@ import alch from '../img/alch.png'
 import divine from '../img/divine.png'
 import exalt from '../img/exalt.png'
 import chaos from '../img/chaos.png'
+import { rescale } from '../common'
 
 function calculateCardData(card, weight, weightDescription) {
   let perMap = 1
@@ -86,8 +87,13 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
 }
 
 const MapCards = ({ cards, hideLowValueCards, cardWeightBaseline }) => {
-  const mapWeight = cards.reduce((a, b) => a + b.weight, 0)
-  const baselineWeight = Math.ceil(mapWeight / cards.length + cardWeightBaseline)
+  const weights = cards.map(c => c.weight)
+  const weightMin = Math.min(...weights)
+  const weightMax = Math.max(...weights)
+  const mapWeight = weights.reduce((a, b) => a + b, 0)
+  const baselineWeight = Math.ceil(
+    weights.map(w => rescale(w, weightMin, weightMax, cardWeightBaseline)).reduce((a, b) => a + b, 0)
+  )
 
   return (
     <>

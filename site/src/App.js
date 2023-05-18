@@ -211,8 +211,8 @@ function App() {
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     The baseline card drop you are expecting to see every map on average. This is used for calculating
-                    baseline drop rate for cards in maps. Map baseline weight is calculated by averaging all map card
-                    weights and adding this configured value to it.
+                    baseline drop rate for cards in maps. Map baseline weight is calculated by rescaling all map weights
+                    for configured value and then summing them.
                   </span>
                   <label className="form-label">Average card drop per map</label>
                 </span>

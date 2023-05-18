@@ -52,14 +52,12 @@ function rateMaps(foundMaps, ratedCards, layoutInput, densityInput, bossInput, c
           continue
         }
 
-        mapCards.push({
-          ...cardData
-        })
-
-        cardValue += cardData.value || 0
+        mapCards.push(cardData)
+        cardValue += cardData.score || 0
       }
 
       cardValue = cardValue * cardInput
+
       return {
         ...map,
         cards: mapCards,

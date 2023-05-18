@@ -1,4 +1,4 @@
-function rescale(value, minValue, maxValue, scale) {
+export function rescale(value, minValue, maxValue, scale) {
   return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
 }
 

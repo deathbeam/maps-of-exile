@@ -14,8 +14,9 @@
   animation-name: horizontalProgressBar;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-  background: #dc8a00;
-  height: 3px;
+  background: var(--bs-primary);
+  border-bottom: 1px solid var(--bs-dark);
+  height: 6px;
   left: 0;
   position: fixed;
   top: 0;

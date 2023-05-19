@@ -9,10 +9,10 @@ import { possibleVoidstones } from '../data'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 
-const scale = 2.5
+const scale = 3
 const fullWidth = 1003.52
 const fullHeight = 564.48
-const offset = 6
+const offset = 8
 const bgId = 'bg'
 
 function toNode(map, matchingNodes, atlasScore, atlasVoidstones, atlasIcons, atlasLabels) {

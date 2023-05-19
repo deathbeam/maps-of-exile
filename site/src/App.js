@@ -16,6 +16,7 @@ import MapName from './components/MapName'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
+import GoToTop from './components/GoToTop'
 
 function rateCards(cards, cardMinPrice) {
   return calculateScore(
@@ -468,6 +469,7 @@ function App() {
           </div>
         </div>
       </div>
+      <GoToTop />
     </>
   )
 }

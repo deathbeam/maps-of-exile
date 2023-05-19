@@ -416,16 +416,13 @@ function App() {
                 </div>
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <Rating rating={m.rating.layout} />
+                <Rating rating={m.rating.layout} tooltip={m.info.layout} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <Rating
-                  rating={m.rating.density}
-                  tooltip={m.rating.density_unreliable && 'Missing exact mob count, density rating might be unreliable'}
-                />
+                <Rating rating={m.rating.density} tooltip={m.info.density} />
               </td>
               <td className="text-center d-none d-md-table-cell">
-                <MapBoss boss={m.boss} rating={m.rating.boss} />
+                <MapBoss boss={m.boss} rating={m.rating.boss} tooltip={m.info.boss} />
               </td>
               <td>
                 <MapConnected connected={m.connected} ratedMaps={ratedMaps} />

@@ -134,8 +134,10 @@ def get_map_meta(key, config):
 			out = out + list(map(lambda x: {
 				"name": x[0].strip().replace(" Map", "").replace("’", "'"),
 				"boss": {
-					"notes": x[8].strip(),
 					"separated": x[11].strip() == "o"
+				},
+				"info": {
+					"boss": x[8].strip(),
 				},
 				"layout": {
 					"few_obstacles": x[10].strip() == "o",
@@ -147,8 +149,10 @@ def get_map_meta(key, config):
 			out = out + list(map(lambda x: {
 				"name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
 				"boss": {
-					"notes": x[8].strip(),
 					"separated": x[12].strip() == "o"
+				},
+				"info": {
+					"boss": x[8].strip(),
 				},
 				"layout": {
 					"few_obstacles": x[11].strip() == "o",
@@ -317,6 +321,7 @@ def get_maps(key, config):
 		m["boss"] = {}
 		m["layout"] = {}
 		m["rating"] = {}
+		m["info"] = {}
 		m["unique"] = not name.endswith(" Map")
 
 		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
@@ -325,7 +330,10 @@ def get_maps(key, config):
 		existing_rating = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None)
 		if existing_rating:
 			existing_rating = existing_rating.copy()
+			if existing_rating["density_unreliable"]:
+				m["info"]["density"] = "Missing exact mob count, density rating might be unreliable"
 			existing_rating.pop("name")
+			existing_rating.pop("density_unreliable")
 			m["rating"] = existing_rating
 		existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
 		if existing_wiki:
@@ -439,8 +447,7 @@ def get_maps_template(maps, existing_maps):
 				"rushable": None,
 				"phases": None,
 				"soft_phases": None,
-				"separated": None,
-				"notes": None
+				"separated": None
 			}
 		}
 
@@ -523,7 +530,7 @@ def get_issue_template(maps):
 			}
 		}
 
-	body.append(text_input("Issue description", "Write reasoning for this change below", "Reasoning for the change, e.g data are missing or I disagree with X or Y and here is why etc. You can also add extra info not contained in form here.", True))
+	body.append(text_input("Issue description", "Write reasoning for this change below", "Reasoning for the change, e.g data are missing or I disagree with X or Y and here is why etc. You can also add extra info not contained in form here for example boss notes or notes for any other fields.", True))
 	body.append(dropdown_input("Map name", "Select map from dropdown or leave at **None** if title is properly filled.", map(lambda x: x["name"].replace(" Map", ""), maps)))
 	body.append(text_input("Map image", "Map layout image. If you dont have one simply leave empty.", "Upload layout image here"))
 
@@ -547,7 +554,6 @@ def get_issue_template(maps):
 		"**Separated** - If boss room is separated from rest of the map"
 	]))
 
-	body.append(text_input("Boss Notes", "Map boss notes. If there isn't anything to add simply leave empty."))
 	return template
 
 

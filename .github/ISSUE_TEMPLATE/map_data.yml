@@ -11,7 +11,7 @@ body:
     description: Write reasoning for this change below
     placeholder: Reasoning for the change, e.g data are missing or I disagree with
       X or Y and here is why etc. You can also add extra info not contained in form
-      here.
+      here for example boss notes or notes for any other fields.
   validations:
     required: true
 - type: dropdown
@@ -253,12 +253,5 @@ body:
     - label: '**Soft phases** - If boss has soft phases that can be bypassed with
         DPS (teleports at certain threshold, heals, partial damage reduction)'
     - label: '**Separated** - If boss room is separated from rest of the map'
-  validations:
-    required: false
-- type: textarea
-  id: boss_notes
-  attributes:
-    label: Boss Notes
-    description: Map boss notes. If there isn't anything to add simply leave empty.
   validations:
     required: false

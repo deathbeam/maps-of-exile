@@ -32,13 +32,16 @@ Full format for map metadata is:
     "rushable": false,
     "phases": false,
     "soft_phases": false,
-    "separated": false,
-    "notes": "boss notes"
+    "separated": false
   },
   "rating": {
     "layout": 10,
     "density": 10,
     "boss": 10
+  },
+  "info": {
+    "field_name": "additional info about field. can be 'boss' for boss notes, 'density' for density notes, 'not_spawned' for tag notes etc etc",
+    "boss": "boss notes example"
   }
 }
 ```

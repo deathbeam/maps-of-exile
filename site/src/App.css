@@ -146,6 +146,18 @@ a:hover {
   box-sizing: border-box;
 }
 
+.input-group .select-search-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .select-search-container {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
 .select-search-container *,
 .select-search-container *::after,
 .select-search-container *::before {

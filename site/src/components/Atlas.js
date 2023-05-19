@@ -149,7 +149,7 @@ const Atlas = ({ maps, currentSearch }) => {
         </Panel>
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="Reset position">
-            <i className="fa-solid fa-fw fa-arrows-rotate" />
+            <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>
           <ControlButton onClick={() => setScoreHeatmap(!scoreHeatmap)} title="Score heatmap">
             <i

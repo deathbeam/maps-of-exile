@@ -15,6 +15,7 @@ import MapConnected from './components/MapConnected'
 import MapName from './components/MapName'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
+import useInputField from './hooks/useInputField'
 
 function rateCards(cards, cardMinPrice) {
   return calculateScore(
@@ -102,17 +103,23 @@ function App() {
 
   const searchRef = useRef(null)
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition)
-  const [layoutInput, setLayoutInput] = usePersistedState('layoutInput', 3, startTransition)
-  const [densityInput, setDensityInput] = usePersistedState('densityInput', 2, startTransition)
-  const [bossInput, setBossInput] = usePersistedState('bossInput', 1, startTransition)
-  const [cardInput, setCardInput] = usePersistedState('cardWeightInput', 2, startTransition)
-  const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
-  const [cardBaselineInput, setCardBaselineInput] = usePersistedState(
+
+  const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField('layoutInput', 3, startTransition)
+  const [densityInput, setDensityInput, densityReset, densityRef] = useInputField('densityInput', 2, startTransition)
+  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition)
+  const [cardInput, setCardInput, cardReset, cardRef] = useInputField('cardWeightInput', 2, startTransition)
+  const [cardBaselineInput, setCardBaselineInput, cardBaselineReset] = useInputField(
     'cardBaselineInput',
     defaultCardBaseline,
     startTransition
   )
-  const [cardMinPriceInput, setCardMinPriceInput] = usePersistedState('cardMinPriceInput', 10, startTransition)
+  const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
+    'cardMinPriceInput',
+    10,
+    startTransition
+  )
+
+  const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]
@@ -141,9 +148,9 @@ function App() {
       }
     }
 
-    const toSearch = buildSearch(s)
-    searchRef.current.value = toSearch
-    setSearchInput(toSearch)
+    const val = buildSearch(s)
+    searchRef.current.value = val
+    setSearchInput(val)
   }
 
   return (
@@ -169,43 +176,63 @@ function App() {
             <div className="row g-2">
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Layout weight</label>
-                <input
-                  className="form-control"
-                  type="number"
-                  placeholder={layoutInput}
-                  defaultValue={layoutInput}
-                  onChange={setLayoutInput}
-                />
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={layoutRef}
+                    defaultValue={layoutInput}
+                    onChange={setLayoutInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={layoutReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Density weight</label>
-                <input
-                  className="form-control"
-                  type="number"
-                  placeholder={densityInput}
-                  defaultValue={densityInput}
-                  onChange={setDensityInput}
-                />
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={densityRef}
+                    defaultValue={densityInput}
+                    onChange={setDensityInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={densityReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Boss weight</label>
-                <input
-                  className="form-control"
-                  type="number"
-                  placeholder={bossInput}
-                  defaultValue={bossInput}
-                  onChange={setBossInput}
-                />
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={bossRef}
+                    defaultValue={bossInput}
+                    onChange={setBossInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={bossReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Card weight</label>
-                <input
-                  className="form-control"
-                  type="number"
-                  placeholder={cardInput}
-                  defaultValue={cardInput}
-                  onChange={setCardInput}
-                />
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={cardRef}
+                    defaultValue={cardInput}
+                    onChange={setCardInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={cardReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
@@ -221,14 +248,19 @@ function App() {
                   </span>
                   <label className="form-label">Average card drop per map</label>
                 </span>
-                <SelectSearch
-                  options={preparedCards
-                    .sort((a, b) => b.weight - a.weight)
-                    .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
-                  value={cardBaselineInput}
-                  onChange={e => setCardBaselineInput(e)}
-                  search="true"
-                />
+                <div className="input-group">
+                  <SelectSearch
+                    options={preparedCards
+                      .sort((a, b) => b.weight - a.weight)
+                      .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
+                    value={cardBaselineInput}
+                    onChange={e => setCardBaselineInput(e)}
+                    search="true"
+                  />
+                  <button className="btn btn-outline-secondary" onClick={cardBaselineReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
               <div className="col col-lg-3 col-sm-6 col-12">
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
@@ -243,13 +275,18 @@ function App() {
                     Minimum card drop price (in <img src={chaos} alt="c" width="16" height="16" />)
                   </label>
                 </span>
-                <input
-                  className="form-control"
-                  type="number"
-                  placeholder={cardMinPriceInput}
-                  defaultValue={cardMinPriceInput}
-                  onChange={setCardMinPriceInput}
-                />
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={cardMinPriceRef}
+                    defaultValue={cardMinPriceInput}
+                    onChange={setCardMinPriceInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={cardMinPriceReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>

@@ -8,6 +8,12 @@ import { possibleVoidstones } from '../data'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 
+const scale = 2.5
+const fullWidth = 1003.52
+const fullHeight = 564.48
+const offset = 6
+const bgId = 'bg'
+
 function toNode(map, matchingNodes, scoreHeatmap, voidstones) {
   let mapColor
   if (scoreHeatmap) {
@@ -24,9 +30,10 @@ function toNode(map, matchingNodes, scoreHeatmap, voidstones) {
 
   return {
     id: map.name,
+    parentNode: bgId,
     position: {
-      x: map.x * 2,
-      y: map.y * 2
+      x: map.x * scale + offset,
+      y: map.y * scale + offset
     },
     data: {
       label: (scoreHeatmap ? map.score + ' ' : 'T' + map.tiers[parseInt(voidstones)] + ' ') + map.name
@@ -51,6 +58,10 @@ function toLinks(map) {
 }
 
 function onNodeClick(e, node) {
+  if (node.id === bgId) {
+    return
+  }
+
   scrollToElement(node.id)
 }
 
@@ -64,14 +75,18 @@ function fitView(flow, matchingNodes) {
   })
 }
 
+function BackgroundNode({ data }) {
+  return <img src={data.image} width={data.width} height={data.height} alt="" />
+}
+
 const Atlas = ({ maps, currentSearch }) => {
   const flowRef = useRef()
   const [full, setFull] = useState(false)
   const [scoreHeatmap, setScoreHeatmap] = usePersistedState('scoreHeatmap', false)
   const [voidstones, setVoidstones] = usePersistedState('voidstones', 0)
 
+  const nodeTypes = useMemo(() => ({ background: BackgroundNode }), [])
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
-
   const matchingNodes = useMemo(
     () => connectedMaps.filter(m => filter(currentSearch, m.search)).map(m => m.name),
     [connectedMaps, currentSearch]
@@ -79,7 +94,23 @@ const Atlas = ({ maps, currentSearch }) => {
 
   const data = useMemo(
     () => ({
-      nodes: connectedMaps.map(m => toNode(m, matchingNodes, scoreHeatmap, voidstones)),
+      nodes: [
+        {
+          id: bgId,
+          type: 'background',
+          position: {
+            x: 0,
+            y: 0
+          },
+          data: {
+            image: '/atlas.webp',
+            width: fullWidth * scale,
+            height: fullHeight * scale
+          },
+          zIndex: -1,
+          className: 'nodrag'
+        }
+      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, scoreHeatmap, voidstones))),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
@@ -104,8 +135,7 @@ const Atlas = ({ maps, currentSearch }) => {
       style={{
         width: '100%',
         height: full ? '100vh' : '50vh',
-        background: '#686664 url(/atlas.webp) no-repeat top center',
-        backgroundSize: 'cover'
+        backgroundColor: 'black'
       }}
     >
       <ReactFlow
@@ -119,6 +149,8 @@ const Atlas = ({ maps, currentSearch }) => {
         nodes={data.nodes}
         edges={data.edges}
         onNodeClick={onNodeClick}
+        nodeTypes={nodeTypes}
+        nodeOrigin={[0.5, 0.5]}
         defaultEdgeOptions={{
           type: 'simplebezier'
         }}

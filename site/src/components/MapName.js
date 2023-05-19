@@ -23,7 +23,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   const mapName = map.image ? (
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
       <span className="tooltip-tag-text tooltip-tag-fill">
-        <img src={mapImage} onError={e => (e.target.src = '/map.webp')} alt="" loading="lazy" />
+        <img src={mapImage} alt="" loading="lazy" />
       </span>
       {name}
     </span>
@@ -32,7 +32,9 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   )
 
   const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = <img src={map.icon} alt="" loading="lazy" width="47" height="47" />
+  const icon = (
+    <img src={map.icon} onError={e => (e.target.src = '/map.webp')} alt="" loading="lazy" width="47" height="47" />
+  )
   const score = (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />

@@ -55,7 +55,9 @@ export const preparedMaps = maps.map(map => {
   }
 
   // Build search index
-  out.search = [out.name, ...out.connected, ...out.cards, ...(out.boss.cards || []), ...out.tags.map(t => t.name)]
+  out.search = [out.name, ...out.connected, ...out.cards, ...(out.boss.cards || []), ...out.tags.map(t => t.name)].map(
+    v => v.trim().toLowerCase()
+  )
 
   return out
 })

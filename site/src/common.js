@@ -33,15 +33,23 @@ export function calculateScore(dataset, range) {
   return out.sort((a, b) => (b.score || 0) - (a.score || 0))
 }
 
+function filterOneOrMore(s, v) {
+  if (typeof v === 'string') {
+    return v.includes(s)
+  }
+
+  return v.some(m => m.includes(s))
+}
+
 export function filter(search, v) {
   let posMatched = true
   let negMatched = true
 
   for (let s of search) {
     if (s.neg) {
-      negMatched = negMatched && !v.some(m => m.trim().toLowerCase().includes(s.value))
+      negMatched = negMatched && !filterOneOrMore(s.value, v)
     } else {
-      posMatched = posMatched && v.some(m => m.trim().toLowerCase().includes(s.value))
+      posMatched = posMatched && filterOneOrMore(s.value, v)
     }
   }
 

@@ -1,0 +1,30 @@
+.react-flow__controls-button {
+  color: black;
+}
+
+.react-flow__panel {
+  opacity: 0.7;
+}
+
+path.react-flow__edge-path {
+  stroke: black;
+}
+
+.atlas-button {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 105%;
+  opacity: 0.6;
+}
+
+.atlas-edge {
+  position: absolute !important;
+  top: 50% !important;
+  right: 50% !important;
+  transform: translate(50%, -50%) !important;
+}
+
+.react-flow__handle.connectionindicator {
+  background: none;
+}

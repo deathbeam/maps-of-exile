@@ -263,19 +263,3 @@ a:hover {
   font-weight: bold;
   color: var(--select-search-selected);
 }
-
-.react-flow__controls-button {
-  color: black;
-}
-
-.react-flow__panel {
-  opacity: 0.7;
-}
-
-.react-flow__node-default {
-  border-color: black !important;
-}
-
-path.react-flow__edge-path {
-  stroke: black;
-}

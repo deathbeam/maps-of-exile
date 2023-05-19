@@ -91,7 +91,7 @@ function MapNode({ id, data }) {
     <div>
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
-      {atlasIcons && (
+      {!!atlasIcons && (
         <img
           src={map.icon}
           onError={e => (e.target.src = '/map.webp')}
@@ -103,7 +103,7 @@ function MapNode({ id, data }) {
           onClick={() => scrollToElement(id)}
         />
       )}
-      {atlasLabels && (
+      {!!atlasLabels && (
         <button className={buttonClass} onClick={() => scrollToElement(id)}>
           {label}
         </button>

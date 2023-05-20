@@ -29,7 +29,7 @@ function rateCards(cards, cardMinPrice) {
 }
 
 function rateMaps(foundMaps, foundCards, layoutInput, densityInput, bossInput, cardInput) {
-  return calculateScore(
+  const rated = calculateScore(
     foundMaps.map(map => {
       const layoutValue = (map.rating.layout || 0) * layoutInput
       const densityValue = (map.rating.density || 0) * densityInput
@@ -78,6 +78,19 @@ function rateMaps(foundMaps, foundCards, layoutInput, densityInput, bossInput, c
     }),
     100
   )
+
+  for (let map of rated) {
+    const connectedOut = []
+    for (let connected of map.connected || []) {
+      connectedOut.push({
+        name: connected,
+        score: (rated.find(rm => rm.name === connected) || {}).score || 0
+      })
+    }
+    map.connected = connectedOut
+  }
+
+  return rated
 }
 
 function parseSearch(s) {
@@ -425,7 +438,7 @@ function App() {
                 <MapBoss boss={m.boss} rating={m.rating.boss} tooltip={m.info.boss} />
               </td>
               <td>
-                <MapConnected connected={m.connected} ratedMaps={ratedMaps} />
+                <MapConnected connected={m.connected} />
               </td>
               <td>
                 <MapCards

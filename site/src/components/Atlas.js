@@ -44,7 +44,7 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
 
 function toLinks(map) {
   return map.connected.map(c => {
-    const con = [map.name, c].sort()
+    const con = [map.name, c.name].sort()
 
     return {
       id: con[0] + '-' + con[1],

@@ -7,16 +7,12 @@ import chaos from './img/chaos.png'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
-import MapCards from './components/MapCards'
 import { calculateScore, filter } from './common'
-import Rating from './components/Rating'
-import MapBoss from './components/MapBoss'
-import MapConnected from './components/MapConnected'
-import MapName from './components/MapName'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import GoToTop from './components/GoToTop'
+import Map from './components/Map'
 
 function rateCards(cards, cardMinPrice) {
   return calculateScore(
@@ -419,34 +415,13 @@ function App() {
         <tbody>
           {filterMaps(ratedMaps, currentSearch).map(m => (
             <tr key={m.name} id={m.name}>
-              <td>
-                <MapName map={m} currentSearch={currentSearch} addToInput={addToInput} />
-                <div className="d-md-none mt-2">
-                  <Rating rating={m.score} scale={10} label="Total" />
-                  <Rating rating={m.rating.layout} label="Layout" />
-                  <Rating rating={m.rating.density} label="Density" />
-                  <Rating rating={m.rating.boss} label="Boss" />
-                </div>
-              </td>
-              <td className="text-center d-none d-md-table-cell">
-                <Rating rating={m.rating.layout} tooltip={m.info.layout} />
-              </td>
-              <td className="text-center d-none d-md-table-cell">
-                <Rating rating={m.rating.density} tooltip={m.info.density} />
-              </td>
-              <td className="text-center d-none d-md-table-cell">
-                <MapBoss boss={m.boss} rating={m.rating.boss} tooltip={m.info.boss} />
-              </td>
-              <td>
-                <MapConnected connected={m.connected} />
-              </td>
-              <td>
-                <MapCards
-                  cards={m.cards}
-                  cardWeightBaseline={cardWeightBaseline}
-                  hideLowValueCards={hideLowValueCards}
-                />
-              </td>
+              <Map
+                map={m}
+                cardWeightBaseline={cardWeightBaseline}
+                hideLowValueCards={hideLowValueCards}
+                currentSearch={currentSearch}
+                addToInput={addToInput}
+              />
             </tr>
           ))}
         </tbody>

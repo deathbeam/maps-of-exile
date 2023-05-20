@@ -1,7 +1,6 @@
 import json
 import os
 import re
-import shutil
 import sys
 from decimal import Decimal
 from math import ceil

@@ -16,14 +16,13 @@ const MapImage = ({ icon, tier = 0, unique = false, onClick = null }) => {
     color = 'map-yellow'
   }
 
-  const style = unique
-    ? {}
-    : {
-        backgroundImage: 'url(/img/map.png)'
-      }
+  let extraClass = ''
+  if (!unique) {
+    extraClass = ' map-background'
+  }
 
   return (
-    <div className="map-icon-container" onClick={onClick} style={style}>
+    <div className={'map-icon-container' + extraClass} onClick={onClick}>
       <img loading="lazy" src={icon} className={color} alt="" />
     </div>
   )

@@ -2,12 +2,16 @@
   width: 48px;
   height: 48px;
   padding: 1px;
-  background-repeat: round;
 }
 
 .map-icon-container img {
   width: 47px;
   height: 47px;
+}
+
+.map-background {
+  background-repeat: round;
+  background-image: url(~/public/img/map.png);
 }
 
 .map-white {

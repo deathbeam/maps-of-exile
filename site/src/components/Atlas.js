@@ -11,7 +11,7 @@ import usePersistedState from '../hooks/usePersistedState'
 const scale = 3
 const fullWidth = 1003.52
 const fullHeight = 564.48
-const offset = 8
+const offset = 6
 const bgId = 'bg'
 
 function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {

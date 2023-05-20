@@ -249,10 +249,24 @@ def get_map_wiki(config):
 	return wiki_maps
 
 
-def get_maps(key, config):
+def get_map_icons(league, config):
+	icons = {}
+	for icon_url in config["icons"]:
+		url = icon_url + league
+		print(f"Getting map icons from {url}")
+		res_maps = requests.get(url).json()["lines"]
+		res_maps = sorted(res_maps, key=lambda x: x.get("mapTier", 0))
+		for map in res_maps:
+			if map["name"] not in icons:
+				icons[map["name"]] = map["icon"]
+	return icons
+
+
+def get_maps(key, league, config):
 	meta = get_map_meta(key, config)
 	map_ratings = get_map_ratings(key, config)
 	map_wiki = get_map_wiki(config)
+	map_icons = get_map_icons(league, config)
 
 	out = []
 	url = config["poedb"]["list"]
@@ -323,6 +337,7 @@ def get_maps(key, config):
 		m["rating"] = {}
 		m["info"] = {}
 		m["unique"] = not name.endswith(" Map")
+		m["icon"] = map_icons.get(name, m.get("icon"))
 
 		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
 		if existing_meta:
@@ -416,7 +431,7 @@ def get_map_data(map_data, extra_map_data, config):
 					map_data["boss"]["not_twinnable"] = True
 			elif name == "icon":
 				img = value.find("img")
-				if img:
+				if img and not map_data["icon"]:
 					map_data["icon"] = img.attrs["src"]
 
 	map_data["cards"] = sorted(list(map_cards))
@@ -583,7 +598,7 @@ def main():
 
 	if fetch_maps:
 		# Get basic map data
-		maps = get_maps(api_key, config["maps"])
+		maps = get_maps(api_key, config["league"], config["maps"])
 		with open(dir_path + "/maps.json", "r") as f:
 			map_extra = get_maps_template(maps, json.load(f))
 		with open(dir_path + "/maps.json", "w") as f:

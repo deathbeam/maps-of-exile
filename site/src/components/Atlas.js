@@ -1,11 +1,10 @@
 import './Atlas.css'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
-import ReactFlow, { ControlButton, Controls, Handle, Panel, Position } from 'reactflow'
+import ReactFlow, { ControlButton, Controls, Handle, Position } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import { possibleVoidstones } from '../data'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 
@@ -15,7 +14,7 @@ const fullHeight = 564.48
 const offset = 8
 const bgId = 'bg'
 
-function toNode(map, matchingNodes, atlasScore, atlasVoidstones, atlasIcons, atlasLabels) {
+function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
   let opacity = 1
 
   if (!matchingNodes.includes(map.name)) {
@@ -32,7 +31,6 @@ function toNode(map, matchingNodes, atlasScore, atlasVoidstones, atlasIcons, atl
     },
     data: {
       atlasScore,
-      atlasVoidstones,
       atlasIcons,
       atlasLabels,
       map
@@ -72,7 +70,6 @@ function BackgroundNode({ data }) {
 
 function MapNode({ id, data }) {
   const atlasScore = data.atlasScore
-  const atlasVoidstones = data.atlasVoidstones
   const atlasIcons = data.atlasIcons
   const atlasLabels = data.atlasLabels
   const map = data.map
@@ -81,11 +78,11 @@ function MapNode({ id, data }) {
   if (atlasScore) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map, atlasVoidstones)}`
+    mapColor = `text-${tierColor(map)}`
   }
 
   const buttonClass = `nodrag btn btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
-  const label = (atlasScore ? map.score + ' ' : 'T' + map.tiers[parseInt(atlasVoidstones)] + ' ') + map.name
+  const label = (atlasScore ? map.score + ' ' : '') + map.name
 
   return (
     <div>
@@ -116,7 +113,6 @@ const Atlas = ({ maps, currentSearch }) => {
   const flowRef = useRef()
   const [full, setFull] = useState(false)
   const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
-  const [atlasVoidstones, setAtlasVoidstones] = usePersistedState('atlasVoidstones', 0)
   const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
   const [atlasLabels, setAtlasLabels] = usePersistedState('atlasLabels', true)
 
@@ -145,13 +141,13 @@ const Atlas = ({ maps, currentSearch }) => {
           zIndex: -10,
           className: 'nodrag'
         }
-      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasVoidstones, atlasIcons, atlasLabels))),
+      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels))),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [connectedMaps, matchingNodes, atlasScore, atlasVoidstones, atlasIcons, atlasLabels]
+    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels]
   )
 
   useKeyPress(['Escape'], () => {
@@ -196,23 +192,6 @@ const Atlas = ({ maps, currentSearch }) => {
           fitView(flowRef.current, matchingNodes)
         }}
       >
-        <Panel position="bottom-left" className="card bg-light text-dark">
-          <div className="card-body p-1">
-            <i className="fa-solid fa-fw fa-gem" title="Voidstones" />{' '}
-            <div className="btn-group" role="group">
-              {possibleVoidstones.map(v => (
-                <>
-                  <button
-                    className={'btn ' + (v === atlasVoidstones ? 'btn-dark' : 'text-secondary btn-outline-dark')}
-                    onClick={e => setAtlasVoidstones(v)}
-                  >
-                    {v}
-                  </button>
-                </>
-              ))}
-            </div>
-          </div>
-        </Panel>
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="Reset position">
             <i className="fa-solid fa-fw fa-refresh" />

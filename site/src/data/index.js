@@ -5,7 +5,6 @@ export const defaultCardBaseline = 'The Chains that Bind'
 export const preparedCards = cards
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
-export const possibleVoidstones = [0, 1, 2, 3, 4]
 
 export const preparedMaps = maps.map(map => {
   function pushTag(info, destination, source, key, name = null) {

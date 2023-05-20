@@ -12,7 +12,7 @@ Simplest way to add new map even if you are not knowledgeable about inner workin
 ### For developers
 
 [/data/maps.json](/data/maps.json) contains extra map metadata  
-[/site/public/layout](/site/public/layout/) contains layout images  
+[/site/public/layout](/site/public/img/layout/) contains layout images  
 
 Full format for map metadata is:
 

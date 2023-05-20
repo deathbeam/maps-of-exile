@@ -7,6 +7,7 @@ import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
+import MapImage from './MapImage'
 
 const scale = 3
 const fullWidth = 1003.52
@@ -89,16 +90,7 @@ function MapNode({ id, data }) {
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       {!!atlasIcons && (
-        <img
-          src={map.icon}
-          onError={e => (e.target.src = '/map.webp')}
-          className="nodrag"
-          alt=""
-          loading="lazy"
-          width="47"
-          height="47"
-          onClick={() => scrollToElement(id)}
-        />
+        <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[0]} onClick={() => scrollToElement(id)} />
       )}
       {!!atlasLabels && (
         <button className={buttonClass} onClick={() => scrollToElement(id)}>
@@ -134,7 +126,7 @@ const Atlas = ({ maps, currentSearch }) => {
             y: 0
           },
           data: {
-            image: '/atlas.webp',
+            image: '/img/atlas.webp',
             width: fullWidth * scale,
             height: fullHeight * scale
           },

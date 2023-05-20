@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import shutil
 import sys
 from decimal import Decimal
 from math import ceil
@@ -8,6 +9,8 @@ from math import ceil
 import requests
 import yaml
 from bs4 import BeautifulSoup
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
 class DecimalEncoder(json.JSONEncoder):
@@ -249,24 +252,10 @@ def get_map_wiki(config):
 	return wiki_maps
 
 
-def get_map_icons(league, config):
-	icons = {}
-	for icon_url in config["icons"]:
-		url = icon_url + league
-		print(f"Getting map icons from {url}")
-		res_maps = requests.get(url).json()["lines"]
-		res_maps = sorted(res_maps, key=lambda x: x.get("mapTier", 0))
-		for map in res_maps:
-			if map["name"] not in icons:
-				icons[map["name"]] = map["icon"]
-	return icons
-
-
-def get_maps(key, league, config):
+def get_maps(key, config):
 	meta = get_map_meta(key, config)
 	map_ratings = get_map_ratings(key, config)
 	map_wiki = get_map_wiki(config)
-	map_icons = get_map_icons(league, config)
 
 	out = []
 	url = config["poedb"]["list"]
@@ -278,7 +267,6 @@ def get_maps(key, league, config):
 	for row in mapslist:
 		cols = row.find_all("td")
 		name = cols[3].text
-		img = cols[2].find("img")
 
 		if not name:
 			continue
@@ -289,9 +277,6 @@ def get_maps(key, league, config):
 			"name": name.strip(),
 			"poedb": map_url
 		}
-
-		if img:
-			out_map["icon"] = img.attrs["src"]
 
 		out.append(out_map)
 
@@ -337,7 +322,6 @@ def get_maps(key, league, config):
 		m["rating"] = {}
 		m["info"] = {}
 		m["unique"] = not name.endswith(" Map")
-		m["icon"] = map_icons.get(name, m.get("icon"))
 
 		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
 		if existing_meta:
@@ -387,8 +371,10 @@ def get_map_data(map_data, extra_map_data, config):
 
 	# PoeDB map metadata
 	print(f"Getting map data for {map_data['name']} from url {url}")
-	r = requests.get(url)
-	maptabs = BeautifulSoup(r.content, "html.parser").find("div", class_="tab-content").findChildren("div", recursive=False)
+	s = requests.Session()
+	r = s.get(url)
+	soup = BeautifulSoup(r.content, "html.parser")
+	maptabs = soup.find("div", class_="tab-content").findChildren("div", recursive=False)
 
 	for data in maptabs:
 		table = data.find("table")
@@ -429,14 +415,11 @@ def get_map_data(map_data, extra_map_data, config):
 			elif name == "tags":
 				if "cannot_be_twinned" in value.text.strip():
 					map_data["boss"]["not_twinnable"] = True
-			elif name == "icon":
-				img = value.find("img")
-				if img and not map_data["icon"]:
-					map_data["icon"] = img.attrs["src"]
-
-	map_data["cards"] = sorted(list(map_cards))
+			elif name == "icon" and "icon" not in map_data:
+				map_data["icon"] = value.text.strip()
 
 	# Merge existing data
+	map_data["cards"] = sorted(list(map_cards))
 	existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
 	if existing:
 		merge(existing, map_data)
@@ -573,7 +556,6 @@ def get_issue_template(maps):
 
 
 def main():
-	dir_path = os.path.dirname(os.path.realpath(__file__))
 	with open (dir_path + "/config.yaml", "r") as f:
 		config = yaml.safe_load(f)
 
@@ -598,7 +580,7 @@ def main():
 
 	if fetch_maps:
 		# Get basic map data
-		maps = get_maps(api_key, config["league"], config["maps"])
+		maps = get_maps(api_key, config["maps"])
 		with open(dir_path + "/maps.json", "r") as f:
 			map_extra = get_maps_template(maps, json.load(f))
 		with open(dir_path + "/maps.json", "w") as f:

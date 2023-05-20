@@ -50,7 +50,8 @@ export const preparedMaps = maps.map(map => {
     ...map,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
-    tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
+    tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
+    icon: 'https://web.poecdn.com/image/' + map.icon + '.png'
   }
 
   // Build search index

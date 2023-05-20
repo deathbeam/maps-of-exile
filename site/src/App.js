@@ -3,7 +3,6 @@ import './App.css'
 
 import { useMemo, useTransition, useRef } from 'react'
 import SelectSearch from 'react-select-search'
-import chaos from './img/chaos.png'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
@@ -282,7 +281,7 @@ function App() {
                     even though when you click on listings the data say something else.
                   </span>
                   <label className="form-label">
-                    Minimum card drop price (in <img src={chaos} alt="c" width="16" height="16" />)
+                    Minimum card drop price (in <img src="/img/chaos.png" alt="c" width="16" height="16" />)
                   </label>
                 </span>
                 <div className="input-group">

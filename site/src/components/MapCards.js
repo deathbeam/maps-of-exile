@@ -1,8 +1,3 @@
-import alch from '../img/alch.png'
-import divine from '../img/divine.png'
-import exalt from '../img/exalt.png'
-import chaos from '../img/chaos.png'
-
 function calculateCardData(card, weight, weightDescription) {
   let perMap = 1
   let mapRate = card.weight / weight
@@ -39,14 +34,14 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   }
 
-  let img = alch
+  let img = '/img/alch.png'
 
   if (card.price >= 100) {
-    img = divine
+    img = '/img/chaos.png'
   } else if (card.price >= 50) {
-    img = exalt
+    img = '/img/divine.png'
   } else if (card.price >= 5) {
-    img = chaos
+    img = '/img/chaos.png'
   }
 
   const cards = [calculateCardData(card, mapWeight, 'map weight')]
@@ -63,7 +58,7 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
         <br />
         <b>Stack size</b>: {card.stack}
         <br />
-        <b>Price</b>: {card.price} <img src={chaos} alt="c" width="16" height="16" />
+        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" height="16" />
         <br />
         <b>Weight</b>: {card.weight}
         {card.value > 0 &&
@@ -73,9 +68,9 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
               <b>{card.weight}</b> (weight) / <b>{mapCard.weight}</b> ({mapCard.weightDescription})
               <br />= <b>{mapCard.perMap}</b> every <b>{mapCard.everyMap > 1 && mapCard.everyMap}</b>{' '}
               {mapCard.everyMap > 1 ? 'maps' : 'map'}
-              <br />= <b>{mapCard.cardValue}</b> <img src={chaos} alt="c" width="16" height="16" /> per map
+              <br />= <b>{mapCard.cardValue}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
               <br />* <b>{card.stack}</b> (stack size)
-              <br />= <b>{mapCard.stackValue}</b> <img src={chaos} alt="c" width="16" height="16" /> per stack
+              <br />= <b>{mapCard.stackValue}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per stack
             </>
           ))}
       </span>

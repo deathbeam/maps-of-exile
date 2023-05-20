@@ -1,11 +1,11 @@
 import Tags from './Tags'
 import { tierColor } from '../common'
 import Rating from './Rating'
+import MapImage from './MapImage'
 
 const MapName = ({ map, currentSearch, addToInput }) => {
   const mapImage =
-    process.env.PUBLIC_URL +
-    '/layout/' +
+    '/img/layout/' +
     map.name
       .toLowerCase()
       .replace(/[^a-zA-Z0-9 ]/g, '')
@@ -32,9 +32,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   )
 
   const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = (
-    <img src={map.icon} onError={e => (e.target.src = '/map.webp')} alt="" loading="lazy" width="47" height="47" />
-  )
+  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[0]} />
   const score = (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />

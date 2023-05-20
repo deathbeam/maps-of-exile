@@ -1,10 +1,12 @@
 import cards from './cards.json'
 import maps from './maps.json'
 
+const wikiBase = 'https://www.poewiki.net/wiki/'
+const iconBase = 'https://web.poecdn.com/image/'
 export const defaultCardBaseline = 'The Chains that Bind'
-export const preparedCards = cards
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
+export const preparedCards = cards
 
 export const preparedMaps = maps.map(map => {
   function pushTag(info, destination, source, key, name = null) {
@@ -46,12 +48,17 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
+  const tier = map.level - 67
+
   const out = {
     ...map,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-    icon: 'https://web.poecdn.com/image/' + map.icon + '.png'
+    icon: iconBase + map.icon + '.png',
+    wiki: wikiBase + map.name.replace(' ', '_'),
+    unique: !map.name.endsWith(' Map'),
+    tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]
   }
 
   // Build search index

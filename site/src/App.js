@@ -112,7 +112,6 @@ function App() {
 
   const searchRef = useRef(null)
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition)
-
   const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField('layoutInput', 3, startTransition)
   const [densityInput, setDensityInput, densityReset, densityRef] = useInputField('densityInput', 2, startTransition)
   const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition)
@@ -127,20 +126,17 @@ function App() {
     10,
     startTransition
   )
-
   const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
+
   const cardWeightBaseline = useMemo(
     () => preparedCards.find(c => c.name === cardBaselineInput).weight,
     [cardBaselineInput]
   )
-
   const ratedCards = useMemo(() => rateCards(preparedCards, cardMinPriceInput), [cardMinPriceInput])
-
   const ratedMaps = useMemo(
     () => rateMaps(preparedMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput),
     [ratedCards, layoutInput, densityInput, bossInput, cardInput]
   )
-
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
   const addToInput = (v, neg, remove) => {

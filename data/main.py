@@ -320,7 +320,6 @@ def get_maps(key, config):
 		m["layout"] = {}
 		m["rating"] = {}
 		m["info"] = {}
-		m["unique"] = not name.endswith(" Map")
 
 		existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
 		if existing_meta:
@@ -335,7 +334,7 @@ def get_maps(key, config):
 			m["rating"] = existing_rating
 		existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
 		if existing_wiki:
-			if m["unique"] and "unique area id" in existing_wiki:
+			if not name.endswith(" Map") and "unique area id" in existing_wiki:
 				m["id"] = existing_wiki["unique area id"]
 			else:
 				m["id"] = existing_wiki["area id"]
@@ -351,10 +350,10 @@ def get_maps(key, config):
 
 def get_map_data(map_data, extra_map_data, config):
 	url = map_data["poedb"]
+	map_data.pop("poedb")
 	map_cards = set(map_data.get("cards", []))
 
 	# Wiki card data
-	map_data["wiki"] = config["wiki"]["base"] + map_data["name"].replace(" ", "_")
 	if map_data["id"]:
 		print(f"Getting card data for {map_data['name']} from wiki")
 		wiki_cards = requests.get(config["wiki"]["api"], params={
@@ -390,19 +389,10 @@ def get_map_data(map_data, extra_map_data, config):
 			cols = row.find_all("td")
 			name = cols[0].text.strip().lower()
 			value = cols[1]
-			if name == "monster level":
+			if name == "monster level" and 'level' not in map_data:
 				if map_data.get("tiers"):
 					continue
-				value = int(value.text.strip())
-				map_data["level"] = value
-				tier = value - 67
-				map_data["tiers"] = [
-					tier,
-					min(tier + 3, 16),
-					min(tier + 7, 16),
-					min(tier + 11, 16),
-					min(tier + 15, 16)
-				]
+				map_data["level"] = int(value.text.strip())
 			elif name == "boss":
 				map_data["boss"]["names"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
 			elif name == "atlas linked":

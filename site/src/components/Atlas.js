@@ -82,11 +82,11 @@ function MapNode({ id, data }) {
     mapColor = `text-${tierColor(map)}`
   }
 
-  const buttonClass = `nodrag btn btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
+  const buttonClass = `btn btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
   const label = (atlasScore ? map.score + ' ' : '') + map.name
 
   return (
-    <div>
+    <>
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       {!!atlasIcons && (
@@ -97,7 +97,7 @@ function MapNode({ id, data }) {
           {label}
         </button>
       )}
-    </div>
+    </>
   )
 }
 

@@ -1,7 +1,7 @@
 import './Atlas.css'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
-import ReactFlow, { ControlButton, Controls, Handle, Position } from 'reactflow'
+import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
@@ -102,7 +102,7 @@ function MapNode({ id, data }) {
 }
 
 const Atlas = ({ maps, currentSearch }) => {
-  const flowRef = useRef()
+  const flow = useReactFlow()
   const [full, setFull] = useState(false)
   const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
   const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
@@ -114,6 +114,8 @@ const Atlas = ({ maps, currentSearch }) => {
     () => connectedMaps.filter(m => filter(currentSearch, m.search)).map(m => m.name),
     [connectedMaps, currentSearch]
   )
+
+  const fitMatching = useCallback(() => fitView(flow, matchingNodes), [flow, matchingNodes])
 
   const data = useMemo(
     () => ({
@@ -149,8 +151,8 @@ const Atlas = ({ maps, currentSearch }) => {
   })
 
   useEffect(() => {
-    setTimeout(() => fitView(flowRef.current, matchingNodes), 150)
-  }, [matchingNodes, full])
+    setTimeout(() => fitMatching(), 150)
+  }, [fitMatching, full])
 
   return (
     <div
@@ -179,13 +181,10 @@ const Atlas = ({ maps, currentSearch }) => {
         proOptions={{
           hideAttribution: true
         }}
-        onInit={flow => {
-          flowRef.current = flow
-          fitView(flowRef.current, matchingNodes)
-        }}
+        onInit={fitMatching}
       >
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
-          <ControlButton onClick={() => fitView(flowRef.current, matchingNodes)} title="Reset position">
+          <ControlButton onClick={fitMatching} title="Reset position">
             <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>
           <ControlButton onClick={() => setAtlasIcons(!atlasIcons)} title="Map icons">

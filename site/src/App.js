@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useMemo, useTransition, useRef } from 'react'
+import { useMemo, useTransition, useRef, useCallback } from 'react'
 import SelectSearch from 'react-select-search'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
@@ -12,6 +12,7 @@ import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import GoToTop from './components/GoToTop'
 import Map from './components/Map'
+import { ReactFlowProvider } from 'reactflow'
 
 function rateCards(cards, cardMinPrice) {
   return calculateScore(
@@ -139,29 +140,34 @@ function App() {
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
-  const addToInput = (v, neg, remove) => {
-    let s = parseSearch(searchRef.current.value || '')
+  const addToInput = useCallback(
+    (v, neg, remove) => {
+      let s = parseSearch(searchRef.current.value || '')
 
-    if (remove) {
-      s = s.filter(sv => sv.value !== v)
-    } else {
-      const sv = s.find(sv => sv.value === v)
-      if (sv) {
-        sv.neg = neg
+      if (remove) {
+        s = s.filter(sv => sv.value !== v)
       } else {
-        s.push({ value: v, neg: neg })
+        const sv = s.find(sv => sv.value === v)
+        if (sv) {
+          sv.neg = neg
+        } else {
+          s.push({ value: v, neg: neg })
+        }
       }
-    }
 
-    const val = buildSearch(s)
-    searchRef.current.value = val
-    setSearchInput(val)
-  }
+      const val = buildSearch(s)
+      searchRef.current.value = val
+      setSearchInput(val)
+    },
+    [setSearchInput, searchRef]
+  )
 
   return (
     <>
       <Loader loading={isPending} />
-      <Atlas maps={ratedMaps} currentSearch={currentSearch} />
+      <ReactFlowProvider>
+        <Atlas maps={ratedMaps} currentSearch={currentSearch} />
+      </ReactFlowProvider>
       <div className="container-fluid p-4">
         <div className="row g-2">
           <div className="col col-lg-4 col-12">

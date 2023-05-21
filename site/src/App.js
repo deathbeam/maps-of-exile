@@ -265,6 +265,7 @@ function App() {
                       .sort((a, b) => b.weight - a.weight)
                       .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
                     value={cardBaselineInput}
+                    placeholder={cardBaselineInput}
                     onChange={e => setCardBaselineInput(e)}
                     search="true"
                   />

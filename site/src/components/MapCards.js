@@ -40,9 +40,9 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   if (card.boss) {
     img = '/img/awsextant.png'
   } else if (card.price >= 100) {
-    img = '/img/chaos.png'
-  } else if (card.price >= 50) {
     img = '/img/divine.png'
+  } else if (card.price >= 50) {
+    img = '/img/exalt.png'
   } else if (card.price >= 5) {
     img = '/img/chaos.png'
   }

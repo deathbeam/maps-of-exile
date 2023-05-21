@@ -111,7 +111,7 @@ const MapCards = ({ cards, hideLowValueCards }) => {
 
   return (
     <div className="d-md-flex flex-row">
-      <div className="text-center pe-2 pb-2">
+      <div className="m-1">
         <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap">
           <span className="tooltip-tag-text">
             {cardsWithData

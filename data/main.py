@@ -98,6 +98,7 @@ def get_card_data(key, league, config):
 			"name": price_card["name"],
 			"price": price_card["chaosValue"],
 			"stack": price_card.get("stackSize", 1),
+			"art": price_card["artFilename"],
 			"reward": reward,
 			"ninja": config["ninja"] + price_card["detailsId"]
 		}

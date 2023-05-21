@@ -2,11 +2,16 @@ import cards from './cards.json'
 import maps from './maps.json'
 
 const wikiBase = 'https://www.poewiki.net/wiki/'
-const iconBase = 'https://web.poecdn.com/image/'
+const mapIconBase = 'https://web.poecdn.com/image/'
+const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
-export const preparedCards = cards
+
+export const preparedCards = cards.map(card => {
+  card.art = cardArtBase + card.art + '.png'
+  return card
+})
 
 export const preparedMaps = maps.map(map => {
   function pushTag(info, destination, source, key, name = null) {
@@ -55,7 +60,7 @@ export const preparedMaps = maps.map(map => {
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-    icon: iconBase + map.icon + '.png',
+    icon: mapIconBase + map.icon + '.png',
     wiki: wikiBase + map.name.replace(' ', '_'),
     unique: !map.name.endsWith(' Map'),
     tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]

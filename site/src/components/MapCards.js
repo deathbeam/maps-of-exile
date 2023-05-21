@@ -1,3 +1,5 @@
+import './MapCards.css'
+
 function calculateCardData(card, weight, weightDescription) {
   let perMap = 1
   let mapRate = card.weight / weight
@@ -54,9 +56,11 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   return (
     <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
       <span className="tooltip-tag-text">
+        <img src={card.art} className="mb-1" alt="" />
+        <span className="badge bg-light text-dark map-stack-size">
+          <b>{card.stack}</b>
+        </span>
         <b>Reward</b>: {card.reward}
-        <br />
-        <b>Stack size</b>: {card.stack}
         <br />
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" height="16" />
         <br />

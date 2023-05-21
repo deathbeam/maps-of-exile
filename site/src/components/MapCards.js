@@ -1,7 +1,8 @@
 import './MapCards.css'
+import { useMemo } from 'react'
 
-function calculateCardData(card, mapRate) {
-  const stackSize = card.stack
+function calculateCardData(card) {
+  const mapRate = (card.weight / card.poolWeight) * card.dropPoolItems
   let perMap = 1
   let everyMap = 1 / mapRate
   if (everyMap < 1) {
@@ -10,30 +11,28 @@ function calculateCardData(card, mapRate) {
   } else {
     everyMap = Math.ceil(everyMap)
   }
-  let cardValue = Math.round(card.price * mapRate * 1000) / 1000
-  let stackValue = Math.round(card.price * mapRate * stackSize * 1000) / 1000
 
   return {
+    ...card,
+    value: Math.round(card.value * 1000) / 1000,
     perMap,
-    everyMap,
-    stackSize,
-    cardValue,
-    stackValue
+    everyMap
   }
 }
 
-function cardDataToTooltip(cardData, withStack = false) {
-  return (
+function CardDataTooltip({ card, withName = false }) {
+  return withName ? (
     <>
-      <br />= <b>{cardData.perMap}</b> every <b>{cardData.everyMap > 1 && cardData.everyMap}</b>{' '}
-      {cardData.everyMap > 1 ? 'maps' : 'map'}
-      <br />= <b>{cardData.cardValue}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
-      {withStack && (
-        <>
-          <br />* <b>{cardData.stackSize}</b> (stack size)
-          <br />= <b>{cardData.stackValue}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per stack
-        </>
-      )}
+      <b>{card.perMap}</b> {withName && <b>{card.name}</b>} every <b>{card.everyMap > 1 && card.everyMap}</b>{' '}
+      {card.everyMap > 1 ? 'maps' : 'map'}
+      <br />= <b>{card.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
+      <br />
+    </>
+  ) : (
+    <>
+      <br />= <b>{card.perMap}</b> every <b>{card.everyMap > 1 && card.everyMap}</b>{' '}
+      {card.everyMap > 1 ? 'maps' : 'map'}
+      <br />= <b>{card.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
     </>
   )
 }
@@ -62,21 +61,17 @@ const MapCard = ({ card }) => {
     img = '/img/chaos.png'
   }
 
-  const mapCardWeight = card.poolWeight
-  const dropPoolItems = card.dropPoolItems
-  const mapCardRate = (card.weight / mapCardWeight) * dropPoolItems
-  const mapCard = calculateCardData(card, mapCardRate)
   const tooltip = (
     <>
       <hr />
       <b>{card.weight}</b> (card weight)
-      <br />/ <b>{mapCardWeight}</b> (drop pool weight)
-      {dropPoolItems > 1 && (
+      <br />/ <b>{card.poolWeight}</b> (drop pool weight)
+      {card.dropPoolItems > 1 && (
         <>
-          <br />* <b>{Math.round(dropPoolItems)}</b> (drop pool items)
+          <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
         </>
       )}
-      {cardDataToTooltip(mapCard)}
+      <CardDataTooltip card={card} />
     </>
   )
 
@@ -108,20 +103,30 @@ const MapCard = ({ card }) => {
 }
 
 const MapCards = ({ cards, hideLowValueCards }) => {
-  const total = Math.round(cards.reduce((a, b) => a + b.value, 0) * 10) / 10
+  const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 10) / 10, [cards])
+  const cardsWithData = useMemo(
+    () => cards.filter(c => !hideLowValueCards || c.value > 0).map(c => calculateCardData(c)),
+    [cards, hideLowValueCards]
+  )
+
   return (
     <div className="d-md-flex flex-row">
       <div className="text-center pe-2 pb-2">
-        <div className="d-flex align-items-center">
-          {total} <img src="/img/chaos.png" className="m-1" alt="" width="16" height="16" />
-        </div>
+        <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap">
+          <span className="tooltip-tag-text">
+            {cardsWithData
+              .filter(c => c.value > 0)
+              .map(c => (
+                <CardDataTooltip card={c} withName={true} />
+              ))}
+          </span>
+          {total} <img src="/img/chaos.png" alt="" width="16" height="16" />
+        </span>
       </div>
       <div>
-        {cards
-          .filter(c => !hideLowValueCards || c.value > 0)
-          .map(c => (
-            <MapCard card={c} />
-          ))}
+        {cardsWithData.map(c => (
+          <MapCard card={c} />
+        ))}
       </div>
     </div>
   )

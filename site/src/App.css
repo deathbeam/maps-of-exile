@@ -91,7 +91,7 @@ a:hover {
 }
 
 .tooltip-tag-compact .tooltip-tag-text {
-  min-width: 0;
+  min-width: 200px;
   text-align: left;
 }
 

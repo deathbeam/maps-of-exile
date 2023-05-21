@@ -56,7 +56,7 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   return (
     <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
       <span className="tooltip-tag-text">
-        <img src={card.art} className="mb-1" alt="" />
+        <img src={card.art} className="mb-1" alt="" loading="lazy" />
         <span className="badge bg-light text-dark map-stack-size">
           <b>{card.stack}</b>
         </span>

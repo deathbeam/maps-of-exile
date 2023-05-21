@@ -1,3 +1,12 @@
+:root {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: var(--bs-border-radius);
+}
+
 a {
   text-decoration: none;
 }
@@ -11,12 +20,6 @@ hr {
 }
 
 .btn {
-  --bs-badge-padding-x: 0.65em;
-  --bs-badge-padding-y: 0.35em;
-  --bs-badge-font-size: 0.75em;
-  --bs-badge-font-weight: 700;
-  --bs-badge-color: #fff;
-  --bs-badge-border-radius: var(--bs-border-radius);
   display: inline-block;
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   font-size: var(--bs-badge-font-size);
@@ -135,10 +138,9 @@ a:hover {
   --select-search-background: var(--bs-body-bg);
   --select-search-border: var(--bs-border-color);
   --select-search-inverted-text: var(--select-search-background);
-  --select-search-selected: #89b4fa;
+  --select-search-selected: #86b7fe;
   --select-search-text: var(--bs-body-color);
-  --select-search-subtle-text: #a6adc8;
-  --select-search-highlight: #1e1e2e;
+  --select-search-highlight: var(--bs-secondary);
 
   position: relative;
   color: var(--select-search-text);
@@ -148,6 +150,12 @@ a:hover {
 .input-group .select-search-input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.select-search-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  outline: 0;
+  z-index: 5;
 }
 
 .input-group .select-search-container {
@@ -198,14 +206,14 @@ a:hover {
 }
 
 .select-search-container:not(.select-search-is-disabled).select-search-has-focus .select-search-input,
-.select-search-container:not(.select-search-is-disabled) .select-search-input:hover {
+.select-search-container:not(.select-search-is-disabled) {
   border-color: var(--select-search-selected);
 }
 
 .select-search-select {
   background: var(--select-search-background);
   box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
-  border: 2px solid var(--select-search-border);
+  border: 1px solid var(--select-search-border);
   overflow: auto;
   max-height: 360px;
 }

@@ -69,7 +69,7 @@ function MapNode({ id, data }) {
   if (atlasScore) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map)}`
+    mapColor = `text-${tierColor(map.tiers, map.unique)}`
   }
 
   const buttonClass = `btn btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')

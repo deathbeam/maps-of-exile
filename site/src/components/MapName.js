@@ -12,7 +12,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
       .replaceAll(' ', '_') +
     '.png'
 
-  const color = `text-${tierColor(map)}`
+  const color = `text-${tierColor(map.tiers, map.unique)}`
 
   const name = (
     <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>

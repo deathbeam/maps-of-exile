@@ -74,11 +74,11 @@ export function ratingColor(rating, scale = 1) {
   return color
 }
 
-export function tierColor(map, voidstones = 0) {
-  const tier = map.tiers[parseInt(voidstones)]
+export function tierColor(tiers, unique, voidstones = 0) {
+  const tier = tiers[parseInt(voidstones)]
   let color = 'light'
 
-  if (map.unique) {
+  if (unique) {
     color = 'unique'
   } else if (tier >= 11) {
     color = 'danger'

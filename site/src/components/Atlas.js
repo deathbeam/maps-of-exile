@@ -1,10 +1,10 @@
-import './Atlas.css'
-import { useCallback, useEffect, useMemo, useState } from 'react'
-import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
-import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
-
 import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import './Atlas.css'
+
+import { useCallback, useEffect, useMemo, useState } from 'react'
+import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
+import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 import MapImage from './MapImage'
@@ -16,12 +16,6 @@ const offset = 6
 const bgId = 'bg'
 
 function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
-  let opacity = 1
-
-  if (!matchingNodes.includes(map.name)) {
-    opacity = 0.4
-  }
-
   return {
     id: map.name,
     parentNode: bgId,
@@ -34,10 +28,16 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
       atlasScore,
       atlasIcons,
       atlasLabels,
-      map
+      map: {
+        name: map.name,
+        tiers: map.tiers,
+        icon: map.icon,
+        unique: map.unique,
+        score: map.score
+      }
     },
     style: {
-      opacity
+      opacity: matchingNodes.includes(map.name) ? 1 : 0.4
     },
     selectable: true
   }
@@ -52,16 +52,6 @@ function toLinks(map) {
       source: con[0],
       target: con[1]
     }
-  })
-}
-
-function fitView(flow, matchingNodes) {
-  if (!flow) {
-    return
-  }
-
-  flow.fitView({
-    nodes: matchingNodes.map(n => ({ id: n }))
   })
 }
 
@@ -115,7 +105,13 @@ const Atlas = ({ maps, currentSearch }) => {
     [connectedMaps, currentSearch]
   )
 
-  const fitMatching = useCallback(() => fitView(flow, matchingNodes), [flow, matchingNodes])
+  const fitMatching = useCallback(
+    () =>
+      flow.fitView({
+        nodes: matchingNodes.map(n => ({ id: n }))
+      }),
+    [flow, matchingNodes]
+  )
 
   const data = useMemo(
     () => ({
@@ -132,8 +128,7 @@ const Atlas = ({ maps, currentSearch }) => {
             width: fullWidth * scale,
             height: fullHeight * scale
           },
-          zIndex: -10,
-          className: 'nodrag'
+          zIndex: -1
         }
       ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels))),
       edges: deduplicate(

@@ -18,12 +18,18 @@ path.react-flow__edge-path {
 }
 
 .atlas-edge {
-  position: absolute !important;
-  top: 50% !important;
-  right: 50% !important;
-  transform: translate(50%, -50%) !important;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 .react-flow__handle.connectionindicator {
   background: none;
+  pointer-events: none;
+  cursor: inherit;
+}
+
+.react-flow__node .map-icon-container img {
+  cursor: pointer;
 }

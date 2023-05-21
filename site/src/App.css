@@ -32,6 +32,10 @@ hr {
   border-radius: var(--bs-badge-border-radius);
 }
 
+.bg-unique {
+  background-color: #af6025;
+}
+
 .text-unique {
   color: #af6025;
 }

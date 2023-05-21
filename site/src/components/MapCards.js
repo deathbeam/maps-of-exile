@@ -37,8 +37,9 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
   }
 
   let img = '/img/alch.png'
-
-  if (card.price >= 100) {
+  if (card.boss) {
+    img = '/img/awsextant.png'
+  } else if (card.price >= 100) {
     img = '/img/chaos.png'
   } else if (card.price >= 50) {
     img = '/img/divine.png'
@@ -65,6 +66,12 @@ const MapCard = ({ card, mapWeight, baselineWeight }) => {
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" height="16" />
         <br />
         <b>Weight</b>: {card.weight}
+        {card.boss && (
+          <>
+            <br />
+            <b>Boss drop</b>
+          </>
+        )}
         {card.value > 0 &&
           cards.map(mapCard => (
             <>

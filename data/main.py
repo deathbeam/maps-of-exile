@@ -56,6 +56,41 @@ def merge(source, destination):
 	return destination
 
 
+def get_globals_data(config):
+	out = {}
+
+	url = config["poedb"]["list"]
+	print(f"Getting atlas data from url {url}")
+	r = requests.get(url)
+	soup = BeautifulSoup(r.content, "html.parser")
+	atlasimage = soup.find(id="AtlasNodeSVG").find("image")
+
+	out["atlas"] = {
+		"width": float(atlasimage.attrs["width"]),
+		"height": float(atlasimage.attrs["height"])
+	}
+
+	url = config["poedb"]["constants"]
+	print(f"Getting game constants from url {url}")
+	r = requests.get(url)
+	soup = BeautifulSoup(r.content, "html.parser")
+	dropoollist = soup.find(id="DropPool").find("table").find("tbody").find_all("tr")
+
+	total_droppool = 0
+
+	for row in dropoollist:
+		cols = row.find_all("td")
+		name = cols[0].text
+
+		if name == "HeistEquipment":
+			continue
+
+		total_droppool += int(cols[1].text)
+
+	out["droppool_weight"] = total_droppool
+	return out
+
+
 def get_card_data(key, league, config):
 	id = config["decks"]["sheet-id"]
 	name = config["decks"]["sheet-name"]
@@ -550,12 +585,17 @@ def main():
 		config = yaml.safe_load(f)
 
 	args = sys.argv
+	fetch_globals = False
 	fetch_cards = False
 	fetch_maps = False
 
 	if len(args) > 1:
 		if 'cards' in args[1]:
 			fetch_cards = True
+
+		if 'globals' in args[1]:
+			fetch_globals = True
+
 
 		if 'maps' in args[1]:
 			fetch_maps = True
@@ -567,6 +607,11 @@ def main():
 		cards = get_card_data(api_key, config["league"], config["cards"])
 		with open(dir_path + "/../site/src/data/cards.json", "w") as f:
 			f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
+
+	if fetch_globals:
+		globals = get_globals_data(config["maps"])
+		with open(dir_path + "/../site/src/data/globals.json", "w") as f:
+			f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
 
 	if fetch_maps:
 		# Get basic map data

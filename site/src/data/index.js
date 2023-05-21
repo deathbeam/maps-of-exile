@@ -1,5 +1,6 @@
 import cards from './cards.json'
 import maps from './maps.json'
+import globals from './globals.json'
 
 const wikiBase = 'https://www.poewiki.net/wiki/'
 const mapIconBase = 'https://web.poecdn.com/image/'
@@ -7,6 +8,8 @@ const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
+
+export const preparedGlobals = globals
 
 export const preparedCards = cards.map(card => {
   card.art = cardArtBase + card.art + '.png'

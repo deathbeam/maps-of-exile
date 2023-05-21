@@ -249,13 +249,9 @@ function App() {
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     The baseline card drop you are expecting to see every map on average. This is used for calculating
-                    baseline drop rate for cards in maps. Map baseline weight is calculated by averaging all map weights
-                    and adding the average together with baseline weight.
-                    <hr />
-                    <span className="text-danger">
-                      <b>Important:</b> Baseline weight is experimental feature and I am not sure if I am calculating it
-                      correctly.
-                    </span>
+                    how many baseline drop pool items you get from map on average. Then single card drop is compared
+                    with weight of total drop pool combined with map card pool weight and multiplied by amount of
+                    baseline drop pool items you get from map.
                   </span>
                   <label className="form-label">Average card drop per map</label>
                 </span>
@@ -432,6 +428,13 @@ function App() {
         <div className="d-md-flex justify-content-between">
           <div>
             For raw data see:{' '}
+            <a
+              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/globals.json"
+              target="_blank"
+              rel="noreferrer"
+            >
+              globals.json
+            </a>{' '}
             <a
               href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/cards.json"
               target="_blank"

@@ -8,10 +8,9 @@ import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '..
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 import MapImage from './MapImage'
+import { preparedGlobals } from '../data'
 
 const scale = 3
-const fullWidth = 1003.52
-const fullHeight = 564.48
 const offset = 6
 const bgId = 'bg'
 
@@ -125,8 +124,8 @@ const Atlas = ({ maps, currentSearch }) => {
           },
           data: {
             image: '/img/atlas.webp',
-            width: fullWidth * scale,
-            height: fullHeight * scale
+            width: preparedGlobals['atlas']['width'] * scale,
+            height: preparedGlobals['atlas']['height'] * scale
           },
           zIndex: -1
         }

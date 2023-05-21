@@ -14,67 +14,62 @@ import GoToTop from './components/GoToTop'
 import Map from './components/Map'
 import { ReactFlowProvider } from 'reactflow'
 
-function rateCards(cards, cardMinPrice) {
-  return calculateScore(
-    cards.map(card => ({
-      ...card,
-      value: (card.price >= cardMinPrice ? card.weight : 0) * card.price
-    })),
+function rateMaps(
+  foundMaps,
+  foundCards,
+  layoutInput,
+  densityInput,
+  bossInput,
+  cardInput,
+  cardBaselineInput,
+  cardMinPriceInput
+) {
+  const cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
+
+  // First calculate value for cards
+  const mapsWithCardValues = foundMaps.map(map => {
+    const mapCards = []
+
+    for (let card of map.cards) {
+      const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
+      mapCards.push({
+        ...card,
+        dropPoolItems: dropPoolItems,
+        value: card.price >= cardMinPriceInput ? card.price * (card.weight / card.poolWeight) * dropPoolItems : 0
+      })
+    }
+
+    return {
+      ...map,
+      cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
+    }
+  })
+
+  // Now calculate score for each card
+  calculateScore(
+    mapsWithCardValues.flatMap(m => m.cards),
     10
   )
-}
 
-function rateMaps(foundMaps, foundCards, layoutInput, densityInput, bossInput, cardInput) {
+  // Now finally calculate overall map score
   const rated = calculateScore(
-    foundMaps.map(map => {
+    mapsWithCardValues.map(map => {
       const layoutValue = (map.rating.layout || 0) * layoutInput
       const densityValue = (map.rating.density || 0) * densityInput
       const bossValue = (map.rating.boss || 0) * bossInput
-
-      const mapCards = []
+      let cardValue = 0
 
       for (let card of map.cards) {
-        const cardData = foundCards.find(c => c.name === card)
-        if (!cardData) {
-          continue
-        }
-
-        mapCards.push({ ...cardData })
+        cardValue += card.score * cardInput
       }
 
-      for (let card of map.boss.cards || []) {
-        const cardData = foundCards.find(c => c.name === card)
-        if (!cardData) {
-          continue
-        }
-
-        mapCards.push({ ...cardData, boss: true })
-      }
-
-      const totalWeight = mapCards.reduce((a, b) => a + b.weight, 0)
-      let cardScore = 0
-
-      for (let card of mapCards) {
-        if (card.value) {
-          const bossMulti = card.boss ? 5 : 1
-          card.value = (card.price * card.weight) / bossMulti / totalWeight
-          card.score = card.score / bossMulti
-        }
-
-        cardScore += card.score
-      }
-
-      cardScore = cardScore * cardInput
-
-      return {
-        ...map,
-        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value),
-        value: layoutValue + densityValue + bossValue + cardScore
-      }
+      map.value = layoutValue + densityValue + bossValue + cardValue
+      return map
     }),
     100
   )
 
+  // Now find scores for connected maps
   for (let map of rated) {
     const connectedOut = []
     for (let connected of map.connected || []) {
@@ -86,7 +81,7 @@ function rateMaps(foundMaps, foundCards, layoutInput, densityInput, bossInput, c
     map.connected = connectedOut
   }
 
-  return rated
+  return rated.sort((a, b) => b.score - a.score)
 }
 
 function parseSearch(s) {
@@ -129,14 +124,19 @@ function App() {
   )
   const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
 
-  const cardWeightBaseline = useMemo(
-    () => preparedCards.find(c => c.name === cardBaselineInput).weight,
-    [cardBaselineInput]
-  )
-  const ratedCards = useMemo(() => rateCards(preparedCards, cardMinPriceInput), [cardMinPriceInput])
   const ratedMaps = useMemo(
-    () => rateMaps(preparedMaps, ratedCards, layoutInput, densityInput, bossInput, cardInput),
-    [ratedCards, layoutInput, densityInput, bossInput, cardInput]
+    () =>
+      rateMaps(
+        preparedMaps,
+        preparedCards,
+        layoutInput,
+        densityInput,
+        bossInput,
+        cardInput,
+        cardBaselineInput,
+        cardMinPriceInput
+      ),
+    [layoutInput, densityInput, bossInput, cardInput, cardBaselineInput, cardMinPriceInput]
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
@@ -415,7 +415,6 @@ function App() {
             <tr key={m.name} id={m.name}>
               <Map
                 map={m}
-                cardWeightBaseline={cardWeightBaseline}
                 hideLowValueCards={hideLowValueCards}
                 currentSearch={currentSearch}
                 addToInput={addToInput}

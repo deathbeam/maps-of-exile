@@ -14,23 +14,16 @@ export function calculateScore(dataset, range) {
   const nonzerodataset = dataset.filter(m => m.value !== undefined && m.value != null)
   const min = Math.min(...nonzerodataset.map(o => o.value))
   const max = Math.max(...nonzerodataset.map(o => o.value))
-  const out = []
 
   for (let entry of dataset) {
     if (entry.value) {
-      out.push({
-        ...entry,
-        score: Math.round(rescale(entry.value, min, max, range))
-      })
+      entry.score = Math.round(rescale(entry.value, min, max, range))
     } else {
-      out.push({
-        ...entry,
-        score: 0
-      })
+      entry.score = 0
     }
   }
 
-  return out.sort((a, b) => (b.score || 0) - (a.score || 0))
+  return dataset
 }
 
 function filterOneOrMore(s, v) {

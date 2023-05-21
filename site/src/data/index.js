@@ -12,26 +12,28 @@ export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=
 export const preparedGlobals = globals
 
 export const preparedCards = cards.map(card => {
-  card.art = cardArtBase + card.art + '.png'
-  return card
+  return {
+    ...card,
+    art: cardArtBase + card.art + '.png'
+  }
 })
 
-export const preparedMaps = maps.map(map => {
-  function pushTag(info, destination, source, key, name = null) {
-    const tag = source[key]
+function pushTag(info, destination, source, key, name = null) {
+  const tag = source[key]
 
-    if (tag) {
-      const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
-      const out = {
-        name: val
-      }
-      if (info && info[key]) {
-        out.info = info[key]
-      }
-      destination.push(out)
+  if (tag) {
+    const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
+    const out = {
+      name: val
     }
+    if (info && info[key]) {
+      out.info = info[key]
+    }
+    destination.push(out)
   }
+}
 
+export const preparedMaps = maps.map(map => {
   const mapTags = []
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')
@@ -49,6 +51,30 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map, 'unique')
   pushTag(map.info, mapTags, map, 'pantheon')
 
+  const cards = []
+  for (let card of map.cards) {
+    const cardData = preparedCards.find(c => c.name === card)
+    if (cardData) {
+      cards.push({ ...cardData })
+    }
+  }
+  for (let card of map.boss.cards || []) {
+    const cardData = preparedCards.find(c => c.name === card)
+    if (cardData) {
+      cards.push({ ...cardData, boss: true })
+    }
+  }
+
+  const mapWeight = cards
+    .filter(c => !c.boss)
+    .map(c => c.weight)
+    .reduce((a, b) => a + b, 0)
+  const bossWeight = cards.map(c => c.weight).reduce((a, b) => a + b, 0)
+
+  for (let card of cards) {
+    card.poolWeight = preparedGlobals['droppool_weight'] + (card.boss ? bossWeight : mapWeight)
+  }
+
   if (map.boss.names) {
     const names = map.boss.names.filter(n => !n.includes('Merveil'))
     if (names.length > 1) {
@@ -62,6 +88,7 @@ export const preparedMaps = maps.map(map => {
     ...map,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
+    cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
     icon: mapIconBase + map.icon + '.png',
     wiki: wikiBase + map.name.replace(' ', '_'),
@@ -70,8 +97,8 @@ export const preparedMaps = maps.map(map => {
   }
 
   // Build search index
-  out.search = [out.name, ...out.connected, ...out.cards, ...(out.boss.cards || []), ...out.tags.map(t => t.name)].map(
-    v => v.trim().toLowerCase()
+  out.search = [out.name, ...out.connected, ...out.cards.map(c => c.name), ...out.tags.map(t => t.name)].map(v =>
+    v.trim().toLowerCase()
   )
 
   return out

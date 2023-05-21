@@ -1,5 +1,4 @@
 import './MapCards.css'
-import { preparedGlobals } from '../data'
 
 function calculateCardData(card, mapRate) {
   const stackSize = card.stack
@@ -39,7 +38,7 @@ function cardDataToTooltip(cardData, withStack = false) {
   )
 }
 
-const MapCard = ({ card, mapWeight, bossWeight, dropPoolItems }) => {
+const MapCard = ({ card }) => {
   let badgeClass = 'bg-secondary text-dark'
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -63,28 +62,21 @@ const MapCard = ({ card, mapWeight, bossWeight, dropPoolItems }) => {
     img = '/img/chaos.png'
   }
 
-  const mapCardWeight = card.boss ? bossWeight : mapWeight
-  const mapCardRate = card.weight / mapCardWeight
+  const mapCardWeight = card.poolWeight
+  const dropPoolItems = card.dropPoolItems
+  const mapCardRate = (card.weight / mapCardWeight) * dropPoolItems
   const mapCard = calculateCardData(card, mapCardRate)
-  const mapCardTooltip = (
+  const tooltip = (
     <>
       <hr />
       <b>{card.weight}</b> (card weight)
-      <br />/ <b>{mapCardWeight}</b> (map weight)
-      {cardDataToTooltip(mapCard, true)}
-    </>
-  )
-
-  const mapBaselineWeight = preparedGlobals['droppool_weight'] + mapCardWeight
-  const mapBaselineRate = (card.weight / mapBaselineWeight) * dropPoolItems
-  const baselineCard = calculateCardData(card, mapBaselineRate)
-  const mapBaselineTooltip = (
-    <>
-      <hr />
-      <b>{card.weight}</b> (card weight)
-      <br />/ <b>{mapBaselineWeight}</b> (drop pool weight)
-      <br />* <b>{Math.round(dropPoolItems)}</b> (baseline drop pool items)
-      {cardDataToTooltip(baselineCard)}
+      <br />/ <b>{mapCardWeight}</b> (drop pool weight)
+      {dropPoolItems > 1 && (
+        <>
+          <br />* <b>{Math.round(dropPoolItems)}</b> (drop pool items)
+        </>
+      )}
+      {cardDataToTooltip(mapCard)}
     </>
   )
 
@@ -106,12 +98,7 @@ const MapCard = ({ card, mapWeight, bossWeight, dropPoolItems }) => {
             <b>Boss drop</b>
           </>
         )}
-        {card.value > 0 && (
-          <>
-            {mapCardTooltip}
-            {mapBaselineTooltip}
-          </>
-        )}
+        {card.value > 0 && tooltip}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
         <img src={img} alt="" width="16" height="16" /> {card.name}
@@ -120,24 +107,23 @@ const MapCard = ({ card, mapWeight, bossWeight, dropPoolItems }) => {
   )
 }
 
-const MapCards = ({ cards, hideLowValueCards, cardWeightBaseline }) => {
-  const mapWeight = cards
-    .filter(c => !c.boss)
-    .map(c => c.weight)
-    .reduce((a, b) => a + b, 0)
-  const bossWeight = cards.map(c => c.weight).reduce((a, b) => a + b, 0)
-  const dropPoolItems = 1 / (cardWeightBaseline / (preparedGlobals['droppool_weight'] + mapWeight))
-
+const MapCards = ({ cards, hideLowValueCards }) => {
+  const total = Math.round(cards.reduce((a, b) => a + b.value, 0) * 10) / 10
   return (
-    <>
-      {cards
-        .sort((a, b) => b.price - a.price)
-        .sort((a, b) => b.score - a.score)
-        .filter(c => !hideLowValueCards || c.value > 0)
-        .map(c => (
-          <MapCard card={c} mapWeight={mapWeight} bossWeight={bossWeight} dropPoolItems={dropPoolItems} />
-        ))}
-    </>
+    <div className="d-md-flex flex-row">
+      <div className="text-center pe-2 pb-2">
+        <div className="d-flex align-items-center">
+          {total} <img src="/img/chaos.png" className="m-1" alt="" width="16" height="16" />
+        </div>
+      </div>
+      <div>
+        {cards
+          .filter(c => !hideLowValueCards || c.value > 0)
+          .map(c => (
+            <MapCard card={c} />
+          ))}
+      </div>
+    </div>
   )
 }
 

@@ -4,7 +4,7 @@ import MapBoss from './MapBoss'
 import MapConnected from './MapConnected'
 import MapCards from './MapCards'
 
-const Map = ({ map, cardWeightBaseline, hideLowValueCards, currentSearch, addToInput }) => (
+const Map = ({ map, hideLowValueCards, currentSearch, addToInput }) => (
   <>
     <td>
       <MapName map={map} currentSearch={currentSearch} addToInput={addToInput} />
@@ -28,7 +28,7 @@ const Map = ({ map, cardWeightBaseline, hideLowValueCards, currentSearch, addToI
       <MapConnected connected={map.connected} />
     </td>
     <td>
-      <MapCards cards={map.cards} cardWeightBaseline={cardWeightBaseline} hideLowValueCards={hideLowValueCards} />
+      <MapCards cards={map.cards} hideLowValueCards={hideLowValueCards} />
     </td>
   </>
 )

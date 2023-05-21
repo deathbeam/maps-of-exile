@@ -24,7 +24,7 @@ jobs:
         working-directory: data
 
       - name: Update data
-        run: python main.py cards,maps
+        run: python main.py globals,cards,maps
         working-directory: data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}

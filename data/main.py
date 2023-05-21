@@ -590,12 +590,11 @@ def main():
 	fetch_maps = False
 
 	if len(args) > 1:
-		if 'cards' in args[1]:
-			fetch_cards = True
-
 		if 'globals' in args[1]:
 			fetch_globals = True
 
+		if 'cards' in args[1]:
+			fetch_cards = True
 
 		if 'maps' in args[1]:
 			fetch_maps = True

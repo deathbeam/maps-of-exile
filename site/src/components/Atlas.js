@@ -71,7 +71,7 @@ function MapNode({ id, data }) {
     mapColor = `text-${tierColor(map.tiers, map.unique)}`
   }
 
-  const buttonClass = `btn btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
+  const buttonClass = `btn btn-badge btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
   const label = (atlasScore ? map.score + ' ' : '') + map.name
 
   return (

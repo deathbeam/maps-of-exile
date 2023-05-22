@@ -12,7 +12,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
     const buttons = []
     buttons.push(
       <button
-        className={'btn text-dark ' + color}
+        className={'btn btn-badge text-dark ' + color}
         onClick={() => addToInput(val, searched ? !searched.neg : false, false)}
       >
         {val} {info && <b>*</b>}
@@ -21,7 +21,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
 
     if (searched) {
       buttons.push(
-        <button className={'btn text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
+        <button className={'btn btn-badge text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
           <b>X</b>
         </button>
       )

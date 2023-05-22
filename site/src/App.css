@@ -21,15 +21,23 @@ hr {
 
 .btn {
   display: inline-block;
-  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
-  font-size: var(--bs-badge-font-size);
-  font-weight: var(--bs-badge-font-weight);
   line-height: 1;
-  color: var(--bs-badge-color);
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
+  font-size: 0.875em;
+  color: var(--bs-badge-color);
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   border-radius: var(--bs-badge-border-radius);
+}
+
+.btn-badge {
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+}
+
+.badge-fw {
+  min-width: 2.5rem;
 }
 
 .bg-unique {

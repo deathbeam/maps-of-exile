@@ -5,3 +5,9 @@
   font-size: 15px;
   border-radius: 0;
 }
+
+.map-card-price {
+  flex-basis: 4em;
+  flex-grow: 0;
+  flex-shrink: 0;
+}

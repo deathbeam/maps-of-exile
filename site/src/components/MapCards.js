@@ -103,7 +103,7 @@ const MapCard = ({ card }) => {
 }
 
 const MapCards = ({ cards, hideLowValueCards }) => {
-  const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 10) / 10, [cards])
+  const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
   const cardsWithData = useMemo(
     () => cards.filter(c => !hideLowValueCards || c.value > 0).map(c => calculateCardData(c)),
     [cards, hideLowValueCards]

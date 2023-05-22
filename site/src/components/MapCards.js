@@ -51,9 +51,7 @@ const MapCard = ({ card }) => {
   badgeClass = `badge m-1 ${badgeClass}`
 
   let img = '/img/alch.png'
-  if (card.boss) {
-    img = '/img/awsextant.png'
-  } else if (card.price >= 100) {
+  if (card.price >= 100) {
     img = '/img/divine.png'
   } else if (card.price >= 50) {
     img = '/img/exalt.png'
@@ -84,7 +82,7 @@ const MapCard = ({ card }) => {
         </span>
         <b>Reward</b>: {card.reward}
         <br />
-        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" height="16" />
+        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
         <br />
         <b>Weight</b>: {card.weight}
         {card.boss && (
@@ -96,7 +94,9 @@ const MapCard = ({ card }) => {
         {card.value > 0 && tooltip}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-        <img src={img} alt="" width="16" height="16" /> {card.name}
+        <img src={img} alt="" width="16" height="16" className="outline me-1" />
+        {card.boss && <img src="/img/boss.webp" alt="" width="16" className="outline me-1" />}
+        {card.name}
       </a>
     </span>
   )
@@ -120,7 +120,7 @@ const MapCards = ({ cards, hideLowValueCards }) => {
                 <CardDataTooltip card={c} withName={true} />
               ))}
           </span>
-          {total} <img src="/img/chaos.png" alt="" width="16" height="16" />
+          <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="outline me-1" />
         </span>
       </div>
       <div>

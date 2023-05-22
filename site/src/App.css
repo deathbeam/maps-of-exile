@@ -19,6 +19,11 @@ hr {
   margin: 4px;
 }
 
+.outline {
+  filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(1px -1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+}
+
 .btn {
   display: inline-block;
   line-height: 1;

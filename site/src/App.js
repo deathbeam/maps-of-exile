@@ -1,12 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useMemo, useTransition, useRef, useCallback } from 'react'
+import { useCallback, useMemo, useRef, useTransition } from 'react'
 import SelectSearch from 'react-select-search'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
-import { calculateScore, filter } from './common'
+import { calculateScore, copyToClipboard, filter } from './common'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
@@ -105,24 +105,41 @@ function filterMaps(ratedMaps, currentSearch) {
 
 function App() {
   const [isPending, startTransition] = useTransition()
+  const locationRef = useRef(null)
 
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition)
-  const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField('layoutInput', 3, startTransition)
-  const [densityInput, setDensityInput, densityReset, densityRef] = useInputField('densityInput', 2, startTransition)
-  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition)
-  const [cardInput, setCardInput, cardReset, cardRef] = useInputField('cardWeightInput', 2, startTransition)
+  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, locationRef)
+  const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
+    'layoutInput',
+    3,
+    startTransition,
+    locationRef
+  )
+  const [densityInput, setDensityInput, densityReset, densityRef] = useInputField(
+    'densityInput',
+    2,
+    startTransition,
+    locationRef
+  )
+  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition, locationRef)
+  const [cardInput, setCardInput, cardReset, cardRef] = useInputField(
+    'cardWeightInput',
+    2,
+    startTransition,
+    locationRef
+  )
   const [cardBaselineInput, setCardBaselineInput, cardBaselineReset] = useInputField(
     'cardBaselineInput',
     defaultCardBaseline,
-    startTransition
+    startTransition,
+    locationRef
   )
   const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
     'cardMinPriceInput',
     10,
-    startTransition
+    startTransition,
+    locationRef
   )
-  const [hideLowValueCards, setHideLowValueCards] = usePersistedState('hideLowValueCards', false, startTransition)
 
   const ratedMaps = useMemo(
     () =>
@@ -296,6 +313,15 @@ function App() {
                   </button>
                 </div>
               </div>
+              <div className="col col-lg-6 col-12">
+                <label className="form-label">Shareable link</label>
+                <div className="input-group">
+                  <input className="form-control" type="text" ref={locationRef} readOnly="true" />
+                  <button className="btn btn-outline-secondary" onClick={() => copyToClipboard(locationRef)}>
+                    <i className="fa-solid fa-copy fa-fw" /> Copy to clipboard
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -397,15 +423,6 @@ function App() {
                   </span>
                   Cards
                 </span>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    defaultChecked={hideLowValueCards}
-                    onChange={() => setHideLowValueCards(!hideLowValueCards)}
-                  />
-                  <label className="form-check-label small">Hide cards under minimum price</label>
-                </div>
               </div>
             </th>
           </tr>
@@ -413,12 +430,7 @@ function App() {
         <tbody>
           {filterMaps(ratedMaps, currentSearch).map(m => (
             <tr key={m.name} id={m.name}>
-              <Map
-                map={m}
-                hideLowValueCards={hideLowValueCards}
-                currentSearch={currentSearch}
-                addToInput={addToInput}
-              />
+              <Map map={m} currentSearch={currentSearch} addToInput={addToInput} />
             </tr>
           ))}
         </tbody>

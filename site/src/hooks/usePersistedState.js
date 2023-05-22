@@ -1,7 +1,21 @@
 import { useEffect, useState } from 'react'
 
-export default function usePersistedState(key, def, startTransition) {
+let data = {}
+if (window.location.hash) {
+  try {
+    data = JSON.parse(atob(window.location.hash.replace('#', ''))) || {}
+  } catch (e) {
+    window.location.hash = ''
+    data = {}
+  }
+}
+
+export default function usePersistedState(key, def, startTransition, locationRef) {
   const [val, setVal] = useState(() => {
+    if (locationRef && data[key]) {
+      return data[key]
+    }
+
     try {
       const item = localStorage.getItem(key)
       return item && item !== '' ? JSON.parse(item) : def
@@ -14,10 +28,15 @@ export default function usePersistedState(key, def, startTransition) {
   useEffect(() => {
     try {
       localStorage.setItem(key, JSON.stringify(val))
+      data[key] = val
+
+      if (locationRef) {
+        locationRef.current.value = 'https://mapsofexile.com/#' + btoa(JSON.stringify(data))
+      }
     } catch (e) {
       console.warn(e)
     }
-  }, [key, val])
+  }, [key, val, locationRef])
 
   return [
     val,

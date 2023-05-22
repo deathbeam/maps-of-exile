@@ -86,3 +86,8 @@ export function scrollToElement(id) {
   console.info('Scrolling to ' + id)
   document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
+
+export function copyToClipboard(ref) {
+  ref.current.select()
+  document.execCommand('copy')
+}

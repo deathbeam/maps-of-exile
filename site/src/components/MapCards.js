@@ -94,8 +94,8 @@ const MapCard = ({ card }) => {
         {card.value > 0 && tooltip}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
-        <img src={img} alt="" width="16" height="16" className="outline me-1" />
-        {card.boss && <img src="/img/boss.webp" alt="" width="16" className="outline me-1" />}
+        <img src={img} alt="" width="16" height="16" className="me-1" />
+        {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
         {card.name}
       </a>
     </span>
@@ -120,7 +120,7 @@ const MapCards = ({ cards, hideLowValueCards }) => {
                 <CardDataTooltip card={c} withName={true} />
               ))}
           </span>
-          <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="outline me-1" />
+          <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
         </span>
       </div>
       <div>

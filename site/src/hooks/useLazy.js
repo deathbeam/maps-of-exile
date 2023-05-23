@@ -1,12 +1,14 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function useLazy() {
+  const [visible, setVisible] = useState(false)
   const ref = useRef(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(es => {
       const [e] = es
       if (e.isIntersecting) {
+        setVisible(true)
         e.target.classList.remove('lazy-bg')
         observer.unobserve(e.target)
       }
@@ -19,7 +21,7 @@ export default function useLazy() {
     }
 
     return () => cur && observer.unobserve(cur)
-  }, [ref])
+  }, [ref, setVisible])
 
-  return ref
+  return [ref, visible]
 }

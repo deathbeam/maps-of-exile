@@ -65,6 +65,7 @@ a:hover {
 .tooltip-tag {
   position: relative;
   display: inline-block;
+  overflow: hidden;
 }
 
 .tooltip-tag-notice::after {

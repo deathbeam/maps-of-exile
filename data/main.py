@@ -391,7 +391,7 @@ def get_maps(key, config):
 
     out = list(filter(lambda x: x["name"] not in config["ignored"], out))
     out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
-    out_names = list(map(lambda x: x["name"].replace(" Map", ""), out))
+    out_names = list(map(lambda x: x["name"], out))
 
     mapssvg = soup.find(id="AtlasNodeSVG")
     maplinks = mapssvg.find_all("a")

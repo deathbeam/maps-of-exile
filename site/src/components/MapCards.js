@@ -107,7 +107,7 @@ const MapCards = ({ cards }) => {
   const cardsWithData = useMemo(() => cards.map(c => calculateCardData(c)), [cards])
 
   return (
-    <div className="d-md-flex flex-row">
+    <div className="d-lg-flex flex-row">
       <div className="m-1 map-card-price">
         <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap">
           <span className="tooltip-tag-text">

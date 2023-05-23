@@ -199,10 +199,10 @@ function App() {
   let atlasClass = ''
 
   if (full) {
-    containerClass = containerClass + ' col-3'
+    containerClass = containerClass + ' col-lg-3 col-12'
     searchClass = 'p-1'
     inputClass = 'p-1'
-    atlasClass = 'col-9'
+    atlasClass = 'col-lg-9 col-12'
   } else {
     containerClass = containerClass + ' row g-0'
     searchClass = 'col col-lg-4 col-12 p-1'

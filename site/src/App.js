@@ -109,7 +109,7 @@ function App() {
   const poeRef = useRef(null)
   const searchRef = useRef(null)
 
-  const [full, setFull] = usePersistedState('full', false, startTransition)
+  const [atlasFull, setAtlasFull] = usePersistedState('atlasFull', false, startTransition)
 
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
@@ -198,7 +198,7 @@ function App() {
   let inputClass = ''
   let atlasClass = ''
 
-  if (full) {
+  if (atlasFull) {
     containerClass = containerClass + ' col-lg-3 col-12'
     searchClass = 'p-1'
     inputClass = 'p-1'
@@ -216,7 +216,7 @@ function App() {
       <div className="row g-0">
         <div className={atlasClass}>
           <ReactFlowProvider>
-            <Atlas maps={ratedMaps} currentSearch={currentSearch} full={full} setFull={setFull} />
+            <Atlas maps={ratedMaps} currentSearch={currentSearch} full={atlasFull} setFull={setAtlasFull} />
           </ReactFlowProvider>
         </div>
         <div className={containerClass}>

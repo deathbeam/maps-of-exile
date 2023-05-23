@@ -107,10 +107,9 @@ const Atlas = ({ maps, currentSearch }) => {
   const fitMatching = useCallback(
     () =>
       flow.fitView({
-        nodes: matchingNodes.map(n => ({ id: n })),
-        minZoom: full ? 0.5 : 1
+        nodes: matchingNodes.map(n => ({ id: n }))
       }),
-    [flow, matchingNodes, full]
+    [flow, matchingNodes]
   )
 
   const data = useMemo(

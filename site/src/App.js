@@ -381,11 +381,11 @@ function App() {
           </div>
         </div>
       </div>
-      <table className="table table-striped mb-0">
+      <table className="table table-responsive table-striped mb-0">
         <thead>
           <tr>
             <th scope="col">
-              <div className="d-md-flex justify-content-between align-items-end">
+              <div className="d-lg-flex justify-content-between align-items-end">
                 <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Map name, colored based on natural tier with map tiers for each Voidstone next to it.
@@ -464,21 +464,19 @@ function App() {
               </span>
             </th>
             <th scope="col">
-              <div className="d-md-flex justify-content-between align-items-end">
-                <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
-                  <span className="tooltip-tag-text">
-                    Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
-                    <b>{cardMinPriceInput}c</b> are filtered out from rating.
-                    <hr />
-                    <span className="badge bg-secondary text-dark m-1">not very good</span>
-                    <span className="badge bg-dark border border-1 border-info text-info m-1">>=0.5 decent</span>
-                    <span className="badge bg-info text-dark m-1">>=2 good</span>
-                    <span className="badge bg-primary text-light m-1">>=5 great</span>
-                    <span className="badge bg-light text-dark m-1">>=8 amazing</span>
-                  </span>
-                  Cards
+              <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
+                <span className="tooltip-tag-text">
+                  Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
+                  <b>{cardMinPriceInput}c</b> are filtered out from rating.
+                  <hr />
+                  <span className="badge bg-secondary text-dark m-1">not very good</span>
+                  <span className="badge bg-dark border border-1 border-info text-info m-1">>=0.5 decent</span>
+                  <span className="badge bg-info text-dark m-1">>=2 good</span>
+                  <span className="badge bg-primary text-light m-1">>=5 great</span>
+                  <span className="badge bg-light text-dark m-1">>=8 amazing</span>
                 </span>
-              </div>
+                Cards
+              </span>
             </th>
           </tr>
         </thead>
@@ -489,7 +487,7 @@ function App() {
         </tbody>
       </table>
       <div className="container-fluid p-4 text-end">
-        <div className="d-md-flex justify-content-between">
+        <div className="d-lg-flex justify-content-between">
           <div>
             For raw data see:{' '}
             <a

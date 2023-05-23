@@ -32,8 +32,8 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   )
 
   return (
-    <div className="d-md-flex flex-row">
-      <div className="text-center pe-2 pb-2">
+    <div className="d-lg-flex flex-row">
+      <div className="pe-2 pb-2">
         {icon}
         {score}
       </div>

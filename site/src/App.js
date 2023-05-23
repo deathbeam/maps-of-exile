@@ -105,40 +105,41 @@ function filterMaps(ratedMaps, currentSearch) {
 
 function App() {
   const [isPending, startTransition] = useTransition()
-  const locationRef = useRef(null)
+  const shareableRef = useRef(null)
+  const poeRef = useRef(null)
 
   const searchRef = useRef(null)
-  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, locationRef)
+  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
     'layoutInput',
     3,
     startTransition,
-    locationRef
+    shareableRef
   )
   const [densityInput, setDensityInput, densityReset, densityRef] = useInputField(
     'densityInput',
     2,
     startTransition,
-    locationRef
+    shareableRef
   )
-  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition, locationRef)
+  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition, shareableRef)
   const [cardInput, setCardInput, cardReset, cardRef] = useInputField(
     'cardWeightInput',
     2,
     startTransition,
-    locationRef
+    shareableRef
   )
   const [cardBaselineInput, setCardBaselineInput, cardBaselineReset] = useInputField(
     'cardBaselineInput',
     defaultCardBaseline,
     startTransition,
-    locationRef
+    shareableRef
   )
   const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
     'cardMinPriceInput',
     10,
     startTransition,
-    locationRef
+    shareableRef
   )
 
   const ratedMaps = useMemo(
@@ -156,6 +157,12 @@ function App() {
     [layoutInput, densityInput, bossInput, cardInput, cardBaselineInput, cardMinPriceInput]
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
+
+  const filteredMaps = useMemo(() => filterMaps(ratedMaps, currentSearch), [ratedMaps, currentSearch])
+
+  const poeRegex = useMemo(() => {
+    return '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
+  }, [filteredMaps])
 
   const addToInput = useCallback(
     (v, neg, remove) => {
@@ -313,12 +320,34 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-6 col-12">
+              <div className="col col-lg-3 col-sm-6 col-12">
+                <label className="form-label">PoE regex</label>
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="text"
+                    ref={poeRef}
+                    value={poeRegex}
+                    readOnly={true}
+                    onFocus={e => e.target.select()}
+                  />
+                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(poeRef)}>
+                    <i className="fa-solid fa-copy fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className="col col-lg-3 col-sm-6 col-12">
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
-                  <input className="form-control" type="text" ref={locationRef} readOnly={true} />
-                  <button className="btn btn-outline-secondary" onClick={() => copyToClipboard(locationRef)}>
-                    <i className="fa-solid fa-copy fa-fw" /> Copy to clipboard
+                  <input
+                    className="form-control"
+                    type="text"
+                    ref={shareableRef}
+                    readOnly={true}
+                    onFocus={e => e.target.select()}
+                  />
+                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(shareableRef)}>
+                    <i className="fa-solid fa-copy fa-fw" />
                   </button>
                 </div>
               </div>
@@ -428,7 +457,7 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          {filterMaps(ratedMaps, currentSearch).map(m => (
+          {filteredMaps.map(m => (
             <Map key={m.name} map={m} currentSearch={currentSearch} addToInput={addToInput} />
           ))}
         </tbody>

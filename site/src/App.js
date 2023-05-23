@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useCallback, useEffect, useMemo, useRef, useTransition } from 'react'
+import { useCallback, useMemo, useRef, useTransition } from 'react'
 import SelectSearch from 'react-select-search'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
@@ -104,21 +104,6 @@ function filterMaps(ratedMaps, currentSearch) {
 }
 
 function App() {
-  useEffect(() => {
-    const elements = [].slice.call(document.querySelectorAll('.lazy-bg'))
-    const observer = new IntersectionObserver(es => {
-      es.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.remove('lazy-bg')
-          observer.unobserve(e.target)
-        }
-      })
-    })
-
-    elements.forEach(e => observer.observe(e))
-    return () => elements.forEach(e => observer.unobserve(e))
-  }, [])
-
   const [isPending, startTransition] = useTransition()
   const locationRef = useRef(null)
 

@@ -2,7 +2,7 @@ import 'reactflow/dist/base.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './Atlas.css'
 
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
 import useKeyPress from '../hooks/useKeyPress'
@@ -90,9 +90,8 @@ function MapNode({ id, data }) {
   )
 }
 
-const Atlas = ({ maps, currentSearch }) => {
+const Atlas = ({ maps, currentSearch, full, setFull }) => {
   const flow = useReactFlow()
-  const [full, setFull] = useState(false)
   const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
   const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
   const [atlasLabels, setAtlasLabels] = usePersistedState('atlasLabels', true)
@@ -153,7 +152,7 @@ const Atlas = ({ maps, currentSearch }) => {
       className="d-none d-md-block"
       style={{
         width: '100%',
-        height: full ? '100vh' : '50vh',
+        height: full ? '100vh' : '35vh',
         backgroundColor: 'black'
       }}
     >

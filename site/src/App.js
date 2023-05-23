@@ -107,8 +107,10 @@ function App() {
   const [isPending, startTransition] = useTransition()
   const shareableRef = useRef(null)
   const poeRef = useRef(null)
-
   const searchRef = useRef(null)
+
+  const [full, setFull] = usePersistedState('full', false, startTransition)
+
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
     'layoutInput',
@@ -190,15 +192,35 @@ function App() {
     [setSearchInput, searchRef]
   )
 
+  let containerClass = 'container-fluid p-2'
+  let searchClass = ''
+  let inputSectionClass = ''
+  let inputClass = ''
+  let atlasClass = ''
+
+  if (full) {
+    containerClass = containerClass + ' col-3'
+    searchClass = 'p-1'
+    inputClass = 'p-1'
+    atlasClass = 'col-9'
+  } else {
+    containerClass = containerClass + ' row g-0'
+    searchClass = 'col col-lg-4 col-12 p-1'
+    inputSectionClass = 'col col-lg-8 col-12'
+    inputClass = 'col col-lg-3 col-sm-6 col-12 p-1'
+  }
+
   return (
     <>
       <Loader loading={isPending} />
-      <ReactFlowProvider>
-        <Atlas maps={ratedMaps} currentSearch={currentSearch} />
-      </ReactFlowProvider>
-      <div className="container-fluid p-4">
-        <div className="row g-2">
-          <div className="col col-lg-4 col-12">
+      <div className="row g-0">
+        <div className={atlasClass}>
+          <ReactFlowProvider>
+            <Atlas maps={ratedMaps} currentSearch={currentSearch} full={full} setFull={setFull} />
+          </ReactFlowProvider>
+        </div>
+        <div className={containerClass}>
+          <div className={searchClass}>
             <label className="form-label">Search</label>
             <input
               className="form-control"
@@ -211,9 +233,9 @@ function App() {
             <span className="small">tags:</span>{' '}
             <Tags tags={preparedTags} currentSearch={currentSearch} addToInput={addToInput} />
           </div>
-          <div className="col col-lg-8 col-12">
-            <div className="row g-2">
-              <div className="col col-lg-3 col-sm-6 col-12">
+          <div className={inputSectionClass}>
+            <div className="row g-0">
+              <div className={inputClass}>
                 <label className="form-label">Layout weight</label>
                 <div className="input-group">
                   <input
@@ -228,7 +250,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <label className="form-label">Density weight</label>
                 <div className="input-group">
                   <input
@@ -243,7 +265,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <label className="form-label">Boss weight</label>
                 <div className="input-group">
                   <input
@@ -258,7 +280,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <label className="form-label">Card weight</label>
                 <div className="input-group">
                   <input
@@ -273,7 +295,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     The baseline card drop you are expecting to see every map on average. This is used for calculating
@@ -298,7 +320,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Minimum price for the card to be considered as something that should be accounted for calculating
@@ -324,7 +346,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <label className="form-label">PoE regex</label>
                 <div className="input-group">
                   <input
@@ -340,7 +362,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className="col col-lg-3 col-sm-6 col-12">
+              <div className={inputClass}>
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
                   <input

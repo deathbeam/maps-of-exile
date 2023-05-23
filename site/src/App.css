@@ -77,7 +77,7 @@ a:hover {
 }
 
 .tooltip-tag .tooltip-tag-text {
-  visibility: hidden;
+  display: none;
   min-width: 300px;
   background-color: black;
   color: #fff;
@@ -101,7 +101,7 @@ a:hover {
 }
 
 .tooltip-tag:hover .tooltip-tag-text {
-  visibility: visible;
+  display: inherit;
 }
 
 .tooltip-tag .tooltip-tag-fill {
@@ -143,8 +143,7 @@ a:hover {
 
 .tooltip-tag-bottom .tooltip-tag-text {
   top: 100%;
-  left: 50%;
-  margin-left: -150px;
+  left: 0;
 }
 
 .tooltip-tag-bottom .tooltip-tag-text::after {

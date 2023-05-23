@@ -86,6 +86,15 @@ export const preparedMaps = maps.map(map => {
 
   const out = {
     ...map,
+    image: map.image
+      ? '/img/layout/' +
+        map.name
+          .replace(' Map', '')
+          .toLowerCase()
+          .replace(/[^a-zA-Z0-9 ]/g, '')
+          .replaceAll(' ', '_') +
+        '.png'
+      : null,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     cards: cards,

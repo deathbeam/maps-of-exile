@@ -19,6 +19,15 @@ hr {
   margin: 4px;
 }
 
+.map-image {
+  background-size: cover;
+  height: 15em;
+}
+
+.lazy-bg {
+  background-image: none !important;
+}
+
 .btn {
   display: inline-block;
   line-height: 1;

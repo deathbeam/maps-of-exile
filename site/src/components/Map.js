@@ -5,7 +5,12 @@ import MapConnected from './MapConnected'
 import MapCards from './MapCards'
 
 const Map = ({ map, currentSearch, addToInput }) => (
-  <>
+  <tr
+    style={{
+      backgroundImage: 'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (map.image || '') + ')'
+    }}
+    className="map-image lazy-bg"
+  >
     <td>
       <MapName map={map} currentSearch={currentSearch} addToInput={addToInput} />
       <div className="d-md-none mt-2">
@@ -30,7 +35,7 @@ const Map = ({ map, currentSearch, addToInput }) => (
     <td>
       <MapCards cards={map.cards} />
     </td>
-  </>
+  </tr>
 )
 
 export default Map

@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import './App.css'
 
-import { useCallback, useMemo, useRef, useTransition } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useTransition } from 'react'
 import SelectSearch from 'react-select-search'
 import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
 import Loader from './components/Loader'
@@ -104,6 +104,21 @@ function filterMaps(ratedMaps, currentSearch) {
 }
 
 function App() {
+  useEffect(() => {
+    const elements = [].slice.call(document.querySelectorAll('.lazy-bg'))
+    const observer = new IntersectionObserver(es => {
+      es.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.remove('lazy-bg')
+          observer.unobserve(e.target)
+        }
+      })
+    })
+
+    elements.forEach(e => observer.observe(e))
+    return () => elements.forEach(e => observer.unobserve(e))
+  }, [])
+
   const [isPending, startTransition] = useTransition()
   const locationRef = useRef(null)
 
@@ -316,7 +331,7 @@ function App() {
               <div className="col col-lg-6 col-12">
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
-                  <input className="form-control" type="text" ref={locationRef} readOnly="true" />
+                  <input className="form-control" type="text" ref={locationRef} readOnly={true} />
                   <button className="btn btn-outline-secondary" onClick={() => copyToClipboard(locationRef)}>
                     <i className="fa-solid fa-copy fa-fw" /> Copy to clipboard
                   </button>
@@ -429,9 +444,7 @@ function App() {
         </thead>
         <tbody>
           {filterMaps(ratedMaps, currentSearch).map(m => (
-            <tr key={m.name} id={m.name}>
-              <Map map={m} currentSearch={currentSearch} addToInput={addToInput} />
-            </tr>
+            <Map key={m.name} map={m} currentSearch={currentSearch} addToInput={addToInput} />
           ))}
         </tbody>
       </table>

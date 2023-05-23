@@ -4,14 +4,6 @@ import Rating from './Rating'
 import MapImage from './MapImage'
 
 const MapName = ({ map, currentSearch, addToInput }) => {
-  const mapImage =
-    '/img/layout/' +
-    map.name
-      .toLowerCase()
-      .replace(/[^a-zA-Z0-9 ]/g, '')
-      .replaceAll(' ', '_') +
-    '.png'
-
   const color = `text-${tierColor(map.tiers, map.unique)}`
 
   const name = (
@@ -23,7 +15,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   const mapName = map.image ? (
     <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
       <span className="tooltip-tag-text tooltip-tag-fill">
-        <img src={mapImage} alt="" loading="lazy" />
+        <img src={map.image} alt="" loading="lazy" />
       </span>
       {name}
     </span>

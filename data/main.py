@@ -28,11 +28,14 @@ def find_shortest_substring(entry, entries):
             substring_set.add(substring)
 
     shortest_substring = ""
-    for substring in substring_set:
+    for substring in sorted(list(substring_set)):
         if (
             shortest_substring == "" or len(substring) < len(shortest_substring)
         ) and sum(1 for e in entries if substring in e) == 1:
             shortest_substring = substring
+
+    if not shortest_substring:
+        return entry
 
     return shortest_substring
 

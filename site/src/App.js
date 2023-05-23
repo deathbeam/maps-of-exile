@@ -161,7 +161,11 @@ function App() {
   const filteredMaps = useMemo(() => filterMaps(ratedMaps, currentSearch), [ratedMaps, currentSearch])
 
   const poeRegex = useMemo(() => {
-    return '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
+    const re = '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
+    if (re.length > 50) {
+      return 'Too long, be more specific'
+    }
+    return re
   }, [filteredMaps])
 
   const addToInput = useCallback(

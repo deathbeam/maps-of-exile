@@ -176,7 +176,7 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
         }}
         onInit={fitMatching}
       >
-        <Controls position="top-right" showInteractive={false} showFitView={false}>
+        <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={fitMatching} title="Reset position">
             <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>

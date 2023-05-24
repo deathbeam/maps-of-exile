@@ -1,9 +1,29 @@
 .react-flow__controls-button {
-  color: black;
+  font-size: 0.875em;
+  color: var(--bs-badge-color);
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  border: 1px solid;
+  border-color: var(--bs-secondary);
+  background-color: var(--bs-dark);
+  fill: var(--bs-badge-color);
+  border-top-width: 0;
 }
 
-.react-flow__panel {
-  opacity: 0.7;
+.react-flow__controls-button:first-child {
+  border-top-width: 1px;
+  border-radius: var(--bs-border-radius);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.react-flow__controls-button:last-child {
+  border-radius: var(--bs-border-radius);
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.react-flow__controls-button:hover {
+  background-color: var(--bs-secondary);
 }
 
 path.react-flow__edge-path {

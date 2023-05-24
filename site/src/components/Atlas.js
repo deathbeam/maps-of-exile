@@ -176,7 +176,7 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
         }}
         onInit={fitMatching}
       >
-        <Controls position="bottom-right" showInteractive={false} showFitView={false}>
+        <Controls position="top-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={fitMatching} title="Reset position">
             <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>
@@ -184,7 +184,7 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
             <i
               className="fa-solid fa-fw fa-image"
               style={{
-                color: atlasIcons ? 'blue' : 'black'
+                color: atlasIcons ? 'cyan' : 'white'
               }}
             />
           </ControlButton>
@@ -192,7 +192,7 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
             <i
               className="fa-solid fa-fw fa-message"
               style={{
-                color: atlasLabels ? 'blue' : 'black'
+                color: atlasLabels ? 'cyan' : 'white'
               }}
             />
           </ControlButton>
@@ -200,7 +200,7 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
             <i
               className="fa-solid fa-fw fa-star"
               style={{
-                color: atlasScore ? 'blue' : 'black'
+                color: atlasScore ? 'cyan' : 'white'
               }}
             />
           </ControlButton>

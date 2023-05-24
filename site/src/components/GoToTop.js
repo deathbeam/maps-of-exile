@@ -8,7 +8,13 @@ const GoToTop = () => {
 
   return (
     <div className={showGoTop ? '' : 'd-none'}>
-      <button className="btn btn-lg btn-primary position-fixed bottom-0 end-0 m-2" onClick={handleScrollUp}>
+      <button
+        className="btn btn-lg btn-primary position-fixed top-0 end-0 m-2"
+        style={{
+          zIndex: 999
+        }}
+        onClick={handleScrollUp}
+      >
         <i className="fa-solid fa-fw fa-arrow-up" />
       </button>
     </div>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const GoToTop = () => {
   const [showGoTop, setShowGoTop] = useState(false)
-  const handleVisibleButton = () => setShowGoTop(window.pageYOffset > 50)
+  const handleVisibleButton = () => setShowGoTop(window.pageYOffset > 200)
   const handleScrollUp = () => window.scrollTo({ left: 0, top: 0, behavior: 'smooth' })
   useEffect(() => window.addEventListener('scroll', handleVisibleButton), [])
 

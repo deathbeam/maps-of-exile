@@ -1,11 +1,11 @@
 .react-flow__controls-button {
   font-size: 0.875em;
-  color: var(--bs-badge-color);
+  color: var(--bs-body-color);
   padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
   border: 1px solid;
   border-color: var(--bs-secondary);
   background-color: var(--bs-dark);
-  fill: var(--bs-badge-color);
+  fill: var(--bs-body-color);
   border-top-width: 0;
 }
 

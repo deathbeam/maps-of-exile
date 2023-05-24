@@ -181,28 +181,13 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
             <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>
           <ControlButton onClick={() => setAtlasIcons(!atlasIcons)} title="Map icons">
-            <i
-              className="fa-solid fa-fw fa-image"
-              style={{
-                color: atlasIcons ? 'cyan' : 'white'
-              }}
-            />
+            <i className={'fa-solid fa-fw fa-image' + (atlasIcons ? ' text-info' : '')} />
           </ControlButton>
           <ControlButton onClick={() => setAtlasLabels(!atlasLabels)} title="Map labels">
-            <i
-              className="fa-solid fa-fw fa-message"
-              style={{
-                color: atlasLabels ? 'cyan' : 'white'
-              }}
-            />
+            <i className={'fa-solid fa-fw fa-message' + (atlasLabels ? ' text-info' : '')} />
           </ControlButton>
           <ControlButton onClick={() => setAtlasScore(!atlasScore)} title="Score heatmap">
-            <i
-              className="fa-solid fa-fw fa-star"
-              style={{
-                color: atlasScore ? 'cyan' : 'white'
-              }}
-            />
+            <i className={'fa-solid fa-fw fa-star' + (atlasScore ? ' text-info' : '')} />
           </ControlButton>
           <ControlButton onClick={() => setFull(!full)} title="Fullscreen">
             {full ? <i className="fa-solid fa-fw fa-minimize" /> : <i className="fa-solid fa-fw fa-expand" />}

@@ -148,8 +148,7 @@ a:hover {
 
 .tooltip-tag-bottom .tooltip-tag-text::after {
   bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
+  left: 18px;
   border-color: transparent transparent black transparent;
 }
 

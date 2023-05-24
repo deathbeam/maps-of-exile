@@ -213,6 +213,15 @@ function App() {
   return (
     <>
       <Loader loading={isPending} />
+      <a
+        className="btn btn-lg btn-primary position-fixed top-0 start-0 m-2 on-top"
+        href={issueTemplate}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fa-solid fa-fw fa-code-fork" /> Data incorrect or missing? Open an issue
+      </a>
+      <GoToTop />
       <div className="row g-0">
         <div className={atlasClass}>
           <ReactFlowProvider>
@@ -385,25 +394,16 @@ function App() {
         <thead>
           <tr>
             <th scope="col">
-              <div className="d-lg-flex justify-content-between align-items-end">
-                <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-                  <span className="tooltip-tag-text">
-                    Map name, colored based on natural tier with map tiers for each Voidstone next to it.
-                    <hr />
-                    <span className="badge bg-light text-dark m-1">tier 1-5</span>
-                    <span className="badge bg-warning text-dark m-1">tier 6-10</span>
-                    <span className="badge bg-danger text-dark m-1">tier 11-16</span>
-                  </span>
-                  Map
+              <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+                <span className="tooltip-tag-text">
+                  Map name, colored based on natural tier with map tiers for each Voidstone next to it.
+                  <hr />
+                  <span className="badge bg-light text-dark m-1">tier 1-5</span>
+                  <span className="badge bg-warning text-dark m-1">tier 6-10</span>
+                  <span className="badge bg-danger text-dark m-1">tier 11-16</span>
                 </span>
-                <div>
-                  <small className="fw-light">
-                    <a href={issueTemplate} target="_blank" rel="noreferrer">
-                      Data not valid or missing?
-                    </a>
-                  </small>
-                </div>
-              </div>
+                Map
+              </span>
             </th>
             <th scope="col" className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
@@ -521,7 +521,6 @@ function App() {
           </div>
         </div>
       </div>
-      <GoToTop />
     </>
   )
 }

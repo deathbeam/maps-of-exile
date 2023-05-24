@@ -28,6 +28,10 @@ hr {
   background-image: none !important;
 }
 
+.on-top {
+  z-index: 1000;
+}
+
 .btn {
   display: inline-block;
   line-height: 1;

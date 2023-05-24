@@ -199,15 +199,15 @@ function App() {
   let atlasClass = ''
 
   if (atlasFull) {
-    containerClass = containerClass + ' col-lg-3 col-12'
+    containerClass = containerClass + ' col-lg-3 col-12 full-height'
     searchClass = 'p-1'
-    inputClass = 'p-1'
+    inputClass = 'col-lg-12 col-md-6 col-12 p-1'
     atlasClass = 'col-lg-9 col-12'
   } else {
     containerClass = containerClass + ' row g-0'
-    searchClass = 'col col-lg-4 col-12 p-1'
+    searchClass = 'col-lg-4 col-12 p-1'
     inputSectionClass = 'col col-lg-8 col-12'
-    inputClass = 'col col-lg-3 col-sm-6 col-12 p-1'
+    inputClass = 'col-lg-3 col-md-6 col-12 p-1'
   }
 
   return (
@@ -312,7 +312,7 @@ function App() {
                     with weight of total drop pool combined with map card pool weight and multiplied by amount of
                     baseline drop pool items you get from map.
                   </span>
-                  <label className="form-label">Average card drop per map</label>
+                  <label className="form-label">Average card per map</label>
                 </span>
                 <div className="input-group">
                   <SelectSearch
@@ -338,9 +338,7 @@ function App() {
                     Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot
                     even though when you click on listings the data say something else.
                   </span>
-                  <label className="form-label">
-                    Minimum card drop price (in <img src="/img/chaos.png" alt="c" width="16" height="16" />)
-                  </label>
+                  <label className="form-label">Minimum card price</label>
                 </span>
                 <div className="input-group">
                   <input

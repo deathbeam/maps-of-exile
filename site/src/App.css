@@ -32,6 +32,14 @@ hr {
   z-index: 1000;
 }
 
+@media (min-width: 992px) {
+  .full-height {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
 .btn {
   display: inline-block;
   line-height: 1;

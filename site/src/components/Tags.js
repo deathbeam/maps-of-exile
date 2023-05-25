@@ -22,7 +22,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
     if (searched) {
       buttons.push(
         <button className={'btn btn-badge text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
-          <b>X</b>
+          <i className="fa-solid fa-xmark" />
         </button>
       )
     }

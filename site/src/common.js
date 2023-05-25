@@ -83,7 +83,6 @@ export function tierColor(tiers, unique, voidstones = 0) {
 }
 
 export function scrollToElement(id) {
-  console.info('Scrolling to ' + id)
   document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 

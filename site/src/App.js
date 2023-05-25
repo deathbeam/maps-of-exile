@@ -22,9 +22,15 @@ function rateMaps(
   bossInput,
   cardInput,
   cardBaselineInput,
+  cardBaselineNumberInput,
   cardMinPriceInput
 ) {
-  const cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
+  let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
+  if (cardBaselineNumberInput > 0) {
+    cardWeightBaseline /= cardBaselineNumberInput
+  } else if (cardBaselineNumberInput < 0) {
+    cardWeightBaseline *= Math.abs(cardBaselineNumberInput)
+  }
 
   // First calculate value for cards
   const mapsWithCardValues = foundMaps.map(map => {
@@ -137,6 +143,8 @@ function App() {
     startTransition,
     shareableRef
   )
+  const [cardBaselineNumberInput, setCardBaselineNumberInput, cardBaselineNumberReset, cardBaselineNumberRef] =
+    useInputField('cardBaselineNumberInput', 1, startTransition, shareableRef)
   const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
     'cardMinPriceInput',
     10,
@@ -154,9 +162,10 @@ function App() {
         bossInput,
         cardInput,
         cardBaselineInput,
+        cardBaselineNumberInput,
         cardMinPriceInput
       ),
-    [layoutInput, densityInput, bossInput, cardInput, cardBaselineInput, cardMinPriceInput]
+    [layoutInput, densityInput, bossInput, cardInput, cardBaselineInput, cardBaselineNumberInput, cardMinPriceInput]
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
@@ -311,6 +320,9 @@ function App() {
                     how many baseline drop pool items you get from map on average. Then single card drop is compared
                     with weight of total drop pool combined with map card pool weight and multiplied by amount of
                     baseline drop pool items you get from map.
+                    <br />
+                    Second input contains amount of those cards you drop per map on average. Putting in negative number
+                    will instead make it count as dropping that card every x maps.
                   </span>
                   <label className="form-label">Average card per map</label>
                 </span>
@@ -324,7 +336,23 @@ function App() {
                     onChange={e => setCardBaselineInput(e)}
                     search="true"
                   />
-                  <button className="btn btn-outline-secondary" onClick={cardBaselineReset}>
+                  <input
+                    className="form-control"
+                    type="number"
+                    style={{
+                      maxWidth: '2.5em'
+                    }}
+                    ref={cardBaselineNumberRef}
+                    defaultValue={cardBaselineNumberInput}
+                    onChange={setCardBaselineNumberInput}
+                  />
+                  <button
+                    className="btn btn-outline-secondary"
+                    onClick={e => {
+                      cardBaselineReset()
+                      cardBaselineNumberReset()
+                    }}
+                  >
                     <i className="fa-solid fa-refresh fa-fw" />
                   </button>
                 </div>

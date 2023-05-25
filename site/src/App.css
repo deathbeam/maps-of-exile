@@ -231,6 +231,10 @@ a:hover {
   appearance: none;
 }
 
+.select-search-number {
+  max-width: 2.5em;
+}
+
 .select-search-input::-webkit-search-decoration,
 .select-search-input::-webkit-search-cancel-button,
 .select-search-input::-webkit-search-results-button,
@@ -252,6 +256,7 @@ a:hover {
 }
 
 .select-search-select {
+  width: calc(100% + 2.5em);
   background: var(--select-search-background);
   box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
   border: 1px solid var(--select-search-border);

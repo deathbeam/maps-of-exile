@@ -337,11 +337,8 @@ function App() {
                     search="true"
                   />
                   <input
-                    className="form-control"
+                    className="form-control select-search-number"
                     type="number"
-                    style={{
-                      maxWidth: '2.5em'
-                    }}
                     ref={cardBaselineNumberRef}
                     defaultValue={cardBaselineNumberInput}
                     onChange={setCardBaselineNumberInput}

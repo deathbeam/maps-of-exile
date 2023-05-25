@@ -337,7 +337,7 @@ function App() {
                     search="true"
                   />
                   <input
-                    className="form-control select-search-number"
+                    className="form-control select-search-number text-center"
                     type="number"
                     ref={cardBaselineNumberRef}
                     defaultValue={cardBaselineNumberInput}

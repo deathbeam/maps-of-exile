@@ -3,18 +3,18 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import './Atlas.css'
 
 import { useCallback, useEffect, useMemo } from 'react'
-import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
+import ReactFlow, { ControlButton, Controls, Handle, Panel, Position, useReactFlow } from 'reactflow'
 import { deduplicate, filter, ratingColor, scrollToElement, tierColor } from '../common'
 import useKeyPress from '../hooks/useKeyPress'
 import usePersistedState from '../hooks/usePersistedState'
 import MapImage from './MapImage'
-import { preparedGlobals } from '../data'
+import { possibleVoidstones, preparedGlobals } from '../data'
 
 const scale = 3
 const offset = 6
 const bgId = 'bg'
 
-function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
+function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones) {
   return {
     id: map.name,
     parentNode: bgId,
@@ -27,6 +27,7 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels) {
       atlasScore,
       atlasIcons,
       atlasLabels,
+      voidstones: parseInt(voidstones),
       map: {
         name: map.name,
         tiers: map.tiers,
@@ -68,7 +69,7 @@ function MapNode({ id, data }) {
   if (atlasScore) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map.tiers, map.unique)}`
+    mapColor = `text-${tierColor(map.tiers, map.unique, data.voidstones)}`
   }
 
   const buttonClass = `btn btn-badge btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
@@ -79,7 +80,12 @@ function MapNode({ id, data }) {
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       {!!atlasIcons && (
-        <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[0]} onClick={() => scrollToElement(id)} />
+        <MapImage
+          icon={map.icon}
+          unique={map.unique}
+          tier={map.tiers[data.voidstones]}
+          onClick={() => scrollToElement(id)}
+        />
       )}
       {!!atlasLabels && (
         <button className={buttonClass} onClick={() => scrollToElement(id)}>
@@ -90,7 +96,7 @@ function MapNode({ id, data }) {
   )
 }
 
-const Atlas = ({ maps, currentSearch, full, setFull }) => {
+const Atlas = ({ maps, currentSearch, full, setFull, voidstones, setVoidstones }) => {
   const flow = useReactFlow()
   const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
   const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
@@ -128,13 +134,13 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
           },
           zIndex: -1
         }
-      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels))),
+      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels]
+    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
 
   useKeyPress(['Escape'], () => {
@@ -176,6 +182,23 @@ const Atlas = ({ maps, currentSearch, full, setFull }) => {
         }}
         onInit={fitMatching}
       >
+        <Panel position="bottom-left" className="card bg-dark">
+          <div className="card-body p-1">
+            <i className="fa-solid fa-fw fa-gem" title="Voidstones" />{' '}
+            <div className="btn-group" role="group">
+              {possibleVoidstones.map(v => (
+                <>
+                  <button
+                    className={'btn ' + (v === voidstones ? 'btn-info text-dark' : 'text-body btn-outline-secondary')}
+                    onClick={e => setVoidstones(v)}
+                  >
+                    {v}
+                  </button>
+                </>
+              ))}
+            </div>
+          </div>
+        </Panel>
         <Controls position="bottom-right" showInteractive={false} showFitView={false}>
           <ControlButton onClick={fitMatching} title="Reset position">
             <i className="fa-solid fa-fw fa-refresh" />

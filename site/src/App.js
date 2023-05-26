@@ -3,7 +3,15 @@ import './App.css'
 
 import { useCallback, useMemo, useRef, useTransition } from 'react'
 import SelectSearch from 'react-select-search'
-import { defaultCardBaseline, githubRepo, issueTemplate, preparedCards, preparedMaps, preparedTags } from './data'
+import {
+  baseMonsterLevel,
+  defaultCardBaseline,
+  githubRepo,
+  issueTemplate,
+  preparedCards,
+  preparedMaps,
+  preparedTags
+} from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
 import { calculateScore, copyToClipboard, filter } from './common'
@@ -23,7 +31,8 @@ function rateMaps(
   cardInput,
   cardBaselineInput,
   cardBaselineNumberInput,
-  cardMinPriceInput
+  cardMinPriceInput,
+  voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
   if (cardBaselineNumberInput > 0) {
@@ -34,14 +43,21 @@ function rateMaps(
 
   // First calculate value for cards
   const mapsWithCardValues = foundMaps.map(map => {
+    const mapLevel = map.tiers[voidstones] - 1 + baseMonsterLevel
     const mapCards = []
 
     for (let card of map.cards) {
       const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
+      const priceEligible = card.price >= cardMinPriceInput
+      const cardMinLevel = (card.cap || {}).min || 0
+      const cardMaxLevel = (card.cap || {}).max || 99
+      const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
+
       mapCards.push({
         ...card,
         dropPoolItems: dropPoolItems,
-        value: card.price >= cardMinPriceInput ? card.price * (card.weight / card.poolWeight) * dropPoolItems : 0
+        weight: dropEligible ? card.weight : 0,
+        value: priceEligible && dropEligible ? card.price * (card.weight / card.poolWeight) * dropPoolItems : 0
       })
     }
 
@@ -116,6 +132,7 @@ function App() {
   const searchRef = useRef(null)
 
   const [atlasFull, setAtlasFull] = usePersistedState('atlasFull', false, startTransition)
+  const [atlasVoidstones, setAtlasVoidstones] = usePersistedState('atlasVoidstones', 0, startTransition)
 
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
@@ -163,9 +180,19 @@ function App() {
         cardInput,
         cardBaselineInput,
         cardBaselineNumberInput,
-        cardMinPriceInput
+        cardMinPriceInput,
+        parseInt(atlasVoidstones)
       ),
-    [layoutInput, densityInput, bossInput, cardInput, cardBaselineInput, cardBaselineNumberInput, cardMinPriceInput]
+    [
+      layoutInput,
+      densityInput,
+      bossInput,
+      cardInput,
+      cardBaselineInput,
+      cardBaselineNumberInput,
+      cardMinPriceInput,
+      atlasVoidstones
+    ]
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
 
@@ -234,7 +261,14 @@ function App() {
       <div className="row g-0">
         <div className={atlasClass}>
           <ReactFlowProvider>
-            <Atlas maps={ratedMaps} currentSearch={currentSearch} full={atlasFull} setFull={setAtlasFull} />
+            <Atlas
+              maps={ratedMaps}
+              currentSearch={currentSearch}
+              full={atlasFull}
+              setFull={setAtlasFull}
+              voidstones={atlasVoidstones}
+              setVoidstones={setAtlasVoidstones}
+            />
           </ReactFlowProvider>
         </div>
         <div className={containerClass}>
@@ -505,7 +539,13 @@ function App() {
         </thead>
         <tbody>
           {filteredMaps.map(m => (
-            <Map key={m.name} map={m} currentSearch={currentSearch} addToInput={addToInput} />
+            <Map
+              key={m.name}
+              map={m}
+              voidstones={atlasVoidstones}
+              currentSearch={currentSearch}
+              addToInput={addToInput}
+            />
           ))}
         </tbody>
       </table>

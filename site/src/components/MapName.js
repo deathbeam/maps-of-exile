@@ -3,7 +3,7 @@ import { tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
 
-const MapName = ({ map, currentSearch, addToInput }) => {
+const MapName = ({ map, currentSearch, addToInput, voidstones }) => {
   const color = `text-${tierColor(map.tiers, map.unique)}`
 
   const name = (
@@ -24,7 +24,7 @@ const MapName = ({ map, currentSearch, addToInput }) => {
   )
 
   const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[0]} />
+  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[parseInt(voidstones)]} />
   const score = (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />

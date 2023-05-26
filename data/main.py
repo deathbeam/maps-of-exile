@@ -11,6 +11,11 @@ from bs4 import BeautifulSoup
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+# hope <= 68
+# The Flora's Gift:  T7 ≤ X < 10
+# Rain Tempter:      T13 (80)
+# The Trial:         T10 (77)
+
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, o):
@@ -112,7 +117,7 @@ def get_globals_data(config):
     return out
 
 
-def get_card_data(key, league, config):
+def get_card_data(key, league, config, card_extra):
     id = config["decks"]["sheet-id"]
     name = config["decks"]["sheet-name"]
     print(f"Getting card amounts from {name}")
@@ -184,6 +189,10 @@ def get_card_data(key, league, config):
             card["weight"] = weight_card
         else:
             print(f"Weight for card {card['name']} not found")
+
+        extra = next(filter(lambda x: x["name"] == card["name"], card_extra), None)
+        if extra:
+            merge(extra, card)
 
         out.append(card)
 
@@ -718,7 +727,11 @@ def main():
     api_key = os.environ["GOOGLE_API_KEY"]
 
     if fetch_cards:
-        cards = get_card_data(api_key, config["league"], config["cards"])
+        # Get extra card data
+        with open(dir_path + "/cards.json", "r") as f:
+            card_extra = json.load(f)
+
+        cards = get_card_data(api_key, config["league"], config["cards"], card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
             f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
 
@@ -730,6 +743,8 @@ def main():
     if fetch_maps:
         # Get basic map data
         maps = get_maps(api_key, config["maps"])
+
+        # Get extra map data
         with open(dir_path + "/maps.json", "r") as f:
             map_extra = get_maps_template(maps, json.load(f))
         with open(dir_path + "/maps.json", "w") as f:

@@ -5,7 +5,7 @@ import MapConnected from './MapConnected'
 import MapCards from './MapCards'
 import useLazy from '../hooks/useLazy'
 
-const Map = ({ map, currentSearch, addToInput }) => {
+const Map = ({ map, currentSearch, addToInput, voidstones }) => {
   const [ref, visible] = useLazy()
 
   return (
@@ -18,7 +18,7 @@ const Map = ({ map, currentSearch, addToInput }) => {
       className="map-image lazy-bg"
     >
       <td>
-        <MapName map={map} currentSearch={currentSearch} addToInput={addToInput} />
+        <MapName map={map} currentSearch={currentSearch} addToInput={addToInput} voidstones={voidstones} />
         <div className="d-md-none mt-2">
           <Rating rating={map.score} scale={10} label="Total" />
           <Rating rating={map.rating.layout} label="Layout" />

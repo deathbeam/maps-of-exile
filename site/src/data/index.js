@@ -8,6 +8,8 @@ const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
+export const baseMonsterLevel = 68
+export const possibleVoidstones = [0, 1, 2, 3, 4]
 
 export const preparedGlobals = globals
 
@@ -82,7 +84,7 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  const tier = map.level - 67
+  const tier = map.level - baseMonsterLevel + 1
 
   const out = {
     ...map,

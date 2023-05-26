@@ -11,11 +11,6 @@ from bs4 import BeautifulSoup
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-# hope <= 68
-# The Flora's Gift:  T7 ≤ X < 10
-# Rain Tempter:      T13 (80)
-# The Trial:         T10 (77)
-
 
 class DecimalEncoder(json.JSONEncoder):
     def default(self, o):

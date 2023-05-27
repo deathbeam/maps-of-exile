@@ -33,6 +33,7 @@ function rateMaps(
   cardBaselineInput,
   cardBaselineNumberInput,
   cardMinPriceInput,
+  playerIiqInput,
   voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
@@ -48,7 +49,11 @@ function rateMaps(
     const mapCards = []
 
     for (let card of map.cards) {
-      const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
+      let dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
+      if (playerIiqInput > 0) {
+        dropPoolItems = dropPoolItems * (1 + (0.888 * (1 - Math.exp(-(playerIiqInput / 100)))))
+      }
+
       const priceEligible = card.price >= cardMinPriceInput
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
@@ -129,7 +134,7 @@ function filterMaps(ratedMaps, currentSearch) {
 function App() {
   const [isPending, startTransition] = useTransition()
   const shareableRef = useRef(null)
-  const poeRef = useRef(null)
+  const poeRegexRef = useRef(null)
   const searchRef = useRef(null)
 
   const [atlasFull, setAtlasFull] = usePersistedState('atlasFull', false, startTransition)
@@ -163,6 +168,7 @@ function App() {
   )
   const [cardBaselineNumberInput, setCardBaselineNumberInput, cardBaselineNumberReset, cardBaselineNumberRef] =
     useInputField('cardBaselineNumberInput', 1, startTransition, shareableRef)
+  const [playerIiqInput, setPlayerIiqInput, playerIiqReset, playerIiqRef] = useInputField('playerIiqInput', 0, startTransition, shareableRef)
   const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
     'cardMinPriceInput',
     10,
@@ -182,6 +188,7 @@ function App() {
         cardBaselineInput,
         cardBaselineNumberInput,
         cardMinPriceInput,
+        playerIiqInput,
         atlasVoidstones
       ),
     [
@@ -192,6 +199,7 @@ function App() {
       cardBaselineInput,
       cardBaselineNumberInput,
       cardMinPriceInput,
+      playerIiqInput,
       atlasVoidstones
     ]
   )
@@ -233,18 +241,21 @@ function App() {
   let searchClass = ''
   let inputSectionClass = ''
   let inputClass = ''
+  let bigInputClass = ''
   let atlasClass = ''
 
   if (atlasFull) {
     containerClass = containerClass + ' col-lg-3 col-12 full-height'
     searchClass = 'p-1'
     inputClass = 'col-lg-12 col-md-6 col-12 p-1'
+    bigInputClass = inputClass
     atlasClass = 'col-lg-9 col-12'
   } else {
     containerClass = containerClass + ' row g-0'
     searchClass = 'col-lg-4 col-12 p-1'
     inputSectionClass = 'col col-lg-8 col-12'
     inputClass = 'col-lg-3 col-md-6 col-12 p-1'
+    bigInputClass = 'col-lg-12 col-md-6 col-12 p-1'
   }
 
   return (
@@ -396,7 +407,7 @@ function App() {
                     You should set this value to your observed drop rate of index card (for example Union in Cemetery)
                     so the site can predict drop rates for your current farming strategy.
                   </span>
-                  <label className="form-label">Average card per map</label>
+                  <label className="form-label">Average cards per map</label>
                 </span>
                 <div className="input-group">
                   <SelectSearch
@@ -417,11 +428,33 @@ function App() {
                   />
                   <button
                     className="btn btn-outline-secondary"
-                    onClick={e => {
+                    onClick={() => {
                       cardBaselineReset()
                       cardBaselineNumberReset()
                     }}
                   >
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className={inputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    Player IIQ multiplier that is applied to natural drop pool items calculated from <b>Average cards per map</b> input. This multiplier has diminishing returns and site already accounts for them.
+                    <br/>
+                    <b className="text-danger">Important!</b> If you set average cards per map based on observed index card drops while already having player IIQ sources <b className="text-danger">DO NOT</b> set this value. If you want to use this config set Average cards per map config while having no sources of player IIQ.
+                  </span>
+                  <label className="form-label">Player IIQ</label>
+                </span>
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={playerIiqRef}
+                    defaultValue={playerIiqInput}
+                    onChange={setPlayerIiqInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={playerIiqReset}>
                     <i className="fa-solid fa-refresh fa-fw" />
                   </button>
                 </div>
@@ -435,7 +468,7 @@ function App() {
                     Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot
                     even though when you click on listings the data say something else.
                   </span>
-                  <label className="form-label">Minimum card price</label>
+                  <label className="form-label">Min card price</label>
                 </span>
                 <div className="input-group">
                   <input
@@ -463,17 +496,17 @@ function App() {
                   <input
                     className="form-control"
                     type="text"
-                    ref={poeRef}
+                    ref={poeRegexRef}
                     value={poeRegex}
                     readOnly={true}
                     onFocus={e => e.target.select()}
                   />
-                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(poeRef)}>
+                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(poeRegexRef)}>
                     <i className="fa-solid fa-copy fa-fw" />
                   </button>
                 </div>
               </div>
-              <div className={inputClass}>
+              <div className={bigInputClass}>
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
                   <input

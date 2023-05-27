@@ -110,10 +110,15 @@ export const preparedMaps = maps.map(map => {
   }
 
   // Build search index
-  out.search = [out.name, ...out.connected, ...out.cards.map(c => c.name), ...out.tags.map(t => t.name)].map(v =>
-    v.trim().toLowerCase()
-  )
-
+  out.search = [
+    ...new Set([
+      out.name,
+      ...out.connected,
+      ...out.cards.map(c => c.name),
+      ...out.cards.map(c => c.reward).filter(c => !!c),
+      ...out.tags.map(t => t.name)
+    ])
+  ].map(v => v.trim().toLowerCase())
   return out
 })
 

@@ -278,7 +278,7 @@ function App() {
             <input
               className="form-control"
               type="search"
-              placeholder="Search for map name, tag or card, comma separated"
+              placeholder="Search for map, tag, card, card reward, comma separated"
               ref={searchRef}
               defaultValue={searchInput}
               onChange={setSearchInput}

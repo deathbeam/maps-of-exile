@@ -123,7 +123,12 @@ function buildSearch(s) {
 }
 
 function filterMaps(ratedMaps, currentSearch) {
-  return ratedMaps.filter(m => !currentSearch || filter(currentSearch, m.search))
+  return ratedMaps
+    .filter(m => !currentSearch || filter(currentSearch, m.search))
+    .sort(
+      (a, b) =>
+        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
+    )
 }
 
 function App() {

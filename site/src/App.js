@@ -289,7 +289,16 @@ function App() {
           <div className={inputSectionClass}>
             <div className="row g-0">
               <div className={inputClass}>
-                <label className="form-label">Layout weight</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The weight of layout rating when calculating score for map (so end result is map layout * layout
+                    weight).
+                    <br />
+                    <b>This is not minimal layout rating filter</b>, this will simply push maps with good layouts lower
+                    or higher in list.
+                  </span>
+                  <label className="form-label">Layout weight</label>
+                </span>
                 <div className="input-group">
                   <input
                     className="form-control"
@@ -304,7 +313,16 @@ function App() {
                 </div>
               </div>
               <div className={inputClass}>
-                <label className="form-label">Density weight</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The weight of density rating when calculating score for map (so end result is map density * density
+                    weight).
+                    <br />
+                    <b>This is not minimal density rating filter</b>, this will simply push maps with good density lower
+                    or higher in list.
+                  </span>
+                  <label className="form-label">Density weight</label>
+                </span>
                 <div className="input-group">
                   <input
                     className="form-control"
@@ -319,7 +337,15 @@ function App() {
                 </div>
               </div>
               <div className={inputClass}>
-                <label className="form-label">Boss weight</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The weight of boss rating when calculating score for map (so end result is map boss * boss weight).
+                    <br />
+                    <b>This is not minimal boss rating filter</b>, this will simply push maps with good boss lower or
+                    higher in list.
+                  </span>
+                  <label className="form-label">Boss weight</label>
+                </span>
                 <div className="input-group">
                   <input
                     className="form-control"
@@ -334,7 +360,16 @@ function App() {
                 </div>
               </div>
               <div className={inputClass}>
-                <label className="form-label">Card weight</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The weight of card rating when calculating score for map (so end result is map card rating * card
+                    weight).
+                    <br />
+                    <b>This is not minimal card weight filter</b>, this will simply push maps with good cards lower or
+                    higher in list.
+                  </span>
+                  <label className="form-label">Card weight</label>
+                </span>
                 <div className="input-group">
                   <input
                     className="form-control"
@@ -351,13 +386,15 @@ function App() {
               <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
-                    The baseline card drop you are expecting to see every map on average. This is used for calculating
-                    how many baseline drop pool items you get from map on average. Then single card drop is compared
-                    with weight of total drop pool combined with map card pool weight and multiplied by amount of
-                    baseline drop pool items you get from map.
+                    The baseline card drop you are expecting to see every map on average with number input next to it.
+                    Positive number indicates x cards dropped per map, negative number indicates card dropped every x
+                    maps.
                     <br />
-                    Second input contains amount of those cards you drop per map on average. Putting in negative number
-                    will instead make it count as dropping that card every x maps.
+                    This is used for calculating how many drop pool items you get on average and that is used for{' '}
+                    <b>calculating chance to get card per map</b>.
+                    <br />
+                    You should set this value to your observed drop rate of index card (for example Union in Cemetery)
+                    so the site can accurately predict drop rates for your current farming strategy.
                   </span>
                   <label className="form-label">Average card per map</label>
                 </span>
@@ -462,10 +499,18 @@ function App() {
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   Map name, colored based on natural tier with map tiers for each Voidstone next to it.
+                  <br />
+                  Under it <b>Score</b> calculated by summing Layout, Density, Boss and Card ratings multiplied by their
+                  respective weights and recalculated to number betwen 0 and 100.
                   <hr />
                   <span className="badge bg-light text-dark m-1">tier 1-5</span>
                   <span className="badge bg-warning text-dark m-1">tier 6-10</span>
                   <span className="badge bg-danger text-dark m-1">tier 11-16</span>
+                  <hr />
+                  <span className="badge bg-danger text-dark m-1">bad/unknown</span>
+                  <span className="badge bg-warning text-dark m-1">>=30 neutral</span>
+                  <span className="badge bg-info text-dark m-1">>=50 good</span>
+                  <span className="badge bg-success text-dark m-1">>=70 great</span>
                 </span>
                 Map
               </span>
@@ -532,7 +577,8 @@ function App() {
               <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under{' '}
-                  <b>{cardMinPriceInput}c</b> are filtered out from rating.
+                  <b>{cardMinPriceInput}c</b> are filtered out from rating. Adjust <b>Average card per map</b> if the
+                  card drop rates are not matching with your observed results.
                   <hr />
                   <span className="badge bg-secondary text-dark m-1">not very good</span>
                   <span className="badge bg-dark border border-1 border-info text-info m-1">>=0.5 decent</span>

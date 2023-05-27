@@ -1,27 +1,27 @@
 [
     {
         "name": "Hope",
-        "cap": {
-             "max": 68
+        "drop": {
+             "max_level": 68
         }
     },
     {
         "name": "The Flora's Gift",
-        "cap": {
-            "min": 74,
-            "max": 77
+        "drop": {
+            "min_level": 74,
+            "max_level": 77
         }
     },
     {
         "name": "Rain Tempter",
-        "cap": {
-            "max": 80
+        "drop": {
+            "max_level": 80
         }
     },
     {
         "name": "The Trial",
-        "cap": {
-            "max": 77
+        "drop": {
+            "max_level": 77
         }
     }
 ]

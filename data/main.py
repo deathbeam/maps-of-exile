@@ -112,7 +112,40 @@ def get_globals_data(config):
     return out
 
 
-def get_card_data(key, league, config, card_extra):
+def get_card_data(key, config, card_extra):
+    league = config["league"]
+
+    print(f"Getting card data from wiki")
+    wiki_cards = requests.get(
+        config["wiki"]["api"],
+        params={
+            "action": "cargoquery",
+            "format": "json",
+            "limit": "500",
+            "tables": "items",
+            "fields": "items.name,items.drop_level,items.drop_areas,items.drop_monsters",
+            "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1"',
+        },
+    ).json()["cargoquery"]
+    wiki_cards = list(
+        map(
+            lambda x: {
+                "name": x["title"]["name"],
+                "drop": {
+                    "areas": list(
+                        filter(None, x["title"].get("drop areas", "").split(","))
+                    ),
+                    "monsters": list(
+                        filter(None, x["title"].get("drop monsters", "").split(","))
+                    ),
+                    "min_level": int(x["title"].get("drop level", "0")),
+                },
+            },
+            wiki_cards,
+        )
+    )
+    print(json.dumps(wiki_cards, indent=4))
+
     id = config["decks"]["sheet-id"]
     name = config["decks"]["sheet-name"]
     print(f"Getting card amounts from {name}")
@@ -184,6 +217,10 @@ def get_card_data(key, league, config, card_extra):
             card["weight"] = weight_card
         else:
             print(f"Weight for card {card['name']} not found")
+
+        wiki = next(filter(lambda x: x["name"] == card["name"], wiki_cards), None)
+        if wiki:
+            merge(wiki, card)
 
         extra = next(filter(lambda x: x["name"] == card["name"], card_extra), None)
         if extra:
@@ -312,41 +349,7 @@ def get_map_wiki(config):
             "where": "items.class_id='Map' AND maps.area_id LIKE '%MapWorlds%'",
         },
     ).json()["cargoquery"]
-    wiki_maps = list(map(lambda x: x["title"], wiki_maps))
-    boss_ids = set([])
-    for wiki_map in wiki_maps:
-        if "boss monster ids" in wiki_map:
-            boss_ids.update(wiki_map["boss monster ids"].split(","))
-
-    boss_cards = {}
-    for boss in boss_ids:
-        print(f"Getting card data for {boss} from wiki")
-        params = {
-            "action": "cargoquery",
-            "format": "json",
-            "limit": "500",
-            "tables": "items",
-            "fields": "items.name",
-            "where": f'items.drop_monsters HOLDS "{boss}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"',
-        }
-
-        wiki_cards = requests.get(config["wiki"]["api"], params=params).json()[
-            "cargoquery"
-        ]
-        boss_cards[boss] = boss_cards.get(boss, [])
-        for card in wiki_cards:
-            boss_cards[boss].append(card["title"]["name"])
-
-    for existing_wiki in wiki_maps:
-        if "boss monster ids" in existing_wiki:
-            existing_wiki["cards"] = existing_wiki.get("cards", [])
-            for existing_boss in existing_wiki["boss monster ids"].split(","):
-                if existing_boss in boss_cards:
-                    existing_wiki["cards"] = (
-                        existing_wiki["cards"] + boss_cards[existing_boss]
-                    )
-
-    return wiki_maps
+    return list(map(lambda x: x["title"], wiki_maps))
 
 
 def get_maps(key, config):
@@ -442,8 +445,12 @@ def get_maps(key, config):
                 m["id"] = existing_wiki["unique area id"]
             else:
                 m["id"] = existing_wiki["area id"]
-            if "cards" in existing_wiki:
-                m["boss"]["cards"] = sorted(list(set(existing_wiki["cards"])))
+            if "boss monster ids" in existing_wiki:
+                m["boss"]["ids"] = sorted(
+                    list(
+                        set(filter(None, existing_wiki["boss monster ids"].split(",")))
+                    )
+                )
         existing_position = next(
             filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None
         )
@@ -454,27 +461,9 @@ def get_maps(key, config):
     return out
 
 
-def get_map_data(map_data, extra_map_data, config):
+def get_map_data(map_data, extra_map_data):
     url = map_data["poedb"]
     map_data.pop("poedb")
-    map_cards = set(map_data.get("cards", []))
-
-    # Wiki card data
-    if map_data["id"]:
-        print(f"Getting card data for {map_data['name']} from wiki")
-        wiki_cards = requests.get(
-            config["wiki"]["api"],
-            params={
-                "action": "cargoquery",
-                "format": "json",
-                "limit": "500",
-                "tables": "items",
-                "fields": "items.name",
-                "where": f'items.drop_areas HOLDS "{map_data["id"]}" AND items.class_id="DivinationCard" AND items.drop_enabled="1"',
-            },
-        ).json()["cargoquery"]
-        for card in wiki_cards:
-            map_cards.add(card["title"]["name"])
 
     # PoeDB map metadata
     print(f"Getting map data for {map_data['name']} from url {url}")
@@ -512,8 +501,6 @@ def get_map_data(map_data, extra_map_data, config):
                 map_data["connected"] = sorted(
                     list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
                 )
-            elif name == "card tags" and len(map_cards) == 0:
-                map_cards.update(map(lambda x: x.text.strip(), value.find_all("a")))
             elif name == "the pantheon":
                 map_data["pantheon"] = next(
                     map(lambda x: x.text.strip(), value.find_all("a"))
@@ -525,7 +512,6 @@ def get_map_data(map_data, extra_map_data, config):
                 map_data["icon"] = value.text.strip()
 
     # Merge existing data
-    map_data["cards"] = sorted(list(map_cards))
     existing = next(
         filter(lambda x: x["name"] == map_data["name"], extra_map_data), None
     )
@@ -726,18 +712,18 @@ def main():
         with open(dir_path + "/cards.json", "r") as f:
             card_extra = json.load(f)
 
-        cards = get_card_data(api_key, config["league"], config["cards"], card_extra)
+        cards = get_card_data(api_key, config, card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
             f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_globals:
-        globals = get_globals_data(config["maps"])
+        globals = get_globals_data(config)
         with open(dir_path + "/../site/src/data/globals.json", "w") as f:
             f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_maps:
         # Get basic map data
-        maps = get_maps(api_key, config["maps"])
+        maps = get_maps(api_key, config)
 
         # Get extra map data
         with open(dir_path + "/maps.json", "r") as f:
@@ -753,7 +739,7 @@ def main():
             )
 
         # Write detailed map data
-        maps = list(map(lambda x: get_map_data(x, map_extra, config["maps"]), maps))
+        maps = list(map(lambda x: get_map_data(x, map_extra), maps))
         with open(dir_path + "/../site/src/data/maps.json", "w") as f:
             f.write(
                 json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True)

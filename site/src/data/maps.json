@@ -1,8 +1,9 @@
 [
     {
         "boss": {
-            "cards": [
-                "The Craving"
+            "ids": [
+                "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss1",
+                "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss2"
             ],
             "names": [
                 "Rose",
@@ -14,11 +15,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Monochrome",
-            "The Wilted Rose",
-            "The Wretched"
-        ],
         "connected": [
             "Overgrown Shrine Map"
         ],
@@ -44,8 +40,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space"
+            "ids": [
+                "Metadata/Monsters/BlacksmithGolem/BlacksmithGolemMap"
             ],
             "names": [
                 "Calderus"
@@ -56,24 +52,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Assassin's Favour",
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Blazing Fire",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journalist",
-            "The Life Thief",
-            "The Poet",
-            "The Saint's Treasure",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Excavation Map",
             "Stagnation Map"
@@ -104,18 +82,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Altered Synthete"
             ]
         },
-        "cards": [
-            "A Dusty Memory",
-            "Magnum Opus"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisColdGuardianMap",
         "id": "Synthesis_MapGuardian1",
         "image": false,
@@ -128,7 +101,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Spiders/MapSpiderBossWeaver"
+            ],
             "names": [
                 "Spinner of False Hope"
             ],
@@ -138,17 +113,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Web"
-        ],
         "connected": [
             "Fungal Hollow Map",
             "Geode Map",
@@ -181,7 +145,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Spiders/MapSpiderBossSinsSimplified"
+            ],
             "names": [
                 "Hybrid Widow"
             ],
@@ -191,19 +157,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Parasitic Passengers",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Web"
-        ],
         "connected": [
             "Chateau Map",
             "Forbidden Woods Map",
@@ -236,7 +189,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Guardians/MapGuardianBossFire",
+                "Metadata/Monsters/Guardians/MapGuardianBossLightning"
+            ],
             "names": [
                 "Herald of Ashes",
                 "Herald of Thunder"
@@ -247,21 +203,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Assassin's Favour",
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Poet",
-            "The Saint's Treasure",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tyrant"
-        ],
         "connected": [
             "Cemetery Map",
             "Orchard Map",
@@ -294,9 +235,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Fishmonger",
-                "The Rabid Rhoa"
+            "ids": [
+                "Metadata/Monsters/Rhoas/MapRhoaBoss"
             ],
             "names": [
                 "Drought-Maddened Rhoa"
@@ -307,16 +247,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -349,7 +279,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/MapAxisGeneralBoss"
+            ],
             "names": [
                 "Warmonger"
             ],
@@ -359,20 +291,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Merciless Armament",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Patient",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warlord"
-        ],
         "connected": [
             "Coral Ruins Map",
             "Pier Map"
@@ -403,7 +321,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/AnimatedItem/AnimatedWeaponMapBoss"
+            ],
             "names": [
                 "The Steel Soul"
             ],
@@ -413,24 +333,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Dying Anguish",
-            "Her Mask",
-            "Hope",
-            "Jack in the Box",
-            "Lingering Remnants",
-            "Merciless Armament",
-            "Rats",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Patient",
-            "The Return of the Rat",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warlord",
-            "Three Faces in the Dark"
-        ],
         "connected": [
             "Core Map",
             "Tropical Island Map"
@@ -461,7 +363,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Totems/TotemMapBossCold"
+            ],
             "names": [
                 "Puruna, the Challenger"
             ],
@@ -471,23 +375,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Catch",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Old Man",
-            "The Spark and the Flame",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wind"
-        ],
         "connected": [
             "Maelstr\u00f6m of Chaos",
             "Pit Map",
@@ -521,18 +408,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Augmented Synthete"
             ]
         },
-        "cards": [
-            "A Dusty Memory",
-            "Magnum Opus"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisFireGuardianMap",
         "id": "Synthesis_MapGuardian2",
         "image": false,
@@ -545,8 +427,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Bear Woman"
+            "ids": [
+                "Metadata/Monsters/Beasts/MapBeastBossWhite"
             ],
             "names": [
                 "Beast of the Pits"
@@ -557,21 +439,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Loyalty",
-            "Pride of the First Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fox",
-            "The Gambler",
-            "The One With All",
-            "The Shepherd's Sandals",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arid Lake Map",
             "Thicket Map",
@@ -603,7 +470,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Scavengers/MapScavengerBossHailrake"
+            ],
             "names": [
                 "Glace"
             ],
@@ -613,21 +482,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Catch",
-            "The Destination",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Desert Spring Map",
             "Factory Map",
@@ -660,7 +514,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/KitavaBoss/Kitava1Map"
+            ],
             "names": [
                 "Lord of the Grey"
             ],
@@ -671,18 +527,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enlightened",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wrath"
-        ],
         "connected": [
             "Primordial Blocks Map",
             "Scriptorium Map",
@@ -714,10 +558,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Craving",
-                "The Lich",
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/Necromancer/MapNecromancerBossPrison"
             ],
             "names": [
                 "Xixic, High Necromancer"
@@ -728,23 +570,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Coveted Possession",
-            "Grave Knowledge",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Celestial Justicar",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Forsaken",
-            "The Gambler",
-            "The Rabbit's Foot",
-            "The Summoner",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wretched"
-        ],
         "connected": [
             "Grotto Map",
             "Olmec's Sanctum",
@@ -776,7 +601,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Lion/LionMapWolfColdBossRevive",
+                "Metadata/Monsters/Lion/LionMapWolfFireBoss",
+                "Metadata/Monsters/Lion/LionMapWolfLightningBossRevive"
+            ],
             "names": [
                 "Solus, Pack Alpha",
                 "Storm Eye",
@@ -788,14 +617,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Loyalty",
-            "Monochrome",
-            "Pride of the First Ones",
-            "The Cursed King",
-            "The Wolf's Shadow",
-            "Treasure Hunter"
-        ],
         "connected": [
             "Underground River Map"
         ],
@@ -821,7 +642,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Kaom/KaomMapBoss"
+            ],
             "names": [
                 "The Infernal King"
             ],
@@ -831,21 +654,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "From Bone to Ashes",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Pride Before the Fall",
-            "The Battle Born",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The King's Heart",
-            "The Mad King",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Chateau Map",
             "Cursed Crypt Map",
@@ -879,11 +687,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Bowyer's Dream",
-                "The Fletcher",
-                "The Scavenger",
-                "The Whiteout"
+            "ids": [
+                "Metadata/Monsters/Cockerel/CockerelBowMapBoss",
+                "Metadata/Monsters/Pitbull/PitbullMapBoss"
             ],
             "names": [
                 "Gnar, Eater of Carrion",
@@ -895,16 +701,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Crystal Ore Map",
             "Shipyard Map",
@@ -938,7 +734,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn2"
+            ],
             "names": [
                 "Leif, the Swift-Handed"
             ],
@@ -948,24 +746,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Rain of Chaos",
-            "The Betrayal",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fox",
-            "The Gambler",
-            "The Harvester",
-            "The Mercenary",
-            "The Road to Power",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tyrant"
-        ],
         "connected": [
             "City Square Map",
             "Coral Ruins Map",
@@ -997,10 +777,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Harmony of Souls",
-                "The Aesthete",
-                "The Offering"
+            "ids": [
+                "Metadata/Monsters/Shavronne/ShavronneSoulMap"
             ],
             "names": [
                 "Shavronne the Sickening"
@@ -1011,22 +789,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Chains that Bind",
-            "The Dragon's Heart",
-            "The Dungeon Master",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Nurse",
-            "The Penitent",
-            "The Soul",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warden"
-        ],
         "connected": [
             "Cold River Map",
             "Crimson Township Map",
@@ -1058,11 +820,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough",
-                "The Bear Woman",
-                "The Cacophony"
+            "ids": [
+                "Metadata/Monsters/DespairBear/DespairBearMap"
             ],
             "names": [
                 "Erebix, Light's Bane"
@@ -1074,24 +833,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Brother's Gift",
-            "Brother's Stash",
-            "Cursed Words",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Man With Bear",
-            "Struck by Lightning",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The One With All",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Union"
-        ],
         "connected": [
             "Arcade Map",
             "Hallowed Ground",
@@ -1127,8 +868,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Scavenger"
+            "ids": [
+                "Metadata/Monsters/GargoyleBoss/GargoyleMapBoss"
             ],
             "names": [
                 "Hephaeus, The Hammer"
@@ -1139,21 +880,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Boon of Justice",
-            "Brotherhood in Exile",
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -1186,7 +912,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossMap",
+                "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossZombieMap",
+                "Metadata/Monsters/StatueFingerMage/StatueFingerMageMonsterMapBoss"
+            ],
             "names": [
                 "Carius, the Unnatural",
                 "Pileah, Burning Corpse",
@@ -1198,22 +928,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Blazing Fire",
-            "The Carrion Crow",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journalist",
-            "The Life Thief",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Voices"
-        ],
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -1246,11 +960,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "Forbidden Power",
-                "More is Never Enough",
-                "The Progeny of Lunaris"
+            "ids": [
+                "Metadata/Monsters/LunarisSolaris/LunarisMap",
+                "Metadata/Monsters/LunarisSolaris/SolarisMap"
             ],
             "names": [
                 "Ara, Sister of Light",
@@ -1262,25 +974,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Chilling Wind",
-            "Boundless Realms",
-            "Dialla's Subjugation",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Mitts",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lunaris Priestess",
-            "The Sun",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Twilight Moon",
-            "The Twins",
-            "Wealth and Power"
-        ],
         "connected": [
             "Cells Map",
             "Crimson Temple Map",
@@ -1313,7 +1006,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/MapAxisGeneralBoss2"
+            ],
             "names": [
                 "Tyrant"
             ],
@@ -1323,25 +1018,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Dying Anguish",
-            "Gemcutter's Promise",
-            "Her Mask",
-            "Hope",
-            "Jack in the Box",
-            "Lingering Remnants",
-            "Merciless Armament",
-            "Struck by Lightning",
-            "The Carrion Crow",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Patient",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warlord"
-        ],
         "connected": [
             "Dry Sea Map",
             "Dunes Map",
@@ -1373,8 +1049,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Arena Champion"
+            "ids": [
+                "Metadata/Monsters/Daresso/DaressoMapBoss"
             ],
             "names": [
                 "Ambrius, Legion Slayer"
@@ -1385,24 +1061,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Deceiver",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Gladiator",
-            "The King's Blade",
-            "The Last One Standing",
-            "The Mad King",
-            "The Sword King's Salute",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Visionary",
-            "Unchained"
-        ],
         "connected": [
             "Dig Map",
             "Maze Map",
@@ -1435,7 +1093,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Exiles/TituciusMapBoss"
+            ],
             "names": [
                 "The Forgotten Soldier"
             ],
@@ -1445,21 +1105,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Boon of Justice",
-            "Brotherhood in Exile",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Undaunted"
-        ],
         "connected": [
             "Crimson Township Map",
             "Defiled Cathedral Map",
@@ -1491,7 +1136,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptainMap"
+            ],
             "names": [
                 "Captain Tanner Lightfoot"
             ],
@@ -1502,22 +1149,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Deep Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tyrant",
-            "The Vast"
-        ],
         "connected": [
             "Armoury Map",
             "Castle Ruins Map",
@@ -1551,10 +1182,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "A Modest Request",
-                "Broken Promises",
-                "The Prince of Darkness"
+            "ids": [
+                "Metadata/Monsters/Malachai/MalachaiMapBoss",
+                "Metadata/Monsters/Malachai/MalachaiMapBoss2"
             ],
             "names": [
                 "Eater of Souls"
@@ -1565,25 +1195,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Echoes of Love",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hunger",
-            "The Insatiable",
-            "The Nurse",
-            "The Oath",
-            "The Soul",
-            "The Surveyor",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Vile Power",
-            "Vinia's Token"
-        ],
         "connected": [
             "Arsenal Map",
             "Dungeon Map"
@@ -1615,17 +1226,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Venarius"
             ]
         },
-        "cards": [
-            "A Dusty Memory"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
         "id": "Synthesis_MapBoss",
         "image": false,
@@ -1638,7 +1245,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/AxisCasterMapBoss1",
+                "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss1",
+                "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss2"
+            ],
             "names": [
                 "Oriath's Vengeance",
                 "Oriath's Vigil",
@@ -1650,27 +1261,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Emperor's Luck",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Peaceful Moments",
-            "Rain Tempter",
-            "Struck by Lightning",
-            "The Carrion Crow",
-            "The Dragon's Heart",
-            "The Easy Stroll",
-            "The Encroaching Darkness",
-            "The Fox in the Brambles",
-            "The Gambler",
-            "The Porcupine",
-            "The Stormcaller",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Voices",
-            "Thunderous Skies"
-        ],
         "connected": [
             "Orchard Map",
             "Pit Map",
@@ -1702,8 +1292,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space"
+            "ids": [
+                "Metadata/Monsters/GhostPirates/GhostPirateMapBoss2",
+                "Metadata/Monsters/RockGolem/TreasureGolemMapBossSimplified"
             ],
             "names": [
                 "Pirate Treasure",
@@ -1715,27 +1306,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Stone Perfected",
-            "From Bone to Ashes",
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "Scholar of the Seas",
-            "The Catch",
-            "The Deep Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Formless Sea",
-            "The Gambler",
-            "The Journey",
-            "The Primordial",
-            "The Rite of Elements",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Racecourse Map",
             "Tropical Island Map"
@@ -1767,7 +1337,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Scavengers/MapScavengerBossWitch"
+            ],
             "names": [
                 "Megaera"
             ],
@@ -1777,17 +1349,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Standoff",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Maze Map",
             "Museum Map",
@@ -1821,8 +1382,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Cacophony"
+            "ids": [
+                "Metadata/Monsters/Banshee/BansheeMapBoss"
             ],
             "names": [
                 "The Sanguine Siren"
@@ -1833,24 +1394,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Seven Years Bad Luck",
-            "The Apothecary",
-            "The Blazing Fire",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enlightened",
-            "The Gambler",
-            "The Journalist",
-            "The Life Thief",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Cold River Map",
             "Forbidden Woods Map",
@@ -1883,7 +1426,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/CrimsonPriest/CrimsonPriestBoss"
+            ],
             "names": [
                 "Kadaris, Crimson Mayor"
             ],
@@ -1893,20 +1438,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Apothecary",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -1938,8 +1469,10 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/Miner/MinerHammerMapBoss",
+                "Metadata/Monsters/Miner/MinerLanternMapBoss",
+                "Metadata/Monsters/MinerLarge/MinerLargeMapBoss"
             ],
             "names": [
                 "Champion of the Hollows",
@@ -1952,30 +1485,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Sea of Blue",
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Drunken Aristocrat",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Gambler",
-            "The Jeweller's Boon",
-            "The Messenger",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wolf",
-            "Three Voices",
-            "Time-Lost Relic",
-            "Treasure Hunter",
-            "Volatile Power"
-        ],
         "connected": [
             "Canyon Map",
             "Coral Ruins Map",
@@ -2008,7 +1517,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Skeletons/MapSkeletonBossMelee"
+            ],
             "names": [
                 "Pagan Bishop of Agony"
             ],
@@ -2018,21 +1529,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Grave Knowledge",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Celestial Justicar",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Forsaken",
-            "The Gambler",
-            "The Rabbit's Foot",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wretched"
-        ],
         "connected": [
             "Caldera Map",
             "Promenade Map",
@@ -2064,7 +1560,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonBossMapWest4"
+            ],
             "names": [
                 "Avatar of Apocalypse"
             ],
@@ -2074,9 +1572,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Monochrome"
-        ],
         "connected": [
             "Necropolis Map"
         ],
@@ -2102,7 +1597,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickermanMap"
+            ],
             "names": [
                 "Woad, Mockery of Man"
             ],
@@ -2113,24 +1610,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lachrymal Necrosis",
-            "Lingering Remnants",
-            "Seven Years Bad Luck",
-            "The Apothecary",
-            "The Blazing Fire",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enlightened",
-            "The Gambler",
-            "The Innocent",
-            "The Journalist",
-            "The Life Thief",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Conservatory Map",
             "Maze Map",
@@ -2163,9 +1642,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Shakari/Shakari2Map",
+                "Metadata/Monsters/Shakari/ShakariMap"
             ],
             "names": [
                 "Terror of the Infinite Drifts"
@@ -2177,22 +1656,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Note in the Wind",
-            "Acclimatisation",
-            "Baited Expectations",
-            "Earth Drinker",
-            "Her Mask",
-            "Hope",
-            "Imperial Legacy",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tumbleweed"
-        ],
         "connected": [
             "Arid Lake Map",
             "Beach Map",
@@ -2226,10 +1689,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough",
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/Garukhan/GarukhanMap"
             ],
             "names": [
                 "Stalker of the Endless Dunes"
@@ -2241,25 +1702,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Gambler",
-            "The Ruthless Ceinture",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wolf",
-            "Time-Lost Relic",
-            "Volatile Power"
-        ],
         "connected": [
             "Colosseum Map",
             "Underground River Map"
@@ -2291,20 +1733,14 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/IncaShadowBoss/BossIncaShadowDoryani"
+            ],
             "names": [
                 "The Apex Assembly"
             ],
             "separated": true
         },
-        "cards": [
-            "Doryani's Epiphany",
-            "Monochrome",
-            "The Admirer",
-            "The Catalyst",
-            "The Forward Gaze",
-            "The Inventor"
-        ],
         "icon": "Art/2DItems/Maps/Doryanis",
         "id": "MapWorldsMazeUnique",
         "image": false,
@@ -2323,7 +1759,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Spiker/SpikerBull/SpikerBullBoss"
+            ],
             "names": [
                 "Gazuul, Droughtspawn"
             ],
@@ -2332,21 +1770,6 @@
             "rushable": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Note in the Wind",
-            "Acclimatisation",
-            "Baited Expectations",
-            "Earth Drinker",
-            "Her Mask",
-            "Hope",
-            "Imperial Legacy",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2376,7 +1799,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/ZombieBoss/MapZombieBossHillock"
+            ],
             "names": [
                 "The Blacksmith"
             ],
@@ -2386,23 +1811,6 @@
             "separated": false,
             "soft_phases": true
         },
-        "cards": [
-            "A Note in the Wind",
-            "Acclimatisation",
-            "Baited Expectations",
-            "Earth Drinker",
-            "Her Mask",
-            "Hope",
-            "Imperial Legacy",
-            "Lingering Remnants",
-            "Sambodhi's Wisdom",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tumbleweed"
-        ],
         "connected": [
             "Colonnade Map",
             "Fields Map",
@@ -2435,7 +1843,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Brute/MapBossBrute"
+            ],
             "names": [
                 "Penitentiary Incarcerator"
             ],
@@ -2445,20 +1855,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Chains that Bind",
-            "The Dragon's Heart",
-            "The Dungeon Master",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Penitent",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Warden"
-        ],
         "connected": [
             "Arid Lake Map",
             "Core Map",
@@ -2490,9 +1886,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Cacophony",
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/Handfinger/HandfingerMapBoss",
+                "Metadata/Monsters/MineBat/MineBatMapBoss"
             ],
             "names": [
                 "Breaker Toruul",
@@ -2504,25 +1900,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wolf",
-            "Time-Lost Relic",
-            "Treasure Hunter",
-            "Volatile Power"
-        ],
         "connected": [
             "Alleyways Map",
             "Colonnade Map",
@@ -2554,7 +1931,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/GeneralAdus/GeneralAdusMap"
+            ],
             "names": [
                 "Pesquin, the Mad Baron"
             ],
@@ -2564,22 +1943,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Azure Rage",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Rats",
-            "Soul Quenched",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Return of the Rat",
-            "The Tinkerer's Table",
-            "The Tireless Extractor",
-            "The Trial",
-            "Three Faces in the Dark"
-        ],
         "connected": [
             "Beach Map",
             "Cold River Map",
@@ -2612,9 +1975,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Ralakesh/Greust/GreustMap"
             ],
             "names": [
                 "Drek, Apex Hunter"
@@ -2626,21 +1988,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Rain of Chaos",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fox",
-            "The Gambler",
-            "The Harvester",
-            "The Scarred Meadow",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Tranquillity"
-        ],
         "connected": [
             "Dry Sea Map",
             "Dunes Map",
@@ -2674,9 +2021,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space",
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/RockGolem/RockGolemMapBoss"
             ],
             "names": [
                 "The Eroding One"
@@ -2687,31 +2033,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Stone Perfected",
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Glimmer of Hope",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Fathomless Depths",
-            "The Gambler",
-            "The Primordial",
-            "The Rite of Elements",
-            "The Survivalist",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wolf",
-            "Time-Lost Relic",
-            "Treasure Hunter",
-            "Volatile Power"
-        ],
         "connected": [
             "Cold River Map",
             "Overgrown Ruin Map",
@@ -2744,7 +2065,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/SaplingMonster/IcedSaplingFiendBoss",
+                "Metadata/Monsters/SaplingMonster/IcedSaplingHunterBoss",
+                "Metadata/Monsters/SaplingMonster/IcedSaplingTricksterBoss"
+            ],
             "names": [
                 "Corruptor Eedaiak",
                 "Skictis, Frostkeeper",
@@ -2756,27 +2081,6 @@
             "rushable": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Chilling Wind",
-            "Alivia's Grace",
-            "Call to the First Ones",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Mawr Blaidd",
-            "Mitts",
-            "The Demoness",
-            "The Dragon",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Flora's Gift",
-            "The Gambler",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Voices"
-        ],
         "connected": [
             "Arachnid Tomb Map",
             "Crimson Temple Map",
@@ -2808,8 +2112,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Perfection"
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/PhoenixBoss"
             ],
             "names": [
                 "Guardian of the Phoenix"
@@ -2821,18 +2125,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Burning Blood",
-            "Her Mask",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Eye of the Dragon",
-            "The Gambler",
-            "The Standoff",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Phoenix",
         "id": "MapWorldsPhoenix",
         "image": true,
@@ -2853,7 +2145,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/LeagueMetamorphosis/MetamorphosisMapBoss",
+                "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
+            ],
             "names": [
                 "Ciergan, Shadow Alchemist",
                 "The Shifting Ire"
@@ -2864,20 +2159,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Further Invention",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Soul Quenched",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fiend",
-            "The Gambler",
-            "The Thaumaturgist",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Malformation Map",
             "Siege Map",
@@ -2906,7 +2187,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Skeletons/Pirate/BrutalPirateLordBoss"
+            ],
             "names": [
                 "Captain Clayborne, The Accursed"
             ],
@@ -2916,19 +2199,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "A Chilling Wind",
-            "Her Mask",
-            "Hope",
-            "Humility",
-            "Lingering Remnants",
-            "Mitts",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Cells Map",
             "Conservatory Map",
@@ -2960,7 +2230,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak2"
+            ],
             "names": [
                 "Aulen Greychain"
             ],
@@ -2970,18 +2242,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Betrayal",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Treasure Hunter"
-        ],
         "connected": [
             "Arachnid Nest Map",
             "Necropolis Map"
@@ -3012,8 +2272,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space"
+            "ids": [
+                "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss2"
             ],
             "names": [
                 "Avatar of Undoing"
@@ -3024,28 +2284,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Stone Perfected",
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Gambler",
-            "The Primordial",
-            "The Rite of Elements",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Watcher",
-            "The Wolf",
-            "Time-Lost Relic",
-            "Volatile Power"
-        ],
         "connected": [
             "Arachnid Nest Map",
             "Desert Spring Map",
@@ -3078,9 +2316,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space",
-                "The Mind's Eyes"
+            "ids": [
+                "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss"
             ],
             "names": [
                 "Void Anomaly"
@@ -3091,34 +2328,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Sea of Blue",
-            "A Stone Perfected",
-            "Bijoux",
-            "Buried Treasure",
-            "Gift of Asenath",
-            "Gift of the Gemling Queen",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Loyalty",
-            "Pride of the First Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Endurance",
-            "The Gambler",
-            "The Jeweller's Boon",
-            "The Primordial",
-            "The Rite of Elements",
-            "The Shepherd's Sandals",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Watcher",
-            "The Wolf",
-            "Time-Lost Relic",
-            "Treasure Hunter",
-            "Volatile Power"
-        ],
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -3152,10 +2361,6 @@
         "boss": {
             "separated": false
         },
-        "cards": [
-            "Monochrome",
-            "The Immortal"
-        ],
         "icon": "Art/2DItems/Maps/HallOfGrandmasters",
         "id": "MapWorldsPromenadeUnique",
         "image": false,
@@ -3174,7 +2379,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Brute/BossBruteUniqueMap"
+            ],
             "names": [
                 "Maker of Mires"
             ],
@@ -3184,9 +2391,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Monochrome"
-        ],
         "connected": [
             "Cemetery Map"
         ],
@@ -3212,10 +2416,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough",
-                "The Offspring"
+            "ids": [
+                "Metadata/Monsters/InsectSpawner/InsectSpawnerParasiteBossMap"
             ],
             "names": [
                 "Gorulis, Will-Thief"
@@ -3227,20 +2429,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Parasitic Passengers",
-            "Struck by Lightning",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Dry Sea Map",
             "Laboratory Map",
@@ -3273,16 +2461,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Endless Darkness"
+            "ids": [
+                "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
             ],
             "names": [
                 "<<>>"
             ]
         },
-        "cards": [
-            "Monochrome"
-        ],
         "icon": "Art/2DItems/Maps/HarbingerUber",
         "id": "MapWorldsHarbingerHigh",
         "image": false,
@@ -3295,7 +2480,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Spiders/MapSpiderBossWeaverSimplified"
+            ],
             "names": [
                 "Queen of the Great Tangle"
             ],
@@ -3305,22 +2492,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Alivia's Grace",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Flora's Gift",
-            "The Gambler",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Web",
-            "The Wind"
-        ],
         "connected": [
             "Beach Map",
             "Crimson Township Map",
@@ -3353,7 +2524,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Undying/CityStalkerFemaleMapBossVoid"
+            ],
             "names": [
                 "Riftwalker"
             ],
@@ -3363,21 +2536,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Azyran's Reward",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Professor",
-            "The Thaumaturgist",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -3410,7 +2568,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Talisman/TalismanWolfKingMapBossSimplified"
+            ],
             "names": [
                 "Lycius, Midnight's Howl"
             ],
@@ -3420,28 +2580,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Alivia's Grace",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Loyalty",
-            "Pride of the First Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Flora's Gift",
-            "The Gambler",
-            "The Master",
-            "The Pack Leader",
-            "The Scout",
-            "The Shepherd's Sandals",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wolf's Shadow",
-            "The Wolven King's Bite",
-            "The Wolverine",
-            "Treasure Hunter"
-        ],
         "connected": [
             "Cemetery Map",
             "Grotto Map",
@@ -3474,8 +2612,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Perfection"
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/HydraBoss"
             ],
             "names": [
                 "Guardian of the Hydra"
@@ -3487,17 +2625,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Her Mask",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Feast",
-            "The Gambler",
-            "The Throne",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Hydra",
         "id": "MapWorldsHydra",
         "image": true,
@@ -3518,9 +2645,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Bowyer's Dream",
-                "The Fletcher"
+            "ids": [
+                "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierRangedMapBoss"
             ],
             "names": [
                 "Mirage of Bones"
@@ -3531,18 +2657,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Struck by Lightning",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Dungeon Map",
             "Necropolis Map"
@@ -3573,7 +2687,12 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Wb/WbFireLeader1",
+                "Metadata/Monsters/Wb/WbFireLeader2",
+                "Metadata/Monsters/Wb/WbFireLeader3",
+                "Metadata/Monsters/Wb/WbFireLeader4"
+            ],
             "names": [
                 "Bin'aia, Crimson Rain",
                 "El'Abin, Bloodeater",
@@ -3586,21 +2705,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Old Man",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wind"
-        ],
         "connected": [
             "Lair Map",
             "Marshes Map",
@@ -3634,9 +2738,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Divine Beauty",
-                "The Cacophony"
+            "ids": [
+                "Metadata/Monsters/Seawitch/MapBossMerveilMaelstrom",
+                "Metadata/Monsters/seawitchillusion/MapBossMerveilMaelstrom"
             ],
             "names": [
                 "Merveil, the Reflection",
@@ -3647,20 +2751,6 @@
             "rushable": false,
             "soft_phases": false
         },
-        "cards": [
-            "Lantador's Lost Love",
-            "Lysah's Respite",
-            "Monochrome",
-            "Prosperity",
-            "The Avenger",
-            "The Cache",
-            "The Emptiness",
-            "The Hoarder",
-            "The Journey",
-            "The Leviathan",
-            "The Lover",
-            "The Siren"
-        ],
         "connected": [
             "Atoll Map"
         ],
@@ -3682,7 +2772,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/PietyBeastMapBoss"
+            ],
             "names": [
                 "Nightmare Manifest"
             ],
@@ -3692,21 +2784,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hunger",
-            "The Oath",
-            "The Surveyor",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Vile Power",
-            "Vinia's Token"
-        ],
         "connected": [
             "Foundry Map",
             "Museum Map",
@@ -3739,8 +2816,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Skeleton"
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonBossFairgravesTreasure"
             ],
             "names": [
                 "Fairgraves, Never Dying"
@@ -3751,14 +2828,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Abandoned Wealth",
-            "Lantador's Lost Love",
-            "Monochrome",
-            "Prosperity",
-            "The Journey",
-            "The Landing"
-        ],
         "connected": [
             "Shore Map"
         ],
@@ -3784,7 +2853,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Viking/VikingMapBoss"
+            ],
             "names": [
                 "Tore, Towering Ancient"
             ],
@@ -3794,18 +2865,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Death",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Inoculated",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Cemetery Map",
             "Lighthouse Map",
@@ -3837,7 +2896,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/IncaShadowBoss/MapBossIncaShadow"
+            ],
             "names": [
                 "Shadow of the Vaal"
             ],
@@ -3847,22 +2908,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Admirer",
-            "The Catalyst",
-            "The Damned",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hive of Knowledge",
-            "The Inventor",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Unrequited Love"
-        ],
         "connected": [
             "Colosseum Map",
             "Crater Map",
@@ -3894,8 +2939,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Perfection"
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/MinotaurBoss"
             ],
             "names": [
                 "Guardian of the Minotaur"
@@ -3907,17 +2952,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Her Mask",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Ruthless Ceinture",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Treasure Hunter"
-        ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Minotaur",
         "id": "MapWorldsMinotaur",
         "image": true,
@@ -3938,8 +2972,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Divine Beauty"
+            "ids": [
+                "Metadata/Monsters/Seawitch/MapSeaWitchBossSpark"
             ],
             "names": [
                 "Shock and Horror"
@@ -3950,26 +2984,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Sea of Blue",
-            "Glimmer of Hope",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Lysah's Respite",
-            "The Avenger",
-            "The Cache",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fathomless Depths",
-            "The Gambler",
-            "The Hoarder",
-            "The Jeweller's Boon",
-            "The Side Quest",
-            "The Survivalist",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Lighthouse Map",
             "Phantasmagoria Map",
@@ -4003,7 +3017,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunarisMap"
+            ],
             "names": [
                 "Sebbert, Crescent's Point"
             ],
@@ -4013,21 +3029,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Astral Protection",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lunaris Priestess",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Twilight Moon",
-            "The Twins",
-            "Wealth and Power"
-        ],
         "connected": [
             "Infested Valley Map",
             "Residence Map",
@@ -4060,7 +3061,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Maligaro/MaligaroMapBoss2"
+            ],
             "names": [
                 "He of Many Pieces"
             ],
@@ -4070,28 +3073,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Dab of Ink",
-            "Blind Venture",
-            "Checkmate",
-            "Costly Curio",
-            "Destined to Crumble",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Academic",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enthusiasts",
-            "The Gambler",
-            "The Polymath",
-            "The Professor",
-            "The Scholar",
-            "The Soul",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Thirst for Knowledge"
-        ],
         "connected": [
             "Crater Map",
             "Malformation Map",
@@ -4123,8 +3104,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Lich"
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonLargeMapBoss"
             ],
             "names": [
                 "Burtok, Conjurer of Bones"
@@ -4135,19 +3116,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Grave Knowledge",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Forsaken",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wretched"
-        ],
         "connected": [
             "Arid Lake Map",
             "Death and Taxes",
@@ -4181,9 +3149,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Divine Beauty",
-                "The Cacophony"
+            "ids": [
+                "Metadata/Monsters/Seawitch/MapBossMerveil2",
+                "Metadata/Monsters/seawitchillusion/MapBossMerveil"
             ],
             "not_spawned": true,
             "phases": false,
@@ -4191,9 +3159,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Monochrome"
-        ],
         "connected": [
             "Underground Sea Map"
         ],
@@ -4219,7 +3184,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Totems/olmec_totem/MapTotemBossLegendsMain"
+            ],
             "names": [
                 "Olmec, the All Stone"
             ],
@@ -4229,9 +3196,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Monochrome"
-        ],
         "connected": [
             "Bone Crypt Map"
         ],
@@ -4257,7 +3221,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBossSimplified"
+            ],
             "names": [
                 "Vision of Justice"
             ],
@@ -4267,25 +3233,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Boon of Justice",
-            "Brotherhood in Exile",
-            "Emperor's Luck",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Peaceful Moments",
-            "Rain Tempter",
-            "The Dragon's Heart",
-            "The Easy Stroll",
-            "The Encroaching Darkness",
-            "The Fox in the Brambles",
-            "The Gambler",
-            "The Porcupine",
-            "The Road to Power",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arcade Map",
             "Courtyard Map",
@@ -4318,7 +3265,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Maligaro/Maligaro2Map"
+            ],
             "names": [
                 "Visceris"
             ],
@@ -4329,24 +3278,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Echoes of Love",
-            "Emperor of Purity",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Poisoned Faith",
-            "Shard of Fate",
-            "The Dark Mage",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Garish Power",
-            "The Sigil",
-            "The Surgeon",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Factory Map",
             "Flooded Mine Map",
@@ -4379,8 +3310,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Harmony of Souls"
+            "ids": [
+                "Metadata/Monsters/Maligaro/MaligaroSoulMap"
             ],
             "names": [
                 "Maligaro the Mutilator"
@@ -4391,24 +3322,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Echoes of Love",
-            "Emperor of Purity",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Shard of Fate",
-            "The Dark Mage",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Garish Power",
-            "The Sigil",
-            "The Soul",
-            "The Surgeon",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Acton's Nightmare",
             "Cemetery Map",
@@ -4442,9 +3355,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Brush, Paint and Palette",
-                "Doedre's Madness"
+            "ids": [
+                "Metadata/Monsters/Doedre/DoedreMapBoss2"
             ],
             "names": [
                 "Erythrophagia"
@@ -4455,25 +3367,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Brawny Battle Mage",
-            "The Doctor",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hunger",
-            "The Incantation",
-            "The Oath",
-            "The Soul",
-            "The Surveyor",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Witch",
-            "Vile Power"
-        ],
         "connected": [
             "Arcade Map",
             "Forbidden Woods Map",
@@ -4507,7 +3400,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Undying/CityStalkerMaleMapBossPier"
+            ],
             "names": [
                 "Ancient Architect"
             ],
@@ -4517,23 +3412,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Lucky Connections",
-            "Prosperity",
-            "The Dragon's Heart",
-            "The Drunken Aristocrat",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Old Man",
-            "The Pact",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arachnid Nest Map",
             "Armoury Map",
@@ -4565,7 +3443,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
+            ],
             "names": [
                 "Talin, Faithbreaker"
             ],
@@ -4575,10 +3455,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Imperial Legacy",
-            "Monochrome"
-        ],
         "connected": [
             "Dunes Map"
         ],
@@ -4604,8 +3480,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Arena Champion"
+            "ids": [
+                "Metadata/Monsters/Viking/VikingMapBoss2"
             ],
             "names": [
                 "Olof, Son of the Headsman"
@@ -4616,21 +3492,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Gladiator",
-            "The King's Blade",
-            "The Last One Standing",
-            "The Sword King's Salute",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Unchained"
-        ],
         "connected": [
             "Arcade Map",
             "Atoll Map",
@@ -4664,10 +3525,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "A Familiar Call",
-                "Perfection",
-                "The Arena Champion"
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/ChimeraBoss"
             ],
             "names": [
                 "Guardian of the Chimera"
@@ -4679,21 +3538,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Boon of the First Ones",
-            "Her Mask",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Gladiator",
-            "The King's Blade",
-            "The Last One Standing",
-            "The Sword King's Salute",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Unchained"
-        ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chimera",
         "id": "MapWorldsChimera",
         "image": true,
@@ -4714,7 +3558,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Totems/TotemMapBossColdPlateau",
+                "Metadata/Monsters/Totems/TotemMapBossLightningPlateau"
+            ],
             "names": [
                 "Poporo, the Highest Spire",
                 "Puruna, the Challenger"
@@ -4725,21 +3572,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Spark and the Flame",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Wind"
-        ],
         "connected": [
             "Tower Map",
             "Toxic Sewer Map",
@@ -4772,7 +3604,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
+            ],
             "names": [
                 "The Goddess"
             ],
@@ -4782,19 +3616,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Boon of Justice",
-            "Brotherhood in Exile",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Porcupine",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Cold River Map",
             "Frozen Cabins Map",
@@ -4827,7 +3648,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss"
+            ],
             "names": [
                 "Mistress Hyseria"
             ],
@@ -4837,15 +3660,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Chaotic Disposition",
-            "Deadly Joy",
-            "Monochrome",
-            "The Army of Blood",
-            "The Fiend",
-            "The Last Supper",
-            "The Thaumaturgist"
-        ],
         "connected": [
             "Temple Map"
         ],
@@ -4871,7 +3685,13 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss",
+                "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss2",
+                "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss3",
+                "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss4",
+                "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss5"
+            ],
             "names": [
                 "Unravelling Horror"
             ],
@@ -4881,28 +3701,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Assassin's Favour",
-            "Dying Anguish",
-            "Her Mask",
-            "Hope",
-            "Jack in the Box",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Lucky Connections",
-            "Prosperity",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Messenger",
-            "The Pact",
-            "The Poet",
-            "The Saint's Treasure",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tyrant"
-        ],
         "connected": [
             "Atoll Map",
             "Courtyard Map",
@@ -4934,7 +3732,15 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Exiles/ExileDuelist1MapBoss",
+                "Metadata/Monsters/Exiles/ExileMarauder2MapBoss",
+                "Metadata/Monsters/Exiles/ExileRanger1MapBoss",
+                "Metadata/Monsters/Exiles/ExileScion2MapBoss",
+                "Metadata/Monsters/Exiles/ExileShadow4MapBoss",
+                "Metadata/Monsters/Exiles/ExileTemplar1MapBoss_",
+                "Metadata/Monsters/Exiles/ExileWitch2MapBoss"
+            ],
             "names": [
                 "Augustina Solaria",
                 "Damoi Tui",
@@ -4950,22 +3756,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Dying Anguish",
-            "Her Mask",
-            "Hope",
-            "Jack in the Box",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Gentleman",
-            "The Saint's Treasure",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Tyrant",
-            "The Undaunted"
-        ],
         "connected": [
             "Overgrown Shrine Map",
             "Primordial Blocks Map",
@@ -4997,7 +3787,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/ProtoVaal/ProtoVaalMapBoss"
+            ],
             "names": [
                 "High Lithomancer"
             ],
@@ -5008,20 +3800,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "A Sea of Blue",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Avenger",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Jeweller's Boon",
-            "The Side Quest",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Belfry Map",
             "Cemetery Map",
@@ -5054,9 +3832,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "A Modest Request",
-                "The Prince of Darkness"
+            "ids": [
+                "Metadata/Monsters/Malachai/MalachaiMapBossSimplified"
             ],
             "names": [
                 "Nightmare's Omen"
@@ -5067,17 +3844,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Inoculated",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Grotto Map",
             "Lighthouse Map",
@@ -5110,7 +3876,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/MapEliteCasterBoss",
+                "Metadata/Monsters/Axis/MapEliteSoldierBoss"
+            ],
             "names": [
                 "Blackguard Avenger",
                 "Blackguard Tempest"
@@ -5121,26 +3890,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Dying Anguish",
-            "Gemcutter's Promise",
-            "Her Mask",
-            "Hope",
-            "Jack in the Box",
-            "Lingering Remnants",
-            "Merciless Armament",
-            "Struck by Lightning",
-            "The Carrion Crow",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Patient",
-            "The Tinkerer's Table",
-            "The Traitor",
-            "The Trial",
-            "The Warlord"
-        ],
         "connected": [
             "Atoll Map",
             "Chateau Map",
@@ -5172,7 +3921,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Bull/BullMapBoss",
+                "Metadata/Monsters/Gladiator/GladiatorSwordMapBoss",
+                "Metadata/Monsters/Lion/LionColosseumMapBoss"
+            ],
             "names": [
                 "Bringer of Blood",
                 "Crusher of Gladiators",
@@ -5184,19 +3937,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Deceiver",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Visionary",
-            "Three Voices"
-        ],
         "connected": [
             "Coves Map",
             "Temple Map",
@@ -5228,7 +3968,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Undying/MapUndyingBoss"
+            ],
             "names": [
                 "The Reaver"
             ],
@@ -5238,25 +3980,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Alivia's Grace",
-            "Her Mask",
-            "Hope",
-            "Hunter's Resolve",
-            "Left to Fate",
-            "Lingering Remnants",
-            "The Carrion Crow",
-            "The Dragon's Heart",
-            "The Drunken Aristocrat",
-            "The Encroaching Darkness",
-            "The Flora's Gift",
-            "The Gambler",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Traitor",
-            "The Trial"
-        ],
         "connected": [
             "Arachnid Nest Map",
             "Crystal Ore Map",
@@ -5289,7 +4012,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Skeletons/MapSkeletonBossMeleeSimplified"
+            ],
             "names": [
                 "Litanius, the Black Prayer"
             ],
@@ -5299,24 +4024,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Azyran's Reward",
-            "Blind Venture",
-            "Costly Curio",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Might is Right",
-            "No Traces",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Polymath",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Flooded Mine Map",
             "Shipyard Map",
@@ -5348,17 +4055,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Venarius"
             ]
         },
-        "cards": [
-            "A Dusty Memory"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
         "id": "Synthesis_MapBoss",
         "image": false,
@@ -5371,15 +4074,13 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
+            ],
             "names": [
                 "Talin, Faithbreaker"
             ]
         },
-        "cards": [
-            "Imperial Legacy",
-            "Monochrome"
-        ],
         "connected": [
             "Dunes Map"
         ],
@@ -5395,20 +4096,13 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss"
+            ],
             "names": [
                 "Mistress Hyseria"
             ]
         },
-        "cards": [
-            "Chaotic Disposition",
-            "Deadly Joy",
-            "Monochrome",
-            "The Army of Blood",
-            "The Fiend",
-            "The Last Supper",
-            "The Thaumaturgist"
-        ],
         "connected": [
             "Temple Map"
         ],
@@ -5424,8 +4118,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Sephirot"
+            "ids": [
+                "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
             ],
             "names": [
                 "Excellis Aurafix"
@@ -5436,26 +4130,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Desperate Crusade",
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Light and Truth",
-            "Lingering Remnants",
-            "The Dapper Prodigy",
-            "The Dragon's Heart",
-            "The Drunken Aristocrat",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Golden Era",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Tinkerer's Table",
-            "The Tower",
-            "The Trial",
-            "The Unexpected Prize"
-        ],
         "connected": [
             "Castle Ruins Map",
             "Laboratory Map",
@@ -5487,18 +4161,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Rewritten Synthete"
             ]
         },
-        "cards": [
-            "A Dusty Memory",
-            "Magnum Opus"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
         "id": "Synthesis_MapGuardian4",
         "image": false,
@@ -5511,9 +4180,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Aesthete",
-                "The Offering"
+            "ids": [
+                "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
             ],
             "names": [
                 "Gisale, Thought Thief"
@@ -5524,25 +4192,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "A Dab of Ink",
-            "Checkmate",
-            "Destined to Crumble",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Academic",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enthusiasts",
-            "The Gambler",
-            "The Nurse",
-            "The Professor",
-            "The Scholar",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Thirst for Knowledge"
-        ],
         "connected": [
             "Belfry Map",
             "Precinct Map",
@@ -5574,7 +4223,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Wb/WbLightningLeader1",
+                "Metadata/Monsters/Wb/WbLightningLeader2",
+                "Metadata/Monsters/Wb/WbLightningLeader3"
+            ],
             "names": [
                 "Lussi \"Rotmother\" Roth",
                 "Musky \"Two-Eyes\" Grenn",
@@ -5586,23 +4239,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Lucky Connections",
-            "Prosperity",
-            "Struck by Lightning",
-            "The Catch",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Pact",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Canyon Map",
             "Overgrown Ruin Map",
@@ -5635,7 +4271,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Skeletons/MapSkeletonBossFairgraves"
+            ],
             "names": [
                 "Belcer, the Pirate Lord"
             ],
@@ -5645,25 +4283,6 @@
             "separated": false,
             "soft_phases": true
         },
-        "cards": [
-            "From Bone to Ashes",
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Catch",
-            "The Destination",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Landing",
-            "The Old Man",
-            "The Road to Power",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Canyon Map",
             "Mao Kun",
@@ -5697,7 +4316,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Axis/MapPietyBoss",
+                "Metadata/Monsters/Axis/MapPietyShrine"
+            ],
             "names": [
                 "Piety the Empyrean"
             ],
@@ -5707,20 +4329,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Army of Blood",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fiend",
-            "The Gambler",
-            "The Thaumaturgist",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Vinia's Token"
-        ],
         "connected": [
             "Dunes Map",
             "Excavation Map",
@@ -5754,9 +4362,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Tahsin, Warmaker"
@@ -5768,20 +4375,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Side Quest",
-            "The Spark and the Flame",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arachnid Tomb Map",
             "Caldera Map",
@@ -5816,7 +4409,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Vilenta/VilentaMap_"
+            ],
             "names": [
                 "Renkarr, The Kiln Keeper"
             ],
@@ -5827,21 +4422,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Blazing Fire",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journalist",
-            "The Life Thief",
-            "The Standoff",
-            "The Tinkerer's Table",
-            "The Tireless Extractor",
-            "The Trial"
-        ],
         "connected": [
             "Bone Crypt Map",
             "Lair Map",
@@ -5873,9 +4453,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Bitter Blossom",
-                "The Offspring"
+            "ids": [
+                "Metadata/Monsters/BeehiveBehemoth/BeehiveBehemothBoss"
             ],
             "names": [
                 "Murgeth Bogsong"
@@ -5886,23 +4465,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Alivia's Grace",
-            "Azyran's Reward",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Struck by Lightning",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Inoculated",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Alleyways Map",
             "Primordial Pool Map",
@@ -5932,7 +4494,10 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn",
+                "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
+            ],
             "names": [
                 "Massier",
                 "Master of the Blade"
@@ -5943,30 +4508,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "From Bone to Ashes",
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "Scholar of the Seas",
-            "The Betrayal",
-            "The Catch",
-            "The Deep Ones",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Formless Sea",
-            "The Gambler",
-            "The Journey",
-            "The Landing",
-            "The Old Man",
-            "The One That Got Away",
-            "The Stormcaller",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Thunderous Skies"
-        ],
         "connected": [
             "Belfry Map",
             "Orchard Map",
@@ -5999,7 +4540,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/GemMonster/IguanaBossPhoenixMap"
+            ],
             "names": [
                 "The Gorgon"
             ],
@@ -6009,18 +4552,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Eye of the Dragon",
-            "The Gambler",
-            "The Inoculated",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Crimson Temple Map",
             "Flooded Mine Map",
@@ -6053,8 +4584,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Forbidden Power"
+            "ids": [
+                "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolarisMap"
             ],
             "names": [
                 "Jorus, Sky's Edge"
@@ -6065,25 +4596,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Boundless Realms",
-            "Dialla's Subjugation",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Enlightened",
-            "The Forgotten Treasure",
-            "The Gambler",
-            "The Lord of Celebration",
-            "The Opulent",
-            "The Sun",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Twilight Moon",
-            "The Twins"
-        ],
         "connected": [
             "Defiled Cathedral Map",
             "Poorjoy's Asylum",
@@ -6118,9 +4630,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Frog/FrogGod/SilverFrogMap"
             ],
             "names": [
                 "Varhesh, Shimmering Aberration"
@@ -6132,22 +4643,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Emperor's Luck",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Peaceful Moments",
-            "Rain Tempter",
-            "The Dragon's Heart",
-            "The Easy Stroll",
-            "The Encroaching Darkness",
-            "The Fox in the Brambles",
-            "The Gambler",
-            "The Porcupine",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Colosseum Map",
             "Crater Map",
@@ -6180,16 +4675,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Endless Darkness"
+            "ids": [
+                "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
             ],
             "names": [
                 "<<>>"
             ]
         },
-        "cards": [
-            "Monochrome"
-        ],
         "icon": "Art/2DItems/Maps/HarbingerRed",
         "id": "MapWorldsHarbingerLow",
         "image": false,
@@ -6202,8 +4694,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Craving"
+            "ids": [
+                "Metadata/Monsters/Necromancer/NecromancerUniqueMapBoss"
             ],
             "names": [
                 "Infector of Dreams"
@@ -6213,14 +4705,6 @@
             "rushable": false,
             "soft_phases": false
         },
-        "cards": [
-            "Grave Knowledge",
-            "Monochrome",
-            "The Celestial Justicar",
-            "The Forsaken",
-            "The Rabbit's Foot",
-            "The Wretched"
-        ],
         "connected": [
             "Cursed Crypt Map"
         ],
@@ -6241,22 +4725,14 @@
     },
     {
         "boss": {
-            "cards": [
-                "Brush, Paint and Palette",
-                "Doedre's Madness"
+            "ids": [
+                "Metadata/Monsters/Doedre/DoedreUniqueMap"
             ],
             "names": [
                 "Headmistress Braeta"
             ],
             "separated": true
         },
-        "cards": [
-            "Monochrome",
-            "The Brawny Battle Mage",
-            "The Doctor",
-            "The Incantation",
-            "The Witch"
-        ],
         "connected": [
             "Museum Map"
         ],
@@ -6280,12 +4756,13 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
+            ],
             "names": [
                 "The Trialmaster"
             ]
         },
-        "cards": [],
         "icon": "Art/2DItems/Maps/TrialmasterMap",
         "id": "MapWorldsUltimatumBossArena",
         "image": false,
@@ -6298,9 +4775,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Forbidden Power",
-                "The Progeny of Lunaris"
+            "ids": [
+                "Metadata/Monsters/LunarisSolaris/LunarisUniqueMap",
+                "Metadata/Monsters/LunarisSolaris/SolarisUniqueMap"
             ],
             "names": [
                 "Helial, the Day Unending",
@@ -6308,18 +4785,6 @@
             ],
             "separated": true
         },
-        "cards": [
-            "Boundless Realms",
-            "Dialla's Subjugation",
-            "Haunting Shadows",
-            "Heterochromia",
-            "Monochrome",
-            "The Enlightened",
-            "The Lunaris Priestess",
-            "The Opulent",
-            "The Sun",
-            "The Twins"
-        ],
         "connected": [
             "Moon Temple Map"
         ],
@@ -6343,17 +4808,14 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Viking/VikingBossVinktarsSquare"
+            ],
             "names": [
                 "Avatar of Thunder"
             ],
             "separated": true
         },
-        "cards": [
-            "Monochrome",
-            "Struck by Lightning",
-            "Thunderous Skies"
-        ],
         "icon": "Art/2DItems/Maps/TheVinktarSquare",
         "id": "MapWorldsCourtyardUnique",
         "image": false,
@@ -6372,7 +4834,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
+            ],
             "names": [
                 "The Primal One"
             ],
@@ -6382,21 +4846,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Alivia's Grace",
-            "Call to the First Ones",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Explorer",
-            "The Gambler",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Barrows Map",
             "Desert Spring Map",
@@ -6429,9 +4878,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Aesthete",
-                "The Offering"
+            "ids": [
+                "Metadata/Monsters/Brute/BruteTowerMap_",
+                "Metadata/Monsters/Shavronne/ShavronneTowerMap"
             ],
             "names": [
                 "Bazur",
@@ -6444,23 +4893,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Home",
-            "Hope",
-            "Lingering Remnants",
-            "Struck by Lightning",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Nurse",
-            "The Soul",
-            "The Stormcaller",
-            "The Tinkerer's Table",
-            "The Tower",
-            "The Trial",
-            "Thunderous Skies"
-        ],
         "connected": [
             "Mineral Pools Map",
             "Plateau Map",
@@ -6493,7 +4925,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Spiders/MapSpiderBossSins"
+            ],
             "names": [
                 "Arachnoxia"
             ],
@@ -6503,20 +4937,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Feast",
-            "The Gambler",
-            "The Throne",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Web",
-            "Vile Power"
-        ],
         "connected": [
             "Canyon Map",
             "City Square Map",
@@ -6549,7 +4969,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
+            ],
             "names": [
                 "Blood Progenitor"
             ],
@@ -6559,26 +4981,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Alivia's Grace",
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Prosperity",
-            "The Catch",
-            "The Destination",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Flora's Gift",
-            "The Gambler",
-            "The Journey",
-            "The Old Man",
-            "The Pack Leader",
-            "The Scout",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Arsenal Map",
             "Barrows Map",
@@ -6611,18 +5013,13 @@
     },
     {
         "boss": {
-            "cards": [
-                "Ambitious Obsession",
-                "More is Never Enough"
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
             ],
             "names": [
                 "Twisted Synthete"
             ]
         },
-        "cards": [
-            "A Dusty Memory",
-            "Magnum Opus"
-        ],
         "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "id": "Synthesis_MapGuardian3",
         "image": false,
@@ -6635,8 +5032,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Scavenger"
+            "ids": [
+                "Metadata/Monsters/DropBear/DropBearMapBoss"
             ],
             "names": [
                 "It That Fell"
@@ -6647,17 +5044,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Treasure Hunter"
-        ],
         "connected": [
             "Caer Blaidd, Wolfpack's Den",
             "Dig Map",
@@ -6689,9 +5075,9 @@
     },
     {
         "boss": {
-            "cards": [
-                "Divine Beauty",
-                "The Cacophony"
+            "ids": [
+                "Metadata/Monsters/Seawitch/MapBossMerveil2",
+                "Metadata/Monsters/seawitchillusion/MapBossMerveil"
             ],
             "names": [
                 "Merveil, the Reflection",
@@ -6703,26 +5089,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Glimmer of Hope",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Lysah's Respite",
-            "The Avenger",
-            "The Cache",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Fathomless Depths",
-            "The Gambler",
-            "The Hoarder",
-            "The Lover",
-            "The Siren",
-            "The Survivalist",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Treasure Hunter"
-        ],
         "connected": [
             "Beach Map",
             "Geode Map",
@@ -6756,7 +5122,14 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrageUntaintedColossal",
+                "Metadata/Monsters/Frog/FrogUntaintedColossal",
+                "Metadata/Monsters/GemMonster/IguanaUntaintedColossal",
+                "Metadata/Monsters/Rhoas/RhoaUntaintedColossal",
+                "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
+                "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
+            ],
             "names": [
                 "Clutch Queen",
                 "Colossal Spitter",
@@ -6766,9 +5139,6 @@
                 "The First Rhoa"
             ]
         },
-        "cards": [
-            "The Old Man"
-        ],
         "icon": "Art/2DItems/Maps/UniqueMap2",
         "id": "MapWorldsTropicalIslandUnique",
         "image": false,
@@ -6781,7 +5151,11 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/DemonFemale/DemonFemaleMapBoss1",
+                "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
+                "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
+            ],
             "names": [
                 "The Broken Prince",
                 "The Fallen Queen",
@@ -6793,25 +5167,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Arrogance of the Vaal",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Admirer",
-            "The Catalyst",
-            "The Damned",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hive of Knowledge",
-            "The Inventor",
-            "The Spoiled Prince",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Voices",
-            "Unrequited Love"
-        ],
         "connected": [
             "City Square Map",
             "Fields Map",
@@ -6845,8 +5200,10 @@
     },
     {
         "boss": {
-            "cards": [
-                "Beauty Through Death"
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss1/DemonBoss1Map",
+                "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
+                "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3Map"
             ],
             "names": [
                 "K'aj A'alai",
@@ -6860,24 +5217,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Last Hope",
-            "Lingering Remnants",
-            "The Admirer",
-            "The Catalyst",
-            "The Damned",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Hive of Knowledge",
-            "The Inventor",
-            "The Tinkerer's Table",
-            "The Trial",
-            "Three Voices",
-            "Unrequited Love"
-        ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalTempleBase",
         "id": "MapWorldsVaalTemple",
         "image": true,
@@ -6909,19 +5248,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Atziri's Arsenal",
-            "Monochrome",
-            "The Admirer",
-            "The Adventuring Spirit",
-            "The Cache",
-            "The Catalyst",
-            "The Damned",
-            "The Hoarder",
-            "The Inventor",
-            "The Opulent",
-            "The Queen"
-        ],
         "connected": [
             "Vaal Pyramid Map"
         ],
@@ -6947,7 +5273,9 @@
     },
     {
         "boss": {
-            "cards": [],
+            "ids": [
+                "Metadata/Monsters/Totems/PuiTotemMapBoss_"
+            ],
             "names": [
                 "Forest of Flames"
             ],
@@ -6957,21 +5285,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "From Bone to Ashes",
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "Pride Before the Fall",
-            "The Battle Born",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The King's Heart",
-            "The Mountain",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Colosseum Map",
             "Racecourse Map"
@@ -7002,9 +5315,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Brush, Paint and Palette",
-                "Doedre's Madness"
+            "ids": [
+                "Metadata/Monsters/Doedre/DoedreSewersMap"
             ],
             "names": [
                 "Portentia, the Foul"
@@ -7016,24 +5328,6 @@
             "separated": true,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Brawny Battle Mage",
-            "The Doctor",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Feast",
-            "The Gambler",
-            "The Incantation",
-            "The Soul",
-            "The Throne",
-            "The Tinkerer's Table",
-            "The Trial",
-            "The Witch",
-            "Vile Power"
-        ],
         "connected": [
             "Canyon Map",
             "Mineral Pools Map",
@@ -7065,8 +5359,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "The Brittle Emperor"
+            "ids": [
+                "Metadata/Monsters/Voll/VollMapBoss"
             ],
             "names": [
                 "The Brittle Emperor"
@@ -7077,16 +5371,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "Her Mask",
-            "Hope",
-            "Lingering Remnants",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Caldera Map",
             "Foundry Map"
@@ -7117,8 +5401,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Divine Beauty"
+            "ids": [
+                "Metadata/Monsters/Seawitch/DarkSeaWitch"
             ],
             "names": [
                 "Tormented Temptress"
@@ -7129,19 +5413,6 @@
             "separated": true,
             "soft_phases": true
         },
-        "cards": [
-            "Lantador's Lost Love",
-            "Monochrome",
-            "Prosperity",
-            "Scholar of the Seas",
-            "The Darkest Dream",
-            "The Deep Ones",
-            "The Doppelganger",
-            "The Formless Sea",
-            "The Journey",
-            "The Landing",
-            "The Undaunted"
-        ],
         "connected": [
             "Strand Map"
         ],
@@ -7167,8 +5438,8 @@
     },
     {
         "boss": {
-            "cards": [
-                "Terrible Secret of Space"
+            "ids": [
+                "Metadata/Monsters/LightningGolem/LightningGolemMapBoss"
             ],
             "names": [
                 "Stone of the Currents"
@@ -7179,27 +5450,6 @@
             "separated": false,
             "soft_phases": false
         },
-        "cards": [
-            "A Stone Perfected",
-            "Her Mask",
-            "Hope",
-            "Lantador's Lost Love",
-            "Lingering Remnants",
-            "Lucky Connections",
-            "Prosperity",
-            "Struck by Lightning",
-            "The Coming Storm",
-            "The Dragon's Heart",
-            "The Encroaching Darkness",
-            "The Gambler",
-            "The Journey",
-            "The Old Man",
-            "The Pact",
-            "The Primordial",
-            "The Rite of Elements",
-            "The Tinkerer's Table",
-            "The Trial"
-        ],
         "connected": [
             "Crater Map",
             "Defiled Cathedral Map",

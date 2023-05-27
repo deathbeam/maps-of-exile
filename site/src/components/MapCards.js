@@ -73,6 +73,19 @@ const MapCard = ({ card }) => {
     </>
   )
 
+  let dropLevel = null
+  if (card.drop.min_level && card.drop.max_level) {
+    dropLevel = (
+      <>
+        {card.drop.min_level} - {card.drop.max_level}
+      </>
+    )
+  } else if (card.drop.min_level) {
+    dropLevel = <>>= {card.drop.min_level}</>
+  } else if (card.drop.max_level) {
+    dropLevel = <>&lt;= {card.drop.max_level}</>
+  }
+
   return (
     <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
       <span className="tooltip-tag-text">
@@ -85,6 +98,12 @@ const MapCard = ({ card }) => {
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
         <br />
         <b>Weight</b>: {card.weight}
+        {(card.drop.min_level || card.drop.max_level) && (
+          <>
+            <br />
+            <b>Drop level</b>: {dropLevel}
+          </>
+        )}
         {card.boss && (
           <>
             <br />

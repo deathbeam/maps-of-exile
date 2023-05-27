@@ -1,6 +1,7 @@
 import cards from './cards.json'
 import maps from './maps.json'
 import globals from './globals.json'
+import { mapLevelToTier } from '../common'
 
 const wikiBase = 'https://www.poewiki.net/wiki/'
 const mapIconBase = 'https://web.poecdn.com/image/'
@@ -9,7 +10,6 @@ export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 export const mfAcademyInvite = 'https://discord.gg/mfacademy'
-export const baseMonsterLevel = 68
 export const possibleVoidstones = [0, 1, 2, 3, 4]
 
 export const preparedGlobals = globals
@@ -55,16 +55,13 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map, 'pantheon')
 
   const cards = []
-  for (let card of map.cards) {
-    const cardData = preparedCards.find(c => c.name === card)
-    if (cardData) {
-      cards.push({ ...cardData })
+  for (let card of preparedCards) {
+    if (card.drop.areas.includes(map.id)) {
+      cards.push({ ...card })
     }
-  }
-  for (let card of map.boss.cards || []) {
-    const cardData = preparedCards.find(c => c.name === card)
-    if (cardData) {
-      cards.push({ ...cardData, boss: true })
+
+    if (map.boss.ids && map.boss.ids.some(id => card.drop.monsters.includes(id))) {
+      cards.push({ ...card, boss: true })
     }
   }
 
@@ -85,7 +82,7 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  const tier = map.level - baseMonsterLevel + 1
+  const tier = mapLevelToTier(map.level)
 
   const out = {
     ...map,

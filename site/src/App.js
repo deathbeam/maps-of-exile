@@ -5,7 +5,6 @@ import './App.css'
 import { useCallback, useMemo, useRef, useTransition } from 'react'
 import SelectSearch from 'react-select-search'
 import {
-  baseMonsterLevel,
   defaultCardBaseline,
   githubRepo,
   issueTemplate,
@@ -16,7 +15,7 @@ import {
 } from './data'
 import Loader from './components/Loader'
 import Atlas from './components/Atlas'
-import { calculateScore, copyToClipboard, filter } from './common'
+import { calculateScore, copyToClipboard, filter, mapTierToLevel } from './common'
 import Tags from './components/Tags'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
@@ -45,14 +44,14 @@ function rateMaps(
 
   // First calculate value for cards
   const mapsWithCardValues = foundMaps.map(map => {
-    const mapLevel = map.tiers[voidstones] - 1 + baseMonsterLevel
+    const mapLevel = mapTierToLevel(map.tiers[voidstones])
     const mapCards = []
 
     for (let card of map.cards) {
       const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
       const priceEligible = card.price >= cardMinPriceInput
-      const cardMinLevel = (card.cap || {}).min || 0
-      const cardMaxLevel = (card.cap || {}).max || 99
+      const cardMinLevel = (card.drop || {}).min_level || 0
+      const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
 
       mapCards.push({

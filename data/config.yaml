@@ -1,38 +1,39 @@
 data:
   league: Crucible
 
-  maps:
-    ignored:
-      - "Synthesised Map"
-    poedb:
-      base: https://poedb.tw
-      list: https://poedb.tw/us/Maps
-      constants: https://poedb.tw/us/GameConstants
-    wiki:
-      base: https://www.poewiki.net/wiki/
-      api: https://www.poewiki.net/w/api.php
-    metadata:
-      sheet-id: 10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0
-      sheet-names:
-        - Tier 1-5 (Low Tier)
-        - Tier 6-10 (Mid Tier)
-        - Tier 11-16 (High Tier)
-        - Unique Maps
-    ratings:
-      sheet-id: 1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
-      sheet-name: 2.Atlas
-      sheet-range: AH4:AN149
-    density:
-      sheet-id: 10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
-      sheet-name: Compact Data (new atlas)
-      sheet-range: C3:G140
+  ignored:
+    - "Synthesised Map"
 
-  cards:
-    decks:
-      sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
-      sheet-name: Decks 3.21
-    weights:
-      sheet-id: 1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
-      sheet-name: NaturalCardWeights
-    prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
-    ninja: https://poe.ninja/challenge/divination-cards/
+  # Links
+  poedb:
+    base: https://poedb.tw
+    list: https://poedb.tw/us/Maps
+    constants: https://poedb.tw/us/GameConstants
+  wiki:
+    base: https://www.poewiki.net/wiki/
+    api: https://www.poewiki.net/w/api.php
+  prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
+  ninja: https://poe.ninja/challenge/divination-cards/
+
+  # Sheets
+  metadata:
+    sheet-id: 10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0
+    sheet-names:
+      - Tier 1-5 (Low Tier)
+      - Tier 6-10 (Mid Tier)
+      - Tier 11-16 (High Tier)
+      - Unique Maps
+  ratings:
+    sheet-id: 1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
+    sheet-name: 2.Atlas
+    sheet-range: AH4:AN149
+  density:
+    sheet-id: 10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
+    sheet-name: Compact Data (new atlas)
+    sheet-range: C3:G140
+  decks:
+    sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
+    sheet-name: Decks 3.21
+  weights:
+    sheet-id: 1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
+    sheet-name: NaturalCardWeights

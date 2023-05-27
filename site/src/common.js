@@ -90,3 +90,11 @@ export function copyToClipboard(ref) {
   ref.current.select()
   document.execCommand('copy')
 }
+
+export function mapTierToLevel(tier) {
+  return tier - 1 + 68
+}
+
+export function mapLevelToTier(level) {
+  return level + 1 - 68
+}

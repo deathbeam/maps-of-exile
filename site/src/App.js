@@ -394,7 +394,7 @@ function App() {
                     <b>calculating chance to get card per map</b>.
                     <br />
                     You should set this value to your observed drop rate of index card (for example Union in Cemetery)
-                    so the site can accurately predict drop rates for your current farming strategy.
+                    so the site can predict drop rates for your current farming strategy.
                   </span>
                   <label className="form-label">Average card per map</label>
                 </span>

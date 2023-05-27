@@ -71,6 +71,8 @@ def merge(source, destination):
         if isinstance(value, dict):
             node = destination.setdefault(key, {})
             merge(value, node)
+        elif isinstance(value, list):
+            destination[key] = destination.get(key, []) + value
         else:
             destination[key] = value
 
@@ -144,7 +146,6 @@ def get_card_data(key, config, card_extra):
             wiki_cards,
         )
     )
-    print(json.dumps(wiki_cards, indent=4))
 
     id = config["decks"]["sheet-id"]
     name = config["decks"]["sheet-name"]

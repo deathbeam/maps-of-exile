@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { parseValue } from '../common'
 
 let data = {}
 if (window.location.hash) {
@@ -13,12 +14,12 @@ if (window.location.hash) {
 export default function usePersistedState(key, def, startTransition, locationRef) {
   const [val, setVal] = useState(() => {
     if (locationRef && data[key]) {
-      return data[key]
+      return parseValue(data[key])
     }
 
     try {
       const item = localStorage.getItem(key)
-      return item && item !== '' ? JSON.parse(item) : def
+      return item && item !== '' ? parseValue(JSON.parse(item)) : def
     } catch (e) {
       console.warn(e)
       return def

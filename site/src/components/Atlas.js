@@ -26,7 +26,7 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidsto
       atlasScore,
       atlasIcons,
       atlasLabels,
-      voidstones: parseInt(voidstones),
+      voidstones: voidstones,
       map: {
         name: map.name,
         tiers: map.tiers,

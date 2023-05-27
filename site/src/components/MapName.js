@@ -24,7 +24,7 @@ const MapName = ({ map, currentSearch, addToInput, voidstones }) => {
   )
 
   const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[parseInt(voidstones)]} />
+  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[voidstones]} />
   const score = (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />

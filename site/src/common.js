@@ -68,7 +68,7 @@ export function ratingColor(rating, scale = 1) {
 }
 
 export function tierColor(tiers, unique, voidstones = 0) {
-  const tier = tiers[parseInt(voidstones)]
+  const tier = tiers[voidstones]
   let color = 'light'
 
   if (unique) {
@@ -97,4 +97,30 @@ export function mapTierToLevel(tier) {
 
 export function mapLevelToTier(level) {
   return level + 1 - 68
+}
+
+export function parseValue(val, ref) {
+  if (typeof ref === 'number') {
+    return parseFloat(val)
+  }
+
+  if (typeof ref === 'boolean') {
+    if (val === 1) {
+      return true
+    }
+
+    if (val === 0) {
+      return false
+    }
+
+    if (val === 'true') {
+      return true
+    }
+
+    if (val === 'false') {
+      return false
+    }
+  }
+
+  return val
 }

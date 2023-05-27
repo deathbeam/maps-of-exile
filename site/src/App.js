@@ -182,7 +182,7 @@ function App() {
         cardBaselineInput,
         cardBaselineNumberInput,
         cardMinPriceInput,
-        parseInt(atlasVoidstones)
+        atlasVoidstones
       ),
     [
       layoutInput,

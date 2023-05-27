@@ -557,7 +557,7 @@ function App() {
           ))}
         </tbody>
       </table>
-      <div className="container-fluid p-4 text-end">
+      <div className="container-fluid p-4 text-end mb-5">
         <div className="d-lg-flex justify-content-between">
           <div>
             For raw data see:{' '}

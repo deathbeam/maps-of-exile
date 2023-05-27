@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import './App.css'
 
 import { useCallback, useMemo, useRef, useTransition } from 'react'
@@ -8,6 +9,7 @@ import {
   defaultCardBaseline,
   githubRepo,
   issueTemplate,
+  mfAcademyInvite,
   preparedCards,
   preparedMaps,
   preparedTags
@@ -413,7 +415,14 @@ function App() {
                 </div>
               </div>
               <div className={inputClass}>
-                <label className="form-label">PoE regex</label>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    Generates string that can be copy/pasted to Path of Exile search boxes that will search for the
+                    filtered maps. PoE search fields are limited to 50 characters so the string is not generated until
+                    it can fit this criteria.
+                  </span>
+                  <label className="form-label">PoE regex</label>
+                </span>
                 <div className="input-group">
                   <input
                     className="form-control"
@@ -578,9 +587,15 @@ function App() {
           <div>
             Contribute on{' '}
             <a href={githubRepo} target="_blank" rel="noreferrer">
-              GitHub
+              <i className="fa-brands fa-github" /> GitHub
             </a>
             . Also contains sources for all data used on the site.
+            <br />
+            Join the{' '}
+            <a href={mfAcademyInvite} target="_blank" rel="noreferrer">
+              <img src="/img/mfa_logo.png" alt="" width="24" height="24" /> MF Academy Discord
+            </a>
+            .
           </div>
         </div>
       </div>

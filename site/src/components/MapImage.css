@@ -10,8 +10,7 @@
 }
 
 .map-background {
-  background-repeat: round;
-  background-image: url(~/public/img/map.png);
+  background: url(~/public/img/map.png) round;
 }
 
 .map-white {

@@ -1,5 +1,4 @@
 import 'reactflow/dist/base.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
 import './Atlas.css'
 
 import { useCallback, useEffect, useMemo } from 'react'

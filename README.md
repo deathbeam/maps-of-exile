@@ -93,9 +93,13 @@ Then it grabs card weight data from card weight spreadsheet and merges this data
 
 Then it grabs data from stacked deck spreadsheet to get weights for newer cards missing from card weight spreadsheet and calculates weight for new cards based on common denominator (in this case Patient card which is present in both card weight spreadsheet and stacked deck spreadsheet)  
 
+Then it grabs data from wiki for cards (drop area ids, drop monster ids, drop level requirements).  
+
 This card list with card prices, card metadata and card weights is stored to be used in site as .json.  
 
 Then in grabs list of all maps from PoeDB. 
+
+Then it grabs extra card metadata from wiki for maps (map id, map boss ids) for pairing with wiki card metadata.  
 
 Then it grabs map density from spreadsheet (in raw mob count) and merges the data with map list  
 
@@ -103,7 +107,7 @@ Then it grabs map ratings from spreadsheet (layout, density, boss) and merges th
 
 Then it grabs map metadata from spreadsheet (boss info, some misc tags like outdoors, linear etc) and merges the data with map list  
 
-Then it iterates every map and grabs card data from wiki (map cards, boss cards) and also grabs card data from poedb (monster level, connected maps, atlas map position, cards, pantheon, tags). It will avoid setting card data on maps that already have card data (e.g coming from wiki)  
+Then it iterates every map and grabs extra data from poedb (monster level, connected maps, atlas map position, pantheon, tags)  
 
 This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.  
 

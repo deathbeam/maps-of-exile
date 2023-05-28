@@ -90,9 +90,14 @@ a:hover {
   display: inline-block;
 }
 
+.tooltip-tag-notice {
+  margin-right: 8px;
+}
+
 .tooltip-tag-notice::after {
   content: '*';
-  color: rgba(0, 150, 150, 0.7);
+  font-weight: 400;
+  color: red;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   position: absolute;
   margin-top: -5px;

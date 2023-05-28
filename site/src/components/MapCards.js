@@ -53,7 +53,7 @@ const MapCard = ({ card }) => {
   let img = '/img/alch.png'
   if (card.price >= 100) {
     img = '/img/divine.png'
-  } else if (card.price >= 50) {
+  } else if (card.price >= 20) {
     img = '/img/exalt.png'
   } else if (card.price >= 5) {
     img = '/img/chaos.png'

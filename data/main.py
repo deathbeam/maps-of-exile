@@ -1,4 +1,5 @@
 import json
+import math
 import os
 import re
 import sys
@@ -141,7 +142,9 @@ def get_card_data(key, config, card_extra):
                         filter(None, x["title"].get("drop monsters", "").split(","))
                     ),
                     "min_level": int(x["title"].get("drop level", "0")),
-                    "max_level": int(x["title"].get("drop level maximum")) if "drop level maximum" in x["title"] else None,
+                    "max_level": int(x["title"].get("drop level maximum"))
+                    if "drop level maximum" in x["title"]
+                    else None,
                 },
             },
             wiki_cards,
@@ -209,10 +212,11 @@ def get_card_data(key, config, card_extra):
 
         if amount_card and not weight_card:
             weight_mult = Decimal(amount_card) / Decimal(amounts_total)
-            # This is stupid but it works
-            weight_card = ceil(sample_weight * weight_mult / 2)
+            weight_card = math.floor(
+                (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
+            )
             print(
-                f"Making assumption for weight for {price_card['name']} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card}"
+                f"Making assumption for weight for {price_card['name']} with amount {amount_card} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card}"
             )
 
         if weight_card:
@@ -716,7 +720,9 @@ def main():
 
         cards = get_card_data(api_key, config, card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
-            f.write(json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True))
+            f.write(
+                json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)
+            )
 
     if fetch_globals:
         globals = get_globals_data(config)

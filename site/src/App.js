@@ -613,21 +613,21 @@ function App() {
           <div>
             For raw data see:{' '}
             <a
-              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/globals.json"
+              href="https://raw.githubusercontent.com/deathbeam/maps-of-exile/main/site/src/data/globals.json"
               target="_blank"
               rel="noreferrer"
             >
               globals.json
             </a>{' '}
             <a
-              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/cards.json"
+              href="https://raw.githubusercontent.com/deathbeam/maps-of-exile/main/site/src/data/cards.json"
               target="_blank"
               rel="noreferrer"
             >
               cards.json
             </a>{' '}
             <a
-              href="https://raw.githubusercontent.com/deathbeam/poe-tools/main/site/src/data/maps.json"
+              href="https://raw.githubusercontent.com/deathbeam/maps-of-exile/main/site/src/data/maps.json"
               target="_blank"
               rel="noreferrer"
             >

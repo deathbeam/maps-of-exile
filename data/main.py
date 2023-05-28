@@ -125,7 +125,7 @@ def get_card_data(key, config, card_extra):
             "format": "json",
             "limit": "500",
             "tables": "items",
-            "fields": "items.name,items.drop_level,items.drop_areas,items.drop_monsters",
+            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters",
             "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1"',
         },
     ).json()["cargoquery"]
@@ -141,6 +141,7 @@ def get_card_data(key, config, card_extra):
                         filter(None, x["title"].get("drop monsters", "").split(","))
                     ),
                     "min_level": int(x["title"].get("drop level", "0")),
+                    "max_level": int(x["title"].get("drop level maximum")) if "drop level maximum" in x["title"] else None,
                 },
             },
             wiki_cards,
@@ -715,7 +716,7 @@ def main():
 
         cards = get_card_data(api_key, config, card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
-            f.write(json.dumps(cards, indent=4, cls=DecimalEncoder, sort_keys=True))
+            f.write(json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_globals:
         globals = get_globals_data(config)

@@ -155,6 +155,7 @@ def get_card_data(key, config, card_extra):
 
     id = config["decks"]["sheet-id"]
     name = config["decks"]["sheet-name"]
+    threshold = config["decks"]["overwrite-threshold"]
     print(f"Getting card amounts from {name}")
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
     amounts = requests.get(url).json()["values"]
@@ -212,14 +213,20 @@ def get_card_data(key, config, card_extra):
             (x["value"] for x in weights if x["name"] == price_card["name"]), None
         )
 
-        if amount_card and not weight_card:
+        if amount_card:
             weight_mult = Decimal(amount_card) / Decimal(amounts_total)
-            weight_card = math.floor(
+            new_weight = math.floor(
                 (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
             )
-            print(
-                f"Making assumption for weight for {price_card['name']} with amount {amount_card} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card}"
-            )
+
+            percent_change = abs((new_weight - weight_card) / weight_card * 100 if weight_card else threshold)
+
+            if percent_change >= threshold:
+                old_weight = weight_card or 0
+                weight_card = new_weight
+                print(
+                    f"Making assumption for weight for {price_card['name']} with amount {amount_card} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
+                )
 
         if weight_card:
             card["weight"] = weight_card

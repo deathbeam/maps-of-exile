@@ -31,7 +31,7 @@
         },
         "name": "A Dab of Ink",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-dab-of-ink",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "The Poet's Pen",
         "stack": 9,
         "weight": 377
@@ -87,7 +87,7 @@
         },
         "name": "A Fate Worse Than Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-fate-worse-than-death",
-        "price": 70.0,
+        "price": 72.0,
         "reward": "Cortex, Corrupted",
         "stack": 4,
         "weight": 57
@@ -143,7 +143,7 @@
         },
         "name": "A Note in the Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-note-in-the-wind",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Asenath's Mark",
         "stack": 4,
         "weight": 164
@@ -162,7 +162,7 @@
         },
         "name": "A Sea of Blue",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-sea-of-blue",
-        "price": 4.8,
+        "price": 5.0,
         "reward": "13x Orb of Alteration",
         "stack": 3,
         "weight": 6965
@@ -203,7 +203,7 @@
         },
         "name": "Abandoned Wealth",
         "ninja": "https://poe.ninja/challenge/divination-cards/abandoned-wealth",
-        "price": 9.0,
+        "price": 8.0,
         "reward": "3x Exalted Orb",
         "stack": 5,
         "weight": 349
@@ -230,15 +230,64 @@
     {
         "art": "AkilsProphecy",
         "drop": {
-            "areas": [
-                "Incursion_Temple1"
-            ],
+            "areas": [],
             "min_level": 70,
-            "monsters": []
+            "monsters": [
+                "Metadata/Monsters/VaalArchitect/VaalArchitect1",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect2",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect3",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect4",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect5",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect6",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect7_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect8",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect9",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect10",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect11",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect12_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect13",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect14",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect15",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect16_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect17",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect18",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect19",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect20",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect21",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect22",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect23",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect24",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect25",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect1MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect2MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect3MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect4MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect5MemoryLine_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect6MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect7MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect8MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect9MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect10MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect11MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect12MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect13MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect14MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect15MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect16MemoryLine_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect17MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect18MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect19MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect20MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect21MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect22MemoryLine_",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect23MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect24MemoryLine__",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect25MemoryLine"
+            ]
         },
         "name": "Akil's Prophecy",
         "ninja": "https://poe.ninja/challenge/divination-cards/akils-prophecy",
-        "price": 10.0,
+        "price": 8.2,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
         "weight": 130
@@ -264,7 +313,7 @@
         },
         "name": "Alivia's Grace",
         "ninja": "https://poe.ninja/challenge/divination-cards/alivias-grace",
-        "price": 1.89,
+        "price": 3.0,
         "reward": "Queen of the Forest",
         "stack": 6,
         "weight": 1439
@@ -281,7 +330,7 @@
         },
         "name": "Alluring Bounty",
         "ninja": "https://poe.ninja/challenge/divination-cards/alluring-bounty",
-        "price": 24.0,
+        "price": 20.0,
         "reward": "10x Exalted Orb",
         "stack": 7,
         "weight": 182
@@ -295,7 +344,7 @@
         },
         "name": "Alone in the Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/alone-in-the-darkness",
-        "price": 2.4,
+        "price": 3.0,
         "reward": "Delve Item",
         "stack": 5,
         "weight": 6213
@@ -370,7 +419,7 @@
         },
         "name": "Arrogance of the Vaal",
         "ninja": "https://poe.ninja/challenge/divination-cards/arrogance-of-the-vaal",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
         "weight": 519
@@ -394,7 +443,7 @@
         },
         "name": "Assassin's Favour",
         "ninja": "https://poe.ninja/challenge/divination-cards/assassins-favour",
-        "price": 1.0,
+        "price": 1.91,
         "reward": "Dagger",
         "stack": 9,
         "weight": 8293
@@ -410,7 +459,7 @@
         },
         "name": "Astral Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/astral-protection",
-        "price": 5.0,
+        "price": 4.4,
         "reward": "Shield, Shaper Item",
         "stack": 5,
         "weight": 435
@@ -428,7 +477,7 @@
         },
         "name": "Atziri's Arsenal",
         "ninja": "https://poe.ninja/challenge/divination-cards/atziris-arsenal",
-        "price": 4.0,
+        "price": 4.24,
         "reward": "Weapon, Corrupted",
         "stack": 4,
         "weight": 1014
@@ -479,7 +528,7 @@
         },
         "name": "Azure Rage",
         "ninja": "https://poe.ninja/challenge/divination-cards/azure-rage",
-        "price": 3.0,
+        "price": 5.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
         "weight": 2496
@@ -497,7 +546,7 @@
         },
         "name": "Azyran's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/azyrans-reward",
-        "price": 7.0,
+        "price": 6.0,
         "reward": "Prismatic Jewel, Corrupted",
         "stack": 9,
         "weight": 359
@@ -516,7 +565,7 @@
         },
         "name": "Baited Expectations",
         "ninja": "https://poe.ninja/challenge/divination-cards/baited-expectations",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Fishing Item",
         "stack": 8,
         "weight": 369
@@ -534,7 +583,7 @@
         },
         "name": "Beauty Through Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/beauty-through-death",
-        "price": 16.0,
+        "price": 25.0,
         "reward": "Atziri's Reflection",
         "stack": 5,
         "weight": 14
@@ -555,7 +604,7 @@
         },
         "name": "Bijoux",
         "ninja": "https://poe.ninja/challenge/divination-cards/bijoux",
-        "price": 5.0,
+        "price": 6.0,
         "reward": "Cluster Jewel, Item Level: 84",
         "stack": 3,
         "weight": 172
@@ -575,7 +624,7 @@
         },
         "name": "Blind Venture",
         "ninja": "https://poe.ninja/challenge/divination-cards/blind-venture",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Ring, Corrupted",
         "stack": 7,
         "weight": 1758
@@ -594,7 +643,7 @@
         },
         "name": "Boon of Justice",
         "ninja": "https://poe.ninja/challenge/divination-cards/boon-of-justice",
-        "price": 2.87,
+        "price": 3.0,
         "reward": "Offering to the Goddess",
         "stack": 6,
         "weight": 7399
@@ -631,7 +680,7 @@
         },
         "name": "Boundless Realms",
         "ninja": "https://poe.ninja/challenge/divination-cards/boundless-realms",
-        "price": 5.0,
+        "price": 3.4,
         "reward": "Map",
         "stack": 4,
         "weight": 4579
@@ -667,7 +716,7 @@
         },
         "name": "Broken Promises",
         "ninja": "https://poe.ninja/challenge/divination-cards/broken-promises",
-        "price": 54.0,
+        "price": 49.0,
         "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
         "stack": 2,
         "weight": 29
@@ -683,7 +732,7 @@
         },
         "name": "Broken Truce",
         "ninja": "https://poe.ninja/challenge/divination-cards/broken-truce",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Cold Iron Point",
         "stack": 5,
         "weight": 1409
@@ -699,7 +748,7 @@
         },
         "name": "Brother's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-gift",
-        "price": 1135.82,
+        "price": 1155.26,
         "reward": "5x Divine Orb",
         "stack": 1,
         "weight": 57
@@ -717,7 +766,7 @@
         },
         "name": "Brother's Stash",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-stash",
-        "price": 70.0,
+        "price": 89.2,
         "reward": "5x Exalted Orb",
         "stack": 1,
         "weight": 57
@@ -756,7 +805,7 @@
         },
         "name": "Brush, Paint and Palette",
         "ninja": "https://poe.ninja/challenge/divination-cards/brush-paint-and-palette",
-        "price": 5.2,
+        "price": 5.0,
         "reward": "The Artist",
         "stack": 5,
         "weight": 606
@@ -794,7 +843,7 @@
         },
         "name": "Burning Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/burning-blood",
-        "price": 6.07,
+        "price": 6.0,
         "reward": "Xoph's Blood, Corrupted",
         "stack": 6,
         "weight": 91
@@ -820,7 +869,7 @@
         },
         "name": "Call to the First Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/call-to-the-first-ones",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Tier 1 Talisman, Corrupted",
         "stack": 5,
         "weight": 1252
@@ -836,7 +885,7 @@
         },
         "name": "Cameria's Cut",
         "ninja": "https://poe.ninja/challenge/divination-cards/camerias-cut",
-        "price": 9.0,
+        "price": 7.6,
         "reward": "Scarab",
         "stack": 2,
         "weight": 570
@@ -870,7 +919,7 @@
         },
         "name": "Chaotic Disposition",
         "ninja": "https://poe.ninja/challenge/divination-cards/chaotic-disposition",
-        "price": 8.0,
+        "price": 6.0,
         "reward": "5x Chaos Orb",
         "stack": 1,
         "weight": 3553
@@ -920,7 +969,7 @@
         },
         "name": "Choking Guilt",
         "ninja": "https://poe.ninja/challenge/divination-cards/choking-guilt",
-        "price": 378.61,
+        "price": 378.44,
         "reward": "Stranglegasp",
         "stack": 6,
         "weight": 3
@@ -953,7 +1002,7 @@
         },
         "name": "Council of Cats",
         "ninja": "https://poe.ninja/challenge/divination-cards/council-of-cats",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Farrul Item",
         "stack": 4,
         "weight": 182
@@ -991,7 +1040,7 @@
         },
         "name": "Cursed Words",
         "ninja": "https://poe.ninja/challenge/divination-cards/cursed-words",
-        "price": 3.05,
+        "price": 3.0,
         "reward": "Maw of Mischief",
         "stack": 13,
         "weight": 2567
@@ -1007,7 +1056,7 @@
         },
         "name": "Dark Dreams",
         "ninja": "https://poe.ninja/challenge/divination-cards/dark-dreams",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
         "weight": 70
@@ -1051,7 +1100,7 @@
         },
         "name": "Deadly Joy",
         "ninja": "https://poe.ninja/challenge/divination-cards/deadly-joy",
-        "price": 10.0,
+        "price": 9.6,
         "reward": "Torrent's Reclamation, Two-Implicit, Corrupted",
         "stack": 6,
         "weight": 14
@@ -1089,7 +1138,7 @@
         },
         "name": "Deathly Designs",
         "ninja": "https://poe.ninja/challenge/divination-cards/deathly-designs",
-        "price": 4.67,
+        "price": 5.0,
         "reward": "Level 21 Trap Gem, Quality: +23%, Corrupted",
         "stack": 7,
         "weight": 164
@@ -1142,7 +1191,7 @@
         },
         "name": "Desecrated Virtue",
         "ninja": "https://poe.ninja/challenge/divination-cards/desecrated-virtue",
-        "price": 111.0,
+        "price": 120.0,
         "reward": "Level 6 Awakened Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
         "weight": 18
@@ -1159,7 +1208,7 @@
         },
         "name": "Desperate Crusade",
         "ninja": "https://poe.ninja/challenge/divination-cards/desperate-crusade",
-        "price": 4.2,
+        "price": 4.0,
         "reward": "Prism Guardian",
         "stack": 3,
         "weight": 157
@@ -1180,7 +1229,7 @@
         },
         "name": "Destined to Crumble",
         "ninja": "https://poe.ninja/challenge/divination-cards/destined-to-crumble",
-        "price": 3.0,
+        "price": 2.6,
         "reward": "Body Armour, Item Level: 100",
         "stack": 5,
         "weight": 40221
@@ -1201,7 +1250,7 @@
         },
         "name": "Dialla's Subjugation",
         "ninja": "https://poe.ninja/challenge/divination-cards/diallas-subjugation",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Support Gem, Quality: +23%, Corrupted",
         "stack": 7,
         "weight": 1067
@@ -1217,7 +1266,7 @@
         },
         "name": "Disdain",
         "ninja": "https://poe.ninja/challenge/divination-cards/disdain",
-        "price": 4.6,
+        "price": 4.2,
         "reward": "Delirium Orb",
         "stack": 5,
         "weight": 339
@@ -1237,7 +1286,7 @@
         },
         "name": "Divine Beauty",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-beauty",
-        "price": 108.12,
+        "price": 115.0,
         "reward": "7x Divine Orb",
         "stack": 12,
         "weight": 460
@@ -1276,7 +1325,7 @@
         },
         "name": "Doedre's Madness",
         "ninja": "https://poe.ninja/challenge/divination-cards/doedres-madness",
-        "price": 1.89,
+        "price": 3.87,
         "reward": "Doedre Item",
         "stack": 9,
         "weight": 11245
@@ -1292,7 +1341,7 @@
         },
         "name": "Doryani's Epiphany",
         "ninja": "https://poe.ninja/challenge/divination-cards/doryanis-epiphany",
-        "price": 114.48,
+        "price": 104.16,
         "reward": "3x Regrading Lens",
         "stack": 3,
         "weight": 99
@@ -1306,7 +1355,7 @@
         },
         "name": "Draped in Dreams",
         "ninja": "https://poe.ninja/challenge/divination-cards/draped-in-dreams",
-        "price": 10.0,
+        "price": 9.04,
         "reward": "Six-Link Astral Plate, Item Level: 100, Influenced Item",
         "stack": 5,
         "weight": 34
@@ -1367,7 +1416,7 @@
         },
         "name": "Dying Anguish",
         "ninja": "https://poe.ninja/challenge/divination-cards/dying-anguish",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Level 19 Gem, Alternate Quality: +19%",
         "stack": 8,
         "weight": 1578
@@ -1384,7 +1433,7 @@
         },
         "name": "Dying Light",
         "ninja": "https://poe.ninja/challenge/divination-cards/dying-light",
-        "price": 5.0,
+        "price": 4.6,
         "reward": "Diamond Ring, Item Level: 100, Shaper + Elder Item",
         "stack": 10,
         "weight": 18
@@ -1407,7 +1456,7 @@
         },
         "name": "Earth Drinker",
         "ninja": "https://poe.ninja/challenge/divination-cards/earth-drinker",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Granite Flask",
         "stack": 5,
         "weight": 1294
@@ -1425,7 +1474,7 @@
         },
         "name": "Echoes of Love",
         "ninja": "https://poe.ninja/challenge/divination-cards/echoes-of-love",
-        "price": 5.0,
+        "price": 4.2,
         "reward": "Fidelitas' Spike,  Two-Implicit,  Corrupted",
         "stack": 3,
         "weight": 340
@@ -1447,7 +1496,7 @@
         },
         "name": "Emperor of Purity",
         "ninja": "https://poe.ninja/challenge/divination-cards/emperor-of-purity",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Six-Link Holy Chainmail, Item Level: 60",
         "stack": 7,
         "weight": 1505
@@ -1471,7 +1520,7 @@
         },
         "name": "Emperor's Luck",
         "ninja": "https://poe.ninja/challenge/divination-cards/emperors-luck",
-        "price": 1.0,
+        "price": 2.36,
         "reward": "5x Currency",
         "stack": 5,
         "weight": 43683
@@ -1485,7 +1534,7 @@
         },
         "name": "Endless Night",
         "ninja": "https://poe.ninja/challenge/divination-cards/endless-night",
-        "price": 5.0,
+        "price": 4.4,
         "reward": "Maloney's Mechanism",
         "stack": 7,
         "weight": 336
@@ -1515,7 +1564,7 @@
         },
         "name": "Eternal Bonds",
         "ninja": "https://poe.ninja/challenge/divination-cards/eternal-bonds",
-        "price": 50.0,
+        "price": 55.0,
         "reward": "Replica Cortex",
         "stack": 4,
         "weight": 25
@@ -1529,7 +1578,7 @@
         },
         "name": "Ever-Changing",
         "ninja": "https://poe.ninja/challenge/divination-cards/ever-changing",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
         "weight": 1273
@@ -1545,7 +1594,7 @@
         },
         "name": "Fateful Meeting",
         "ninja": "https://poe.ninja/challenge/divination-cards/fateful-meeting",
-        "price": 8.0,
+        "price": 10.0,
         "reward": "League-Specific Item, Double-Influenced Item, Item Level: 97, Two-Implicit, Corrupted",
         "stack": 9,
         "weight": 11
@@ -1640,7 +1689,7 @@
         },
         "name": "Gemcutter's Promise",
         "ninja": "https://poe.ninja/challenge/divination-cards/gemcutters-promise",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Gem, Quality: +20%",
         "stack": 3,
         "weight": 6847
@@ -1661,7 +1710,7 @@
         },
         "name": "Gift of Asenath",
         "ninja": "https://poe.ninja/challenge/divination-cards/gift-of-asenath",
-        "price": 13.8,
+        "price": 10.0,
         "reward": "Asenath's Gentle Touch, Two-Implicit, Corrupted",
         "stack": 5,
         "weight": 108
@@ -1684,7 +1733,7 @@
         },
         "name": "Gift of the Gemling Queen",
         "ninja": "https://poe.ninja/challenge/divination-cards/gift-of-the-gemling-queen",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Level 20 Support Gem",
         "stack": 9,
         "weight": 1665
@@ -1706,7 +1755,7 @@
         },
         "name": "Glimmer of Hope",
         "ninja": "https://poe.ninja/challenge/divination-cards/glimmer-of-hope",
-        "price": 5.0,
+        "price": 2.92,
         "reward": "Gold Ring",
         "stack": 8,
         "weight": 9017
@@ -1741,7 +1790,7 @@
         },
         "name": "Guardian's Challenge",
         "ninja": "https://poe.ninja/challenge/divination-cards/guardians-challenge",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Shaper Guardian Map",
         "stack": 4,
         "weight": 1170
@@ -1941,7 +1990,7 @@
         },
         "name": "Her Mask",
         "ninja": "https://poe.ninja/challenge/divination-cards/her-mask",
-        "price": 2.0,
+        "price": 2.56,
         "reward": "Sacrifice Fragment",
         "stack": 4,
         "weight": 8083
@@ -1960,7 +2009,7 @@
         },
         "name": "Heterochromia",
         "ninja": "https://poe.ninja/challenge/divination-cards/heterochromia",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Two-Stone Ring",
         "stack": 2,
         "weight": 1468
@@ -2166,7 +2215,7 @@
         },
         "name": "House of Mirrors",
         "ninja": "https://poe.ninja/challenge/divination-cards/house-of-mirrors",
-        "price": 15144.28,
+        "price": 15582.7,
         "reward": "Mirror of Kalandra",
         "stack": 9,
         "weight": 3
@@ -2180,7 +2229,7 @@
         },
         "name": "Hubris",
         "ninja": "https://poe.ninja/challenge/divination-cards/hubris",
-        "price": 3.76,
+        "price": 3.0,
         "reward": "Ring",
         "stack": 5,
         "weight": 4932
@@ -2224,7 +2273,7 @@
         },
         "name": "Hunter's Resolve",
         "ninja": "https://poe.ninja/challenge/divination-cards/hunters-resolve",
-        "price": 3.4,
+        "price": 3.0,
         "reward": "Bow",
         "stack": 8,
         "weight": 7399
@@ -2270,7 +2319,7 @@
         },
         "name": "Imperfect Memories",
         "ninja": "https://poe.ninja/challenge/divination-cards/imperfect-memories",
-        "price": 49.92,
+        "price": 60.0,
         "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
         "weight": 25
@@ -2290,7 +2339,7 @@
         },
         "name": "Imperial Legacy",
         "ninja": "https://poe.ninja/challenge/divination-cards/imperial-legacy",
-        "price": 0.99,
+        "price": 1.0,
         "reward": "Six-Link Imperial Bow, Item Level: 100",
         "stack": 22,
         "weight": 10294
@@ -2337,7 +2386,7 @@
         },
         "name": "Judging Voices",
         "ninja": "https://poe.ninja/challenge/divination-cards/judging-voices",
-        "price": 7.0,
+        "price": 5.0,
         "reward": "Forbidden Shako",
         "stack": 9,
         "weight": 130
@@ -2356,7 +2405,7 @@
         },
         "name": "Justified Ambition",
         "ninja": "https://poe.ninja/challenge/divination-cards/justified-ambition",
-        "price": 6.0,
+        "price": 7.0,
         "reward": "Synthesis Map",
         "stack": 5,
         "weight": 359
@@ -2459,7 +2508,7 @@
         },
         "name": "Last Hope",
         "ninja": "https://poe.ninja/challenge/divination-cards/last-hope",
-        "price": 4.13,
+        "price": 5.0,
         "reward": "Mortal Hope",
         "stack": 3,
         "weight": 6309
@@ -2476,7 +2525,7 @@
         },
         "name": "Left to Fate",
         "ninja": "https://poe.ninja/challenge/divination-cards/left-to-fate",
-        "price": 3.6,
+        "price": 5.0,
         "reward": "Map, Map Tier: 16, Unidentified Corrupted",
         "stack": 4,
         "weight": 2381
@@ -2490,7 +2539,7 @@
         },
         "name": "Lethean Temptation",
         "ninja": "https://poe.ninja/challenge/divination-cards/lethean-temptation",
-        "price": 6.2,
+        "price": 5.0,
         "reward": "Nebulis",
         "stack": 6,
         "weight": 75
@@ -2677,7 +2726,7 @@
         },
         "name": "Lingering Remnants",
         "ninja": "https://poe.ninja/challenge/divination-cards/lingering-remnants",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Vaal Temple Map, Item Level: 83, Corrupted",
         "stack": 16,
         "weight": 1921
@@ -2691,7 +2740,7 @@
         },
         "name": "Lost Worlds",
         "ninja": "https://poe.ninja/challenge/divination-cards/lost-worlds",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Map, Map Tier: 15",
         "stack": 8,
         "weight": 7046
@@ -2707,7 +2756,7 @@
         },
         "name": "Love Through Ice",
         "ninja": "https://poe.ninja/challenge/divination-cards/love-through-ice",
-        "price": 311.79,
+        "price": 289.39,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
         "weight": 6
@@ -2727,7 +2776,7 @@
         },
         "name": "Loyalty",
         "ninja": "https://poe.ninja/challenge/divination-cards/loyalty",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "3x Orb of Fusing",
         "stack": 5,
         "weight": 33495
@@ -2752,7 +2801,7 @@
         },
         "name": "Lucky Connections",
         "ninja": "https://poe.ninja/challenge/divination-cards/lucky-connections",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "20x Orb of Fusing",
         "stack": 7,
         "weight": 7212
@@ -2930,7 +2979,7 @@
         },
         "name": "Luminous Trove",
         "ninja": "https://poe.ninja/challenge/divination-cards/luminous-trove",
-        "price": 30.0,
+        "price": 47.0,
         "reward": "Voices, Corrupted",
         "stack": 7,
         "weight": 53
@@ -2953,7 +3002,7 @@
         },
         "name": "Lysah's Respite",
         "ninja": "https://poe.ninja/challenge/divination-cards/lysahs-respite",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Agate Amulet, Corrupted",
         "stack": 6,
         "weight": 2142
@@ -2988,7 +3037,7 @@
         },
         "name": "Man With Bear",
         "ninja": "https://poe.ninja/challenge/divination-cards/man-with-bear",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Bestiary Scarab",
         "stack": 3,
         "weight": 1067
@@ -3021,7 +3070,7 @@
         },
         "name": "Mawr Blaidd",
         "ninja": "https://poe.ninja/challenge/divination-cards/mawr-blaidd",
-        "price": 9.0,
+        "price": 8.0,
         "reward": "Eyes of the Greatwolf",
         "stack": 16,
         "weight": 266
@@ -3064,7 +3113,7 @@
         },
         "name": "Might is Right",
         "ninja": "https://poe.ninja/challenge/divination-cards/might-is-right",
-        "price": 4.8,
+        "price": 4.0,
         "reward": "Trypanon",
         "stack": 9,
         "weight": 2979
@@ -3080,7 +3129,7 @@
         },
         "name": "Misery in Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/misery-in-darkness",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Shroud of the Lightless",
         "stack": 6,
         "weight": 119
@@ -3107,7 +3156,7 @@
         },
         "name": "Mitts",
         "ninja": "https://poe.ninja/challenge/divination-cards/mitts",
-        "price": 3.81,
+        "price": 3.4,
         "reward": "Gloves",
         "stack": 5,
         "weight": 5821
@@ -3144,7 +3193,7 @@
         },
         "name": "Monochrome",
         "ninja": "https://poe.ninja/challenge/divination-cards/monochrome",
-        "price": 38.16,
+        "price": 30.0,
         "reward": "2x Elevated Sextant",
         "stack": 3,
         "weight": 375
@@ -3173,7 +3222,7 @@
         },
         "name": "More is Never Enough",
         "ninja": "https://poe.ninja/challenge/divination-cards/more-is-never-enough",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Gilded Scarab",
         "stack": 7,
         "weight": 755
@@ -3194,7 +3243,7 @@
         },
         "name": "No Traces",
         "ninja": "https://poe.ninja/challenge/divination-cards/no-traces",
-        "price": 4.6,
+        "price": 5.0,
         "reward": "30x Orb of Scouring",
         "stack": 9,
         "weight": 2856
@@ -3245,7 +3294,7 @@
         },
         "name": "Peaceful Moments",
         "ninja": "https://poe.ninja/challenge/divination-cards/peaceful-moments",
-        "price": 8.0,
+        "price": 7.0,
         "reward": "Timeless Jewel",
         "stack": 5,
         "weight": 231
@@ -3294,7 +3343,7 @@
         },
         "name": "Prejudice",
         "ninja": "https://poe.ninja/challenge/divination-cards/prejudice",
-        "price": 5.0,
+        "price": 6.0,
         "reward": "Item, Influenced Item",
         "stack": 7,
         "weight": 1915
@@ -3330,7 +3379,7 @@
         },
         "name": "Pride of the First Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/pride-of-the-first-ones",
-        "price": 5.6,
+        "price": 6.0,
         "reward": "Farrul's Fur",
         "stack": 7,
         "weight": 75
@@ -3346,7 +3395,7 @@
         },
         "name": "Prometheus' Armoury",
         "ninja": "https://poe.ninja/challenge/divination-cards/prometheus-armoury",
-        "price": 11.4,
+        "price": 10.6,
         "reward": "One-Hand Weapon, Item Level: 100, Double-Influenced Item",
         "stack": 6,
         "weight": 32
@@ -3382,7 +3431,7 @@
         },
         "name": "Prosperity",
         "ninja": "https://poe.ninja/challenge/divination-cards/prosperity",
-        "price": 4.6,
+        "price": 3.0,
         "reward": "Perandus' Gold Ring",
         "stack": 10,
         "weight": 12193
@@ -3403,7 +3452,7 @@
         },
         "name": "Rain Tempter",
         "ninja": "https://poe.ninja/challenge/divination-cards/rain-tempter",
-        "price": 5.0,
+        "price": 3.4,
         "reward": "Map, Map Tier: 6",
         "stack": 9,
         "weight": 12374
@@ -3423,7 +3472,7 @@
         },
         "name": "Rain of Chaos",
         "ninja": "https://poe.ninja/challenge/divination-cards/rain-of-chaos",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "Chaos Orb",
         "stack": 8,
         "weight": 121466
@@ -3443,7 +3492,7 @@
         },
         "name": "Rats",
         "ninja": "https://poe.ninja/challenge/divination-cards/rats",
-        "price": 3.2,
+        "price": 3.0,
         "reward": "Rat's Nest",
         "stack": 8,
         "weight": 15252
@@ -3478,7 +3527,7 @@
         },
         "name": "Rebirth",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-divcard",
-        "price": 10.0,
+        "price": 15.0,
         "reward": "Charan's Sword",
         "stack": 27,
         "weight": 135
@@ -3492,7 +3541,7 @@
         },
         "name": "Rebirth and Renewal",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-and-renewal",
-        "price": 9.0,
+        "price": 8.0,
         "reward": "Winged Scarab",
         "stack": 4,
         "weight": 147
@@ -3552,7 +3601,7 @@
         },
         "name": "Sambodhi's Wisdom",
         "ninja": "https://poe.ninja/challenge/divination-cards/sambodhis-wisdom",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Armour, Quality: +30%",
         "stack": 3,
         "weight": 853
@@ -3574,7 +3623,7 @@
         },
         "name": "Scholar of the Seas",
         "ninja": "https://poe.ninja/challenge/divination-cards/scholar-of-the-seas",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Mao Kun",
         "stack": 7,
         "weight": 2094
@@ -3592,7 +3641,7 @@
         },
         "name": "Seven Years Bad Luck",
         "ninja": "https://poe.ninja/challenge/divination-cards/seven-years-bad-luck",
-        "price": 366.34,
+        "price": 445.22,
         "reward": "Mirror Shard",
         "stack": 13,
         "weight": 57
@@ -3640,7 +3689,7 @@
         },
         "name": "Society's Remorse",
         "ninja": "https://poe.ninja/challenge/divination-cards/societys-remorse",
-        "price": 5.0,
+        "price": 3.2,
         "reward": "10x Orb of Alteration",
         "stack": 1,
         "weight": 3680
@@ -3660,7 +3709,7 @@
         },
         "name": "Something Dark",
         "ninja": "https://poe.ninja/challenge/divination-cards/something-dark",
-        "price": 12.0,
+        "price": 10.0,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
         "weight": 292
@@ -3677,7 +3726,7 @@
         },
         "name": "Soul Quenched",
         "ninja": "https://poe.ninja/challenge/divination-cards/soul-quenched",
-        "price": 5.0,
+        "price": 4.0,
         "reward": " Experimented Two-Handed Weapon, Item Level: 86, Quality: +30%",
         "stack": 5,
         "weight": 515
@@ -3712,7 +3761,7 @@
         },
         "name": "Struck by Lightning",
         "ninja": "https://poe.ninja/challenge/divination-cards/struck-by-lightning",
-        "price": 2.87,
+        "price": 2.93,
         "reward": "Electrocuting Jewellery, Item Level: 76",
         "stack": 3,
         "weight": 7008
@@ -3753,7 +3802,7 @@
         },
         "name": "Terrible Secret of Space",
         "ninja": "https://poe.ninja/challenge/divination-cards/terrible-secret-of-space",
-        "price": 4.4,
+        "price": 5.0,
         "reward": "Level 21 Golem Gem, Any Quality Type: +23%, Corrupted",
         "stack": 8,
         "weight": 211
@@ -3792,7 +3841,7 @@
         },
         "name": "The Admirer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-admirer",
-        "price": 4.43,
+        "price": 5.0,
         "reward": "Atziri Item",
         "stack": 9,
         "weight": 1632
@@ -3808,7 +3857,7 @@
         },
         "name": "The Adventuring Spirit",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-adventuring-spirit",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "Victario's Influence",
         "stack": 6,
         "weight": 9194
@@ -3830,7 +3879,7 @@
         },
         "name": "The Aesthete",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-aesthete",
-        "price": 2.4,
+        "price": 3.0,
         "reward": "Shavronne Item",
         "stack": 8,
         "weight": 5758
@@ -3849,7 +3898,7 @@
         },
         "name": "The Apothecary",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-apothecary",
-        "price": 9353.82,
+        "price": 9794.84,
         "reward": "Mageblood",
         "stack": 5,
         "weight": 7
@@ -3869,7 +3918,7 @@
         },
         "name": "The Archmage's Right Hand",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-archmages-right-hand",
-        "price": 5.0,
+        "price": 4.6,
         "reward": "Glyphic Prophecy Wand, Item Level: 100",
         "stack": 7,
         "weight": 1223
@@ -3893,7 +3942,7 @@
         },
         "name": "The Arena Champion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-arena-champion",
-        "price": 3.75,
+        "price": 3.0,
         "reward": "Map, Map Tier: 12",
         "stack": 10,
         "weight": 10882
@@ -3911,7 +3960,7 @@
         },
         "name": "The Army of Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-army-of-blood",
-        "price": 2.0,
+        "price": 4.0,
         "reward": "Bloodbond",
         "stack": 6,
         "weight": 9290
@@ -3928,7 +3977,7 @@
         },
         "name": "The Artist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-artist",
-        "price": 55.0,
+        "price": 65.0,
         "reward": "Level 4 Enhance, Corrupted",
         "stack": 11,
         "weight": 31
@@ -3960,7 +4009,7 @@
         },
         "name": "The Astromancer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-astromancer",
-        "price": 19.6,
+        "price": 15.0,
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
         "weight": 7
@@ -4019,7 +4068,7 @@
         },
         "name": "The Battle Born",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-battle-born",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Axe",
         "stack": 5,
         "weight": 5857
@@ -4101,7 +4150,7 @@
         },
         "name": "The Bitter Blossom",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bitter-blossom",
-        "price": 10.0,
+        "price": 9.0,
         "reward": "Level 21 Chaos Gem, Quality: +23%, Corrupted",
         "stack": 3,
         "weight": 91
@@ -4128,7 +4177,7 @@
         },
         "name": "The Blazing Fire",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-blazing-fire",
-        "price": 1.67,
+        "price": 2.0,
         "reward": "Chin Sol",
         "stack": 6,
         "weight": 12586
@@ -4156,7 +4205,7 @@
         },
         "name": "The Body",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-body",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Body Armour",
         "stack": 4,
         "weight": 4358
@@ -4209,7 +4258,7 @@
         },
         "name": "The Breach",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-breach",
-        "price": 5.0,
+        "price": 4.59,
         "reward": "Breach Item",
         "stack": 4,
         "weight": 429
@@ -4302,7 +4351,7 @@
         },
         "name": "The Calling",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-calling",
-        "price": 5.0,
+        "price": 3.24,
         "reward": "Beyond Item",
         "stack": 6,
         "weight": 3945
@@ -4315,7 +4364,10 @@
             "monsters": [
                 "Metadata/Monsters/VaalArchitect/VaalArchitect2",
                 "Metadata/Monsters/VaalArchitect/VaalArchitect8",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect14"
+                "Metadata/Monsters/VaalArchitect/VaalArchitect14",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect2MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect8MemoryLine",
+                "Metadata/Monsters/VaalArchitect/VaalArchitect14MemoryLine"
             ]
         },
         "name": "The Card Sharp",
@@ -4329,7 +4381,6 @@
         "art": "TheCarrionCrow",
         "drop": {
             "areas": [
-                "1_2_9",
                 "1_3_1",
                 "1_3_7",
                 "1_3_13",
@@ -4343,20 +4394,14 @@
                 "MapAtlasHighGardens",
                 "MapAtlasPromenade",
                 "MapAtlasRamparts",
-                "MapAtlasWaterways",
-                "MapWorldsRamparts",
-                "MapWorldsCourtyard",
-                "MapWorldsColonnade",
-                "MapWorldsPromenade",
-                "MapWorldsChannel",
-                "MapWorldsCitySquare"
+                "MapAtlasWaterways"
             ],
             "min_level": 23,
             "monsters": []
         },
         "name": "The Carrion Crow",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-carrion-crow",
-        "price": 3.0,
+        "price": 1.0,
         "reward": "Life Armour",
         "stack": 4,
         "weight": 25657
@@ -4370,7 +4415,7 @@
         },
         "name": "The Cartographer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cartographer",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "10x Cartographer's Chisel",
         "stack": 1,
         "weight": 7399
@@ -4438,7 +4483,7 @@
         },
         "name": "The Cataclysm",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cataclysm",
-        "price": 4.11,
+        "price": 3.0,
         "reward": "Level 21 Spell Gem, Corrupted",
         "stack": 13,
         "weight": 2184
@@ -4464,7 +4509,7 @@
         },
         "name": "The Catalyst",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-catalyst",
-        "price": 2.2,
+        "price": 1.0,
         "reward": "Vaal Orb",
         "stack": 3,
         "weight": 26062
@@ -4487,7 +4532,7 @@
         },
         "name": "The Catch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-catch",
-        "price": 7.0,
+        "price": 8.0,
         "reward": "Fishing Rod, Incubated, Item Level: 99",
         "stack": 18,
         "weight": 17
@@ -4507,7 +4552,7 @@
         },
         "name": "The Celestial Justicar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-celestial-justicar",
-        "price": 4.0,
+        "price": 3.2,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
         "weight": 704
@@ -4560,7 +4605,7 @@
         },
         "name": "The Cheater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cheater",
-        "price": 267.25,
+        "price": 262.2,
         "reward": "Level 6 Awakened Support Gem, Quality: +20%, Corrupted",
         "stack": 3,
         "weight": 10
@@ -4574,7 +4619,7 @@
         },
         "name": "The Chosen",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-chosen",
-        "price": 115.0,
+        "price": 120.0,
         "reward": "Skin of the Lords, Corrupted",
         "stack": 5,
         "weight": 257
@@ -4643,7 +4688,7 @@
         },
         "name": "The Craving",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-craving",
-        "price": 8.0,
+        "price": 7.0,
         "reward": "Unending Hunger",
         "stack": 4,
         "weight": 62
@@ -4660,7 +4705,7 @@
         },
         "name": "The Cursed King",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cursed-king",
-        "price": 5.0,
+        "price": 4.6,
         "reward": "Rigwald's Curse",
         "stack": 8,
         "weight": 676
@@ -4699,7 +4744,7 @@
         },
         "name": "The Dapper Prodigy",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dapper-prodigy",
-        "price": 3.33,
+        "price": 3.0,
         "reward": "Six-Link Body Armour, Item Level: 100",
         "stack": 6,
         "weight": 2638
@@ -4807,7 +4852,7 @@
         },
         "name": "The Demon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demon",
-        "price": 3060.04,
+        "price": 2893.93,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
         "weight": 2
@@ -4845,7 +4890,7 @@
         },
         "name": "The Destination",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-destination",
-        "price": 25.0,
+        "price": 24.0,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
         "weight": 12
@@ -4866,7 +4911,7 @@
         },
         "name": "The Doctor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-doctor",
-        "price": 3229.3,
+        "price": 2871.67,
         "reward": "Headhunter",
         "stack": 8,
         "weight": 16
@@ -4883,7 +4928,7 @@
         },
         "name": "The Doppelganger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-doppelganger",
-        "price": 3.02,
+        "price": 5.0,
         "reward": "Mirror Arrow, Quality: +20%",
         "stack": 2,
         "weight": 19876
@@ -4903,7 +4948,7 @@
         },
         "name": "The Dragon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dragon",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Coruscating Elixir",
         "stack": 4,
         "weight": 6117
@@ -5069,7 +5114,7 @@
         },
         "name": "The Dragon's Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dragons-heart",
-        "price": 45.0,
+        "price": 40.0,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
         "weight": 36
@@ -5100,7 +5145,7 @@
         },
         "name": "The Dreamland",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dreamland",
-        "price": 5.0,
+        "price": 3.93,
         "reward": "Poorjoy's Asylum",
         "stack": 8,
         "weight": 2600
@@ -5360,7 +5405,7 @@
         },
         "name": "The Encroaching Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-encroaching-darkness",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Map, Corrupted",
         "stack": 8,
         "weight": 776
@@ -5378,7 +5423,7 @@
         },
         "name": "The Endless Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-endless-darkness",
-        "price": 61.4,
+        "price": 75.0,
         "reward": "Voidforge",
         "stack": 9,
         "weight": 113
@@ -5421,7 +5466,7 @@
         },
         "name": "The Enforcer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enforcer",
-        "price": 9.0,
+        "price": 7.0,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
         "weight": 3
@@ -5443,7 +5488,7 @@
         },
         "name": "The Enlightened",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enlightened",
-        "price": 40.0,
+        "price": 39.0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
         "weight": 69
@@ -5461,7 +5506,7 @@
         },
         "name": "The Enthusiasts",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enthusiasts",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Victario's Influence, Two-Implicit, Corrupted",
         "stack": 3,
         "weight": 296
@@ -5481,7 +5526,7 @@
         },
         "name": "The Escape",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-escape",
-        "price": 5.0,
+        "price": 4.4,
         "reward": "Seven-League Step",
         "stack": 5,
         "weight": 239
@@ -5500,7 +5545,7 @@
         },
         "name": "The Eternal War",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eternal-war",
-        "price": 11.4,
+        "price": 14.0,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
         "weight": 10
@@ -5517,7 +5562,7 @@
         },
         "name": "The Ethereal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-ethereal",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
         "weight": 570
@@ -5550,7 +5595,7 @@
         },
         "name": "The Eye of Terror",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eye-of-terror",
-        "price": 32.0,
+        "price": 35.0,
         "reward": "Chayula's Flawless Breachstone",
         "stack": 8,
         "weight": 89
@@ -5568,7 +5613,7 @@
         },
         "name": "The Eye of the Dragon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eye-of-the-dragon",
-        "price": 10.4,
+        "price": 10.0,
         "reward": "Jewel, Corrupted",
         "stack": 10,
         "weight": 44
@@ -5586,7 +5631,7 @@
         },
         "name": "The Fathomless Depths",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fathomless-depths",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Lightpoacher",
         "stack": 8,
         "weight": 1210
@@ -5608,7 +5653,7 @@
         },
         "name": "The Feast",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-feast",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Romira's Banquet, Corrupted",
         "stack": 5,
         "weight": 2192
@@ -5629,7 +5674,7 @@
         },
         "name": "The Fiend",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fiend",
-        "price": 2115.74,
+        "price": 1780.88,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
         "weight": 6
@@ -5645,7 +5690,7 @@
         },
         "name": "The Finishing Touch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-finishing-touch",
-        "price": 3.0,
+        "price": 5.0,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
         "weight": 422
@@ -5706,13 +5751,13 @@
                 "MapWorldsRamparts",
                 "MapWorldsForbiddenWoods"
             ],
-            "max_level": 76,
+            "max_level": 75,
             "min_level": 60,
             "monsters": []
         },
         "name": "The Flora's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-floras-gift",
-        "price": 3.2,
+        "price": 1.4,
         "reward": "Five-Link Staff, Item Level: 66",
         "stack": 5,
         "weight": 28099
@@ -5798,7 +5843,7 @@
         },
         "name": "The Forward Gaze",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forward-gaze",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Replica Item",
         "stack": 6,
         "weight": 1061
@@ -6008,7 +6053,7 @@
         },
         "name": "The Gambler",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gambler",
-        "price": 1.5,
+        "price": 1.0,
         "reward": "Divination Card",
         "stack": 5,
         "weight": 4722
@@ -6029,7 +6074,7 @@
         },
         "name": "The Garish Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-garish-power",
-        "price": 30.0,
+        "price": 28.0,
         "reward": "Jewel",
         "stack": 4,
         "weight": 78
@@ -6043,7 +6088,7 @@
         },
         "name": "The Gemcutter",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gemcutter",
-        "price": 2.6,
+        "price": 4.0,
         "reward": "Gemcutter's Prism",
         "stack": 3,
         "weight": 20301
@@ -6087,7 +6132,7 @@
         },
         "name": "The Gladiator",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gladiator",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Nightmare Bascinet",
         "stack": 5,
         "weight": 6022
@@ -6105,7 +6150,7 @@
         },
         "name": "The Golden Era",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-golden-era",
-        "price": 9.0,
+        "price": 5.0,
         "reward": "Flaring Eclipse Staff, Item Level: 100",
         "stack": 7,
         "weight": 1366
@@ -6119,7 +6164,7 @@
         },
         "name": "The Greatest Intentions",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-greatest-intentions",
-        "price": 14.6,
+        "price": 14.0,
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
         "weight": 3
@@ -6154,7 +6199,7 @@
         },
         "name": "The Hale Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hale-heart",
-        "price": 6.0,
+        "price": 5.6,
         "reward": "Item, Item Level: 100, Elder Item",
         "stack": 4,
         "weight": 26
@@ -6173,7 +6218,7 @@
         },
         "name": "The Harvester",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-harvester",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "The Harvest",
         "stack": 11,
         "weight": 17234
@@ -6195,7 +6240,7 @@
         },
         "name": "The Hermit",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hermit",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "Lifesprig",
         "stack": 9,
         "weight": 16815
@@ -6248,7 +6293,7 @@
         },
         "name": "The Hoarder",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hoarder",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Exalted Orb",
         "stack": 12,
         "weight": 2812
@@ -6264,7 +6309,7 @@
         },
         "name": "The Hook",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hook",
-        "price": 15.0,
+        "price": 27.0,
         "reward": "Level 21 Gem, Alternate Quality: +23%, Corrupted",
         "stack": 8,
         "weight": 43
@@ -6308,7 +6353,7 @@
         },
         "name": "The Immortal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-immortal",
-        "price": 1447.62,
+        "price": 1558.27,
         "reward": "House of Mirrors",
         "stack": 10,
         "weight": 21
@@ -6374,7 +6419,7 @@
         },
         "name": "The Inoculated",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-inoculated",
-        "price": 5.0,
+        "price": 4.99,
         "reward": "Seraphim's Armour",
         "stack": 4,
         "weight": 6261
@@ -6391,7 +6436,7 @@
         },
         "name": "The Insane Cat",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-insane-cat",
-        "price": 3523.27,
+        "price": 3561.76,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
         "weight": 2
@@ -6409,7 +6454,7 @@
         },
         "name": "The Insatiable",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-insatiable",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "The Harvest, Corrupted",
         "stack": 3,
         "weight": 1107
@@ -6490,7 +6535,7 @@
         },
         "name": "The Journalist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-journalist",
-        "price": 3.7,
+        "price": 2.76,
         "reward": "Helmet, Double-Veiled Item",
         "stack": 10,
         "weight": 11904
@@ -6524,7 +6569,7 @@
         },
         "name": "The Journey",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-journey",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Harbinger's Orb",
         "stack": 3,
         "weight": 716
@@ -6544,7 +6589,7 @@
         },
         "name": "The King's Blade",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-kings-blade",
-        "price": 3.0,
+        "price": 2.26,
         "reward": "Bloodthirsty Eternal Sword, Item Level: 66",
         "stack": 5,
         "weight": 41367
@@ -6563,7 +6608,7 @@
         },
         "name": "The King's Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-kings-heart",
-        "price": 5.0,
+        "price": 3.82,
         "reward": "Kaom's Heart",
         "stack": 8,
         "weight": 336
@@ -6582,7 +6627,7 @@
         },
         "name": "The Landing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-landing",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "The Beachhead, Map Tier: 15, Corrupted",
         "stack": 5,
         "weight": 823
@@ -6601,7 +6646,7 @@
         },
         "name": "The Last One Standing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-last-one-standing",
-        "price": 25.0,
+        "price": 36.0,
         "reward": "Atziri's Disfavour",
         "stack": 10,
         "weight": 11
@@ -6633,7 +6678,7 @@
         },
         "name": "The Leviathan",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-leviathan",
-        "price": 8.0,
+        "price": 8.2,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
         "weight": 34
@@ -6672,7 +6717,7 @@
         },
         "name": "The Life Thief",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-life-thief",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Zerphi's Heart",
         "stack": 6,
         "weight": 34
@@ -6689,7 +6734,7 @@
         },
         "name": "The Lion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lion",
-        "price": 3.67,
+        "price": 4.4,
         "reward": "Lioneye Item",
         "stack": 5,
         "weight": 3343
@@ -6703,7 +6748,7 @@
         },
         "name": "The Long Con",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-long-con",
-        "price": 9.0,
+        "price": 10.0,
         "reward": "Elderslayer's Exalted Orb",
         "stack": 4,
         "weight": 37
@@ -6768,7 +6813,7 @@
         },
         "name": "The Lover",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lover",
-        "price": 1.6,
+        "price": 1.0,
         "reward": "Jewellery, Item Level: 79",
         "stack": 2,
         "weight": 61882
@@ -6791,7 +6836,7 @@
         },
         "name": "The Lunaris Priestess",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lunaris-priestess",
-        "price": 4.4,
+        "price": 5.0,
         "reward": "Sire of Shards",
         "stack": 5,
         "weight": 7771
@@ -6826,7 +6871,7 @@
         },
         "name": "The Magma Crab",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-magma-crab",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Level 21 Vaal Molten Shell, Corrupted",
         "stack": 6,
         "weight": 440
@@ -6857,7 +6902,7 @@
         },
         "name": "The Master Artisan",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-master-artisan",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "20x Quality Currency",
         "stack": 5,
         "weight": 7835
@@ -6878,7 +6923,7 @@
         },
         "name": "The Mercenary",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-mercenary",
-        "price": 4.4,
+        "price": 5.0,
         "reward": "Shield, Corrupted",
         "stack": 5,
         "weight": 1530
@@ -6913,7 +6958,7 @@
         },
         "name": "The Metalsmith's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-metalsmiths-gift",
-        "price": 3.0,
+        "price": 1.36,
         "reward": "Prismatic Ring",
         "stack": 6,
         "weight": 37438
@@ -6936,7 +6981,7 @@
         },
         "name": "The Mind's Eyes",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-minds-eyes",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Astral Projector",
         "stack": 7,
         "weight": 97
@@ -6956,7 +7001,7 @@
         },
         "name": "The Mountain",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-mountain",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Jewel of Potency",
         "stack": 6,
         "weight": 5427
@@ -6978,7 +7023,7 @@
         },
         "name": "The Nurse",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-nurse",
-        "price": 356.34,
+        "price": 325.5,
         "reward": "The Doctor",
         "stack": 8,
         "weight": 92
@@ -7002,7 +7047,7 @@
         },
         "name": "The Oath",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-oath",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Death's Oath",
         "stack": 6,
         "weight": 1830
@@ -7052,7 +7097,7 @@
         },
         "name": "The Offering",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-offering",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Shavronne's Wrappings",
         "stack": 8,
         "weight": 443
@@ -7070,7 +7115,7 @@
         },
         "name": "The Offspring",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-offspring",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Ryslatha's Coil",
         "stack": 9,
         "weight": 225
@@ -7109,7 +7154,7 @@
         },
         "name": "The One That Got Away",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-one-that-got-away",
-        "price": 9.0,
+        "price": 10.0,
         "reward": "Replica Bated Breath",
         "stack": 7,
         "weight": 7
@@ -7129,7 +7174,7 @@
         },
         "name": "The One With All",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-one-with-all",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Le Heup of All, Corrupted",
         "stack": 6,
         "weight": 2058
@@ -7196,7 +7241,7 @@
         },
         "name": "The Pack Leader",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-pack-leader",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Alpha's Howl",
         "stack": 6,
         "weight": 1594
@@ -7236,7 +7281,7 @@
         },
         "name": "The Patient",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-patient",
-        "price": 43.0,
+        "price": 34.0,
         "reward": "The Nurse",
         "stack": 8,
         "weight": 709
@@ -7299,7 +7344,7 @@
         },
         "name": "The Polymath",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-polymath",
-        "price": 6.0,
+        "price": 5.0,
         "reward": "Astramentis",
         "stack": 3,
         "weight": 169
@@ -7339,7 +7384,7 @@
         },
         "name": "The Price of Devotion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-devotion",
-        "price": 5817.19,
+        "price": 5565.25,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
         "weight": 1
@@ -7355,7 +7400,7 @@
         },
         "name": "The Price of Loyalty",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-loyalty",
-        "price": 378.61,
+        "price": 333.92,
         "reward": "Skin of the Loyal, Item Level: 25, Two-Implicit, Corrupted",
         "stack": 4,
         "weight": 22
@@ -7460,7 +7505,7 @@
         },
         "name": "The Price of Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-protection",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Elder Guardian Occupied Map, Map Tier: 14 to 16, Modifiers: 8, Corrupted",
         "stack": 5,
         "weight": 1493
@@ -7483,7 +7528,7 @@
         },
         "name": "The Primordial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-primordial",
-        "price": 10.0,
+        "price": 9.0,
         "reward": "Jewel, Primordial",
         "stack": 5,
         "weight": 689
@@ -7500,7 +7545,7 @@
         },
         "name": "The Prince of Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-prince-of-darkness",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Elegant Hubris",
         "stack": 6,
         "weight": 157
@@ -7537,7 +7582,7 @@
         },
         "name": "The Progeny of Lunaris",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-progeny-of-lunaris",
-        "price": 7.0,
+        "price": 8.0,
         "reward": "Dying Sun",
         "stack": 2,
         "weight": 14
@@ -7607,7 +7652,7 @@
         },
         "name": "The Rabbit's Foot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-rabbits-foot",
-        "price": 22.0,
+        "price": 12.0,
         "reward": "10x Incursion Vial",
         "stack": 8,
         "weight": 40
@@ -7663,7 +7708,7 @@
         },
         "name": "The Realm",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-realm",
-        "price": 5.0,
+        "price": 2.0,
         "reward": "Portal, Quality: +1-20%",
         "stack": 5,
         "weight": 506
@@ -7682,7 +7727,7 @@
         },
         "name": "The Return of the Rat",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-return-of-the-rat",
-        "price": 5.0,
+        "price": 4.4,
         "reward": "Tavukai",
         "stack": 3,
         "weight": 867
@@ -7696,7 +7741,7 @@
         },
         "name": "The Risk",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-risk",
-        "price": 4.6,
+        "price": 4.0,
         "reward": "Ventor's Gamble",
         "stack": 3,
         "weight": 4350
@@ -7776,7 +7821,7 @@
         },
         "name": "The Ruthless Ceinture",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-ruthless-ceinture",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Meginord's Girdle, Corrupted",
         "stack": 7,
         "weight": 2576
@@ -7792,7 +7837,7 @@
         },
         "name": "The Sacrifice",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sacrifice",
-        "price": 19.0,
+        "price": 19.4,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
         "weight": 46
@@ -7817,7 +7862,7 @@
         },
         "name": "The Saint's Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-saints-treasure",
-        "price": 5.0,
+        "price": 3.6,
         "reward": "2x Exalted Orb",
         "stack": 10,
         "weight": 973
@@ -7854,7 +7899,7 @@
         },
         "name": "The Scarred Meadow",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scarred-meadow",
-        "price": 3.4,
+        "price": 3.0,
         "reward": "Wake of Destruction",
         "stack": 9,
         "weight": 17454
@@ -7897,7 +7942,7 @@
         },
         "name": "The Scholar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scholar",
-        "price": 1.93,
+        "price": 1.0,
         "reward": "40x Scroll of Wisdom",
         "stack": 3,
         "weight": 47134
@@ -7923,7 +7968,7 @@
         },
         "name": "The Scout",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scout-divcard",
-        "price": 11.34,
+        "price": 14.0,
         "reward": "7x Exalted Orb",
         "stack": 8,
         "weight": 201
@@ -7959,7 +8004,7 @@
         },
         "name": "The Sephirot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sephirot",
-        "price": 178.08,
+        "price": 179.01,
         "reward": "10x Divine Orb",
         "stack": 11,
         "weight": 227
@@ -7993,7 +8038,7 @@
         },
         "name": "The Shieldbearer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-shieldbearer",
-        "price": 467.69,
+        "price": 489.74,
         "reward": "The Squire",
         "stack": 8,
         "weight": 16
@@ -8092,7 +8137,7 @@
         },
         "name": "The Side Quest",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-side-quest",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "20x Scouting Report",
         "stack": 5,
         "weight": 710
@@ -8111,7 +8156,7 @@
         },
         "name": "The Sigil",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sigil",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Unassailable Amulet",
         "stack": 3,
         "weight": 7121
@@ -8149,7 +8194,7 @@
         },
         "name": "The Skeleton",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-skeleton",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Level 1 Summon Skeletons, Quality: +23%, Corrupted",
         "stack": 6,
         "weight": 5301
@@ -8176,7 +8221,7 @@
         },
         "name": "The Soul",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-soul",
-        "price": 110.0,
+        "price": 140.0,
         "reward": "Soul Taker",
         "stack": 9,
         "weight": 17
@@ -8195,7 +8240,7 @@
         },
         "name": "The Spark and the Flame",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-spark-and-the-flame",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Berek's Respite",
         "stack": 2,
         "weight": 619
@@ -8212,7 +8257,7 @@
         },
         "name": "The Spoiled Prince",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-spoiled-prince",
-        "price": 6.6,
+        "price": 5.0,
         "reward": "Dictator's Prophecy Wand, Item Level: 100",
         "stack": 4,
         "weight": 757
@@ -8236,7 +8281,7 @@
         },
         "name": "The Standoff",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-standoff",
-        "price": 3.6,
+        "price": 3.73,
         "reward": "Rustic Sash",
         "stack": 3,
         "weight": 5892
@@ -8254,7 +8299,7 @@
         },
         "name": "The Stormcaller",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-stormcaller",
-        "price": 3.4,
+        "price": 5.0,
         "reward": "Agnerod Staff",
         "stack": 4,
         "weight": 6394
@@ -8270,7 +8315,7 @@
         },
         "name": "The Strategist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-strategist",
-        "price": 13.4,
+        "price": 10.0,
         "reward": "Inspired Learning, Corrupted",
         "stack": 6,
         "weight": 19
@@ -8293,7 +8338,7 @@
         },
         "name": "The Summoner",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-summoner",
-        "price": 3.6,
+        "price": 3.0,
         "reward": "Minion Gem, Quality: +20%",
         "stack": 6,
         "weight": 5868
@@ -8316,7 +8361,7 @@
         },
         "name": "The Sun",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sun",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Rise of the Phoenix",
         "stack": 7,
         "weight": 11157
@@ -8333,7 +8378,7 @@
         },
         "name": "The Surgeon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-surgeon",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Surgeon's Flask",
         "stack": 4,
         "weight": 4809
@@ -8374,7 +8419,7 @@
         },
         "name": "The Survivalist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-survivalist",
-        "price": 4.0,
+        "price": 4.6,
         "reward": "7x Orb of Alchemy",
         "stack": 3,
         "weight": 8267
@@ -8395,7 +8440,7 @@
         },
         "name": "The Sword King's Salute",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sword-kings-salute",
-        "price": 4.8,
+        "price": 2.0,
         "reward": "Daresso's Salute",
         "stack": 7,
         "weight": 14197
@@ -8617,7 +8662,7 @@
         },
         "name": "The Tireless Extractor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tireless-extractor",
-        "price": 4.6,
+        "price": 3.85,
         "reward": "10x Oil",
         "stack": 8,
         "weight": 9238
@@ -8640,7 +8685,7 @@
         },
         "name": "The Tower",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tower",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Staff",
         "stack": 6,
         "weight": 7146
@@ -8677,7 +8722,7 @@
         },
         "name": "The Transformation",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-transformation",
-        "price": 4.6,
+        "price": 3.6,
         "reward": "Tainted Mythic Orb",
         "stack": 5,
         "weight": 311
@@ -8843,7 +8888,7 @@
         },
         "name": "The Trial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-trial",
-        "price": 2.0,
+        "price": 1.9,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
         "weight": 5963
@@ -8878,7 +8923,7 @@
         },
         "name": "The Twilight Moon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-twilight-moon",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "The Twilight Temple",
         "stack": 6,
         "weight": 454
@@ -8902,7 +8947,7 @@
         },
         "name": "The Twins",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-twins",
-        "price": 5.0,
+        "price": 3.6,
         "reward": "Gemini Claw of Celebration, Item Level: 83",
         "stack": 8,
         "weight": 5290
@@ -8945,7 +8990,7 @@
         },
         "name": "The Undaunted",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-undaunted",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
         "weight": 840
@@ -8997,7 +9042,7 @@
         },
         "name": "The Union",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-union",
-        "price": 2.06,
+        "price": 3.0,
         "reward": "10x Gemcutter's Prism",
         "stack": 7,
         "weight": 4987
@@ -9024,7 +9069,7 @@
         },
         "name": "The Valkyrie",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-valkyrie",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Nemesis Item",
         "stack": 8,
         "weight": 3400
@@ -9064,7 +9109,7 @@
         },
         "name": "The Visionary",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-visionary",
-        "price": 4.0,
+        "price": 4.6,
         "reward": "Lioneye's Vision",
         "stack": 6,
         "weight": 9180
@@ -9080,7 +9125,7 @@
         },
         "name": "The Void",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-void",
-        "price": 3.13,
+        "price": 3.0,
         "reward": "",
         "stack": 1,
         "weight": 9782
@@ -9105,7 +9150,7 @@
         },
         "name": "The Warden",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-warden",
-        "price": 2.0,
+        "price": 4.0,
         "reward": "Amulet, Corrupted",
         "stack": 4,
         "weight": 9760
@@ -9144,7 +9189,7 @@
         },
         "name": "The Watcher",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-watcher",
-        "price": 4.91,
+        "price": 3.0,
         "reward": "Crown of Eyes",
         "stack": 12,
         "weight": 3483
@@ -9199,7 +9244,7 @@
         },
         "name": "The White Knight",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-white-knight",
-        "price": 7.0,
+        "price": 5.0,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
         "weight": 22
@@ -9274,7 +9319,7 @@
         },
         "name": "The Witch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-witch",
-        "price": 4.0,
+        "price": 3.4,
         "reward": "Kiara's Determination",
         "stack": 8,
         "weight": 16932
@@ -9298,7 +9343,7 @@
         },
         "name": "The Wolf",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolf",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Rigwald Item",
         "stack": 5,
         "weight": 4638
@@ -9312,7 +9357,7 @@
         },
         "name": "The Wolf's Legacy",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolfs-legacy",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Vaults of Atziri",
         "stack": 4,
         "weight": 1730
@@ -9331,7 +9376,7 @@
         },
         "name": "The Wolf's Shadow",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolfs-shadow",
-        "price": 5.0,
+        "price": 4.99,
         "reward": "Hyaon's Fury",
         "stack": 3,
         "weight": 4666
@@ -9383,7 +9428,7 @@
         },
         "name": "The World Eater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-world-eater",
-        "price": 9.0,
+        "price": 8.0,
         "reward": "Starforge",
         "stack": 8,
         "weight": 13
@@ -9404,7 +9449,7 @@
         },
         "name": "The Wrath",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wrath",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "10x Chaos Orb",
         "stack": 8,
         "weight": 7578
@@ -9446,7 +9491,7 @@
         },
         "name": "Thirst for Knowledge",
         "ninja": "https://poe.ninja/challenge/divination-cards/thirst-for-knowledge",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Gluttony",
         "stack": 5,
         "weight": 7745
@@ -9469,7 +9514,7 @@
         },
         "name": "Three Faces in the Dark",
         "ninja": "https://poe.ninja/challenge/divination-cards/three-faces-in-the-dark",
-        "price": 4.4,
+        "price": 3.0,
         "reward": "3x Chaos Orb",
         "stack": 7,
         "weight": 25407
@@ -9494,7 +9539,7 @@
         },
         "name": "Three Voices",
         "ninja": "https://poe.ninja/challenge/divination-cards/three-voices",
-        "price": 2.18,
+        "price": 2.2,
         "reward": "3x Essence",
         "stack": 3,
         "weight": 11508
@@ -9555,7 +9600,7 @@
         },
         "name": "Time-Lost Relic",
         "ninja": "https://poe.ninja/challenge/divination-cards/time-lost-relic",
-        "price": 4.4,
+        "price": 2.0,
         "reward": "League-Specific Item",
         "stack": 10,
         "weight": 6703
@@ -9575,7 +9620,7 @@
         },
         "name": "Tranquillity",
         "ninja": "https://poe.ninja/challenge/divination-cards/tranquillity",
-        "price": 8.0,
+        "price": 9.6,
         "reward": "Voltaxic Rift",
         "stack": 7,
         "weight": 11
@@ -9625,7 +9670,7 @@
         },
         "name": "Triskaidekaphobia",
         "ninja": "https://poe.ninja/challenge/divination-cards/triskaidekaphobia",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "Map, Map Tier: 13, Quality: +13%, Delirium: 100%, Modifiers: 8, Corrupted",
         "stack": 13,
         "weight": 1170
@@ -9660,7 +9705,7 @@
         },
         "name": "Unchained",
         "ninja": "https://poe.ninja/challenge/divination-cards/unchained",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
         "weight": 372
@@ -9674,7 +9719,7 @@
         },
         "name": "Underground Forest",
         "ninja": "https://poe.ninja/challenge/divination-cards/underground-forest",
-        "price": 15.0,
+        "price": 13.0,
         "reward": "10x Awakened Sextant",
         "stack": 4,
         "weight": 1080
@@ -9693,7 +9738,7 @@
         },
         "name": "Unrequited Love",
         "ninja": "https://poe.ninja/challenge/divination-cards/unrequited-love",
-        "price": 6904.01,
+        "price": 6900.91,
         "reward": "19x Mirror Shard",
         "stack": 16,
         "weight": 4
@@ -9707,7 +9752,7 @@
         },
         "name": "Vanity",
         "ninja": "https://poe.ninja/challenge/divination-cards/vanity",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "Tabula Rasa, Corrupted",
         "stack": 9,
         "weight": 1498
@@ -9767,7 +9812,7 @@
         },
         "name": "Void of the Elements",
         "ninja": "https://poe.ninja/challenge/divination-cards/void-of-the-elements",
-        "price": 5.6,
+        "price": 7.0,
         "reward": "Overpowering Opal Ring, Item Level: 100, Elder Item",
         "stack": 3,
         "weight": 22
@@ -9796,7 +9841,7 @@
         },
         "name": "Volatile Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/volatile-power",
-        "price": 2.0,
+        "price": 4.0,
         "reward": "Vaal Gem, Quality: +20%, Corrupted",
         "stack": 9,
         "weight": 5634
@@ -9813,7 +9858,7 @@
         },
         "name": "Wealth and Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/wealth-and-power",
-        "price": 159.0,
+        "price": 156.24,
         "reward": "Level 4 Enlighten, Corrupted",
         "stack": 11,
         "weight": 25
@@ -9827,7 +9872,7 @@
         },
         "name": "Winter's Embrace",
         "ninja": "https://poe.ninja/challenge/divination-cards/winters-embrace",
-        "price": 25.0,
+        "price": 23.0,
         "reward": "Circle of Fear, Three-Implicit, Synthesised",
         "stack": 2,
         "weight": 41

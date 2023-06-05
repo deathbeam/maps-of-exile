@@ -114,13 +114,13 @@ const MapCard = ({ card }) => {
         {card.boss && (
           <>
             <br />
-            <b>Boss drop</b>
+            <b className="text-warning">Boss drop</b>
           </>
         )}
         {card.weight === 0 && (
           <>
             <br />
-            <b>Cannot drop</b>
+            <b className="text-danger">Cannot drop</b>
           </>
         )}
         {card.value > 0 && tooltip}

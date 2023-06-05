@@ -49,8 +49,12 @@ const MapCard = ({ card }) => {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   }
   if (card.boss) {
+    badgeClass += ' border border-1 border-warning'
+  }
+  if (card.weight === 0) {
     badgeClass += ' border border-1 border-danger'
   }
+
   badgeClass = `badge m-1 ${badgeClass}`
 
   let img = '/img/alch.png'
@@ -111,6 +115,12 @@ const MapCard = ({ card }) => {
           <>
             <br />
             <b>Boss drop</b>
+          </>
+        )}
+        {card.weight === 0 && (
+          <>
+            <br />
+            <b>Cannot drop</b>
           </>
         )}
         {card.value > 0 && tooltip}

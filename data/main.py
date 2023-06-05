@@ -219,7 +219,11 @@ def get_card_data(key, config, card_extra):
                 (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
             )
 
-            percent_change = abs((new_weight - weight_card) / weight_card * 100 if weight_card else threshold)
+            percent_change = abs(
+                (new_weight - weight_card) / weight_card * 100
+                if weight_card
+                else threshold
+            )
 
             if percent_change >= threshold:
                 old_weight = weight_card or 0

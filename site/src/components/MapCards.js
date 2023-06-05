@@ -48,6 +48,9 @@ const MapCard = ({ card }) => {
   } else if (card.score >= 0.5) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   }
+  if (card.boss) {
+    badgeClass += ' border border-1 border-danger'
+  }
   badgeClass = `badge m-1 ${badgeClass}`
 
   let img = '/img/alch.png'

@@ -529,6 +529,8 @@ def get_map_data(map_data, extra_map_data):
             elif name == "tags":
                 if "cannot_be_twinned" in value.text.strip():
                     map_data["boss"]["not_twinnable"] = True
+                if "no_boss" in value.text.strip():
+                    map_data["boss"].pop("ids", None)
             elif name == "icon" and "icon" not in map_data:
                 map_data["icon"] = value.text.strip()
 

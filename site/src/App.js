@@ -33,6 +33,7 @@ function rateMaps(
   cardBaselineInput,
   cardBaselineNumberInput,
   cardMinPriceInput,
+  useStandardPriceInput,
   voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
@@ -48,17 +49,19 @@ function rateMaps(
     const mapCards = []
 
     for (let card of map.cards) {
+      const cardPrice = useStandardPriceInput === true ? card.standardPrice : card.price
       const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
-      const priceEligible = card.price >= cardMinPriceInput
+      const priceEligible = cardPrice >= cardMinPriceInput
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
 
       mapCards.push({
         ...card,
+        price: cardPrice,
         dropPoolItems: dropPoolItems,
         weight: dropEligible ? card.weight : 0,
-        value: priceEligible && dropEligible ? card.price * (card.weight / card.poolWeight) * dropPoolItems : 0
+        value: priceEligible && dropEligible ? cardPrice * (card.weight / card.poolWeight) * dropPoolItems : 0
       })
     }
 
@@ -134,7 +137,7 @@ function filterMaps(ratedMaps, currentSearch) {
 function App() {
   const [isPending, startTransition] = useTransition()
   const shareableRef = useRef(null)
-  const poeRef = useRef(null)
+  const poeRegexRef = useRef(null)
   const searchRef = useRef(null)
 
   const [atlasFull, setAtlasFull] = usePersistedState('atlasFull', false, startTransition)
@@ -174,6 +177,12 @@ function App() {
     startTransition,
     shareableRef
   )
+  const [useStandardPriceInput, setUseStandardPriceInput, useStandardPriceReset, useStandardPriceRef] = useInputField(
+    'useStandardPriceInput',
+    false,
+    startTransition,
+    shareableRef
+  )
 
   const ratedMaps = useMemo(
     () =>
@@ -187,6 +196,7 @@ function App() {
         cardBaselineInput,
         cardBaselineNumberInput,
         cardMinPriceInput,
+        useStandardPriceInput,
         atlasVoidstones
       ),
     [
@@ -197,6 +207,7 @@ function App() {
       cardBaselineInput,
       cardBaselineNumberInput,
       cardMinPriceInput,
+      useStandardPriceInput,
       atlasVoidstones
     ]
   )
@@ -238,18 +249,21 @@ function App() {
   let searchClass = ''
   let inputSectionClass = ''
   let inputClass = ''
+  let bigInputClass = ''
   let atlasClass = ''
 
   if (atlasFull) {
     containerClass = containerClass + ' col-lg-3 col-12 full-height'
     searchClass = 'p-1'
     inputClass = 'col-lg-12 col-md-6 col-12 p-1'
+    bigInputClass = inputClass
     atlasClass = 'col-lg-9 col-12'
   } else {
     containerClass = containerClass + ' row g-0'
     searchClass = 'col-lg-4 col-12 p-1'
     inputSectionClass = 'col col-lg-8 col-12'
     inputClass = 'col-lg-3 col-md-6 col-12 p-1'
+    bigInputClass = 'col-lg-12 col-md-6 col-12 p-1'
   }
 
   return (
@@ -457,6 +471,26 @@ function App() {
               </div>
               <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">Source of price data, can be either League or Standard</span>
+                  <label className="form-label">Card price source</label>
+                </span>
+                <div className="input-group">
+                  <select
+                    className="form-control"
+                    ref={useStandardPriceRef}
+                    defaultValue={useStandardPriceInput}
+                    onChange={setUseStandardPriceInput}
+                  >
+                    <option value="false">League</option>
+                    <option value="true">Standard</option>
+                  </select>
+                  <button className="btn btn-outline-secondary" onClick={useStandardPriceReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className={inputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Generates string that can be copy/pasted to Path of Exile search boxes that will search for the
                     filtered maps. PoE search fields are limited to 50 characters so the string is not generated until
@@ -468,17 +502,17 @@ function App() {
                   <input
                     className="form-control"
                     type="text"
-                    ref={poeRef}
+                    ref={poeRegexRef}
                     value={poeRegex}
                     readOnly={true}
                     onFocus={e => e.target.select()}
                   />
-                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(poeRef)}>
+                  <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(poeRegexRef)}>
                     <i className="fa-solid fa-copy fa-fw" />
                   </button>
                 </div>
               </div>
-              <div className={inputClass}>
+              <div className={bigInputClass}>
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
                   <input

@@ -182,9 +182,9 @@ def get_card_data(key, config, card_extra):
         Decimal(patient_amount) / Decimal(amounts_total)
     )
 
-    url = config["prices"] + league
-    print(f"Getting card prices from {url}")
-    prices = requests.get(url).json()["lines"]
+    print(f"Getting card prices for {league} and Standard")
+    prices = requests.get(config["prices"] + league).json()["lines"]
+    standardPrices = requests.get(config["prices"] + "Standard").json()["lines"]
 
     out = []
     for price_card in prices:
@@ -200,6 +200,13 @@ def get_card_data(key, config, card_extra):
         card = {
             "name": price_card["name"],
             "price": price_card["chaosValue"],
+            "standardPrice": next(
+                map(
+                    lambda x: x["chaosValue"],
+                    filter(lambda x: x["name"] == price_card["name"], standardPrices),
+                ),
+                None,
+            ),
             "stack": price_card.get("stackSize", 1),
             "art": price_card["artFilename"],
             "reward": reward,
@@ -437,6 +444,7 @@ def get_maps(key, config):
 
     for m in out:
         name = m["name"]
+        unique = not name.endswith(" Map")
         m["shorthand"] = find_shortest_substring(
             m["name"].replace(" Map", ""), out_names
         )
@@ -444,6 +452,7 @@ def get_maps(key, config):
         m["layout"] = {}
         m["rating"] = {}
         m["info"] = {}
+        m["unique"] = unique
 
         existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
         if existing_meta:
@@ -462,7 +471,7 @@ def get_maps(key, config):
             m["rating"] = existing_rating
         existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
         if existing_wiki:
-            if not name.endswith(" Map") and "unique area id" in existing_wiki:
+            if unique and "unique area id" in existing_wiki:
                 m["id"] = existing_wiki["unique area id"]
             else:
                 m["id"] = existing_wiki["area id"]

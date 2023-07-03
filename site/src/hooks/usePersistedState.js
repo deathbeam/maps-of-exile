@@ -19,7 +19,7 @@ export default function usePersistedState(key, def, startTransition, locationRef
 
     try {
       const item = localStorage.getItem(key)
-      return item && item !== '' ? parseValue(JSON.parse(item)) : def
+      return item && item !== '' ? parseValue(JSON.parse(item), def) : def
     } catch (e) {
       console.warn(e)
       return def
@@ -44,9 +44,9 @@ export default function usePersistedState(key, def, startTransition, locationRef
     e => {
       const val = e.hasOwnProperty('target') ? e.target.value : e
       if (startTransition) {
-        startTransition(() => setVal(val === '' ? def : val))
+        startTransition(() => setVal(val === '' ? def : parseValue(val, def)))
       } else {
-        setVal(val === '' ? def : val)
+        setVal(val === '' ? def : parseValue(val, def))
       }
     }
   ]

@@ -35,6 +35,7 @@
         "name": "Acton's Nightmare",
         "rating": {},
         "shorthand": "Ac",
+        "unique": true,
         "x": 656,
         "y": 425
     },
@@ -77,6 +78,7 @@
             "layout": 8
         },
         "shorthand": "ay",
+        "unique": false,
         "x": 462,
         "y": 423
     },
@@ -93,7 +95,8 @@
         "level": 68,
         "name": "Altered Distant Memory",
         "rating": {},
-        "shorthand": "Alt"
+        "shorthand": "Alt",
+        "unique": true
     },
     {
         "boss": {
@@ -136,6 +139,7 @@
             "layout": 6
         },
         "shorthand": " Ne",
+        "unique": false,
         "x": 243,
         "y": 196
     },
@@ -180,6 +184,7 @@
             "layout": 6
         },
         "shorthand": "Tom",
+        "unique": false,
         "x": 676,
         "y": 257
     },
@@ -226,6 +231,7 @@
             "layout": 8
         },
         "shorthand": "Arc",
+        "unique": false,
         "x": 679,
         "y": 351
     },
@@ -270,6 +276,7 @@
             "layout": 8
         },
         "shorthand": " L",
+        "unique": false,
         "x": 286,
         "y": 138
     },
@@ -312,6 +319,7 @@
             "layout": 8
         },
         "shorthand": "Arm",
+        "unique": false,
         "x": 208,
         "y": 259
     },
@@ -354,6 +362,7 @@
             "layout": 4
         },
         "shorthand": "Ars",
+        "unique": false,
         "x": 223,
         "y": 79
     },
@@ -399,6 +408,7 @@
             "layout": 8
         },
         "shorthand": "Ato",
+        "unique": false,
         "x": 818,
         "y": 366
     },
@@ -415,7 +425,8 @@
         "level": 68,
         "name": "Augmented Distant Memory",
         "rating": {},
-        "shorthand": "Au"
+        "shorthand": "Au",
+        "unique": true
     },
     {
         "boss": {
@@ -457,6 +468,7 @@
             "layout": 8
         },
         "shorthand": "Ba",
+        "unique": false,
         "x": 303,
         "y": 115
     },
@@ -501,6 +513,7 @@
             "layout": 10
         },
         "shorthand": "Beach",
+        "unique": false,
         "x": 417,
         "y": 172
     },
@@ -545,6 +558,7 @@
             "layout": 10
         },
         "shorthand": "fr",
+        "unique": false,
         "x": 677,
         "y": 491
     },
@@ -588,6 +602,7 @@
             "layout": 4
         },
         "shorthand": "Bo",
+        "unique": false,
         "x": 555,
         "y": 423
     },
@@ -629,6 +644,7 @@
         "name": "Caer Blaidd, Wolfpack's Den",
         "rating": {},
         "shorthand": ",",
+        "unique": true,
         "x": 798,
         "y": 95
     },
@@ -675,6 +691,7 @@
             "layout": 8
         },
         "shorthand": "Cal",
+        "unique": false,
         "x": 761,
         "y": 255
     },
@@ -722,6 +739,7 @@
             "layout": 10
         },
         "shorthand": "ny",
+        "unique": false,
         "x": 381,
         "y": 278
     },
@@ -765,6 +783,7 @@
             "layout": 8
         },
         "shorthand": "tl",
+        "unique": false,
         "x": 204,
         "y": 327
     },
@@ -808,6 +827,7 @@
             "layout": 4
         },
         "shorthand": "Cel",
+        "unique": false,
         "x": 561,
         "y": 177
     },
@@ -856,6 +876,7 @@
             "layout": 10
         },
         "shorthand": "Cem",
+        "unique": false,
         "x": 644,
         "y": 373
     },
@@ -900,6 +921,7 @@
             "layout": 6
         },
         "shorthand": "hat",
+        "unique": false,
         "x": 736,
         "y": 287
     },
@@ -948,6 +970,7 @@
             "layout": 8
         },
         "shorthand": "Ci",
+        "unique": false,
         "x": 285,
         "y": 348
     },
@@ -994,6 +1017,7 @@
             "layout": 6
         },
         "shorthand": "ld ",
+        "unique": false,
         "x": 573,
         "y": 213
     },
@@ -1037,6 +1061,7 @@
             "layout": 6
         },
         "shorthand": "nn",
+        "unique": false,
         "x": 422,
         "y": 493
     },
@@ -1081,6 +1106,7 @@
             "layout": 6
         },
         "shorthand": "ss",
+        "unique": false,
         "x": 650,
         "y": 84
     },
@@ -1124,6 +1150,7 @@
             "layout": 4
         },
         "shorthand": "rv",
+        "unique": false,
         "x": 560,
         "y": 144
     },
@@ -1170,6 +1197,7 @@
             "layout": 6
         },
         "shorthand": "l R",
+        "unique": false,
         "x": 223,
         "y": 289
     },
@@ -1214,6 +1242,7 @@
             "layout": 4
         },
         "shorthand": "Core",
+        "unique": false,
         "x": 177,
         "y": 97
     },
@@ -1230,7 +1259,8 @@
         "level": 79,
         "name": "Cortex",
         "rating": {},
-        "shorthand": "Cortex"
+        "shorthand": "Cortex",
+        "unique": true
     },
     {
         "boss": {
@@ -1276,6 +1306,7 @@
             "layout": 6
         },
         "shorthand": "Cou",
+        "unique": false,
         "x": 755,
         "y": 363
     },
@@ -1321,6 +1352,7 @@
             "layout": 8
         },
         "shorthand": "Cov",
+        "unique": false,
         "x": 339,
         "y": 68
     },
@@ -1366,6 +1398,7 @@
             "layout": 6
         },
         "shorthand": "Cra",
+        "unique": false,
         "x": 725,
         "y": 136
     },
@@ -1410,6 +1443,7 @@
             "layout": 8
         },
         "shorthand": "son Te",
+        "unique": false,
         "x": 593,
         "y": 241
     },
@@ -1453,6 +1487,7 @@
             "layout": 6
         },
         "shorthand": "nsh",
+        "unique": false,
         "x": 504,
         "y": 158
     },
@@ -1501,6 +1536,7 @@
             "layout": 8
         },
         "shorthand": "Ore",
+        "unique": false,
         "x": 302,
         "y": 263
     },
@@ -1544,6 +1580,7 @@
             "layout": 4
         },
         "shorthand": "d Cr",
+        "unique": false,
         "x": 798,
         "y": 285
     },
@@ -1581,6 +1618,7 @@
         "name": "Death and Taxes",
         "rating": {},
         "shorthand": " a",
+        "unique": true,
         "x": 176,
         "y": 162
     },
@@ -1626,6 +1664,7 @@
             "layout": 8
         },
         "shorthand": "ef",
+        "unique": false,
         "x": 582,
         "y": 120
     },
@@ -1673,6 +1712,7 @@
             "layout": 8
         },
         "shorthand": "Sp",
+        "unique": false,
         "x": 360,
         "y": 144
     },
@@ -1717,6 +1757,7 @@
             "layout": 8
         },
         "shorthand": "Dig",
+        "unique": false,
         "x": 736,
         "y": 62
     },
@@ -1744,7 +1785,8 @@
         "level": 81,
         "name": "Doryani's Machinarium",
         "rating": {},
-        "shorthand": "Do"
+        "shorthand": "Do",
+        "unique": true
     },
     {
         "boss": {
@@ -1783,6 +1825,7 @@
             "layout": 6
         },
         "shorthand": "Dr",
+        "unique": false,
         "x": 355,
         "y": 485
     },
@@ -1827,6 +1870,7 @@
             "layout": 10
         },
         "shorthand": "nes",
+        "unique": false,
         "x": 375,
         "y": 442
     },
@@ -1870,6 +1914,7 @@
             "layout": 2
         },
         "shorthand": "eon",
+        "unique": false,
         "x": 202,
         "y": 114
     },
@@ -1915,6 +1960,7 @@
             "layout": 8
         },
         "shorthand": "E",
+        "unique": false,
         "x": 420,
         "y": 427
     },
@@ -1959,6 +2005,7 @@
             "layout": 4
         },
         "shorthand": "Fa",
+        "unique": false,
         "x": 475,
         "y": 192
     },
@@ -2005,6 +2052,7 @@
             "layout": 10
         },
         "shorthand": "Fi",
+        "unique": false,
         "x": 313,
         "y": 420
     },
@@ -2049,6 +2097,7 @@
             "layout": 6
         },
         "shorthand": "Fl",
+        "unique": false,
         "x": 503,
         "y": 231
     },
@@ -2096,6 +2145,7 @@
             "layout": 4
         },
         "shorthand": "rb",
+        "unique": false,
         "x": 658,
         "y": 291
     },
@@ -2130,7 +2180,8 @@
         "level": 83,
         "name": "Forge of the Phoenix Map",
         "rating": {},
-        "shorthand": "ix"
+        "shorthand": "ix",
+        "unique": false
     },
     {
         "boss": {
@@ -2171,6 +2222,7 @@
             "layout": 6
         },
         "shorthand": "Fou",
+        "unique": false,
         "x": 766,
         "y": 193
     },
@@ -2214,6 +2266,7 @@
             "layout": 8
         },
         "shorthand": "Fr",
+        "unique": false,
         "x": 629,
         "y": 162
     },
@@ -2256,6 +2309,7 @@
             "layout": 8
         },
         "shorthand": "Fu",
+        "unique": false,
         "x": 197,
         "y": 181
     },
@@ -2300,6 +2354,7 @@
             "layout": 8
         },
         "shorthand": "Ge",
+        "unique": false,
         "x": 305,
         "y": 178
     },
@@ -2343,6 +2398,7 @@
             "layout": 8
         },
         "shorthand": "ott",
+        "unique": false,
         "x": 535,
         "y": 393
     },
@@ -2364,7 +2420,8 @@
         "level": 78,
         "name": "Hall of Grandmasters",
         "rating": {},
-        "shorthand": "dm"
+        "shorthand": "dm",
+        "unique": true
     },
     {
         "boss": {
@@ -2400,6 +2457,7 @@
         "name": "Hallowed Ground",
         "rating": {},
         "shorthand": "d G",
+        "unique": true,
         "x": 691,
         "y": 388
     },
@@ -2445,6 +2503,7 @@
             "layout": 8
         },
         "shorthand": "fe",
+        "unique": false,
         "x": 261,
         "y": 460
     },
@@ -2465,7 +2524,8 @@
         "level": 83,
         "name": "Infused Beachhead",
         "rating": {},
-        "shorthand": "fu"
+        "shorthand": "fu",
+        "unique": true
     },
     {
         "boss": {
@@ -2508,6 +2568,7 @@
             "layout": 10
         },
         "shorthand": "J",
+        "unique": false,
         "x": 472,
         "y": 143
     },
@@ -2552,6 +2613,7 @@
             "layout": 4
         },
         "shorthand": "bo",
+        "unique": false,
         "x": 265,
         "y": 392
     },
@@ -2596,6 +2658,7 @@
             "layout": 8
         },
         "shorthand": "Lair",
+        "unique": false,
         "x": 575,
         "y": 376
     },
@@ -2630,7 +2693,8 @@
         "level": 83,
         "name": "Lair of the Hydra Map",
         "rating": {},
-        "shorthand": "Hy"
+        "shorthand": "Hy",
+        "unique": false
     },
     {
         "boss": {
@@ -2671,6 +2735,7 @@
             "layout": 8
         },
         "shorthand": "Le",
+        "unique": false,
         "x": 191,
         "y": 138
     },
@@ -2722,6 +2787,7 @@
             "layout": 8
         },
         "shorthand": "Li",
+        "unique": false,
         "x": 531,
         "y": 355
     },
@@ -2756,6 +2822,7 @@
         "name": "Maelstr\u00f6m of Chaos",
         "rating": {},
         "shorthand": "\u00f6",
+        "unique": true,
         "x": 796,
         "y": 374
     },
@@ -2800,6 +2867,7 @@
             "layout": 8
         },
         "shorthand": "fo",
+        "unique": false,
         "x": 727,
         "y": 169
     },
@@ -2837,6 +2905,7 @@
         "name": "Mao Kun",
         "rating": {},
         "shorthand": "K",
+        "unique": true,
         "x": 515,
         "y": 275
     },
@@ -2880,6 +2949,7 @@
             "layout": 8
         },
         "shorthand": "Mar",
+        "unique": false,
         "x": 588,
         "y": 338
     },
@@ -2923,6 +2993,7 @@
             "layout": 2
         },
         "shorthand": "Maze",
+        "unique": false,
         "x": 646,
         "y": 114
     },
@@ -2957,7 +3028,8 @@
         "level": 83,
         "name": "Maze of the Minotaur Map",
         "rating": {},
-        "shorthand": "aur"
+        "shorthand": "aur",
+        "unique": false
     },
     {
         "boss": {
@@ -3001,6 +3073,7 @@
             "layout": 4
         },
         "shorthand": "ner",
+        "unique": false,
         "x": 504,
         "y": 326
     },
@@ -3045,6 +3118,7 @@
             "layout": 6
         },
         "shorthand": "Mo",
+        "unique": false,
         "x": 210,
         "y": 413
     },
@@ -3088,6 +3162,7 @@
             "layout": 2
         },
         "shorthand": "Mu",
+        "unique": false,
         "x": 775,
         "y": 155
     },
@@ -3133,6 +3208,7 @@
             "layout": 2
         },
         "shorthand": "po",
+        "unique": false,
         "x": 221,
         "y": 158
     },
@@ -3164,6 +3240,7 @@
         "name": "Oba's Cursed Trove",
         "rating": {},
         "shorthand": "Ob",
+        "unique": true,
         "x": 365,
         "y": 171
     },
@@ -3201,6 +3278,7 @@
         "name": "Olmec's Sanctum",
         "rating": {},
         "shorthand": "Ol",
+        "unique": true,
         "x": 564,
         "y": 398
     },
@@ -3245,6 +3323,7 @@
             "layout": 6
         },
         "shorthand": "Orc",
+        "unique": false,
         "x": 749,
         "y": 400
     },
@@ -3290,6 +3369,7 @@
             "layout": 6
         },
         "shorthand": "n R",
+        "unique": false,
         "x": 410,
         "y": 215
     },
@@ -3335,6 +3415,7 @@
             "layout": 6
         },
         "shorthand": " Sh",
+        "unique": false,
         "x": 631,
         "y": 404
     },
@@ -3380,6 +3461,7 @@
             "layout": 8
         },
         "shorthand": "go",
+        "unique": false,
         "x": 596,
         "y": 306
     },
@@ -3423,6 +3505,7 @@
             "layout": 8
         },
         "shorthand": "Pie",
+        "unique": false,
         "x": 197,
         "y": 220
     },
@@ -3460,6 +3543,7 @@
         "name": "Pillars of Arun",
         "rating": {},
         "shorthand": "Pillars of Arun",
+        "unique": true,
         "x": 355,
         "y": 415
     },
@@ -3505,6 +3589,7 @@
             "layout": 4
         },
         "shorthand": "Pit",
+        "unique": false,
         "x": 722,
         "y": 318
     },
@@ -3539,7 +3624,8 @@
         "level": 83,
         "name": "Pit of the Chimera Map",
         "rating": {},
-        "shorthand": "Chi"
+        "shorthand": "Chi",
+        "unique": false
     },
     {
         "boss": {
@@ -3584,6 +3670,7 @@
             "layout": 8
         },
         "shorthand": "lat",
+        "unique": false,
         "x": 345,
         "y": 336
     },
@@ -3628,6 +3715,7 @@
             "layout": 4
         },
         "shorthand": "za",
+        "unique": false,
         "x": 650,
         "y": 190
     },
@@ -3665,6 +3753,7 @@
         "name": "Poorjoy's Asylum",
         "rating": {},
         "shorthand": "Poorjoy's Asylum",
+        "unique": true,
         "x": 516,
         "y": 97
     },
@@ -3712,6 +3801,7 @@
             "layout": 8
         },
         "shorthand": "Por",
+        "unique": false,
         "x": 812,
         "y": 422
     },
@@ -3767,6 +3857,7 @@
             "layout": 6
         },
         "shorthand": "ci",
+        "unique": false,
         "x": 642,
         "y": 451
     },
@@ -3812,6 +3903,7 @@
             "layout": 4
         },
         "shorthand": "ks",
+        "unique": false,
         "x": 708,
         "y": 449
     },
@@ -3856,6 +3948,7 @@
             "layout": 8
         },
         "shorthand": "ial P",
+        "unique": false,
         "x": 490,
         "y": 365
     },
@@ -3901,6 +3994,7 @@
             "layout": 10
         },
         "shorthand": "Pro",
+        "unique": false,
         "x": 801,
         "y": 324
     },
@@ -3948,6 +4042,7 @@
             "layout": 8
         },
         "shorthand": "co",
+        "unique": false,
         "x": 461,
         "y": 84
     },
@@ -3992,6 +4087,7 @@
             "layout": 8
         },
         "shorthand": "Ram",
+        "unique": false,
         "x": 312,
         "y": 228
     },
@@ -4035,6 +4131,7 @@
             "layout": 6
         },
         "shorthand": "be",
+        "unique": false,
         "x": 471,
         "y": 263
     },
@@ -4051,7 +4148,8 @@
         "level": 79,
         "name": "Replica Cortex",
         "rating": {},
-        "shorthand": "a C"
+        "shorthand": "a C",
+        "unique": true
     },
     {
         "boss": {
@@ -4073,7 +4171,8 @@
         "level": 69,
         "name": "Replica Pillars of Arun",
         "rating": {},
-        "shorthand": " Pi"
+        "shorthand": " Pi",
+        "unique": true
     },
     {
         "boss": {
@@ -4095,7 +4194,8 @@
         "level": 81,
         "name": "Replica Poorjoy's Asylum",
         "rating": {},
-        "shorthand": "a Po"
+        "shorthand": "a Po",
+        "unique": true
     },
     {
         "boss": {
@@ -4137,6 +4237,7 @@
             "layout": 6
         },
         "shorthand": "si",
+        "unique": false,
         "x": 204,
         "y": 368
     },
@@ -4153,7 +4254,8 @@
         "level": 68,
         "name": "Rewritten Distant Memory",
         "rating": {},
-        "shorthand": "wr"
+        "shorthand": "wr",
+        "unique": true
     },
     {
         "boss": {
@@ -4195,6 +4297,7 @@
             "layout": 4
         },
         "shorthand": "Sc",
+        "unique": false,
         "x": 596,
         "y": 494
     },
@@ -4243,6 +4346,7 @@
             "layout": 8
         },
         "shorthand": "py",
+        "unique": false,
         "x": 398,
         "y": 249
     },
@@ -4288,6 +4392,7 @@
             "layout": 8
         },
         "shorthand": "Sho",
+        "unique": false,
         "x": 503,
         "y": 300
     },
@@ -4334,6 +4439,7 @@
             "layout": 4
         },
         "shorthand": "Shrine",
+        "unique": false,
         "x": 395,
         "y": 384
     },
@@ -4381,6 +4487,7 @@
             "layout": 8
         },
         "shorthand": "eg",
+        "unique": false,
         "x": 687,
         "y": 228
     },
@@ -4425,6 +4532,7 @@
             "layout": 8
         },
         "shorthand": "Sil",
+        "unique": false,
         "x": 605,
         "y": 424
     },
@@ -4466,6 +4574,7 @@
             "layout": 6
         },
         "shorthand": "gn",
+        "unique": false,
         "x": 480,
         "y": 389
     },
@@ -4512,6 +4621,7 @@
             "layout": 10
         },
         "shorthand": "Str",
+        "unique": false,
         "x": 761,
         "y": 481
     },
@@ -4556,6 +4666,7 @@
             "layout": 8
         },
         "shorthand": "Su",
+        "unique": false,
         "x": 573,
         "y": 273
     },
@@ -4602,6 +4713,7 @@
             "layout": 6
         },
         "shorthand": "Temple",
+        "unique": false,
         "x": 463,
         "y": 111
     },
@@ -4647,6 +4759,7 @@
             "layout": 8
         },
         "shorthand": "Ter",
+        "unique": false,
         "x": 729,
         "y": 106
     },
@@ -4667,7 +4780,8 @@
         "level": 72,
         "name": "The Beachhead",
         "rating": {},
-        "shorthand": "e B"
+        "shorthand": "e B",
+        "unique": true
     },
     {
         "boss": {
@@ -4697,6 +4811,7 @@
         "name": "The Coward's Trial",
         "rating": {},
         "shorthand": "d'",
+        "unique": true,
         "x": 824,
         "y": 267
     },
@@ -4728,6 +4843,7 @@
         "name": "The Putrid Cloister",
         "rating": {},
         "shorthand": "Cl",
+        "unique": true,
         "x": 802,
         "y": 168
     },
@@ -4748,7 +4864,8 @@
         "level": 83,
         "name": "The Tower of Ordeals",
         "rating": {},
-        "shorthand": "Ord"
+        "shorthand": "Ord",
+        "unique": true
     },
     {
         "boss": {
@@ -4780,6 +4897,7 @@
         "name": "The Twilight Temple",
         "rating": {},
         "shorthand": " Tw",
+        "unique": true,
         "x": 172,
         "y": 380
     },
@@ -4807,7 +4925,8 @@
         "level": 72,
         "name": "The Vinktar Square",
         "rating": {},
-        "shorthand": "Vi"
+        "shorthand": "Vi",
+        "unique": true
     },
     {
         "boss": {
@@ -4850,6 +4969,7 @@
             "layout": 6
         },
         "shorthand": "Thi",
+        "unique": false,
         "x": 418,
         "y": 131
     },
@@ -4897,6 +5017,7 @@
             "layout": 8
         },
         "shorthand": "Tower",
+        "unique": false,
         "x": 438,
         "y": 354
     },
@@ -4941,6 +5062,7 @@
             "layout": 10
         },
         "shorthand": "ox",
+        "unique": false,
         "x": 296,
         "y": 308
     },
@@ -4985,6 +5107,7 @@
             "layout": 10
         },
         "shorthand": " I",
+        "unique": false,
         "x": 341,
         "y": 96
     },
@@ -5001,7 +5124,8 @@
         "level": 68,
         "name": "Twisted Distant Memory",
         "rating": {},
-        "shorthand": "wis"
+        "shorthand": "wis",
+        "unique": true
     },
     {
         "boss": {
@@ -5043,6 +5167,7 @@
             "layout": 10
         },
         "shorthand": "nd R",
+        "unique": false,
         "x": 768,
         "y": 96
     },
@@ -5090,6 +5215,7 @@
             "layout": 8
         },
         "shorthand": "d S",
+        "unique": false,
         "x": 367,
         "y": 191
     },
@@ -5120,7 +5246,8 @@
         "level": 75,
         "name": "Untainted Paradise",
         "rating": {},
-        "shorthand": "Pa"
+        "shorthand": "Pa",
+        "unique": true
     },
     {
         "boss": {
@@ -5168,6 +5295,7 @@
             "layout": 2
         },
         "shorthand": "Py",
+        "unique": false,
         "x": 330,
         "y": 379
     },
@@ -5211,7 +5339,8 @@
             "density": 6,
             "layout": 2
         },
-        "shorthand": "l T"
+        "shorthand": "l T",
+        "unique": false
     },
     {
         "boss": {
@@ -5241,6 +5370,7 @@
         "name": "Vaults of Atziri",
         "rating": {},
         "shorthand": "tz",
+        "unique": true,
         "x": 359,
         "y": 366
     },
@@ -5283,6 +5413,7 @@
             "layout": 6
         },
         "shorthand": "Vo",
+        "unique": false,
         "x": 561,
         "y": 75
     },
@@ -5327,6 +5458,7 @@
             "layout": 10
         },
         "shorthand": "te ",
+        "unique": false,
         "x": 414,
         "y": 306
     },
@@ -5369,6 +5501,7 @@
             "layout": 6
         },
         "shorthand": "ela",
+        "unique": false,
         "x": 792,
         "y": 222
     },
@@ -5406,6 +5539,7 @@
         "name": "Whakawairua Tuahu",
         "rating": {},
         "shorthand": "Tu",
+        "unique": true,
         "x": 814,
         "y": 463
     },
@@ -5450,6 +5584,7 @@
             "layout": 8
         },
         "shorthand": "rf",
+        "unique": false,
         "x": 671,
         "y": 151
     }

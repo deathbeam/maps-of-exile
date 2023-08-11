@@ -27,6 +27,7 @@ function calculateCardData(weight, card) {
 
   return {
     ...card,
+    mapWeight: weight,
     map: calcMap,
     kirac: calcKirac
   }
@@ -49,7 +50,7 @@ function CardRateTooltip({ rate, description, name }) {
   )
 }
 
-const MapCard = ({ weight, card }) => {
+const MapCard = ({ card }) => {
   let badgeClass = 'bg-secondary text-dark'
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -92,7 +93,7 @@ const MapCard = ({ weight, card }) => {
       <CardRateTooltip rate={card.map} description={'map'} />
       <hr />
       <b>{card.weight}</b> (card weight)
-      <br />/ <b>{weight}</b> (map pool weight)
+      <br />/ <b>{card.mapWeight}</b> (map pool weight)
       <br />
       <CardRateTooltip rate={card.kirac} description={'kirac mission'} />
     </>
@@ -172,7 +173,7 @@ const MapCards = ({ weight, cards }) => {
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard weight={weight} card={c} />
+          <MapCard card={c} />
         ))}
       </div>
     </div>

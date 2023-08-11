@@ -41,7 +41,7 @@ const Map = ({ map, currentSearch, addToInput, voidstones }) => {
             <MapConnected connected={map.connected} />
           </td>
           <td>
-            <MapCards cards={map.cards} />
+            <MapCards weight={map.weight} cards={map.cards} />
           </td>
         </>
       ) : (

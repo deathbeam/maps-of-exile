@@ -1,8 +1,7 @@
 import './MapCards.css'
 import { useMemo } from 'react'
 
-function calculateCardData(card) {
-  const mapRate = (card.weight / card.poolWeight) * card.dropPoolItems
+function calcRate(mapRate, price) {
   let perMap = 1
   let everyMap = 1 / mapRate
   if (everyMap < 1) {
@@ -13,31 +12,44 @@ function calculateCardData(card) {
   }
 
   return {
-    ...card,
-    value: Math.round(card.value * 1000) / 1000,
     perMap,
-    everyMap
+    everyMap,
+    value: Math.round(price * mapRate * 1000) / 1000
   }
 }
 
-function CardDataTooltip({ card, withName = false }) {
-  return withName ? (
+function calculateCardData(weight, card) {
+  const mapRate = (card.weight / card.poolWeight) * card.dropPoolItems
+  const kiracRate = card.weight / weight
+
+  const calcMap = calcRate(mapRate, card.price)
+  const calcKirac = calcRate(kiracRate, card.price)
+
+  return {
+    ...card,
+    map: calcMap,
+    kirac: calcKirac
+  }
+}
+
+function CardRateTooltip({ rate, description, name }) {
+  const perDescription = rate.everyMap > 1 ? description + 's' : description
+  return !!name ? (
     <>
-      <b>{card.perMap}</b> {withName && <b>{card.name}</b>} every <b>{card.everyMap > 1 && card.everyMap}</b>{' '}
-      {card.everyMap > 1 ? 'maps' : 'map'}
-      <br />= <b>{card.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
+      <b>{rate.perMap}</b> <b>{name}</b> every <b>{rate.everyMap > 1 && rate.everyMap}</b> {perDescription}
+      <br />= <b>{rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {description}
       <br />
     </>
   ) : (
     <>
-      <br />= <b>{card.perMap}</b> every <b>{card.everyMap > 1 && card.everyMap}</b>{' '}
-      {card.everyMap > 1 ? 'maps' : 'map'}
-      <br />= <b>{card.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per map
+      = <b>{rate.perMap}</b> every <b>{rate.everyMap > 1 && rate.everyMap}</b> {perDescription}
+      <br />= <b>{rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {description}
+      <br />
     </>
   )
 }
 
-const MapCard = ({ card }) => {
+const MapCard = ({ weight, card }) => {
   let badgeClass = 'bg-secondary text-dark'
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -76,7 +88,13 @@ const MapCard = ({ card }) => {
           <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
         </>
       )}
-      <CardDataTooltip card={card} />
+      <br />
+      <CardRateTooltip rate={card.map} description={'map'} />
+      <hr />
+      <b>{card.weight}</b> (card weight)
+      <br />/ <b>{weight}</b> (map pool weight)
+      <br />
+      <CardRateTooltip rate={card.kirac} description={'kirac mission'} />
     </>
   )
 
@@ -123,7 +141,7 @@ const MapCard = ({ card }) => {
             <b className="text-danger">Cannot drop</b>
           </>
         )}
-        {card.value > 0 && tooltip}
+        {tooltip}
       </span>
       <a className={badgeClass} href={card.ninja} target="_blank" rel="noreferrer">
         <img src={img} alt="" width="16" height="16" className="me-1" />
@@ -134,9 +152,9 @@ const MapCard = ({ card }) => {
   )
 }
 
-const MapCards = ({ cards }) => {
+const MapCards = ({ weight, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
-  const cardsWithData = useMemo(() => cards.map(c => calculateCardData(c)), [cards])
+  const cardsWithData = useMemo(() => cards.map(c => calculateCardData(weight, c)), [weight, cards])
 
   return (
     <div className="d-lg-flex flex-row">
@@ -146,7 +164,7 @@ const MapCards = ({ cards }) => {
             {cardsWithData
               .filter(c => c.value > 0)
               .map(c => (
-                <CardDataTooltip card={c} withName={true} />
+                <CardRateTooltip rate={c.map} description={'map'} name={c.name} />
               ))}
           </span>
           <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
@@ -154,7 +172,7 @@ const MapCards = ({ cards }) => {
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard card={c} />
+          <MapCard weight={weight} card={c} />
         ))}
       </div>
     </div>

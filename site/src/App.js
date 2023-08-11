@@ -67,6 +67,7 @@ function rateMaps(
 
     return {
       ...map,
+      weight: mapCards.reduce((a, v) => a + v.weight, 0),
       cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
     }
   })

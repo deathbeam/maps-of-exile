@@ -1,7 +1,7 @@
 import './MapCards.css'
 import { useMemo } from 'react'
 
-function calcRate(mapRate, price) {
+function calcRate(mapRate, price, stack) {
   let perMap = 1
   let everyMap = 1 / mapRate
   if (everyMap < 1) {
@@ -14,7 +14,7 @@ function calcRate(mapRate, price) {
   return {
     perMap,
     everyMap,
-    value: Math.round(price * mapRate * 1000) / 1000
+    value: Math.round(price * mapRate * stack * 1000) / 1000
   }
 }
 
@@ -22,8 +22,8 @@ function calculateCardData(weight, card) {
   const mapRate = (card.weight / card.poolWeight) * card.dropPoolItems
   const kiracRate = card.weight / weight
 
-  const calcMap = calcRate(mapRate, card.price)
-  const calcKirac = calcRate(kiracRate, card.price)
+  const calcMap = calcRate(mapRate, card.price, 1)
+  const calcKirac = calcRate(kiracRate, card.price, card.stack)
 
   return {
     ...card,

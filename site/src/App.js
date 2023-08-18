@@ -33,7 +33,8 @@ function rateMaps(
   cardBaselineInput,
   cardBaselineNumberInput,
   cardMinPriceInput,
-  useStandardPriceInput,
+  cardPriceSourceInput,
+  cardValueSourceInput,
   voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
@@ -49,9 +50,8 @@ function rateMaps(
     const mapCards = []
 
     for (let card of map.cards) {
-      const cardPrice = useStandardPriceInput === true ? card.standardPrice : card.price
-      const dropPoolItems = 1 / (cardWeightBaseline / card.poolWeight) / (card.boss ? 10 : 1)
-      const priceEligible = cardPrice >= cardMinPriceInput
+      const cardPrice = cardPriceSourceInput === 'standard' ? card.standardPrice : card.price
+      const dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
@@ -60,14 +60,26 @@ function rateMaps(
         ...card,
         price: cardPrice,
         dropPoolItems: dropPoolItems,
-        weight: dropEligible ? card.weight : 0,
-        value: priceEligible && dropEligible ? cardPrice * (card.weight / card.poolWeight) * dropPoolItems : 0
+        weight: dropEligible ? card.weight : 0
       })
+    }
+
+    for (let card of mapCards) {
+      const priceEligible = card.price >= cardMinPriceInput
+      if (!priceEligible) {
+        card.value = 0
+        continue
+      }
+
+      if (cardValueSourceInput === 'kirac') {
+        card.value = map.unique ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
+      } else {
+        card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
+      }
     }
 
     return {
       ...map,
-      weight: mapCards.reduce((a, v) => a + v.weight, 0),
       cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
     }
   })
@@ -178,8 +190,14 @@ function App() {
     startTransition,
     shareableRef
   )
-  const [useStandardPriceInput, setUseStandardPriceInput, useStandardPriceReset, useStandardPriceRef] = useInputField(
-    'useStandardPriceInput',
+  const [cardPriceSourceInput, setCardPriceSourceInput, cardPriceSourceReset, cardPriceSourceRef] = useInputField(
+    'cardPriceSourceInput',
+    false,
+    startTransition,
+    shareableRef
+  )
+  const [cardValueSourceInput, setCardValueSourceInput, cardValueSourceReset, cardValueSourceRef] = useInputField(
+    'cardValueSourceInput',
     false,
     startTransition,
     shareableRef
@@ -197,7 +215,8 @@ function App() {
         cardBaselineInput,
         cardBaselineNumberInput,
         cardMinPriceInput,
-        useStandardPriceInput,
+        cardPriceSourceInput,
+        cardValueSourceInput,
         atlasVoidstones
       ),
     [
@@ -208,7 +227,8 @@ function App() {
       cardBaselineInput,
       cardBaselineNumberInput,
       cardMinPriceInput,
-      useStandardPriceInput,
+      cardPriceSourceInput,
+      cardValueSourceInput,
       atlasVoidstones
     ]
   )
@@ -264,7 +284,7 @@ function App() {
     searchClass = 'col-lg-4 col-12 p-1'
     inputSectionClass = 'col col-lg-8 col-12'
     inputClass = 'col-lg-3 col-md-6 col-12 p-1'
-    bigInputClass = 'col-lg-12 col-md-6 col-12 p-1'
+    bigInputClass = 'col-lg-6 col-md-6 col-12 p-1'
   }
 
   return (
@@ -478,19 +498,39 @@ function App() {
                 <div className="input-group">
                   <select
                     className="form-control"
-                    ref={useStandardPriceRef}
-                    defaultValue={useStandardPriceInput}
-                    onChange={setUseStandardPriceInput}
+                    ref={cardPriceSourceRef}
+                    defaultValue={cardPriceSourceInput}
+                    onChange={setCardPriceSourceInput}
                   >
-                    <option value="false">League</option>
-                    <option value="true">Standard</option>
+                    <option value="league">League</option>
+                    <option value="standard">Standard</option>
                   </select>
-                  <button className="btn btn-outline-secondary" onClick={useStandardPriceReset}>
+                  <button className="btn btn-outline-secondary" onClick={cardPriceSourceReset}>
                     <i className="fa-solid fa-refresh fa-fw" />
                   </button>
                 </div>
               </div>
               <div className={inputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">Source of price data, can be either League or Standard</span>
+                  <label className="form-label">Card value source</label>
+                </span>
+                <div className="input-group">
+                  <select
+                    className="form-control"
+                    ref={cardValueSourceRef}
+                    defaultValue={cardValueSourceInput}
+                    onChange={setCardValueSourceInput}
+                  >
+                    <option value="map">Map drops</option>
+                    <option value="kirac">Kirac missions</option>
+                  </select>
+                  <button className="btn btn-outline-secondary" onClick={cardValueSourceReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className={bigInputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Generates string that can be copy/pasted to Path of Exile search boxes that will search for the
@@ -639,11 +679,12 @@ function App() {
               voidstones={atlasVoidstones}
               currentSearch={currentSearch}
               addToInput={addToInput}
+              cardValueSourceInput={cardValueSourceInput}
             />
           ))}
         </tbody>
       </table>
-      <div className="container-fluid p-4 text-end mb-5">
+      <div className="container-fluid p-4 text-end footer">
         <div className="d-lg-flex justify-content-between">
           <div>
             For raw data see:{' '}

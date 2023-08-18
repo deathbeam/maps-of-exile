@@ -5,7 +5,7 @@ import MapConnected from './MapConnected'
 import MapCards from './MapCards'
 import useLazy from '../hooks/useLazy'
 
-const Map = ({ map, currentSearch, addToInput, voidstones }) => {
+const Map = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones }) => {
   const [ref, visible] = useLazy()
 
   return (
@@ -41,7 +41,7 @@ const Map = ({ map, currentSearch, addToInput, voidstones }) => {
             <MapConnected connected={map.connected} />
           </td>
           <td>
-            <MapCards weight={map.weight} cards={map.cards} />
+            <MapCards cardValueSourceInput={cardValueSourceInput} unique={map.unique} cards={map.cards} />
           </td>
         </>
       ) : (

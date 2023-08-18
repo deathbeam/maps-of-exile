@@ -18,16 +18,15 @@ function calcRate(mapRate, price, stack) {
   }
 }
 
-function calculateCardData(weight, card) {
-  const mapRate = (card.weight / card.poolWeight) * card.dropPoolItems
-  const kiracRate = card.weight / weight
+function calculateCardData(card) {
+  const mapRate = (card.weight / card.mapWeight) * card.dropPoolItems
+  const kiracRate = card.weight / card.kiracWeight
 
   const calcMap = calcRate(mapRate, card.price, 1)
   const calcKirac = calcRate(kiracRate, card.price, card.stack)
 
   return {
     ...card,
-    mapWeight: weight,
     map: calcMap,
     kirac: calcKirac
   }
@@ -50,7 +49,7 @@ function CardRateTooltip({ rate, description, name }) {
   )
 }
 
-const MapCard = ({ card }) => {
+const MapCard = ({ unique, card }) => {
   let badgeClass = 'bg-secondary text-dark'
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -79,11 +78,11 @@ const MapCard = ({ card }) => {
     img = '/img/chaos.png'
   }
 
-  const tooltip = (
+  const tooltip = card.weight > 0 && (
     <>
       <hr />
       <b>{card.weight}</b> (card weight)
-      <br />/ <b>{card.poolWeight}</b> (drop pool weight)
+      <br />/ <b>{card.mapWeight}</b> (drop pool weight)
       {card.dropPoolItems > 1 && (
         <>
           <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
@@ -91,11 +90,15 @@ const MapCard = ({ card }) => {
       )}
       <br />
       <CardRateTooltip rate={card.map} description={'map'} />
-      <hr />
-      <b>{card.weight}</b> (card weight)
-      <br />/ <b>{card.mapWeight}</b> (map pool weight)
-      <br />
-      <CardRateTooltip rate={card.kirac} description={'kirac mission'} />
+      {!unique && (
+        <>
+          <hr />
+          <b>{card.weight}</b> (card weight)
+          <br />/ <b>{card.kiracWeight}</b> (map pool weight)
+          <br />
+          <CardRateTooltip rate={card.kirac} description={'kirac mission'} />
+        </>
+      )}
     </>
   )
 
@@ -153,9 +156,9 @@ const MapCard = ({ card }) => {
   )
 }
 
-const MapCards = ({ weight, cards }) => {
+const MapCards = ({ cardValueSourceInput, unique, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
-  const cardsWithData = useMemo(() => cards.map(c => calculateCardData(weight, c)), [weight, cards])
+  const cardsWithData = useMemo(() => cards.map(c => calculateCardData(c)), [cards])
 
   return (
     <div className="d-lg-flex flex-row">
@@ -164,16 +167,20 @@ const MapCards = ({ weight, cards }) => {
           <span className="tooltip-tag-text">
             {cardsWithData
               .filter(c => c.value > 0)
-              .map(c => (
-                <CardRateTooltip rate={c.map} description={'map'} name={c.name} />
-              ))}
+              .map(c =>
+                cardValueSourceInput === 'kirac' ? (
+                  !unique && <CardRateTooltip rate={c.kirac} description={'kirac mission'} name={c.name} />
+                ) : (
+                  <CardRateTooltip rate={c.map} description={'map'} name={c.name} />
+                )
+              )}
           </span>
           <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
         </span>
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard card={c} />
+          <MapCard unique={unique} card={c} />
         ))}
       </div>
     </div>

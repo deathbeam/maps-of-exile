@@ -76,7 +76,8 @@ export const preparedMaps = maps.map(map => {
   const bossWeight = cards.map(c => c.weight).reduce((a, b) => a + b, 0)
 
   for (let card of cards) {
-    card.poolWeight = preparedGlobals['droppool_weight'] + (card.boss ? bossWeight : mapWeight)
+    card.mapWeight = preparedGlobals['droppool_weight'] + (card.boss ? bossWeight : mapWeight)
+    card.kiracWeight = bossWeight
   }
 
   if (map.boss.names) {

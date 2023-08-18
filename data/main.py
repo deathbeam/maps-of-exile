@@ -443,10 +443,11 @@ def get_maps(key, config):
         )
 
     for m in out:
-        name = m["name"]
+        name = m["name"].replace(" Synthesised Map", "")
+        m["name"] = name
         unique = not name.endswith(" Map")
         m["shorthand"] = find_shortest_substring(
-            m["name"].replace(" Map", ""), out_names
+            name.replace(" Map", ""), out_names
         )
         m["boss"] = {}
         m["layout"] = {}

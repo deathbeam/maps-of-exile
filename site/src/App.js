@@ -512,7 +512,9 @@ function App() {
               </div>
               <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
-                  <span className="tooltip-tag-text">Source of price data, can be either League or Standard</span>
+                  <span className="tooltip-tag-text">
+                    How card value is calculated, either based on card map drops or card value from kirac missions.
+                  </span>
                   <label className="form-label">Card value source</label>
                 </span>
                 <div className="input-group">

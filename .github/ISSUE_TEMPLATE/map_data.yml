@@ -21,94 +21,95 @@ body:
     description: Select map from dropdown or leave at **None** if title is properly
       filled.
     options:
+    - Academy
+    - Acid Caverns
     - Acton's Nightmare
     - Alleyways
     - Altered Distant Memory
     - Arachnid Nest
     - Arachnid Tomb
     - Arcade
-    - Arid Lake
-    - Armoury
-    - Arsenal
+    - Arena
     - Atoll
     - Augmented Distant Memory
     - Barrows
+    - Basilica
+    - Bazaar
     - Beach
-    - Belfry
+    - Bog
     - Bone Crypt
     - Caer Blaidd, Wolfpack's Den
+    - Cage
     - Caldera
-    - Canyon
+    - Carcass
     - Castle Ruins
     - Cells
     - Cemetery
+    - Channel
     - Chateau
     - City Square
     - Cold River
     - Colonnade
     - Colosseum
-    - Conservatory
-    - Coral Ruins
-    - Core
     - Cortex
+    - Courthouse
     - Courtyard
     - Coves
-    - Crater
     - Crimson Temple
-    - Crimson Township
-    - Crystal Ore
     - Cursed Crypt
+    - Dark Forest
     - Death and Taxes
-    - Defiled Cathedral
-    - Desert Spring
-    - Dig
     - Doryani's Machinarium
-    - Dry Sea
     - Dunes
     - Dungeon
+    - Estuary
     - Excavation
     - Factory
-    - Fields
     - Flooded Mine
-    - Forbidden Woods
     - Forge of the Phoenix
-    - Foundry
+    - Forking River
     - Frozen Cabins
     - Fungal Hollow
     - Geode
-    - Grotto
+    - Glacier
+    - Grave Trough
+    - Graveyard
     - Hall of Grandmasters
     - Hallowed Ground
+    - Haunted Mansion
+    - Iceberg
     - Infested Valley
     - Infused Beachhead
-    - Jungle Valley
-    - Laboratory
-    - Lair
+    - Ivory Temple
     - Lair of the Hydra
+    - Lava Chamber
+    - Lava Lake
     - Leyline
-    - Lighthouse
+    - Lookout
     - "Maelstr\xF6m of Chaos"
     - Malformation
     - Mao Kun
-    - Marshes
+    - Mausoleum
     - Maze
     - Maze of the Minotaur
+    - Mesa
     - Mineral Pools
     - Moon Temple
+    - Mud Geyser
     - Museum
     - Necropolis
     - Oba's Cursed Trove
     - Olmec's Sanctum
     - Orchard
-    - Overgrown Ruin
     - Overgrown Shrine
+    - Palace
+    - Pen
     - Phantasmagoria
     - Pier
     - Pillars of Arun
     - Pit
     - Pit of the Chimera
     - Plateau
-    - Plaza
     - Poorjoy's Asylum
     - Port
     - Precinct
@@ -116,22 +117,21 @@ body:
     - Primordial Pool
     - Promenade
     - Racecourse
-    - Ramparts
-    - Relic Chambers
+    - Reef
     - Replica Cortex
     - Replica Pillars of Arun
     - Replica Poorjoy's Asylum
     - Residence
     - Rewritten Distant Memory
-    - Scriptorium
-    - Shipyard
     - Shore
-    - Shrine
     - Siege
     - Silo
+    - Spider Forest
     - Stagnation
     - Strand
     - Sulphur Vents
+    - Summit
+    - Sunken City
     - Temple
     - Terrace
     - The Beachhead
@@ -142,7 +142,6 @@ body:
     - The Vinktar Square
     - Thicket
     - Tower
-    - Toxic Sewer
     - Tropical Island
     - Twisted Distant Memory
     - Underground River
@@ -150,10 +149,11 @@ body:
     - Untainted Paradise
     - Vaal Pyramid
     - Vaal Temple
+    - Vault
     - Vaults of Atziri
     - Volcano
-    - Waste Pool
     - Wasteland
+    - Waterways
     - Whakawairua Tuahu
     - Wharf
   validations:

@@ -53,7 +53,6 @@ function rateMaps(
 
     for (let card of map.cards) {
       const cardPrice = cardPriceSourceInput === 'standard' ? card.standardPrice : card.price
-      const dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
@@ -61,12 +60,21 @@ function rateMaps(
       mapCards.push({
         ...card,
         price: cardPrice,
-        dropPoolItems: dropPoolItems,
         weight: dropEligible ? card.weight : 0
       })
     }
 
+    const mapWeight = mapCards
+      .filter(c => !c.boss)
+      .map(c => c.weight)
+      .reduce((a, b) => a + b, 0)
+    const bossWeight = mapCards.map(c => c.weight).reduce((a, b) => a + b, 0)
+
     for (let card of mapCards) {
+      card.mapWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)
+      card.kiracWeight = bossWeight
+      card.dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
+
       const dropEligible = card.weight > 0
       const priceEligible = card.price >= cardMinPriceInput
       if (

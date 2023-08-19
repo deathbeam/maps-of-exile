@@ -75,17 +75,6 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  const mapWeight = cards
-    .filter(c => !c.boss)
-    .map(c => c.weight)
-    .reduce((a, b) => a + b, 0)
-  const bossWeight = cards.map(c => c.weight).reduce((a, b) => a + b, 0)
-
-  for (let card of cards) {
-    card.mapWeight = preparedGlobals['droppool_weight'] + (card.boss ? bossWeight : mapWeight)
-    card.kiracWeight = bossWeight
-  }
-
   if (map.boss.names) {
     const names = map.boss.names.filter(n => !n.includes('Merveil'))
     if (names.length > 1) {

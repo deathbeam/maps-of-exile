@@ -158,7 +158,7 @@ const MapCard = ({ unique, card }) => {
 
 const MapCards = ({ cardValueSourceInput, unique, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
-  const cardsWithData = useMemo(() => cards.map(c => calculateCardData(c)), [cards])
+  const cardsWithData = useMemo(() => cards.filter(c => !c.hidden).map(c => calculateCardData(c)), [cards])
 
   return (
     <div className="d-lg-flex flex-row">

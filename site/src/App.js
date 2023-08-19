@@ -35,6 +35,7 @@ function rateMaps(
   cardMinPriceInput,
   cardPriceSourceInput,
   cardValueSourceInput,
+  cardDisplayInput,
   voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
@@ -65,7 +66,18 @@ function rateMaps(
     }
 
     for (let card of mapCards) {
+      const dropEligible = card.weight > 0
       const priceEligible = card.price >= cardMinPriceInput
+      if (
+        (cardDisplayInput === 'high+drop' && (!dropEligible || !priceEligible)) ||
+        (cardDisplayInput === 'high' && !priceEligible) ||
+        (cardDisplayInput === 'drop' && !dropEligible)
+      ) {
+        card.hidden = true
+        card.value = 0
+        continue
+      }
+
       if (!priceEligible) {
         card.value = 0
         continue
@@ -192,13 +204,19 @@ function App() {
   )
   const [cardPriceSourceInput, setCardPriceSourceInput, cardPriceSourceReset, cardPriceSourceRef] = useInputField(
     'cardPriceSourceInput',
-    false,
+    'league',
     startTransition,
     shareableRef
   )
   const [cardValueSourceInput, setCardValueSourceInput, cardValueSourceReset, cardValueSourceRef] = useInputField(
     'cardValueSourceInput',
-    false,
+    'map',
+    startTransition,
+    shareableRef
+  )
+  const [cardDisplayInput, setCardDisplayInput, cardDisplayReset, cardDisplayRef] = useInputField(
+    'cardDisplayInput',
+    'all',
     startTransition,
     shareableRef
   )
@@ -217,6 +235,7 @@ function App() {
         cardMinPriceInput,
         cardPriceSourceInput,
         cardValueSourceInput,
+        cardDisplayInput,
         atlasVoidstones
       ),
     [
@@ -229,6 +248,7 @@ function App() {
       cardMinPriceInput,
       cardPriceSourceInput,
       cardValueSourceInput,
+      cardDisplayInput,
       atlasVoidstones
     ]
   )
@@ -271,6 +291,7 @@ function App() {
   let inputSectionClass = ''
   let inputClass = ''
   let bigInputClass = ''
+  let fullInputClass = ''
   let atlasClass = ''
 
   if (atlasFull) {
@@ -278,6 +299,7 @@ function App() {
     searchClass = 'p-1'
     inputClass = 'col-lg-12 col-md-6 col-12 p-1'
     bigInputClass = inputClass
+    fullInputClass = inputClass
     atlasClass = 'col-lg-9 col-12'
   } else {
     containerClass = containerClass + ' row g-0'
@@ -285,6 +307,7 @@ function App() {
     inputSectionClass = 'col col-lg-8 col-12'
     inputClass = 'col-lg-3 col-md-6 col-12 p-1'
     bigInputClass = 'col-lg-6 col-md-6 col-12 p-1'
+    fullInputClass = 'col-lg-12 col-md-6 col-12 p-1'
   }
 
   return (
@@ -426,49 +449,6 @@ function App() {
               <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
-                    The baseline card drop you are expecting to see every map on average with number input next to it.
-                    Positive number indicates x cards dropped per map, negative number indicates card dropped every x
-                    maps.
-                    <br />
-                    This is used for calculating how many drop pool items you get on average and that is used for{' '}
-                    <b>calculating chance to get card per map</b>.
-                    <br />
-                    You should set this value to your observed drop rate of index card (for example Union in Cemetery)
-                    so the site can predict drop rates for your current farming strategy.
-                  </span>
-                  <label className="form-label">Average card per map</label>
-                </span>
-                <div className="input-group">
-                  <SelectSearch
-                    options={preparedCards
-                      .sort((a, b) => b.weight - a.weight)
-                      .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
-                    value={cardBaselineInput}
-                    placeholder={cardBaselineInput}
-                    onChange={e => setCardBaselineInput(e)}
-                    search="true"
-                  />
-                  <input
-                    className="form-control select-search-number text-center"
-                    type="number"
-                    ref={cardBaselineNumberRef}
-                    defaultValue={cardBaselineNumberInput}
-                    onChange={setCardBaselineNumberInput}
-                  />
-                  <button
-                    className="btn btn-outline-secondary"
-                    onClick={e => {
-                      cardBaselineReset()
-                      cardBaselineNumberReset()
-                    }}
-                  >
-                    <i className="fa-solid fa-refresh fa-fw" />
-                  </button>
-                </div>
-              </div>
-              <div className={inputClass}>
-                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
-                  <span className="tooltip-tag-text">
                     Minimum price for the card to be considered as something that should be accounted for calculating
                     map score and per map value.
                     <br />
@@ -532,6 +512,71 @@ function App() {
                   </button>
                 </div>
               </div>
+              <div className={inputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">What cards are displayed/hidden.</span>
+                  <label className="form-label">Card display</label>
+                </span>
+                <div className="input-group">
+                  <select
+                    className="form-control"
+                    ref={cardDisplayRef}
+                    defaultValue={cardDisplayInput}
+                    onChange={setCardDisplayInput}
+                  >
+                    <option value="all">All cards</option>
+                    <option value="high">High value only</option>
+                    <option value="drop">Droppable only</option>
+                    <option value="high+drop">High value and droppable only</option>
+                  </select>
+                  <button className="btn btn-outline-secondary" onClick={cardDisplayReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className={bigInputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    The baseline card drop you are expecting to see every map on average with number input next to it.
+                    Positive number indicates x cards dropped per map, negative number indicates card dropped every x
+                    maps.
+                    <br />
+                    This is used for calculating how many drop pool items you get on average and that is used for{' '}
+                    <b>calculating chance to get card per map</b>.
+                    <br />
+                    You should set this value to your observed drop rate of index card (for example Union in Cemetery)
+                    so the site can predict drop rates for your current farming strategy.
+                  </span>
+                  <label className="form-label">Average card per map</label>
+                </span>
+                <div className="input-group">
+                  <SelectSearch
+                    options={preparedCards
+                      .sort((a, b) => b.weight - a.weight)
+                      .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name }))}
+                    value={cardBaselineInput}
+                    placeholder={cardBaselineInput}
+                    onChange={e => setCardBaselineInput(e)}
+                    search="true"
+                  />
+                  <input
+                    className="form-control select-search-number text-center"
+                    type="number"
+                    ref={cardBaselineNumberRef}
+                    defaultValue={cardBaselineNumberInput}
+                    onChange={setCardBaselineNumberInput}
+                  />
+                  <button
+                    className="btn btn-outline-secondary"
+                    onClick={e => {
+                      cardBaselineReset()
+                      cardBaselineNumberReset()
+                    }}
+                  >
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
               <div className={bigInputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
@@ -555,7 +600,7 @@ function App() {
                   </button>
                 </div>
               </div>
-              <div className={bigInputClass}>
+              <div className={fullInputClass}>
                 <label className="form-label">Shareable link</label>
                 <div className="input-group">
                   <input

@@ -50,25 +50,27 @@ function rateMaps(
   const mapsWithCardValues = foundMaps.map(map => {
     const mapLevel = mapTierToLevel(map.tiers[voidstones])
     const mapCards = []
+    let mapWeight = 0
+    let bossWeight = 0
 
     for (let card of map.cards) {
-      const cardPrice = cardPriceSourceInput === 'standard' ? card.standardPrice : card.price
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
+      const weight = dropEligible ? card.weight : 0
+      const price = cardPriceSourceInput === 'standard' ? card.standardPrice : card.price
+
+      bossWeight += weight
+      if (!card.boss) {
+        mapWeight += weight
+      }
 
       mapCards.push({
         ...card,
-        price: cardPrice,
-        weight: dropEligible ? card.weight : 0
+        price,
+        weight
       })
     }
-
-    const mapWeight = mapCards
-      .filter(c => !c.boss)
-      .map(c => c.weight)
-      .reduce((a, b) => a + b, 0)
-    const bossWeight = mapCards.map(c => c.weight).reduce((a, b) => a + b, 0)
 
     for (let card of mapCards) {
       card.mapWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)

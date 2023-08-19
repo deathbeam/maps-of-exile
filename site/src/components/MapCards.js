@@ -12,7 +12,7 @@ function calcRate(mapRate, price, stack) {
   }
 
   return {
-    perMap,
+    perMap: perMap * stack,
     everyMap,
     value: Math.round(price * mapRate * stack * 1000) / 1000
   }
@@ -110,7 +110,7 @@ const MapCard = ({ unique, card }) => {
       </>
     )
   } else if (card.drop.min_level) {
-    dropLevel = <>>= {card.drop.min_level}</>
+    dropLevel = <>&gt;= {card.drop.min_level}</>
   } else if (card.drop.max_level) {
     dropLevel = <>&lt;= {card.drop.max_level}</>
   }

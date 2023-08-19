@@ -205,7 +205,8 @@ def get_card_data(key, config, card_extra):
                     filter(lambda x: x["name"] == price_card["name"], prices),
                 ),
                 0,
-            ) or 0,
+            )
+            or 0,
             "standardPrice": price_card["chaosValue"],
             "stack": price_card.get("stackSize", 1),
             "art": price_card["artFilename"],
@@ -446,9 +447,7 @@ def get_maps(key, config):
         name = m["name"].replace(" Synthesised Map", "")
         m["name"] = name
         unique = not name.endswith(" Map")
-        m["shorthand"] = find_shortest_substring(
-            name.replace(" Map", ""), out_names
-        )
+        m["shorthand"] = find_shortest_substring(name.replace(" Map", ""), out_names)
         m["boss"] = {}
         m["layout"] = {}
         m["rating"] = {}

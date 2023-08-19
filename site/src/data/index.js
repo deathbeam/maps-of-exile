@@ -57,7 +57,7 @@ export const preparedMaps = maps.map(map => {
   const cards = []
   for (let card of preparedCards) {
     if (!card.drop) {
-        continue
+      continue
     }
 
     if (card.drop.all_areas) {

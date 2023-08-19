@@ -10,6 +10,7 @@ import {
   issueTemplate,
   mfAcademyInvite,
   preparedCards,
+  preparedGlobals,
   preparedMaps,
   preparedTags
 } from './data'
@@ -756,6 +757,10 @@ function App() {
             >
               maps.json
             </a>
+            <br />
+            Current league: <b>{preparedGlobals.league}</b>
+            <br />
+            Last data update: <b>{preparedGlobals.lastUpdate}</b>
           </div>
           <div>
             Contribute on{' '}

@@ -13,6 +13,8 @@ export const mfAcademyInvite = 'https://discord.gg/mfacademy'
 export const possibleVoidstones = [0, 1, 2, 3, 4]
 
 export const preparedGlobals = globals
+const lastUpdate = new Date(preparedGlobals.lastUpdate)
+preparedGlobals.lastUpdate = lastUpdate.toLocaleString()
 
 export const preparedCards = cards.map(card => {
   return {

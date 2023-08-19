@@ -3,6 +3,7 @@ import math
 import os
 import re
 import sys
+import time
 from decimal import Decimal
 from math import ceil
 
@@ -111,6 +112,8 @@ def get_globals_data(config):
 
         total_droppool += int(cols[1].text)
 
+    out["league"] = config["league"]
+    out["lastUpdate"] = time.time() * 1000
     out["droppool_weight"] = total_droppool
     return out
 

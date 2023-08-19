@@ -448,30 +448,6 @@ function App() {
               </div>
               <div className={inputClass}>
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
-                  <span className="tooltip-tag-text">
-                    Minimum price for the card to be considered as something that should be accounted for calculating
-                    map score and per map value.
-                    <br />
-                    Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot
-                    even though when you click on listings the data say something else.
-                  </span>
-                  <label className="form-label">Minimum card price</label>
-                </span>
-                <div className="input-group">
-                  <input
-                    className="form-control"
-                    type="number"
-                    ref={cardMinPriceRef}
-                    defaultValue={cardMinPriceInput}
-                    onChange={setCardMinPriceInput}
-                  />
-                  <button className="btn btn-outline-secondary" onClick={cardMinPriceReset}>
-                    <i className="fa-solid fa-refresh fa-fw" />
-                  </button>
-                </div>
-              </div>
-              <div className={inputClass}>
-                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">Source of price data, can be either League or Standard</span>
                   <label className="form-label">Card price source</label>
                 </span>
@@ -530,6 +506,30 @@ function App() {
                     <option value="high+drop">High value and droppable only</option>
                   </select>
                   <button className="btn btn-outline-secondary" onClick={cardDisplayReset}>
+                    <i className="fa-solid fa-refresh fa-fw" />
+                  </button>
+                </div>
+              </div>
+              <div className={inputClass}>
+                <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+                  <span className="tooltip-tag-text">
+                    Minimum price for the card to be considered as something that should be accounted for calculating
+                    map score and per map value.
+                    <br />
+                    Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot
+                    even though when you click on listings the data say something else.
+                  </span>
+                  <label className="form-label">Minimum card price</label>
+                </span>
+                <div className="input-group">
+                  <input
+                    className="form-control"
+                    type="number"
+                    ref={cardMinPriceRef}
+                    defaultValue={cardMinPriceInput}
+                    onChange={setCardMinPriceInput}
+                  />
+                  <button className="btn btn-outline-secondary" onClick={cardMinPriceReset}>
                     <i className="fa-solid fa-refresh fa-fw" />
                   </button>
                 </div>

@@ -187,7 +187,7 @@ def get_card_data(key, config, card_extra):
     standardPrices = requests.get(config["prices"] + "Standard").json()["lines"]
 
     out = []
-    for price_card in prices:
+    for price_card in standardPrices:
         reward = ""
         if price_card.get("explicitModifiers", []):
             reward = (
@@ -199,14 +199,14 @@ def get_card_data(key, config, card_extra):
 
         card = {
             "name": price_card["name"],
-            "price": price_card["chaosValue"],
-            "standardPrice": next(
+            "price": next(
                 map(
                     lambda x: x["chaosValue"],
-                    filter(lambda x: x["name"] == price_card["name"], standardPrices),
+                    filter(lambda x: x["name"] == price_card["name"], prices),
                 ),
-                None,
-            ),
+                0,
+            ) or 0,
+            "standardPrice": price_card["chaosValue"],
             "stack": price_card.get("stackSize", 1),
             "art": price_card["artFilename"],
             "reward": reward,

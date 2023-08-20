@@ -127,8 +127,8 @@ def get_card_data(key, config, card_extra):
         params={
             "action": "cargoquery",
             "format": "json",
-            "smaxage": 0,
-            "maxage": 0,
+            "smaxage": 1,
+            "maxage": 1,
             "limit": "500",
             "tables": "items",
             "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters",

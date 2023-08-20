@@ -60,11 +60,12 @@ const MapCard = ({ unique, card }) => {
   } else if (card.score >= 0.5) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   }
-  if (card.boss) {
-    badgeClass += ' border border-1 border-warning'
-  }
-  if (card.weight === 0) {
+  if (card.unknown) {
+    badgeClass += ' border border-1 border-info'
+  } else if (card.weight === 0) {
     badgeClass += ' border border-1 border-danger'
+  } else if (card.boss) {
+    badgeClass += ' border border-1 border-warning'
   }
 
   badgeClass = `badge m-1 ${badgeClass}`
@@ -139,7 +140,13 @@ const MapCard = ({ unique, card }) => {
             <b className="text-warning">Boss drop</b>
           </>
         )}
-        {card.weight === 0 && (
+        {card.unknown && (
+          <>
+            <br />
+            <b className="text-info">Unknown drop rate</b>
+          </>
+        )}
+        {card.weight === 0 && !card.unknown && (
           <>
             <br />
             <b className="text-danger">Cannot drop</b>

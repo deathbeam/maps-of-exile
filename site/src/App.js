@@ -57,8 +57,8 @@ function rateMaps(
       const cardMinLevel = (card.drop || {}).min_level || 0
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
-      const weight = dropEligible ? card.weight : 0
-      const price = cardPriceSourceInput === 'standard' ? card.standardPrice : card.price
+      const weight = dropEligible ? card.weight || 0 : 0
+      const price = (cardPriceSourceInput === 'standard' ? card.standardPrice : card.price) || 0
 
       bossWeight += weight
       if (!card.boss) {
@@ -68,7 +68,8 @@ function rateMaps(
       mapCards.push({
         ...card,
         price,
-        weight
+        weight,
+        unknown: !card.weight
       })
     }
 

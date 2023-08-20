@@ -726,10 +726,6 @@ function App() {
                   <span className="badge bg-info text-dark m-1">>=2 good</span>
                   <span className="badge bg-primary text-light m-1">>=5 great</span>
                   <span className="badge bg-light text-dark m-1">>=8 amazing</span>
-                  <hr />
-                  <span className="badge bg-warning text-dark m-1">boss drop</span>
-                  <span className="badge bg-dark border border-1 border-danger text-danger m-1">cannot drop</span>
-                  <span className="badge bg-danger text-dark m-1">unknown weight</span>
                 </span>
                 Cards
               </span>

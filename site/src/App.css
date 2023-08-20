@@ -80,6 +80,18 @@ hr {
   color: #af6025;
 }
 
+.shadow-info {
+  box-shadow: 0 0 0 1px var(--bs-info) !important;
+}
+
+.shadow-warning {
+  box-shadow: 0 0 0 1px var(--bs-warning) !important;
+}
+
+.shadow-danger {
+  box-shadow: 0 0 0 1px var(--bs-danger) !important;
+}
+
 a:hover {
   text-decoration: underline;
 }

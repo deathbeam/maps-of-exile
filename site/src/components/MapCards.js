@@ -143,7 +143,7 @@ const MapCard = ({ unique, card }) => {
         {card.unknown && (
           <>
             <br />
-            <b className="text-info">Unknown drop rate</b>
+            <b className="text-info">Unknown weight</b>
           </>
         )}
         {card.weight === 0 && !card.unknown && (

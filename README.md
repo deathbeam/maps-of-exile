@@ -54,7 +54,7 @@ See issue mentioned in [For-non-developers](#for-non-developers) section for ref
 **Estimated Divination Card weights spreadsheet for 3.20** from **Prohibited Library** discord (used for getting card weights):  
 https://docs.google.com/spreadsheets/d/1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc  
 
-**Stacked Decks card spreadsheet** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found, e.g newer cards):  
+**Stacked Decks card spreadsheet for 3.21** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found, e.g newer cards):  
 https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4  
 
 **Mob count spreadsheet** by **not_Shorex** (used for **Density**, contains exact mob counts per maps, averaged):  

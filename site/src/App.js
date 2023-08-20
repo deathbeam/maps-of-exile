@@ -80,14 +80,16 @@ function rateMaps(
 
       const dropEligible = card.weight > 0
       const priceEligible = card.price >= cardMinPriceInput
-      if (
-        (cardDisplayInput === 'high+drop' && (!dropEligible || !priceEligible)) ||
-        (cardDisplayInput === 'high' && !priceEligible) ||
-        (cardDisplayInput === 'drop' && !dropEligible)
-      ) {
-        card.hidden = true
-        card.value = 0
-        continue
+      if (!card.unknown) {
+        if (
+          (cardDisplayInput === 'high+drop' && (!dropEligible || !priceEligible)) ||
+          (cardDisplayInput === 'high' && !priceEligible) ||
+          (cardDisplayInput === 'drop' && !dropEligible)
+        ) {
+          card.hidden = true
+          card.value = 0
+          continue
+        }
       }
 
       if (!priceEligible) {

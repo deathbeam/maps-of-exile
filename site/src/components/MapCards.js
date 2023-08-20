@@ -50,8 +50,14 @@ function CardRateTooltip({ rate, description, name }) {
 }
 
 const MapCard = ({ unique, card }) => {
-  let badgeClass = 'bg-secondary text-dark'
-  if (card.score >= 8) {
+  let badgeClass
+  if (card.unknown) {
+    badgeClass = 'bg-danger text-dark'
+  } else if (card.weight === 0) {
+    badgeClass = 'bg-dark text-danger border border-1 border-danger'
+  } else if (card.boss) {
+    badgeClass = 'bg-warning text-dark'
+  } else if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
   } else if (card.score >= 5) {
     badgeClass = 'bg-primary text-light'
@@ -59,13 +65,8 @@ const MapCard = ({ unique, card }) => {
     badgeClass = 'bg-info text-dark'
   } else if (card.score >= 0.5) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
-  }
-  if (card.unknown) {
-    badgeClass += ' border border-1 border-info'
-  } else if (card.weight === 0) {
-    badgeClass += ' border border-1 border-danger'
-  } else if (card.boss) {
-    badgeClass += ' border border-1 border-warning'
+  } else {
+    badgeClass = 'bg-secondary text-dark'
   }
 
   badgeClass = `badge m-1 ${badgeClass}`
@@ -143,7 +144,7 @@ const MapCard = ({ unique, card }) => {
         {card.unknown && (
           <>
             <br />
-            <b className="text-info">Unknown weight</b>
+            <b className="text-danger">Unknown weight</b>
           </>
         )}
         {card.weight === 0 && !card.unknown && (

@@ -157,38 +157,8 @@ def get_card_data(key, config, card_extra):
         )
     )
 
-    card_amounts = {}
+    card_chances = {}
     card_weights = {}
-    card_amounts_total = 0
-
-    id = config["decks"]["sheet-id"]
-    name = config["decks"]["sheet-name"]
-    print(f"Getting card amounts from {name}")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-    amounts = requests.get(url).json()["values"]
-    card_amounts_total += int(amounts.pop(0)[0])
-    for card in amounts:
-        if not card:
-            continue
-        name = card[0].strip()
-        value = int(card[3])
-        original = card_amounts.get(name, 0)
-        card_amounts[name] = original + value
-
-    id = config["decks2"]["sheet-id"]
-    name = config["decks2"]["sheet-name"]
-    print(f"Getting card amounts from {name}")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-    amounts = requests.get(url).json()["values"]
-    amounts.pop(0)
-    card_amounts_total += int(amounts.pop(0)[1])
-    for card in amounts:
-        if not card:
-            continue
-        name = card[0].strip()
-        value = int(card[1])
-        original = card_amounts.get(name, 0)
-        card_amounts[name] = original + value
 
     id = config["weights"]["sheet-id"]
     name = config["weights"]["sheet-name"]
@@ -200,11 +170,56 @@ def get_card_data(key, config, card_extra):
     for card in weights:
         card_weights[card[1].strip()] = int(card[2])
 
-    patient_amount = card_amounts["The Patient"]
+    id = config["decks"]["sheet-id"]
+    name = config["decks"]["sheet-name"]
+    print(f"Getting card amounts from {name}")
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+    amounts = requests.get(url).json()["values"]
+    amounts_total = int(amounts.pop(0)[0])
+    for card in amounts:
+        if not card:
+            continue
+        name = card[0].strip()
+        value = int(card[3])
+        original_chance = card_chances.get(name, 0)
+        new_chance = value / amounts_total
+
+        percent_change = abs(
+            (new_chance - original_chance) / original_chance * 100
+            if original_chance
+            else threshold
+        )
+
+        if percent_change >= threshold:
+            card_chances[name] = new_chance
+
+    id = config["decks2"]["sheet-id"]
+    name = config["decks2"]["sheet-name"]
+    print(f"Getting card amounts from {name}")
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+    amounts = requests.get(url).json()["values"]
+    amounts.pop(0)
+    amounts_total = int(amounts.pop(0)[1])
+    for card in amounts:
+        if not card:
+            continue
+        name = card[0].strip()
+        value = int(card[1])
+        original_chance = card_chances.get(name, 0)
+        new_chance = value / amounts_total
+
+        percent_change = abs(
+            (new_chance - original_chance) / original_chance * 100
+            if original_chance
+            else threshold
+        )
+
+        if percent_change >= threshold:
+            card_chances[name] = new_chance
+
+    patient_chance = card_chances["The Patient"]
     patient_weight = card_weights["The Patient"]
-    sample_weight = Decimal(patient_weight) / (
-        Decimal(patient_amount) / Decimal(card_amounts_total)
-    )
+    sample_weight = Decimal(patient_weight) / Decimal(patient_chance)
 
     print(f"Getting card prices for {league} and Standard")
     prices = requests.get(config["prices"] + league).json()["lines"]
@@ -238,11 +253,11 @@ def get_card_data(key, config, card_extra):
             "ninja": config["ninja"] + price_card["detailsId"],
         }
 
-        amount_card = card_amounts.get(price_card["name"])
+        chance_card = card_chances.get(price_card["name"])
         weight_card = card_weights.get(price_card["name"])
 
-        if amount_card:
-            weight_mult = Decimal(amount_card) / Decimal(card_amounts_total)
+        if chance_card:
+            weight_mult = Decimal(chance_card)
             new_weight = math.floor(
                 (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
             )
@@ -257,7 +272,7 @@ def get_card_data(key, config, card_extra):
                 old_weight = weight_card or 0
                 weight_card = new_weight
                 print(
-                    f"Making assumption for weight for {price_card['name']} with amount {amount_card} based on sample amount {patient_amount} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
+                    f"Making assumption for weight for {price_card['name']} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
                 )
 
         if weight_card:

@@ -6,7 +6,7 @@ const Rating = ({ rating, tooltip, label = '', scale = 1 }) => {
   if (rating == null) {
     rating = '?'
   } else {
-    rating = Math.round(rating)
+    rating = Math.floor(rating)
   }
 
   const badge = (

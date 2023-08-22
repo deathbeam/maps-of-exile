@@ -170,52 +170,35 @@ def get_card_data(key, config, card_extra):
     for card in weights:
         card_weights[card[1].strip()] = int(card[2])
 
-    id = config["decks"]["sheet-id"]
-    name = config["decks"]["sheet-name"]
-    print(f"Getting card amounts from {name}")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-    amounts = requests.get(url).json()["values"]
-    amounts_total = int(amounts.pop(0)[0])
-    for card in amounts:
-        if not card:
-            continue
-        name = card[0].strip()
-        value = int(card[3])
-        original_chance = card_chances.get(name, 0)
-        new_chance = Decimal(value) / Decimal(amounts_total)
+    for deck_sheet in config["decks"]:
+        id = deck_sheet["sheet-id"]
+        name = deck_sheet["sheet-name"]
+        name_col = deck_sheet["name"]
+        value_col = deck_sheet["value"]
+        total_col = deck_sheet["total"]
+        skip_num = deck_sheet.get("skip", 0)
+        print(f"Getting card amounts from {name}")
+        url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+        amounts = requests.get(url).json()["values"]
+        for i in range(0, skip_num):
+            amounts.pop(0)
+        amounts_total = int(amounts.pop(0)[total_col])
+        for card in amounts:
+            if not card:
+                continue
+            name = card[name_col].strip()
+            value = int(card[value_col])
+            original_chance = card_chances.get(name, 0)
+            new_chance = Decimal(value) / Decimal(amounts_total)
 
-        percent_change = abs(
-            (new_chance - original_chance) / original_chance * 100
-            if original_chance
-            else threshold
-        )
+            percent_change = abs(
+                (new_chance - original_chance) / original_chance * 100
+                if original_chance
+                else threshold
+            )
 
-        if percent_change >= threshold:
-            card_chances[name] = new_chance
-
-    id = config["decks2"]["sheet-id"]
-    name = config["decks2"]["sheet-name"]
-    print(f"Getting card amounts from {name}")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-    amounts = requests.get(url).json()["values"]
-    amounts.pop(0)
-    amounts_total = int(amounts.pop(0)[1])
-    for card in amounts:
-        if not card:
-            continue
-        name = card[0].strip()
-        value = int(card[1])
-        original_chance = card_chances.get(name, 0)
-        new_chance = Decimal(value) / Decimal(amounts_total)
-
-        percent_change = abs(
-            (new_chance - original_chance) / original_chance * 100
-            if original_chance
-            else threshold
-        )
-
-        if percent_change >= threshold:
-            card_chances[name] = new_chance
+            if percent_change >= threshold:
+                card_chances[name] = new_chance
 
     patient_chance = card_chances["The Patient"]
     patient_weight = card_weights["The Patient"]

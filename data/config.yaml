@@ -39,8 +39,14 @@ data:
     sheet-name: NaturalCardWeights
 
   decks:
-    sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
-    sheet-name: Decks 3.21
-  decks2:
-    sheet-id: 13E4ciXrAQK5vl5PA4dtRTf_VrPeS-Fr7V_yjp5dJ0l0
-    sheet-name: Ancestor_20k
+    - sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
+      sheet-name: Decks 3.21
+      name: 0
+      value: 3
+      total: 0
+    - sheet-id: 13E4ciXrAQK5vl5PA4dtRTf_VrPeS-Fr7V_yjp5dJ0l0
+      sheet-name: Ancestor_20k
+      name: 0
+      value: 1
+      total: 1
+      skip: 1

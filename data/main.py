@@ -182,7 +182,7 @@ def get_card_data(key, config, card_extra):
         name = card[0].strip()
         value = int(card[3])
         original_chance = card_chances.get(name, 0)
-        new_chance = value / amounts_total
+        new_chance = Decimal(value) / Decimal(amounts_total)
 
         percent_change = abs(
             (new_chance - original_chance) / original_chance * 100
@@ -206,7 +206,7 @@ def get_card_data(key, config, card_extra):
         name = card[0].strip()
         value = int(card[1])
         original_chance = card_chances.get(name, 0)
-        new_chance = value / amounts_total
+        new_chance = Decimal(value) / Decimal(amounts_total)
 
         percent_change = abs(
             (new_chance - original_chance) / original_chance * 100
@@ -257,9 +257,8 @@ def get_card_data(key, config, card_extra):
         weight_card = card_weights.get(price_card["name"])
 
         if chance_card:
-            weight_mult = Decimal(chance_card)
             new_weight = math.floor(
-                (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
+                (sample_weight * chance_card) / Decimal(math.exp(2 / 3))
             )
 
             percent_change = abs(

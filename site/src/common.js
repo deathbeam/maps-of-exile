@@ -1,5 +1,5 @@
 export function rescale(value, minValue, maxValue, scale) {
-  return Math.round(Math.min((scale * (value - minValue)) / (maxValue - minValue), scale) * 10) / 10
+  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
 }
 
 export function deduplicate(a, key) {
@@ -17,7 +17,7 @@ export function calculateScore(dataset, range) {
 
   for (let entry of dataset) {
     if (entry.value) {
-      entry.score = Math.round(rescale(entry.value, min, max, range))
+      entry.score = rescale(entry.value, min, max, range)
     } else {
       entry.score = 0
     }

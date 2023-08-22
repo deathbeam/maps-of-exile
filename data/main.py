@@ -180,7 +180,7 @@ def get_card_data(key, config, card_extra):
     print(f"Getting card amounts from {name}")
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
     amounts = requests.get(url).json()["values"]
-    print(amounts.pop(0))
+    amounts.pop(0)
     card_amounts_total += int(amounts.pop(0)[1])
     for card in amounts:
         if not card:

@@ -1,6 +1,9 @@
 data:
   league: Ancestor
 
+  # Decks overwrite threshold
+  overwrite-threshold: 1000
+
   ignored:
     - "Synthesised Map"
 
@@ -31,10 +34,13 @@ data:
     sheet-id: 10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
     sheet-name: Compact Data (new atlas)
     sheet-range: C3:G140
-  decks:
-    sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
-    sheet-name: Decks 3.21
-    overwrite-threshold: 1000
   weights:
     sheet-id: 1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc
     sheet-name: NaturalCardWeights
+
+  decks:
+    sheet-id: 104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
+    sheet-name: Decks 3.21
+  decks2:
+    sheet-id: 13E4ciXrAQK5vl5PA4dtRTf_VrPeS-Fr7V_yjp5dJ0l0
+    sheet-name: Ancestor_20k

@@ -120,6 +120,7 @@ def get_globals_data(config):
 
 def get_card_data(key, config, card_extra):
     league = config["league"]
+    threshold = config["overwrite-threshold"]
 
     print(f"Getting card data from wiki")
     wiki_cards = requests.get(
@@ -156,19 +157,38 @@ def get_card_data(key, config, card_extra):
         )
     )
 
+    card_amounts = {}
+    card_weights = {}
+    card_amounts_total = 0
+
     id = config["decks"]["sheet-id"]
     name = config["decks"]["sheet-name"]
-    threshold = config["decks"]["overwrite-threshold"]
     print(f"Getting card amounts from {name}")
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
     amounts = requests.get(url).json()["values"]
-    amounts_total = int(amounts.pop(0)[0])
-    amounts = list(
-        map(
-            lambda x: {"name": x[0].strip(), "value": int(x[3])},
-            filter(lambda x: len(x) > 0, amounts),
-        )
-    )
+    card_amounts_total += int(amounts.pop(0)[0])
+    for card in amounts:
+        if not card:
+            continue
+        name = card[0].strip()
+        value = int(card[3])
+        original = card_amounts.get(name, 0)
+        card_amounts[name] = original + value
+
+    id = config["decks2"]["sheet-id"]
+    name = config["decks2"]["sheet-name"]
+    print(f"Getting card amounts from {name}")
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+    amounts = requests.get(url).json()["values"]
+    print(amounts.pop(0))
+    card_amounts_total += int(amounts.pop(0)[1])
+    for card in amounts:
+        if not card:
+            continue
+        name = card[0].strip()
+        value = int(card[1])
+        original = card_amounts.get(name, 0)
+        card_amounts[name] = original + value
 
     id = config["weights"]["sheet-id"]
     name = config["weights"]["sheet-name"]
@@ -177,12 +197,13 @@ def get_card_data(key, config, card_extra):
     weights = requests.get(url).json()["values"]
     weights.pop(0)
     weights.pop(0)
-    weights = list(map(lambda x: {"name": x[1].strip(), "value": int(x[2])}, weights))
+    for card in weights:
+        card_weights[card[1].strip()] = int(card[2])
 
-    patient_amount = next(x["value"] for x in amounts if x["name"] == "The Patient")
-    patient_weight = next(x["value"] for x in weights if x["name"] == "The Patient")
+    patient_amount = card_amounts["The Patient"]
+    patient_weight = card_weights["The Patient"]
     sample_weight = Decimal(patient_weight) / (
-        Decimal(patient_amount) / Decimal(amounts_total)
+        Decimal(patient_amount) / Decimal(card_amounts_total)
     )
 
     print(f"Getting card prices for {league} and Standard")
@@ -217,15 +238,11 @@ def get_card_data(key, config, card_extra):
             "ninja": config["ninja"] + price_card["detailsId"],
         }
 
-        amount_card = next(
-            (x["value"] for x in amounts if x["name"] == price_card["name"]), None
-        )
-        weight_card = next(
-            (x["value"] for x in weights if x["name"] == price_card["name"]), None
-        )
+        amount_card = card_amounts.get(price_card["name"])
+        weight_card = card_weights.get(price_card["name"])
 
         if amount_card:
-            weight_mult = Decimal(amount_card) / Decimal(amounts_total)
+            weight_mult = Decimal(amount_card) / Decimal(card_amounts_total)
             new_weight = math.floor(
                 (sample_weight * weight_mult) / Decimal(math.exp(2 / 3))
             )

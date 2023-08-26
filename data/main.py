@@ -160,20 +160,34 @@ def get_card_data(key, config, card_extra):
     card_chances = {}
     card_weights = {}
 
-    id = config["weights"]["sheet-id"]
-    name = config["weights"]["sheet-name"]
-    print(f"Getting card weights from {name}")
-    url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-    weights = requests.get(url).json()["values"]
-    weights.pop(0)
-    weights.pop(0)
-    for card in weights:
-        card_weights[card[1].strip()] = int(card[2])
+    for weight_sheet in config["weights"]:
+        id = weight_sheet["sheet-id"]
+        name = weight_sheet["sheet-name"]
+        key_col = weight_sheet["key"]
+        value_col = weight_sheet["value"]
+        skip_num = weight_sheet.get("skip", 0)
+        print(f"Getting card weights from {name}")
+        url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
+        weights = requests.get(url).json()["values"]
+        for i in range(0, skip_num):
+            weights.pop(0)
+        for card in weights:
+            name = card[key_col].strip()
+            value = int(card[value_col])
+            original_value = card_weights.get(name, 0)
+            percent_change = abs(
+                (value - original_value) / original_value * 100
+                if original_value
+                else threshold
+            )
+
+            if percent_change >= threshold:
+                card_weights[name] = value
 
     for deck_sheet in config["decks"]:
         id = deck_sheet["sheet-id"]
         name = deck_sheet["sheet-name"]
-        name_col = deck_sheet["name"]
+        key_col = deck_sheet["key"]
         value_col = deck_sheet["value"]
         total_col = deck_sheet["total"]
         skip_num = deck_sheet.get("skip", 0)
@@ -186,11 +200,10 @@ def get_card_data(key, config, card_extra):
         for card in amounts:
             if not card:
                 continue
-            name = card[name_col].strip()
+            name = card[key_col].strip()
             value = int(card[value_col])
             original_chance = card_chances.get(name, 0)
             new_chance = Decimal(value) / Decimal(amounts_total)
-
             percent_change = abs(
                 (new_chance - original_chance) / original_chance * 100
                 if original_chance

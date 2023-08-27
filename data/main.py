@@ -120,7 +120,6 @@ def get_globals_data(config):
 
 def get_card_data(key, config, card_extra):
     league = config["league"]
-    threshold = config["overwrite-threshold"]
 
     print(f"Getting card data from wiki")
     wiki_cards = requests.get(
@@ -160,7 +159,8 @@ def get_card_data(key, config, card_extra):
     card_chances = {}
     card_weights = {}
 
-    for weight_sheet in config["weights"]:
+    weight_threshold = config["weights"]["overwrite-threshold"]
+    for weight_sheet in config["weights"]["sheets"]:
         id = weight_sheet["sheet-id"]
         name = weight_sheet["sheet-name"]
         key_col = weight_sheet["key"]
@@ -178,13 +178,14 @@ def get_card_data(key, config, card_extra):
             percent_change = abs(
                 (value - original_value) / original_value * 100
                 if original_value
-                else threshold
+                else weight_threshold
             )
 
-            if percent_change >= threshold:
+            if percent_change >= weight_threshold:
                 card_weights[name] = value
 
-    for deck_sheet in config["decks"]:
+    deck_threshold = config["decks"]["overwrite-threshold"]
+    for deck_sheet in config["decks"]["sheets"]:
         id = deck_sheet["sheet-id"]
         name = deck_sheet["sheet-name"]
         key_col = deck_sheet["key"]
@@ -207,10 +208,10 @@ def get_card_data(key, config, card_extra):
             percent_change = abs(
                 (new_chance - original_chance) / original_chance * 100
                 if original_chance
-                else threshold
+                else deck_threshold
             )
 
-            if percent_change >= threshold:
+            if percent_change >= deck_threshold:
                 card_chances[name] = new_chance
 
     patient_chance = card_chances["The Patient"]
@@ -260,10 +261,10 @@ def get_card_data(key, config, card_extra):
             percent_change = abs(
                 (new_weight - weight_card) / weight_card * 100
                 if weight_card
-                else threshold
+                else deck_threshold
             )
 
-            if percent_change >= threshold:
+            if percent_change >= deck_threshold:
                 old_weight = weight_card or 0
                 weight_card = new_weight
                 print(

@@ -184,6 +184,15 @@ def get_card_data(key, config, card_extra):
             if percent_change >= weight_threshold:
                 card_weights[name] = value
 
+    for card, mapping in config.get("mappings", {}).items():
+        card_weight = card_weights.get(mapping["card"], 0)
+        if not card_weight:
+            continue
+        card_weights[card] = card_weight * mapping["mult"]
+        print(
+            f"Making assumption for weight for {card} based on mapping to {mapping['card']} weight with multiplier {mapping['mult']}, setting it to {card_weights[card]}"
+        )
+
     deck_threshold = config["decks"]["overwrite-threshold"]
     for deck_sheet in config["decks"]["sheets"]:
         id = deck_sheet["sheet-id"]

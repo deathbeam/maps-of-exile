@@ -44,7 +44,6 @@ data:
         key: 0
         value: 14
         skip: 2
-
   decks:
     overwrite-threshold: 300
     sheets:
@@ -53,3 +52,10 @@ data:
         key: 0
         value: 3
         total: 0
+  mappings:
+    "Brother's Gift":
+      card: Brother's Stash
+      mult: 1
+    "The Fortunate":
+      card: The Hoarder
+      mult: 0.5

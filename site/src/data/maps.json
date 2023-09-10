@@ -179,11 +179,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Altered Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisColdGuardianMap",
+        "id": "Synthesis_MapGuardian1",
         "image": false,
         "info": {},
         "layout": {},
@@ -419,11 +423,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Augmented Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisFireGuardianMap",
+        "id": "Synthesis_MapGuardian2",
         "image": false,
         "info": {},
         "layout": {},
@@ -1254,11 +1262,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Venarius"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
+        "id": "Synthesis_MapBoss",
         "image": false,
         "info": {},
         "layout": {},
@@ -4087,11 +4099,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Rewritten Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
+        "id": "Synthesis_MapGuardian4",
         "image": false,
         "info": {},
         "layout": {},
@@ -4889,11 +4905,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Twisted Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
+        "id": "Synthesis_MapGuardian3",
         "image": false,
         "info": {},
         "layout": {},

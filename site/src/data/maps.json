@@ -3991,11 +3991,15 @@
     },
     {
         "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ],
             "names": [
                 "Venarius"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
+        "id": "Synthesis_MapBoss",
         "image": false,
         "info": {},
         "layout": {},

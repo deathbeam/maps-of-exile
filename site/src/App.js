@@ -273,7 +273,8 @@ function App() {
   const poeRegex = useMemo(() => {
     const re = '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
     if (re.length > 50) {
-      return 'Too long, be more specific'
+      let splitMaps = re.substring(0,49).split('|')
+      return splitMaps.splice(0,splitMaps.length - 1).join('|') + '"'
     }
     return re
   }, [filteredMaps])
@@ -595,8 +596,8 @@ function App() {
                 <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                   <span className="tooltip-tag-text">
                     Generates string that can be copy/pasted to Path of Exile search boxes that will search for the
-                    filtered maps. PoE search fields are limited to 50 characters so the string is not generated until
-                    it can fit this criteria.
+                    filtered maps. PoE search fields are limited to 50 characters so the string is truncated to fit
+                    the top maps based off search criteria.
                   </span>
                   <label className="form-label">PoE regex</label>
                 </span>

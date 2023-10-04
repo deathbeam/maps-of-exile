@@ -141,14 +141,18 @@ def get_card_data(key, config, card_extra):
                 "name": x["title"]["name"],
                 "drop": {
                     "areas": list(
-                        filter(None, x["title"].get("drop areas", "").split(","))
+                        filter(
+                            None, (x["title"].get("drop areas", "") or "").split(",")
+                        )
                     ),
                     "monsters": list(
-                        filter(None, x["title"].get("drop monsters", "").split(","))
+                        filter(
+                            None, (x["title"].get("drop monsters", "") or "").split(",")
+                        )
                     ),
-                    "min_level": int(x["title"].get("drop level", "0")),
+                    "min_level": int(x["title"].get("drop level", "0") or "0"),
                     "max_level": int(x["title"].get("drop level maximum"))
-                    if "drop level maximum" in x["title"]
+                    if x["title"].get("drop level maximum")
                     else None,
                 },
             },
@@ -511,11 +515,11 @@ def get_maps(key, config):
             m["rating"] = existing_rating
         existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
         if existing_wiki:
-            if unique and "unique area id" in existing_wiki:
+            if unique and existing_wiki.get("unique area id"):
                 m["id"] = existing_wiki["unique area id"]
             else:
                 m["id"] = existing_wiki["area id"]
-            if "boss monster ids" in existing_wiki:
+            if existing_wiki.get("boss monster ids"):
                 m["boss"]["ids"] = sorted(
                     list(
                         set(filter(None, existing_wiki["boss monster ids"].split(",")))

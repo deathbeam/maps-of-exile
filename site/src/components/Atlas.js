@@ -72,7 +72,7 @@ function MapNode({ id, data }) {
   }
 
   const buttonClass = `btn btn-badge btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
-  const label = (atlasScore ? map.score + ' ' : '') + map.name
+  const label = (atlasScore ? Math.floor(map.score) + ' ' : '') + map.name
 
   return (
     <>

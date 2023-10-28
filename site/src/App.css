@@ -47,7 +47,6 @@ hr {
   .full-height {
     height: 100vh;
     overflow-y: auto;
-    overflow-x: hidden;
   }
 }
 
@@ -94,10 +93,6 @@ hr {
 
 a:hover {
   text-decoration: underline;
-}
-
-.footer {
-  margin-bottom: 10rem;
 }
 
 /* Tooltips */
@@ -172,6 +167,10 @@ a:hover {
   top: 18px;
   left: 100%;
   border-color: transparent transparent transparent black;
+}
+
+.tooltip-tag-left-mid .tooltip-tag-text {
+  top: -200px;
 }
 
 .tooltip-tag-right .tooltip-tag-text {

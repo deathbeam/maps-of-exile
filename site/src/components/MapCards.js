@@ -120,7 +120,7 @@ const MapCard = ({ unique, card }) => {
   }
 
   return (
-    <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
+    <span className="tooltip-tag tooltip-tag-compact tooltip-tag-left tooltip-tag-left-mid">
       <span className="tooltip-tag-text">
         <span className="badge bg-light text-dark w-100 map-reward mb-1">{card.name}</span>
         <div className="map-img-holder mb-1">
@@ -168,12 +168,12 @@ const MapCard = ({ unique, card }) => {
   )
 }
 
-const MapCards = ({ cardValueSourceInput, unique, cards }) => {
+const MapCards = ({ sidebar, cardValueSourceInput, unique, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
   const cardsWithData = useMemo(() => cards.filter(c => !c.hidden).map(c => calculateCardData(c)), [cards])
 
   return (
-    <div className="d-lg-flex flex-row">
+    <div className={sidebar ? '' : 'd-lg-flex flex-row'}>
       <div className="m-1 map-card-price">
         <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap">
           <span className="tooltip-tag-text">

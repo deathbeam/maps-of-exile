@@ -5,9 +5,13 @@
   white-space: inherit;
 }
 
+.map-img-holder {
+  position: relative;
+}
+
 .map-stack-size {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   left: 5px;
 }
 

@@ -122,10 +122,13 @@ const MapCard = ({ unique, card }) => {
   return (
     <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact">
       <span className="tooltip-tag-text">
-        <img src={card.art} className="mb-1" alt="" loading="lazy" />
-        <span className="badge bg-light text-dark map-stack-size">
-          <b>{card.stack}</b>
-        </span>
+        <span className="badge bg-light text-dark w-100 map-reward mb-1">{card.name}</span>
+        <div className="map-img-holder mb-1">
+          <img src={card.art} alt="" loading="lazy" />
+          <span className="badge bg-light text-dark map-stack-size">
+            <b>{card.stack}</b>
+          </span>
+        </div>
         <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
         <br />

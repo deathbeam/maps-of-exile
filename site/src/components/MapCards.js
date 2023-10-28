@@ -126,8 +126,7 @@ const MapCard = ({ unique, card }) => {
         <span className="badge bg-light text-dark map-stack-size">
           <b>{card.stack}</b>
         </span>
-        <b>Reward</b>: {card.reward}
-        <br />
+        <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
         <br />
         <b>Weight</b>: {card.weight}

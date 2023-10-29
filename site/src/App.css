@@ -178,7 +178,7 @@ a:hover {
 }
 
 .tooltip-tag-top .tooltip-tag-text {
-  transform: translateY(calc(-100% - 5px)) translateX(-30%);
+  transform: translateY(calc(-100% - 5px)) translateX(-40%);
 }
 
 .tooltip-tag-top .tooltip-tag-text::after {

@@ -178,12 +178,12 @@ a:hover {
 }
 
 .tooltip-tag-top .tooltip-tag-text {
-  transform: translateY(calc(-100% - 5px)) translateX(-40%);
+  transform: translateY(calc(-100% - 5px)) translateX(-60%);
 }
 
 .tooltip-tag-top .tooltip-tag-text::after {
   top: 100%;
-  right: 50%;
+  right: 10px;
   margin-top: 0;
   border-color: black transparent transparent transparent;
 }

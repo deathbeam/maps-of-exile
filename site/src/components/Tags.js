@@ -3,7 +3,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
     const val = t.name
     const info = t.info
 
-    const searched = currentSearch.find(c => c.value === val)
+    const searched = currentSearch && currentSearch.find(c => c.value === val)
     let color = 'btn-secondary'
     if (searched) {
       color = searched.neg ? 'btn-danger' : 'btn-success'
@@ -13,7 +13,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
     buttons.push(
       <button
         className={'btn btn-badge text-dark ' + color}
-        onClick={() => addToInput(val, searched ? !searched.neg : false, false)}
+        onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
       >
         {val} {info && <b>*</b>}
       </button>

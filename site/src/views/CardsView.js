@@ -62,45 +62,52 @@ const CardList = ({ card, voidstones }) => {
     <tr ref={ref}>
       <td
         style={{
-          width: '245px',
-          backgroundColor: 'black'
+          width: '245px'
         }}
+        className="p-0"
       >
-        <span className={badgeClass + ' w-100 map-reward mb-1'}>
-          <img src={img} alt="" width="16" height="16" className="me-1" />
-          {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
-          {card.name}
-        </span>
-        <div className="map-img-holder mb-1">
-          <img src={card.art} alt="" loading="lazy" />
-          <span className="badge bg-light text-dark map-stack-size">
-            <b>{card.stack}</b>
+        <div
+          style={{
+            backgroundColor: 'black'
+          }}
+          className="p-1"
+        >
+          <span className={badgeClass + ' w-100 map-reward mb-1'}>
+            <img src={img} alt="" width="16" height="16" className="me-1" />
+            {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
+            {card.name}
           </span>
+          <div className="map-img-holder mb-1">
+            <img src={card.art} alt="" loading="lazy" />
+            <span className="badge bg-light text-dark map-stack-size">
+              <b>{card.stack}</b>
+            </span>
+          </div>
+          <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
+          <b>Score</b>: <Rating rating={card.score} />
+          <br />
+          <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
+          <br />
+          <b>Weight</b>: {card.weight}
+          {card.drop && (card.drop.min_level || card.drop.max_level) && (
+            <>
+              <br />
+              <b>Drop level</b>: {dropLevel}
+            </>
+          )}
+          {card.boss && (
+            <>
+              <br />
+              <b className="text-warning">Boss drop</b>
+            </>
+          )}
+          {card.unknown && (
+            <>
+              <br />
+              <b className="text-info">Unknown weight</b>
+            </>
+          )}
         </div>
-        <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
-        <b>Score</b>: <Rating rating={card.score} />
-        <br />
-        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-        <br />
-        <b>Weight</b>: {card.weight}
-        {card.drop && (card.drop.min_level || card.drop.max_level) && (
-          <>
-            <br />
-            <b>Drop level</b>: {dropLevel}
-          </>
-        )}
-        {card.boss && (
-          <>
-            <br />
-            <b className="text-warning">Boss drop</b>
-          </>
-        )}
-        {card.unknown && (
-          <>
-            <br />
-            <b className="text-info">Unknown weight</b>
-          </>
-        )}
       </td>
       <td>{visible && card.maps.map(map => <MapName map={map} voidstones={voidstones} />)}</td>
     </tr>
@@ -133,18 +140,8 @@ const CardsView = ({ view, setView, ratedMaps, cardMinPriceInput, voidstones }) 
       <table className="table table-responsive table-striped mb-0">
         <thead>
           <tr>
-            <th scope="col">
-              <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
-                <span className="tooltip-tag-text">Tooltip</span>
-                Card
-              </span>
-            </th>
-            <th scope="col">
-              <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
-                <span className="tooltip-tag-text">Tooltip</span>
-                Maps
-              </span>
-            </th>
+            <th scope="col">Card</th>
+            <th scope="col">Maps</th>
           </tr>
         </thead>
         <tbody>

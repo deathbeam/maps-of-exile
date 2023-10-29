@@ -18,15 +18,13 @@ const AtlasView = ({
   voidstonesInput,
   cardValueSourceInput
 }) => {
-  const [currentMap, setCurrentMap] = useState('')
+  const [currentMap, setCurrentMap] = useState()
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
-  const style = currentMap
-    ? {
-        backgroundImage:
-          'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (selectedMap.image || '') + ')',
-        backgroundSize: 'cover'
-      }
-    : {}
+  const style = currentMap && {
+    backgroundImage:
+      'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (selectedMap.image || '') + ')',
+    backgroundSize: 'cover'
+  }
 
   return (
     <div className="row g-0 overflow-visible position-relative">

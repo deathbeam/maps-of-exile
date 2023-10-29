@@ -29,10 +29,11 @@ export default function usePersistedState(key, def, startTransition, locationRef
   useEffect(() => {
     try {
       localStorage.setItem(key, JSON.stringify(val))
-      data[key] = val
-
-      if (locationRef && locationRef.current) {
-        locationRef.current.value = 'https://mapsofexile.com/#' + btoa(JSON.stringify(data))
+      if (locationRef) {
+        data[key] = val
+        if (locationRef.current) {
+          locationRef.current.value = 'https://mapsofexile.com/#' + btoa(JSON.stringify(data))
+        }
       }
     } catch (e) {
       console.warn(e)

@@ -165,8 +165,12 @@ function App() {
   const shareableRef = useRef(null)
   const poeRegexRef = useRef(null)
   const searchRef = useRef(null)
+
+  const [view, setView] = usePersistedState('view', 'list', startTransition)
+  const voidstones = useInputField('voidstonesInput', 0, startTransition)
+  const cardDisplay = useInputField('cardDisplayInput', 'all', startTransition)
+
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
-  const [view, setView] = usePersistedState('view', 'list', startTransition, shareableRef)
   const layout = useInputField('layoutInput', 3, startTransition, shareableRef)
   const density = useInputField('densityInput', 2, startTransition, shareableRef)
   const boss = useInputField('bossInput', 1, startTransition, shareableRef)
@@ -176,8 +180,6 @@ function App() {
   const cardMinPrice = useInputField('cardMinPriceInput', 10, startTransition, shareableRef)
   const cardPriceSource = useInputField('cardPriceSourceInput', 'league', startTransition, shareableRef)
   const cardValueSource = useInputField('cardValueSourceInput', 'map', startTransition, shareableRef)
-  const cardDisplay = useInputField('cardDisplayInput', 'all', startTransition, shareableRef)
-  const voidstones = useInputField('voidstonesInput', 0, startTransition, shareableRef)
 
   const ratedMaps = useMemo(
     () =>

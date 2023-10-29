@@ -3,7 +3,7 @@ import { tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
 
-const MapName = ({ map, sidebar, currentSearch, addToInput, voidstones }) => {
+const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones }) => {
   const color = `text-${tierColor(map.tiers, map.unique)}`
 
   const name = (
@@ -13,7 +13,7 @@ const MapName = ({ map, sidebar, currentSearch, addToInput, voidstones }) => {
   )
 
   const mapName =
-    map.image && !sidebar ? (
+    map.image && !sidebar && !cardList ? (
       <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-bottom' : 'tooltip-tag-right')}>
         <span className="tooltip-tag-text tooltip-tag-fill">
           <img src={map.image} alt="" loading="lazy" />
@@ -24,7 +24,7 @@ const MapName = ({ map, sidebar, currentSearch, addToInput, voidstones }) => {
       name
     )
 
-  const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
+  const tags = !cardList && <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
   const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[voidstones]} />
   const score = !sidebar && (
     <span className="d-none d-md-block">

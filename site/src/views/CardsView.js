@@ -109,7 +109,16 @@ const CardList = ({ card, voidstones }) => {
           )}
         </div>
       </td>
-      <td>{visible && card.maps.map(map => <MapName map={map} voidstones={voidstones} />)}</td>
+      <td>
+        <div className="row m-0">
+          {visible &&
+            card.maps.map(map => (
+              <div className="col-2">
+                <MapName map={map} voidstones={voidstones} cardList={true} />
+              </div>
+            ))}
+        </div>
+      </td>
     </tr>
   )
 }
@@ -123,7 +132,7 @@ const CardsView = ({ view, setView, ratedMaps, cardMinPriceInput, voidstones }) 
             ...c,
             drop: c.drop || {},
             boss: ((c.drop || {}).monsters || []).length > 0,
-            maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name)),
+            maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && mc.weight > 0)),
             unknown: !c.weight,
             value: c.price >= cardMinPriceInput ? (c.price || 0) * (c.weight || 0) : 0
           }

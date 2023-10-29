@@ -12,7 +12,10 @@ const Navbar = ({ view, setView, showBack, backAction }) => (
         <i className="fa-solid fa-fw fa-list" /> List
       </button>
       <button className={'btn d-none d-md-block ' + getButtonClass('atlas', view)} onClick={e => setView('atlas')}>
-        <i className="fa-solid fa-fw fa-globe" /> Atlas <span className="badge bg-danger text-dark ms-1">new!</span>
+        <i className="fa-solid fa-fw fa-globe" /> Atlas
+      </button>
+      <button className={'btn d-none d-md-block ' + getButtonClass('cards', view)} onClick={e => setView('cards')}>
+        <i className="fa-solid fa-fw fa-sd-card" /> Cards <span className="badge bg-info text-dark ms-1">wip</span>
       </button>
     </div>
   </nav>

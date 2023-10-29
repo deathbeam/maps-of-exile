@@ -10,6 +10,7 @@ import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import ListView from './views/ListView'
 import AtlasView from './views/AtlasView'
+import CardsView from './views/CardsView'
 
 function rateMaps(
   foundMaps,
@@ -436,6 +437,8 @@ function App() {
     switch (view) {
       case 'atlas':
         return AtlasView
+      case 'cards':
+        return CardsView
       case 'list':
       default:
         return ListView
@@ -466,6 +469,7 @@ function App() {
         setSearchInput={setSearchInput}
         voidstonesInput={voidstones.get}
         cardValueSourceInput={cardValueSource.get}
+        cardMinPriceInput={cardMinPrice.get}
       />
     </>
   )

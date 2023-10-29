@@ -170,7 +170,22 @@ a:hover {
 }
 
 .tooltip-tag-left-mid .tooltip-tag-text {
-  top: -200px;
+  transform: translateY(-40%);
+}
+
+.tooltip-tag-left-mid .tooltip-tag-text::after {
+  top: calc(40% + 15px);
+}
+
+.tooltip-tag-top .tooltip-tag-text {
+  transform: translateY(calc(-100% - 5px)) translateX(-30%);
+}
+
+.tooltip-tag-top .tooltip-tag-text::after {
+  top: 100%;
+  right: 50%;
+  margin-top: 0;
+  border-color: black transparent transparent transparent;
 }
 
 .tooltip-tag-right .tooltip-tag-text {

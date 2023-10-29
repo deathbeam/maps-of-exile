@@ -49,7 +49,7 @@ function CardRateTooltip({ rate, description, name }) {
   )
 }
 
-const MapCard = ({ unique, card }) => {
+const MapCard = ({ tooltipTop, unique, card }) => {
   let badgeClass
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -120,7 +120,11 @@ const MapCard = ({ unique, card }) => {
   }
 
   return (
-    <span className="tooltip-tag tooltip-tag-compact tooltip-tag-left tooltip-tag-left-mid">
+    <span
+      className={
+        'tooltip-tag tooltip-tag-compact ' + (tooltipTop ? 'tooltip-tag-top' : 'tooltip-tag-left tooltip-tag-left-mid')
+      }
+    >
       <span className="tooltip-tag-text">
         <span className={badgeClass + ' w-100 map-reward mb-1'}>
           <img src={img} alt="" width="16" height="16" className="me-1" />
@@ -172,7 +176,7 @@ const MapCard = ({ unique, card }) => {
   )
 }
 
-const MapCards = ({ sidebar, cardValueSourceInput, unique, cards }) => {
+const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, unique, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
   const cardsWithData = useMemo(() => cards.filter(c => !c.hidden).map(c => calculateCardData(c)), [cards])
 
@@ -205,7 +209,7 @@ const MapCards = ({ sidebar, cardValueSourceInput, unique, cards }) => {
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard unique={unique} card={c} />
+          <MapCard tooltipTop={tooltipTop} unique={unique} card={c} />
         ))}
       </div>
     </div>

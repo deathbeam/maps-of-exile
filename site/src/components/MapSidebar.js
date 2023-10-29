@@ -12,7 +12,13 @@ const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, void
     <Rating rating={map.rating.density} label="Density" tooltip={map.info.density} sidebar={true} />
     <Rating rating={map.rating.boss} label="Boss" tooltip={map.info.boss} sidebar={true} />
     <hr />
-    <MapCards sidebar={true} cardValueSourceInput={cardValueSourceInput} unique={map.unique} cards={map.cards} />
+    <MapCards
+      sidebar={true}
+      tooltipTop={!!map.image}
+      cardValueSourceInput={cardValueSourceInput}
+      unique={map.unique}
+      cards={map.cards}
+    />
   </>
 )
 

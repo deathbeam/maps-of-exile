@@ -18,19 +18,19 @@ function rateMaps(
   densityInput,
   bossInput,
   cardInput,
-  cardBaselineInput,
-  cardBaselineNumberInput,
-  cardMinPriceInput,
-  cardPriceSourceInput,
-  cardValueSourceInput,
-  cardDisplayInput,
+  cardBaseline,
+  cardBaselineNumber,
+  cardMinPrice,
+  cardPriceSource,
+  cardValueSource,
+  cardDisplay,
   voidstones
 ) {
-  let cardWeightBaseline = preparedCards.find(c => c.name === cardBaselineInput).weight
-  if (cardBaselineNumberInput > 0) {
-    cardWeightBaseline /= cardBaselineNumberInput
-  } else if (cardBaselineNumberInput < 0) {
-    cardWeightBaseline *= Math.abs(cardBaselineNumberInput)
+  let cardWeightBaseline = preparedCards.find(c => c.name === cardBaseline).weight
+  if (cardBaselineNumber > 0) {
+    cardWeightBaseline /= cardBaselineNumber
+  } else if (cardBaselineNumber < 0) {
+    cardWeightBaseline *= Math.abs(cardBaselineNumber)
   }
 
   // First calculate value for cards
@@ -45,7 +45,7 @@ function rateMaps(
       const cardMaxLevel = (card.drop || {}).max_level || 99
       const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
       const weight = dropEligible ? card.weight || 0 : 0
-      const price = (cardPriceSourceInput === 'standard' ? card.standardPrice : card.price) || 0
+      const price = (cardPriceSource === 'standard' ? card.standardPrice : card.price) || 0
 
       bossWeight += weight
       if (!card.boss) {
@@ -66,12 +66,12 @@ function rateMaps(
       card.dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
 
       const dropEligible = card.weight > 0
-      const priceEligible = card.price >= cardMinPriceInput
+      const priceEligible = card.price >= cardMinPrice
       if (!card.unknown) {
         if (
-          (cardDisplayInput === 'high+drop' && (!dropEligible || !priceEligible)) ||
-          (cardDisplayInput === 'high' && !priceEligible) ||
-          (cardDisplayInput === 'drop' && !dropEligible)
+          (cardDisplay === 'high+drop' && (!dropEligible || !priceEligible)) ||
+          (cardDisplay === 'high' && !priceEligible) ||
+          (cardDisplay === 'drop' && !dropEligible)
         ) {
           card.hidden = true
           card.value = 0
@@ -84,7 +84,7 @@ function rateMaps(
         continue
       }
 
-      if (cardValueSourceInput === 'kirac') {
+      if (cardValueSource === 'kirac') {
         card.value = map.unique ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
       } else {
         card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
@@ -165,96 +165,49 @@ function App() {
   const shareableRef = useRef(null)
   const poeRegexRef = useRef(null)
   const searchRef = useRef(null)
-
-  const [view, setView] = usePersistedState('view', 'list', startTransition, shareableRef)
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
-  const [layoutInput, setLayoutInput, layoutReset, layoutRef] = useInputField(
-    'layoutInput',
-    3,
-    startTransition,
-    shareableRef
-  )
-  const [densityInput, setDensityInput, densityReset, densityRef] = useInputField(
-    'densityInput',
-    2,
-    startTransition,
-    shareableRef
-  )
-  const [bossInput, setBossInput, bossReset, bossRef] = useInputField('bossInput', 1, startTransition, shareableRef)
-  const [cardInput, setCardInput, cardReset, cardRef] = useInputField(
-    'cardWeightInput',
-    2,
-    startTransition,
-    shareableRef
-  )
-  const [cardBaselineInput, setCardBaselineInput, cardBaselineReset] = useInputField(
-    'cardBaselineInput',
-    defaultCardBaseline,
-    startTransition,
-    shareableRef
-  )
-  const [cardBaselineNumberInput, setCardBaselineNumberInput, cardBaselineNumberReset, cardBaselineNumberRef] =
-    useInputField('cardBaselineNumberInput', 1, startTransition, shareableRef)
-  const [cardMinPriceInput, setCardMinPriceInput, cardMinPriceReset, cardMinPriceRef] = useInputField(
-    'cardMinPriceInput',
-    10,
-    startTransition,
-    shareableRef
-  )
-  const [cardPriceSourceInput, setCardPriceSourceInput, cardPriceSourceReset, cardPriceSourceRef] = useInputField(
-    'cardPriceSourceInput',
-    'league',
-    startTransition,
-    shareableRef
-  )
-  const [cardValueSourceInput, setCardValueSourceInput, cardValueSourceReset, cardValueSourceRef] = useInputField(
-    'cardValueSourceInput',
-    'map',
-    startTransition,
-    shareableRef
-  )
-  const [cardDisplayInput, setCardDisplayInput, cardDisplayReset, cardDisplayRef] = useInputField(
-    'cardDisplayInput',
-    'all',
-    startTransition,
-    shareableRef
-  )
-  const [voidstonesInput, setVoidstonesInput, voidstonesReset, voidstonesRef] = useInputField(
-    'voidstonesInput',
-    0,
-    startTransition,
-    shareableRef
-  )
+  const [view, setView] = usePersistedState('view', 'list', startTransition, shareableRef)
+  const layout = useInputField('layoutInput', 3, startTransition, shareableRef)
+  const density = useInputField('densityInput', 2, startTransition, shareableRef)
+  const boss = useInputField('bossInput', 1, startTransition, shareableRef)
+  const card = useInputField('cardWeightInput', 2, startTransition, shareableRef)
+  const cardBaseline = useInputField('cardBaselineInput', defaultCardBaseline, startTransition, shareableRef)
+  const cardBaselineNumber = useInputField('cardBaselineNumberInput', 1, startTransition, shareableRef)
+  const cardMinPrice = useInputField('cardMinPriceInput', 10, startTransition, shareableRef)
+  const cardPriceSource = useInputField('cardPriceSourceInput', 'league', startTransition, shareableRef)
+  const cardValueSource = useInputField('cardValueSourceInput', 'map', startTransition, shareableRef)
+  const cardDisplay = useInputField('cardDisplayInput', 'all', startTransition, shareableRef)
+  const voidstones = useInputField('voidstonesInput', 0, startTransition, shareableRef)
 
   const ratedMaps = useMemo(
     () =>
       rateMaps(
         preparedMaps,
         preparedCards,
-        layoutInput,
-        densityInput,
-        bossInput,
-        cardInput,
-        cardBaselineInput,
-        cardBaselineNumberInput,
-        cardMinPriceInput,
-        cardPriceSourceInput,
-        cardValueSourceInput,
-        cardDisplayInput,
-        voidstonesInput
+        layout.get,
+        density.get,
+        boss.get,
+        card.get,
+        cardBaseline.get,
+        cardBaselineNumber.get,
+        cardMinPrice.get,
+        cardPriceSource.get,
+        cardValueSource.get,
+        cardDisplay.get,
+        voidstones.get
       ),
     [
-      layoutInput,
-      densityInput,
-      bossInput,
-      cardInput,
-      cardBaselineInput,
-      cardBaselineNumberInput,
-      cardMinPriceInput,
-      cardPriceSourceInput,
-      cardValueSourceInput,
-      cardDisplayInput,
-      voidstonesInput
+      layout,
+      density,
+      boss,
+      card,
+      cardBaseline,
+      cardBaselineNumber,
+      cardMinPrice,
+      cardPriceSource,
+      cardValueSource,
+      cardDisplay,
+      voidstones
     ]
   )
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
@@ -295,233 +248,197 @@ function App() {
     [searchInput, setSearchInput, searchRef]
   )
 
-  const inputs = [
-    {
-      name: 'Layout weight',
-      tooltip: (
-        <>
-          The weight of layout rating when calculating score for map (so end result is map layout * layout weight).
-          <br />
-          <b>This is not minimal layout rating filter</b>, this will simply push maps with good layouts lower or higher
-          in list.
-        </>
-      ),
-      type: 'number',
-      ref: layoutRef,
-      input: layoutInput,
-      setInput: setLayoutInput,
-      reset: layoutReset
-    },
-    {
-      name: 'Density weight',
-      tooltip: (
-        <>
-          The weight of density rating when calculating score for map (so end result is map density * density weight).
-          <br />
-          <b>This is not minimal density rating filter</b>, this will simply push maps with good density lower or higher
-          in list.
-        </>
-      ),
-      type: 'number',
-      ref: densityRef,
-      input: densityInput,
-      setInput: setDensityInput,
-      reset: densityReset
-    },
-    {
-      name: 'Boss weight',
-      tooltip: (
-        <>
-          The weight of boss rating when calculating score for map (so end result is map boss * boss weight).
-          <br />
-          <b>This is not minimal boss rating filter</b>, this will simply push maps with good boss lower or higher in
-          list.
-        </>
-      ),
-      type: 'number',
-      ref: bossRef,
-      input: bossInput,
-      setInput: setBossInput,
-      reset: bossReset
-    },
-    {
-      name: 'Card weight',
-      tooltip: (
-        <>
-          The weight of card rating when calculating score for map (so end result is map card rating * card weight).
-          <br />
-          <b>This is not minimal card weight filter</b>, this will simply push maps with good cards lower or higher in
-          list.
-        </>
-      ),
-      type: 'number',
-      ref: cardRef,
-      input: cardInput,
-      setInput: setCardInput,
-      reset: cardReset
-    },
-    {
-      name: 'Card price source',
-      tooltip: <>Source of price data, can be either League or Standard.</>,
-      type: 'select',
-      options: {
-        league: 'League',
-        standard: 'Standard'
+  const inputs = useMemo(
+    () => [
+      {
+        name: 'Layout weight',
+        tooltip: (
+          <>
+            The weight of layout rating when calculating score for map (so end result is map layout * layout weight).
+            <br />
+            <b>This is not minimal layout rating filter</b>, this will simply push maps with good layouts lower or
+            higher in list.
+          </>
+        ),
+        type: 'number',
+        def: layout
       },
-      ref: cardPriceSourceRef,
-      input: cardPriceSourceInput,
-      setInput: setCardPriceSourceInput,
-      reset: cardPriceSourceReset
-    },
-    {
-      name: 'Card value source',
-      tooltip: <>How card value is calculated, either based on card map drops or card value from kirac missions.</>,
-      type: 'select',
-      options: {
-        map: 'Map drops',
-        kirac: 'Kirac missions'
+      {
+        name: 'Density weight',
+        tooltip: (
+          <>
+            The weight of density rating when calculating score for map (so end result is map density * density weight).
+            <br />
+            <b>This is not minimal density rating filter</b>, this will simply push maps with good density lower or
+            higher in list.
+          </>
+        ),
+        type: 'number',
+        def: density
       },
-      ref: cardValueSourceRef,
-      input: cardValueSourceInput,
-      setInput: setCardValueSourceInput,
-      reset: cardValueSourceReset
-    },
-    {
-      name: 'Card display',
-      tooltip: <>What cards are displayed/hidden.</>,
-      type: 'select',
-      options: {
-        all: 'All cards',
-        high: 'High value only',
-        drop: 'Droppable only',
-        'high+drop': 'High value and droppable only'
+      {
+        name: 'Boss weight',
+        tooltip: (
+          <>
+            The weight of boss rating when calculating score for map (so end result is map boss * boss weight).
+            <br />
+            <b>This is not minimal boss rating filter</b>, this will simply push maps with good boss lower or higher in
+            list.
+          </>
+        ),
+        type: 'number',
+        def: boss
       },
-      ref: cardDisplayRef,
-      input: cardDisplayInput,
-      setInput: setCardDisplayInput,
-      reset: cardDisplayReset
-    },
-    {
-      name: 'Minimum card price',
-      tooltip: (
-        <>
-          Minimum price for the card to be considered as something that should be accounted for calculating map score
-          and per map value.
-          <br />
-          Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot even though
-          when you click on listings the data say something else.
-        </>
-      ),
-      type: 'number',
-      ref: cardMinPriceRef,
-      input: cardMinPriceInput,
-      setInput: setCardMinPriceInput,
-      reset: cardMinPriceReset
-    },
-    {
-      name: 'Average card per map',
-      tooltip: (
-        <>
-          The baseline card drop you are expecting to see every map on average with number input next to it. Positive
-          number indicates x cards dropped per map, negative number indicates card dropped every x maps.
-          <br />
-          This is used for calculating how many drop pool items you get on average and that is used for{' '}
-          <b>calculating chance to get card per map</b>.
-          <br />
-          You should set this value to your observed drop rate of index card (for example Union in Cemetery) so the site
-          can predict drop rates for your current farming strategy.
-        </>
-      ),
-      type: 'cardselect',
-      options: preparedCards
-        .sort((a, b) => b.weight - a.weight)
-        .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name })),
-      input: cardBaselineInput,
-      setInput: setCardBaselineInput,
-      reset: cardBaselineReset,
-      numberRef: cardBaselineNumberRef,
-      numberInput: cardBaselineNumberInput,
-      setNumberInput: setCardBaselineNumberInput,
-      numberReset: cardBaselineNumberReset,
-      size: 'big'
-    },
-    {
-      name: 'Atlas voidstones',
-      tooltip: <>How many voidstones you have. Used for marking cards as droppable or not and determining map tiers.</>,
-      type: 'select',
-      options: {
-        0: '0 voidstones',
-        1: '1 voidstone',
-        2: '2 voidstones',
-        3: '3 voidstones',
-        4: '4 voidstones'
+      {
+        name: 'Card weight',
+        tooltip: (
+          <>
+            The weight of card rating when calculating score for map (so end result is map card rating * card weight).
+            <br />
+            <b>This is not minimal card weight filter</b>, this will simply push maps with good cards lower or higher in
+            list.
+          </>
+        ),
+        type: 'number',
+        def: card
       },
-      ref: voidstonesRef,
-      input: voidstonesInput,
-      setInput: setVoidstonesInput,
-      reset: voidstonesReset,
-      size: 'big'
-    },
-    {
-      name: 'PoE Regex',
-      tooltip: (
-        <>
-          Generates string that can be copy/pasted to Path of Exile search boxes that will search for the filtered maps.
-          PoE search fields are limited to 50 characters so the string is truncated to fit the top maps based off search
-          criteria.
-        </>
-      ),
-      type: 'copytext',
-      ref: poeRegexRef,
-      input: poeRegex,
-      size: 'big'
-    },
-    {
-      name: 'Shareable link',
-      tooltip: <>Share.</>,
-      type: 'copytext',
-      ref: shareableRef,
-      size: 'big'
-    }
-  ]
+      {
+        name: 'Card price source',
+        tooltip: <>Source of price data, can be either League or Standard.</>,
+        type: 'select',
+        options: {
+          league: 'League',
+          standard: 'Standard'
+        },
+        def: cardPriceSource
+      },
+      {
+        name: 'Card value source',
+        tooltip: <>How card value is calculated, either based on card map drops or card value from kirac missions.</>,
+        type: 'select',
+        options: {
+          map: 'Map drops',
+          kirac: 'Kirac missions'
+        },
+        def: cardValueSource
+      },
+      {
+        name: 'Card display',
+        tooltip: <>What cards are displayed/hidden.</>,
+        type: 'select',
+        options: {
+          all: 'All cards',
+          high: 'High value only',
+          drop: 'Droppable only',
+          'high+drop': 'High value and droppable only'
+        },
+        def: cardDisplay
+      },
+      {
+        name: 'Minimum card price',
+        tooltip: (
+          <>
+            Minimum price for the card to be considered as something that should be accounted for calculating map score
+            and per map value.
+            <br />
+            Try to not go under <b>6c</b> as <b>poe.ninja</b> tends to overvalue the low cost cards by a lot even though
+            when you click on listings the data say something else.
+          </>
+        ),
+        type: 'number',
+        def: cardMinPrice
+      },
+      {
+        name: 'Average card per map',
+        tooltip: (
+          <>
+            The baseline card drop you are expecting to see every map on average with number input next to it. Positive
+            number indicates x cards dropped per map, negative number indicates card dropped every x maps.
+            <br />
+            This is used for calculating how many drop pool items you get on average and that is used for{' '}
+            <b>calculating chance to get card per map</b>.
+            <br />
+            You should set this value to your observed drop rate of index card (for example Union in Cemetery) so the
+            site can predict drop rates for your current farming strategy.
+          </>
+        ),
+        type: 'cardselect',
+        options: preparedCards
+          .sort((a, b) => b.weight - a.weight)
+          .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name })),
+        def: cardBaseline,
+        numberDef: cardBaselineNumber,
+        size: 'big'
+      },
+      {
+        name: 'Atlas voidstones',
+        tooltip: (
+          <>How many voidstones you have. Used for marking cards as droppable or not and determining map tiers.</>
+        ),
+        type: 'select',
+        options: {
+          0: '0 voidstones',
+          1: '1 voidstone',
+          2: '2 voidstones',
+          3: '3 voidstones',
+          4: '4 voidstones'
+        },
+        def: voidstones,
+        size: 'big'
+      },
+      {
+        name: 'PoE Regex',
+        tooltip: (
+          <>
+            Generates string that can be copy/pasted to Path of Exile search boxes that will search for the filtered
+            maps. PoE search fields are limited to 50 characters so the string is truncated to fit the top maps based
+            off search criteria.
+          </>
+        ),
+        type: 'copytext',
+        def: {
+          ref: poeRegexRef,
+          get: poeRegex
+        },
+        size: 'big'
+      },
+      {
+        name: 'Shareable link',
+        tooltip: <>Link that contains current filter configuration that can be shared with other people.</>,
+        type: 'copytext',
+        def: {
+          ref: shareableRef
+        },
+        size: 'big'
+      }
+    ],
+    [
+      layout,
+      density,
+      boss,
+      card,
+      cardBaseline,
+      cardBaselineNumber,
+      cardMinPrice,
+      cardPriceSource,
+      cardValueSource,
+      cardDisplay,
+      voidstones,
+      poeRegexRef,
+      poeRegex,
+      shareableRef
+    ]
+  )
 
-  let currentView
-  switch (view) {
-    case 'atlas':
-      currentView = (
-        <AtlasView
-          view={view}
-          setView={setView}
-          inputs={inputs}
-          ratedMaps={ratedMaps}
-          addToInput={addToInput}
-          currentSearch={currentSearch}
-          searchRef={searchRef}
-          searchInput={searchInput}
-          setSearchInput={setSearchInput}
-          voidstonesInput={voidstonesInput}
-          cardValueSourceInput={cardValueSourceInput}
-        />
-      )
-      break
-    case 'list':
-    default:
-      currentView = (
-        <ListView
-          view={view}
-          setView={setView}
-          inputs={inputs}
-          filteredMaps={filteredMaps}
-          addToInput={addToInput}
-          currentSearch={currentSearch}
-          searchRef={searchRef}
-          searchInput={searchInput}
-          setSearchInput={setSearchInput}
-          voidstonesInput={voidstonesInput}
-          cardValueSourceInput={cardValueSourceInput}
-        />
-      )
-  }
+  const CurrentView = useMemo(() => {
+    switch (view) {
+      case 'atlas':
+        return AtlasView
+      case 'list':
+      default:
+        return ListView
+    }
+  }, [view])
 
   return (
     <>
@@ -534,7 +451,20 @@ function App() {
       >
         <i className="fa-solid fa-fw fa-code-fork" /> Data incorrect or missing? Open an issue
       </a>
-      {currentView}
+      <CurrentView
+        view={view}
+        setView={setView}
+        inputs={inputs}
+        ratedMaps={ratedMaps}
+        filteredMaps={filteredMaps}
+        addToInput={addToInput}
+        currentSearch={currentSearch}
+        searchRef={searchRef}
+        searchInput={searchInput}
+        setSearchInput={setSearchInput}
+        voidstonesInput={voidstones.get}
+        cardValueSourceInput={cardValueSource.get}
+      />
     </>
   )
 }

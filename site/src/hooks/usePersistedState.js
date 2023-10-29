@@ -31,7 +31,7 @@ export default function usePersistedState(key, def, startTransition, locationRef
       localStorage.setItem(key, JSON.stringify(val))
       data[key] = val
 
-      if (locationRef) {
+      if (locationRef && locationRef.current) {
         locationRef.current.value = 'https://mapsofexile.com/#' + btoa(JSON.stringify(data))
       }
     } catch (e) {

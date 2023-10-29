@@ -10,7 +10,6 @@ export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 export const mfAcademyInvite = 'https://discord.gg/mfacademy'
-export const possibleVoidstones = [0, 1, 2, 3, 4]
 
 export const preparedGlobals = globals
 const lastUpdate = new Date(preparedGlobals.lastUpdate)

@@ -5,15 +5,15 @@ export default function useInputField(key, def, startTransition, locationRef) {
   const ref = useRef(null)
   const [val, setter] = usePersistedState(key, def, startTransition, locationRef)
 
-  return [
-    val,
-    setter,
-    () => {
+  return {
+    get: val,
+    set: setter,
+    reset: () => {
       if (ref.current) {
         ref.current.value = def
       }
       setter(def)
     },
     ref
-  ]
+  }
 }

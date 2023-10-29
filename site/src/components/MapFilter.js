@@ -23,11 +23,11 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             <input
               className="form-control"
               type="number"
-              ref={input.ref}
-              defaultValue={input.input}
-              onChange={input.setInput}
+              ref={input.def.ref}
+              defaultValue={input.def.get}
+              onChange={input.def.set}
             />
-            <button className="btn btn-outline-secondary" onClick={input.reset}>
+            <button className="btn btn-outline-secondary" onClick={input.def.reset}>
               <i className="fa-solid fa-refresh fa-fw" />
             </button>
           </div>
@@ -41,12 +41,12 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             <label className="form-label">{input.name}</label>
           </span>
           <div className="input-group">
-            <select className="form-control" ref={input.ref} defaultValue={input.input} onChange={input.setInput}>
+            <select className="form-control" ref={input.def.ref} defaultValue={input.def.get} onChange={input.def.set}>
               {Object.entries(input.options).map(([key, value]) => (
                 <option value={key}>{value}</option>
               ))}
             </select>
-            <button className="btn btn-outline-secondary" onClick={input.reset}>
+            <button className="btn btn-outline-secondary" onClick={input.def.reset}>
               <i className="fa-solid fa-refresh fa-fw" />
             </button>
           </div>
@@ -63,12 +63,12 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             <input
               className="form-control"
               type="text"
-              ref={input.ref}
-              value={input.input}
+              ref={input.def.ref}
+              value={input.def.get}
               readOnly={true}
               onFocus={e => e.target.select()}
             />
-            <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(input.ref)}>
+            <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(input.def.ref)}>
               <i className="fa-solid fa-copy fa-fw" />
             </button>
           </div>
@@ -84,23 +84,23 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
           <div className="input-group">
             <SelectSearch
               options={input.options}
-              value={input.input}
-              placeholder={input.input}
-              onChange={input.setInput}
+              value={input.def.get}
+              placeholder={input.def.get}
+              onChange={input.def.set}
               search="true"
             />
             <input
               className="form-control select-search-number text-center"
               type="number"
-              ref={input.numberRef}
-              defaultValue={input.numberInput}
-              onChange={input.setNumberInput}
+              ref={input.numberDef.ref}
+              defaultValue={input.numberDef.get}
+              onChange={input.numberDef.set}
             />
             <button
               className="btn btn-outline-secondary"
               onClick={e => {
-                input.reset()
-                input.numberReset()
+                input.def.reset()
+                input.numberDef.reset()
               }}
             >
               <i className="fa-solid fa-refresh fa-fw" />

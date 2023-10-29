@@ -41,13 +41,10 @@ const AtlasView = ({
           />
         </ReactFlowProvider>
       </div>
-      <div
-        className={'container-fluid col-lg-3 col-12 full-height m-0 p-0' + (currentMap ? ' overflow-visible' : '')}
-        style={style}
-      >
+      <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>
         <Navbar view={view} setView={setView} showBack={!!currentMap} backAction={() => setCurrentMap(null)} />
         <div className="m-2">
-          <p className="d-block d-md-none">
+          <p className="d-block d-lg-none">
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back
             to <b>List</b> view.
           </p>

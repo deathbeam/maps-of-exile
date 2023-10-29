@@ -152,11 +152,13 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones, setCurrentMap }) =
 
   return (
     <div
-      className="d-none d-md-block"
+      className="d-none d-lg-block position-fixed"
       style={{
-        width: '100%',
+        width: '75%',
         height: '100vh',
-        backgroundColor: 'black'
+        backgroundColor: 'black',
+        top: 0,
+        left: 0
       }}
     >
       <ReactFlow

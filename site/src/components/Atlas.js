@@ -184,13 +184,13 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones, setCurrentMap }) =
             <i className="fa-solid fa-fw fa-refresh" />
           </ControlButton>
           <ControlButton onClick={() => setAtlasIcons(!atlasIcons)} title="Map icons">
-            <i className={'fa-solid fa-fw fa-image' + (atlasIcons ? ' text-info' : '')} />
+            <i className={'fa-solid fa-fw fa-image' + (atlasIcons ? ' text-primary' : '')} />
           </ControlButton>
           <ControlButton onClick={() => setAtlasLabels(!atlasLabels)} title="Map labels">
-            <i className={'fa-solid fa-fw fa-message' + (atlasLabels ? ' text-info' : '')} />
+            <i className={'fa-solid fa-fw fa-message' + (atlasLabels ? ' text-primary' : '')} />
           </ControlButton>
           <ControlButton onClick={() => setAtlasScore(!atlasScore)} title="Score heatmap">
-            <i className={'fa-solid fa-fw fa-star' + (atlasScore ? ' text-info' : '')} />
+            <i className={'fa-solid fa-fw fa-star' + (atlasScore ? ' text-primary' : '')} />
           </ControlButton>
         </Controls>
       </ReactFlow>

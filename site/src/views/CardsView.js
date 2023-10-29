@@ -130,7 +130,7 @@ const CardsView = ({ view, setView, ratedMaps, cardMinPriceInput, voidstones }) 
         }),
         10
       ).sort((a, b) => b.score - a.score),
-    [preparedCards, ratedMaps, cardMinPriceInput]
+    [ratedMaps, cardMinPriceInput]
   )
 
   return (

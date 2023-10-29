@@ -12,16 +12,17 @@ const MapName = ({ map, sidebar, currentSearch, addToInput, voidstones }) => {
     </a>
   )
 
-  const mapName = map.image ? (
-    <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-bottom' : 'tooltip-tag-right')}>
-      <span className="tooltip-tag-text tooltip-tag-fill">
-        <img src={map.image} alt="" loading="lazy" />
+  const mapName =
+    map.image && !sidebar ? (
+      <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-bottom' : 'tooltip-tag-right')}>
+        <span className="tooltip-tag-text tooltip-tag-fill">
+          <img src={map.image} alt="" loading="lazy" />
+        </span>
+        {name}
       </span>
-      {name}
-    </span>
-  ) : (
-    name
-  )
+    ) : (
+      name
+    )
 
   const tags = <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
   const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[voidstones]} />
@@ -32,19 +33,22 @@ const MapName = ({ map, sidebar, currentSearch, addToInput, voidstones }) => {
   )
 
   return (
-    <div className="d-lg-flex flex-row">
-      <div className="pe-2 pb-2">
-        {icon}
-        {score}
+    <>
+      <div className="d-lg-flex flex-row">
+        <div className="pe-2 pb-2">
+          {icon}
+          {score}
+        </div>
+        <div>
+          {mapName}
+          <br />
+          <small>{map.tiers.join(', ')}</small>
+          <br />
+          {!sidebar && tags}
+        </div>
       </div>
-      <div>
-        {mapName}
-        <br />
-        <small>{map.tiers.join(', ')}</small>
-        <br />
-        {tags}
-      </div>
-    </div>
+      {sidebar && tags}
+    </>
   )
 }
 

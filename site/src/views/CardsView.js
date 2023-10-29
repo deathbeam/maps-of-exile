@@ -60,7 +60,13 @@ const CardList = ({ card, voidstones }) => {
   }
 
   return (
-    <tr ref={ref}>
+    <tr
+      ref={ref}
+      style={{
+        backgroundImage: 'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (card.art || '') + ')'
+      }}
+      className="map-image lazy-bg"
+    >
       <td
         style={{
           width: '245px'

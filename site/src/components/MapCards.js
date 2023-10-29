@@ -179,7 +179,7 @@ const MapCards = ({ sidebar, cardValueSourceInput, unique, cards }) => {
   return (
     <div className={sidebar ? '' : 'd-lg-flex flex-row'}>
       <div className="m-1 map-card-price">
-        <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap">
+        <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap w-100">
           <span className="tooltip-tag-text">
             {cardsWithData
               .filter(c => c.value > 0)
@@ -191,7 +191,16 @@ const MapCards = ({ sidebar, cardValueSourceInput, unique, cards }) => {
                 )
               )}
           </span>
-          <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
+          {sidebar ? (
+            <>
+              <b>{total}</b> <img src="/img/chaos.png" alt="" width="16" className="me-1" /> per map
+              <hr />
+            </>
+          ) : (
+            <>
+              <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
+            </>
+          )}
         </span>
       </div>
       <div>

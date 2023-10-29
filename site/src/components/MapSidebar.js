@@ -5,12 +5,12 @@ import MapCards from './MapCards'
 
 const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones, setCurrentMap }) => (
   <>
+    <MapName map={map} sidebar={true} currentSearch={currentSearch} addToInput={addToInput} voidstones={voidstones} />
+    <hr />
     <Rating rating={map.score} scale={10} label="Total" />
     <Rating rating={map.rating.layout} label="Layout" tooltip={map.info.layout} sidebar={true} />
     <Rating rating={map.rating.density} label="Density" tooltip={map.info.density} sidebar={true} />
     <Rating rating={map.rating.boss} label="Boss" tooltip={map.info.boss} sidebar={true} />
-    <hr />
-    <MapName map={map} sidebar={true} currentSearch={currentSearch} addToInput={addToInput} voidstones={voidstones} />
     <hr />
     <MapConnected connected={map.connected} onClick={setCurrentMap} />
     <hr />

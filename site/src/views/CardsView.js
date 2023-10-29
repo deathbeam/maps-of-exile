@@ -2,11 +2,12 @@ import GoToTop from '../components/GoToTop'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { preparedCards } from '../data'
-import { calculateScore } from '../common'
+import { calculateScore, filter } from '../common'
 import MapName from '../components/MapName'
 import useLazy from '../hooks/useLazy'
 import Rating from '../components/Rating'
 import { useMemo } from 'react'
+import MapFilter from '../components/MapFilter'
 
 const CardList = ({ card, voidstones }) => {
   const [ref, visible] = useLazy()
@@ -123,29 +124,77 @@ const CardList = ({ card, voidstones }) => {
   )
 }
 
-const CardsView = ({ view, setView, ratedMaps, cardMinPriceInput, voidstones }) => {
-  const cards = useMemo(
+function filterCards(ratedCards, currentSearch) {
+  return ratedCards
+    .filter(m => !currentSearch || filter(currentSearch, m.search))
+    .sort(
+      (a, b) =>
+        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
+    )
+}
+
+const CardsView = ({
+  view,
+  setView,
+  ratedMaps,
+  cardMinPriceInput,
+  cardPriceSourceInput,
+  voidstones,
+  inputs,
+  addToInput,
+  currentSearch,
+  searchInput,
+  searchRef,
+  setSearchInput
+}) => {
+  const ratedCards = useMemo(
     () =>
       calculateScore(
         preparedCards.map(c => {
-          return {
+          const price = (cardPriceSourceInput === 'standard' ? c.standardPrice : c.price) || 0
+          const out = {
             ...c,
             drop: c.drop || {},
             boss: ((c.drop || {}).monsters || []).length > 0,
             maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && mc.weight > 0)),
             unknown: !c.weight,
-            value: c.price >= cardMinPriceInput ? (c.price || 0) * (c.weight || 0) : 0
+            price: price,
+            value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
           }
+
+          out.search = [
+            ...new Set([
+              out.name,
+              out.reward,
+              ...out.maps.map(c => c.name),
+              ...out.maps.flatMap(c => c.tags).map(t => t.name)
+            ])
+          ].map(v => v.trim().toLowerCase())
+
+          return out
         }),
         10
       ).sort((a, b) => b.score - a.score),
-    [ratedMaps, cardMinPriceInput]
+    [ratedMaps, cardMinPriceInput, cardPriceSourceInput]
   )
+
+  const filteredCards = useMemo(() => filterCards(ratedCards, currentSearch), [ratedCards, currentSearch])
 
   return (
     <>
       <GoToTop />
       <Navbar view={view} setView={setView} />
+      <div className="container-fluid p-2 row g-0">
+        <MapFilter
+          inputs={inputs}
+          sidebar={false}
+          addToInput={addToInput}
+          currentSearch={currentSearch}
+          searchInput={searchInput}
+          searchRef={searchRef}
+          setSearchInput={setSearchInput}
+        />
+      </div>
       <table className="table table-responsive table-striped mb-0">
         <thead>
           <tr>
@@ -154,7 +203,7 @@ const CardsView = ({ view, setView, ratedMaps, cardMinPriceInput, voidstones }) 
           </tr>
         </thead>
         <tbody>
-          {cards.map(c => (
+          {filteredCards.map(c => (
             <CardList card={c} voidstones={voidstones} />
           ))}
         </tbody>

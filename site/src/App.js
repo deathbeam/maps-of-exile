@@ -470,6 +470,7 @@ function App() {
         voidstonesInput={voidstones.get}
         cardValueSourceInput={cardValueSource.get}
         cardMinPriceInput={cardMinPrice.get}
+        cardPriceSourceInput={cardPriceSource.get}
       />
     </>
   )

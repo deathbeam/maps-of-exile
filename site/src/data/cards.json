@@ -80,7 +80,7 @@
         "price": 11.4,
         "reward": "Jewellery of Farrul, Item Level: 100, Shaper + Hunter Item",
         "stack": 3,
-        "standardPrice": 5.2,
+        "standardPrice": 5.1,
         "weight": 7
     },
     {
@@ -251,7 +251,7 @@
         "price": 1.0,
         "reward": "20x Orb of Alteration",
         "stack": 2,
-        "standardPrice": 1.0,
+        "standardPrice": 0.99,
         "weight": 3502
     },
     {
@@ -315,10 +315,10 @@
         },
         "name": "Akil's Prophecy",
         "ninja": "https://poe.ninja/challenge/divination-cards/akils-prophecy",
-        "price": 9.8,
+        "price": 9.7,
         "reward": "Fated Unique Item",
         "stack": 3,
-        "standardPrice": 15.0,
+        "standardPrice": 14.7,
         "weight": 135
     },
     {
@@ -346,7 +346,7 @@
         "price": 1.0,
         "reward": "Queen of the Forest",
         "stack": 6,
-        "standardPrice": 1.6,
+        "standardPrice": 1.5,
         "weight": 1800
     },
     {
@@ -362,7 +362,7 @@
         },
         "name": "Alluring Bounty",
         "ninja": "https://poe.ninja/challenge/divination-cards/alluring-bounty",
-        "price": 14.0,
+        "price": 13.9,
         "reward": "10x Exalted Orb",
         "stack": 7,
         "standardPrice": 25.0,
@@ -621,7 +621,7 @@
         "price": 1.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
-        "standardPrice": 2.6,
+        "standardPrice": 2.5,
         "weight": 2912
     },
     {
@@ -709,24 +709,6 @@
         "weight": 205
     },
     {
-        "art": "BirthOfTheThree",
-        "name": "Birth of the Three",
-        "ninja": "https://poe.ninja/challenge/divination-cards/birth-of-the-three",
-        "price": 0,
-        "reward": "The Goddess Bound",
-        "stack": 3,
-        "standardPrice": 58.75
-    },
-    {
-        "art": "BlessingOfGod",
-        "name": "Blessing of God",
-        "ninja": "https://poe.ninja/challenge/divination-cards/blessing-of-god",
-        "price": 0,
-        "reward": "Elreon's Jewellery, Item Level: 85",
-        "stack": 3,
-        "standardPrice": 41.6
-    },
-    {
         "art": "BlindVenture",
         "drop": {
             "areas": [
@@ -807,7 +789,7 @@
         "price": 1.0,
         "reward": "Map",
         "stack": 4,
-        "standardPrice": 0.75,
+        "standardPrice": 0.69,
         "weight": 5635
     },
     {
@@ -828,7 +810,7 @@
         "price": 4.0,
         "reward": "Six-Link Harbinger Bow, Item Level: 91",
         "stack": 6,
-        "standardPrice": 6.8,
+        "standardPrice": 6.6,
         "weight": 99
     },
     {
@@ -885,7 +867,7 @@
         "price": 1225.89,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 1550.78,
+        "standardPrice": 1550.4,
         "weight": 47
     },
     {
@@ -902,10 +884,10 @@
         },
         "name": "Brother's Stash",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-stash",
-        "price": 92.4,
+        "price": 90.0,
         "reward": "5x Exalted Orb",
         "stack": 1,
-        "standardPrice": 219.73,
+        "standardPrice": 220.32,
         "weight": 47
     },
     {
@@ -1093,7 +1075,7 @@
         "price": 5.0,
         "reward": "Synthesis Item",
         "stack": 4,
-        "standardPrice": 10.5,
+        "standardPrice": 10.0,
         "weight": 160
     },
     {
@@ -1113,7 +1095,7 @@
         "price": 1.0,
         "reward": "76x Simulacrum Splinter",
         "stack": 8,
-        "standardPrice": 6.4,
+        "standardPrice": 6.0,
         "weight": 275
     },
     {
@@ -1131,7 +1113,7 @@
         "price": 1679.3,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 1860.94,
+        "standardPrice": 1860.47,
         "weight": 9
     },
     {
@@ -1150,7 +1132,7 @@
         "price": 3.0,
         "reward": "Item, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 5.5,
+        "standardPrice": 5.4,
         "weight": 375
     },
     {
@@ -1190,7 +1172,7 @@
         "price": 1.0,
         "reward": "5x Regal Orb",
         "stack": 9,
-        "standardPrice": 0.57,
+        "standardPrice": 0.51,
         "weight": 2868
     },
     {
@@ -1228,7 +1210,7 @@
         "price": 3.0,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
-        "standardPrice": 7.8,
+        "standardPrice": 8.7,
         "weight": 73
     },
     {
@@ -1244,7 +1226,23 @@
         "price": 1.0,
         "reward": "Obliteration",
         "stack": 5,
-        "standardPrice": 0.72,
+        "standardPrice": 0.7,
+        "weight": 10245
+    },
+    {
+        "art": "DarkTemptation",
+        "drop": {
+            "areas": [],
+            "min_level": 44,
+            "monsters": [],
+            "text": "Can also drop from hidden chests in The Azurite Mine."
+        },
+        "name": "Dark Temptation",
+        "ninja": "https://poe.ninja/challenge/divination-cards/dark-temptation",
+        "price": 1.0,
+        "reward": "Obliteration",
+        "stack": 5,
+        "standardPrice": 0.7,
         "weight": 10245
     },
     {
@@ -1257,7 +1255,7 @@
         },
         "name": "Darker Half",
         "ninja": "https://poe.ninja/challenge/divination-cards/darker-half",
-        "price": 59.0,
+        "price": 58.9,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
         "standardPrice": 60.0,
@@ -1319,7 +1317,7 @@
         "price": 3.0,
         "reward": "Level 21 Trap Gem, Quality: +23%, Corrupted",
         "stack": 7,
-        "standardPrice": 9.3,
+        "standardPrice": 9.4,
         "weight": 154
     },
     {
@@ -1377,7 +1375,7 @@
         "price": 150.0,
         "reward": "Level 6 Awakened Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 281.96,
+        "standardPrice": 281.89,
         "weight": 26
     },
     {
@@ -1484,7 +1482,7 @@
         "price": 125.0,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 150.0,
+        "standardPrice": 150.5,
         "weight": 418
     },
     {
@@ -1545,7 +1543,7 @@
         "price": 195.0,
         "reward": "3x Regrading Lens",
         "stack": 3,
-        "standardPrice": 281.96,
+        "standardPrice": 281.89,
         "weight": 92
     },
     {
@@ -1600,7 +1598,7 @@
         },
         "name": "Duality",
         "ninja": "https://poe.ninja/challenge/divination-cards/duality",
-        "price": 8.3,
+        "price": 8.4,
         "reward": "Body Armour, Item Level: 100, Double-Influenced Item",
         "stack": 2,
         "standardPrice": 50.5,
@@ -1789,7 +1787,7 @@
         },
         "name": "Eternal Bonds",
         "ninja": "https://poe.ninja/challenge/divination-cards/eternal-bonds",
-        "price": 39.0,
+        "price": 38.7,
         "reward": "Replica Cortex",
         "stack": 4,
         "standardPrice": 129.0,
@@ -1845,7 +1843,7 @@
         "price": 383.84,
         "reward": "Nimis",
         "stack": 7,
-        "standardPrice": 563.92
+        "standardPrice": 563.78
     },
     {
         "art": "ForbiddenPower",
@@ -1869,15 +1867,6 @@
         "stack": 4,
         "standardPrice": 1.0,
         "weight": 2190
-    },
-    {
-        "art": "Friendship",
-        "name": "Friendship",
-        "ninja": "https://poe.ninja/challenge/divination-cards/friendship",
-        "price": 0,
-        "reward": "Disabled",
-        "stack": 3,
-        "standardPrice": 5.0
     },
     {
         "art": "FromBonesToAshes",
@@ -2509,7 +2498,7 @@
         "price": 22070.8,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 32425.4,
+        "standardPrice": 32417.35,
         "weight": 5
     },
     {
@@ -3086,7 +3075,7 @@
         "price": 719.7,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 704.9,
+        "standardPrice": 704.72,
         "weight": 5
     },
     {
@@ -3398,7 +3387,7 @@
         "price": 80.0,
         "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
         "stack": 8,
-        "standardPrice": 281.96,
+        "standardPrice": 281.89,
         "weight": 1
     },
     {
@@ -3699,7 +3688,7 @@
         },
         "name": "Poisoned Faith",
         "ninja": "https://poe.ninja/challenge/divination-cards/poisoned-faith",
-        "price": 2.0,
+        "price": 2.25,
         "reward": "Arakaali's Fang, Corrupted",
         "stack": 8,
         "standardPrice": 36.0,
@@ -3916,7 +3905,7 @@
         },
         "name": "Rebirth",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-divcard",
-        "price": 8.0,
+        "price": 5.9,
         "reward": "Charan's Sword",
         "stack": 27,
         "standardPrice": 4.4,
@@ -4046,7 +4035,7 @@
         "price": 623.74,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 676.7,
+        "standardPrice": 676.54,
         "weight": 83
     },
     {
@@ -4144,17 +4133,8 @@
         "price": 2.0,
         "reward": " Experimented Two-Handed Weapon, Item Level: 86, Quality: +30%",
         "stack": 5,
-        "standardPrice": 3.9,
+        "standardPrice": 4.0,
         "weight": 1106
-    },
-    {
-        "art": "BaronCat",
-        "name": "Squandered Prosperity",
-        "ninja": "https://poe.ninja/challenge/divination-cards/squandered-prosperity",
-        "price": 0,
-        "reward": "Perandus Manor, Corrupted",
-        "stack": 5,
-        "standardPrice": 48.0
     },
     {
         "art": "StruckbyLightning",
@@ -4342,7 +4322,7 @@
         "price": 15593.5,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 9304.68,
+        "standardPrice": 9293.91,
         "weight": 7
     },
     {
@@ -4517,15 +4497,6 @@
         "stack": 6,
         "standardPrice": 8.2,
         "weight": 11
-    },
-    {
-        "art": "TheBargain",
-        "name": "The Bargain",
-        "ninja": "https://poe.ninja/challenge/divination-cards/the-bargain",
-        "price": 0,
-        "reward": "Pure Breachstone",
-        "stack": 5,
-        "standardPrice": 7.0
     },
     {
         "art": "TheBattleBorn",
@@ -4708,7 +4679,7 @@
         },
         "name": "The Bones",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bones",
-        "price": 1.9,
+        "price": 2.0,
         "reward": "Level 21 Vaal Summon Skeletons, Corrupted",
         "stack": 6,
         "standardPrice": 2.0,
@@ -5128,10 +5099,10 @@
         },
         "name": "The Cheater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cheater",
-        "price": 546.97,
+        "price": 527.78,
         "reward": "Level 6 Awakened Support Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 352.2,
+        "standardPrice": 352.19,
         "weight": 7
     },
     {
@@ -5286,7 +5257,7 @@
         "price": 2.0,
         "reward": "Six-Link Body Armour, Item Level: 100",
         "stack": 6,
-        "standardPrice": 3.4,
+        "standardPrice": 3.35,
         "weight": 2231
     },
     {
@@ -5403,10 +5374,10 @@
         },
         "name": "The Demon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demon",
-        "price": 5313.78,
+        "price": 5157.85,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 2114.7,
+        "standardPrice": 2114.18,
         "weight": 2
     },
     {
@@ -5472,7 +5443,7 @@
         "price": 3598.5,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 845.88,
+        "standardPrice": 845.67,
         "weight": 16
     },
     {
@@ -6080,7 +6051,7 @@
         "price": 35.0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 16.2,
+        "standardPrice": 15.2,
         "weight": 63
     },
     {
@@ -6196,7 +6167,7 @@
         },
         "name": "The Eye of Terror",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eye-of-terror",
-        "price": 45.0,
+        "price": 44.7,
         "reward": "Pure Chayula Breachstone",
         "stack": 8,
         "standardPrice": 19.0,
@@ -6219,7 +6190,7 @@
         "price": 8.0,
         "reward": "Jewel, Corrupted",
         "stack": 10,
-        "standardPrice": 13.96,
+        "standardPrice": 11.0,
         "weight": 59
     },
     {
@@ -6285,7 +6256,7 @@
         "price": 2614.91,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 563.92,
+        "standardPrice": 563.78,
         "weight": 6
     },
     {
@@ -6496,7 +6467,7 @@
         "price": 34.0,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 44.6,
+        "standardPrice": 44.0,
         "weight": 1225
     },
     {
@@ -7037,7 +7008,7 @@
         },
         "name": "The Hunger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hunger",
-        "price": 4.5,
+        "price": 4.4,
         "reward": "Taste of Hate",
         "stack": 9,
         "standardPrice": 2.0,
@@ -7059,7 +7030,7 @@
         "price": 2279.05,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 3375.06,
+        "standardPrice": 3354.49,
         "weight": 14
     },
     {
@@ -7150,7 +7121,7 @@
         "price": 5997.5,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 4032.03,
+        "standardPrice": 4031.03,
         "weight": 2
     },
     {
@@ -7380,7 +7351,7 @@
         "price": 30.0,
         "reward": "Atziri's Disfavour",
         "stack": 10,
-        "standardPrice": 3.91,
+        "standardPrice": 3.92,
         "weight": 15
     },
     {
@@ -7496,15 +7467,6 @@
         "stack": 4,
         "standardPrice": 13.5,
         "weight": 50
-    },
-    {
-        "art": "TheLongWatch",
-        "name": "The Long Watch",
-        "ninja": "https://poe.ninja/challenge/divination-cards/the-long-watch",
-        "price": 0,
-        "reward": "The Vigil",
-        "stack": 3,
-        "standardPrice": 3.5
     },
     {
         "art": "TheLordInBlack",
@@ -7677,15 +7639,6 @@
         "stack": 5,
         "standardPrice": 1.0,
         "weight": 8183
-    },
-    {
-        "art": "TheMayor",
-        "name": "The Mayor",
-        "ninja": "https://poe.ninja/challenge/divination-cards/the-mayor",
-        "price": 0,
-        "reward": "The Perandus Manor",
-        "stack": 5,
-        "standardPrice": 39.12
     },
     {
         "art": "TheMercenary",
@@ -7963,7 +7916,7 @@
         "price": 10.0,
         "reward": "Replica Bated Breath",
         "stack": 7,
-        "standardPrice": 281.96,
+        "standardPrice": 281.89,
         "weight": 7
     },
     {
@@ -8210,10 +8163,10 @@
         },
         "name": "The Price of Devotion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-devotion",
-        "price": 11035.4,
+        "price": 11251.31,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 10206.95,
+        "standardPrice": 10204.42,
         "weight": 4
     },
     {
@@ -8337,7 +8290,7 @@
         },
         "name": "The Price of Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-protection",
-        "price": 1.54,
+        "price": 1.79,
         "reward": "Elder Chateau Map, Map Tier: 16",
         "stack": 5,
         "standardPrice": 2.0,
@@ -8501,7 +8454,7 @@
         "price": 8.0,
         "reward": "10x Incursion Vial",
         "stack": 8,
-        "standardPrice": 24.5,
+        "standardPrice": 24.6,
         "weight": 40
     },
     {
@@ -8895,7 +8848,7 @@
         "price": 205.0,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 253.76,
+        "standardPrice": 253.7,
         "weight": 309
     },
     {
@@ -8934,7 +8887,7 @@
         "price": 407.83,
         "reward": "The Squire",
         "stack": 8,
-        "standardPrice": 986.86,
+        "standardPrice": 986.62,
         "weight": 13
     },
     {
@@ -9230,7 +9183,7 @@
         },
         "name": "The Strategist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-strategist",
-        "price": 9.9,
+        "price": 9.81,
         "reward": "Inspired Learning, Corrupted",
         "stack": 6,
         "standardPrice": 8.2,
@@ -9351,15 +9304,6 @@
         "stack": 3,
         "standardPrice": 1.0,
         "weight": 7675
-    },
-    {
-        "art": "TheSustenance",
-        "name": "The Sustenance",
-        "ninja": "https://poe.ninja/challenge/divination-cards/the-sustenance",
-        "price": 0,
-        "reward": "Disabled",
-        "stack": 3,
-        "standardPrice": 36.14
     },
     {
         "art": "TheSwordKingsSalute",
@@ -9636,7 +9580,7 @@
         "price": 1.0,
         "reward": "Staff",
         "stack": 6,
-        "standardPrice": 0.6,
+        "standardPrice": 0.62,
         "weight": 7314
     },
     {
@@ -9677,7 +9621,7 @@
         "price": 2.0,
         "reward": "Fated Unique Item, Two-Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 4.8,
+        "standardPrice": 5.0,
         "weight": 299
     },
     {
@@ -9845,7 +9789,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
-        "standardPrice": 0.9,
+        "standardPrice": 0.95,
         "weight": 5845
     },
     {
@@ -10045,17 +9989,8 @@
         "price": 2.0,
         "reward": "Nemesis Item",
         "stack": 8,
-        "standardPrice": 3.5,
+        "standardPrice": 3.6,
         "weight": 3395
-    },
-    {
-        "art": "TheValleyOfSteelBoxes",
-        "name": "The Valley of Steel Boxes",
-        "ninja": "https://poe.ninja/challenge/divination-cards/the-valley-of-steel-boxes",
-        "price": 0,
-        "reward": "Disabled",
-        "stack": 9,
-        "standardPrice": 3.0
     },
     {
         "art": "TheVast",
@@ -10075,7 +10010,7 @@
         "price": 8.4,
         "reward": "Song of the Sirens",
         "stack": 7,
-        "standardPrice": 37.0,
+        "standardPrice": 30.0,
         "weight": 12
     },
     {
@@ -10232,7 +10167,7 @@
         "price": 4.0,
         "reward": "Arakaali's Fang",
         "stack": 2,
-        "standardPrice": 20.4,
+        "standardPrice": 19.2,
         "weight": 51
     },
     {
@@ -10415,7 +10350,7 @@
         "price": 1.0,
         "reward": "Rigwald's Quills",
         "stack": 8,
-        "standardPrice": 4.2,
+        "standardPrice": 4.4,
         "weight": 451
     },
     {
@@ -10655,7 +10590,7 @@
         },
         "name": "Tranquillity",
         "ninja": "https://poe.ninja/challenge/divination-cards/tranquillity",
-        "price": 14.8,
+        "price": 14.87,
         "reward": "Voltaxic Rift",
         "stack": 7,
         "standardPrice": 0.81,
@@ -10789,7 +10724,7 @@
         "price": 10795.5,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 13816.04,
+        "standardPrice": 13812.61,
         "weight": 3
     },
     {
@@ -10873,7 +10808,7 @@
         "price": 5.0,
         "reward": "Overpowering Opal Ring, Item Level: 100, Elder Item",
         "stack": 3,
-        "standardPrice": 13.0,
+        "standardPrice": 14.0,
         "weight": 13
     },
     {
@@ -10936,10 +10871,10 @@
         },
         "name": "Winter's Embrace",
         "ninja": "https://poe.ninja/challenge/divination-cards/winters-embrace",
-        "price": 24.5,
+        "price": 24.3,
         "reward": "Circle of Fear, Three-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 64.4,
+        "standardPrice": 62.0,
         "weight": 40
     }
 ]

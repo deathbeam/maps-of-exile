@@ -5,6 +5,7 @@ import monsters from './monsters.json'
 import { mapLevelToTier } from '../common'
 
 export const wikiBase = 'https://www.poewiki.net/wiki/'
+export const divcordDiscord = 'https://discord.gg/jsN2gsDUyM'
 const mapIconBase = 'https://web.poecdn.com/image/'
 const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'

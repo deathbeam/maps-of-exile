@@ -136,8 +136,8 @@ def get_card_data(key, config, card_extra):
         params={
             "action": "cargoquery",
             "format": "json",
-            "smaxage": 1,
-            "maxage": 1,
+            "smaxage": 0,
+            "maxage": 0,
             "limit": "500",
             "tables": "items",
             "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text",
@@ -245,38 +245,47 @@ def get_card_data(key, config, card_extra):
 
     print(f"Getting card prices for {league} and Standard")
     prices = requests.get(config["prices"] + league).json()["lines"]
-    standardPrices = requests.get(config["prices"] + "Standard").json()["lines"]
+    standard_prices = requests.get(config["prices"] + "Standard").json()["lines"]
 
     out = []
-    for price_card in standardPrices:
+    for wiki_card in wiki_cards:
+        name = wiki_card["name"]
+        price_card = next(filter(lambda x: x["name"] == name, prices), {})
+        standard_price_card = next(
+            filter(lambda x: x["name"] == name, standard_prices), {}
+        )
+
+        explicit_modifiers = standard_price_card.get(
+            "explicitModifiers", price_card.get("explicitModifiers")
+        )
         reward = ""
-        if price_card.get("explicitModifiers", []):
+
+        if explicit_modifiers:
             reward = (
-                re.sub("<[^>]+>", "", price_card["explicitModifiers"][0]["text"])
+                re.sub("<[^>]+>", "", explicit_modifiers[0]["text"])
                 .replace("{", "")
                 .replace("}", "")
                 .replace("\n", ", ")
             )
 
         card = {
-            "name": price_card["name"],
-            "price": next(
-                map(
-                    lambda x: x["chaosValue"],
-                    filter(lambda x: x["name"] == price_card["name"], prices),
-                ),
-                0,
-            )
-            or 0,
-            "standardPrice": price_card["chaosValue"],
-            "stack": price_card.get("stackSize", 1),
-            "art": price_card["artFilename"],
+            "name": wiki_card,
+            "price": price_card.get("chaosValue"),
+            "standardPrice": standard_price_card.get("chaosValue"),
+            "stack": standard_price_card.get(
+                "stackSize", price_card.get("stackSize", 1)
+            ),
+            "art": standard_price_card.get(
+                "artFilename", price_card.get("artFilename")
+            ),
             "reward": reward,
-            "ninja": config["ninja"] + price_card["detailsId"],
+            "ninja": config["ninja"]
+            + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
         }
 
-        chance_card = card_chances.get(price_card["name"])
-        weight_card = card_weights.get(price_card["name"])
+        merge(wiki_card, card)
+        chance_card = card_chances.get(name)
+        weight_card = card_weights.get(name)
 
         if chance_card:
             new_weight = math.floor(
@@ -293,17 +302,13 @@ def get_card_data(key, config, card_extra):
                 old_weight = weight_card or 0
                 weight_card = new_weight
                 print(
-                    f"Making assumption for weight for {price_card['name']} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
+                    f"Making assumption for weight for {name} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
                 )
 
         if weight_card:
             card["weight"] = weight_card
         else:
-            print(f"Weight for card {card['name']} not found")
-
-        wiki = next(filter(lambda x: x["name"] == card["name"], wiki_cards), None)
-        if wiki:
-            merge(wiki, card)
+            print(f"Weight for card {name} not found")
 
         extra = next(filter(lambda x: x["name"] == card["name"], card_extra), None)
         if extra:

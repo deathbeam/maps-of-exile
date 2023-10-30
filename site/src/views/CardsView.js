@@ -9,9 +9,7 @@ import Rating from '../components/Rating'
 import { useMemo } from 'react'
 import MapFilter from '../components/MapFilter'
 
-const CardList = ({ card, voidstones }) => {
-  const [ref, visible] = useLazy()
-
+const CardDisplay = ({ card }) => {
   let badgeClass
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -60,6 +58,59 @@ const CardList = ({ card, voidstones }) => {
   }
 
   return (
+    <div
+      style={{
+        backgroundColor: 'black'
+      }}
+      className="p-1"
+    >
+      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={badgeClass + ' w-100 map-reward mb-1'}>
+        <img src={img} alt="" width="16" height="16" className="me-1" />
+        {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
+        {card.name}
+      </a>
+      <div className="map-img-holder mb-1">
+        <img src={card.art} alt="" loading="lazy" />
+        <span className="badge bg-light text-dark map-stack-size">
+          <b>{card.stack}</b>
+        </span>
+      </div>
+      <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
+      <b>Score</b>: <Rating rating={card.score} />
+      <br />
+      <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
+      {!card.unknown && (
+        <>
+          <br />
+          <b>Weight</b>: {card.weight}
+        </>
+      )}
+      {card.drop && (card.drop.min_level || card.drop.max_level) && (
+        <>
+          <br />
+          <b>Drop level</b>: {dropLevel}
+        </>
+      )}
+      {card.boss && (
+        <>
+          <br />
+          <b className="text-warning">Boss drop</b>
+        </>
+      )}
+      {card.unknown && (
+        <>
+          <br />
+          <b className="text-info">Unknown weight</b>
+        </>
+      )}
+    </div>
+  )
+}
+
+const CardList = ({ card, voidstones }) => {
+  const [ref, visible] = useLazy()
+
+  return (
     <tr ref={ref}>
       <td
         style={{
@@ -67,96 +118,40 @@ const CardList = ({ card, voidstones }) => {
         }}
         className="p-0"
       >
-        <div
-          style={{
-            backgroundColor: 'black'
-          }}
-          className="p-1"
-        >
-          <a
-            href={wikiBase + card.name}
-            target="_blank"
-            rel="noreferrer"
-            className={badgeClass + ' w-100 map-reward mb-1'}
-          >
-            <img src={img} alt="" width="16" height="16" className="me-1" />
-            {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
-            {card.name}
-          </a>
-          <div className="map-img-holder mb-1">
-            <img src={card.art} alt="" loading="lazy" />
-            <span className="badge bg-light text-dark map-stack-size">
-              <b>{card.stack}</b>
-            </span>
-          </div>
-          <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
-          <b>Score</b>: <Rating rating={card.score} />
-          <br />
-          <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-          {!card.unknown && (
-            <>
-              <br />
-              <b>Weight</b>: {card.weight}
-            </>
-          )}
-          {card.drop && (card.drop.min_level || card.drop.max_level) && (
-            <>
-              <br />
-              <b>Drop level</b>: {dropLevel}
-            </>
-          )}
-          {card.boss && (
-            <>
-              <br />
-              <b className="text-warning">Boss drop</b>
-            </>
-          )}
-          {card.unknown && (
-            <>
-              <br />
-              <b className="text-info">Unknown weight</b>
-            </>
-          )}
-        </div>
+        <CardDisplay card={card} />
       </td>
       {visible ? (
-        <>
-          <td>
-            {card.boss && (
-              <div className="row m-0 mb-2">
-                {card.monsters.map(m => (
-                  <div className="col-2">
-                    <div className="d-lg-flex flex-row">
-                      <div className="pe-2 pb-2">
-                        <div className="map-icon-container">
-                          <img src="/img/boss.webp" alt="" />
-                        </div>
-                      </div>
-                      <div>
-                        <a className="text-light" href={wikiBase + m} target="_blank" rel="noreferrer">
-                          {m}
-                        </a>
-                        <br />
-                        <span className="badge bg-warning text-dark">monster</span>
-                      </div>
+        <td>
+          <div className="row m-0 mb-2">
+            {card.monsters.map(m => (
+              <div className="col-2">
+                <div className="d-lg-flex flex-row">
+                  <div className="pe-2 pb-2">
+                    <div className="map-icon-container">
+                      <img src="/img/boss.webp" alt="" />
                     </div>
                   </div>
-                ))}
-              </div>
-            )}
-            <div className="row m-0">
-              {card.maps.map(map => (
-                <div className="col-2">
-                  <MapName map={map} voidstones={voidstones} cardList={true} />
+                  <div>
+                    <a className="text-light" href={wikiBase + m} target="_blank" rel="noreferrer">
+                      {m}
+                    </a>
+                    <br />
+                    <span className="badge bg-warning text-dark">monster</span>
+                  </div>
                 </div>
-              ))}
-            </div>
-          </td>
-        </>
+              </div>
+            ))}
+          </div>
+          <div className="row m-0">
+            {card.maps.map(map => (
+              <div className="col-2">
+                <MapName map={map} voidstones={voidstones} cardList={true} />
+              </div>
+            ))}
+          </div>
+        </td>
       ) : (
-        <>
-          <td></td>
-        </>
+        <td></td>
       )}
     </tr>
   )

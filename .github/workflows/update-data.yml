@@ -24,7 +24,7 @@ jobs:
         working-directory: data
 
       - name: Update data
-        run: python main.py globals,cards,maps
+        run: python main.py globals,monsters,cards,maps
         working-directory: data
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
@@ -33,7 +33,7 @@ jobs:
         run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
-          git commit -am "Update maps and cards"
+          git commit -am "Update data"
           git push
 
       - name: Setup node

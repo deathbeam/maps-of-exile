@@ -5,107 +5,9 @@ import { preparedCards, preparedMonsters, wikiBase } from '../data'
 import { calculateScore, filter } from '../common'
 import MapName from '../components/MapName'
 import useLazy from '../hooks/useLazy'
-import Rating from '../components/Rating'
 import { useMemo } from 'react'
 import MapFilter from '../components/MapFilter'
-
-const CardDisplay = ({ card }) => {
-  let badgeClass
-  if (card.score >= 8) {
-    badgeClass = 'bg-light text-dark'
-  } else if (card.score >= 5) {
-    badgeClass = 'bg-primary text-light'
-  } else if (card.score >= 2) {
-    badgeClass = 'bg-info text-dark'
-  } else if (card.score >= 0.5) {
-    badgeClass = 'bg-dark text-info border border-1 border-info'
-  } else {
-    badgeClass = 'bg-secondary text-dark'
-  }
-
-  if (card.unknown) {
-    badgeClass += ' border border-1 border-dark shadow-info'
-  } else if (card.weight === 0) {
-    badgeClass += ' border border-1 border-dark shadow-danger'
-  } else if (card.boss) {
-    badgeClass += ' border border-1 border-dark shadow-warning'
-  }
-
-  badgeClass = `badge m-1 ${badgeClass}`
-
-  let img = '/img/alch.png'
-  if (card.price >= 100) {
-    img = '/img/divine.png'
-  } else if (card.price >= 20) {
-    img = '/img/exalt.png'
-  } else if (card.price >= 5) {
-    img = '/img/chaos.png'
-  }
-
-  let dropLevel = null
-  if (card.drop) {
-    if (card.drop.min_level && card.drop.max_level) {
-      dropLevel = (
-        <>
-          {card.drop.min_level} - {card.drop.max_level}
-        </>
-      )
-    } else if (card.drop.min_level) {
-      dropLevel = <>&gt;= {card.drop.min_level}</>
-    } else if (card.drop.max_level) {
-      dropLevel = <>&lt;= {card.drop.max_level}</>
-    }
-  }
-
-  return (
-    <div
-      style={{
-        backgroundColor: 'black'
-      }}
-      className="p-1"
-    >
-      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={badgeClass + ' w-100 map-reward mb-1'}>
-        <img src={img} alt="" width="16" height="16" className="me-1" />
-        {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
-        {card.name}
-      </a>
-      <div className="map-img-holder mb-1">
-        <img src={card.art} alt="" loading="lazy" />
-        <span className="badge bg-light text-dark map-stack-size">
-          <b>{card.stack}</b>
-        </span>
-      </div>
-      <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
-      <b>Score</b>: <Rating rating={card.score} />
-      <br />
-      <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-      {!card.unknown && (
-        <>
-          <br />
-          <b>Weight</b>: {card.weight}
-        </>
-      )}
-      {card.drop && (card.drop.min_level || card.drop.max_level) && (
-        <>
-          <br />
-          <b>Drop level</b>: {dropLevel}
-        </>
-      )}
-      {card.boss && (
-        <>
-          <br />
-          <b className="text-warning">Boss drop</b>
-        </>
-      )}
-      {card.unknown && (
-        <>
-          <br />
-          <b className="text-info">Unknown weight</b>
-        </>
-      )}
-    </div>
-  )
-}
+import CardDetail from '../components/CardDetail'
 
 const CardList = ({ card, voidstones }) => {
   const [ref, visible] = useLazy()
@@ -118,7 +20,14 @@ const CardList = ({ card, voidstones }) => {
         }}
         className="p-0"
       >
-        <CardDisplay card={card} />
+        <div
+          style={{
+            backgroundColor: 'black'
+          }}
+          className="p-1"
+        >
+          <CardDetail card={card} />
+        </div>
       </td>
       {visible ? (
         <td>

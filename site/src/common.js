@@ -82,6 +82,44 @@ export function tierColor(tiers, type, voidstones = 0) {
   return color
 }
 
+export function priceImage(price) {
+  let img = '/img/alch.png'
+  if (price >= 100) {
+    img = '/img/divine.png'
+  } else if (price >= 20) {
+    img = '/img/exalt.png'
+  } else if (price >= 5) {
+    img = '/img/chaos.png'
+  }
+  return img
+}
+
+export function cardBadge(card) {
+  let badgeClass
+  if (card.score >= 8) {
+    badgeClass = 'bg-light text-dark'
+  } else if (card.score >= 5) {
+    badgeClass = 'bg-primary text-light'
+  } else if (card.score >= 2) {
+    badgeClass = 'bg-info text-dark'
+  } else if (card.score >= 0.5) {
+    badgeClass = 'bg-dark text-info border border-1 border-info'
+  } else {
+    badgeClass = 'bg-secondary text-dark'
+  }
+
+  if (card.unknown) {
+    badgeClass += ' border border-1 border-dark shadow-info'
+  } else if (card.weight === 0) {
+    badgeClass += ' border border-1 border-dark shadow-danger'
+  } else if (card.boss) {
+    badgeClass += ' border border-1 border-dark shadow-warning'
+  }
+
+  badgeClass = `badge m-1 ${badgeClass}`
+  return badgeClass
+}
+
 export function scrollToElement(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
 }

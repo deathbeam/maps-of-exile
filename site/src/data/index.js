@@ -3,7 +3,7 @@ import maps from './maps.json'
 import globals from './globals.json'
 import { mapLevelToTier } from '../common'
 
-const wikiBase = 'https://www.poewiki.net/wiki/'
+export const wikiBase = 'https://www.poewiki.net/wiki/'
 const mapIconBase = 'https://web.poecdn.com/image/'
 const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'

@@ -1,7 +1,7 @@
 import GoToTop from '../components/GoToTop'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { preparedCards } from '../data'
+import { preparedCards, wikiBase } from '../data'
 import { calculateScore, filter } from '../common'
 import MapName from '../components/MapName'
 import useLazy from '../hooks/useLazy'
@@ -79,11 +79,16 @@ const CardList = ({ card, voidstones }) => {
           }}
           className="p-1"
         >
-          <span className={badgeClass + ' w-100 map-reward mb-1'}>
+          <a
+            href={wikiBase + card.name}
+            target="_blank"
+            rel="noreferrer"
+            className={badgeClass + ' w-100 map-reward mb-1'}
+          >
             <img src={img} alt="" width="16" height="16" className="me-1" />
             {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
             {card.name}
-          </span>
+          </a>
           <div className="map-img-holder mb-1">
             <img src={card.art} alt="" loading="lazy" />
             <span className="badge bg-light text-dark map-stack-size">

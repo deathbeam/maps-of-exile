@@ -24,13 +24,31 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
       name
     )
 
-  const tags = !cardList && <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
+  let mapTags = []
+  if (cardList) {
+    mapTags.push({
+      name: map.type,
+      color: 'info'
+    })
+    if (map.atlas) {
+      mapTags.push({
+        name: 'atlas',
+        color: 'info'
+      })
+    }
+  } else {
+    mapTags = map.tags
+  }
+
+  const tags = <Tags tags={mapTags} currentSearch={currentSearch} addToInput={addToInput} />
   const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[voidstones]} />
   const score = !sidebar && (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />
     </span>
   )
+
+  const tiers = <small>{map.atlas ? map.tiers.join(', ') : 'Area Level ' + map.level}</small>
 
   return (
     <>
@@ -42,7 +60,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
         <div>
           {mapName}
           <br />
-          <small>{map.atlas ? map.tiers.join(', ') : 'Area Level ' + map.level}</small>
+          {tiers}
           <br />
           {!sidebar && tags}
         </div>

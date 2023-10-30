@@ -140,7 +140,11 @@ const MapCard = ({ tooltipTop, type, card }) => {
         <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
         <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
         <br />
-        <b>Weight</b>: {card.weight}
+        {!card.unknown && (
+          <>
+            <b>Weight</b>: {card.weight}
+          </>
+        )}
         {(card.drop.min_level || card.drop.max_level) && (
           <>
             <br />

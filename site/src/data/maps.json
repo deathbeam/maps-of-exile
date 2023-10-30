@@ -1,16 +1,5 @@
 [
     {
-        "boss": {},
-        "id": "AtlasExilesZana",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "Abandoned Citadel",
-        "rating": {},
-        "shorthand": "del",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
@@ -66,7 +55,7 @@
         "level": 84,
         "name": "Absence of Patience and Wisdom",
         "rating": {},
-        "shorthand": "sd",
+        "shorthand": "Wi",
         "type": "unique map"
     },
     {
@@ -108,24 +97,6 @@
         "rating": {},
         "shorthand": "Mea",
         "type": "unique map"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/Totems/AbyssCrystalPillar"
-            ],
-            "names": [
-                "Kurgal, the Blackblooded"
-            ]
-        },
-        "id": "AbyssLeague",
-        "info": {},
-        "layout": {},
-        "level": 4,
-        "name": "Abyssal Depths",
-        "rating": {},
-        "shorthand": "l D",
-        "type": "special area"
     },
     {
         "atlas": true,
@@ -419,7 +390,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "Nes",
+        "shorthand": " Ne",
         "type": "map",
         "x": 410,
         "y": 215
@@ -1011,17 +982,6 @@
         "type": "map"
     },
     {
-        "boss": {},
-        "id": "SanctumLycia2",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Beyond",
-        "rating": {},
-        "shorthand": "Bey",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Totems/TotemBossSideArea"
@@ -1152,7 +1112,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "ble V",
+        "shorthand": "ble ",
         "type": "map"
     },
     {
@@ -1368,7 +1328,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "any",
+        "shorthand": "yo",
         "type": "map"
     },
     {
@@ -2346,36 +2306,6 @@
         "type": "map"
     },
     {
-        "boss": {},
-        "id": "Master_SP_Volcano",
-        "info": {},
-        "layout": {},
-        "level": 12,
-        "name": "Crucible of Spirit",
-        "rating": {},
-        "shorthand": "cib",
-        "type": "special area"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/AtlasExiles/AtlasExile1",
-                "Metadata/Monsters/AtlasExiles/AtlasExile1Apparition"
-            ],
-            "names": [
-                "Baran, The Crusader"
-            ]
-        },
-        "id": "AtlasExilesBoss1",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "Crusader's Sanctum",
-        "rating": {},
-        "shorthand": "rus",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Miner/MinerHammerMapBoss",
@@ -2413,7 +2343,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Ore",
+        "shorthand": " Or",
         "type": "map"
     },
     {
@@ -2695,7 +2625,7 @@
             "density": 10,
             "layout": 8
         },
-        "shorthand": "rt S",
+        "shorthand": "pr",
         "type": "map"
     },
     {
@@ -3002,7 +2932,7 @@
         "level": 1,
         "name": "Dusty Bluff",
         "rating": {},
-        "shorthand": "Blu",
+        "shorthand": "uf",
         "type": "act area"
     },
     {
@@ -3160,7 +3090,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "xc",
+        "shorthand": "Ex",
         "type": "map",
         "x": 504,
         "y": 158
@@ -3206,7 +3136,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "act",
+        "shorthand": "Fac",
         "type": "map",
         "x": 761,
         "y": 255
@@ -3329,7 +3259,7 @@
         "level": 1,
         "name": "Forbidden Archives",
         "rating": {},
-        "shorthand": "en A",
+        "shorthand": "n A",
         "type": "act area"
     },
     {
@@ -3365,7 +3295,7 @@
         "level": 1,
         "name": "Forbidden Shrine",
         "rating": {},
-        "shorthand": "den Sh",
+        "shorthand": "den S",
         "type": "act area"
     },
     {
@@ -3469,7 +3399,7 @@
         "level": 1,
         "name": "Forgotten Conduit",
         "rating": {},
-        "shorthand": "n Con",
+        "shorthand": "n Co",
         "type": "act area"
     },
     {
@@ -3619,25 +3549,10 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Cab",
+        "shorthand": "Fr",
         "type": "map",
         "x": 658,
         "y": 291
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
-            ]
-        },
-        "id": "MapSideAreaIceForest",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Frozen Springs",
-        "rating": {},
-        "shorthand": "gs",
-        "type": "special area"
     },
     {
         "atlas": true,
@@ -4118,25 +4033,6 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/AtlasExiles/AtlasExile3",
-                "Metadata/Monsters/AtlasExiles/AtlasExile3Apparition"
-            ],
-            "names": [
-                "Al-Hezmin, The Hunter"
-            ]
-        },
-        "id": "AtlasExilesBoss3",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "Hunter's Ambush",
-        "rating": {},
-        "shorthand": "Am",
-        "type": "special area"
-    },
-    {
         "boss": {},
         "id": "AfflictionTown4",
         "image": false,
@@ -4293,21 +4189,6 @@
         "type": "map"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/WaterSpiral/WaterSpiralBossSideArea"
-            ]
-        },
-        "id": "MapSideAreaIceValley",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Isolated Sound",
-        "rating": {},
-        "shorthand": "Soun",
-        "type": "special area"
-    },
-    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -4416,17 +4297,6 @@
         "type": "act area"
     },
     {
-        "boss": {},
-        "id": "kitavafilming",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Kitava BloodFace",
-        "rating": {},
-        "shorthand": "dF",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerFemaleMapBossVoid"
@@ -4533,21 +4403,6 @@
         "rating": {},
         "shorthand": "yd",
         "type": "map"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/Talisman/TalismanWolfKing"
-            ]
-        },
-        "id": "3_TalismanBoss",
-        "info": {},
-        "layout": {},
-        "level": 60,
-        "name": "Lair of the Wolven King",
-        "rating": {},
-        "shorthand": "lv",
-        "type": "special area"
     },
     {
         "atlas": true,
@@ -4847,7 +4702,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "alf",
+        "shorthand": "fo",
         "type": "map",
         "x": 749,
         "y": 400
@@ -5002,7 +4857,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Mausoleum",
+        "shorthand": "Mau",
         "type": "map",
         "x": 360,
         "y": 144
@@ -5085,50 +4940,6 @@
         "rating": {},
         "shorthand": "aur",
         "type": "map"
-    },
-    {
-        "boss": {},
-        "id": "Menagerie_InsectsArachnids",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Menagerie Caverns",
-        "rating": {},
-        "shorthand": "ie C",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "Menagerie_WaterCreatures",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Menagerie Depths",
-        "rating": {},
-        "shorthand": "ie D",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "Menagerie_BirdsReptiles",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Menagerie Sands",
-        "rating": {},
-        "shorthand": "ie S",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "Menagerie_Mammals",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Menagerie Wilds",
-        "rating": {},
-        "shorthand": "Wil",
-        "type": "special area"
     },
     {
         "atlas": true,
@@ -5441,7 +5252,7 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "Necropolis",
+        "shorthand": "Nec",
         "type": "map",
         "x": 221,
         "y": 158
@@ -5764,32 +5575,6 @@
         },
         "shorthand": "Park",
         "type": "map"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/Brute/EndlessLedge2BossBrute"
-            ]
-        },
-        "id": "MapEndlessLedge2_01",
-        "info": {},
-        "layout": {},
-        "level": 64,
-        "name": "Path of Endurance",
-        "rating": {},
-        "shorthand": "dur",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "ExileRoyale",
-        "info": {},
-        "layout": {},
-        "level": 2,
-        "name": "Path of Exile Royale",
-        "rating": {},
-        "shorthand": " Ex",
-        "type": "special area"
     },
     {
         "atlas": true,
@@ -6668,25 +6453,6 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/AtlasExiles/AtlasExile2Apparition",
-                "Metadata/Monsters/AtlasExiles/AtlasExile2_"
-            ],
-            "names": [
-                "Veritania, The Redeemer"
-            ]
-        },
-        "id": "AtlasExilesBoss2",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "Redeemer's Eyrie",
-        "rating": {},
-        "shorthand": "Ey",
-        "type": "special area"
-    },
-    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -6951,72 +6717,6 @@
         "type": "act area"
     },
     {
-        "boss": {},
-        "id": "SanctumFoyer_1_1",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Sanctum Archives",
-        "rating": {},
-        "shorthand": "m A",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "SanctumFoyer_3_1",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Sanctum Cathedral",
-        "rating": {},
-        "shorthand": "m C",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "SanctumFoyer_4_1",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Sanctum Mausoleum",
-        "rating": {},
-        "shorthand": " Mau",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "SanctumCrypt",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Sanctum Necropolis",
-        "rating": {},
-        "shorthand": "m N",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "SanctumFoyer_2_1",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Sanctum Vaults",
-        "rating": {},
-        "shorthand": "m V",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "ffa1_1",
-        "info": {},
-        "layout": {},
-        "level": 36,
-        "name": "Sarn Arena",
-        "rating": {},
-        "shorthand": "rn A",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
@@ -7066,7 +6766,7 @@
         "level": 82,
         "name": "Sea of Isolation Map",
         "rating": {},
-        "shorthand": "a o",
+        "shorthand": "Iso",
         "type": "map"
     },
     {
@@ -7158,21 +6858,6 @@
         "rating": {},
         "shorthand": "ps",
         "type": "act area"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/Bandit/Pirate1MasterBoss"
-            ]
-        },
-        "id": "Master_TH_Shipgraveyard",
-        "info": {},
-        "layout": {},
-        "level": 12,
-        "name": "Secluded Cove",
-        "rating": {},
-        "shorthand": " Cov",
-        "type": "special area"
     },
     {
         "boss": {
@@ -7579,7 +7264,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": " Lai",
+        "shorthand": "r L",
         "type": "map"
     },
     {
@@ -7742,21 +7427,6 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/Totems/TotemBossSideArea"
-            ]
-        },
-        "id": "MapSideAreaLavaTunnel",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Suffocating Fissure",
-        "rating": {},
-        "shorthand": "Fis",
-        "type": "special area"
-    },
-    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -7905,17 +7575,6 @@
         "type": "act area"
     },
     {
-        "boss": {},
-        "id": "BetrayalLaboratory10",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "Syndicate Laboratory",
-        "rating": {},
-        "shorthand": "dic",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Tukohama/TukohamaMap"
@@ -7928,7 +7587,7 @@
         "level": 78,
         "name": "Synthesised World",
         "rating": {},
-        "shorthand": "Wor",
+        "shorthand": "rl",
         "type": "unique map"
     },
     {
@@ -8051,7 +7710,7 @@
         "level": 80,
         "name": "The Alluring Abyss",
         "rating": {},
-        "shorthand": " Ab",
+        "shorthand": "by",
         "type": "unique map"
     },
     {
@@ -8269,7 +7928,7 @@
         "level": 61,
         "name": "The Blood Aqueduct",
         "rating": {},
-        "shorthand": "d Aq",
+        "shorthand": "Bloo",
         "type": "act area"
     },
     {
@@ -8300,17 +7959,6 @@
         "type": "unique map"
     },
     {
-        "boss": {},
-        "id": "brig",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "The Brig",
-        "rating": {},
-        "shorthand": "rig",
-        "type": "special area"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/BrineKing/BrineKing"
@@ -8322,7 +7970,7 @@
         "level": 50,
         "name": "The Brine King's Reef",
         "rating": {},
-        "shorthand": "g'",
+        "shorthand": "Ki",
         "type": "act area"
     },
     {
@@ -8351,7 +7999,7 @@
         "level": 66,
         "name": "The Canals",
         "rating": {},
-        "shorthand": "nals",
+        "shorthand": "als",
         "type": "act area"
     },
     {
@@ -8443,7 +8091,7 @@
         "level": 22,
         "name": "The Caverns",
         "rating": {},
-        "shorthand": "he Caverns",
+        "shorthand": "e Caverns",
         "type": "act area"
     },
     {
@@ -8592,7 +8240,7 @@
         "level": 74,
         "name": "The Coward's Trial",
         "rating": {},
-        "shorthand": "Cow",
+        "shorthand": "d'",
         "type": "unique map",
         "x": 824,
         "y": 267
@@ -8789,43 +8437,6 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Totems/TotemBossEndlessLedge"
-            ]
-        },
-        "id": "EndlessLedge1",
-        "info": {},
-        "layout": {},
-        "level": 2,
-        "name": "The Endless Ledge",
-        "rating": {},
-        "shorthand": "dl",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "3_3_8_4",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "The Eternal Laboratory",
-        "rating": {},
-        "shorthand": "Et",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "2_11_1",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "The Fallen Courts",
-        "rating": {},
-        "shorthand": " Fa",
-        "type": "special area"
-    },
-    {
-        "boss": {
-            "ids": [
                 "Metadata/Monsters/KitavaBoss/KitavaFinal"
             ]
         },
@@ -8880,7 +8491,7 @@
         "level": 6,
         "name": "The Flooded Depths",
         "rating": {},
-        "shorthand": " Flo",
+        "shorthand": "hs",
         "type": "act area"
     },
     {
@@ -8897,28 +8508,6 @@
         "rating": {},
         "shorthand": "Foo",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "SanctumFoyer_Fellshrine",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "The Forbidden Sanctum",
-        "rating": {},
-        "shorthand": "n Sa",
-        "type": "special area"
-    },
-    {
-        "boss": {},
-        "id": "BetrayalStoryVault",
-        "info": {},
-        "layout": {},
-        "level": 61,
-        "name": "The Forbidden Vault",
-        "rating": {},
-        "shorthand": "n V",
-        "type": "special area"
     },
     {
         "boss": {
@@ -8953,7 +8542,7 @@
         "level": 38,
         "name": "The Grand Arena",
         "rating": {},
-        "shorthand": "and A",
+        "shorthand": " Are",
         "type": "act area"
     },
     {
@@ -8970,17 +8559,6 @@
         "rating": {},
         "shorthand": "d Pr",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "HallsOfTheDead_League",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "The Halls of the Dead",
-        "rating": {},
-        "shorthand": " Dea",
-        "type": "special area"
     },
     {
         "boss": {
@@ -9023,17 +8601,6 @@
         "rating": {},
         "shorthand": "arv",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "2_11_2",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "The Haunted Reliquary",
-        "rating": {},
-        "shorthand": " Hau",
-        "type": "special area"
     },
     {
         "boss": {
@@ -9220,17 +8787,6 @@
         "rating": {},
         "shorthand": "tp",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "Menagerie_Hub",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "The Menagerie",
-        "rating": {},
-        "shorthand": " Men",
-        "type": "special area"
     },
     {
         "boss": {
@@ -9465,7 +9021,7 @@
         "level": 44,
         "name": "The Reliquary",
         "rating": {},
-        "shorthand": "e Rel",
+        "shorthand": "iq",
         "type": "act area"
     },
     {
@@ -9737,7 +9293,7 @@
         "level": 13,
         "name": "The Southern Forest",
         "rating": {},
-        "shorthand": "uth",
+        "shorthand": "Sou",
         "type": "act area"
     },
     {
@@ -9777,17 +9333,6 @@
         "rating": {},
         "shorthand": "r C",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "2_11_lab",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "The Templar Laboratory",
-        "rating": {},
-        "shorthand": "ar L",
-        "type": "special area"
     },
     {
         "boss": {
@@ -9873,22 +9418,6 @@
         "rating": {},
         "shorthand": "Tor",
         "type": "act area"
-    },
-    {
-        "boss": {
-            "names": [
-                "The Trialmaster"
-            ]
-        },
-        "icon": "Art/2DItems/Maps/TrialmasterMap",
-        "id": "UltimatumBossArena",
-        "info": {},
-        "layout": {},
-        "level": 83,
-        "name": "The Tower of Ordeals",
-        "rating": {},
-        "shorthand": "Ord",
-        "type": "special area"
     },
     {
         "boss": {
@@ -10003,17 +9532,6 @@
         "rating": {},
         "shorthand": "er S",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "UltimatumArena",
-        "info": {},
-        "layout": {},
-        "level": 1,
-        "name": "The Utzaal Arena",
-        "rating": {},
-        "shorthand": "Ut",
-        "type": "special area"
     },
     {
         "boss": {},
@@ -10785,25 +10303,6 @@
         "rating": {},
         "shorthand": "-o",
         "type": "act area"
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/AtlasExiles/AtlasExile4",
-                "Metadata/Monsters/AtlasExiles/AtlasExile4Apparition"
-            ],
-            "names": [
-                "Drox, The Warlord"
-            ]
-        },
-        "id": "AtlasExilesBoss4",
-        "info": {},
-        "layout": {},
-        "level": 68,
-        "name": "Warlord's Keep",
-        "rating": {},
-        "shorthand": "Ke",
-        "type": "special area"
     },
     {
         "boss": {

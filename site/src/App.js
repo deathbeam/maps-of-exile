@@ -39,10 +39,8 @@ function rateMaps(
   const mapsWithCardValues = foundMaps
     .filter(m => {
       switch (mapDisplay) {
-        case 'atlas+unique+special+act':
-          return m.atlas || m.type === 'unique map' || m.type === 'special area' || m.type === 'act area'
-        case 'atlas+unique+special':
-          return m.atlas || m.type === 'unique map' || m.type === 'special area'
+        case 'atlas+unique+act':
+          return m.atlas || m.type === 'unique map' || m.type === 'act area'
         case 'atlas+unique':
           return m.atlas || m.type === 'unique map'
         case 'atlas':
@@ -432,13 +430,9 @@ function App() {
             <br />
             All maps and unique map areas (including maps that are not on atlas, e.g from past leagues)
             <br />
-            <b>Atlas+Unique+Special areas:</b>
+            <b>Atlas+Unique+Act areas:</b>
             <br />
-            Atlas+Unique maps and uncategorized special areas (for example <b>Abyssal Depths</b>)
-            <br />
-            <b>Atlas+Unique+Special+Act areas:</b>
-            <br />
-            Atlas+Unique+Special maps and areas and act areas (for example <b>Blood Aqueduct</b>)
+            Atlas+Unique maps and act areas (for example <b>Blood Aqueduct</b>)
             <br />
             <b>All areas:</b>
             <br />
@@ -450,8 +444,7 @@ function App() {
           atlas: 'Atlas maps',
           'atlas+unique': 'Atlas+Unique maps',
           allmaps: 'All maps',
-          'atlas+unique+special': 'Atlas+Unique+Special areas',
-          'atlas+unique+special+act': 'Atlas+Unique+Special+Act areas',
+          'atlas+unique+act': 'Atlas+Unique+Act areas',
           all: 'All areas'
         },
         def: mapDisplay

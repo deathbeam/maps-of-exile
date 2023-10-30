@@ -132,32 +132,34 @@ def get_card_data(key, config, card_extra):
             "maxage": 1,
             "limit": "500",
             "tables": "items",
-            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters",
+            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text",
             "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1"',
         },
     ).json()["cargoquery"]
     wiki_cards = list(
         map(
             lambda x: {
-                "name": x["title"]["name"],
+                "name": x["name"],
                 "drop": {
                     "areas": list(
-                        filter(
-                            None, (x["title"].get("drop areas", "") or "").split(",")
+                        map(
+                            lambda x: x.strip(),
+                            filter(None, (x.get("drop areas", "") or "").split(",")),
                         )
                     ),
                     "monsters": list(
-                        filter(
-                            None, (x["title"].get("drop monsters", "") or "").split(",")
+                        map(
+                            lambda x: x.strip(),
+                            filter(None, (x.get("drop monsters", "") or "").split(",")),
                         )
                     ),
-                    "min_level": int(x["title"].get("drop level", "0") or "0"),
-                    "max_level": int(x["title"].get("drop level maximum"))
-                    if x["title"].get("drop level maximum")
+                    "min_level": int(x.get("drop level", "0") or "0"),
+                    "max_level": int(x.get("drop level maximum"))
+                    if x.get("drop level maximum")
                     else None,
                 },
             },
-            wiki_cards,
+            map(lambda x: x["title"], wiki_cards),
         )
     )
 
@@ -310,13 +312,13 @@ def get_monsters(config):
             params={
                 "action": "cargoquery",
                 "format": "json",
-                "smaxage": 0,
-                "maxage": 0,
+                "smaxage": 1,
+                "maxage": 1,
                 "limit": 500,
                 "offset": offset,
                 "tables": "monsters",
                 "fields": "monsters.name, monsters.metadata_id",
-                "where": "monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.monster_type_id LIKE '%ChampionTreasurer%' or monsters.monster_type_id LIKE '%Exile%' or monsters.monster_type_id LIKE '%VaalArchitect%'",
+                "where": "(monsters.name NOT LIKE '%DNT%' AND monsters.name NOT LIKE '%UNUSED%') AND (monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%ChampionTreasurer%' OR monsters.metadata_id LIKE '%Exile%' OR monsters.metadata_id LIKE '%VaalArchitect%' OR monsters.metadata_id LIKE '%Breach%' OR monsters.metadata_id LIKE '%Hellscape%' OR monsters.metadata_id LIKE '%Abyss%' OR monsters.metadata_id LIKE '%TentaclePortal%')",
             },
         ).json()["cargoquery"]
 
@@ -336,8 +338,8 @@ def get_monsters(config):
     for monster in wiki_monsters:
         out.append(
             {
-                "id": monster.get("metadata id"),
-                "name": html.unescape(monster.get("name")),
+                "id": monster.get("metadata id").strip(),
+                "name": html.unescape(monster.get("name")).strip(),
             }
         )
     return out
@@ -525,7 +527,8 @@ def get_maps(key, config):
             map_type = "special area"
 
         if is_special_area:
-            print(f"Found special area {name}")
+            print(f"Found special area {name}, skipping")
+            continue
 
         out_map = {
             "id": id,

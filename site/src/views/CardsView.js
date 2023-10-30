@@ -93,8 +93,12 @@ const CardList = ({ card, voidstones }) => {
           <b>Score</b>: <Rating rating={card.score} />
           <br />
           <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-          <br />
-          <b>Weight</b>: {card.weight}
+          {!card.unknown && (
+            <>
+              <br />
+              <b>Weight</b>: {card.weight}
+            </>
+          )}
           {card.drop && (card.drop.min_level || card.drop.max_level) && (
             <>
               <br />
@@ -189,7 +193,7 @@ const CardsView = ({
           const out = {
             ...c,
             drop: c.drop || {},
-            maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && mc.weight > 0)),
+            maps: ratedMaps.filter(m => m.cards.find(mc => (mc.name === c.name && mc.weight > 0) || mc.unknown)),
             unknown: !c.weight,
             price: price,
             value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0

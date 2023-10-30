@@ -42,7 +42,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
         <div>
           {mapName}
           <br />
-          <small>{map.type.includes('map') ? map.tiers.join(', ') : 'Level ' + map.level}</small>
+          <small>{map.atlas ? map.tiers.join(', ') : 'Area Level ' + map.level}</small>
           <br />
           {!sidebar && tags}
         </div>

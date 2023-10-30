@@ -14,6 +14,13 @@ const Footer = () => (
           globals.json
         </a>{' '}
         <a
+          href="https://raw.githubusercontent.com/deathbeam/maps-of-exile/main/site/src/data/monsters.json"
+          target="_blank"
+          rel="noreferrer"
+        >
+          monsters.json
+        </a>{' '}
+        <a
           href="https://raw.githubusercontent.com/deathbeam/maps-of-exile/main/site/src/data/cards.json"
           target="_blank"
           rel="noreferrer"

@@ -1,6 +1,7 @@
 import cards from './cards.json'
 import maps from './maps.json'
 import globals from './globals.json'
+import monsters from './monsters.json'
 import { mapLevelToTier } from '../common'
 
 export const wikiBase = 'https://www.poewiki.net/wiki/'
@@ -11,6 +12,7 @@ export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 export const mfAcademyInvite = 'https://discord.gg/mfacademy'
 
+export const preparedMonsters = new Map(monsters.map(obj => [obj.id, obj.name]))
 export const preparedGlobals = globals
 const lastUpdate = new Date(preparedGlobals.lastUpdate)
 preparedGlobals.lastUpdate = lastUpdate.toLocaleString()

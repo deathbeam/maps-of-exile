@@ -1,7 +1,7 @@
 import GoToTop from '../components/GoToTop'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { preparedCards, wikiBase } from '../data'
+import { preparedCards, preparedMonsters, wikiBase } from '../data'
 import { calculateScore, filter } from '../common'
 import MapName from '../components/MapName'
 import useLazy from '../hooks/useLazy'
@@ -121,16 +121,43 @@ const CardList = ({ card, voidstones }) => {
           )}
         </div>
       </td>
-      <td>
-        <div className="row m-0">
-          {visible &&
-            card.maps.map(map => (
-              <div className="col-2">
-                <MapName map={map} voidstones={voidstones} cardList={true} />
-              </div>
-            ))}
-        </div>
-      </td>
+      {visible ? (
+        <>
+          <td
+            style={{
+              width: '245px',
+              maxWidth: '350px'
+            }}
+          >
+            <div className="list-group">
+              {card.monsters.map(m => (
+                <a
+                  href={wikiBase + m}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="list-group-item list-group-item-action text-nowrap"
+                >
+                  <img src="/img/boss.webp" alt="" width="16" className="me-1" /> {m}
+                </a>
+              ))}
+            </div>
+          </td>
+          <td>
+            <div className="row m-0">
+              {card.maps.map(map => (
+                <div className="col-2">
+                  <MapName map={map} voidstones={voidstones} cardList={true} />
+                </div>
+              ))}
+            </div>
+          </td>
+        </>
+      ) : (
+        <>
+          <td></td>
+          <td></td>
+        </>
+      )}
     </tr>
   )
 }
@@ -166,13 +193,14 @@ const CardsView = ({
           const out = {
             ...c,
             drop: c.drop || {},
-            boss: ((c.drop || {}).monsters || []).length > 0,
             maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && mc.weight > 0)),
             unknown: !c.weight,
             price: price,
             value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
           }
 
+          out.monsters = [...new Set((out.drop.monsters || []).map(m => preparedMonsters.get(m) || m))].sort()
+          out.boss = out.monsters.length > 0
           out.search = [
             ...new Set([
               out.name,
@@ -210,7 +238,8 @@ const CardsView = ({
         <thead>
           <tr>
             <th scope="col">Card</th>
-            <th scope="col">Maps</th>
+            <th scope="col">Monsters</th>
+            <th scope="col">Areas</th>
           </tr>
         </thead>
         <tbody>

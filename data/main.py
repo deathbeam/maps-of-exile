@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import time
+import html
 from decimal import Decimal
 from math import ceil
 
@@ -302,6 +303,46 @@ def get_card_data(key, config, card_extra):
     return sorted(out, key=lambda d: d["name"])
 
 
+def get_monsters(config):
+    def get_map_wiki_inner(offset):
+        return requests.get(
+            config["wiki"]["api"],
+            params={
+                "action": "cargoquery",
+                "format": "json",
+                "smaxage": 0,
+                "maxage": 0,
+                "limit": 500,
+                "offset": offset,
+                "tables": "monsters",
+                "fields": "monsters.name, monsters.metadata_id",
+                "where": "monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.monster_type_id LIKE '%ChampionTreasurer%'",
+            },
+        ).json()["cargoquery"]
+
+    print(f"Getting monster metadata from wiki")
+    wiki_monsters = []
+    cur_offset = 0
+    while True:
+        res = get_map_wiki_inner(cur_offset)
+        if len(res) == 0:
+            break
+        cur_offset += len(res)
+        wiki_monsters += res
+    print(f"Found {len(wiki_monsters)} monsters")
+    wiki_monsters = list(map(lambda x: x["title"], wiki_monsters))
+    out = []
+
+    for monster in wiki_monsters:
+        out.append(
+            {
+                "id": monster.get("metadata id"),
+                "name": html.unescape(monster.get("name")),
+            }
+        )
+    return out
+
+
 def get_map_meta(key, config):
     out = []
     for name in config["metadata"]["sheet-names"]:
@@ -425,8 +466,13 @@ def get_map_wiki(config):
 
     print(f"Getting map metadata from wiki")
     wiki_maps = []
-    wiki_maps = wiki_maps + get_map_wiki_inner(0)
-    wiki_maps = wiki_maps + get_map_wiki_inner(500)
+    cur_offset = 0
+    while True:
+        res = get_map_wiki_inner(cur_offset)
+        if len(res) == 0:
+            break
+        cur_offset += len(res)
+        wiki_maps += res
     print(f"Found {len(wiki_maps)} areas")
     return list(map(lambda x: x["title"], wiki_maps))
 
@@ -832,12 +878,16 @@ def main():
 
     args = sys.argv
     fetch_globals = False
+    fetch_monsters = False
     fetch_cards = False
     fetch_maps = False
 
     if len(args) > 1:
         if "globals" in args[1]:
             fetch_globals = True
+
+        if "monsters" in args[1]:
+            fetch_monsters = True
 
         if "cards" in args[1]:
             fetch_cards = True
@@ -847,6 +897,16 @@ def main():
 
     config = config["data"]
     api_key = os.environ["GOOGLE_API_KEY"]
+
+    if fetch_globals:
+        globals = get_globals_data(config)
+        with open(dir_path + "/../site/src/data/globals.json", "w") as f:
+            f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
+
+    if fetch_monsters:
+        monsters = get_monsters(config)
+        with open(dir_path + "/../site/src/data/monsters.json", "w") as f:
+            f.write(json.dumps(monsters, indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_cards:
         # Get extra card data
@@ -858,11 +918,6 @@ def main():
             f.write(
                 json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)
             )
-
-    if fetch_globals:
-        globals = get_globals_data(config)
-        with open(dir_path + "/../site/src/data/globals.json", "w") as f:
-            f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_maps:
         # Get basic map data

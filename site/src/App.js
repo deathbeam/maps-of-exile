@@ -36,68 +36,81 @@ function rateMaps(
   }
 
   // First calculate value for cards
-  const mapsWithCardValues = foundMaps.map(map => {
-    const mapLevel = mapTierToLevel(map.tiers[voidstones])
-    const mapCards = []
-    let mapWeight = 0
-    let bossWeight = 0
+  const mapsWithCardValues = foundMaps
+    .filter(m => {
+      switch (mapDisplay) {
+        case 'atlas+unique':
+          return m.unique || m.atlas
+        case 'atlas':
+          return m.atlas
+        case 'unique':
+          return m.unique
+        default:
+          return true
+      }
+    })
+    .map(map => {
+      const mapLevel = mapTierToLevel(map.tiers[voidstones])
+      const mapCards = []
+      let mapWeight = 0
+      let bossWeight = 0
 
-    for (let card of map.cards) {
-      const cardMinLevel = (card.drop || {}).min_level || 0
-      const cardMaxLevel = (card.drop || {}).max_level || 99
-      const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
-      const weight = dropEligible ? card.weight || 0 : 0
-      const price = (cardPriceSource === 'standard' ? card.standardPrice : card.price) || 0
+      for (let card of map.cards) {
+        const cardMinLevel = (card.drop || {}).min_level || 0
+        const cardMaxLevel = (card.drop || {}).max_level || 99
+        const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
+        const weight = dropEligible ? card.weight || 0 : 0
+        const price = (cardPriceSource === 'standard' ? card.standardPrice : card.price) || 0
 
-      bossWeight += weight
-      if (!card.boss) {
-        mapWeight += weight
+        bossWeight += weight
+        if (!card.boss) {
+          mapWeight += weight
+        }
+
+        mapCards.push({
+          ...card,
+          price,
+          weight,
+          unknown: !card.weight
+        })
       }
 
-      mapCards.push({
-        ...card,
-        price,
-        weight,
-        unknown: !card.weight
-      })
-    }
+      for (let card of mapCards) {
+        card.mapWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)
+        card.kiracWeight = bossWeight
+        card.dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
 
-    for (let card of mapCards) {
-      card.mapWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)
-      card.kiracWeight = bossWeight
-      card.dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
+        const dropEligible = card.weight > 0
+        const priceEligible = card.price >= cardMinPrice
+        if (!card.unknown) {
+          if (
+            (cardDisplay === 'high+drop' && (!dropEligible || !priceEligible)) ||
+            (cardDisplay === 'high' && !priceEligible) ||
+            (cardDisplay === 'drop' && !dropEligible)
+          ) {
+            card.hidden = true
+            card.value = 0
+            continue
+          }
+        }
 
-      const dropEligible = card.weight > 0
-      const priceEligible = card.price >= cardMinPrice
-      if (!card.unknown) {
-        if (
-          (cardDisplay === 'high+drop' && (!dropEligible || !priceEligible)) ||
-          (cardDisplay === 'high' && !priceEligible) ||
-          (cardDisplay === 'drop' && !dropEligible)
-        ) {
-          card.hidden = true
+        if (!priceEligible) {
           card.value = 0
           continue
         }
+
+        if (cardValueSource === 'kirac') {
+          card.value = map.unique ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
+        } else {
+          card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
+        }
       }
 
-      if (!priceEligible) {
-        card.value = 0
-        continue
+      return {
+        ...map,
+        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
       }
-
-      if (cardValueSource === 'kirac') {
-        card.value = map.unique ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
-      } else {
-        card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
-      }
-    }
-
-    return {
-      ...map,
-      cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
-    }
-  })
+    })
 
   // Now calculate score for each card
   calculateScore(
@@ -135,20 +148,7 @@ function rateMaps(
     map.connected = connectedOut
   }
 
-  return rated
-    .sort((a, b) => b.score - a.score)
-    .filter(m => {
-      switch (mapDisplay) {
-        case 'atlas+unique':
-          return m.unique || m.atlas
-        case 'atlas':
-          return m.atlas
-        case 'unique':
-          return m.unique
-        default:
-          return true
-      }
-    })
+  return rated.sort((a, b) => b.score - a.score)
 }
 
 function parseSearch(s) {

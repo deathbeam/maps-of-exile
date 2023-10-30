@@ -123,26 +123,29 @@ const CardList = ({ card, voidstones }) => {
       </td>
       {visible ? (
         <>
-          <td
-            style={{
-              width: '245px',
-              maxWidth: '350px'
-            }}
-          >
-            <div className="list-group">
-              {card.monsters.map(m => (
-                <a
-                  href={wikiBase + m}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="list-group-item list-group-item-action text-nowrap"
-                >
-                  <img src="/img/boss.webp" alt="" width="16" className="me-1" /> {m}
-                </a>
-              ))}
-            </div>
-          </td>
           <td>
+            {card.boss && (
+              <div className="row m-0 mb-2">
+                {card.monsters.map(m => (
+                  <div className="col-2">
+                    <div className="d-lg-flex flex-row">
+                      <div className="pe-2 pb-2">
+                        <div className="map-icon-container">
+                          <img src="/img/boss.webp" alt="" />
+                        </div>
+                      </div>
+                      <div>
+                        <a className="text-light" href={wikiBase + m} target="_blank" rel="noreferrer">
+                          {m}
+                        </a>
+                        <br />
+                        <span className="badge bg-warning text-dark">monster</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
             <div className="row m-0">
               {card.maps.map(map => (
                 <div className="col-2">
@@ -154,7 +157,6 @@ const CardList = ({ card, voidstones }) => {
         </>
       ) : (
         <>
-          <td></td>
           <td></td>
         </>
       )}
@@ -238,8 +240,7 @@ const CardsView = ({
         <thead>
           <tr>
             <th scope="col">Card</th>
-            <th scope="col">Monsters</th>
-            <th scope="col">Areas</th>
+            <th scope="col">Sources</th>
           </tr>
         </thead>
         <tbody>

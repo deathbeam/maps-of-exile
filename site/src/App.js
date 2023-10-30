@@ -410,7 +410,11 @@ function App() {
         def: cardDisplay
       },
       {
-        name: 'Map display',
+        name: (
+          <>
+            Map display <span className="badge bg-danger text-dark ms-1">new</span>
+          </>
+        ),
         tooltip: (
           <>
             Which maps and aras are displayed.

@@ -31,9 +31,16 @@ const CardList = ({ card, voidstones }) => {
       </td>
       {visible ? (
         <td>
-          <div className="row m-0 mb-2">
+          <div className="row m-0">
+            {card.drop.text && (
+              <div className="card mb-2">
+                <div className="card-body">{card.drop.text}</div>
+              </div>
+            )}
+          </div>
+          <div className="row m-0">
             {card.monsters.map(m => (
-              <div className="col-2">
+              <div className="col-2 mt-2">
                 <div className="d-lg-flex flex-row">
                   <div className="pe-2 pb-2">
                     <div className="map-icon-container">
@@ -53,7 +60,7 @@ const CardList = ({ card, voidstones }) => {
           </div>
           <div className="row m-0">
             {card.maps.map(map => (
-              <div className="col-2">
+              <div className="col-2 mt-2">
                 <MapName map={map} voidstones={voidstones} cardList={true} />
               </div>
             ))}

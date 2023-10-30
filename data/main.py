@@ -7,6 +7,7 @@ import time
 import html
 from decimal import Decimal
 from math import ceil
+from wikitextparser import remove_markup
 
 import requests
 import yaml
@@ -120,6 +121,13 @@ def get_globals_data(config):
 
 
 def get_card_data(key, config, card_extra):
+    def clean_card_text(text):
+        text = remove_markup(text)
+        soup = BeautifulSoup(text, "html.parser")
+        for e in soup.find_all("span", {"class": "c-item-hoverbox__display"}):
+            e.decompose()
+        return soup.get_text().replace("16x16px|link=|alt=", "")
+
     league = config["league"]
 
     print(f"Getting card data from wiki")
@@ -157,6 +165,7 @@ def get_card_data(key, config, card_extra):
                     "max_level": int(x.get("drop level maximum"))
                     if x.get("drop level maximum")
                     else None,
+                    "text": clean_card_text(x.get("drop text", "") or ""),
                 },
             },
             map(lambda x: x["title"], wiki_cards),

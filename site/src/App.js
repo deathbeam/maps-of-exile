@@ -188,7 +188,7 @@ function App() {
   const [view, setView] = usePersistedState('view', 'list', startTransition)
   const voidstones = useInputField('voidstonesInput', 0, startTransition)
   const cardDisplay = useInputField('cardDisplayInput', 'all', startTransition)
-  const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique', startTransition, shareableRef)
+  const mapDisplay = useInputField('mapDisplayInput', 'atlas', startTransition, shareableRef)
 
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const layout = useInputField('layoutInput', 3, startTransition, shareableRef)

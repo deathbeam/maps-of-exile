@@ -12,7 +12,7 @@ export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
 export const mfAcademyInvite = 'https://discord.gg/mfacademy'
 
-export const preparedMonsters = new Map(monsters.map(obj => [obj.id, obj.name]))
+export const preparedMonsters = monsters
 export const preparedGlobals = globals
 const lastUpdate = new Date(preparedGlobals.lastUpdate)
 preparedGlobals.lastUpdate = lastUpdate.toLocaleString()
@@ -79,8 +79,8 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  if (map.boss.names) {
-    const names = map.boss.names.filter(n => !n.includes('Merveil'))
+  if (map.boss.ids) {
+    const names = map.boss.ids.map(id => preparedMonsters[id] || id).filter(n => !n.includes('Merveil'))
     if (names.length > 1) {
       mapTags.push({ name: `${names.length} bosses` })
     }

@@ -3,9 +3,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
-            ],
-            "names": [
-                "Quetzerxi"
             ]
         },
         "id": "1_SideArea4_4",
@@ -22,10 +19,6 @@
             "ids": [
                 "Metadata/Monsters/MavenBoss/MavenBrainBoss",
                 "Metadata/Monsters/MavenBoss/TheMaven"
-            ],
-            "names": [
-                "Nucleus of the Maven",
-                "The Maven"
             ]
         },
         "id": "MavenBoss",
@@ -42,9 +35,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AtlasInvaders/CleansingMonsters/CleansingBoss"
-            ],
-            "names": [
-                "The Searing Exarch"
             ],
             "not_twinnable": true
         },
@@ -63,9 +53,6 @@
             "ids": [
                 "Metadata/Monsters/AtlasInvaders/ConsumeMonsters/ConsumeBoss"
             ],
-            "names": [
-                "The Eater of Worlds"
-            ],
             "not_twinnable": true
         },
         "id": "MapWorldsPrimordialBoss4",
@@ -82,9 +69,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AtlasBosses/TheElder/TheElder"
-            ],
-            "names": [
-                "The Elder"
             ],
             "not_twinnable": true
         },
@@ -103,9 +87,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerMaleMapBoss"
-            ],
-            "names": [
-                "The Arbiter of Knowledge"
             ],
             "separated": true
         },
@@ -152,16 +133,6 @@
                 "Metadata/Monsters/Wb/WbChaosLeader8",
                 "Metadata/Monsters/Wb/WbLeader4Minion"
             ],
-            "names": [
-                "Berrots, The Breaker",
-                "Invari, The Bloodshaper",
-                "Kalria, The Fallen",
-                "Lokan, The Deceiver",
-                "Marchak, The Betrayer",
-                "Morgrants, The Deafening",
-                "Rama, The Kinslayer",
-                "Vessider, The Unrivaled"
-            ],
             "separated": false
         },
         "connected": [
@@ -201,10 +172,6 @@
                 "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss1",
                 "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss2"
             ],
-            "names": [
-                "Rose",
-                "Thorn"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -240,9 +207,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BlacksmithGolem/BlacksmithGolemMap"
-            ],
-            "names": [
-                "Calderus"
             ],
             "not_spawned": false,
             "phases": false,
@@ -284,9 +248,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian1"
-            ],
-            "names": [
-                "Altered Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisColdGuardianMap",
@@ -304,9 +265,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/ZombieDismember/Blackguard/BlackguardZombieBossSideArea"
-            ],
-            "names": [
-                "Commander of Flesh"
             ]
         },
         "id": "1_SideArea4_2",
@@ -322,9 +280,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Axis/AxisEliteGuardMapBoss"
-            ],
-            "names": [
-                "Legius Garhall"
             ],
             "separated": false
         },
@@ -354,9 +309,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiders/MapSpiderBossWeaver"
-            ],
-            "names": [
-                "Spinner of False Hope"
             ],
             "not_spawned": true,
             "phases": true,
@@ -400,9 +352,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiders/MapSpiderBossSinsSimplified"
-            ],
-            "names": [
-                "Hybrid Widow"
             ],
             "not_spawned": false,
             "phases": false,
@@ -448,10 +397,6 @@
                 "Metadata/Monsters/Guardians/MapGuardianBossFire",
                 "Metadata/Monsters/Guardians/MapGuardianBossLightning"
             ],
-            "names": [
-                "Herald of Ashes",
-                "Herald of Thunder"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -492,9 +437,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
-            ],
-            "names": [
-                "Beheader Ataguchu"
             ]
         },
         "id": "1_SideArea3_9_",
@@ -513,11 +455,6 @@
                 "Metadata/Monsters/GladiatorBosses/GladiatorBossEliteMap",
                 "Metadata/Monsters/GladiatorBosses/GladiatorBossLeaderMap",
                 "Metadata/Monsters/GladiatorBosses/GladiatorBossSupportMap"
-            ],
-            "names": [
-                "Avatar of the Forge",
-                "Avatar of the Huntress",
-                "Avatar of the Skies"
             ],
             "separated": true
         },
@@ -554,9 +491,6 @@
             "ids": [
                 "Metadata/Monsters/Rhoas/MapRhoaBoss"
             ],
-            "names": [
-                "Drought-Maddened Rhoa"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -590,9 +524,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Axis/MapAxisGeneralBoss"
-            ],
-            "names": [
-                "Warmonger"
             ],
             "not_spawned": false,
             "phases": false,
@@ -628,9 +559,6 @@
             "ids": [
                 "Metadata/Monsters/AnimatedItem/AnimatedWeaponMapBoss"
             ],
-            "names": [
-                "The Steel Soul"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -665,9 +593,6 @@
             "ids": [
                 "Metadata/Monsters/Bandits/MapBanditBowBossFire"
             ],
-            "names": [
-                "Lord of the Ashen Arrow"
-            ],
             "separated": false
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/DryWoods",
@@ -696,9 +621,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Totems/TotemMapBossCold"
-            ],
-            "names": [
-                "Puruna, the Challenger"
             ],
             "not_spawned": false,
             "phases": false,
@@ -742,9 +664,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian2"
-            ],
-            "names": [
-                "Augmented Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisFireGuardianMap",
@@ -763,9 +682,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Beasts/MapBeastBossWhite"
-            ],
-            "names": [
-                "Beast of the Pits"
             ],
             "not_spawned": false,
             "phases": false,
@@ -808,9 +724,6 @@
             "ids": [
                 "Metadata/Monsters/AvariusCasticus/AvariusCasticusMap"
             ],
-            "names": [
-                "Konley, the Unrepentant"
-            ],
             "not_twinnable": true,
             "separated": true
         },
@@ -848,9 +761,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerMaleMapBossBazaar"
-            ],
-            "names": [
-                "Ancient Sculptor"
             ],
             "separated": true
         },
@@ -904,9 +814,6 @@
             "ids": [
                 "Metadata/Monsters/Scavengers/MapScavengerBossHailrake"
             ],
-            "names": [
-                "Glace"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -948,9 +855,6 @@
             "ids": [
                 "Metadata/Monsters/KitavaBoss/Kitava1Map"
             ],
-            "names": [
-                "Lord of the Grey"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -985,9 +889,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Totems/TotemBossSideArea"
-            ],
-            "names": [
-                "M'gaska, the Living Pyre"
             ]
         },
         "id": "1_SideArea3_3",
@@ -1004,9 +905,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Rhoas/MapRhoaSkeletonBoss"
-            ],
-            "names": [
-                "Skullbeak"
             ],
             "separated": true
         },
@@ -1044,9 +942,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Necromancer/MapNecromancerBossPrison"
-            ],
-            "names": [
-                "Xixic, High Necromancer"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1091,11 +986,6 @@
                 "Metadata/Monsters/LeagueHarvest/Green/HarvestCatBossMapBoss",
                 "Metadata/Monsters/LeagueHarvest/Red/HarvestBearBossMapBoss"
             ],
-            "names": [
-                "Elida Blisterclaw",
-                "Melur Thornmaul",
-                "Orvi Acidbeak"
-            ],
             "not_twinnable": true
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Bramblefall",
@@ -1136,9 +1026,6 @@
             "ids": [
                 "Metadata/Monsters/BanditLeaderInt/MapBanditLeaderAlira2"
             ],
-            "names": [
-                "Witch of the Cauldron"
-            ],
             "separated": true
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/BurialChambers",
@@ -1169,11 +1056,6 @@
                 "Metadata/Monsters/Lion/LionMapWolfColdBossRevive",
                 "Metadata/Monsters/Lion/LionMapWolfFireBoss",
                 "Metadata/Monsters/Lion/LionMapWolfLightningBossRevive"
-            ],
-            "names": [
-                "Solus, Pack Alpha",
-                "Storm Eye",
-                "Winterfang"
             ],
             "not_spawned": false,
             "phases": true,
@@ -1210,9 +1092,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BlackguardInquisitor/BloodwingMapBoss"
-            ],
-            "names": [
-                "Executioner Bloodwing"
             ],
             "separated": true
         },
@@ -1251,9 +1130,6 @@
             "ids": [
                 "Metadata/Monsters/Kaom/KaomMapBoss",
                 "Metadata/Monsters/KaomWarrior/MapKaruiElder1"
-            ],
-            "names": [
-                "The Infernal King"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1298,10 +1174,6 @@
                 "Metadata/Monsters/Cockerel/CockerelBowMapBoss",
                 "Metadata/Monsters/Pitbull/PitbullMapBoss"
             ],
-            "names": [
-                "Gnar, Eater of Carrion",
-                "Stonebeak, Battle Fowl"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -1336,9 +1208,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/UnholyTrio/UnholyTrioMap"
-            ],
-            "names": [
-                "Amalgam of Nightmares"
             ],
             "separated": true
         },
@@ -1377,9 +1246,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn2"
-            ],
-            "names": [
-                "Leif, the Swift-Handed"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1424,9 +1290,6 @@
             "ids": [
                 "Metadata/Monsters/Shavronne/ShavronneSoulMap"
             ],
-            "names": [
-                "Shavronne the Sickening"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -1470,9 +1333,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DespairBear/DespairBearMap"
-            ],
-            "names": [
-                "Erebix, Light's Bane"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -1521,9 +1381,6 @@
             "ids": [
                 "Metadata/Monsters/VultureParasite/VultureParasiteMapBoss"
             ],
-            "names": [
-                "The Winged Death"
-            ],
             "separated": false
         },
         "connected": [
@@ -1559,9 +1416,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/GargoyleBoss/GargoyleMapBoss"
-            ],
-            "names": [
-                "Hephaeus, The Hammer"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1602,9 +1456,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BreachBosses/BreachBossChaosMap"
-            ],
-            "names": [
-                "Chayula, Who Dreamt"
             ]
         },
         "id": "BreachBossChaos2",
@@ -1624,11 +1475,6 @@
                 "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossMap",
                 "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossZombieMap",
                 "Metadata/Monsters/StatueFingerMage/StatueFingerMageMonsterMapBoss"
-            ],
-            "names": [
-                "Carius, the Unnatural",
-                "Pileah, Burning Corpse",
-                "Pileah, Corpse Burner"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1671,9 +1517,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BloodChieftain/MonkeyChiefBossSideArea"
-            ],
-            "names": [
-                "Simi, the Nature Touched"
             ]
         },
         "id": "1_SideArea6_6",
@@ -1689,9 +1532,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Goatman/GoatmanLeapBossSideAreaLowbie"
-            ],
-            "names": [
-                "Konu, Maker of Wind"
             ]
         },
         "id": "1_SideArea1_4_",
@@ -1709,10 +1549,6 @@
             "ids": [
                 "Metadata/Monsters/LunarisSolaris/LunarisMap",
                 "Metadata/Monsters/LunarisSolaris/SolarisMap"
-            ],
-            "names": [
-                "Ara, Sister of Light",
-                "Khor, Sister of Shadows"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1756,9 +1592,6 @@
             "ids": [
                 "Metadata/Monsters/Axis/MapAxisGeneralBoss2"
             ],
-            "names": [
-                "Tyrant"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -1799,9 +1632,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Daresso/DaressoMapBoss"
-            ],
-            "names": [
-                "Ambrius, Legion Slayer"
             ],
             "not_spawned": false,
             "phases": true,
@@ -1844,9 +1674,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonFemale/WhipDemonBossSideArea"
-            ],
-            "names": [
-                "Cava, Artist of Pain"
             ]
         },
         "id": "1_SideArea8_5",
@@ -1862,9 +1689,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Squid/SquidBossSideAreaLowbie"
-            ],
-            "names": [
-                "The All-seeing Eye"
             ]
         },
         "id": "1_SideArea1_2",
@@ -1880,9 +1704,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Exiles/TituciusMapBoss"
-            ],
-            "names": [
-                "The Forgotten Soldier"
             ],
             "not_spawned": false,
             "phases": false,
@@ -1917,9 +1738,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptainMap"
-            ],
-            "names": [
-                "Captain Tanner Lightfoot"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -1957,9 +1775,6 @@
                 "Metadata/Monsters/Malachai/MalachaiMapBoss",
                 "Metadata/Monsters/Malachai/MalachaiMapBoss2"
             ],
-            "names": [
-                "Eater of Souls"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": true,
@@ -1994,9 +1809,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisVenariusBoss"
-            ],
-            "names": [
-                "Venarius"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
@@ -2017,11 +1829,6 @@
                 "Metadata/Monsters/Exiles/ExileMarauder6Kitava",
                 "Metadata/Monsters/Exiles/ExileRanger2Kitava",
                 "Metadata/Monsters/Exiles/ExileShadow1Kitava"
-            ],
-            "names": [
-                "Bolt Brownfur, Earth Churner",
-                "Ion Darkshroud, the Hungering Blade",
-                "Thena Moga, the Crimson Storm"
             ],
             "separated": true
         },
@@ -2060,11 +1867,6 @@
                 "Metadata/Monsters/Axis/AxisCasterMapBoss1",
                 "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss1",
                 "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss2"
-            ],
-            "names": [
-                "Oriath's Vengeance",
-                "Oriath's Vigil",
-                "Oriath's Virtue"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2106,9 +1908,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiders/SpiderBossSideArea"
-            ],
-            "names": [
-                "Cintiq, the Inescapable"
             ]
         },
         "id": "1_SideArea2_3",
@@ -2126,10 +1925,6 @@
             "ids": [
                 "Metadata/Monsters/GhostPirates/GhostPirateMapBoss2",
                 "Metadata/Monsters/RockGolem/TreasureGolemMapBossSimplified"
-            ],
-            "names": [
-                "Pirate Treasure",
-                "Telvar, the Inebriated"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2174,9 +1969,6 @@
             "ids": [
                 "Metadata/Monsters/Scavengers/MapScavengerBossWitch"
             ],
-            "names": [
-                "Megaera"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -2210,9 +2002,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/StatueFingerMage/VaalSideAreaBoss7"
-            ],
-            "names": [
-                "Exartze, the Woven Stone"
             ]
         },
         "id": "1_SideArea5_4b",
@@ -2229,9 +2018,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Banshee/BansheeMapBoss"
-            ],
-            "names": [
-                "The Sanguine Siren"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2274,9 +2060,6 @@
             "ids": [
                 "Metadata/Monsters/CrimsonPriest/CrimsonPriestBoss"
             ],
-            "names": [
-                "Kadaris, Crimson Mayor"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -2312,11 +2095,6 @@
                 "Metadata/Monsters/Miner/MinerLanternMapBoss",
                 "Metadata/Monsters/MinerLarge/MinerLargeMapBoss"
             ],
-            "names": [
-                "Champion of the Hollows",
-                "Lord of the Hollows",
-                "Messenger of the Hollows"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -2351,9 +2129,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/MapSkeletonBossMelee"
-            ],
-            "names": [
-                "Pagan Bishop of Agony"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2430,9 +2205,6 @@
             "ids": [
                 "Metadata/Monsters/Talisman/TalismanWolfKingMapBoss"
             ],
-            "names": [
-                "The Cursed King"
-            ],
             "separated": true
         },
         "connected": [
@@ -2469,9 +2241,6 @@
             "ids": [
                 "Metadata/Monsters/Skeletons/SkeletonBossMapWest4"
             ],
-            "names": [
-                "Avatar of Apocalypse"
-            ],
             "not_spawned": true,
             "phases": true,
             "rushable": false,
@@ -2506,9 +2275,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss6"
-            ],
-            "names": [
-                "Harbinger of Disorder"
             ]
         },
         "id": "1_SideArea5_6",
@@ -2524,9 +2290,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickermanMap"
-            ],
-            "names": [
-                "Woad, Mockery of Man"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -2563,9 +2326,6 @@
             "ids": [
                 "Metadata/Monsters/Kira/KiraMapDesert"
             ],
-            "names": [
-                "Preethi, Eye-Pecker"
-            ],
             "separated": false
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Desert",
@@ -2594,9 +2354,6 @@
             "ids": [
                 "Metadata/Monsters/Shakari/Shakari2Map",
                 "Metadata/Monsters/Shakari/ShakariMap"
-            ],
-            "names": [
-                "Terror of the Infinite Drifts"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -2648,9 +2405,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Snake/SnakeRoboBossSideArea"
-            ],
-            "names": [
-                "Wiraqucha, Ancient Guardian"
             ]
         },
         "id": "1_SideArea9_6",
@@ -2666,9 +2420,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
-            ],
-            "names": [
-                "Quetzerxi"
             ]
         },
         "id": "1_SideArea4_7",
@@ -2684,9 +2435,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Garukhan/GarukhanMap"
-            ],
-            "names": [
-                "Stalker of the Endless Dunes"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -2722,9 +2470,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
-            ],
-            "names": [
-                "Curator Miem"
             ]
         },
         "id": "1_SideArea3_2",
@@ -2768,9 +2513,6 @@
             "ids": [
                 "Metadata/Monsters/IncaShadowBoss/BossIncaShadowDoryani"
             ],
-            "names": [
-                "The Apex Assembly"
-            ],
             "separated": true
         },
         "icon": "Art/2DItems/Maps/Doryanis",
@@ -2794,9 +2536,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiker/SpikerBull/SpikerBullBoss"
-            ],
-            "names": [
-                "Gazuul, Droughtspawn"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2829,9 +2568,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/ZombieBoss/MapZombieBossHillock"
-            ],
-            "names": [
-                "The Blacksmith"
             ],
             "not_spawned": false,
             "phases": false,
@@ -2877,9 +2613,6 @@
             "ids": [
                 "Metadata/Monsters/Brute/MapBossBrute"
             ],
-            "names": [
-                "Penitentiary Incarcerator"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -2921,9 +2654,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
-            ],
-            "names": [
-                "Quetzerxi"
             ]
         },
         "id": "1_SideArea9_9",
@@ -2939,9 +2669,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/incaminion/FragmentBossSideArea"
-            ],
-            "names": [
-                "Shrapnelbearer"
             ]
         },
         "id": "1_SideArea2_5",
@@ -2957,9 +2684,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeleton/SkeletonMeleeLargeBossSideArea"
-            ],
-            "names": [
-                "Ossecati, Boneshaper"
             ]
         },
         "id": "1_SideArea3_4",
@@ -2975,9 +2699,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BreachBosses/BreachBossLightningMap"
-            ],
-            "names": [
-                "Esh, Forked Thought"
             ]
         },
         "id": "BreachBossLightning",
@@ -2995,9 +2716,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Bandits/FrostfireMageMapBoss"
-            ],
-            "names": [
-                "Sumter the Twisted"
             ],
             "separated": true
         },
@@ -3033,9 +2751,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
-            ],
-            "names": [
-                "Curator Miem"
             ]
         },
         "id": "1_SideArea8_3",
@@ -3053,10 +2768,6 @@
             "ids": [
                 "Metadata/Monsters/Handfinger/HandfingerMapBoss",
                 "Metadata/Monsters/MineBat/MineBatMapBoss"
-            ],
-            "names": [
-                "Breaker Toruul",
-                "Shrieker Eihal"
             ],
             "not_spawned": false,
             "phases": false,
@@ -3101,9 +2812,6 @@
             "ids": [
                 "Metadata/Monsters/GeneralAdus/GeneralAdusMap"
             ],
-            "names": [
-                "Pesquin, the Mad Baron"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -3146,9 +2854,6 @@
             "ids": [
                 "Metadata/Monsters/Ralakesh/Greust/GreustMap"
             ],
-            "names": [
-                "Drek, Apex Hunter"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -3183,9 +2888,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Totems/TotemBossSideArea"
-            ],
-            "names": [
-                "M'gaska, the Living Pyre"
             ]
         },
         "id": "1_SideArea7_10",
@@ -3202,9 +2904,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/RockGolem/RockGolemMapBoss"
-            ],
-            "names": [
-                "The Eroding One"
             ],
             "not_spawned": false,
             "phases": false,
@@ -3248,9 +2947,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/StatueFingerMage/VaalSideAreaBoss7"
-            ],
-            "names": [
-                "Exartze, the Woven Stone"
             ]
         },
         "id": "1_SideArea5_4",
@@ -3266,9 +2962,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/ConstructMeleeBossSideArea"
-            ],
-            "names": [
-                "Haviri, Vaal Metalsmith"
             ]
         },
         "id": "1_SideArea2_8",
@@ -3284,9 +2977,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/incaminion/FragmentBossSideArea"
-            ],
-            "names": [
-                "Shrapnelbearer"
             ]
         },
         "id": "1_SideArea7_12",
@@ -3304,11 +2994,6 @@
                 "Metadata/Monsters/SaplingMonster/IcedSaplingFiendBoss",
                 "Metadata/Monsters/SaplingMonster/IcedSaplingHunterBoss",
                 "Metadata/Monsters/SaplingMonster/IcedSaplingTricksterBoss"
-            ],
-            "names": [
-                "Corruptor Eedaiak",
-                "Skictis, Frostkeeper",
-                "Takatax Brittlethorn"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -3342,9 +3027,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AtlasBosses/PhoenixBoss"
-            ],
-            "names": [
-                "Guardian of the Phoenix"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -3388,9 +3070,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/WaterSpiral/WaterSpiralBossSideArea"
-            ],
-            "names": [
-                "Torrent of Fear"
             ]
         },
         "id": "1_SideArea4_1",
@@ -3406,9 +3085,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
-            ],
-            "names": [
-                "Curator Miem"
             ]
         },
         "id": "1_SideArea9_5",
@@ -3424,9 +3100,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/GhostPirates/GhostPirateBossSideAreaLowbie"
-            ],
-            "names": [
-                "Coniraya, Shadow of Malice"
             ]
         },
         "id": "1_SideArea1_5",
@@ -3443,9 +3116,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DjinnDemon/DjinnDemonMapBoss_"
-            ],
-            "names": [
-                "Ormud, Fiend of the Flood"
             ]
         },
         "connected": [
@@ -3479,10 +3149,6 @@
                 "Metadata/Monsters/LeagueMetamorphosis/MetamorphosisMapBoss",
                 "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
             ],
-            "names": [
-                "Ciergan, Shadow Alchemist",
-                "The Shifting Ire"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -3514,9 +3180,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/Pirate/BrutalPirateLordBoss"
-            ],
-            "names": [
-                "Captain Clayborne, The Accursed"
             ],
             "not_spawned": false,
             "phases": false,
@@ -3560,9 +3223,6 @@
             "ids": [
                 "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak2"
             ],
-            "names": [
-                "Aulen Greychain"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -3605,9 +3265,6 @@
                 "Metadata/Monsters/GemMonster/IguanaMapBoss",
                 "Metadata/Monsters/GemMonster/IguanaMapBossChrome"
             ],
-            "names": [
-                "Sallazzang"
-            ],
             "separated": true
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Terrace",
@@ -3636,9 +3293,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss2"
-            ],
-            "names": [
-                "Avatar of Undoing"
             ],
             "not_spawned": false,
             "phases": false,
@@ -3683,9 +3337,6 @@
             "ids": [
                 "Metadata/Monsters/DemonFemale/MapLightningWhipDemonBoss"
             ],
-            "names": [
-                "Lady Stormflay"
-            ],
             "separated": false
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Ghetto",
@@ -3714,9 +3365,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Goatman/GoatmanLeapSlamMapBoss"
-            ],
-            "names": [
-                "Rek'tar, the Breaker"
             ],
             "separated": true
         },
@@ -3754,9 +3402,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BurnBoss/BurnBoss"
-            ],
-            "names": [
-                "The Restless Shade"
             ]
         },
         "connected": [
@@ -3790,11 +3435,6 @@
                 "Metadata/Monsters/Skeletons/MapSkeletonBossCaster",
                 "Metadata/Monsters/Skeletons/MapSkeletonBossPrisonMelee",
                 "Metadata/Monsters/Skeletons/MapSkeletonBossRanged"
-            ],
-            "names": [
-                "Champion of Frost",
-                "Steelpoint the Avenger",
-                "Thunderskull"
             ],
             "not_twinnable": true,
             "separated": true
@@ -3831,9 +3471,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss"
-            ],
-            "names": [
-                "Void Anomaly"
             ],
             "not_spawned": false,
             "phases": false,
@@ -3890,9 +3527,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Brute/BossBruteUniqueMap"
-            ],
-            "names": [
-                "Maker of Mires"
             ],
             "not_spawned": false,
             "phases": true,
@@ -3963,10 +3597,6 @@
                 "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossMap",
                 "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossXedMap"
             ],
-            "names": [
-                "Barthol, the Corruptor",
-                "Barthol, the Pure"
-            ],
             "separated": true
         },
         "connected": [
@@ -4000,9 +3630,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierMeleeBossSideArea"
-            ],
-            "names": [
-                "Calxipher"
             ]
         },
         "id": "1_SideArea4_3",
@@ -4018,9 +3645,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Snake/SnakeScorpionBossSideArea"
-            ],
-            "names": [
-                "Thornrunner"
             ]
         },
         "id": "1_SideArea2_4",
@@ -4051,11 +3675,6 @@
                 "Metadata/Monsters/Wb/WbColdLeader1",
                 "Metadata/Monsters/Wb/WbColdLeader2",
                 "Metadata/Monsters/Wb/WbColdLeader3"
-            ],
-            "names": [
-                "Jeinei Yuushu",
-                "Otesha, the Giantslayer",
-                "Yorishi, Aurora-sage"
             ],
             "separated": false
         },
@@ -4093,9 +3712,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/InsectSpawner/InsectSpawnerParasiteBossMap"
-            ],
-            "names": [
-                "Gorulis, Will-Thief"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -4138,9 +3754,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/HarbingerPortal/HarbingerPortalUber"
-            ],
-            "names": [
-                "<<>>"
             ]
         },
         "icon": "Art/2DItems/Maps/HarbingerUber",
@@ -4158,9 +3771,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Kiweth/KiwethBossSideArea"
-            ],
-            "names": [
-                "Inti of the Blood Moon"
             ]
         },
         "id": "1_SideArea3_10",
@@ -4195,10 +3805,6 @@
                 "Metadata/Monsters/MilitaryMapBoss/IvoryTempleMilitaryBoss1",
                 "Metadata/Monsters/MilitaryMapBoss/IvoryTempleMilitaryBoss2"
             ],
-            "names": [
-                "Sanctum Enforcer",
-                "Sanctum Guardian"
-            ],
             "separated": true
         },
         "connected": [
@@ -4232,9 +3838,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiders/MapSpiderBossWeaverSimplified"
-            ],
-            "names": [
-                "Queen of the Great Tangle"
             ],
             "not_spawned": true,
             "phases": true,
@@ -4301,9 +3904,6 @@
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerFemaleMapBossVoid"
             ],
-            "names": [
-                "Riftwalker"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -4337,9 +3937,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Talisman/TalismanWolfKingMapBossSimplified"
-            ],
-            "names": [
-                "Lycius, Midnight's Howl"
             ],
             "not_spawned": false,
             "phases": false,
@@ -4375,9 +3972,6 @@
             "ids": [
                 "Metadata/Monsters/AtlasBosses/HydraBoss"
             ],
-            "names": [
-                "Guardian of the Hydra"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": false,
@@ -4409,9 +4003,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
-            ],
-            "names": [
-                "Fire and Fury"
             ],
             "separated": true
         },
@@ -4452,9 +4043,6 @@
                 "Metadata/Monsters/KitavaBoss/KitavaFinalHeartMap",
                 "Metadata/Monsters/KitavaBoss/KitavaFinalMap"
             ],
-            "names": [
-                "Kitava, The Destroyer"
-            ],
             "not_twinnable": true,
             "separated": true
         },
@@ -4490,9 +4078,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierRangedMapBoss"
-            ],
-            "names": [
-                "Mirage of Bones"
             ],
             "not_spawned": false,
             "phases": false,
@@ -4539,12 +4124,6 @@
                 "Metadata/Monsters/Wb/WbFireLeader3",
                 "Metadata/Monsters/Wb/WbFireLeader4"
             ],
-            "names": [
-                "Bin'aia, Crimson Rain",
-                "El'Abin, Bloodeater",
-                "Leli Goya, Daughter of Ash",
-                "Uruk Baleh"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -4579,9 +4158,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
-            ],
-            "names": [
-                "The Grey Plague"
             ],
             "separated": true
         },
@@ -4632,10 +4208,6 @@
                 "Metadata/Monsters/Seawitch/MapBossMerveilMaelstrom",
                 "Metadata/Monsters/seawitchillusion/MapBossMerveilMaelstrom"
             ],
-            "names": [
-                "Merveil, the Reflection",
-                "Merveil, the Returned"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -4666,9 +4238,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Axis/PietyBeastMapBoss"
-            ],
-            "names": [
-                "Nightmare Manifest"
             ],
             "not_spawned": false,
             "phases": false,
@@ -4713,11 +4282,6 @@
                 "Metadata/Monsters/DemonFourLegged/FourLeggedDemonMaligaro",
                 "Metadata/Monsters/Maligaro/Maligaro2",
                 "Metadata/Monsters/Spiders/BlackDeath/BlackDeathMaligaro"
-            ],
-            "names": [
-                "Black Death, Pain Unending",
-                "Fidelitas, Loyalty Undying",
-                "Maligaro, the Artist"
             ]
         },
         "id": "2_7_5_map",
@@ -4750,9 +4314,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/SkeletonBossFairgravesTreasure"
-            ],
-            "names": [
-                "Fairgraves, Never Dying"
             ],
             "not_spawned": true,
             "phases": true,
@@ -4789,9 +4350,6 @@
             "ids": [
                 "Metadata/Monsters/Viking/VikingMapBoss"
             ],
-            "names": [
-                "Tore, Towering Ancient"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -4826,9 +4384,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Zombies/ZombieBossTolmanMap"
-            ],
-            "names": [
-                "Tolman, the Exhumer"
             ],
             "not_spawned": true,
             "separated": true
@@ -4867,9 +4422,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/IncaShadowBoss/MapBossIncaShadow"
-            ],
-            "names": [
-                "Shadow of the Vaal"
             ],
             "not_spawned": false,
             "phases": false,
@@ -4912,9 +4464,6 @@
             "ids": [
                 "Metadata/Monsters/AtlasBosses/MinotaurBoss"
             ],
-            "names": [
-                "Guardian of the Minotaur"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": false,
@@ -4946,9 +4495,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak"
-            ],
-            "names": [
-                "Oak the Mighty"
             ],
             "separated": true
         },
@@ -4986,9 +4532,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Seawitch/MapSeaWitchBossSpark"
-            ],
-            "names": [
-                "Shock and Horror"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5032,9 +4575,6 @@
             "ids": [
                 "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunarisMap"
             ],
-            "names": [
-                "Sebbert, Crescent's Point"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -5075,9 +4615,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
-            ],
-            "names": [
-                "Beheader Ataguchu"
             ]
         },
         "id": "1_SideArea8_7",
@@ -5094,9 +4631,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/RootSpiders/RootSpiderHiddenMapBoss"
-            ],
-            "names": [
-                "Tunneltrap"
             ],
             "separated": false
         },
@@ -5134,9 +4668,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Maligaro/MaligaroMapBoss2"
-            ],
-            "names": [
-                "He of Many Pieces"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5178,9 +4709,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BloodChieftain/MonkeyChiefBossSideArea"
-            ],
-            "names": [
-                "Simi, the Nature Touched"
             ]
         },
         "id": "1_SideArea2_2",
@@ -5196,9 +4724,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/RootSpiders/RootSpiderBossSideArea"
-            ],
-            "names": [
-                "Kamaq, Soilmaker"
             ]
         },
         "id": "1_SideArea2_1",
@@ -5215,9 +4740,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/SkeletonLargeMapBoss"
-            ],
-            "names": [
-                "Burtok, Conjurer of Bones"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5261,9 +4783,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Seawitch/SeaWitchBossSideArea"
-            ],
-            "names": [
-                "Rima, Deep Temptress"
             ]
         },
         "id": "1_SideArea3_8",
@@ -5314,9 +4833,6 @@
             "ids": [
                 "Metadata/Monsters/Totems/olmec_totem/MapTotemBossLegendsMain"
             ],
-            "names": [
-                "Olmec, the All Stone"
-            ],
             "not_spawned": true,
             "phases": true,
             "rushable": false,
@@ -5352,9 +4868,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBossSimplified"
-            ],
-            "names": [
-                "Vision of Justice"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5424,9 +4937,6 @@
             "ids": [
                 "Metadata/Monsters/Maligaro/Maligaro2Map"
             ],
-            "names": [
-                "Visceris"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -5462,9 +4972,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Maligaro/MaligaroSoulMap"
-            ],
-            "names": [
-                "Maligaro the Mutilator"
             ],
             "not_spawned": false,
             "phases": true,
@@ -5511,10 +5018,6 @@
                 "Metadata/Monsters/Dominusdemon/DominusDemonMapBoss",
                 "Metadata/Monsters/Pope/PopeMapBoss2"
             ],
-            "names": [
-                "God's Chosen",
-                "The Hallowed Husk"
-            ],
             "separated": true
         },
         "connected": [
@@ -5550,9 +5053,6 @@
             "ids": [
                 "Metadata/Monsters/Statue/StatueChurchMapBoss"
             ],
-            "names": [
-                "Suncaller Asha"
-            ],
             "separated": false
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Park",
@@ -5583,9 +5083,6 @@
                 "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap",
                 "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap2",
                 "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap3"
-            ],
-            "names": [
-                "Arwyn, the Houndmaster"
             ],
             "not_twinnable": true,
             "separated": true
@@ -5622,9 +5119,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/MossMonster/MapMossMonsterBossOldFields"
-            ],
-            "names": [
-                "Titan of the Grove"
             ],
             "separated": true
         },
@@ -5666,9 +5160,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Doedre/DoedreMapBoss2"
-            ],
-            "names": [
-                "Erythrophagia"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5713,9 +5204,6 @@
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerMaleMapBossPier"
             ],
-            "names": [
-                "Ancient Architect"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -5759,9 +5247,6 @@
             "ids": [
                 "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
             ],
-            "names": [
-                "Talin, Faithbreaker"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -5797,9 +5282,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Viking/VikingMapBoss2"
-            ],
-            "names": [
-                "Olof, Son of the Headsman"
             ],
             "not_spawned": false,
             "phases": false,
@@ -5843,9 +5325,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AtlasBosses/ChimeraBoss"
-            ],
-            "names": [
-                "Guardian of the Chimera"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -5896,10 +5375,6 @@
                 "Metadata/Monsters/Totems/TotemMapBossColdPlateau",
                 "Metadata/Monsters/Totems/TotemMapBossLightningPlateau"
             ],
-            "names": [
-                "Poporo, the Highest Spire",
-                "Puruna, the Challenger"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -5941,9 +5416,6 @@
             "ids": [
                 "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
             ],
-            "names": [
-                "The Goddess"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": true,
@@ -5978,9 +5450,6 @@
             "ids": [
                 "Metadata/Monsters/AtlasInvaders/BlackStarMonsters/BlackStarBoss"
             ],
-            "names": [
-                "The Black Star"
-            ],
             "not_twinnable": true
         },
         "id": "MapWorldsPrimordialBoss2",
@@ -5998,9 +5467,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss"
-            ],
-            "names": [
-                "Mistress Hyseria"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6041,9 +5507,6 @@
                 "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss3",
                 "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss4",
                 "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss5"
-            ],
-            "names": [
-                "Unravelling Horror"
             ],
             "not_spawned": false,
             "phases": true,
@@ -6093,15 +5556,6 @@
                 "Metadata/Monsters/Exiles/ExileShadow4MapBoss",
                 "Metadata/Monsters/Exiles/ExileTemplar1MapBoss_",
                 "Metadata/Monsters/Exiles/ExileWitch2MapBoss"
-            ],
-            "names": [
-                "Augustina Solaria",
-                "Damoi Tui",
-                "Eoin Greyfur",
-                "Igna Phoenix",
-                "Orra Greengate",
-                "Torr Olgosso",
-                "Wilorin Demontamer"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6162,9 +5616,6 @@
             "ids": [
                 "Metadata/Monsters/ProtoVaal/ProtoVaalMapBoss"
             ],
-            "names": [
-                "High Lithomancer"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -6209,9 +5660,6 @@
             "ids": [
                 "Metadata/Monsters/Malachai/MalachaiMapBossSimplified"
             ],
-            "names": [
-                "Nightmare's Omen"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -6250,11 +5698,7 @@
         "y": 355
     },
     {
-        "boss": {
-            "names": [
-                "Abberath, the Cloven One"
-            ]
-        },
+        "boss": {},
         "id": "1_1_8",
         "info": {},
         "layout": {},
@@ -6270,10 +5714,6 @@
             "ids": [
                 "Metadata/Monsters/Axis/MapEliteCasterBoss",
                 "Metadata/Monsters/Axis/MapEliteSoldierBoss"
-            ],
-            "names": [
-                "Blackguard Avenger",
-                "Blackguard Tempest"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6315,9 +5755,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/InsectSpawner/CarrionQueenBossSideArea"
-            ],
-            "names": [
-                "The Sunburst Queen"
             ]
         },
         "id": "1_SideArea3_1",
@@ -6336,11 +5773,6 @@
                 "Metadata/Monsters/Bull/BullMapBoss",
                 "Metadata/Monsters/Gladiator/GladiatorSwordMapBoss",
                 "Metadata/Monsters/Lion/LionColosseumMapBoss"
-            ],
-            "names": [
-                "Bringer of Blood",
-                "Crusher of Gladiators",
-                "Shredder of Gladiators"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6383,9 +5815,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Cannibal/CannibalBossSideArea"
-            ],
-            "names": [
-                "Perquil the Lucky"
             ]
         },
         "id": "1_SideArea6_4",
@@ -6401,9 +5830,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/MapUndyingBoss"
-            ],
-            "names": [
-                "The Reaver"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6438,9 +5864,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss1"
-            ],
-            "names": [
-                "Huitepa the Blind"
             ]
         },
         "id": "1_SideArea5_2",
@@ -6457,9 +5880,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BrineKing/BrineKingMap"
-            ],
-            "names": [
-                "Nassar, Lion of the Seas"
             ],
             "not_twinnable": true,
             "separated": true
@@ -6497,9 +5917,6 @@
             "ids": [
                 "Metadata/Monsters/Skeletons/MapSkeletonBossMeleeSimplified"
             ],
-            "names": [
-                "Litanius, the Black Prayer"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -6533,9 +5950,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Goatman/GoatmanShamanBossSideAreaLowbie"
-            ],
-            "names": [
-                "Sheaq, Maker of Floods"
             ]
         },
         "id": "1_SideArea1_6",
@@ -6568,9 +5982,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
-            ],
-            "names": [
-                "Excellis Aurafix"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6614,9 +6025,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Banshee/VaalSideAreaBoss8"
-            ],
-            "names": [
-                "Iorphia, Dream Eater"
             ]
         },
         "id": "1_SideArea5_7",
@@ -6632,9 +6040,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss3/Demon3BossSideArea"
-            ],
-            "names": [
-                "Ch'aska, Maker of Rain"
             ]
         },
         "id": "1_SideArea3_12",
@@ -6650,9 +6055,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian4__"
-            ],
-            "names": [
-                "Rewritten Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
@@ -6702,9 +6104,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AnimatedItem/AnimatedArmourBossSideArea"
-            ],
-            "names": [
-                "Shadow of Vengeance"
             ]
         },
         "id": "1_SideArea3_5",
@@ -6720,9 +6119,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
-            ],
-            "names": [
-                "Gisale, Thought Thief"
             ],
             "not_spawned": false,
             "phases": false,
@@ -6773,9 +6169,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss5"
-            ],
-            "names": [
-                "Guraq, Daylight's Blade"
             ]
         },
         "id": "1_SideArea5_3_1",
@@ -6791,9 +6184,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss2/Demon2BossSideArea"
-            ],
-            "names": [
-                "Wiraq, the Impaler"
             ]
         },
         "id": "1_SideArea3_11",
@@ -6809,9 +6199,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Kiweth/KiwethBossSideArea"
-            ],
-            "names": [
-                "Inti of the Blood Moon"
             ]
         },
         "id": "1_SideArea7_4",
@@ -6827,9 +6214,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss4"
-            ],
-            "names": [
-                "Xuatl, Cutting Wind"
             ]
         },
         "id": "1_SideArea5_3_2",
@@ -6845,9 +6229,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/ConstructRangedBossSideArea"
-            ],
-            "names": [
-                "Kutec, Vaal Fleshsmith"
             ]
         },
         "id": "1_SideArea2_7",
@@ -6863,9 +6244,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonModular/DemonModularElementsBossSideArea"
-            ],
-            "names": [
-                "Atziri's Pride"
             ]
         },
         "id": "1_SideArea2_6",
@@ -6881,9 +6259,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/AtlasInvaders/DoomMonsters/DoomBoss_"
-            ],
-            "names": [
-                "The Infinite Hunger"
             ],
             "not_twinnable": true
         },
@@ -6902,9 +6277,6 @@
             "ids": [
                 "Metadata/Monsters/Doedre/DoedreSoul2Map",
                 "Metadata/Monsters/Doedre/DoedreSoulMap"
-            ],
-            "names": [
-                "Doedre the Defiler"
             ],
             "separated": true
         },
@@ -6949,9 +6321,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss2/Demon2BossSideArea"
-            ],
-            "names": [
-                "Wiraq, the Impaler"
             ]
         },
         "id": "1_SideArea9_3",
@@ -6969,11 +6338,6 @@
                 "Metadata/Monsters/Wb/WbLightningLeader1",
                 "Metadata/Monsters/Wb/WbLightningLeader2",
                 "Metadata/Monsters/Wb/WbLightningLeader3"
-            ],
-            "names": [
-                "Lussi \"Rotmother\" Roth",
-                "Musky \"Two-Eyes\" Grenn",
-                "Susara, Siren of Pondium"
             ],
             "not_spawned": false,
             "phases": false,
@@ -7009,9 +6373,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/MapSkeletonBossFairgraves"
-            ],
-            "names": [
-                "Belcer, the Pirate Lord"
             ],
             "not_spawned": false,
             "phases": false,
@@ -7057,9 +6418,6 @@
                 "Metadata/Monsters/Axis/MapPietyBoss",
                 "Metadata/Monsters/Axis/MapPietyShrine"
             ],
-            "names": [
-                "Piety the Empyrean"
-            ],
             "not_spawned": false,
             "phases": true,
             "rushable": false,
@@ -7093,9 +6451,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss2"
-            ],
-            "names": [
-                "Daluatti, Stoneraiser"
             ]
         },
         "id": "1_SideArea5_8",
@@ -7112,9 +6467,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Tukohama/TukohamaMap"
-            ],
-            "names": [
-                "Tahsin, Warmaker"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -7159,9 +6511,6 @@
             "ids": [
                 "Metadata/Monsters/Vilenta/VilentaMap_"
             ],
-            "names": [
-                "Renkarr, The Kiln Keeper"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -7203,9 +6552,6 @@
             "ids": [
                 "Metadata/Monsters/BanditLeaderInt/MapBanditLeaderAlira"
             ],
-            "names": [
-                "Enticer of Rot"
-            ],
             "separated": true
         },
         "connected": [
@@ -7240,9 +6586,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Revenant/RevenantMapBoss"
-            ],
-            "names": [
-                "Thraxia"
             ],
             "separated": true
         },
@@ -7287,9 +6630,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Snake/SnakeRoboBossSideArea"
-            ],
-            "names": [
-                "Wiraqucha, Ancient Guardian"
             ]
         },
         "id": "1_SideArea3_6",
@@ -7306,9 +6646,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BeehiveBehemoth/BeehiveBehemothBoss"
-            ],
-            "names": [
-                "Murgeth Bogsong"
             ],
             "not_spawned": false,
             "phases": false,
@@ -7367,10 +6704,6 @@
                 "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn",
                 "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
             ],
-            "names": [
-                "Massier",
-                "Master of the Blade"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -7412,9 +6745,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/SandSpitterEmerge/SandSpitterBossSideAreaLowbie"
-            ],
-            "names": [
-                "Mother of the Hive"
             ]
         },
         "id": "1_SideArea1_1",
@@ -7431,9 +6761,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/GemMonster/IguanaBossPhoenixMap"
-            ],
-            "names": [
-                "The Gorgon"
             ],
             "not_spawned": false,
             "phases": false,
@@ -7479,9 +6806,6 @@
                 "Metadata/Monsters/Abberath/Abberath2Map",
                 "Metadata/Monsters/Abberath/AbberathMap"
             ],
-            "names": [
-                "Mephod, the Earth Scorcher"
-            ],
             "not_twinnable": true,
             "separated": true
         },
@@ -7520,9 +6844,6 @@
             "ids": [
                 "Metadata/Monsters/VaalSpiderGod/ArakaaliMap"
             ],
-            "names": [
-                "Armala, the Widow"
-            ],
             "not_twinnable": true,
             "separated": true
         },
@@ -7560,9 +6881,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Cannibal/CannibalBossSideAreaLowbie"
-            ],
-            "names": [
-                "Perquil the Lucky"
             ]
         },
         "id": "1_SideArea1_3",
@@ -7595,9 +6913,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolarisMap"
-            ],
-            "names": [
-                "Jorus, Sky's Edge"
             ],
             "not_spawned": false,
             "phases": false,
@@ -7643,9 +6958,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Frog/FrogGod/SilverFrogMap"
-            ],
-            "names": [
-                "Varhesh, Shimmering Aberration"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -7694,13 +7006,6 @@
                 "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2",
                 "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3",
                 "Metadata/Monsters/IncaShadowBoss/BossIncaShadowAtziri"
-            ],
-            "names": [
-                "A'alai",
-                "Atziri, Queen of the Vaal",
-                "Q'ura",
-                "Vessel of the Vaal",
-                "Y'ara'az"
             ]
         },
         "id": "MapAtziri2",
@@ -7732,13 +7037,6 @@
                 "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2",
                 "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3",
                 "Metadata/Monsters/IncaShadowBoss/BossIncaShadowAtziri"
-            ],
-            "names": [
-                "A'alai",
-                "Atziri, Queen of the Vaal",
-                "Q'ura",
-                "Vessel of the Vaal",
-                "Y'ara'az"
             ]
         },
         "id": "MapAtziri1",
@@ -7848,9 +7146,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
-            ],
-            "names": [
-                "<<>>"
             ]
         },
         "icon": "Art/2DItems/Maps/HarbingerRed",
@@ -7977,9 +7272,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BanditLeaderDexInt/BanditLeaderKraityn"
-            ],
-            "names": [
-                "Kraityn, Scarbearer"
             ]
         },
         "id": "1_2_4",
@@ -8017,9 +7309,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/KitavaBoss/Kitava1"
-            ],
-            "names": [
-                "Kitava, the Insatiable"
             ]
         },
         "id": "1_5_8",
@@ -8047,9 +7336,6 @@
             "ids": [
                 "Metadata/Monsters/Seawitch/SeaWitchBossFirestorm",
                 "Metadata/Monsters/seawitchillusion/BossMerveil"
-            ],
-            "names": [
-                "Brinecrack"
             ]
         },
         "id": "1_1_11_2",
@@ -8080,9 +7366,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DropBear/DropBearBoss2"
-            ],
-            "names": [
-                "Q'uru"
             ]
         },
         "id": "1_2_14_2",
@@ -8113,9 +7396,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Spiders/SpiderBossSins"
-            ],
-            "names": [
-                "Black Death"
             ]
         },
         "id": "1_2_6_1",
@@ -8131,9 +7411,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonFourLegged/BossFourLeggedDemon"
-            ],
-            "names": [
-                "Plague Retch"
             ]
         },
         "id": "1_2_6_2",
@@ -8180,9 +7457,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Cannibal/CannibalFemaleBossWitch"
-            ],
-            "names": [
-                "Raihara, Tukohama's Loyal"
             ]
         },
         "id": "1_1_2",
@@ -8198,9 +7472,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BlackguardInquisitor/Bloodwing"
-            ],
-            "names": [
-                "Vilenta"
             ]
         },
         "id": "1_5_2",
@@ -8217,9 +7488,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Necromancer/NecromancerUniqueMapBoss"
-            ],
-            "names": [
-                "Infector of Dreams"
             ],
             "not_spawned": true,
             "phases": true,
@@ -8265,9 +7533,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/SkeletonMeleeBossCrossroads"
-            ],
-            "names": [
-                "Bravalo"
             ]
         },
         "id": "1_2_3",
@@ -8335,10 +7600,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Beasts/BeastBossWhite"
-            ],
-            "names": [
-                "Vic Vox",
-                "Vinny Vox"
             ]
         },
         "id": "1_2_2a",
@@ -8388,12 +7649,7 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "names": [
-                "Gruthkul, Mother of Despair",
-                "The Dreadstone"
-            ]
-        },
+        "boss": {},
         "id": "1_2_13",
         "info": {},
         "layout": {},
@@ -8450,11 +7706,7 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "names": [
-                "Bundle of Woe"
-            ]
-        },
+        "boss": {},
         "id": "1_2_15",
         "info": {},
         "layout": {},
@@ -8584,12 +7836,6 @@
                 "Metadata/Monsters/Malachai/MalachaiBoss2",
                 "Metadata/Monsters/Maligaro/Maligaro",
                 "Metadata/Monsters/Shavronne/Shavronne"
-            ],
-            "names": [
-                "Doedre Darktongue",
-                "Malachai, The Nightmare",
-                "Maligaro, The Inquisitor",
-                "Shavronne of Umbra"
             ]
         },
         "icon": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TheExtractor",
@@ -8705,9 +7951,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Skeletons/SkeletonBossPrisonMelee"
-            ],
-            "names": [
-                "Chatters"
             ]
         },
         "id": "1_1_7_1",
@@ -8739,10 +7982,6 @@
             "ids": [
                 "Metadata/Monsters/Axis/AxisBossExperimenter",
                 "Metadata/Monsters/Brute/BossBrute2"
-            ],
-            "names": [
-                "Fleshrend, Grand Inquisitor",
-                "Kole"
             ]
         },
         "id": "1_3_14_1",
@@ -8759,9 +7998,6 @@
             "ids": [
                 "Metadata/Monsters/Axis/PietyBoss",
                 "Metadata/Monsters/DemonFemale/DemonBossFemale"
-            ],
-            "names": [
-                "Dusk, Harbinger of Lunaris"
             ]
         },
         "id": "1_3_14_2",
@@ -8823,10 +8059,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Rhoas/RhoaBoss"
-            ],
-            "names": [
-                "Forgotten Warrior",
-                "The Dishonoured Queen"
             ]
         },
         "id": "1_1_3",
@@ -8839,11 +8071,7 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "names": [
-                "Tunnelworm"
-            ]
-        },
+        "boss": {},
         "id": "1_2_8",
         "info": {},
         "layout": {},
@@ -8902,12 +8130,6 @@
                 "Metadata/Monsters/ProphecyBoss/PaleKingChaosMap",
                 "Metadata/Monsters/ProphecyBoss/PaleQueenLightningMap",
                 "Metadata/Monsters/ProphecyBoss/PaleQueenUndeadMap"
-            ],
-            "names": [
-                "Eber, the Plaguemaw",
-                "Inya, the Unbearable Whispers",
-                "Volkuur, the Unbreathing Queen",
-                "Yriel, the Feral Lord"
             ]
         },
         "id": "3_ProphecyBoss",
@@ -8925,9 +8147,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Doedre/DoedreUniqueMap"
-            ],
-            "names": [
-                "Headmistress Braeta"
             ],
             "separated": true
         },
@@ -9040,11 +8259,7 @@
         "type": "act area"
     },
     {
-        "boss": {
-            "names": [
-                "The Animal Pack"
-            ]
-        },
+        "boss": {},
         "id": "1_2_7",
         "info": {},
         "layout": {},
@@ -9115,9 +8330,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Undying/CityStalkerFemaleBoss"
-            ],
-            "names": [
-                "Caliga, Imperatrix"
             ]
         },
         "id": "1_3_18_1",
@@ -9145,10 +8357,6 @@
             "ids": [
                 "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
                 "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder"
-            ],
-            "names": [
-                "The Elder",
-                "The Shaper"
             ],
             "not_twinnable": true
         },
@@ -9243,10 +8451,6 @@
             "ids": [
                 "Metadata/Monsters/Guardians/GuardianBossFire",
                 "Metadata/Monsters/Guardians/GuardianBossLightning"
-            ],
-            "names": [
-                "The Infernal Seal",
-                "The Voltaic Seal"
             ]
         },
         "id": "1_3_8_1",
@@ -9264,9 +8468,6 @@
                 "Metadata/Monsters/Guardians/GuardianBossHeadCold",
                 "Metadata/Monsters/Guardians/GuardianBossHeadFire",
                 "Metadata/Monsters/Guardians/GuardianBossHeadLightning"
-            ],
-            "names": [
-                "Dawn, Harbinger of Solaris"
             ]
         },
         "id": "1_3_8_2",
@@ -9282,9 +8483,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Bandits/BanditBossHeavyStrike_"
-            ],
-            "names": [
-                "Hollowskull, the Willing Host"
             ]
         },
         "id": "1_2_1",
@@ -9338,9 +8536,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
-            ],
-            "names": [
-                "The Vaal Omnitect"
             ]
         },
         "id": "Incursion_Temple2",
@@ -9387,9 +8582,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Cannibal/CannibalMaleBossHailrake"
-            ],
-            "names": [
-                "Riptide"
             ]
         },
         "id": "1_1_2a",
@@ -9405,9 +8597,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBoss"
-            ],
-            "names": [
-                "Cato, Scholar of Light"
             ]
         },
         "id": "1_5_4b",
@@ -9449,9 +8638,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/ZombieBoss/ZombieBossHillockNormal"
-            ],
-            "names": [
-                "Rhys of Abram"
             ]
         },
         "id": "1_1_1",
@@ -9469,10 +8655,6 @@
             "ids": [
                 "Metadata/Monsters/LunarisSolaris/LunarisUniqueMap",
                 "Metadata/Monsters/LunarisSolaris/SolarisUniqueMap"
-            ],
-            "names": [
-                "Helial, the Day Unending",
-                "Selenia, the Endless Night"
             ],
             "separated": true
         },
@@ -9571,9 +8753,6 @@
             "ids": [
                 "Metadata/Monsters/Viking/VikingBossVinktarsSquare"
             ],
-            "names": [
-                "Avatar of Thunder"
-            ],
             "separated": true
         },
         "icon": "Art/2DItems/Maps/TheVinktarSquare",
@@ -9613,9 +8792,6 @@
             "ids": [
                 "Metadata/Monsters/Axis/Lieutenant/LieutenantLetter",
                 "Metadata/Monsters/BanditLeaderInt/BanditLeaderAlira"
-            ],
-            "names": [
-                "Defiled Proclamation"
             ]
         },
         "id": "1_2_9",
@@ -9631,9 +8807,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BanditLeaderStrDex/BanditLeaderOak"
-            ],
-            "names": [
-                "Ryslatha, the Puppet Mistress"
             ]
         },
         "id": "1_2_12",
@@ -9650,9 +8823,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
-            ],
-            "names": [
-                "The Primal One"
             ],
             "not_spawned": false,
             "phases": false,
@@ -9699,10 +8869,6 @@
                 "Metadata/Monsters/Brute/BruteTowerMap_",
                 "Metadata/Monsters/Shavronne/ShavronneTowerMap"
             ],
-            "names": [
-                "Bazur",
-                "Liantra"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": true,
@@ -9746,9 +8912,6 @@
             "ids": [
                 "Metadata/Monsters/Spiders/MapSpiderBossSins"
             ],
-            "names": [
-                "Arachnoxia"
-            ],
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -9783,9 +8946,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
-            ],
-            "names": [
-                "Blood Progenitor"
             ],
             "not_spawned": false,
             "phases": false,
@@ -9828,9 +8988,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BreachBosses/BreachBossColdMap"
-            ],
-            "names": [
-                "Tul, Creeping Avalanche"
             ]
         },
         "id": "BreachBossCold",
@@ -9847,9 +9004,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
-            ],
-            "names": [
-                "Twisted Synthete"
             ]
         },
         "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
@@ -9867,9 +9021,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss3_"
-            ],
-            "names": [
-                "Anacuacotli, Death's Worship"
             ]
         },
         "id": "1_SideArea5_5",
@@ -9886,9 +9037,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DropBear/DropBearMapBoss"
-            ],
-            "names": [
-                "It That Fell"
             ],
             "not_spawned": false,
             "phases": true,
@@ -9932,10 +9080,6 @@
             "ids": [
                 "Metadata/Monsters/Seawitch/MapBossMerveil2",
                 "Metadata/Monsters/seawitchillusion/MapBossMerveil"
-            ],
-            "names": [
-                "Merveil, the Reflection",
-                "Merveil, the Returned"
             ],
             "not_spawned": false,
             "phases": true,
@@ -9984,14 +9128,6 @@
                 "Metadata/Monsters/Rhoas/RhoaUntaintedColossal",
                 "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
                 "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
-            ],
-            "names": [
-                "Clutch Queen",
-                "Colossal Spitter",
-                "Elder Devourer",
-                "Great Maw",
-                "Prime Ape",
-                "The First Rhoa"
             ]
         },
         "icon": "Art/2DItems/Maps/UniqueMap2",
@@ -10009,9 +9145,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BreachBosses/BreachBossPhysicalMap"
-            ],
-            "names": [
-                "Uul-Netol, Unburdened Flesh"
             ]
         },
         "id": "BreachBossPhysical2",
@@ -10031,11 +9164,6 @@
                 "Metadata/Monsters/DemonFemale/DemonFemaleMapBoss1",
                 "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
                 "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
-            ],
-            "names": [
-                "The Broken Prince",
-                "The Fallen Queen",
-                "The Hollow Lady"
             ],
             "not_spawned": false,
             "phases": false,
@@ -10083,11 +9211,6 @@
                 "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
                 "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3Map"
             ],
-            "names": [
-                "K'aj A'alai",
-                "K'aj Q'ura",
-                "K'aj Y'ara'az"
-            ],
             "not_spawned": false,
             "not_twinnable": true,
             "phases": false,
@@ -10124,9 +9247,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
-            ],
-            "names": [
-                "Guardian of the Vault"
             ],
             "separated": true
         },
@@ -10213,9 +9333,6 @@
             "ids": [
                 "Metadata/Monsters/Pope/PopeMapBoss1"
             ],
-            "names": [
-                "The High Templar"
-            ],
             "separated": true
         },
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Villa",
@@ -10244,9 +9361,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Totems/PuiTotemMapBoss_"
-            ],
-            "names": [
-                "Forest of Flames"
             ],
             "not_spawned": false,
             "phases": false,
@@ -10290,9 +9404,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonFemale/WhipDemonBossSideArea"
-            ],
-            "names": [
-                "Cava, Artist of Pain"
             ]
         },
         "id": "1_SideArea3_7",
@@ -10308,9 +9419,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Doedre/DoedreSewersMap"
-            ],
-            "names": [
-                "Portentia, the Foul"
             ],
             "not_spawned": false,
             "not_twinnable": true,
@@ -10347,9 +9455,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/Voll/VollMapBoss"
-            ],
-            "names": [
-                "The Brittle Emperor"
             ],
             "not_spawned": false,
             "phases": false,
@@ -10409,9 +9514,6 @@
             "ids": [
                 "Metadata/Monsters/IceElemental/IceElementalMapBoss"
             ],
-            "names": [
-                "Fragment of Winter"
-            ],
             "separated": false
         },
         "connected": [
@@ -10450,9 +9552,6 @@
             "ids": [
                 "Metadata/Monsters/Seawitch/DarkSeaWitch"
             ],
-            "names": [
-                "Tormented Temptress"
-            ],
             "not_spawned": true,
             "phases": false,
             "rushable": false,
@@ -10488,9 +9587,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/LightningGolem/LightningGolemMapBoss"
-            ],
-            "names": [
-                "Stone of the Currents"
             ],
             "not_spawned": false,
             "phases": false,
@@ -10532,9 +9628,6 @@
         "boss": {
             "ids": [
                 "Metadata/Monsters/BreachBosses/BreachBossFireMap"
-            ],
-            "names": [
-                "Xoph, Dark Embers"
             ]
         },
         "id": "BreachBossFire2",

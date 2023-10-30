@@ -199,7 +199,7 @@ const CardsView = ({
             value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
           }
 
-          out.monsters = [...new Set((out.drop.monsters || []).map(m => preparedMonsters.get(m) || m))].sort()
+          out.monsters = [...new Set((out.drop.monsters || []).map(m => preparedMonsters[m] || m))].sort()
           out.boss = out.monsters.length > 0
           out.search = [
             ...new Set([

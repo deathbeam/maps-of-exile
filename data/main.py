@@ -312,8 +312,8 @@ def get_monsters(config):
             params={
                 "action": "cargoquery",
                 "format": "json",
-                "smaxage": 1,
-                "maxage": 1,
+                "smaxage": 0,
+                "maxage": 0,
                 "limit": 500,
                 "offset": offset,
                 "tables": "monsters",
@@ -333,15 +333,11 @@ def get_monsters(config):
         wiki_monsters += res
     print(f"Found {len(wiki_monsters)} monsters")
     wiki_monsters = list(map(lambda x: x["title"], wiki_monsters))
-    out = []
-
+    out = {}
     for monster in wiki_monsters:
-        out.append(
-            {
-                "id": monster.get("metadata id").strip(),
-                "name": html.unescape(monster.get("name")).strip(),
-            }
-        )
+        out[monster.get("metadata id").strip()] = html.unescape(
+            monster.get("name")
+        ).strip()
     return out
 
 
@@ -677,10 +673,6 @@ def get_map_data(map_data, extra_map_data):
                 if level:
                     level_found = True
                     map_data["level"] = level
-            elif name == "boss":
-                map_data["boss"]["names"] = sorted(
-                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
-                )
             elif name == "atlas linked":
                 map_data["connected"] = sorted(
                     list(set(map(lambda x: x.text.strip(), value.find_all("a"))))

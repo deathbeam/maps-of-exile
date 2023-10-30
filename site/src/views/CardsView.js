@@ -18,7 +18,7 @@ const CardList = ({ card, voidstones }) => {
       <div className="card mb-2 bg-danger-subtle text-white">
         <div className="card-header">{card.name} has no confirmed drop sources.</div>
         <div className="card-body">
-          If you find one that did not come from sources of random divination cards—including{' '}
+          If you find one that did not come from sources of random divination cards — including{' '}
           <a href={wikiBase + 'Stacked_Deck'} target="_blank" rel="noreferrer">
             Stacked Decks
           </a>

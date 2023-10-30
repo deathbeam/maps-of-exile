@@ -193,7 +193,7 @@ const CardsView = ({
           const out = {
             ...c,
             drop: c.drop || {},
-            maps: ratedMaps.filter(m => m.cards.find(mc => (mc.name === c.name && mc.weight > 0) || mc.unknown)),
+            maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && (mc.weight > 0 || mc.unknown))),
             unknown: !c.weight,
             price: price,
             value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0

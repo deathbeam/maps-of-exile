@@ -4,6 +4,10 @@ import SelectSearch from 'react-select-search'
 import { copyToClipboard } from '../common'
 
 const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
+  if (input.hidden) {
+    return null
+  }
+
   let divInputClass = inputClass
   if (input.size === 'big') {
     divInputClass = bigInputClass

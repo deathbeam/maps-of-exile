@@ -98,7 +98,7 @@ export const preparedMaps = maps.map(map => {
     connected: (map.connected || []).map(c => c.replace(' Map', '')),
     cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-    icon: mapIconBase + map.icon + '.png',
+    icon: map.icon && mapIconBase + map.icon + '.png',
     wiki: wikiBase + map.name.replace(' ', '_'),
     tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]
   }

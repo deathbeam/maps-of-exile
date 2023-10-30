@@ -25,6 +25,7 @@ function rateMaps(
   cardPriceSource,
   cardValueSource,
   cardDisplay,
+  mapDisplay,
   voidstones
 ) {
   let cardWeightBaseline = preparedCards.find(c => c.name === cardBaseline).weight
@@ -134,7 +135,20 @@ function rateMaps(
     map.connected = connectedOut
   }
 
-  return rated.sort((a, b) => b.score - a.score)
+  return rated
+    .sort((a, b) => b.score - a.score)
+    .filter(m => {
+      switch (mapDisplay) {
+        case 'atlas+unique':
+          return m.unique || m.atlas
+        case 'atlas':
+          return m.atlas
+        case 'unique':
+          return m.unique
+        default:
+          return true
+      }
+    })
 }
 
 function parseSearch(s) {
@@ -170,6 +184,7 @@ function App() {
   const [view, setView] = usePersistedState('view', 'list', startTransition)
   const voidstones = useInputField('voidstonesInput', 0, startTransition)
   const cardDisplay = useInputField('cardDisplayInput', 'all', startTransition)
+  const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique', startTransition, shareableRef)
 
   const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
   const layout = useInputField('layoutInput', 3, startTransition, shareableRef)
@@ -197,6 +212,7 @@ function App() {
         cardPriceSource.get,
         cardValueSource.get,
         cardDisplay.get,
+        mapDisplay.get,
         voidstones.get
       ),
     [
@@ -210,6 +226,7 @@ function App() {
       cardPriceSource,
       cardValueSource,
       cardDisplay,
+      mapDisplay,
       voidstones
     ]
   )
@@ -306,6 +323,21 @@ function App() {
         def: card
       },
       {
+        name: 'Atlas voidstones',
+        tooltip: (
+          <>How many voidstones you have. Used for marking cards as droppable or not and determining map tiers.</>
+        ),
+        type: 'select',
+        options: {
+          0: '0 voidstones',
+          1: '1 voidstone',
+          2: '2 voidstones',
+          3: '3 voidstones',
+          4: '4 voidstones'
+        },
+        def: voidstones
+      },
+      {
         name: 'Card price source',
         tooltip: <>Source of price data, can be either League or Standard.</>,
         type: 'select',
@@ -324,18 +356,6 @@ function App() {
           kirac: 'Kirac missions'
         },
         def: cardValueSource
-      },
-      {
-        name: 'Card display',
-        tooltip: <>What cards are displayed/hidden.</>,
-        type: 'select',
-        options: {
-          all: 'All cards',
-          high: 'High value only',
-          drop: 'Droppable only',
-          'high+drop': 'High value and droppable only'
-        },
-        def: cardDisplay
       },
       {
         name: 'Minimum card price',
@@ -374,20 +394,28 @@ function App() {
         size: 'big'
       },
       {
-        name: 'Atlas voidstones',
-        tooltip: (
-          <>How many voidstones you have. Used for marking cards as droppable or not and determining map tiers.</>
-        ),
+        name: 'Card display',
+        tooltip: <>What cards are displayed/hidden.</>,
         type: 'select',
         options: {
-          0: '0 voidstones',
-          1: '1 voidstone',
-          2: '2 voidstones',
-          3: '3 voidstones',
-          4: '4 voidstones'
+          all: 'All cards',
+          high: 'High value only',
+          drop: 'Droppable only',
+          'high+drop': 'High value and droppable only'
         },
-        def: voidstones,
-        size: 'big'
+        def: cardDisplay
+      },
+      {
+        name: 'Map display',
+        tooltip: <>Which maps are displayed.</>,
+        type: 'select',
+        options: {
+          all: 'All maps',
+          atlas: 'Atlas maps',
+          unique: 'Unique maps',
+          'atlas+unique': 'Atlas and unique maps'
+        },
+        def: mapDisplay
       },
       {
         name: 'PoE Regex',
@@ -403,7 +431,7 @@ function App() {
           ref: poeRegexRef,
           get: poeRegex
         },
-        size: 'big'
+        size: 'full'
       },
       {
         name: 'Shareable link',
@@ -412,7 +440,8 @@ function App() {
         def: {
           ref: shareableRef
         },
-        size: 'big'
+        size: 'big',
+        hidden: true
       }
     ],
     [
@@ -427,6 +456,7 @@ function App() {
       cardValueSource,
       cardDisplay,
       voidstones,
+      mapDisplay,
       poeRegexRef,
       poeRegex,
       shareableRef

@@ -1,6 +1,10 @@
 import './MapImage.css'
 
 const MapImage = ({ icon, tier = 0, unique = false, onClick = null }) => {
+  if (!icon) {
+    return null
+  }
+
   let color = 'map-white'
   if (
     unique ||

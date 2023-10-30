@@ -419,7 +419,7 @@ def get_map_wiki(config):
             "join_on": "items._pageID=maps._pageID,maps.area_id=areas.id",
             "fields": "items.name,maps.area_id,maps.area_level,areas.boss_monster_ids,maps.unique_area_id",
             "group_by": "items.name",
-            "where": "items.class_id='Map' AND maps.area_id LIKE '%MapWorlds%'",
+            "where": "maps.area_id LIKE '%MapWorlds%' OR maps.series='Unique'",
         },
     ).json()["cargoquery"]
     return list(map(lambda x: x["title"], wiki_maps))
@@ -431,6 +431,26 @@ def get_maps(key, config):
     map_wiki = get_map_wiki(config)
 
     out = []
+
+    for m in map_wiki:
+        unique = not m["name"].endswith(" Map")
+        out_map = {
+            "name": m["name"],
+            "level": int(m["area level"]),
+            "poedb": "https://poedb.tw/us/" + m["name"].replace(" ", "_"),
+            "boss": {},
+        }
+
+        if unique and m.get("unique area id"):
+            out_map["id"] = m["unique area id"]
+        else:
+            out_map["id"] = m["area id"]
+        if m.get("boss monster ids"):
+            out_map["boss"]["ids"] = sorted(
+                list(set(filter(None, m["boss monster ids"].split(","))))
+            )
+        out.append(out_map)
+
     url = config["poedb"]["list"]
     print(f"Getting maps from url {url}")
     r = requests.get(url)
@@ -446,13 +466,14 @@ def get_maps(key, config):
 
         map_url = cols[3].find("a").attrs["href"]
         map_url = config["poedb"]["base"] + map_url
-        out_map = {"name": name.strip(), "poedb": map_url}
+        existing_map = next(filter(lambda x: x["name"] == name.strip(), out), None)
+        if existing_map:
+            existing_map["poedb"] = map_url
+        else:
+            out_map = {"name": name.strip(), "poedb": map_url}
+            out.append(out_map)
 
-        out.append(out_map)
-
-    base_names = sorted(
-        list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"]
-    )
+    base_names = sorted(list(map(lambda x: x["name"], out)))
     mapslist = soup.find(id="MapsUnique").find("table").find("tbody").find_all("tr")
 
     for row in mapslist:
@@ -467,7 +488,12 @@ def get_maps(key, config):
                 continue
             name = name.replace(n, "")
 
-        out.append({"name": name.strip(), "poedb": map_url})
+        existing_map = next(filter(lambda x: x["name"] == name.strip(), out), None)
+        if existing_map:
+            existing_map["poedb"] = map_url
+        else:
+            out_map = {"name": name.strip(), "poedb": map_url}
+            out.append(out_map)
 
     out = list(filter(lambda x: x["name"] not in config["ignored"], out))
     out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
@@ -492,7 +518,7 @@ def get_maps(key, config):
         m["name"] = name
         unique = not name.endswith(" Map")
         m["shorthand"] = find_shortest_substring(name.replace(" Map", ""), out_names)
-        m["boss"] = {}
+        m["boss"] = m.get("boss", {})
         m["layout"] = {}
         m["rating"] = {}
         m["info"] = {}
@@ -513,22 +539,11 @@ def get_maps(key, config):
             existing_rating.pop("name")
             existing_rating.pop("density_unreliable")
             m["rating"] = existing_rating
-        existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
-        if existing_wiki:
-            if unique and existing_wiki.get("unique area id"):
-                m["id"] = existing_wiki["unique area id"]
-            else:
-                m["id"] = existing_wiki["area id"]
-            if existing_wiki.get("boss monster ids"):
-                m["boss"]["ids"] = sorted(
-                    list(
-                        set(filter(None, existing_wiki["boss monster ids"].split(",")))
-                    )
-                )
         existing_position = next(
             filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None
         )
         if existing_position:
+            m["atlas"] = True
             m["x"] = existing_position["x"]
             m["y"] = existing_position["y"]
 
@@ -536,56 +551,60 @@ def get_maps(key, config):
 
 
 def get_map_data(map_data, extra_map_data):
-    url = map_data["poedb"]
-    map_data.pop("poedb")
+    url = map_data.get("poedb")
 
-    # PoeDB map metadata
-    print(f"Getting map data for {map_data['name']} from url {url}")
-    s = requests.Session()
-    r = s.get(url)
-    soup = BeautifulSoup(r.content, "html.parser")
-    maptabs = soup.find("div", class_="tab-content").findChildren(
-        "div", recursive=False
-    )
+    if url:
+        map_data.pop("poedb")
 
-    for data in maptabs:
-        table = data.find("table")
-        if not table:
-            continue
-        tbody = table.find("tbody")
-        if not tbody:
-            continue
-        rows = tbody.find_all("tr")
-        if not rows:
-            continue
+        # PoeDB map metadata
+        print(f"Getting map data for {map_data['name']} from url {url}")
+        s = requests.Session()
+        r = s.get(url)
+        soup = BeautifulSoup(r.content, "html.parser")
+        maptabs = soup.find("div", class_="tab-content").findChildren(
+            "div", recursive=False
+        )
 
-        for row in rows:
-            cols = row.find_all("td")
-            name = cols[0].text.strip().lower()
-            value = cols[1]
-            if name == "monster level" and "level" not in map_data:
-                if map_data.get("tiers"):
-                    continue
-                map_data["level"] = int(value.text.strip())
-            elif name == "boss":
-                map_data["boss"]["names"] = sorted(
-                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
-                )
-            elif name == "atlas linked":
-                map_data["connected"] = sorted(
-                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
-                )
-            elif name == "the pantheon":
-                map_data["pantheon"] = next(
-                    map(lambda x: x.text.strip(), value.find_all("a"))
-                )
-            elif name == "tags":
-                if "cannot_be_twinned" in value.text.strip():
-                    map_data["boss"]["not_twinnable"] = True
-                if "no_boss" in value.text.strip():
-                    map_data["boss"].pop("ids", None)
-            elif name == "icon" and "icon" not in map_data:
-                map_data["icon"] = value.text.strip()
+        level_found = False
+        for data in maptabs:
+            table = data.find("table")
+            if not table:
+                continue
+            tbody = table.find("tbody")
+            if not tbody:
+                continue
+            rows = tbody.find_all("tr")
+            if not rows:
+                continue
+
+            for row in rows:
+                cols = row.find_all("td")
+                name = cols[0].text.strip().lower()
+                value = cols[1]
+                if name == "monster level" and not level_found:
+                    level = int(value.text.strip())
+                    if level:
+                        level_found = True
+                        map_data["level"] = level
+                elif name == "boss":
+                    map_data["boss"]["names"] = sorted(
+                        list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+                    )
+                elif name == "atlas linked":
+                    map_data["connected"] = sorted(
+                        list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+                    )
+                elif name == "the pantheon":
+                    map_data["pantheon"] = next(
+                        map(lambda x: x.text.strip(), value.find_all("a"))
+                    )
+                elif name == "tags":
+                    if "cannot_be_twinned" in value.text.strip():
+                        map_data["boss"]["not_twinnable"] = True
+                    if "no_boss" in value.text.strip():
+                        map_data["boss"].pop("ids", None)
+                elif name == "icon" and "icon" not in map_data:
+                    map_data["icon"] = value.text.strip()
 
     # Merge existing data
     existing = next(

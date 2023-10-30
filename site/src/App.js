@@ -47,6 +47,8 @@ function rateMaps(
           return m.atlas || m.type === 'unique map'
         case 'atlas':
           return m.atlas
+        case 'allmaps':
+          return m.type.includes('map')
         default:
           return true
       }
@@ -397,7 +399,7 @@ function App() {
       },
       {
         name: 'Card display',
-        tooltip: <>What cards are displayed/hidden.</>,
+        tooltip: <>Which cards are displayed/hidden.</>,
         type: 'select',
         options: {
           all: 'All cards',
@@ -409,14 +411,44 @@ function App() {
       },
       {
         name: 'Map display',
-        tooltip: <>Which maps are displayed.</>,
+        tooltip: (
+          <>
+            Which maps and aras are displayed.
+            <br />
+            <br />
+            <b>Atlas maps:</b>
+            <br />
+            All maps on atlas
+            <br />
+            <b>Atlas+Unique maps:</b>
+            <br />
+            All maps on atlas and all unique map areas (that arent necessarily on atlas but are in game)
+            <br />
+            <b>All maps:</b>
+            <br />
+            All maps and unique map areas (including maps that are not on atlas, e.g from past leagues)
+            <br />
+            <b>Atlas+Unique+Special areas:</b>
+            <br />
+            Atlas+Unique maps and uncategorized special areas (for example <b>Abyssal Depths</b>)
+            <br />
+            <b>Atlas+Unique+Special+Act areas:</b>
+            <br />
+            Atlas+Unique+Special maps and areas and act areas (for example <b>Blood Aqueduct</b>)
+            <br />
+            <b>All areas:</b>
+            <br />
+            Atlas+Unique+Special+Act areas and atlas maps that are currently not on atlas.
+          </>
+        ),
         type: 'select',
         options: {
-          all: 'All areas',
-          atlas: 'Atlas areas',
-          'atlas+unique': 'Atlas+Unique areas',
+          atlas: 'Atlas maps',
+          'atlas+unique': 'Atlas+Unique maps',
+          allmaps: 'All maps',
           'atlas+unique+special': 'Atlas+Unique+Special areas',
-          'atlas+unique+special+act': 'Atlas+Unique+Special+Act areas'
+          'atlas+unique+special+act': 'Atlas+Unique+Special+Act areas',
+          all: 'All areas'
         },
         def: mapDisplay
       },

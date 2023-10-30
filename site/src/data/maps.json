@@ -379,18 +379,6 @@
         "type": "map"
     },
     {
-        "boss": {},
-        "id": "3_ClassicTreasury",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 75,
-        "name": "Ancient Reliquary",
-        "rating": {},
-        "shorthand": "t R",
-        "type": "unique map"
-    },
-    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -546,18 +534,6 @@
         "rating": {},
         "shorthand": "ane",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "UberSearingExarchVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Archive Reliquary",
-        "rating": {},
-        "shorthand": "ive ",
-        "type": "unique map"
     },
     {
         "atlas": true,
@@ -2075,18 +2051,6 @@
         "type": "unique map"
     },
     {
-        "boss": {},
-        "id": "UberShaperVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Cosmic Reliquary",
-        "rating": {},
-        "shorthand": "Cos",
-        "type": "unique map"
-    },
-    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -2625,18 +2589,6 @@
         "rating": {},
         "shorthand": "hl",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "UberUberElderVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Decaying Reliquary",
-        "rating": {},
-        "shorthand": "yi",
-        "type": "unique map"
     },
     {
         "boss": {
@@ -3553,20 +3505,8 @@
         "level": 1,
         "name": "Forgotten Oubliette",
         "rating": {},
-        "shorthand": " Ou",
+        "shorthand": "Ou",
         "type": "act area"
-    },
-    {
-        "boss": {},
-        "id": "UberVenariusVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Forgotten Reliquary",
-        "rating": {},
-        "shorthand": "en R",
-        "type": "unique map"
     },
     {
         "atlas": true,
@@ -5270,7 +5210,7 @@
             "density": 5,
             "layout": 4
         },
-        "shorthand": "nera",
+        "shorthand": "eral",
         "type": "map",
         "x": 535,
         "y": 393
@@ -5669,18 +5609,6 @@
         "type": "act area"
     },
     {
-        "boss": {},
-        "id": "UberSirusVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Oubliette Reliquary",
-        "rating": {},
-        "shorthand": "te R",
-        "type": "unique map"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Maligaro/Maligaro2Map"
@@ -5989,7 +5917,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Pha",
+        "shorthand": "sm",
         "type": "map",
         "x": 650,
         "y": 84
@@ -7351,18 +7279,6 @@
         "type": "act area"
     },
     {
-        "boss": {},
-        "id": "UberMavenVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Shiny Reliquary",
-        "rating": {},
-        "shorthand": "iny",
-        "type": "unique map"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/Wb/WbLightningLeader1",
@@ -7985,7 +7901,7 @@
         "level": 1,
         "name": "Sunken Shingle",
         "rating": {},
-        "shorthand": "ingl",
+        "shorthand": "Shin",
         "type": "act area"
     },
     {
@@ -9549,7 +9465,7 @@
         "level": 44,
         "name": "The Reliquary",
         "rating": {},
-        "shorthand": "he Rel",
+        "shorthand": "e Rel",
         "type": "act area"
     },
     {
@@ -10118,7 +10034,7 @@
         "level": 20,
         "name": "The Vaal Ruins",
         "rating": {},
-        "shorthand": "aal Ru",
+        "shorthand": "aal R",
         "type": "act area"
     },
     {
@@ -10257,18 +10173,6 @@
         "type": "map",
         "x": 722,
         "y": 318
-    },
-    {
-        "boss": {},
-        "id": "ClassicTreasury_2",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 75,
-        "name": "Timeworn Reliquary",
-        "rating": {},
-        "shorthand": "wo",
-        "type": "unique map"
     },
     {
         "atlas": true,
@@ -10655,18 +10559,6 @@
         "y": 379
     },
     {
-        "boss": {},
-        "id": "ClassicTreasury_Vaal",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 75,
-        "name": "Vaal Reliquary",
-        "rating": {},
-        "shorthand": "aal Re",
-        "type": "unique map"
-    },
-    {
         "boss": {
             "ids": [
                 "Metadata/Monsters/DemonBosses/DemonBoss1/DemonBoss1Map",
@@ -10828,30 +10720,6 @@
         },
         "shorthand": "Vil",
         "type": "map"
-    },
-    {
-        "boss": {},
-        "id": "UberEaterOfWorldsVault",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 87,
-        "name": "Visceral Reliquary",
-        "rating": {},
-        "shorthand": "Vis",
-        "type": "unique map"
-    },
-    {
-        "boss": {},
-        "id": "ClassicTreasury_Cosmic",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 75,
-        "name": "Voidborn Reliquary",
-        "rating": {},
-        "shorthand": "db",
-        "type": "unique map"
     },
     {
         "atlas": true,

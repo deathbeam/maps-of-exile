@@ -419,7 +419,7 @@ def get_map_wiki(config):
                 "tables": "areas",
                 "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.act",
                 "group_by": "areas.name",
-                "where": "areas.id LIKE '%MapWorlds%' AND areas.is_legacy_map_area=false OR areas.is_unique_map_area AND areas.is_legacy_map_area=false OR areas.is_map_area=false AND areas.is_town_area=false AND areas.is_hideout_area=false AND areas.is_legacy_map_area=false AND areas.act!=0 AND areas.id NOT LIKE '%Expedition%' AND areas.name NOT LIKE '%Hideout%' AND areas.id NOT LIKE '%Test%' AND areas.id NOT LIKE '%Heist%' AND areas.id NOT LIKE '%Labyrinth%' AND areas.id NOT LIKE '%Descent%' AND areas.name NOT LIKE '%PvP%' AND areas.name NOT LIKE '%Programming%' AND areas.name NOT LIKE '%Test%'",
+                "where": "areas.id LIKE '%MapWorlds%' AND areas.is_legacy_map_area=false OR areas.is_unique_map_area AND areas.is_legacy_map_area=false AND areas.name NOT LIKE '%Reliquary%' OR areas.is_map_area=false AND areas.is_town_area=false AND areas.is_hideout_area=false AND areas.is_legacy_map_area=false AND areas.act!=0 AND areas.id NOT LIKE '%Expedition%' AND areas.name NOT LIKE '%Hideout%' AND areas.id NOT LIKE '%Test%' AND areas.id NOT LIKE '%Heist%' AND areas.id NOT LIKE '%Labyrinth%' AND areas.id NOT LIKE '%Descent%' AND areas.name NOT LIKE '%PvP%' AND areas.name NOT LIKE '%Programming%' AND areas.name NOT LIKE '%Test%'",
             },
         ).json()["cargoquery"]
 

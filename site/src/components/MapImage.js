@@ -1,13 +1,13 @@
 import './MapImage.css'
 
-const MapImage = ({ icon, tier = 0, unique = false, onClick = null }) => {
+const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   if (!icon) {
     return null
   }
 
   let color = 'map-white'
   if (
-    unique ||
+    type !== 'map' ||
     icon.includes('Minotaur') ||
     icon.includes('Hydra') ||
     icon.includes('Chimera') ||
@@ -21,7 +21,7 @@ const MapImage = ({ icon, tier = 0, unique = false, onClick = null }) => {
   }
 
   let extraClass = ''
-  if (!unique) {
+  if (type === 'map') {
     extraClass = ' map-background'
   }
 

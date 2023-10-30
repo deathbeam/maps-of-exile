@@ -22,13 +22,14 @@ export const preparedCards = cards.map(card => {
   }
 })
 
-function pushTag(info, destination, source, key, name = null) {
+function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]
 
   if (tag) {
     const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
     const out = {
-      name: val
+      name: val,
+      color: color
     }
     if (info && info[key]) {
       out.info = info[key]
@@ -39,6 +40,9 @@ function pushTag(info, destination, source, key, name = null) {
 
 export const preparedMaps = maps.map(map => {
   const mapTags = []
+  pushTag(map.info, mapTags, map, 'type', null, 'info')
+  pushTag(map.info, mapTags, map, 'atlas', 'on atlas', 'info')
+
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')
   pushTag(map.info, mapTags, map.layout, 'linear')
@@ -52,7 +56,6 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
   pushTag(map.info, mapTags, map.boss, 'not_twinnable', 'boss not twinnable')
 
-  pushTag(map.info, mapTags, map, 'unique')
   pushTag(map.info, mapTags, map, 'pantheon')
 
   const cards = []
@@ -99,7 +102,7 @@ export const preparedMaps = maps.map(map => {
     cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
     icon: map.icon && mapIconBase + map.icon + '.png',
-    wiki: wikiBase + map.name.replace(' ', '_'),
+    wiki: wikiBase + map.name.replaceAll(' ', '_'),
     tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]
   }
 
@@ -121,13 +124,15 @@ const preparedTagsMap = new Map()
 for (const item of preparedMaps
   .flatMap(m => m.tags)
   .map(t => ({
-    name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of')
+    name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of'),
+    color: t.color
   }))
   .sort((a, b) => a.name.localeCompare(b.name))) {
   if (!preparedTagsMap.has(item.name)) {
     preparedTagsMap.set(item.name, true)
     preparedTags.push({
-      name: item.name
+      name: item.name,
+      color: item.color
     })
   }
 }

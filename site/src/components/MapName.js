@@ -4,7 +4,7 @@ import Rating from './Rating'
 import MapImage from './MapImage'
 
 const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones }) => {
-  const color = `text-${tierColor(map.tiers, map.unique)}`
+  const color = `text-${tierColor(map.tiers, map.type)}`
 
   const name = (
     <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
@@ -25,7 +25,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
     )
 
   const tags = !cardList && <Tags tags={map.tags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = <MapImage icon={map.icon} unique={map.unique} tier={map.tiers[voidstones]} />
+  const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[voidstones]} />
   const score = !sidebar && (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />
@@ -42,7 +42,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
         <div>
           {mapName}
           <br />
-          <small>{map.tiers.join(', ')}</small>
+          <small>{map.type.includes('map') ? map.tiers.join(', ') : 'Level ' + map.level}</small>
           <br />
           {!sidebar && tags}
         </div>

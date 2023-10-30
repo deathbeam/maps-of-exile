@@ -16,7 +16,7 @@ const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, void
       sidebar={true}
       tooltipTop={!!map.image}
       cardValueSourceInput={cardValueSourceInput}
-      unique={map.unique}
+      type={map.type}
       cards={map.cards}
     />
   </>

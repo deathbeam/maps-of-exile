@@ -1,5 +1,133 @@
 [
     {
+        "boss": {},
+        "id": "AtlasExilesZana",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "Abandoned Citadel",
+        "rating": {},
+        "shorthand": "del",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
+            ],
+            "names": [
+                "Quetzerxi"
+            ]
+        },
+        "id": "1_SideArea4_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Abandoned Dam",
+        "rating": {},
+        "shorthand": " Da",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/MavenBoss/MavenBrainBoss",
+                "Metadata/Monsters/MavenBoss/TheMaven"
+            ],
+            "names": [
+                "Nucleus of the Maven",
+                "The Maven"
+            ]
+        },
+        "id": "MavenBoss",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 84,
+        "name": "Absence of Mercy and Empathy",
+        "rating": {},
+        "shorthand": "Em",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasInvaders/CleansingMonsters/CleansingBoss"
+            ],
+            "names": [
+                "The Searing Exarch"
+            ],
+            "not_twinnable": true
+        },
+        "id": "MapWorldsPrimordialBoss3",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 84,
+        "name": "Absence of Patience and Wisdom",
+        "rating": {},
+        "shorthand": "sd",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasInvaders/ConsumeMonsters/ConsumeBoss"
+            ],
+            "names": [
+                "The Eater of Worlds"
+            ],
+            "not_twinnable": true
+        },
+        "id": "MapWorldsPrimordialBoss4",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 84,
+        "name": "Absence of Symmetry and Harmony",
+        "rating": {},
+        "shorthand": "Sym",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/TheElder"
+            ],
+            "names": [
+                "The Elder"
+            ],
+            "not_twinnable": true
+        },
+        "id": "MapWorldsElderArena",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 83,
+        "name": "Absence of Value and Meaning",
+        "rating": {},
+        "shorthand": "Mea",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/AbyssCrystalPillar"
+            ],
+            "names": [
+                "Kurgal, the Blackblooded"
+            ]
+        },
+        "id": "AbyssLeague",
+        "info": {},
+        "layout": {},
+        "level": 4,
+        "name": "Abyssal Depths",
+        "rating": {},
+        "shorthand": "l D",
+        "type": "special area"
+    },
+    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -35,7 +163,7 @@
             "layout": 4
         },
         "shorthand": "my",
-        "unique": false,
+        "type": "map",
         "x": 296,
         "y": 308
     },
@@ -90,8 +218,8 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "rn",
-        "unique": false,
+        "shorthand": "Aci",
+        "type": "map",
         "x": 596,
         "y": 306
     },
@@ -132,7 +260,7 @@
         "name": "Acton's Nightmare",
         "rating": {},
         "shorthand": "Ni",
-        "unique": true,
+        "type": "unique map",
         "x": 656,
         "y": 425
     },
@@ -177,14 +305,14 @@
             "layout": 8
         },
         "shorthand": "yw",
-        "unique": false,
+        "type": "map",
         "x": 204,
         "y": 368
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian1"
             ],
             "names": [
                 "Altered Synthete"
@@ -199,7 +327,25 @@
         "name": "Altered Distant Memory",
         "rating": {},
         "shorthand": "Alt",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/ZombieDismember/Blackguard/BlackguardZombieBossSideArea"
+            ],
+            "names": [
+                "Commander of Flesh"
+            ]
+        },
+        "id": "1_SideArea4_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Ancient Catacomb",
+        "rating": {},
+        "shorthand": "t Cat",
+        "type": "act area"
     },
     {
         "boss": {
@@ -229,8 +375,20 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "An",
-        "unique": false
+        "shorthand": "t Ci",
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "3_ClassicTreasury",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Ancient Reliquary",
+        "rating": {},
+        "shorthand": "t R",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -273,8 +431,8 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": " Ne",
-        "unique": false,
+        "shorthand": "Nes",
+        "type": "map",
         "x": 410,
         "y": 215
     },
@@ -320,7 +478,7 @@
             "layout": 6
         },
         "shorthand": "Tom",
-        "unique": false,
+        "type": "map",
         "x": 414,
         "y": 306
     },
@@ -366,10 +524,40 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Arc",
-        "unique": false,
+        "shorthand": "rcad",
+        "type": "map",
         "x": 676,
         "y": 257
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
+            ],
+            "names": [
+                "Beheader Ataguchu"
+            ]
+        },
+        "id": "1_SideArea3_9_",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Arcane Chambers",
+        "rating": {},
+        "shorthand": "ane",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UberSearingExarchVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Archive Reliquary",
+        "rating": {},
+        "shorthand": "ive ",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -409,8 +597,8 @@
             "density": 9,
             "layout": 2
         },
-        "shorthand": "Are",
-        "unique": false,
+        "shorthand": "Arena",
+        "type": "map",
         "x": 596,
         "y": 494
     },
@@ -449,7 +637,7 @@
             "layout": 8
         },
         "shorthand": "Ari",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
@@ -486,7 +674,7 @@
             "layout": 8
         },
         "shorthand": "Arm",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
@@ -523,7 +711,7 @@
             "layout": 4
         },
         "shorthand": "Ars",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
@@ -553,8 +741,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Ash",
-        "unique": false
+        "shorthand": "hen W",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -599,14 +787,14 @@
             "layout": 8
         },
         "shorthand": "Ato",
-        "unique": false,
+        "type": "map",
         "x": 818,
         "y": 366
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian2"
             ],
             "names": [
                 "Augmented Synthete"
@@ -621,7 +809,7 @@
         "name": "Augmented Distant Memory",
         "rating": {},
         "shorthand": "Au",
-        "unique": true
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -663,7 +851,7 @@
             "layout": 8
         },
         "shorthand": "ws",
-        "unique": false,
+        "type": "map",
         "x": 462,
         "y": 423
     },
@@ -703,8 +891,8 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Bas",
-        "unique": false,
+        "shorthand": "sil",
+        "type": "map",
         "x": 243,
         "y": 196
     },
@@ -743,9 +931,25 @@
             "layout": 8
         },
         "shorthand": "Baz",
-        "unique": false,
+        "type": "map",
         "x": 588,
         "y": 338
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMapStandalone"
+            ]
+        },
+        "id": "MapWorldsBeachLanding",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 72,
+        "name": "Beach Landing Map",
+        "rating": {},
+        "shorthand": "Lan",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -788,7 +992,7 @@
             "layout": 10
         },
         "shorthand": "Beach",
-        "unique": false,
+        "type": "map",
         "x": 677,
         "y": 491
     },
@@ -827,8 +1031,37 @@
             "density": 6,
             "layout": 10
         },
-        "shorthand": "fr",
-        "unique": false
+        "shorthand": "elf",
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "SanctumLycia2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Beyond",
+        "rating": {},
+        "shorthand": "Bey",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/TotemBossSideArea"
+            ],
+            "names": [
+                "M'gaska, the Living Pyre"
+            ]
+        },
+        "id": "1_SideArea3_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Blind Alley",
+        "rating": {},
+        "shorthand": "Bli",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -866,7 +1099,7 @@
             "layout": 6
         },
         "shorthand": "og",
-        "unique": false,
+        "type": "map",
         "x": 708,
         "y": 449
     },
@@ -911,7 +1144,7 @@
             "layout": 4
         },
         "shorthand": "Bon",
-        "unique": false,
+        "type": "map",
         "x": 555,
         "y": 423
     },
@@ -943,8 +1176,24 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Br",
-        "unique": false
+        "shorthand": "ble V",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/PuiTotemBoss"
+            ]
+        },
+        "id": "MapWorldsBrambleFall",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "BrambleFall Map",
+        "rating": {},
+        "shorthand": "eF",
+        "type": "map"
     },
     {
         "boss": {
@@ -975,7 +1224,7 @@
             "layout": 8
         },
         "shorthand": "Bu",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -1016,7 +1265,7 @@
         "name": "Caer Blaidd, Wolfpack's Den",
         "rating": {},
         "shorthand": ",",
-        "unique": true,
+        "type": "unique map",
         "x": 798,
         "y": 95
     },
@@ -1056,7 +1305,7 @@
             "layout": 8
         },
         "shorthand": "Cag",
-        "unique": false,
+        "type": "map",
         "x": 438,
         "y": 354
     },
@@ -1102,8 +1351,8 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Cal",
-        "unique": false,
+        "shorthand": "lde",
+        "type": "map",
         "x": 286,
         "y": 138
     },
@@ -1143,8 +1392,8 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "ny",
-        "unique": false
+        "shorthand": "any",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -1183,7 +1432,7 @@
             "layout": 8
         },
         "shorthand": "Car",
-        "unique": false,
+        "type": "map",
         "x": 573,
         "y": 213
     },
@@ -1228,8 +1477,8 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "tl",
-        "unique": false,
+        "shorthand": "Cas",
+        "type": "map",
         "x": 398,
         "y": 249
     },
@@ -1275,8 +1524,8 @@
             "density": 9,
             "layout": 4
         },
-        "shorthand": "Cel",
-        "unique": false,
+        "shorthand": "Cells",
+        "type": "map",
         "x": 504,
         "y": 326
     },
@@ -1326,7 +1575,7 @@
             "layout": 10
         },
         "shorthand": "Cem",
-        "unique": false,
+        "type": "map",
         "x": 644,
         "y": 373
     },
@@ -1365,7 +1614,7 @@
             "layout": 4
         },
         "shorthand": "ann",
-        "unique": false,
+        "type": "map",
         "x": 736,
         "y": 62
     },
@@ -1409,9 +1658,28 @@
             "layout": 6
         },
         "shorthand": "hat",
-        "unique": false,
+        "type": "map",
         "x": 208,
         "y": 259
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BreachBosses/BreachBossChaosMap"
+            ],
+            "names": [
+                "Chayula, Who Dreamt"
+            ]
+        },
+        "id": "BreachBossChaos2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 83,
+        "name": "Chayula's Domain",
+        "rating": {},
+        "shorthand": "yu",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -1459,9 +1727,45 @@
             "layout": 8
         },
         "shorthand": "ty S",
-        "unique": false,
+        "type": "map",
         "x": 629,
         "y": 162
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BloodChieftain/MonkeyChiefBossSideArea"
+            ],
+            "names": [
+                "Simi, the Nature Touched"
+            ]
+        },
+        "id": "1_SideArea6_6",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Clouded Ledge",
+        "rating": {},
+        "shorthand": "d Le",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Goatman/GoatmanLeapBossSideAreaLowbie"
+            ],
+            "names": [
+                "Konu, Maker of Wind"
+            ]
+        },
+        "id": "1_SideArea1_4_",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Clouded Ridge",
+        "rating": {},
+        "shorthand": "d Rid",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -1505,8 +1809,8 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "ld ",
-        "unique": false,
+        "shorthand": "Cold",
+        "type": "map",
         "x": 575,
         "y": 376
     },
@@ -1550,7 +1854,7 @@
             "layout": 6
         },
         "shorthand": "lon",
-        "unique": false,
+        "type": "map",
         "x": 197,
         "y": 181
     },
@@ -1596,9 +1900,45 @@
             "layout": 6
         },
         "shorthand": "los",
-        "unique": false,
+        "type": "map",
         "x": 582,
         "y": 120
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonFemale/WhipDemonBossSideArea"
+            ],
+            "names": [
+                "Cava, Artist of Pain"
+            ]
+        },
+        "id": "1_SideArea8_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Concealed Caldarium",
+        "rating": {},
+        "shorthand": "dar",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Squid/SquidBossSideAreaLowbie"
+            ],
+            "names": [
+                "The All-seeing Eye"
+            ]
+        },
+        "id": "1_SideArea1_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Concealed Cavity",
+        "rating": {},
+        "shorthand": "vit",
+        "type": "act area"
     },
     {
         "boss": {
@@ -1634,8 +1974,8 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "rv",
-        "unique": false
+        "shorthand": "erv",
+        "type": "map"
     },
     {
         "boss": {
@@ -1672,8 +2012,8 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "l R",
-        "unique": false
+        "shorthand": "Cora",
+        "type": "map"
     },
     {
         "boss": {
@@ -1712,12 +2052,12 @@
             "layout": 4
         },
         "shorthand": "Core",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/LeagueSynthesis/SynthesisVenariusBoss"
             ],
             "names": [
                 "Venarius"
@@ -1731,8 +2071,20 @@
         "level": 79,
         "name": "Cortex",
         "rating": {},
-        "shorthand": "Cortex",
-        "unique": true
+        "shorthand": "tex",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "UberShaperVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Cosmic Reliquary",
+        "rating": {},
+        "shorthand": "Cos",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -1772,8 +2124,8 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "rth",
-        "unique": false,
+        "shorthand": "rtho",
+        "type": "map",
         "x": 560,
         "y": 144
     },
@@ -1822,9 +2174,27 @@
             "layout": 6
         },
         "shorthand": "rty",
-        "unique": false,
+        "type": "map",
         "x": 755,
         "y": 363
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Spiders/SpiderBossSideArea"
+            ],
+            "names": [
+                "Cintiq, the Inescapable"
+            ]
+        },
+        "id": "1_SideArea2_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Covered-up Hollow",
+        "rating": {},
+        "shorthand": "-u",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -1870,8 +2240,8 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "Cov",
-        "unique": false,
+        "shorthand": "oves",
+        "type": "map",
         "x": 727,
         "y": 169
     },
@@ -1910,7 +2280,25 @@
             "layout": 6
         },
         "shorthand": "Cra",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/StatueFingerMage/VaalSideAreaBoss7"
+            ],
+            "names": [
+                "Exartze, the Woven Stone"
+            ]
+        },
+        "id": "1_SideArea5_4b",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Cremated Archives",
+        "rating": {},
+        "shorthand": "mate",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -1953,7 +2341,7 @@
             "layout": 8
         },
         "shorthand": "son Te",
-        "unique": false,
+        "type": "map",
         "x": 561,
         "y": 177
     },
@@ -1991,7 +2379,37 @@
             "layout": 6
         },
         "shorthand": "nsh",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "Master_SP_Volcano",
+        "info": {},
+        "layout": {},
+        "level": 12,
+        "name": "Crucible of Spirit",
+        "rating": {},
+        "shorthand": "cib",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasExiles/AtlasExile1",
+                "Metadata/Monsters/AtlasExiles/AtlasExile1Apparition"
+            ],
+            "names": [
+                "Baran, The Crusader"
+            ]
+        },
+        "id": "AtlasExilesBoss1",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "Crusader's Sanctum",
+        "rating": {},
+        "shorthand": "rus",
+        "type": "special area"
     },
     {
         "boss": {
@@ -2032,7 +2450,7 @@
             "layout": 8
         },
         "shorthand": "Ore",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -2075,9 +2493,42 @@
             "layout": 4
         },
         "shorthand": "d Cr",
-        "unique": false,
+        "type": "map",
         "x": 798,
         "y": 285
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/UniqueMapExiles/ScionExileBoss"
+            ]
+        },
+        "id": "MapWorldsPitUnique",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 78,
+        "name": "Darbel's Promise",
+        "rating": {},
+        "shorthand": "bel",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Cockerel/CockerelBowBoss",
+                "Metadata/Monsters/Pitbull/PitbullBoss",
+                "Metadata/Monsters/Viking/Viking"
+            ]
+        },
+        "id": "1_4_5_1",
+        "info": {},
+        "layout": {},
+        "level": 37,
+        "name": "Daresso's Dream",
+        "rating": {},
+        "shorthand": "so'",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -2113,8 +2564,8 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": "Da",
-        "unique": false,
+        "shorthand": "k F",
+        "type": "map",
         "x": 204,
         "y": 327
     },
@@ -2152,10 +2603,40 @@
         "level": 79,
         "name": "Death and Taxes",
         "rating": {},
-        "shorthand": " a",
-        "unique": true,
+        "shorthand": "Ta",
+        "type": "unique map",
         "x": 176,
         "y": 162
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss6"
+            ],
+            "names": [
+                "Harbinger of Disorder"
+            ]
+        },
+        "id": "1_SideArea5_6",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Deathly Chambers",
+        "rating": {},
+        "shorthand": "hl",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UberUberElderVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Decaying Reliquary",
+        "rating": {},
+        "shorthand": "yi",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -2192,8 +2673,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Cat",
-        "unique": false
+        "shorthand": "Def",
+        "type": "map"
     },
     {
         "boss": {
@@ -2224,7 +2705,7 @@
             "layout": 6
         },
         "shorthand": "Desert",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
@@ -2262,8 +2743,60 @@
             "density": 10,
             "layout": 8
         },
-        "shorthand": "pr",
-        "unique": false
+        "shorthand": "rt S",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
+            ]
+        },
+        "id": "MapWorldsElder_Desert",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Desert of Dementia Map",
+        "rating": {},
+        "shorthand": "Dem",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Snake/SnakeRoboBossSideArea"
+            ],
+            "names": [
+                "Wiraqucha, Ancient Guardian"
+            ]
+        },
+        "id": "1_SideArea9_6",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Desolate Isle",
+        "rating": {},
+        "shorthand": "e Is",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
+            ],
+            "names": [
+                "Quetzerxi"
+            ]
+        },
+        "id": "1_SideArea4_7",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Desolate Track",
+        "rating": {},
+        "shorthand": "Tra",
+        "type": "act area"
     },
     {
         "boss": {
@@ -2301,7 +2834,52 @@
             "layout": 8
         },
         "shorthand": "Dig",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
+            ],
+            "names": [
+                "Curator Miem"
+            ]
+        },
+        "id": "1_SideArea3_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Disused Furnace",
+        "rating": {},
+        "shorthand": " Fu",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Doedre/DoedreSewers"
+            ]
+        },
+        "id": "2_8_2_2",
+        "info": {},
+        "layout": {},
+        "level": 56,
+        "name": "Doedre's Cesspool",
+        "rating": {},
+        "shorthand": "Ces",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "LegionLeague4",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 80,
+        "name": "Domain of Timeless Conflict",
+        "rating": {},
+        "shorthand": "fl",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -2327,8 +2905,8 @@
         "level": 81,
         "name": "Doryani's Machinarium",
         "rating": {},
-        "shorthand": "Do",
-        "unique": true
+        "shorthand": "i'",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -2361,8 +2939,8 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Dr",
-        "unique": false
+        "shorthand": "Dry",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -2406,8 +2984,8 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "nes",
-        "unique": false,
+        "shorthand": "une",
+        "type": "map",
         "x": 375,
         "y": 442
     },
@@ -2453,29 +3031,82 @@
             "layout": 2
         },
         "shorthand": "eon",
-        "unique": false,
+        "type": "map",
         "x": 417,
         "y": 172
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
+                "Metadata/Monsters/SandLeaper/SandLeaperBossSideArea"
             ],
             "names": [
-                "The Trialmaster"
+                "Quetzerxi"
             ]
         },
-        "icon": "Art/2DItems/Maps/HarbingerRed",
-        "id": "MapWorldsUltimatumBossArena",
+        "id": "1_SideArea9_9",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Dusty Bluff",
+        "rating": {},
+        "shorthand": "Blu",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/incaminion/FragmentBossSideArea"
+            ],
+            "names": [
+                "Shrapnelbearer"
+            ]
+        },
+        "id": "1_SideArea2_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Entombed Alcove",
+        "rating": {},
+        "shorthand": "Alc",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeleton/SkeletonMeleeLargeBossSideArea"
+            ],
+            "names": [
+                "Ossecati, Boneshaper"
+            ]
+        },
+        "id": "1_SideArea3_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Entombed Chamber",
+        "rating": {},
+        "shorthand": "bed C",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BreachBosses/BreachBossLightningMap"
+            ],
+            "names": [
+                "Esh, Forked Thought"
+            ]
+        },
+        "id": "BreachBossLightning",
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
-        "name": "Engraved Ultimatum",
+        "level": 81,
+        "name": "Esh's Domain",
         "rating": {},
-        "shorthand": " U",
-        "unique": true
+        "shorthand": "Esh",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -2511,10 +3142,28 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Es",
-        "unique": false,
+        "shorthand": "Est",
+        "type": "map",
         "x": 355,
         "y": 485
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
+            ],
+            "names": [
+                "Curator Miem"
+            ]
+        },
+        "id": "1_SideArea8_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Evacuated Quarter",
+        "rating": {},
+        "shorthand": "Ev",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -2559,8 +3208,8 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Ex",
-        "unique": false,
+        "shorthand": "xc",
+        "type": "map",
         "x": 504,
         "y": 158
     },
@@ -2605,8 +3254,8 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Fa",
-        "unique": false,
+        "shorthand": "act",
+        "type": "map",
         "x": 761,
         "y": 255
     },
@@ -2645,8 +3294,26 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Fi",
-        "unique": false
+        "shorthand": "Fields",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/TotemBossSideArea"
+            ],
+            "names": [
+                "M'gaska, the Living Pyre"
+            ]
+        },
+        "id": "1_SideArea7_10",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Flooded Complex",
+        "rating": {},
+        "shorthand": "Com",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -2690,10 +3357,64 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "Fl",
-        "unique": false,
+        "shorthand": "ded M",
+        "type": "map",
         "x": 687,
         "y": 228
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/StatueFingerMage/VaalSideAreaBoss7"
+            ],
+            "names": [
+                "Exartze, the Woven Stone"
+            ]
+        },
+        "id": "1_SideArea5_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forbidden Archives",
+        "rating": {},
+        "shorthand": "en A",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/ConstructMeleeBossSideArea"
+            ],
+            "names": [
+                "Haviri, Vaal Metalsmith"
+            ]
+        },
+        "id": "1_SideArea2_8",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forbidden Chamber",
+        "rating": {},
+        "shorthand": "n Ch",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/incaminion/FragmentBossSideArea"
+            ],
+            "names": [
+                "Shrapnelbearer"
+            ]
+        },
+        "id": "1_SideArea7_12",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forbidden Shrine",
+        "rating": {},
+        "shorthand": "den Sh",
+        "type": "act area"
     },
     {
         "boss": {
@@ -2732,8 +3453,8 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "bid",
-        "unique": false
+        "shorthand": "ods",
+        "type": "map"
     },
     {
         "boss": {
@@ -2767,7 +3488,85 @@
         "name": "Forge of the Phoenix Map",
         "rating": {},
         "shorthand": "ix",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "CrucibleLeagueArea",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 80,
+        "name": "Forge of the Titans",
+        "rating": {},
+        "shorthand": "Tit",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/WaterSpiral/WaterSpiralBossSideArea"
+            ],
+            "names": [
+                "Torrent of Fear"
+            ]
+        },
+        "id": "1_SideArea4_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forgotten Conduit",
+        "rating": {},
+        "shorthand": "n Con",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Pyromaniac/PyromaniacBossSideArea"
+            ],
+            "names": [
+                "Curator Miem"
+            ]
+        },
+        "id": "1_SideArea9_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forgotten Gulch",
+        "rating": {},
+        "shorthand": "en G",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/GhostPirates/GhostPirateBossSideAreaLowbie"
+            ],
+            "names": [
+                "Coniraya, Shadow of Malice"
+            ]
+        },
+        "id": "1_SideArea1_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Forgotten Oubliette",
+        "rating": {},
+        "shorthand": " Ou",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UberVenariusVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Forgotten Reliquary",
+        "rating": {},
+        "shorthand": "en R",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -2800,7 +3599,7 @@
             "layout": 8
         },
         "shorthand": "ki",
-        "unique": false,
+        "type": "map",
         "x": 490,
         "y": 365
     },
@@ -2838,7 +3637,7 @@
             "layout": 6
         },
         "shorthand": "Fou",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -2880,10 +3679,25 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Fr",
-        "unique": false,
+        "shorthand": "Cab",
+        "type": "map",
         "x": 658,
         "y": 291
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
+            ]
+        },
+        "id": "MapSideAreaIceForest",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Frozen Springs",
+        "rating": {},
+        "shorthand": "gs",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -2925,8 +3739,8 @@
             "density": 2,
             "layout": 8
         },
-        "shorthand": "Fu",
-        "unique": false,
+        "shorthand": "Fun",
+        "type": "map",
         "x": 729,
         "y": 106
     },
@@ -2959,8 +3773,8 @@
             "density": 8,
             "layout": 4
         },
-        "shorthand": "Ga",
-        "unique": false
+        "shorthand": "Gardens",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3005,7 +3819,7 @@
             "layout": 8
         },
         "shorthand": "Geo",
-        "unique": false,
+        "type": "map",
         "x": 305,
         "y": 178
     },
@@ -3038,7 +3852,7 @@
             "layout": 6
         },
         "shorthand": "Gh",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3076,7 +3890,7 @@
             "layout": 10
         },
         "shorthand": "Gl",
-        "unique": false,
+        "type": "map",
         "x": 418,
         "y": 131
     },
@@ -3109,8 +3923,8 @@
             "density": 8,
             "layout": 4
         },
-        "shorthand": "oug",
-        "unique": false,
+        "shorthand": "ve T",
+        "type": "map",
         "x": 420,
         "y": 427
     },
@@ -3153,8 +3967,8 @@
             "density": 6,
             "layout": 10
         },
-        "shorthand": "eya",
-        "unique": false,
+        "shorthand": "Graveyard",
+        "type": "map",
         "x": 812,
         "y": 422
     },
@@ -3192,8 +4006,8 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "ott",
-        "unique": false
+        "shorthand": "rot",
+        "type": "map"
     },
     {
         "boss": {
@@ -3214,7 +4028,7 @@
         "name": "Hall of Grandmasters",
         "rating": {},
         "shorthand": "dm",
-        "unique": true
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -3251,29 +4065,41 @@
         "name": "Hallowed Ground",
         "rating": {},
         "shorthand": "wed",
-        "unique": true,
+        "type": "unique map",
         "x": 691,
         "y": 388
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
-            ],
-            "names": [
-                "<<>>"
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
             ]
         },
-        "icon": "Art/2DItems/Maps/HarbingerWhite",
-        "id": "MapWorldsHarbingerHigh",
+        "id": "MapWorldsElder_Elegant",
         "image": false,
         "info": {},
         "layout": {},
-        "level": 72,
-        "name": "Harbinger Map",
+        "level": 82,
+        "name": "Halls of Delirium Map",
         "rating": {},
-        "shorthand": "Har",
-        "unique": false
+        "shorthand": "lir",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
+            ]
+        },
+        "id": "MapWorldsHarbinger",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 70,
+        "name": "Harbinger's Isle",
+        "rating": {},
+        "shorthand": "s I",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -3310,10 +4136,77 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "Hau",
-        "unique": false,
+        "shorthand": "nsi",
+        "type": "map",
         "x": 792,
         "y": 222
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierMeleeBossSideArea"
+            ],
+            "names": [
+                "Calxipher"
+            ]
+        },
+        "id": "1_SideArea4_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Haunted Mineshaft",
+        "rating": {},
+        "shorthand": "af",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Snake/SnakeScorpionBossSideArea"
+            ],
+            "names": [
+                "Thornrunner"
+            ]
+        },
+        "id": "1_SideArea2_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Hidden Patch",
+        "rating": {},
+        "shorthand": "Hid",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasExiles/AtlasExile3",
+                "Metadata/Monsters/AtlasExiles/AtlasExile3Apparition"
+            ],
+            "names": [
+                "Al-Hezmin, The Hunter"
+            ]
+        },
+        "id": "AtlasExilesBoss3",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "Hunter's Ambush",
+        "rating": {},
+        "shorthand": "Am",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "AfflictionTown4",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Hysteriagate",
+        "rating": {},
+        "shorthand": "aga",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -3355,7 +4248,7 @@
             "layout": 8
         },
         "shorthand": "Ic",
-        "unique": false,
+        "type": "map",
         "x": 265,
         "y": 392
     },
@@ -3401,21 +4294,21 @@
             "layout": 8
         },
         "shorthand": "fe",
-        "unique": false,
+        "type": "map",
         "x": 561,
         "y": 75
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
+                "Metadata/Monsters/HarbingerPortal/HarbingerPortalUber"
             ],
             "names": [
                 "<<>>"
             ]
         },
         "icon": "Art/2DItems/Maps/HarbingerUber",
-        "id": "MapWorldsHarbingerHigh",
+        "id": "MapWorldsHarbingerUber",
         "image": false,
         "info": {},
         "layout": {},
@@ -3423,7 +4316,56 @@
         "name": "Infused Beachhead",
         "rating": {},
         "shorthand": "fu",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Kiweth/KiwethBossSideArea"
+            ],
+            "names": [
+                "Inti of the Blood Moon"
+            ]
+        },
+        "id": "1_SideArea3_10",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Inner Grounds",
+        "rating": {},
+        "shorthand": "r G",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
+            ]
+        },
+        "id": "MapWorldsElder_River",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Islands of Devastation Map",
+        "rating": {},
+        "shorthand": "Dev",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/WaterSpiral/WaterSpiralBossSideArea"
+            ]
+        },
+        "id": "MapSideAreaIceValley",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Isolated Sound",
+        "rating": {},
+        "shorthand": "Soun",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -3461,7 +4403,7 @@
             "layout": 4
         },
         "shorthand": "Iv",
-        "unique": false,
+        "type": "map",
         "x": 223,
         "y": 79
     },
@@ -3500,7 +4442,49 @@
             "layout": 10
         },
         "shorthand": "J",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Taniwha/TaniwhaBoss",
+                "Metadata/Monsters/Totems/PuiTotemBoss"
+            ]
+        },
+        "id": "1_4_4_1",
+        "info": {},
+        "layout": {},
+        "level": 37,
+        "name": "Kaom's Dream",
+        "rating": {},
+        "shorthand": "m's D",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Kaom/KaomBoss"
+            ]
+        },
+        "id": "1_4_4_3",
+        "info": {},
+        "layout": {},
+        "level": 38,
+        "name": "Kaom's Stronghold",
+        "rating": {},
+        "shorthand": "gho",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "kitavafilming",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Kitava BloodFace",
+        "rating": {},
+        "shorthand": "dF",
+        "type": "special area"
     },
     {
         "boss": {
@@ -3536,8 +4520,8 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "bo",
-        "unique": false
+        "shorthand": "Laboratory",
+        "type": "map"
     },
     {
         "boss": {
@@ -3574,7 +4558,7 @@
             "layout": 8
         },
         "shorthand": "Lair",
-        "unique": false
+        "type": "map"
     },
     {
         "boss": {
@@ -3607,8 +4591,23 @@
         "level": 83,
         "name": "Lair of the Hydra Map",
         "rating": {},
-        "shorthand": "Hy",
-        "unique": false
+        "shorthand": "yd",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Talisman/TalismanWolfKing"
+            ]
+        },
+        "id": "3_TalismanBoss",
+        "info": {},
+        "layout": {},
+        "level": 60,
+        "name": "Lair of the Wolven King",
+        "rating": {},
+        "shorthand": "lv",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -3646,8 +4645,8 @@
             "density": 4,
             "layout": 2
         },
-        "shorthand": "a Ch",
-        "unique": false,
+        "shorthand": "a C",
+        "type": "map",
         "x": 223,
         "y": 289
     },
@@ -3655,6 +4654,7 @@
         "atlas": true,
         "boss": {
             "ids": [
+                "Metadata/Monsters/KitavaBoss/KitavaFinalHeartMap",
                 "Metadata/Monsters/KitavaBoss/KitavaFinalMap"
             ],
             "names": [
@@ -3686,7 +4686,7 @@
             "layout": 8
         },
         "shorthand": "a L",
-        "unique": false,
+        "type": "map",
         "x": 191,
         "y": 138
     },
@@ -3731,8 +4731,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Le",
-        "unique": false,
+        "shorthand": "Ley",
+        "type": "map",
         "x": 679,
         "y": 351
     },
@@ -3776,8 +4776,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Li",
-        "unique": false
+        "shorthand": "Lig",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3813,10 +4813,22 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Lo",
-        "unique": false,
+        "shorthand": "ko",
+        "type": "map",
         "x": 261,
         "y": 460
+    },
+    {
+        "boss": {},
+        "id": "AfflictionTown6",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Lunacy's Watch",
+        "rating": {},
+        "shorthand": " Wa",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -3850,7 +4862,7 @@
         "name": "Maelstr\u00f6m of Chaos",
         "rating": {},
         "shorthand": "\u00f6",
-        "unique": true,
+        "type": "unique map",
         "x": 796,
         "y": 374
     },
@@ -3895,10 +4907,48 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "fo",
-        "unique": false,
+        "shorthand": "alf",
+        "type": "map",
         "x": 749,
         "y": 400
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonFourLegged/FourLeggedDemonMaligaro",
+                "Metadata/Monsters/Maligaro/Maligaro2",
+                "Metadata/Monsters/Spiders/BlackDeath/BlackDeathMaligaro"
+            ],
+            "names": [
+                "Black Death, Pain Unending",
+                "Fidelitas, Loyalty Undying",
+                "Maligaro, the Artist"
+            ]
+        },
+        "id": "2_7_5_map",
+        "info": {},
+        "layout": {},
+        "level": 52,
+        "name": "Maligaro's Sanctum",
+        "rating": {},
+        "shorthand": "ali",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
+            ]
+        },
+        "id": "MapWorldsElder_Sceptre",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Manor of Madness Map",
+        "rating": {},
+        "shorthand": "dn",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3934,8 +4984,8 @@
         "level": 73,
         "name": "Mao Kun",
         "rating": {},
-        "shorthand": "K",
-        "unique": true,
+        "shorthand": "Ku",
+        "type": "unique map",
         "x": 515,
         "y": 275
     },
@@ -3973,8 +5023,8 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Mar",
-        "unique": false
+        "shorthand": "rsh",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -4012,8 +5062,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Mau",
-        "unique": false,
+        "shorthand": "Mausoleum",
+        "type": "map",
         "x": 360,
         "y": 144
     },
@@ -4058,7 +5108,7 @@
             "layout": 2
         },
         "shorthand": "Maze",
-        "unique": false,
+        "type": "map",
         "x": 646,
         "y": 114
     },
@@ -4094,7 +5144,51 @@
         "name": "Maze of the Minotaur Map",
         "rating": {},
         "shorthand": "aur",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "Menagerie_InsectsArachnids",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Menagerie Caverns",
+        "rating": {},
+        "shorthand": "ie C",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "Menagerie_WaterCreatures",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Menagerie Depths",
+        "rating": {},
+        "shorthand": "ie D",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "Menagerie_BirdsReptiles",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Menagerie Sands",
+        "rating": {},
+        "shorthand": "ie S",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "Menagerie_Mammals",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Menagerie Wilds",
+        "rating": {},
+        "shorthand": "Wil",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -4131,8 +5225,8 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "sa",
-        "unique": false,
+        "shorthand": "Mes",
+        "type": "map",
         "x": 313,
         "y": 420
     },
@@ -4176,8 +5270,8 @@
             "density": 5,
             "layout": 4
         },
-        "shorthand": "ner",
-        "unique": false,
+        "shorthand": "nera",
+        "type": "map",
         "x": 535,
         "y": 393
     },
@@ -4221,10 +5315,28 @@
             "density": 8,
             "layout": 6
         },
-        "shorthand": "Mo",
-        "unique": false,
+        "shorthand": "oon ",
+        "type": "map",
         "x": 210,
         "y": 413
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss1/Demon1BossSideArea"
+            ],
+            "names": [
+                "Beheader Ataguchu"
+            ]
+        },
+        "id": "1_SideArea8_7",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Moonlit Chambers",
+        "rating": {},
+        "shorthand": "nl",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -4261,8 +5373,8 @@
             "density": 3,
             "layout": 10
         },
-        "shorthand": "ud",
-        "unique": false,
+        "shorthand": " Ge",
+        "type": "map",
         "x": 341,
         "y": 96
     },
@@ -4307,9 +5419,45 @@
             "layout": 2
         },
         "shorthand": "Mus",
-        "unique": false,
+        "type": "map",
         "x": 775,
         "y": 155
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BloodChieftain/MonkeyChiefBossSideArea"
+            ],
+            "names": [
+                "Simi, the Nature Touched"
+            ]
+        },
+        "id": "1_SideArea2_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Mystical Clearing",
+        "rating": {},
+        "shorthand": "My",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/RootSpiders/RootSpiderBossSideArea"
+            ],
+            "names": [
+                "Kamaq, Soilmaker"
+            ]
+        },
+        "id": "1_SideArea2_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Narrow Ravine",
+        "rating": {},
+        "shorthand": "Na",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -4353,10 +5501,28 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "po",
-        "unique": false,
+        "shorthand": "Necropolis",
+        "type": "map",
         "x": 221,
         "y": 158
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Seawitch/SeaWitchBossSideArea"
+            ],
+            "names": [
+                "Rima, Deep Temptress"
+            ]
+        },
+        "id": "1_SideArea3_8",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Neglected Cellar",
+        "rating": {},
+        "shorthand": "Neg",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -4387,7 +5553,7 @@
         "name": "Oba's Cursed Trove",
         "rating": {},
         "shorthand": "Ob",
-        "unique": true,
+        "type": "unique map",
         "x": 365,
         "y": 171
     },
@@ -4425,8 +5591,8 @@
         "level": 68,
         "name": "Olmec's Sanctum",
         "rating": {},
-        "shorthand": "Ol",
-        "unique": true,
+        "shorthand": "c'",
+        "type": "unique map",
         "x": 564,
         "y": 398
     },
@@ -4471,9 +5637,48 @@
             "layout": 6
         },
         "shorthand": "Orc",
-        "unique": false,
+        "type": "map",
         "x": 766,
         "y": 193
+    },
+    {
+        "boss": {},
+        "id": "AfflictionTown10",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Oriath Delusion",
+        "rating": {},
+        "shorthand": "h D",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBoss"
+            ]
+        },
+        "id": "1_5_3",
+        "info": {},
+        "layout": {},
+        "level": 42,
+        "name": "Oriath Square",
+        "rating": {},
+        "shorthand": "h S",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UberSirusVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Oubliette Reliquary",
+        "rating": {},
+        "shorthand": "te R",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -4510,8 +5715,8 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "n R",
-        "unique": false
+        "shorthand": "n Ru",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -4555,8 +5760,8 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "n S",
-        "unique": false,
+        "shorthand": "wn S",
+        "type": "map",
         "x": 631,
         "y": 404
     },
@@ -4596,8 +5801,8 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "ala",
-        "unique": false,
+        "shorthand": "Pala",
+        "type": "map",
         "x": 472,
         "y": 143
     },
@@ -4630,7 +5835,33 @@
             "layout": 10
         },
         "shorthand": "Park",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Brute/EndlessLedge2BossBrute"
+            ]
+        },
+        "id": "MapEndlessLedge2_01",
+        "info": {},
+        "layout": {},
+        "level": 64,
+        "name": "Path of Endurance",
+        "rating": {},
+        "shorthand": "dur",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "ExileRoyale",
+        "info": {},
+        "layout": {},
+        "level": 2,
+        "name": "Path of Exile Royale",
+        "rating": {},
+        "shorthand": " Ex",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -4670,7 +5901,7 @@
             "layout": 8
         },
         "shorthand": "Pen",
-        "unique": false,
+        "type": "map",
         "x": 471,
         "y": 263
     },
@@ -4702,8 +5933,20 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "su",
-        "unique": false
+        "shorthand": "nsu",
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "MapWorldsChateauUnique",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 71,
+        "name": "Perandus Manor",
+        "rating": {},
+        "shorthand": "Per",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -4746,8 +5989,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "go",
-        "unique": false,
+        "shorthand": "Pha",
+        "type": "map",
         "x": 650,
         "y": 84
     },
@@ -4793,7 +6036,7 @@
             "layout": 8
         },
         "shorthand": "Pie",
-        "unique": false,
+        "type": "map",
         "x": 736,
         "y": 287
     },
@@ -4831,8 +6074,8 @@
         "level": 69,
         "name": "Pillars of Arun",
         "rating": {},
-        "shorthand": "Pillars of Arun",
-        "unique": true,
+        "shorthand": "Aru",
+        "type": "unique map",
         "x": 355,
         "y": 415
     },
@@ -4879,7 +6122,7 @@
             "layout": 4
         },
         "shorthand": "Pit",
-        "unique": false,
+        "type": "map",
         "x": 381,
         "y": 278
     },
@@ -4915,7 +6158,23 @@
         "name": "Pit of the Chimera Map",
         "rating": {},
         "shorthand": "Chi",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
+            ]
+        },
+        "id": "MapWorldsElder_Reliquary",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Pits of Sorrow Map",
+        "rating": {},
+        "shorthand": "Sor",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -4959,8 +6218,8 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "lat",
-        "unique": false,
+        "shorthand": "Plat",
+        "type": "map",
         "x": 422,
         "y": 493
     },
@@ -4999,7 +6258,27 @@
             "layout": 4
         },
         "shorthand": "laz",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasInvaders/BlackStarMonsters/BlackStarBoss"
+            ],
+            "names": [
+                "The Black Star"
+            ],
+            "not_twinnable": true
+        },
+        "id": "MapWorldsPrimordialBoss2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 83,
+        "name": "Polaric Void",
+        "rating": {},
+        "shorthand": " Vo",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -5035,8 +6314,8 @@
         "level": 81,
         "name": "Poorjoy's Asylum",
         "rating": {},
-        "shorthand": "Poorjoy's Asylum",
-        "unique": true,
+        "shorthand": "j",
+        "type": "unique map",
         "x": 516,
         "y": 97
     },
@@ -5086,7 +6365,7 @@
             "layout": 8
         },
         "shorthand": "Por",
-        "unique": false,
+        "type": "map",
         "x": 593,
         "y": 241
     },
@@ -5144,9 +6423,25 @@
             "layout": 6
         },
         "shorthand": "Pre",
-        "unique": false,
+        "type": "map",
         "x": 573,
         "y": 273
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/ProtoVaal/ProtoVaalMapBoss"
+            ]
+        },
+        "id": "MapWorldsPrimevalCity",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 79,
+        "name": "Primeval City Map",
+        "rating": {},
+        "shorthand": "mev",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -5190,8 +6485,8 @@
             "density": 9,
             "layout": 4
         },
-        "shorthand": "ks",
-        "unique": false,
+        "shorthand": "al B",
+        "type": "map",
         "x": 605,
         "y": 424
     },
@@ -5237,9 +6532,24 @@
             "layout": 8
         },
         "shorthand": "ial P",
-        "unique": false,
+        "type": "map",
         "x": 531,
         "y": 355
+    },
+    {
+        "boss": {
+            "names": [
+                "Abberath, the Cloven One"
+            ]
+        },
+        "id": "1_1_8",
+        "info": {},
+        "layout": {},
+        "level": 10,
+        "name": "Prisoner's Gate",
+        "rating": {},
+        "shorthand": "s G",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -5283,10 +6593,28 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Pro",
-        "unique": false,
+        "shorthand": "Promenade",
+        "type": "map",
         "x": 801,
         "y": 324
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/InsectSpawner/CarrionQueenBossSideArea"
+            ],
+            "names": [
+                "The Sunburst Queen"
+            ]
+        },
+        "id": "1_SideArea3_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Quarantined Quarters",
+        "rating": {},
+        "shorthand": "anti",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -5333,10 +6661,28 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "co",
-        "unique": false,
+        "shorthand": "Rac",
+        "type": "map",
         "x": 312,
         "y": 228
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Cannibal/CannibalBossSideArea"
+            ],
+            "names": [
+                "Perquil the Lucky"
+            ]
+        },
+        "id": "1_SideArea6_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Radiant Pools",
+        "rating": {},
+        "shorthand": "Rad",
+        "type": "act area"
     },
     {
         "boss": {
@@ -5372,8 +6718,45 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Ram",
-        "unique": false
+        "shorthand": "Ramparts",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss1"
+            ],
+            "names": [
+                "Huitepa the Blind"
+            ]
+        },
+        "id": "1_SideArea5_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Reclaimed Barracks",
+        "rating": {},
+        "shorthand": "Rec",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasExiles/AtlasExile2Apparition",
+                "Metadata/Monsters/AtlasExiles/AtlasExile2_"
+            ],
+            "names": [
+                "Veritania, The Redeemer"
+            ]
+        },
+        "id": "AtlasExilesBoss2",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "Redeemer's Eyrie",
+        "rating": {},
+        "shorthand": "Ey",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -5410,8 +6793,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "ee",
-        "unique": false,
+        "shorthand": "Reef",
+        "type": "map",
         "x": 202,
         "y": 114
     },
@@ -5449,74 +6832,42 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Rel",
-        "unique": false
+        "shorthand": "c Ch",
+        "type": "map"
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/Goatman/GoatmanShamanBossSideAreaLowbie"
             ],
             "names": [
-                "Venarius"
+                "Sheaq, Maker of Floods"
             ]
         },
-        "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
-        "id": "Synthesis_MapBoss",
-        "image": false,
+        "id": "1_SideArea1_6",
         "info": {},
         "layout": {},
-        "level": 79,
-        "name": "Replica Cortex",
+        "level": 1,
+        "name": "Remote Gulch",
         "rating": {},
-        "shorthand": " Cor",
-        "unique": true
+        "shorthand": "Rem",
+        "type": "act area"
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
-            ],
-            "names": [
-                "Talin, Faithbreaker"
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
             ]
         },
-        "connected": [
-            "Dunes Map"
-        ],
-        "icon": "Art/2DItems/Maps/PillarsOfVastiri",
-        "id": "MapWorldsDunesUnique",
+        "id": "MapWorldsElder_Refinery",
         "image": false,
         "info": {},
         "layout": {},
-        "level": 69,
-        "name": "Replica Pillars of Arun",
+        "level": 82,
+        "name": "Repository of Derision Map",
         "rating": {},
-        "shorthand": " Pi",
-        "unique": true
-    },
-    {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss"
-            ],
-            "names": [
-                "Mistress Hyseria"
-            ]
-        },
-        "connected": [
-            "Temple Map"
-        ],
-        "icon": "Art/2DItems/Maps/PoorjoysAsylum",
-        "id": "MapWorldsTempleUnique",
-        "image": false,
-        "info": {},
-        "layout": {},
-        "level": 81,
-        "name": "Replica Poorjoy's Asylum",
-        "rating": {},
-        "shorthand": "a Po",
-        "unique": true
+        "shorthand": "Der",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -5560,15 +6911,51 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "Res",
-        "unique": false,
+        "shorthand": "sid",
+        "type": "map",
         "x": 395,
         "y": 384
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/Banshee/VaalSideAreaBoss8"
+            ],
+            "names": [
+                "Iorphia, Dream Eater"
+            ]
+        },
+        "id": "1_SideArea5_7",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Restricted Collection",
+        "rating": {},
+        "shorthand": "cti",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss3/Demon3BossSideArea"
+            ],
+            "names": [
+                "Ch'aska, Maker of Rain"
+            ]
+        },
+        "id": "1_SideArea3_12",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Restricted Gallery",
+        "rating": {},
+        "shorthand": "Gal",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian4__"
             ],
             "names": [
                 "Rewritten Synthete"
@@ -5583,7 +6970,123 @@
         "name": "Rewritten Distant Memory",
         "rating": {},
         "shorthand": "wr",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
+            ]
+        },
+        "id": "MapWorldsElder_Volcano",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "River of Hysteria Map",
+        "rating": {},
+        "shorthand": "f H",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
+            ]
+        },
+        "id": "MapWorldsElder_Garden",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Ruins of Despair Map",
+        "rating": {},
+        "shorthand": "esp",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AnimatedItem/AnimatedArmourBossSideArea"
+            ],
+            "names": [
+                "Shadow of Vengeance"
+            ]
+        },
+        "id": "1_SideArea3_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sacred Chambers",
+        "rating": {},
+        "shorthand": "red C",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumFoyer_1_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sanctum Archives",
+        "rating": {},
+        "shorthand": "m A",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumFoyer_3_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sanctum Cathedral",
+        "rating": {},
+        "shorthand": "m C",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumFoyer_4_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sanctum Mausoleum",
+        "rating": {},
+        "shorthand": " Mau",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumCrypt",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sanctum Necropolis",
+        "rating": {},
+        "shorthand": "m N",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumFoyer_2_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sanctum Vaults",
+        "rating": {},
+        "shorthand": "m V",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "ffa1_1",
+        "info": {},
+        "layout": {},
+        "level": 36,
+        "name": "Sarn Arena",
+        "rating": {},
+        "shorthand": "rn A",
+        "type": "special area"
     },
     {
         "boss": {
@@ -5619,8 +7122,167 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Sc",
-        "unique": false
+        "shorthand": "Scr",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
+            ]
+        },
+        "id": "MapWorldsElder_Reef",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Sea of Isolation Map",
+        "rating": {},
+        "shorthand": "a o",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss5"
+            ],
+            "names": [
+                "Guraq, Daylight's Blade"
+            ]
+        },
+        "id": "1_SideArea5_3_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sealed Basement",
+        "rating": {},
+        "shorthand": "ase",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss2/Demon2BossSideArea"
+            ],
+            "names": [
+                "Wiraq, the Impaler"
+            ]
+        },
+        "id": "1_SideArea3_11",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sealed Corridors",
+        "rating": {},
+        "shorthand": "dor",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Kiweth/KiwethBossSideArea"
+            ],
+            "names": [
+                "Inti of the Blood Moon"
+            ]
+        },
+        "id": "1_SideArea7_4",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sealed Repository",
+        "rating": {},
+        "shorthand": " Rep",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss4"
+            ],
+            "names": [
+                "Xuatl, Cutting Wind"
+            ]
+        },
+        "id": "1_SideArea5_3_2",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Secluded Canal",
+        "rating": {},
+        "shorthand": "d Can",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/ConstructRangedBossSideArea"
+            ],
+            "names": [
+                "Kutec, Vaal Fleshsmith"
+            ]
+        },
+        "id": "1_SideArea2_7",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Secluded Copse",
+        "rating": {},
+        "shorthand": "ps",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Bandit/Pirate1MasterBoss"
+            ]
+        },
+        "id": "Master_TH_Shipgraveyard",
+        "info": {},
+        "layout": {},
+        "level": 12,
+        "name": "Secluded Cove",
+        "rating": {},
+        "shorthand": " Cov",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonModular/DemonModularElementsBossSideArea"
+            ],
+            "names": [
+                "Atziri's Pride"
+            ]
+        },
+        "id": "1_SideArea2_6",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Secret Laboratory",
+        "rating": {},
+        "shorthand": "ret",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasInvaders/DoomMonsters/DoomBoss_"
+            ],
+            "names": [
+                "The Infinite Hunger"
+            ],
+            "not_twinnable": true
+        },
+        "id": "MapWorldsPrimordialBoss1",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 83,
+        "name": "Seething Chyme",
+        "rating": {},
+        "shorthand": "Chy",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -5652,7 +7314,53 @@
             "layout": 6
         },
         "shorthand": "pu",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Brute/BruteTower",
+                "Metadata/Monsters/Shavronne/ShavronneTower"
+            ]
+        },
+        "id": "2_6_7_2",
+        "info": {},
+        "layout": {},
+        "level": 47,
+        "name": "Shavronne's Tower",
+        "rating": {},
+        "shorthand": "vr",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonBosses/DemonBoss2/Demon2BossSideArea"
+            ],
+            "names": [
+                "Wiraq, the Impaler"
+            ]
+        },
+        "id": "1_SideArea9_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Shifting Sands",
+        "rating": {},
+        "shorthand": "fti",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UberMavenVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Shiny Reliquary",
+        "rating": {},
+        "shorthand": "iny",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -5693,7 +7401,7 @@
             "layout": 8
         },
         "shorthand": "py",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -5738,7 +7446,7 @@
             "layout": 8
         },
         "shorthand": "Sho",
-        "unique": false,
+        "type": "map",
         "x": 503,
         "y": 300
     },
@@ -5778,7 +7486,25 @@
             "layout": 4
         },
         "shorthand": "Shrine",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss2"
+            ],
+            "names": [
+                "Daluatti, Stoneraiser"
+            ]
+        },
+        "id": "1_SideArea5_8",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Side Chapel",
+        "rating": {},
+        "shorthand": "Sid",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -5821,8 +7547,8 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "eg",
-        "unique": false,
+        "shorthand": "Sie",
+        "type": "map",
         "x": 177,
         "y": 97
     },
@@ -5866,7 +7592,7 @@
             "layout": 8
         },
         "shorthand": "Sil",
-        "unique": false,
+        "type": "map",
         "x": 339,
         "y": 68
     },
@@ -5905,7 +7631,7 @@
             "layout": 6
         },
         "shorthand": "r F",
-        "unique": false,
+        "type": "map",
         "x": 461,
         "y": 84
     },
@@ -5937,8 +7663,42 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "r L",
-        "unique": false
+        "shorthand": " Lai",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
+            ]
+        },
+        "id": "MapWorldsElder_Tower",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Spires of Delusion Map",
+        "rating": {},
+        "shorthand": "ire",
+        "type": "map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Snake/SnakeRoboBossSideArea"
+            ],
+            "names": [
+                "Wiraqucha, Ancient Guardian"
+            ]
+        },
+        "id": "1_SideArea3_6",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Stagnant Canal",
+        "rating": {},
+        "shorthand": "nan",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -5978,10 +7738,26 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "gn",
-        "unique": false,
+        "shorthand": "nat",
+        "type": "map",
         "x": 480,
         "y": 389
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Dragon/GreyDragonBoss"
+            ]
+        },
+        "id": "MapWorldsSteppes",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Steppes Map",
+        "rating": {},
+        "shorthand": "Ste",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -6026,10 +7802,43 @@
             "density": 0,
             "layout": 10
         },
-        "shorthand": "Str",
-        "unique": false,
+        "shorthand": "Strand",
+        "type": "map",
         "x": 761,
         "y": 481
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/SandSpitterEmerge/SandSpitterBossSideAreaLowbie"
+            ],
+            "names": [
+                "Mother of the Hive"
+            ]
+        },
+        "id": "1_SideArea1_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Strange Sinkhole",
+        "rating": {},
+        "shorthand": "kh",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/TotemBossSideArea"
+            ]
+        },
+        "id": "MapSideAreaLavaTunnel",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Suffocating Fissure",
+        "rating": {},
+        "shorthand": "Fis",
+        "type": "special area"
     },
     {
         "atlas": true,
@@ -6072,8 +7881,8 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Ve",
-        "unique": false,
+        "shorthand": "lp",
+        "type": "map",
         "x": 671,
         "y": 151
     },
@@ -6114,8 +7923,8 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": "mm",
-        "unique": false,
+        "shorthand": "Sum",
+        "type": "map",
         "x": 197,
         "y": 220
     },
@@ -6156,10 +7965,55 @@
             "density": 7,
             "layout": 6
         },
-        "shorthand": "Sun",
-        "unique": false,
+        "shorthand": "n Ci",
+        "type": "map",
         "x": 725,
         "y": 136
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Cannibal/CannibalBossSideAreaLowbie"
+            ],
+            "names": [
+                "Perquil the Lucky"
+            ]
+        },
+        "id": "1_SideArea1_3",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Sunken Shingle",
+        "rating": {},
+        "shorthand": "ingl",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "BetrayalLaboratory10",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Syndicate Laboratory",
+        "rating": {},
+        "shorthand": "dic",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/TukohamaMap"
+            ]
+        },
+        "id": "MapWorldsSynthesisedWorld",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 78,
+        "name": "Synthesised World",
+        "rating": {},
+        "shorthand": "Wor",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -6205,7 +8059,7 @@
             "layout": 6
         },
         "shorthand": "Temple",
-        "unique": false,
+        "type": "map",
         "x": 463,
         "y": 111
     },
@@ -6253,7 +8107,7 @@
             "layout": 8
         },
         "shorthand": "Ter",
-        "unique": false,
+        "type": "map",
         "x": 302,
         "y": 263
     },
@@ -6281,8 +8135,19 @@
         "level": 80,
         "name": "The Alluring Abyss",
         "rating": {},
-        "shorthand": "Ab",
-        "unique": true
+        "shorthand": " Ab",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "1_2_14_3",
+        "info": {},
+        "layout": {},
+        "level": 23,
+        "name": "The Ancient Pyramid",
+        "rating": {},
+        "shorthand": " Anc",
+        "type": "act area"
     },
     {
         "boss": {
@@ -6309,7 +8174,100 @@
         "name": "The Apex of Sacrifice",
         "rating": {},
         "shorthand": "Ap",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VultureParasite/VultureParasiteBoss"
+            ]
+        },
+        "id": "1_4_1",
+        "info": {},
+        "layout": {},
+        "level": 33,
+        "name": "The Aqueduct",
+        "rating": {},
+        "shorthand": "e Aq",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Undying/CityStalkerMaleBoss"
+            ]
+        },
+        "id": "1_3_17_2",
+        "info": {},
+        "layout": {},
+        "level": 31,
+        "name": "The Archives",
+        "rating": {},
+        "shorthand": "e Ar",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Vendigo/VendigoBoss"
+            ]
+        },
+        "id": "1_4_7",
+        "info": {},
+        "layout": {},
+        "level": 40,
+        "name": "The Ascent",
+        "rating": {},
+        "shorthand": "Asc",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Ralakesh/Alira/Alira",
+                "Metadata/Monsters/Ralakesh/Greust/Greust",
+                "Metadata/Monsters/Ralakesh/Kraityn/Kraityn",
+                "Metadata/Monsters/Ralakesh/Oak/Oak"
+            ]
+        },
+        "id": "2_7_7",
+        "info": {},
+        "layout": {},
+        "level": 53,
+        "name": "The Ashen Fields",
+        "rating": {},
+        "shorthand": " Ash",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Exiles/Titucius"
+            ]
+        },
+        "id": "2_8_5",
+        "info": {},
+        "layout": {},
+        "level": 57,
+        "name": "The Bath House",
+        "rating": {},
+        "shorthand": "Hou",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisBossEliteSoldier"
+            ]
+        },
+        "id": "1_3_7",
+        "info": {},
+        "layout": {},
+        "level": 27,
+        "name": "The Battlefront",
+        "rating": {},
+        "shorthand": "att",
+        "type": "act area"
     },
     {
         "boss": {
@@ -6321,15 +8279,374 @@
             ]
         },
         "icon": "Art/2DItems/Maps/HarbingerRed",
-        "id": "MapWorldsHarbingerLow",
+        "id": "MapWorldsHarbingerHigh",
         "image": false,
         "info": {},
         "layout": {},
         "level": 72,
         "name": "The Beachhead",
         "rating": {},
-        "shorthand": "e B",
-        "unique": true
+        "shorthand": "e Beach",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "2_6_14",
+        "info": {},
+        "layout": {},
+        "level": 49,
+        "name": "The Beacon",
+        "rating": {},
+        "shorthand": "con",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/Droolmaw"
+            ]
+        },
+        "id": "2_9_10_1",
+        "info": {},
+        "layout": {},
+        "level": 63,
+        "name": "The Belly of the Beast",
+        "rating": {},
+        "shorthand": "The Belly of the Beast",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Revenant/RevenantBoss"
+            ]
+        },
+        "id": "1_4_6_1",
+        "info": {},
+        "layout": {},
+        "level": 38,
+        "name": "The Belly of the Beast Level 1",
+        "rating": {},
+        "shorthand": "st Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/PietyBeastBoss"
+            ]
+        },
+        "id": "1_4_6_2",
+        "info": {},
+        "layout": {},
+        "level": 39,
+        "name": "The Belly of the Beast Level 2",
+        "rating": {},
+        "shorthand": "st Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_9_1",
+        "info": {},
+        "layout": {},
+        "level": 61,
+        "name": "The Blood Aqueduct",
+        "rating": {},
+        "shorthand": "d Aq",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/GemMonster/IguanaBossPhoenix"
+            ]
+        },
+        "id": "2_9_6",
+        "info": {},
+        "layout": {},
+        "level": 62,
+        "name": "The Boiling Lake",
+        "rating": {},
+        "shorthand": " Bo",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "AfflictionTown7",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "The Bridge Enraptured",
+        "rating": {},
+        "shorthand": "nr",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "brig",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Brig",
+        "rating": {},
+        "shorthand": "rig",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BrineKing/BrineKing"
+            ]
+        },
+        "id": "2_6_15",
+        "info": {},
+        "layout": {},
+        "level": 50,
+        "name": "The Brine King's Reef",
+        "rating": {},
+        "shorthand": "g'",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BanditLeaderDexInt/BanditLeaderKraityn"
+            ],
+            "names": [
+                "Kraityn, Scarbearer"
+            ]
+        },
+        "id": "1_2_4",
+        "info": {},
+        "layout": {},
+        "level": 16,
+        "name": "The Broken Bridge",
+        "rating": {},
+        "shorthand": "Bro",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_10_5",
+        "info": {},
+        "layout": {},
+        "level": 66,
+        "name": "The Canals",
+        "rating": {},
+        "shorthand": "nals",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_3_6",
+        "info": {},
+        "layout": {},
+        "level": 27,
+        "name": "The Catacombs",
+        "rating": {},
+        "shorthand": "mbs",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/KitavaBoss/Kitava1"
+            ],
+            "names": [
+                "Kitava, the Insatiable"
+            ]
+        },
+        "id": "1_5_8",
+        "info": {},
+        "layout": {},
+        "level": 45,
+        "name": "The Cathedral Rooftop",
+        "rating": {},
+        "shorthand": "Roo",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_7_10",
+        "info": {},
+        "layout": {},
+        "level": 54,
+        "name": "The Causeway",
+        "rating": {},
+        "shorthand": "Cau",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Seawitch/SeaWitchBossFirestorm",
+                "Metadata/Monsters/seawitchillusion/BossMerveil"
+            ],
+            "names": [
+                "Brinecrack"
+            ]
+        },
+        "id": "1_1_11_2",
+        "info": {},
+        "layout": {},
+        "level": 13,
+        "name": "The Cavern of Anger",
+        "rating": {},
+        "shorthand": "Ang",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Seawitch/SeaWitchBossSpark"
+            ]
+        },
+        "id": "1_1_11_1",
+        "info": {},
+        "layout": {},
+        "level": 12,
+        "name": "The Cavern of Wrath",
+        "rating": {},
+        "shorthand": "Wr",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DropBear/DropBearBoss2"
+            ],
+            "names": [
+                "Q'uru"
+            ]
+        },
+        "id": "1_2_14_2",
+        "info": {},
+        "layout": {},
+        "level": 22,
+        "name": "The Caverns",
+        "rating": {},
+        "shorthand": "he Caverns",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AvariusCasticus/AvariusCasticus"
+            ]
+        },
+        "id": "1_5_5",
+        "info": {},
+        "layout": {},
+        "level": 43,
+        "name": "The Chamber of Innocence",
+        "rating": {},
+        "shorthand": "nno",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Spiders/SpiderBossSins"
+            ],
+            "names": [
+                "Black Death"
+            ]
+        },
+        "id": "1_2_6_1",
+        "info": {},
+        "layout": {},
+        "level": 15,
+        "name": "The Chamber of Sins Level 1",
+        "rating": {},
+        "shorthand": "ns Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonFourLegged/BossFourLeggedDemon"
+            ],
+            "names": [
+                "Plague Retch"
+            ]
+        },
+        "id": "1_2_6_2",
+        "info": {},
+        "layout": {},
+        "level": 16,
+        "name": "The Chamber of Sins Level 2",
+        "rating": {},
+        "shorthand": "ns Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/GuardLieutenantClarissa"
+            ]
+        },
+        "id": "1_3_1",
+        "info": {},
+        "layout": {},
+        "level": 23,
+        "name": "The City of Sarn",
+        "rating": {},
+        "shorthand": "e Ci",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Goatman/GoatmanLeapSlamNavaliBoss",
+                "Metadata/Monsters/Skeletons/SkeletonBossRanged"
+            ]
+        },
+        "id": "1_1_6",
+        "info": {},
+        "layout": {},
+        "level": 7,
+        "name": "The Climb",
+        "rating": {},
+        "shorthand": "Cli",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Cannibal/CannibalFemaleBossWitch"
+            ],
+            "names": [
+                "Raihara, Tukohama's Loyal"
+            ]
+        },
+        "id": "1_1_2",
+        "info": {},
+        "layout": {},
+        "level": 2,
+        "name": "The Coast",
+        "rating": {},
+        "shorthand": "Coa",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BlackguardInquisitor/Bloodwing"
+            ],
+            "names": [
+                "Vilenta"
+            ]
+        },
+        "id": "1_5_2",
+        "info": {},
+        "layout": {},
+        "level": 41,
+        "name": "The Control Blocks",
+        "rating": {},
+        "shorthand": "ntr",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -6359,10 +8676,752 @@
         "level": 74,
         "name": "The Coward's Trial",
         "rating": {},
-        "shorthand": "d'",
-        "unique": true,
+        "shorthand": "Cow",
+        "type": "unique map",
         "x": 824,
         "y": 267
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/PietyEscape",
+                "Metadata/Monsters/MossMonster/FireMonsterBoss"
+            ]
+        },
+        "id": "1_3_3_1",
+        "info": {},
+        "layout": {},
+        "level": 25,
+        "name": "The Crematorium",
+        "rating": {},
+        "shorthand": " Cre",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonMeleeBossCrossroads"
+            ],
+            "names": [
+                "Bravalo"
+            ]
+        },
+        "id": "1_2_3",
+        "info": {},
+        "layout": {},
+        "level": 15,
+        "name": "The Crossroads",
+        "rating": {},
+        "shorthand": "sr",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_7_4",
+        "info": {},
+        "layout": {},
+        "level": 51,
+        "name": "The Crypt",
+        "rating": {},
+        "shorthand": "The Crypt",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_2_5_1",
+        "info": {},
+        "layout": {},
+        "level": 17,
+        "name": "The Crypt Level 1",
+        "rating": {},
+        "shorthand": "pt Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonBossMelee"
+            ]
+        },
+        "id": "1_2_5_2",
+        "info": {},
+        "layout": {},
+        "level": 18,
+        "name": "The Crypt Level 2",
+        "rating": {},
+        "shorthand": "pt Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Miner/MinerLanternBoss"
+            ]
+        },
+        "id": "1_4_3_3",
+        "info": {},
+        "layout": {},
+        "level": 36,
+        "name": "The Crystal Veins",
+        "rating": {},
+        "shorthand": "ei",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Beasts/BeastBossWhite"
+            ],
+            "names": [
+                "Vic Vox",
+                "Vinny Vox"
+            ]
+        },
+        "id": "1_2_2a",
+        "info": {},
+        "layout": {},
+        "level": 15,
+        "name": "The Den",
+        "rating": {},
+        "shorthand": "e Den",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_9_2",
+        "info": {},
+        "layout": {},
+        "level": 61,
+        "name": "The Descent",
+        "rating": {},
+        "shorthand": "esc",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickerman"
+            ]
+        },
+        "id": "2_10_4",
+        "info": {},
+        "layout": {},
+        "level": 65,
+        "name": "The Desecrated Chambers",
+        "rating": {},
+        "shorthand": "cra",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_3_9",
+        "info": {},
+        "layout": {},
+        "level": 29,
+        "name": "The Docks",
+        "rating": {},
+        "shorthand": "Doc",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "names": [
+                "Gruthkul, Mother of Despair",
+                "The Dreadstone"
+            ]
+        },
+        "id": "1_2_13",
+        "info": {},
+        "layout": {},
+        "level": 21,
+        "name": "The Dread Thicket",
+        "rating": {},
+        "shorthand": " Th",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierRangedBoss",
+                "Metadata/Monsters/Voll/VollBoss"
+            ]
+        },
+        "id": "1_4_2",
+        "info": {},
+        "layout": {},
+        "level": 34,
+        "name": "The Dried Lake",
+        "rating": {},
+        "shorthand": "Dri",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisGeneral"
+            ]
+        },
+        "id": "1_3_13",
+        "info": {},
+        "layout": {},
+        "level": 29,
+        "name": "The Ebony Barracks",
+        "rating": {},
+        "shorthand": "Eb",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/TotemBossEndlessLedge"
+            ]
+        },
+        "id": "EndlessLedge1",
+        "info": {},
+        "layout": {},
+        "level": 2,
+        "name": "The Endless Ledge",
+        "rating": {},
+        "shorthand": "dl",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "3_3_8_4",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "The Eternal Laboratory",
+        "rating": {},
+        "shorthand": "Et",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "2_11_1",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "The Fallen Courts",
+        "rating": {},
+        "shorthand": " Fa",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/KitavaBoss/KitavaFinal"
+            ]
+        },
+        "id": "2_10_6",
+        "info": {},
+        "layout": {},
+        "level": 67,
+        "name": "The Feeding Trough",
+        "rating": {},
+        "shorthand": "Fee",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "names": [
+                "Bundle of Woe"
+            ]
+        },
+        "id": "1_2_15",
+        "info": {},
+        "layout": {},
+        "level": 16,
+        "name": "The Fellshrine Ruins",
+        "rating": {},
+        "shorthand": "Fel",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Necromancer/NecromancerBossFetidPool"
+            ]
+        },
+        "id": "1_1_3a",
+        "info": {},
+        "layout": {},
+        "level": 5,
+        "name": "The Fetid Pool",
+        "rating": {},
+        "shorthand": "Fet",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/ShieldCrabs/ShieldCrabBossSlowAura"
+            ]
+        },
+        "id": "1_1_4_0",
+        "info": {},
+        "layout": {},
+        "level": 6,
+        "name": "The Flooded Depths",
+        "rating": {},
+        "shorthand": " Flo",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Bull/BullBossFoothills"
+            ]
+        },
+        "id": "2_9_5",
+        "info": {},
+        "layout": {},
+        "level": 62,
+        "name": "The Foothills",
+        "rating": {},
+        "shorthand": "Foo",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "SanctumFoyer_Fellshrine",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Forbidden Sanctum",
+        "rating": {},
+        "shorthand": "n Sa",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "BetrayalStoryVault",
+        "info": {},
+        "layout": {},
+        "level": 61,
+        "name": "The Forbidden Vault",
+        "rating": {},
+        "shorthand": "n V",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptain",
+                "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireEarthquake",
+                "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireFireball",
+                "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireGlacialCascade"
+            ]
+        },
+        "id": "2_8_9",
+        "info": {},
+        "layout": {},
+        "level": 57,
+        "name": "The Grain Gate",
+        "rating": {},
+        "shorthand": "rai",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Daresso/DaressoBoss",
+                "Metadata/Monsters/GladiatorBosses/GladiatorBossElite",
+                "Metadata/Monsters/GladiatorBosses/GladiatorBossLeader",
+                "Metadata/Monsters/GladiatorBosses/GladiatorBossSupport"
+            ]
+        },
+        "id": "1_4_5_2",
+        "info": {},
+        "layout": {},
+        "level": 38,
+        "name": "The Grand Arena",
+        "rating": {},
+        "shorthand": "and A",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/WarHero/WarHeroDuelistBoss"
+            ]
+        },
+        "id": "2_8_3",
+        "info": {},
+        "layout": {},
+        "level": 56,
+        "name": "The Grand Promenade",
+        "rating": {},
+        "shorthand": "d Pr",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "HallsOfTheDead_League",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Halls of the Dead",
+        "rating": {},
+        "shorthand": " Dea",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/LunarisSolaris/Lunaris",
+                "Metadata/Monsters/LunarisSolaris/Solaris"
+            ]
+        },
+        "id": "2_8_13",
+        "info": {},
+        "layout": {},
+        "level": 60,
+        "name": "The Harbour Bridge",
+        "rating": {},
+        "shorthand": "bou",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Doedre/Doedre",
+                "Metadata/Monsters/Malachai/MalachaiBoss",
+                "Metadata/Monsters/Malachai/MalachaiBoss2",
+                "Metadata/Monsters/Maligaro/Maligaro",
+                "Metadata/Monsters/Shavronne/Shavronne"
+            ],
+            "names": [
+                "Doedre Darktongue",
+                "Malachai, The Nightmare",
+                "Maligaro, The Inquisitor",
+                "Shavronne of Umbra"
+            ]
+        },
+        "icon": "Art/2DItems/Weapons/TwoHandWeapons/TwoHandAxes/TheExtractor",
+        "id": "1_4_6_3",
+        "info": {},
+        "layout": {},
+        "level": 40,
+        "name": "The Harvest",
+        "rating": {},
+        "shorthand": "arv",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_11_2",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "The Haunted Reliquary",
+        "rating": {},
+        "shorthand": " Hau",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Frog/FrogGod/SilverFrog"
+            ]
+        },
+        "id": "2_8_4",
+        "info": {},
+        "layout": {},
+        "level": 58,
+        "name": "The High Gardens",
+        "rating": {},
+        "shorthand": " Hi",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/Scarecrow/ScarecrowPitchforkBoss"
+            ]
+        },
+        "id": "2_8_10",
+        "info": {},
+        "layout": {},
+        "level": 58,
+        "name": "The Imperial Fields",
+        "rating": {},
+        "shorthand": "l F",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/RootSpiders/RootSpiderHiddenBoss",
+                "Metadata/Monsters/Spiker/SpikerBoss"
+            ]
+        },
+        "id": "1_3_15",
+        "info": {},
+        "layout": {},
+        "level": 30,
+        "name": "The Imperial Gardens",
+        "rating": {},
+        "shorthand": "l G",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Tukohama/Tukohama"
+            ]
+        },
+        "id": "2_6_5",
+        "info": {},
+        "layout": {},
+        "level": 46,
+        "name": "The Karui Fortress",
+        "rating": {},
+        "shorthand": "Kar",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "LakePrototype",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Lake of Kalandra",
+        "rating": {},
+        "shorthand": "Kal",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Totems/TotemBossSpark"
+            ]
+        },
+        "id": "1_1_5",
+        "info": {},
+        "layout": {},
+        "level": 6,
+        "name": "The Ledge",
+        "rating": {},
+        "shorthand": "e Led",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_3_17_1",
+        "info": {},
+        "layout": {},
+        "level": 30,
+        "name": "The Library",
+        "rating": {},
+        "shorthand": "br",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonBossPrisonMelee"
+            ],
+            "names": [
+                "Chatters"
+            ]
+        },
+        "id": "1_1_7_1",
+        "info": {},
+        "layout": {},
+        "level": 8,
+        "name": "The Lower Prison",
+        "rating": {},
+        "shorthand": " Lo",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisEliteLunarisBoss_"
+            ]
+        },
+        "id": "2_8_6",
+        "info": {},
+        "layout": {},
+        "level": 58,
+        "name": "The Lunaris Concourse",
+        "rating": {},
+        "shorthand": "naris C",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisBossExperimenter",
+                "Metadata/Monsters/Brute/BossBrute2"
+            ],
+            "names": [
+                "Fleshrend, Grand Inquisitor",
+                "Kole"
+            ]
+        },
+        "id": "1_3_14_1",
+        "info": {},
+        "layout": {},
+        "level": 29,
+        "name": "The Lunaris Temple Level 1",
+        "rating": {},
+        "shorthand": "naris Temple Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/PietyBoss",
+                "Metadata/Monsters/DemonFemale/DemonBossFemale"
+            ],
+            "names": [
+                "Dusk, Harbinger of Lunaris"
+            ]
+        },
+        "id": "1_3_14_2",
+        "info": {},
+        "layout": {},
+        "level": 30,
+        "name": "The Lunaris Temple Level 2",
+        "rating": {},
+        "shorthand": "naris Temple Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Statue/StoneStatueLargeBossMale"
+            ]
+        },
+        "id": "1_3_5",
+        "info": {},
+        "layout": {},
+        "level": 26,
+        "name": "The Marketplace",
+        "rating": {},
+        "shorthand": "tp",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "Menagerie_Hub",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Menagerie",
+        "rating": {},
+        "shorthand": " Men",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Miner/MinerHammerBoss"
+            ]
+        },
+        "id": "1_4_3_1",
+        "info": {},
+        "layout": {},
+        "level": 34,
+        "name": "The Mines Level 1",
+        "rating": {},
+        "shorthand": "es Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Handfinger/HandfingerBoss",
+                "Metadata/Monsters/MineBat/MineBatBoss"
+            ]
+        },
+        "id": "1_4_3_2",
+        "info": {},
+        "layout": {},
+        "level": 35,
+        "name": "The Mines Level 2",
+        "rating": {},
+        "shorthand": "es Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Rhoas/RhoaBoss"
+            ],
+            "names": [
+                "Forgotten Warrior",
+                "The Dishonoured Queen"
+            ]
+        },
+        "id": "1_1_3",
+        "info": {},
+        "layout": {},
+        "level": 4,
+        "name": "The Mud Flats",
+        "rating": {},
+        "shorthand": " Mu",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "names": [
+                "Tunnelworm"
+            ]
+        },
+        "id": "1_2_8",
+        "info": {},
+        "layout": {},
+        "level": 21,
+        "name": "The Northern Forest",
+        "rating": {},
+        "shorthand": "No",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Shakari/Shakari",
+                "Metadata/Monsters/Shakari/Shakari2"
+            ]
+        },
+        "id": "2_9_4",
+        "info": {},
+        "layout": {},
+        "level": 61,
+        "name": "The Oasis",
+        "rating": {},
+        "shorthand": "Oa",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/MossMonster/MossMonsterBossOldFields"
+            ]
+        },
+        "id": "1_2_2",
+        "info": {},
+        "layout": {},
+        "level": 14,
+        "name": "The Old Fields",
+        "rating": {},
+        "shorthand": " Ol",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_5_6",
+        "info": {},
+        "layout": {},
+        "level": 44,
+        "name": "The Ossuary",
+        "rating": {},
+        "shorthand": "Os",
+        "type": "act area"
     },
     {
         "boss": {
@@ -6386,29 +9445,8 @@
         "level": 75,
         "name": "The Pale Court",
         "rating": {},
-        "shorthand": "ale",
-        "unique": true
-    },
-    {
-        "boss": {
-            "separated": true
-        },
-        "icon": "Art/2DItems/Maps/PerandusManor",
-        "id": "MapWorldsChateauUnique",
-        "image": false,
-        "info": {
-            "boss": "The Perandus Manor contains three hidden boss rooms scattered about the map. Secret switches, of which the tags are hidden unless one's mouse is hovered directly over it, must be pressed in order to enter one of these rooms. Within these boss rooms, there will be more than one Perandus chest, similar to the ones found in the Perandus league (with the exception of them being referred to as Cadiro's rather than just Perandus'). Guarding these chests are packs of Perandus monsters and one of the above-listed bosses, of whom must be defeated in order to open the chest. The map is considered completed by the Atlas' standards as soon as all the bosses are defeated, even if their respective chests remain unopened."
-        },
-        "layout": {
-            "few_obstacles": false,
-            "linear": false,
-            "outdoors": false
-        },
-        "level": 71,
-        "name": "The Perandus Manor",
-        "rating": {},
-        "shorthand": "du",
-        "unique": true
+        "shorthand": " Pal",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -6438,15 +9476,203 @@
         "level": 79,
         "name": "The Putrid Cloister",
         "rating": {},
-        "shorthand": "Cl",
-        "unique": true,
+        "shorthand": "Pu",
+        "type": "unique map",
         "x": 802,
         "y": 168
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/AtlasBosses/TheShaperBoss"
+                "Metadata/Monsters/Garukhan/Garukhan"
+            ]
+        },
+        "id": "2_9_8",
+        "info": {},
+        "layout": {},
+        "level": 63,
+        "name": "The Quarry",
+        "rating": {},
+        "shorthand": "rry",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Zombies/ZombieBossTolman_"
+            ]
+        },
+        "id": "2_8_8",
+        "info": {},
+        "layout": {},
+        "level": 57,
+        "name": "The Quay",
+        "rating": {},
+        "shorthand": "uay",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossZombie2"
+            ]
+        },
+        "id": "2_10_2",
+        "info": {},
+        "layout": {},
+        "level": 64,
+        "name": "The Ravaged Square",
+        "rating": {},
+        "shorthand": "vag",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/GeneralAdus/GeneralAdus"
+            ]
+        },
+        "id": "2_9_9",
+        "info": {},
+        "layout": {},
+        "level": 63,
+        "name": "The Refinery",
+        "rating": {},
+        "shorthand": "Ref",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_5_7",
+        "info": {},
+        "layout": {},
+        "level": 44,
+        "name": "The Reliquary",
+        "rating": {},
+        "shorthand": "he Rel",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/CorpseWheel/CorpseWheelBoss"
+            ]
+        },
+        "id": "2_6_6",
+        "info": {},
+        "layout": {},
+        "level": 46,
+        "name": "The Ridge",
+        "rating": {},
+        "shorthand": "e Rid",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "names": [
+                "The Animal Pack"
+            ]
+        },
+        "id": "1_2_7",
+        "info": {},
+        "layout": {},
+        "level": 15,
+        "name": "The Riverways",
+        "rating": {},
+        "shorthand": "verw",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Doedre/DoedreSoul",
+                "Metadata/Monsters/Maligaro/MaligaroSoul",
+                "Metadata/Monsters/Shavronne/ShavronneSoul",
+                "Metadata/Monsters/UnholyTrio/UnholyTrio"
+            ]
+        },
+        "id": "2_9_10_2",
+        "info": {},
+        "layout": {},
+        "level": 64,
+        "name": "The Rotting Core",
+        "rating": {},
+        "shorthand": "Rot",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BlacksmithGolem/BlacksmithGolem",
+                "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossZombie"
+            ]
+        },
+        "id": "1_5_3b",
+        "info": {},
+        "layout": {},
+        "level": 44,
+        "name": "The Ruined Square",
+        "rating": {},
+        "shorthand": "uine",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "HarvestLeagueBoss",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Sacred Grove",
+        "rating": {},
+        "shorthand": "Grov",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "2_8_1",
+        "info": {},
+        "layout": {},
+        "level": 55,
+        "name": "The Sarn Ramparts",
+        "rating": {},
+        "shorthand": " Ram",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Undying/CityStalkerFemaleBoss"
+            ],
+            "names": [
+                "Caliga, Imperatrix"
+            ]
+        },
+        "id": "1_3_18_1",
+        "info": {},
+        "layout": {},
+        "level": 32,
+        "name": "The Sceptre of God",
+        "rating": {},
+        "shorthand": "e Sc",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_3_10_1",
+        "info": {},
+        "layout": {},
+        "level": 26,
+        "name": "The Sewers",
+        "rating": {},
+        "shorthand": "e Se",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
+                "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder"
             ],
             "names": [
                 "The Elder",
@@ -6455,35 +9681,342 @@
             "not_twinnable": true
         },
         "icon": "Art/2DItems/Maps/AtlasMaps/Atlas",
-        "id": "MapWorldsShapersRealm",
+        "id": "MapWorldsElderArenaUber",
         "image": false,
         "info": {},
         "layout": {},
         "level": 84,
         "name": "The Shaper's Realm",
         "rating": {},
-        "shorthand": "r'",
-        "unique": true
+        "shorthand": "Rea",
+        "type": "unique map"
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
+                "Metadata/Monsters/Skeletons/SkeletonBossFairgraves"
+            ]
+        },
+        "id": "1_1_9",
+        "info": {},
+        "layout": {},
+        "level": 11,
+        "name": "The Ship Graveyard",
+        "rating": {},
+        "shorthand": "The Ship Graveyard",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/WaterElemental/WaterElementaBossShipCave"
+            ]
+        },
+        "id": "1_1_9a",
+        "info": {},
+        "layout": {},
+        "level": 12,
+        "name": "The Ship Graveyard Cave",
+        "rating": {},
+        "shorthand": "rd C",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBoss"
+            ]
+        },
+        "id": "1_5_1",
+        "info": {},
+        "layout": {},
+        "level": 41,
+        "name": "The Slave Pens",
+        "rating": {},
+        "shorthand": " Pe",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Undying/UndyingBossOutcast"
+            ]
+        },
+        "id": "1_3_2",
+        "info": {},
+        "layout": {},
+        "level": 24,
+        "name": "The Slums",
+        "rating": {},
+        "shorthand": "Slu",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisEliteSolarisBoss"
+            ]
+        },
+        "id": "2_8_11",
+        "info": {},
+        "layout": {},
+        "level": 58,
+        "name": "The Solaris Concourse",
+        "rating": {},
+        "shorthand": "laris C",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Guardians/GuardianBossFire",
+                "Metadata/Monsters/Guardians/GuardianBossLightning"
             ],
+            "names": [
+                "The Infernal Seal",
+                "The Voltaic Seal"
+            ]
+        },
+        "id": "1_3_8_1",
+        "info": {},
+        "layout": {},
+        "level": 27,
+        "name": "The Solaris Temple Level 1",
+        "rating": {},
+        "shorthand": "laris Temple Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Guardians/GuardianBossHeadCold",
+                "Metadata/Monsters/Guardians/GuardianBossHeadFire",
+                "Metadata/Monsters/Guardians/GuardianBossHeadLightning"
+            ],
+            "names": [
+                "Dawn, Harbinger of Solaris"
+            ]
+        },
+        "id": "1_3_8_2",
+        "info": {},
+        "layout": {},
+        "level": 28,
+        "name": "The Solaris Temple Level 2",
+        "rating": {},
+        "shorthand": "laris Temple Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Bandits/BanditBossHeavyStrike_"
+            ],
+            "names": [
+                "Hollowskull, the Willing Host"
+            ]
+        },
+        "id": "1_2_1",
+        "info": {},
+        "layout": {},
+        "level": 13,
+        "name": "The Southern Forest",
+        "rating": {},
+        "shorthand": "uth",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Seawitch/SeaWitchBossSubmerged"
+            ]
+        },
+        "id": "1_1_4_1",
+        "info": {},
+        "layout": {},
+        "level": 5,
+        "name": "The Submerged Passage",
+        "rating": {},
+        "shorthand": "bm",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "AfflictionTown8",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "The Syndrome Encampment",
+        "rating": {},
+        "shorthand": "pm",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "1_5_4",
+        "info": {},
+        "layout": {},
+        "level": 42,
+        "name": "The Templar Courts",
+        "rating": {},
+        "shorthand": "r C",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_11_lab",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "The Templar Laboratory",
+        "rating": {},
+        "shorthand": "ar L",
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
+            ],
+            "names": [
+                "The Vaal Omnitect"
+            ]
+        },
+        "id": "Incursion_Temple2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Temple of Atzoatl",
+        "rating": {},
+        "shorthand": "zo",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Skeletons/SkeletonMeleeKnightElementalLargeSwordBoss"
+            ]
+        },
+        "id": "2_7_12_1",
+        "info": {},
+        "layout": {},
+        "level": 54,
+        "name": "The Temple of Decay Level 1",
+        "rating": {},
+        "shorthand": "y Level 1",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSpiderGod/Arakaali"
+            ]
+        },
+        "id": "2_7_12_2",
+        "info": {},
+        "layout": {},
+        "level": 55,
+        "name": "The Temple of Decay Level 2",
+        "rating": {},
+        "shorthand": "y Level 2",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Cannibal/CannibalMaleBossHailrake"
+            ],
+            "names": [
+                "Riptide"
+            ]
+        },
+        "id": "1_1_2a",
+        "info": {},
+        "layout": {},
+        "level": 3,
+        "name": "The Tidal Island",
+        "rating": {},
+        "shorthand": "Tid",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBoss"
+            ],
+            "names": [
+                "Cato, Scholar of Light"
+            ]
+        },
+        "id": "1_5_4b",
+        "info": {},
+        "layout": {},
+        "level": 44,
+        "name": "The Torched Courts",
+        "rating": {},
+        "shorthand": "Tor",
+        "type": "act area"
+    },
+    {
+        "boss": {
             "names": [
                 "The Trialmaster"
             ]
         },
         "icon": "Art/2DItems/Maps/TrialmasterMap",
-        "id": "MapWorldsUltimatumBossArena",
-        "image": false,
+        "id": "UltimatumBossArena",
         "info": {},
         "layout": {},
         "level": 83,
         "name": "The Tower of Ordeals",
         "rating": {},
         "shorthand": "Ord",
-        "unique": true
+        "type": "special area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Zombies/ZombieGiantSummoningPackMember"
+            ]
+        },
+        "id": "2_8_2_1",
+        "info": {},
+        "layout": {},
+        "level": 56,
+        "name": "The Toxic Conduits",
+        "rating": {},
+        "shorthand": " Tox",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_9_7",
+        "info": {},
+        "layout": {},
+        "level": 62,
+        "name": "The Tunnel",
+        "rating": {},
+        "shorthand": "Tun",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/ZombieBoss/ZombieBossHillockNormal"
+            ],
+            "names": [
+                "Rhys of Abram"
+            ]
+        },
+        "id": "1_1_1",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Twilight Strand",
+        "rating": {},
+        "shorthand": "ht S",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -6515,10 +10048,89 @@
         "level": 71,
         "name": "The Twilight Temple",
         "rating": {},
-        "shorthand": " Tw",
-        "unique": true,
+        "shorthand": "t T",
+        "type": "unique map",
         "x": 172,
         "y": 380
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Brute/BossBrute",
+                "Metadata/Monsters/Necromancer/NecromancerBossPrison"
+            ]
+        },
+        "id": "1_1_7_2",
+        "info": {},
+        "layout": {},
+        "level": 9,
+        "name": "The Upper Prison",
+        "rating": {},
+        "shorthand": "per P",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/AxisCasterBoss1",
+                "Metadata/Monsters/Axis/AxisEliteSoldierBoss1",
+                "Metadata/Monsters/Axis/AxisEliteSoldierBoss2",
+                "Metadata/Monsters/GemMonster/IguanaBoss",
+                "Metadata/Monsters/Pope/Pope"
+            ]
+        },
+        "id": "1_3_18_2",
+        "info": {},
+        "layout": {},
+        "level": 33,
+        "name": "The Upper Sceptre of God",
+        "rating": {},
+        "shorthand": "er S",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "UltimatumArena",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "The Utzaal Arena",
+        "rating": {},
+        "shorthand": "Ut",
+        "type": "special area"
+    },
+    {
+        "boss": {},
+        "id": "2_7_11",
+        "info": {},
+        "layout": {},
+        "level": 54,
+        "name": "The Vaal City",
+        "rating": {},
+        "shorthand": "aal C",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "1_2_11",
+        "info": {},
+        "layout": {},
+        "level": 20,
+        "name": "The Vaal Ruins",
+        "rating": {},
+        "shorthand": "aal Ru",
+        "type": "act area"
+    },
+    {
+        "boss": {},
+        "id": "2_9_3",
+        "info": {},
+        "layout": {},
+        "level": 61,
+        "name": "The Vastiri Desert",
+        "rating": {},
+        "shorthand": "Vas",
+        "type": "act area"
     },
     {
         "boss": {
@@ -6545,7 +10157,59 @@
         "name": "The Vinktar Square",
         "rating": {},
         "shorthand": "kt",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Spiders/SpiderBossWeaver"
+            ]
+        },
+        "id": "1_2_10",
+        "info": {},
+        "layout": {},
+        "level": 18,
+        "name": "The Weaver's Chambers",
+        "rating": {},
+        "shorthand": "Wea",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/Axis/Lieutenant/LieutenantLetter",
+                "Metadata/Monsters/BanditLeaderInt/BanditLeaderAlira"
+            ],
+            "names": [
+                "Defiled Proclamation"
+            ]
+        },
+        "id": "1_2_9",
+        "info": {},
+        "layout": {},
+        "level": 17,
+        "name": "The Western Forest",
+        "rating": {},
+        "shorthand": "Wes",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BanditLeaderStrDex/BanditLeaderOak"
+            ],
+            "names": [
+                "Ryslatha, the Puppet Mistress"
+            ]
+        },
+        "id": "1_2_12",
+        "info": {},
+        "layout": {},
+        "level": 19,
+        "name": "The Wetlands",
+        "rating": {},
+        "shorthand": "Wet",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -6589,10 +10253,22 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Thi",
-        "unique": false,
+        "shorthand": "Thicket",
+        "type": "map",
         "x": 722,
         "y": 318
+    },
+    {
+        "boss": {},
+        "id": "ClassicTreasury_2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Timeworn Reliquary",
+        "rating": {},
+        "shorthand": "wo",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -6639,7 +10315,7 @@
             "layout": 8
         },
         "shorthand": "Tower",
-        "unique": false,
+        "type": "map",
         "x": 475,
         "y": 192
     },
@@ -6677,8 +10353,8 @@
             "density": 7,
             "layout": 10
         },
-        "shorthand": "ox",
-        "unique": false
+        "shorthand": "c S",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -6721,15 +10397,34 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": " I",
-        "unique": false,
+        "shorthand": "opi",
+        "type": "map",
         "x": 345,
         "y": 336
     },
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Tukohama/TukohamaMap"
+                "Metadata/Monsters/BreachBosses/BreachBossColdMap"
+            ],
+            "names": [
+                "Tul, Creeping Avalanche"
+            ]
+        },
+        "id": "BreachBossCold",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 81,
+        "name": "Tul's Domain",
+        "rating": {},
+        "shorthand": "Tul",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
             ],
             "names": [
                 "Twisted Synthete"
@@ -6743,8 +10438,26 @@
         "level": 68,
         "name": "Twisted Distant Memory",
         "rating": {},
-        "shorthand": "wis",
-        "unique": true
+        "shorthand": "sted D",
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/VaalSideAreaBosses/VaalSideAreaBoss3_"
+            ],
+            "names": [
+                "Anacuacotli, Death's Worship"
+            ]
+        },
+        "id": "1_SideArea5_5",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Twisted Inquisitorium",
+        "rating": {},
+        "shorthand": "nq",
+        "type": "act area"
     },
     {
         "atlas": true,
@@ -6787,7 +10500,7 @@
             "layout": 10
         },
         "shorthand": "nd R",
-        "unique": false,
+        "type": "map",
         "x": 768,
         "y": 96
     },
@@ -6835,8 +10548,8 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "d S",
-        "unique": false,
+        "shorthand": "d Se",
+        "type": "map",
         "x": 367,
         "y": 191
     },
@@ -6868,7 +10581,26 @@
         "name": "Untainted Paradise",
         "rating": {},
         "shorthand": "Unt",
-        "unique": true
+        "type": "unique map"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BreachBosses/BreachBossPhysicalMap"
+            ],
+            "names": [
+                "Uul-Netol, Unburdened Flesh"
+            ]
+        },
+        "id": "BreachBossPhysical2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Uul-Netol's Domain",
+        "rating": {},
+        "shorthand": "-N",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -6917,10 +10649,22 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "Py",
-        "unique": false,
+        "shorthand": "l Py",
+        "type": "map",
         "x": 330,
         "y": 379
+    },
+    {
+        "boss": {},
+        "id": "ClassicTreasury_Vaal",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Vaal Reliquary",
+        "rating": {},
+        "shorthand": "aal Re",
+        "type": "unique map"
     },
     {
         "boss": {
@@ -6963,7 +10707,7 @@
             "layout": 2
         },
         "shorthand": "l T",
-        "unique": false
+        "type": "map"
     },
     {
         "atlas": true,
@@ -7001,7 +10745,7 @@
             "layout": 6
         },
         "shorthand": "Vault",
-        "unique": false,
+        "type": "map",
         "x": 650,
         "y": 190
     },
@@ -7033,10 +10777,26 @@
         "level": 71,
         "name": "Vaults of Atziri",
         "rating": {},
-        "shorthand": "tz",
-        "unique": true,
+        "shorthand": "zi",
+        "type": "unique map",
         "x": 359,
         "y": 366
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
+            ]
+        },
+        "id": "MapWorldsElder_Temple",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Vaults of Insanity Map",
+        "rating": {},
+        "shorthand": "Ins",
+        "type": "map"
     },
     {
         "boss": {
@@ -7067,7 +10827,31 @@
             "layout": 8
         },
         "shorthand": "Vil",
-        "unique": false
+        "type": "map"
+    },
+    {
+        "boss": {},
+        "id": "UberEaterOfWorldsVault",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 87,
+        "name": "Visceral Reliquary",
+        "rating": {},
+        "shorthand": "Vis",
+        "type": "unique map"
+    },
+    {
+        "boss": {},
+        "id": "ClassicTreasury_Cosmic",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 75,
+        "name": "Voidborn Reliquary",
+        "rating": {},
+        "shorthand": "db",
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -7111,10 +10895,47 @@
             "density": 7,
             "layout": 6
         },
-        "shorthand": "Vo",
-        "unique": false,
+        "shorthand": "Vol",
+        "type": "map",
         "x": 285,
         "y": 348
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/DemonFemale/WhipDemonBossSideArea"
+            ],
+            "names": [
+                "Cava, Artist of Pain"
+            ]
+        },
+        "id": "1_SideArea3_7",
+        "info": {},
+        "layout": {},
+        "level": 1,
+        "name": "Walled-off Ducts",
+        "rating": {},
+        "shorthand": "-o",
+        "type": "act area"
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasExiles/AtlasExile4",
+                "Metadata/Monsters/AtlasExiles/AtlasExile4Apparition"
+            ],
+            "names": [
+                "Drox, The Warlord"
+            ]
+        },
+        "id": "AtlasExilesBoss4",
+        "info": {},
+        "layout": {},
+        "level": 68,
+        "name": "Warlord's Keep",
+        "rating": {},
+        "shorthand": "Ke",
+        "type": "special area"
     },
     {
         "boss": {
@@ -7151,8 +10972,8 @@
             "density": 3,
             "layout": 10
         },
-        "shorthand": "te ",
-        "unique": false
+        "shorthand": "e Po",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -7195,9 +11016,25 @@
             "layout": 6
         },
         "shorthand": "ela",
-        "unique": false,
+        "type": "map",
         "x": 642,
         "y": 451
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
+            ]
+        },
+        "id": "MapWorldsElder_Sulphur",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 82,
+        "name": "Wastes of Lunacy Map",
+        "rating": {},
+        "shorthand": "f L",
+        "type": "map"
     },
     {
         "atlas": true,
@@ -7235,8 +11072,8 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "rw",
-        "unique": false,
+        "shorthand": "Wate",
+        "type": "map",
         "x": 503,
         "y": 231
     },
@@ -7274,8 +11111,8 @@
         "level": 70,
         "name": "Whakawairua Tuahu",
         "rating": {},
-        "shorthand": "Tu",
-        "unique": true,
+        "shorthand": "ah",
+        "type": "unique map",
         "x": 814,
         "y": 463
     },
@@ -7320,8 +11157,27 @@
             "layout": 8
         },
         "shorthand": "rf",
-        "unique": false,
+        "type": "map",
         "x": 303,
         "y": 115
+    },
+    {
+        "boss": {
+            "ids": [
+                "Metadata/Monsters/BreachBosses/BreachBossFireMap"
+            ],
+            "names": [
+                "Xoph, Dark Embers"
+            ]
+        },
+        "id": "BreachBossFire2",
+        "image": false,
+        "info": {},
+        "layout": {},
+        "level": 81,
+        "name": "Xoph's Domain",
+        "rating": {},
+        "shorthand": "X",
+        "type": "unique map"
     }
 ]

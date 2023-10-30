@@ -2,9 +2,9 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
   return tags.map(t => {
     const val = t.name
     const info = t.info
+    let color = t.color ? 'btn-' + t.color : 'btn-secondary'
 
     const searched = currentSearch && currentSearch.find(c => c.value === val)
-    let color = 'btn-secondary'
     if (searched) {
       color = searched.neg ? 'btn-danger' : 'btn-success'
     }

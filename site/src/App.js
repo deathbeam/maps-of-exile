@@ -39,12 +39,14 @@ function rateMaps(
   const mapsWithCardValues = foundMaps
     .filter(m => {
       switch (mapDisplay) {
+        case 'atlas+unique+special+act':
+          return m.atlas || m.type === 'unique map' || m.type === 'special area' || m.type === 'act area'
+        case 'atlas+unique+special':
+          return m.atlas || m.type === 'unique map' || m.type === 'special area'
         case 'atlas+unique':
-          return m.unique || m.atlas
+          return m.atlas || m.type === 'unique map'
         case 'atlas':
           return m.atlas
-        case 'unique':
-          return m.unique
         default:
           return true
       }
@@ -100,7 +102,7 @@ function rateMaps(
         }
 
         if (cardValueSource === 'kirac') {
-          card.value = map.unique ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
+          card.value = map.type !== 'map' ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
         } else {
           card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
         }
@@ -410,10 +412,11 @@ function App() {
         tooltip: <>Which maps are displayed.</>,
         type: 'select',
         options: {
-          all: 'All maps',
-          atlas: 'Atlas maps',
-          unique: 'Unique maps',
-          'atlas+unique': 'Atlas and unique maps'
+          all: 'All areas',
+          atlas: 'Atlas areas',
+          'atlas+unique': 'Atlas+Unique areas',
+          'atlas+unique+special': 'Atlas+Unique+Special areas',
+          'atlas+unique+special+act': 'Atlas+Unique+Special+Act areas'
         },
         def: mapDisplay
       },

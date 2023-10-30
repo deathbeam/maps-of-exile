@@ -21,15 +21,21 @@ body:
     description: Select map from dropdown or leave at **None** if title is properly
       filled.
     options:
+    - Absence of Mercy and Empathy
+    - Absence of Patience and Wisdom
+    - Absence of Symmetry and Harmony
+    - Absence of Value and Meaning
     - Academy
     - Acid Caverns
     - Acton's Nightmare
     - Alleyways
     - Altered Distant Memory
     - Ancient City
+    - Ancient Reliquary
     - Arachnid Nest
     - Arachnid Tomb
     - Arcade
+    - Archive Reliquary
     - Arena
     - Arid Lake
     - Armoury
@@ -40,11 +46,13 @@ body:
     - Barrows
     - Basilica
     - Bazaar
+    - Beach Landing
     - Beach
     - Belfry
     - Bog
     - Bone Crypt
     - Bramble Valley
+    - BrambleFall
     - Burial Chambers
     - Caer Blaidd, Wolfpack's Den
     - Cage
@@ -56,6 +64,7 @@ body:
     - Cemetery
     - Channel
     - Chateau
+    - Chayula's Domain
     - City Square
     - Cold River
     - Colonnade
@@ -64,6 +73,7 @@ body:
     - Coral Ruins
     - Core
     - Cortex
+    - Cosmic Reliquary
     - Courthouse
     - Courtyard
     - Coves
@@ -72,17 +82,21 @@ body:
     - Crimson Township
     - Crystal Ore
     - Cursed Crypt
+    - Darbel's Promise
     - Dark Forest
     - Death and Taxes
+    - Decaying Reliquary
     - Defiled Cathedral
     - Desert
     - Desert Spring
+    - Desert of Dementia
     - Dig
+    - Domain of Timeless Conflict
     - Doryani's Machinarium
     - Dry Sea
     - Dunes
     - Dungeon
-    - Engraved Ultimatum
+    - Esh's Domain
     - Estuary
     - Excavation
     - Factory
@@ -90,6 +104,8 @@ body:
     - Flooded Mine
     - Forbidden Woods
     - Forge of the Phoenix
+    - Forge of the Titans
+    - Forgotten Reliquary
     - Forking River
     - Foundry
     - Frozen Cabins
@@ -103,11 +119,14 @@ body:
     - Grotto
     - Hall of Grandmasters
     - Hallowed Ground
-    - Harbinger
+    - Halls of Delirium
+    - Harbinger's Isle
     - Haunted Mansion
+    - Hysteriagate
     - Iceberg
     - Infested Valley
     - Infused Beachhead
+    - Islands of Devastation
     - Ivory Temple
     - Jungle Valley
     - Laboratory
@@ -118,8 +137,10 @@ body:
     - Leyline
     - Lighthouse
     - Lookout
+    - Lunacy's Watch
     - "Maelstr\xF6m of Chaos"
     - Malformation
+    - Manor of Madness
     - Mao Kun
     - Marshes
     - Mausoleum
@@ -134,22 +155,28 @@ body:
     - Oba's Cursed Trove
     - Olmec's Sanctum
     - Orchard
+    - Oriath Delusion
+    - Oubliette Reliquary
     - Overgrown Ruin
     - Overgrown Shrine
     - Palace
     - Park
     - Pen
     - Peninsula
+    - Perandus Manor
     - Phantasmagoria
     - Pier
     - Pillars of Arun
     - Pit
     - Pit of the Chimera
+    - Pits of Sorrow
     - Plateau
     - Plaza
+    - Polaric Void
     - Poorjoy's Asylum
     - Port
     - Precinct
+    - Primeval City
     - Primordial Blocks
     - Primordial Pool
     - Promenade
@@ -157,13 +184,16 @@ body:
     - Ramparts
     - Reef
     - Relic Chambers
-    - Replica Cortex
-    - Replica Pillars of Arun
-    - Replica Poorjoy's Asylum
+    - Repository of Derision
     - Residence
     - Rewritten Distant Memory
+    - River of Hysteria
+    - Ruins of Despair
     - Scriptorium
+    - Sea of Isolation
+    - Seething Chyme
     - Sepulchre
+    - Shiny Reliquary
     - Shipyard
     - Shore
     - Shrine
@@ -171,43 +201,58 @@ body:
     - Silo
     - Spider Forest
     - Spider Lair
+    - Spires of Delusion
     - Stagnation
+    - Steppes
     - Strand
     - Sulphur Vents
     - Summit
     - Sunken City
+    - Synthesised World
     - Temple
     - Terrace
     - The Alluring Abyss
     - The Apex of Sacrifice
     - The Beachhead
+    - The Bridge Enraptured
     - The Coward's Trial
+    - The Lake of Kalandra
     - The Pale Court
-    - The Perandus Manor
     - The Putrid Cloister
+    - The Sacred Grove
     - The Shaper's Realm
-    - The Tower of Ordeals
+    - The Syndrome Encampment
+    - The Temple of Atzoatl
     - The Twilight Temple
     - The Vinktar Square
     - Thicket
+    - Timeworn Reliquary
     - Tower
     - Toxic Sewer
     - Tropical Island
+    - Tul's Domain
     - Twisted Distant Memory
     - Underground River
     - Underground Sea
     - Untainted Paradise
+    - Uul-Netol's Domain
     - Vaal Pyramid
+    - Vaal Reliquary
     - Vaal Temple
     - Vault
     - Vaults of Atziri
+    - Vaults of Insanity
     - Villa
+    - Visceral Reliquary
+    - Voidborn Reliquary
     - Volcano
     - Waste Pool
     - Wasteland
+    - Wastes of Lunacy
     - Waterways
     - Whakawairua Tuahu
     - Wharf
+    - Xoph's Domain
   validations:
     required: false
 - type: textarea

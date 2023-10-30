@@ -49,7 +49,7 @@ function CardRateTooltip({ rate, description, name }) {
   )
 }
 
-const MapCard = ({ tooltipTop, unique, card }) => {
+const MapCard = ({ tooltipTop, type, card }) => {
   let badgeClass
   if (card.score >= 8) {
     badgeClass = 'bg-light text-dark'
@@ -94,7 +94,7 @@ const MapCard = ({ tooltipTop, unique, card }) => {
       )}
       <br />
       <CardRateTooltip rate={card.map} description={'map'} />
-      {!unique && (
+      {type === 'map' && (
         <>
           <hr />
           <b>{card.weight}</b> (card weight)
@@ -176,7 +176,7 @@ const MapCard = ({ tooltipTop, unique, card }) => {
   )
 }
 
-const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, unique, cards }) => {
+const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, type, cards }) => {
   const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
   const cardsWithData = useMemo(() => cards.filter(c => !c.hidden).map(c => calculateCardData(c)), [cards])
 
@@ -189,7 +189,7 @@ const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, unique, cards }) 
               .filter(c => c.value > 0)
               .map(c =>
                 cardValueSourceInput === 'kirac' ? (
-                  !unique && <CardRateTooltip rate={c.kirac} description={'kirac mission'} name={c.name} />
+                  type === 'map' && <CardRateTooltip rate={c.kirac} description={'kirac mission'} name={c.name} />
                 ) : (
                   <CardRateTooltip rate={c.map} description={'map'} name={c.name} />
                 )
@@ -209,7 +209,7 @@ const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, unique, cards }) 
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard tooltipTop={tooltipTop} unique={unique} card={c} />
+          <MapCard tooltipTop={tooltipTop} type={type} card={c} />
         ))}
       </div>
     </div>

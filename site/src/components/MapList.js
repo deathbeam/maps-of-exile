@@ -41,7 +41,7 @@ const MapList = ({ map, currentSearch, addToInput, cardValueSourceInput, voidsto
             <MapConnected connected={map.connected} />
           </td>
           <td>
-            <MapCards cardValueSourceInput={cardValueSourceInput} unique={map.unique} cards={map.cards} />
+            <MapCards cardValueSourceInput={cardValueSourceInput} type={map.type} cards={map.cards} />
           </td>
         </>
       ) : (

@@ -201,6 +201,7 @@ const CardsView = ({
             ...new Set([
               out.name,
               out.reward,
+              ...out.monsters,
               ...out.maps.map(c => c.name),
               ...out.maps.flatMap(c => c.tags).map(t => t.name)
             ])

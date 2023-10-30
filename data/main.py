@@ -316,7 +316,7 @@ def get_monsters(config):
                 "offset": offset,
                 "tables": "monsters",
                 "fields": "monsters.name, monsters.metadata_id",
-                "where": "monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.monster_type_id LIKE '%ChampionTreasurer%'",
+                "where": "monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.monster_type_id LIKE '%ChampionTreasurer%' or monsters.monster_type_id LIKE '%Exile%' or monsters.monster_type_id LIKE '%VaalArchitect%'",
             },
         ).json()["cargoquery"]
 

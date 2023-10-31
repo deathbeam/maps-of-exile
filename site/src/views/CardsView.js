@@ -52,7 +52,7 @@ const CardList = ({ card, voidstones }) => {
     cardNotice = (
       <div className="card mb-2 bg-warning-subtle text-white">
         <div className="card-body">
-          {card.name} has drop sources but they are hidden with filters, adjust <b>Map Display</b> or{' '}
+          {card.name} has drop sources but they are hidden with filters, adjust <b>Map display</b> or{' '}
           <b>Atlas voidstones</b> to see them.
         </div>
       </div>

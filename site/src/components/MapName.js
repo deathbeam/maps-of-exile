@@ -4,7 +4,7 @@ import Rating from './Rating'
 import MapImage from './MapImage'
 
 const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones }) => {
-  const color = `text-${tierColor(map.tiers, map.type)}`
+  const color = `text-${tierColor(map.tiers, map.type, voidstones)}`
 
   const name = (
     <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
@@ -48,7 +48,28 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
     </span>
   )
 
-  const tiers = <small>{map.atlas ? map.tiers.join(', ') : 'Area Level ' + map.level}</small>
+  let tiers
+  if (map.atlas) {
+    tiers = []
+    for (let i = 0; i < map.tiers.length; i++) {
+      const tier = map.tiers[i]
+      const isCurrent = i === voidstones
+      const isLast = i === map.tiers.length - 1
+      const suff = isLast ? '' : ', '
+      tiers.push(
+        isCurrent ? (
+          <>
+            <b>{tier}</b>
+            {suff}
+          </>
+        ) : (
+          tier + suff
+        )
+      )
+    }
+  } else {
+    tiers = 'Area Level ' + map.level
+  }
 
   return (
     <>
@@ -60,7 +81,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
         <div>
           {mapName}
           <br />
-          {tiers}
+          <small>{tiers}</small>
           <br />
           {!sidebar && tags}
         </div>

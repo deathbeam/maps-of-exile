@@ -129,7 +129,7 @@ const CardsView = ({
   ratedMaps,
   cardMinPriceInput,
   cardPriceSourceInput,
-  voidstones,
+  voidstonesInput,
   inputs,
   addToInput,
   currentSearch,
@@ -196,7 +196,7 @@ const CardsView = ({
         </thead>
         <tbody>
           {filteredCards.map(c => (
-            <CardList card={c} voidstones={voidstones} />
+            <CardList card={c} voidstones={voidstonesInput} />
           ))}
         </tbody>
       </table>

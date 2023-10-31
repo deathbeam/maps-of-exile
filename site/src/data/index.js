@@ -43,8 +43,8 @@ function pushTag(info, destination, source, key, name = null, color = null) {
 
 export const preparedMaps = maps.map(map => {
   const mapTags = []
-  pushTag(map.info, mapTags, map, 'type', null, 'info')
-  pushTag(map.info, mapTags, map, 'atlas', null, 'info')
+  pushTag(map.info, mapTags, map, 'type', null, 'warning')
+  pushTag(map.info, mapTags, map, 'atlas', null, 'warning')
 
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')
@@ -53,13 +53,13 @@ export const preparedMaps = maps.map(map => {
   pushTag(map.info, mapTags, map.layout, 'delirium_mirror', 'delirium mirror')
 
   pushTag(map.info, mapTags, map.boss, 'separated', 'boss separated')
-  pushTag(map.info, mapTags, map.boss, 'not_spawned', 'boss not spawned')
+  pushTag(map.info, mapTags, map.boss, 'not_spawned', 'boss not spawned', 'primary')
   pushTag(map.info, mapTags, map.boss, 'rushable', 'boss rushable')
   pushTag(map.info, mapTags, map.boss, 'phases', 'boss with phases')
   pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
   pushTag(map.info, mapTags, map.boss, 'not_twinnable', 'boss not twinnable')
 
-  pushTag(map.info, mapTags, map, 'pantheon')
+  pushTag(map.info, mapTags, map, 'pantheon', null, 'info')
 
   const cards = []
   for (let card of preparedCards) {

@@ -3,7 +3,7 @@ import Rating from './Rating'
 import MapCards from './MapCards'
 import MapBoss from './MapBoss'
 
-const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones, setCurrentMap }) => (
+const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones }) => (
   <>
     {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
     <MapName map={map} sidebar={true} currentSearch={currentSearch} addToInput={addToInput} voidstones={voidstones} />

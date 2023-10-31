@@ -2,22 +2,30 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
   return tags.map(t => {
     const val = t.name
     const info = t.info
-    let color = t.color ? 'btn-' + t.color : 'btn-secondary'
+    let color = t.color ? t.color : 'secondary'
 
     const searched = currentSearch && currentSearch.find(c => c.value === val)
     if (searched) {
-      color = searched.neg ? 'btn-danger' : 'btn-success'
+      color = searched.neg ? 'danger' : 'success'
     }
 
     const buttons = []
-    buttons.push(
-      <button
-        className={'btn btn-badge text-dark ' + color}
-        onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
-      >
-        {val} {info && <b>*</b>}
-      </button>
-    )
+    if (addToInput) {
+      buttons.push(
+        <button
+          className={'btn btn-badge text-dark btn-' + color}
+          onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
+        >
+          {val} {info && <b>*</b>}
+        </button>
+      )
+    } else {
+      buttons.push(
+        <span className={'badge text-dark bg-' + color}>
+          {val} {info && <b>*</b>}
+        </span>
+      )
+    }
 
     if (searched) {
       buttons.push(

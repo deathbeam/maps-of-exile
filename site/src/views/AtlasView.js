@@ -53,7 +53,6 @@ const AtlasView = ({
               currentSearch={currentSearch}
               voidstones={voidstonesInput}
               cardValueSourceInput={cardValueSourceInput}
-              setCurrentMap={setCurrentMap}
             />
           ) : (
             <MapFilter

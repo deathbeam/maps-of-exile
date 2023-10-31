@@ -44,7 +44,7 @@ function pushTag(info, destination, source, key, name = null, color = null) {
 export const preparedMaps = maps.map(map => {
   const mapTags = []
   pushTag(map.info, mapTags, map, 'type', null, 'info')
-  pushTag(map.info, mapTags, map, 'atlas', 'on atlas', 'info')
+  pushTag(map.info, mapTags, map, 'atlas', null, 'info')
 
   pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
   pushTag(map.info, mapTags, map.layout, 'outdoors')

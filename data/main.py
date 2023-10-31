@@ -703,6 +703,15 @@ def get_map_data(map_data, extra_map_data):
             elif name == "icon" and "icon" not in map_data:
                 map_data["icon"] = value.text.strip()
 
+    if "icon" not in map_data:
+        tab = soup.find(id="MapDeviceRecipes")
+        if tab:
+            img_tags = tab.find_all("img")
+            if img_tags:
+                icon = img_tags[0]["src"]
+                print(f"Found icon {icon}")
+                map_data["icon"] = icon
+
     # Merge existing data
     existing = next(
         filter(lambda x: x["name"] == map_data["name"], extra_map_data), None

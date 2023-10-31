@@ -3,7 +3,11 @@ import { memo } from 'react'
 
 const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   if (!icon) {
-    return null
+    if (type === 'act area') {
+      icon = '/img/act.webp'
+    } else {
+      return null
+    }
   }
 
   let color = 'map-white'

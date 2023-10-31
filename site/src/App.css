@@ -118,10 +118,10 @@ a:hover {
 
 .tooltip-tag .tooltip-tag-text {
   display: none;
-  min-width: 300px;
+  width: max-content;
+  max-width: 300px;
   background-color: black;
   color: #fff;
-  text-align: center;
   padding: 5px 5px;
   border-radius: 5px;
   position: absolute;
@@ -152,11 +152,6 @@ a:hover {
 
 .tooltip-tag .tooltip-tag-fill img {
   width: 100%;
-}
-
-.tooltip-tag-compact .tooltip-tag-text {
-  min-width: 200px;
-  text-align: left;
 }
 
 .tooltip-tag-left .tooltip-tag-text {
@@ -209,6 +204,11 @@ a:hover {
   bottom: 100%;
   left: 18px;
   border-color: transparent transparent black transparent;
+}
+
+.map-card {
+  width: 245px !important;
+  max-width: 245px !important;
 }
 
 /* 3rd party */

@@ -79,12 +79,8 @@ const MapCard = ({ tooltipTop, type, card }) => {
   )
 
   return (
-    <span
-      className={
-        'tooltip-tag tooltip-tag-compact ' + (tooltipTop ? 'tooltip-tag-top' : 'tooltip-tag-left tooltip-tag-left-mid')
-      }
-    >
-      <span className="tooltip-tag-text">
+    <span className={'tooltip-tag ' + (tooltipTop ? 'tooltip-tag-top' : 'tooltip-tag-left tooltip-tag-left-mid')}>
+      <span className="tooltip-tag-text map-card">
         <CardDetail card={card} />
         {tooltip}
       </span>
@@ -104,7 +100,7 @@ const MapCards = ({ sidebar, tooltipTop, cardValueSourceInput, type, cards }) =>
   return (
     <div className={sidebar ? '' : 'd-lg-flex flex-row'}>
       <div className="m-1 map-card-price">
-        <span className="tooltip-tag tooltip-tag-left tooltip-tag-compact text-nowrap w-100">
+        <span className="tooltip-tag tooltip-tag-left">
           <span className="tooltip-tag-text">
             {cardsWithData
               .filter(c => c.value > 0)

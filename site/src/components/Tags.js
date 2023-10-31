@@ -37,7 +37,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
 
     return info ? (
       <span className="tooltip-tag tooltip-tag-right">
-        <span className="tooltip-tag-text tooltip-tag-fill">{info}</span>
+        <span className="tooltip-tag-text">{info}</span>
         <div className="btn-group btn-group-sm m-1">{buttons}</div>
       </span>
     ) : (

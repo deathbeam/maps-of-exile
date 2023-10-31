@@ -61,12 +61,7 @@ const CardList = ({ card, voidstones }) => {
 
   return (
     <tr ref={ref}>
-      <td
-        style={{
-          width: '245px'
-        }}
-        className="p-0"
-      >
+      <td className="p-0 map-card">
         <div
           style={{
             backgroundColor: 'black'

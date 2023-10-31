@@ -31,13 +31,7 @@ const ListView = ({
         setSearchInput={setSearchInput}
       />
     </div>
-    <MapTable
-      maps={filteredMaps}
-      voidstonesInput={voidstonesInput}
-      currentSearch={currentSearch}
-      addToInput={addToInput}
-      cardValueSourceInput={cardValueSourceInput}
-    />
+    <MapTable maps={filteredMaps} voidstonesInput={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
     <Footer />
   </>
 )

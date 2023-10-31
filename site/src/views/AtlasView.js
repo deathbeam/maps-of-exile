@@ -47,13 +47,7 @@ const AtlasView = ({
             to <b>List</b> view.
           </p>
           {currentMap ? (
-            <MapSidebar
-              map={selectedMap}
-              addToInput={addToInput}
-              currentSearch={currentSearch}
-              voidstones={voidstonesInput}
-              cardValueSourceInput={cardValueSourceInput}
-            />
+            <MapSidebar map={selectedMap} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
           ) : (
             <MapFilter
               inputs={inputs}

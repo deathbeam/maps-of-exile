@@ -3,10 +3,10 @@ import Rating from './Rating'
 import MapCards from './MapCards'
 import MapBoss from './MapBoss'
 
-const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones }) => (
+const MapSidebar = ({ map, cardValueSourceInput, voidstones }) => (
   <>
     {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
-    <MapName map={map} sidebar={true} currentSearch={currentSearch} addToInput={addToInput} voidstones={voidstones} />
+    <MapName map={map} sidebar={true} voidstones={voidstones} />
     <hr />
     <Rating rating={map.score} scale={10} label="Total" />
     <Rating rating={map.rating.layout} label="Layout" tooltip={map.info.layout} sidebar={true} />

@@ -1,6 +1,6 @@
 import MapList from './MapList'
 
-const MapTable = ({ maps, voidstonesInput, currentSearch, addToInput, cardValueSourceInput }) => (
+const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
   <table className="table table-responsive table-striped mb-0">
     <thead>
       <tr>
@@ -100,14 +100,7 @@ const MapTable = ({ maps, voidstonesInput, currentSearch, addToInput, cardValueS
     </thead>
     <tbody>
       {maps.map(m => (
-        <MapList
-          key={m.name}
-          map={m}
-          voidstones={voidstonesInput}
-          currentSearch={currentSearch}
-          addToInput={addToInput}
-          cardValueSourceInput={cardValueSourceInput}
-        />
+        <MapList key={m.name} map={m} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
       ))}
     </tbody>
   </table>

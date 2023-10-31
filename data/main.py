@@ -76,7 +76,7 @@ def merge(source, destination):
             node = destination.setdefault(key, {})
             merge(value, node)
         elif isinstance(value, list):
-            destination[key] = destination.get(key, []) + value
+            destination[key] = list(dict.fromkeys(destination.get(key, []) + value))
         else:
             destination[key] = value
 
@@ -471,7 +471,6 @@ def get_map_wiki(config):
                 "offset": offset,
                 "tables": "areas",
                 "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.act",
-                "group_by": "areas.name",
                 "where": "areas.id LIKE '%MapWorlds%' AND areas.is_legacy_map_area=false OR areas.is_unique_map_area AND areas.is_legacy_map_area=false AND areas.name NOT LIKE '%Reliquary%' OR areas.is_map_area=false AND areas.is_town_area=false AND areas.is_hideout_area=false AND areas.is_legacy_map_area=false AND areas.act!=0 AND areas.id NOT LIKE '%Expedition%' AND areas.name NOT LIKE '%Hideout%' AND areas.id NOT LIKE '%Test%' AND areas.id NOT LIKE '%Heist%' AND areas.id NOT LIKE '%Labyrinth%' AND areas.id NOT LIKE '%Descent%' AND areas.name NOT LIKE '%PvP%' AND areas.name NOT LIKE '%Programming%' AND areas.name NOT LIKE '%Test%'",
             },
         ).json()["cargoquery"]
@@ -494,8 +493,7 @@ def get_maps(key, config):
     map_ratings = get_map_ratings(key, config)
     map_wiki = get_map_wiki(config)
 
-    out = []
-
+    cleaned_maps = {}
     for m in map_wiki:
         name = m.get("name")
         id = m.get("id")
@@ -541,7 +539,7 @@ def get_maps(key, config):
             continue
 
         out_map = {
-            "id": id,
+            "ids": [id],
             "name": name,
             "level": level,
             "poedb": "https://poedb.tw/us/" + name.replace(" ", "_").replace("'", ""),
@@ -553,8 +551,13 @@ def get_maps(key, config):
             out_map["boss"]["ids"] = sorted(
                 list(set(filter(None, m["boss monster ids"].split(","))))
             )
-        out.append(out_map)
 
+        existing_map = cleaned_maps.get(name)
+        if existing_map:
+            merge(existing_map, out_map)
+        cleaned_maps[name] = out_map
+
+    out = list(cleaned_maps.values())
     url = config["poedb"]["list"]
     print(f"Getting maps from url {url}")
     r = requests.get(url)

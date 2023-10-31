@@ -71,7 +71,7 @@ export const preparedMaps = maps.map(map => {
       cards.push({ ...card })
     }
 
-    if (card.drop.areas.includes(map.id)) {
+    if (map.ids.some(id => card.drop.areas.includes(id))) {
       cards.push({ ...card })
     }
 

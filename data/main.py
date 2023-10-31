@@ -141,7 +141,7 @@ def get_card_data(key, config, card_extra):
             "limit": "500",
             "tables": "items",
             "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text",
-            "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1"',
+            "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1" AND items._pageName NOT LIKE "%User:%"',
         },
     ).json()["cargoquery"]
     wiki_cards = list(

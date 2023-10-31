@@ -22,7 +22,7 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
 
   let extraClass = ''
   if (type === 'map') {
-    extraClass = ' map-background darkreader'
+    extraClass = ' map-background'
   }
 
   return (

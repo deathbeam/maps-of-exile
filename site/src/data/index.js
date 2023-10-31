@@ -6,8 +6,8 @@ import { mapLevelToTier } from '../common'
 
 export const wikiBase = 'https://www.poewiki.net/wiki/'
 export const divcordDiscord = 'https://discord.gg/jsN2gsDUyM'
-const mapIconBase = 'https://web.poecdn.com/image/'
-const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
+export const mapIconBase = 'https://web.poecdn.com/image/'
+export const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`
@@ -105,7 +105,6 @@ export const preparedMaps = maps.map(map => {
     cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
     icon: map.icon && mapIconBase + map.icon + '.png',
-    wiki: wikiBase + map.name.replaceAll(' ', '_'),
     tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]
   }
 

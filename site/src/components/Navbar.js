@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 const getButtonClass = (toCheck, cur) => (toCheck === cur ? 'btn-primary' : 'btn-outline-primary')
 
 const Navbar = ({ view, setView, showBack, backAction }) => (
@@ -21,4 +23,4 @@ const Navbar = ({ view, setView, showBack, backAction }) => (
   </nav>
 )
 
-export default Navbar
+export default memo(Navbar)

@@ -1,5 +1,6 @@
 import Rating from './Rating'
 import { preparedMonsters } from '../data'
+import { memo } from 'react'
 
 const MapBoss = ({ boss, rating, tooltip, sidebar = false, label = '' }) => {
   const badge = <Rating rating={rating} sidebar={sidebar} label={label} />
@@ -25,4 +26,4 @@ const MapBoss = ({ boss, rating, tooltip, sidebar = false, label = '' }) => {
   return badge
 }
 
-export default MapBoss
+export default memo(MapBoss)

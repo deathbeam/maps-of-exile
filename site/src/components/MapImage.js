@@ -1,4 +1,5 @@
 import './MapImage.css'
+import { memo } from 'react'
 
 const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   if (!icon) {
@@ -33,4 +34,4 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   )
 }
 
-export default MapImage
+export default memo(MapImage)

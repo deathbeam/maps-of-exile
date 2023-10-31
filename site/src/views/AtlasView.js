@@ -1,9 +1,9 @@
 import { ReactFlowProvider } from 'reactflow'
-import Atlas from '../components/Atlas'
+import Atlas from '../components/atlas/Atlas'
 import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
 import { useMemo, useState } from 'react'
-import MapSidebar from '../components/MapSidebar'
+import MapSidebar from '../components/atlas/MapSidebar'
 
 const AtlasView = ({
   view,

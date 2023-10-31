@@ -1,4 +1,5 @@
 import { ratingColor } from '../common'
+import { memo } from 'react'
 
 const Rating = ({ rating, tooltip, sidebar = false, label = '', scale = 1 }) => {
   const badgeClass = `m-1 badge badge-fw text-dark bg-${ratingColor(rating, scale)}`
@@ -28,4 +29,4 @@ const Rating = ({ rating, tooltip, sidebar = false, label = '', scale = 1 }) => 
   return badge
 }
 
-export default Rating
+export default memo(Rating)

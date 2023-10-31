@@ -3,10 +3,10 @@ import './Atlas.css'
 
 import { useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
-import { deduplicate, filter, ratingColor, tierColor } from '../common'
-import usePersistedState from '../hooks/usePersistedState'
-import MapImage from './MapImage'
-import { preparedGlobals } from '../data'
+import { deduplicate, filter, ratingColor, tierColor } from '../../common'
+import usePersistedState from '../../hooks/usePersistedState'
+import MapImage from '../MapImage'
+import { preparedGlobals } from '../../data'
 
 const scale = 3
 const offset = 6

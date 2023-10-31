@@ -2,12 +2,14 @@ import Tags from './Tags'
 import { tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
+import { wikiBase } from '../data'
 
-const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones }) => {
+const MapName = ({ map, sidebar, cardList, voidstones }) => {
   const color = `text-${tierColor(map.tiers, map.type, map.atlas ? voidstones : 0)}`
+  const wikiLink = wikiBase + map.name.replaceAll(' ', '_')
 
   const name = (
-    <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
+    <a href={wikiLink} target="_blank" rel="noreferrer" className={color}>
       {map.name}
     </a>
   )
@@ -40,7 +42,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
     mapTags = map.tags
   }
 
-  const tags = <Tags tags={mapTags} currentSearch={currentSearch} addToInput={addToInput} />
+  const tags = <Tags tags={mapTags} />
   const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[map.atlas ? voidstones : 0]} />
   const score = !sidebar && <Rating rating={map.score} scale={10} />
 

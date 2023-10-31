@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 const Tags = ({ tags, currentSearch, addToInput }) => {
   return tags.map(t => {
     const val = t.name
@@ -46,4 +48,4 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
   })
 }
 
-export default Tags
+export default memo(Tags)

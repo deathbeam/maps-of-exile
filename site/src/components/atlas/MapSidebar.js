@@ -1,7 +1,7 @@
-import MapName from './MapName'
-import Rating from './Rating'
-import MapCards from './MapCards'
-import MapBoss from './MapBoss'
+import MapName from '../MapName'
+import Rating from '../Rating'
+import MapCards from '../MapCards'
+import MapBoss from '../MapBoss'
 
 const MapSidebar = ({ map, cardValueSourceInput, voidstones }) => (
   <>
@@ -14,11 +14,11 @@ const MapSidebar = ({ map, cardValueSourceInput, voidstones }) => (
     <MapBoss boss={map.boss} rating={map.rating.boss} tooltip={map.info.boss} label="Boss" sidebar={true} />
     <hr />
     <MapCards
+      cards={map.cards}
+      type={map.type}
+      cardValueSourceInput={cardValueSourceInput}
       sidebar={true}
       tooltipTop={!!map.image}
-      cardValueSourceInput={cardValueSourceInput}
-      type={map.type}
-      cards={map.cards}
     />
   </>
 )

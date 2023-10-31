@@ -1,5 +1,5 @@
 import MapFilter from '../components/MapFilter'
-import MapTable from '../components/MapTable'
+import MapTable from '../components/list/MapTable'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import GoToTop from '../components/GoToTop'

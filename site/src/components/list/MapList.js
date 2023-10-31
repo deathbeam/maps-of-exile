@@ -1,9 +1,9 @@
-import MapName from './MapName'
-import Rating from './Rating'
-import MapBoss from './MapBoss'
+import MapName from '../MapName'
+import Rating from '../Rating'
+import MapBoss from '../MapBoss'
 import MapConnected from './MapConnected'
-import MapCards from './MapCards'
-import useLazy from '../hooks/useLazy'
+import MapCards from '../MapCards'
+import useLazy from '../../hooks/useLazy'
 
 const MapList = ({ map, cardValueSourceInput, voidstones }) => {
   const [ref, visible] = useLazy()
@@ -40,7 +40,7 @@ const MapList = ({ map, cardValueSourceInput, voidstones }) => {
             <MapConnected connected={map.connected} />
           </td>
           <td>
-            <MapCards cardValueSourceInput={cardValueSourceInput} type={map.type} cards={map.cards} />
+            <MapCards cards={map.cards} type={map.type} cardValueSourceInput={cardValueSourceInput} />
           </td>
         </>
       ) : (

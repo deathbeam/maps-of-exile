@@ -1,6 +1,6 @@
 import './MapImage.css'
 
-const MapImage = ({ icon, tier = 0, type = 'map', atlas = false, onClick = null }) => {
+const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   if (!icon) {
     return null
   }
@@ -11,15 +11,14 @@ const MapImage = ({ icon, tier = 0, type = 'map', atlas = false, onClick = null 
     icon.includes('Minotaur') ||
     icon.includes('Hydra') ||
     icon.includes('Chimera') ||
-    icon.includes('Phoenix')
+    icon.includes('Phoenix') ||
+    icon.includes('VaalTemple')
   ) {
     color = ''
-  } else if (atlas) {
-    if (tier >= 11) {
-      color = 'map-red'
-    } else if (tier >= 6) {
-      color = 'map-yellow'
-    }
+  } else if (tier >= 11) {
+    color = 'map-red'
+  } else if (tier >= 6) {
+    color = 'map-yellow'
   }
 
   let extraClass = ''

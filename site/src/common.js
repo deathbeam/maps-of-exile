@@ -67,17 +67,15 @@ export function ratingColor(rating, scale = 1) {
   return color
 }
 
-export function tierColor(tiers, type, atlas, voidstones = 0) {
+export function tierColor(tiers, type, voidstones = 0) {
+  const tier = tiers[voidstones]
   let color = 'light'
   if (type === 'unique map') {
     color = 'unique'
-  } else if (atlas) {
-    const tier = tiers[voidstones]
-    if (tier >= 11) {
-      color = 'danger'
-    } else if (tier >= 6) {
-      color = 'warning'
-    }
+  } else if (tier >= 11) {
+    color = 'danger'
+  } else if (tier >= 6) {
+    color = 'warning'
   }
 
   return color

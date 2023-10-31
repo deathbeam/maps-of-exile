@@ -76,7 +76,7 @@ const CardList = ({ card, voidstones }) => {
           <div className="row m-0">{cardNotice}</div>
           <div className="row m-0">
             {card.monsters.map(m => (
-              <div className="col-2 mt-2">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                 <div className="d-lg-flex flex-row">
                   <div className="pe-2 pb-2">
                     <div className="map-icon-container">
@@ -96,7 +96,7 @@ const CardList = ({ card, voidstones }) => {
           </div>
           <div className="row m-0">
             {card.maps.map(map => (
-              <div className="col-2 mt-2">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                 <MapName map={map} voidstones={voidstones} cardList={true} />
               </div>
             ))}
@@ -185,8 +185,8 @@ const CardsView = ({
       <table className="table table-responsive table-striped mb-0">
         <thead>
           <tr>
-            <th scope="col">Card</th>
-            <th scope="col">Sources</th>
+            <th>Card</th>
+            <th>Sources</th>
           </tr>
         </thead>
         <tbody>

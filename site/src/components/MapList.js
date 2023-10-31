@@ -20,7 +20,6 @@ const MapList = ({ map, cardValueSourceInput, voidstones }) => {
       <td>
         <MapName map={map} voidstones={voidstones} />
         <div className="d-md-none mt-2">
-          <Rating rating={map.score} scale={10} label="Total" />
           <Rating rating={map.rating.layout} label="Layout" />
           <Rating rating={map.rating.density} label="Density" />
           <Rating rating={map.rating.boss} label="Boss" />

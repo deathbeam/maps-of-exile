@@ -42,11 +42,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
 
   const tags = <Tags tags={mapTags} currentSearch={currentSearch} addToInput={addToInput} />
   const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[map.atlas ? voidstones : 0]} />
-  const score = !sidebar && (
-    <span className="d-none d-md-block">
-      <Rating rating={map.score} scale={10} />
-    </span>
-  )
+  const score = !sidebar && <Rating rating={map.score} scale={10} />
 
   let tiers
   if (map.atlas) {
@@ -73,7 +69,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
 
   return (
     <>
-      <div className="d-lg-flex flex-row">
+      <div className="d-md-flex flex-row">
         <div className="pe-2 pb-2">
           {icon}
           {score}

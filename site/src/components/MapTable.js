@@ -4,7 +4,7 @@ const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
   <table className="table table-responsive table-striped mb-0">
     <thead>
       <tr>
-        <th scope="col">
+        <th>
           <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
             <span className="tooltip-tag-text">
               Map name, colored based on natural tier with map tiers for each Voidstone next to it.
@@ -24,7 +24,7 @@ const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
             Map
           </span>
         </th>
-        <th scope="col" className="d-none d-md-table-cell">
+        <th className="d-none d-md-table-cell">
           <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
             <span className="tooltip-tag-text">
               How straightforward is the map to clear or how good it is for league mechanics.
@@ -40,7 +40,7 @@ const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
             Layout
           </span>
         </th>
-        <th scope="col" className="d-none d-md-table-cell">
+        <th className="d-none d-md-table-cell">
           <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
             <span className="tooltip-tag-text">
               How many total base mobs does the map have. Do not accounts for extra sources of mobs like league
@@ -58,7 +58,7 @@ const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
             Density
           </span>
         </th>
-        <th scope="col" className="d-none d-md-table-cell">
+        <th className="d-none d-md-table-cell">
           <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
             <span className="tooltip-tag-text">
               How annoying/dangerous is the boss to kill.
@@ -74,13 +74,13 @@ const MapTable = ({ maps, voidstonesInput, cardValueSourceInput }) => (
             Boss
           </span>
         </th>
-        <th scope="col">
+        <th>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">Maps adjacent to this map on atlas with score on left.</span>
             Connected
           </span>
         </th>
-        <th scope="col">
+        <th>
           <span className="tooltip-tag tooltip-tag-left tooltip-tag-notice">
             <span className="tooltip-tag-text">
               Cards that drop in the map sorted by <b>drop rate</b> and <b>price</b>. Cards under minimum price are

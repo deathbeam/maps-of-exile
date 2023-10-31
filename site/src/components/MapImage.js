@@ -27,7 +27,7 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   }
 
   return (
-    <div className={'map-icon-container' + extraClass} onClick={onClick}>
+    <div className={'map-icon-container d-inline-block d-md-block' + extraClass} onClick={onClick}>
       <img loading="lazy" src={icon} className={color} alt="" />
     </div>
   )

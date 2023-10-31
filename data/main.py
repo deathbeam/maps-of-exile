@@ -126,7 +126,7 @@ def get_card_data(key, config, card_extra):
         soup = BeautifulSoup(text, "html.parser")
         for e in soup.find_all("span", {"class": "c-item-hoverbox__display"}):
             e.decompose()
-        return soup.get_text().replace("16x16px|link=|alt=", "")
+        return soup.get_text().replace("16x16px|link=|alt=", "").replace("..", ".")
 
     league = config["league"]
 

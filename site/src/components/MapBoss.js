@@ -1,12 +1,12 @@
 import Rating from './Rating'
 import { preparedMonsters } from '../data'
 
-const MapBoss = ({ boss, rating, tooltip }) => {
-  const badge = <Rating rating={rating} />
+const MapBoss = ({ boss, rating, tooltip, sidebar = false, label = '' }) => {
+  const badge = <Rating rating={rating} sidebar={sidebar} label={label} />
 
   if (boss.ids || tooltip) {
     return (
-      <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
+      <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-left' : 'tooltip-tag-right')}>
         <span className="tooltip-tag-text">
           {boss.ids &&
             boss.ids.map(b => (

@@ -1,6 +1,7 @@
 import MapName from './MapName'
 import Rating from './Rating'
 import MapCards from './MapCards'
+import MapBoss from './MapBoss'
 
 const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, voidstones, setCurrentMap }) => (
   <>
@@ -10,7 +11,7 @@ const MapSidebar = ({ map, currentSearch, addToInput, cardValueSourceInput, void
     <Rating rating={map.score} scale={10} label="Total" />
     <Rating rating={map.rating.layout} label="Layout" tooltip={map.info.layout} sidebar={true} />
     <Rating rating={map.rating.density} label="Density" tooltip={map.info.density} sidebar={true} />
-    <Rating rating={map.rating.boss} label="Boss" tooltip={map.info.boss} sidebar={true} />
+    <MapBoss boss={map.boss} rating={map.rating.boss} tooltip={map.info.boss} label="Boss" sidebar={true} />
     <hr />
     <MapCards
       sidebar={true}

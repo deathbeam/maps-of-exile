@@ -44,6 +44,19 @@ const CardList = ({ card, voidstones }) => {
         <div className="card-body">{card.drop.text}</div>
       </div>
     )
+  } else if (
+    card.maps.length === 0 &&
+    card.monsters.length === 0 &&
+    (card.drop.text || card.drop.monsters.length > 0 || card.drop.areas.length) > 0
+  ) {
+    cardNotice = (
+      <div className="card mb-2 bg-warning-subtle text-white">
+        <div className="card-body">
+          {card.name} has drop sources but they are hidden with filters, adjust <b>Map Display</b> or{' '}
+          <b>Atlas voidstones</b> to see them.
+        </div>
+      </div>
+    )
   }
 
   return (

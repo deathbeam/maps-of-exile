@@ -4,7 +4,7 @@ import Rating from './Rating'
 import MapImage from './MapImage'
 
 const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones }) => {
-  const color = `text-${tierColor(map.tiers, map.type, voidstones)}`
+  const color = `text-${tierColor(map.tiers, map.type, map.atlas, voidstones)}`
 
   const name = (
     <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
@@ -41,7 +41,7 @@ const MapName = ({ map, sidebar, cardList, currentSearch, addToInput, voidstones
   }
 
   const tags = <Tags tags={mapTags} currentSearch={currentSearch} addToInput={addToInput} />
-  const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[voidstones]} />
+  const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[voidstones]} atlas={map.atlas} />
   const score = !sidebar && (
     <span className="d-none d-md-block">
       <Rating rating={map.score} scale={10} />

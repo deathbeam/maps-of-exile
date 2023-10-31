@@ -68,7 +68,7 @@ function MapNode({ id, data }) {
   if (atlasScore) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map.tiers, map.type, data.voidstones)}`
+    mapColor = `text-${tierColor(map.tiers, map.type, true, data.voidstones)}`
   }
 
   const buttonClass = `btn btn-badge btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
@@ -79,7 +79,13 @@ function MapNode({ id, data }) {
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       {!!atlasIcons && (
-        <MapImage icon={map.icon} type={map.type} tier={map.tiers[data.voidstones]} onClick={data.onClick} />
+        <MapImage
+          icon={map.icon}
+          type={map.type}
+          tier={map.tiers[data.voidstones]}
+          atlas={true}
+          onClick={data.onClick}
+        />
       )}
       {!!atlasLabels && (
         <button className={buttonClass} onClick={data.onClick}>

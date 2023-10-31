@@ -4,7 +4,7 @@ import CardDetail from '../CardDetail'
 import MapName from '../MapName'
 import MonsterName from './MonsterName'
 
-const CardList = ({ card, voidstones }) => {
+const Card = ({ card, voidstones }) => {
   const [ref, visible] = useLazy()
 
   let cardNotice = null
@@ -91,4 +91,4 @@ const CardList = ({ card, voidstones }) => {
   )
 }
 
-export default CardList
+export default Card

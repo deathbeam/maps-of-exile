@@ -5,7 +5,7 @@ import MapConnected from './MapConnected'
 import MapCards from '../MapCards'
 import useLazy from '../../hooks/useLazy'
 
-const MapList = ({ map, cardValueSourceInput, voidstones }) => {
+const Map = ({ map, cardValueSourceInput, voidstones }) => {
   const [ref, visible] = useLazy()
 
   return (
@@ -56,4 +56,4 @@ const MapList = ({ map, cardValueSourceInput, voidstones }) => {
   )
 }
 
-export default MapList
+export default Map

@@ -3,7 +3,7 @@ import Atlas from '../components/atlas/Atlas'
 import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
 import { useMemo, useState } from 'react'
-import MapSidebar from '../components/atlas/MapSidebar'
+import Map from '../components/atlas/Map'
 
 const AtlasView = ({
   view,
@@ -47,7 +47,7 @@ const AtlasView = ({
             to <b>List</b> view.
           </p>
           {currentMap ? (
-            <MapSidebar map={selectedMap} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
+            <Map map={selectedMap} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
           ) : (
             <MapFilter
               inputs={inputs}

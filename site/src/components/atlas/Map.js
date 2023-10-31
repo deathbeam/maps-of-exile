@@ -3,7 +3,7 @@ import Rating from '../Rating'
 import MapCards from '../MapCards'
 import MapBoss from '../MapBoss'
 
-const MapSidebar = ({ map, cardValueSourceInput, voidstones }) => (
+const Map = ({ map, cardValueSourceInput, voidstones }) => (
   <>
     {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
     <MapName map={map} sidebar={true} voidstones={voidstones} />
@@ -23,4 +23,4 @@ const MapSidebar = ({ map, cardValueSourceInput, voidstones }) => (
   </>
 )
 
-export default MapSidebar
+export default Map

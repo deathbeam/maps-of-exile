@@ -5,7 +5,7 @@ import { preparedCards, preparedMonsters } from '../data'
 import { calculateScore, filter } from '../common'
 import { useMemo } from 'react'
 import MapFilter from '../components/MapFilter'
-import CardList from '../components/cards/CardList'
+import Card from '../components/cards/Card'
 
 function filterCards(ratedCards, currentSearch) {
   return ratedCards
@@ -89,7 +89,7 @@ const CardsView = ({
         </thead>
         <tbody>
           {filteredCards.map(c => (
-            <CardList card={c} voidstones={voidstonesInput} />
+            <Card card={c} voidstones={voidstonesInput} />
           ))}
         </tbody>
       </table>

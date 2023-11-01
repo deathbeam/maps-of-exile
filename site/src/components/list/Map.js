@@ -34,7 +34,7 @@ const Map = ({ map, cardValueSourceInput, voidstones }) => {
             <Rating rating={map.rating.density} tooltip={map.info.density} />
           </td>
           <td className="text-center d-none d-md-table-cell">
-            <MapBoss boss={map.boss} rating={map.rating.boss} tooltip={map.info.boss} />
+            <MapBoss ids={map.boss_ids} rating={map.rating.boss} tooltip={map.info.boss} />
           </td>
           <td>
             <MapConnected connected={map.connected} />

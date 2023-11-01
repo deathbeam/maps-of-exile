@@ -372,14 +372,14 @@ def get_map_meta(key, config):
                 map(
                     lambda x: {
                         "name": x[0].strip().replace(" Map", "").replace("’", "'"),
-                        "boss": {"separated": x[11].strip() == "o"},
-                        "info": {
-                            "boss": x[8].strip(),
-                        },
-                        "layout": {
+                        "tags": {
+                            "boss_separated": x[11].strip() == "o",
                             "few_obstacles": x[10].strip() == "o",
                             "outdoors": x[12].strip() == "o",
                             "linear": x[13].strip() == "o",
+                        },
+                        "info": {
+                            "boss": x[8].strip(),
                         },
                     },
                     r,
@@ -391,14 +391,14 @@ def get_map_meta(key, config):
                     lambda x: {
                         "name": x[1].strip().replace(" Map", "").replace("’", "'")
                         + " Map",
-                        "boss": {"separated": x[12].strip() == "o"},
-                        "info": {
-                            "boss": x[8].strip(),
-                        },
-                        "layout": {
+                        "tags": {
+                            "boss_separated": x[12].strip() == "o",
                             "few_obstacles": x[11].strip() == "o",
                             "outdoors": x[13].strip() == "o",
                             "linear": x[14].strip() == "o",
+                        },
+                        "info": {
+                            "boss": x[8].strip(),
                         },
                     },
                     r,
@@ -539,7 +539,6 @@ def get_maps(key, config):
             "name": name,
             "poedb": "https://poedb.tw/us/"
             + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
-            "boss": {},
             "type": map_type,
         }
 
@@ -547,9 +546,9 @@ def get_maps(key, config):
             out_map["connected"] = (m.get("connection ids", "") or "").split(",")
 
         if m.get("boss monster ids"):
-            out_map["boss"] = {
-                "ids": sorted(list(set(filter(None, m["boss monster ids"].split(",")))))
-            }
+            out_map["boss_ids"] = sorted(
+                list(set(filter(None, m["boss monster ids"].split(","))))
+            )
 
         existing_map = cleaned_maps.get(name)
         if existing_map:
@@ -580,8 +579,7 @@ def get_maps(key, config):
     for m in out:
         name = m["name"]
         m["shorthand"] = find_shortest_substring(name.replace(" Map", ""), out_names)
-        m["boss"] = m.get("boss", {})
-        m["layout"] = {}
+        m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}
 
@@ -610,7 +608,7 @@ def get_maps(key, config):
 
         m["ids"].sort()
         m["levels"].sort()
-        (m["boss"].get("ids") or []).sort()
+        (m.get("boss_ids") or []).sort()
 
     return out
 
@@ -659,9 +657,9 @@ def get_map_data(map_data, extra_map_data):
                 )
             elif name == "tags":
                 if "cannot_be_twinned" in value.text.strip():
-                    map_data["boss"]["not_twinnable"] = True
+                    map_data["tags"]["boss_not_twinnable"] = True
                 if "no_boss" in value.text.strip():
-                    map_data["boss"].pop("ids", None)
+                    map_data.pop("boss_ids", None)
             elif name == "icon" and "icon" not in map_data:
                 map_data["icon"] = value.text.strip()
 
@@ -700,19 +698,17 @@ def get_maps_template(maps, existing_maps, overwrite=False):
         new_map = {
             "name": map["name"],
             "image": False,
-            "layout": {
+            "tags": {
                 "league_mechanics": None,
                 "delirium_mirror": None,
                 "outdoors": None,
                 "linear": None,
                 "few_obstacles": None,
-            },
-            "boss": {
-                "not_spawned": None,
-                "rushable": None,
-                "phases": None,
-                "soft_phases": None,
-                "separated": None,
+                "boss_not_spawned": None,
+                "boss_rushable": None,
+                "boss_phases": None,
+                "boss_soft_phases": None,
+                "boss_separated": None,
             },
         }
 
@@ -723,6 +719,18 @@ def get_maps_template(maps, existing_maps, overwrite=False):
             None,
         )
         if existing_map:
+            layout = existing_map.pop("layout", None)
+            if layout:
+                for k, v in layout.items():
+                    if v is not None:
+                        new_map["tags"][k] = v
+
+            boss = existing_map.pop("boss", None)
+            if boss:
+                for k, v in boss.items():
+                    if v is not None:
+                        new_map["tags"]["boss_" + k] = v
+
             merge(existing_map, new_map)
             if existing_map in out:
                 out.remove(existing_map)
@@ -839,28 +847,19 @@ def get_issue_template(maps):
 
     body.append(
         checkbox_input(
-            "Layout",
-            "Map layout metadata. If you dont know simply leave the box unchecked.",
+            "Tags",
+            "Map tags metadata. If you dont know simply leave the box unchecked.",
             [
                 "**League mechanics** - If map is good for league mechanics that require some space (Breach, Legion)",
                 "**Delirium mirror** - If you can hold delirium mirror through whole map or delirium mirror gets good value in it",
                 "**Outdoors** - If map is outdoors or indoors (Dunes vs Cells for example)",
                 "**Linear** - If map is linear instead of having multiple paths to take. Map counts as linear even if the line goes in circle",
                 "**Few obstacles** - If map does not have a lot of obstacles (so for example is good for shield charging around)",
-            ],
-        )
-    )
-
-    body.append(
-        checkbox_input(
-            "Boss",
-            "Map boss metadata. If you dont know simply leave the box unchecked.",
-            [
-                "**Not spawned** - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
-                "**Rushable** - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
-                "**Phases** - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
-                "**Soft phases** - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
-                "**Separated** - If boss room is separated from rest of the map",
+                "**Boss Not spawned** - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
+                "**Boss Rushable** - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
+                "**Boss Phases** - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
+                "**Boss Soft phases** - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
+                "**Boss Separated** - If boss room is separated from rest of the map",
             ],
         )
     )

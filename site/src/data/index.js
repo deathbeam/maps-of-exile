@@ -44,21 +44,11 @@ export const preparedMaps = maps.map(map => {
   const mapTags = []
   pushTag(map.info, mapTags, map, 'type', null, 'info')
   pushTag(map.info, mapTags, map, 'atlas', null, 'info')
-
-  pushTag(map.info, mapTags, map.layout, 'few_obstacles', 'few obstacles')
-  pushTag(map.info, mapTags, map.layout, 'outdoors')
-  pushTag(map.info, mapTags, map.layout, 'linear')
-  pushTag(map.info, mapTags, map.layout, 'league_mechanics', 'league mechanics')
-  pushTag(map.info, mapTags, map.layout, 'delirium_mirror', 'delirium mirror')
-
-  pushTag(map.info, mapTags, map.boss, 'separated', 'boss separated')
-  pushTag(map.info, mapTags, map.boss, 'not_spawned', 'boss not spawned', 'primary')
-  pushTag(map.info, mapTags, map.boss, 'rushable', 'boss rushable')
-  pushTag(map.info, mapTags, map.boss, 'phases', 'boss with phases')
-  pushTag(map.info, mapTags, map.boss, 'soft_phases', 'boss with soft phases')
-  pushTag(map.info, mapTags, map.boss, 'not_twinnable', 'boss not twinnable')
-
   pushTag(map.info, mapTags, map, 'pantheon', null, 'warning')
+
+  for (let key of Object.keys(map.tags)) {
+    pushTag(map.info, mapTags, map.tags, key)
+  }
 
   const cards = []
   for (let card of preparedCards) {
@@ -74,13 +64,13 @@ export const preparedMaps = maps.map(map => {
       cards.push({ ...card })
     }
 
-    if (map.boss.ids && map.boss.ids.some(id => card.drop.monsters.includes(id))) {
+    if (map.boss_ids && map.boss_ids.some(id => card.drop.monsters.includes(id))) {
       cards.push({ ...card, boss: true })
     }
   }
 
-  if (map.boss.ids) {
-    const names = [...new Set((map.boss.ids || []).map(b => preparedMonsters[b]).filter(b => !!b))]
+  if (map.boss_ids) {
+    const names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))]
       .filter(n => !n.includes('Merveil'))
       .sort()
     if (names.length > 1) {

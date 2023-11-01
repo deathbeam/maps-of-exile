@@ -21,19 +21,17 @@ Full format for map metadata is:
 {
   "name": "Map name",
   "image": false,
-  "layout": {
+  "tags": {
     "league_mechanics": false,
     "delirium_mirror": false,
     "outdoors": false,
     "linear": false,
-    "few_obstacles": false
-  },
-  "boss": {
-    "not_spawned": false,
-    "rushable": false,
-    "phases": false,
-    "soft_phases": false,
-    "separated": false
+    "few_obstacles": false,
+    "boss_not_spawned": false,
+    "boss_rushable": false,
+    "boss_phases": false,
+    "boss_soft_phases": false,
+    "boss_separated": false
   },
   "rating": {
     "layout": 10,
@@ -51,6 +49,8 @@ See issue mentioned in [For-non-developers](#for-non-developers) section for ref
 
 ## Sources of data
 
+### Spreadsheets
+
 **Stacked Decks card + weight spreadsheet for 3.22** by **nerdyjoe** from **Prohibited Library** discord:
 https://docs.google.com/spreadsheets/d/1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
 
@@ -66,14 +66,22 @@ https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yub
 **Map reference spreadsheet** by **Anjerosan** (used for boss notes and various metadata about layout, like outdoors/linear etc):  
 https://docs.google.com/spreadsheets/d/10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0  
 
-**Card prices** from **PoeNinja** (used for listing all cards and assigning them prices + getting card data like art, stack size and rewards):  
+### Websites/APIs
+
+**Card prices** from **PoeNinja** (used for assigning card prices + getting card data like art, stack size and rewards):  
 https://poe.ninja/challenge/divination-cards  
-https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)  
+https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
 
-**Map card drops** from **PoeWiki** (used for card drops and boss card drops):  
-https://www.poewiki.net/wiki/Colonnade_Map  
+**Area data** from **PoeWiki** (used for listing all maps and areas and grabbing area levels and area bosses):  
+https://www.poewiki.net/wiki/Area:MapAtziri2 (example of **Alluring Abyss**)
 
-**Map metadata** from **PoeDB** (used for map tiers, map listings, boss names, as fallback for card drops when wiki data is missing):  
+**Card data** from **PoeWiki** (used for listing all cards and getting card metadata like drop sources and drop restrictions):  
+https://www.poewiki.net/wiki/House_of_Mirrors (example of **House of Mirrors**)
+
+**Monster data** from **PoeWiki** (used for getting monster names for monster IDs):  
+https://www.poewiki.net/wiki/Monster:Metadata/Monsters/Atziri/Atziri2 (example of **Atziri**)
+
+**Map metadata** from **PoeDB** (used for retrieving area art, area tags and atlas data like atlas position, connected maps, atlas map area levels):  
 https://poedb.tw/us/Maps#MapsList  
 https://poedb.tw/us/Colonnade_Map (example of single map)
 
@@ -85,7 +93,7 @@ https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMap2.png (example)
 
 The site is split to 2 parts, data generator and then the actual site.
 
-### Data generator
+### Data generator ([/data](/data))
 
 First, it grabs all card price data from Poe ninja. This builds the initial card list.  
 
@@ -111,7 +119,7 @@ Then it iterates every map and grabs extra data from poedb (monster level, conne
 
 This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.  
 
-### Site
+### Site ([/site](/site))
 
 Site simply displays all the maps with metadata, builds some tags from misc info from maps and then matches the card metadata from cards .json with card names found in map in map .json.  
 

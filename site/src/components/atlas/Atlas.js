@@ -81,6 +81,7 @@ function MapNode({ id, data }) {
       {!!atlasIcons && (
         <MapImage
           icon={map.icon}
+          name={map.name}
           type={map.type}
           level={mapLevel(map.levels, true, data.voidstones)}
           onClick={data.onClick}

@@ -43,7 +43,9 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
   }
 
   const tags = <Tags tags={mapTags} />
-  const icon = <MapImage icon={map.icon} type={map.type} level={mapLevel(map.levels, map.atlas, voidstones)} />
+  const icon = (
+    <MapImage icon={map.icon} name={map.name} type={map.type} level={mapLevel(map.levels, map.atlas, voidstones)} />
+  )
   const score = !sidebar && <Rating rating={map.score} scale={10} />
 
   let tiers

@@ -11,14 +11,7 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   }
 
   let color = 'map-white'
-  if (
-    type !== 'map' ||
-    icon.includes('Minotaur') ||
-    icon.includes('Hydra') ||
-    icon.includes('Chimera') ||
-    icon.includes('Phoenix') ||
-    icon.includes('VaalTemple')
-  ) {
+  if (type !== 'map') {
     color = ''
   } else if (tier >= 11) {
     color = 'map-red'
@@ -27,7 +20,7 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   }
 
   let extraClass = ''
-  if (type === 'map') {
+  if (icon.includes('Atlas') && icon.includes('Maps')) {
     extraClass = ' map-background'
   }
 

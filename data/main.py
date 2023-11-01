@@ -524,7 +524,12 @@ def get_maps(key, config):
         if is_unique_map_area:
             map_type = "unique map"
         elif is_map_area:
-            map_type = "map"
+            if " Map" not in name or any(
+                x in name or x in id for x in config["special"]
+            ):
+                map_type = "special map"
+            else:
+                map_type = "map"
         elif is_act_area:
             map_type = "act area"
 

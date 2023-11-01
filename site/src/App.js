@@ -39,10 +39,10 @@ function rateMaps(
   const mapsWithCardValues = foundMaps
     .filter(m => {
       switch (mapDisplay) {
-        case 'atlas+unique+act':
+        case 'atlas+unique+special+act':
           return m.atlas || m.type === 'unique map' || m.type === 'act area'
-        case 'atlas+unique':
-          return m.atlas || m.type === 'unique map'
+        case 'atlas+unique+special':
+          return m.atlas || m.type === 'unique map' || m.type === 'special map'
         case 'atlas':
           return m.atlas
         case 'allmaps':
@@ -422,17 +422,17 @@ function App() {
             <br />
             All maps on atlas
             <br />
-            <b>Atlas+Unique maps:</b>
+            <b>Atlas+Unique+Special maps:</b>
             <br />
-            All maps on atlas and all unique map areas (that arent necessarily on atlas but are in game)
+            All maps on atlas and all unique and special map areas (that arent necessarily on atlas but are in game)
             <br />
             <b>All maps:</b>
             <br />
-            All maps and unique map areas (including maps that are not on atlas, e.g from past leagues)
+            All maps and areas including atlas maps that are not on atlas
             <br />
-            <b>Atlas+Unique+Act areas:</b>
+            <b>Atlas+Unique+Special+Act areas:</b>
             <br />
-            Atlas+Unique maps and act areas (for example <b>Blood Aqueduct</b>)
+            Atlas+Unique+Special maps and act areas (for example <b>Blood Aqueduct</b>)
             <br />
             <b>All areas:</b>
             <br />
@@ -442,9 +442,9 @@ function App() {
         type: 'select',
         options: {
           atlas: 'Atlas maps',
-          'atlas+unique': 'Atlas+Unique maps',
+          'atlas+unique+special': 'Atlas+Unique+Special maps',
           allmaps: 'All maps',
-          'atlas+unique+act': 'Atlas+Unique+Act areas',
+          'atlas+unique+special+act': 'Atlas+Unique+Special+Act areas',
           all: 'All areas'
         },
         def: mapDisplay

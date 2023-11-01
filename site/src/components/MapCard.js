@@ -4,7 +4,7 @@ import CardDetail from './CardDetail'
 import { memo } from 'react'
 
 const MapCard = ({ card, type, tooltipTop }) => {
-  const badgeClass = cardBadge(card)
+  const badgeClass = cardBadge(card, 10)
   const img = priceImage(card.price)
   const tooltip = card.weight > 0 && (
     <>

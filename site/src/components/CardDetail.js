@@ -3,7 +3,7 @@ import Rating from './Rating'
 import { cardBadge, priceImage } from '../common'
 
 const CardDetail = ({ card }) => {
-  const badgeClass = cardBadge(card)
+  const badgeClass = cardBadge(card, 10)
   const img = priceImage(card.price)
 
   let dropLevel = null
@@ -35,7 +35,7 @@ const CardDetail = ({ card }) => {
         </span>
       </div>
       <span className="badge bg-dark text-light w-100 map-reward mb-1">{card.reward}</span>
-      <b>Score</b>: <Rating rating={card.score} />
+      <b>Score</b>: <Rating rating={card.score} scale={10} />
       <br />
       <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
       {!card.unknown && (

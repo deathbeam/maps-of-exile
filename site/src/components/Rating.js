@@ -7,7 +7,8 @@ const Rating = ({ rating, tooltip, sidebar = false, label = '', scale = 1 }) => 
   if (rating == null) {
     rating = '?'
   } else {
-    rating = Math.floor(rating)
+    const scalar = 100 / scale
+    rating = Math.floor(rating * scalar) / scalar
   }
 
   const badge = (

@@ -100,15 +100,15 @@ export function priceImage(price) {
   return img
 }
 
-export function cardBadge(card) {
+export function cardBadge(card, scale = 1) {
   let badgeClass
-  if (card.score >= 8) {
+  if (card.score >= 8 * scale) {
     badgeClass = 'bg-light text-dark'
-  } else if (card.score >= 5) {
+  } else if (card.score >= 5 * scale) {
     badgeClass = 'bg-primary text-light'
-  } else if (card.score >= 2) {
+  } else if (card.score >= 2 * scale) {
     badgeClass = 'bg-info text-dark'
-  } else if (card.score >= 0.5) {
+  } else if (card.score >= 0.5 * scale) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   } else {
     badgeClass = 'bg-secondary text-dark'
@@ -133,10 +133,6 @@ export function scrollToElement(id) {
 export function copyToClipboard(ref) {
   ref.current.select()
   document.execCommand('copy')
-}
-
-export function mapTierToLevel(tier) {
-  return tier - 1 + 68
 }
 
 export function mapLevelToTier(level) {

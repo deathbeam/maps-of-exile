@@ -66,7 +66,7 @@ const CardsView = ({
 
           return out
         }),
-        10
+        100
       )
         .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop')
         .sort((a, b) => b.score - a.score),

@@ -117,7 +117,7 @@ function rateMaps(
   // Now calculate score for each card
   calculateScore(
     mapsWithCardValues.flatMap(m => m.cards),
-    10
+    100
   )
 
   // Now finally calculate overall map score
@@ -129,7 +129,7 @@ function rateMaps(
       let cardValue = 0
 
       for (let card of map.cards) {
-        cardValue += card.score * cardInput
+        cardValue += (card.score / 10) * cardInput
       }
 
       map.value = layoutValue + densityValue + bossValue + cardValue

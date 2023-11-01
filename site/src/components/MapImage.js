@@ -2,12 +2,12 @@ import './MapImage.css'
 import { memo } from 'react'
 
 const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
+  if (type === 'act area') {
+    icon = '/img/act.webp'
+  }
+
   if (!icon) {
-    if (type === 'act area') {
-      icon = '/img/act.webp'
-    } else {
-      return null
-    }
+    return null
   }
 
   let color = 'map-white'

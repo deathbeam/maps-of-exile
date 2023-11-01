@@ -1152,7 +1152,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Bu",
+        "shorthand": "Buri",
         "type": "map"
     },
     {
@@ -5693,7 +5693,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Pie",
+        "shorthand": "Pier",
         "type": "map",
         "x": 736,
         "y": 287
@@ -10519,6 +10519,102 @@
         "type": "map"
     },
     {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_lava_"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Burning Rage",
+        "rating": {},
+        "shorthand": " Bu",
+        "type": "special map"
+    },
+    {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_sawblades_"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Crippling Grief",
+        "rating": {},
+        "shorthand": "Gri",
+        "type": "special map"
+    },
+    {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_roombas"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Lingering Pain",
+        "rating": {},
+        "shorthand": "Lin",
+        "type": "special map"
+    },
+    {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_spikes"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Piercing Truth",
+        "rating": {},
+        "shorthand": " Pi",
+        "type": "special map"
+    },
+    {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_arrows"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Stinging Doubt",
+        "rating": {},
+        "shorthand": "bt",
+        "type": "special map"
+    },
+    {
+        "boss": {},
+        "ids": [
+            "EndGame_Labyrinth_trials_spinners"
+        ],
+        "image": false,
+        "info": {},
+        "layout": {},
+        "levels": [
+            75
+        ],
+        "name": "Trial of Swirling Fear",
+        "rating": {},
+        "shorthand": "Sw",
+        "type": "special map"
+    },
+    {
         "atlas": true,
         "boss": {
             "ids": [
@@ -11168,7 +11264,7 @@
         ],
         "name": "Wastes of Lunacy",
         "rating": {},
-        "shorthand": "f L",
+        "shorthand": "tes",
         "type": "special map"
     },
     {

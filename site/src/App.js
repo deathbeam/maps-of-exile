@@ -530,6 +530,7 @@ function App() {
         searchInput={searchInput}
         setSearchInput={setSearchInput}
         voidstonesInput={voidstones.get}
+        cardDisplayInput={cardDisplay.get}
         cardValueSourceInput={cardValueSource.get}
         cardMinPriceInput={cardMinPrice.get}
         cardPriceSourceInput={cardPriceSource.get}

@@ -472,7 +472,7 @@ def get_map_wiki(config):
                 "offset": offset,
                 "tables": "areas",
                 "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
-                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND (areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND (areas.id LIKE '1_%' OR areas.id LIKE '2_%'))",
+                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND (areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND (areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
             },
         ).json()["cargoquery"]
 
@@ -520,7 +520,7 @@ def get_maps(key, config):
             print(f"Found ignored area {name}, skipping")
             continue
 
-        map_type = "unknown area"
+        map_type = "special map"
         if is_unique_map_area:
             map_type = "unique map"
         elif is_map_area:
@@ -532,10 +532,6 @@ def get_maps(key, config):
                 map_type = "map"
         elif is_act_area:
             map_type = "act area"
-
-        if map_type == "unknown area":
-            print(f"Found unknown area {name}, skipping")
-            continue
 
         out_map = {
             "ids": [id],

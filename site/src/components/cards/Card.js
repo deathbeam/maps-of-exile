@@ -42,7 +42,7 @@ const Card = ({ card, voidstones }) => {
   } else if (
     card.maps.length === 0 &&
     card.monsters.length === 0 &&
-    (card.drop.text || card.drop.monsters.length > 0 || card.drop.areas.length) > 0
+    (card.drop.monsters.length > 0 || card.drop.areas.length) > 0
   ) {
     cardNotice = (
       <div className="card mb-2 bg-warning-subtle text-white">

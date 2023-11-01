@@ -38,9 +38,9 @@ const CardDetail = ({ card }) => {
       <b>Score</b>: <Rating rating={card.score} />
       <br />
       <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-      <br />
       {!card.unknown && (
         <>
+          <br />
           <b>Weight</b>: {card.weight}
         </>
       )}

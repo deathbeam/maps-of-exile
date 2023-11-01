@@ -20,6 +20,7 @@ const CardsView = ({
   view,
   setView,
   ratedMaps,
+  cardDisplayInput,
   cardMinPriceInput,
   cardPriceSourceInput,
   voidstonesInput,
@@ -38,7 +39,14 @@ const CardsView = ({
           const out = {
             ...c,
             drop: c.drop || {},
-            maps: ratedMaps.filter(m => m.cards.find(mc => mc.name === c.name && (mc.weight > 0 || mc.unknown))),
+            maps: ratedMaps.filter(m =>
+              m.cards.find(mc => {
+                if (mc.name !== c.name) {
+                  return false
+                }
+                return !mc.unknown || cardDisplayInput === 'all' || mc.weight > 0
+              })
+            ),
             unknown: !c.weight,
             price: price,
             value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
@@ -59,8 +67,10 @@ const CardsView = ({
           return out
         }),
         10
-      ).sort((a, b) => b.score - a.score),
-    [ratedMaps, cardMinPriceInput, cardPriceSourceInput]
+      )
+        .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop')
+        .sort((a, b) => b.score - a.score),
+    [ratedMaps, cardDisplayInput, cardMinPriceInput, cardPriceSourceInput]
   )
 
   const filteredCards = useMemo(() => filterCards(ratedCards, currentSearch), [ratedCards, currentSearch])

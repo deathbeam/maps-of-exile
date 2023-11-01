@@ -1,11 +1,11 @@
 import Tags from './Tags'
-import { tierColor } from '../common'
+import { mapLevel, mapLevelToTier, tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
 import { wikiBase } from '../data'
 
 const MapName = ({ map, sidebar, cardList, voidstones }) => {
-  const color = `text-${tierColor(map.tiers, map.type, map.atlas ? voidstones : 0)}`
+  const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`
   const wikiLink = wikiBase + map.name.replaceAll(' ', '_')
 
   const name = (
@@ -43,16 +43,16 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
   }
 
   const tags = <Tags tags={mapTags} />
-  const icon = <MapImage icon={map.icon} type={map.type} tier={map.tiers[map.atlas ? voidstones : 0]} />
+  const icon = <MapImage icon={map.icon} type={map.type} level={mapLevel(map.levels, map.atlas, voidstones)} />
   const score = !sidebar && <Rating rating={map.score} scale={10} />
 
   let tiers
   if (map.atlas) {
     tiers = []
-    for (let i = 0; i < map.tiers.length; i++) {
-      const tier = map.tiers[i]
+    for (let i = 0; i < map.levels.length; i++) {
+      const tier = mapLevelToTier(map.levels[i])
       const isCurrent = i === voidstones
-      const isLast = i === map.tiers.length - 1
+      const isLast = i === map.levels.length - 1
       const suff = isLast ? '' : ', '
       tiers.push(
         isCurrent ? (
@@ -66,7 +66,7 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
       )
     }
   } else {
-    tiers = 'Area Level ' + map.level
+    tiers = 'Level ' + map.levels.join(', ')
   }
 
   return (

@@ -67,8 +67,15 @@ export function ratingColor(rating, scale = 1) {
   return color
 }
 
-export function tierColor(tiers, type, voidstones = 0) {
-  const tier = tiers[voidstones]
+export function mapLevel(levels, atlas, voidstones) {
+  if (atlas) {
+    return levels[voidstones]
+  }
+  return levels[levels.length - 1]
+}
+
+export function tierColor(levels, atlas, type, voidstones = 0) {
+  const tier = mapLevelToTier(mapLevel(levels, atlas, voidstones))
   let color = 'light'
   if (type === 'unique map') {
     color = 'unique'

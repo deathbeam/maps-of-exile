@@ -2,7 +2,6 @@ import cards from './cards.json'
 import maps from './maps.json'
 import globals from './globals.json'
 import monsters from './monsters.json'
-import { mapLevelToTier } from '../common'
 
 export const wikiBase = 'https://www.poewiki.net/wiki/'
 export const divcordDiscord = 'https://discord.gg/jsN2gsDUyM'
@@ -87,8 +86,6 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
-  const tier = mapLevelToTier(map.level)
-
   const out = {
     ...map,
     image: map.image
@@ -109,8 +106,7 @@ export const preparedMaps = maps.map(map => {
       }),
     cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-    icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png'),
-    tiers: [tier, Math.min(tier + 3, 16), Math.min(tier + 7, 16), Math.min(tier + 11, 16), Math.min(tier + 15, 16)]
+    icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png')
   }
 
   // Build search index

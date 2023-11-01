@@ -1,7 +1,8 @@
 import './MapImage.css'
 import { memo } from 'react'
+import { mapLevelToTier } from '../common'
 
-const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
+const MapImage = ({ icon, level = 0, type = 'map', onClick = null }) => {
   if (type === 'act area') {
     icon = '/img/act.webp'
   }
@@ -11,6 +12,7 @@ const MapImage = ({ icon, tier = 0, type = 'map', onClick = null }) => {
   }
 
   let color = 'map-white'
+  const tier = mapLevelToTier(level)
   if (type !== 'map') {
     color = ''
   } else if (tier >= 11) {

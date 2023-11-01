@@ -13,7 +13,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            84
+        ],
         "name": "Absence of Mercy and Empathy",
         "rating": {},
         "shorthand": "Em",
@@ -33,7 +35,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            84
+        ],
         "name": "Absence of Patience and Wisdom",
         "rating": {},
         "shorthand": "Wi",
@@ -53,7 +57,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            84
+        ],
         "name": "Absence of Symmetry and Harmony",
         "rating": {},
         "shorthand": "Sym",
@@ -73,7 +79,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Absence of Value and Meaning",
         "rating": {},
         "shorthand": "Mea",
@@ -106,7 +114,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Academy Map",
         "rating": {
             "boss": 6,
@@ -154,7 +168,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Acid Caverns Map",
         "rating": {
             "boss": 4,
@@ -197,7 +217,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Acton's Nightmare",
         "rating": {},
         "shorthand": "Ni",
@@ -237,7 +263,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Alleyways Map",
         "rating": {
             "boss": 10,
@@ -262,7 +294,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 68,
+        "levels": [
+            68
+        ],
         "name": "Altered Distant Memory",
         "rating": {},
         "shorthand": "Alt",
@@ -288,7 +322,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72
+        ],
         "name": "Ancient City Map",
         "rating": {
             "boss": 8,
@@ -331,7 +367,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Arachnid Nest Map",
         "rating": {
             "boss": 2,
@@ -375,7 +417,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Arachnid Tomb Map",
         "pantheon": "Soul of Arakaali",
         "rating": {
@@ -421,7 +469,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Arcade Map",
         "rating": {
             "boss": 10,
@@ -461,7 +515,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 68,
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
         "name": "Arena Map",
         "rating": {
             "boss": 6,
@@ -499,7 +559,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69
+        ],
         "name": "Arid Lake Map",
         "rating": {
             "boss": 8,
@@ -535,7 +597,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Armoury Map",
         "rating": {
             "boss": 8,
@@ -571,7 +635,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Arsenal Map",
         "rating": {
             "boss": 4,
@@ -601,7 +667,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73
+        ],
         "name": "Ashen Wood Map",
         "rating": {
             "boss": 6,
@@ -621,7 +689,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 1,
+        "levels": [
+            1
+        ],
         "name": "Aspirants' Plaza",
         "rating": {},
         "shorthand": " Pl",
@@ -660,7 +730,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Atoll Map",
         "pantheon": "Soul of the Brine King",
         "rating": {
@@ -686,7 +762,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 68,
+        "levels": [
+            68
+        ],
         "name": "Augmented Distant Memory",
         "rating": {},
         "shorthand": "Au",
@@ -723,7 +801,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 68,
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
         "name": "Barrows Map",
         "rating": {
             "boss": 10,
@@ -763,7 +847,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Basilica Map",
         "rating": {
             "boss": 0,
@@ -801,7 +891,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Bazaar Map",
         "rating": {
             "boss": 8,
@@ -845,7 +941,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Beach Map",
         "rating": {
             "boss": 10,
@@ -884,7 +986,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 77,
+        "levels": [
+            77
+        ],
         "name": "Belfry Map",
         "rating": {
             "boss": 0,
@@ -921,7 +1025,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Bog Map",
         "rating": {
             "boss": 8,
@@ -965,7 +1075,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 68,
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
         "name": "Bone Crypt Map",
         "rating": {
             "boss": 8,
@@ -995,7 +1111,9 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "layout": {},
-        "level": 81,
+        "levels": [
+            81
+        ],
         "name": "Bramble Valley Map",
         "rating": {
             "boss": 4,
@@ -1025,7 +1143,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70
+        ],
         "name": "Burial Chambers Map",
         "rating": {
             "boss": 6,
@@ -1067,7 +1187,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Caer Blaidd, Wolfpack's Den",
         "rating": {},
         "shorthand": ",",
@@ -1102,7 +1228,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Cage Map",
         "rating": {
             "boss": 10,
@@ -1148,7 +1280,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Caldera Map",
         "rating": {
             "boss": 8,
@@ -1187,7 +1325,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71
+        ],
         "name": "Canyon Map",
         "rating": {
             "boss": 6,
@@ -1225,7 +1365,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Carcass Map",
         "rating": {
             "boss": 6,
@@ -1270,7 +1416,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Castle Ruins Map",
         "rating": {
             "boss": 8,
@@ -1316,7 +1468,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Cells Map",
         "rating": {
             "boss": 8,
@@ -1364,7 +1522,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Cemetery Map",
         "pantheon": "Soul of Gruthkul",
         "rating": {
@@ -1402,7 +1566,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 83,
+        "levels": [
+            83,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Channel Map",
         "pantheon": "Soul of Lunaris",
         "rating": {
@@ -1446,7 +1616,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Chateau Map",
         "rating": {
             "boss": 10,
@@ -1466,16 +1642,21 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoL0JyZWFjaEZyYWdtZW50c0NoYW9zIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/04b5c032f4/BreachFragmentsChaos.png",
         "ids": [
-            "BreachBossChaos5",
-            "BreachBossChaos4",
-            "BreachBossChaos3",
+            "BreachBossChaos",
             "BreachBossChaos2",
-            "BreachBossChaos"
+            "BreachBossChaos3",
+            "BreachBossChaos4",
+            "BreachBossChaos5"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            81,
+            82,
+            83,
+            84
+        ],
         "name": "Chayula's Domain",
         "rating": {},
         "shorthand": "yu",
@@ -1516,7 +1697,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "City Square Map",
         "rating": {
             "boss": 6,
@@ -1560,7 +1747,13 @@
             "league_mechanics": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Cold River Map",
         "pantheon": "Soul of Lunaris",
         "rating": {
@@ -1604,7 +1797,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "Colonnade Map",
         "rating": {
             "boss": 6,
@@ -1649,7 +1848,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Colosseum Map",
         "rating": {
             "boss": 2,
@@ -1687,7 +1892,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 72,
+        "levels": [
+            72
+        ],
         "name": "Conservatory Map",
         "rating": {
             "boss": 8,
@@ -1724,7 +1931,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74
+        ],
         "name": "Coral Ruins Map",
         "rating": {
             "boss": 4,
@@ -1762,7 +1971,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Core Map",
         "rating": {
             "boss": 0,
@@ -1785,7 +1996,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 79,
+        "levels": [
+            79
+        ],
         "name": "Cortex",
         "rating": {},
         "shorthand": "rte",
@@ -1819,7 +2032,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Courthouse Map",
         "rating": {
             "boss": 6,
@@ -1865,7 +2084,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Courtyard Map",
         "rating": {
             "boss": 6,
@@ -1911,7 +2136,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "Coves Map",
         "pantheon": "Soul of the Brine King",
         "rating": {
@@ -1936,7 +2167,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 74,
+        "levels": [
+            74
+        ],
         "name": "Craiceann's Cove",
         "rating": {},
         "shorthand": "aic",
@@ -1968,7 +2201,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74
+        ],
         "name": "Crater Map",
         "rating": {
             "boss": 10,
@@ -2010,7 +2245,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Crimson Temple Map",
         "rating": {
             "boss": 10,
@@ -2047,7 +2288,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 79,
+        "levels": [
+            79
+        ],
         "name": "Crimson Township Map",
         "rating": {
             "boss": 6,
@@ -2085,7 +2328,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79
+        ],
         "name": "Crystal Ore Map",
         "rating": {
             "boss": 4,
@@ -2127,7 +2372,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Cursed Crypt Map",
         "rating": {
             "boss": 6,
@@ -2156,7 +2407,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 37,
+        "levels": [
+            37
+        ],
         "name": "Daresso's Dream",
         "rating": {},
         "shorthand": "so'",
@@ -2188,7 +2441,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Dark Forest Map",
         "rating": {
             "boss": 4,
@@ -2230,7 +2489,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Death and Taxes",
         "rating": {},
         "shorthand": "Ta",
@@ -2265,7 +2530,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79
+        ],
         "name": "Defiled Cathedral Map",
         "rating": {
             "boss": 10,
@@ -2295,7 +2562,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69
+        ],
         "name": "Desert Map",
         "rating": {
             "boss": 4,
@@ -2333,7 +2602,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Desert Spring Map",
         "rating": {
             "boss": 2,
@@ -2355,7 +2626,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Desert of Dementia",
         "rating": {},
         "shorthand": "Dem",
@@ -2388,7 +2661,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 81,
+        "levels": [
+            81
+        ],
         "name": "Dig Map",
         "rating": {
             "boss": 4,
@@ -2414,7 +2689,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 56,
+        "levels": [
+            56
+        ],
         "name": "Doedre's Cesspool",
         "rating": {},
         "shorthand": " Ce",
@@ -2424,15 +2701,17 @@
         "boss": {},
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9LYXJ1aUZyYWdtZW50IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f05377f6c7/KaruiFragment.png",
         "ids": [
-            "LegionLeague4",
-            "LegionLeague3",
+            "LegionLeague",
             "LegionLeague2",
-            "LegionLeague"
+            "LegionLeague3",
+            "LegionLeague4"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Domain of Timeless Conflict",
         "rating": {},
         "shorthand": "fl",
@@ -2458,7 +2737,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 72,
+        "levels": [
+            72
+        ],
         "name": "Doryani's Machinarium",
         "rating": {},
         "shorthand": "i'",
@@ -2487,7 +2768,9 @@
             "league_mechanics": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Dry Sea Map",
         "rating": {
             "boss": 8,
@@ -2530,7 +2813,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Dunes Map",
         "pantheon": "Soul of Garukhan",
         "rating": {
@@ -2576,7 +2865,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "Dungeon Map",
         "rating": {
             "boss": 8,
@@ -2596,16 +2891,21 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoL0JyZWFjaEZyYWdtZW50c0xpZ2h0bmluZyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/e66ff540ed/BreachFragmentsLightning.png",
         "ids": [
-            "BreachBossLightning5",
-            "BreachBossLightning4",
-            "BreachBossLightning3",
+            "BreachBossLightning",
             "BreachBossLightning2",
-            "BreachBossLightning"
+            "BreachBossLightning3",
+            "BreachBossLightning4",
+            "BreachBossLightning5"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            74,
+            79,
+            81,
+            84
+        ],
         "name": "Esh's Domain",
         "rating": {},
         "shorthand": "Esh",
@@ -2637,7 +2937,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Estuary Map",
         "rating": {
             "boss": 8,
@@ -2683,7 +2989,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "Excavation Map",
         "rating": {
             "boss": 4,
@@ -2709,7 +3021,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            84
+        ],
         "name": "Eye of the Storm",
         "rating": {},
         "shorthand": "Ey",
@@ -2748,7 +3062,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Factory Map",
         "rating": {
             "boss": 6,
@@ -2772,7 +3092,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Farrul's Den",
         "rating": {},
         "shorthand": "Far",
@@ -2791,7 +3113,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 77,
+        "levels": [
+            77
+        ],
         "name": "Fenumus' Lair",
         "rating": {},
         "shorthand": "mu",
@@ -2824,7 +3148,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73
+        ],
         "name": "Fields Map",
         "rating": {
             "boss": 6,
@@ -2868,7 +3194,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Flooded Mine Map",
         "rating": {
             "boss": 6,
@@ -2907,7 +3239,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 77,
+        "levels": [
+            77
+        ],
         "name": "Forbidden Woods Map",
         "rating": {
             "boss": 6,
@@ -2944,7 +3278,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Forge of the Phoenix Map",
         "rating": {},
         "shorthand": "ix",
@@ -2972,7 +3308,13 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "layout": {},
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Forking River Map",
         "rating": {
             "boss": 6,
@@ -3008,7 +3350,9 @@
             "delirium_mirror": false,
             "league_mechanics": false
         },
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Foundry Map",
         "rating": {
             "boss": 4,
@@ -3049,7 +3393,13 @@
             "league_mechanics": false,
             "linear": true
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Frozen Cabins Map",
         "pantheon": "Soul of Lunaris",
         "rating": {
@@ -3094,7 +3444,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Fungal Hollow Map",
         "rating": {
             "boss": 10,
@@ -3127,7 +3483,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74
+        ],
         "name": "Gardens Map",
         "rating": {
             "boss": 6,
@@ -3170,7 +3528,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 78,
+        "levels": [
+            78,
+            81,
+            83,
+            83,
+            83
+        ],
         "name": "Geode Map",
         "pantheon": "Soul of Shakari",
         "rating": {
@@ -3203,7 +3567,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Ghetto Map",
         "rating": {
             "boss": 4,
@@ -3240,7 +3606,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 80,
+        "levels": [
+            80,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Glacier Map",
         "rating": {
             "boss": 6,
@@ -3273,7 +3645,13 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "layout": {},
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Grave Trough Map",
         "rating": {
             "boss": 4,
@@ -3314,7 +3692,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Graveyard Map",
         "rating": {
             "boss": 8,
@@ -3352,7 +3736,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71
+        ],
         "name": "Grotto Map",
         "rating": {
             "boss": 8,
@@ -3379,7 +3765,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 78,
+        "levels": [
+            78
+        ],
         "name": "Hall of Grandmasters",
         "rating": {},
         "shorthand": "dm",
@@ -3415,7 +3803,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Hallowed Ground",
         "rating": {},
         "shorthand": "wed",
@@ -3435,7 +3829,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Halls of Delirium",
         "rating": {},
         "shorthand": "lir",
@@ -3467,7 +3863,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Haunted Mansion Map",
         "rating": {
             "boss": 8,
@@ -3487,7 +3889,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Hysteriagate",
         "rating": {},
         "shorthand": "aga",
@@ -3522,7 +3926,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Iceberg Map",
         "rating": {
             "boss": 8,
@@ -3566,7 +3976,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 83,
+        "levels": [
+            83,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Infested Valley Map",
         "pantheon": "Soul of Ryslatha",
         "rating": {
@@ -3592,7 +4008,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Infused Beachhead",
         "rating": {},
         "shorthand": "fu",
@@ -3610,7 +4028,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Islands of Devastation",
         "rating": {},
         "shorthand": "Dev",
@@ -3642,7 +4062,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 83,
+        "levels": [
+            83,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Ivory Temple Map",
         "rating": {
             "boss": 4,
@@ -3680,7 +4106,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73
+        ],
         "name": "Jungle Valley Map",
         "rating": {
             "boss": 6,
@@ -3706,7 +4134,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 37,
+        "levels": [
+            37
+        ],
         "name": "Kaom's Dream",
         "rating": {},
         "shorthand": "m's D",
@@ -3726,7 +4156,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 38,
+        "levels": [
+            38
+        ],
         "name": "Kaom's Stronghold",
         "rating": {},
         "shorthand": "gho",
@@ -3758,7 +4190,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Laboratory Map",
         "rating": {
             "boss": 2,
@@ -3794,7 +4228,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 78,
+        "levels": [
+            78
+        ],
         "name": "Lair Map",
         "rating": {
             "boss": 6,
@@ -3831,7 +4267,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Lair of the Hydra Map",
         "rating": {},
         "shorthand": "yd",
@@ -3864,7 +4302,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Lava Chamber Map",
         "pantheon": "Soul of Solaris",
         "rating": {
@@ -3904,7 +4348,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Lava Lake Map",
         "rating": {
             "boss": 0,
@@ -3949,7 +4399,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Leyline Map",
         "rating": {
             "boss": 6,
@@ -3990,7 +4446,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71
+        ],
         "name": "Lighthouse Map",
         "rating": {
             "boss": 6,
@@ -4026,7 +4484,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Lookout Map",
         "rating": {
             "boss": 6,
@@ -4046,7 +4510,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Lunacy's Watch",
         "rating": {},
         "shorthand": "tc",
@@ -4078,7 +4544,13 @@
             "league_mechanics": false,
             "linear": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Maelstr\u00f6m of Chaos",
         "rating": {},
         "shorthand": "\u00f6",
@@ -4119,7 +4591,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Malformation Map",
         "rating": {
             "boss": 2,
@@ -4148,7 +4626,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 52,
+        "levels": [
+            52
+        ],
         "name": "Maligaro's Sanctum",
         "rating": {},
         "shorthand": "ali",
@@ -4166,7 +4646,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Manor of Madness",
         "rating": {},
         "shorthand": "dn",
@@ -4202,7 +4684,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Mao Kun",
         "rating": {},
         "shorthand": "Ku",
@@ -4236,7 +4724,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69
+        ],
         "name": "Marshes Map",
         "rating": {
             "boss": 8,
@@ -4274,7 +4764,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Mausoleum Map",
         "rating": {
             "boss": 4,
@@ -4318,7 +4814,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Maze Map",
         "rating": {
             "boss": 6,
@@ -4357,7 +4859,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Maze of the Minotaur Map",
         "rating": {},
         "shorthand": "aur",
@@ -4390,7 +4894,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Mesa Map",
         "rating": {
             "boss": 8,
@@ -4434,7 +4944,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Mineral Pools Map",
         "rating": {
             "boss": 6,
@@ -4478,7 +4994,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Moon Temple Map",
         "rating": {
             "boss": 8,
@@ -4517,7 +5039,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Mud Geyser Map",
         "rating": {
             "boss": 4,
@@ -4561,7 +5089,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Museum Map",
         "rating": {
             "boss": 6,
@@ -4607,7 +5141,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Necropolis Map",
         "rating": {
             "boss": 8,
@@ -4646,7 +5186,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Oba's Cursed Trove",
         "rating": {},
         "shorthand": "Ob",
@@ -4684,7 +5230,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 68,
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
         "name": "Olmec's Sanctum",
         "rating": {},
         "shorthand": "c'",
@@ -4724,7 +5276,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Orchard Map",
         "rating": {
             "boss": 4,
@@ -4744,7 +5302,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Oriath Delusion",
         "rating": {},
         "shorthand": "h D",
@@ -4765,7 +5325,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 42,
+        "levels": [
+            42
+        ],
         "name": "Oriath Square",
         "rating": {},
         "shorthand": "h S",
@@ -4798,7 +5360,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Overgrown Ruin Map",
         "rating": {
             "boss": 4,
@@ -4841,7 +5405,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Overgrown Shrine Map",
         "pantheon": "Soul of Arakaali",
         "rating": {
@@ -4881,7 +5451,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Palace Map",
         "rating": {
             "boss": 4,
@@ -4913,7 +5489,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Park Map",
         "rating": {
             "boss": 8,
@@ -4952,7 +5530,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Pen Map",
         "rating": {
             "boss": 6,
@@ -4984,7 +5568,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70
+        ],
         "name": "Peninsula Map",
         "rating": {
             "boss": 8,
@@ -5002,7 +5588,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 71,
+        "levels": [
+            71
+        ],
         "name": "Perandus Manor",
         "rating": {},
         "shorthand": "Per",
@@ -5041,7 +5629,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Phantasmagoria Map",
         "rating": {
             "boss": 4,
@@ -5086,7 +5680,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Pier Map",
         "rating": {
             "boss": 2,
@@ -5128,7 +5728,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Pillars of Arun",
         "rating": {},
         "shorthand": "Aru",
@@ -5170,7 +5776,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Pit Map",
         "rating": {
             "boss": 4,
@@ -5209,7 +5821,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Pit of the Chimera Map",
         "rating": {},
         "shorthand": "Chi",
@@ -5227,7 +5841,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Pits of Sorrow",
         "rating": {},
         "shorthand": "Sor",
@@ -5266,7 +5882,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 68,
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
         "name": "Plateau Map",
         "rating": {
             "boss": 6,
@@ -5304,7 +5926,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 81,
+        "levels": [
+            81
+        ],
         "name": "Plaza Map",
         "rating": {
             "boss": 6,
@@ -5328,7 +5952,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Polaric Void",
         "rating": {},
         "shorthand": " Vo",
@@ -5364,7 +5990,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Poorjoy's Asylum",
         "rating": {},
         "shorthand": "j",
@@ -5409,7 +6041,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Port Map",
         "rating": {
             "boss": 6,
@@ -5460,7 +6098,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "Precinct Map",
         "rating": {
             "boss": 6,
@@ -5506,7 +6150,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Primordial Blocks Map",
         "rating": {
             "boss": 2,
@@ -5551,7 +6201,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Primordial Pool Map",
         "rating": {
             "boss": 8,
@@ -5578,12 +6234,15 @@
             "1_2_9"
         ],
         "ids": [
-            "2_6_8",
-            "1_1_8"
+            "1_1_8",
+            "2_6_8"
         ],
         "info": {},
         "layout": {},
-        "level": 47,
+        "levels": [
+            10,
+            47
+        ],
         "name": "Prisoner's Gate",
         "rating": {},
         "shorthand": "s G",
@@ -5622,7 +6281,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Promenade Map",
         "rating": {
             "boss": 6,
@@ -5669,7 +6334,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Racecourse Map",
         "rating": {
             "boss": 6,
@@ -5707,7 +6378,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 74,
+        "levels": [
+            74
+        ],
         "name": "Ramparts Map",
         "rating": {
             "boss": 10,
@@ -5744,7 +6417,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Reef Map",
         "rating": {
             "boss": 0,
@@ -5782,7 +6461,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71
+        ],
         "name": "Relic Chambers Map",
         "rating": {
             "boss": 6,
@@ -5804,7 +6485,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Repository of Derision",
         "rating": {},
         "shorthand": "Der",
@@ -5844,7 +6527,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Residence Map",
         "rating": {
             "boss": 6,
@@ -5869,7 +6558,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 68,
+        "levels": [
+            68
+        ],
         "name": "Rewritten Distant Memory",
         "rating": {},
         "shorthand": "wr",
@@ -5887,7 +6578,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "River of Hysteria",
         "rating": {},
         "shorthand": "f H",
@@ -5905,7 +6598,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Ruins of Despair",
         "rating": {},
         "shorthand": "esp",
@@ -5926,7 +6621,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 70,
+        "levels": [
+            70
+        ],
         "name": "Saqawal's Roost",
         "rating": {},
         "shorthand": "aq",
@@ -5958,7 +6655,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76
+        ],
         "name": "Scriptorium Map",
         "rating": {
             "boss": 8,
@@ -5980,7 +6679,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Sea of Isolation",
         "rating": {},
         "shorthand": "Iso",
@@ -6000,7 +6701,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Seething Chyme",
         "rating": {},
         "shorthand": "Chy",
@@ -6027,7 +6730,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76
+        ],
         "name": "Sepulchre Map",
         "rating": {
             "boss": 2,
@@ -6053,7 +6758,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 47,
+        "levels": [
+            47
+        ],
         "name": "Shavronne's Tower",
         "rating": {},
         "shorthand": "vr",
@@ -6087,7 +6794,9 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 77,
+        "levels": [
+            77
+        ],
         "name": "Shipyard Map",
         "rating": {
             "boss": 4,
@@ -6131,7 +6840,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Shore Map",
         "rating": {
             "boss": 10,
@@ -6170,7 +6885,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "Shrine Map",
         "rating": {
             "boss": 6,
@@ -6212,7 +6929,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Siege Map",
         "pantheon": "Soul of Tukohama",
         "rating": {
@@ -6256,7 +6979,13 @@
             "league_mechanics": false,
             "linear": true
         },
-        "level": 83,
+        "levels": [
+            83,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Silo Map",
         "rating": {
             "boss": 4,
@@ -6294,7 +7023,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Spider Forest Map",
         "rating": {
             "boss": 6,
@@ -6326,7 +7061,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 72,
+        "levels": [
+            72
+        ],
         "name": "Spider Lair Map",
         "rating": {
             "boss": 8,
@@ -6348,7 +7085,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Spires of Delusion",
         "rating": {},
         "shorthand": "ire",
@@ -6384,7 +7123,13 @@
             "league_mechanics": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Stagnation Map",
         "rating": {
             "boss": 4,
@@ -6430,7 +7175,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Strand Map",
         "rating": {
             "boss": 10,
@@ -6475,7 +7226,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "Sulphur Vents Map",
         "rating": {
             "boss": 8,
@@ -6515,7 +7272,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 76,
+        "levels": [
+            76,
+            79,
+            83,
+            83,
+            83
+        ],
         "name": "Summit Map",
         "pantheon": "Soul of Abberath",
         "rating": {
@@ -6556,7 +7319,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 80,
+        "levels": [
+            80,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Sunken City Map",
         "pantheon": "Soul of Arakaali",
         "rating": {
@@ -6603,7 +7372,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Temple Map",
         "pantheon": "Soul of Solaris",
         "rating": {
@@ -6650,7 +7425,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Terrace Map",
         "pantheon": "Soul of Yugul",
         "rating": {
@@ -6680,7 +7461,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 80,
+        "levels": [
+            80
+        ],
         "name": "The Alluring Abyss",
         "rating": {},
         "shorthand": "by",
@@ -6697,7 +7480,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 23,
+        "levels": [
+            23
+        ],
         "name": "The Ancient Pyramid",
         "rating": {},
         "shorthand": "t P",
@@ -6720,7 +7505,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 70,
+        "levels": [
+            70
+        ],
         "name": "The Apex of Sacrifice",
         "rating": {},
         "shorthand": "Ap",
@@ -6741,7 +7528,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 33,
+        "levels": [
+            33
+        ],
         "name": "The Aqueduct",
         "rating": {},
         "shorthand": "e Aq",
@@ -6761,7 +7550,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 31,
+        "levels": [
+            31
+        ],
         "name": "The Archives",
         "rating": {},
         "shorthand": "hiv",
@@ -6782,7 +7573,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 40,
+        "levels": [
+            40
+        ],
         "name": "The Ascent",
         "rating": {},
         "shorthand": "Asc",
@@ -6806,7 +7599,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 53,
+        "levels": [
+            53
+        ],
         "name": "The Ashen Fields",
         "rating": {},
         "shorthand": " Ash",
@@ -6828,7 +7623,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 57,
+        "levels": [
+            57
+        ],
         "name": "The Bath House",
         "rating": {},
         "shorthand": "Hou",
@@ -6850,7 +7647,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 27,
+        "levels": [
+            27
+        ],
         "name": "The Battlefront",
         "rating": {},
         "shorthand": "att",
@@ -6864,14 +7663,18 @@
         },
         "icon": "Art/2DItems/Maps/HarbingerRed",
         "ids": [
-            "MapWorldsHarbingerMid",
+            "MapWorldsHarbingerHigh",
             "MapWorldsHarbingerLow",
-            "MapWorldsHarbingerHigh"
+            "MapWorldsHarbingerMid"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            72,
+            77,
+            82
+        ],
         "name": "The Beachhead",
         "rating": {},
         "shorthand": "e Beach",
@@ -6888,7 +7691,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 49,
+        "levels": [
+            49
+        ],
         "name": "The Beacon",
         "rating": {},
         "shorthand": "con",
@@ -6909,7 +7714,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 63,
+        "levels": [
+            63
+        ],
         "name": "The Belly of the Beast",
         "rating": {},
         "shorthand": "The Belly of the Beast",
@@ -6930,7 +7737,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 38,
+        "levels": [
+            38
+        ],
         "name": "The Belly of the Beast Level 1",
         "rating": {},
         "shorthand": "st Level 1",
@@ -6951,7 +7760,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 39,
+        "levels": [
+            39
+        ],
         "name": "The Belly of the Beast Level 2",
         "rating": {},
         "shorthand": "st Level 2",
@@ -6968,7 +7779,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 61,
+        "levels": [
+            61
+        ],
         "name": "The Blood Aqueduct",
         "rating": {},
         "shorthand": "Bloo",
@@ -6988,7 +7801,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 62,
+        "levels": [
+            62
+        ],
         "name": "The Boiling Lake",
         "rating": {},
         "shorthand": " Bo",
@@ -7002,7 +7817,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "The Bridge Enraptured",
         "rating": {},
         "shorthand": "nr",
@@ -7023,7 +7840,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 50,
+        "levels": [
+            50
+        ],
         "name": "The Brine King's Reef",
         "rating": {},
         "shorthand": "Ki",
@@ -7041,12 +7860,15 @@
             "1_2_3"
         ],
         "ids": [
-            "2_7_1",
-            "1_2_4"
+            "1_2_4",
+            "2_7_1"
         ],
         "info": {},
         "layout": {},
-        "level": 50,
+        "levels": [
+            16,
+            50
+        ],
         "name": "The Broken Bridge",
         "rating": {},
         "shorthand": "Bro",
@@ -7063,7 +7885,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 66,
+        "levels": [
+            66
+        ],
         "name": "The Canals",
         "rating": {},
         "shorthand": "ana",
@@ -7079,7 +7903,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 27,
+        "levels": [
+            27
+        ],
         "name": "The Catacombs",
         "rating": {},
         "shorthand": "ata",
@@ -7098,12 +7924,15 @@
             "2_6_town"
         ],
         "ids": [
-            "2_10_1",
-            "1_5_8"
+            "1_5_8",
+            "2_10_1"
         ],
         "info": {},
         "layout": {},
-        "level": 64,
+        "levels": [
+            45,
+            64
+        ],
         "name": "The Cathedral Rooftop",
         "rating": {},
         "shorthand": "ft",
@@ -7120,7 +7949,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 54,
+        "levels": [
+            54
+        ],
         "name": "The Causeway",
         "rating": {},
         "shorthand": "Cau",
@@ -7141,12 +7972,15 @@
             "1_2_1"
         ],
         "ids": [
-            "2_6_13",
-            "1_1_11_2"
+            "1_1_11_2",
+            "2_6_13"
         ],
         "info": {},
         "layout": {},
-        "level": 49,
+        "levels": [
+            13,
+            49
+        ],
         "name": "The Cavern of Anger",
         "rating": {},
         "shorthand": "Ang",
@@ -7167,7 +8001,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 12,
+        "levels": [
+            12
+        ],
         "name": "The Cavern of Wrath",
         "rating": {},
         "shorthand": "Wr",
@@ -7188,7 +8024,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 22,
+        "levels": [
+            22
+        ],
         "name": "The Caverns",
         "rating": {},
         "shorthand": "e Caverns",
@@ -7209,7 +8047,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 43,
+        "levels": [
+            43
+        ],
         "name": "The Chamber of Innocence",
         "rating": {},
         "shorthand": "Inn",
@@ -7229,12 +8069,15 @@
             "1_2_6_2"
         ],
         "ids": [
-            "2_7_5_1",
-            "1_2_6_1"
+            "1_2_6_1",
+            "2_7_5_1"
         ],
         "info": {},
         "layout": {},
-        "level": 52,
+        "levels": [
+            15,
+            52
+        ],
         "name": "The Chamber of Sins Level 1",
         "rating": {},
         "shorthand": "ns Level 1",
@@ -7243,8 +8086,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/ZombieDismember/ZombieBossDegenAura",
-                "Metadata/Monsters/DemonFourLegged/BossFourLeggedDemon"
+                "Metadata/Monsters/DemonFourLegged/BossFourLeggedDemon",
+                "Metadata/Monsters/ZombieDismember/ZombieBossDegenAura"
             ]
         },
         "connected": [
@@ -7253,12 +8096,15 @@
             "1_2_6_1"
         ],
         "ids": [
-            "2_7_5_2",
-            "1_2_6_2"
+            "1_2_6_2",
+            "2_7_5_2"
         ],
         "info": {},
         "layout": {},
-        "level": 52,
+        "levels": [
+            16,
+            52
+        ],
         "name": "The Chamber of Sins Level 2",
         "rating": {},
         "shorthand": "ns Level 2",
@@ -7279,7 +8125,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 23,
+        "levels": [
+            23
+        ],
         "name": "The City of Sarn",
         "rating": {},
         "shorthand": "e Ci",
@@ -7301,7 +8149,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 7,
+        "levels": [
+            7
+        ],
         "name": "The Climb",
         "rating": {},
         "shorthand": "Cli",
@@ -7310,8 +8160,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Hound/HoundBoss2",
-                "Metadata/Monsters/Cannibal/CannibalFemaleBossWitch"
+                "Metadata/Monsters/Cannibal/CannibalFemaleBossWitch",
+                "Metadata/Monsters/Hound/HoundBoss2"
             ]
         },
         "connected": [
@@ -7323,12 +8173,15 @@
             "1_1_2a"
         ],
         "ids": [
-            "2_6_2",
-            "1_1_2"
+            "1_1_2",
+            "2_6_2"
         ],
         "info": {},
         "layout": {},
-        "level": 45,
+        "levels": [
+            2,
+            45
+        ],
         "name": "The Coast",
         "rating": {},
         "shorthand": "Coa",
@@ -7337,8 +8190,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/Vilenta/Vilenta",
-                "Metadata/Monsters/BlackguardInquisitor/Bloodwing"
+                "Metadata/Monsters/BlackguardInquisitor/Bloodwing",
+                "Metadata/Monsters/Vilenta/Vilenta"
             ]
         },
         "connected": [
@@ -7347,12 +8200,15 @@
             "1_5_3"
         ],
         "ids": [
-            "2_10_7",
-            "1_5_2"
+            "1_5_2",
+            "2_10_7"
         ],
         "info": {},
         "layout": {},
-        "level": 66,
+        "levels": [
+            41,
+            66
+        ],
         "name": "The Control Blocks",
         "rating": {},
         "shorthand": "ntr",
@@ -7382,7 +8238,13 @@
             "delirium_mirror": false,
             "league_mechanics": false
         },
-        "level": 74,
+        "levels": [
+            74,
+            77,
+            81,
+            83,
+            83
+        ],
         "name": "The Coward's Trial",
         "rating": {},
         "shorthand": "d'",
@@ -7405,7 +8267,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 25,
+        "levels": [
+            25
+        ],
         "name": "The Crematorium",
         "rating": {},
         "shorthand": "Cre",
@@ -7427,12 +8291,15 @@
             "1_2_6_1"
         ],
         "ids": [
-            "2_7_2",
-            "1_2_3"
+            "1_2_3",
+            "2_7_2"
         ],
         "info": {},
         "layout": {},
-        "level": 51,
+        "levels": [
+            15,
+            51
+        ],
         "name": "The Crossroads",
         "rating": {},
         "shorthand": "sr",
@@ -7448,7 +8315,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 51,
+        "levels": [
+            51
+        ],
         "name": "The Crypt",
         "rating": {},
         "shorthand": "The Crypt",
@@ -7465,7 +8334,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 17,
+        "levels": [
+            17
+        ],
         "name": "The Crypt Level 1",
         "rating": {},
         "shorthand": "pt Level 1",
@@ -7485,7 +8356,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 18,
+        "levels": [
+            18
+        ],
         "name": "The Crypt Level 2",
         "rating": {},
         "shorthand": "pt Level 2",
@@ -7508,7 +8381,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 36,
+        "levels": [
+            36
+        ],
         "name": "The Crystal Veins",
         "rating": {},
         "shorthand": "ei",
@@ -7517,9 +8392,9 @@
     {
         "boss": {
             "ids": [
+                "Metadata/Monsters/Beasts/BeastBossWhite",
                 "Metadata/Monsters/Beasts/BeastBossWhiteSkeletal",
-                "Metadata/Monsters/Necromancer/NecromancerSkeletalBeast",
-                "Metadata/Monsters/Beasts/BeastBossWhite"
+                "Metadata/Monsters/Necromancer/NecromancerSkeletalBeast"
             ]
         },
         "connected": [
@@ -7528,12 +8403,15 @@
             "1_2_2"
         ],
         "ids": [
-            "2_7_6",
-            "1_2_2a"
+            "1_2_2a",
+            "2_7_6"
         ],
         "info": {},
         "layout": {},
-        "level": 53,
+        "levels": [
+            15,
+            53
+        ],
         "name": "The Den",
         "rating": {},
         "shorthand": "e Den",
@@ -7550,7 +8428,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 61,
+        "levels": [
+            61
+        ],
         "name": "The Descent",
         "rating": {},
         "shorthand": "esc",
@@ -7570,7 +8450,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 65,
+        "levels": [
+            65
+        ],
         "name": "The Desecrated Chambers",
         "rating": {},
         "shorthand": "cra",
@@ -7586,7 +8468,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 29,
+        "levels": [
+            29
+        ],
         "name": "The Docks",
         "rating": {},
         "shorthand": "Doc",
@@ -7604,12 +8488,15 @@
             "1_2_8"
         ],
         "ids": [
-            "2_7_9",
-            "1_2_13"
+            "1_2_13",
+            "2_7_9"
         ],
         "info": {},
         "layout": {},
-        "level": 53,
+        "levels": [
+            21,
+            53
+        ],
         "name": "The Dread Thicket",
         "rating": {},
         "shorthand": " Th",
@@ -7630,7 +8517,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 34,
+        "levels": [
+            34
+        ],
         "name": "The Dried Lake",
         "rating": {},
         "shorthand": "Dri",
@@ -7652,7 +8541,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 29,
+        "levels": [
+            29
+        ],
         "name": "The Ebony Barracks",
         "rating": {},
         "shorthand": "Eb",
@@ -7673,7 +8564,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 67,
+        "levels": [
+            67
+        ],
         "name": "The Feeding Trough",
         "rating": {},
         "shorthand": "Fee",
@@ -7693,12 +8586,15 @@
             "1_2_5_1"
         ],
         "ids": [
-            "2_7_3",
-            "1_2_15"
+            "1_2_15",
+            "2_7_3"
         ],
         "info": {},
         "layout": {},
-        "level": 51,
+        "levels": [
+            16,
+            51
+        ],
         "name": "The Fellshrine Ruins",
         "rating": {},
         "shorthand": "Fel",
@@ -7718,7 +8614,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 5,
+        "levels": [
+            5
+        ],
         "name": "The Fetid Pool",
         "rating": {},
         "shorthand": "Fet",
@@ -7738,7 +8636,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 6,
+        "levels": [
+            6
+        ],
         "name": "The Flooded Depths",
         "rating": {},
         "shorthand": "hs",
@@ -7760,7 +8660,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 62,
+        "levels": [
+            62
+        ],
         "name": "The Foothills",
         "rating": {},
         "shorthand": "Foo",
@@ -7784,7 +8686,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 57,
+        "levels": [
+            57
+        ],
         "name": "The Grain Gate",
         "rating": {},
         "shorthand": "n G",
@@ -7807,7 +8711,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 38,
+        "levels": [
+            38
+        ],
         "name": "The Grand Arena",
         "rating": {},
         "shorthand": "d Ar",
@@ -7828,7 +8734,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 56,
+        "levels": [
+            56
+        ],
         "name": "The Grand Promenade",
         "rating": {},
         "shorthand": " Pro",
@@ -7851,7 +8759,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 60,
+        "levels": [
+            60
+        ],
         "name": "The Harbour Bridge",
         "rating": {},
         "shorthand": "arb",
@@ -7877,7 +8787,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 40,
+        "levels": [
+            40
+        ],
         "name": "The Harvest",
         "rating": {},
         "shorthand": "arv",
@@ -7897,7 +8809,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 58,
+        "levels": [
+            58
+        ],
         "name": "The High Gardens",
         "rating": {},
         "shorthand": "Hi",
@@ -7918,7 +8832,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 58,
+        "levels": [
+            58
+        ],
         "name": "The Imperial Fields",
         "rating": {},
         "shorthand": "l F",
@@ -7941,7 +8857,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 30,
+        "levels": [
+            30
+        ],
         "name": "The Imperial Gardens",
         "rating": {},
         "shorthand": "l G",
@@ -7962,7 +8880,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 46,
+        "levels": [
+            46
+        ],
         "name": "The Karui Fortress",
         "rating": {},
         "shorthand": " Ka",
@@ -7983,7 +8903,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 6,
+        "levels": [
+            6
+        ],
         "name": "The Ledge",
         "rating": {},
         "shorthand": "Led",
@@ -8000,7 +8922,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 30,
+        "levels": [
+            30
+        ],
         "name": "The Library",
         "rating": {},
         "shorthand": "br",
@@ -8019,12 +8943,15 @@
             "1_1_7_2"
         ],
         "ids": [
-            "2_6_7_1",
-            "1_1_7_1"
+            "1_1_7_1",
+            "2_6_7_1"
         ],
         "info": {},
         "layout": {},
-        "level": 47,
+        "levels": [
+            8,
+            47
+        ],
         "name": "The Lower Prison",
         "rating": {},
         "shorthand": " Lo",
@@ -8046,7 +8973,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 58,
+        "levels": [
+            58
+        ],
         "name": "The Lunaris Concourse",
         "rating": {},
         "shorthand": "naris C",
@@ -8066,12 +8995,15 @@
             "1_3_14_2"
         ],
         "ids": [
-            "2_8_7_1_",
-            "1_3_14_1"
+            "1_3_14_1",
+            "2_8_7_1_"
         ],
         "info": {},
         "layout": {},
-        "level": 59,
+        "levels": [
+            29,
+            59
+        ],
         "name": "The Lunaris Temple Level 1",
         "rating": {},
         "shorthand": "naris Temple Level 1",
@@ -8080,9 +9012,9 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunaris",
                 "Metadata/Monsters/Axis/PietyBoss",
-                "Metadata/Monsters/DemonFemale/DemonBossFemale"
+                "Metadata/Monsters/DemonFemale/DemonBossFemale",
+                "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunaris"
             ]
         },
         "connected": [
@@ -8090,12 +9022,15 @@
             "1_3_14_1"
         ],
         "ids": [
-            "2_8_7_2",
-            "1_3_14_2"
+            "1_3_14_2",
+            "2_8_7_2"
         ],
         "info": {},
         "layout": {},
-        "level": 59,
+        "levels": [
+            30,
+            59
+        ],
         "name": "The Lunaris Temple Level 2",
         "rating": {},
         "shorthand": "naris Temple Level 2",
@@ -8117,7 +9052,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 26,
+        "levels": [
+            26
+        ],
         "name": "The Marketplace",
         "rating": {},
         "shorthand": "tp",
@@ -8132,7 +9069,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 68,
+        "levels": [
+            68
+        ],
         "name": "The Maven's Crucible",
         "rating": {},
         "shorthand": "Cru",
@@ -8153,7 +9092,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 34,
+        "levels": [
+            34
+        ],
         "name": "The Mines Level 1",
         "rating": {},
         "shorthand": "es Level 1",
@@ -8175,7 +9116,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 35,
+        "levels": [
+            35
+        ],
         "name": "The Mines Level 2",
         "rating": {},
         "shorthand": "es Level 2",
@@ -8199,12 +9142,15 @@
             "1_1_3a"
         ],
         "ids": [
-            "2_6_4",
-            "1_1_3"
+            "1_1_3",
+            "2_6_4"
         ],
         "info": {},
         "layout": {},
-        "level": 46,
+        "levels": [
+            4,
+            46
+        ],
         "name": "The Mud Flats",
         "rating": {},
         "shorthand": " Mu",
@@ -8225,12 +9171,15 @@
             "1_2_14_2"
         ],
         "ids": [
-            "2_7_8",
-            "1_2_8"
+            "1_2_8",
+            "2_7_8"
         ],
         "info": {},
         "layout": {},
-        "level": 53,
+        "levels": [
+            21,
+            53
+        ],
         "name": "The Northern Forest",
         "rating": {},
         "shorthand": "No",
@@ -8251,7 +9200,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 61,
+        "levels": [
+            61
+        ],
         "name": "The Oasis",
         "rating": {},
         "shorthand": "Oa",
@@ -8273,7 +9224,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 14,
+        "levels": [
+            14
+        ],
         "name": "The Old Fields",
         "rating": {},
         "shorthand": " Ol",
@@ -8286,12 +9239,15 @@
             "1_5_3b"
         ],
         "ids": [
-            "2_10_9",
-            "1_5_6"
+            "1_5_6",
+            "2_10_9"
         ],
         "info": {},
         "layout": {},
-        "level": 67,
+        "levels": [
+            44,
+            67
+        ],
         "name": "The Ossuary",
         "rating": {},
         "shorthand": "Os",
@@ -8321,7 +9277,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79,
+            82,
+            83,
+            83,
+            83
+        ],
         "name": "The Putrid Cloister",
         "rating": {},
         "shorthand": "Pu",
@@ -8345,7 +9307,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 63,
+        "levels": [
+            63
+        ],
         "name": "The Quarry",
         "rating": {},
         "shorthand": "rry",
@@ -8366,7 +9330,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 57,
+        "levels": [
+            57
+        ],
         "name": "The Quay",
         "rating": {},
         "shorthand": "uay",
@@ -8391,7 +9357,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 64,
+        "levels": [
+            64
+        ],
         "name": "The Ravaged Square",
         "rating": {},
         "shorthand": "Rav",
@@ -8411,7 +9379,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 63,
+        "levels": [
+            63
+        ],
         "name": "The Refinery",
         "rating": {},
         "shorthand": "Ref",
@@ -8424,12 +9394,15 @@
             "1_5_3b"
         ],
         "ids": [
-            "2_10_8",
-            "1_5_7"
+            "1_5_7",
+            "2_10_8"
         ],
         "info": {},
         "layout": {},
-        "level": 67,
+        "levels": [
+            44,
+            67
+        ],
         "name": "The Reliquary",
         "rating": {},
         "shorthand": "iq",
@@ -8450,7 +9423,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 46,
+        "levels": [
+            46
+        ],
         "name": "The Ridge",
         "rating": {},
         "shorthand": "Rid",
@@ -8471,12 +9446,15 @@
             "1_2_12"
         ],
         "ids": [
-            "2_6_10",
-            "1_2_7"
+            "1_2_7",
+            "2_6_10"
         ],
         "info": {},
         "layout": {},
-        "level": 48,
+        "levels": [
+            15,
+            48
+        ],
         "name": "The Riverways",
         "rating": {},
         "shorthand": "verw",
@@ -8500,7 +9478,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 64,
+        "levels": [
+            64
+        ],
         "name": "The Rotting Core",
         "rating": {},
         "shorthand": "Rot",
@@ -8524,7 +9504,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 44,
+        "levels": [
+            44
+        ],
         "name": "The Ruined Square",
         "rating": {},
         "shorthand": "ned",
@@ -8539,7 +9521,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "The Sacred Grove",
         "rating": {},
         "shorthand": "cre",
@@ -8556,7 +9540,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 55,
+        "levels": [
+            55
+        ],
         "name": "The Sarn Ramparts",
         "rating": {},
         "shorthand": " Ram",
@@ -8577,7 +9563,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 32,
+        "levels": [
+            32
+        ],
         "name": "The Sceptre of God",
         "rating": {},
         "shorthand": "e Sc",
@@ -8595,7 +9583,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 26,
+        "levels": [
+            26
+        ],
         "name": "The Sewers",
         "rating": {},
         "shorthand": "e Se",
@@ -8604,21 +9594,23 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/AtlasBosses/TheShaperBoss",
                 "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
+                "Metadata/Monsters/AtlasBosses/TheShaperBoss",
                 "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder"
             ],
             "not_twinnable": true
         },
         "icon": "Art/2DItems/Maps/AtlasMaps/Atlas",
         "ids": [
-            "MapWorldsShapersRealm",
-            "MapWorldsElderArenaUber"
+            "MapWorldsElderArenaUber",
+            "MapWorldsShapersRealm"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            84
+        ],
         "name": "The Shaper's Realm",
         "rating": {},
         "shorthand": "Rea",
@@ -8640,7 +9632,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 11,
+        "levels": [
+            11
+        ],
         "name": "The Ship Graveyard",
         "rating": {},
         "shorthand": "The Ship Graveyard",
@@ -8660,7 +9654,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 12,
+        "levels": [
+            12
+        ],
         "name": "The Ship Graveyard Cave",
         "rating": {},
         "shorthand": "rd C",
@@ -8681,7 +9677,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 41,
+        "levels": [
+            41
+        ],
         "name": "The Slave Pens",
         "rating": {},
         "shorthand": " Pe",
@@ -8703,7 +9701,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 24,
+        "levels": [
+            24
+        ],
         "name": "The Slums",
         "rating": {},
         "shorthand": "Slu",
@@ -8724,7 +9724,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 58,
+        "levels": [
+            58
+        ],
         "name": "The Solaris Concourse",
         "rating": {},
         "shorthand": "laris C",
@@ -8745,12 +9747,15 @@
             "1_3_8_2"
         ],
         "ids": [
-            "2_8_12_1",
-            "1_3_8_1"
+            "1_3_8_1",
+            "2_8_12_1"
         ],
         "info": {},
         "layout": {},
-        "level": 59,
+        "levels": [
+            27,
+            59
+        ],
         "name": "The Solaris Temple Level 1",
         "rating": {},
         "shorthand": "laris Temple Level 1",
@@ -8770,12 +9775,15 @@
             "1_3_8_1"
         ],
         "ids": [
-            "2_8_12_2",
-            "1_3_8_2"
+            "1_3_8_2",
+            "2_8_12_2"
         ],
         "info": {},
         "layout": {},
-        "level": 59,
+        "levels": [
+            28,
+            59
+        ],
         "name": "The Solaris Temple Level 2",
         "rating": {},
         "shorthand": "laris Temple Level 2",
@@ -8784,8 +9792,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/BloodChieftain/MonkeyChiefBloodSpawnParasiteOnDeathBoss",
-                "Metadata/Monsters/Bandits/BanditBossHeavyStrike_"
+                "Metadata/Monsters/Bandits/BanditBossHeavyStrike_",
+                "Metadata/Monsters/BloodChieftain/MonkeyChiefBloodSpawnParasiteOnDeathBoss"
             ]
         },
         "connected": [
@@ -8795,12 +9803,15 @@
             "1_2_town"
         ],
         "ids": [
-            "2_6_12",
-            "1_2_1"
+            "1_2_1",
+            "2_6_12"
         ],
         "info": {},
         "layout": {},
-        "level": 49,
+        "levels": [
+            13,
+            49
+        ],
         "name": "The Southern Forest",
         "rating": {},
         "shorthand": "Sou",
@@ -8822,7 +9833,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 5,
+        "levels": [
+            5
+        ],
         "name": "The Submerged Passage",
         "rating": {},
         "shorthand": "bm",
@@ -8836,7 +9849,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "The Syndrome Encampment",
         "rating": {},
         "shorthand": "pm",
@@ -8853,7 +9868,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 42,
+        "levels": [
+            42
+        ],
         "name": "The Templar Courts",
         "rating": {},
         "shorthand": "r C",
@@ -8867,21 +9884,32 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9UZW1wbGVNYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/9be10cc6b3/TempleMap.png",
         "ids": [
-            "Incursion_Temple9",
-            "Incursion_Temple8",
-            "Incursion_Temple7_",
-            "Incursion_Temple6",
-            "Incursion_Temple5",
-            "Incursion_Temple4",
-            "Incursion_Temple3",
-            "Incursion_Temple2",
+            "Incursion_Temple1",
             "Incursion_Temple10",
-            "Incursion_Temple1"
+            "Incursion_Temple2",
+            "Incursion_Temple3",
+            "Incursion_Temple4",
+            "Incursion_Temple5",
+            "Incursion_Temple6",
+            "Incursion_Temple7_",
+            "Incursion_Temple8",
+            "Incursion_Temple9"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 78,
+        "levels": [
+            1,
+            5,
+            9,
+            13,
+            25,
+            40,
+            55,
+            68,
+            73,
+            78
+        ],
         "name": "The Temple of Atzoatl",
         "rating": {},
         "shorthand": "zo",
@@ -8902,7 +9930,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 54,
+        "levels": [
+            54
+        ],
         "name": "The Temple of Decay Level 1",
         "rating": {},
         "shorthand": "y Level 1",
@@ -8923,7 +9953,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 55,
+        "levels": [
+            55
+        ],
         "name": "The Temple of Decay Level 2",
         "rating": {},
         "shorthand": "y Level 2",
@@ -8932,8 +9964,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/WaterElemental/WaterElementalUnique",
-                "Metadata/Monsters/Cannibal/CannibalMaleBossHailrake"
+                "Metadata/Monsters/Cannibal/CannibalMaleBossHailrake",
+                "Metadata/Monsters/WaterElemental/WaterElementalUnique"
             ]
         },
         "connected": [
@@ -8941,12 +9973,15 @@
             "1_1_2"
         ],
         "ids": [
-            "2_6_3",
-            "1_1_2a"
+            "1_1_2a",
+            "2_6_3"
         ],
         "info": {},
         "layout": {},
-        "level": 45,
+        "levels": [
+            3,
+            45
+        ],
         "name": "The Tidal Island",
         "rating": {},
         "shorthand": "da",
@@ -8965,12 +10000,15 @@
             "1_5_3b"
         ],
         "ids": [
-            "2_10_3",
-            "1_5_4b"
+            "1_5_4b",
+            "2_10_3"
         ],
         "info": {},
         "layout": {},
-        "level": 65,
+        "levels": [
+            44,
+            65
+        ],
         "name": "The Torched Courts",
         "rating": {},
         "shorthand": "Tor",
@@ -8989,7 +10027,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "The Tower of Ordeals",
         "rating": {},
         "shorthand": "Ord",
@@ -9010,7 +10050,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 56,
+        "levels": [
+            56
+        ],
         "name": "The Toxic Conduits",
         "rating": {},
         "shorthand": "dui",
@@ -9027,7 +10069,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 62,
+        "levels": [
+            62
+        ],
         "name": "The Tunnel",
         "rating": {},
         "shorthand": "Tun",
@@ -9045,12 +10089,15 @@
             "1_1_town"
         ],
         "ids": [
-            "2_6_1",
-            "1_1_1"
+            "1_1_1",
+            "2_6_1"
         ],
         "info": {},
         "layout": {},
-        "level": 45,
+        "levels": [
+            1,
+            45
+        ],
         "name": "The Twilight Strand",
         "rating": {},
         "shorthand": "ht S",
@@ -9081,7 +10128,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "The Twilight Temple",
         "rating": {},
         "shorthand": "t T",
@@ -9105,7 +10158,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 9,
+        "levels": [
+            9
+        ],
         "name": "The Upper Prison",
         "rating": {},
         "shorthand": "per P",
@@ -9130,7 +10185,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 33,
+        "levels": [
+            33
+        ],
         "name": "The Upper Sceptre of God",
         "rating": {},
         "shorthand": "er S",
@@ -9145,7 +10202,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 1,
+        "levels": [
+            1
+        ],
         "name": "The Utzaal Arena",
         "rating": {},
         "shorthand": "Ut",
@@ -9162,7 +10221,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 54,
+        "levels": [
+            54
+        ],
         "name": "The Vaal City",
         "rating": {},
         "shorthand": "l Ci",
@@ -9179,7 +10240,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 20,
+        "levels": [
+            20
+        ],
         "name": "The Vaal Ruins",
         "rating": {},
         "shorthand": "aal R",
@@ -9197,7 +10260,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 61,
+        "levels": [
+            61
+        ],
         "name": "The Vastiri Desert",
         "rating": {},
         "shorthand": "Vas",
@@ -9223,7 +10288,9 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "The Vinktar Square",
         "rating": {},
         "shorthand": "kt",
@@ -9243,7 +10310,9 @@
         ],
         "info": {},
         "layout": {},
-        "level": 18,
+        "levels": [
+            18
+        ],
         "name": "The Weaver's Chambers",
         "rating": {},
         "shorthand": "Wea",
@@ -9252,9 +10321,9 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/RockGolem/RockGolemProclamationBoss",
                 "Metadata/Monsters/Axis/Lieutenant/LieutenantLetter",
-                "Metadata/Monsters/BanditLeaderInt/BanditLeaderAlira"
+                "Metadata/Monsters/BanditLeaderInt/BanditLeaderAlira",
+                "Metadata/Monsters/RockGolem/RockGolemProclamationBoss"
             ]
         },
         "connected": [
@@ -9265,12 +10334,15 @@
             "1_1_8"
         ],
         "ids": [
-            "2_6_9",
-            "1_2_9"
+            "1_2_9",
+            "2_6_9"
         ],
         "info": {},
         "layout": {},
-        "level": 48,
+        "levels": [
+            17,
+            48
+        ],
         "name": "The Western Forest",
         "rating": {},
         "shorthand": "Wes",
@@ -9279,8 +10351,8 @@
     {
         "boss": {
             "ids": [
-                "Metadata/Monsters/InsectSpawner/InsectSpawnerParasiteBoss",
-                "Metadata/Monsters/BanditLeaderStrDex/BanditLeaderOak"
+                "Metadata/Monsters/BanditLeaderStrDex/BanditLeaderOak",
+                "Metadata/Monsters/InsectSpawner/InsectSpawnerParasiteBoss"
             ]
         },
         "connected": [
@@ -9289,12 +10361,15 @@
             "1_2_11"
         ],
         "ids": [
-            "2_6_11",
-            "1_2_12"
+            "1_2_12",
+            "2_6_11"
         ],
         "info": {},
         "layout": {},
-        "level": 48,
+        "levels": [
+            19,
+            48
+        ],
         "name": "The Wetlands",
         "rating": {},
         "shorthand": "Wet",
@@ -9334,7 +10409,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 73,
+        "levels": [
+            73,
+            76,
+            80,
+            83,
+            83
+        ],
         "name": "Thicket Map",
         "rating": {
             "boss": 8,
@@ -9381,7 +10462,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Tower Map",
         "rating": {
             "boss": 4,
@@ -9419,7 +10506,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 72,
+        "levels": [
+            72
+        ],
         "name": "Toxic Sewer Map",
         "rating": {
             "boss": 10,
@@ -9462,7 +10551,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Tropical Island Map",
         "rating": {
             "boss": 10,
@@ -9482,16 +10577,21 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoL0JyZWFjaEZyYWdtZW50c0NvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/210fc3b508/BreachFragmentsCold.png",
         "ids": [
-            "BreachBossCold5",
-            "BreachBossCold4",
-            "BreachBossCold3",
+            "BreachBossCold",
             "BreachBossCold2_",
-            "BreachBossCold"
+            "BreachBossCold3",
+            "BreachBossCold4",
+            "BreachBossCold5"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            74,
+            79,
+            81,
+            84
+        ],
         "name": "Tul's Domain",
         "rating": {},
         "shorthand": "Tul",
@@ -9510,7 +10610,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 68,
+        "levels": [
+            68
+        ],
         "name": "Twisted Distant Memory",
         "rating": {},
         "shorthand": "wis",
@@ -9548,7 +10650,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 82,
+        "levels": [
+            82,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Underground River Map",
         "rating": {
             "boss": 4,
@@ -9595,7 +10703,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Underground Sea Map",
         "rating": {
             "boss": 6,
@@ -9625,7 +10739,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 75,
+        "levels": [
+            75
+        ],
         "name": "Untainted Paradise",
         "rating": {},
         "shorthand": "Unt",
@@ -9639,16 +10755,21 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoL0JyZWFjaEZyYWdtZW50c1BoeXNpY2FsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/2ab646ae46/BreachFragmentsPhysical.png",
         "ids": [
-            "BreachBossPhysical5",
-            "BreachBossPhysical4",
-            "BreachBossPhysical3",
+            "BreachBossPhysical",
             "BreachBossPhysical2",
-            "BreachBossPhysical"
+            "BreachBossPhysical3",
+            "BreachBossPhysical4",
+            "BreachBossPhysical5"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            78,
+            81,
+            82,
+            84
+        ],
         "name": "Uul-Netol's Domain",
         "rating": {},
         "shorthand": "-",
@@ -9690,7 +10811,13 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Vaal Pyramid Map",
         "pantheon": "Soul of Ralakesh",
         "rating": {
@@ -9733,7 +10860,9 @@
             "linear": false,
             "outdoors": false
         },
-        "level": 83,
+        "levels": [
+            83
+        ],
         "name": "Vaal Temple Map",
         "rating": {
             "boss": 2,
@@ -9770,7 +10899,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 77,
+        "levels": [
+            77,
+            80,
+            83,
+            83,
+            83
+        ],
         "name": "Vault Map",
         "rating": {
             "boss": 8,
@@ -9809,7 +10944,13 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 71,
+        "levels": [
+            71,
+            74,
+            78,
+            82,
+            83
+        ],
         "name": "Vaults of Atziri",
         "rating": {},
         "shorthand": "zi",
@@ -9829,7 +10970,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Vaults of Insanity",
         "rating": {},
         "shorthand": "Ins",
@@ -9855,7 +10998,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
+        "levels": [
+            79
+        ],
         "name": "Villa Map",
         "rating": {
             "boss": 8,
@@ -9898,7 +11043,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 72,
+        "levels": [
+            72,
+            75,
+            79,
+            83,
+            83
+        ],
         "name": "Volcano Map",
         "pantheon": "Soul of Solaris",
         "rating": {
@@ -9938,7 +11089,9 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 76,
+        "levels": [
+            76
+        ],
         "name": "Waste Pool Map",
         "rating": {
             "boss": 4,
@@ -9980,7 +11133,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 69,
+        "levels": [
+            69,
+            72,
+            76,
+            80,
+            83
+        ],
         "name": "Wasteland Map",
         "rating": {
             "boss": 6,
@@ -10004,7 +11163,9 @@
         "image": false,
         "info": {},
         "layout": {},
-        "level": 82,
+        "levels": [
+            82
+        ],
         "name": "Wastes of Lunacy",
         "rating": {},
         "shorthand": "f L",
@@ -10037,7 +11198,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 75,
+        "levels": [
+            75,
+            78,
+            82,
+            83,
+            83
+        ],
         "name": "Waterways Map",
         "pantheon": "Soul of the Brine King",
         "rating": {
@@ -10080,7 +11247,13 @@
             "linear": false,
             "outdoors": true
         },
-        "level": 70,
+        "levels": [
+            70,
+            73,
+            77,
+            81,
+            83
+        ],
         "name": "Whakawairua Tuahu",
         "rating": {},
         "shorthand": "ah",
@@ -10120,7 +11293,13 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 81,
+        "levels": [
+            81,
+            83,
+            83,
+            83,
+            83
+        ],
         "name": "Wharf Map",
         "rating": {
             "boss": 6,
@@ -10140,16 +11319,21 @@
         },
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQnJlYWNoL0JyZWFjaEZyYWdtZW50c0ZpcmUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/071c4ccc28/BreachFragmentsFire.png",
         "ids": [
-            "BreachBossFire5",
-            "BreachBossFire4",
-            "BreachBossFire3",
+            "BreachBossFire",
             "BreachBossFire2",
-            "BreachBossFire"
+            "BreachBossFire3",
+            "BreachBossFire4",
+            "BreachBossFire5"
         ],
         "image": false,
         "info": {},
         "layout": {},
-        "level": 84,
+        "levels": [
+            74,
+            79,
+            81,
+            84
+        ],
         "name": "Xoph's Domain",
         "rating": {},
         "shorthand": "X",

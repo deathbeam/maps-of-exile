@@ -539,8 +539,8 @@ def get_maps(key, config):
 
         out_map = {
             "ids": [id],
+            "levels": [level],
             "name": name,
-            "level": level,
             "poedb": "https://poedb.tw/us/"
             + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
             "boss": {},
@@ -558,8 +558,6 @@ def get_maps(key, config):
         existing_map = cleaned_maps.get(name)
         if existing_map:
             merge(existing_map, out_map)
-            if level > out_map["level"]:
-                out_map["level"] = level
         cleaned_maps[name] = out_map
 
     out = sorted(list(cleaned_maps.values()), key=lambda x: x["name"])
@@ -614,6 +612,10 @@ def get_maps(key, config):
             m["x"] = existing_position["x"]
             m["y"] = existing_position["y"]
 
+        m["ids"].sort()
+        m["levels"].sort()
+        (m["boss"].get("ids") or []).sort()
+
     return out
 
 
@@ -650,7 +652,7 @@ def get_map_data(map_data, extra_map_data):
                 level = int(value.text.strip())
                 if level:
                     level_found = True
-                    map_data["level"] = level
+                    map_data["levels"][0] = level
             elif name == "atlas linked":
                 map_data["connected"] = sorted(
                     list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
@@ -675,6 +677,16 @@ def get_map_data(map_data, extra_map_data):
                 icon = img_tags[0]["src"]
                 print(f"Found icon {icon}")
                 map_data["icon"] = icon
+
+    if map_data.get("atlas"):
+        level = map_data["levels"][0]
+        map_data["levels"] = [
+            level,
+            min(level + 3, 83),
+            min(level + 7, 83),
+            min(level + 11, 83),
+            min(level + 15, 83),
+        ]
 
     # Merge existing data
     existing = next(

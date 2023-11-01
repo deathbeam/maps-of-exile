@@ -3,7 +3,7 @@ import './Atlas.css'
 
 import { useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
-import { deduplicate, filter, ratingColor, tierColor } from '../../common'
+import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
 import usePersistedState from '../../hooks/usePersistedState'
 import MapImage from '../MapImage'
 import { preparedGlobals } from '../../data'
@@ -29,7 +29,7 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidsto
       onClick: () => setCurrentMap(map.name),
       map: {
         name: map.name,
-        tiers: map.tiers,
+        levels: map.levels,
         icon: map.icon,
         type: map.type,
         score: map.score
@@ -68,7 +68,7 @@ function MapNode({ id, data }) {
   if (atlasScore) {
     mapColor = `text-${ratingColor(map.score, 10)}`
   } else {
-    mapColor = `text-${tierColor(map.tiers, map.type, data.voidstones)}`
+    mapColor = `text-${tierColor(map.levels, true, map.type, data.voidstones)}`
   }
 
   const buttonClass = `btn btn-badge btn-dark ${mapColor}` + (atlasIcons ? ' atlas-button' : '')
@@ -79,7 +79,12 @@ function MapNode({ id, data }) {
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       {!!atlasIcons && (
-        <MapImage icon={map.icon} type={map.type} tier={map.tiers[data.voidstones]} onClick={data.onClick} />
+        <MapImage
+          icon={map.icon}
+          type={map.type}
+          level={mapLevel(map.levels, true, data.voidstones)}
+          onClick={data.onClick}
+        />
       )}
       {!!atlasLabels && (
         <button className={buttonClass} onClick={data.onClick}>
@@ -97,7 +102,7 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones, setCurrentMap }) =
   const [atlasLabels, setAtlasLabels] = usePersistedState('atlasLabels', true)
 
   const nodeTypes = useMemo(() => ({ background: BackgroundNode, map: MapNode }), [])
-  const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.x > 0 && m.y > 0), [maps])
+  const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
   const matchingNodes = useMemo(
     () =>
       connectedMaps

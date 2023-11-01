@@ -5,7 +5,7 @@ import './App.css'
 import { useCallback, useMemo, useRef, useTransition } from 'react'
 import { defaultCardBaseline, issueTemplate, preparedCards, preparedGlobals, preparedMaps } from './data'
 import Loader from './components/Loader'
-import { calculateScore, filter, mapTierToLevel } from './common'
+import { calculateScore, filter } from './common'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import ListView from './views/ListView'
@@ -52,7 +52,7 @@ function rateMaps(
       }
     })
     .map(map => {
-      const mapLevel = mapTierToLevel(map.tiers[voidstones])
+      const mapLevel = map.atlas ? map.levels[voidstones] : map.levels[map.levels.length - 1]
       const mapCards = []
       let mapWeight = 0
       let bossWeight = 0

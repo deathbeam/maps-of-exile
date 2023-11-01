@@ -5,16 +5,28 @@ data:
   ignored:
     - UNUSED
     - DNT
-    - Delve_
-    - ' Reliquary'
+    # Map bases
     - Harbinger's Isle
     - Synthesised Map
-    - Beach Landing
+    # Reliquary key areas
+    - ' Reliquary'
+    # Azurite mine areas
+    - Delve_
+    # Simulacrum areas
+    - AfflictionTown
+    # Elder Guardian areas (maybe reenable at some point)
+    - MapWorldsElder_
+    # Bestiary boss areas (maybe reenable at some point)
+    - BestiaryLeague_
+    # Legacy maps and areas
+    - Perandus Manor
     - The Pale Court
     - The Lake of Kalandra
-    - Steppes
-    - The Perandus Manor
     - Forge of the Titans
+    - The Utzaal Arena
+    # Random stuff, IDK
+    - Beach Landing
+    - Steppes
     - Darbel's Promise
     - BrambleFall
     - Primeval City

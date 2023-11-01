@@ -55,7 +55,7 @@
         ],
         "name": "Absence of Symmetry and Harmony",
         "rating": {},
-        "shorthand": "Sym",
+        "shorthand": "Sy",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -659,7 +659,7 @@
         ],
         "name": "Aspirants' Plaza",
         "rating": {},
-        "shorthand": " Pl",
+        "shorthand": "' ",
         "tags": {},
         "type": "act area"
     },
@@ -1502,7 +1502,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Chan",
+        "shorthand": "ann",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
@@ -2040,7 +2040,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "oves",
+        "shorthand": "Cov",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2056,24 +2056,6 @@
         "type": "map",
         "x": 727,
         "y": 169
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/LeagueBestiary/NessaCrabBestiarySpiritBoss"
-        ],
-        "ids": [
-            "BestiaryLeague_CrabBoss"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            74
-        ],
-        "name": "Craiceann's Cove",
-        "rating": {},
-        "shorthand": "aic",
-        "tags": {},
-        "type": "special map"
     },
     {
         "boss_ids": [
@@ -2096,7 +2078,7 @@
             "density": 10,
             "layout": 6
         },
-        "shorthand": "Crat",
+        "shorthand": "Cra",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2491,24 +2473,6 @@
             "outdoors": true
         },
         "type": "map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
-        ],
-        "ids": [
-            "MapWorldsElder_Desert"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Desert of Dementia",
-        "rating": {},
-        "shorthand": "Dem",
-        "tags": {},
-        "type": "special map"
     },
     {
         "boss_ids": [
@@ -2916,7 +2880,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Fac",
+        "shorthand": "Fa",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2932,43 +2896,6 @@
         "type": "map",
         "x": 761,
         "y": 255
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/LeagueBestiary/TigerBestiarySpiritBoss"
-        ],
-        "ids": [
-            "BestiaryLeague_TigerBoss"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            80
-        ],
-        "name": "Farrul's Den",
-        "rating": {},
-        "shorthand": "Far",
-        "tags": {},
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiarySpiritBoss",
-            "Metadata/Monsters/LeagueBestiary/SpiderPlatedBestiarySpiritBossMine"
-        ],
-        "ids": [
-            "BestiaryLeague_ScorpBoss"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            77
-        ],
-        "name": "Fenumus' Lair",
-        "rating": {},
-        "shorthand": "mu",
-        "tags": {},
-        "type": "special map"
     },
     {
         "boss_ids": [
@@ -3633,24 +3560,6 @@
         "y": 388
     },
     {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
-        ],
-        "ids": [
-            "MapWorldsElder_Elegant"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Halls of Delirium",
-        "rating": {},
-        "shorthand": "lir",
-        "tags": {},
-        "type": "special map"
-    },
-    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossMap",
@@ -3691,21 +3600,6 @@
         "type": "map",
         "x": 792,
         "y": 222
-    },
-    {
-        "ids": [
-            "AfflictionTown4"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            75
-        ],
-        "name": "Hysteriagate",
-        "rating": {},
-        "shorthand": "aga",
-        "tags": {},
-        "type": "unique map"
     },
     {
         "atlas": true,
@@ -3819,24 +3713,6 @@
         "shorthand": "fu",
         "tags": {},
         "type": "unique map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
-        ],
-        "ids": [
-            "MapWorldsElder_River"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Islands of Devastation",
-        "rating": {},
-        "shorthand": "Dev",
-        "tags": {},
-        "type": "special map"
     },
     {
         "atlas": true,
@@ -4047,7 +3923,7 @@
         ],
         "name": "Lair of the Hydra Map",
         "rating": {},
-        "shorthand": "yd",
+        "shorthand": "Hy",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -4281,21 +4157,6 @@
         "y": 460
     },
     {
-        "ids": [
-            "AfflictionTown6"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            75
-        ],
-        "name": "Lunacy's Watch",
-        "rating": {},
-        "shorthand": "tc",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapBossMerveilMaelstrom",
@@ -4404,24 +4265,6 @@
         "shorthand": "ali",
         "tags": {},
         "type": "act area"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
-        ],
-        "ids": [
-            "MapWorldsElder_Sceptre"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Manor of Madness",
-        "rating": {},
-        "shorthand": "dn",
-        "tags": {},
-        "type": "special map"
     },
     {
         "atlas": true,
@@ -5036,21 +4879,6 @@
         "y": 193
     },
     {
-        "ids": [
-            "AfflictionTown10"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            75
-        ],
-        "name": "Oriath Delusion",
-        "rating": {},
-        "shorthand": "h D",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "boss_ids": [
             "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBoss"
         ],
@@ -5067,7 +4895,7 @@
         ],
         "name": "Oriath Square",
         "rating": {},
-        "shorthand": "h S",
+        "shorthand": "Ori",
         "tags": {},
         "type": "act area"
     },
@@ -5307,21 +5135,6 @@
         "type": "map"
     },
     {
-        "ids": [
-            "MapWorldsChateauUnique"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            71
-        ],
-        "name": "Perandus Manor",
-        "rating": {},
-        "shorthand": "Per",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreMapBoss2"
@@ -5542,24 +5355,6 @@
             "linear": true,
             "outdoors": true
         },
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
-        ],
-        "ids": [
-            "MapWorldsElder_Reliquary"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Pits of Sorrow",
-        "rating": {},
-        "shorthand": "Sor",
-        "tags": {},
         "type": "special map"
     },
     {
@@ -6160,24 +5955,6 @@
         "type": "map"
     },
     {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
-        ],
-        "ids": [
-            "MapWorldsElder_Refinery"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Repository of Derision",
-        "rating": {},
-        "shorthand": "Der",
-        "tags": {},
-        "type": "special map"
-    },
-    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
@@ -6248,63 +6025,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
-        ],
-        "ids": [
-            "MapWorldsElder_Volcano"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "River of Hysteria",
-        "rating": {},
-        "shorthand": "f H",
-        "tags": {},
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
-        ],
-        "ids": [
-            "MapWorldsElder_Garden"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Ruins of Despair",
-        "rating": {},
-        "shorthand": "esp",
-        "tags": {},
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/LeagueBestiary/IguanaBestiarySpiritSubBoss",
-            "Metadata/Monsters/LeagueBestiary/KiwethBestiarySpiritSubBoss",
-            "Metadata/Monsters/LeagueBestiary/MarakethBirdSpiritBoss",
-            "Metadata/Monsters/LeagueBestiary/SnakeBestiarySpiritSubBoss"
-        ],
-        "ids": [
-            "BestiaryLeague_BirdBoss"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            70
-        ],
-        "name": "Saqawal's Roost",
-        "rating": {},
-        "shorthand": "aq",
-        "tags": {},
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Scriptorium",
@@ -6338,24 +6058,6 @@
             "outdoors": false
         },
         "type": "map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian3"
-        ],
-        "ids": [
-            "MapWorldsElder_Reef"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Sea of Isolation",
-        "rating": {},
-        "shorthand": "Iso",
-        "tags": {},
-        "type": "special map"
     },
     {
         "boss_ids": [
@@ -6723,24 +6425,6 @@
             "outdoors": false
         },
         "type": "map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2"
-        ],
-        "ids": [
-            "MapWorldsElder_Tower"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Spires of Delusion",
-        "rating": {},
-        "shorthand": "ire",
-        "tags": {},
-        "type": "special map"
     },
     {
         "atlas": true,
@@ -7416,21 +7100,6 @@
         "type": "act area"
     },
     {
-        "ids": [
-            "AfflictionTown7"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            75
-        ],
-        "name": "The Bridge Enraptured",
-        "rating": {},
-        "shorthand": "nr",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "boss_ids": [
             "Metadata/Monsters/BrineKing/BrineKing"
         ],
@@ -7639,7 +7308,7 @@
         ],
         "name": "The Chamber of Innocence",
         "rating": {},
-        "shorthand": "Inn",
+        "shorthand": " In",
         "tags": {},
         "type": "act area"
     },
@@ -8253,7 +7922,7 @@
         ],
         "name": "The Grand Arena",
         "rating": {},
-        "shorthand": "d Ar",
+        "shorthand": " Are",
         "tags": {},
         "type": "act area"
     },
@@ -9296,21 +8965,6 @@
         "type": "act area"
     },
     {
-        "ids": [
-            "AfflictionTown8"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            75
-        ],
-        "name": "The Syndrome Encampment",
-        "rating": {},
-        "shorthand": "pm",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "connected": [
             "1_5_3",
             "1_5_5"
@@ -9621,22 +9275,6 @@
         "shorthand": "er S",
         "tags": {},
         "type": "act area"
-    },
-    {
-        "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9VbHRpbWF0dW1UcmlhbEJhc2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/b65f1edffb/UltimatumTrialBase.png",
-        "ids": [
-            "UltimatumArenaEndgame"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            1
-        ],
-        "name": "The Utzaal Arena",
-        "rating": {},
-        "shorthand": "Ut",
-        "tags": {},
-        "type": "unique map"
     },
     {
         "connected": [
@@ -10439,24 +10077,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian4_"
-        ],
-        "ids": [
-            "MapWorldsElder_Temple"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Vaults of Insanity",
-        "rating": {},
-        "shorthand": "Ins",
-        "tags": {},
-        "type": "special map"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/Pope/PopeMapBoss1"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Villa",
@@ -10621,24 +10241,6 @@
         "y": 451
     },
     {
-        "boss_ids": [
-            "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1"
-        ],
-        "ids": [
-            "MapWorldsElder_Sulphur"
-        ],
-        "image": false,
-        "info": {},
-        "levels": [
-            82
-        ],
-        "name": "Wastes of Lunacy",
-        "rating": {},
-        "shorthand": "tes",
-        "tags": {},
-        "type": "special map"
-    },
-    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/IceElemental/IceElementalMapBoss"
@@ -10671,7 +10273,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "Wate",
+        "shorthand": "Wat",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,

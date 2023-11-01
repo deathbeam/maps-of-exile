@@ -40,7 +40,7 @@ function rateMaps(
     .filter(m => {
       switch (mapDisplay) {
         case 'atlas+unique+special+act':
-          return m.atlas || m.type === 'unique map' || m.type === 'act area'
+          return m.atlas || m.type === 'unique map' || m.type === 'special map' || m.type === 'act area'
         case 'atlas+unique+special':
           return m.atlas || m.type === 'unique map' || m.type === 'special map'
         case 'atlas':

@@ -10,7 +10,7 @@ const Card = ({ card, voidstones }) => {
   let cardNotice = null
   if (!card.drop.text && (card.drop.monsters || []).length === 0 && (card.drop.areas || []).length === 0) {
     cardNotice = (
-      <div className="card mb-2 bg-danger-subtle text-white">
+      <div className="card p-0 mb-2 bg-danger-subtle text-white">
         <div className="card-header">{card.name} has no confirmed drop sources.</div>
         <div className="card-body">
           If you find one that did not come from sources of random divination cards — including{' '}
@@ -35,7 +35,7 @@ const Card = ({ card, voidstones }) => {
     )
   } else if (card.drop.text) {
     cardNotice = (
-      <div className="card mb-2">
+      <div className="card p-0 mb-2">
         <div className="card-body">{card.drop.text}</div>
       </div>
     )
@@ -45,7 +45,7 @@ const Card = ({ card, voidstones }) => {
     (card.drop.monsters.length > 0 || card.drop.areas.length) > 0
   ) {
     cardNotice = (
-      <div className="card mb-2 bg-warning-subtle text-white">
+      <div className="card p-0 mb-2 bg-warning-subtle text-white">
         <div className="card-header">
           {card.name} has drop sources but they are either hidden with filters or site is missing data for them.
         </div>

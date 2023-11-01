@@ -50,7 +50,8 @@ const Card = ({ card, voidstones }) => {
           {card.name} has drop sources but they are either hidden with filters or site is missing data for them.
         </div>
         <div className="card-body">
-          If you want to try to see them set <b>Card display</b> to <b>All cards</b>. If you still don't see them check{' '}
+          If you want to try to see them set <b>Card display</b> to <b>All cards</b> and/or <b>Map display</b> to{' '}
+          <b>All areas</b>. If you still don't see them check{' '}
           <a href={wikiBase + card.name} target="_blank" rel="noreferrer">
             Wiki
           </a>

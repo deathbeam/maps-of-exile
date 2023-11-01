@@ -1,6 +1,24 @@
 data:
   league: Ancestor
 
+  # Ignored maps
+  ignored:
+    - UNUSED
+    - DNT
+    - Delve_
+    - ' Reliquary'
+    - Harbinger's Isle
+    - Synthesised Map
+    - Beach Landing
+    - The Pale Court
+    - The Lake of Kalandra
+    - Steppes
+    - The Perandus Manor
+    - Forge of the Titans
+    - Darbel's Promise
+    - BrambleFall
+    - Primeval City
+
   # Links
   poedb:
     base: https://poedb.tw

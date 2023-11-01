@@ -5,6 +5,7 @@ import re
 import sys
 import time
 import html
+import urllib
 from decimal import Decimal
 from math import ceil
 from wikitextparser import remove_markup
@@ -269,7 +270,7 @@ def get_card_data(key, config, card_extra):
             )
 
         card = {
-            "name": wiki_card,
+            "name": name,
             "price": price_card.get("chaosValue"),
             "standardPrice": standard_price_card.get("chaosValue"),
             "stack": standard_price_card.get(
@@ -470,8 +471,8 @@ def get_map_wiki(config):
                 "limit": 500,
                 "offset": offset,
                 "tables": "areas",
-                "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.act",
-                "where": "areas.id LIKE '%MapWorlds%' AND areas.is_legacy_map_area=false OR areas.is_unique_map_area AND areas.is_legacy_map_area=false AND areas.name NOT LIKE '%Reliquary%' OR areas.is_map_area=false AND areas.is_town_area=false AND areas.is_hideout_area=false AND areas.is_legacy_map_area=false AND areas.act!=0 AND areas.id NOT LIKE '%Expedition%' AND areas.name NOT LIKE '%Hideout%' AND areas.id NOT LIKE '%Test%' AND areas.id NOT LIKE '%Heist%' AND areas.id NOT LIKE '%Labyrinth%' AND areas.id NOT LIKE '%Descent%' AND areas.name NOT LIKE '%PvP%' AND areas.name NOT LIKE '%Programming%' AND areas.name NOT LIKE '%Test%'",
+                "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
+                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND (areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND (areas.id LIKE '1_%' OR areas.id LIKE '2_%'))",
             },
         ).json()["cargoquery"]
 
@@ -499,30 +500,25 @@ def get_maps(key, config):
         id = m.get("id")
         level = int(m.get("area level"))
         act = int(m.get("act"))
-        if (
-            not name
-            or "DNT" in name
-            or "UNUSED" in name
-            or "Character Select" in name
-            or "PetFlats" in name
-            or level == 0
-        ):
-            continue
 
-        name = name.strip().replace("The Hall of Grandmasters", "Hall of Grandmasters")
+        main_page = m.get("main page", "") or ""
+        if main_page:
+            name = main_page
+
+        name = re.sub(r"\([^)]+\)", "", name)
+        name = name.strip()
         is_map_area = m.get("is map area", "0") != "0"
         is_unique_map_area = m.get("is unique map area", "0") != "0"
-        is_act_area = False
-        is_special_area = False
+        is_act_area = (
+            not is_unique_map_area
+            and not is_map_area
+            and act < 11
+            and (id.startswith("1_") or id.startswith("2_"))
+        )
 
-        if not is_unique_map_area:
-            if is_map_area:
-                name = name + " Map"
-            else:
-                if id.startswith("1_") or id.startswith("2_") and act < 11:
-                    is_act_area = True
-                else:
-                    is_special_area = True
+        if not is_act_area and any(x in name or x in id for x in config["ignored"]):
+            print(f"Found ignored area {name}, skipping")
+            continue
 
         map_type = "unknown area"
         if is_unique_map_area:
@@ -531,87 +527,47 @@ def get_maps(key, config):
             map_type = "map"
         elif is_act_area:
             map_type = "act area"
-        elif is_special_area:
-            map_type = "special area"
 
-        if is_special_area:
-            print(f"Found special area {name}, skipping")
+        if map_type == "unknown area":
+            print(f"Found unknown area {name}, skipping")
             continue
 
         out_map = {
             "ids": [id],
             "name": name,
             "level": level,
-            "poedb": "https://poedb.tw/us/" + name.replace(" ", "_").replace("'", ""),
+            "poedb": "https://poedb.tw/us/"
+            + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
             "boss": {},
             "type": map_type,
         }
 
+        if is_act_area:
+            out_map["connected"] = (m.get("connection ids", "") or "").split(",")
+
         if m.get("boss monster ids"):
-            out_map["boss"]["ids"] = sorted(
-                list(set(filter(None, m["boss monster ids"].split(","))))
-            )
+            out_map["boss"] = {
+                "ids": sorted(list(set(filter(None, m["boss monster ids"].split(",")))))
+            }
 
         existing_map = cleaned_maps.get(name)
         if existing_map:
             merge(existing_map, out_map)
+            if level > out_map["level"]:
+                out_map["level"] = level
         cleaned_maps[name] = out_map
 
-    out = list(cleaned_maps.values())
-    url = config["poedb"]["list"]
-    print(f"Getting maps from url {url}")
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, "html.parser")
-    mapslist = soup.find(id="MapsList").find("table").find("tbody").find_all("tr")
-
-    for row in mapslist:
-        cols = row.find_all("td")
-        name = cols[3].text
-
-        if not name:
-            continue
-
-        map_url = cols[3].find("a").attrs["href"]
-        map_url = config["poedb"]["base"] + map_url
-        existing_map = next(filter(lambda x: x["name"] == name.strip(), out), None)
-        if existing_map:
-            existing_map["poedb"] = map_url
-        else:
-            out_map = {"name": name.strip(), "poedb": map_url}
-            out.append(out_map)
-
-    base_names = sorted(
-        list(map(lambda x: x["name"], out))
-        + ["Harbinger Map", "Engraved Ultimatum", "Synthesised Map"]
-    )
-    mapslist = soup.find(id="MapsUnique").find("table").find("tbody").find_all("tr")
-
-    for row in mapslist:
-        cols = row.find_all("td")
-        href = cols[1].find("a")
-        name = href.text
-        map_url = href.attrs["href"]
-        map_url = config["poedb"]["base"] + map_url
-
-        for n in base_names:
-            if not n.endswith(" Map") and not n.endswith("Ultimatum"):
-                continue
-            name = name.replace(n, "")
-
-        existing_map = next(filter(lambda x: x["name"] == name.strip(), out), None)
-        if existing_map:
-            existing_map["poedb"] = map_url
-        else:
-            print(f"Found unknown poedb map {name}, skipping")
-            continue
-
-    out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
+    out = sorted(list(cleaned_maps.values()), key=lambda x: x["name"])
     out_names = list(map(lambda x: x["name"], out))
 
+    url = config["poedb"]["list"]
+    print(f"Getting atlas data from url {url}")
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, "html.parser")
     mapssvg = soup.find(id="AtlasNodeSVG")
     maplinks = mapssvg.find_all("a")
-    map_positions = []
 
+    map_positions = []
     for maplink in maplinks:
         txt = maplink.find("text")
         map_positions.append(
@@ -685,7 +641,7 @@ def get_map_data(map_data, extra_map_data):
             cols = row.find_all("td")
             name = cols[0].text.strip().lower()
             value = cols[1]
-            if name == "monster level" and not level_found:
+            if name == "monster level" and not level_found and map_data.get("atlas"):
                 level = int(value.text.strip())
                 if level:
                     level_found = True
@@ -724,8 +680,8 @@ def get_map_data(map_data, extra_map_data):
     return map_data
 
 
-def get_maps_template(maps, existing_maps):
-    out = existing_maps.copy()
+def get_maps_template(maps, existing_maps, overwrite=False):
+    out = [] if overwrite else existing_maps.copy()
 
     for map in maps:
         new_map = {
@@ -747,10 +703,16 @@ def get_maps_template(maps, existing_maps):
             },
         }
 
-        existing_map = next(filter(lambda x: x["name"] == map["name"], out), None)
+        existing_map = next(
+            filter(
+                lambda x: x["name"] == map["name"], existing_maps if overwrite else out
+            ),
+            None,
+        )
         if existing_map:
             merge(existing_map, new_map)
-            out.remove(existing_map)
+            if existing_map in out:
+                out.remove(existing_map)
         if "map" in map["type"]:
             out.append(new_map)
 
@@ -902,8 +864,12 @@ def main():
     fetch_monsters = False
     fetch_cards = False
     fetch_maps = False
+    overwrite = False
 
     if len(args) > 1:
+        if "overwrite" in args[1]:
+            overwrite = True
+
         if "globals" in args[1]:
             fetch_globals = True
 
@@ -946,11 +912,11 @@ def main():
 
         # Get extra map data
         with open(dir_path + "/maps.json", "r") as f:
-            map_extra = get_maps_template(maps, json.load(f))
+            map_extra = get_maps_template(maps, json.load(f), overwrite)
         with open(dir_path + "/maps.json", "w") as f:
             f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder, sort_keys=True))
 
-        # Create github template
+        # Create GitHub template
         issue_template = get_issue_template(maps)
         with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
             f.write(

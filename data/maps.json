@@ -415,24 +415,6 @@
     },
     {
         "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Beach Landing Map"
-    },
-    {
-        "boss": {
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -520,24 +502,6 @@
             "outdoors": null
         },
         "name": "Bramble Valley Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "BrambleFall Map"
     },
     {
         "boss": {
@@ -961,6 +925,24 @@
     },
     {
         "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "separated": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        },
+        "name": "Craiceann's Cove"
+    },
+    {
+        "boss": {
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -1048,24 +1030,6 @@
             "outdoors": null
         },
         "name": "Cursed Crypt Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Darbel's Promise"
     },
     {
         "boss": {
@@ -1173,7 +1137,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Desert of Dementia Map"
+        "name": "Desert of Dementia"
     },
     {
         "boss": {
@@ -1299,24 +1263,6 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Engraved Ultimatum"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
         "name": "Esh's Domain"
     },
     {
@@ -1357,6 +1303,24 @@
     },
     {
         "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "separated": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        },
+        "name": "Eye of the Storm"
+    },
+    {
+        "boss": {
             "not_spawned": false,
             "phases": false,
             "rushable": false,
@@ -1372,6 +1336,42 @@
             "outdoors": null
         },
         "name": "Factory Map"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "separated": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        },
+        "name": "Farrul's Den"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "separated": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        },
+        "name": "Fenumus' Lair"
     },
     {
         "boss": {
@@ -1444,24 +1444,6 @@
             "outdoors": null
         },
         "name": "Forge of the Phoenix Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Forge of the Titans"
     },
     {
         "boss": {
@@ -1713,43 +1695,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Halls of Delirium Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Harbinger Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Harbinger's Isle"
+        "name": "Halls of Delirium"
     },
     {
         "boss": {
@@ -1857,7 +1803,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Islands of Devastation Map"
+        "name": "Islands of Devastation"
     },
     {
         "boss": {
@@ -2109,7 +2055,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Manor of Madness Map"
+        "name": "Manor of Madness"
     },
     {
         "boss": {
@@ -2613,7 +2559,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Pits of Sorrow Map"
+        "name": "Pits of Sorrow"
     },
     {
         "boss": {
@@ -2722,24 +2668,6 @@
             "outdoors": null
         },
         "name": "Precinct Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Primeval City Map"
     },
     {
         "boss": {
@@ -2883,61 +2811,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Replica Cortex"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Replica Pillars of Arun"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Replica Poorjoy's Asylum"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Repository of Derision Map"
+        "name": "Repository of Derision"
     },
     {
         "boss": {
@@ -2991,7 +2865,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "River of Hysteria Map"
+        "name": "River of Hysteria"
     },
     {
         "boss": {
@@ -3009,7 +2883,25 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Ruins of Despair Map"
+        "name": "Ruins of Despair"
+    },
+    {
+        "boss": {
+            "not_spawned": null,
+            "phases": null,
+            "rushable": null,
+            "separated": null,
+            "soft_phases": null
+        },
+        "image": false,
+        "layout": {
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        },
+        "name": "Saqawal's Roost"
     },
     {
         "boss": {
@@ -3045,7 +2937,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Sea of Isolation Map"
+        "name": "Sea of Isolation"
     },
     {
         "boss": {
@@ -3225,7 +3117,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Spires of Delusion Map"
+        "name": "Spires of Delusion"
     },
     {
         "boss": {
@@ -3244,24 +3136,6 @@
             "outdoors": true
         },
         "name": "Stagnation Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Steppes Map"
     },
     {
         "boss": {
@@ -3334,24 +3208,6 @@
             "outdoors": null
         },
         "name": "Sunken City Map"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "Synthesised World"
     },
     {
         "boss": {
@@ -3495,43 +3351,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "The Lake of Kalandra"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "The Pale Court"
-    },
-    {
-        "boss": {
-            "not_spawned": null,
-            "phases": null,
-            "rushable": null,
-            "separated": null,
-            "soft_phases": null
-        },
-        "image": false,
-        "layout": {
-            "delirium_mirror": null,
-            "few_obstacles": null,
-            "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        },
-        "name": "The Perandus Manor"
+        "name": "The Maven's Crucible"
     },
     {
         "boss": {
@@ -3963,7 +3783,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Vaults of Insanity Map"
+        "name": "Vaults of Insanity"
     },
     {
         "boss": {
@@ -4053,7 +3873,7 @@
             "linear": null,
             "outdoors": null
         },
-        "name": "Wastes of Lunacy Map"
+        "name": "Wastes of Lunacy"
     },
     {
         "boss": {

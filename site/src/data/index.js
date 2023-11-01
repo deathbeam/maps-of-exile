@@ -101,7 +101,12 @@ export const preparedMaps = maps.map(map => {
         '.png'
       : null,
     name: map.name.replace(' Map', ''),
-    connected: (map.connected || []).map(c => c.replace(' Map', '')),
+    connected: (map.connected || [])
+      .map(c => c.replace(' Map', ''))
+      .map(c => {
+        const foundMap = maps.find(m => m.ids.includes(c))
+        return foundMap ? foundMap.name : c
+      }),
     cards: cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
     icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png'),

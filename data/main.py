@@ -534,6 +534,11 @@ def get_maps(key, config):
         elif is_act_area:
             map_type = "act area"
 
+        for k, v in config["level-overrides"].items():
+            if k in name:
+                level = v
+                break
+
         out_map = {
             "ids": [id],
             "levels": [level],

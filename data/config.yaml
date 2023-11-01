@@ -40,6 +40,12 @@ data:
     - MapWorldsPhoenix
     - VaalTemple
 
+  # Area level overrides
+  level-overrides:
+    "Distant Memory": 80
+    "Trial of": 80
+    Cortex: 83
+
   # Links
   poedb:
     base: https://poedb.tw

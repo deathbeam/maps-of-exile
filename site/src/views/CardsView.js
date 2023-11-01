@@ -44,7 +44,7 @@ const CardsView = ({
                 if (mc.name !== c.name) {
                   return false
                 }
-                return mc.unknown || cardDisplayInput === 'all' || mc.weight > 0
+                return mc.unknown || cardDisplayInput === 'all' || cardDisplayInput === 'high' || mc.weight > 0
               })
             ),
             unknown: !c.weight,

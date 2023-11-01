@@ -80,7 +80,9 @@ export const preparedMaps = maps.map(map => {
   }
 
   if (map.boss.ids) {
-    const names = map.boss.ids.map(id => preparedMonsters[id] || id).filter(n => !n.includes('Merveil'))
+    const names = [...new Set((map.boss.ids || []).map(b => preparedMonsters[b]).filter(b => !!b))]
+      .filter(n => !n.includes('Merveil'))
+      .sort()
     if (names.length > 1) {
       mapTags.push({ name: `${names.length} bosses` })
     }

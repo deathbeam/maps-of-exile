@@ -18,7 +18,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
   switch (input.type) {
     case 'number':
       return (
-        <div className={divInputClass}>
+        <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label className="form-label">{input.name}</label>
@@ -39,7 +39,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'select':
       return (
-        <div className={divInputClass}>
+        <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label className="form-label">{input.name}</label>
@@ -47,7 +47,9 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
           <div className="input-group">
             <select className="form-control" ref={input.def.ref} defaultValue={input.def.get} onChange={input.def.set}>
               {Object.entries(input.options).map(([key, value]) => (
-                <option value={key}>{value}</option>
+                <option key={key} value={key}>
+                  {value}
+                </option>
               ))}
             </select>
             <button className="btn btn-outline-secondary" onClick={input.def.reset}>
@@ -58,7 +60,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'copytext':
       return (
-        <div className={divInputClass}>
+        <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label className="form-label">{input.name}</label>
@@ -80,7 +82,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'cardselect':
       return (
-        <div className={divInputClass}>
+        <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label className="form-label">{input.name}</label>

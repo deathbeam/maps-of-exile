@@ -144,6 +144,10 @@ a:hover {
   display: inherit;
 }
 
+.tooltip-tag .tooltip-tag-text:empty {
+  display: none;
+}
+
 .tooltip-tag .tooltip-tag-fill {
   padding: 2px;
   border-radius: 0;

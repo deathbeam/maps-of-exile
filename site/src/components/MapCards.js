@@ -49,7 +49,7 @@ const MapCards = ({ cards, type, cardValueSourceInput, sidebar, tooltipTop }) =>
                 cardValueSourceInput === 'kirac' ? (
                   type === 'map' && <CardRateTooltip rate={c.kirac} description={'kirac mission'} name={c.name} />
                 ) : (
-                  <CardRateTooltip rate={c.map} description={'map'} name={c.name} />
+                  <CardRateTooltip key={c.name} rate={c.map} description={'map'} name={c.name} />
                 )
               )}
           </span>
@@ -67,7 +67,7 @@ const MapCards = ({ cards, type, cardValueSourceInput, sidebar, tooltipTop }) =>
       </div>
       <div>
         {cardsWithData.map(c => (
-          <MapCard tooltipTop={tooltipTop} type={type} card={c} />
+          <MapCard key={c.name} tooltipTop={tooltipTop} type={type} card={c} />
         ))}
       </div>
     </div>

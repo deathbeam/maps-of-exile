@@ -11,39 +11,34 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
       color = searched.neg ? 'danger' : 'success'
     }
 
-    const buttons = []
-    if (addToInput) {
-      buttons.push(
-        <button
-          className={'btn btn-badge text-dark btn-' + color}
-          onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
-        >
-          {val} {info && <b>*</b>}
-        </button>
-      )
-    } else {
-      buttons.push(
-        <span className={'badge text-dark bg-' + color}>
-          {val} {info && <b>*</b>}
-        </span>
-      )
-    }
+    const tagDisplay = addToInput ? (
+      <button
+        className={'btn btn-badge text-dark btn-' + color}
+        onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
+      >
+        {val} {info && <b>*</b>}
+      </button>
+    ) : (
+      <span className={'badge text-dark bg-' + color}>
+        {val} {info && <b>*</b>}
+      </span>
+    )
 
-    if (searched) {
-      buttons.push(
-        <button className={'btn btn-badge text-dark btn-warning'} onClick={() => addToInput(val, searched.neg, true)}>
-          <i className="fa-solid fa-xmark" />
-        </button>
-      )
-    }
-
-    return info ? (
+    return (
       <span className="tooltip-tag tooltip-tag-right">
         <span className="tooltip-tag-text">{info}</span>
-        <div className="btn-group btn-group-sm m-1">{buttons}</div>
+        <div className="btn-group btn-group-sm m-1">
+          {tagDisplay}
+          {searched && (
+            <button
+              className={'btn btn-badge text-dark btn-warning'}
+              onClick={() => addToInput(val, searched.neg, true)}
+            >
+              <i className="fa-solid fa-xmark" />
+            </button>
+          )}
+        </div>
       </span>
-    ) : (
-      <div className="btn-group btn-group-sm m-1">{buttons}</div>
     )
   })
 }

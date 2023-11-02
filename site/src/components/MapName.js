@@ -12,7 +12,7 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
   const name = (
     <>
       {!sidebar && map.atlas && (
-        <Link to={`/atlas/${map.name}`} className="btn btn-primary me-2">
+        <Link to={`/atlas/${map.name}`} className="text-primary me-2">
           <i className="fa-solid fa-fw fa-globe" />
         </Link>
       )}

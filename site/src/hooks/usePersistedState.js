@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { parseValue } from '../common'
 
 let data = {}
-if (window.location.hash) {
+let dataEnabled = false
+if (window.location.hash && dataEnabled) {
   try {
     data = JSON.parse(atob(window.location.hash.replace('#', ''))) || {}
   } catch (e) {

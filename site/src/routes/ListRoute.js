@@ -4,9 +4,7 @@ import Navbar from '../components/Navbar'
 import GoToTop from '../components/GoToTop'
 import Map from '../components/list/Map'
 
-const ListView = ({
-  view,
-  setView,
+const ListRoute = ({
   filteredMaps,
   inputs,
   addToInput,
@@ -19,7 +17,7 @@ const ListView = ({
 }) => (
   <>
     <GoToTop />
-    <Navbar view={view} setView={setView} />
+    <Navbar />
     <div className="container-fluid p-2 row g-0">
       <MapFilter
         inputs={inputs}
@@ -138,4 +136,4 @@ const ListView = ({
   </>
 )
 
-export default ListView
+export default ListRoute

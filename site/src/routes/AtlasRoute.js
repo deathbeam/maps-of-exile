@@ -2,12 +2,11 @@ import { ReactFlowProvider } from 'reactflow'
 import Atlas from '../components/atlas/Atlas'
 import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import Map from '../components/atlas/Map'
+import { useParams } from 'react-router-dom'
 
-const AtlasView = ({
-  view,
-  setView,
+const AtlasRoute = ({
   ratedMaps,
   inputs,
   addToInput,
@@ -18,7 +17,7 @@ const AtlasView = ({
   voidstonesInput,
   cardValueSourceInput
 }) => {
-  const [currentMap, setCurrentMap] = useState()
+  const { currentMap } = useParams()
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
   const style = currentMap && {
     backgroundImage:
@@ -30,17 +29,11 @@ const AtlasView = ({
     <div className="row g-0 overflow-visible position-relative">
       <div className="col-lg-9 col-12">
         <ReactFlowProvider>
-          <Atlas
-            maps={ratedMaps}
-            currentSearch={currentSearch}
-            currentMap={currentMap}
-            voidstones={voidstonesInput}
-            setCurrentMap={setCurrentMap}
-          />
+          <Atlas maps={ratedMaps} currentSearch={currentSearch} currentMap={currentMap} voidstones={voidstonesInput} />
         </ReactFlowProvider>
       </div>
       <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>
-        <Navbar view={view} setView={setView} showBack={!!currentMap} backAction={() => setCurrentMap(null)} />
+        <Navbar showBack={!!currentMap && '/atlas'} />
         <div className="m-2">
           <p className="d-block d-lg-none">
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back
@@ -65,4 +58,4 @@ const AtlasView = ({
   )
 }
 
-export default AtlasView
+export default AtlasRoute

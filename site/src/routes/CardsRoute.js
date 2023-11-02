@@ -16,9 +16,7 @@ function filterCards(ratedCards, currentSearch) {
     )
 }
 
-const CardsView = ({
-  view,
-  setView,
+const CardsRoute = ({
   ratedMaps,
   cardDisplayInput,
   cardMinPriceInput,
@@ -78,7 +76,7 @@ const CardsView = ({
   return (
     <>
       <GoToTop />
-      <Navbar view={view} setView={setView} />
+      <Navbar />
       <div className="container-fluid p-2 row g-0">
         <MapFilter
           inputs={inputs}
@@ -108,4 +106,4 @@ const CardsView = ({
   )
 }
 
-export default CardsView
+export default CardsRoute

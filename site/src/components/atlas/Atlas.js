@@ -7,12 +7,13 @@ import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../com
 import usePersistedState from '../../hooks/usePersistedState'
 import MapImage from '../MapImage'
 import { preparedGlobals } from '../../data'
+import { Link } from 'react-router-dom'
 
 const scale = 3
 const offset = 6
 const bgId = 'bg'
 
-function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones, setCurrentMap) {
+function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones) {
   return {
     id: map.name,
     parentNode: bgId,
@@ -26,7 +27,6 @@ function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidsto
       atlasIcons,
       atlasLabels,
       voidstones: voidstones,
-      onClick: () => setCurrentMap(map.name),
       map: {
         name: map.name,
         levels: map.levels,
@@ -78,25 +78,22 @@ function MapNode({ id, data }) {
     <>
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
-      {!!atlasIcons && (
-        <MapImage
-          icon={map.icon}
-          name={map.name}
-          type={map.type}
-          level={mapLevel(map.levels, true, data.voidstones)}
-          onClick={data.onClick}
-        />
-      )}
-      {!!atlasLabels && (
-        <button className={buttonClass} onClick={data.onClick}>
-          {label}
-        </button>
-      )}
+      <Link to={`/atlas/${map.name}`}>
+        {!!atlasIcons && (
+          <MapImage
+            icon={map.icon}
+            name={map.name}
+            type={map.type}
+            level={mapLevel(map.levels, true, data.voidstones)}
+          />
+        )}
+        {!!atlasLabels && <button className={buttonClass}>{label}</button>}
+      </Link>
     </>
   )
 }
 
-const Atlas = ({ maps, currentSearch, currentMap, voidstones, setCurrentMap }) => {
+const Atlas = ({ maps, currentSearch, currentMap, voidstones }) => {
   const flow = useReactFlow()
   const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
   const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
@@ -141,15 +138,13 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones, setCurrentMap }) =
           },
           zIndex: -1
         }
-      ].concat(
-        connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones, setCurrentMap))
-      ),
+      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
       edges: deduplicate(
         connectedMaps.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones, setCurrentMap]
+    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
 
   useEffect(() => {

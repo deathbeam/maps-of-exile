@@ -2,7 +2,7 @@ import './MapImage.css'
 import { memo } from 'react'
 import { mapLevelToTier } from '../common'
 
-const MapImage = ({ icon, name, level = 0, type = 'map', onClick = null }) => {
+const MapImage = ({ icon, name, level = 0, type = 'map' }) => {
   if (type === 'act area') {
     icon = '/img/act.webp'
   }
@@ -31,7 +31,7 @@ const MapImage = ({ icon, name, level = 0, type = 'map', onClick = null }) => {
   }
 
   return (
-    <div className={'map-icon-container d-inline-block d-md-block' + extraClass} onClick={onClick}>
+    <div className={'map-icon-container d-inline-block d-md-block' + extraClass}>
       <img loading="lazy" src={icon} className={color} alt="" />
     </div>
   )

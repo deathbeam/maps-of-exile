@@ -3,14 +3,15 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import './App.css'
 
 import { useCallback, useMemo, useRef, useTransition } from 'react'
+import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { defaultCardBaseline, issueTemplate, preparedCards, preparedGlobals, preparedMaps } from './data'
 import Loader from './components/Loader'
 import { calculateScore, filter } from './common'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
-import ListView from './views/ListView'
-import AtlasView from './views/AtlasView'
-import CardsView from './views/CardsView'
+import ListRoute from './routes/ListRoute'
+import AtlasRoute from './routes/AtlasRoute'
+import CardsRoute from './routes/CardsRoute'
 
 function rateMaps(
   foundMaps,
@@ -183,7 +184,6 @@ function App() {
   const poeRegexRef = useRef(null)
   const searchRef = useRef(null)
 
-  const [view, setView] = usePersistedState('view', 'list', startTransition)
   const voidstones = useInputField('voidstonesInput', 0, startTransition)
   const cardDisplay = useInputField('cardDisplayInput', 'drop', startTransition)
   const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique+special', startTransition, shareableRef)
@@ -495,20 +495,24 @@ function App() {
     ]
   )
 
-  const CurrentView = useMemo(() => {
-    switch (view) {
-      case 'atlas':
-        return AtlasView
-      case 'cards':
-        return CardsView
-      case 'list':
-      default:
-        return ListView
-    }
-  }, [view])
+  const routeArgs = {
+    inputs,
+    ratedMaps,
+    filteredMaps,
+    addToInput,
+    currentSearch,
+    searchRef,
+    searchInput,
+    setSearchInput,
+    voidstonesInput: voidstones.get,
+    cardDisplayInput: cardDisplay.get,
+    cardValueSourceInput: cardValueSource.get,
+    cardMinPriceInput: cardMinPrice.get,
+    cardPriceSourceInput: cardPriceSource.get
+  }
 
   return (
-    <>
+    <Router>
       <Loader loading={isPending} />
       <a
         className="btn btn-primary position-fixed top-0 start-0 m-2 on-top"
@@ -518,24 +522,13 @@ function App() {
       >
         <i className="fa-solid fa-fw fa-code-fork" /> Data incorrect or missing? Open an issue
       </a>
-      <CurrentView
-        view={view}
-        setView={setView}
-        inputs={inputs}
-        ratedMaps={ratedMaps}
-        filteredMaps={filteredMaps}
-        addToInput={addToInput}
-        currentSearch={currentSearch}
-        searchRef={searchRef}
-        searchInput={searchInput}
-        setSearchInput={setSearchInput}
-        voidstonesInput={voidstones.get}
-        cardDisplayInput={cardDisplay.get}
-        cardValueSourceInput={cardValueSource.get}
-        cardMinPriceInput={cardMinPrice.get}
-        cardPriceSourceInput={cardPriceSource.get}
-      />
-    </>
+      <Routes>
+        <Route path="/" element={<ListRoute {...routeArgs} />} />
+        <Route path="/atlas" element={<AtlasRoute {...routeArgs} />} />
+        <Route path="/atlas/:currentMap" element={<AtlasRoute {...routeArgs} />} />
+        <Route path="/cards" element={<CardsRoute {...routeArgs} />} />
+      </Routes>
+    </Router>
   )
 }
 

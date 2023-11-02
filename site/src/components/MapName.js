@@ -3,15 +3,23 @@ import { mapLevel, mapLevelToTier, tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
 import { wikiBase } from '../data'
+import { Link } from 'react-router-dom'
 
 const MapName = ({ map, sidebar, cardList, voidstones }) => {
   const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`
   const wikiLink = wikiBase + map.name.replaceAll(' ', '_')
 
   const name = (
-    <a href={wikiLink} target="_blank" rel="noreferrer" className={color}>
-      {map.name}
-    </a>
+    <>
+      {!sidebar && map.atlas && (
+        <Link to={`/atlas/${map.name}`} className="btn btn-primary me-2">
+          <i className="fa-solid fa-fw fa-globe" />
+        </Link>
+      )}
+      <a href={wikiLink} target="_blank" rel="noreferrer" className={color}>
+        {map.name}
+      </a>
+    </>
   )
 
   const mapName =

@@ -12,6 +12,7 @@ import useInputField from './hooks/useInputField'
 import ListRoute from './routes/ListRoute'
 import AtlasRoute from './routes/AtlasRoute'
 import CardsRoute from './routes/CardsRoute'
+import ScrollToTop from './components/ScrollToTop'
 
 function rateMaps(
   foundMaps,
@@ -408,11 +409,7 @@ function App() {
         def: cardDisplay
       },
       {
-        name: (
-          <>
-            Map display <span className="badge bg-danger text-dark ms-1">new</span>
-          </>
-        ),
+        name: 'Map display',
         tooltip: (
           <>
             Which maps and aras are displayed.
@@ -513,6 +510,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Loader loading={isPending} />
       <a
         className="btn btn-primary position-fixed top-0 start-0 m-2 on-top"

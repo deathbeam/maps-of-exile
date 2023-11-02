@@ -33,7 +33,7 @@ const AtlasRoute = ({
         </ReactFlowProvider>
       </div>
       <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>
-        <Navbar showBack={!!currentMap && '/atlas'} />
+        <Navbar close={!!currentMap && '/atlas'} />
         <div className="m-2">
           <p className="d-block d-lg-none">
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back

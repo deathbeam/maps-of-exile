@@ -7,10 +7,10 @@ function calcRate(mapRate, price, stack) {
   let perMap = 1
   let everyMap = 1 / mapRate
   if (everyMap < 1) {
-    perMap = Math.floor(1 / everyMap)
+    perMap = Math.floor(Math.round((1 / everyMap) * 100) / 100)
     everyMap = 1
   } else {
-    everyMap = Math.ceil(everyMap)
+    everyMap = Math.ceil(Math.round(everyMap * 100) / 100)
   }
 
   return {

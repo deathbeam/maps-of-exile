@@ -743,14 +743,11 @@
     },
     {
         "image": true,
-        "info": {
-            "rushable": "Only rushable in elder guardian maps where bosses are already dead."
-        },
         "name": "Core Map",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
-            "boss_rushable": true,
+            "boss_rushable": false,
             "boss_separated": null,
             "boss_soft_phases": false,
             "delirium_mirror": false,

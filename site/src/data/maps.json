@@ -1866,8 +1866,7 @@
         ],
         "image": true,
         "info": {
-            "boss": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss.",
-            "rushable": "Only rushable in elder guardian maps where bosses are already dead."
+            "boss": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss."
         },
         "levels": [
             80
@@ -1882,7 +1881,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
-            "boss_rushable": true,
+            "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,

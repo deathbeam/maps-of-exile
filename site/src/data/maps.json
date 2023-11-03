@@ -8240,6 +8240,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/MavenBoss/TheMaven"
+        ],
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQ3VycmVuY3kvQXRsYXMvTnVsbFZvaWQxIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/9e4850813c/NullVoid1.png",
         "ids": [
             "MavenHub"
@@ -8659,6 +8662,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueHarvest/Oshabi/OshabiBoss"
+        ],
         "icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvTWFwcy9Pc2hhYmlNYXAiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/87c4ab4747/OshabiMap.png",
         "ids": [
             "HarvestLeagueBoss"

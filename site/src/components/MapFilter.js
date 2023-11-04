@@ -21,10 +21,13 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
         <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
-            <label className="form-label">{input.name}</label>
+            <label htmlFor={input.name} className="form-label">
+              {input.name}
+            </label>
           </span>
           <div className="input-group">
             <input
+              id={input.name}
               className="form-control"
               type="number"
               ref={input.def.ref}
@@ -42,10 +45,18 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
         <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
-            <label className="form-label">{input.name}</label>
+            <label htmlFor={input.name} className="form-label">
+              {input.name}
+            </label>
           </span>
           <div className="input-group">
-            <select className="form-control" ref={input.def.ref} defaultValue={input.def.get} onChange={input.def.set}>
+            <select
+              id={input.name}
+              className="form-control"
+              ref={input.def.ref}
+              defaultValue={input.def.get}
+              onChange={input.def.set}
+            >
               {Object.entries(input.options).map(([key, value]) => (
                 <option key={key} value={key}>
                   {value}
@@ -63,10 +74,13 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
         <div key={input.name} className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
-            <label className="form-label">{input.name}</label>
+            <label htmlFor={input.name} className="form-label">
+              {input.name}
+            </label>
           </span>
           <div className="input-group">
             <input
+              id={input.name}
               className="form-control"
               type="text"
               ref={input.def.ref}
@@ -142,8 +156,11 @@ const MapFilter = ({ sidebar, addToInput, currentSearch, searchRef, searchInput,
   return (
     <>
       <div className={searchClass}>
-        <label className="form-label">Search</label>
+        <label htmlFor="Search" className="form-label">
+          Search
+        </label>
         <input
+          id="Search"
           className="form-control"
           type="search"
           placeholder="Search for map, tag, card, card reward, comma separated"

@@ -62,7 +62,7 @@ const Card = ({ card, voidstones }) => {
   }
 
   return (
-    <tr ref={ref}>
+    <tr id={card.name} ref={ref}>
       <td className="p-0 map-card">
         <div
           style={{

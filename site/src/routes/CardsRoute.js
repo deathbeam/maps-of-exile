@@ -88,7 +88,7 @@ const CardsRoute = ({
           setSearchInput={setSearchInput}
         />
       </div>
-      <table className="table table-responsive table-striped mb-0">
+      <table className="table table-responsive mb-0">
         <thead>
           <tr>
             <th>Card</th>

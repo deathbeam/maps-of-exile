@@ -44,7 +44,7 @@ export default function usePersistedState(key, def, startTransition, locationRef
   return [
     val,
     e => {
-      const val = 'target' in e ? e.target.value : e
+      const val = Object.hasOwn(e, 'target') ? e.target.value : e
       if (startTransition) {
         startTransition(() => setVal(val === '' ? def : parseValue(val, def)))
       } else {

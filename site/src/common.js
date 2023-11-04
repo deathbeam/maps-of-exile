@@ -6,7 +6,7 @@ export function deduplicate(a, key) {
   const seen = {}
   return a.filter(function (item) {
     const k = item[key]
-    return k in seen ? false : (seen[k] = true)
+    return Object.hasOwn(seen, k) ? false : (seen[k] = true)
   })
 }
 

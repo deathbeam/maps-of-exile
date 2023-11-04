@@ -45,9 +45,9 @@ const ListRoute = ({
                 <span className="badge bg-danger text-dark m-1">tier 11-16</span>
                 <hr />
                 <span className="badge bg-danger text-dark m-1">bad/unknown</span>
-                <span className="badge bg-warning text-dark m-1">>=30 neutral</span>
-                <span className="badge bg-info text-dark m-1">>=50 good</span>
-                <span className="badge bg-success text-dark m-1">>=70 great</span>
+                <span className="badge bg-warning text-dark m-1">&gt;=30 neutral</span>
+                <span className="badge bg-info text-dark m-1">&gt;=50 good</span>
+                <span className="badge bg-success text-dark m-1">&gt;=70 great</span>
               </span>
               Map
             </span>
@@ -61,9 +61,9 @@ const ListRoute = ({
                 <hr />
                 <span className="badge bg-secondary text-dark m-1">unknown</span>
                 <span className="badge bg-danger text-dark m-1">bad</span>
-                <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
-                <span className="badge bg-info text-dark m-1">>=5 good</span>
-                <span className="badge bg-success text-dark m-1">>=7 great</span>
+                <span className="badge bg-warning text-dark m-1">&gt;=3 neutral</span>
+                <span className="badge bg-info text-dark m-1">&gt;=5 good</span>
+                <span className="badge bg-success text-dark m-1">&gt;=7 great</span>
               </span>
               Layout
             </span>
@@ -79,9 +79,9 @@ const ListRoute = ({
                 <hr />
                 <span className="badge bg-secondary text-dark m-1">unknown</span>
                 <span className="badge bg-danger text-dark m-1">bad</span>
-                <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
-                <span className="badge bg-info text-dark m-1">>=5 good</span>
-                <span className="badge bg-success text-dark m-1">>=7 great</span>
+                <span className="badge bg-warning text-dark m-1">&gt;=3 neutral</span>
+                <span className="badge bg-info text-dark m-1">&gt;=5 good</span>
+                <span className="badge bg-success text-dark m-1">&gt;=7 great</span>
               </span>
               Density
             </span>
@@ -95,9 +95,9 @@ const ListRoute = ({
                 <hr />
                 <span className="badge bg-secondary text-dark m-1">unknown</span>
                 <span className="badge bg-danger text-dark m-1">hard/annoying</span>
-                <span className="badge bg-warning text-dark m-1">>=3 neutral</span>
-                <span className="badge bg-info text-dark m-1">>=5 alright</span>
-                <span className="badge bg-success text-dark m-1">>=7 easy/fast</span>
+                <span className="badge bg-warning text-dark m-1">&gt;=3 neutral</span>
+                <span className="badge bg-info text-dark m-1">&gt;=5 alright</span>
+                <span className="badge bg-success text-dark m-1">&gt;=7 easy/fast</span>
               </span>
               Boss
             </span>
@@ -116,10 +116,10 @@ const ListRoute = ({
                 with your observed results.
                 <hr />
                 <span className="badge bg-secondary text-dark m-1">not very good</span>
-                <span className="badge bg-dark border border-1 border-info text-info m-1">>=0.5 decent</span>
-                <span className="badge bg-info text-dark m-1">>=2 good</span>
-                <span className="badge bg-primary text-light m-1">>=5 great</span>
-                <span className="badge bg-light text-dark m-1">>=8 amazing</span>
+                <span className="badge bg-dark border border-1 border-info text-info m-1">&gt;=0.5 decent</span>
+                <span className="badge bg-info text-dark m-1">&gt;=2 good</span>
+                <span className="badge bg-primary text-light m-1">&gt;=5 great</span>
+                <span className="badge bg-light text-dark m-1">&gt;=8 amazing</span>
               </span>
               Cards
             </span>

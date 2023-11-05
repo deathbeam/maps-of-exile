@@ -11,7 +11,7 @@ const MapBoss = ({ ids, rating, tooltip, sidebar = false, label = '' }) => {
       <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-left' : 'tooltip-tag-right')}>
         <span className="tooltip-tag-text">
           {names.map(b => (
-            <b>
+            <b key={b}>
               {b}
               <br />
             </b>

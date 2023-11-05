@@ -51,7 +51,7 @@ const Card = ({ card, voidstones }) => {
         </div>
         <div className="card-body">
           If you want to try to see them set <b>Card display</b> to <b>All cards</b> and/or <b>Map display</b> to{' '}
-          <b>All areas</b>. If you still don't see them check{' '}
+          <b>All areas</b>. If you still do not see them check{' '}
           <a href={wikiBase + card.name} target="_blank" rel="noreferrer">
             Wiki
           </a>
@@ -78,14 +78,14 @@ const Card = ({ card, voidstones }) => {
           <div className="row m-0">{cardNotice}</div>
           <div className="row m-0">
             {card.monsters.map(m => (
-              <div className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
+              <div key={m.name} className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                 <MonsterName monster={m} />
               </div>
             ))}
           </div>
           <div className="row m-0">
             {card.maps.map(map => (
-              <div className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
+              <div key={map.name} className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
                 <MapName map={map} voidstones={voidstones} cardList={true} />
               </div>
             ))}

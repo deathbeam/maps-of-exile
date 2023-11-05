@@ -5,10 +5,10 @@
   "type": "module",
   "homepage": "https://mapsofexile.com",
   "scripts": {
-    "fix": "eslint --fix src && prettier --write '{*,public/*,src/**,src/**/*,src/**/**/*}.{js,jsx,css,scss,md,html}'",
+    "fix": "eslint --fix src --ext js,jsx && prettier --write '{*,public/*,src/**,src/**/*,src/**/**/*}.{js,jsx,css,scss,md,html}'",
     "start": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {

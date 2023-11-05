@@ -118,7 +118,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             />
             <button
               className="btn btn-outline-secondary"
-              onClick={e => {
+              onClick={() => {
                 input.def.reset()
                 input.numberDef.reset()
               }}

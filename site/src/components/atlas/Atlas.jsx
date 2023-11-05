@@ -58,7 +58,7 @@ function BackgroundNode({ data }) {
   return <img src={data.image} width={data.width} height={data.height} alt="" />
 }
 
-function MapNode({ id, data }) {
+function MapNode({ data }) {
   const atlasScore = data.atlasScore
   const atlasIcons = data.atlasIcons
   const atlasLabels = data.atlasLabels

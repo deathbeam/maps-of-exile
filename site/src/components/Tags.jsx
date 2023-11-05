@@ -25,7 +25,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
     )
 
     return (
-      <span className="tooltip-tag tooltip-tag-right">
+      <span key={val} className="tooltip-tag tooltip-tag-right">
         <span className="tooltip-tag-text">{info}</span>
         <div className="btn-group btn-group-sm m-1">
           {tagDisplay}

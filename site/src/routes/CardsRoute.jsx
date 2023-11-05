@@ -97,7 +97,7 @@ const CardsRoute = ({
         </thead>
         <tbody>
           {filteredCards.map(c => (
-            <Card card={c} voidstones={voidstonesInput} />
+            <Card key={c.name} card={c} voidstones={voidstonesInput} />
           ))}
         </tbody>
       </table>

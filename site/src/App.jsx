@@ -6,7 +6,7 @@ import { useCallback, useMemo, useRef, useTransition } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { defaultCardBaseline, issueTemplate, preparedCards, preparedGlobals, preparedMaps } from './data'
 import Loader from './components/Loader'
-import { calculateScore, filter } from './common'
+import { calculateScore, filterData } from './common'
 import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import ListRoute from './routes/ListRoute'
@@ -170,13 +170,13 @@ function buildSearch(s) {
   return s.map(v => (v.neg ? '-' : '') + v.value).join(', ')
 }
 
-function filterMaps(ratedMaps, currentSearch) {
-  return ratedMaps
-    .filter(m => !currentSearch || filter(currentSearch, m.search))
-    .sort(
-      (a, b) =>
-        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
-    )
+function buildMapRegex(filteredMaps) {
+  const re = '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
+  if (re.length > 50) {
+    let splitMaps = re.substring(0, 49).split('|')
+    return splitMaps.splice(0, splitMaps.length - 1).join('|') + '"'
+  }
+  return re
 }
 
 function App() {
@@ -219,32 +219,24 @@ function App() {
         voidstones.get
       ),
     [
-      layout,
-      density,
-      boss,
-      card,
-      cardBaseline,
-      cardBaselineNumber,
-      cardMinPrice,
-      cardPriceSource,
-      cardValueSource,
-      cardDisplay,
-      mapDisplay,
-      voidstones
+      layout.get,
+      density.get,
+      boss.get,
+      card.get,
+      cardBaseline.get,
+      cardBaselineNumber.get,
+      cardMinPrice.get,
+      cardPriceSource.get,
+      cardValueSource.get,
+      cardDisplay.get,
+      mapDisplay.get,
+      voidstones.get
     ]
   )
+
   const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
-
-  const filteredMaps = useMemo(() => filterMaps(ratedMaps, currentSearch), [ratedMaps, currentSearch])
-
-  const poeRegex = useMemo(() => {
-    const re = '"' + [...new Set(filteredMaps.map(m => m.shorthand))].join('|') + '"'
-    if (re.length > 50) {
-      let splitMaps = re.substring(0, 49).split('|')
-      return splitMaps.splice(0, splitMaps.length - 1).join('|') + '"'
-    }
-    return re
-  }, [filteredMaps])
+  const filteredMaps = useMemo(() => filterData(ratedMaps, currentSearch), [ratedMaps, currentSearch])
+  const poeRegex = useMemo(() => buildMapRegex(filteredMaps), [filteredMaps])
 
   const addToInput = useCallback(
     (v, neg, remove) => {

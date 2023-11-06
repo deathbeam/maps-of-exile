@@ -49,6 +49,15 @@ export function filter(search, v) {
   return posMatched && negMatched
 }
 
+export function filterData(data, currentSearch) {
+  return data
+    .filter(m => !currentSearch || filter(currentSearch, m.search))
+    .sort(
+      (a, b) =>
+        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
+    )
+}
+
 export function ratingColor(rating, scale = 1) {
   let color = 'danger'
 

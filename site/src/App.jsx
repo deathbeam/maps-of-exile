@@ -7,7 +7,6 @@ import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { defaultCardBaseline, issueTemplate, preparedCards, preparedGlobals, preparedMaps } from './data'
 import Loader from './components/Loader'
 import { calculateScore, filterData } from './common'
-import usePersistedState from './hooks/usePersistedState'
 import useInputField from './hooks/useInputField'
 import ListRoute from './routes/ListRoute'
 import AtlasRoute from './routes/AtlasRoute'
@@ -182,14 +181,12 @@ function buildMapRegex(filteredMaps) {
 function App() {
   const [isPending, startTransition] = useTransition()
   const shareableRef = useRef(null)
-  const poeRegexRef = useRef(null)
-  const searchRef = useRef(null)
 
   const voidstones = useInputField('voidstonesInput', 0, startTransition)
   const cardDisplay = useInputField('cardDisplayInput', 'drop', startTransition)
-  const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique+special', startTransition, shareableRef)
+  const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique+special', startTransition)
 
-  const [searchInput, setSearchInput] = usePersistedState('searchInput', '', startTransition, shareableRef)
+  const search = useInputField('searchInput', '', startTransition, shareableRef)
   const layout = useInputField('layoutInput', 3, startTransition, shareableRef)
   const density = useInputField('densityInput', 2, startTransition, shareableRef)
   const boss = useInputField('bossInput', 1, startTransition, shareableRef)
@@ -234,13 +231,13 @@ function App() {
     ]
   )
 
-  const currentSearch = useMemo(() => parseSearch(searchInput), [searchInput])
+  const currentSearch = useMemo(() => parseSearch(search.get), [search.get])
   const filteredMaps = useMemo(() => filterData(ratedMaps, currentSearch), [ratedMaps, currentSearch])
   const poeRegex = useMemo(() => buildMapRegex(filteredMaps), [filteredMaps])
 
   const addToInput = useCallback(
     (v, neg, remove) => {
-      let curVal = searchRef.current ? searchRef.current.value : searchInput
+      let curVal = search.get
       let s = parseSearch(curVal || '')
 
       if (remove) {
@@ -255,12 +252,12 @@ function App() {
       }
 
       const val = buildSearch(s)
-      if (searchRef.current) {
-        searchRef.current.value = val
+      if (search.ref.current) {
+        search.ref.current.value = val
       }
-      setSearchInput(val)
+      search.set(val)
     },
-    [searchInput, setSearchInput, searchRef]
+    [search]
   )
 
   const inputs = useMemo(
@@ -449,7 +446,6 @@ function App() {
         ),
         type: 'copytext',
         def: {
-          ref: poeRegexRef,
           get: poeRegex
         },
         size: 'full'
@@ -478,7 +474,6 @@ function App() {
       cardDisplay,
       voidstones,
       mapDisplay,
-      poeRegexRef,
       poeRegex,
       shareableRef
     ]
@@ -490,9 +485,9 @@ function App() {
     filteredMaps,
     addToInput,
     currentSearch,
-    searchRef,
-    searchInput,
-    setSearchInput,
+    searchRef: search.ref,
+    searchInput: search.get,
+    setSearchInput: search.set,
     voidstonesInput: voidstones.get,
     cardDisplayInput: cardDisplay.get,
     cardValueSourceInput: cardValueSource.get,

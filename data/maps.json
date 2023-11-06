@@ -129,6 +129,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Altered Distant Memory",
         "tags": {
             "boss_not_spawned": null,
@@ -305,6 +308,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Augmented Distant Memory",
         "tags": {
             "boss_not_spawned": null,
@@ -759,6 +765,9 @@
     },
     {
         "image": false,
+        "levels": [
+            83
+        ],
         "name": "Cortex",
         "tags": {
             "boss_not_spawned": null,
@@ -1219,7 +1228,8 @@
             "league_mechanics": false,
             "linear": null,
             "outdoors": null
-        }
+        },
+        "type": "special map"
     },
     {
         "image": false,
@@ -1571,7 +1581,8 @@
             "league_mechanics": false,
             "linear": null,
             "outdoors": null
-        }
+        },
+        "type": "special map"
     },
     {
         "image": false,
@@ -1766,7 +1777,8 @@
             "league_mechanics": false,
             "linear": null,
             "outdoors": null
-        }
+        },
+        "type": "special map"
     },
     {
         "image": false,
@@ -2086,7 +2098,8 @@
             "league_mechanics": false,
             "linear": null,
             "outdoors": null
-        }
+        },
+        "type": "special map"
     },
     {
         "image": true,
@@ -2314,6 +2327,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Rewritten Distant Memory",
         "tags": {
             "boss_not_spawned": null,
@@ -2736,6 +2752,9 @@
     },
     {
         "image": false,
+        "levels": [
+            83
+        ],
         "name": "The Temple of Atzoatl",
         "tags": {
             "boss_not_spawned": null,
@@ -2848,6 +2867,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Burning Rage",
         "tags": {
             "boss_not_spawned": null,
@@ -2864,6 +2886,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Crippling Grief",
         "tags": {
             "boss_not_spawned": null,
@@ -2880,6 +2905,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Lingering Pain",
         "tags": {
             "boss_not_spawned": null,
@@ -2896,6 +2924,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Piercing Truth",
         "tags": {
             "boss_not_spawned": null,
@@ -2912,6 +2943,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Stinging Doubt",
         "tags": {
             "boss_not_spawned": null,
@@ -2928,6 +2962,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Trial of Swirling Fear",
         "tags": {
             "boss_not_spawned": null,
@@ -2976,6 +3013,9 @@
     },
     {
         "image": false,
+        "levels": [
+            80
+        ],
         "name": "Twisted Distant Memory",
         "tags": {
             "boss_not_spawned": null,
@@ -3084,7 +3124,8 @@
             "league_mechanics": false,
             "linear": null,
             "outdoors": null
-        }
+        },
+        "type": "special map"
     },
     {
         "image": false,

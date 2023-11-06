@@ -99,10 +99,10 @@
         },
         "name": "A Fate Worse Than Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-fate-worse-than-death",
-        "price": 60.0,
+        "price": 59.2,
         "reward": "Cortex, Corrupted",
         "stack": 4,
-        "standardPrice": 75.0,
+        "standardPrice": 90.0,
         "weight": 87
     },
     {
@@ -210,15 +210,13 @@
         "price": 5.0,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 9.6,
+        "standardPrice": 9.2,
         "weight": 128
     },
     {
         "art": "AbandonedWealth",
         "drop": {
             "areas": [
-                "MapAtlasArsenal",
-                "MapAtlasReefUnique",
                 "MapWorldsShoreUnique"
             ],
             "min_level": 68,
@@ -318,7 +316,7 @@
         "price": 9.0,
         "reward": "Fated Unique Item",
         "stack": 3,
-        "standardPrice": 13.2,
+        "standardPrice": 11.8,
         "weight": 132
     },
     {
@@ -509,9 +507,6 @@
             "areas": [
                 "1_3_5",
                 "2_8_8",
-                "MapAtlasArcade",
-                "MapAtlasBazaar",
-                "MapAtlasQuay",
                 "MapWorldsAlleyways",
                 "MapWorldsBazaar",
                 "MapWorldsArcade",
@@ -526,7 +521,7 @@
         "price": 1.0,
         "reward": "Dagger",
         "stack": 9,
-        "standardPrice": 0.97,
+        "standardPrice": 0.98,
         "weight": 10572
     },
     {
@@ -544,16 +539,14 @@
         "price": 1.0,
         "reward": "Shield, Shaper Item",
         "stack": 5,
-        "standardPrice": 4.2,
+        "standardPrice": 3.2,
         "weight": 632
     },
     {
         "art": "AtzirisArmory",
         "drop": {
             "areas": [
-                "MapWorldsVaalPyramidUnique",
-                "MapAtlasVaalPyramidUnique_",
-                "MapAtlasSpiderLair_"
+                "MapWorldsVaalPyramidUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -582,7 +575,7 @@
         "price": 3.0,
         "reward": "Doryani's Fist, Corrupted",
         "stack": 5,
-        "standardPrice": 0.82,
+        "standardPrice": 0.91,
         "weight": 58
     },
     {
@@ -621,7 +614,7 @@
         "price": 1.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
-        "standardPrice": 2.8,
+        "standardPrice": 2.7,
         "weight": 2884
     },
     {
@@ -705,7 +698,7 @@
         "price": 9.0,
         "reward": "Cluster Jewel, Item Level: 84",
         "stack": 3,
-        "standardPrice": 15.0,
+        "standardPrice": 9.6,
         "weight": 198
     },
     {
@@ -714,7 +707,6 @@
             "areas": [
                 "1_5_7",
                 "2_10_8",
-                "MapAtlasMuseum",
                 "MapWorldsRelicChambers",
                 "MapWorldsMuseum"
             ],
@@ -766,7 +758,7 @@
         "price": 2.0,
         "reward": "Bestiary Item",
         "stack": 6,
-        "standardPrice": 3.0,
+        "standardPrice": 2.7,
         "weight": 691
     },
     {
@@ -810,7 +802,7 @@
         "price": 4.0,
         "reward": "Six-Link Harbinger Bow, Item Level: 91",
         "stack": 6,
-        "standardPrice": 6.0,
+        "standardPrice": 3.3,
         "weight": 95
     },
     {
@@ -829,7 +821,7 @@
         "price": 90.0,
         "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 80.0,
+        "standardPrice": 90.0,
         "weight": 30
     },
     {
@@ -864,10 +856,10 @@
         },
         "name": "Brother's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-gift",
-        "price": 1257.02,
+        "price": 1261.82,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 1480.76,
+        "standardPrice": 1466.66,
         "weight": 50
     },
     {
@@ -884,10 +876,10 @@
         },
         "name": "Brother's Stash",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-stash",
-        "price": 99.0,
+        "price": 100.0,
         "reward": "5x Exalted Orb",
         "stack": 1,
-        "standardPrice": 177.48,
+        "standardPrice": 197.87,
         "weight": 50
     },
     {
@@ -980,12 +972,6 @@
         "drop": {
             "areas": [
                 "2_7_8",
-                "MapAtlasArachnidNest",
-                "MapAtlasBarrows",
-                "MapAtlasBurialChambers",
-                "MapAtlasDarkForest",
-                "MapAtlasGraveyard",
-                "MapAtlasSpiderForest",
                 "MapWorldsDarkForest",
                 "MapWorldsBrambleValley",
                 "MapWorldsThicket",
@@ -1001,7 +987,7 @@
         "price": 1.0,
         "reward": "Tier 1 Talisman, Corrupted",
         "stack": 5,
-        "standardPrice": 1.7,
+        "standardPrice": 1.0,
         "weight": 1564
     },
     {
@@ -1038,14 +1024,13 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 5",
         "stack": 3,
-        "standardPrice": 0.85,
+        "standardPrice": 0.9,
         "weight": 4706
     },
     {
         "art": "ChaoticDisposition",
         "drop": {
             "areas": [
-                "MapAtlasTempleUnique",
                 "MapWorldsTempleUnique"
             ],
             "min_level": 23,
@@ -1054,7 +1039,7 @@
         },
         "name": "Chaotic Disposition",
         "ninja": "https://poe.ninja/challenge/divination-cards/chaotic-disposition",
-        "price": 3.57,
+        "price": 3.85,
         "reward": "5x Chaos Orb",
         "stack": 1,
         "standardPrice": 5.0,
@@ -1095,7 +1080,7 @@
         "price": 1.0,
         "reward": "76x Simulacrum Splinter",
         "stack": 8,
-        "standardPrice": 5.8,
+        "standardPrice": 7.2,
         "weight": 276
     },
     {
@@ -1110,10 +1095,10 @@
         },
         "name": "Choking Guilt",
         "ninja": "https://poe.ninja/challenge/divination-cards/choking-guilt",
-        "price": 1890.33,
+        "price": 1919.12,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 1833.32,
+        "standardPrice": 1932.04,
         "weight": 8
     },
     {
@@ -1132,7 +1117,7 @@
         "price": 3.0,
         "reward": "Item, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 5.2,
+        "standardPrice": 5.0,
         "weight": 388
     },
     {
@@ -1160,7 +1145,6 @@
                 "1_3_6",
                 "1_5_6",
                 "2_10_9",
-                "MapAtlasCatacomb_",
                 "MapWorldsBoneCrypt"
             ],
             "min_level": 23,
@@ -1207,10 +1191,10 @@
         },
         "name": "Dark Dreams",
         "ninja": "https://poe.ninja/challenge/divination-cards/dark-dreams",
-        "price": 3.3,
+        "price": 3.2,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
-        "standardPrice": 8.4,
+        "standardPrice": 8.2,
         "weight": 71
     },
     {
@@ -1239,10 +1223,10 @@
         },
         "name": "Darker Half",
         "ninja": "https://poe.ninja/challenge/divination-cards/darker-half",
-        "price": 55.0,
+        "price": 56.77,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
-        "standardPrice": 70.0,
+        "standardPrice": 71.8,
         "weight": 30
     },
     {
@@ -1260,16 +1244,13 @@
         "price": 89.0,
         "reward": "Torrent's Reclamation, Two-Implicit, Corrupted",
         "stack": 6,
-        "standardPrice": 50.0,
+        "standardPrice": 49.8,
         "weight": 24
     },
     {
         "art": "Death",
         "drop": {
             "areas": [
-                "MapAtlasBog",
-                "MapAtlasMarshes",
-                "MapAtlasMudGeyser",
                 "MapWorldsBog",
                 "MapWorldsMudGeyser",
                 "MapWorldsMarshes"
@@ -1341,7 +1322,7 @@
         "price": 2.0,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 4.0,
+        "standardPrice": 3.4,
         "weight": 642
     },
     {
@@ -1385,9 +1366,6 @@
         "art": "DestinedtoCrumble",
         "drop": {
             "areas": [
-                "MapAtlasAcademy",
-                "MapAtlasMuseum",
-                "MapAtlasScriptorium",
                 "MapWorldsAcademy",
                 "MapWorldsScriptorium",
                 "MapWorldsMuseum"
@@ -1401,15 +1379,13 @@
         "price": 1.0,
         "reward": "Body Armour, Item Level: 100",
         "stack": 5,
-        "standardPrice": 0.58,
+        "standardPrice": 0.66,
         "weight": 47245
     },
     {
         "art": "DiallasSubjugation",
         "drop": {
             "areas": [
-                "MapAtlasIvoryTemple",
-                "MapAtlasTemple",
                 "MapWorldsTemple",
                 "MapWorldsMoonTempleUnique",
                 "MapWorldsColdRiver_",
@@ -1463,10 +1439,10 @@
         },
         "name": "Divine Beauty",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-beauty",
-        "price": 125.0,
+        "price": 124.5,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 156.0,
+        "standardPrice": 155.0,
         "weight": 408
     },
     {
@@ -1524,7 +1500,7 @@
         },
         "name": "Doryani's Epiphany",
         "ninja": "https://poe.ninja/challenge/divination-cards/doryanis-epiphany",
-        "price": 192.5,
+        "price": 190.0,
         "reward": "3x Regrading Lens",
         "stack": 3,
         "standardPrice": 282.05,
@@ -1585,7 +1561,7 @@
         "price": 7.0,
         "reward": "Body Armour, Item Level: 100, Double-Influenced Item",
         "stack": 2,
-        "standardPrice": 36.0,
+        "standardPrice": 44.0,
         "weight": 13
     },
     {
@@ -1605,7 +1581,7 @@
         },
         "name": "Dying Anguish",
         "ninja": "https://poe.ninja/challenge/divination-cards/dying-anguish",
-        "price": 5.0,
+        "price": 4.0,
         "reward": "Level 19 Gem, Alternate Quality: +19%",
         "stack": 8,
         "standardPrice": 5.0,
@@ -1637,7 +1613,6 @@
                 "2_9_4",
                 "2_9_5",
                 "2_9_3",
-                "MapAtlasDunes",
                 "MapWorldsDunes",
                 "MapWorldsDesert",
                 "MapWorldsDesertSpring",
@@ -1674,7 +1649,7 @@
         "price": 2.2,
         "reward": "Fidelitas' Spike,  Two-Implicit,  Corrupted",
         "stack": 3,
-        "standardPrice": 2.9,
+        "standardPrice": 3.0,
         "weight": 442
     },
     {
@@ -1683,9 +1658,6 @@
             "areas": [
                 "2_7_5_1",
                 "2_7_5_2",
-                "MapAtlasOvergrownRuin",
-                "MapAtlasOvergrownShrine",
-                "MapAtlasSprings",
                 "MapWorldsOvergrownRuin",
                 "MapWorldsOvergrownShrine"
             ],
@@ -1707,9 +1679,6 @@
             "areas": [
                 "1_3_15",
                 "2_8_4",
-                "MapAtlasHighGardens",
-                "MapAtlasCourtyard",
-                "MapAtlasOrchard",
                 "MapWorldsCourtyard",
                 "MapWorldsOrchard",
                 "MapWorldsTerrace",
@@ -1737,7 +1706,7 @@
         },
         "name": "Endless Night",
         "ninja": "https://poe.ninja/challenge/divination-cards/endless-night",
-        "price": 2.2,
+        "price": 2.3,
         "reward": "Maloney's Mechanism",
         "stack": 7,
         "standardPrice": 6.2,
@@ -1755,7 +1724,7 @@
         },
         "name": "Etched in Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/etched-in-blood",
-        "price": 3.0,
+        "price": 2.8,
         "reward": "Rigwald's Quills, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 10.0,
@@ -1774,7 +1743,7 @@
         "price": 39.0,
         "reward": "Replica Cortex",
         "stack": 4,
-        "standardPrice": 127.0,
+        "standardPrice": 116.0,
         "weight": 26
     },
     {
@@ -1787,10 +1756,10 @@
         },
         "name": "Ever-Changing",
         "ninja": "https://poe.ninja/challenge/divination-cards/ever-changing",
-        "price": 2.0,
+        "price": 2.5,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
-        "standardPrice": 4.7,
+        "standardPrice": 4.6,
         "weight": 1353
     },
     {
@@ -1908,15 +1877,13 @@
         "price": 20.0,
         "reward": "Exceptional Gem",
         "stack": 3,
-        "standardPrice": 20.3,
+        "standardPrice": 23.0,
         "weight": 53
     },
     {
         "art": "GemcuttersPromise",
         "drop": {
             "areas": [
-                "MapAtlasColonnade",
-                "MapAtlasPromenade",
                 "2_8_6",
                 "1_3_13",
                 "MapWorldsColonnade",
@@ -1985,9 +1952,6 @@
         "drop": {
             "areas": [
                 "2_6_13",
-                "MapAtlasCrystalOre",
-                "MapAtlasUndergroundRiver",
-                "MapAtlasUndergroundSea",
                 "MapWorldsUndergroundSea",
                 "MapWorldsFloodedMine",
                 "MapWorldsMineralPools"
@@ -2063,7 +2027,7 @@
         "price": 1.0,
         "reward": "9x Shrieking Essence",
         "stack": 9,
-        "standardPrice": 2.5,
+        "standardPrice": 2.6,
         "weight": 183
     },
     {
@@ -2078,10 +2042,10 @@
         },
         "name": "Haunting Shadows",
         "ninja": "https://poe.ninja/challenge/divination-cards/haunting-shadows",
-        "price": 3.1,
+        "price": 3.0,
         "reward": "Metamorph Item",
         "stack": 4,
-        "standardPrice": 8.0,
+        "standardPrice": 6.5,
         "weight": 298
     },
     {
@@ -2256,8 +2220,6 @@
         "art": "Heterochromia",
         "drop": {
             "areas": [
-                "MapAtlasEstuary",
-                "MapAtlasGorge",
                 "MapWorldsEstuary",
                 "MapWorldsMoonTempleUnique"
             ],
@@ -2270,7 +2232,7 @@
         "price": 1.0,
         "reward": "Two-Stone Ring",
         "stack": 2,
-        "standardPrice": 3.0,
+        "standardPrice": 3.2,
         "weight": 1770
     },
     {
@@ -2299,7 +2261,7 @@
         "price": 20.0,
         "reward": "Exceptional Gem, Quality: +1-20%",
         "stack": 3,
-        "standardPrice": 18.4,
+        "standardPrice": 20.0,
         "weight": 90
     },
     {
@@ -2463,15 +2425,14 @@
         "price": 1.0,
         "reward": "Prismatic Ring, Corrupted",
         "stack": 5,
-        "standardPrice": 0.6,
+        "standardPrice": 0.65,
         "weight": 2081
     },
     {
         "art": "HouseOfMirrors",
         "drop": {
             "areas": [
-                "MapAtziri2",
-                "MapAtlasPromenadeUnique"
+                "MapAtziri2"
             ],
             "min_level": 78,
             "monsters": [],
@@ -2479,10 +2440,10 @@
         },
         "name": "House of Mirrors",
         "ninja": "https://poe.ninja/challenge/divination-cards/house-of-mirrors",
-        "price": 22933.48,
+        "price": 23077.42,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 30687.04,
+        "standardPrice": 30771.66,
         "weight": 5
     },
     {
@@ -2505,8 +2466,6 @@
         "art": "Humility",
         "drop": {
             "areas": [
-                "MapAtlasChannel",
-                "MapAtlasWaterways",
                 "MapWorldsChannel",
                 "MapWorldsWaterways",
                 "1_4_1",
@@ -2524,7 +2483,7 @@
         "price": 1.27,
         "reward": "Tabula Rasa",
         "stack": 9,
-        "standardPrice": 0.99,
+        "standardPrice": 1.0,
         "weight": 3009
     },
     {
@@ -2532,7 +2491,6 @@
         "drop": {
             "areas": [
                 "2_6_10",
-                "MapAtlasSprings",
                 "MapWorldsRamparts",
                 "MapWorldsForkingRiver",
                 "2_6_12",
@@ -2560,10 +2518,10 @@
         },
         "name": "Hunter's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/hunters-reward",
-        "price": 4.0,
+        "price": 4.2,
         "reward": "The Taming",
         "stack": 3,
-        "standardPrice": 7.8,
+        "standardPrice": 7.4,
         "weight": 239
     },
     {
@@ -2584,7 +2542,7 @@
         "price": 2.0,
         "reward": "Fated Connections",
         "stack": 6,
-        "standardPrice": 7.9,
+        "standardPrice": 5.9,
         "weight": 635
     },
     {
@@ -2602,7 +2560,7 @@
         "price": 90.0,
         "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
-        "standardPrice": 154.0,
+        "standardPrice": 123.0,
         "weight": 22
     },
     {
@@ -2640,9 +2598,7 @@
                 "2_8_8",
                 "2_8_9",
                 "2_8_13",
-                "MapAtlasArsenal",
                 "MapWorldsPromenade",
-                "MapAtlasColonnade",
                 "MapWorldsPort",
                 "MapWorldsArsenal",
                 "MapWorldsGhetto",
@@ -2739,7 +2695,7 @@
         "price": 5.0,
         "reward": "Jewel, Implicit Modifier: , Corrupted Blood cannot be inflicted on you, Corrupted",
         "stack": 3,
-        "standardPrice": 13.8,
+        "standardPrice": 14.2,
         "weight": 543
     },
     {
@@ -2787,7 +2743,6 @@
         "art": "LastHope",
         "drop": {
             "areas": [
-                "MapAtlasVaalTemple",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 53,
@@ -2818,7 +2773,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 16, Unidentified Corrupted",
         "stack": 4,
-        "standardPrice": 0.75,
+        "standardPrice": 0.81,
         "weight": 3047
     },
     {
@@ -2834,7 +2789,7 @@
         "price": 4.0,
         "reward": "Nebulis",
         "stack": 6,
-        "standardPrice": 14.76,
+        "standardPrice": 14.68,
         "weight": 99
     },
     {
@@ -2842,9 +2797,6 @@
         "drop": {
             "areas": [
                 "1_3_18_2",
-                "MapAtlasPalace",
-                "MapAtlasResidence",
-                "MapAtlasVilla",
                 "MapWorldsResidence",
                 "MapWorldsVilla",
                 "MapWorldsPalace"
@@ -3059,7 +3011,7 @@
         "price": 719.67,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 846.15,
+        "standardPrice": 772.82,
         "weight": 5
     },
     {
@@ -3090,10 +3042,6 @@
             "areas": [
                 "1_3_9",
                 "2_8_8",
-                "MapAtlasPier",
-                "MapAtlasQuay",
-                "MapAtlasShipyard",
-                "MapAtlasWharf",
                 "MapWorldsWharf",
                 "MapWorldsPort",
                 "MapWorldsShipyard",
@@ -3272,7 +3220,7 @@
         "price": 3.0,
         "reward": "10x Stacked Deck",
         "stack": 9,
-        "standardPrice": 5.0,
+        "standardPrice": 4.0,
         "weight": 201
     },
     {
@@ -3290,18 +3238,13 @@
         "price": 170.0,
         "reward": "Voices",
         "stack": 7,
-        "standardPrice": 140.0,
+        "standardPrice": 149.0,
         "weight": 67
     },
     {
         "art": "LysahsRespite",
         "drop": {
             "areas": [
-                "MapAtlasUndergroundRiver",
-                "MapAtlasAtollUnique",
-                "MapAtlasGraveyard",
-                "MapAtlasMineralPools",
-                "MapAtlasUndergroundSea",
                 "MapWorldsUndergroundSea",
                 "MapWorldsMineralPools",
                 "MapWorldsAtollUnique"
@@ -3336,7 +3279,7 @@
         "price": 40.0,
         "reward": "Item, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
-        "standardPrice": 98.1,
+        "standardPrice": 94.0,
         "weight": 51
     },
     {
@@ -3355,7 +3298,7 @@
         "price": 1.0,
         "reward": "Bestiary Scarab",
         "stack": 3,
-        "standardPrice": 4.8,
+        "standardPrice": 4.6,
         "weight": 1025
     },
     {
@@ -3368,7 +3311,7 @@
         },
         "name": "Matryoshka",
         "ninja": "https://poe.ninja/challenge/divination-cards/matryoshka",
-        "price": 89.0,
+        "price": 90.0,
         "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
         "stack": 8,
         "standardPrice": 273.84,
@@ -3378,7 +3321,6 @@
         "art": "RussiaDivinationCard",
         "drop": {
             "areas": [
-                "MapAtlasDarkForest",
                 "MapWorldsDarkForest",
                 "MapWorldsForbiddenWoods",
                 "MapWorldsBrambleValley"
@@ -3392,15 +3334,13 @@
         "price": 10.0,
         "reward": "Eyes of the Greatwolf",
         "stack": 16,
-        "standardPrice": 8.0,
+        "standardPrice": 7.0,
         "weight": 212
     },
     {
         "art": "MercilessArmament",
         "drop": {
             "areas": [
-                "MapAtlasArmory",
-                "MapAtlasColonnade",
                 "MapWorldsArmoury",
                 "MapWorldsColonnade",
                 "MapWorldsArsenal",
@@ -3412,10 +3352,10 @@
         },
         "name": "Merciless Armament",
         "ninja": "https://poe.ninja/challenge/divination-cards/merciless-armament",
-        "price": 2.73,
+        "price": 2.13,
         "reward": "Merciless Two-Hand Weapon, Item Level: 100",
         "stack": 4,
-        "standardPrice": 9.6,
+        "standardPrice": 6.6,
         "weight": 251
     },
     {
@@ -3439,7 +3379,7 @@
         "price": 1.0,
         "reward": "Trypanon",
         "stack": 9,
-        "standardPrice": 0.93,
+        "standardPrice": 1.0,
         "weight": 2666
     },
     {
@@ -3457,7 +3397,7 @@
         "price": 8.0,
         "reward": "Shroud of the Lightless",
         "stack": 6,
-        "standardPrice": 8.0,
+        "standardPrice": 9.2,
         "weight": 117
     },
     {
@@ -3467,8 +3407,6 @@
                 "1_4_7",
                 "2_8_12_1",
                 "2_8_12_2",
-                "MapAtlasCore",
-                "MapAtlasTempleUnique",
                 "MapWorldsIceberg",
                 "MapWorldsSummit",
                 "MapWorldsFrozenCabins",
@@ -3596,7 +3534,7 @@
         "price": 8.0,
         "reward": "Bone Helmet, Item Level: 100, Elder Item",
         "stack": 4,
-        "standardPrice": 41.0,
+        "standardPrice": 42.0,
         "weight": 17
     },
     {
@@ -3613,10 +3551,10 @@
         },
         "name": "Parasitic Passengers",
         "ninja": "https://poe.ninja/challenge/divination-cards/parasitic-passengers",
-        "price": 1.9,
+        "price": 1.8,
         "reward": "10x Incubator, Item Level: 84",
         "stack": 8,
-        "standardPrice": 6.7,
+        "standardPrice": 6.5,
         "weight": 600
     },
     {
@@ -3637,7 +3575,7 @@
         "price": 4.0,
         "reward": "Timeless Jewel",
         "stack": 5,
-        "standardPrice": 8.7,
+        "standardPrice": 8.6,
         "weight": 235
     },
     {
@@ -3658,7 +3596,7 @@
         "price": 3.0,
         "reward": "Jewellery, Item Level: 100, Shaper Item",
         "stack": 5,
-        "standardPrice": 7.0,
+        "standardPrice": 6.6,
         "weight": 38
     },
     {
@@ -3677,7 +3615,7 @@
         "price": 3.0,
         "reward": "Arakaali's Fang, Corrupted",
         "stack": 8,
-        "standardPrice": 18.0,
+        "standardPrice": 16.0,
         "weight": 63
     },
     {
@@ -3690,10 +3628,10 @@
         },
         "name": "Prejudice",
         "ninja": "https://poe.ninja/challenge/divination-cards/prejudice",
-        "price": 1.55,
+        "price": 2.0,
         "reward": "Item, Influenced Item",
         "stack": 7,
-        "standardPrice": 4.2,
+        "standardPrice": 4.0,
         "weight": 2332
     },
     {
@@ -3712,7 +3650,7 @@
         "price": 2.0,
         "reward": "Kaom's Heart, Corrupted",
         "stack": 8,
-        "standardPrice": 5.0,
+        "standardPrice": 4.0,
         "weight": 97
     },
     {
@@ -3733,7 +3671,7 @@
         "price": 9.0,
         "reward": "Farrul's Fur",
         "stack": 7,
-        "standardPrice": 31.4,
+        "standardPrice": 31.0,
         "weight": 48
     },
     {
@@ -3751,15 +3689,13 @@
         "price": 3.0,
         "reward": "One-Hand Weapon, Item Level: 100, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 6.07,
+        "standardPrice": 5.33,
         "weight": 26
     },
     {
         "art": "Prosperity",
         "drop": {
             "areas": [
-                "MapAtlasShore",
-                "MapAtlasWaterways",
                 "MapWorldsShore",
                 "MapWorldsPeninsula",
                 "MapWorldsEstuary",
@@ -3821,7 +3757,6 @@
             "areas": [
                 "2_7_2",
                 "2_8_10",
-                "MapAtlasCastleRuins",
                 "MapWorldsCastleRuins",
                 "MapWorldsFields"
             ],
@@ -3842,7 +3777,6 @@
         "drop": {
             "areas": [
                 "2_8_9",
-                "MapAtlasArsenal",
                 "MapWorldsFactory",
                 "MapWorldsArsenal"
             ],
@@ -3855,7 +3789,7 @@
         "price": 1.0,
         "reward": "Rat's Nest",
         "stack": 8,
-        "standardPrice": 0.49,
+        "standardPrice": 0.5,
         "weight": 15485
     },
     {
@@ -3894,7 +3828,7 @@
         "price": 5.0,
         "reward": "Charan's Sword",
         "stack": 27,
-        "standardPrice": 3.4,
+        "standardPrice": 2.6,
         "weight": 83
     },
     {
@@ -3978,7 +3912,7 @@
         "price": 2.0,
         "reward": "A Master Seeks Help (Jun)",
         "stack": 3,
-        "standardPrice": 3.4,
+        "standardPrice": 3.3,
         "weight": 927
     },
     {
@@ -3986,8 +3920,6 @@
         "drop": {
             "areas": [
                 "2_6_15",
-                "MapAtlasCoves",
-                "MapAtlasReef",
                 "MapWorldsCoves",
                 "MapWorldsReef",
                 "MapWorldsStrand",
@@ -4021,7 +3953,7 @@
         "price": 599.72,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 676.92,
+        "standardPrice": 700.59,
         "weight": 82
     },
     {
@@ -4095,10 +4027,10 @@
         },
         "name": "Something Dark",
         "ninja": "https://poe.ninja/challenge/divination-cards/something-dark",
-        "price": 8.75,
+        "price": 8.0,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
-        "standardPrice": 19.0,
+        "standardPrice": 18.1,
         "weight": 587
     },
     {
@@ -4126,13 +4058,6 @@
         "art": "StruckbyLightning",
         "drop": {
             "areas": [
-                "MapAtlasColonnade",
-                "MapAtlasPromenade",
-                "MapAtlasGraveyard",
-                "MapAtlasWharf",
-                "MapAtlasFactory",
-                "MapAtlasCourtyard",
-                "MapAtlasCourtyardUnique",
                 "MapWorldsInfestedValley",
                 "MapWorldsGraveyard",
                 "MapWorldsCemetery",
@@ -4156,7 +4081,7 @@
         "price": 1.0,
         "reward": "Electrocuting Jewellery, Item Level: 76",
         "stack": 3,
-        "standardPrice": 0.49,
+        "standardPrice": 0.48,
         "weight": 7772
     },
     {
@@ -4198,10 +4123,10 @@
         },
         "name": "Terrible Secret of Space",
         "ninja": "https://poe.ninja/challenge/divination-cards/terrible-secret-of-space",
-        "price": 3.4,
+        "price": 3.0,
         "reward": "Level 21 Golem Gem, Any Quality Type: +23%, Corrupted",
         "stack": 8,
-        "standardPrice": 9.3,
+        "standardPrice": 10.0,
         "weight": 209
     },
     {
@@ -4341,10 +4266,7 @@
     {
         "art": "TheArenaChampion",
         "drop": {
-            "areas": [
-                "MapAtlasArena",
-                "MapAtlasPit"
-            ],
+            "areas": [],
             "min_level": 73,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/ChimeraBoss",
@@ -4361,7 +4283,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 12",
         "stack": 10,
-        "standardPrice": 0.49,
+        "standardPrice": 0.5,
         "weight": 12373
     },
     {
@@ -4389,8 +4311,6 @@
         "art": "TheArtist",
         "drop": {
             "areas": [
-                "MapAtlasOvergrownRuin",
-                "MapAtlasOvergrownShrine",
                 "MapWorldsOvergrownRuin",
                 "MapWorldsOvergrownShrine"
             ],
@@ -4403,7 +4323,7 @@
         "price": 80.0,
         "reward": "Level 4 Enhance, Corrupted",
         "stack": 11,
-        "standardPrice": 15.75,
+        "standardPrice": 17.4,
         "weight": 25
     },
     {
@@ -4421,7 +4341,7 @@
         "price": 10.0,
         "reward": "Item, Elevated Item, Influenced Item",
         "stack": 5,
-        "standardPrice": 29.0,
+        "standardPrice": 28.0,
         "weight": 12
     },
     {
@@ -4436,18 +4356,16 @@
         },
         "name": "The Astromancer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-astromancer",
-        "price": 21.0,
+        "price": 20.0,
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 30.3,
+        "standardPrice": 30.2,
         "weight": 2
     },
     {
         "art": "TheAvenger",
         "drop": {
             "areas": [
-                "MapAtlasBazaar",
-                "MapAtlasTortureChamber",
                 "MapWorldsTortureChamber",
                 "MapWorldsMineralPools",
                 "MapWorldsUndergroundSea",
@@ -4490,8 +4408,6 @@
             "areas": [
                 "1_4_4_1",
                 "1_4_4_3",
-                "MapAtlasAbyss",
-                "MapAtlasVolcano",
                 "MapWorldsCaldera",
                 "MapWorldsVolcano"
             ],
@@ -4521,10 +4437,10 @@
         },
         "name": "The Bear Woman",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bear-woman",
-        "price": 2.0,
+        "price": 1.9,
         "reward": "Fecund Ursine Pelt, Warlord Item",
         "stack": 6,
-        "standardPrice": 1.2,
+        "standardPrice": 1.3,
         "weight": 780
     },
     {
@@ -4618,7 +4534,7 @@
         "price": 1.0,
         "reward": "Chin Sol",
         "stack": 6,
-        "standardPrice": 0.65,
+        "standardPrice": 0.7,
         "weight": 11929
     },
     {
@@ -4631,10 +4547,10 @@
         },
         "name": "The Blessing of Moosh",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-blessing-of-moosh",
-        "price": 2.0,
+        "price": 1.6,
         "reward": "Item, Labyrinth Enchantment",
         "stack": 4,
-        "standardPrice": 3.2,
+        "standardPrice": 2.5,
         "weight": 2541
     },
     {
@@ -4650,7 +4566,7 @@
         "price": 1.0,
         "reward": "Body Armour",
         "stack": 4,
-        "standardPrice": 1.0,
+        "standardPrice": 1.4,
         "weight": 4840
     },
     {
@@ -4728,7 +4644,7 @@
         "price": 1.0,
         "reward": "Voll's Devotion, Corrupted",
         "stack": 8,
-        "standardPrice": 2.4,
+        "standardPrice": 2.2,
         "weight": 113
     },
     {
@@ -4750,7 +4666,7 @@
         "price": 1.0,
         "reward": "Jewellery",
         "stack": 6,
-        "standardPrice": 1.3,
+        "standardPrice": 1.4,
         "weight": 7107
     },
     {
@@ -4771,10 +4687,10 @@
         },
         "name": "The Cacophony",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cacophony",
-        "price": 1.6,
+        "price": 1.5,
         "reward": "3x Deafening Essence",
         "stack": 8,
-        "standardPrice": 3.7,
+        "standardPrice": 2.7,
         "weight": 216
     },
     {
@@ -4840,12 +4756,6 @@
         "art": "TheCarrionCrow",
         "drop": {
             "areas": [
-                "MapAtlasColonnade",
-                "MapAtlasCourtyard",
-                "MapAtlasHighGardens",
-                "MapAtlasPromenade",
-                "MapAtlasRamparts",
-                "MapAtlasWaterways",
                 "2_9_1",
                 "2_8_3",
                 "1_3_7",
@@ -4880,7 +4790,7 @@
         "price": 2.0,
         "reward": "10x Cartographer's Chisel",
         "stack": 1,
-        "standardPrice": 1.95,
+        "standardPrice": 2.63,
         "weight": 7166
     },
     {
@@ -5007,7 +4917,7 @@
         "price": 10.0,
         "reward": "Fishing Rod, Incubated, Item Level: 99",
         "stack": 18,
-        "standardPrice": 24.5,
+        "standardPrice": 25.0,
         "weight": 17
     },
     {
@@ -5016,7 +4926,6 @@
             "areas": [
                 "2_7_4",
                 "MapWorldsCursedCrypt",
-                "MapAtlasCrypt",
                 "MapWorldsBoneCrypt",
                 "MapWorldsCursedCryptUnique"
             ],
@@ -5029,7 +4938,7 @@
         "price": 2.0,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
-        "standardPrice": 2.7,
+        "standardPrice": 2.1,
         "weight": 858
     },
     {
@@ -5058,7 +4967,6 @@
                 "MapWorldsDungeon",
                 "MapWorldsCage",
                 "MapWorldsCells",
-                "MapAtlasCrematorium",
                 "MapWorldsPen"
             ],
             "min_level": 38,
@@ -5111,12 +5019,6 @@
         "art": "TheComingStorm",
         "drop": {
             "areas": [
-                "MapAtlasGraveyard",
-                "MapAtlasWharf",
-                "MapAtlasCemetery",
-                "MapAtlasPromenade",
-                "MapAtlasColonnade",
-                "MapAtlasShipyard",
                 "MapWorldsInfestedValley",
                 "MapWorldsGraveyard",
                 "MapWorldsColonnade",
@@ -5155,10 +5057,10 @@
         },
         "name": "The Conduit",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-conduit",
-        "price": 1.0,
+        "price": 1.4,
         "reward": "Doryani's Fist",
         "stack": 9,
-        "standardPrice": 1.25,
+        "standardPrice": 1.3,
         "weight": 498
     },
     {
@@ -5180,14 +5082,13 @@
         "price": 1.0,
         "reward": "Unending Hunger",
         "stack": 4,
-        "standardPrice": 5.1,
+        "standardPrice": 5.0,
         "weight": 71
     },
     {
         "art": "TheCursedKing",
         "drop": {
             "areas": [
-                "MapAtlasUndergroundRiverUnique",
                 "MapWorldsUndergroundRiverUnique"
             ],
             "min_level": 23,
@@ -5199,7 +5100,7 @@
         "price": 1.0,
         "reward": "Rigwald's Curse",
         "stack": 8,
-        "standardPrice": 1.89,
+        "standardPrice": 1.9,
         "weight": 705
     },
     {
@@ -5219,7 +5120,7 @@
         },
         "name": "The Damned",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-damned",
-        "price": 9.4,
+        "price": 9.0,
         "reward": "Soul Ripper",
         "stack": 6,
         "standardPrice": 67.0,
@@ -5230,7 +5131,6 @@
         "drop": {
             "areas": [
                 "MapWorldsPalace",
-                "MapAtlasResidence",
                 "MapWorldsVilla",
                 "MapWorldsResidence"
             ],
@@ -5243,7 +5143,7 @@
         "price": 2.0,
         "reward": "Six-Link Body Armour, Item Level: 100",
         "stack": 6,
-        "standardPrice": 3.0,
+        "standardPrice": 2.7,
         "weight": 2227
     },
     {
@@ -5251,8 +5151,6 @@
         "drop": {
             "areas": [
                 "2_7_5_2",
-                "MapAtlasOvergrownRuin",
-                "MapAtlasOvergrownShrine",
                 "MapWorldsOvergrownRuin",
                 "MapWorldsOvergrownShrine",
                 "2_7_5_1"
@@ -5302,7 +5200,7 @@
         "price": 1.0,
         "reward": "Cartography Scarab",
         "stack": 5,
-        "standardPrice": 2.0,
+        "standardPrice": 2.2,
         "weight": 1021
     },
     {
@@ -5345,7 +5243,7 @@
         "price": 2.0,
         "reward": "Tidebreaker",
         "stack": 5,
-        "standardPrice": 3.2,
+        "standardPrice": 2.0,
         "weight": 160
     },
     {
@@ -5360,10 +5258,10 @@
         },
         "name": "The Demon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demon",
-        "price": 4893.76,
+        "price": 4797.8,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 1043.58,
+        "standardPrice": 1071.79,
         "weight": 2
     },
     {
@@ -5371,7 +5269,6 @@
         "drop": {
             "areas": [
                 "2_7_8",
-                "MapAtlasDarkForest",
                 "MapWorldsDarkForest",
                 "MapWorldsBrambleValley",
                 "MapWorldsForbiddenWoods"
@@ -5406,7 +5303,7 @@
         "price": 30.0,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 65.0,
+        "standardPrice": 63.5,
         "weight": 13
     },
     {
@@ -5426,10 +5323,10 @@
         },
         "name": "The Doctor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-doctor",
-        "price": 3394.44,
+        "price": 3574.36,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 826.41,
+        "standardPrice": 846.15,
         "weight": 15
     },
     {
@@ -5456,7 +5353,6 @@
         "drop": {
             "areas": [
                 "Map2Tier8_3",
-                "MapAtlasDarkForest",
                 "MapWorldsDarkForest",
                 "MapWorldsBrambleValley",
                 "MapWorldsForbiddenWoods",
@@ -5639,7 +5535,7 @@
         "price": 35.0,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
-        "standardPrice": 13.0,
+        "standardPrice": 14.7,
         "weight": 19
     },
     {
@@ -5682,7 +5578,6 @@
         "drop": {
             "areas": [
                 "MapWorldsBazaar",
-                "MapAtlasVilla",
                 "MapWorldsResidence",
                 "MapWorldsRamparts",
                 "MapWorldsPier",
@@ -5761,7 +5656,7 @@
         "price": 10.0,
         "reward": "Uber Elder Fragment",
         "stack": 4,
-        "standardPrice": 4.5,
+        "standardPrice": 4.6,
         "weight": 459
     },
     {
@@ -5961,10 +5856,10 @@
         },
         "name": "The Endless Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-endless-darkness",
-        "price": 239.89,
+        "price": 251.88,
         "reward": "Voidforge",
         "stack": 9,
-        "standardPrice": 17.0,
+        "standardPrice": 10.0,
         "weight": 8
     },
     {
@@ -5976,9 +5871,6 @@
                 "1_4_3_3",
                 "2_9_7",
                 "2_9_8",
-                "MapAtlasCrystalOre",
-                "MapAtlasExcavation",
-                "MapAtlasQuarry",
                 "MapWorldsExcavation",
                 "MapWorldsGeode",
                 "MapWorldsCrystalOre",
@@ -6011,7 +5903,7 @@
         "price": 8.0,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
-        "standardPrice": 52.8,
+        "standardPrice": 53.2,
         "weight": 21
     },
     {
@@ -6037,7 +5929,7 @@
         "price": 35.0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 15.0,
+        "standardPrice": 12.0,
         "weight": 67
     },
     {
@@ -6057,7 +5949,7 @@
         "price": 4.0,
         "reward": "Victario's Influence, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 6.4,
+        "standardPrice": 6.8,
         "weight": 345
     },
     {
@@ -6100,7 +5992,7 @@
         "price": 20.0,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 30.0,
+        "standardPrice": 39.0,
         "weight": 11
     },
     {
@@ -6119,14 +6011,13 @@
         "price": 1.0,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
-        "standardPrice": 4.7,
+        "standardPrice": 3.9,
         "weight": 546
     },
     {
         "art": "TheExplorer",
         "drop": {
             "areas": [
-                "MapAtlasThicket",
                 "MapWorldsThicket"
             ],
             "min_level": 68,
@@ -6156,7 +6047,7 @@
         "price": 40.0,
         "reward": "Pure Chayula Breachstone",
         "stack": 8,
-        "standardPrice": 14.0,
+        "standardPrice": 13.8,
         "weight": 8
     },
     {
@@ -6193,7 +6084,7 @@
         },
         "name": "The Fathomless Depths",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fathomless-depths",
-        "price": 1.0,
+        "price": 1.1,
         "reward": "Lightpoacher",
         "stack": 8,
         "standardPrice": 1.0,
@@ -6204,8 +6095,6 @@
         "drop": {
             "areas": [
                 "2_8_2_1",
-                "MapAtlasSewer",
-                "MapAtlasWastePool",
                 "MapWorldsWastePool",
                 "MapWorldsToxicSewer",
                 "MapWorldsHydra"
@@ -6227,7 +6116,6 @@
         "drop": {
             "areas": [
                 "MapWorldsTempleUnique",
-                "MapAtlasShrine",
                 "Map2Tier14_2",
                 "MapWorldsShrine",
                 "MapWorldsFoundry",
@@ -6257,7 +6145,7 @@
         },
         "name": "The Finishing Touch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-finishing-touch",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
         "standardPrice": 5.0,
@@ -6276,7 +6164,7 @@
         },
         "name": "The Fishmonger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fishmonger",
-        "price": 10.0,
+        "price": 15.0,
         "reward": "Albino Rhoa Feather",
         "stack": 4,
         "standardPrice": 9.1,
@@ -6310,8 +6198,6 @@
         "art": "TheFlorasGift",
         "drop": {
             "areas": [
-                "MapAtlasJungleValley",
-                "MapAtlasTropicalIsland",
                 "MapWorldsJungleValley",
                 "MapWorldsTropicalIsland",
                 "MapWorldsAshenWood",
@@ -6348,7 +6234,7 @@
         "price": 1.0,
         "reward": "20x Orb of Chance",
         "stack": 4,
-        "standardPrice": 1.2,
+        "standardPrice": 1.3,
         "weight": 3439
     },
     {
@@ -6366,15 +6252,13 @@
         "price": 4.0,
         "reward": "Leather Belt, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 8.2,
+        "standardPrice": 8.0,
         "weight": 369
     },
     {
         "art": "TheFormlessSea",
         "drop": {
             "areas": [
-                "MapAtlasCoves",
-                "MapAtlasReef",
                 "MapWorldsReef",
                 "MapWorldsCoves",
                 "MapWorldsStrand",
@@ -6410,7 +6294,7 @@
         "price": 1.0,
         "reward": "Umbilicus Immortalis",
         "stack": 7,
-        "standardPrice": 0.7,
+        "standardPrice": 0.75,
         "weight": 2168
     },
     {
@@ -6450,7 +6334,7 @@
         },
         "name": "The Fortunate",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fortunate",
-        "price": 33.0,
+        "price": 34.0,
         "reward": "2x Divine Orb",
         "stack": 12,
         "standardPrice": 43.0,
@@ -6468,18 +6352,16 @@
         },
         "name": "The Forward Gaze",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forward-gaze",
-        "price": 3.0,
+        "price": 3.5,
         "reward": "Replica Item",
         "stack": 6,
-        "standardPrice": 23.5,
+        "standardPrice": 21.2,
         "weight": 1154
     },
     {
         "art": "TheFox",
         "drop": {
             "areas": [
-                "MapAtlasBarrows",
-                "MapAtlasCastleRuins",
                 "MapWorldsBarrows",
                 "MapWorldsSunkenCity",
                 "MapWorldsCastleRuins",
@@ -6691,8 +6573,6 @@
             "areas": [
                 "2_7_5_1",
                 "2_7_5_2",
-                "MapAtlasOvergrownShrine",
-                "MapAtlasOvergrownRuin",
                 "MapWorldsOvergrownShrine",
                 "MapWorldsOvergrownRuin"
             ],
@@ -6702,10 +6582,10 @@
         },
         "name": "The Garish Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-garish-power",
-        "price": 15.7,
+        "price": 15.4,
         "reward": "Jewel",
         "stack": 4,
-        "standardPrice": 6.8,
+        "standardPrice": 5.0,
         "weight": 64
     },
     {
@@ -6731,8 +6611,6 @@
                 "1_3_2",
                 "2_8_1",
                 "2_8_9",
-                "MapAtlasGhetto",
-                "MapAtlasPrecinct",
                 "MapWorldsGhetto",
                 "MapWorldsPrecinct"
             ],
@@ -6752,10 +6630,7 @@
         "art": "TheGladiator",
         "drop": {
             "areas": [
-                "MapAtlasArena",
-                "MapAtlasColosseum",
                 "MapWorldsPit",
-                "MapAtlasPit",
                 "MapWorldsArena",
                 "MapWorldsColosseum",
                 "MapWorldsChimera"
@@ -6805,7 +6680,7 @@
         "price": 25.0,
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 66.5,
+        "standardPrice": 67.0,
         "weight": 8
     },
     {
@@ -6820,7 +6695,7 @@
         },
         "name": "The Gulf",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gulf",
-        "price": 93.6,
+        "price": 90.0,
         "reward": "Thread of Hope, Two-Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 70.0,
@@ -6841,7 +6716,7 @@
         },
         "name": "The Hale Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hale-heart",
-        "price": 5.0,
+        "price": 4.9,
         "reward": "Item, Item Level: 100, Elder Item",
         "stack": 4,
         "standardPrice": 5.0,
@@ -6852,7 +6727,6 @@
         "drop": {
             "areas": [
                 "2_8_10",
-                "MapAtlasCastleRuins",
                 "MapWorldsFields",
                 "MapWorldsCastleRuins",
                 "2_7_2"
@@ -6863,10 +6737,10 @@
         },
         "name": "The Harvester",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-harvester",
-        "price": 2.0,
+        "price": 2.73,
         "reward": "The Harvest",
         "stack": 11,
-        "standardPrice": 0.95,
+        "standardPrice": 0.96,
         "weight": 17705
     },
     {
@@ -6907,7 +6781,7 @@
         "price": 3.0,
         "reward": "17x Chromatic Orb",
         "stack": 1,
-        "standardPrice": 8.8,
+        "standardPrice": 8.7,
         "weight": 2018
     },
     {
@@ -6924,7 +6798,7 @@
         },
         "name": "The Hive of Knowledge",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hive-of-knowledge",
-        "price": 5.5,
+        "price": 5.7,
         "reward": "Machina Mitts, Two-Implicit, Corrupted",
         "stack": 6,
         "standardPrice": 19.2,
@@ -6934,7 +6808,6 @@
         "art": "TheHoarder",
         "drop": {
             "areas": [
-                "MapAtlasVault",
                 "MapWorldsVault",
                 "MapWorldsUndergroundSea",
                 "MapWorldsVaalPyramidUnique",
@@ -6950,7 +6823,7 @@
         "price": 3.0,
         "reward": "Exalted Orb",
         "stack": 12,
-        "standardPrice": 2.8,
+        "standardPrice": 2.0,
         "weight": 2740
     },
     {
@@ -6980,9 +6853,6 @@
                 "1_4_6_3",
                 "2_9_10_2",
                 "2_9_10_1",
-                "MapAtlasCore",
-                "MapAtlasMalformation",
-                "MapAtlasPhantasmagoria",
                 "MapWorldsPhantasmagoria",
                 "MapWorldsCarcass",
                 "MapWorldsMalformation",
@@ -7004,7 +6874,6 @@
         "art": "TheImmortal",
         "drop": {
             "areas": [
-                "MapAtlasPromenadeUnique",
                 "MapWorldsPromenadeUnique"
             ],
             "min_level": 35,
@@ -7016,16 +6885,13 @@
         "price": 2398.9,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 3277.42,
+        "standardPrice": 3316.91,
         "weight": 15
     },
     {
         "art": "TheIncantation",
         "drop": {
             "areas": [
-                "MapAtlasBurialChambers",
-                "MapAtlasSpiderForest",
-                "MapAtlasSprings",
                 "MapWorldsSpiderForest",
                 "MapWorldsBurialChambers",
                 "MapWorldsMuseumUnique",
@@ -7042,7 +6908,7 @@
         "price": 1.0,
         "reward": "The Whispering Ice",
         "stack": 4,
-        "standardPrice": 0.42,
+        "standardPrice": 0.45,
         "weight": 1271
     },
     {
@@ -7062,15 +6928,13 @@
         "price": 3.0,
         "reward": "40x Orb of Regret",
         "stack": 10,
-        "standardPrice": 2.3,
+        "standardPrice": 2.0,
         "weight": 1134
     },
     {
         "art": "TheInoculated",
         "drop": {
             "areas": [
-                "MapAtlasAcidLakes",
-                "MapAtlasShore",
                 "MapWorldsAcidLakes",
                 "MapWorldsPrimordialPool",
                 "MapWorldsMudGeyser",
@@ -7104,10 +6968,10 @@
         },
         "name": "The Insane Cat",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-insane-cat",
-        "price": 6117.19,
+        "price": 6477.03,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 4117.93,
+        "standardPrice": 3948.7,
         "weight": 2
     },
     {
@@ -7136,8 +7000,6 @@
             "areas": [
                 "2_7_12_1",
                 "2_7_12_2",
-                "MapAtlasVaalPyramid",
-                "MapAtlasMaze",
                 "MapWorldsMaze",
                 "MapWorldsVaalPyramid",
                 "MapWorldsVaalTemple",
@@ -7153,7 +7015,7 @@
         "price": 1.0,
         "reward": "10x Vaal Orb",
         "stack": 6,
-        "standardPrice": 1.1,
+        "standardPrice": 1.2,
         "weight": 6775
     },
     {
@@ -7192,7 +7054,7 @@
         "price": 1.0,
         "reward": "The Jeweller's Touch",
         "stack": 5,
-        "standardPrice": 1.1,
+        "standardPrice": 1.0,
         "weight": 3682
     },
     {
@@ -7252,14 +7114,13 @@
         "price": 1.0,
         "reward": "Harbinger's Orb",
         "stack": 3,
-        "standardPrice": 2.2,
+        "standardPrice": 2.3,
         "weight": 753
     },
     {
         "art": "TheKingsBlade",
         "drop": {
             "areas": [
-                "MapAtlasPit",
                 "MapWorldsPit",
                 "MapWorldsArena",
                 "MapWorldsColosseum",
@@ -7271,7 +7132,7 @@
         },
         "name": "The King's Blade",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-kings-blade",
-        "price": 0.59,
+        "price": 0.75,
         "reward": "Bloodthirsty Eternal Sword, Item Level: 66",
         "stack": 5,
         "standardPrice": 0.38,
@@ -7281,8 +7142,6 @@
         "art": "TheKingsHeart",
         "drop": {
             "areas": [
-                "MapAtlasAbyss",
-                "MapAtlasVolcano",
                 "MapWorldsVolcano",
                 "MapWorldsCaldera"
             ],
@@ -7313,10 +7172,10 @@
         },
         "name": "The Landing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-landing",
-        "price": 4.0,
+        "price": 5.0,
         "reward": "The Beachhead, Map Tier: 15, Corrupted",
         "stack": 5,
-        "standardPrice": 2.6,
+        "standardPrice": 2.0,
         "weight": 898
     },
     {
@@ -7334,7 +7193,7 @@
         },
         "name": "The Last One Standing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-last-one-standing",
-        "price": 80.0,
+        "price": 83.2,
         "reward": "Atziri's Disfavour",
         "stack": 10,
         "standardPrice": 5.0,
@@ -7355,7 +7214,7 @@
         "price": 5.0,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
-        "standardPrice": 2.93,
+        "standardPrice": 2.58,
         "weight": 8
     },
     {
@@ -7373,7 +7232,7 @@
         "price": 15.0,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 71.4,
+        "standardPrice": 82.5,
         "weight": 24
     },
     {
@@ -7509,9 +7368,6 @@
         "art": "TheLover",
         "drop": {
             "areas": [
-                "MapAtlasMineralPools",
-                "MapAtlasUndergroundSea",
-                "MapAtlasAtollUnique",
                 "MapWorldsUndergroundSea",
                 "MapWorldsAtollUnique"
             ],
@@ -7533,8 +7389,6 @@
             "areas": [
                 "2_8_7_1_",
                 "2_8_7_2",
-                "MapAtlasShrine",
-                "MapAtlasMalformation",
                 "MapWorldsMoonTempleUnique",
                 "MapWorldsColdRiver_",
                 "MapWorldsMoonTemple",
@@ -7570,7 +7424,7 @@
         "price": 2.5,
         "reward": "The King's Path",
         "stack": 7,
-        "standardPrice": 4.1,
+        "standardPrice": 5.0,
         "weight": 652
     },
     {
@@ -7607,7 +7461,7 @@
         "price": 1.0,
         "reward": "Bisco's Collar",
         "stack": 4,
-        "standardPrice": 4.3,
+        "standardPrice": 2.8,
         "weight": 1114
     },
     {
@@ -7631,10 +7485,6 @@
         "drop": {
             "areas": [
                 "2_7_1",
-                "MapAtlasCastleRuins",
-                "MapAtlasCoves",
-                "MapAtlasGorge",
-                "MapAtlasStrand",
                 "MapWorldsCastleRuins"
             ],
             "min_level": 23,
@@ -7709,7 +7559,7 @@
         },
         "name": "The Mind's Eyes",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-minds-eyes",
-        "price": 9.4,
+        "price": 9.0,
         "reward": "Astral Projector",
         "stack": 7,
         "standardPrice": 10.0,
@@ -7734,7 +7584,7 @@
         "price": 1.0,
         "reward": "Jewel of Potency",
         "stack": 6,
-        "standardPrice": 0.53,
+        "standardPrice": 0.57,
         "weight": 5112
     },
     {
@@ -7768,9 +7618,6 @@
             "areas": [
                 "2_9_10_1",
                 "2_9_10_2",
-                "MapAtlasCore",
-                "MapAtlasMalformation",
-                "MapAtlasPhantasmagoria",
                 "MapWorldsCore",
                 "MapWorldsPhantasmagoria",
                 "MapWorldsMalformation",
@@ -7839,7 +7686,7 @@
         "price": 3.0,
         "reward": "Shavronne's Wrappings",
         "stack": 8,
-        "standardPrice": 3.4,
+        "standardPrice": 2.5,
         "weight": 534
     },
     {
@@ -7884,7 +7731,7 @@
         "price": 10.0,
         "reward": "Fishing Rod, Two-Implicit, Corrupted",
         "stack": 12,
-        "standardPrice": 37.0,
+        "standardPrice": 36.4,
         "weight": 2
     },
     {
@@ -7899,7 +7746,7 @@
         },
         "name": "The One That Got Away",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-one-that-got-away",
-        "price": 11.87,
+        "price": 12.4,
         "reward": "Replica Bated Breath",
         "stack": 7,
         "standardPrice": 100.0,
@@ -7931,10 +7778,6 @@
         "art": "TheOpulecent",
         "drop": {
             "areas": [
-                "MapAtlasPalace",
-                "MapAtlasChateau",
-                "MapAtlasVault",
-                "MapAtlasVilla",
                 "MapWorldsChateau",
                 "MapWorldsRelicChambers",
                 "MapWorldsConservatory",
@@ -7961,18 +7804,13 @@
         "price": 1.0,
         "reward": "Ring, Item Level: 100",
         "stack": 5,
-        "standardPrice": 0.8,
+        "standardPrice": 0.85,
         "weight": 12858
     },
     {
         "art": "ThePackLeader",
         "drop": {
             "areas": [
-                "MapAtlasAshenWood",
-                "MapAtlasDarkForest",
-                "MapAtlasJungleValley",
-                "MapAtlasLair",
-                "MapAtlasTropicalIsland",
                 "MapWorldsTropicalIsland",
                 "MapWorldsJungleValley",
                 "Map2Tier8_3",
@@ -8003,7 +7841,6 @@
         "drop": {
             "areas": [
                 "2_8_8",
-                "MapAtlasShipyard",
                 "MapWorldsPier",
                 "MapWorldsPort",
                 "MapWorldsWharf",
@@ -8036,7 +7873,7 @@
         },
         "name": "The Patient",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-patient",
-        "price": 40.0,
+        "price": 39.0,
         "reward": "The Nurse",
         "stack": 8,
         "standardPrice": 10.0,
@@ -8046,7 +7883,6 @@
         "art": "ThePenitent",
         "drop": {
             "areas": [
-                "MapAtlasCells",
                 "MapWorldsCells",
                 "MapWorldsCage",
                 "MapWorldsDungeon",
@@ -8071,9 +7907,6 @@
                 "1_3_5",
                 "2_8_8",
                 "MapWorldsArcade",
-                "MapAtlasQuay",
-                "MapAtlasArcade",
-                "MapAtlasBazaar",
                 "MapWorldsAlleyways",
                 "MapWorldsBazaar",
                 "MapWorldsPort"
@@ -8108,7 +7941,7 @@
         "price": 7.0,
         "reward": "Astramentis",
         "stack": 3,
-        "standardPrice": 4.1,
+        "standardPrice": 3.2,
         "weight": 162
     },
     {
@@ -8116,9 +7949,6 @@
         "drop": {
             "areas": [
                 "2_8_4",
-                "MapAtlasOrchard",
-                "MapAtlasTerrace",
-                "MapAtlasTropicalIsland",
                 "MapWorldsGardens",
                 "MapWorldsOrchard",
                 "MapWorldsPlaza",
@@ -8131,7 +7961,7 @@
         },
         "name": "The Porcupine",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-porcupine",
-        "price": 2.0,
+        "price": 2.14,
         "reward": "Six-Link Short Bow, Item Level: 50",
         "stack": 6,
         "standardPrice": 2.0,
@@ -8149,7 +7979,7 @@
         },
         "name": "The Price of Devotion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-devotion",
-        "price": 9979.42,
+        "price": 10437.61,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 9871.75,
@@ -8170,7 +8000,7 @@
         "price": 239.89,
         "reward": "Skin of the Loyal, Item Level: 25, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 74.0,
+        "standardPrice": 50.0,
         "weight": 7
     },
     {
@@ -8191,7 +8021,7 @@
         "price": 4.6,
         "reward": "Vaal Temple Map, Map Tier: 16, Delirium: 100%, Corrupted",
         "stack": 5,
-        "standardPrice": 6.2,
+        "standardPrice": 4.5,
         "weight": 179
     },
     {
@@ -8301,7 +8131,7 @@
         },
         "name": "The Primordial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-primordial",
-        "price": 2.4,
+        "price": 2.0,
         "reward": "Jewel, Primordial",
         "stack": 5,
         "standardPrice": 4.0,
@@ -8341,10 +8171,10 @@
         },
         "name": "The Professor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-professor",
-        "price": 4.0,
+        "price": 4.1,
         "reward": "The Putrid Cloister",
         "stack": 4,
-        "standardPrice": 8.8,
+        "standardPrice": 7.6,
         "weight": 142
     },
     {
@@ -8361,7 +8191,7 @@
         },
         "name": "The Progeny of Lunaris",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-progeny-of-lunaris",
-        "price": 8.4,
+        "price": 8.2,
         "reward": "Dying Sun",
         "stack": 2,
         "standardPrice": 6.8,
@@ -8407,8 +8237,6 @@
         "art": "TheQueen",
         "drop": {
             "areas": [
-                "MapAtlasVaalPyramid",
-                "MapAtlasVaalPyramidUnique_",
                 "MapWorldsVaalPyramidUnique"
             ],
             "min_level": 80,
@@ -8440,14 +8268,13 @@
         "price": 8.0,
         "reward": "10x Incursion Vial",
         "stack": 8,
-        "standardPrice": 20.8,
+        "standardPrice": 23.4,
         "weight": 43
     },
     {
         "art": "TheRabidRhoa",
         "drop": {
             "areas": [
-                "MapAtlasAridLake",
                 "Map2Tier9_2",
                 "MapTier1_6"
             ],
@@ -8463,7 +8290,7 @@
         "price": 1.0,
         "reward": "Malicious Gemini Claw, Item Level: 83",
         "stack": 4,
-        "standardPrice": 0.46,
+        "standardPrice": 0.49,
         "weight": 5223
     },
     {
@@ -8510,7 +8337,7 @@
         "price": 1.0,
         "reward": "Portal, Quality: +1-20%",
         "stack": 5,
-        "standardPrice": 0.86,
+        "standardPrice": 0.9,
         "weight": 1071
     },
     {
@@ -8531,7 +8358,7 @@
         "price": 1.0,
         "reward": "Tavukai",
         "stack": 3,
-        "standardPrice": 3.0,
+        "standardPrice": 3.9,
         "weight": 946
     },
     {
@@ -8579,10 +8406,6 @@
         "art": "TheRoadToPower",
         "drop": {
             "areas": [
-                "MapAtlasCastleRuins",
-                "MapAtlasOrchard",
-                "MapAtlasShore",
-                "MapAtlasDarkForest",
                 "MapWorldsCastleRuins",
                 "MapWorldsDarkForest",
                 "MapWorldsOrchard",
@@ -8636,7 +8459,7 @@
         "price": 1.0,
         "reward": "Meginord's Girdle, Corrupted",
         "stack": 7,
-        "standardPrice": 0.6,
+        "standardPrice": 0.66,
         "weight": 2703
     },
     {
@@ -8654,7 +8477,7 @@
         "price": 12.0,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
-        "standardPrice": 8.0,
+        "standardPrice": 5.3,
         "weight": 34
     },
     {
@@ -8696,14 +8519,13 @@
         "price": 89.0,
         "reward": "Watcher's Eye",
         "stack": 3,
-        "standardPrice": 52.5,
+        "standardPrice": 60.0,
         "weight": 58
     },
     {
         "art": "TheScarredMeadow",
         "drop": {
             "areas": [
-                "MapAtlasDryPeninsula",
                 "MapWorldsPeninsula",
                 "MapWorldsAshenWood",
                 "MapWorldsFields",
@@ -8720,7 +8542,7 @@
         "price": 1.0,
         "reward": "Wake of Destruction",
         "stack": 9,
-        "standardPrice": 0.5,
+        "standardPrice": 0.42,
         "weight": 18570
     },
     {
@@ -8750,9 +8572,6 @@
             "areas": [
                 "1_3_17_1",
                 "1_3_17_2",
-                "MapAtlasAcademy",
-                "MapAtlasMuseum",
-                "MapAtlasScriptorium",
                 "MapWorldsAcademy",
                 "MapWorldsScriptorium",
                 "MapWorldsMuseum"
@@ -8763,10 +8582,10 @@
         },
         "name": "The Scholar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scholar",
-        "price": 0.67,
+        "price": 0.69,
         "reward": "40x Scroll of Wisdom",
         "stack": 3,
-        "standardPrice": 0.79,
+        "standardPrice": 0.83,
         "weight": 46835
     },
     {
@@ -8794,7 +8613,7 @@
         "price": 10.0,
         "reward": "7x Exalted Orb",
         "stack": 8,
-        "standardPrice": 19.9,
+        "standardPrice": 19.6,
         "weight": 235
     },
     {
@@ -8812,7 +8631,7 @@
         "price": 3.0,
         "reward": "3x Orb of Annulment",
         "stack": 9,
-        "standardPrice": 5.0,
+        "standardPrice": 4.6,
         "weight": 295
     },
     {
@@ -8831,10 +8650,10 @@
         },
         "name": "The Sephirot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sephirot",
-        "price": 203.0,
+        "price": 204.0,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 253.84,
+        "standardPrice": 250.0,
         "weight": 311
     },
     {
@@ -8873,7 +8692,7 @@
         "price": 479.78,
         "reward": "The Squire",
         "stack": 8,
-        "standardPrice": 1091.53,
+        "standardPrice": 1035.41,
         "weight": 13
     },
     {
@@ -8946,7 +8765,7 @@
         },
         "name": "The Shortcut",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-shortcut",
-        "price": 14.5,
+        "price": 14.6,
         "reward": "Quicksilver Flask of Adrenaline, Item Level: 100",
         "stack": 1,
         "standardPrice": 15.0,
@@ -8976,15 +8795,13 @@
         "price": 2.0,
         "reward": "Disabled",
         "stack": 5,
-        "standardPrice": 4.3,
+        "standardPrice": 3.3,
         "weight": 712
     },
     {
         "art": "TheSigil",
         "drop": {
             "areas": [
-                "MapAtlasOvergrownShrine",
-                "MapAtlasPrecinct",
                 "MapWorldsOvergrownShrine",
                 "MapWorldsOvergrownRuin"
             ],
@@ -8997,17 +8814,14 @@
         "price": 1.0,
         "reward": "Unassailable Amulet",
         "stack": 3,
-        "standardPrice": 0.77,
+        "standardPrice": 0.79,
         "weight": 7327
     },
     {
         "art": "TheSiren",
         "drop": {
             "areas": [
-                "MapAtlasAtollUnique",
                 "MapWorldsAtollUnique",
-                "MapAtlasUndergroundSea",
-                "MapAtlasMineralPools",
                 "MapWorldsUndergroundSea"
             ],
             "min_level": 25,
@@ -9044,8 +8858,6 @@
         "art": "TheSoul",
         "drop": {
             "areas": [
-                "MapAtlasBurialChambers",
-                "MapAtlasCemetery",
                 "MapWorldsOvergrownShrine",
                 "MapWorldsSepulchre",
                 "MapWorldsCells",
@@ -9063,10 +8875,10 @@
         },
         "name": "The Soul",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-soul",
-        "price": 72.8,
+        "price": 74.3,
         "reward": "Soul Taker",
         "stack": 9,
-        "standardPrice": 28.06,
+        "standardPrice": 21.0,
         "weight": 11
     },
     {
@@ -9074,7 +8886,6 @@
         "drop": {
             "areas": [
                 "MapWorldsAtoll",
-                "MapAtlasPlateau",
                 "MapWorldsPlateau",
                 "MapWorldsSiege"
             ],
@@ -9087,14 +8898,13 @@
         "price": 1.0,
         "reward": "Berek's Respite",
         "stack": 2,
-        "standardPrice": 3.85,
+        "standardPrice": 3.4,
         "weight": 705
     },
     {
         "art": "TheSpoiledPrince",
         "drop": {
             "areas": [
-                "MapAtlasMuseum",
                 "MapWorldsVaalPyramid"
             ],
             "min_level": 80,
@@ -9103,7 +8913,7 @@
         },
         "name": "The Spoiled Prince",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-spoiled-prince",
-        "price": 1.0,
+        "price": 0.91,
         "reward": "Dictator's Prophecy Wand, Item Level: 100",
         "stack": 4,
         "standardPrice": 0.5,
@@ -9181,7 +8991,6 @@
             "areas": [
                 "1_3_6",
                 "2_6_7_2",
-                "MapAtlasCatacomb_",
                 "MapWorldsBoneCrypt",
                 "MapWorldsBurialChambers",
                 "MapWorldsSpiderForest",
@@ -9207,8 +9016,6 @@
         "drop": {
             "areas": [
                 "2_8_12_1",
-                "MapAtlasTemple",
-                "MapAtlasTempleUnique",
                 "MapWorldsMoonTempleUnique",
                 "MapWorldsTemple",
                 "MapWorldsColdRiver_",
@@ -9243,16 +9050,13 @@
         "price": 1.0,
         "reward": "Surgeon's Flask",
         "stack": 4,
-        "standardPrice": 0.7,
+        "standardPrice": 0.75,
         "weight": 5027
     },
     {
         "art": "TheSurveyor",
         "drop": {
             "areas": [
-                "MapAtlasPhantasmagoria",
-                "MapAtlasMalformation",
-                "MapAtlasCore",
                 "MapWorldsMalformation",
                 "MapWorldsCore",
                 "MapWorldsPhantasmagoria",
@@ -9320,7 +9124,6 @@
             "areas": [
                 "MapWorldsFoundry",
                 "MapWorldsShrine",
-                "MapAtlasShrine",
                 "MapWorldsLaboratory",
                 "MapWorldsTempleUnique"
             ],
@@ -9340,8 +9143,6 @@
         "art": "TheThrone",
         "drop": {
             "areas": [
-                "MapAtlasSewer",
-                "MapAtlasWastePool",
                 "MapWorldsToxicSewer",
                 "MapWorldsWastePool",
                 "MapWorldsHydra"
@@ -9352,10 +9153,10 @@
         },
         "name": "The Throne",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-throne",
-        "price": 2.5,
+        "price": 3.0,
         "reward": "Kaom's Roots, Corrupted",
         "stack": 2,
-        "standardPrice": 1.81,
+        "standardPrice": 2.0,
         "weight": 148
     },
     {
@@ -9541,7 +9342,7 @@
         "price": 1.0,
         "reward": "10x Oil",
         "stack": 8,
-        "standardPrice": 2.0,
+        "standardPrice": 1.9,
         "weight": 10291
     },
     {
@@ -9551,9 +9352,6 @@
                 "1_3_18_1",
                 "1_3_18_2",
                 "2_6_7_2",
-                "MapAtlasPalace",
-                "MapAtlasResidence",
-                "MapAtlasTower",
                 "MapWorldsTower",
                 "MapWorldsResidence"
             ],
@@ -9566,7 +9364,7 @@
         "price": 1.0,
         "reward": "Staff",
         "stack": 6,
-        "standardPrice": 0.98,
+        "standardPrice": 1.0,
         "weight": 7349
     },
     {
@@ -9576,7 +9374,6 @@
                 "1_3_7",
                 "2_8_1",
                 "2_8_11",
-                "MapAtlasPromenade",
                 "MapWorldsRamparts",
                 "MapWorldsPromenade"
             ],
@@ -9604,7 +9401,7 @@
         },
         "name": "The Transformation",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-transformation",
-        "price": 1.4,
+        "price": 1.6,
         "reward": "Fated Unique Item, Two-Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 5.0,
@@ -9775,7 +9572,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
-        "standardPrice": 0.9,
+        "standardPrice": 0.95,
         "weight": 5845
     },
     {
@@ -9792,10 +9589,10 @@
         },
         "name": "The Tumbleweed",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tumbleweed",
-        "price": 8.5,
+        "price": 12.8,
         "reward": "Wasteland Map",
         "stack": 2,
-        "standardPrice": 8.6,
+        "standardPrice": 8.8,
         "weight": 28
     },
     {
@@ -9822,11 +9619,6 @@
         "art": "TheTwins",
         "drop": {
             "areas": [
-                "MapAtlasTemple",
-                "MapAtlasIvoryTemple",
-                "MapAtlasResidence",
-                "MapAtlasPalace",
-                "MapAtlasShrine",
                 "MapWorldsMoonTemple",
                 "MapWorldsColdRiver_",
                 "MapWorldsTemple",
@@ -9848,7 +9640,6 @@
         "art": "TheTyrant",
         "drop": {
             "areas": [
-                "MapAtlasPrecinct",
                 "MapWorldsPrecinct",
                 "MapWorldsPort",
                 "MapWorldsCoralRuins",
@@ -9864,10 +9655,10 @@
         },
         "name": "The Tyrant",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tyrant",
-        "price": 1.7,
+        "price": 1.8,
         "reward": "Merciless Weapon, Item Level: 100",
         "stack": 9,
-        "standardPrice": 1.8,
+        "standardPrice": 1.9,
         "weight": 405
     },
     {
@@ -9887,7 +9678,7 @@
         "price": 3.0,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
-        "standardPrice": 3.85,
+        "standardPrice": 4.0,
         "weight": 961
     },
     {
@@ -9925,7 +9716,7 @@
         "price": 3.0,
         "reward": "Attribute Transforming Jewel, Corrupted",
         "stack": 2,
-        "standardPrice": 7.4,
+        "standardPrice": 4.8,
         "weight": 301
     },
     {
@@ -9982,7 +9773,6 @@
         "art": "TheVast",
         "drop": {
             "areas": [
-                "MapAtlasCoves",
                 "MapWorldsCoralRuins",
                 "MapWorldsReef",
                 "MapWorldsCoves"
@@ -9993,7 +9783,7 @@
         },
         "name": "The Vast",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-vast",
-        "price": 8.0,
+        "price": 7.8,
         "reward": "Song of the Sirens",
         "stack": 7,
         "standardPrice": 36.0,
@@ -10004,9 +9794,6 @@
         "drop": {
             "areas": [
                 "1_4_5_2",
-                "MapAtlasRacecourse",
-                "MapAtlasArena",
-                "MapAtlasColosseum",
                 "MapWorldsColosseum",
                 "MapWorldsArena",
                 "MapWorldsRacecourse_"
@@ -10020,7 +9807,7 @@
         "price": 1.0,
         "reward": "Lioneye's Vision",
         "stack": 6,
-        "standardPrice": 0.8,
+        "standardPrice": 0.85,
         "weight": 9996
     },
     {
@@ -10049,8 +9836,6 @@
                 "1_5_1",
                 "2_6_7_1",
                 "2_6_7_2",
-                "MapAtlasDungeon",
-                "MapAtlasTower",
                 "MapWorldsPen",
                 "MapWorldsCage",
                 "MapWorldsDungeon",
@@ -10066,14 +9851,13 @@
         "price": 1.0,
         "reward": "Amulet, Corrupted",
         "stack": 4,
-        "standardPrice": 0.36,
+        "standardPrice": 0.38,
         "weight": 9599
     },
     {
         "art": "TheWarlord",
         "drop": {
             "areas": [
-                "MapAtlasArsenal",
                 "MapWorldsArsenal",
                 "MapWorldsArmoury",
                 "MapWorldsPromenade",
@@ -10085,7 +9869,7 @@
         },
         "name": "The Warlord",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-warlord",
-        "price": 3.3,
+        "price": 4.1,
         "reward": "Six-Link Coronal Maul, Item Level: 83",
         "stack": 6,
         "standardPrice": 3.0,
@@ -10095,8 +9879,6 @@
         "art": "TheWatcher",
         "drop": {
             "areas": [
-                "MapAtlasGrotto",
-                "MapAtlasQuarry",
                 "MapWorldsGrotto",
                 "MapWorldsGeode"
             ],
@@ -10116,8 +9898,6 @@
         "art": "TheWeb",
         "drop": {
             "areas": [
-                "MapAtlasJungleValley",
-                "MapAtlasArachnidNest",
                 "MapWorldsSpiderLair",
                 "MapWorldsArachnidTomb",
                 "MapWorldsArachnidNest",
@@ -10171,7 +9951,7 @@
         "price": 6.0,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
-        "standardPrice": 16.8,
+        "standardPrice": 9.8,
         "weight": 35
     },
     {
@@ -10189,7 +9969,7 @@
         "price": 2.0,
         "reward": "Cospri's Malice",
         "stack": 8,
-        "standardPrice": 3.7,
+        "standardPrice": 3.0,
         "weight": 427
     },
     {
@@ -10214,7 +9994,6 @@
         "art": "TheWind",
         "drop": {
             "areas": [
-                "MapAtlasJungleValley",
                 "MapWorldsAtoll",
                 "MapWorldsJungleValley",
                 "MapWorldsMesa",
@@ -10254,14 +10033,13 @@
         "price": 1.0,
         "reward": "Kiara's Determination",
         "stack": 8,
-        "standardPrice": 0.45,
+        "standardPrice": 0.46,
         "weight": 16892
     },
     {
         "art": "TheWolf",
         "drop": {
             "areas": [
-                "MapAtlasCavern",
                 "MapWorldsFloodedMine",
                 "MapWorldsCrystalOre",
                 "MapWorldsGeode",
@@ -10296,14 +10074,13 @@
         "price": 1.0,
         "reward": "Vaults of Atziri",
         "stack": 4,
-        "standardPrice": 3.0,
+        "standardPrice": 2.2,
         "weight": 1853
     },
     {
         "art": "TheWolfsShadow",
         "drop": {
             "areas": [
-                "MapAtlasLair",
                 "MapWorldsLair",
                 "MapWorldsUndergroundRiverUnique",
                 "MapWorldsDarkForest"
@@ -10336,7 +10113,7 @@
         "price": 1.0,
         "reward": "Rigwald's Quills",
         "stack": 8,
-        "standardPrice": 2.4,
+        "standardPrice": 2.3,
         "weight": 442
     },
     {
@@ -10372,7 +10149,7 @@
         },
         "name": "The World Eater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-world-eater",
-        "price": 5.2,
+        "price": 5.1,
         "reward": "Starforge",
         "stack": 8,
         "standardPrice": 9.0,
@@ -10403,8 +10180,6 @@
         "art": "TheWretched",
         "drop": {
             "areas": [
-                "MapAtlasCells",
-                "MapAtlasOvergrownShrineUnique",
                 "MapWorldsNecropolis",
                 "MapWorldsBoneCrypt",
                 "MapWorldsOvergrownShrineUnique",
@@ -10451,9 +10226,7 @@
                 "2_8_10",
                 "2_9_9",
                 "MapWorldsFactory",
-                "MapWorldsArsenal",
-                "MapAtlasArsenal",
-                "MapAtlasCastleRuins"
+                "MapWorldsArsenal"
             ],
             "min_level": 23,
             "monsters": [],
@@ -10500,10 +10273,7 @@
             "areas": [
                 "2_6_1",
                 "2_6_7_2",
-                "MapAtlasCourtyard",
-                "MapAtlasStrand",
                 "MapWorldsStrand",
-                "MapAtlasCourtyardUnique",
                 "MapWorldsCourtyard",
                 "MapWorldsTower",
                 "MapWorldsCourtyardUnique"
@@ -10525,7 +10295,6 @@
         "drop": {
             "areas": [
                 "MapWorldsFloodedMine",
-                "MapAtlasExcavation",
                 "MapWorldsCrystalOre",
                 "MapWorldsExcavation",
                 "MapWorldsGeode",
@@ -10564,7 +10333,6 @@
         "drop": {
             "areas": [
                 "2_7_7",
-                "MapAtlasDryPeninsula",
                 "MapWorldsFields",
                 "MapWorldsAshenWood",
                 "MapWorldsPeninsula",
@@ -10576,24 +10344,16 @@
         },
         "name": "Tranquillity",
         "ninja": "https://poe.ninja/challenge/divination-cards/tranquillity",
-        "price": 20.1,
+        "price": 20.0,
         "reward": "Voltaxic Rift",
         "stack": 7,
-        "standardPrice": 3.8,
+        "standardPrice": 1.8,
         "weight": 9
     },
     {
         "art": "TreasureHunter",
         "drop": {
             "areas": [
-                "MapAtlasUndergroundRiverUnique",
-                "MapAtlasCavern",
-                "MapAtlasCrystalOre",
-                "MapAtlasExcavation",
-                "MapAtlasGrotto",
-                "MapAtlasLair",
-                "MapAtlasUndergroundRiver",
-                "MapAtlasUndergroundSea",
                 "MapWorldsUndergroundSea",
                 "MapWorldsFloodedMine",
                 "MapWorldsGrotto",
@@ -10633,7 +10393,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 13, Quality: +13%, Delirium: 100%, Modifiers: 8, Corrupted",
         "stack": 13,
-        "standardPrice": 2.45,
+        "standardPrice": 2.0,
         "weight": 1158
     },
     {
@@ -10651,7 +10411,7 @@
         "price": 1.8,
         "reward": "Pacifism, Corrupted",
         "stack": 3,
-        "standardPrice": 0.37,
+        "standardPrice": 0.38,
         "weight": 510
     },
     {
@@ -10672,7 +10432,7 @@
         "price": 3.0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 1.7,
+        "standardPrice": 1.9,
         "weight": 380
     },
     {
@@ -10688,7 +10448,7 @@
         "price": 8.0,
         "reward": "10x Awakened Sextant",
         "stack": 4,
-        "standardPrice": 4.9,
+        "standardPrice": 4.1,
         "weight": 1275
     },
     {
@@ -10707,7 +10467,7 @@
         },
         "name": "Unrequited Love",
         "ninja": "https://poe.ninja/challenge/divination-cards/unrequited-love",
-        "price": 10552.76,
+        "price": 10555.16,
         "reward": "19x Mirror Shard",
         "stack": 16,
         "standardPrice": 13538.4,
@@ -10723,7 +10483,7 @@
         },
         "name": "Vanity",
         "ninja": "https://poe.ninja/challenge/divination-cards/vanity",
-        "price": 1.5,
+        "price": 1.1,
         "reward": "Tabula Rasa, Corrupted",
         "stack": 9,
         "standardPrice": 1.0,
@@ -10762,8 +10522,6 @@
             "areas": [
                 "MapWorldsMalformation",
                 "MapWorldsShrine",
-                "MapAtlasOvergrownShrine",
-                "MapAtlasTemple",
                 "MapWorldsCore"
             ],
             "min_level": 68,
@@ -10772,10 +10530,10 @@
         },
         "name": "Vinia's Token",
         "ninja": "https://poe.ninja/challenge/divination-cards/vinias-token",
-        "price": 1.6,
+        "price": 1.57,
         "reward": "10x Orb of Regret",
         "stack": 5,
-        "standardPrice": 2.8,
+        "standardPrice": 2.0,
         "weight": 12137
     },
     {
@@ -10806,9 +10564,6 @@
                 "1_4_3_2",
                 "2_9_7",
                 "2_9_8",
-                "MapAtlasCrystalOre",
-                "MapAtlasExcavation",
-                "MapAtlasQuarry",
                 "MapWorldsGeode",
                 "MapWorldsCrystalOre",
                 "MapWorldsExcavation",
@@ -10844,7 +10599,7 @@
         "price": 170.0,
         "reward": "Level 4 Enlighten, Corrupted",
         "stack": 11,
-        "standardPrice": 99.7,
+        "standardPrice": 100.0,
         "weight": 29
     },
     {

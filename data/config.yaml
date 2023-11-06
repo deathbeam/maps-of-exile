@@ -32,21 +32,6 @@ data:
     - Primeval City
     - Labyrinth_Airlock
 
-  # Special maps
-  special:
-    - MapWorldsChimera
-    - MapWorldsMinotaur
-    - MapWorldsHydra
-    - MapWorldsPhoenix
-    - VaalTemple
-
-  # Area level overrides
-  level-overrides:
-    "Distant Memory": 80
-    "Trial of": 80
-    "The Temple of Atzoatl": 83
-    Cortex: 83
-
   # Links
   poedb:
     base: https://poedb.tw

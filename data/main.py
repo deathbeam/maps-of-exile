@@ -153,7 +153,10 @@ def get_card_data(key, config, card_extra):
                     "areas": list(
                         map(
                             lambda x: x.strip(),
-                            filter(None, (x.get("drop areas", "") or "").split(",")),
+                            filter(
+                                lambda x: x and not x.startswith("MapAtlas"),
+                                (x.get("drop areas", "") or "").split(","),
+                            ),
                         )
                     ),
                     "monsters": list(
@@ -525,19 +528,12 @@ def get_maps(key, config):
         if is_unique_map_area:
             map_type = "unique map"
         elif is_map_area:
-            if " Map" not in name or any(
-                x in name or x in id for x in config["special"]
-            ):
+            if " Map" not in name:
                 map_type = "special map"
             else:
                 map_type = "map"
         elif is_act_area:
             map_type = "act area"
-
-        for k, v in config["level-overrides"].items():
-            if k in name:
-                level = v
-                break
 
         out_map = {
             "ids": [id],
@@ -670,9 +666,12 @@ def get_map_data(map_data, extra_map_data):
                 map_data["icon"] = value.text.strip()
 
     if "icon" not in map_data:
-        tab = soup.find(id="MapDeviceRecipes")
-        if tab:
-            img_tags = tab.find_all("img")
+        val = soup.find(id="MapDeviceRecipes")
+        # TODO: Maybe in future re-enable?
+        # if not val:
+        #     val = soup.find("div", class_="Stats")
+        if val:
+            img_tags = val.find_all("img")
             if img_tags:
                 icon = img_tags[0]["src"]
                 print(f"Found icon {icon}")

@@ -7,7 +7,7 @@ const MapImage = ({ icon, name, level = 0, type = 'map' }) => {
     icon = '/img/act.webp'
   }
 
-  if (type === 'special map' && name.startsWith('Trial of')) {
+  if (name.startsWith('Trial of ')) {
     icon = '/img/labyrinth.webp'
   }
 

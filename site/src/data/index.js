@@ -20,7 +20,7 @@ preparedGlobals.lastUpdate = lastUpdate.toLocaleString()
 export const preparedCards = cards.map(card => {
   return {
     ...card,
-    art: cardArtBase + card.art + '.png'
+    art: `${cardArtBase + card.art}.png`
   }
 })
 
@@ -31,7 +31,7 @@ function pushTag(info, destination, source, key, name = null, color = null) {
     const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
     const out = {
       name: val,
-      color: color
+      color
     }
     if (info && info[key]) {
       out.info = info[key]
@@ -81,13 +81,11 @@ export const preparedMaps = maps.map(map => {
   const out = {
     ...map,
     image: map.image
-      ? '/img/layout/' +
-        map.name
+      ? `/img/layout/${map.name
           .replace(' Map', '')
           .toLowerCase()
           .replace(/[^a-zA-Z0-9 ]/g, '')
-          .replaceAll(' ', '_') +
-        '.png'
+          .replaceAll(' ', '_')}.png`
       : null,
     name: map.name.replace(' Map', ''),
     connected: (map.connected || [])
@@ -96,9 +94,9 @@ export const preparedMaps = maps.map(map => {
         const foundMap = maps.find(m => m.ids.includes(c))
         return foundMap ? foundMap.name : c
       }),
-    cards: cards,
+    cards,
     tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-    icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png')
+    icon: map.icon && (map.icon.startsWith('https') ? map.icon : `${mapIconBase + map.icon}.png`)
   }
 
   // Build search index

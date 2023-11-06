@@ -24,7 +24,7 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
 
   const mapName =
     map.image && !sidebar && !cardList ? (
-      <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-bottom' : 'tooltip-tag-right')}>
+      <span className={`tooltip-tag tooltip-tag-notice ${sidebar ? 'tooltip-tag-bottom' : 'tooltip-tag-right'}`}>
         <span className="tooltip-tag-text tooltip-tag-fill">
           <img src={map.image} alt="" loading="lazy" />
         </span>
@@ -76,7 +76,7 @@ const MapName = ({ map, sidebar, cardList, voidstones }) => {
       )
     }
   } else {
-    tiers = 'Level ' + map.levels.join(', ')
+    tiers = `Level ${map.levels.join(', ')}`
   }
 
   return (

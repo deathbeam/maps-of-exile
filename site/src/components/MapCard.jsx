@@ -14,7 +14,7 @@ const MapCard = ({ card, tooltipTop }) => {
   )
 
   return (
-    <span className={'tooltip-tag ' + (tooltipTop ? 'tooltip-tag-top' : 'tooltip-tag-left tooltip-tag-left-mid')}>
+    <span className={`tooltip-tag ${tooltipTop ? 'tooltip-tag-top' : 'tooltip-tag-left tooltip-tag-left-mid'}`}>
       <span className="tooltip-tag-text map-card">
         <CardDetail card={card} />
         {tooltip}

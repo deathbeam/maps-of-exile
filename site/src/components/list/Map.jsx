@@ -12,7 +12,7 @@ const Map = ({ map, voidstones }) => {
     <tr
       id={map.name}
       style={{
-        backgroundImage: 'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (map.image || '') + ')'
+        backgroundImage: `linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(${map.image || ''})`
       }}
       ref={ref}
       className="map-image lazy-bg"

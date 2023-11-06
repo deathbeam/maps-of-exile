@@ -3,7 +3,7 @@ const CardRateTooltip = ({ card, full }) => {
     return null
   }
 
-  const perDescription = card.rate.everyMap > 1 ? card.source + 's' : card.source
+  const perDescription = card.rate.everyMap > 1 ? `${card.source}s` : card.source
   return full ? (
     <>
       <b>{card.weight}</b> (card weight)

@@ -31,7 +31,7 @@ const MapImage = ({ icon, name, level = 0, type = 'map' }) => {
   }
 
   return (
-    <div className={'map-icon-container d-inline-block d-md-block' + extraClass}>
+    <div className={`map-icon-container d-inline-block d-md-block${extraClass}`}>
       <img loading="lazy" src={icon} className={color} alt="" />
     </div>
   )

@@ -1,25 +1,30 @@
-import { memo } from 'react'
+import { useContext } from 'react'
+import { AppState } from '../state.js'
 
-const Tags = ({ tags, currentSearch, addToInput }) => {
+const Tags = ({ tags }) => {
+  const state = useContext(AppState)
+  const search = state.parsedSearch
+  const updateSearch = state.updateSearch
+
   return tags.map(t => {
     const val = t.name
     const info = t.info
     let color = t.color ? t.color : 'secondary'
 
-    const searched = currentSearch && currentSearch.find(c => c.value === val)
+    const searched = search && search.value.find(c => c.value === val)
     if (searched) {
       color = searched.neg ? 'danger' : 'success'
     }
 
-    const tagDisplay = addToInput ? (
+    const tagDisplay = search ? (
       <button
-        className={'btn btn-badge text-dark btn-' + color}
-        onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
+        className={`btn btn-badge text-dark btn-${color}`}
+        onClick={() => updateSearch(val, searched ? !searched.neg : false, false)}
       >
         {val} {info && <b>*</b>}
       </button>
     ) : (
-      <span className={'badge text-dark bg-' + color}>
+      <span className={`badge text-dark bg-${color}`}>
         {val} {info && <b>*</b>}
       </span>
     )
@@ -32,7 +37,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
           {searched && (
             <button
               className={'btn btn-badge text-dark btn-warning'}
-              onClick={() => addToInput(val, searched.neg, true)}
+              onClick={() => updateSearch(val, searched.neg, true)}
             >
               <i className="fa-solid fa-xmark" />
             </button>
@@ -43,4 +48,4 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
   })
 }
 
-export default memo(Tags)
+export default Tags

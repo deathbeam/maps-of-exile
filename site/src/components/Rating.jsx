@@ -14,13 +14,13 @@ const Rating = ({ rating, tooltip, sidebar = false, label = '', scale = 1 }) => 
   const badge = (
     <span className={badgeClass}>
       <b>{rating}</b>
-      {label && ' ' + label}
+      {label && ` ${label}`}
     </span>
   )
 
   if (tooltip) {
     return (
-      <span className={'tooltip-tag tooltip-tag-notice ' + (sidebar ? 'tooltip-tag-left' : 'tooltip-tag-right')}>
+      <span className={`tooltip-tag tooltip-tag-notice ${sidebar ? 'tooltip-tag-left' : 'tooltip-tag-right'}`}>
         <span className="tooltip-tag-text">{tooltip}</span>
         {badge}
       </span>

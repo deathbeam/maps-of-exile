@@ -15,11 +15,11 @@ const Card = ({ card, voidstones }) => {
         <div className="card-header">{card.name} has no confirmed drop sources.</div>
         <div className="card-body">
           If you find one that did not come from sources of random divination cards — including{' '}
-          <a href={wikiBase + 'Stacked_Deck'} target="_blank" rel="noreferrer">
+          <a href={`${wikiBase}Stacked_Deck`} target="_blank" rel="noreferrer">
             Stacked Decks
           </a>
           ,{' '}
-          <a href={wikiBase + 'Headmistress_Braeta'} target="_blank" rel="noreferrer">
+          <a href={`${wikiBase}Headmistress_Braeta`} target="_blank" rel="noreferrer">
             Headmistress Braeta
           </a>
           , and divination card rewards — consider posting a screenshot to the{' '}
@@ -27,7 +27,7 @@ const Card = ({ card, voidstones }) => {
             Divination Card Discord
           </a>
           , also known as{' '}
-          <a href={wikiBase + 'Divcord'} target="_blank" rel="noreferrer">
+          <a href={`${wikiBase}Divcord`} target="_blank" rel="noreferrer">
             Divcord
           </a>
           .{card.drop.text}
@@ -98,7 +98,7 @@ const Card = ({ card, voidstones }) => {
           </div>
         </td>
       ) : (
-        <td></td>
+        <td />
       )}
     </tr>
   )

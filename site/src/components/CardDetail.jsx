@@ -23,7 +23,7 @@ const CardDetail = ({ card }) => {
 
   return (
     <>
-      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={badgeClass + ' w-100 map-reward mb-1'}>
+      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={`${badgeClass} w-100 map-reward mb-1`}>
         <img src={img} alt="" width="16" height="16" className="me-1" />
         {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
         {card.name}

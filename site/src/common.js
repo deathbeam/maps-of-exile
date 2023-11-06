@@ -4,7 +4,7 @@ export function rescale(value, minValue, maxValue, scale) {
 
 export function deduplicate(a, key) {
   const seen = {}
-  return a.filter(function (item) {
+  return a.filter(item => {
     const k = item[key]
     return Object.hasOwn(seen, k) ? false : (seen[k] = true)
   })
@@ -63,14 +63,12 @@ export function ratingColor(rating, scale = 1) {
 
   if (rating == null) {
     color = 'secondary'
-  } else {
-    if (rating >= 7 * scale) {
-      color = 'success'
-    } else if (rating >= 5 * scale) {
-      color = 'info'
-    } else if (rating >= 3 * scale) {
-      color = 'warning'
-    }
+  } else if (rating >= 7 * scale) {
+    color = 'success'
+  } else if (rating >= 5 * scale) {
+    color = 'info'
+  } else if (rating >= 3 * scale) {
+    color = 'warning'
   }
 
   return color

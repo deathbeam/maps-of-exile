@@ -81,34 +81,33 @@ function rateMaps(
         const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
         const weight = dropEligible ? card.weight || 0 : 0
         const price = (cardPriceSource === 'standard' ? card.standardPrice : card.price) || 0
+        const priceEligible = price >= cardMinPrice
+        const unknown = !card.weight
 
         bossWeight += weight
         if (!card.boss) {
           mapWeight += weight
         }
 
-        mapCards.push({
-          ...card,
-          price,
-          weight,
-          unknown: !card.weight
-        })
-      }
-
-      for (let card of mapCards) {
-        const dropEligible = card.weight > 0
-        const priceEligible = card.price >= cardMinPrice
-        if (!card.unknown) {
+        if (!unknown) {
           if (
             (cardDisplay === 'high+drop' && (!dropEligible || !priceEligible)) ||
             (cardDisplay === 'high' && !priceEligible) ||
             (cardDisplay === 'drop' && !dropEligible)
           ) {
-            card.hidden = true
             continue
           }
         }
 
+        mapCards.push({
+          ...card,
+          price,
+          weight,
+          unknown
+        })
+      }
+
+      for (let card of mapCards) {
         if (cardValueSource === 'kirac') {
           card.source = 'kirac mission'
           card.totalWeight = bossWeight
@@ -125,17 +124,14 @@ function rateMaps(
           card.rate = calcRate(rate, card.price, 1)
         }
 
-        if (!priceEligible) {
+        if (card.price < cardMinPrice) {
           card.value = 0
         }
       }
 
       return {
         ...map,
-        cards: mapCards
-          .filter(c => !c.hidden)
-          .sort((a, b) => b.price - a.price)
-          .sort((a, b) => b.value - a.value)
+        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
       }
     })
 

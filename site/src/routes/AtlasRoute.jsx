@@ -14,8 +14,7 @@ const AtlasRoute = ({
   searchInput,
   searchRef,
   setSearchInput,
-  voidstonesInput,
-  cardValueSourceInput
+  voidstonesInput
 }) => {
   const { currentMap } = useParams()
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
@@ -40,7 +39,7 @@ const AtlasRoute = ({
             to <b>List</b> view.
           </p>
           {currentMap ? (
-            <Map map={selectedMap} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
+            <Map map={selectedMap} voidstones={voidstonesInput} />
           ) : (
             <MapFilter
               inputs={inputs}

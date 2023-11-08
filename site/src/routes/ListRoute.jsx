@@ -12,8 +12,7 @@ const ListRoute = ({
   searchInput,
   searchRef,
   setSearchInput,
-  voidstonesInput,
-  cardValueSourceInput
+  voidstonesInput
 }) => (
   <>
     <GoToTop />
@@ -128,7 +127,7 @@ const ListRoute = ({
       </thead>
       <tbody>
         {filteredMaps.map(m => (
-          <Map key={m.name} map={m} voidstones={voidstonesInput} cardValueSourceInput={cardValueSourceInput} />
+          <Map key={m.name} map={m} voidstones={voidstonesInput} />
         ))}
       </tbody>
     </table>

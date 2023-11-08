@@ -1,4 +1,8 @@
 const CardRateTooltip = ({ rate, description, name }) => {
+  if (!rate) {
+    return null
+  }
+
   const perDescription = rate.everyMap > 1 ? description + 's' : description
   return name ? (
     <>

@@ -3,7 +3,7 @@ import Rating from '../Rating'
 import MapCards from '../MapCards'
 import MapBoss from '../MapBoss'
 
-const Map = ({ map, cardValueSourceInput, voidstones }) => (
+const Map = ({ map, voidstones }) => (
   <>
     {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
     <MapName map={map} sidebar={true} voidstones={voidstones} />
@@ -13,13 +13,7 @@ const Map = ({ map, cardValueSourceInput, voidstones }) => (
     <Rating rating={map.rating.density} label="Density" tooltip={map.info.density} sidebar={true} />
     <MapBoss ids={map.boss_ids} rating={map.rating.boss} tooltip={map.info.boss} label="Boss" sidebar={true} />
     <hr />
-    <MapCards
-      cards={map.cards}
-      type={map.type}
-      cardValueSourceInput={cardValueSourceInput}
-      sidebar={true}
-      tooltipTop={!!map.image}
-    />
+    <MapCards cards={map.cards} sidebar={true} tooltipTop={!!map.image} />
   </>
 )
 

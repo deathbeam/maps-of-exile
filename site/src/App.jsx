@@ -13,6 +13,23 @@ import AtlasRoute from './routes/AtlasRoute'
 import CardsRoute from './routes/CardsRoute'
 import ScrollToTop from './components/ScrollToTop'
 
+function calcRate(mapRate, price, stack) {
+  let perMap = 1
+  let everyMap = 1 / mapRate
+  if (everyMap < 1) {
+    perMap = Math.floor(Math.round((1 / everyMap) * 100) / 100)
+    everyMap = 1
+  } else {
+    everyMap = Math.ceil(Math.round(everyMap * 100) / 100)
+  }
+
+  return {
+    perMap: perMap * stack,
+    everyMap,
+    value: Math.round(price * mapRate * stack * 1000) / 1000
+  }
+}
+
 function rateMaps(
   foundMaps,
   foundCards,
@@ -79,10 +96,6 @@ function rateMaps(
       }
 
       for (let card of mapCards) {
-        card.mapWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)
-        card.kiracWeight = bossWeight
-        card.dropPoolItems = 1 / (cardWeightBaseline / card.mapWeight) / (card.boss ? 10 : 1)
-
         const dropEligible = card.weight > 0
         const priceEligible = card.price >= cardMinPrice
         if (!card.unknown) {
@@ -92,26 +105,37 @@ function rateMaps(
             (cardDisplay === 'drop' && !dropEligible)
           ) {
             card.hidden = true
-            card.value = 0
             continue
           }
         }
 
-        if (!priceEligible) {
-          card.value = 0
-          continue
+        if (cardValueSource === 'kirac') {
+          card.source = 'kirac mission'
+          card.totalWeight = bossWeight
+          card.dropPoolItems = 1
+          const rate = card.weight / card.totalWeight
+          card.value = map.type !== 'map' ? 0 : card.stack * card.price * rate
+          card.rate = map.type === 'map' && calcRate(rate, card.price, card.stack)
+        } else {
+          card.source = 'map'
+          card.totalWeight = preparedGlobals.droppool_weight + (card.boss ? bossWeight : mapWeight)
+          card.dropPoolItems = 1 / (cardWeightBaseline / card.totalWeight) / (card.boss ? 10 : 1)
+          const rate = (card.weight / card.totalWeight) * card.dropPoolItems
+          card.value = card.price * rate
+          card.rate = calcRate(rate, card.price, 1)
         }
 
-        if (cardValueSource === 'kirac') {
-          card.value = map.type !== 'map' ? 0 : card.stack * card.price * (card.weight / card.kiracWeight)
-        } else {
-          card.value = card.price * (card.weight / card.mapWeight) * card.dropPoolItems
+        if (!priceEligible) {
+          card.value = 0
         }
       }
 
       return {
         ...map,
-        cards: mapCards.sort((a, b) => b.price - a.price).sort((a, b) => b.value - a.value)
+        cards: mapCards
+          .filter(c => !c.hidden)
+          .sort((a, b) => b.price - a.price)
+          .sort((a, b) => b.value - a.value)
       }
     })
 

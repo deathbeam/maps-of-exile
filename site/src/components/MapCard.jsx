@@ -3,30 +3,21 @@ import CardRateTooltip from './CardRateTooltip'
 import CardDetail from './CardDetail'
 import { memo } from 'react'
 
-const MapCard = ({ card, type, tooltipTop }) => {
+const MapCard = ({ card, tooltipTop }) => {
   const badgeClass = cardBadge(card, 10)
   const img = priceImage(card.price)
   const tooltip = card.weight > 0 && (
     <>
       <hr />
       <b>{card.weight}</b> (card weight)
-      <br />/ <b>{card.mapWeight}</b> (drop pool weight)
+      <br />/ <b>{card.totalWeight}</b> (drop pool weight)
       {card.dropPoolItems > 1 && (
         <>
           <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
         </>
       )}
       <br />
-      <CardRateTooltip rate={card.map} description={'map'} />
-      {type === 'map' && (
-        <>
-          <hr />
-          <b>{card.weight}</b> (card weight)
-          <br />/ <b>{card.kiracWeight}</b> (map pool weight)
-          <br />
-          <CardRateTooltip rate={card.kirac} description={'kirac mission'} />
-        </>
-      )}
+      <CardRateTooltip rate={card.rate} description={card.source} />
     </>
   )
 

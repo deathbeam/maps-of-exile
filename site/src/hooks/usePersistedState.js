@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { parseValue } from '../common'
 
 let data = {}
@@ -38,8 +38,8 @@ export default function usePersistedState(key, def, startTransition) {
 
   return [
     val,
-    useMemo(
-      () => e => {
+    useCallback(
+      e => {
         const val = e && e.target ? e.target.value : e
         if (startTransition) {
           startTransition(() => setVal(val === '' ? def : parseValue(val, def)))

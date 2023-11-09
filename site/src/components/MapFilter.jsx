@@ -3,7 +3,7 @@ import { preparedTags } from '../data'
 import SelectSearch from 'react-select-search'
 import { copyToClipboard } from '../common'
 
-const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
+const FilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
   if (input.hidden) {
     return null
   }
@@ -18,7 +18,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
   switch (input.type) {
     case 'number':
       return (
-        <div key={input.name} className={divInputClass}>
+        <div className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label htmlFor={input.name} className="form-label">
@@ -42,7 +42,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'select':
       return (
-        <div key={input.name} className={divInputClass}>
+        <div className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label htmlFor={input.name} className="form-label">
@@ -71,7 +71,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'copytext':
       return (
-        <div key={input.name} className={divInputClass}>
+        <div className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label htmlFor={input.name} className="form-label">
@@ -95,7 +95,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
       )
     case 'cardselect':
       return (
-        <div key={input.name} className={divInputClass}>
+        <div className={divInputClass}>
           <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
             <span className="tooltip-tag-text">{input.tooltip}</span>
             <label className="form-label">{input.name}</label>
@@ -170,7 +170,17 @@ const MapFilter = ({ sidebar, addToInput, currentSearch, searchInput, setSearchI
         <Tags tags={preparedTags} currentSearch={currentSearch} addToInput={addToInput} />
       </div>
       <div className={inputSectionClass}>
-        <div className="row g-0">{inputs.map(input => toInput(input, inputClass, bigInputClass, fullInputClass))}</div>
+        <div className="row g-0">
+          {inputs.map(input => (
+            <FilterInput
+              key={input.name}
+              input={input}
+              inputClass={inputClass}
+              bigInputClass={bigInputClass}
+              fullInputClass={fullInputClass}
+            />
+          ))}
+        </div>
       </div>
     </>
   )

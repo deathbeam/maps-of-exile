@@ -3,6 +3,7 @@ import { divcordDiscord, wikiBase } from '../../data'
 import CardDetail from '../CardDetail'
 import MapName from '../MapName'
 import MonsterName from './MonsterName'
+import CardRateTooltip from '../CardRateTooltip.jsx'
 
 const Card = ({ card, voidstones }) => {
   const [ref, visible] = useLazy()
@@ -86,7 +87,12 @@ const Card = ({ card, voidstones }) => {
           <div className="row m-0">
             {card.maps.map(map => (
               <div key={map.name} className="col-12 col-sm-6 col-md-4 col-lg-2 mt-2">
-                <MapName map={map} voidstones={voidstones} cardList={true} />
+                <span className="tooltip-tag tooltip-tag-bottom">
+                  <span className="tooltip-tag-text">
+                    <CardRateTooltip card={map.card} full={true} />
+                  </span>
+                  <MapName map={map} voidstones={voidstones} cardList={true} />
+                </span>
               </div>
             ))}
           </div>

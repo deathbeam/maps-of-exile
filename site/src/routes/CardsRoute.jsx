@@ -14,14 +14,25 @@ function rateCards(ratedMaps, cardDisplayInput, cardMinPriceInput, cardPriceSour
       const out = {
         ...c,
         drop: c.drop || {},
-        maps: ratedMaps.filter(m =>
-          m.cards.find(mc => {
-            if (mc.name !== c.name) {
-              return false
+        maps: ratedMaps
+          .map(m => {
+            const card = m.cards.find(mc => {
+              if (mc.name !== c.name) {
+                return false
+              }
+              return mc.unknown || cardDisplayInput === 'all' || cardDisplayInput === 'high' || mc.weight > 0
+            })
+
+            if (!card) {
+              return m
             }
-            return mc.unknown || cardDisplayInput === 'all' || cardDisplayInput === 'high' || mc.weight > 0
+
+            return {
+              ...m,
+              card
+            }
           })
-        ),
+          .filter(m => m.card),
         unknown: !c.weight,
         price: price,
         value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0

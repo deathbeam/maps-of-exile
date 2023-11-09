@@ -9,15 +9,7 @@ const MapCard = ({ card, tooltipTop }) => {
   const tooltip = card.weight > 0 && (
     <>
       <hr />
-      <b>{card.weight}</b> (card weight)
-      <br />/ <b>{card.totalWeight}</b> (drop pool weight)
-      {card.dropPoolItems > 1 && (
-        <>
-          <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
-        </>
-      )}
-      <br />
-      <CardRateTooltip rate={card.rate} description={card.source} />
+      <CardRateTooltip card={card} full={true} />
     </>
   )
 

@@ -14,7 +14,7 @@ const MapCards = ({ cards, sidebar, tooltipTop }) => {
             {cards
               .filter(c => c.value > 0)
               .map(c => (
-                <CardRateTooltip key={c.name} rate={c.rate} description={c.source} name={c.name} />
+                <CardRateTooltip key={c.name} card={c} />
               ))}
           </span>
           {sidebar ? (

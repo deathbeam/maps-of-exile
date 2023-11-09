@@ -1,19 +1,27 @@
-const CardRateTooltip = ({ rate, description, name }) => {
-  if (!rate) {
+const CardRateTooltip = ({ card, full }) => {
+  if (!card.rate) {
     return null
   }
 
-  const perDescription = rate.everyMap > 1 ? description + 's' : description
-  return name ? (
+  const perDescription = card.rate.everyMap > 1 ? card.source + 's' : card.source
+  return full ? (
     <>
-      <b>{rate.perMap}</b> <b>{name}</b> every <b>{rate.everyMap > 1 && rate.everyMap}</b> {perDescription}
-      <br />= <b>{rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {description}
+      <b>{card.weight}</b> (card weight)
+      <br />/ <b>{card.totalWeight}</b> (drop pool weight)
+      {card.dropPoolItems > 1 && (
+        <>
+          <br />* <b>{Math.round(card.dropPoolItems)}</b> (drop pool items)
+        </>
+      )}
+      <br />= <b>{card.rate.perMap}</b> every <b>{card.rate.everyMap > 1 && card.rate.everyMap}</b> {perDescription}
+      <br />= <b>{card.rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {card.source}
       <br />
     </>
   ) : (
     <>
-      = <b>{rate.perMap}</b> every <b>{rate.everyMap > 1 && rate.everyMap}</b> {perDescription}
-      <br />= <b>{rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {description}
+      <b>{card.rate.perMap}</b> <b>{card.name}</b> every <b>{card.rate.everyMap > 1 && card.rate.everyMap}</b>{' '}
+      {perDescription}
+      <br />= <b>{card.rate.value}</b> <img src="/img/chaos.png" alt="c" width="16" height="16" /> per {card.source}
       <br />
     </>
   )

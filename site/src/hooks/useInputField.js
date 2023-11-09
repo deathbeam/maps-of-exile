@@ -1,19 +1,16 @@
-import { useRef } from 'react'
 import usePersistedState from './usePersistedState'
+import { useMemo } from 'react'
 
-export default function useInputField(key, def, startTransition, locationRef) {
-  const ref = useRef(null)
-  const [val, setter] = usePersistedState(key, def, startTransition, locationRef)
-
-  return {
-    get: val,
-    set: setter,
-    reset: () => {
-      if (ref.current) {
-        ref.current.value = def
+export default function useInputField(key, def, startTransition) {
+  const [val, setter] = usePersistedState(key, def, startTransition)
+  return useMemo(
+    () => ({
+      get: val,
+      set: setter,
+      reset: () => {
+        setter(def)
       }
-      setter(def)
-    },
-    ref
-  }
+    }),
+    [val, setter, def]
+  )
 }

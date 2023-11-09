@@ -6,16 +6,7 @@ import { useMemo } from 'react'
 import Map from '../components/atlas/Map'
 import { useParams } from 'react-router-dom'
 
-const AtlasRoute = ({
-  ratedMaps,
-  inputs,
-  addToInput,
-  currentSearch,
-  searchInput,
-  searchRef,
-  setSearchInput,
-  voidstonesInput
-}) => {
+const AtlasRoute = ({ ratedMaps, inputs, addToInput, currentSearch, searchInput, setSearchInput, voidstonesInput }) => {
   const { currentMap } = useParams()
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
   const style = currentMap && {
@@ -47,7 +38,6 @@ const AtlasRoute = ({
               addToInput={addToInput}
               currentSearch={currentSearch}
               searchInput={searchInput}
-              searchRef={searchRef}
               setSearchInput={setSearchInput}
             />
           )}

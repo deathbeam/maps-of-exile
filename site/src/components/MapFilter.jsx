@@ -30,7 +30,8 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
               id={input.name}
               className="form-control"
               type="number"
-              value={input.def.get}
+              ref={input.def.ref}
+              defaultValue={input.def.get}
               onChange={input.def.set}
             />
             <button className="btn btn-outline-secondary" onClick={input.def.reset}>
@@ -49,7 +50,13 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             </label>
           </span>
           <div className="input-group">
-            <select id={input.name} className="form-control" value={input.def.get} onChange={input.def.set}>
+            <select
+              id={input.name}
+              className="form-control"
+              ref={input.def.ref}
+              defaultValue={input.def.get}
+              onChange={input.def.set}
+            >
               {Object.entries(input.options).map(([key, value]) => (
                 <option key={key} value={key}>
                   {value}
@@ -104,6 +111,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             <input
               className="form-control select-search-number text-center"
               type="number"
+              ref={input.numberDef.ref}
               value={input.numberDef.get}
               onChange={input.numberDef.set}
             />

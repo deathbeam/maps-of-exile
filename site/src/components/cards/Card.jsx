@@ -5,9 +5,12 @@ import MapName from '../MapName'
 import MonsterName from './MonsterName'
 import CardRateTooltip from '../CardRateTooltip.jsx'
 import { memo } from 'react'
+import { useAtomValue } from 'jotai'
+import state from '../../state.js'
 
 const Card = ({ card }) => {
   const [ref, visible] = useLazy()
+  const voidstones = useAtomValue(state.input.voidstones)
 
   let cardNotice = null
   if (!card.drop.text && (card.drop.monsters || []).length === 0 && (card.drop.areas || []).length === 0) {
@@ -92,7 +95,7 @@ const Card = ({ card }) => {
                   <span className="tooltip-tag-text">
                     <CardRateTooltip card={map.card} full={true} />
                   </span>
-                  <MapName map={map} cardList={true} />
+                  <MapName map={map} voidstones={voidstones} cardList={true} />
                 </span>
               </div>
             ))}

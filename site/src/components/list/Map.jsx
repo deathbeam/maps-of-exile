@@ -5,9 +5,12 @@ import MapConnected from './MapConnected'
 import MapCards from '../MapCards'
 import useLazy from '../../hooks/useLazy'
 import { memo } from 'react'
+import { useAtomValue } from 'jotai'
+import state from '../../state.js'
 
 const Map = ({ map }) => {
   const [ref, visible] = useLazy()
+  const voidstones = useAtomValue(state.input.voidstones)
 
   return (
     <tr
@@ -19,7 +22,7 @@ const Map = ({ map }) => {
       className="map-image lazy-bg"
     >
       <td>
-        <MapName map={map} />
+        <MapName map={map} voidstones={voidstones} />
         <div className="d-md-none mt-2">
           <Rating rating={map.rating.layout} label="Layout" />
           <Rating rating={map.rating.density} label="Density" />

@@ -5,11 +5,8 @@ import MapImage from './MapImage'
 import { wikiBase } from '../data'
 import { Link } from 'react-router-dom'
 import { memo } from 'react'
-import { useAtomValue } from 'jotai'
-import state from '../state'
 
-const MapName = ({ map, sidebar, cardList }) => {
-  const voidstones = useAtomValue(state.input.voidstones)
+const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`
   const wikiLink = wikiBase + map.name.replaceAll(' ', '_')
 

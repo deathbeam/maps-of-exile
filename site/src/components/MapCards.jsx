@@ -1,10 +1,10 @@
 import './MapCards.css'
-import { memo, useMemo } from 'react'
+import { memo } from 'react'
 import CardRateTooltip from './CardRateTooltip'
 import MapCard from './MapCard'
 
 const MapCards = ({ cards, sidebar, tooltipTop }) => {
-  const total = useMemo(() => Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100, [cards])
+  const total = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
 
   return (
     <div className={sidebar ? '' : 'd-lg-flex flex-row'}>

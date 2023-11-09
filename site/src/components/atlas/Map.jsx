@@ -2,11 +2,12 @@ import MapName from '../MapName'
 import Rating from '../Rating'
 import MapCards from '../MapCards'
 import MapBoss from '../MapBoss'
+import { memo } from 'react'
 
 const Map = ({ map, voidstones }) => (
   <>
     {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
-    <MapName map={map} sidebar={true} voidstones={voidstones} />
+    <MapName map={map} voidstones={voidstones} sidebar={true} />
     <hr />
     <Rating rating={map.score} scale={10} label="Total" />
     <Rating rating={map.rating.layout} label="Layout" tooltip={map.info.layout} sidebar={true} />
@@ -17,4 +18,4 @@ const Map = ({ map, voidstones }) => (
   </>
 )
 
-export default Map
+export default memo(Map)

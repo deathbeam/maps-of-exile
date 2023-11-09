@@ -10,7 +10,6 @@ const ListRoute = ({
   addToInput,
   currentSearch,
   searchInput,
-  searchRef,
   setSearchInput,
   voidstonesInput
 }) => (
@@ -24,7 +23,6 @@ const ListRoute = ({
         addToInput={addToInput}
         currentSearch={currentSearch}
         searchInput={searchInput}
-        searchRef={searchRef}
         setSearchInput={setSearchInput}
       />
     </div>

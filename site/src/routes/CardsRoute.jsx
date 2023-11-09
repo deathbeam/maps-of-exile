@@ -57,7 +57,6 @@ const CardsRoute = ({
   addToInput,
   currentSearch,
   searchInput,
-  searchRef,
   setSearchInput
 }) => {
   const ratedCards = useMemo(
@@ -78,7 +77,6 @@ const CardsRoute = ({
           addToInput={addToInput}
           currentSearch={currentSearch}
           searchInput={searchInput}
-          searchRef={searchRef}
           setSearchInput={setSearchInput}
         />
       </div>

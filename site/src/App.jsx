@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './App.css'
 
-import { useCallback, useMemo, useRef, useTransition } from 'react'
+import { useCallback, useMemo, useTransition } from 'react'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
 import { defaultCardBaseline, issueTemplate, preparedCards, preparedGlobals, preparedMaps } from './data'
 import Loader from './components/Loader'
@@ -200,22 +200,21 @@ function buildMapRegex(filteredMaps) {
 
 function App() {
   const [isPending, startTransition] = useTransition()
-  const shareableRef = useRef(null)
 
   const voidstones = useInputField('voidstonesInput', 0, startTransition)
   const cardDisplay = useInputField('cardDisplayInput', 'drop', startTransition)
   const mapDisplay = useInputField('mapDisplayInput', 'atlas+unique+special', startTransition)
 
-  const search = useInputField('searchInput', '', startTransition, shareableRef)
-  const layout = useInputField('layoutInput', 3, startTransition, shareableRef)
-  const density = useInputField('densityInput', 2, startTransition, shareableRef)
-  const boss = useInputField('bossInput', 1, startTransition, shareableRef)
-  const card = useInputField('cardWeightInput', 2, startTransition, shareableRef)
-  const cardBaseline = useInputField('cardBaselineInput', defaultCardBaseline, startTransition, shareableRef)
-  const cardBaselineNumber = useInputField('cardBaselineNumberInput', 1, startTransition, shareableRef)
-  const cardMinPrice = useInputField('cardMinPriceInput', 10, startTransition, shareableRef)
-  const cardPriceSource = useInputField('cardPriceSourceInput', 'league', startTransition, shareableRef)
-  const cardValueSource = useInputField('cardValueSourceInput', 'map', startTransition, shareableRef)
+  const search = useInputField('searchInput', '', startTransition)
+  const layout = useInputField('layoutInput', 3, startTransition)
+  const density = useInputField('densityInput', 2, startTransition)
+  const boss = useInputField('bossInput', 1, startTransition)
+  const card = useInputField('cardWeightInput', 2, startTransition)
+  const cardBaseline = useInputField('cardBaselineInput', defaultCardBaseline, startTransition)
+  const cardBaselineNumber = useInputField('cardBaselineNumberInput', 1, startTransition)
+  const cardMinPrice = useInputField('cardMinPriceInput', 10, startTransition)
+  const cardPriceSource = useInputField('cardPriceSourceInput', 'league', startTransition)
+  const cardValueSource = useInputField('cardValueSourceInput', 'map', startTransition)
 
   const ratedMaps = useMemo(
     () =>
@@ -236,22 +235,22 @@ function App() {
         voidstones.get
       ),
     [
-      layout.get,
-      density.get,
-      boss.get,
-      card.get,
-      cardBaseline.get,
-      cardBaselineNumber.get,
-      cardMinPrice.get,
-      cardPriceSource.get,
-      cardValueSource.get,
-      cardDisplay.get,
-      mapDisplay.get,
-      voidstones.get
+      layout,
+      density,
+      boss,
+      card,
+      cardBaseline,
+      cardBaselineNumber,
+      cardMinPrice,
+      cardPriceSource,
+      cardValueSource,
+      cardDisplay,
+      mapDisplay,
+      voidstones
     ]
   )
 
-  const currentSearch = useMemo(() => parseSearch(search.get), [search.get])
+  const currentSearch = useMemo(() => parseSearch(search.get), [search])
   const filteredMaps = useMemo(() => filterData(ratedMaps, currentSearch), [ratedMaps, currentSearch])
   const poeRegex = useMemo(() => buildMapRegex(filteredMaps), [filteredMaps])
 
@@ -272,9 +271,6 @@ function App() {
       }
 
       const val = buildSearch(s)
-      if (search.ref.current) {
-        search.ref.current.value = val
-      }
       search.set(val)
     },
     [search]
@@ -474,9 +470,7 @@ function App() {
         name: 'Shareable link',
         tooltip: <>Link that contains current filter configuration that can be shared with other people.</>,
         type: 'copytext',
-        def: {
-          ref: shareableRef
-        },
+        def: {},
         size: 'big',
         hidden: true
       }
@@ -494,8 +488,7 @@ function App() {
       cardDisplay,
       voidstones,
       mapDisplay,
-      poeRegex,
-      shareableRef
+      poeRegex
     ]
   )
 
@@ -505,12 +498,10 @@ function App() {
     filteredMaps,
     addToInput,
     currentSearch,
-    searchRef: search.ref,
     searchInput: search.get,
     setSearchInput: search.set,
     voidstonesInput: voidstones.get,
     cardDisplayInput: cardDisplay.get,
-    cardValueSourceInput: cardValueSource.get,
     cardMinPriceInput: cardMinPrice.get,
     cardPriceSourceInput: cardPriceSource.get
   }

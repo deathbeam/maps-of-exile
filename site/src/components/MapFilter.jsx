@@ -30,8 +30,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
               id={input.name}
               className="form-control"
               type="number"
-              ref={input.def.ref}
-              defaultValue={input.def.get}
+              value={input.def.get}
               onChange={input.def.set}
             />
             <button className="btn btn-outline-secondary" onClick={input.def.reset}>
@@ -50,13 +49,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             </label>
           </span>
           <div className="input-group">
-            <select
-              id={input.name}
-              className="form-control"
-              ref={input.def.ref}
-              defaultValue={input.def.get}
-              onChange={input.def.set}
-            >
+            <select id={input.name} className="form-control" value={input.def.get} onChange={input.def.set}>
               {Object.entries(input.options).map(([key, value]) => (
                 <option key={key} value={key}>
                   {value}
@@ -83,7 +76,6 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
               id={input.name}
               className="form-control"
               type="text"
-              ref={input.def.ref}
               value={input.def.get}
               readOnly={true}
               onFocus={e => e.target.select()}
@@ -112,8 +104,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
             <input
               className="form-control select-search-number text-center"
               type="number"
-              ref={input.numberDef.ref}
-              defaultValue={input.numberDef.get}
+              value={input.numberDef.get}
               onChange={input.numberDef.set}
             />
             <button
@@ -133,7 +124,7 @@ const toInput = (input, inputClass, bigInputClass, fullInputClass) => {
   }
 }
 
-const MapFilter = ({ sidebar, addToInput, currentSearch, searchRef, searchInput, setSearchInput, inputs }) => {
+const MapFilter = ({ sidebar, addToInput, currentSearch, searchInput, setSearchInput, inputs }) => {
   let searchClass = ''
   let inputSectionClass = ''
   let inputClass = ''
@@ -164,7 +155,6 @@ const MapFilter = ({ sidebar, addToInput, currentSearch, searchRef, searchInput,
           className="form-control"
           type="search"
           placeholder="Search for map, tag, card, card reward, comma separated"
-          ref={searchRef}
           defaultValue={searchInput}
           onChange={setSearchInput}
         />

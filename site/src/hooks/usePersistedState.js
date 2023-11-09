@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { parseValue } from '../common'
 
 let data = {}
@@ -12,9 +12,9 @@ if (window.location.hash && dataEnabled) {
   }
 }
 
-export default function usePersistedState(key, def, startTransition, locationRef) {
+export default function usePersistedState(key, def, startTransition) {
   const [val, setVal] = useState(() => {
-    if (locationRef && data[key]) {
+    if (data[key]) {
       return parseValue(data[key])
     }
 
@@ -30,26 +30,24 @@ export default function usePersistedState(key, def, startTransition, locationRef
   useEffect(() => {
     try {
       localStorage.setItem(key, JSON.stringify(val))
-      if (locationRef) {
-        data[key] = val
-        if (locationRef.current) {
-          locationRef.current.value = 'https://mapsofexile.com/#' + btoa(JSON.stringify(data))
-        }
-      }
+      data[key] = val
     } catch (e) {
       console.warn(e)
     }
-  }, [key, val, locationRef])
+  }, [key, val])
 
   return [
     val,
-    e => {
-      const val = e && e.target ? e.target.value : e
-      if (startTransition) {
-        startTransition(() => setVal(val === '' ? def : parseValue(val, def)))
-      } else {
-        setVal(val === '' ? def : parseValue(val, def))
-      }
-    }
+    useMemo(
+      () => e => {
+        const val = e && e.target ? e.target.value : e
+        if (startTransition) {
+          startTransition(() => setVal(val === '' ? def : parseValue(val, def)))
+        } else {
+          setVal(val === '' ? def : parseValue(val, def))
+        }
+      },
+      [setVal, def, startTransition]
+    )
   ]
 }

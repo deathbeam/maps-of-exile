@@ -5,7 +5,6 @@ import { memo, useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
 import MapImage from '../MapImage'
-import { preparedGlobals } from '../../data'
 import { Link } from 'react-router-dom'
 import { useAtom, useAtomValue } from 'jotai'
 import state from '../../state'
@@ -99,6 +98,7 @@ const Atlas = ({ maps, currentMap }) => {
   const [atlasScore, setAtlasScore] = useAtom(state.input.atlasScore)
   const [atlasIcons, setAtlasIcons] = useAtom(state.input.atlasIcons)
   const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
+  const globals = useAtomValue(state.globals)
   const parsedSearch = useAtomValue(state.parsedSearch)
   const voidstones = useAtomValue(state.input.voidstones)
 
@@ -136,8 +136,8 @@ const Atlas = ({ maps, currentMap }) => {
           },
           data: {
             image: '/img/atlas.webp',
-            width: preparedGlobals['atlas']['width'] * scale,
-            height: preparedGlobals['atlas']['height'] * scale
+            width: globals.atlas.width * scale,
+            height: globals.atlas.height * scale
           },
           zIndex: -1
         }
@@ -147,7 +147,7 @@ const Atlas = ({ maps, currentMap }) => {
         'id'
       )
     }),
-    [connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
+    [globals, connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
 
   useEffect(() => {

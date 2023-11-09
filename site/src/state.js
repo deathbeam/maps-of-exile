@@ -303,6 +303,7 @@ function createState() {
   const tags = atom(preparedTags)
   const cards = atom(preparedCards)
   const monsters = atom(preparedMonsters)
+  const globals = atom(preparedGlobals)
 
   const input = {
     search: storedAtom('searchInput', '', data),
@@ -387,6 +388,7 @@ function createState() {
     tags,
     cards,
     monsters,
+    globals,
     input,
     parsedSearch,
     mapRegex,

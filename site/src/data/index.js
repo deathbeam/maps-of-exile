@@ -69,17 +69,19 @@ export const preparedMaps = maps.map(map => {
     }
   }
 
+  let names = []
+
   if (map.boss_ids) {
-    const names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))]
-      .filter(n => !n.includes('Merveil'))
-      .sort()
-    if (names.length > 1) {
-      mapTags.push({ name: `${names.length} bosses` })
+    names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))].sort()
+    const namesFiltered = names.filter(n => !n.includes('Merveil'))
+    if (namesFiltered.length > 1) {
+      mapTags.push({ name: `${namesFiltered.length} bosses` })
     }
   }
 
   const out = {
     ...map,
+    boss_names: names,
     image: map.image
       ? '/img/layout/' +
         map.name

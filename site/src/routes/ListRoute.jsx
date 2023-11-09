@@ -5,8 +5,9 @@ import GoToTop from '../components/GoToTop'
 import Map from '../components/list/Map'
 import { useAtomValue } from 'jotai'
 import state from '../state.js'
+import { useDeferredValue } from 'react'
 
-const ListRoute = ({ startTransition }) => {
+const ListRoute = () => {
   const filteredMaps = useAtomValue(state.filteredMaps)
 
   return (
@@ -14,7 +15,7 @@ const ListRoute = ({ startTransition }) => {
       <GoToTop />
       <Navbar />
       <div className="container-fluid p-2 row g-0">
-        <MapFilter sidebar={false} startTransition={startTransition} />
+        <MapFilter sidebar={false} />
       </div>
       <table className="table table-responsive mb-0">
         <thead>
@@ -116,7 +117,7 @@ const ListRoute = ({ startTransition }) => {
           </tr>
         </thead>
         <tbody>
-          {filteredMaps.map(m => (
+          {useDeferredValue(filteredMaps).map(m => (
             <Map key={m.name} map={m} />
           ))}
         </tbody>

@@ -1,32 +1,14 @@
-import { memo, useEffect, useRef } from 'react'
-import { useAtomValue } from 'jotai'
+import { memo } from 'react'
+import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
 import { copyToClipboard } from '../common.js'
 import SelectSearch from 'react-select-search'
-import { useTransitionAtom } from '../hooks/useTransitionAtom'
 
-const MapFilterInput = ({ startTransition, input, inputClass, bigInputClass, fullInputClass }) => {
-  const ref = useRef()
-  const value = useAtomValue(input.def)
-  const setValue = useTransitionAtom(input.def, startTransition)
+const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
+  const [value, setValue] = useAtom(input.def)
   const reset = useResetAtom(input.def)
-
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.value = value
-    }
-  }, [value])
-
-  const numberRef = useRef()
-  const numberValue = useAtomValue(input.numberDef)
-  const setNumberValue = useTransitionAtom(input.numberDef, startTransition)
+  const [numberValue, setNumberValue] = useAtom(input.numberDef)
   const numberReset = useResetAtom(input.numberDef)
-
-  useEffect(() => {
-    if (numberRef.current) {
-      numberRef.current.value = numberValue
-    }
-  }, [numberValue])
 
   if (input.hidden) {
     return null
@@ -50,14 +32,7 @@ const MapFilterInput = ({ startTransition, input, inputClass, bigInputClass, ful
             </label>
           </span>
           <div className="input-group">
-            <input
-              ref={ref}
-              id={input.name}
-              className="form-control"
-              type="number"
-              defaultValue={value}
-              onChange={setValue}
-            />
+            <input id={input.name} className="form-control" type="number" value={value} onChange={setValue} />
             <button className="btn btn-outline-secondary" onClick={reset}>
               <i className="fa-solid fa-refresh fa-fw" />
             </button>
@@ -74,7 +49,7 @@ const MapFilterInput = ({ startTransition, input, inputClass, bigInputClass, ful
             </label>
           </span>
           <div className="input-group">
-            <select ref={ref} id={input.name} className="form-control" defaultValue={value} onChange={setValue}>
+            <select id={input.name} className="form-control" value={value} onChange={setValue}>
               {Object.entries(input.options).map(([key, value]) => (
                 <option key={key} value={key}>
                   {value}
@@ -121,10 +96,9 @@ const MapFilterInput = ({ startTransition, input, inputClass, bigInputClass, ful
           <div className="input-group">
             <SelectSearch options={input.options} value={value} placeholder={value} onChange={setValue} search="true" />
             <input
-              ref={numberRef}
               className="form-control select-search-number text-center"
               type="number"
-              defaultValue={numberValue}
+              value={numberValue}
               onChange={setNumberValue}
             />
             <button

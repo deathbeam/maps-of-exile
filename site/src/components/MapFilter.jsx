@@ -211,7 +211,7 @@ const filterInputs = atom(get => [
   }
 ])
 
-const MapFilter = ({ startTransition, sidebar }) => {
+const MapFilter = ({ sidebar }) => {
   const inputs = useAtomValue(filterInputs)
 
   let searchClass = ''
@@ -235,13 +235,12 @@ const MapFilter = ({ startTransition, sidebar }) => {
 
   return (
     <>
-      <MapFilterSearch startTransition={startTransition} searchClass={searchClass} />
+      <MapFilterSearch searchClass={searchClass} />
       <div className={inputSectionClass}>
         <div className="row g-0">
           {inputs.map(input => (
             <MapFilterInput
               key={input.name}
-              startTransition={startTransition}
               input={input}
               inputClass={inputClass}
               bigInputClass={bigInputClass}

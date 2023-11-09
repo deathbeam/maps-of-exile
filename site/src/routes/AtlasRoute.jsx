@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom'
 import { useAtomValue } from 'jotai'
 import state from '../state'
 
-const AtlasRoute = ({ startTransition }) => {
+const AtlasRoute = () => {
   const { currentMap } = useParams()
   const ratedMaps = useAtomValue(state.ratedMaps)
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
@@ -36,7 +36,7 @@ const AtlasRoute = ({ startTransition }) => {
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back
             to <b>List</b> view.
           </p>
-          {currentMap ? <Map map={selectedMap} /> : <MapFilter sidebar={true} startTransition={startTransition} />}
+          {currentMap ? <Map map={selectedMap} /> : <MapFilter sidebar={true} />}
         </div>
       </div>
     </div>

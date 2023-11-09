@@ -5,8 +5,9 @@ import MapFilter from '../components/MapFilter'
 import Card from '../components/cards/Card'
 import { useAtomValue } from 'jotai'
 import state from '../state'
+import { useDeferredValue } from 'react'
 
-const CardsRoute = ({ startTransition }) => {
+const CardsRoute = () => {
   const filteredCards = useAtomValue(state.filteredCards)
 
   return (
@@ -14,7 +15,7 @@ const CardsRoute = ({ startTransition }) => {
       <GoToTop />
       <Navbar />
       <div className="container-fluid p-2 row g-0">
-        <MapFilter sidebar={false} startTransition={startTransition} />
+        <MapFilter sidebar={false} />
       </div>
       <table className="table table-responsive mb-0">
         <thead>
@@ -24,7 +25,7 @@ const CardsRoute = ({ startTransition }) => {
           </tr>
         </thead>
         <tbody>
-          {filteredCards.map(c => (
+          {useDeferredValue(filteredCards).map(c => (
             <Card key={c.name} card={c} />
           ))}
         </tbody>

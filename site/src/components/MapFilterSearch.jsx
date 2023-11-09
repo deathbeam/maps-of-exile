@@ -1,19 +1,11 @@
-import { memo, useEffect, useRef } from 'react'
-import { useAtomValue } from 'jotai'
+import { memo } from 'react'
+import { useAtom, useAtomValue } from 'jotai'
 import state from '../state.js'
 import Tags from './Tags.jsx'
-import { useTransitionAtom } from '../hooks/useTransitionAtom'
 
-const MapFilterSearch = ({ startTransition, searchClass }) => {
+const MapFilterSearch = ({ searchClass }) => {
   const tags = useAtomValue(state.tags)
-  const ref = useRef()
-  const search = useAtomValue(state.input.search)
-  const setSearch = useTransitionAtom(state.input.search, startTransition)
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.value = search
-    }
-  }, [search])
+  const [search, setSearch] = useAtom(state.input.search)
 
   return (
     <div className={searchClass}>
@@ -21,12 +13,11 @@ const MapFilterSearch = ({ startTransition, searchClass }) => {
         Search
       </label>
       <input
-        ref={ref}
         id="Search"
         className="form-control"
         type="search"
         placeholder="Search for map, tag, card, card reward, comma separated"
-        defaultValue={search}
+        value={search}
         onChange={setSearch}
       />
       <span className="small">tags:</span>

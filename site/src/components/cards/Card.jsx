@@ -4,8 +4,9 @@ import CardDetail from '../CardDetail'
 import MapName from '../MapName'
 import MonsterName from './MonsterName'
 import CardRateTooltip from '../CardRateTooltip.jsx'
+import { memo } from 'react'
 
-const Card = ({ card, voidstones }) => {
+const Card = ({ card }) => {
   const [ref, visible] = useLazy()
 
   let cardNotice = null
@@ -91,7 +92,7 @@ const Card = ({ card, voidstones }) => {
                   <span className="tooltip-tag-text">
                     <CardRateTooltip card={map.card} full={true} />
                   </span>
-                  <MapName map={map} voidstones={voidstones} cardList={true} />
+                  <MapName map={map} cardList={true} />
                 </span>
               </div>
             ))}
@@ -104,4 +105,4 @@ const Card = ({ card, voidstones }) => {
   )
 }
 
-export default Card
+export default memo(Card)

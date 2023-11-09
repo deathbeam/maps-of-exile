@@ -1,4 +1,5 @@
 import { wikiBase } from '../../data'
+import { memo } from 'react'
 
 const MonsterName = ({ monster }) => (
   <div className="d-lg-flex flex-row">
@@ -17,4 +18,4 @@ const MonsterName = ({ monster }) => (
   </div>
 )
 
-export default MonsterName
+export default memo(MonsterName)

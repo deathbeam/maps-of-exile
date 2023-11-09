@@ -1,13 +1,14 @@
 import 'reactflow/dist/base.css'
 import './Atlas.css'
 
-import { useCallback, useEffect, useMemo } from 'react'
+import { memo, useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
-import usePersistedState from '../../hooks/usePersistedState'
 import MapImage from '../MapImage'
 import { preparedGlobals } from '../../data'
 import { Link } from 'react-router-dom'
+import { useAtom, useAtomValue } from 'jotai'
+import state from '../../state'
 
 const scale = 3
 const offset = 6
@@ -93,11 +94,13 @@ function MapNode({ data }) {
   )
 }
 
-const Atlas = ({ maps, currentSearch, currentMap, voidstones }) => {
+const Atlas = ({ maps, currentMap }) => {
   const flow = useReactFlow()
-  const [atlasScore, setAtlasScore] = usePersistedState('atlasScore', false)
-  const [atlasIcons, setAtlasIcons] = usePersistedState('atlasIcons', true)
-  const [atlasLabels, setAtlasLabels] = usePersistedState('atlasLabels', true)
+  const [atlasScore, setAtlasScore] = useAtom(state.input.atlasScore)
+  const [atlasIcons, setAtlasIcons] = useAtom(state.input.atlasIcons)
+  const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
+  const parsedSearch = useAtomValue(state.parsedSearch)
+  const voidstones = useAtomValue(state.input.voidstones)
 
   const nodeTypes = useMemo(() => ({ background: BackgroundNode, map: MapNode }), [])
   const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
@@ -107,10 +110,10 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones }) => {
         .filter(m =>
           currentMap
             ? m.name === currentMap || m.connected.map(c => c.name).includes(currentMap)
-            : filter(currentSearch, m.search)
+            : filter(parsedSearch, m.search)
         )
         .map(m => m.name),
-    [connectedMaps, currentSearch, currentMap]
+    [connectedMaps, parsedSearch, currentMap]
   )
 
   const fitMatching = useCallback(
@@ -148,7 +151,7 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones }) => {
   )
 
   useEffect(() => {
-    setTimeout(() => fitMatching(), 150)
+    fitMatching()
   }, [fitMatching])
 
   return (
@@ -201,4 +204,4 @@ const Atlas = ({ maps, currentSearch, currentMap, voidstones }) => {
   )
 }
 
-export default Atlas
+export default memo(Atlas)

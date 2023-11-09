@@ -1,27 +1,33 @@
 import { memo } from 'react'
+import { useAtom } from 'jotai'
+import state from '../state.js'
 
-const Tags = ({ tags, currentSearch, addToInput }) => {
+const Tags = ({ tags }) => {
+  const [parsedSearch, updateSearch] = useAtom(state.parsedSearch)
+
   return tags.map(t => {
     const val = t.name
     const info = t.info
     let color = t.color ? t.color : 'secondary'
 
-    const searched = currentSearch && currentSearch.find(c => c.value === val)
+    const searched = parsedSearch.find(c => c.value === val)
     if (searched) {
       color = searched.neg ? 'danger' : 'success'
     }
 
-    const tagDisplay = addToInput ? (
+    const tagDisplay = (
       <button
         className={'btn btn-badge text-dark btn-' + color}
-        onClick={() => addToInput && addToInput(val, searched ? !searched.neg : false, false)}
+        onClick={() =>
+          updateSearch({
+            v: val,
+            neg: searched ? !searched.neg : false,
+            remove: false
+          })
+        }
       >
         {val} {info && <b>*</b>}
       </button>
-    ) : (
-      <span className={'badge text-dark bg-' + color}>
-        {val} {info && <b>*</b>}
-      </span>
     )
 
     return (
@@ -32,7 +38,7 @@ const Tags = ({ tags, currentSearch, addToInput }) => {
           {searched && (
             <button
               className={'btn btn-badge text-dark btn-warning'}
-              onClick={() => addToInput(val, searched.neg, true)}
+              onClick={() => updateSearch({ v: val, neg: searched.neg, remove: true })}
             >
               <i className="fa-solid fa-xmark" />
             </button>

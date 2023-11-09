@@ -5,21 +5,28 @@ import Navbar from '../components/Navbar'
 import { useMemo } from 'react'
 import Map from '../components/atlas/Map'
 import { useParams } from 'react-router-dom'
+import { useAtomValue } from 'jotai'
+import state from '../state'
 
-const AtlasRoute = ({ ratedMaps, inputs, addToInput, currentSearch, searchInput, setSearchInput, voidstonesInput }) => {
+const AtlasRoute = ({ startTransition }) => {
   const { currentMap } = useParams()
+  const ratedMaps = useAtomValue(state.ratedMaps)
   const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
-  const style = currentMap && {
-    backgroundImage:
-      'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (selectedMap.image || '') + ')',
-    backgroundSize: 'cover'
-  }
+  const style = useMemo(
+    () =>
+      selectedMap && {
+        backgroundImage:
+          'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (selectedMap.image || '') + ')',
+        backgroundSize: 'cover'
+      },
+    [selectedMap]
+  )
 
   return (
     <div className="row g-0 overflow-visible position-relative">
       <div className="col-lg-9 col-12">
         <ReactFlowProvider>
-          <Atlas maps={ratedMaps} currentSearch={currentSearch} currentMap={currentMap} voidstones={voidstonesInput} />
+          <Atlas maps={ratedMaps} currentMap={currentMap} />
         </ReactFlowProvider>
       </div>
       <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>
@@ -29,18 +36,7 @@ const AtlasRoute = ({ ratedMaps, inputs, addToInput, currentSearch, searchInput,
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back
             to <b>List</b> view.
           </p>
-          {currentMap ? (
-            <Map map={selectedMap} voidstones={voidstonesInput} />
-          ) : (
-            <MapFilter
-              inputs={inputs}
-              sidebar={true}
-              addToInput={addToInput}
-              currentSearch={currentSearch}
-              searchInput={searchInput}
-              setSearchInput={setSearchInput}
-            />
-          )}
+          {currentMap ? <Map map={selectedMap} /> : <MapFilter sidebar={true} startTransition={startTransition} />}
         </div>
       </div>
     </div>

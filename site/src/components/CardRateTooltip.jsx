@@ -1,3 +1,5 @@
+import { memo } from 'react'
+
 const CardRateTooltip = ({ card, full }) => {
   if (!card.rate) {
     return null
@@ -27,4 +29,4 @@ const CardRateTooltip = ({ card, full }) => {
   )
 }
 
-export default CardRateTooltip
+export default memo(CardRateTooltip)

@@ -6,12 +6,16 @@ import Card from '../components/cards/Card'
 import { useAtomValue } from 'jotai'
 import state from '../state'
 import { useDeferredValue } from 'react'
+import Loader from '../components/Loader.jsx'
 
 const CardsRoute = () => {
   const filteredCards = useAtomValue(state.filteredCards)
+  const deferredCards = useDeferredValue(filteredCards)
+  const loading = filteredCards !== deferredCards
 
   return (
     <>
+      <Loader loading={loading} />
       <GoToTop />
       <Navbar />
       <div className="container-fluid p-2 row g-0">
@@ -25,7 +29,7 @@ const CardsRoute = () => {
           </tr>
         </thead>
         <tbody>
-          {useDeferredValue(filteredCards).map(c => (
+          {deferredCards.map(c => (
             <Card key={c.name} card={c} />
           ))}
         </tbody>

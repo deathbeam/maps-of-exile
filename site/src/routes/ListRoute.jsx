@@ -6,12 +6,16 @@ import Map from '../components/list/Map'
 import { useAtomValue } from 'jotai'
 import state from '../state.js'
 import { useDeferredValue } from 'react'
+import Loader from '../components/Loader.jsx'
 
 const ListRoute = () => {
   const filteredMaps = useAtomValue(state.filteredMaps)
+  const deferredMaps = useDeferredValue(filteredMaps)
+  const loading = filteredMaps !== deferredMaps
 
   return (
     <>
+      <Loader loading={loading} />
       <GoToTop />
       <Navbar />
       <div className="container-fluid p-2 row g-0">
@@ -117,7 +121,7 @@ const ListRoute = () => {
           </tr>
         </thead>
         <tbody>
-          {useDeferredValue(filteredMaps).map(m => (
+          {deferredMaps.map(m => (
             <Map key={m.name} map={m} />
           ))}
         </tbody>

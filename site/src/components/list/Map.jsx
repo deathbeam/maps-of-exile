@@ -38,7 +38,7 @@ const Map = ({ map }) => {
             <Rating rating={map.rating.density} tooltip={map.info.density} />
           </td>
           <td className="text-center d-none d-md-table-cell">
-            <MapBoss ids={map.boss_names} rating={map.rating.boss} tooltip={map.info.boss} />
+            <MapBoss names={map.boss_names} rating={map.rating.boss} tooltip={map.info.boss} />
           </td>
           <td>
             <MapConnected connected={map.connected} />

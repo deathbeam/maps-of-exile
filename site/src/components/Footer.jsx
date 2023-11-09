@@ -1,5 +1,6 @@
 import './Footer.css'
 import { githubRepo, mfAcademyInvite, preparedGlobals } from '../data'
+import { memo } from 'react'
 
 const Footer = () => (
   <div className="container-fluid p-4 text-end footer">
@@ -56,4 +57,4 @@ const Footer = () => (
   </div>
 )
 
-export default Footer
+export default memo(Footer)

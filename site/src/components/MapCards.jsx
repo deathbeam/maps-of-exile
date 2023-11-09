@@ -1,5 +1,5 @@
 import './MapCards.css'
-import { useMemo } from 'react'
+import { memo, useMemo } from 'react'
 import CardRateTooltip from './CardRateTooltip'
 import MapCard from './MapCard'
 
@@ -38,4 +38,4 @@ const MapCards = ({ cards, sidebar, tooltipTop }) => {
   )
 }
 
-export default MapCards
+export default memo(MapCards)

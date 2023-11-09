@@ -4,8 +4,9 @@ import MapBoss from '../MapBoss'
 import MapConnected from './MapConnected'
 import MapCards from '../MapCards'
 import useLazy from '../../hooks/useLazy'
+import { memo } from 'react'
 
-const Map = ({ map, voidstones }) => {
+const Map = ({ map }) => {
   const [ref, visible] = useLazy()
 
   return (
@@ -18,7 +19,7 @@ const Map = ({ map, voidstones }) => {
       className="map-image lazy-bg"
     >
       <td>
-        <MapName map={map} voidstones={voidstones} />
+        <MapName map={map} />
         <div className="d-md-none mt-2">
           <Rating rating={map.rating.layout} label="Layout" />
           <Rating rating={map.rating.density} label="Density" />
@@ -56,4 +57,4 @@ const Map = ({ map, voidstones }) => {
   )
 }
 
-export default Map
+export default memo(Map)

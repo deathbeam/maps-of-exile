@@ -1,6 +1,7 @@
 import { wikiBase } from '../data'
 import Rating from './Rating'
 import { cardBadge, priceImage } from '../common'
+import { memo } from 'react'
 
 const CardDetail = ({ card }) => {
   const badgeClass = cardBadge(card, 10)
@@ -72,4 +73,4 @@ const CardDetail = ({ card }) => {
   )
 }
 
-export default CardDetail
+export default memo(CardDetail)

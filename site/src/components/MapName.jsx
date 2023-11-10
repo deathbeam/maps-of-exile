@@ -2,7 +2,7 @@ import Tags from './Tags'
 import { mapLevel, mapLevelToTier, tierColor } from '../common'
 import Rating from './Rating'
 import MapImage from './MapImage'
-import { wikiBase } from '../data'
+import { wikiBase } from '../constants'
 import { Link } from 'react-router-dom'
 import { memo } from 'react'
 

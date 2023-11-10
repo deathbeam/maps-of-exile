@@ -6,7 +6,7 @@ import Card from '../components/cards/Card'
 import { useAtomValue } from 'jotai'
 import state from '../state'
 import { useDeferredValue } from 'react'
-import Loader from '../components/Loader.jsx'
+import Loader from '../components/Loader'
 
 const CardsRoute = () => {
   const filteredCards = useAtomValue(state.filteredCards)

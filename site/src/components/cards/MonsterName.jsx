@@ -1,4 +1,4 @@
-import { wikiBase } from '../../data'
+import { wikiBase } from '../../constants'
 import { memo } from 'react'
 
 const MonsterName = ({ monster }) => (

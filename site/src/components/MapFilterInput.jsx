@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
-import { copyToClipboard } from '../common.js'
+import { copyToClipboard } from '../common'
 import SelectSearch from 'react-select-search'
 
 const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {

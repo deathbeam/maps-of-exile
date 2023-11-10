@@ -1,4 +1,4 @@
-import { wikiBase } from '../data'
+import { wikiBase } from '../constants'
 import Rating from './Rating'
 import { cardBadge, priceImage } from '../common'
 import { memo } from 'react'

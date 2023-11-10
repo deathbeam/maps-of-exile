@@ -1,5 +1,5 @@
 import './Footer.css'
-import { githubRepo, mfAcademyInvite } from '../data'
+import { githubRepo, mfAcademyInvite } from '../constants'
 import { memo } from 'react'
 import { useAtomValue } from 'jotai'
 import state from '../state'

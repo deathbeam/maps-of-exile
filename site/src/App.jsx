@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import './App.css'
 
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
-import { issueTemplate } from './data'
+import { issueTemplate } from './constants'
 import ListRoute from './routes/ListRoute'
 import AtlasRoute from './routes/AtlasRoute'
 import CardsRoute from './routes/CardsRoute'

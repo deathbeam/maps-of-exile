@@ -6,7 +6,7 @@ import MapCards from '../MapCards'
 import useLazy from '../../hooks/useLazy'
 import { memo } from 'react'
 import { useAtomValue } from 'jotai'
-import state from '../../state.js'
+import state from '../../state'
 
 const Map = ({ map }) => {
   const [ref, visible] = useLazy()

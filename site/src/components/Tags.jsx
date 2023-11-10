@@ -1,6 +1,6 @@
 import { memo } from 'react'
 import { useAtom } from 'jotai'
-import state from '../state.js'
+import state from '../state'
 
 const Tags = ({ tags }) => {
   const [parsedSearch, updateSearch] = useAtom(state.parsedSearch)

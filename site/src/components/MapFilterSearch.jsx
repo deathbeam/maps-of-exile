@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import { useAtom, useAtomValue } from 'jotai'
-import state from '../state.js'
-import Tags from './Tags.jsx'
+import state from '../state'
+import Tags from './Tags'
 
 const MapFilterSearch = ({ searchClass }) => {
   const tags = useAtomValue(state.tags)

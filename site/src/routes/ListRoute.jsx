@@ -4,9 +4,9 @@ import Navbar from '../components/Navbar'
 import GoToTop from '../components/GoToTop'
 import Map from '../components/list/Map'
 import { useAtomValue } from 'jotai'
-import state from '../state.js'
+import state from '../state'
 import { useDeferredValue } from 'react'
-import Loader from '../components/Loader.jsx'
+import Loader from '../components/Loader'
 
 const ListRoute = () => {
   const filteredMaps = useAtomValue(state.filteredMaps)

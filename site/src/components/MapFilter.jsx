@@ -1,8 +1,8 @@
 import { atom, useAtomValue } from 'jotai'
-import state from '../state.js'
+import state from '../state'
 import { memo } from 'react'
-import MapFilterInput from './MapFilterInput.jsx'
-import MapFilterSearch from './MapFilterSearch.jsx'
+import MapFilterInput from './MapFilterInput'
+import MapFilterSearch from './MapFilterSearch'
 
 const filterInputs = atom(get => [
   {

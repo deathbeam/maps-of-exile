@@ -20,6 +20,129 @@ function pushTag(info, destination, source, key, name = null, color = null) {
   }
 }
 
+async function prepareMonsters() {
+  return (await import('./data/monsters.json')).default
+}
+
+async function prepareGlobals() {
+  const globals = (await import('./data/globals.json')).default
+  return {
+    ...globals,
+    lastUpdate: new Date(globals.lastUpdate).toLocaleString()
+  }
+}
+
+async function prepareCards() {
+  const cards = (await import('./data/cards.json')).default
+  return cards.map(card => {
+    return {
+      ...card,
+      art: cardArtBase + card.art + '.png'
+    }
+  })
+}
+
+async function prepareMaps(preparedMonsters, preparedCards) {
+  const maps = (await import('./data/maps.json')).default
+
+  return maps.map(map => {
+    const mapTags = []
+    pushTag(map.info, mapTags, map, 'type', null, 'info')
+    pushTag(map.info, mapTags, map, 'atlas', null, 'info')
+    pushTag(map.info, mapTags, map, 'pantheon', null, 'warning')
+
+    for (let key of Object.keys(map.tags)) {
+      pushTag(map.info, mapTags, map.tags, key)
+    }
+
+    const cards = []
+    for (let card of preparedCards) {
+      if (!card.drop) {
+        continue
+      }
+
+      if (card.drop.all_areas) {
+        cards.push({ ...card })
+      }
+
+      if (map.ids.some(id => card.drop.areas.includes(id))) {
+        cards.push({ ...card })
+      }
+
+      if (map.boss_ids && map.boss_ids.some(id => card.drop.monsters.includes(id))) {
+        cards.push({ ...card, boss: true })
+      }
+    }
+
+    let names = []
+
+    if (map.boss_ids) {
+      names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))].sort()
+      const namesFiltered = names.filter(n => !n.includes('Merveil'))
+      if (namesFiltered.length > 1) {
+        mapTags.push({ name: `${namesFiltered.length} bosses` })
+      }
+    }
+
+    const out = {
+      ...map,
+      boss_names: names,
+      image: map.image
+        ? '/img/layout/' +
+          map.name
+            .replace(' Map', '')
+            .toLowerCase()
+            .replace(/[^a-zA-Z0-9 ]/g, '')
+            .replaceAll(' ', '_') +
+          '.png'
+        : null,
+      name: map.name.replace(' Map', ''),
+      connected: (map.connected || [])
+        .map(c => c.replace(' Map', ''))
+        .map(c => {
+          const foundMap = maps.find(m => m.ids.includes(c))
+          return foundMap ? foundMap.name : c
+        }),
+      cards: cards,
+      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
+      icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png')
+    }
+
+    // Build search index
+    out.search = [
+      ...new Set([
+        out.name,
+        ...out.connected,
+        ...out.cards.map(c => c.name),
+        ...out.cards.map(c => c.reward).filter(c => !!c),
+        ...out.tags.map(t => t.name)
+      ])
+    ].map(v => v.trim().toLowerCase())
+    return out
+  })
+}
+
+async function prepareTags(preparedMaps) {
+  const preparedTags = []
+  const preparedTagsMap = new Map()
+  for (const item of preparedMaps
+    .flatMap(m => m.tags)
+    .map(t => ({
+      name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of'),
+      color: t.color
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))) {
+    if (!preparedTagsMap.has(item.name)) {
+      preparedTagsMap.set(item.name, true)
+      preparedTags.push({
+        name: item.name,
+        color: item.color
+      })
+    }
+  }
+  return preparedTags
+}
+
 function parseSearch(s) {
   return (s || '')
     .split(',')
@@ -268,7 +391,7 @@ function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, card
 
 const storedAtom = (name, def, data) => {
   const getInitialValue = () => {
-    if (data[name]) {
+    if (data && data[name]) {
       return parseValue(data[name])
     }
 
@@ -290,7 +413,9 @@ const storedAtom = (name, def, data) => {
       set(baseAtom, val)
       try {
         localStorage.setItem(name, JSON.stringify(val))
-        data[name] = val
+        if (data) {
+          data[name] = val
+        }
       } catch (e) {
         console.warn(e)
       }
@@ -299,7 +424,7 @@ const storedAtom = (name, def, data) => {
 }
 
 function createState() {
-  let data = {}
+  let data = null
   let dataEnabled = false
   if (window.location.hash && dataEnabled) {
     try {
@@ -310,133 +435,19 @@ function createState() {
     }
   }
 
-  const asyncMonsters = atom(async () => (await import('./data/monsters.json')).default)
+  const asyncMonsters = atom(prepareMonsters)
   const monsters = unwrap(asyncMonsters, prev => prev ?? [])
 
-  const asyncGlobals = atom(async () => {
-    const globals = (await import('./data/globals.json')).default
-    return {
-      ...globals,
-      lastUpdate: new Date(globals.lastUpdate).toLocaleString()
-    }
-  })
+  const asyncGlobals = atom(prepareGlobals)
   const globals = unwrap(asyncGlobals, prev => prev ?? {})
 
-  const asyncCards = atom(async () => {
-    const cards = (await import('./data/cards.json')).default
-    return cards.map(card => {
-      return {
-        ...card,
-        art: cardArtBase + card.art + '.png'
-      }
-    })
-  })
+  const asyncCards = atom(prepareCards)
   const cards = unwrap(asyncCards, prev => prev ?? [])
 
-  const asyncMaps = atom(async get => {
-    const maps = (await import('./data/maps.json')).default
-    const preparedCards = await get(asyncCards)
-    const preparedMonsters = await get(asyncMonsters)
-
-    return maps.map(map => {
-      const mapTags = []
-      pushTag(map.info, mapTags, map, 'type', null, 'info')
-      pushTag(map.info, mapTags, map, 'atlas', null, 'info')
-      pushTag(map.info, mapTags, map, 'pantheon', null, 'warning')
-
-      for (let key of Object.keys(map.tags)) {
-        pushTag(map.info, mapTags, map.tags, key)
-      }
-
-      const cards = []
-      for (let card of preparedCards) {
-        if (!card.drop) {
-          continue
-        }
-
-        if (card.drop.all_areas) {
-          cards.push({ ...card })
-        }
-
-        if (map.ids.some(id => card.drop.areas.includes(id))) {
-          cards.push({ ...card })
-        }
-
-        if (map.boss_ids && map.boss_ids.some(id => card.drop.monsters.includes(id))) {
-          cards.push({ ...card, boss: true })
-        }
-      }
-
-      let names = []
-
-      if (map.boss_ids) {
-        names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))].sort()
-        const namesFiltered = names.filter(n => !n.includes('Merveil'))
-        if (namesFiltered.length > 1) {
-          mapTags.push({ name: `${namesFiltered.length} bosses` })
-        }
-      }
-
-      const out = {
-        ...map,
-        boss_names: names,
-        image: map.image
-          ? '/img/layout/' +
-            map.name
-              .replace(' Map', '')
-              .toLowerCase()
-              .replace(/[^a-zA-Z0-9 ]/g, '')
-              .replaceAll(' ', '_') +
-            '.png'
-          : null,
-        name: map.name.replace(' Map', ''),
-        connected: (map.connected || [])
-          .map(c => c.replace(' Map', ''))
-          .map(c => {
-            const foundMap = maps.find(m => m.ids.includes(c))
-            return foundMap ? foundMap.name : c
-          }),
-        cards: cards,
-        tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-        icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png')
-      }
-
-      // Build search index
-      out.search = [
-        ...new Set([
-          out.name,
-          ...out.connected,
-          ...out.cards.map(c => c.name),
-          ...out.cards.map(c => c.reward).filter(c => !!c),
-          ...out.tags.map(t => t.name)
-        ])
-      ].map(v => v.trim().toLowerCase())
-      return out
-    })
-  })
+  const asyncMaps = atom(async get => await prepareMaps(await get(asyncMonsters), await get(asyncCards)))
   const maps = unwrap(asyncMaps, prev => prev ?? [])
 
-  const asyncTags = atom(async get => {
-    const preparedMaps = await get(asyncMaps)
-    const preparedTags = []
-    const preparedTagsMap = new Map()
-    for (const item of preparedMaps
-      .flatMap(m => m.tags)
-      .map(t => ({
-        name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of'),
-        color: t.color
-      }))
-      .sort((a, b) => a.name.localeCompare(b.name))) {
-      if (!preparedTagsMap.has(item.name)) {
-        preparedTagsMap.set(item.name, true)
-        preparedTags.push({
-          name: item.name,
-          color: item.color
-        })
-      }
-    }
-    return preparedTags
-  })
+  const asyncTags = atom(async get => await prepareTags(await get(asyncMaps)))
   const tags = unwrap(asyncTags, prev => prev ?? [])
 
   const input = {
@@ -462,10 +473,10 @@ function createState() {
   }
 
   const parsedSearch = atom(
-    get => parseSearch(get(input.search) || ''),
+    get => parseSearch(get(input.search)),
     (get, set, e) => {
       const { v, neg, remove } = e
-      let s = parseSearch(get(input.search) || '')
+      let s = parseSearch(get(input.search))
       if (remove) {
         s = s.filter(sv => sv.value !== v)
       } else {

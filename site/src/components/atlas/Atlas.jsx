@@ -93,27 +93,28 @@ function MapNode({ data }) {
   )
 }
 
-const Atlas = ({ maps, currentMap }) => {
+const Atlas = ({ selectedMap }) => {
   const flow = useReactFlow()
   const [atlasScore, setAtlasScore] = useAtom(state.input.atlasScore)
   const [atlasIcons, setAtlasIcons] = useAtom(state.input.atlasIcons)
   const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
+  const maps = useAtomValue(state.ratedMaps)
   const globals = useAtomValue(state.globals)
   const parsedSearch = useAtomValue(state.parsedSearch)
   const voidstones = useAtomValue(state.input.voidstones)
 
   const nodeTypes = useMemo(() => ({ background: BackgroundNode, map: MapNode }), [])
-  const connectedMaps = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
+  const mapsOnAtlas = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
   const matchingNodes = useMemo(
     () =>
-      connectedMaps
+      mapsOnAtlas
         .filter(m =>
-          currentMap
-            ? m.name === currentMap || m.connected.map(c => c.name).includes(currentMap)
+          selectedMap
+            ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
             : filter(parsedSearch, m.search)
         )
         .map(m => m.name),
-    [connectedMaps, parsedSearch, currentMap]
+    [mapsOnAtlas, parsedSearch, selectedMap]
   )
 
   const fitMatching = useCallback(
@@ -145,13 +146,13 @@ const Atlas = ({ maps, currentMap }) => {
           },
           zIndex: -1
         }
-      ].concat(connectedMaps.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
+      ].concat(mapsOnAtlas.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
       edges: deduplicate(
-        connectedMaps.flatMap(m => toLinks(m)),
+        mapsOnAtlas.flatMap(m => toLinks(m)),
         'id'
       )
     }),
-    [globals, connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
+    [globals, mapsOnAtlas, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
 
   return (

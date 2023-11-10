@@ -27,7 +27,7 @@ const AtlasRoute = () => {
     <div className="row g-0 overflow-visible position-relative">
       <div className="col-lg-9 col-12">
         <ReactFlowProvider>
-          <Atlas maps={ratedMaps} currentMap={currentMap} />
+          <Atlas selectedMap={selectedMap} />
         </ReactFlowProvider>
       </div>
       <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>

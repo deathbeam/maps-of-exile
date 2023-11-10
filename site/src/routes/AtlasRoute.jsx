@@ -37,7 +37,7 @@ const AtlasRoute = () => {
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back
             to <b>List</b> view.
           </p>
-          {currentMap ? <Map map={selectedMap} /> : <MapFilter sidebar={true} />}
+          {selectedMap ? <Map map={selectedMap} /> : <MapFilter sidebar={true} />}
         </div>
       </div>
     </div>

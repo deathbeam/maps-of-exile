@@ -124,6 +124,10 @@ const Atlas = ({ maps, currentMap }) => {
     [flow, matchingNodes]
   )
 
+  useEffect(() => {
+    setTimeout(fitMatching, 150)
+  }, [fitMatching])
+
   const data = useMemo(
     () => ({
       nodes: [
@@ -136,8 +140,8 @@ const Atlas = ({ maps, currentMap }) => {
           },
           data: {
             image: '/img/atlas.webp',
-            width: globals.atlas.width * scale,
-            height: globals.atlas.height * scale
+            width: globals && globals.atlas ? globals.atlas.width * scale : 0,
+            height: globals && globals.atlas ? globals.atlas.height * scale : 0
           },
           zIndex: -1
         }
@@ -149,10 +153,6 @@ const Atlas = ({ maps, currentMap }) => {
     }),
     [globals, connectedMaps, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
-
-  useEffect(() => {
-    fitMatching()
-  }, [fitMatching])
 
   return (
     <div

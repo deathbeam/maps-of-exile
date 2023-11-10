@@ -4,6 +4,7 @@ import { memo } from 'react'
 import SelectSearch from 'react-select-search'
 
 import { copyToClipboard } from '../common'
+import './MapFilterInput.css'
 
 const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
   const [value, setValue] = useAtom(input.def)

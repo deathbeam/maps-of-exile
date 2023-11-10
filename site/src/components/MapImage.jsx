@@ -1,6 +1,7 @@
-import './MapImage.css'
 import { memo } from 'react'
+
 import { mapLevelToTier } from '../common'
+import './MapImage.css'
 
 const MapImage = ({ icon, name, level = 0, type = 'map' }) => {
   if (type === 'act area') {

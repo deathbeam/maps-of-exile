@@ -1,5 +1,6 @@
-import Rating from './Rating'
 import { memo } from 'react'
+
+import Rating from './Rating'
 
 const MapBoss = ({ names, rating, tooltip, sidebar = false, label = '' }) => {
   const badge = <Rating rating={rating} sidebar={sidebar} label={label} />

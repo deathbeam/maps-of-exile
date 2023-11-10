@@ -1,7 +1,8 @@
-import { cardBadge, priceImage } from '../common'
-import CardRateTooltip from './CardRateTooltip'
-import CardDetail from './CardDetail'
 import { memo } from 'react'
+
+import { cardBadge, priceImage } from '../common'
+import CardDetail from './CardDetail'
+import CardRateTooltip from './CardRateTooltip'
 
 const MapCard = ({ card, tooltipTop }) => {
   const badgeClass = cardBadge(card, 10)

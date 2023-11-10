@@ -1,5 +1,6 @@
-import { ratingColor } from '../common'
 import { memo } from 'react'
+
+import { ratingColor } from '../common'
 
 const Rating = ({ rating, tooltip, sidebar = false, label = '', scale = 1 }) => {
   const badgeClass = `m-1 badge badge-fw text-dark bg-${ratingColor(rating, scale)}`

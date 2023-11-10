@@ -1,5 +1,6 @@
-import { wikiBase } from '../../constants'
 import { memo } from 'react'
+
+import { wikiBase } from '../../constants'
 
 const MonsterName = ({ monster }) => (
   <div className="d-lg-flex flex-row">

@@ -1,11 +1,12 @@
+import { useAtomValue } from 'jotai'
+import { useMemo } from 'react'
+import { useParams } from 'react-router-dom'
 import { ReactFlowProvider } from 'reactflow'
-import Atlas from '../components/atlas/Atlas'
+
 import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
-import { useMemo } from 'react'
+import Atlas from '../components/atlas/Atlas'
 import Map from '../components/atlas/Map'
-import { useParams } from 'react-router-dom'
-import { useAtomValue } from 'jotai'
 import state from '../state'
 
 const AtlasRoute = () => {

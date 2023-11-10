@@ -1,12 +1,13 @@
+import { useAtomValue } from 'jotai'
+import { memo } from 'react'
+
+import useLazy from '../../hooks/useLazy'
+import state from '../../state'
+import MapBoss from '../MapBoss'
+import MapCards from '../MapCards'
 import MapName from '../MapName'
 import Rating from '../Rating'
-import MapBoss from '../MapBoss'
 import MapConnected from './MapConnected'
-import MapCards from '../MapCards'
-import useLazy from '../../hooks/useLazy'
-import { memo } from 'react'
-import { useAtomValue } from 'jotai'
-import state from '../../state'
 
 const Map = ({ map }) => {
   const [ref, visible] = useLazy()

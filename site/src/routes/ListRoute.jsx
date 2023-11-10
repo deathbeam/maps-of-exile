@@ -1,12 +1,13 @@
-import MapFilter from '../components/MapFilter'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
-import GoToTop from '../components/GoToTop'
-import Map from '../components/list/Map'
 import { useAtomValue } from 'jotai'
-import state from '../state'
 import { useDeferredValue } from 'react'
+
+import Footer from '../components/Footer'
+import GoToTop from '../components/GoToTop'
 import Loader from '../components/Loader'
+import MapFilter from '../components/MapFilter'
+import Navbar from '../components/Navbar'
+import Map from '../components/list/Map'
+import state from '../state'
 
 const ListRoute = () => {
   const filteredMaps = useAtomValue(state.filteredMaps)

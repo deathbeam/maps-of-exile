@@ -1,7 +1,8 @@
-import { cardArtBase, defaultCardBaseline, mapIconBase } from './constants'
-import { calculateScore, filter, parseValue } from './common'
 import { atom } from 'jotai'
 import { RESET, unwrap } from 'jotai/utils'
+
+import { calculateScore, filter, parseValue } from './common'
+import { cardArtBase, defaultCardBaseline, mapIconBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]

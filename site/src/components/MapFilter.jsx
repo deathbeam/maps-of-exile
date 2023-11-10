@@ -1,6 +1,7 @@
 import { atom, useAtomValue } from 'jotai'
-import state from '../state'
 import { memo } from 'react'
+
+import state from '../state'
 import MapFilterInput from './MapFilterInput'
 import MapFilterSearch from './MapFilterSearch'
 

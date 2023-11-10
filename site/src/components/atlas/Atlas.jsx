@@ -1,13 +1,13 @@
-import 'reactflow/dist/base.css'
-import './Atlas.css'
-
-import { memo, useCallback, useEffect, useMemo } from 'react'
-import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
-import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
-import MapImage from '../MapImage'
-import { Link } from 'react-router-dom'
 import { useAtom, useAtomValue } from 'jotai'
+import { memo, useCallback, useEffect, useMemo } from 'react'
+import { Link } from 'react-router-dom'
+import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
+import 'reactflow/dist/base.css'
+
+import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
 import state from '../../state'
+import MapImage from '../MapImage'
+import './Atlas.css'
 
 const scale = 3
 const offset = 6

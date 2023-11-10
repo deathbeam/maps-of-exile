@@ -1,5 +1,6 @@
-import { memo } from 'react'
 import { useAtom } from 'jotai'
+import { memo } from 'react'
+
 import state from '../state'
 
 const Tags = ({ tags }) => {

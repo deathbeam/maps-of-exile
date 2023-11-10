@@ -1,5 +1,6 @@
-import { memo } from 'react'
 import { useAtom, useAtomValue } from 'jotai'
+import { memo } from 'react'
+
 import state from '../state'
 import Tags from './Tags'
 

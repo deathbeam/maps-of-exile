@@ -1,7 +1,8 @@
+import { memo } from 'react'
+
+import { cardBadge, priceImage } from '../common'
 import { wikiBase } from '../constants'
 import Rating from './Rating'
-import { cardBadge, priceImage } from '../common'
-import { memo } from 'react'
 
 const CardDetail = ({ card }) => {
   const badgeClass = cardBadge(card, 10)

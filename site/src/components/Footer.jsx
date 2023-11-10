@@ -1,8 +1,9 @@
-import './Footer.css'
-import { githubRepo, mfAcademyInvite } from '../constants'
-import { memo } from 'react'
 import { useAtomValue } from 'jotai'
+import { memo } from 'react'
+
+import { githubRepo, mfAcademyInvite } from '../constants'
 import state from '../state'
+import './Footer.css'
 
 const Footer = () => {
   const globals = useAtomValue(state.globals)

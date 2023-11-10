@@ -1,12 +1,13 @@
-import useLazy from '../../hooks/useLazy'
+import { useAtomValue } from 'jotai'
+import { memo } from 'react'
+
 import { divcordDiscord, wikiBase } from '../../constants'
+import useLazy from '../../hooks/useLazy'
+import state from '../../state'
 import CardDetail from '../CardDetail'
+import CardRateTooltip from '../CardRateTooltip'
 import MapName from '../MapName'
 import MonsterName from './MonsterName'
-import CardRateTooltip from '../CardRateTooltip'
-import { memo } from 'react'
-import { useAtomValue } from 'jotai'
-import state from '../../state'
 
 const Card = ({ card }) => {
   const [ref, visible] = useLazy()

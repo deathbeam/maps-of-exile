@@ -22,9 +22,11 @@
     "reactflow": "^11.9.4"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "@vitejs/plugin-react": "^4.0.3",
     "browserslist-to-esbuild": "^1.2.0",
     "eslint": "^8.45.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",

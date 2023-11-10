@@ -1,8 +1,9 @@
-import { memo } from 'react'
 import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
-import { copyToClipboard } from '../common'
+import { memo } from 'react'
 import SelectSearch from 'react-select-search'
+
+import { copyToClipboard } from '../common'
 
 const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
   const [value, setValue] = useAtom(input.def)

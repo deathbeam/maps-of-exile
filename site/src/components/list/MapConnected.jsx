@@ -1,5 +1,6 @@
-import { ratingColor, scrollToElement } from '../../common'
 import { memo } from 'react'
+
+import { ratingColor, scrollToElement } from '../../common'
 
 const MapConnected = ({ connected, onClick = scrollToElement }) => {
   return connected.map(m => (

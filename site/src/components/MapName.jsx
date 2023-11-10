@@ -1,10 +1,11 @@
-import Tags from './Tags'
-import { mapLevel, mapLevelToTier, tierColor } from '../common'
-import Rating from './Rating'
-import MapImage from './MapImage'
-import { wikiBase } from '../constants'
-import { Link } from 'react-router-dom'
 import { memo } from 'react'
+import { Link } from 'react-router-dom'
+
+import { mapLevel, mapLevelToTier, tierColor } from '../common'
+import { wikiBase } from '../constants'
+import MapImage from './MapImage'
+import Rating from './Rating'
+import Tags from './Tags'
 
 const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`

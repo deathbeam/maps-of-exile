@@ -1,7 +1,8 @@
-import './MapCards.css'
 import { memo } from 'react'
+
 import CardRateTooltip from './CardRateTooltip'
 import MapCard from './MapCard'
+import './MapCards.css'
 
 const MapCards = ({ cards, sidebar, tooltipTop }) => {
   const total = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100

@@ -1,13 +1,13 @@
-import 'bootstrap/dist/css/bootstrap.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
-import './App.css'
-
+import 'bootstrap/dist/css/bootstrap.css'
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'
+
+import './App.css'
+import ScrollToTop from './components/ScrollToTop'
 import { issueTemplate } from './constants'
-import ListRoute from './routes/ListRoute'
 import AtlasRoute from './routes/AtlasRoute'
 import CardsRoute from './routes/CardsRoute'
-import ScrollToTop from './components/ScrollToTop'
+import ListRoute from './routes/ListRoute'
 
 function App() {
   return (

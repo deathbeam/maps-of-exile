@@ -1,8 +1,9 @@
+import { memo } from 'react'
+
+import MapBoss from '../MapBoss'
+import MapCards from '../MapCards'
 import MapName from '../MapName'
 import Rating from '../Rating'
-import MapCards from '../MapCards'
-import MapBoss from '../MapBoss'
-import { memo } from 'react'
 
 const Map = ({ map, voidstones }) => (
   <>

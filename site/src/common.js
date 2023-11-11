@@ -111,9 +111,9 @@ export function priceImage(price) {
 
 export function cardBadge(card, scale = 1) {
   let badgeClass
-  if (card.score >= 8 * scale) {
+  if (card.score >= 6 * scale) {
     badgeClass = 'bg-light text-dark'
-  } else if (card.score >= 5 * scale) {
+  } else if (card.score >= 4 * scale) {
     badgeClass = 'bg-primary text-light'
   } else if (card.score >= 2 * scale) {
     badgeClass = 'bg-info text-dark'

@@ -111,10 +111,10 @@ const ListRoute = () => {
                   with your observed results.
                   <hr />
                   <span className="badge bg-secondary text-dark m-1">not very good</span>
-                  <span className="badge bg-dark border border-1 border-info text-info m-1">&gt;=0.5 decent</span>
-                  <span className="badge bg-info text-dark m-1">&gt;=2 good</span>
-                  <span className="badge bg-primary text-light m-1">&gt;=5 great</span>
-                  <span className="badge bg-light text-dark m-1">&gt;=8 amazing</span>
+                  <span className="badge bg-dark border border-1 border-info text-info m-1">&gt;=1 decent</span>
+                  <span className="badge bg-info text-dark m-1">&gt;=20 good</span>
+                  <span className="badge bg-primary text-light m-1">&gt;=40 great</span>
+                  <span className="badge bg-light text-dark m-1">&gt;=60 amazing</span>
                 </span>
                 Cards
               </span>

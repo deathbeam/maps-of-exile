@@ -13,7 +13,6 @@ Simplest way to add new map even if you are not knowledgeable about inner workin
 
 [/data/cards.json](/data/cards.json) contains extra card metadata  
 [/data/maps.json](/data/maps.json) contains extra map metadata  
-[/site/public/layout](/site/public/img/layout/) contains layout images  
 
 Full format for map metadata is:
 

@@ -117,7 +117,7 @@ export function cardBadge(card, scale = 1) {
     badgeClass = 'bg-primary text-light'
   } else if (card.score >= 2 * scale) {
     badgeClass = 'bg-info text-dark'
-  } else if (card.score >= 0.5 * scale) {
+  } else if (card.score >= 0.1 * scale) {
     badgeClass = 'bg-dark text-info border border-1 border-info'
   } else {
     badgeClass = 'bg-secondary text-dark'

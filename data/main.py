@@ -1,5 +1,6 @@
 import json
 import math
+import mimetypes
 import os
 import re
 import sys
@@ -22,6 +23,22 @@ class DecimalEncoder(json.JSONEncoder):
         if isinstance(o, Decimal):
             return str(o)
         return super(DecimalEncoder, self).default(o)
+
+
+def get_image_path(directory, name, ext):
+    name = (
+        re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
+    )
+    return f"/img/{directory}/{name}{ext}"
+
+
+def save_image(directory, name, res):
+    content_type = res.headers["content-type"]
+    ext = mimetypes.guess_extension(content_type)
+    path = get_image_path(directory, name, ext)
+    with open(f"{dir_path}/../site/public{path}", "wb") as f:
+        f.write(res.content)
+    return path
 
 
 def find_shortest_substring(entry, entries):
@@ -539,7 +556,7 @@ def get_maps(key, config):
             "ids": [id],
             "levels": [level],
             "name": name,
-            "poedb": "https://poedb.tw/us/"
+            "poedb": config["poedb"]["base"]
             + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
             "type": map_type,
         }
@@ -615,13 +632,29 @@ def get_maps(key, config):
     return out
 
 
-def get_map_data(map_data, extra_map_data):
+def get_map_data(map_data, extra_map_data, config):
     url = map_data.get("poedb")
     map_data.pop("poedb")
 
+    s = requests.Session()
+
+    # Wiki image
+    print(f"Getting wiki image data for {map_data['name']}")
+    image_path = (
+        config["wiki"]["filepath"]
+        + map_data["name"].replace(" ", "_")
+        + "_area_screenshot"
+    )
+    r = s.get(image_path + ".png", allow_redirects=False)
+    if r.status_code != 301:
+        r = s.get(image_path + ".jpg", allow_redirects=False)
+    if r.status_code == 301:
+        loc = r.headers["location"]
+        print(f"Found map image {loc}")
+        map_data["image"] = loc
+
     # PoeDB map metadata
     print(f"Getting map data for {map_data['name']} from url {url}")
-    s = requests.Session()
     r = s.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
     tabs = soup.find("div", class_="tab-content")
@@ -667,15 +700,14 @@ def get_map_data(map_data, extra_map_data):
 
     if "icon" not in map_data:
         val = soup.find(id="MapDeviceRecipes")
-        # TODO: Maybe in future re-enable?
-        # if not val:
-        #     val = soup.find("div", class_="Stats")
         if val:
             img_tags = val.find_all("img")
             if img_tags:
                 icon = img_tags[0]["src"]
-                print(f"Found icon {icon}")
-                map_data["icon"] = icon
+                r = s.get(icon)
+                if r.ok:
+                    print(f"Found map icon {icon}")
+                    map_data["icon"] = save_image("icon", map_data["name"], r)
 
     if map_data.get("atlas"):
         level = map_data["levels"][0]
@@ -702,7 +734,6 @@ def get_maps_template(maps, existing_maps, overwrite=False):
     for map in maps:
         new_map = {
             "name": map["name"],
-            "image": False,
             "tags": {
                 "league_mechanics": None,
                 "delirium_mirror": None,
@@ -941,7 +972,7 @@ def main():
             )
 
         # Write detailed map data
-        maps = list(map(lambda x: get_map_data(x, map_extra), maps))
+        maps = list(map(lambda x: get_map_data(x, map_extra, config), maps))
         with open(dir_path + "/../site/src/data/maps.json", "w") as f:
             f.write(
                 json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True)

@@ -34,11 +34,12 @@ data:
 
   # Links
   poedb:
-    base: https://poedb.tw
+    base: https://poedb.tw/us/
     list: https://poedb.tw/us/Maps
     constants: https://poedb.tw/us/GameConstants
   wiki:
     base: https://www.poewiki.net/wiki/
+    filepath: https://www.poewiki.net/wiki/Special:Redirect/file/
     api: https://www.poewiki.net/w/api.php
   prices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
   ninja: https://poe.ninja/challenge/divination-cards/

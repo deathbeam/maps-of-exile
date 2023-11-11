@@ -87,15 +87,6 @@ async function prepareMaps(preparedMonsters, preparedCards) {
     const out = {
       ...map,
       boss_names: names,
-      image: map.image
-        ? '/img/layout/' +
-          map.name
-            .replace(' Map', '')
-            .toLowerCase()
-            .replace(/[^a-zA-Z0-9 ]/g, '')
-            .replaceAll(' ', '_') +
-          '.png'
-        : null,
       name: map.name.replace(' Map', ''),
       connected: (map.connected || [])
         .map(c => c.replace(' Map', ''))
@@ -105,7 +96,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
         }),
       cards: cards,
       tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-      icon: map.icon && (map.icon.startsWith('https') ? map.icon : mapIconBase + map.icon + '.png')
+      icon: map.icon && (map.icon.startsWith('/img') ? map.icon : mapIconBase + map.icon + '.png')
     }
 
     // Build search index

@@ -20,7 +20,6 @@ Full format for map metadata is:
 ```json
 {
   "name": "Map name",
-  "image": false,
   "tags": {
     "league_mechanics": false,
     "delirium_mirror": false,
@@ -80,6 +79,9 @@ https://www.poewiki.net/wiki/House_of_Mirrors (example of **House of Mirrors**)
 
 **Monster data** from **PoeWiki** (used for getting monster names for monster IDs):  
 https://www.poewiki.net/wiki/Monster:Metadata/Monsters/Atziri/Atziri2 (example of **Atziri**)
+
+**Layout images** from **PoeWiki** (a lot of them filled by me and other contributors here):
+https://www.poewiki.net/wiki/File:Cemetery_Map_area_screenshot.jpg
 
 **Map metadata** from **PoeDB** (used for retrieving area art, area tags and atlas data like atlas position, connected maps, atlas map area levels):  
 https://poedb.tw/us/Maps#MapsList  

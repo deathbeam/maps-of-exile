@@ -46,6 +46,15 @@ async function prepareMaps(preparedMonsters, preparedCards) {
   const maps = (await import('./data/maps.json')).default
 
   return maps.map(map => {
+    let icon = map.icon
+    if (map.type === 'act area') {
+      icon = '/img/act.webp'
+    } else if (map.name.startsWith('Trial of ')) {
+      icon = '/img/labyrinth.webp'
+    } else if (map.icon && !map.icon.startsWith('/img')) {
+      icon = mapIconBase + map.icon + '.png'
+    }
+
     const mapTags = []
     pushTag(map.info, mapTags, map, 'type', null, 'info')
     pushTag(map.info, mapTags, map, 'atlas', null, 'info')
@@ -53,6 +62,22 @@ async function prepareMaps(preparedMonsters, preparedCards) {
 
     for (let key of Object.keys(map.tags)) {
       pushTag(map.info, mapTags, map.tags, key)
+    }
+
+    if (import.meta.env.DEV) {
+      if (!map.image) {
+        mapTags.push({
+          name: 'missing image',
+          color: 'danger'
+        })
+      }
+
+      if (!icon) {
+        mapTags.push({
+          name: 'missing icon',
+          color: 'danger'
+        })
+      }
     }
 
     const cards = []
@@ -88,6 +113,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
       ...map,
       boss_names: names,
       name: map.name.replace(' Map', ''),
+      icon: icon,
       wiki: wikiBase + map.name.replaceAll(' ', '_'),
       connected: (map.connected || [])
         .map(c => c.replace(' Map', ''))
@@ -96,8 +122,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
           return foundMap ? foundMap.name : c
         }),
       cards: cards,
-      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)),
-      icon: map.icon && (map.icon.startsWith('/img') ? map.icon : mapIconBase + map.icon + '.png')
+      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
     }
 
     // Build search index

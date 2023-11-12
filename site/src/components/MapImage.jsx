@@ -3,15 +3,7 @@ import { memo } from 'react'
 import { mapLevelToTier } from '../common'
 import './MapImage.css'
 
-const MapImage = ({ icon, name, level = 0, type = 'map' }) => {
-  if (type === 'act area') {
-    icon = '/img/act.webp'
-  }
-
-  if (name.startsWith('Trial of ')) {
-    icon = '/img/labyrinth.webp'
-  }
-
+const MapImage = ({ icon, level = 0, type = 'map' }) => {
   if (!icon) {
     return null
   }

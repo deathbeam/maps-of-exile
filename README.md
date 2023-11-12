@@ -66,10 +66,6 @@ https://docs.google.com/spreadsheets/d/10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIl
 
 ### Websites/APIs
 
-**Card prices** from **PoeNinja** (used for assigning card prices + getting card data like art, stack size and rewards):  
-https://poe.ninja/challenge/divination-cards  
-https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
-
 **Area data** from **PoeWiki** (used for listing all maps and areas and grabbing area levels and area bosses):  
 https://www.poewiki.net/wiki/Area:MapAtziri2 (example of **Alluring Abyss**)
 
@@ -81,6 +77,10 @@ https://www.poewiki.net/wiki/Monster:Metadata/Monsters/Atziri/Atziri2 (example o
 
 **Layout images** from **PoeWiki** (a lot of them filled by me and other contributors here):
 https://www.poewiki.net/wiki/File:Cemetery_Map_area_screenshot.jpg
+
+**Card prices** from **PoeNinja** (used for assigning card prices + getting card data like art, stack size and rewards):  
+https://poe.ninja/challenge/divination-cards  
+https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
 
 **Map metadata** from **PoeDB** (used for retrieving area art, area tags and atlas data like atlas position, connected maps, atlas map area levels):  
 https://poedb.tw/us/Maps#MapsList  
@@ -96,27 +96,25 @@ The site is split to 2 parts, data generator and then the actual site.
 
 ### Data generator ([/data](/data))
 
-First, it grabs all card price data from Poe ninja. This builds the initial card list.  
+First, it grabs all cards from Poe Wiki (contains drop area ids, drop monster ids, drop level requirements). This builds the initial card list.
 
-Then it grabs card weight data from card weight spreadsheet and merges this data with poe.ninja card data.  
+Then, it grabs all card price data from Poe ninja and merges this data with card list.
+
+Then it grabs card weight data from card weight spreadsheet and merges this data with card list.  
 
 Then it grabs data from stacked deck spreadsheet to get weights for newer cards missing from card weight spreadsheet and calculates weight for new cards based on common denominator (in this case Patient card which is present in both card weight spreadsheet and stacked deck spreadsheet)  
 
-Then it grabs data from wiki for cards (drop area ids, drop monster ids, drop level requirements).  
-
 This card list with card prices, card metadata and card weights is stored to be used in site as .json.  
 
-Then in grabs list of all maps from PoeDB. 
+Then in grabs list of all areas from Poe Wiki (this contains area ids, area monsters, area levels).
 
-Then it grabs extra card metadata from wiki for maps (map id, map boss ids) for pairing with wiki card metadata.  
+Then it grabs extra map metadata from PoeDB (atlas position, map connections, pantheon, up-to-date area levels) and merges this data with map list.
 
 Then it grabs map density from spreadsheet (in raw mob count) and merges the data with map list  
 
 Then it grabs map ratings from spreadsheet (layout, density, boss) and merges the data with map list (it will avoid setting density on maps that already have density set, e.g density coming from exact mob count)  
 
 Then it grabs map metadata from spreadsheet (boss info, some misc tags like outdoors, linear etc) and merges the data with map list  
-
-Then it iterates every map and grabs extra data from poedb (monster level, connected maps, atlas map position, pantheon, tags)  
 
 This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.  
 

@@ -17,6 +17,7 @@ export default function atomWithHash() {
   const derivedAtom = atom(
     get =>
       get(valAtom)
+        .replaceAll('%20', ' ')
         .split('/')
         .filter(l => l),
     (get, set, v) => {

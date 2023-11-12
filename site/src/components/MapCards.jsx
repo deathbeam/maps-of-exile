@@ -9,8 +9,8 @@ const MapCards = ({ cards, sidebar, tooltipTop }) => {
 
   return (
     <div className={sidebar ? '' : 'd-lg-flex flex-row'}>
-      <div className="m-1 map-card-price">
-        <span className="tooltip-tag tooltip-tag-left">
+      <div className="map-card-price">
+        <span className="tooltip-tag tooltip-tag-left w-100">
           <span className="tooltip-tag-text">
             {cards
               .filter(c => c.value > 0)
@@ -20,7 +20,9 @@ const MapCards = ({ cards, sidebar, tooltipTop }) => {
           </span>
           {sidebar ? (
             <>
-              <b>{total}</b> <img src="/img/chaos.png" alt="" width="16" className="me-1" /> per map
+              <div className="ms-1">
+                <b>{total}</b> <img src="/img/chaos.png" alt="" width="16" className="me-1" /> per map
+              </div>
               <hr />
             </>
           ) : (

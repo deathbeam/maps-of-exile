@@ -12,7 +12,11 @@ const Map = ({ map }) => {
 
   return (
     <>
-      {map.image && <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />}
+      {map.image && (
+        <a href={map.image} target="_blank" rel="noreferrer">
+          <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />{' '}
+        </a>
+      )}
       <MapName map={map} voidstones={voidstones} sidebar={true} />
       <hr />
       <Rating rating={map.score} scale={10} label="Total" />

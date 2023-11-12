@@ -79,12 +79,7 @@ function MapNode({ data }) {
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
       <a href={`/#/atlas/${map.name}`}>
         {!!atlasIcons && (
-          <MapImage
-            icon={map.icon}
-            name={map.name}
-            type={map.type}
-            level={mapLevel(map.levels, true, data.voidstones)}
-          />
+          <MapImage icon={map.icon} level={mapLevel(map.levels, true, data.voidstones)} type={map.type} />
         )}
         {!!atlasLabels && <button className={buttonClass}>{label}</button>}
       </a>

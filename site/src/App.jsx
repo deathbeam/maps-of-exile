@@ -27,7 +27,7 @@ function App() {
     <>
       <ScrollToTop />
       <a
-        className="btn btn-primary position-fixed top-0 start-0 m-2 on-top"
+        className="d-none d-md-block btn btn-primary position-fixed top-0 start-0 m-2 on-top"
         href={issueTemplate}
         target="_blank"
         rel="noreferrer"

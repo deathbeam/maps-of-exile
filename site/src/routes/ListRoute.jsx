@@ -97,7 +97,7 @@ const ListRoute = () => {
                 Boss
               </span>
             </th>
-            <th>
+            <th className="d-none d-md-table-cell">
               <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
                 <span className="tooltip-tag-text">Maps adjacent to this map on atlas with score on left.</span>
                 Connected

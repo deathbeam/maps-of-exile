@@ -11,7 +11,7 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const name = (
     <>
       {!sidebar && map.atlas && (
-        <a href={`/#/atlas/${map.name}`} className="text-primary me-2">
+        <a href={`/#/atlas/${map.name}`} className="d-none d-md-inline text-primary me-2">
           <i className="fa-solid fa-fw fa-globe" />
         </a>
       )}
@@ -50,9 +50,7 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   }
 
   const tags = <Tags tags={mapTags} />
-  const icon = (
-    <MapImage icon={map.icon} name={map.name} type={map.type} level={mapLevel(map.levels, map.atlas, voidstones)} />
-  )
+  const icon = <MapImage icon={map.icon} level={mapLevel(map.levels, map.atlas, voidstones)} type={map.type} />
   const score = !sidebar && <Rating rating={map.score} scale={10} />
 
   let tiers

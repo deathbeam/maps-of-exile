@@ -2,7 +2,7 @@ import { atom } from 'jotai'
 import { RESET, unwrap } from 'jotai/utils'
 
 import { calculateScore, filter, parseValue } from './common'
-import { cardArtBase, defaultCardBaseline, mapIconBase } from './constants'
+import { cardArtBase, defaultCardBaseline, mapIconBase, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]
@@ -88,6 +88,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
       ...map,
       boss_names: names,
       name: map.name.replace(' Map', ''),
+      wiki: wikiBase + map.name.replaceAll(' ', '_'),
       connected: (map.connected || [])
         .map(c => c.replace(' Map', ''))
         .map(c => {

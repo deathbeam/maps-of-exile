@@ -2,14 +2,12 @@ import { memo } from 'react'
 import { Link } from 'react-router-dom'
 
 import { mapLevel, mapLevelToTier, tierColor } from '../common'
-import { wikiBase } from '../constants'
 import MapImage from './MapImage'
 import Rating from './Rating'
 import Tags from './Tags'
 
 const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`
-  const wikiLink = wikiBase + map.name.replaceAll(' ', '_')
 
   const name = (
     <>
@@ -18,7 +16,7 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
           <i className="fa-solid fa-fw fa-globe" />
         </Link>
       )}
-      <a href={wikiLink} target="_blank" rel="noreferrer" className={color}>
+      <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
         {map.name}
       </a>
     </>

@@ -381,7 +381,7 @@ function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, card
     .sort((a, b) => b.score - a.score)
 }
 
-const storedAtom = (name, def, data) => {
+const atomWithStore = (name, def, data) => {
   const getInitialValue = () => {
     if (data && data[name]) {
       return parseValue(data[name])
@@ -415,6 +415,32 @@ const storedAtom = (name, def, data) => {
   )
 }
 
+const atomWithHash = () => {
+  const valAtom = atom(window.location.hash.slice(1))
+  valAtom.onMount = set => {
+    const callback = () => {
+      set(window.location.hash.slice(1))
+    }
+
+    window.addEventListener('hashchange', callback)
+    return () => {
+      window.removeEventListener('hashchange', callback)
+    }
+  }
+
+  return atom(
+    get =>
+      get(valAtom)
+        .split('/')
+        .filter(l => l),
+    (get, set, v) => {
+      let val = v === RESET ? '' : v
+      set(valAtom, v)
+      window.location.hash = val.toString()
+    }
+  )
+}
+
 function createState() {
   let data = null
   let dataEnabled = false
@@ -426,6 +452,8 @@ function createState() {
       data = {}
     }
   }
+
+  const location = atomWithHash()
 
   const asyncMonsters = atom(prepareMonsters)
   const monsters = unwrap(asyncMonsters, prev => prev ?? [])
@@ -443,25 +471,25 @@ function createState() {
   const tags = unwrap(asyncTags, prev => prev ?? [])
 
   const input = {
-    search: storedAtom('searchInput', '', data),
+    search: atomWithStore('searchInput', '', data),
 
-    voidstones: storedAtom('voidstonesInput', 0, data),
-    cardDisplay: storedAtom('cardDisplayInput', 'drop', data),
-    mapDisplay: storedAtom('mapDisplayInput', 'atlas+unique+special', data),
+    voidstones: atomWithStore('voidstonesInput', 0, data),
+    cardDisplay: atomWithStore('cardDisplayInput', 'drop', data),
+    mapDisplay: atomWithStore('mapDisplayInput', 'atlas+unique+special', data),
 
-    layout: storedAtom('layoutInput', 3, data),
-    density: storedAtom('densityInput', 2, data),
-    boss: storedAtom('bossInput', 1, data),
-    card: storedAtom('cardInput', 2, data),
-    cardBaseline: storedAtom('cardBaselineInput', defaultCardBaseline, data),
-    cardBaselineNumber: storedAtom('cardBaselineNumberInput', 1, data),
-    cardMinPrice: storedAtom('cardMinPriceInput', 10, data),
-    cardPriceSource: storedAtom('cardPriceSourceInput', 'league', data),
-    cardValueSource: storedAtom('cardValueSourceInput', 'map', data),
+    layout: atomWithStore('layoutInput', 3, data),
+    density: atomWithStore('densityInput', 2, data),
+    boss: atomWithStore('bossInput', 1, data),
+    card: atomWithStore('cardInput', 2, data),
+    cardBaseline: atomWithStore('cardBaselineInput', defaultCardBaseline, data),
+    cardBaselineNumber: atomWithStore('cardBaselineNumberInput', 1, data),
+    cardMinPrice: atomWithStore('cardMinPriceInput', 10, data),
+    cardPriceSource: atomWithStore('cardPriceSourceInput', 'league', data),
+    cardValueSource: atomWithStore('cardValueSourceInput', 'map', data),
 
-    atlasScore: storedAtom('atlasScore', false, data),
-    atlasIcons: storedAtom('atlasIcons', true, data),
-    atlasLabels: storedAtom('atlasLabels', true, data)
+    atlasScore: atomWithStore('atlasScore', false, data),
+    atlasIcons: atomWithStore('atlasIcons', true, data),
+    atlasLabels: atomWithStore('atlasLabels', true, data)
   }
 
   const parsedSearch = atom(
@@ -522,6 +550,7 @@ function createState() {
   const filteredCards = atom(get => filterValues(get(ratedCards), get(parsedSearch)))
 
   return {
+    location,
     maps,
     tags,
     cards,

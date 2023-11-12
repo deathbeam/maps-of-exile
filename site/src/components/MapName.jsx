@@ -1,5 +1,4 @@
 import { memo } from 'react'
-import { Link } from 'react-router-dom'
 
 import { mapLevel, mapLevelToTier, tierColor } from '../common'
 import MapImage from './MapImage'
@@ -12,9 +11,9 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const name = (
     <>
       {!sidebar && map.atlas && (
-        <Link to={`/atlas/${map.name}`} className="text-primary me-2">
+        <a href={`/#/atlas/${map.name}`} className="text-primary me-2">
           <i className="fa-solid fa-fw fa-globe" />
-        </Link>
+        </a>
       )}
       <a href={map.wiki} target="_blank" rel="noreferrer" className={color}>
         {map.name}

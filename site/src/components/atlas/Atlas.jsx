@@ -1,6 +1,5 @@
 import { useAtom, useAtomValue } from 'jotai'
 import { memo, useCallback, useEffect, useMemo } from 'react'
-import { Link } from 'react-router-dom'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import 'reactflow/dist/base.css'
 
@@ -78,7 +77,7 @@ function MapNode({ data }) {
     <>
       <Handle type="source" position={Position.Top} className=" atlas-edge" />
       <Handle type="target" position={Position.Top} className=" atlas-edge" />
-      <Link to={`/atlas/${map.name}`}>
+      <a href={`/#/atlas/${map.name}`}>
         {!!atlasIcons && (
           <MapImage
             icon={map.icon}
@@ -88,7 +87,7 @@ function MapNode({ data }) {
           />
         )}
         {!!atlasLabels && <button className={buttonClass}>{label}</button>}
-      </Link>
+      </a>
     </>
   )
 }

@@ -27,12 +27,13 @@ function App() {
     <>
       <ScrollToTop />
       <a
-        className="d-none d-md-block btn btn-primary position-fixed top-0 start-0 m-2 on-top"
+        className="btn btn-primary position-fixed top-0 start-0 m-2 on-top"
         href={issueTemplate}
         target="_blank"
         rel="noreferrer"
       >
-        <i className="fa-solid fa-fw fa-code-fork" /> Data incorrect or missing? Open an issue
+        <i className="fa-solid fa-fw fa-code-fork" />{' '}
+        <span className="d-none d-md-inline">Data incorrect or missing? Open an issue</span>
       </a>
       <Routes />
     </>

@@ -16,7 +16,7 @@ const Navbar = ({ close }) => {
         </a>
       )}
       <div className="btn-group ms-auto me-2">
-        <a className={getButtonClass(route === '')} href="/#/">
+        <a className={getButtonClass(!route)} href="/#/">
           <i className="fa-solid fa-fw fa-list" /> List
         </a>
         <a className={getButtonClass(route === 'atlas')} href="/#/atlas">

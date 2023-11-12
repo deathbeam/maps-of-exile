@@ -7,6 +7,7 @@ import MapBoss from '../MapBoss'
 import MapCards from '../MapCards'
 import MapName from '../MapName'
 import Rating from '../Rating'
+import './Map.css'
 import MapConnected from './MapConnected'
 
 const Map = ({ map }) => {
@@ -14,14 +15,7 @@ const Map = ({ map }) => {
   const voidstones = useAtomValue(state.input.voidstones)
 
   return (
-    <tr
-      id={map.name}
-      style={{
-        backgroundImage: 'linear-gradient(rgba(33, 37, 41, 0.7), rgba(33, 37, 41, 0.7)), url(' + (map.image || '') + ')'
-      }}
-      ref={ref}
-      className="map-image lazy-bg"
-    >
+    <tr id={map.name} ref={ref} className="map-list">
       <td>
         <MapName map={map} voidstones={voidstones} />
         <div className="d-md-none mt-2">

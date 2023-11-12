@@ -29,17 +29,6 @@ hr {
   margin: 4px;
 }
 
-.map-image {
-  scroll-margin: 2.8em;
-  background-size: cover;
-  height: 15em;
-  background-position: center;
-}
-
-.map-image td {
-  background: none !important;
-}
-
 .lazy-bg {
   background-image: none !important;
 }

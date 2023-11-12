@@ -134,7 +134,12 @@ export function scrollToElement(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
-export function copyToClipboard(ref) {
+export async function copyToClipboard(ref) {
+  ref.current.focus()
   ref.current.select()
-  document.execCommand('copy')
+  const data = ref.current.value
+  const permission = await navigator.permissions.query({ name: 'clipboard-write' })
+  if (permission.state === 'granted' || permission.state === 'prompt') {
+    await navigator.clipboard.writeText(data)
+  }
 }

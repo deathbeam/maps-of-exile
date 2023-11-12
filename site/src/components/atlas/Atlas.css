@@ -1,3 +1,11 @@
+.atlas {
+  width: 75%;
+  height: 100vh;
+  background-color: black;
+  top: 0;
+  left: 0;
+}
+
 .react-flow__controls-button {
   font-size: 0.875em;
   color: var(--bs-body-color);

@@ -155,16 +155,7 @@ const Atlas = ({ selectedMap }) => {
   )
 
   return (
-    <div
-      className="d-none d-lg-block position-fixed"
-      style={{
-        width: '75%',
-        height: '100vh',
-        backgroundColor: 'black',
-        top: 0,
-        left: 0
-      }}
-    >
+    <div className="d-none d-lg-block position-fixed atlas">
       <ReactFlow
         zoomOnScroll={true}
         preventScrolling={true}

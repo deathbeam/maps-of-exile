@@ -16,12 +16,7 @@ const Card = ({ card }) => {
   return (
     <tr id={card.name} ref={ref}>
       <td className="p-0 map-card">
-        <div
-          style={{
-            backgroundColor: 'black'
-          }}
-          className="p-1"
-        >
+        <div className="p-1 bg-black">
           <CardDetail card={card} />
         </div>
       </td>

@@ -1,6 +1,6 @@
 import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
-import { memo } from 'react'
+import { memo, useRef } from 'react'
 import SelectSearch from 'react-select-search'
 
 import { copyToClipboard } from '../common'
@@ -11,6 +11,7 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
   const reset = useResetAtom(input.def)
   const [numberValue, setNumberValue] = useAtom(input.numberDef)
   const numberReset = useResetAtom(input.numberDef)
+  const ref = useRef(null)
 
   if (input.hidden) {
     return null
@@ -75,6 +76,7 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
           </span>
           <div className="input-group">
             <input
+              ref={ref}
               id={input.name}
               className="form-control"
               type="text"
@@ -82,7 +84,7 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
               readOnly={true}
               onFocus={e => e.target.select()}
             />
-            <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(input.def.ref)}>
+            <button className="btn btn-outline-secondary text-info" onClick={() => copyToClipboard(ref)}>
               <i className="fa-solid fa-copy fa-fw" />
             </button>
           </div>

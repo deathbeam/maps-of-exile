@@ -1,7 +1,9 @@
 import { atom } from 'jotai'
-import { RESET, unwrap } from 'jotai/utils'
+import { unwrap } from 'jotai/utils'
 
-import { calculateScore, filter, parseValue } from './common'
+import atomWithHash from './atoms/atomWithHash'
+import atomWithStore from './atoms/atomWithStore'
+import { calculateScore, filter } from './common'
 import { cardArtBase, defaultCardBaseline, mapIconBase, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
@@ -404,66 +406,6 @@ function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, card
   )
     .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop')
     .sort((a, b) => b.score - a.score)
-}
-
-const atomWithStore = (name, def, data) => {
-  const getInitialValue = () => {
-    if (data && data[name]) {
-      return parseValue(data[name])
-    }
-
-    try {
-      const item = localStorage.getItem(name)
-      return item && item !== '' ? parseValue(JSON.parse(item), def) : def
-    } catch (e) {
-      console.warn(e)
-      return def
-    }
-  }
-
-  const baseAtom = atom(getInitialValue())
-  return atom(
-    get => get(baseAtom),
-    (get, set, e) => {
-      let val = e === RESET ? def : e && e.target ? e.target.value : e
-      val = val === '' ? def : parseValue(val, def)
-      set(baseAtom, val)
-      try {
-        localStorage.setItem(name, JSON.stringify(val))
-        if (data) {
-          data[name] = val
-        }
-      } catch (e) {
-        console.warn(e)
-      }
-    }
-  )
-}
-
-const atomWithHash = () => {
-  const valAtom = atom(window.location.hash.slice(1))
-  valAtom.onMount = set => {
-    const callback = () => {
-      set(window.location.hash.slice(1))
-    }
-
-    window.addEventListener('hashchange', callback)
-    return () => {
-      window.removeEventListener('hashchange', callback)
-    }
-  }
-
-  return atom(
-    get =>
-      get(valAtom)
-        .split('/')
-        .filter(l => l),
-    (get, set, v) => {
-      let val = v === RESET ? '' : v
-      set(valAtom, v)
-      window.location.hash = val.toString()
-    }
-  )
 }
 
 function createState() {

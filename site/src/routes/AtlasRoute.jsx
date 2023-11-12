@@ -1,3 +1,4 @@
+import { atom, useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import { ReactFlowProvider } from 'reactflow'
 
@@ -5,14 +6,15 @@ import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
 import Atlas from '../components/atlas/Atlas'
 import Map from '../components/atlas/Map'
-import useDerivedAtomValue from '../hooks/useDerivedAtomValue'
 import state from '../state'
 
+const selectedMapAtom = atom(get => {
+  const [, currentMap] = get(state.location)
+  return currentMap && get(state.ratedMaps).find(m => m.name === currentMap)
+})
+
 const AtlasRoute = () => {
-  const selectedMap = useDerivedAtomValue(get => {
-    const [, currentMap] = get(state.location)
-    return currentMap && get(state.ratedMaps).find(m => m.name === currentMap)
-  })
+  const selectedMap = useAtomValue(selectedMapAtom)
 
   const style = useMemo(
     () =>

@@ -31,7 +31,7 @@ const CardDetail = ({ card }) => {
         {card.name}
       </a>
       <div className="map-img-holder mb-1">
-        <img src={card.art} alt="" loading="lazy" />
+        <img src={card.art} alt="" loading="lazy" className="w-100" />
         <span className="badge bg-light text-dark map-stack-size">
           <b>{card.stack}</b>
         </span>

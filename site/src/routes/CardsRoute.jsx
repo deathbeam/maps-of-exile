@@ -25,7 +25,7 @@ const CardsRoute = () => {
       <table className="table table-responsive mb-0">
         <thead>
           <tr>
-            <th>Card</th>
+            <th className="d-none d-md-table-cell">Card</th>
             <th>Sources</th>
           </tr>
         </thead>

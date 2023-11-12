@@ -11,6 +11,38 @@ Simplest way to add new map even if you are not knowledgeable about inner workin
 
 ### For developers
 
+#### Running data updater
+
+You need to have `GOOGLE_API_KEY` to grab data sheets via google api (see [Setting up API keys](https://support.google.com/googleapi/answer/6158862?hl=en)). This is free and you can generate one for yourself.
+
+Go to `data` directory.
+
+Install dependencies:
+```bash
+pip install --user -r requirements.txt
+```
+
+Update data:
+```bash
+python main.py globals,monsters,cards
+```
+
+#### Running the site
+
+Go to `site` directory.
+
+Install dependencies:
+```bash
+npm install
+```
+
+Run the site:
+```bash
+npm run start
+```
+
+#### Understanding the data
+
 [/data/cards.json](/data/cards.json) contains extra card metadata  
 [/data/maps.json](/data/maps.json) contains extra map metadata  
 

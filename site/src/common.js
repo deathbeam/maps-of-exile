@@ -1,13 +1,13 @@
-export function rescale(value, minValue, maxValue, scale) {
-  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
-}
-
 export function deduplicate(a, key) {
   const seen = {}
   return a.filter(function (item) {
     const k = item[key]
     return Object.hasOwn(seen, k) ? false : (seen[k] = true)
   })
+}
+
+function rescale(value, minValue, maxValue, scale) {
+  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
 }
 
 export function calculateScore(dataset, range) {
@@ -47,15 +47,6 @@ export function filter(search, v) {
   }
 
   return posMatched && negMatched
-}
-
-export function filterData(data, currentSearch) {
-  return data
-    .filter(m => !currentSearch || filter(currentSearch, m.search))
-    .sort(
-      (a, b) =>
-        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
-    )
 }
 
 export function ratingColor(rating, scale = 1) {
@@ -135,6 +126,10 @@ export function cardBadge(card, scale = 1) {
   return badgeClass
 }
 
+export function mapLevelToTier(level) {
+  return level + 1 - 68
+}
+
 export function scrollToElement(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
@@ -142,8 +137,4 @@ export function scrollToElement(id) {
 export function copyToClipboard(ref) {
   ref.current.select()
   document.execCommand('copy')
-}
-
-export function mapLevelToTier(level) {
-  return level + 1 - 68
 }

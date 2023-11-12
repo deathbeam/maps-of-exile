@@ -14,7 +14,7 @@ const Map = ({ map }) => {
     <>
       {map.image && (
         <a href={map.image} target="_blank" rel="noreferrer">
-          <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />{' '}
+          <img src={map.image} alt="" className="w-100 mb-1" loading="lazy" />
         </a>
       )}
       <MapName map={map} voidstones={voidstones} sidebar={true} />

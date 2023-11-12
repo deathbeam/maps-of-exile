@@ -6,12 +6,12 @@ import MapFilter from '../components/MapFilter'
 import Navbar from '../components/Navbar'
 import Atlas from '../components/atlas/Atlas'
 import Map from '../components/atlas/Map'
+import useDerivedAtomValue from '../hooks/useDerivedAtomValue'
 import state from '../state'
 
 const AtlasRoute = () => {
   const [, currentMap] = useAtomValue(state.location)
-  const ratedMaps = useAtomValue(state.ratedMaps)
-  const selectedMap = useMemo(() => currentMap && ratedMaps.find(m => m.name === currentMap), [currentMap, ratedMaps])
+  const selectedMap = useDerivedAtomValue(get => currentMap && get(state.ratedMaps).find(m => m.name === currentMap))
   const style = useMemo(
     () =>
       selectedMap && {

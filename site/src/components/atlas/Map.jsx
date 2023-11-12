@@ -1,7 +1,7 @@
 import { useAtomValue } from 'jotai'
 import { memo } from 'react'
 
-import state from '../../state.js'
+import state from '../../state'
 import MapBoss from '../MapBoss'
 import MapCards from '../MapCards'
 import MapName from '../MapName'

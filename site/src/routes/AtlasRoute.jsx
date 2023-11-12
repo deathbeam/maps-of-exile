@@ -1,4 +1,3 @@
-import { useAtomValue } from 'jotai'
 import { useMemo } from 'react'
 import { ReactFlowProvider } from 'reactflow'
 
@@ -10,8 +9,11 @@ import useDerivedAtomValue from '../hooks/useDerivedAtomValue'
 import state from '../state'
 
 const AtlasRoute = () => {
-  const [, currentMap] = useAtomValue(state.location)
-  const selectedMap = useDerivedAtomValue(get => currentMap && get(state.ratedMaps).find(m => m.name === currentMap))
+  const selectedMap = useDerivedAtomValue(get => {
+    const [, currentMap] = get(state.location)
+    return currentMap && get(state.ratedMaps).find(m => m.name === currentMap)
+  })
+
   const style = useMemo(
     () =>
       selectedMap && {
@@ -30,7 +32,7 @@ const AtlasRoute = () => {
         </ReactFlowProvider>
       </div>
       <div className="container-fluid col-lg-3 col-12 full-height m-0 p-0 overflow-visible" style={style}>
-        <Navbar close={!!currentMap && '/#/atlas'} />
+        <Navbar close={!!selectedMap && '/#/atlas'} />
         <div className="m-2">
           <p className="d-block d-lg-none">
             <b className="text-danger">Warning!</b> <b>Atlas</b> view is unsupported on small resolutions, switch back

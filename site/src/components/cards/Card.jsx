@@ -30,14 +30,14 @@ const Card = ({ card }) => {
           </div>
           <div className="row m-0">
             {card.monsters.map(m => (
-              <div key={m.name} className="col-6 col-md-4 col-lg-3 col-xl-2 mb-2">
+              <div key={m.name} className="col-6 col-lg-3 col-xl-2 mb-2">
                 <MonsterName monster={m} />
               </div>
             ))}
           </div>
           <div className="row m-0">
             {card.maps.map(map => (
-              <div key={map.name} className="col-6 col-md-4 col-lg-3 col-xl-2 mb-2">
+              <div key={map.name} className="col-6 col-lg-3 col-xl-2 mb-2">
                 <span className="tooltip-tag tooltip-tag-bottom">
                   <span className="tooltip-tag-text">
                     <CardRateTooltip card={map.card} full={true} />

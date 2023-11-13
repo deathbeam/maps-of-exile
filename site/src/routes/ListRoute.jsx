@@ -45,7 +45,7 @@ const ListRoute = () => {
                 Map
               </span>
             </th>
-            <th className="d-none d-md-table-cell">
+            <th className="d-none d-lg-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   How straightforward is the map to clear or how good it is for league mechanics.
@@ -62,7 +62,7 @@ const ListRoute = () => {
                 Layout
               </span>
             </th>
-            <th className="d-none d-md-table-cell">
+            <th className="d-none d-lg-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   How many total base mobs does the map have. Do not accounts for extra sources of mobs like league
@@ -80,7 +80,7 @@ const ListRoute = () => {
                 Density
               </span>
             </th>
-            <th className="d-none d-md-table-cell">
+            <th className="d-none d-lg-table-cell">
               <span className="tooltip-tag tooltip-tag-right tooltip-tag-notice">
                 <span className="tooltip-tag-text">
                   How annoying/dangerous is the boss to kill.

@@ -18,7 +18,7 @@ const Map = ({ map }) => {
     <tr id={map.name} ref={ref} className="map-list">
       <td>
         <MapName map={map} voidstones={voidstones} />
-        <div className="d-md-none mt-2">
+        <div className="d-lg-none mt-2">
           <Rating rating={map.rating.layout} label="Layout" />
           <Rating rating={map.rating.density} label="Density" />
           <Rating rating={map.rating.boss} label="Boss" />
@@ -26,13 +26,13 @@ const Map = ({ map }) => {
       </td>
       {visible ? (
         <>
-          <td className="text-center d-none d-md-table-cell">
+          <td className="text-center d-none d-lg-table-cell">
             <Rating rating={map.rating.layout} tooltip={map.info.layout} />
           </td>
-          <td className="text-center d-none d-md-table-cell">
+          <td className="text-center d-none d-lg-table-cell">
             <Rating rating={map.rating.density} tooltip={map.info.density} />
           </td>
-          <td className="text-center d-none d-md-table-cell">
+          <td className="text-center d-none d-lg-table-cell">
             <MapBoss names={map.boss_names} rating={map.rating.boss} tooltip={map.info.boss} />
           </td>
           <td className="d-none d-md-table-cell">
@@ -44,9 +44,9 @@ const Map = ({ map }) => {
         </>
       ) : (
         <>
-          <td className="d-none d-md-table-cell" />
-          <td className="d-none d-md-table-cell" />
-          <td className="d-none d-md-table-cell" />
+          <td className="d-none d-lg-table-cell" />
+          <td className="d-none d-lg-table-cell" />
+          <td className="d-none d-lg-table-cell" />
           <td className="d-none d-md-table-cell" />
           <td />
         </>

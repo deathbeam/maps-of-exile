@@ -11,7 +11,7 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const name = (
     <>
       {!sidebar && map.atlas && (
-        <a href={`/#/atlas/${map.name}`} className="d-none d-md-inline text-primary me-2">
+        <a href={`/#/atlas/${map.name}`} className="text-primary me-2">
           <i className="fa-solid fa-fw fa-globe" />
         </a>
       )}

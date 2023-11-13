@@ -33,7 +33,11 @@ jobs:
         run: |
           git config --global user.name github-actions
           git config --global user.email github-actions@github.com
-          git commit -am "Update data"
+          git add .github
+          git add data
+          git add site/src/data
+          git add $(git ls-files -o --exclude-standard)
+          git commit -m "Update data"
           git push
 
       - name: Setup node

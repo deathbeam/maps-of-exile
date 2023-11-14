@@ -17,8 +17,8 @@ export default function atomWithHash() {
   const derivedAtom = atom(
     get =>
       get(valAtom)
-        .replaceAll('%20', ' ')
         .split('/')
+        .map(v => decodeURI(v))
         .filter(l => l),
     (get, set, v) => {
       let val = v === RESET ? '' : v

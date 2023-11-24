@@ -14,7 +14,7 @@
         ],
         "name": "Absence of Mercy and Empathy",
         "rating": {},
-        "shorthand": "Em",
+        "shorthand": " e",
         "tags": {},
         "type": "unique map"
     },
@@ -33,7 +33,7 @@
         ],
         "name": "Absence of Patience and Wisdom",
         "rating": {},
-        "shorthand": "Wi",
+        "shorthand": "sd",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -54,7 +54,7 @@
         ],
         "name": "Absence of Symmetry and Harmony",
         "rating": {},
-        "shorthand": "Sy",
+        "shorthand": " ha",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -75,7 +75,7 @@
         ],
         "name": "Absence of Value and Meaning",
         "rating": {},
-        "shorthand": "Mea",
+        "shorthand": "ue",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -164,7 +164,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Aci",
+        "shorthand": "cid",
         "tags": {
             "boss_separated": false,
             "few_obstacles": false,
@@ -201,7 +201,7 @@
         ],
         "name": "Acton's Nightmare",
         "rating": {},
-        "shorthand": "Ni",
+        "shorthand": "tm",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -281,7 +281,7 @@
         ],
         "name": "Altered Distant Memory",
         "rating": {},
-        "shorthand": "Alt",
+        "shorthand": "alt",
         "tags": {},
         "type": "unique map"
     },
@@ -305,7 +305,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "t C",
+        "shorthand": "nci",
         "tags": {
             "boss_separated": false,
             "few_obstacles": false,
@@ -346,7 +346,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": " Ne",
+        "shorthand": " ne",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": true,
@@ -395,7 +395,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "Tom",
+        "shorthand": "omb",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -444,7 +444,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Arca",
+        "shorthand": "rcad",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -494,7 +494,7 @@
             "density": 9,
             "layout": 2
         },
-        "shorthand": "Arena",
+        "shorthand": "ren",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -526,7 +526,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Ari",
+        "shorthand": "d l",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -562,7 +562,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Arm",
+        "shorthand": "mou",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -598,7 +598,7 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "Ars",
+        "shorthand": "arse",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -633,7 +633,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "hen W",
+        "shorthand": "ash",
         "tags": {
             "boss_separated": false,
             "few_obstacles": false,
@@ -656,7 +656,7 @@
         ],
         "name": "Aspirants' Plaza",
         "rating": {},
-        "shorthand": "' ",
+        "shorthand": "laz",
         "tags": {},
         "type": "act area"
     },
@@ -693,7 +693,7 @@
             "density": 1,
             "layout": 8
         },
-        "shorthand": "Ato",
+        "shorthand": "atol",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -726,7 +726,7 @@
         ],
         "name": "Augmented Distant Memory",
         "rating": {},
-        "shorthand": "Au",
+        "shorthand": "gm",
         "tags": {},
         "type": "unique map"
     },
@@ -810,7 +810,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Bas",
+        "shorthand": "asi",
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
@@ -853,7 +853,7 @@
             "density": 10,
             "layout": 8
         },
-        "shorthand": "Baz",
+        "shorthand": "aar",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -895,7 +895,7 @@
             "density": 3,
             "layout": 10
         },
-        "shorthand": "Beach",
+        "shorthand": "beach",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -933,7 +933,7 @@
             "density": 6,
             "layout": 10
         },
-        "shorthand": "elf",
+        "shorthand": "bel",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -1023,8 +1023,20 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "Bon",
-        "unique": false,
+        "shorthand": "one",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": false,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": true,
+            "outdoors": false
+        },
+        "type": "map",
         "x": 555,
         "y": 423
     },
@@ -1050,7 +1062,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Bra",
+        "shorthand": "br",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -1076,7 +1088,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Buri",
+        "shorthand": "l c",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -1160,7 +1172,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "Cag",
+        "shorthand": "cag",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -1204,7 +1216,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Cal",
+        "shorthand": "ald",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1291,7 +1303,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Car",
+        "shorthand": "ass",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -1334,7 +1346,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Cas",
+        "shorthand": "e r",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1384,7 +1396,7 @@
             "density": 9,
             "layout": 4
         },
-        "shorthand": "Cel",
+        "shorthand": "cel",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1436,7 +1448,7 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": "Cem",
+        "shorthand": "cem",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -1601,7 +1613,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "ty S",
+        "shorthand": "ty s",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1652,7 +1664,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Cold",
+        "shorthand": "ld ",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1784,7 +1796,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "erv",
+        "shorthand": "rv",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1820,7 +1832,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Cora",
+        "shorthand": "l r",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -1858,7 +1870,7 @@
             "density": 5,
             "layout": 4
         },
-        "shorthand": "Core",
+        "shorthand": "core",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -1924,7 +1936,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "rtho",
+        "shorthand": "rth",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -2019,7 +2031,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "Cov",
+        "shorthand": "cov",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2057,7 +2069,7 @@
             "density": 10,
             "layout": 6
         },
-        "shorthand": "Cra",
+        "shorthand": "cra",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2103,7 +2115,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "son Te",
+        "shorthand": "son te",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2178,7 +2190,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Ore",
+        "shorthand": "rys",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -2224,7 +2236,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "d Cr",
+        "shorthand": "d cr",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2261,7 +2273,7 @@
         ],
         "name": "Daresso's Dream",
         "rating": {},
-        "shorthand": "so'",
+        "shorthand": "da",
         "tags": {},
         "type": "act area"
     },
@@ -2295,7 +2307,7 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": "k F",
+        "shorthand": "da",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -2331,7 +2343,7 @@
         ],
         "name": "Death and Taxes",
         "rating": {},
-        "shorthand": "Ta",
+        "shorthand": "ax",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": true,
@@ -2344,11 +2356,7 @@
             "linear": true,
             "outdoors": false
         },
-        "level": 79,
-        "name": "Death and Taxes",
-        "rating": {},
-        "shorthand": " a",
-        "unique": true,
+        "type": "unique map",
         "x": 176,
         "y": 162
     },
@@ -2373,7 +2381,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Def",
+        "shorthand": "cat",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -2409,7 +2417,7 @@
             "density": 8,
             "layout": 6
         },
-        "shorthand": "Desert",
+        "shorthand": "desert",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
@@ -2440,7 +2448,7 @@
             "density": 10,
             "layout": 8
         },
-        "shorthand": "pr",
+        "shorthand": " sp",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -2477,7 +2485,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Dig",
+        "shorthand": "dig",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -2511,7 +2519,7 @@
         ],
         "name": "Doedre's Cesspool",
         "rating": {},
-        "shorthand": " Ce",
+        "shorthand": "oe",
         "tags": {},
         "type": "act area"
     },
@@ -2529,7 +2537,7 @@
         ],
         "name": "Domain of Timeless Conflict",
         "rating": {},
-        "shorthand": "fl",
+        "shorthand": " ti",
         "tags": {},
         "type": "unique map"
     },
@@ -2579,7 +2587,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Dry",
+        "shorthand": "ry s",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2711,7 +2719,7 @@
         ],
         "name": "Esh's Domain",
         "rating": {},
-        "shorthand": "Esh",
+        "shorthand": "esh",
         "tags": {},
         "type": "unique map"
     },
@@ -2746,7 +2754,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Est",
+        "shorthand": "ary",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -2790,7 +2798,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Ex",
+        "shorthand": "xc",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2823,7 +2831,7 @@
         ],
         "name": "Eye of the Storm",
         "rating": {},
-        "shorthand": "Ey",
+        "shorthand": "ye",
         "tags": {},
         "type": "special map"
     },
@@ -2859,7 +2867,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Fa",
+        "shorthand": "fa",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2897,7 +2905,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Fields",
+        "shorthand": "eld",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -2946,7 +2954,7 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "d Mi",
+        "shorthand": "ded",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2986,7 +2994,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "bid",
+        "shorthand": "rb",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -3092,7 +3100,7 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "Fou",
+        "shorthand": "fou",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3137,7 +3145,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Fr",
+        "shorthand": "oz",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3183,7 +3191,7 @@
             "density": 2,
             "layout": 8
         },
-        "shorthand": "Fu",
+        "shorthand": " ho",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3221,7 +3229,7 @@
             "density": 8,
             "layout": 4
         },
-        "shorthand": "Gardens",
+        "shorthand": "ens",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -3263,7 +3271,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Geo",
+        "shorthand": "eod",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3300,7 +3308,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Gh",
+        "shorthand": "ett",
         "tags": {
             "boss_separated": false,
             "few_obstacles": false,
@@ -3340,7 +3348,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Gl",
+        "shorthand": "gla",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -3382,7 +3390,7 @@
             "density": 8,
             "layout": 4
         },
-        "shorthand": "e Tr",
+        "shorthand": "oug",
         "tags": {},
         "type": "map",
         "x": 420,
@@ -3421,7 +3429,7 @@
             "density": 6,
             "layout": 10
         },
-        "shorthand": "Graveyard",
+        "shorthand": "eya",
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
@@ -3454,7 +3462,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "rot",
+        "shorthand": "ott",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3564,7 +3572,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "Hau",
+        "shorthand": "ans",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -3608,8 +3616,14 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "Ic",
-        "unique": false,
+        "shorthand": "eb",
+        "tags": {
+            "boss_separated": false,
+            "few_obstacles": true,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 265,
         "y": 392
     },
@@ -3644,7 +3658,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "fe",
+        "shorthand": "d v",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -3676,7 +3690,7 @@
         ],
         "name": "Infused Beachhead",
         "rating": {},
-        "shorthand": "fu",
+        "shorthand": "d b",
         "tags": {},
         "type": "unique map"
     },
@@ -3711,7 +3725,7 @@
             "density": 8,
             "layout": 4
         },
-        "shorthand": "Iv",
+        "shorthand": "ivo",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -3743,7 +3757,7 @@
             "density": 6,
             "layout": 10
         },
-        "shorthand": "J",
+        "shorthand": "ju",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": true,
@@ -3777,7 +3791,7 @@
         ],
         "name": "Kaom's Dream",
         "rating": {},
-        "shorthand": "m's D",
+        "shorthand": "ka",
         "tags": {},
         "type": "act area"
     },
@@ -3798,7 +3812,7 @@
         ],
         "name": "Kaom's Stronghold",
         "rating": {},
-        "shorthand": "gho",
+        "shorthand": "ka",
         "tags": {},
         "type": "act area"
     },
@@ -3823,7 +3837,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "Lab",
+        "shorthand": "abo",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -3859,7 +3873,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Lair",
+        "shorthand": "lair",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3891,7 +3905,7 @@
         ],
         "name": "Lair of the Hydra Map",
         "rating": {},
-        "shorthand": "Hy",
+        "shorthand": "yd",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -3940,7 +3954,7 @@
             "density": 4,
             "layout": 2
         },
-        "shorthand": "a C",
+        "shorthand": "a c",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -3982,8 +3996,15 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": " L",
-        "unique": false,
+        "shorthand": "a l",
+        "tags": {
+            "boss_not_twinnable": true,
+            "boss_separated": true,
+            "few_obstacles": true,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 191,
         "y": 138
     },
@@ -4019,7 +4040,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Ley",
+        "shorthand": "eyl",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4060,21 +4081,26 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Le",
-        "unique": false,
-        "x": 679,
-        "y": 351
+        "shorthand": "hth",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": false,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": true,
+            "league_mechanics": true,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
-            ],
-            "names": [
-                "The Grey Plague"
-            ],
-            "separated": true
-        },
+        "atlas": true,
+        "boss_ids": [
+            "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
+        ],
         "connected": [
             "Estuary Map",
             "Iceberg Map",
@@ -4182,7 +4208,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "fo",
+        "shorthand": "alf",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4219,7 +4245,7 @@
         ],
         "name": "Maligaro's Sanctum",
         "rating": {},
-        "shorthand": "ali",
+        "shorthand": "ctu",
         "tags": {},
         "type": "act area"
     },
@@ -4248,7 +4274,7 @@
         ],
         "name": "Mao Kun",
         "rating": {},
-        "shorthand": "Ku",
+        "shorthand": " k",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": true,
@@ -4261,11 +4287,7 @@
             "linear": true,
             "outdoors": true
         },
-        "level": 73,
-        "name": "Mao Kun",
-        "rating": {},
-        "shorthand": "K",
-        "unique": true,
+        "type": "unique map",
         "x": 515,
         "y": 275
     },
@@ -4337,7 +4359,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Mau",
+        "shorthand": "aus",
         "tags": {
             "boss_not_spawned": true,
             "boss_separated": true,
@@ -4380,7 +4402,7 @@
             "density": 6,
             "layout": 2
         },
-        "shorthand": "Maze",
+        "shorthand": "maze",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4462,7 +4484,7 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "Mes",
+        "shorthand": "esa",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -4504,7 +4526,7 @@
             "density": 5,
             "layout": 4
         },
-        "shorthand": "ols",
+        "shorthand": "ner",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4552,8 +4574,20 @@
             "density": 8,
             "layout": 6
         },
-        "shorthand": "Mo",
-        "unique": false,
+        "shorthand": "moo",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": true,
+            "league_mechanics": false,
+            "linear": false,
+            "outdoors": false
+        },
+        "type": "map",
         "x": 210,
         "y": 413
     },
@@ -4588,7 +4622,7 @@
             "density": 3,
             "layout": 10
         },
-        "shorthand": " Ge",
+        "shorthand": "ud",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
@@ -4630,7 +4664,7 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "Mus",
+        "shorthand": "mus",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4680,7 +4714,7 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "Nec",
+        "shorthand": "cro",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4719,7 +4753,7 @@
         ],
         "name": "Oba's Cursed Trove",
         "rating": {},
-        "shorthand": "Ob",
+        "shorthand": "ob",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": false,
@@ -4809,7 +4843,7 @@
             "density": 10,
             "layout": 6
         },
-        "shorthand": "Orc",
+        "shorthand": "orc",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4844,7 +4878,7 @@
         ],
         "name": "Oriath Square",
         "rating": {},
-        "shorthand": "Ori",
+        "shorthand": "th ",
         "tags": {},
         "type": "act area"
     },
@@ -4869,7 +4903,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "n Ru",
+        "shorthand": "n r",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -4918,7 +4952,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "n S",
+        "shorthand": "n s",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -4967,7 +5001,7 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "Pal",
+        "shorthand": "ala",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -4998,7 +5032,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Park",
+        "shorthand": "park",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
@@ -5039,8 +5073,15 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Pe",
-        "unique": false,
+        "shorthand": "pen",
+        "tags": {
+            "boss_not_twinnable": true,
+            "boss_separated": true,
+            "few_obstacles": false,
+            "linear": true,
+            "outdoors": false
+        },
+        "type": "map",
         "x": 471,
         "y": 263
     },
@@ -5154,7 +5195,7 @@
             "density": 8,
             "layout": 8
         },
-        "shorthand": "Pier",
+        "shorthand": "pier",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -5196,7 +5237,7 @@
         ],
         "name": "Pillars of Arun",
         "rating": {},
-        "shorthand": "Aru",
+        "shorthand": " ar",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5246,7 +5287,7 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "Pit",
+        "shorthand": "pit",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5280,7 +5321,7 @@
         ],
         "name": "Pit of the Chimera Map",
         "rating": {},
-        "shorthand": "Chi",
+        "shorthand": "him",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -5328,7 +5369,7 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "Plat",
+        "shorthand": "lat",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5366,10 +5407,20 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Pl",
-        "unique": false,
-        "x": 422,
-        "y": 493
+        "shorthand": "laz",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": true,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": false,
+            "outdoors": true
+        },
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -5386,7 +5437,7 @@
         ],
         "name": "Polaric Void",
         "rating": {},
-        "shorthand": " Vo",
+        "shorthand": " vo",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -5417,7 +5468,7 @@
         ],
         "name": "Poorjoy's Asylum",
         "rating": {},
-        "shorthand": "j",
+        "shorthand": "jo",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5470,7 +5521,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Por",
+        "shorthand": "por",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -5525,7 +5576,7 @@
             "density": 10,
             "layout": 6
         },
-        "shorthand": "Pre",
+        "shorthand": "eci",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5574,7 +5625,7 @@
             "density": 9,
             "layout": 4
         },
-        "shorthand": "al B",
+        "shorthand": "ks",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -5624,7 +5675,7 @@
             "density": 1,
             "layout": 8
         },
-        "shorthand": "ial P",
+        "shorthand": "ial p",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5665,7 +5716,7 @@
         ],
         "name": "Prisoner's Gate",
         "rating": {},
-        "shorthand": "s G",
+        "shorthand": "r'",
         "tags": {},
         "type": "act area"
     },
@@ -5701,7 +5752,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "Promenade",
+        "shorthand": "ome",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5752,8 +5803,20 @@
             "density": 3,
             "layout": 8
         },
-        "shorthand": "Ra",
-        "unique": false,
+        "shorthand": "cec",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": true,
+            "delirium_mirror": true,
+            "few_obstacles": true,
+            "league_mechanics": false,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 312,
         "y": 228
     },
@@ -5778,7 +5841,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "Ramparts",
+        "shorthand": "amp",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5823,7 +5886,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Reef",
+        "shorthand": "eef",
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
@@ -5856,7 +5919,7 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "c Ch",
+        "shorthand": "c c",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5904,7 +5967,7 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "Res",
+        "shorthand": "esi",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5961,7 +6024,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "Scr",
+        "shorthand": "sc",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5991,7 +6054,7 @@
         ],
         "name": "Seething Chyme",
         "rating": {},
-        "shorthand": "Chy",
+        "shorthand": "chy",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -6018,7 +6081,7 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "pu",
+        "shorthand": "ep",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -6046,7 +6109,7 @@
         ],
         "name": "Shavronne's Tower",
         "rating": {},
-        "shorthand": "vr",
+        "shorthand": "nne",
         "tags": {},
         "type": "act area"
     },
@@ -6073,7 +6136,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "py",
+        "shorthand": "ipy",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6121,7 +6184,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "Sho",
+        "shorthand": "hor",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6160,7 +6223,7 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "Shrine",
+        "shorthand": "shrine",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -6254,7 +6317,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "Sil",
+        "shorthand": "ilo",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -6302,7 +6365,7 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "r F",
+        "shorthand": "r f",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -6333,7 +6396,7 @@
             "density": 5,
             "layout": 6
         },
-        "shorthand": "r L",
+        "shorthand": "r l",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -6421,7 +6484,7 @@
             "density": 0,
             "layout": 10
         },
-        "shorthand": "Strand",
+        "shorthand": "stra",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6470,8 +6533,20 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "Ve",
-        "unique": false,
+        "shorthand": "lp",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": true,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 671,
         "y": 151
     },
@@ -6507,7 +6582,7 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": "Sum",
+        "shorthand": "mit",
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
@@ -6552,7 +6627,7 @@
             "density": 7,
             "layout": 6
         },
-        "shorthand": "Sun",
+        "shorthand": "ken",
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
@@ -6598,7 +6673,7 @@
             "density": 8,
             "layout": 6
         },
-        "shorthand": "Temple",
+        "shorthand": "temple",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6648,8 +6723,21 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "Ter",
-        "unique": false,
+        "shorthand": "err",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_not_twinnable": true,
+            "boss_phases": true,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": true,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 302,
         "y": 263
     },
@@ -6671,7 +6759,7 @@
         ],
         "name": "The Alluring Abyss",
         "rating": {},
-        "shorthand": "by",
+        "shorthand": " ab",
         "tags": {},
         "type": "unique map"
     },
@@ -6690,7 +6778,7 @@
         ],
         "name": "The Ancient Pyramid",
         "rating": {},
-        "shorthand": "t P",
+        "shorthand": "yr",
         "tags": {},
         "type": "act area"
     },
@@ -6713,7 +6801,7 @@
         ],
         "name": "The Apex of Sacrifice",
         "rating": {},
-        "shorthand": "Ap",
+        "shorthand": "if",
         "tags": {},
         "type": "unique map"
     },
@@ -6735,7 +6823,7 @@
         ],
         "name": "The Aqueduct",
         "rating": {},
-        "shorthand": "e Aq",
+        "shorthand": "uc",
         "tags": {},
         "type": "act area"
     },
@@ -6756,7 +6844,7 @@
         ],
         "name": "The Archives",
         "rating": {},
-        "shorthand": "hiv",
+        "shorthand": " ar",
         "tags": {},
         "type": "act area"
     },
@@ -6777,7 +6865,7 @@
         ],
         "name": "The Ascent",
         "rating": {},
-        "shorthand": "Asc",
+        "shorthand": "sc",
         "tags": {},
         "type": "act area"
     },
@@ -6801,7 +6889,7 @@
         ],
         "name": "The Ashen Fields",
         "rating": {},
-        "shorthand": " Ash",
+        "shorthand": " as",
         "tags": {},
         "type": "act area"
     },
@@ -6823,7 +6911,7 @@
         ],
         "name": "The Bath House",
         "rating": {},
-        "shorthand": "Hou",
+        "shorthand": " ho",
         "tags": {},
         "type": "act area"
     },
@@ -6846,7 +6934,7 @@
         ],
         "name": "The Battlefront",
         "rating": {},
-        "shorthand": "att",
+        "shorthand": "e b",
         "tags": {},
         "type": "act area"
     },
@@ -6868,7 +6956,7 @@
         ],
         "name": "The Beachhead",
         "rating": {},
-        "shorthand": "e Beach",
+        "shorthand": "e b",
         "tags": {},
         "type": "unique map"
     },
@@ -6887,7 +6975,7 @@
         ],
         "name": "The Beacon",
         "rating": {},
-        "shorthand": "con",
+        "shorthand": "e b",
         "tags": {},
         "type": "act area"
     },
@@ -6908,7 +6996,7 @@
         ],
         "name": "The Belly of the Beast",
         "rating": {},
-        "shorthand": "The Belly of the Beast",
+        "shorthand": "ly",
         "tags": {},
         "type": "act area"
     },
@@ -6930,7 +7018,7 @@
         ],
         "name": "The Belly of the Beast Level 1",
         "rating": {},
-        "shorthand": "st Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -6952,7 +7040,7 @@
         ],
         "name": "The Belly of the Beast Level 2",
         "rating": {},
-        "shorthand": "st Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -6970,7 +7058,7 @@
         ],
         "name": "The Blood Aqueduct",
         "rating": {},
-        "shorthand": "Bloo",
+        "shorthand": "uc",
         "tags": {},
         "type": "act area"
     },
@@ -6990,7 +7078,7 @@
         ],
         "name": "The Boiling Lake",
         "rating": {},
-        "shorthand": " Bo",
+        "shorthand": " bo",
         "tags": {},
         "type": "act area"
     },
@@ -7012,7 +7100,7 @@
         ],
         "name": "The Brine King's Reef",
         "rating": {},
-        "shorthand": "Ki",
+        "shorthand": " k",
         "tags": {},
         "type": "act area"
     },
@@ -7036,7 +7124,7 @@
         ],
         "name": "The Broken Bridge",
         "rating": {},
-        "shorthand": "Bro",
+        "shorthand": "br",
         "tags": {},
         "type": "act area"
     },
@@ -7055,7 +7143,7 @@
         ],
         "name": "The Canals",
         "rating": {},
-        "shorthand": "ana",
+        "shorthand": "als",
         "tags": {},
         "type": "act area"
     },
@@ -7073,7 +7161,7 @@
         ],
         "name": "The Catacombs",
         "rating": {},
-        "shorthand": "ata",
+        "shorthand": "cat",
         "tags": {},
         "type": "act area"
     },
@@ -7099,7 +7187,7 @@
         ],
         "name": "The Cathedral Rooftop",
         "rating": {},
-        "shorthand": "ft",
+        "shorthand": "cat",
         "tags": {},
         "type": "act area"
     },
@@ -7117,7 +7205,7 @@
         ],
         "name": "The Causeway",
         "rating": {},
-        "shorthand": "Cau",
+        "shorthand": "aus",
         "tags": {},
         "type": "act area"
     },
@@ -7145,7 +7233,7 @@
         ],
         "name": "The Cavern of Anger",
         "rating": {},
-        "shorthand": "Ang",
+        "shorthand": "ern",
         "tags": {},
         "type": "act area"
     },
@@ -7167,7 +7255,7 @@
         ],
         "name": "The Cavern of Wrath",
         "rating": {},
-        "shorthand": "Wr",
+        "shorthand": "wr",
         "tags": {},
         "type": "act area"
     },
@@ -7189,7 +7277,7 @@
         ],
         "name": "The Caverns",
         "rating": {},
-        "shorthand": "e Caverns",
+        "shorthand": "ern",
         "tags": {},
         "type": "act area"
     },
@@ -7211,7 +7299,7 @@
         ],
         "name": "The Chamber of Innocence",
         "rating": {},
-        "shorthand": " In",
+        "shorthand": "oc",
         "tags": {},
         "type": "act area"
     },
@@ -7238,7 +7326,7 @@
         ],
         "name": "The Chamber of Sins Level 1",
         "rating": {},
-        "shorthand": "ns Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -7264,7 +7352,7 @@
         ],
         "name": "The Chamber of Sins Level 2",
         "rating": {},
-        "shorthand": "ns Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -7286,7 +7374,7 @@
         ],
         "name": "The City of Sarn",
         "rating": {},
-        "shorthand": "e Ci",
+        "shorthand": "f sa",
         "tags": {},
         "type": "act area"
     },
@@ -7309,7 +7397,7 @@
         ],
         "name": "The Climb",
         "rating": {},
-        "shorthand": "Cli",
+        "shorthand": "cl",
         "tags": {},
         "type": "act area"
     },
@@ -7338,7 +7426,7 @@
         ],
         "name": "The Coast",
         "rating": {},
-        "shorthand": "Coa",
+        "shorthand": "oa",
         "tags": {},
         "type": "act area"
     },
@@ -7363,7 +7451,7 @@
         ],
         "name": "The Control Blocks",
         "rating": {},
-        "shorthand": "ntr",
+        "shorthand": "ks",
         "tags": {},
         "type": "act area"
     },
@@ -7421,7 +7509,7 @@
         ],
         "name": "The Crematorium",
         "rating": {},
-        "shorthand": "Cre",
+        "shorthand": "cre",
         "tags": {},
         "type": "act area"
     },
@@ -7449,7 +7537,7 @@
         ],
         "name": "The Crossroads",
         "rating": {},
-        "shorthand": "sr",
+        "shorthand": "oa",
         "tags": {},
         "type": "act area"
     },
@@ -7466,7 +7554,7 @@
         ],
         "name": "The Crypt",
         "rating": {},
-        "shorthand": "The Crypt",
+        "shorthand": "e cr",
         "tags": {},
         "type": "act area"
     },
@@ -7485,7 +7573,7 @@
         ],
         "name": "The Crypt Level 1",
         "rating": {},
-        "shorthand": "pt Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -7506,7 +7594,7 @@
         ],
         "name": "The Crypt Level 2",
         "rating": {},
-        "shorthand": "pt Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -7530,7 +7618,7 @@
         ],
         "name": "The Crystal Veins",
         "rating": {},
-        "shorthand": "ei",
+        "shorthand": " ve",
         "tags": {},
         "type": "act area"
     },
@@ -7557,7 +7645,7 @@
         ],
         "name": "The Den",
         "rating": {},
-        "shorthand": "e Den",
+        "shorthand": " den",
         "tags": {},
         "type": "act area"
     },
@@ -7575,7 +7663,7 @@
         ],
         "name": "The Descent",
         "rating": {},
-        "shorthand": "esc",
+        "shorthand": "sc",
         "tags": {},
         "type": "act area"
     },
@@ -7613,7 +7701,7 @@
         ],
         "name": "The Docks",
         "rating": {},
-        "shorthand": "Doc",
+        "shorthand": "ks",
         "tags": {},
         "type": "act area"
     },
@@ -7637,7 +7725,7 @@
         ],
         "name": "The Dread Thicket",
         "rating": {},
-        "shorthand": " Th",
+        "shorthand": "cke",
         "tags": {},
         "type": "act area"
     },
@@ -7659,7 +7747,7 @@
         ],
         "name": "The Dried Lake",
         "rating": {},
-        "shorthand": "Dri",
+        "shorthand": "d l",
         "tags": {},
         "type": "act area"
     },
@@ -7682,7 +7770,7 @@
         ],
         "name": "The Ebony Barracks",
         "rating": {},
-        "shorthand": "Eb",
+        "shorthand": " e",
         "tags": {},
         "type": "act area"
     },
@@ -7703,7 +7791,7 @@
         ],
         "name": "The Feeding Trough",
         "rating": {},
-        "shorthand": "Fee",
+        "shorthand": " fe",
         "tags": {},
         "type": "act area"
     },
@@ -7730,7 +7818,7 @@
         ],
         "name": "The Fellshrine Ruins",
         "rating": {},
-        "shorthand": "Fel",
+        "shorthand": " fe",
         "tags": {},
         "type": "act area"
     },
@@ -7751,7 +7839,7 @@
         ],
         "name": "The Fetid Pool",
         "rating": {},
-        "shorthand": "Fet",
+        "shorthand": " fe",
         "tags": {},
         "type": "act area"
     },
@@ -7772,7 +7860,7 @@
         ],
         "name": "The Flooded Depths",
         "rating": {},
-        "shorthand": "hs",
+        "shorthand": "ep",
         "tags": {},
         "type": "act area"
     },
@@ -7794,7 +7882,7 @@
         ],
         "name": "The Foothills",
         "rating": {},
-        "shorthand": "Foo",
+        "shorthand": "lls",
         "tags": {},
         "type": "act area"
     },
@@ -7818,7 +7906,7 @@
         ],
         "name": "The Grain Gate",
         "rating": {},
-        "shorthand": "n G",
+        "shorthand": " gra",
         "tags": {},
         "type": "act area"
     },
@@ -7842,7 +7930,7 @@
         ],
         "name": "The Grand Arena",
         "rating": {},
-        "shorthand": " Are",
+        "shorthand": " ar",
         "tags": {},
         "type": "act area"
     },
@@ -7863,7 +7951,7 @@
         ],
         "name": "The Grand Promenade",
         "rating": {},
-        "shorthand": " Pro",
+        "shorthand": "d p",
         "tags": {},
         "type": "act area"
     },
@@ -7886,7 +7974,7 @@
         ],
         "name": "The Harbour Bridge",
         "rating": {},
-        "shorthand": "arb",
+        "shorthand": "br",
         "tags": {},
         "type": "act area"
     },
@@ -7913,7 +8001,7 @@
         ],
         "name": "The Harvest",
         "rating": {},
-        "shorthand": "arv",
+        "shorthand": "rv",
         "tags": {},
         "type": "act area"
     },
@@ -7933,7 +8021,7 @@
         ],
         "name": "The High Gardens",
         "rating": {},
-        "shorthand": "Hi",
+        "shorthand": "e h",
         "tags": {},
         "type": "act area"
     },
@@ -7954,7 +8042,7 @@
         ],
         "name": "The Imperial Fields",
         "rating": {},
-        "shorthand": "l F",
+        "shorthand": "eld",
         "tags": {},
         "type": "act area"
     },
@@ -7978,7 +8066,7 @@
         ],
         "name": "The Imperial Gardens",
         "rating": {},
-        "shorthand": "l G",
+        "shorthand": "ens",
         "tags": {},
         "type": "act area"
     },
@@ -8000,7 +8088,7 @@
         ],
         "name": "The Karui Fortress",
         "rating": {},
-        "shorthand": " Ka",
+        "shorthand": " k",
         "tags": {},
         "type": "act area"
     },
@@ -8022,7 +8110,7 @@
         ],
         "name": "The Ledge",
         "rating": {},
-        "shorthand": "Led",
+        "shorthand": "led",
         "tags": {},
         "type": "act area"
     },
@@ -8066,7 +8154,7 @@
         ],
         "name": "The Lower Prison",
         "rating": {},
-        "shorthand": " Lo",
+        "shorthand": "lowe",
         "tags": {},
         "type": "act area"
     },
@@ -8088,7 +8176,7 @@
         ],
         "name": "The Lunaris Concourse",
         "rating": {},
-        "shorthand": "naris C",
+        "shorthand": "nar",
         "tags": {},
         "type": "act area"
     },
@@ -8114,7 +8202,7 @@
         ],
         "name": "The Lunaris Temple Level 1",
         "rating": {},
-        "shorthand": "naris Temple Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8139,7 +8227,7 @@
         ],
         "name": "The Lunaris Temple Level 2",
         "rating": {},
-        "shorthand": "naris Temple Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8162,7 +8250,7 @@
         ],
         "name": "The Marketplace",
         "rating": {},
-        "shorthand": "tp",
+        "shorthand": "ket",
         "tags": {},
         "type": "act area"
     },
@@ -8181,7 +8269,7 @@
         ],
         "name": "The Maven's Crucible",
         "rating": {},
-        "shorthand": "Cru",
+        "shorthand": "ib",
         "tags": {},
         "type": "special map"
     },
@@ -8203,7 +8291,7 @@
         ],
         "name": "The Mines Level 1",
         "rating": {},
-        "shorthand": "es Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8226,7 +8314,7 @@
         ],
         "name": "The Mines Level 2",
         "rating": {},
-        "shorthand": "es Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8256,7 +8344,7 @@
         ],
         "name": "The Mud Flats",
         "rating": {},
-        "shorthand": " Mu",
+        "shorthand": "ud",
         "tags": {},
         "type": "act area"
     },
@@ -8284,7 +8372,7 @@
         ],
         "name": "The Northern Forest",
         "rating": {},
-        "shorthand": "No",
+        "shorthand": "ern",
         "tags": {},
         "type": "act area"
     },
@@ -8305,7 +8393,7 @@
         ],
         "name": "The Oasis",
         "rating": {},
-        "shorthand": "Oa",
+        "shorthand": "oa",
         "tags": {},
         "type": "act area"
     },
@@ -8328,7 +8416,7 @@
         ],
         "name": "The Old Fields",
         "rating": {},
-        "shorthand": " Ol",
+        "shorthand": "eld",
         "tags": {},
         "type": "act area"
     },
@@ -8348,7 +8436,7 @@
         ],
         "name": "The Ossuary",
         "rating": {},
-        "shorthand": "Os",
+        "shorthand": "ary",
         "tags": {},
         "type": "act area"
     },
@@ -8376,7 +8464,7 @@
         ],
         "name": "The Putrid Cloister",
         "rating": {},
-        "shorthand": "Pu",
+        "shorthand": "cl",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -8405,7 +8493,7 @@
         ],
         "name": "The Quarry",
         "rating": {},
-        "shorthand": "rry",
+        "shorthand": "arr",
         "tags": {},
         "type": "act area"
     },
@@ -8426,7 +8514,7 @@
         ],
         "name": "The Quay",
         "rating": {},
-        "shorthand": "uay",
+        "shorthand": "the quay",
         "tags": {},
         "type": "act area"
     },
@@ -8452,7 +8540,7 @@
         ],
         "name": "The Ravaged Square",
         "rating": {},
-        "shorthand": "Rav",
+        "shorthand": " ra",
         "tags": {},
         "type": "act area"
     },
@@ -8472,7 +8560,7 @@
         ],
         "name": "The Refinery",
         "rating": {},
-        "shorthand": "Ref",
+        "shorthand": " re",
         "tags": {},
         "type": "act area"
     },
@@ -8492,7 +8580,7 @@
         ],
         "name": "The Reliquary",
         "rating": {},
-        "shorthand": "iq",
+        "shorthand": " re",
         "tags": {},
         "type": "act area"
     },
@@ -8514,7 +8602,7 @@
         ],
         "name": "The Ridge",
         "rating": {},
-        "shorthand": "Rid",
+        "shorthand": "e r",
         "tags": {},
         "type": "act area"
     },
@@ -8541,7 +8629,7 @@
         ],
         "name": "The Riverways",
         "rating": {},
-        "shorthand": "verw",
+        "shorthand": "rw",
         "tags": {},
         "type": "act area"
     },
@@ -8565,7 +8653,7 @@
         ],
         "name": "The Rotting Core",
         "rating": {},
-        "shorthand": "Rot",
+        "shorthand": "e r",
         "tags": {},
         "type": "act area"
     },
@@ -8590,7 +8678,7 @@
         ],
         "name": "The Ruined Square",
         "rating": {},
-        "shorthand": "ned",
+        "shorthand": "d s",
         "tags": {},
         "type": "act area"
     },
@@ -8627,7 +8715,7 @@
         ],
         "name": "The Sarn Ramparts",
         "rating": {},
-        "shorthand": " Ram",
+        "shorthand": " ra",
         "tags": {},
         "type": "act area"
     },
@@ -8649,7 +8737,7 @@
         ],
         "name": "The Sceptre of God",
         "rating": {},
-        "shorthand": "e Sc",
+        "shorthand": "ep",
         "tags": {},
         "type": "act area"
     },
@@ -8669,7 +8757,7 @@
         ],
         "name": "The Sewers",
         "rating": {},
-        "shorthand": "e Se",
+        "shorthand": "ewe",
         "tags": {},
         "type": "act area"
     },
@@ -8691,7 +8779,7 @@
         ],
         "name": "The Shaper's Realm",
         "rating": {},
-        "shorthand": "Rea",
+        "shorthand": "r'",
         "tags": {
             "boss_not_twinnable": true
         },
@@ -8716,7 +8804,7 @@
         ],
         "name": "The Ship Graveyard",
         "rating": {},
-        "shorthand": "The Ship Graveyard",
+        "shorthand": "eya",
         "tags": {},
         "type": "act area"
     },
@@ -8737,7 +8825,7 @@
         ],
         "name": "The Ship Graveyard Cave",
         "rating": {},
-        "shorthand": "rd C",
+        "shorthand": "eya",
         "tags": {},
         "type": "act area"
     },
@@ -8759,7 +8847,7 @@
         ],
         "name": "The Slave Pens",
         "rating": {},
-        "shorthand": " Pe",
+        "shorthand": "sl",
         "tags": {},
         "type": "act area"
     },
@@ -8782,7 +8870,7 @@
         ],
         "name": "The Slums",
         "rating": {},
-        "shorthand": "Slu",
+        "shorthand": "sl",
         "tags": {},
         "type": "act area"
     },
@@ -8803,7 +8891,7 @@
         ],
         "name": "The Solaris Concourse",
         "rating": {},
-        "shorthand": "laris C",
+        "shorthand": "ola",
         "tags": {},
         "type": "act area"
     },
@@ -8830,7 +8918,7 @@
         ],
         "name": "The Solaris Temple Level 1",
         "rating": {},
-        "shorthand": "laris Temple Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8853,7 +8941,7 @@
         ],
         "name": "The Solaris Temple Level 2",
         "rating": {},
-        "shorthand": "laris Temple Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -8880,7 +8968,7 @@
         ],
         "name": "The Southern Forest",
         "rating": {},
-        "shorthand": "Sou",
+        "shorthand": "ern",
         "tags": {},
         "type": "act area"
     },
@@ -8903,7 +8991,7 @@
         ],
         "name": "The Submerged Passage",
         "rating": {},
-        "shorthand": "bm",
+        "shorthand": "ub",
         "tags": {},
         "type": "act area"
     },
@@ -8922,7 +9010,7 @@
         ],
         "name": "The Templar Courts",
         "rating": {},
-        "shorthand": "r C",
+        "shorthand": "rts",
         "tags": {},
         "type": "act area"
     },
@@ -8960,7 +9048,7 @@
         ],
         "name": "The Temple of Atzoatl",
         "rating": {},
-        "shorthand": "zo",
+        "shorthand": "oa",
         "tags": {},
         "type": "unique map"
     },
@@ -8981,7 +9069,7 @@
         ],
         "name": "The Temple of Decay Level 1",
         "rating": {},
-        "shorthand": "y Level 1",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -9002,7 +9090,7 @@
         ],
         "name": "The Temple of Decay Level 2",
         "rating": {},
-        "shorthand": "y Level 2",
+        "shorthand": "ev",
         "tags": {},
         "type": "act area"
     },
@@ -9053,7 +9141,7 @@
         ],
         "name": "The Torched Courts",
         "rating": {},
-        "shorthand": "Tor",
+        "shorthand": "hed",
         "tags": {},
         "type": "act area"
     },
@@ -9071,7 +9159,7 @@
         ],
         "name": "The Tower of Ordeals",
         "rating": {},
-        "shorthand": "Ord",
+        "shorthand": "als",
         "tags": {},
         "type": "unique map"
     },
@@ -9093,7 +9181,7 @@
         ],
         "name": "The Toxic Conduits",
         "rating": {},
-        "shorthand": "dui",
+        "shorthand": "ox",
         "tags": {},
         "type": "act area"
     },
@@ -9111,7 +9199,7 @@
         ],
         "name": "The Tunnel",
         "rating": {},
-        "shorthand": "Tun",
+        "shorthand": " tu",
         "tags": {},
         "type": "act area"
     },
@@ -9136,7 +9224,7 @@
         ],
         "name": "The Twilight Strand",
         "rating": {},
-        "shorthand": "ht S",
+        "shorthand": " tw",
         "tags": {},
         "type": "act area"
     },
@@ -9165,7 +9253,7 @@
         ],
         "name": "The Twilight Temple",
         "rating": {},
-        "shorthand": "t T",
+        "shorthand": " tw",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -9195,7 +9283,7 @@
         ],
         "name": "The Upper Prison",
         "rating": {},
-        "shorthand": "per P",
+        "shorthand": " u",
         "tags": {},
         "type": "act area"
     },
@@ -9221,7 +9309,7 @@
         ],
         "name": "The Upper Sceptre of God",
         "rating": {},
-        "shorthand": "er S",
+        "shorthand": " u",
         "tags": {},
         "type": "act area"
     },
@@ -9239,7 +9327,7 @@
         ],
         "name": "The Vaal City",
         "rating": {},
-        "shorthand": "l Ci",
+        "shorthand": "l c",
         "tags": {},
         "type": "act area"
     },
@@ -9258,7 +9346,7 @@
         ],
         "name": "The Vaal Ruins",
         "rating": {},
-        "shorthand": "aal R",
+        "shorthand": "l r",
         "tags": {},
         "type": "act area"
     },
@@ -9277,7 +9365,7 @@
         ],
         "name": "The Vastiri Desert",
         "rating": {},
-        "shorthand": "Vas",
+        "shorthand": "iri",
         "tags": {},
         "type": "act area"
     },
@@ -9323,8 +9411,9 @@
         ],
         "name": "The Weaver's Chambers",
         "rating": {},
-        "shorthand": "Vi",
-        "unique": true
+        "shorthand": "r'",
+        "tags": {},
+        "type": "act area"
     },
     {
         "boss_ids": [
@@ -9351,7 +9440,7 @@
         ],
         "name": "The Western Forest",
         "rating": {},
-        "shorthand": "Wes",
+        "shorthand": "ern",
         "tags": {},
         "type": "act area"
     },
@@ -9377,7 +9466,7 @@
         ],
         "name": "The Wetlands",
         "rating": {},
-        "shorthand": "Wet",
+        "shorthand": "tla",
         "tags": {},
         "type": "act area"
     },
@@ -9414,8 +9503,20 @@
             "density": 6,
             "layout": 6
         },
-        "shorthand": "Thi",
-        "unique": false,
+        "shorthand": "cke",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": false,
+            "outdoors": false
+        },
+        "type": "map",
         "x": 722,
         "y": 318
     },
@@ -9452,7 +9553,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Tower",
+        "shorthand": "tower",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -9491,7 +9592,7 @@
             "density": 7,
             "layout": 10
         },
-        "shorthand": "c S",
+        "shorthand": "ox",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -9518,7 +9619,7 @@
         ],
         "name": "Trial of Burning Rage",
         "rating": {},
-        "shorthand": " Bu",
+        "shorthand": " bu",
         "tags": {},
         "type": "special map"
     },
@@ -9533,7 +9634,7 @@
         ],
         "name": "Trial of Crippling Grief",
         "rating": {},
-        "shorthand": "Gri",
+        "shorthand": "pp",
         "tags": {},
         "type": "special map"
     },
@@ -9549,7 +9650,7 @@
         ],
         "name": "Trial of Lingering Pain",
         "rating": {},
-        "shorthand": "Lin",
+        "shorthand": " li",
         "tags": {},
         "type": "special map"
     },
@@ -9564,7 +9665,7 @@
         ],
         "name": "Trial of Piercing Truth",
         "rating": {},
-        "shorthand": " Pi",
+        "shorthand": " pi",
         "tags": {},
         "type": "special map"
     },
@@ -9595,7 +9696,7 @@
         ],
         "name": "Trial of Swirling Fear",
         "rating": {},
-        "shorthand": "Sw",
+        "shorthand": "rl",
         "tags": {},
         "type": "special map"
     },
@@ -9631,8 +9732,20 @@
             "density": 5,
             "layout": 10
         },
-        "shorthand": " I",
-        "unique": false,
+        "shorthand": "sl",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": false,
+            "boss_soft_phases": false,
+            "delirium_mirror": true,
+            "few_obstacles": true,
+            "league_mechanics": true,
+            "linear": true,
+            "outdoors": true
+        },
+        "type": "map",
         "x": 345,
         "y": 336
     },
@@ -9657,7 +9770,7 @@
         ],
         "name": "Tul's Domain",
         "rating": {},
-        "shorthand": "Tul",
+        "shorthand": "tul",
         "tags": {},
         "type": "unique map"
     },
@@ -9676,7 +9789,7 @@
         ],
         "name": "Twisted Distant Memory",
         "rating": {},
-        "shorthand": "wis",
+        "shorthand": "twis",
         "tags": {},
         "type": "unique map"
     },
@@ -9711,7 +9824,7 @@
             "density": 4,
             "layout": 10
         },
-        "shorthand": "nd R",
+        "shorthand": "nd r",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -9762,8 +9875,20 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Se",
-        "unique": false,
+        "shorthand": "d s",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_phases": true,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": false,
+            "outdoors": false
+        },
+        "type": "map",
         "x": 367,
         "y": 191
     },
@@ -9786,8 +9911,9 @@
         ],
         "name": "Untainted Paradise",
         "rating": {},
-        "shorthand": " Pa",
-        "unique": true
+        "shorthand": "adi",
+        "tags": {},
+        "type": "unique map"
     },
     {
         "boss_ids": [
@@ -9850,7 +9976,7 @@
             "density": 8,
             "layout": 2
         },
-        "shorthand": "l Py",
+        "shorthand": "yr",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -9891,19 +10017,27 @@
             "density": 6,
             "layout": 2
         },
-        "shorthand": "l T",
-        "unique": false
+        "shorthand": "al t",
+        "tags": {
+            "boss_not_spawned": false,
+            "boss_not_twinnable": true,
+            "boss_phases": false,
+            "boss_rushable": false,
+            "boss_separated": true,
+            "boss_soft_phases": false,
+            "delirium_mirror": false,
+            "few_obstacles": false,
+            "league_mechanics": false,
+            "linear": false,
+            "outdoors": false
+        },
+        "type": "special map"
     },
     {
-        "boss": {
-            "ids": [
-                "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
-            ],
-            "names": [
-                "Guardian of the Vault"
-            ],
-            "separated": true
-        },
+        "atlas": true,
+        "boss_ids": [
+            "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
+        ],
         "connected": [
             "Carcass Map",
             "City Square Map",
@@ -9930,7 +10064,7 @@
             "density": 3,
             "layout": 6
         },
-        "shorthand": "Vault",
+        "shorthand": "vault",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -10000,7 +10134,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "Vil",
+        "shorthand": "vil",
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
@@ -10042,7 +10176,7 @@
             "density": 7,
             "layout": 6
         },
-        "shorthand": "Vol",
+        "shorthand": "ano",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -10176,7 +10310,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "Wat",
+        "shorthand": "rw",
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
@@ -10299,7 +10433,7 @@
         ],
         "name": "Xoph's Domain",
         "rating": {},
-        "shorthand": "X",
+        "shorthand": "xo",
         "tags": {},
         "type": "unique map"
     }

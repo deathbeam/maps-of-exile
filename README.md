@@ -22,7 +22,7 @@ pip install --user -r data/requirements.txt
 
 Update data:
 ```bash
-python data/main.py globals,monsters,cards
+python data/main.py globals,monsters,cards,maps
 ```
 
 #### Running the site

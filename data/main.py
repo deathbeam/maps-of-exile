@@ -1,11 +1,15 @@
 import json
 import math
+import mimetypes
 import os
 import re
 import sys
 import time
+import html
+import urllib
 from decimal import Decimal
 from math import ceil
+from wikitextparser import remove_markup
 
 import requests
 import yaml
@@ -19,6 +23,22 @@ class DecimalEncoder(json.JSONEncoder):
         if isinstance(o, Decimal):
             return str(o)
         return super(DecimalEncoder, self).default(o)
+
+
+def get_image_path(directory, name, ext):
+    name = (
+        re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
+    )
+    return f"/img/{directory}/{name}{ext}"
+
+
+def save_image(directory, name, res):
+    content_type = res.headers["content-type"]
+    ext = mimetypes.guess_extension(content_type)
+    path = get_image_path(directory, name, ext)
+    with open(f"{dir_path}/../site/public{path}", "wb") as f:
+        f.write(res.content)
+    return path
 
 
 def find_shortest_substring(entry, entries):
@@ -74,7 +94,7 @@ def merge(source, destination):
             node = destination.setdefault(key, {})
             merge(value, node)
         elif isinstance(value, list):
-            destination[key] = destination.get(key, []) + value
+            destination[key] = list(dict.fromkeys(destination.get(key, []) + value))
         else:
             destination[key] = value
 
@@ -119,6 +139,13 @@ def get_globals_data(config):
 
 
 def get_card_data(key, config, card_extra):
+    def clean_card_text(text):
+        text = remove_markup(text)
+        soup = BeautifulSoup(text, "html.parser")
+        for e in soup.find_all("span", {"class": "c-item-hoverbox__display"}):
+            e.decompose()
+        return soup.get_text().replace("16x16px|link=|alt=", "").replace("..", ".")
+
     league = config["league"]
 
     print(f"Getting card data from wiki")
@@ -131,30 +158,41 @@ def get_card_data(key, config, card_extra):
             "maxage": 1,
             "limit": "500",
             "tables": "items",
-            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters",
-            "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1"',
+            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text",
+            "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1" AND items._pageName NOT LIKE "%User:%"',
         },
     ).json()["cargoquery"]
     wiki_cards = list(
         map(
             lambda x: {
-                "name": x["title"]["name"],
+                "name": x["name"],
                 "drop": {
                     "areas": list(
-                        filter(None, x["title"].get("drop areas", "").split(","))
+                        map(
+                            lambda x: x.strip(),
+                            filter(
+                                lambda x: x and not x.startswith("MapAtlas"),
+                                (x.get("drop areas", "") or "").split(","),
+                            ),
+                        )
                     ),
                     "monsters": list(
-                        filter(None, x["title"].get("drop monsters", "").split(","))
+                        map(
+                            lambda x: x.strip(),
+                            filter(None, (x.get("drop monsters", "") or "").split(",")),
+                        )
                     ),
-                    "min_level": int(x["title"].get("drop level", "0")),
-                    "max_level": int(x["title"].get("drop level maximum"))
-                    if "drop level maximum" in x["title"]
+                    "min_level": int(x.get("drop level", "0") or "0"),
+                    "max_level": int(x.get("drop level maximum"))
+                    if x.get("drop level maximum")
                     else None,
+                    "text": clean_card_text(x.get("drop text", "") or ""),
                 },
             },
-            wiki_cards,
+            map(lambda x: x["title"], wiki_cards),
         )
     )
+    print(f"Found {len(wiki_cards)} cards")
 
     card_chances = {}
     card_weights = {}
@@ -229,38 +267,47 @@ def get_card_data(key, config, card_extra):
 
     print(f"Getting card prices for {league} and Standard")
     prices = requests.get(config["prices"] + league).json()["lines"]
-    standardPrices = requests.get(config["prices"] + "Standard").json()["lines"]
+    standard_prices = requests.get(config["prices"] + "Standard").json()["lines"]
 
     out = []
-    for price_card in standardPrices:
+    for wiki_card in wiki_cards:
+        name = wiki_card["name"]
+        price_card = next(filter(lambda x: x["name"] == name, prices), {})
+        standard_price_card = next(
+            filter(lambda x: x["name"] == name, standard_prices), {}
+        )
+
+        explicit_modifiers = standard_price_card.get(
+            "explicitModifiers", price_card.get("explicitModifiers")
+        )
         reward = ""
-        if price_card.get("explicitModifiers", []):
+
+        if explicit_modifiers:
             reward = (
-                re.sub("<[^>]+>", "", price_card["explicitModifiers"][0]["text"])
+                re.sub("<[^>]+>", "", explicit_modifiers[0]["text"])
                 .replace("{", "")
                 .replace("}", "")
                 .replace("\n", ", ")
             )
 
         card = {
-            "name": price_card["name"],
-            "price": next(
-                map(
-                    lambda x: x["chaosValue"],
-                    filter(lambda x: x["name"] == price_card["name"], prices),
-                ),
-                0,
-            )
-            or 0,
-            "standardPrice": price_card["chaosValue"],
-            "stack": price_card.get("stackSize", 1),
-            "art": price_card["artFilename"],
+            "name": name,
+            "price": price_card.get("chaosValue"),
+            "standardPrice": standard_price_card.get("chaosValue"),
+            "stack": standard_price_card.get(
+                "stackSize", price_card.get("stackSize", 1)
+            ),
+            "art": standard_price_card.get(
+                "artFilename", price_card.get("artFilename")
+            ),
             "reward": reward,
-            "ninja": config["ninja"] + price_card["detailsId"],
+            "ninja": config["ninja"]
+            + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
         }
 
-        chance_card = card_chances.get(price_card["name"])
-        weight_card = card_weights.get(price_card["name"])
+        merge(wiki_card, card)
+        chance_card = card_chances.get(name)
+        weight_card = card_weights.get(name)
 
         if chance_card:
             new_weight = math.floor(
@@ -277,17 +324,13 @@ def get_card_data(key, config, card_extra):
                 old_weight = weight_card or 0
                 weight_card = new_weight
                 print(
-                    f"Making assumption for weight for {price_card['name']} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
+                    f"Making assumption for weight for {name} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
                 )
 
         if weight_card:
             card["weight"] = weight_card
         else:
-            print(f"Weight for card {card['name']} not found")
-
-        wiki = next(filter(lambda x: x["name"] == card["name"], wiki_cards), None)
-        if wiki:
-            merge(wiki, card)
+            print(f"Weight for card {name} not found")
 
         extra = next(filter(lambda x: x["name"] == card["name"], card_extra), None)
         if extra:
@@ -296,6 +339,42 @@ def get_card_data(key, config, card_extra):
         out.append(card)
 
     return sorted(out, key=lambda d: d["name"])
+
+
+def get_monsters(config):
+    def get_map_wiki_inner(offset):
+        return requests.get(
+            config["wiki"]["api"],
+            params={
+                "action": "cargoquery",
+                "format": "json",
+                "smaxage": 0,
+                "maxage": 0,
+                "limit": 500,
+                "offset": offset,
+                "tables": "monsters",
+                "fields": "monsters.name, monsters.metadata_id",
+                "where": "(monsters.name NOT LIKE '%DNT%' AND monsters.name NOT LIKE '%UNUSED%') AND (monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%ChampionTreasurer%' OR monsters.metadata_id LIKE '%Exile%' OR monsters.metadata_id LIKE '%VaalArchitect%' OR monsters.metadata_id LIKE '%Breach%' OR monsters.metadata_id LIKE '%Hellscape%' OR monsters.metadata_id LIKE '%Abyss%' OR monsters.metadata_id LIKE '%TentaclePortal%')",
+            },
+        ).json()["cargoquery"]
+
+    print(f"Getting monster metadata from wiki")
+    wiki_monsters = []
+    cur_offset = 0
+    while True:
+        res = get_map_wiki_inner(cur_offset)
+        if len(res) == 0:
+            break
+        cur_offset += len(res)
+        wiki_monsters += res
+    print(f"Found {len(wiki_monsters)} monsters")
+    wiki_monsters = list(map(lambda x: x["title"], wiki_monsters))
+    out = {}
+    for monster in wiki_monsters:
+        out[monster.get("metadata id").strip()] = html.unescape(
+            monster.get("name")
+        ).strip()
+    return out
 
 
 def get_map_meta(key, config):
@@ -314,14 +393,14 @@ def get_map_meta(key, config):
                 map(
                     lambda x: {
                         "name": x[0].strip().replace(" Map", "").replace("’", "'"),
-                        "boss": {"separated": x[11].strip() == "o"},
-                        "info": {
-                            "boss": x[8].strip(),
-                        },
-                        "layout": {
+                        "tags": {
+                            "boss_separated": x[11].strip() == "o",
                             "few_obstacles": x[10].strip() == "o",
                             "outdoors": x[12].strip() == "o",
                             "linear": x[13].strip() == "o",
+                        },
+                        "info": {
+                            "boss": x[8].strip(),
                         },
                     },
                     r,
@@ -333,14 +412,14 @@ def get_map_meta(key, config):
                     lambda x: {
                         "name": x[1].strip().replace(" Map", "").replace("’", "'")
                         + " Map",
-                        "boss": {"separated": x[12].strip() == "o"},
-                        "info": {
-                            "boss": x[8].strip(),
-                        },
-                        "layout": {
+                        "tags": {
+                            "boss_separated": x[12].strip() == "o",
                             "few_obstacles": x[11].strip() == "o",
                             "outdoors": x[13].strip() == "o",
                             "linear": x[14].strip() == "o",
+                        },
+                        "info": {
+                            "boss": x[8].strip(),
                         },
                     },
                     r,
@@ -402,22 +481,32 @@ def get_map_ratings(key, config):
 
 
 def get_map_wiki(config):
+    def get_map_wiki_inner(offset):
+        return requests.get(
+            config["wiki"]["api"],
+            params={
+                "action": "cargoquery",
+                "format": "json",
+                "smaxage": 0,
+                "maxage": 0,
+                "limit": 500,
+                "offset": offset,
+                "tables": "areas",
+                "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
+                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND (areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND (areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
+            },
+        ).json()["cargoquery"]
+
     print(f"Getting map metadata from wiki")
-    wiki_maps = requests.get(
-        config["wiki"]["api"],
-        params={
-            "action": "cargoquery",
-            "format": "json",
-            "smaxage": 0,
-            "maxage": 0,
-            "limit": "500",
-            "tables": "maps,items,areas",
-            "join_on": "items._pageID=maps._pageID,maps.area_id=areas.id",
-            "fields": "items.name,maps.area_id,maps.area_level,areas.boss_monster_ids,maps.unique_area_id",
-            "group_by": "items.name",
-            "where": "items.class_id='Map' AND maps.area_id LIKE '%MapWorlds%'",
-        },
-    ).json()["cargoquery"]
+    wiki_maps = []
+    cur_offset = 0
+    while True:
+        res = get_map_wiki_inner(cur_offset)
+        if len(res) == 0:
+            break
+        cur_offset += len(res)
+        wiki_maps += res
+    print(f"Found {len(wiki_maps)} areas")
     return list(map(lambda x: x["title"], wiki_maps))
 
 
@@ -426,53 +515,76 @@ def get_maps(key, config):
     map_ratings = get_map_ratings(key, config)
     map_wiki = get_map_wiki(config)
 
-    out = []
-    url = config["poedb"]["list"]
-    print(f"Getting maps from url {url}")
-    r = requests.get(url)
-    soup = BeautifulSoup(r.content, "html.parser")
-    mapslist = soup.find(id="MapsList").find("table").find("tbody").find_all("tr")
+    cleaned_maps = {}
+    for m in map_wiki:
+        name = m.get("name")
+        id = m.get("id")
+        level = int(m.get("area level"))
+        act = int(m.get("act"))
 
-    for row in mapslist:
-        cols = row.find_all("td")
-        name = cols[3].text
+        main_page = m.get("main page", "") or ""
+        if main_page:
+            name = main_page
 
-        if not name:
+        name = re.sub(r"\([^)]+\)", "", name)
+        name = name.strip()
+        is_map_area = m.get("is map area", "0") != "0"
+        is_unique_map_area = m.get("is unique map area", "0") != "0"
+        is_act_area = (
+            not is_unique_map_area
+            and not is_map_area
+            and act < 11
+            and (id.startswith("1_") or id.startswith("2_"))
+        )
+
+        if not is_act_area and any(x in name or x in id for x in config["ignored"]):
+            print(f"Found ignored area {name}, skipping")
             continue
 
-        map_url = cols[3].find("a").attrs["href"]
-        map_url = config["poedb"]["base"] + map_url
-        out_map = {"name": name.strip(), "poedb": map_url}
+        map_type = "special map"
+        if is_unique_map_area:
+            map_type = "unique map"
+        elif is_map_area:
+            if " Map" not in name:
+                map_type = "special map"
+            else:
+                map_type = "map"
+        elif is_act_area:
+            map_type = "act area"
 
-        out.append(out_map)
+        out_map = {
+            "ids": [id],
+            "levels": [level],
+            "name": name,
+            "poedb": config["poedb"]["base"]
+            + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
+            "type": map_type,
+        }
 
-    base_names = sorted(
-        list(map(lambda x: x["name"], out)) + ["Harbinger Map", "Engraved Ultimatum"]
-    )
-    mapslist = soup.find(id="MapsUnique").find("table").find("tbody").find_all("tr")
+        if is_act_area:
+            out_map["connected"] = (m.get("connection ids", "") or "").split(",")
 
-    for row in mapslist:
-        cols = row.find_all("td")
-        href = cols[1].find("a")
-        name = href.text
-        map_url = href.attrs["href"]
-        map_url = config["poedb"]["base"] + map_url
+        if m.get("boss monster ids"):
+            out_map["boss_ids"] = sorted(
+                list(set(filter(None, m["boss monster ids"].split(","))))
+            )
 
-        for n in base_names:
-            if not n.endswith(" Map") and not n.endswith("Ultimatum"):
-                continue
-            name = name.replace(n, "")
+        existing_map = cleaned_maps.get(name)
+        if existing_map:
+            merge(existing_map, out_map)
+        cleaned_maps[name] = out_map
 
-        out.append({"name": name.strip(), "poedb": map_url})
-
-    out = list(filter(lambda x: x["name"] not in config["ignored"], out))
-    out = deduplicate(sorted(out, key=lambda d: d["name"]), "name")
+    out = sorted(list(cleaned_maps.values()), key=lambda x: x["name"])
     out_names = list(map(lambda x: x["name"], out))
 
+    url = config["poedb"]["list"]
+    print(f"Getting atlas data from url {url}")
+    r = requests.get(url)
+    soup = BeautifulSoup(r.content, "html.parser")
     mapssvg = soup.find(id="AtlasNodeSVG")
     maplinks = mapssvg.find_all("a")
-    map_positions = []
 
+    map_positions = []
     for maplink in maplinks:
         txt = maplink.find("text")
         map_positions.append(
@@ -484,15 +596,11 @@ def get_maps(key, config):
         )
 
     for m in out:
-        name = m["name"].replace(" Synthesised Map", "")
-        m["name"] = name
-        unique = not name.endswith(" Map")
+        name = m["name"]
         m["shorthand"] = find_shortest_substring(name.replace(" Map", ""), out_names)
-        m["boss"] = {}
-        m["layout"] = {}
+        m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}
-        m["unique"] = unique
 
         existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
         if existing_meta:
@@ -509,41 +617,51 @@ def get_maps(key, config):
             existing_rating.pop("name")
             existing_rating.pop("density_unreliable")
             m["rating"] = existing_rating
-        existing_wiki = next(filter(lambda x: x["name"] == name, map_wiki), None)
-        if existing_wiki:
-            if unique and "unique area id" in existing_wiki:
-                m["id"] = existing_wiki["unique area id"]
-            else:
-                m["id"] = existing_wiki["area id"]
-            if "boss monster ids" in existing_wiki:
-                m["boss"]["ids"] = sorted(
-                    list(
-                        set(filter(None, existing_wiki["boss monster ids"].split(",")))
-                    )
-                )
         existing_position = next(
             filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None
         )
         if existing_position:
+            m["atlas"] = True
             m["x"] = existing_position["x"]
             m["y"] = existing_position["y"]
+
+        m["ids"].sort()
+        m["levels"].sort()
+        (m.get("boss_ids") or []).sort()
 
     return out
 
 
-def get_map_data(map_data, extra_map_data):
-    url = map_data["poedb"]
+def get_map_data(map_data, extra_map_data, config):
+    url = map_data.get("poedb")
     map_data.pop("poedb")
+
+    s = requests.Session()
+
+    # Wiki image
+    print(f"Getting wiki image data for {map_data['name']}")
+    image_path = (
+        config["wiki"]["filepath"]
+        + map_data["name"].replace(" ", "_")
+        + "_area_screenshot"
+    )
+    r = s.get(image_path + ".png", allow_redirects=False)
+    if r.status_code != 301:
+        r = s.get(image_path + ".jpg", allow_redirects=False)
+    if r.status_code == 301:
+        loc = r.headers["location"]
+        print(f"Found map image {loc}")
+        map_data["image"] = loc
 
     # PoeDB map metadata
     print(f"Getting map data for {map_data['name']} from url {url}")
-    s = requests.Session()
     r = s.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
-    maptabs = soup.find("div", class_="tab-content").findChildren(
-        "div", recursive=False
-    )
+    tabs = soup.find("div", class_="tab-content")
+    maptabs = tabs and tabs.findChildren("div", recursive=False)
+    maptabs = maptabs or []
 
+    level_found = False
     for data in maptabs:
         table = data.find("table")
         if not table:
@@ -559,14 +677,11 @@ def get_map_data(map_data, extra_map_data):
             cols = row.find_all("td")
             name = cols[0].text.strip().lower()
             value = cols[1]
-            if name == "monster level" and "level" not in map_data:
-                if map_data.get("tiers"):
-                    continue
-                map_data["level"] = int(value.text.strip())
-            elif name == "boss":
-                map_data["boss"]["names"] = sorted(
-                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
-                )
+            if name == "monster level" and not level_found and map_data.get("atlas"):
+                level = int(value.text.strip())
+                if level:
+                    level_found = True
+                    map_data["levels"][0] = level
             elif name == "atlas linked":
                 map_data["connected"] = sorted(
                     list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
@@ -577,11 +692,32 @@ def get_map_data(map_data, extra_map_data):
                 )
             elif name == "tags":
                 if "cannot_be_twinned" in value.text.strip():
-                    map_data["boss"]["not_twinnable"] = True
+                    map_data["tags"]["boss_not_twinnable"] = True
                 if "no_boss" in value.text.strip():
-                    map_data["boss"].pop("ids", None)
+                    map_data.pop("boss_ids", None)
             elif name == "icon" and "icon" not in map_data:
                 map_data["icon"] = value.text.strip()
+
+    if "icon" not in map_data:
+        val = soup.find(id="MapDeviceRecipes")
+        if val:
+            img_tags = val.find_all("img")
+            if img_tags:
+                icon = img_tags[0]["src"]
+                r = s.get(icon)
+                if r.ok:
+                    print(f"Found map icon {icon}")
+                    map_data["icon"] = save_image("icon", map_data["name"], r)
+
+    if map_data.get("atlas"):
+        level = map_data["levels"][0]
+        map_data["levels"] = [
+            level,
+            min(level + 3, 83),
+            min(level + 7, 83),
+            min(level + 11, 83),
+            min(level + 15, 83),
+        ]
 
     # Merge existing data
     existing = next(
@@ -592,34 +728,50 @@ def get_map_data(map_data, extra_map_data):
     return map_data
 
 
-def get_maps_template(maps, existing_maps):
-    out = existing_maps.copy()
+def get_maps_template(maps, existing_maps, overwrite=False):
+    out = [] if overwrite else existing_maps.copy()
 
     for map in maps:
         new_map = {
             "name": map["name"],
-            "image": False,
-            "layout": {
+            "tags": {
                 "league_mechanics": None,
                 "delirium_mirror": None,
                 "outdoors": None,
                 "linear": None,
                 "few_obstacles": None,
-            },
-            "boss": {
-                "not_spawned": None,
-                "rushable": None,
-                "phases": None,
-                "soft_phases": None,
-                "separated": None,
+                "boss_not_spawned": None,
+                "boss_rushable": None,
+                "boss_phases": None,
+                "boss_soft_phases": None,
+                "boss_separated": None,
             },
         }
 
-        existing_map = next(filter(lambda x: x["name"] == map["name"], out), None)
+        existing_map = next(
+            filter(
+                lambda x: x["name"] == map["name"], existing_maps if overwrite else out
+            ),
+            None,
+        )
         if existing_map:
+            layout = existing_map.pop("layout", None)
+            if layout:
+                for k, v in layout.items():
+                    if v is not None:
+                        new_map["tags"][k] = v
+
+            boss = existing_map.pop("boss", None)
+            if boss:
+                for k, v in boss.items():
+                    if v is not None:
+                        new_map["tags"]["boss_" + k] = v
+
             merge(existing_map, new_map)
-            out.remove(existing_map)
-        out.append(new_map)
+            if existing_map in out:
+                out.remove(existing_map)
+        if "map" in map["type"]:
+            out.append(new_map)
 
     return sorted(out, key=lambda d: d["name"])
 
@@ -695,7 +847,10 @@ def get_issue_template(maps):
         dropdown_input(
             "Map name",
             "Select map from dropdown or leave at **None** if title is properly filled.",
-            map(lambda x: x["name"].replace(" Map", ""), maps),
+            map(
+                lambda x: x["name"].replace(" Map", ""),
+                filter(lambda x: "map" in x["type"], maps),
+            ),
         )
     )
     body.append(
@@ -728,28 +883,19 @@ def get_issue_template(maps):
 
     body.append(
         checkbox_input(
-            "Layout",
-            "Map layout metadata. If you dont know simply leave the box unchecked.",
+            "Tags",
+            "Map tags metadata. If you dont know simply leave the box unchecked.",
             [
                 "**League mechanics** - If map is good for league mechanics that require some space (Breach, Legion)",
                 "**Delirium mirror** - If you can hold delirium mirror through whole map or delirium mirror gets good value in it",
                 "**Outdoors** - If map is outdoors or indoors (Dunes vs Cells for example)",
                 "**Linear** - If map is linear instead of having multiple paths to take. Map counts as linear even if the line goes in circle",
                 "**Few obstacles** - If map does not have a lot of obstacles (so for example is good for shield charging around)",
-            ],
-        )
-    )
-
-    body.append(
-        checkbox_input(
-            "Boss",
-            "Map boss metadata. If you dont know simply leave the box unchecked.",
-            [
-                "**Not spawned** - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
-                "**Rushable** - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
-                "**Phases** - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
-                "**Soft phases** - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
-                "**Separated** - If boss room is separated from rest of the map",
+                "**Boss Not spawned** - If boss is not spawned on entering the map (important for Altar farming, can be verified by checking for boss altars spawning or not)",
+                "**Boss Rushable** - If boss is close to map start or can be rushed quickly and reliably, a lot quicker than completing whole map",
+                "**Boss Phases** - If boss has hard phases that force you to wait (delay on initial boss spawn counts too)",
+                "**Boss Soft phases** - If boss has soft phases that can be bypassed with DPS (teleports at certain threshold, heals, partial damage reduction)",
+                "**Boss Separated** - If boss room is separated from rest of the map",
             ],
         )
     )
@@ -763,12 +909,20 @@ def main():
 
     args = sys.argv
     fetch_globals = False
+    fetch_monsters = False
     fetch_cards = False
     fetch_maps = False
+    overwrite = False
 
     if len(args) > 1:
+        if "overwrite" in args[1]:
+            overwrite = True
+
         if "globals" in args[1]:
             fetch_globals = True
+
+        if "monsters" in args[1]:
+            fetch_monsters = True
 
         if "cards" in args[1]:
             fetch_cards = True
@@ -778,6 +932,16 @@ def main():
 
     config = config["data"]
     api_key = os.environ["GOOGLE_API_KEY"]
+
+    if fetch_globals:
+        globals = get_globals_data(config)
+        with open(dir_path + "/../site/src/data/globals.json", "w") as f:
+            f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
+
+    if fetch_monsters:
+        monsters = get_monsters(config)
+        with open(dir_path + "/../site/src/data/monsters.json", "w") as f:
+            f.write(json.dumps(monsters, indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_cards:
         # Get extra card data
@@ -790,22 +954,17 @@ def main():
                 json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)
             )
 
-    if fetch_globals:
-        globals = get_globals_data(config)
-        with open(dir_path + "/../site/src/data/globals.json", "w") as f:
-            f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
-
     if fetch_maps:
         # Get basic map data
         maps = get_maps(api_key, config)
 
         # Get extra map data
         with open(dir_path + "/maps.json", "r") as f:
-            map_extra = get_maps_template(maps, json.load(f))
+            map_extra = get_maps_template(maps, json.load(f), overwrite)
         with open(dir_path + "/maps.json", "w") as f:
             f.write(json.dumps(map_extra, indent=4, cls=DecimalEncoder, sort_keys=True))
 
-        # Create github template
+        # Create GitHub template
         issue_template = get_issue_template(maps)
         with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
             f.write(
@@ -813,7 +972,7 @@ def main():
             )
 
         # Write detailed map data
-        maps = list(map(lambda x: get_map_data(x, map_extra), maps))
+        maps = list(map(lambda x: get_map_data(x, map_extra, config), maps))
         with open(dir_path + "/../site/src/data/maps.json", "w") as f:
             f.write(
                 json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True)

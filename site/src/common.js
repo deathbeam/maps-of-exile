@@ -1,13 +1,13 @@
-export function rescale(value, minValue, maxValue, scale) {
-  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
-}
-
 export function deduplicate(a, key) {
   const seen = {}
   return a.filter(function (item) {
     const k = item[key]
-    return seen.hasOwnProperty(k) ? false : (seen[k] = true)
+    return Object.hasOwn(seen, k) ? false : (seen[k] = true)
   })
+}
+
+function rescale(value, minValue, maxValue, scale) {
+  return Math.min((scale * (value - minValue)) / (maxValue - minValue), scale)
 }
 
 export function calculateScore(dataset, range) {
@@ -67,11 +67,17 @@ export function ratingColor(rating, scale = 1) {
   return color
 }
 
-export function tierColor(tiers, unique, voidstones = 0) {
-  const tier = tiers[voidstones]
-  let color = 'light'
+export function mapLevel(levels, atlas, voidstones) {
+  if (atlas) {
+    return levels[voidstones]
+  }
+  return levels[levels.length - 1]
+}
 
-  if (unique) {
+export function tierColor(levels, atlas, type, voidstones = 0) {
+  const tier = mapLevelToTier(mapLevel(levels, atlas, voidstones))
+  let color = 'light'
+  if (type === 'unique map') {
     color = 'unique'
   } else if (tier >= 11) {
     color = 'danger'
@@ -82,45 +88,58 @@ export function tierColor(tiers, unique, voidstones = 0) {
   return color
 }
 
-export function scrollToElement(id) {
-  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
+export function priceImage(price) {
+  let img = '/img/alch.png'
+  if (price >= 100) {
+    img = '/img/divine.png'
+  } else if (price >= 20) {
+    img = '/img/exalt.png'
+  } else if (price >= 5) {
+    img = '/img/chaos.png'
+  }
+  return img
 }
 
-export function copyToClipboard(ref) {
-  ref.current.select()
-  document.execCommand('copy')
-}
+export function cardBadge(card, scale = 1) {
+  let badgeClass
+  if (card.score >= 6 * scale) {
+    badgeClass = 'bg-light text-dark'
+  } else if (card.score >= 4 * scale) {
+    badgeClass = 'bg-primary text-light'
+  } else if (card.score >= 2 * scale) {
+    badgeClass = 'bg-info text-dark'
+  } else if (card.score >= 0.1 * scale) {
+    badgeClass = 'bg-dark text-info border border-1 border-info'
+  } else {
+    badgeClass = 'bg-secondary text-dark'
+  }
 
-export function mapTierToLevel(tier) {
-  return tier - 1 + 68
+  if (card.unknown) {
+    badgeClass += ' border border-1 border-dark shadow-info'
+  } else if (card.weight === 0) {
+    badgeClass += ' border border-1 border-dark shadow-danger'
+  } else if (card.boss) {
+    badgeClass += ' border border-1 border-dark shadow-warning'
+  }
+
+  badgeClass = `badge m-1 ${badgeClass}`
+  return badgeClass
 }
 
 export function mapLevelToTier(level) {
   return level + 1 - 68
 }
 
-export function parseValue(val, ref) {
-  if (typeof ref === 'number') {
-    return parseFloat(val)
+export function scrollToElement(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+
+export async function copyToClipboard(ref) {
+  ref.current.focus()
+  ref.current.select()
+  const data = ref.current.value
+  const permission = await navigator.permissions.query({ name: 'clipboard-write' })
+  if (permission.state === 'granted' || permission.state === 'prompt') {
+    await navigator.clipboard.writeText(data)
   }
-
-  if (typeof ref === 'boolean') {
-    if (val === 1) {
-      return true
-    }
-
-    if (val === 0) {
-      return false
-    }
-
-    if (val === 'true') {
-      return true
-    }
-
-    if (val === 'false') {
-      return false
-    }
-  }
-
-  return val
 }

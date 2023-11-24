@@ -21,59 +21,93 @@ body:
     description: Select map from dropdown or leave at **None** if title is properly
       filled.
     options:
+    - Absence of Mercy and Empathy
+    - Absence of Patience and Wisdom
+    - Absence of Symmetry and Harmony
+    - Absence of Value and Meaning
     - Academy
     - Acid Caverns
     - Acton's Nightmare
     - Alleyways
     - Altered Distant Memory
+    - Ancient City
     - Arachnid Nest
     - Arachnid Tomb
     - Arcade
     - Arena
+    - Arid Lake
+    - Armoury
+    - Arsenal
+    - Ashen Wood
     - Atoll
     - Augmented Distant Memory
     - Barrows
     - Basilica
     - Bazaar
     - Beach
+    - Belfry
     - Bog
     - Bone Crypt
+    - Bramble Valley
+    - Burial Chambers
     - Caer Blaidd, Wolfpack's Den
     - Cage
     - Caldera
+    - Canyon
     - Carcass
     - Castle Ruins
     - Cells
     - Cemetery
     - Channel
     - Chateau
+    - Chayula's Domain
     - City Square
     - Cold River
     - Colonnade
     - Colosseum
+    - Conservatory
+    - Coral Ruins
+    - Core
     - Cortex
     - Courthouse
     - Courtyard
     - Coves
+    - Crater
     - Crimson Temple
+    - Crimson Township
+    - Crystal Ore
     - Cursed Crypt
     - Dark Forest
     - Death and Taxes
+    - Defiled Cathedral
+    - Desert
+    - Desert Spring
+    - Dig
+    - Domain of Timeless Conflict
     - Doryani's Machinarium
+    - Dry Sea
     - Dunes
     - Dungeon
+    - Esh's Domain
     - Estuary
     - Excavation
+    - Eye of the Storm
     - Factory
+    - Fields
     - Flooded Mine
+    - Forbidden Woods
     - Forge of the Phoenix
     - Forking River
+    - Foundry
     - Frozen Cabins
     - Fungal Hollow
+    - Gardens
     - Geode
+    - Ghetto
     - Glacier
     - Grave Trough
     - Graveyard
+    - Grotto
     - Hall of Grandmasters
     - Hallowed Ground
     - Haunted Mansion
@@ -81,14 +115,19 @@ body:
     - Infested Valley
     - Infused Beachhead
     - Ivory Temple
+    - Jungle Valley
+    - Laboratory
+    - Lair
     - Lair of the Hydra
     - Lava Chamber
     - Lava Lake
     - Leyline
+    - Lighthouse
     - Lookout
     - "Maelstr\xF6m of Chaos"
     - Malformation
     - Mao Kun
+    - Marshes
     - Mausoleum
     - Maze
     - Maze of the Minotaur
@@ -101,15 +140,20 @@ body:
     - Oba's Cursed Trove
     - Olmec's Sanctum
     - Orchard
+    - Overgrown Ruin
     - Overgrown Shrine
     - Palace
+    - Park
     - Pen
+    - Peninsula
     - Phantasmagoria
     - Pier
     - Pillars of Arun
     - Pit
     - Pit of the Chimera
     - Plateau
+    - Plaza
+    - Polaric Void
     - Poorjoy's Asylum
     - Port
     - Precinct
@@ -117,16 +161,21 @@ body:
     - Primordial Pool
     - Promenade
     - Racecourse
+    - Ramparts
     - Reef
-    - Replica Cortex
-    - Replica Pillars of Arun
-    - Replica Poorjoy's Asylum
+    - Relic Chambers
     - Residence
     - Rewritten Distant Memory
+    - Scriptorium
+    - Seething Chyme
+    - Sepulchre
+    - Shipyard
     - Shore
+    - Shrine
     - Siege
     - Silo
     - Spider Forest
+    - Spider Lair
     - Stagnation
     - Strand
     - Sulphur Vents
@@ -134,28 +183,46 @@ body:
     - Sunken City
     - Temple
     - Terrace
+    - The Alluring Abyss
+    - The Apex of Sacrifice
     - The Beachhead
     - The Coward's Trial
+    - The Maven's Crucible
     - The Putrid Cloister
+    - The Sacred Grove
+    - The Shaper's Realm
+    - The Temple of Atzoatl
     - The Tower of Ordeals
     - The Twilight Temple
     - The Vinktar Square
     - Thicket
     - Tower
+    - Toxic Sewer
+    - Trial of Burning Rage
+    - Trial of Crippling Grief
+    - Trial of Lingering Pain
+    - Trial of Piercing Truth
+    - Trial of Stinging Doubt
+    - Trial of Swirling Fear
     - Tropical Island
+    - Tul's Domain
     - Twisted Distant Memory
     - Underground River
     - Underground Sea
     - Untainted Paradise
+    - Uul-Netol's Domain
     - Vaal Pyramid
     - Vaal Temple
     - Vault
     - Vaults of Atziri
+    - Villa
     - Volcano
+    - Waste Pool
     - Wasteland
     - Waterways
     - Whakawairua Tuahu
     - Wharf
+    - Xoph's Domain
   validations:
     required: false
 - type: textarea
@@ -221,10 +288,10 @@ body:
   validations:
     required: false
 - type: checkboxes
-  id: layout
+  id: tags
   attributes:
-    label: Layout
-    description: Map layout metadata. If you dont know simply leave the box unchecked.
+    label: Tags
+    description: Map tags metadata. If you dont know simply leave the box unchecked.
     options:
     - label: '**League mechanics** - If map is good for league mechanics that require
         some space (Breach, Legion)'
@@ -235,23 +302,15 @@ body:
         Map counts as linear even if the line goes in circle'
     - label: '**Few obstacles** - If map does not have a lot of obstacles (so for
         example is good for shield charging around)'
-  validations:
-    required: false
-- type: checkboxes
-  id: boss
-  attributes:
-    label: Boss
-    description: Map boss metadata. If you dont know simply leave the box unchecked.
-    options:
-    - label: '**Not spawned** - If boss is not spawned on entering the map (important
+    - label: '**Boss Not spawned** - If boss is not spawned on entering the map (important
         for Altar farming, can be verified by checking for boss altars spawning or
         not)'
-    - label: '**Rushable** - If boss is close to map start or can be rushed quickly
+    - label: '**Boss Rushable** - If boss is close to map start or can be rushed quickly
         and reliably, a lot quicker than completing whole map'
-    - label: '**Phases** - If boss has hard phases that force you to wait (delay on
-        initial boss spawn counts too)'
-    - label: '**Soft phases** - If boss has soft phases that can be bypassed with
-        DPS (teleports at certain threshold, heals, partial damage reduction)'
-    - label: '**Separated** - If boss room is separated from rest of the map'
+    - label: '**Boss Phases** - If boss has hard phases that force you to wait (delay
+        on initial boss spawn counts too)'
+    - label: '**Boss Soft phases** - If boss has soft phases that can be bypassed
+        with DPS (teleports at certain threshold, heals, partial damage reduction)'
+    - label: '**Boss Separated** - If boss room is separated from rest of the map'
   validations:
     required: false

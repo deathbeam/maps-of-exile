@@ -11,29 +11,53 @@ Simplest way to add new map even if you are not knowledgeable about inner workin
 
 ### For developers
 
+#### Running data updater
+
+You need to have `GOOGLE_API_KEY` to grab data sheets via google api (see [Setting up API keys](https://support.google.com/googleapi/answer/6158862?hl=en)). This is free and you can generate one for yourself.
+
+Install dependencies:
+```bash
+pip install --user -r data/requirements.txt
+```
+
+Update data:
+```bash
+python data/main.py globals,monsters,cards
+```
+
+#### Running the site
+
+Install dependencies:
+```bash
+(cd site && npm install)
+```
+
+Run the site:
+```bash
+(cd site && npm run start)
+```
+
+#### Understanding the data
+
 [/data/cards.json](/data/cards.json) contains extra card metadata  
 [/data/maps.json](/data/maps.json) contains extra map metadata  
-[/site/public/layout](/site/public/img/layout/) contains layout images  
 
 Full format for map metadata is:
 
 ```json
 {
   "name": "Map name",
-  "image": false,
-  "layout": {
+  "tags": {
     "league_mechanics": false,
     "delirium_mirror": false,
     "outdoors": false,
     "linear": false,
-    "few_obstacles": false
-  },
-  "boss": {
-    "not_spawned": false,
-    "rushable": false,
-    "phases": false,
-    "soft_phases": false,
-    "separated": false
+    "few_obstacles": false,
+    "boss_not_spawned": false,
+    "boss_rushable": false,
+    "boss_phases": false,
+    "boss_soft_phases": false,
+    "boss_separated": false
   },
   "rating": {
     "layout": 10,
@@ -51,14 +75,13 @@ See issue mentioned in [For-non-developers](#for-non-developers) section for ref
 
 ## Sources of data
 
-**Estimated Divination Card weights spreadsheet for 3.20** from **Prohibited Library** discord (used for getting card weights):  
-https://docs.google.com/spreadsheets/d/1m2oZfqkVK69p6vO2mPDavGJvF5DT_FknDe1y2uG9bpc  
+### Spreadsheets
 
-**Stacked Decks card spreadsheet for 3.21** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found, e.g newer cards):  
-https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4  
+**Stacked Decks card + weight spreadsheet for 3.22** by **nerdyjoe** from **Prohibited Library** discord:
+https://docs.google.com/spreadsheets/d/1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
 
-**Stacked Decks card spreadsheet for 3.22** by **nerdyjoe** from **Prohibited Library** discord (used as fallback when weight for card is not found, e.g newer cards):  
-https://docs.google.com/spreadsheets/d/13E4ciXrAQK5vl5PA4dtRTf_VrPeS-Fr7V_yjp5dJ0l0
+**Stacked Decks card spreadsheet for 3.21** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found):  
+https://docs.google.com/spreadsheets/d/104ESCXdjVGBSF1BNbClfoilVEYC7pIHZxOSsb5W-_r4
 
 **Mob count spreadsheet** by **not_Shorex** (used for **Density**, contains exact mob counts per maps, averaged):  
 https://docs.google.com/spreadsheets/d/10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w  
@@ -69,14 +92,25 @@ https://docs.google.com/spreadsheets/d/1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yub
 **Map reference spreadsheet** by **Anjerosan** (used for boss notes and various metadata about layout, like outdoors/linear etc):  
 https://docs.google.com/spreadsheets/d/10rPJ5oMb5DoQ55iqWkiVonq5KofUWl8DJgPfQJIlrb0  
 
-**Card prices** from **PoeNinja** (used for listing all cards and assigning them prices + getting card data like art, stack size and rewards):  
+### Websites/APIs
+
+**Area data** from **PoeWiki** (used for listing all maps and areas and grabbing area levels and area bosses):  
+https://www.poewiki.net/wiki/Area:MapAtziri2 (example of **Alluring Abyss**)
+
+**Card data** from **PoeWiki** (used for listing all cards and getting card metadata like drop sources and drop restrictions):  
+https://www.poewiki.net/wiki/House_of_Mirrors (example of **House of Mirrors**)
+
+**Monster data** from **PoeWiki** (used for getting monster names for monster IDs):  
+https://www.poewiki.net/wiki/Monster:Metadata/Monsters/Atziri/Atziri2 (example of **Atziri**)
+
+**Layout images** from **PoeWiki** (a lot of them filled by me and other contributors here):
+https://www.poewiki.net/wiki/File:Cemetery_Map_area_screenshot.jpg
+
+**Card prices** from **PoeNinja** (used for assigning card prices + getting card data like art, stack size and rewards):  
 https://poe.ninja/challenge/divination-cards  
-https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)  
+https://poe.ninja/api/data/itemoverview?league=Crucible&type=DivinationCard (api call)
 
-**Map card drops** from **PoeWiki** (used for card drops and boss card drops):  
-https://www.poewiki.net/wiki/Colonnade_Map  
-
-**Map metadata** from **PoeDB** (used for map tiers, map listings, boss names, as fallback for card drops when wiki data is missing):  
+**Map metadata** from **PoeDB** (used for retrieving area art, area tags and atlas data like atlas position, connected maps, atlas map area levels):  
 https://poedb.tw/us/Maps#MapsList  
 https://poedb.tw/us/Colonnade_Map (example of single map)
 
@@ -88,21 +122,21 @@ https://web.poecdn.com/image/Art/2DItems/Maps/UniqueMap2.png (example)
 
 The site is split to 2 parts, data generator and then the actual site.
 
-### Data generator
+### Data generator ([/data](/data))
 
-First, it grabs all card price data from Poe ninja. This builds the initial card list.  
+First, it grabs all cards from Poe Wiki (contains drop area ids, drop monster ids, drop level requirements). This builds the initial card list.
 
-Then it grabs card weight data from card weight spreadsheet and merges this data with poe.ninja card data.  
+Then, it grabs all card price data from Poe ninja and merges this data with card list.
+
+Then it grabs card weight data from card weight spreadsheet and merges this data with card list.  
 
 Then it grabs data from stacked deck spreadsheet to get weights for newer cards missing from card weight spreadsheet and calculates weight for new cards based on common denominator (in this case Patient card which is present in both card weight spreadsheet and stacked deck spreadsheet)  
 
-Then it grabs data from wiki for cards (drop area ids, drop monster ids, drop level requirements).  
-
 This card list with card prices, card metadata and card weights is stored to be used in site as .json.  
 
-Then in grabs list of all maps from PoeDB. 
+Then in grabs list of all areas from Poe Wiki (this contains area ids, area monsters, area levels).
 
-Then it grabs extra card metadata from wiki for maps (map id, map boss ids) for pairing with wiki card metadata.  
+Then it grabs extra map metadata from PoeDB (atlas position, map connections, pantheon, up-to-date area levels) and merges this data with map list.
 
 Then it grabs map density from spreadsheet (in raw mob count) and merges the data with map list  
 
@@ -110,11 +144,9 @@ Then it grabs map ratings from spreadsheet (layout, density, boss) and merges th
 
 Then it grabs map metadata from spreadsheet (boss info, some misc tags like outdoors, linear etc) and merges the data with map list  
 
-Then it iterates every map and grabs extra data from poedb (monster level, connected maps, atlas map position, pantheon, tags)  
-
 This map list with PoeDB, PoeWiki and spreadsheet metadata is also stored to be used in site in .json.  
 
-### Site
+### Site ([/site](/site))
 
 Site simply displays all the maps with metadata, builds some tags from misc info from maps and then matches the card metadata from cards .json with card names found in map in map .json.  
 

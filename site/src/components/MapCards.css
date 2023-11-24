@@ -1,9 +1,20 @@
+.map-reward,
+.map-stack-size {
+  border-radius: 0;
+  font-size: 0.9rem;
+  white-space: inherit;
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+}
+
+.map-img-holder {
+  position: relative;
+}
+
 .map-stack-size {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   left: 5px;
-  font-size: 15px;
-  border-radius: 0;
 }
 
 .map-card-price {

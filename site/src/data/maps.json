@@ -3080,7 +3080,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/LeagueMetamorphosis/MetamorphosisMapBoss",
             "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/ThaumaturgyDungeon",
@@ -8921,7 +8920,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris"
+            "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris",
+            "Metadata/Monsters/Statue/GoldStatueLargeBossFemale"
         ],
         "connected": [
             "2_8_12_1",

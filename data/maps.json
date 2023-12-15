@@ -1792,6 +1792,9 @@
     },
     {
         "name": "Orchard Map",
+        "rating": {
+            "boss": 2
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1988,6 +1991,9 @@
     },
     {
         "name": "Plaza Map",
+        "rating": {
+            "boss": 2
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,

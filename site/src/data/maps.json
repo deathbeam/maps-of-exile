@@ -526,7 +526,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": true,
@@ -1279,7 +1279,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": false,
             "boss_soft_phases": false,
             "delirium_mirror": true,
@@ -1371,7 +1371,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -2144,7 +2144,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": true,
@@ -2970,7 +2970,7 @@
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": true,
@@ -3170,7 +3170,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -4520,6 +4520,7 @@
         "shorthand": "esa",
         "tags": {
             "boss_separated": true,
+            "boss_rushable": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -4613,7 +4614,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -4661,6 +4662,7 @@
         "shorthand": "ud",
         "tags": {
             "boss_separated": false,
+            "boss_rushable": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -4754,7 +4756,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -5095,6 +5097,7 @@
         "shorthand": "park",
         "tags": {
             "boss_separated": false,
+            "boss_rushable": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -6235,7 +6238,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": false,
             "boss_soft_phases": true,
             "delirium_mirror": false,
@@ -9591,7 +9594,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": false,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -9877,7 +9880,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -10227,7 +10230,7 @@
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
-            "boss_rushable": false,
+            "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,

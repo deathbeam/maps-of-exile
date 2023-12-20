@@ -973,8 +973,8 @@
         },
         "shorthand": "og",
         "tags": {
-            "boss_separated": true,
             "boss_rushable": true,
+            "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
             "outdoors": true
@@ -3161,8 +3161,8 @@
         ],
         "image": "https://www.poewiki.net/images/f/fd/Foundry_Map_area_screenshot.png",
         "info": {
-            "density": "Missing exact mob count, density rating might be unreliable",
-            "boss_rushable": "Straight path from entrance"
+            "boss_rushable": "Straight path from entrance",
+            "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
             76,
@@ -4531,8 +4531,8 @@
         },
         "shorthand": "esa",
         "tags": {
-            "boss_separated": true,
             "boss_rushable": true,
+            "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -4626,7 +4626,7 @@
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
-            "boss_rushable": true,
+            "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
@@ -4674,8 +4674,8 @@
         },
         "shorthand": "ud",
         "tags": {
-            "boss_separated": false,
             "boss_rushable": true,
+            "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -5111,8 +5111,8 @@
         },
         "shorthand": "park",
         "tags": {
-            "boss_separated": false,
             "boss_rushable": true,
+            "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -9825,7 +9825,8 @@
         ],
         "image": "https://www.poewiki.net/images/3/38/Underground_River_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage."
+            "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage.",
+            "boss_rushable": "Boss either up from spawn or up and to the left"
         },
         "levels": [
             82,
@@ -9877,8 +9878,7 @@
         ],
         "image": "https://www.poewiki.net/images/3/36/Underground_Sea_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
-            "boss_rushable": "Boss either up from spawn or up and to the left"
+            "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage."
         },
         "levels": [
             77,

@@ -259,6 +259,9 @@
     },
     {
         "name": "Ashen Wood Map",
+        "info": {
+            "boss_rushable": "Find the 2 tents, boss spawns in between them"
+        },
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,
@@ -274,6 +277,9 @@
     },
     {
         "name": "Atoll Map",
+        "info": {
+            "boss_rushable": "Follow right wall"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -307,6 +313,9 @@
     },
     {
         "name": "Barrows Map",
+        "info": {
+            "boss_rushable": "Look for door that says arena and not tomb"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -385,6 +394,9 @@
     },
     {
         "name": "Bog Map",
+        "info": {
+            "boss_rushable": "Door usually can be found close going straight from portal"
+        },
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,
@@ -493,6 +505,9 @@
     },
     {
         "name": "Canyon Map",
+        "info": {
+            "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -523,6 +538,9 @@
     },
     {
         "name": "Castle Ruins Map",
+        "info": {
+            "boss_rushable": "The boss room is top right along the path"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -796,6 +814,9 @@
     },
     {
         "name": "Crimson Temple Map",
+        "info": {
+            "boss_rushable": "Straight path from entrance"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1096,6 +1117,9 @@
     },
     {
         "name": "Fields Map",
+        "info": {
+            "boss_rushable": "Go bottom left, can hug top left wall or follow the road"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -1172,6 +1196,9 @@
     },
     {
         "name": "Foundry Map",
+        "info": {
+            "boss_rushable": "Straight path from entrance"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1672,6 +1699,9 @@
     },
     {
         "name": "Mesa Map",
+        "info": {
+            "boss_rushable": "Rush to the center"
+        },
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,
@@ -1717,6 +1747,9 @@
     },
     {
         "name": "Mud Geyser Map",
+        "info": {
+            "boss_rushable": "Boss at opposite inner side of doughnut"
+        },
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,
@@ -1747,6 +1780,9 @@
     },
     {
         "name": "Necropolis Map",
+        "info": {
+            "boss_rushable": "Straight path from entrance"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -1855,6 +1891,9 @@
     },
     {
         "name": "Park Map",
+        "info": {
+            "boss_rushable": "Roughly a square, just go diagonal. Or hug the edge of square"
+        },
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,
@@ -2267,6 +2306,9 @@
     },
     {
         "name": "Shore Map",
+        "info": {
+            "boss_rushable": "Usually to your character's right, so if top side of map spawn go top left"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2681,6 +2723,9 @@
     },
     {
         "name": "Toxic Sewer Map",
+        "info": {
+            "boss_rushable": "Follow the outer wall"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2852,6 +2897,9 @@
     },
     {
         "name": "Underground River Map",
+        "info": {
+            "boss_rushable": "Boss either up from spawn or up and to the left"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -3003,6 +3051,9 @@
     },
     {
         "name": "Waste Pool Map",
+        "info": {
+            "boss_rushable": "Follow the outer wall"
+        },
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,

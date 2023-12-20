@@ -2896,9 +2896,6 @@
         }
     },
     {
-        "info": {
-            "boss_rushable": "Boss either up from spawn or up and to the left"
-        },
         "name": "Underground River Map",
         "tags": {
             "boss_not_spawned": false,
@@ -2914,6 +2911,9 @@
         }
     },
     {
+        "info": {
+            "boss_rushable": "Boss either up from spawn or up and to the left"
+        },
         "name": "Underground Sea Map",
         "tags": {
             "boss_not_spawned": false,

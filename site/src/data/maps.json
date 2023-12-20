@@ -626,7 +626,8 @@
             "MapWorldsAshenWood"
         ],
         "info": {
-            "boss": "Archer with Fire based attacks. Avoid Blast Rain. Vaal Burning Arrow is hard to avoid and can inflict a powerful Ignite."
+            "boss": "Archer with Fire based attacks. Avoid Blast Rain. Vaal Burning Arrow is hard to avoid and can inflict a powerful Ignite.",
+            "boss_rushable": "Find the 2 tents, boss spawns in between them"
         },
         "levels": [
             72,
@@ -644,6 +645,7 @@
         },
         "shorthand": "ash",
         "tags": {
+            "boss_rushable": true,
             "boss_separated": false,
             "few_obstacles": false,
             "linear": false,
@@ -688,7 +690,8 @@
         ],
         "image": "https://www.poewiki.net/images/6/6f/Atoll_Map_area_screenshot.png",
         "info": {
-            "boss": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being frozen. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells)."
+            "boss": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being frozen. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
+            "boss_rushable": "Follow right wall"
         },
         "levels": [
             72,
@@ -750,7 +753,8 @@
         ],
         "image": "https://www.poewiki.net/images/6/6b/Barrows_Map_area_screenshot.png",
         "info": {
-            "boss": "Physical attacks - charge and telegraphed slam. When boss sits down rocks fall from ceiling."
+            "boss": "Physical attacks - charge and telegraphed slam. When boss sits down rocks fall from ceiling.",
+            "boss_rushable": "Look for door that says arena and not tomb"
         },
         "levels": [
             72
@@ -951,7 +955,8 @@
         ],
         "image": "https://www.poewiki.net/images/d/d6/Bog_Map_area_screenshot.png",
         "info": {
-            "boss": "Same as Arid Lake boss except reskinned. Again, breaking nests heals/enrages boss making it significantly more difficult."
+            "boss": "Same as Arid Lake boss except reskinned. Again, breaking nests heals/enrages boss making it significantly more difficult.",
+            "boss_rushable": "Door usually can be found close going straight from portal"
         },
         "levels": [
             74,
@@ -969,6 +974,7 @@
         "shorthand": "og",
         "tags": {
             "boss_separated": true,
+            "boss_rushable": true,
             "few_obstacles": true,
             "linear": false,
             "outdoors": true
@@ -1260,7 +1266,8 @@
         ],
         "image": "https://www.poewiki.net/images/1/1d/Canyon_Map_area_screenshot.png",
         "info": {
-            "boss": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull."
+            "boss": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
+            "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
         },
         "levels": [
             80,
@@ -1352,7 +1359,8 @@
         ],
         "image": "https://www.poewiki.net/images/f/fb/Castle_Ruins_Map_area_screenshot.png",
         "info": {
-            "boss": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out."
+            "boss": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
+            "boss_rushable": "The boss room is top right along the path"
         },
         "levels": [
             70,
@@ -2125,7 +2133,8 @@
         ],
         "image": "https://www.poewiki.net/images/3/3b/Crimson_Temple_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Throws Physical projectiles. AoE summons bats, curses nearby enemies with Temporal Chains. Red ground bubbles spawn which burst for small Physical damage after a time."
+            "boss": "Throws Physical projectiles. AoE summons bats, curses nearby enemies with Temporal Chains. Red ground bubbles spawn which burst for small Physical damage after a time.",
+            "boss_rushable": "Straight path from entrance"
         },
         "levels": [
             80,
@@ -2949,7 +2958,8 @@
         ],
         "image": "https://www.poewiki.net/images/1/17/Fields_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Familiar Act 7 fight. Melee acolytes will constantly spawn and wall archers will fire maiming Blast Rain throughout duration of fight. After a while two doggos will appear, then Gruest. Gruest fires a spear which deals Physical damage and inflicts a Strong bleed. Periodically Gruest will gain an enrage buff which increases his damage and allows him to use a very quick barrage of spears that should be evaded."
+            "boss": "Familiar Act 7 fight. Melee acolytes will constantly spawn and wall archers will fire maiming Blast Rain throughout duration of fight. After a while two doggos will appear, then Gruest. Gruest fires a spear which deals Physical damage and inflicts a Strong bleed. Periodically Gruest will gain an enrage buff which increases his damage and allows him to use a very quick barrage of spears that should be evaded.",
+            "boss_rushable": "Go bottom left, can hug top left wall or follow the road"
         },
         "levels": [
             69,
@@ -3151,7 +3161,8 @@
         ],
         "image": "https://www.poewiki.net/images/f/fd/Foundry_Map_area_screenshot.png",
         "info": {
-            "density": "Missing exact mob count, density rating might be unreliable"
+            "density": "Missing exact mob count, density rating might be unreliable",
+            "boss_rushable": "Straight path from entrance"
         },
         "levels": [
             76,
@@ -4502,7 +4513,8 @@
         ],
         "image": "https://www.poewiki.net/images/9/9c/Mesa_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Surprisingly easier than Tier 3 Springs Oak. Modest physical attacks including Leap Slam. Summons a Warcheif totem to supplement his damage. Endurance Charges and Immortal Call can make him tanky against Physical attacks"
+            "boss": "Surprisingly easier than Tier 3 Springs Oak. Modest physical attacks including Leap Slam. Summons a Warcheif totem to supplement his damage. Endurance Charges and Immortal Call can make him tanky against Physical attacks",
+            "boss_rushable": "Rush to the center"
         },
         "levels": [
             82,
@@ -4643,7 +4655,8 @@
             "MapWorldsMudGeyser"
         ],
         "info": {
-            "boss": "Extremely powerful Physical projectiles. Three fast ones that are hard to dodge. One large one that deals an explosion (60% Physical/40% Fire) on contact which can one shot. In melee range always stay behind the boss. When ranged always keep the boss in sight (it can be hard to see sometimes) and keep actively mobile to avoid the projectiles."
+            "boss": "Extremely powerful Physical projectiles. Three fast ones that are hard to dodge. One large one that deals an explosion (60% Physical/40% Fire) on contact which can one shot. In melee range always stay behind the boss. When ranged always keep the boss in sight (it can be hard to see sometimes) and keep actively mobile to avoid the projectiles.",
+            "boss_rushable": "Boss at opposite inner side of doughnut"
         },
         "levels": [
             80,
@@ -4737,7 +4750,8 @@
         ],
         "image": "https://www.poewiki.net/images/c/c2/Necropolis_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Throws three strong Physical projectiles. Summons Animated Weapons. Creates a circular frost wall around your character that prevents movement. Places Bonespire ground beneath your feet that inflicts a stackable, unremovable physical DoT. It is imperative you move out of this quickly. Always bring some form of movement skill (not Shield Charge) that allows you to escape the Frost Wall. Frost Wall + Bonespire ground equates to death."
+            "boss": "Throws three strong Physical projectiles. Summons Animated Weapons. Creates a circular frost wall around your character that prevents movement. Places Bonespire ground beneath your feet that inflicts a stackable, unremovable physical DoT. It is imperative you move out of this quickly. Always bring some form of movement skill (not Shield Charge) that allows you to escape the Frost Wall. Frost Wall + Bonespire ground equates to death.",
+            "boss_rushable": "Straight path from entrance"
         },
         "levels": [
             79,
@@ -5079,7 +5093,8 @@
             "MapWorldsPark"
         ],
         "info": {
-            "boss": "Leap Slam. Molten Strike. Summons exploding balls which deal weak Physical damage. Conjures several beacons of light that deal Fire DoT on contact."
+            "boss": "Leap Slam. Molten Strike. Summons exploding balls which deal weak Physical damage. Conjures several beacons of light that deal Fire DoT on contact.",
+            "boss_rushable": "Roughly a square, just go diagonal. Or hug the edge of square"
         },
         "levels": [
             76,
@@ -6219,7 +6234,8 @@
         ],
         "image": "https://www.poewiki.net/images/5/58/Shore_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities."
+            "boss": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
+            "boss_rushable": "Usually to your character's right, so if top side of map spawn go top left"
         },
         "levels": [
             73,
@@ -9579,7 +9595,8 @@
         ],
         "image": "https://www.poewiki.net/images/7/73/Toxic_Sewer_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT)."
+            "boss": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
+            "boss_rushable": "Follow the outer wall"
         },
         "levels": [
             72
@@ -9860,7 +9877,8 @@
         ],
         "image": "https://www.poewiki.net/images/3/36/Underground_Sea_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage."
+            "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
+            "boss_rushable": "Boss either up from spawn or up and to the left"
         },
         "levels": [
             77,
@@ -10210,7 +10228,8 @@
         ],
         "image": "https://www.poewiki.net/images/7/78/Waste_Pool_Map_area_screenshot.jpg",
         "info": {
-            "boss": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple."
+            "boss": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
+            "boss_rushable": "Follow the outer wall"
         },
         "levels": [
             73,

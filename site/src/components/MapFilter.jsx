@@ -129,8 +129,9 @@ const filterInputs = atom(get => [
     ),
     type: 'cardselect',
     options: get(state.cards)
+      .filter(c => c.weight)
       .sort((a, b) => b.weight - a.weight)
-      .map(c => ({ name: c.name + ' (' + c.weight + ')', value: c.name })),
+      .map(c => ({ label: c.name + ' (' + c.weight + ')', value: c.name })),
     def: state.input.cardBaseline,
     numberDef: state.input.cardBaselineNumber,
     size: 'big'

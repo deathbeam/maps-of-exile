@@ -1,10 +1,9 @@
 import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
 import { memo, useRef } from 'react'
-import SelectSearch from 'react-select-search'
+import Select from 'react-select'
 
 import { copyToClipboard } from '../common'
-import './MapFilterInput.css'
 
 const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
   const [value, setValue] = useAtom(input.def)
@@ -98,9 +97,30 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
             <label className="form-label">{input.name}</label>
           </span>
           <div className="input-group">
-            <SelectSearch options={input.options} value={value} placeholder={value} onChange={setValue} search="true" />
+            <Select
+              id={input.name}
+              className="form-control"
+              classNames={{
+                container: () => 'p-0 m-0',
+                control: () => 'm-0 ps-3 pe-3',
+                option: state =>
+                  state.isSelected
+                    ? 'ps-3 pe-3 bg-primary'
+                    : state.isFocused
+                    ? 'ps-3 pe-3 bg-secondary'
+                    : 'ps-3 pe-3 bg-dark'
+              }}
+              unstyled
+              options={input.options}
+              value={value}
+              placeholder={value}
+              onChange={e => {
+                setValue(e.value)
+              }}
+            />
             <input
-              className="form-control select-search-number text-center"
+              className="form-control text-center"
+              style={{ maxWidth: '4em' }}
               type="number"
               value={numberValue}
               onChange={setNumberValue}

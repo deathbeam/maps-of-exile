@@ -580,7 +580,9 @@ def get_maps(key, config):
     out_names = list(map(lambda x: x["name"].lower(), out_names))
 
     # Add flavor text and map tab text to make sure map's shorthand doesn't trigger these
-    out_names.append("travel to this map by using it in a personal map device. maps can only be used once")
+    out_names.append(
+        "travel to this map by using it in a personal map device. maps can only be used once"
+    )
     out_names.append("atlas bonus complete")
 
     url = config["poedb"]["list"]
@@ -603,7 +605,9 @@ def get_maps(key, config):
 
     for m in out:
         name = m["name"]
-        m["shorthand"] = find_shortest_substring(name.replace(" Map", "").lower(), out_names)
+        m["shorthand"] = find_shortest_substring(
+            name.replace(" Map", "").lower(), out_names
+        )
         m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}

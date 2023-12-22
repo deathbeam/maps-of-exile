@@ -6901,7 +6901,10 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Ralakesh/Greust/Greust"
+            "Metadata/Monsters/Ralakesh/Alira/Alira",
+            "Metadata/Monsters/Ralakesh/Greust/Greust",
+            "Metadata/Monsters/Ralakesh/Kraityn/Kraityn",
+            "Metadata/Monsters/Ralakesh/Oak/Oak"
         ],
         "connected": [
             "2_7_6",
@@ -8952,7 +8955,9 @@
     {
         "boss_ids": [
             "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris",
-            "Metadata/Monsters/Statue/GoldStatueLargeBossFemale"
+            "Metadata/Monsters/Guardians/GuardianBossHeadCold",
+            "Metadata/Monsters/Guardians/GuardianBossHeadFire",
+            "Metadata/Monsters/Guardians/GuardianBossHeadLightning"
         ],
         "connected": [
             "2_8_12_1",

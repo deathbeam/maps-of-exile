@@ -13,7 +13,6 @@ const filterInputs = atom(get => [
     tooltip: '',
     type: 'search',
     def: state.input.search,
-    tags: get(state.tags),
     numberDef: atom('')
   },
   {

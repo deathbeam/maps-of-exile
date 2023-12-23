@@ -24,6 +24,25 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
   }
 
   switch (input.type) {
+    case 'search':
+      return (
+        <div className={divInputClass}>
+          <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+            <span className="tooltip-tag-text">{input.tooltip}</span>
+            <label htmlFor={input.name} className="form-label">
+              {input.name}
+            </label>
+          </span>
+          <input
+            id={input.name}
+            className="form-control"
+            type="search"
+            placeholder={input.placeholder}
+            value={value}
+            onChange={setValue}
+          />
+        </div>
+      )
     case 'number':
       return (
         <div className={divInputClass}>
@@ -58,6 +77,44 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
                 </option>
               ))}
             </select>
+            <button className="btn btn-outline-secondary" onClick={reset}>
+              <i className="fa-solid fa-refresh fa-fw" />
+            </button>
+          </div>
+        </div>
+      )
+    case 'multiselect':
+      return (
+        <div className={divInputClass}>
+          <span className="tooltip-tag tooltip-tag-bottom tooltip-tag-notice">
+            <span className="tooltip-tag-text">{input.tooltip}</span>
+            <label htmlFor={input.name} className="form-label">
+              {input.name}
+            </label>
+          </span>
+          <div className="input-group">
+            <Select
+              id={input.name}
+              className="form-control"
+              classNames={{
+                container: () => 'p-0 m-0',
+                control: () => 'm-0 ps-3 pe-3',
+                multiValue: () => 'badge badge-fw text-dark bg-secondary me-1',
+                option: state =>
+                  state.isSelected
+                    ? 'ps-3 pe-3 bg-primary'
+                    : state.isFocused
+                    ? 'ps-3 pe-3 bg-secondary'
+                    : 'ps-3 pe-3 bg-dark'
+              }}
+              unstyled
+              isMulti
+              options={input.options}
+              value={value && value.map(v => input.options.find(o => o.value === v)).filter(v => v !== undefined)}
+              onChange={e => {
+                setValue(e.map(e => e.value))
+              }}
+            />
             <button className="btn btn-outline-secondary" onClick={reset}>
               <i className="fa-solid fa-refresh fa-fw" />
             </button>
@@ -112,7 +169,7 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
               }}
               unstyled
               options={input.options}
-              value={value}
+              value={value && input.options.find(o => o.value === value)}
               placeholder={value}
               onChange={e => {
                 setValue(e.value)

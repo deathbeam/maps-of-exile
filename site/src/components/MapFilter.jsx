@@ -3,9 +3,53 @@ import { memo } from 'react'
 
 import state from '../state'
 import MapFilterInput from './MapFilterInput'
-import MapFilterSearch from './MapFilterSearch'
+import Tags from './Tags'
 
 const filterInputs = atom(get => [
+  {
+    main: true,
+    name: 'Search',
+    placeholder: 'Search for map, tag, card, card reward, comma separated',
+    tooltip: '',
+    type: 'search',
+    def: state.input.search,
+    tags: get(state.tags),
+    numberDef: atom('')
+  },
+  {
+    main: true,
+    name: 'Sort',
+    tooltip: '',
+    type: 'multiselect',
+    options: [
+      {
+        label: 'Name',
+        value: 'name'
+      },
+      {
+        label: 'Score',
+        value: 'score'
+      },
+      {
+        label: 'Layout',
+        value: 'layout'
+      },
+      {
+        label: 'Density',
+        value: 'density'
+      },
+      {
+        label: 'Boss',
+        value: 'boss'
+      },
+      {
+        label: 'Card',
+        value: 'card'
+      }
+    ],
+    def: state.input.sort,
+    numberDef: atom('')
+  },
   {
     name: 'Layout weight',
     tooltip: (
@@ -215,6 +259,7 @@ const filterInputs = atom(get => [
 
 const MapFilter = ({ sidebar }) => {
   const inputs = useAtomValue(filterInputs)
+  const tags = useAtomValue(state.tags)
 
   let searchClass = ''
   let inputSectionClass = ''
@@ -223,12 +268,11 @@ const MapFilter = ({ sidebar }) => {
   let fullInputClass = ''
 
   if (sidebar) {
-    searchClass = 'p-1'
     inputClass = 'col-lg-12 col-md-6 col-12 p-1'
     bigInputClass = inputClass
     fullInputClass = inputClass
   } else {
-    searchClass = 'col-lg-4 col-12 p-1'
+    searchClass = 'col-lg-4 col-12'
     inputSectionClass = 'col col-lg-8 col-12'
     inputClass = 'col-lg-3 col-md-6 col-12 p-1'
     bigInputClass = 'col-lg-6 col-md-6 col-12 p-1'
@@ -237,18 +281,30 @@ const MapFilter = ({ sidebar }) => {
 
   return (
     <>
-      <MapFilterSearch searchClass={searchClass} />
+      <div className={searchClass}>
+        {inputs
+          .filter(i => i.main)
+          .map(input => (
+            <MapFilterInput key={input.name} input={input} inputClass="col-12 p-1" />
+          ))}
+        <div className="col-12 p-1">
+          <span className="small">tags:</span>
+          <Tags tags={tags} />
+        </div>
+      </div>
       <div className={inputSectionClass}>
         <div className="row g-0">
-          {inputs.map(input => (
-            <MapFilterInput
-              key={input.name}
-              input={input}
-              inputClass={inputClass}
-              bigInputClass={bigInputClass}
-              fullInputClass={fullInputClass}
-            />
-          ))}
+          {inputs
+            .filter(i => !i.main)
+            .map(input => (
+              <MapFilterInput
+                key={input.name}
+                input={input}
+                inputClass={inputClass}
+                bigInputClass={bigInputClass}
+                fullInputClass={fullInputClass}
+              />
+            ))}
         </div>
       </div>
     </>

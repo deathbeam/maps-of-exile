@@ -212,6 +212,43 @@ function calcRate(mapRate, price, stack) {
   }
 }
 
+function sortBy(sorts, values) {
+  function extractKey(sort, v) {
+    if (sort !== 'name' && sort !== 'score') {
+      return v.sort[sort]
+    } else {
+      return v[sort]
+    }
+  }
+
+  for (let sort of sorts) {
+    values = values.sort((a, b) => {
+      a = extractKey(sort, a)
+      b = extractKey(sort, b)
+
+      if (a == b) {
+        return 0
+      }
+
+      if (!a) {
+        return 1
+      }
+
+      if (!b) {
+        return -1
+      }
+
+      if (typeof a === 'string' && typeof b === 'string') {
+        return a.localeCompare(b)
+      }
+
+      return b - a
+    })
+  }
+
+  return values
+}
+
 function rateMaps(
   globals,
   foundMaps,
@@ -227,7 +264,8 @@ function rateMaps(
   cardValueSource,
   cardDisplay,
   mapDisplay,
-  voidstones
+  voidstones,
+  sort
 ) {
   let cardWeightBaseline = (foundCards.find(c => c.name === cardBaseline) || 0).weight
   if (cardBaselineNumber > 0) {
@@ -324,7 +362,7 @@ function rateMaps(
     100
   )
 
-  // Now finally calculate overall map score
+  // Now finally calculate overall map score and sorts
   const rated = calculateScore(
     mapsWithCardValues.map(map => {
       const layoutValue = (map.rating.layout || 0) * layoutInput
@@ -337,6 +375,13 @@ function rateMaps(
       }
 
       map.value = layoutValue + densityValue + bossValue + cardValue
+      map.sort = {
+        layout: layoutValue,
+        density: densityValue,
+        boss: bossValue,
+        card: cardValue
+      }
+
       return map
     }),
     100
@@ -354,7 +399,7 @@ function rateMaps(
     map.connected = connectedOut
   }
 
-  return rated.sort((a, b) => b.score - a.score)
+  return sortBy(sort, rated)
 }
 
 function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, cardPriceSourceInput, cardDisplayInput) {
@@ -439,6 +484,7 @@ function createState() {
 
   const input = {
     search: atomWithStore('searchInput', '', data),
+    sort: atomWithStore('sortInput', ['score'], data),
 
     voidstones: atomWithStore('voidstonesInput', 0, data),
     cardDisplay: atomWithStore('cardDisplayInput', 'drop', data),
@@ -495,7 +541,8 @@ function createState() {
       get(input.cardValueSource),
       get(input.cardDisplay),
       get(input.mapDisplay),
-      get(input.voidstones)
+      get(input.voidstones),
+      get(input.sort)
     )
   )
 

@@ -215,6 +215,10 @@ function calcRate(mapRate, price, stack) {
 function sortBy(sorts, values) {
   function extractKey(sort, v) {
     if (sort !== 'name' && sort !== 'score') {
+      if (!v.sort) {
+        return null
+      }
+
       return v.sort[sort]
     } else {
       return v[sort]
@@ -402,8 +406,8 @@ function rateMaps(
   return sortBy(sort, rated)
 }
 
-function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, cardPriceSourceInput, cardDisplayInput) {
-  return calculateScore(
+function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, cardPriceSourceInput, cardDisplayInput, sort) {
+  return sortBy(sort, calculateScore(
     foundCards.map(c => {
       const price = (cardPriceSourceInput === 'standard' ? c.standardPrice : c.price) || 0
       const out = {
@@ -449,8 +453,7 @@ function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, card
     }),
     100
   )
-    .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop')
-    .sort((a, b) => b.score - a.score)
+    .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop'))
 }
 
 function createState() {
@@ -557,7 +560,8 @@ function createState() {
       get(monsters),
       get(input.cardMinPrice),
       get(input.cardPriceSource),
-      get(input.cardDisplay)
+      get(input.cardDisplay),
+      get(input.sort)
     )
   )
 

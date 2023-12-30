@@ -16,7 +16,7 @@ const Card = ({ card }) => {
   return (
     <tr id={card.name} ref={ref}>
       <td className="d-none d-md-table-cell p-0 map-card">
-        <div className="p-1 bg-black">
+        <div className="p-1 m-2 bg-black">
           <CardDetail card={card} />
         </div>
       </td>

@@ -25,7 +25,7 @@ const CardDetail = ({ card }) => {
 
   return (
     <>
-      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={badgeClass + ' w-100 map-reward mb-0'}>
+      <a href={wikiBase + card.name} target="_blank" rel="noreferrer" className={badgeClass + ' w-100 map-reward mb-1'}>
         <img src={img} alt="" width="16" height="16" className="me-1" />
         {card.boss && <img src="/img/boss.webp" alt="" width="16" className="me-1" />}
         {card.name}
@@ -37,39 +37,41 @@ const CardDetail = ({ card }) => {
         </span>
       </div>
       <span className="badge bg-dark text-light w-100 map-reward">{card.reward}</span>
-      <b>Score</b>: <Rating rating={card.score} scale={10} />
-      <br />
-      <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
-      {!card.unknown && (
-        <>
-          <br />
-          <b>Weight</b>: {card.weight}
-        </>
-      )}
-      {(card.drop.min_level || card.drop.max_level) && (
-        <>
-          <br />
-          <b>Drop level</b>: {dropLevel}
-        </>
-      )}
-      {card.boss && (
-        <>
-          <br />
-          <b className="text-warning">Boss drop</b>
-        </>
-      )}
-      {card.unknown && (
-        <>
-          <br />
-          <b className="text-info">Unknown weight</b>
-        </>
-      )}
-      {card.weight === 0 && !card.unknown && (
-        <>
-          <br />
-          <b className="text-danger">Cannot drop</b>
-        </>
-      )}
+      <div className="m-1">
+        <b>Score</b>: <Rating rating={card.score} scale={10} />
+        <br />
+        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
+        {!card.unknown && (
+          <>
+            <br />
+            <b>Weight</b>: {card.weight}
+          </>
+        )}
+        {(card.drop.min_level || card.drop.max_level) && (
+          <>
+            <br />
+            <b>Drop level</b>: {dropLevel}
+          </>
+        )}
+        {card.boss && (
+          <>
+            <br />
+            <b className="text-warning">Boss drop</b>
+          </>
+        )}
+        {card.unknown && (
+          <>
+            <br />
+            <b className="text-info">Unknown weight</b>
+          </>
+        )}
+        {card.weight === 0 && !card.unknown && (
+          <>
+            <br />
+            <b className="text-danger">Cannot drop</b>
+          </>
+        )}
+      </div>
     </>
   )
 }

@@ -8,10 +8,10 @@ const MapCard = ({ card, tooltipTop }) => {
   const badgeClass = cardBadge(card, 10)
   const img = priceImage(card.price)
   const tooltip = card.weight > 0 && (
-    <>
+    <div className="m-1">
       <hr />
       <CardRateTooltip card={card} full={true} />
-    </>
+    </div>
   )
 
   return (

@@ -345,7 +345,7 @@ def get_monsters(config):
                 "offset": offset,
                 "tables": "monsters",
                 "fields": "monsters.name, monsters.metadata_id",
-                "where": "(monsters.name NOT LIKE '%DNT%' AND monsters.name NOT LIKE '%UNUSED%') AND (monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%ChampionTreasurer%' OR monsters.metadata_id LIKE '%Exile%' OR monsters.metadata_id LIKE '%VaalArchitect%' OR monsters.metadata_id LIKE '%Breach%' OR monsters.metadata_id LIKE '%Hellscape%' OR monsters.metadata_id LIKE '%Abyss%' OR monsters.metadata_id LIKE '%TentaclePortal%')",
+                "where": "(monsters.name NOT LIKE '%DNT%' AND monsters.name NOT LIKE '%UNUSED%') AND (monsters.is_boss=true OR monsters.mod_ids HOLDS LIKE '%Boss%' OR monsters.monster_type_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%Boss%' OR monsters.metadata_id LIKE '%ChampionTreasurer%' OR monsters.metadata_id LIKE '%Exile%' OR monsters.metadata_id LIKE '%VaalArchitect%' OR monsters.metadata_id LIKE '%Breach%' OR monsters.metadata_id LIKE '%Hellscape%' OR monsters.metadata_id LIKE '%Abyss%' OR monsters.metadata_id LIKE '%TentaclePortal%' OR monsters.metadata_id LIKE '%AtlasInvader%')",
             },
         ).json()["cargoquery"]
 

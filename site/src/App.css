@@ -212,3 +212,9 @@ a:hover {
   width: 245px !important;
   max-width: 245px !important;
 }
+
+.card-bg {
+  background: url('/img/divframe.png') !important;
+  background-color: transparent !important;
+  background-size: 100% 100% !important;
+}

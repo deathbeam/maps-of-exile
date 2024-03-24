@@ -190,7 +190,9 @@ def get_card_data(key, config, card_extra):
                         )
                     ),
                     "min_level": int(x.get("drop level", "0") or "0"),
-                    "max_level": int(x.get("drop level maximum")) if x.get("drop level maximum") else None,
+                    "max_level": int(x.get("drop level maximum"))
+                    if x.get("drop level maximum")
+                    else None,
                 },
             },
             map(lambda x: x["title"], wiki_cards),
@@ -285,10 +287,13 @@ def get_card_data(key, config, card_extra):
             "name": name,
             "stack": wiki_card["stack_size"],
             "reward": wiki_card["reward"],
-            "art": standard_price_card.get("artFilename", price_card.get("artFilename")),
+            "art": standard_price_card.get(
+                "artFilename", price_card.get("artFilename")
+            ),
             "price": price_card.get("chaosValue"),
             "standardPrice": standard_price_card.get("chaosValue"),
-            "ninja": config["ninja"] + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
+            "ninja": config["ninja"]
+            + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
             "drop": wiki_card["drop"],
         }
 

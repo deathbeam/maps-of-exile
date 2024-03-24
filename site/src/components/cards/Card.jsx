@@ -16,13 +16,13 @@ const Card = ({ card }) => {
   return (
     <tr id={card.name} ref={ref}>
       <td className="d-none d-md-table-cell p-0 map-card">
-        <div className="p-1 m-2 bg-black">
+        <div className="p-3 m-2 card-bg">
           <CardDetail card={card} />
         </div>
       </td>
       {visible ? (
         <td>
-          <div className="p-1 bg-black d-block d-md-none mb-2">
+          <div className="d-block d-md-none p-3 mb-2 card-bg">
             <CardDetail card={card} />
           </div>
           <div className="row m-0">

@@ -406,54 +406,64 @@ function rateMaps(
   return sortBy(sort, rated)
 }
 
-function rateCards(foundMaps, foundCards, foundMonsters, cardMinPriceInput, cardPriceSourceInput, cardDisplayInput, sort) {
-  return sortBy(sort, calculateScore(
-    foundCards.map(c => {
-      const price = (cardPriceSourceInput === 'standard' ? c.standardPrice : c.price) || 0
-      const out = {
-        ...c,
-        drop: c.drop || {},
-        maps: foundMaps
-          .map(m => {
-            const card = m.cards.find(mc => {
-              if (mc.name !== c.name) {
-                return false
+function rateCards(
+  foundMaps,
+  foundCards,
+  foundMonsters,
+  cardMinPriceInput,
+  cardPriceSourceInput,
+  cardDisplayInput,
+  sort
+) {
+  return sortBy(
+    sort,
+    calculateScore(
+      foundCards.map(c => {
+        const price = (cardPriceSourceInput === 'standard' ? c.standardPrice : c.price) || 0
+        const out = {
+          ...c,
+          drop: c.drop || {},
+          maps: foundMaps
+            .map(m => {
+              const card = m.cards.find(mc => {
+                if (mc.name !== c.name) {
+                  return false
+                }
+                return mc.unknown || cardDisplayInput === 'all' || cardDisplayInput === 'high' || mc.weight > 0
+              })
+
+              if (!card) {
+                return m
               }
-              return mc.unknown || cardDisplayInput === 'all' || cardDisplayInput === 'high' || mc.weight > 0
+
+              return {
+                ...m,
+                card
+              }
             })
+            .filter(m => m.card),
+          unknown: !c.weight,
+          price,
+          value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
+        }
 
-            if (!card) {
-              return m
-            }
+        out.monsters = [...new Set((out.drop.monsters || []).map(m => foundMonsters[m] || m))].sort()
+        out.boss = out.monsters.length > 0
+        out.search = [
+          ...new Set([
+            out.name,
+            out.reward,
+            ...out.monsters,
+            ...out.maps.map(c => c.name),
+            ...out.maps.flatMap(c => c.tags).map(t => t.name)
+          ])
+        ].map(v => v.trim().toLowerCase())
 
-            return {
-              ...m,
-              card
-            }
-          })
-          .filter(m => m.card),
-        unknown: !c.weight,
-        price,
-        value: price >= cardMinPriceInput ? price * (c.weight || 0) : 0
-      }
-
-      out.monsters = [...new Set((out.drop.monsters || []).map(m => foundMonsters[m] || m))].sort()
-      out.boss = out.monsters.length > 0
-      out.search = [
-        ...new Set([
-          out.name,
-          out.reward,
-          ...out.monsters,
-          ...out.maps.map(c => c.name),
-          ...out.maps.flatMap(c => c.tags).map(t => t.name)
-        ])
-      ].map(v => v.trim().toLowerCase())
-
-      return out
-    }),
-    100
+        return out
+      }),
+      100
+    ).filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop')
   )
-    .filter(card => card.price >= cardMinPriceInput || cardDisplayInput === 'all' || cardDisplayInput === 'drop'))
 }
 
 function createState() {

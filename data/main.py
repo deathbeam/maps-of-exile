@@ -440,9 +440,9 @@ def get_map_ratings(key, config):
         map(
             lambda x: {
                 "name": x[0].strip().replace("Bazzar", "Bazaar"),
-                "layout": rescale(int(x[2]), 0, 5, 10),
-                "density": rescale(int(x[3]), 0, 5, 10),
-                "boss": rescale(int(x[5]), 0, 5, 10),
+                "layout": rescale(int(x[1]), 0, 5, 10),
+                "density": rescale(int(x[2]), 0, 5, 10),
+                "boss": rescale(int(x[4]), 0, 5, 10),
                 "density_unreliable": True,
             },
             ratings,

@@ -139,8 +139,10 @@ def get_globals_data(config):
 
 
 def get_card_data(key, config, card_extra):
-    def clean_card_text(text):
+    def clean_card_text(text, with_commas=False):
         text = remove_markup(text)
+        text = text.replace("<br>", ", " if with_commas else " ")
+        text = text.replace("<br/>", ", " if with_commas else " ")
         soup = BeautifulSoup(text, "html.parser")
         for e in soup.find_all("span", {"class": "c-item-hoverbox__display"}):
             e.decompose()
@@ -157,8 +159,9 @@ def get_card_data(key, config, card_extra):
             "smaxage": 1,
             "maxage": 1,
             "limit": "500",
-            "tables": "items",
-            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text",
+            "tables": "items,divination_cards,stackables",
+            "join_on": "items._pageName=divination_cards._pageName,items._pageName=stackables._pageName",
+            "fields": "items.name,items.drop_level,items.drop_level_maximum,items.drop_areas,items.drop_monsters,items.drop_text,items.description,divination_cards.card_art,stackables.stack_size",
             "where": f'items.class_id="DivinationCard" AND items.drop_enabled="1" AND items._pageName NOT LIKE "%User:%"',
         },
     ).json()["cargoquery"]
@@ -166,7 +169,11 @@ def get_card_data(key, config, card_extra):
         map(
             lambda x: {
                 "name": x["name"],
+                "stack_size": int(x.get("stack size", "1")),
+                "reward": clean_card_text(x.get("description", "") or "", True),
+                "art": x.get("card art", ""),
                 "drop": {
+                    "text": clean_card_text(x.get("drop text", "") or ""),
                     "areas": list(
                         map(
                             lambda x: x.strip(),
@@ -183,10 +190,7 @@ def get_card_data(key, config, card_extra):
                         )
                     ),
                     "min_level": int(x.get("drop level", "0") or "0"),
-                    "max_level": int(x.get("drop level maximum"))
-                    if x.get("drop level maximum")
-                    else None,
-                    "text": clean_card_text(x.get("drop text", "") or ""),
+                    "max_level": int(x.get("drop level maximum")) if x.get("drop level maximum") else None,
                 },
             },
             map(lambda x: x["title"], wiki_cards),
@@ -277,35 +281,17 @@ def get_card_data(key, config, card_extra):
             filter(lambda x: x["name"] == name, standard_prices), {}
         )
 
-        explicit_modifiers = standard_price_card.get(
-            "explicitModifiers", price_card.get("explicitModifiers")
-        )
-        reward = ""
-
-        if explicit_modifiers:
-            reward = (
-                re.sub("<[^>]+>", "", explicit_modifiers[0]["text"])
-                .replace("{", "")
-                .replace("}", "")
-                .replace("\n", ", ")
-            )
-
         card = {
             "name": name,
+            "stack": wiki_card["stack_size"],
+            "reward": wiki_card["reward"],
+            "art": standard_price_card.get("artFilename", price_card.get("artFilename")),
             "price": price_card.get("chaosValue"),
             "standardPrice": standard_price_card.get("chaosValue"),
-            "stack": standard_price_card.get(
-                "stackSize", price_card.get("stackSize", 1)
-            ),
-            "art": standard_price_card.get(
-                "artFilename", price_card.get("artFilename")
-            ),
-            "reward": reward,
-            "ninja": config["ninja"]
-            + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
+            "ninja": config["ninja"] + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
+            "drop": wiki_card["drop"],
         }
 
-        merge(wiki_card, card)
         chance_card = card_chances.get(name)
         weight_card = card_weights.get(name)
 

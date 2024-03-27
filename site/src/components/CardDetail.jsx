@@ -40,7 +40,7 @@ const CardDetail = ({ card }) => {
       <div className="m-1">
         <b>Score</b>: <Rating rating={card.score} scale={10} />
         <br />
-        <b>Price</b>: {card.price} <img src="/img/chaos.png" alt="c" width="16" />
+        <b>Price</b>: {Math.round(card.price * 100) / 100} <img src="/img/chaos.png" alt="c" width="16" />
         {!card.unknown && (
           <>
             <br />

@@ -26,9 +26,7 @@ class DecimalEncoder(json.JSONEncoder):
 
 
 def get_image_path(directory, name, ext):
-    name = (
-        re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
-    )
+    name = re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
     return f"/img/{directory}/{name}{ext}"
 
 
@@ -51,9 +49,9 @@ def find_shortest_substring(entry, entries):
 
     shortest_substring = ""
     for substring in sorted(list(substring_set)):
-        if (
-            shortest_substring == "" or len(substring) < len(shortest_substring)
-        ) and sum(1 for e in entries if substring in e) == 1:
+        if (shortest_substring == "" or len(substring) < len(shortest_substring)) and sum(
+            1 for e in entries if substring in e
+        ) == 1:
             shortest_substring = substring
 
     if not shortest_substring:
@@ -190,9 +188,7 @@ def get_card_data(key, config, card_extra):
                         )
                     ),
                     "min_level": int(x.get("drop level", "0") or "0"),
-                    "max_level": int(x.get("drop level maximum"))
-                    if x.get("drop level maximum")
-                    else None,
+                    "max_level": int(x.get("drop level maximum")) if x.get("drop level maximum") else None,
                 },
             },
             map(lambda x: x["title"], wiki_cards),
@@ -220,9 +216,7 @@ def get_card_data(key, config, card_extra):
             value = int(card[value_col])
             original_value = card_weights.get(name, 0)
             percent_change = abs(
-                (value - original_value) / original_value * 100
-                if original_value
-                else weight_threshold
+                (value - original_value) / original_value * 100 if original_value else weight_threshold
             )
 
             if percent_change >= weight_threshold:
@@ -259,9 +253,7 @@ def get_card_data(key, config, card_extra):
             original_chance = card_chances.get(name, 0)
             new_chance = Decimal(value) / Decimal(amounts_total)
             percent_change = abs(
-                (new_chance - original_chance) / original_chance * 100
-                if original_chance
-                else deck_threshold
+                (new_chance - original_chance) / original_chance * 100 if original_chance else deck_threshold
             )
 
             if percent_change >= deck_threshold:
@@ -272,27 +264,53 @@ def get_card_data(key, config, card_extra):
     sample_weight = Decimal(patient_weight) / Decimal(patient_chance)
 
     print(f"Getting card prices for {league} and Standard")
-    prices = requests.get(config["prices"] + league).json()["lines"]
-    standard_prices = requests.get(config["prices"] + "Standard").json()["lines"]
+    prices = requests.get(config["ninja"]["cardprices"] + league).json()["lines"]
+    standard_prices = requests.get(config["ninja"]["cardprices"] + "Standard").json()["lines"]
+
+    print(f"Getting currency prices for {league} and Standard")
+    currency_prices = requests.get(config["ninja"]["currencyprices"] + league).json()["lines"]
+    standard_currency_prices = requests.get(config["ninja"]["currencyprices"] + "Standard").json()["lines"]
+
+    def find_reward_price(card, prices, price):
+        if price and price > config["card-price-threshold"]:
+            return price
+        reward = card["reward"]
+        stack = card["stack_size"]
+        if not reward or reward == "":
+            return price
+        match = re.match(r"(\d+x)?([\s\w]+)", reward)
+        count = match.group(1)
+        cur = match.group(2).strip()
+
+        for p in prices:
+            if p["currencyTypeName"] == cur:
+                return p["chaosEquivalent"] * ((int(count.replace("x", "").strip()) if count else 1) / stack)
+        return price
 
     out = []
     for wiki_card in wiki_cards:
         name = wiki_card["name"]
         price_card = next(filter(lambda x: x["name"] == name, prices), {})
-        standard_price_card = next(
-            filter(lambda x: x["name"] == name, standard_prices), {}
+        standard_price_card = next(filter(lambda x: x["name"] == name, standard_prices), {})
+
+        reward_price = find_reward_price(wiki_card, currency_prices, price_card.get("chaosValue"))
+        standard_reward_price = find_reward_price(
+            wiki_card, standard_currency_prices, standard_price_card.get("chaosValue")
         )
+
+        if reward_price != price_card.get("chaosValue"):
+            print(
+                f"Adjusting reward price for {name} to {reward_price} instead of {price_card.get('chaosValue')}. Reward: {wiki_card['reward']}, Stack: {wiki_card['stack_size']}"
+            )
 
         card = {
             "name": name,
             "stack": wiki_card["stack_size"],
             "reward": wiki_card["reward"],
-            "art": standard_price_card.get(
-                "artFilename", price_card.get("artFilename")
-            ),
-            "price": price_card.get("chaosValue"),
-            "standardPrice": standard_price_card.get("chaosValue"),
-            "ninja": config["ninja"]
+            "art": standard_price_card.get("artFilename", price_card.get("artFilename")),
+            "price": reward_price,
+            "standardPrice": standard_reward_price,
+            "ninja": config["ninja"]["cardbase"]
             + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
             "drop": wiki_card["drop"],
         }
@@ -301,15 +319,9 @@ def get_card_data(key, config, card_extra):
         weight_card = card_weights.get(name)
 
         if chance_card:
-            new_weight = math.floor(
-                (sample_weight * chance_card) / Decimal(math.exp(2 / 3))
-            )
+            new_weight = math.floor((sample_weight * chance_card) / Decimal(math.exp(2 / 3)))
 
-            percent_change = abs(
-                (new_weight - weight_card) / weight_card * 100
-                if weight_card
-                else deck_threshold
-            )
+            percent_change = abs((new_weight - weight_card) / weight_card * 100 if weight_card else deck_threshold)
 
             if percent_change >= deck_threshold:
                 old_weight = weight_card or 0
@@ -362,9 +374,7 @@ def get_monsters(config):
     wiki_monsters = list(map(lambda x: x["title"], wiki_monsters))
     out = {}
     for monster in wiki_monsters:
-        out[monster.get("metadata id").strip()] = html.unescape(
-            monster.get("name")
-        ).strip()
+        out[monster.get("metadata id").strip()] = html.unescape(monster.get("name")).strip()
     return out
 
 
@@ -401,8 +411,7 @@ def get_map_meta(key, config):
             out = out + list(
                 map(
                     lambda x: {
-                        "name": x[1].strip().replace(" Map", "").replace("’", "'")
-                        + " Map",
+                        "name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
                         "tags": {
                             "boss_separated": x[12].strip() == "o",
                             "few_obstacles": x[11].strip() == "o",
@@ -522,10 +531,7 @@ def get_maps(key, config):
         is_map_area = m.get("is map area", "0") != "0"
         is_unique_map_area = m.get("is unique map area", "0") != "0"
         is_act_area = (
-            not is_unique_map_area
-            and not is_map_area
-            and act < 11
-            and (id.startswith("1_") or id.startswith("2_"))
+            not is_unique_map_area and not is_map_area and act < 11 and (id.startswith("1_") or id.startswith("2_"))
         )
 
         if not is_act_area and any(x in name or x in id for x in config["ignored"]):
@@ -547,8 +553,7 @@ def get_maps(key, config):
             "ids": [id],
             "levels": [level],
             "name": name,
-            "poedb": config["poedb"]["base"]
-            + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
+            "poedb": config["poedb"]["base"] + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
             "type": map_type,
         }
 
@@ -556,9 +561,7 @@ def get_maps(key, config):
             out_map["connected"] = (m.get("connection ids", "") or "").split(",")
 
         if m.get("boss monster ids"):
-            out_map["boss_ids"] = sorted(
-                list(set(filter(None, m["boss monster ids"].split(","))))
-            )
+            out_map["boss_ids"] = sorted(list(set(filter(None, m["boss monster ids"].split(",")))))
 
         existing_map = cleaned_maps.get(name)
         if existing_map:
@@ -571,9 +574,7 @@ def get_maps(key, config):
     out_names = list(map(lambda x: x["name"].lower(), out_names))
 
     # Add flavor text and map tab text to make sure map's shorthand doesn't trigger these
-    out_names.append(
-        "travel to this map by using it in a personal map device. maps can only be used once"
-    )
+    out_names.append("travel to this map by using it in a personal map device. maps can only be used once")
     out_names.append("atlas bonus complete")
 
     url = config["poedb"]["list"]
@@ -596,9 +597,7 @@ def get_maps(key, config):
 
     for m in out:
         name = m["name"]
-        m["shorthand"] = find_shortest_substring(
-            name.replace(" Map", "").lower(), out_names
-        )
+        m["shorthand"] = find_shortest_substring(name.replace(" Map", "").lower(), out_names)
         m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}
@@ -606,21 +605,15 @@ def get_maps(key, config):
         existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
         if existing_meta:
             merge(existing_meta, m)
-        existing_rating = next(
-            filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None
-        )
+        existing_rating = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None)
         if existing_rating:
             existing_rating = existing_rating.copy()
             if existing_rating["density_unreliable"]:
-                m["info"][
-                    "density"
-                ] = "Missing exact mob count, density rating might be unreliable"
+                m["info"]["density"] = "Missing exact mob count, density rating might be unreliable"
             existing_rating.pop("name")
             existing_rating.pop("density_unreliable")
             m["rating"] = existing_rating
-        existing_position = next(
-            filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None
-        )
+        existing_position = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None)
         if existing_position:
             m["atlas"] = True
             m["x"] = existing_position["x"]
@@ -641,11 +634,7 @@ def get_map_data(map_data, extra_map_data, config):
 
     # Wiki image
     print(f"Getting wiki image data for {map_data['name']}")
-    image_path = (
-        config["wiki"]["filepath"]
-        + map_data["name"].replace(" ", "_")
-        + "_area_screenshot"
-    )
+    image_path = config["wiki"]["filepath"] + map_data["name"].replace(" ", "_") + "_area_screenshot"
     r = s.get(image_path + ".png", allow_redirects=False)
     if r.status_code != 301:
         r = s.get(image_path + ".jpg", allow_redirects=False)
@@ -684,13 +673,9 @@ def get_map_data(map_data, extra_map_data, config):
                     level_found = True
                     map_data["levels"][0] = level
             elif name == "atlas linked":
-                map_data["connected"] = sorted(
-                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
-                )
+                map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
             elif name == "the pantheon":
-                map_data["pantheon"] = next(
-                    map(lambda x: x.text.strip(), value.find_all("a"))
-                )
+                map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
             elif name == "tags":
                 if "cannot_be_twinned" in value.text.strip():
                     map_data["tags"]["boss_not_twinnable"] = True
@@ -721,9 +706,7 @@ def get_map_data(map_data, extra_map_data, config):
         ]
 
     # Merge existing data
-    existing = next(
-        filter(lambda x: x["name"] == map_data["name"], extra_map_data), None
-    )
+    existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
     if existing:
         merge(existing, map_data)
     return map_data
@@ -750,9 +733,7 @@ def get_maps_template(maps, existing_maps, overwrite=False):
         }
 
         existing_map = next(
-            filter(
-                lambda x: x["name"] == map["name"], existing_maps if overwrite else out
-            ),
+            filter(lambda x: x["name"] == map["name"], existing_maps if overwrite else out),
             None,
         )
         if existing_map:
@@ -876,11 +857,7 @@ def get_issue_template(maps):
             10,
         )
     )
-    body.append(
-        number_input(
-            "Boss rating", "Map boss rating. If you dont know simply leave at None.", 10
-        )
-    )
+    body.append(number_input("Boss rating", "Map boss rating. If you dont know simply leave at None.", 10))
 
     body.append(
         checkbox_input(
@@ -951,9 +928,7 @@ def main():
 
         cards = get_card_data(api_key, config, card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
-            f.write(
-                json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)
-            )
+            f.write(json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True))
 
     if fetch_maps:
         # Get basic map data
@@ -968,16 +943,12 @@ def main():
         # Create GitHub template
         issue_template = get_issue_template(maps)
         with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
-            f.write(
-                yaml.dump(issue_template, default_flow_style=False, sort_keys=False)
-            )
+            f.write(yaml.dump(issue_template, default_flow_style=False, sort_keys=False))
 
         # Write detailed map data
         maps = list(map(lambda x: get_map_data(x, map_extra, config), maps))
         with open(dir_path + "/../site/src/data/maps.json", "w") as f:
-            f.write(
-                json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True)
-            )
+            f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True))
 
 
 if __name__ == "__main__":

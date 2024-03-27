@@ -518,6 +518,10 @@ function createState() {
     atlasLabels: atomWithStore('atlasLabels', true, data)
   }
 
+  const alerts = {
+    cardPrices: atomWithStore('cardPricesAlert', true)
+  }
+
   const parsedSearch = atom(
     get => parseSearch(get(input.search)),
     (get, set, e) => {
@@ -585,6 +589,7 @@ function createState() {
     monsters,
     globals,
     input,
+    alerts,
     parsedSearch,
     mapRegex,
     ratedMaps,

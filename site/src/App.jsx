@@ -1,6 +1,6 @@
 import '@fortawesome/fontawesome-free/css/all.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import { useAtomValue } from 'jotai'
+import { useAtom, useAtomValue } from 'jotai'
 
 import './App.css'
 import ScrollToTop from './components/ScrollToTop'
@@ -23,6 +23,8 @@ const Routes = () => {
 }
 
 function App() {
+  const [cardPricesAlert, setCardPricesAlert] = useAtom(state.alerts.cardPrices)
+
   return (
     <>
       <ScrollToTop />
@@ -35,6 +37,13 @@ function App() {
         <i className="fa-solid fa-fw fa-code-fork" />{' '}
         <span className="d-none d-md-inline">Data incorrect or missing? Open an issue</span>
       </a>
+      {cardPricesAlert && (
+        <div className="alert alert-primary position-fixed end-0 bottom-0 m-2 on-top" role="alert">
+          <b>New!</b> Currency cards under <b>100c</b> are now priced based on <b>poe.ninja</b> currency values to
+          improve accuracy.
+          <button type="button" className="btn-close" onClick={() => setCardPricesAlert(false)} />
+        </div>
+      )}
       <Routes />
     </>
   )

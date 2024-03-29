@@ -5,6 +5,7 @@ import { useAtom, useAtomValue } from 'jotai'
 import './App.css'
 import ScrollToTop from './components/ScrollToTop'
 import { issueTemplate } from './constants'
+import { globals } from './constants'
 import AtlasRoute from './routes/AtlasRoute'
 import CardsRoute from './routes/CardsRoute'
 import ListRoute from './routes/ListRoute'
@@ -24,6 +25,7 @@ const Routes = () => {
 
 function App() {
   const [cardPricesAlert, setCardPricesAlert] = useAtom(state.alerts.cardPrices)
+  const [newLeagueAlert, setNewLeagueAlert] = useAtom(state.alerts.newLeague)
 
   return (
     <>
@@ -42,6 +44,13 @@ function App() {
           <b>New!</b> Currency cards under <b>100c</b> are now priced based on <b>poe.ninja</b> currency values to
           improve accuracy.
           <button type="button" className="btn-close" onClick={() => setCardPricesAlert(false)} />
+        </div>
+      )}
+      {newLeagueAlert && (
+        <div className="alert alert-primary position-fixed end-0 bottom-0 m-2 on-top" role="alert">
+          <b>New!</b> Site was updated for <b>{globals.league}</b> league. If price data are not reliable yet, switch{' '}
+          <b>Card price source</b> to <b>Standard</b>.
+          <button type="button" className="btn-close" onClick={() => setNewLeagueAlert(null)} />
         </div>
       )}
       <Routes />

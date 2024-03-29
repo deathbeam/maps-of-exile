@@ -4,7 +4,7 @@ import { unwrap } from 'jotai/utils'
 import atomWithHash from './atoms/atomWithHash'
 import atomWithStore from './atoms/atomWithStore'
 import { calculateScore, filter } from './common'
-import { cardArtBase, defaultCardBaseline, mapIconBase, wikiBase } from './constants'
+import { cardArtBase, defaultCardBaseline, globals, mapIconBase, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]
@@ -24,14 +24,6 @@ function pushTag(info, destination, source, key, name = null, color = null) {
 
 async function prepareMonsters() {
   return (await import('./data/monsters.json')).default
-}
-
-async function prepareGlobals() {
-  const globals = (await import('./data/globals.json')).default
-  return {
-    ...globals,
-    lastUpdate: new Date(globals.lastUpdate).toLocaleString()
-  }
 }
 
 async function prepareCards() {
@@ -254,7 +246,6 @@ function sortBy(sorts, values) {
 }
 
 function rateMaps(
-  globals,
   foundMaps,
   foundCards,
   layoutInput,
@@ -483,9 +474,6 @@ function createState() {
   const asyncMonsters = atom(prepareMonsters)
   const monsters = unwrap(asyncMonsters, prev => prev ?? [])
 
-  const asyncGlobals = atom(prepareGlobals)
-  const globals = unwrap(asyncGlobals, prev => prev ?? {})
-
   const asyncCards = atom(prepareCards)
   const cards = unwrap(asyncCards, prev => prev ?? [])
 
@@ -519,7 +507,8 @@ function createState() {
   }
 
   const alerts = {
-    cardPrices: atomWithStore('cardPricesAlert', true)
+    cardPrices: atomWithStore('cardPricesAlert', true),
+    newLeague: atomWithStore('newLeagueAlert' + globals.league, true)
   }
 
   const parsedSearch = atom(
@@ -544,7 +533,6 @@ function createState() {
 
   const ratedMaps = atom(get =>
     rateMaps(
-      get(globals),
       get(maps),
       get(cards),
       get(input.layout),
@@ -587,7 +575,6 @@ function createState() {
     tags,
     cards,
     monsters,
-    globals,
     input,
     alerts,
     parsedSearch,

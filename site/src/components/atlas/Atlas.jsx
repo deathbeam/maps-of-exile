@@ -4,6 +4,7 @@ import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } fr
 import 'reactflow/dist/base.css'
 
 import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
+import { globals } from '../../constants'
 import state from '../../state'
 import MapImage from '../MapImage'
 import './Atlas.css'
@@ -93,7 +94,6 @@ const Atlas = ({ selectedMap }) => {
   const [atlasIcons, setAtlasIcons] = useAtom(state.input.atlasIcons)
   const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
   const maps = useAtomValue(state.ratedMaps)
-  const globals = useAtomValue(state.globals)
   const parsedSearch = useAtomValue(state.parsedSearch)
   const voidstones = useAtomValue(state.input.voidstones)
 
@@ -135,8 +135,8 @@ const Atlas = ({ selectedMap }) => {
           },
           data: {
             image: '/img/atlas.webp',
-            width: globals && globals.atlas ? globals.atlas.width * scale : 0,
-            height: globals && globals.atlas ? globals.atlas.height * scale : 0
+            width: globals.atlas ? globals.atlas.width * scale : 0,
+            height: globals.atlas ? globals.atlas.height * scale : 0
           },
           zIndex: -1
         }
@@ -146,7 +146,7 @@ const Atlas = ({ selectedMap }) => {
         'id'
       )
     }),
-    [globals, mapsOnAtlas, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
+    [mapsOnAtlas, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
   )
 
   return (

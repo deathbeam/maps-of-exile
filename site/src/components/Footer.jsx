@@ -1,13 +1,9 @@
-import { useAtomValue } from 'jotai'
 import { memo } from 'react'
 
-import { githubRepo, mfAcademyInvite } from '../constants'
-import state from '../state'
+import { githubRepo, globals, mfAcademyInvite } from '../constants'
 import './Footer.css'
 
 const Footer = () => {
-  const globals = useAtomValue(state.globals)
-
   return (
     <div className="container-fluid p-4 text-end footer">
       <div className="d-lg-flex justify-content-between">

@@ -1,0 +1,1 @@
+const t={height:564.48,width:1003.52},o=7968409,a=17117429953765972e-4,e="Necropolis",l={atlas:t,droppool_weight:o,lastUpdate:a,league:e};export{t as atlas,l as default,o as droppool_weight,a as lastUpdate,e as league};

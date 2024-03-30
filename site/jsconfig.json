@@ -1,7 +1,6 @@
 {
-  "checkJs": true,
-  "target": "ES2022",
   "compilerOptions": {
+    "checkJs": true,
     "jsx": "react-jsx"
   }
 }

@@ -104,8 +104,8 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
                   state.isSelected
                     ? 'ps-3 pe-3 bg-primary'
                     : state.isFocused
-                    ? 'ps-3 pe-3 bg-secondary'
-                    : 'ps-3 pe-3 bg-dark'
+                      ? 'ps-3 pe-3 bg-secondary'
+                      : 'ps-3 pe-3 bg-dark'
               }}
               unstyled
               isMulti
@@ -164,8 +164,8 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
                   state.isSelected
                     ? 'ps-3 pe-3 bg-primary'
                     : state.isFocused
-                    ? 'ps-3 pe-3 bg-secondary'
-                    : 'ps-3 pe-3 bg-dark'
+                      ? 'ps-3 pe-3 bg-secondary'
+                      : 'ps-3 pe-3 bg-dark'
               }}
               unstyled
               options={input.options}

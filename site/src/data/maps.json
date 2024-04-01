@@ -1,6 +1,29 @@
 [
     {
         "boss_ids": [
+            "Metadata/Monsters/Doedre/DoedreSewersMapUber",
+            "Metadata/Monsters/Maligaro/MaligaroBoss2MapUber",
+            "Metadata/Monsters/Shavronne/ShavronneTowerMapUber_",
+            "Metadata/Monsters/UnholyTrio/UnholyTrioMapUber"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMalformation",
+        "ids": [
+            "MapWorldsAbomination"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Abomination Map",
+        "rating": {},
+        "shorthand": "bom",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/MavenBoss/MavenBrainBoss",
             "Metadata/Monsters/MavenBoss/TheMaven"
         ],
@@ -1595,6 +1618,26 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/LeagueExpedition/ApparitionBoss/ApparitionExpeditionMap"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberPrimordialBlocks",
+        "ids": [
+            "MapWorldsCitadel"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Citadel Map",
+        "rating": {},
+        "shorthand": "del",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossMap",
             "Metadata/Monsters/MotherOfFlames/MotherOfFlamesBossZombieMap",
             "Metadata/Monsters/StatueFingerMage/StatueFingerMageMonsterMapBoss"
@@ -2782,7 +2825,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "ary",
+        "shorthand": "stu",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -3117,6 +3160,26 @@
         "type": "map",
         "x": 504,
         "y": 158
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueHeist/Boss/UnbreakableMk1Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberSilo",
+        "ids": [
+            "MapWorldsFortress"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Fortress Map",
+        "rating": {},
+        "shorthand": "rtr",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3884,7 +3947,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "abo",
+        "shorthand": "bor",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -4278,7 +4341,7 @@
         ],
         "name": "Maligaro's Sanctum",
         "rating": {},
-        "shorthand": "ctu",
+        "shorthand": "gar",
         "tags": {},
         "type": "act area"
     },
@@ -5985,6 +6048,26 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/LeagueSanctum/Boss/Lycia2BossMap"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberRelicChambers",
+        "ids": [
+            "MapWorldsSanctuary"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Sanctuary Map",
+        "rating": {},
+        "shorthand": "ctua",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Scriptorium",
@@ -7377,8 +7460,7 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Goatman/GoatmanLeapSlamNavaliBoss",
-            "Metadata/Monsters/Skeletons/SkeletonBossRanged"
+            "Metadata/Monsters/Goatman/GoatmanLeapSlamNavaliBoss"
         ],
         "connected": [
             "1_1_5",
@@ -8433,7 +8515,7 @@
         ],
         "name": "The Ossuary",
         "rating": {},
-        "shorthand": "ary",
+        "shorthand": "oss",
         "tags": {},
         "type": "act area"
     },
@@ -10108,7 +10190,7 @@
         ],
         "name": "Vaults of Atziri",
         "rating": {},
-        "shorthand": "zi",
+        "shorthand": "iri",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": false,
@@ -10461,5 +10543,25 @@
         "shorthand": "xo",
         "tags": {},
         "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueBetrayal/BetrayalCatarinaMapBoss"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMausoleum",
+        "ids": [
+            "MapWorldsZiggurat"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Ziggurat Map",
+        "rating": {},
+        "shorthand": "gg",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "map"
     }
 ]

@@ -9557,11 +9557,6 @@
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
         ],
-        "connected": [
-            "Cold River Map",
-            "Port Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Thicket",
         "ids": [
             "MapWorldsThicket"
         ],
@@ -9570,14 +9565,13 @@
             "boss": "Summons small monkeys and frenzies allies. Physical Sunder attack. Will periodically start spamming Sunder which can dish out extreme physical damage if caught unaware. Just kite the boss in a circle when this starts happening."
         },
         "levels": [
-            83,
-            83,
-            83,
+            73,
+            76,
+            80,
             83,
             83
         ],
         "name": "Thicket Map",
-        "pantheon": "Soul of Arakaali",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -9606,12 +9600,6 @@
             "Metadata/Monsters/Brute/BruteTowerMap_",
             "Metadata/Monsters/Shavronne/ShavronneTowerMap"
         ],
-        "connected": [
-            "Burial Chambers Map",
-            "Siege Map",
-            "Waste Pool Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Tower",
         "ids": [
             "MapWorldsTower"
         ],
@@ -9620,9 +9608,9 @@
             "boss": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus."
         },
         "levels": [
-            73,
             76,
-            80,
+            79,
+            83,
             83,
             83
         ],
@@ -9635,7 +9623,6 @@
         "shorthand": "tower",
         "tags": {
             "boss_not_spawned": false,
-            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -9655,14 +9642,6 @@
         "boss_ids": [
             "Metadata/Monsters/Spiders/MapSpiderBossSins"
         ],
-        "connected": [
-            "Belfry Map",
-            "Cells Map",
-            "Dunes Map",
-            "Iceberg Map",
-            "Vaal Pyramid Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sewer",
         "ids": [
             "MapWorldsToxicSewer"
         ],
@@ -9672,10 +9651,10 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            70,
-            73,
-            77,
-            81,
+            72,
+            75,
+            79,
+            83,
             83
         ],
         "name": "Toxic Sewer Map",
@@ -9799,12 +9778,6 @@
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
         ],
-        "connected": [
-            "Ashen Wood Map",
-            "Sunken City Map",
-            "Wasteland Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TropicalIsland",
         "ids": [
             "MapWorldsTropicalIsland"
         ],
@@ -9813,9 +9786,9 @@
             "boss": "Has 'allies deal substantial extra physical damage' aura. Summons Blood Apes and frenzies allies, summons a magic pack of Blood Apes at 75%, and spawns two unique Blood Apes at 50% health. Boss itself is slow and does little damage."
         },
         "levels": [
-            76,
-            79,
-            83,
+            75,
+            78,
+            82,
             83,
             83
         ],
@@ -9846,7 +9819,6 @@
         "boss_ids": [
             "Metadata/Monsters/BreachBosses/BreachBossColdMap"
         ],
-        "icon": "/img/icon/tuls_domain.png",
         "ids": [
             "BreachBossCold",
             "BreachBossCold2_",
@@ -9871,7 +9843,6 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "ids": [
             "Synthesis_MapGuardian3"
         ],
@@ -9891,12 +9862,6 @@
         "boss_ids": [
             "Metadata/Monsters/DropBear/DropBearMapBoss"
         ],
-        "connected": [
-            "Caer Blaidd, Wolfpack's Den",
-            "Defiled Cathedral Map",
-            "Plateau Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundRiver",
         "ids": [
             "MapWorldsUndergroundRiver"
         ],
@@ -9905,14 +9870,13 @@
             "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage."
         },
         "levels": [
-            82,
-            83,
-            83,
+            74,
+            77,
+            81,
             83,
             83
         ],
         "name": "Underground River Map",
-        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 4,
             "density": 4,
@@ -9941,14 +9905,6 @@
             "Metadata/Monsters/Seawitch/MapBossMerveil2",
             "Metadata/Monsters/seawitchillusion/MapBossMerveil"
         ],
-        "connected": [
-            "Lookout Map",
-            "Oba's Cursed Trove",
-            "Residence Map",
-            "Stagnation Map",
-            "Sulphur Vents Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundSea",
         "ids": [
             "MapWorldsUndergroundSea"
         ],
@@ -9958,9 +9914,9 @@
             "boss_rushable": "Boss either up from spawn or up and to the left"
         },
         "levels": [
-            77,
+            73,
+            76,
             80,
-            83,
             83,
             83
         ],
@@ -9996,7 +9952,6 @@
             "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
             "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
         ],
-        "icon": "Art/2DItems/Maps/UniqueMap2",
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
@@ -10014,7 +9969,6 @@
         "boss_ids": [
             "Metadata/Monsters/BreachBosses/BreachBossPhysicalMap"
         ],
-        "icon": "/img/icon/uulnetols_domain.png",
         "ids": [
             "BreachBossPhysical",
             "BreachBossPhysical2",
@@ -10042,14 +9996,6 @@
             "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
             "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
         ],
-        "connected": [
-            "Burial Chambers Map",
-            "Channel Map",
-            "Graveyard Map",
-            "Toxic Sewer Map",
-            "Vaults of Atziri"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalPyramid",
         "ids": [
             "MapWorldsVaalPyramid"
         ],
@@ -10058,10 +10004,10 @@
             "boss": "Bosses spawn one at a time, after a delay of around 5-10 seconds. The first boss, the Whipping Miscreation is most dangerous inflicting Vulnerabililty and dealing massive Physical damage. The Tentacle Miscareation buffs nearby enemies and shoots easily avoidable projectiles. The Reaver has a large AoE but doesn't deal substantial damage. Try to kill each boss before the next spawns."
         },
         "levels": [
-            71,
-            74,
+            75,
             78,
             82,
+            83,
             83
         ],
         "name": "Vaal Pyramid Map",
@@ -10093,7 +10039,6 @@
             "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
             "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3Map"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalTempleBase",
         "ids": [
             "MapWorldsVaalTemple"
         ],
@@ -10114,7 +10059,6 @@
         "shorthand": "al t",
         "tags": {
             "boss_not_spawned": false,
-            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
@@ -10132,12 +10076,6 @@
         "boss_ids": [
             "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
         ],
-        "connected": [
-            "Castle Ruins Map",
-            "Lava Chamber Map",
-            "Temple Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Vault",
         "ids": [
             "MapWorldsVault"
         ],
@@ -10145,8 +10083,8 @@
             "boss": "Powerful Physical Slam attacks. Summons Animated Weapons and Guardians throughout the fight. Standing on the gold piles grants 50% more damage to yourself. Don't leave the fight too long as the boss will disappear placing yellow circles all over the ground that explode for massive Physical damage. Killing the boss quickly also rewards you with bonus loot from the nearby gold piles."
         },
         "levels": [
-            82,
-            83,
+            76,
+            79,
             83,
             83,
             83
@@ -10170,10 +10108,6 @@
     },
     {
         "atlas": true,
-        "connected": [
-            "Vaal Pyramid Map"
-        ],
-        "icon": "Art/2DItems/Maps/UniqueMap1",
         "ids": [
             "MapWorldsVaalPyramidUnique"
         ],
@@ -10182,10 +10116,10 @@
             "boss": "A map with no monsters whatsoever (although Tormented Spirits and Rogue Exiles can still spawn for some reason \u2013 who knows how they got into Atziri\u2019s vault?). This map contains only chests with 1800-2000% increased item rarity. Simply walk around the two large rooms and loot every chest. At the centre of the second room is a chest that contains large amounts of Sacrifice Fragments and Vaal skill gems."
         },
         "levels": [
-            71,
-            74,
+            75,
             78,
             82,
+            83,
             83
         ],
         "name": "Vaults of Atziri",
@@ -10211,7 +10145,6 @@
         "boss_ids": [
             "Metadata/Monsters/Pope/PopeMapBoss1"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Villa",
         "ids": [
             "MapWorldsVilla"
         ],
@@ -10241,13 +10174,6 @@
         "boss_ids": [
             "Metadata/Monsters/Totems/PuiTotemMapBoss_"
         ],
-        "connected": [
-            "Canyon Map",
-            "Cemetery Map",
-            "Lair Map",
-            "Pier Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Volcano",
         "ids": [
             "MapWorldsVolcano"
         ],
@@ -10256,14 +10182,13 @@
             "boss": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage."
         },
         "levels": [
-            70,
-            73,
-            77,
-            81,
+            71,
+            74,
+            78,
+            82,
             83
         ],
         "name": "Volcano Map",
-        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 8,
             "density": 7,
@@ -10291,14 +10216,6 @@
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSewersMap"
         ],
-        "connected": [
-            "Ashen Wood Map",
-            "Basilica Map",
-            "Jungle Valley Map",
-            "Shore Map",
-            "Tower Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/WastePool",
         "ids": [
             "MapWorldsWastePool"
         ],
@@ -10308,9 +10225,9 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            74,
-            77,
-            81,
+            76,
+            79,
+            83,
             83,
             83
         ],
@@ -10323,7 +10240,6 @@
         "shorthand": "te ",
         "tags": {
             "boss_not_spawned": false,
-            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": true,
             "boss_separated": true,
@@ -10343,13 +10259,6 @@
         "boss_ids": [
             "Metadata/Monsters/Voll/VollMapBoss"
         ],
-        "connected": [
-            "Lookout Map",
-            "Plaza Map",
-            "Sulphur Vents Map",
-            "Tropical Island Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wasteland",
         "ids": [
             "MapWorldsWasteland"
         ],
@@ -10392,12 +10301,6 @@
         "boss_ids": [
             "Metadata/Monsters/IceElemental/IceElementalMapBoss"
         ],
-        "connected": [
-            "Dungeon Map",
-            "Graveyard Map",
-            "Phantasmagoria Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Waterways",
         "ids": [
             "MapWorldsWaterways"
         ],
@@ -10405,9 +10308,9 @@
             "boss": "Weak Ice Spear attack. Places Ice Traps that create Chilled Ground. Periodically summon Ice Golems of varying rarity. After losing enough health the boss will become frozen, gaining immunity and Ice Thorns, which reflects Cold damage back to the attacker. Do not attack during this phase. As with the Scriptorium and Promenade bosses fast attacking builds can kill themselves very quickly if they are not observant."
         },
         "levels": [
-            73,
-            76,
-            80,
+            78,
+            81,
+            83,
             83,
             83
         ],

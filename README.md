@@ -77,7 +77,7 @@ See issue mentioned in [For-non-developers](#for-non-developers) section for ref
 
 ### Spreadsheets
 
-**Stacked Decks card + weight spreadsheet for 3.22** by **nerdyjoe** from **Prohibited Library** discord:
+**Stacked Decks card + weight spreadsheet** by **nerdyjoe** from **Prohibited Library** discord:
 https://docs.google.com/spreadsheets/d/1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
 
 **Stacked Decks card spreadsheet for 3.21** by **_🐌** from **Prohibited Library** discord (used as fallback when weight for card is not found):  

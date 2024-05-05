@@ -205,6 +205,7 @@ def get_card_data(key, config, card_extra):
         name = weight_sheet["sheet-name"]
         key_col = weight_sheet["key"]
         value_col = weight_sheet["value"]
+        fallback_col = weight_sheet["fallback"]
         skip_num = weight_sheet.get("skip", 0)
         print(f"Getting card weights from {name}")
         url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
@@ -214,6 +215,8 @@ def get_card_data(key, config, card_extra):
         for card in weights:
             name = card[key_col].strip()
             value = int(card[value_col])
+            if value == 0:
+                value = int(card[fallback_col])
             original_value = card_weights.get(name, 0)
             percent_change = abs(
                 (value - original_value) / original_value * 100 if original_value else weight_threshold

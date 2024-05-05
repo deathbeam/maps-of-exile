@@ -71,7 +71,8 @@ data:
       - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
         sheet-name: Weights
         key: 0
-        value: 5
+        value: 7
+        fallback: 6
         skip: 2
   decks:
     overwrite-threshold: 1000

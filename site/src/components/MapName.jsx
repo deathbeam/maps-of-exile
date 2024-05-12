@@ -54,7 +54,7 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   const score = !sidebar && <Rating rating={map.score} scale={10} />
 
   let tiers
-  if (map.type == 'map') {
+  if (map.atlas || map.type == 'map') {
     tiers = []
     for (let i = 0; i < map.levels.length; i++) {
       const tier = mapLevelToTier(map.levels[i])

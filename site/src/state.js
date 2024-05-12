@@ -117,7 +117,17 @@ async function prepareMaps(preparedMonsters, preparedCards) {
           return foundMap ? foundMap.name : c
         }),
       cards: cards,
-      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)).sort((a, b) => a.color.localeCompare(b.color))
+      tags: mapTags
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) => {
+          if (a.color === 'secondary') {
+            return 1
+          }
+          if (b.color === 'secondary') {
+            return -1
+          }
+          return a.color.localeCompare(b.color)
+        })
     }
 
     // Build search index
@@ -144,7 +154,15 @@ async function prepareTags(preparedMaps) {
       color: t.color
     }))
     .sort((a, b) => a.name.localeCompare(b.name))
-    .sort((a, b) => a.color.localeCompare(b.color))) {
+    .sort((a, b) => {
+      if (a.color === 'secondary') {
+        return 1
+      }
+      if (b.color === 'secondary') {
+        return -1
+      }
+      return a.color.localeCompare(b.color)
+    })) {
     if (!preparedTagsMap.has(item.name)) {
       preparedTagsMap.set(item.name, true)
       preparedTags.push({

@@ -306,7 +306,7 @@ function rateMaps(
       }
     })
     .map(map => {
-      const mapLevel = map.atlas ? map.levels[voidstones] : map.levels[map.levels.length - 1]
+      const mapLevel = map.type == 'map' ? map.levels[voidstones] : map.levels[map.levels.length - 1]
       const mapCards = []
       let mapWeight = 0
       let bossWeight = 0

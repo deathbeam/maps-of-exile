@@ -9,7 +9,7 @@ const Tags = ({ tags }) => {
   return tags.map(t => {
     const val = t.name
     const info = t.info
-    let color = t.color ? t.color : 'secondary'
+    let color = t.color
 
     const searched = parsedSearch.find(c => c.value === val)
     if (searched) {

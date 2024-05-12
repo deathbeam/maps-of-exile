@@ -13,7 +13,7 @@ function pushTag(info, destination, source, key, name = null, color = null) {
     const val = typeof tag == 'boolean' ? name || key.replaceAll('_', ' ') : tag.toLowerCase()
     const out = {
       name: val,
-      color: color
+      color: color || 'secondary'
     }
     if (info && info[key]) {
       out.info = info[key]
@@ -100,7 +100,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
       names = [...new Set(map.boss_ids.map(b => preparedMonsters[b]).filter(b => !!b))].sort()
       const namesFiltered = names.filter(n => !n.includes('Merveil'))
       if (namesFiltered.length > 1) {
-        mapTags.push({ name: `${namesFiltered.length} bosses` })
+        mapTags.push({ name: `${namesFiltered.length} bosses`, color: 'warning' })
       }
     }
 
@@ -117,7 +117,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
           return foundMap ? foundMap.name : c
         }),
       cards: cards,
-      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name))
+      tags: mapTags.sort((a, b) => a.name.localeCompare(b.name)).sort((a, b) => a.color.localeCompare(b.color))
     }
 
     // Build search index
@@ -143,7 +143,8 @@ async function prepareTags(preparedMaps) {
       name: t.name.replace(/\d+ bosses/, 'bosses').replace(/soul of .+/, 'soul of'),
       color: t.color
     }))
-    .sort((a, b) => a.name.localeCompare(b.name))) {
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .sort((a, b) => a.color.localeCompare(b.color))) {
     if (!preparedTagsMap.has(item.name)) {
       preparedTagsMap.set(item.name, true)
       preparedTags.push({

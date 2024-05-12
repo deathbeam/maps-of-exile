@@ -545,7 +545,7 @@ def get_maps(key, config):
         if is_unique_map_area:
             map_type = "unique map"
         elif is_map_area:
-            if " Map" not in name:
+            if " Map" not in name or level > 83:
                 map_type = "special map"
             else:
                 map_type = "map"
@@ -680,12 +680,18 @@ def get_map_data(map_data, extra_map_data, config):
             elif name == "the pantheon":
                 map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
             elif name == "tags":
-                if "cannot_be_twinned" in value.text.strip():
-                    map_data["tags"]["boss_not_twinnable"] = True
-                if "no_boss" in value.text.strip():
-                    map_data.pop("boss_ids", None)
+                for v in value.text.strip().split(","):
+                    v = v.strip()
+                    if v == "cannot_be_twinned":
+                        map_data["tags"]["boss_not_twinnable"] = True
+                    elif v == "no_boss":
+                        map_data.pop("boss_ids", None)
+                    elif v.startswith("map_drops_can_upgrade_to_"):
+                        map_data["tags"][v.replace("map_drops_can_upgrade_to_", "") + "_map"] = True
             elif name == "icon" and "icon" not in map_data:
-                map_data["icon"] = value.text.strip()
+                v = value.text.strip()
+                if "SkillIcons" not in v:
+                    map_data["icon"] = v
 
     if "icon" not in map_data:
         val = soup.find(id="MapDeviceRecipes")
@@ -707,6 +713,9 @@ def get_map_data(map_data, extra_map_data, config):
             min(level + 11, 83),
             min(level + 15, 83),
         ]
+    elif map_data.get("type") == "map":
+        level = map_data["levels"][0]
+        map_data["levels"] = [68, 71, 75, 79, 83]
 
     # Merge existing data
     existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)

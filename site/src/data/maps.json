@@ -20,7 +20,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "map"
+        "type": "special map"
     },
     {
         "boss_ids": [
@@ -141,6 +141,7 @@
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "linear": false,
             "outdoors": false
         },
@@ -190,6 +191,7 @@
         },
         "shorthand": "cid",
         "tags": {
+            "abomination_map": true,
             "boss_separated": false,
             "few_obstacles": false,
             "linear": true,
@@ -227,6 +229,7 @@
         "rating": {},
         "shorthand": "tm",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -255,7 +258,11 @@
             "boss": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles"
         },
         "levels": [
-            69
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Alleyways Map",
         "rating": {
@@ -274,7 +281,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -309,7 +317,11 @@
             "boss": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT. He also have companions/boss guards."
         },
         "levels": [
-            72
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Ancient City Map",
         "rating": {
@@ -320,6 +332,7 @@
         "shorthand": "nci",
         "tags": {
             "boss_separated": false,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": false,
             "outdoors": true
@@ -360,6 +373,7 @@
         },
         "shorthand": " ne",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": true,
             "boss_phases": true,
             "boss_rushable": false,
@@ -388,7 +402,11 @@
             "boss": "Viper Strike inflicts Poison. Summons swarms of small spiders. Will periodically enshroud the arena in web, lowering your attack, cast and movement speed as well as your damage. You can drag yourself through the nearby fires to remove the debuff."
         },
         "levels": [
-            77
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Arachnid Tomb Map",
         "rating": {
@@ -398,6 +416,7 @@
         },
         "shorthand": "omb",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -452,6 +471,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -498,6 +518,7 @@
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": false,
             "outdoors": true
         },
@@ -541,6 +562,7 @@
         },
         "shorthand": "d l",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": true,
@@ -569,7 +591,11 @@
             "boss": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities."
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Armoury Map",
         "rating": {
@@ -586,6 +612,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": false
@@ -632,6 +659,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -679,7 +707,8 @@
             "boss_separated": false,
             "few_obstacles": false,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 302,
@@ -744,6 +773,7 @@
             "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -814,6 +844,7 @@
             "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": true,
@@ -863,7 +894,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 296,
@@ -882,7 +914,11 @@
             "boss": "Physical Spectral Throw. At 2/3 health Marceus the Defaced (Marketplace) is summoned - strong Lightning Strike attack. At 1/3 health Goddess of Purity (Solaris Temple) is summoned."
         },
         "levels": [
-            74
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Bazaar Map",
         "rating": {
@@ -893,6 +929,7 @@
         "shorthand": "aar",
         "tags": {
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": false,
             "outdoors": true
@@ -912,7 +949,11 @@
             "boss": "Spams Cold spells. Bring Freeze immunity if you have low health"
         },
         "levels": [
-            68
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Beach Map",
         "rating": {
@@ -922,6 +963,7 @@
         },
         "shorthand": "beach",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -974,6 +1016,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -1018,6 +1061,7 @@
         },
         "shorthand": "og",
         "tags": {
+            "abomination_map": true,
             "boss_rushable": true,
             "boss_separated": true,
             "few_obstacles": true,
@@ -1070,7 +1114,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 555,
@@ -1111,7 +1156,8 @@
         },
         "shorthand": "br",
         "tags": {
-            "boss_not_twinnable": true
+            "boss_not_twinnable": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 658,
@@ -1153,7 +1199,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 345,
@@ -1193,6 +1240,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -1237,6 +1285,7 @@
         "shorthand": "cag",
         "tags": {
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": true,
             "outdoors": false
@@ -1259,7 +1308,11 @@
             "boss": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health."
         },
         "levels": [
-            80
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Caldera Map",
         "rating": {
@@ -1278,7 +1331,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -1318,6 +1372,7 @@
         },
         "shorthand": "yo",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": true,
@@ -1346,7 +1401,11 @@
             "boss": "Keep out of way of the giant Ball Lightning which will hang about the edge of the arena. At 75/50/25% health the Trinity runs off leaving 6 Scorpions that deal a high amount of physical damage if you let them all attack you at once."
         },
         "levels": [
-            82
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Carcass Map",
         "rating": {
@@ -1356,6 +1415,7 @@
         },
         "shorthand": "ass",
         "tags": {
+            "abomination_map": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
@@ -1403,6 +1463,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": false,
             "outdoors": true
@@ -1445,6 +1506,7 @@
         },
         "shorthand": "cel",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -1507,7 +1569,8 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 644,
@@ -1548,6 +1611,7 @@
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": false,
             "outdoors": true
         },
@@ -1568,7 +1632,11 @@
             "boss": "Strong Physical attacks. Sunder. Doesn't feel as strong as Uber Labyrinth Argus, also isn't immune to status ailments. Enrages for 8 seconds (turns red) increasing damage, movement speed and attack speed by 100%. Decoy Totem comes in handy for casters and ranged characters."
         },
         "levels": [
-            71
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Chateau Map",
         "rating": {
@@ -1583,6 +1651,7 @@
             "boss_rushable": false,
             "boss_separated": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -1634,7 +1703,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "map"
+        "type": "special map"
     },
     {
         "boss_ids": [
@@ -1651,7 +1720,11 @@
             "boss": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first."
         },
         "levels": [
-            71
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "City Square Map",
         "rating": {
@@ -1670,7 +1743,8 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -1714,6 +1788,7 @@
             "boss_rushable": true,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "league_mechanics": true,
             "outdoors": true
@@ -1735,7 +1810,11 @@
             "boss": "Much stronger than Armoury Gravicius. His Firestorm, Fire trap and Molten Shell abilities hit hard so ensure you have adequate fire mitigation. Gravicius has a large ES pool (cannot be bypassed by Chaos damage). At 2/3 and 1/3 life Gravicius will return to his tent regaining all his ES back. This fight can be long so you may need to portal to get back flask charges."
         },
         "levels": [
-            78
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Colonnade Map",
         "rating": {
@@ -1752,6 +1831,7 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -1771,7 +1851,11 @@
             "boss": "Quick Physical/Cold attacks. Kneels to heal at 25%/50%/75% health. After healing gains 75% increased attack speed for 6 seconds. AoE Reave has Resolute Technique. Always be wary of spinning blades that contiually spawn, they deal serious Physical DoT. Decoy Totem work wonders in this fight."
         },
         "levels": [
-            81
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Colosseum Map",
         "rating": {
@@ -1788,6 +1872,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": true
@@ -1837,7 +1922,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 629,
@@ -1856,7 +1942,11 @@
             "boss": "Try not to engage all bosses at once. Arsonists cast Fireballs, Decimator casts Glacial Cascade and Demolishers have melee Physical attacks. Save the captain till last as he heals while his friends are still alive. The captain uses Taunt and has a modest Physical melee attack."
         },
         "levels": [
-            74
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Coral Ruins Map",
         "rating": {
@@ -1872,6 +1962,7 @@
             "boss_rushable": false,
             "boss_separated": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": true,
@@ -1894,7 +1985,11 @@
             "boss": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss."
         },
         "levels": [
-            80
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Core Map",
         "rating": {
@@ -1904,6 +1999,7 @@
         },
         "shorthand": "core",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": true,
             "boss_rushable": false,
@@ -1974,7 +2070,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 736,
@@ -2020,6 +2117,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -2044,7 +2142,11 @@
             "boss": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately."
         },
         "levels": [
-            78
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Coves Map",
         "rating": {
@@ -2059,6 +2161,7 @@
             "boss_rushable": true,
             "boss_separated": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": false,
             "league_mechanics": true,
@@ -2080,7 +2183,11 @@
             "boss": "Long duration Firestorms that stack on each other, keep mobile. Fire bombs which leave Burning Ground. Summons skeletons to recharge flasks"
         },
         "levels": [
-            74
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Crater Map",
         "rating": {
@@ -2099,7 +2206,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -2146,7 +2254,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 472,
@@ -2193,7 +2302,8 @@
             "delirium_mirror": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 596,
@@ -2243,7 +2353,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 261,
@@ -2291,7 +2402,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 798,
@@ -2333,7 +2445,11 @@
             "boss": "Same as Lair Rigwald but more frustrating. He teleports more often giving you even less time to get damage in. Each platform comes with a bonus effect such as summoning adds or ground effects. Watch out for the spinning Essence Drain that does a lot of Chaos DoT."
         },
         "levels": [
-            81
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Dark Forest Map",
         "rating": {
@@ -2343,6 +2459,7 @@
         },
         "shorthand": "da",
         "tags": {
+            "abomination_map": true,
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
@@ -2386,7 +2503,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "unique map",
         "x": 176,
@@ -2435,7 +2553,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 729,
@@ -2453,7 +2572,11 @@
             "boss": "Open Storm Weathered Chest to initiate boss fight. Boss has strong Puncture ability. Chest summons tornadoes and waves of zombies (same as in Act 9)"
         },
         "levels": [
-            69
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Desert Map",
         "rating": {
@@ -2463,6 +2586,7 @@
         },
         "shorthand": "desert",
         "tags": {
+            "abomination_map": true,
             "boss_separated": false,
             "few_obstacles": true,
             "linear": false,
@@ -2513,6 +2637,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -2534,7 +2659,11 @@
             "boss": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these."
         },
         "levels": [
-            81
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Dig Map",
         "rating": {
@@ -2554,7 +2683,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -2619,7 +2749,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "unique map"
     },
@@ -2662,6 +2793,7 @@
             "boss_phases": false,
             "boss_rushable": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "league_mechanics": true,
             "outdoors": true
@@ -2711,6 +2843,7 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -2758,6 +2891,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -2830,7 +2964,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 202,
@@ -2879,7 +3014,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 561,
@@ -2890,7 +3026,7 @@
             "Metadata/Monsters/AtlasExiles/AtlasExile5",
             "Metadata/Monsters/AtlasExiles/AtlasExile5Throne"
         ],
-        "icon": "Art/2DArt/SkillIcons/passives/IncreaseCritChanceNotable.png",
+        "icon": "/img/icon/eye_of_the_storm.png",
         "ids": [
             "AtlasExilesBoss5"
         ],
@@ -2918,7 +3054,11 @@
             "boss": "Stay out of Lightning beams which deal heavy Lightning DoT. Adus has strong Physical attacks including  Earthquake. Periodically Adus will leap in the air performing a more powerful Earthquake that has several aftershocks which deal heavy Physical and Lightning damage. The real danger in this fight comes from his 'Living Bomb' attack where he charges up and discharges a huge amount of Lightning damage which always Shocks and can potentially one shot. Avoid these telegraphed AoE abilities at all costs."
         },
         "levels": [
-            78
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Factory Map",
         "rating": {
@@ -2935,6 +3075,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": true
@@ -2977,6 +3118,7 @@
         },
         "shorthand": "eld",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
@@ -3036,7 +3178,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 286,
@@ -3082,6 +3225,7 @@
             "boss_phases": false,
             "boss_rushable": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "league_mechanics": true,
             "linear": true,
@@ -3104,23 +3248,32 @@
             "boss": "Cannot be slowed. Physical attacks. Very strong Cyclone. Will charge up then release a massive Fire explosion (large AoE) that will probably one-shot. Every 10% life lost the player loses 1% maximum Fire resistance. Phoenixes are summoned which fire Fire projectiles, they revive a few seconds after being killed. More phoenixes are spawned as the boss loses health. Small fire tornadoes travel around the room dealing Fire DoT, again the less health the boss has the more tornadoes are spawned."
         },
         "levels": [
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Forge of the Phoenix Map",
         "rating": {},
         "shorthand": "ix",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": true,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true,
+            "ziggurat_map": true
         },
         "type": "special map"
     },
@@ -3156,7 +3309,9 @@
             "layout": 8
         },
         "shorthand": "ki",
-        "tags": {},
+        "tags": {
+            "citadel_map": true
+        },
         "type": "map",
         "x": 504,
         "y": 158
@@ -3179,7 +3334,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "map"
+        "type": "special map"
     },
     {
         "atlas": true,
@@ -3222,6 +3377,7 @@
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
+            "fortress_map": true,
             "league_mechanics": false
         },
         "type": "map",
@@ -3270,7 +3426,8 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "league_mechanics": false,
-            "linear": true
+            "linear": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 503,
@@ -3310,6 +3467,7 @@
         },
         "shorthand": " ho",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -3360,6 +3518,7 @@
         "shorthand": "ens",
         "tags": {
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": true,
             "outdoors": true
@@ -3381,7 +3540,11 @@
             "boss": "More powerful version of Grotto boss. In addition to Chaos-storm and Ground Slam summons large whirlwinds which deal Chaos DoT. Pocked miners can release powerful Chaos Sentinels from the walls. Fight can be difficult due to small size of room."
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Geode Map",
         "rating": {
@@ -3400,7 +3563,8 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -3416,7 +3580,11 @@
             "boss": "Powerful Lightning Strike that inflicts Vulnerability on hit. Summons Shocked Miscreations which Lightning Warp. Pays to bring shock removal."
         },
         "levels": [
-            80
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Ghetto Map",
         "rating": {
@@ -3427,6 +3595,7 @@
         "shorthand": "ett",
         "tags": {
             "boss_separated": false,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": false,
             "outdoors": true
@@ -3468,6 +3637,7 @@
         "shorthand": "gla",
         "tags": {
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": false
@@ -3509,7 +3679,9 @@
             "layout": 4
         },
         "shorthand": "oug",
-        "tags": {},
+        "tags": {
+            "ziggurat_map": true
+        },
         "type": "map",
         "x": 725,
         "y": 136
@@ -3554,7 +3726,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 285,
@@ -3603,7 +3776,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 650,
@@ -3626,6 +3800,7 @@
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": true,
             "outdoors": true
         },
@@ -3667,7 +3842,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "unique map",
         "x": 691,
@@ -3687,7 +3863,11 @@
             "boss": "First form deals Fire Damage. Homing fire beams and GMP Incinerate. Second form does same skills but with Physical damage instead. Homing beams are significantly more dangerous in second form."
         },
         "levels": [
-            72
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Haunted Mansion Map",
         "rating": {
@@ -3700,7 +3880,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -3739,6 +3920,7 @@
         "shorthand": "eb",
         "tags": {
             "boss_separated": false,
+            "citadel_map": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -3760,7 +3942,11 @@
             "boss": "Start off by killing the three nests, then the boss will spawn on the central platform. Ryslatha fires projectiles that deal significant Chaos damage and leave green pools that do DoT. The boss' hits also Poison, so bring a Poison removal flask. This fight can be very difficult for characters with low regeneration/sustain."
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Infested Valley Map",
         "rating": {
@@ -3770,6 +3956,7 @@
         },
         "shorthand": "d v",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
@@ -3799,7 +3986,9 @@
         "name": "Infused Beachhead",
         "rating": {},
         "shorthand": "d b",
-        "tags": {},
+        "tags": {
+            "ziggurat_map": true
+        },
         "type": "unique map"
     },
     {
@@ -3816,7 +4005,11 @@
             "boss": "One randomly chosen The Perandus Manor boss, excluding Osmea. Constantly spawns Perandus mobs until boss is dead (RIP GPU). In general, Perandus bosses hit hard so take caution. Boss also has a tonne of health."
         },
         "levels": [
-            72
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Ivory Temple Map",
         "rating": {
@@ -3829,7 +4022,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -3867,6 +4061,7 @@
         },
         "shorthand": "ju",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": true,
             "boss_phases": true,
             "boss_rushable": false,
@@ -3939,7 +4134,11 @@
             "boss": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead."
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Laboratory Map",
         "rating": {
@@ -3956,6 +4155,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": false
@@ -4004,7 +4204,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 535,
@@ -4023,23 +4224,32 @@
             "boss": "Cannot be slowed. Half Physical, half Cold ranged attacks. Powerful telegraphed Barrage. Blast Rain directly in front of boss. Temporarily disappears summoning minions that leave Vortex ground on death. When the boss reappears, she does an extremely powerful Fork shot. Always try to position your character behind the boss (stay in close range to do this easily). Throughout the fight a constant stream of slow Frostbolts projectiles travel across the arena. More projectiles as the boss gets closer to death."
         },
         "levels": [
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Lair of the Hydra Map",
         "rating": {},
         "shorthand": "yd",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": true,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true,
+            "ziggurat_map": true
         },
         "type": "special map"
     },
@@ -4077,6 +4287,7 @@
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "linear": true,
             "outdoors": false
         },
@@ -4123,7 +4334,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 761,
@@ -4142,7 +4354,11 @@
             "boss": "Mirror Arrow and Blink Arrow. The real boss is the one that moves around, the copies will always stay still."
         },
         "levels": [
-            70
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Leyline Map",
         "rating": {
@@ -4159,6 +4375,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": false,
             "outdoors": true
@@ -4181,7 +4398,11 @@
             "boss": "Group of Redblade Warbands led by one of three Redblade bosses. Uses a variety of Fire based abilities"
         },
         "levels": [
-            71
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Lighthouse Map",
         "rating": {
@@ -4200,7 +4421,8 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -4241,7 +4463,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 312,
@@ -4277,6 +4500,7 @@
             "boss_phases": true,
             "boss_rushable": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "league_mechanics": false,
             "linear": true
@@ -4298,7 +4522,11 @@
             "boss": "Spawns Eyes, Physical Cleave at close range, large Ball Lightning that you should avoid. Spinning Lightning Beam deals massive Lightning damage. If it does not one-shot you it also inflicts a powerful Physical Bleed they must be instantly removed. As this fight is mechanical it is usually not too bad. However, it becomes extremely dangerous with map mods like double boss, boss attack/cast speed or multiple projectiles."
         },
         "levels": [
-            80
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Malformation Map",
         "rating": {
@@ -4308,6 +4536,7 @@
         },
         "shorthand": "alf",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -4372,6 +4601,7 @@
         "rating": {},
         "shorthand": " k",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": true,
             "boss_phases": true,
             "boss_rushable": false,
@@ -4400,7 +4630,11 @@
             "boss": "Fire/Physical damage. Cyclone leaves Burning Ground. Sunder attack."
         },
         "levels": [
-            69
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Marshes Map",
         "rating": {
@@ -4410,6 +4644,7 @@
         },
         "shorthand": "hes",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -4461,7 +4696,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 708,
@@ -4509,7 +4745,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 646,
@@ -4528,23 +4765,32 @@
             "boss": "Cannot be slowed. 30% of Physical damage converted to Lightning. Powerful telegraphed slam. Slam area leaves behind falling rocks. Burrows underground and springs upon target with powerful attack. Minotaur always Burrows in a straight line so step to the side when you see it happen. Every 20% health lost a Lightning Wall activates which when touched, applies a temporary, unremovable Shock that slows the player and deals Lightning DoT. Stone Golems are summoned to regain flask charges."
         },
         "levels": [
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Maze of the Minotaur Map",
         "rating": {},
         "shorthand": "aur",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": true,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true,
+            "ziggurat_map": true
         },
         "type": "special map"
     },
@@ -4562,7 +4808,11 @@
             "boss_rushable": "Rush to the center"
         },
         "levels": [
-            78
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Mesa Map",
         "rating": {
@@ -4575,6 +4825,7 @@
             "boss_rushable": true,
             "boss_separated": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": true,
             "outdoors": true
         },
@@ -4617,6 +4868,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -4670,7 +4922,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 210,
@@ -4689,7 +4942,11 @@
             "boss_rushable": "Boss at opposite inner side of doughnut"
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Mud Geyser Map",
         "rating": {
@@ -4699,6 +4956,7 @@
         },
         "shorthand": "ud",
         "tags": {
+            "abomination_map": true,
             "boss_rushable": true,
             "boss_separated": false,
             "few_obstacles": true,
@@ -4740,6 +4998,7 @@
         },
         "shorthand": "mus",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -4800,7 +5059,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 221,
@@ -4837,6 +5097,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": false
@@ -4881,7 +5142,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "unique map",
         "x": 564,
@@ -4926,6 +5188,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": true,
@@ -4971,7 +5234,11 @@
             "boss": "Maligaro deals telegraphed Physical attacks that Maim and Poison. When damaged Maligaro will summon the spider Akaveesh and his sex slave Mun'eh. Akaveesh's projectiles are particularly deadly, dealing large amounts of Chaos damage and leaving Chaos DoT ground. When almost dead Maligaro will assault the player with several clones which must be tanked through."
         },
         "levels": [
-            75
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Overgrown Ruin Map",
         "rating": {
@@ -4987,6 +5254,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -5030,6 +5298,7 @@
         },
         "shorthand": "n s",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": true,
             "boss_rushable": false,
@@ -5083,7 +5352,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 671,
@@ -5123,6 +5393,7 @@
         "tags": {
             "boss_rushable": true,
             "boss_separated": false,
+            "citadel_map": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -5145,7 +5416,11 @@
             "boss": "Telegraphed Storm Burst attack can shotgun in close proximity. Physical/Lightning Storm Whip release 7 Lightning projectiles. Summons group of magic hounds in first stage. In second stage summons group of rare hounds, along with two unique hounds. These hounds have high life so be careful that you are not overwhelmed."
         },
         "levels": [
-            69
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Pen Map",
         "rating": {
@@ -5157,6 +5432,7 @@
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": true,
             "outdoors": false
@@ -5175,7 +5451,11 @@
             "boss": "Other allies cannot die aura. Summons Stone Golems adds. Double boss is no longer a puzzle as the allies cannot die aura no longer affects the other boss."
         },
         "levels": [
-            70
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Peninsula Map",
         "rating": {
@@ -5187,6 +5467,7 @@
         "tags": {
             "boss_separated": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "linear": true,
             "outdoors": true
         },
@@ -5225,6 +5506,7 @@
         },
         "shorthand": "go",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -5279,6 +5561,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": false,
             "league_mechanics": false,
@@ -5323,6 +5606,7 @@
             "boss_soft_phases": true,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -5371,6 +5655,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -5392,23 +5677,32 @@
             "boss": "Cannot be slowed. Modest physical attacks including Flicker Strike and a Flicker Lance that inflicts Bleeding. When he places a red circle beneath him get out - he will perform a flurry of attacks against targets in the area. Throughout the fight are three minion phases where you face waves of powerful adds ending with a mini-boss. Most dangerous ability is the Chimera Smoke Phase - used after any of the add phases. The Chimera disappears into one of many smoke clouds - to uncover the Chimera you must run through the clouds until you find him. While in the Smoke Phase Chimera will constantly deal hard to avoid melee Physical damage attacks. Save flasks for this phase, it especially helps to pop a Basalt/Granite flask. Sometimes you will be unlucky and the Chimera will be hiding in the last smoke cloud :("
         },
         "levels": [
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Pit of the Chimera Map",
         "rating": {},
         "shorthand": "him",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true,
+            "ziggurat_map": true
         },
         "type": "special map"
     },
@@ -5450,6 +5744,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": true,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -5499,6 +5794,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -5564,7 +5860,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "unique map",
         "x": 516,
@@ -5613,6 +5910,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -5640,7 +5938,11 @@
             "boss": "The game randomly selects one to six rogue exiles. These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one."
         },
         "levels": [
-            77
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Precinct Map",
         "rating": {
@@ -5655,6 +5957,7 @@
             "boss_rushable": false,
             "boss_separated": false,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": false,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -5676,7 +5979,11 @@
             "boss": "Telegraphed projectile attack. Stay out of Donut Slam which can one shot. Summons Volatile Cores which explode on contact and trigger other Volatile Cores to also explode. At half health goes invulenerable and summons melee adds. During this phase boulders spawn from the four corners and spiral towards the center hole. Stay vigilant to avoid these as they deal massive amounts of quick physical damage."
         },
         "levels": [
-            79
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Primordial Blocks Map",
         "rating": {
@@ -5694,6 +6001,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -5733,6 +6041,7 @@
         },
         "shorthand": "ial p",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -5817,6 +6126,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -5840,7 +6150,11 @@
             "boss": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal."
         },
         "levels": [
-            79
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Racecourse Map",
         "rating": {
@@ -5857,6 +6171,7 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": true
@@ -5876,7 +6191,11 @@
             "boss": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap."
         },
         "levels": [
-            74
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Ramparts Map",
         "rating": {
@@ -5891,6 +6210,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
             "league_mechanics": true,
@@ -5934,6 +6254,7 @@
         "tags": {
             "boss_not_twinnable": true,
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": true,
             "linear": true,
             "outdoors": true
@@ -5955,7 +6276,11 @@
             "boss": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise"
         },
         "levels": [
-            71
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Relic Chambers Map",
         "rating": {
@@ -5974,7 +6299,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -6021,7 +6347,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 417,
@@ -6064,7 +6391,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "map"
+        "type": "special map"
     },
     {
         "boss_ids": [
@@ -6079,7 +6406,11 @@
             "boss": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die."
         },
         "levels": [
-            76
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Scriptorium Map",
         "rating": {
@@ -6089,6 +6420,7 @@
         },
         "shorthand": "sc",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -6136,7 +6468,11 @@
             "boss": "Creates three stone monoliths that apply up to 5 stacking debuffs (Green reduces your damage, Purple makes you slower, Red makes you take increased damage). Destroying the corresponding monolith removes the debuff. Do not kill them all though as when damaged Doedre will cast an arena wide physical AoE that will quickly kill you unless you take cover behind one of the monoliths. From 75% life Doedre will transform until a familiar form where she will only fire slow Physical projectiles and use a teleport slam that deals significant damage."
         },
         "levels": [
-            76
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Sepulchre Map",
         "rating": {
@@ -6146,6 +6482,7 @@
         },
         "shorthand": "ep",
         "tags": {
+            "abomination_map": true,
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
@@ -6217,6 +6554,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": false,
             "outdoors": true
@@ -6270,7 +6608,8 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 503,
@@ -6320,7 +6659,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 418,
@@ -6370,6 +6710,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -6421,6 +6762,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true
         },
@@ -6461,6 +6803,7 @@
         },
         "shorthand": "r f",
         "tags": {
+            "abomination_map": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
@@ -6482,7 +6825,11 @@
             "boss": "Lightning projectile spray. Constantly summons Rhoas and Skeletal Beasts which deal large amounts of Physical damage and are hard to see. Boss casts Detonate Dead on revived corpses."
         },
         "levels": [
-            72
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Spider Lair Map",
         "rating": {
@@ -6495,7 +6842,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map"
     },
@@ -6534,6 +6882,7 @@
         },
         "shorthand": "gn",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -6589,6 +6938,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": true,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -6631,6 +6981,7 @@
         },
         "shorthand": "lp",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -6659,7 +7010,11 @@
             "boss": "Physical and Fire damage attacks and spells. Casts combo of Fireballs, fast Leap Slam. Periodically gains 'Abberaths Fury' buff gaining 80% reduced damage taken, more attack speed and more damage - in addition Abberath releases a continuous Fire Nova from his hooves. After taking damage will spawn four unique goatmen - two ranged and two melee which are relatively harmless. Casts a Meteor (small circle around boss) at target location which inflicts heavy Fire damage - move when he uses this skill. In phase 2 Aberrath channels a Firestorm (indicated by large circle around the boss) which spreads over approximately half the arena. Getting hit by several of these will spell death."
         },
         "levels": [
-            79
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Summit Map",
         "rating": {
@@ -6673,7 +7028,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -6710,6 +7066,7 @@
         },
         "shorthand": "ken",
         "tags": {
+            "abomination_map": true,
             "boss_not_twinnable": true,
             "boss_separated": true,
             "few_obstacles": true,
@@ -6765,7 +7122,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 463,
@@ -6815,7 +7173,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": true
+            "outdoors": true,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 582,
@@ -7037,7 +7396,9 @@
         "name": "The Beachhead",
         "rating": {},
         "shorthand": "e b",
-        "tags": {},
+        "tags": {
+            "ziggurat_map": true
+        },
         "type": "unique map"
     },
     {
@@ -7564,7 +7925,8 @@
             "boss_rushable": false,
             "boss_soft_phases": false,
             "delirium_mirror": false,
-            "league_mechanics": false
+            "league_mechanics": false,
+            "ziggurat_map": true
         },
         "type": "unique map",
         "x": 824,
@@ -8545,6 +8907,7 @@
         "rating": {},
         "shorthand": "cl",
         "tags": {
+            "abomination_map": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
@@ -8860,7 +9223,12 @@
         "rating": {},
         "shorthand": "r'",
         "tags": {
-            "boss_not_twinnable": true
+            "abomination_map": true,
+            "boss_not_twinnable": true,
+            "citadel_map": true,
+            "fortress_map": true,
+            "sanctuary_map": true,
+            "ziggurat_map": true
         },
         "type": "unique map"
     },
@@ -9339,7 +9707,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "unique map",
         "x": 172,
@@ -9469,6 +9838,7 @@
         "shorthand": "kt",
         "tags": {
             "boss_separated": true,
+            "citadel_map": true,
             "few_obstacles": false,
             "linear": true,
             "outdoors": true
@@ -9593,7 +9963,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 223,
@@ -9633,6 +10004,7 @@
         },
         "shorthand": "tower",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
@@ -9694,7 +10066,8 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 395,
@@ -9826,6 +10199,7 @@
         },
         "shorthand": "sl",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -9924,6 +10298,7 @@
             "boss_rushable": false,
             "boss_separated": true,
             "boss_soft_phases": false,
+            "citadel_map": true,
             "delirium_mirror": true,
             "few_obstacles": true,
             "league_mechanics": false,
@@ -9980,7 +10355,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 367,
@@ -10080,7 +10456,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 330,
@@ -10102,6 +10479,10 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Vaal Temple Map",
@@ -10122,7 +10503,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "special map"
     },
@@ -10161,7 +10543,8 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map",
         "x": 461,
@@ -10200,7 +10583,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "ziggurat_map": true
         },
         "type": "unique map",
         "x": 359,
@@ -10218,7 +10602,11 @@
             "boss": "Stay out of Chilling Totem beams and off Shocking Ground. When channelling his Lightning beam run in a circle around the boss. Avoid 'Touch of God' slam - it will most likely one shot you."
         },
         "levels": [
-            79
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Villa Map",
         "rating": {
@@ -10231,7 +10619,8 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map"
     },
@@ -10279,7 +10668,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "outdoors": true
+            "outdoors": true,
+            "ziggurat_map": true
         },
         "type": "map",
         "x": 575,
@@ -10321,6 +10711,7 @@
         },
         "shorthand": "te ",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
             "boss_phases": true,
@@ -10371,6 +10762,7 @@
         },
         "shorthand": "ela",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -10420,6 +10812,7 @@
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": true,
             "outdoors": true
         },
@@ -10461,6 +10854,7 @@
             "boss_soft_phases": true,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": false,
             "outdoors": true
@@ -10509,6 +10903,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": true,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": true,
             "linear": true,
             "outdoors": true
@@ -10561,6 +10956,6 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "map"
+        "type": "special map"
     }
 ]

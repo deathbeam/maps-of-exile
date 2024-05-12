@@ -55,7 +55,8 @@ async function prepareMaps(preparedMonsters, preparedCards) {
     pushTag(map.info, mapTags, map, 'pantheon', null, 'warning')
 
     for (let key of Object.keys(map.tags)) {
-      pushTag(map.info, mapTags, map.tags, key)
+      const color = key.endsWith('_map') ? 'primary' : null
+      pushTag(map.info, mapTags, map.tags, key, null, color)
     }
 
     if (import.meta.env.DEV) {

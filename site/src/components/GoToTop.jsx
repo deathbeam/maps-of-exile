@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const GoToTop = () => {
   const [showGoTop, setShowGoTop] = useState(false)
@@ -15,4 +15,4 @@ const GoToTop = () => {
   )
 }
 
-export default memo(GoToTop)
+export default GoToTop

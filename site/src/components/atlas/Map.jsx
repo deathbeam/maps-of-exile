@@ -1,5 +1,4 @@
 import { useAtomValue } from 'jotai'
-import { memo } from 'react'
 
 import state from '../../state'
 import MapBoss from '../MapBoss'
@@ -29,4 +28,4 @@ const Map = ({ map }) => {
   )
 }
 
-export default memo(Map)
+export default Map

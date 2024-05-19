@@ -1,5 +1,4 @@
 import { useAtomValue } from 'jotai'
-import { memo } from 'react'
 
 import useLazy from '../../hooks/useLazy'
 import state from '../../state'
@@ -55,4 +54,4 @@ const Card = ({ card }) => {
   )
 }
 
-export default memo(Card)
+export default Card

@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import Rating from './Rating'
 
 const MapBoss = ({ names, rating, tooltip, sidebar = false, label = '' }) => {
@@ -25,4 +23,4 @@ const MapBoss = ({ names, rating, tooltip, sidebar = false, label = '' }) => {
   return badge
 }
 
-export default memo(MapBoss)
+export default MapBoss

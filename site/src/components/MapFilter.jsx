@@ -1,5 +1,4 @@
 import { atom, useAtomValue } from 'jotai'
-import { memo } from 'react'
 
 import state from '../state'
 import MapFilterInput from './MapFilterInput'
@@ -309,4 +308,4 @@ const MapFilter = ({ sidebar }) => {
     </>
   )
 }
-export default memo(MapFilter)
+export default MapFilter

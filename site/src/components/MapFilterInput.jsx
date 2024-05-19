@@ -1,11 +1,11 @@
 import { useAtom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
-import { memo, useRef } from 'react'
+import { useRef } from 'react'
 import Select from 'react-select'
 
 import { copyToClipboard } from '../common'
 
-const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) => {
+const MapFilterInput = ({ input, inputClass, bigInputClass = '', fullInputClass = '' }) => {
   const [value, setValue] = useAtom(input.def)
   const reset = useResetAtom(input.def)
   const [numberValue, setNumberValue] = useAtom(input.numberDef)
@@ -199,4 +199,4 @@ const MapFilterInput = ({ input, inputClass, bigInputClass, fullInputClass }) =>
   }
 }
 
-export default memo(MapFilterInput)
+export default MapFilterInput

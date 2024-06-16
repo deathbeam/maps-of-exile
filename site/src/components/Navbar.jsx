@@ -1,11 +1,10 @@
 import { useAtomValue } from 'jotai'
-import { memo } from 'react'
 
 import state from '../state'
 
 const getButtonClass = isActive => (isActive ? 'btn btn-primary' : 'btn btn-outline-primary')
 
-const Navbar = ({ close }) => {
+const Navbar = ({ close = null }) => {
   const [route] = useAtomValue(state.location)
 
   return (
@@ -30,4 +29,4 @@ const Navbar = ({ close }) => {
   )
 }
 
-export default memo(Navbar)
+export default Navbar

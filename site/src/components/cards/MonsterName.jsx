@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { wikiBase } from '../../constants'
 
 const MonsterName = ({ monster }) => (
@@ -19,4 +17,4 @@ const MonsterName = ({ monster }) => (
   </div>
 )
 
-export default memo(MonsterName)
+export default MonsterName

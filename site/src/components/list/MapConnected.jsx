@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { ratingColor, scrollToElement } from '../../common'
 
 const MapConnected = ({ connected, onClick = scrollToElement }) => {
@@ -14,4 +12,4 @@ const MapConnected = ({ connected, onClick = scrollToElement }) => {
   ))
 }
 
-export default memo(MapConnected)
+export default MapConnected

@@ -3,7 +3,7 @@ import { memo, useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import 'reactflow/dist/base.css'
 
-import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
+import { deduplicate, filter, filterTiers, mapLevel, ratingColor, tierColor } from '../../common'
 import { globals } from '../../constants'
 import state from '../../state'
 import MapImage from '../MapImage'
@@ -95,20 +95,20 @@ const Atlas = ({ selectedMap }) => {
   const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
   const maps = useAtomValue(state.ratedMaps)
   const parsedSearch = useAtomValue(state.parsedSearch)
+  const mapTiers = useAtomValue(state.input.mapTiers)
   const voidstones = useAtomValue(state.input.voidstones)
 
   const nodeTypes = useMemo(() => ({ background: BackgroundNode, map: MapNode }), [])
   const mapsOnAtlas = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
   const matchingNodes = useMemo(
-    () =>
-      mapsOnAtlas
-        .filter(m =>
-          selectedMap
-            ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
-            : filter(parsedSearch, m.search)
-        )
-        .map(m => m.name),
-    [mapsOnAtlas, parsedSearch, selectedMap]
+    () => mapsOnAtlas
+      .filter(m =>
+        selectedMap
+          ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
+          : filter(parsedSearch, m.search) && (!mapTiers || mapTiers === '1-16' || filterTiers(m.levels, voidstones, mapTiers))
+      )
+      .map(m => m.name),
+    [mapsOnAtlas, parsedSearch, mapTiers, selectedMap]
   )
 
   const fitMatching = useCallback(

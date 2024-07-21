@@ -108,7 +108,7 @@ const Atlas = ({ selectedMap }) => {
           : filter(parsedSearch, m.search) && (!mapTiers || mapTiers === '1-16' || filterTiers(m.levels, voidstones, mapTiers))
       )
       .map(m => m.name),
-    [mapsOnAtlas, parsedSearch, mapTiers, selectedMap]
+    [mapsOnAtlas, parsedSearch, mapTiers, selectedMap, voidstones]
   )
 
   const fitMatching = useCallback(

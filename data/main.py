@@ -104,7 +104,7 @@ def get_globals_data(config):
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
-    r = requests.get(url)
+    r = requests.get(url, allow_redirects=True)
     soup = BeautifulSoup(r.content, "html.parser")
     atlasimage = soup.find(id="AtlasNodeSVG").find("image")
 
@@ -115,7 +115,7 @@ def get_globals_data(config):
 
     url = config["poedb"]["constants"]
     print(f"Getting game constants from url {url}")
-    r = requests.get(url)
+    r = requests.get(url, allow_redirects=True)
     soup = BeautifulSoup(r.content, "html.parser")
     dropoollist = soup.find(id="DropPool").find("table").find("tbody").find_all("tr")
 
@@ -582,7 +582,7 @@ def get_maps(key, config):
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
-    r = requests.get(url)
+    r = requests.get(url, allow_redirects=True)
     soup = BeautifulSoup(r.content, "html.parser")
     mapssvg = soup.find(id="AtlasNodeSVG")
     maplinks = mapssvg.find_all("a")

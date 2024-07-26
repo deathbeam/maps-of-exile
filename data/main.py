@@ -691,6 +691,7 @@ def get_map_data(map_data, extra_map_data, config):
             elif name == "icon" and "icon" not in map_data:
                 v = value.text.strip()
                 if "SkillIcons" not in v:
+                    print(f"Found map icon {v}")
                     map_data["icon"] = v
 
     if "icon" not in map_data:

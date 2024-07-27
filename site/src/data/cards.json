@@ -16,6 +16,7 @@
         },
         "name": "A Chilling Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-chilling-wind",
+        "price": 1.6,
         "reward": "Level 21 Vaal Cold Snap, Quality: +20%, Corrupted",
         "stack": 4,
         "standardPrice": 6.0,
@@ -52,23 +53,23 @@
                 "Synthesis_MapGuardian3",
                 "Synthesis_MapGuardian4"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "A Dusty Memory",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-dusty-memory",
-        "price": 1.5,
+        "price": 2.0,
         "reward": "Item, Item Level: 100, Fractured",
         "stack": 5,
-        "standardPrice": 7.1,
+        "standardPrice": 7.4,
         "weight": 335
     },
     {
         "art": "AFamiliarCall",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/ChimeraBoss"
             ],
@@ -85,7 +86,7 @@
         "art": "AFateWorseThanDeath",
         "drop": {
             "areas": [],
-            "min_level": 78,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasExiles/AtlasExile1ApparitionUber",
                 "Metadata/Monsters/AtlasExiles/AtlasExile2ApparitionUber",
@@ -97,7 +98,7 @@
         },
         "name": "A Fate Worse Than Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-fate-worse-than-death",
-        "price": 14.0,
+        "price": 6.0,
         "reward": "Cortex, Corrupted",
         "stack": 4,
         "standardPrice": 24.0,
@@ -118,6 +119,7 @@
         },
         "name": "A Modest Request",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-modest-request",
+        "price": 9.0,
         "reward": "Megalomaniac, Corrupted",
         "stack": 3,
         "standardPrice": 5.0,
@@ -136,7 +138,7 @@
         },
         "name": "A Mother's Parting Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-mothers-parting-gift",
-        "price": 1.0,
+        "price": 0.86,
         "reward": "Fertile Mind, Corrupted",
         "stack": 6,
         "standardPrice": 1.0,
@@ -158,7 +160,7 @@
         },
         "name": "A Note in the Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-note-in-the-wind",
-        "price": 1.3,
+        "price": 1.0,
         "reward": "Asenath's Mark",
         "stack": 4,
         "standardPrice": 1.0,
@@ -175,16 +177,16 @@
                 "MapWorldsCitadel",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 68,
+            "min_level": 23,
             "monsters": [],
             "text": ""
         },
         "name": "A Sea of Blue",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-sea-of-blue",
-        "price": 0.30333333333333334,
-        "reward": "13x Orb of Alteration",
+        "price": 1.0,
+        "reward": "13x Module Error: No results found for item using search term \"item_name = Orb of Alteration\"",
         "stack": 3,
-        "standardPrice": 0.38999999999999996,
+        "standardPrice": 1.0,
         "weight": 7533
     },
     {
@@ -200,13 +202,13 @@
                 "MapWorldsPeninsula",
                 "MapWorldsGeode"
             ],
-            "min_level": 50,
+            "min_level": 80,
             "monsters": [],
             "text": ""
         },
         "name": "A Stone Perfected",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-stone-perfected",
-        "price": 3.2,
+        "price": 4.0,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 4.4,
@@ -218,16 +220,16 @@
             "areas": [
                 "MapWorldsShoreUnique"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "Abandoned Wealth",
         "ninja": "https://poe.ninja/challenge/divination-cards/abandoned-wealth",
-        "price": 1.2,
+        "price": 1.7999999999999998,
         "reward": "3x Exalted Orb",
         "stack": 5,
-        "standardPrice": 19.313999999999997,
+        "standardPrice": 19.962,
         "weight": 382
     },
     {
@@ -245,7 +247,7 @@
         },
         "name": "Acclimatisation",
         "ninja": "https://poe.ninja/challenge/divination-cards/acclimatisation",
-        "price": 0.7000000000000001,
+        "price": 0.6,
         "reward": "20x Orb of Alteration",
         "stack": 2,
         "standardPrice": 0.8999999999999999,
@@ -312,7 +314,7 @@
         },
         "name": "Akil's Prophecy",
         "ninja": "https://poe.ninja/challenge/divination-cards/akils-prophecy",
-        "price": 5.8,
+        "price": 1.0,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
         "standardPrice": 1.64,
@@ -334,7 +336,7 @@
                 "MapWorldsJungleValley",
                 "MapWorldsBrambleValley"
             ],
-            "min_level": 48,
+            "min_level": 59,
             "monsters": [],
             "text": ""
         },
@@ -353,23 +355,23 @@
                 "MapAtziri1",
                 "MapAtziri2"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "Alluring Bounty",
         "ninja": "https://poe.ninja/challenge/divination-cards/alluring-bounty",
-        "price": 2.857142857142857,
+        "price": 4.285714285714286,
         "reward": "10x Exalted Orb",
         "stack": 7,
-        "standardPrice": 45.98571428571428,
+        "standardPrice": 47.52857142857143,
         "weight": 184
     },
     {
         "art": "AloneintheDarkness",
         "drop": {
             "areas": [],
-            "min_level": 33,
+            "min_level": 34,
             "monsters": [],
             "text": "Can drop from an Abyssal Trove."
         },
@@ -393,6 +395,7 @@
         },
         "name": "Altered Perception",
         "ninja": "https://poe.ninja/challenge/divination-cards/altered-perception",
+        "price": 11.2,
         "reward": "Simulacrum",
         "stack": 3,
         "standardPrice": 3.52,
@@ -430,7 +433,7 @@
         "art": "AnarchysPrice",
         "drop": {
             "areas": [],
-            "min_level": 48,
+            "min_level": 64,
             "monsters": [
                 "Metadata/Monsters/Exiles/ExileRanger5",
                 "Metadata/Monsters/Exiles/ExileDuelist6",
@@ -472,7 +475,7 @@
         },
         "name": "Anarchy's Price",
         "ninja": "https://poe.ninja/challenge/divination-cards/anarchys-price",
-        "price": 42.4,
+        "price": 9.5,
         "reward": "Voltaxic Rift, Corrupted",
         "stack": 13,
         "standardPrice": 1.0,
@@ -492,7 +495,7 @@
         },
         "name": "Arrogance of the Vaal",
         "ninja": "https://poe.ninja/challenge/divination-cards/arrogance-of-the-vaal",
-        "price": 1.5,
+        "price": 1.0,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
         "standardPrice": 1.0,
@@ -525,15 +528,16 @@
         "art": "AssassinsGift",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 66,
             "monsters": [],
             "text": ""
         },
         "name": "Assassin's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/assassins-gift",
+        "price": 5.6,
         "reward": "Divinarius, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 2009.4,
+        "standardPrice": 2034.6,
         "weight": 1
     },
     {
@@ -548,10 +552,10 @@
         },
         "name": "Astral Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/astral-protection",
-        "price": 3.0,
+        "price": 1.0,
         "reward": "Shield, Shaper Item",
         "stack": 5,
-        "standardPrice": 3.5,
+        "standardPrice": 3.4,
         "weight": 604
     },
     {
@@ -578,13 +582,13 @@
             "areas": [
                 "MapAtziri1"
             ],
-            "min_level": 52,
+            "min_level": 69,
             "monsters": [],
             "text": ""
         },
         "name": "Audacity",
         "ninja": "https://poe.ninja/challenge/divination-cards/audacity",
-        "price": 5.0,
+        "price": 2.0,
         "reward": "Doryani's Fist, Corrupted",
         "stack": 5,
         "standardPrice": 1.0,
@@ -594,7 +598,7 @@
         "art": "AuspiciousAmbitions",
         "drop": {
             "areas": [],
-            "min_level": 73,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasInvaders/ConsumeMonsters/ConsumeBoss",
                 "Metadata/Monsters/AtlasInvaders/CleansingMonsters/CleansingBoss",
@@ -651,10 +655,9 @@
         },
         "name": "Avian Pursuit",
         "ninja": "https://poe.ninja/challenge/divination-cards/avian-pursuit",
-        "price": 19.3,
+        "price": 22.8,
         "reward": "Einhar's Memory of Harvest Beasts",
-        "stack": 3,
-        "standardPrice": 1808.46
+        "stack": 3
     },
     {
         "art": "AzureRage",
@@ -669,7 +672,7 @@
         },
         "name": "Azure Rage",
         "ninja": "https://poe.ninja/challenge/divination-cards/azure-rage",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
         "standardPrice": 1.18,
@@ -683,12 +686,13 @@
                 "MapWorldsLaboratory",
                 "MapWorldsStagnation"
             ],
-            "min_level": 68,
+            "min_level": 80,
             "monsters": [],
             "text": ""
         },
         "name": "Azyran's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/azyrans-reward",
+        "price": 10.0,
         "reward": "Prismatic Jewel, Corrupted",
         "stack": 9,
         "standardPrice": 2.0,
@@ -719,7 +723,7 @@
         "art": "BeautyThroughDeath",
         "drop": {
             "areas": [],
-            "min_level": 56,
+            "min_level": 80,
             "monsters": [
                 "Metadata/Monsters/DemonBosses/DemonBoss1/DemonBoss1Map",
                 "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
@@ -729,9 +733,10 @@
         },
         "name": "Beauty Through Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/beauty-through-death",
+        "price": 142.18,
         "reward": "Atziri's Reflection",
         "stack": 5,
-        "standardPrice": 60.0,
+        "standardPrice": 60.65,
         "weight": 17
     },
     {
@@ -745,13 +750,13 @@
                 "MapWorldsGrotto",
                 "MapWorldsGeode"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Bijoux",
         "ninja": "https://poe.ninja/challenge/divination-cards/bijoux",
-        "price": 2.6,
+        "price": 3.0,
         "reward": "Cluster Jewel, Item Level: 84",
         "stack": 3,
         "standardPrice": 3.5,
@@ -806,12 +811,13 @@
             "areas": [
                 "MapWorldsChimera"
             ],
-            "min_level": 72,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "Boon of the First Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/boon-of-the-first-ones",
+        "price": 3.9,
         "reward": "Bestiary Item",
         "stack": 6,
         "standardPrice": 2.0,
@@ -844,7 +850,7 @@
         "art": "BowyersDream",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/Bandits/MapBanditBowBossFire",
                 "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierRangedMapBoss",
@@ -855,7 +861,7 @@
         },
         "name": "Bowyer's Dream",
         "ninja": "https://poe.ninja/challenge/divination-cards/bowyers-dream",
-        "price": 9.0,
+        "price": 5.0,
         "reward": "Six-Link Harbinger Bow, Item Level: 91",
         "stack": 6,
         "standardPrice": 6.5,
@@ -865,7 +871,7 @@
         "art": "BrokenPromises",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/Zombies/ZombieBossTolmanMap",
                 "Metadata/Monsters/Malachai/MalachaiMapBoss2"
@@ -874,10 +880,10 @@
         },
         "name": "Broken Promises",
         "ninja": "https://poe.ninja/challenge/divination-cards/broken-promises",
-        "price": 6.2,
+        "price": 6.3,
         "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 99.1,
+        "standardPrice": 99.2,
         "weight": 23
     },
     {
@@ -906,16 +912,16 @@
                 "MapWorldsGraveTrough",
                 "MapWorldsGraveyard"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "Brother's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-gift",
-        "price": 271.84999999999997,
+        "price": 355.85,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 1004.7,
+        "standardPrice": 1017.3,
         "weight": 37
     },
     {
@@ -926,16 +932,16 @@
                 "MapWorldsGraveyard",
                 "MapWorldsGraveTrough"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "Brother's Stash",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-stash",
-        "price": 10.0,
+        "price": 15.0,
         "reward": "5x Exalted Orb",
         "stack": 1,
-        "standardPrice": 160.95,
+        "standardPrice": 166.35000000000002,
         "weight": 48
     },
     {
@@ -953,9 +959,10 @@
         },
         "name": "Brotherhood in Exile",
         "ninja": "https://poe.ninja/challenge/divination-cards/brotherhood-in-exile",
+        "price": 8.0,
         "reward": "One With Nothing, Corrupted",
         "stack": 5,
-        "standardPrice": 1.7,
+        "standardPrice": 1.8,
         "weight": 174
     },
     {
@@ -998,7 +1005,7 @@
         },
         "name": "Buried Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/buried-treasure",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Sulphite Scarab",
         "stack": 3,
         "standardPrice": 1.0,
@@ -1011,12 +1018,13 @@
                 "MapWorldsLavaChamber",
                 "MapWorldsPhoenix"
             ],
-            "min_level": 70,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Burning Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/burning-blood",
+        "price": 15.5,
         "reward": "Xoph's Blood, Corrupted",
         "stack": 6,
         "standardPrice": 2.6,
@@ -1070,7 +1078,7 @@
                 "2_8_13",
                 "2_9_5"
             ],
-            "min_level": 58,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -1094,6 +1102,7 @@
         },
         "name": "Chaotic Disposition",
         "ninja": "https://poe.ninja/challenge/divination-cards/chaotic-disposition",
+        "price": 2.3,
         "reward": "5x Chaos Orb",
         "stack": 1,
         "standardPrice": 3.2,
@@ -1148,9 +1157,10 @@
         },
         "name": "Choking Guilt",
         "ninja": "https://poe.ninja/challenge/divination-cards/choking-guilt",
+        "price": 121.56,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 4018.8,
+        "standardPrice": 4069.2,
         "weight": 3
     },
     {
@@ -1161,7 +1171,7 @@
                 "MapWorldsRelicChambers",
                 "MapWorldsSanctuary"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -1184,6 +1194,7 @@
         },
         "name": "Council of Cats",
         "ninja": "https://poe.ninja/challenge/divination-cards/council-of-cats",
+        "price": 16.0,
         "reward": "Farrul Item",
         "stack": 4,
         "standardPrice": 5.0,
@@ -1206,10 +1217,10 @@
         },
         "name": "Coveted Possession",
         "ninja": "https://poe.ninja/challenge/divination-cards/coveted-possession",
-        "price": 0.5555555555555556,
+        "price": 0.3333333333333333,
         "reward": "5x Regal Orb",
         "stack": 9,
-        "standardPrice": 0.1888888888888889,
+        "standardPrice": 0.19444444444444445,
         "weight": 2850
     },
     {
@@ -1220,13 +1231,13 @@
                 "MapWorldsGraveTrough",
                 "MapWorldsGraveyard"
             ],
-            "min_level": 68,
+            "min_level": 73,
             "monsters": [],
             "text": ""
         },
         "name": "Cursed Words",
         "ninja": "https://poe.ninja/challenge/divination-cards/cursed-words",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Maw of Mischief",
         "stack": 13,
         "standardPrice": 1.0,
@@ -1236,7 +1247,7 @@
         "art": "DarkDreams",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 73,
             "monsters": [
                 "Metadata/Monsters/Exiles/DelveExileWitch1"
             ],
@@ -1244,7 +1255,7 @@
         },
         "name": "Dark Dreams",
         "ninja": "https://poe.ninja/challenge/divination-cards/dark-dreams",
-        "price": 8.3,
+        "price": 3.0,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
         "standardPrice": 2.0,
@@ -1254,7 +1265,7 @@
         "art": "DarkTemptation",
         "drop": {
             "areas": [],
-            "min_level": 44,
+            "min_level": 59,
             "monsters": [],
             "text": "Can also drop from hidden chests in The Azurite Mine."
         },
@@ -1276,10 +1287,10 @@
         },
         "name": "Darker Half",
         "ninja": "https://poe.ninja/challenge/divination-cards/darker-half",
-        "price": 5.0,
+        "price": 16.666666666666668,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
-        "standardPrice": 57.733333333333334,
+        "standardPrice": 59.55,
         "weight": 32
     },
     {
@@ -1288,12 +1299,13 @@
             "areas": [
                 "MapWorldsTempleUnique"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Deadly Joy",
         "ninja": "https://poe.ninja/challenge/divination-cards/deadly-joy",
+        "price": 71.09,
         "reward": "Torrent's Reclamation, Two-Implicit, Corrupted",
         "stack": 6,
         "standardPrice": 14.0,
@@ -1308,7 +1320,7 @@
                 "MapWorldsMarshes",
                 "MapWorldsAbomination"
             ],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -1354,7 +1366,7 @@
         },
         "name": "Dementophobia",
         "ninja": "https://poe.ninja/challenge/divination-cards/dementophobia",
-        "price": 1.0,
+        "price": 2.5,
         "reward": "10x Delirium Orb",
         "stack": 11,
         "standardPrice": 5.0,
@@ -1372,17 +1384,17 @@
         },
         "name": "Demigod's Wager",
         "ninja": "https://poe.ninja/challenge/divination-cards/demigods-wager",
-        "price": 0.2857142857142857,
+        "price": 0.42857142857142855,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 1.2285714285714284,
+        "standardPrice": 1.2757142857142856,
         "weight": 576
     },
     {
         "art": "DesecratedVirtue",
         "drop": {
             "areas": [],
-            "min_level": 72,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueDelve/ProtoVaalCityBoss"
             ],
@@ -1390,10 +1402,10 @@
         },
         "name": "Desecrated Virtue",
         "ninja": "https://poe.ninja/challenge/divination-cards/desecrated-virtue",
-        "price": 54.37,
+        "price": 32.6,
         "reward": "Level 6 Awakened Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 763.57,
+        "standardPrice": 773.15,
         "weight": 16
     },
     {
@@ -1409,7 +1421,7 @@
         },
         "name": "Desperate Crusade",
         "ninja": "https://poe.ninja/challenge/divination-cards/desperate-crusade",
-        "price": 17.2,
+        "price": 7.0,
         "reward": "Prism Guardian",
         "stack": 3,
         "standardPrice": 5.3,
@@ -1423,7 +1435,7 @@
                 "MapWorldsScriptorium",
                 "MapWorldsMuseum"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -1464,13 +1476,13 @@
             "areas": [
                 "MavenHub"
             ],
-            "min_level": 44,
+            "min_level": 68,
             "monsters": [],
             "text": "Can drop after completing any Maven's Invitation, including Quest ones."
         },
         "name": "Disdain",
         "ninja": "https://poe.ninja/challenge/divination-cards/disdain",
-        "price": 1.5,
+        "price": 1.0,
         "reward": "Delirium Orb",
         "stack": 5,
         "standardPrice": 1.8,
@@ -1480,7 +1492,7 @@
         "art": "DivineBeauty",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [
                 "Metadata/Monsters/Seawitch/MapSeaWitchBossSpark",
                 "Metadata/Monsters/Seawitch/MapBossMerveilMaelstrom",
@@ -1492,25 +1504,26 @@
         },
         "name": "Divine Beauty",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-beauty",
-        "price": 31.715833333333332,
+        "price": 41.51583333333334,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 117.215,
+        "standardPrice": 118.68500000000002,
         "weight": 400
     },
     {
         "art": "DivineJustice",
         "drop": {
             "areas": [],
-            "min_level": 56,
+            "min_level": 68,
             "monsters": [],
             "text": "Can drop from an Armourer's Strongbox.[confirmation needed]"
         },
         "name": "Divine Justice",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-justice",
+        "price": 355.45,
         "reward": "Grand Spectrum, Corrupted",
         "stack": 1,
-        "standardPrice": 424.75,
+        "standardPrice": 423.46,
         "weight": 1
     },
     {
@@ -1546,23 +1559,23 @@
             "areas": [
                 "MapWorldsMazeUnique"
             ],
-            "min_level": 68,
+            "min_level": 72,
             "monsters": [],
             "text": ""
         },
         "name": "Doryani's Epiphany",
         "ninja": "https://poe.ninja/challenge/divination-cards/doryanis-epiphany",
-        "price": 16.5,
+        "price": 7.2,
         "reward": "Level 21 Transfigured Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 13.1,
+        "standardPrice": 12.2,
         "weight": 46
     },
     {
         "art": "DrapedInDreams",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -1578,7 +1591,7 @@
         "art": "Duality",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/VaalArchitect/TempleVaalArchitect1",
                 "Metadata/Monsters/VaalArchitect/TempleVaalArchitect2_",
@@ -1612,7 +1625,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/duality",
         "reward": "Body Armour, Item Level: 100, Double-Influenced Item",
         "stack": 2,
-        "standardPrice": 165.75,
+        "standardPrice": 167.77,
         "weight": 16
     },
     {
@@ -1642,7 +1655,7 @@
         "art": "DyingLight",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/TheShaperBoss",
                 "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder"
@@ -1669,7 +1682,7 @@
                 "MapWorldsDrySea",
                 "MapWorldsDunesUnique"
             ],
-            "min_level": 23,
+            "min_level": 27,
             "monsters": [],
             "text": ""
         },
@@ -1690,7 +1703,7 @@
                 "MapWorldsCore",
                 "MapWorldsMuseum"
             ],
-            "min_level": 41,
+            "min_level": 54,
             "monsters": [],
             "text": ""
         },
@@ -1706,7 +1719,7 @@
         "art": "EldritchPerfection",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasInvaders/BlackStarMonsters/BlackStarFodder2",
                 "Metadata/Monsters/AtlasInvaders/BlackStarMonsters/BlackStarFodder3",
@@ -1730,9 +1743,10 @@
         },
         "name": "Eldritch Perfection",
         "ninja": "https://poe.ninja/challenge/divination-cards/eldritch-perfection",
+        "price": 3.0,
         "reward": "Item, Item Level: 100, Perfect Eldritch Implicit Modifier",
         "stack": 4,
-        "standardPrice": 6.2,
+        "standardPrice": 6.1,
         "weight": 32
     },
     {
@@ -1744,16 +1758,16 @@
                 "MapWorldsOvergrownRuin",
                 "MapWorldsOvergrownShrine"
             ],
-            "min_level": 50,
+            "min_level": 60,
             "monsters": [],
             "text": ""
         },
         "name": "Emperor of Purity",
         "ninja": "https://poe.ninja/challenge/divination-cards/emperor-of-purity",
-        "price": 2.95,
+        "price": 4.0,
         "reward": "Six-Link Holy Chainmail, Item Level: 60",
         "stack": 7,
-        "standardPrice": 1.51,
+        "standardPrice": 1.45,
         "weight": 1893
     },
     {
@@ -1789,7 +1803,7 @@
         },
         "name": "Endless Night",
         "ninja": "https://poe.ninja/challenge/divination-cards/endless-night",
-        "price": 2.0,
+        "price": 1.7,
         "reward": "Maloney's Mechanism",
         "stack": 7,
         "standardPrice": 1.6,
@@ -1799,7 +1813,7 @@
         "art": "EtchedInBlood",
         "drop": {
             "areas": [],
-            "min_level": 58,
+            "min_level": 77,
             "monsters": [
                 "Metadata/Monsters/Talisman/TalismanWolfKingMapBoss"
             ],
@@ -1807,6 +1821,7 @@
         },
         "name": "Etched in Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/etched-in-blood",
+        "price": 5.0,
         "reward": "Rigwald's Quills, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 2.0,
@@ -1816,16 +1831,16 @@
         "art": "EternalBonds",
         "drop": {
             "areas": [],
-            "min_level": 78,
+            "min_level": 81,
             "monsters": [],
             "text": "Drops from Map Reward Chests in Heist Contracts and Blueprints"
         },
         "name": "Eternal Bonds",
         "ninja": "https://poe.ninja/challenge/divination-cards/eternal-bonds",
-        "price": 10.0,
+        "price": 5.1,
         "reward": "Replica Cortex",
         "stack": 4,
-        "standardPrice": 96.7,
+        "standardPrice": 97.84,
         "weight": 32
     },
     {
@@ -1838,17 +1853,17 @@
         },
         "name": "Ever-Changing",
         "ninja": "https://poe.ninja/challenge/divination-cards/ever-changing",
-        "price": 2.5,
+        "price": 1.6666666666666667,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
-        "standardPrice": 2.7,
+        "standardPrice": 2.8,
         "weight": 1341
     },
     {
         "art": "FatefulMeeting",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/VaalWraith/VaalWraithChampionTreasurer"
             ],
@@ -1858,7 +1873,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/fateful-meeting",
         "reward": "League-Specific Item, Double-Influenced Item, Item Level: 97, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 62.94,
+        "standardPrice": 64.89,
         "weight": 6
     },
     {
@@ -1888,14 +1903,14 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/fire-of-unknown-origin",
         "reward": "Nimis",
         "stack": 7,
-        "standardPrice": 2310.81,
+        "standardPrice": 2299.1,
         "weight": 14
     },
     {
         "art": "ForbiddenPower",
         "drop": {
             "areas": [],
-            "min_level": 45,
+            "min_level": 60,
             "monsters": [
                 "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris",
                 "Metadata/Monsters/LunarisSolaris/Solaris",
@@ -1924,6 +1939,7 @@
         },
         "name": "Friendship",
         "ninja": "https://poe.ninja/challenge/divination-cards/friendship",
+        "price": 142.18,
         "reward": "Aul's Uprising",
         "stack": 3,
         "standardPrice": 4.1
@@ -1946,7 +1962,7 @@
         },
         "name": "From Bone to Ashes",
         "ninja": "https://poe.ninja/challenge/divination-cards/from-bone-to-ashes",
-        "price": 3.7,
+        "price": 2.0,
         "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
         "stack": 8,
         "standardPrice": 4.5,
@@ -1960,12 +1976,13 @@
                 "MapWorldsFoundry",
                 "MapWorldsLaboratory"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Further Invention",
         "ninja": "https://poe.ninja/challenge/divination-cards/further-invention",
+        "price": 20.0,
         "reward": "Helmet, Double-Influenced Item, Item Level: 100",
         "stack": 4,
         "standardPrice": 29.0,
@@ -1981,7 +1998,7 @@
         },
         "name": "Gemcutter's Mercy",
         "ninja": "https://poe.ninja/challenge/divination-cards/gemcutters-mercy",
-        "price": 7.2,
+        "price": 7.1,
         "reward": "Exceptional Gem",
         "stack": 3,
         "standardPrice": 17.6,
@@ -2019,13 +2036,13 @@
                 "MapWorldsFloodedMine",
                 "MapWorldsExcavation"
             ],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "Gift of Asenath",
         "ninja": "https://poe.ninja/challenge/divination-cards/gift-of-asenath",
-        "price": 9.2,
+        "price": 12.0,
         "reward": "Asenath's Gentle Touch, Two-Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 16.5,
@@ -2042,13 +2059,13 @@
                 "MapWorldsFloodedMine",
                 "MapWorldsGrotto"
             ],
-            "min_level": 68,
+            "min_level": 70,
             "monsters": [],
             "text": ""
         },
         "name": "Gift of the Gemling Queen",
         "ninja": "https://poe.ninja/challenge/divination-cards/gift-of-the-gemling-queen",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Level 20 Support Gem",
         "stack": 9,
         "standardPrice": 1.0,
@@ -2063,7 +2080,7 @@
                 "MapWorldsFloodedMine",
                 "MapWorldsMineralPools"
             ],
-            "min_level": 38,
+            "min_level": 50,
             "monsters": [],
             "text": ""
         },
@@ -2113,7 +2130,7 @@
         },
         "name": "Guardian's Challenge",
         "ninja": "https://poe.ninja/challenge/divination-cards/guardians-challenge",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Shaper Guardian Map",
         "stack": 4,
         "standardPrice": 2.0,
@@ -2137,7 +2154,7 @@
         },
         "name": "Harmony of Souls",
         "ninja": "https://poe.ninja/challenge/divination-cards/harmony-of-souls",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "9x Shrieking Essence",
         "stack": 9,
         "standardPrice": 2.0,
@@ -2155,7 +2172,7 @@
         },
         "name": "Haunting Shadows",
         "ninja": "https://poe.ninja/challenge/divination-cards/haunting-shadows",
-        "price": 2.0,
+        "price": 3.6,
         "reward": "Metamorph Item",
         "stack": 4,
         "standardPrice": 6.2,
@@ -2342,7 +2359,7 @@
         },
         "name": "Heterochromia",
         "ninja": "https://poe.ninja/challenge/divination-cards/heterochromia",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Two-Stone Ring",
         "stack": 2,
         "standardPrice": 1.96,
@@ -2371,7 +2388,7 @@
         },
         "name": "Home",
         "ninja": "https://poe.ninja/challenge/divination-cards/home",
-        "price": 13.1,
+        "price": 8.0,
         "reward": "Exceptional Gem, Quality: +1-20%",
         "stack": 3,
         "standardPrice": 2.0,
@@ -2529,13 +2546,13 @@
                 "MapWorldsWharf"
             ],
             "max_level": 68,
-            "min_level": 68,
+            "min_level": 30,
             "monsters": [],
             "text": "Drops from any map area. Has a minimum drop level restriction of 68 Equivalent to Normal monsters in T1 maps. and a maximum drop level restriction of 68 Equivalent to Normal monsters in T1 maps."
         },
         "name": "Hope",
         "ninja": "https://poe.ninja/challenge/divination-cards/hope",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "Prismatic Ring, Corrupted",
         "stack": 5,
         "standardPrice": 1.0,
@@ -2547,16 +2564,16 @@
             "areas": [
                 "MapAtziri2"
             ],
-            "min_level": 78,
+            "min_level": 80,
             "monsters": [],
             "text": ""
         },
         "name": "House of Mirrors",
         "ninja": "https://poe.ninja/challenge/divination-cards/house-of-mirrors",
-        "price": 2718.5,
+        "price": 2274.88,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 62291.4,
+        "standardPrice": 61749.97,
         "weight": 1
     },
     {
@@ -2593,7 +2610,7 @@
         },
         "name": "Humility",
         "ninja": "https://poe.ninja/challenge/divination-cards/humility",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "Tabula Rasa",
         "stack": 9,
         "standardPrice": 1.0,
@@ -2625,13 +2642,13 @@
         "art": "HuntersReward",
         "drop": {
             "areas": [],
-            "min_level": 23,
+            "min_level": 30,
             "monsters": [],
             "text": ""
         },
         "name": "Hunter's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/hunters-reward",
-        "price": 16.0,
+        "price": 35.0,
         "reward": "The Taming",
         "stack": 3,
         "standardPrice": 10.1,
@@ -2661,17 +2678,17 @@
         },
         "name": "I See Brothers",
         "ninja": "https://poe.ninja/challenge/divination-cards/i-see-brothers",
-        "price": 160.94,
+        "price": 142.18,
         "reward": "2x Fracturing Orb",
         "stack": 2,
-        "standardPrice": 2411.28,
+        "standardPrice": 2441.52,
         "weight": 14
     },
     {
         "art": "ImmortalResolve",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 68,
             "monsters": [
                 "Metadata/Monsters/UnholyTrio/UnholyTrioMap",
                 "Metadata/Monsters/Miner/MinerHammerMapBoss",
@@ -2682,7 +2699,7 @@
         },
         "name": "Immortal Resolve",
         "ninja": "https://poe.ninja/challenge/divination-cards/immortal-resolve",
-        "price": 5.0,
+        "price": 6.0,
         "reward": "Six-Linked Body Armour, Influenced Item",
         "stack": 6,
         "standardPrice": 2.0,
@@ -2692,7 +2709,7 @@
         "art": "ImperfectMemories",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueSynthesis/SynthesisVenariusBoss"
             ],
@@ -2700,10 +2717,10 @@
         },
         "name": "Imperfect Memories",
         "ninja": "https://poe.ninja/challenge/divination-cards/imperfect-memories",
-        "price": 12.0,
+        "price": 5.4,
         "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
-        "standardPrice": 197.04,
+        "standardPrice": 196.0,
         "weight": 37
     },
     {
@@ -2716,7 +2733,7 @@
                 "MapWorldsDunesUnique",
                 "MapWorldsDrySea"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "This item can only drop in areas that use the 'Desert' tileset as listed in the acquisition table."
         },
@@ -2768,7 +2785,7 @@
         "art": "JudgingVoices",
         "drop": {
             "areas": [],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -2776,7 +2793,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/judging-voices",
         "reward": "Forbidden Shako",
         "stack": 9,
-        "standardPrice": 4.4,
+        "standardPrice": 3.8,
         "weight": 115
     },
     {
@@ -2794,7 +2811,7 @@
         },
         "name": "Justified Ambition",
         "ninja": "https://poe.ninja/challenge/divination-cards/justified-ambition",
-        "price": 1.0,
+        "price": 2.0,
         "reward": "Synthesis Map",
         "stack": 5,
         "standardPrice": 2.0,
@@ -2807,13 +2824,13 @@
                 "BreachBossChaos",
                 "BreachBossChaos5"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Keeper's Corruption",
         "ninja": "https://poe.ninja/challenge/divination-cards/keepers-corruption",
-        "price": 20.0,
+        "price": 14.0,
         "reward": "Eldritch Bone Helmet (Concentrated Effect), Item Level: 89, Elder Item",
         "stack": 7,
         "standardPrice": 20.0,
@@ -2887,7 +2904,7 @@
             "areas": [
                 "MapWorldsVaalTemple"
             ],
-            "min_level": 53,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -2906,7 +2923,7 @@
                 "MapWorldsForkingRiver",
                 "MapWorldsRamparts"
             ],
-            "min_level": 73,
+            "min_level": 78,
             "monsters": [],
             "text": ""
         },
@@ -2922,12 +2939,13 @@
         "art": "LetheanTemptation",
         "drop": {
             "areas": [],
-            "min_level": 78,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Lethean Temptation",
         "ninja": "https://poe.ninja/challenge/divination-cards/lethean-temptation",
+        "price": 15.16,
         "reward": "Nebulis",
         "stack": 6,
         "standardPrice": 64.9,
@@ -2948,7 +2966,7 @@
         },
         "name": "Light and Truth",
         "ninja": "https://poe.ninja/challenge/divination-cards/light-and-truth",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "Crystal Sceptre",
         "stack": 2,
         "standardPrice": 1.0,
@@ -3120,7 +3138,7 @@
         },
         "name": "Lingering Remnants",
         "ninja": "https://poe.ninja/challenge/divination-cards/lingering-remnants",
-        "price": 3.0,
+        "price": 1.0,
         "reward": "Vaal Temple Map, Item Level: 83, Corrupted",
         "stack": 16,
         "standardPrice": 1.0,
@@ -3136,18 +3154,18 @@
         },
         "name": "Lonely Warrior",
         "ninja": "https://poe.ninja/challenge/divination-cards/lonely-warrior",
-        "price": 108.74,
+        "price": 75.26,
         "reward": "Defiance of Destiny",
         "stack": 10,
-        "standardPrice": 2007.39
+        "standardPrice": 2032.57
     },
     {
         "art": "LostWorlds",
         "drop": {
             "areas": [],
-            "min_level": 73,
+            "min_level": 78,
             "monsters": [],
-            "text": "Sold by Kirac for 1x Orb of Chance."
+            "text": "Sold by Kirac for 1x Module Error: No results found for item using search term \"item_name = Orb of Chance\"."
         },
         "name": "Lost Worlds",
         "ninja": "https://poe.ninja/challenge/divination-cards/lost-worlds",
@@ -3169,10 +3187,10 @@
         },
         "name": "Love Through Ice",
         "ninja": "https://poe.ninja/challenge/divination-cards/love-through-ice",
-        "price": 155.5,
+        "price": 106.64,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 516.69,
+        "standardPrice": 552.76,
         "weight": 4
     },
     {
@@ -3191,10 +3209,10 @@
         },
         "name": "Loyalty",
         "ninja": "https://poe.ninja/challenge/divination-cards/loyalty",
-        "price": 0.15,
+        "price": 0.12,
         "reward": "3x Orb of Fusing",
         "stack": 5,
-        "standardPrice": 0.108,
+        "standardPrice": 0.11399999999999999,
         "weight": 33974
     },
     {
@@ -3214,10 +3232,10 @@
         },
         "name": "Lucky Connections",
         "ninja": "https://poe.ninja/challenge/divination-cards/lucky-connections",
-        "price": 0.7142857142857143,
+        "price": 0.5714285714285715,
         "reward": "20x Orb of Fusing",
         "stack": 7,
-        "standardPrice": 0.5142857142857142,
+        "standardPrice": 0.5428571428571429,
         "weight": 7291
     },
     {
@@ -3226,16 +3244,16 @@
             "areas": [
                 "MapWorldsZiggurat"
             ],
-            "min_level": 74,
+            "min_level": 50,
             "monsters": [],
             "text": ""
         },
         "name": "Lucky Deck",
         "ninja": "https://poe.ninja/challenge/divination-cards/lucky-deck",
-        "price": 0.6666666666666666,
+        "price": 0.6222222222222223,
         "reward": "10x Stacked Deck",
         "stack": 9,
-        "standardPrice": 1.6888888888888889,
+        "standardPrice": 1.7555555555555558,
         "weight": 247
     },
     {
@@ -3250,9 +3268,10 @@
         },
         "name": "Luminous Trove",
         "ninja": "https://poe.ninja/challenge/divination-cards/luminous-trove",
+        "price": 213.27,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 271.27,
+        "standardPrice": 274.67,
         "weight": 81
     },
     {
@@ -3284,13 +3303,13 @@
                 "Synthesis_MapGuardian3",
                 "Synthesis_MapGuardian4"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Magnum Opus",
         "ninja": "https://poe.ninja/challenge/divination-cards/magnum-opus",
-        "price": 13.2,
+        "price": 7.0,
         "reward": "Item, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
         "standardPrice": 100.0,
@@ -3309,7 +3328,7 @@
         },
         "name": "Man With Bear",
         "ninja": "https://poe.ninja/challenge/divination-cards/man-with-bear",
-        "price": 1.0,
+        "price": 1.6,
         "reward": "Bestiary Scarab",
         "stack": 3,
         "standardPrice": 4.2,
@@ -3319,7 +3338,7 @@
         "art": "Matryoshka",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss5"
             ],
@@ -3327,9 +3346,10 @@
         },
         "name": "Matryoshka",
         "ninja": "https://poe.ninja/challenge/divination-cards/matryoshka",
+        "price": 30.0,
         "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
         "stack": 8,
-        "standardPrice": 1064.98,
+        "standardPrice": 1057.99,
         "weight": 1
     },
     {
@@ -3340,7 +3360,7 @@
                 "MapWorldsForbiddenWoods",
                 "MapWorldsBrambleValley"
             ],
-            "min_level": 68,
+            "min_level": 82,
             "monsters": [],
             "text": ""
         },
@@ -3361,13 +3381,13 @@
                 "MapWorldsArsenal",
                 "MapWorldsPromenade"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Merciless Armament",
         "ninja": "https://poe.ninja/challenge/divination-cards/merciless-armament",
-        "price": 12.0,
+        "price": 1.0,
         "reward": "Merciless Two-Hand Weapon, Item Level: 100",
         "stack": 4,
         "standardPrice": 2.0,
@@ -3386,7 +3406,7 @@
                 "MapWorldsRelicChambers",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 30,
+            "min_level": 40,
             "monsters": [],
             "text": ""
         },
@@ -3402,7 +3422,7 @@
         "art": "MiseryInDarkness",
         "drop": {
             "areas": [],
-            "min_level": 70,
+            "min_level": 71,
             "monsters": [
                 "Metadata/Monsters/ReligiousTemplar/AbyssLichBoss3"
             ],
@@ -3453,7 +3473,7 @@
         "name": "More is Never Enough",
         "ninja": "https://poe.ninja/challenge/divination-cards/more-is-never-enough",
         "price": 1.0,
-        "reward": "4x Veiled Scarabs",
+        "reward": "4x Scarab",
         "stack": 7,
         "standardPrice": 2.0,
         "weight": 750
@@ -3476,17 +3496,17 @@
         },
         "name": "No Traces",
         "ninja": "https://poe.ninja/challenge/divination-cards/no-traces",
-        "price": 1.1,
+        "price": 0.8333333333333334,
         "reward": "30x Orb of Scouring",
         "stack": 9,
-        "standardPrice": 1.1333333333333335,
+        "standardPrice": 1.1666666666666667,
         "weight": 2321
     },
     {
         "art": "NooksCrown",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueBetrayal/BetrayalCatarina1"
             ],
@@ -3494,7 +3514,7 @@
         },
         "name": "Nook's Crown",
         "ninja": "https://poe.ninja/challenge/divination-cards/nooks-crown",
-        "price": 8.0,
+        "price": 4.0,
         "reward": "Bone Helmet, Item Level: 100, Elder Item",
         "stack": 4,
         "standardPrice": 22.6,
@@ -3508,13 +3528,13 @@
                 "MapWorldsArachnidTomb",
                 "MapWorldsChannel"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Parasitic Passengers",
         "ninja": "https://poe.ninja/challenge/divination-cards/parasitic-passengers",
-        "price": 2.1,
+        "price": 1.9,
         "reward": "10x Incubator, Item Level: 84",
         "stack": 8,
         "standardPrice": 1.8,
@@ -3535,7 +3555,7 @@
         },
         "name": "Peaceful Moments",
         "ninja": "https://poe.ninja/challenge/divination-cards/peaceful-moments",
-        "price": 5.0,
+        "price": 6.0,
         "reward": "Timeless Jewel",
         "stack": 5,
         "standardPrice": 1.0,
@@ -3545,7 +3565,7 @@
         "art": "Perfection",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/PhoenixBoss",
                 "Metadata/Monsters/AtlasBosses/HydraBoss",
@@ -3556,7 +3576,7 @@
         },
         "name": "Perfection",
         "ninja": "https://poe.ninja/challenge/divination-cards/perfection",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Jewellery, Item Level: 100, Shaper Item",
         "stack": 5,
         "standardPrice": 2.9,
@@ -3575,7 +3595,7 @@
         },
         "name": "Poisoned Faith",
         "ninja": "https://poe.ninja/challenge/divination-cards/poisoned-faith",
-        "price": 6.8,
+        "price": 8.4,
         "reward": "Arakaali's Fang, Corrupted",
         "stack": 8,
         "standardPrice": 18.6,
@@ -3585,7 +3605,7 @@
         "art": "Prejudice",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 68,
             "monsters": [],
             "text": "This card drops in Redeemer-influenced maps. Other sources of divination card, such as Legion encounter with divination card reward type, can bypass this restriction."
         },
@@ -3604,13 +3624,13 @@
                 "MapWorldsCaldera",
                 "MapWorldsVolcano"
             ],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "Pride Before the Fall",
         "ninja": "https://poe.ninja/challenge/divination-cards/pride-before-the-fall",
-        "price": 4.5,
+        "price": 3.0,
         "reward": "Kaom's Heart, Corrupted",
         "stack": 8,
         "standardPrice": 2.0,
@@ -3631,7 +3651,7 @@
         },
         "name": "Pride of the First Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/pride-of-the-first-ones",
-        "price": 217.48,
+        "price": 49.2,
         "reward": "Farrul's Fur",
         "stack": 7,
         "standardPrice": 31.4,
@@ -3641,7 +3661,7 @@
         "art": "PrometheusArmory",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueBetrayal/BetrayalHaku"
             ],
@@ -3649,6 +3669,7 @@
         },
         "name": "Prometheus' Armoury",
         "ninja": "https://poe.ninja/challenge/divination-cards/prometheus-armoury",
+        "price": 4.0,
         "reward": "One-Hand Weapon, Item Level: 100, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 2.0,
@@ -3678,13 +3699,13 @@
                 "MapWorldsPier",
                 "MapWorldsCoves"
             ],
-            "min_level": 61,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Prosperity",
         "ninja": "https://poe.ninja/challenge/divination-cards/prosperity",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Perandus' Gold Ring",
         "stack": 10,
         "standardPrice": 1.0,
@@ -3701,7 +3722,7 @@
                 "2_8_4"
             ],
             "max_level": 80,
-            "min_level": 58,
+            "min_level": 68,
             "monsters": [],
             "text": "Has a maximum drop level restriction of 80 Equivalent to T13 maps, Magic monsters in T12 maps, or Rare/Unique monsters in T11 maps."
         },
@@ -3744,7 +3765,7 @@
                 "MapWorldsPort",
                 "2_9_9"
             ],
-            "min_level": 41,
+            "min_level": 55,
             "monsters": [],
             "text": ""
         },
@@ -3806,7 +3827,7 @@
         },
         "name": "Rebirth and Renewal",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-and-renewal",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Horned Scarab",
         "stack": 4,
         "standardPrice": 6.9,
@@ -3824,6 +3845,7 @@
         },
         "name": "Reckless Ambition",
         "ninja": "https://poe.ninja/challenge/divination-cards/reckless-ambition",
+        "price": 52.11,
         "reward": "Omeyocan",
         "stack": 6,
         "standardPrice": 1.5,
@@ -3848,7 +3870,7 @@
         "art": "SambodhisVow",
         "drop": {
             "areas": [],
-            "min_level": 70,
+            "min_level": 68,
             "monsters": [],
             "text": "Can drop from members of the Immortal Syndicate."
         },
@@ -3895,10 +3917,10 @@
         },
         "name": "Seven Years Bad Luck",
         "ninja": "https://poe.ninja/challenge/divination-cards/seven-years-bad-luck",
-        "price": 20.9,
+        "price": 83.5,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 1054.94,
+        "standardPrice": 1017.3,
         "weight": 55
     },
     {
@@ -3926,7 +3948,7 @@
         "art": "SilenceAndFrost",
         "drop": {
             "areas": [],
-            "min_level": 70,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueBestiary/TigerBestiarySpiritBoss"
             ],
@@ -3949,7 +3971,7 @@
         },
         "name": "Society's Remorse",
         "ninja": "https://poe.ninja/challenge/divination-cards/societys-remorse",
-        "price": 0.7000000000000001,
+        "price": 0.6,
         "reward": "10x Orb of Alteration",
         "stack": 1,
         "standardPrice": 0.8999999999999999,
@@ -3959,7 +3981,7 @@
         "art": "SomethingDark",
         "drop": {
             "areas": [],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/BreachBosses/BreachBossLightningMap",
                 "Metadata/Monsters/BreachBosses/BreachBossFireMap",
@@ -3971,7 +3993,7 @@
         },
         "name": "Something Dark",
         "ninja": "https://poe.ninja/challenge/divination-cards/something-dark",
-        "price": 2.8,
+        "price": 3.0,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
         "standardPrice": 19.0,
@@ -3995,7 +4017,7 @@
                 "MapWorldsCourtyardUnique",
                 "MapWorldsStagnation"
             ],
-            "min_level": 70,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
@@ -4013,12 +4035,13 @@
             "areas": [
                 "MapWorldsSanctuary"
             ],
-            "min_level": 79,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Succor of the Sinless",
         "ninja": "https://poe.ninja/challenge/divination-cards/succor-of-the-sinless",
+        "price": 106.64,
         "reward": "Bottled Faith",
         "stack": 6,
         "standardPrice": 50.0,
@@ -4034,7 +4057,7 @@
         },
         "name": "Temperance",
         "ninja": "https://poe.ninja/challenge/divination-cards/temperance",
-        "price": 7.0,
+        "price": 10.0,
         "reward": "Relic, Item Level: 83",
         "stack": 4
     },
@@ -4059,6 +4082,7 @@
         },
         "name": "Terrible Secret of Space",
         "ninja": "https://poe.ninja/challenge/divination-cards/terrible-secret-of-space",
+        "price": 5.2,
         "reward": "Level 21 Transfigured Golem Gem, Quality: +23%, Corrupted",
         "stack": 8,
         "standardPrice": 2.7,
@@ -4072,13 +4096,13 @@
                 "MapWorldsAcademy",
                 "MapWorldsScriptorium"
             ],
-            "min_level": 38,
+            "min_level": 50,
             "monsters": [],
             "text": ""
         },
         "name": "The Academic",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-academic",
-        "price": 29.3,
+        "price": 37.0,
         "reward": "Inspired Learning",
         "stack": 8,
         "standardPrice": 2.0,
@@ -4095,12 +4119,13 @@
                 "MapWorldsVaalPyramidUnique",
                 "MapWorldsMazeUnique"
             ],
-            "min_level": 70,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Admirer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-admirer",
+        "price": 3.0,
         "reward": "Atziri Item",
         "stack": 9,
         "standardPrice": 2.0,
@@ -4112,7 +4137,7 @@
             "areas": [
                 "MapWorldsVaalPyramidUnique"
             ],
-            "min_level": 39,
+            "min_level": 52,
             "monsters": [],
             "text": ""
         },
@@ -4163,10 +4188,10 @@
         },
         "name": "The Apothecary",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-apothecary",
-        "price": 1902.95,
+        "price": 1770.14,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 5626.32,
+        "standardPrice": 5696.88,
         "weight": 6
     },
     {
@@ -4184,7 +4209,7 @@
                 "BreachBossCold",
                 "BreachBossCold5"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "May be able to drop in other Breachstones.[confirmation needed]"
         },
@@ -4228,7 +4253,7 @@
                 "MapWorldsShrine",
                 "2_8_7_2"
             ],
-            "min_level": 26,
+            "min_level": 28,
             "monsters": [],
             "text": ""
         },
@@ -4246,13 +4271,13 @@
             "areas": [
                 "MapWorldsAbomination"
             ],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Artist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-artist",
-        "price": 20.0,
+        "price": 26.6,
         "reward": "Level 4 Enhance, Corrupted",
         "stack": 11,
         "standardPrice": 14.4,
@@ -4270,10 +4295,10 @@
         },
         "name": "The Aspirant",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-aspirant",
-        "price": 10.5,
+        "price": 4.0,
         "reward": "Item, Elevated Item, Influenced Item",
         "stack": 5,
-        "standardPrice": 22.0,
+        "standardPrice": 21.5,
         "weight": 12
     },
     {
@@ -4290,7 +4315,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/the-astromancer",
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 96.61,
+        "standardPrice": 97.73,
         "weight": 8
     },
     {
@@ -4303,13 +4328,13 @@
                 "MapWorldsLavaChamber",
                 "MapWorldsAtollUnique"
             ],
-            "min_level": 45,
+            "min_level": 60,
             "monsters": [],
             "text": ""
         },
         "name": "The Avenger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-avenger",
-        "price": 4.0,
+        "price": 2.0,
         "reward": "Mj\u00f6lner, Corrupted",
         "stack": 12,
         "standardPrice": 1.8,
@@ -4319,7 +4344,7 @@
         "art": "TheAwakened",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/GemMonster/IguanaMapBossChrome",
                 "Metadata/Monsters/Skeletons/SkeletonBossMapWest4",
@@ -4334,6 +4359,7 @@
         },
         "name": "The Awakened",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-awakened",
+        "price": 5.0,
         "reward": "Jewellery, Item Level: 86, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 1.64,
@@ -4364,7 +4390,7 @@
         "art": "TheBearWoman",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AvariusCasticus/AvariusCasticusDivineMap",
                 "Metadata/Monsters/Beasts/MapBeastBossWhite",
@@ -4374,7 +4400,7 @@
         },
         "name": "The Bear Woman",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bear-woman",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Fecund Ursine Pelt, Warlord Item",
         "stack": 6,
         "standardPrice": 3.0,
@@ -4412,13 +4438,13 @@
                 "MapWorldsCastleRuins",
                 "2_7_7"
             ],
-            "min_level": 23,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Betrayal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-betrayal",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Maligaro's Virtuosity",
         "stack": 9,
         "standardPrice": 1.0,
@@ -4439,10 +4465,10 @@
         },
         "name": "The Bitter Blossom",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bitter-blossom",
-        "price": 2.2,
+        "price": 2.0,
         "reward": "Level 21 Chaos Gem, Quality: +23%, Corrupted",
         "stack": 3,
-        "standardPrice": 30.66,
+        "standardPrice": 30.33,
         "weight": 113
     },
     {
@@ -4464,7 +4490,7 @@
                 "2_10_5",
                 "2_10_6"
             ],
-            "min_level": 47,
+            "min_level": 62,
             "monsters": [],
             "text": ""
         },
@@ -4480,16 +4506,16 @@
         "art": "TheBlessingOfMoosh",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 72,
             "monsters": [],
             "text": "Can drop after interacting with darkshrines inside the Lord's Labyrinth (Merciless, Eternal, or Enriched)."
         },
         "name": "The Blessing of Moosh",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-blessing-of-moosh",
-        "price": 3.4,
+        "price": 3.3,
         "reward": "Level 21 Transfigured Gem, Corrupted",
         "stack": 4,
-        "standardPrice": 1.0,
+        "standardPrice": 1.06,
         "weight": 181
     },
     {
@@ -4520,7 +4546,7 @@
         },
         "name": "The Bones",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bones",
-        "price": 2.5,
+        "price": 3.0,
         "reward": "Level 21 Vaal Summon Skeletons, Corrupted",
         "stack": 6,
         "standardPrice": 1.0,
@@ -4538,16 +4564,16 @@
                 "MapWorldsPhantasmagoria",
                 "MapWorldsAbomination"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Brawny Battle Mage",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-brawny-battle-mage",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Merciless Tornado Wand, Item Level: 100",
         "stack": 5,
-        "standardPrice": 1.92,
+        "standardPrice": 1.88,
         "weight": 170
     },
     {
@@ -4572,7 +4598,7 @@
         "art": "TheBrittleEmperor",
         "drop": {
             "areas": [],
-            "min_level": 23,
+            "min_level": 70,
             "monsters": [
                 "Metadata/Monsters/Voll/VollMapBoss",
                 "Metadata/Monsters/Voll/VollBoss"
@@ -4581,6 +4607,7 @@
         },
         "name": "The Brittle Emperor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-brittle-emperor",
+        "price": 2.0,
         "reward": "Voll's Devotion, Corrupted",
         "stack": 8,
         "standardPrice": 3.2,
@@ -4627,7 +4654,7 @@
         },
         "name": "The Cacophony",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cacophony",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "3x Deafening Essence",
         "stack": 8,
         "standardPrice": 1.0,
@@ -4686,6 +4713,7 @@
         },
         "name": "The Card Sharp",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-card-sharp",
+        "price": 1.0,
         "reward": "Divination Scarab",
         "stack": 4,
         "standardPrice": 1.8,
@@ -4710,7 +4738,7 @@
         },
         "name": "The Carrion Crow",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-carrion-crow",
-        "price": 0.29,
+        "price": 1.0,
         "reward": "Life Armour",
         "stack": 4,
         "standardPrice": 1.0,
@@ -4720,12 +4748,13 @@
         "art": "TheMapmaker",
         "drop": {
             "areas": [],
-            "min_level": 39,
+            "min_level": 52,
             "monsters": [],
             "text": "Drops from Cartographer's Strongboxes."
         },
         "name": "The Cartographer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cartographer",
+        "price": 1.1,
         "reward": "10x Cartographer's Chisel",
         "stack": 1,
         "standardPrice": 1.0,
@@ -4828,7 +4857,7 @@
         "price": 0.06666666666666667,
         "reward": "Vaal Orb",
         "stack": 3,
-        "standardPrice": 0.23666666666666664,
+        "standardPrice": 0.24666666666666665,
         "weight": 24984
     },
     {
@@ -4847,12 +4876,13 @@
                 "MapWorldsPlateau",
                 "MapWorldsReef"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Catch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-catch",
+        "price": 15.0,
         "reward": "Fishing Rod, Incubated, Item Level: 99",
         "stack": 18,
         "standardPrice": 35.2,
@@ -4875,7 +4905,7 @@
         },
         "name": "The Celestial Justicar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-celestial-justicar",
-        "price": 4.0,
+        "price": 9.0,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
         "standardPrice": 2.0,
@@ -4885,12 +4915,13 @@
         "art": "TheCelestialStone",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "Can drop from Jeweller's Strongboxes."
         },
         "name": "The Celestial Stone",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-celestial-stone",
+        "price": 6.2,
         "reward": "Opal Ring, Item Level: 100, Shaper Item",
         "stack": 10,
         "standardPrice": 2.0,
@@ -4914,7 +4945,7 @@
         },
         "name": "The Chains that Bind",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-chains-that-bind",
-        "price": 2.0,
+        "price": 3.0,
         "reward": "Six-Link Body Armour",
         "stack": 11,
         "standardPrice": 1.0,
@@ -4926,27 +4957,29 @@
             "areas": [
                 "MapWorldsFortress"
             ],
-            "min_level": 72,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Cheater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cheater",
+        "price": 106.64,
         "reward": "Level 6 Awakened Support Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 1205.64,
+        "standardPrice": 1220.76,
         "weight": 5
     },
     {
         "art": "TheChosen",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "The Chosen can drop from Breach encounters such as in Clasped Hand"
         },
         "name": "The Chosen",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-chosen",
+        "price": 40.0,
         "reward": "Skin of the Lords, Corrupted",
         "stack": 5,
         "standardPrice": 2.0,
@@ -4967,7 +5000,7 @@
                 "MapWorldsCemetery",
                 "MapWorldsStagnation"
             ],
-            "min_level": 45,
+            "min_level": 60,
             "monsters": [],
             "text": ""
         },
@@ -4983,7 +5016,7 @@
         "art": "TheConduit",
         "drop": {
             "areas": [],
-            "min_level": 52,
+            "min_level": 69,
             "monsters": [
                 "Metadata/Monsters/Dominusdemon/DominusDemonMapBoss",
                 "Metadata/Monsters/Pope/PopeMapBoss1",
@@ -5028,7 +5061,7 @@
             "areas": [
                 "MapWorldsUndergroundRiverUnique"
             ],
-            "min_level": 23,
+            "min_level": 60,
             "monsters": [],
             "text": ""
         },
@@ -5051,7 +5084,7 @@
                 "MapWorldsMaze",
                 "MapWorldsSunkenCity"
             ],
-            "min_level": 54,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -5059,7 +5092,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/the-damned",
         "reward": "Soul Ripper",
         "stack": 6,
-        "standardPrice": 32.19,
+        "standardPrice": 33.27,
         "weight": 25
     },
     {
@@ -5070,13 +5103,13 @@
                 "MapWorldsVilla",
                 "MapWorldsResidence"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Dapper Prodigy",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dapper-prodigy",
-        "price": 5.0,
+        "price": 10.0,
         "reward": "Six-Link Body Armour, Item Level: 100",
         "stack": 6,
         "standardPrice": 2.0,
@@ -5109,13 +5142,13 @@
             "areas": [
                 "MapWorldsStrandUnique"
             ],
-            "min_level": 80,
+            "min_level": 69,
             "monsters": [],
             "text": ""
         },
         "name": "The Darkest Dream",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-darkest-dream",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Severed in Sleep, Corrupted",
         "stack": 6,
         "standardPrice": 3.0,
@@ -5136,7 +5169,7 @@
         "price": 1.0,
         "reward": "Cartography Scarab",
         "stack": 5,
-        "standardPrice": 1.0,
+        "standardPrice": 1.06,
         "weight": 943
     },
     {
@@ -5170,13 +5203,13 @@
                 "MapWorldsStrand",
                 "MapWorldsStrandUnique"
             ],
-            "min_level": 49,
+            "min_level": 65,
             "monsters": [],
             "text": "Drops from Tsoagoth, The Brine King or corresponding bosses."
         },
         "name": "The Deep Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-deep-ones",
-        "price": 4.0,
+        "price": 2.0,
         "reward": "Tidebreaker",
         "stack": 5,
         "standardPrice": 4.0,
@@ -5186,7 +5219,7 @@
         "art": "TheDemon",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [
                 "Metadata/Monsters/KitavaBoss/KitavaFinalHeartMap",
                 "Metadata/Monsters/KitavaBoss/Kitava2Map",
@@ -5196,9 +5229,10 @@
         },
         "name": "The Demon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demon",
+        "price": 563.03,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 1406.58,
+        "standardPrice": 1424.22,
         "weight": 2
     },
     {
@@ -5210,7 +5244,7 @@
                 "MapWorldsBrambleValley",
                 "MapWorldsForbiddenWoods"
             ],
-            "min_level": 54,
+            "min_level": 72,
             "monsters": [],
             "text": ""
         },
@@ -5239,6 +5273,7 @@
         },
         "name": "The Destination",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-destination",
+        "price": 35.0,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 125.0,
@@ -5256,16 +5291,16 @@
                 "MapWorldsPhantasmagoria",
                 "MapWorldsAbomination"
             ],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Doctor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-doctor",
-        "price": 570.88,
+        "price": 676.78,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 289.71,
+        "standardPrice": 299.43,
         "weight": 11
     },
     {
@@ -5303,7 +5338,7 @@
         },
         "name": "The Dragon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dragon",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Coruscating Elixir",
         "stack": 4,
         "standardPrice": 1.0,
@@ -5315,13 +5350,13 @@
             "areas": [
                 "MapWorldsFortress"
             ],
-            "min_level": 78,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Dragon's Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dragons-heart",
-        "price": 30.0,
+        "price": 27.0,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
         "standardPrice": 15.0,
@@ -5340,7 +5375,7 @@
         },
         "name": "The Dreamer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dreamer",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "Chayula Item",
         "stack": 6,
         "standardPrice": 3.0,
@@ -5394,7 +5429,7 @@
                 "MapWorldsDungeon",
                 "MapWorldsPen"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -5414,13 +5449,13 @@
                 "MapWorldsTerrace",
                 "MapWorldsOrchard"
             ],
-            "min_level": 73,
+            "min_level": 78,
             "monsters": [],
             "text": ""
         },
         "name": "The Easy Stroll",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-easy-stroll",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Map, Map Tier: 15, Modifiers: 8, Corrupted",
         "stack": 2,
         "standardPrice": 1.0,
@@ -5441,6 +5476,7 @@
         },
         "name": "The Eldritch Decay",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eldritch-decay",
+        "price": 13.1,
         "reward": "Uber Elder Fragment",
         "stack": 4,
         "standardPrice": 2.0,
@@ -5450,7 +5486,7 @@
         "art": "TheEmptiness",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "Appears to drop in maps (unique maps?) with the Mysterious Barrels modifier."
         },
@@ -5621,13 +5657,13 @@
                 "MapWorldsSanctuary",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 73,
+            "min_level": 68,
             "monsters": [],
             "text": "Drops from any map area. Has a minimum drop level restriction of 73 Equivalent to T6 maps, Magic monsters in T5 maps, or Rare/Unique monsters in T4 maps."
         },
         "name": "The Encroaching Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-encroaching-darkness",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Map, Corrupted",
         "stack": 8,
         "standardPrice": 1.0,
@@ -5684,12 +5720,13 @@
         "art": "TheEnforcer",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Enforcer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enforcer",
+        "price": 3.0,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
         "standardPrice": 29.1,
@@ -5710,16 +5747,16 @@
                 "MapWorldsBasilica",
                 "MapWorldsSanctuary"
             ],
-            "min_level": 60,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "The Enlightened",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enlightened",
-        "price": 37.8,
+        "price": 31.0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 14.4,
+        "standardPrice": 14.5,
         "weight": 87
     },
     {
@@ -5736,17 +5773,17 @@
         },
         "name": "The Enthusiasts",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enthusiasts",
-        "price": 1.0,
+        "price": 4.0,
         "reward": "Victario's Influence, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 1.24,
+        "standardPrice": 1.18,
         "weight": 241
     },
     {
         "art": "TheEscape",
         "drop": {
             "areas": [],
-            "min_level": 56,
+            "min_level": 75,
             "monsters": [
                 "Metadata/Monsters/BreachBosses/BreachBossLightningMap",
                 "Metadata/Monsters/BreachBosses/BreachBossFireMap",
@@ -5758,7 +5795,7 @@
         },
         "name": "The Escape",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-escape",
-        "price": 9.0,
+        "price": 7.0,
         "reward": "Seven-League Step",
         "stack": 5,
         "standardPrice": 3.0,
@@ -5779,10 +5816,10 @@
         },
         "name": "The Eternal War",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eternal-war",
-        "price": 5.0,
+        "price": 11.0,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 7.0,
+        "standardPrice": 6.5,
         "weight": 12
     },
     {
@@ -5792,16 +5829,16 @@
                 "MapAtziri1",
                 "MapAtziri2"
             ],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "The Ethereal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-ethereal",
-        "price": 4.9,
+        "price": 5.0,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
-        "standardPrice": 2.1,
+        "standardPrice": 2.0,
         "weight": 510
     },
     {
@@ -5810,7 +5847,7 @@
             "areas": [
                 "MapWorldsThicket"
             ],
-            "min_level": 68,
+            "min_level": 58,
             "monsters": [],
             "text": ""
         },
@@ -5826,7 +5863,7 @@
         "art": "TheEyeOfTerror",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueBetrayal/BetrayalBreach"
             ],
@@ -5853,7 +5890,7 @@
         },
         "name": "The Eye of the Dragon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eye-of-the-dragon",
-        "price": 4.2,
+        "price": 2.6,
         "reward": "Jewel, Corrupted",
         "stack": 10,
         "standardPrice": 1.0,
@@ -5867,7 +5904,7 @@
                 "MapWorldsUndergroundSea",
                 "MapWorldsMineralPools"
             ],
-            "min_level": 70,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -5889,7 +5926,7 @@
                 "MapWorldsHydra",
                 "2_8_2_2"
             ],
-            "min_level": 45,
+            "min_level": 56,
             "monsters": [],
             "text": ""
         },
@@ -5911,22 +5948,23 @@
                 "MapWorldsFoundry",
                 "MapWorldsLaboratory"
             ],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Fiend",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fiend",
+        "price": 284.36,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 234.89,
+        "standardPrice": 241.08,
         "weight": 3
     },
     {
         "art": "TheFinishingTouch",
         "drop": {
             "areas": [],
-            "min_level": 60,
+            "min_level": 61,
             "monsters": [
                 "Metadata/Monsters/LeagueBetrayal/BetrayalHillock_"
             ],
@@ -5937,7 +5975,7 @@
         "price": 1.0,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
-        "standardPrice": 2.15,
+        "standardPrice": 2.235,
         "weight": 465
     },
     {
@@ -5953,7 +5991,7 @@
         },
         "name": "The Fishmonger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fishmonger",
-        "price": 3.4,
+        "price": 3.0,
         "reward": "Albino Rhoa Feather",
         "stack": 4,
         "standardPrice": 40.0,
@@ -5963,7 +6001,7 @@
         "art": "TheFletcher",
         "drop": {
             "areas": [],
-            "min_level": 27,
+            "min_level": 25,
             "monsters": [
                 "Metadata/Monsters/Skeletons/MapSkeletonBossRanged",
                 "Metadata/Monsters/Cockerel/CockerelBowMapBoss",
@@ -6020,10 +6058,10 @@
         },
         "name": "The Fool",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fool",
-        "price": 1.1,
+        "price": 0.5,
         "reward": "20x Orb of Chance",
         "stack": 4,
-        "standardPrice": 0.5,
+        "standardPrice": 0.44999999999999996,
         "weight": 3996
     },
     {
@@ -6032,12 +6070,13 @@
             "areas": [
                 "MapWorldsTemple"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Forgotten Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forgotten-treasure",
+        "price": 7.0,
         "reward": "Leather Belt, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 4.6,
@@ -6052,13 +6091,13 @@
                 "MapWorldsStrand",
                 "MapWorldsStrandUnique"
             ],
-            "min_level": 51,
+            "min_level": 64,
             "monsters": [],
             "text": ""
         },
         "name": "The Formless Sea",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-formless-sea",
-        "price": 50.0,
+        "price": 18.0,
         "reward": "Varunastra",
         "stack": 7,
         "standardPrice": 1.0,
@@ -6118,16 +6157,16 @@
                 "MapWorldsDesert",
                 "MapWorldsBurialChambers"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "The Fortunate",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fortunate",
-        "price": 9.061666666666666,
+        "price": 11.861666666666666,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 33.489999999999995,
+        "standardPrice": 33.91,
         "weight": 1192
     },
     {
@@ -6136,7 +6175,7 @@
             "areas": [
                 "MapWorldsMazeUnique"
             ],
-            "min_level": 50,
+            "min_level": 53,
             "monsters": [],
             "text": ""
         },
@@ -6178,13 +6217,13 @@
                 "MapWorldsOrchard",
                 "MapWorldsTerrace"
             ],
-            "min_level": 50,
+            "min_level": 54,
             "monsters": [],
             "text": ""
         },
         "name": "The Fox in the Brambles",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fox-in-the-brambles",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Bramblejack, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 2.0,
@@ -6350,7 +6389,7 @@
                 "MapWorldsSanctuary",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 68,
+            "min_level": 23,
             "monsters": [],
             "text": "Can drop from any map area. Has a minimum drop level restriction of 68 Equivalent to T1 maps."
         },
@@ -6377,7 +6416,7 @@
         },
         "name": "The Garish Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-garish-power",
-        "price": 7.0,
+        "price": 10.0,
         "reward": "Jewel",
         "stack": 4,
         "standardPrice": 2.0,
@@ -6415,7 +6454,7 @@
         },
         "name": "The Gentleman",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gentleman",
-        "price": 1.2,
+        "price": 1.0,
         "reward": "Sword, Corrupted",
         "stack": 4,
         "standardPrice": 1.0,
@@ -6430,7 +6469,7 @@
                 "MapWorldsColosseum",
                 "MapWorldsChimera"
             ],
-            "min_level": 55,
+            "min_level": 67,
             "monsters": [],
             "text": "Drops from any area with the \"pitfight_area\" tag. Note the level requirement excludes Daresso's zones in Act 4."
         },
@@ -6450,13 +6489,13 @@
                 "MapWorldsIvoryTemple",
                 "MapWorldsResidence"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Golden Era",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-golden-era",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Flaring Eclipse Staff, Item Level: 100",
         "stack": 7,
         "standardPrice": 1.0,
@@ -6474,7 +6513,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/the-greatest-intentions",
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 70.75,
+        "standardPrice": 71.62,
         "weight": 6
     },
     {
@@ -6489,16 +6528,17 @@
         },
         "name": "The Gulf",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gulf",
+        "price": 71.09,
         "reward": "Thread of Hope, Two-Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 66.22,
+        "standardPrice": 66.33,
         "weight": 19
     },
     {
         "art": "TheHaleHeart",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian1",
                 "Metadata/Monsters/AtlasBosses/TheElder/ElderGuardian2",
@@ -6509,7 +6549,7 @@
         },
         "name": "The Hale Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hale-heart",
-        "price": 5.0,
+        "price": 2.5,
         "reward": "Item, Item Level: 100, Elder Item",
         "stack": 4,
         "standardPrice": 8.4,
@@ -6524,7 +6564,7 @@
                 "MapWorldsCastleRuins",
                 "2_7_2"
             ],
-            "min_level": 28,
+            "min_level": 37,
             "monsters": [],
             "text": ""
         },
@@ -6574,7 +6614,7 @@
         "price": 1.36,
         "reward": "17x Chromatic Orb",
         "stack": 1,
-        "standardPrice": 2.3800000000000003,
+        "standardPrice": 2.55,
         "weight": 1714
     },
     {
@@ -6585,16 +6625,16 @@
                 "MapWorldsVaalTemple",
                 "MapWorldsMaze"
             ],
-            "min_level": 68,
+            "min_level": 67,
             "monsters": [],
             "text": ""
         },
         "name": "The Hive of Knowledge",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hive-of-knowledge",
-        "price": 2.0,
+        "price": 4.8,
         "reward": "Machina Mitts, Two-Implicit, Corrupted",
         "stack": 6,
-        "standardPrice": 37.31,
+        "standardPrice": 37.96,
         "weight": 22
     },
     {
@@ -6607,16 +6647,16 @@
                 "MapWorldsAtollUnique",
                 "MapWorldsMineralPools"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "The Hoarder",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hoarder",
-        "price": 0.16666666666666666,
+        "price": 0.25,
         "reward": "Exalted Orb",
         "stack": 12,
-        "standardPrice": 2.6824999999999997,
+        "standardPrice": 2.7725,
         "weight": 2429
     },
     {
@@ -6631,10 +6671,10 @@
         },
         "name": "The Hook",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hook",
-        "price": 6.0,
+        "price": 4.0,
         "reward": "Level 21 Transfigured Gem, Quality: +23%, Corrupted",
         "stack": 8,
-        "standardPrice": 32.19,
+        "standardPrice": 33.27,
         "weight": 95
     },
     {
@@ -6674,10 +6714,10 @@
         },
         "name": "The Immortal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-immortal",
-        "price": 434.96,
+        "price": 207.58,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 8037.6,
+        "standardPrice": 8138.4,
         "weight": 27
     },
     {
@@ -6692,7 +6732,7 @@
                 "MapWorldsPhantasmagoria",
                 "MapWorldsAbomination"
             ],
-            "min_level": 68,
+            "min_level": 33,
             "monsters": [],
             "text": ""
         },
@@ -6719,10 +6759,10 @@
         },
         "name": "The Innocent",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-innocent",
-        "price": 1.0,
+        "price": 2.0,
         "reward": "40x Orb of Regret",
         "stack": 10,
-        "standardPrice": 1.84,
+        "standardPrice": 1.92,
         "weight": 1058
     },
     {
@@ -6738,7 +6778,7 @@
                 "MapWorldsBog",
                 "MapWorldsAbomination"
             ],
-            "min_level": 59,
+            "min_level": 73,
             "monsters": [],
             "text": ""
         },
@@ -6754,7 +6794,7 @@
         "art": "TheInsaneCat",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueAffliction/AfflictionDemonBossPhysicalWild",
                 "Metadata/Monsters/LeagueAffliction/AfflictionDemonBossFinalWild"
@@ -6763,9 +6803,10 @@
         },
         "name": "The Insane Cat",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-insane-cat",
+        "price": 1180.09,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 2612.22,
+        "standardPrice": 2644.98,
         "weight": 5
     },
     {
@@ -6777,7 +6818,7 @@
                 "MapWorldsCore",
                 "MapWorldsAbomination"
             ],
-            "min_level": 28,
+            "min_level": 37,
             "monsters": [],
             "text": ""
         },
@@ -6811,14 +6852,14 @@
         "price": 0.33333333333333337,
         "reward": "10x Vaal Orb",
         "stack": 6,
-        "standardPrice": 1.1833333333333333,
+        "standardPrice": 1.2333333333333334,
         "weight": 5942
     },
     {
         "art": "TheJester",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/Exiles/ExileShadow2"
             ],
@@ -6826,7 +6867,7 @@
         },
         "name": "The Jester",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-jester",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Merciless One-Hand Weapon, Item Level: 100",
         "stack": 9,
         "standardPrice": 2.9,
@@ -6843,7 +6884,7 @@
                 "MapWorldsCitadel",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 80,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -6909,7 +6950,7 @@
         },
         "name": "The Journey",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-journey",
-        "price": 3.2,
+        "price": 1.2,
         "reward": "Harbinger's Orb",
         "stack": 3,
         "standardPrice": 1.1,
@@ -6943,7 +6984,7 @@
                 "MapWorldsVolcano",
                 "MapWorldsCaldera"
             ],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -6964,13 +7005,13 @@
                 "MapWorldsShore",
                 "MapWorldsShoreUnique"
             ],
-            "min_level": 73,
+            "min_level": 78,
             "monsters": [],
             "text": ""
         },
         "name": "The Landing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-landing",
-        "price": 1.4,
+        "price": 2.0,
         "reward": "The Beachhead, Map Tier: 15, Corrupted",
         "stack": 5,
         "standardPrice": 2.0,
@@ -6991,6 +7032,7 @@
         },
         "name": "The Last One Standing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-last-one-standing",
+        "price": 22.0,
         "reward": "Atziri's Disfavour",
         "stack": 10,
         "standardPrice": 1.94,
@@ -7008,6 +7050,7 @@
         },
         "name": "The Last Supper",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-last-supper",
+        "price": 9.3,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
         "standardPrice": 2.0,
@@ -7025,6 +7068,7 @@
         },
         "name": "The Leviathan",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-leviathan",
+        "price": 50.0,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 82.5,
@@ -7034,7 +7078,7 @@
         "art": "TheLich",
         "drop": {
             "areas": [],
-            "min_level": 30,
+            "min_level": 40,
             "monsters": [
                 "Metadata/Monsters/Necromancer/MapNecromancerBossPrison",
                 "Metadata/Monsters/Skeletons/SkeletonLargeMapBoss"
@@ -7067,6 +7111,7 @@
         },
         "name": "The Life Thief",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-life-thief",
+        "price": 9.3,
         "reward": "Zerphi's Heart",
         "stack": 6,
         "standardPrice": 10.0,
@@ -7088,19 +7133,20 @@
         "price": 1.0,
         "reward": "Lioneye Item",
         "stack": 5,
-        "standardPrice": 1.0,
+        "standardPrice": 1.42,
         "weight": 3749
     },
     {
         "art": "TheLongCon",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "This card drops from Izaro's Treasure chests in the Eternal Labyrinth (Uber Lab) and Enriched Eternal Labyrinth."
         },
         "name": "The Long Con",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-long-con",
+        "price": 23.3,
         "reward": "Elderslayer's Exalted Orb",
         "stack": 4,
         "standardPrice": 35.6,
@@ -7116,16 +7162,16 @@
         },
         "name": "The Long Watch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-long-watch",
-        "price": 2.81,
+        "price": 3.5,
         "reward": "The Fourth Vow",
         "stack": 3,
-        "standardPrice": 2.3
+        "standardPrice": 2.0
     },
     {
         "art": "TheLordInBlack",
         "drop": {
             "areas": [],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueHellscape/DemonFaction/HellscapeDemonBoss"
             ],
@@ -7133,7 +7179,7 @@
         },
         "name": "The Lord in Black",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lord-in-black",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Ring of Bameth, Item Level: 83",
         "stack": 6,
         "standardPrice": 1.0,
@@ -7161,13 +7207,13 @@
                 "MapWorldsVaalPyramidUnique",
                 "MapWorldsSanctuary"
             ],
-            "min_level": 80,
+            "min_level": 77,
             "monsters": [],
             "text": ""
         },
         "name": "The Lord of Celebration",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lord-of-celebration",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Sceptre of Celebration, Shaper Item",
         "stack": 4,
         "standardPrice": 1.0,
@@ -7180,7 +7226,7 @@
                 "MapWorldsUndergroundSea",
                 "MapWorldsAtollUnique"
             ],
-            "min_level": 23,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
@@ -7224,12 +7270,13 @@
                 "MapWorldsColosseum",
                 "MapWorldsDarkForest"
             ],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Mad King",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-mad-king",
+        "price": 5.1,
         "reward": "Vaal Aspect",
         "stack": 7,
         "standardPrice": 5.0,
@@ -7247,7 +7294,7 @@
         },
         "name": "The Magma Crab",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-magma-crab",
-        "price": 2.0,
+        "price": 1.4,
         "reward": "Level 21 Vaal Molten Shell, Corrupted",
         "stack": 6,
         "standardPrice": 2.0,
@@ -7301,6 +7348,7 @@
         },
         "name": "The Messenger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-messenger",
+        "price": 1.4,
         "reward": "Harbinger Piece",
         "stack": 4,
         "standardPrice": 1.0,
@@ -7314,7 +7362,7 @@
                 "2_6_4",
                 "2_6_5"
             ],
-            "min_level": 23,
+            "min_level": 30,
             "monsters": [],
             "text": ""
         },
@@ -7330,7 +7378,7 @@
         "art": "TheMindsEyes",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [
                 "Metadata/Monsters/Necromancer/MapNecromancerBossPrison",
                 "Metadata/Monsters/RockGolem/RockGolemMapBoss",
@@ -7389,16 +7437,16 @@
                 "2_9_10_2",
                 "MapWorldsAbomination"
             ],
-            "min_level": 30,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "The Nurse",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-nurse",
-        "price": 74.8,
+        "price": 76.07,
         "reward": "The Doctor",
         "stack": 8,
-        "standardPrice": 18.0,
+        "standardPrice": 19.0,
         "weight": 93
     },
     {
@@ -7413,7 +7461,7 @@
                 "MapWorldsCarcass",
                 "MapWorldsAbomination"
             ],
-            "min_level": 47,
+            "min_level": 62,
             "monsters": [],
             "text": ""
         },
@@ -7449,7 +7497,7 @@
         },
         "name": "The Obscured",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-obscured",
-        "price": 5.9,
+        "price": 3.0,
         "reward": "Breachstone",
         "stack": 7,
         "standardPrice": 1.3,
@@ -7475,7 +7523,7 @@
         "price": 1.0,
         "reward": "Shavronne's Wrappings",
         "stack": 8,
-        "standardPrice": 1.3,
+        "standardPrice": 1.2,
         "weight": 476
     },
     {
@@ -7492,7 +7540,7 @@
         },
         "name": "The Offspring",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-offspring",
-        "price": 6.0,
+        "price": 16.6,
         "reward": "Ryslatha's Coil",
         "stack": 9,
         "standardPrice": 2.9,
@@ -7520,7 +7568,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/the-old-man",
         "reward": "Fishing Rod, Two-Implicit, Corrupted",
         "stack": 12,
-        "standardPrice": 32.19,
+        "standardPrice": 33.27,
         "weight": 2
     },
     {
@@ -7529,7 +7577,7 @@
             "areas": [
                 "MapWorldsStrand"
             ],
-            "min_level": 78,
+            "min_level": 50,
             "monsters": [],
             "text": ""
         },
@@ -7537,7 +7585,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/the-one-that-got-away",
         "reward": "Replica Bated Breath",
         "stack": 7,
-        "standardPrice": 93.35,
+        "standardPrice": 96.48,
         "weight": 4
     },
     {
@@ -7584,7 +7632,7 @@
                 "MapWorldsMoonTempleUnique",
                 "MapWorldsSanctuary"
             ],
-            "min_level": 23,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -7613,13 +7661,13 @@
                 "MapWorldsForbiddenWoods",
                 "MapWorldsBrambleValley"
             ],
-            "min_level": 48,
+            "min_level": 64,
             "monsters": [],
             "text": ""
         },
         "name": "The Pack Leader",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-pack-leader",
-        "price": 3.0,
+        "price": 1.0,
         "reward": "Alpha's Howl",
         "stack": 6,
         "standardPrice": 1.0,
@@ -7635,7 +7683,7 @@
                 "MapWorldsWharf",
                 "MapWorldsShipyard"
             ],
-            "min_level": 51,
+            "min_level": 57,
             "monsters": [],
             "text": ""
         },
@@ -7662,7 +7710,7 @@
         },
         "name": "The Patient",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-patient",
-        "price": 9.0,
+        "price": 8.0,
         "reward": "The Nurse",
         "stack": 8,
         "standardPrice": 5.0,
@@ -7728,10 +7776,10 @@
         },
         "name": "The Polymath",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-polymath",
-        "price": 16.8,
+        "price": 35.0,
         "reward": "Astramentis",
         "stack": 3,
-        "standardPrice": 2.2,
+        "standardPrice": 2.1,
         "weight": 173
     },
     {
@@ -7751,7 +7799,7 @@
         },
         "name": "The Porcupine",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-porcupine",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Six-Link Short Bow, Item Level: 50",
         "stack": 6,
         "standardPrice": 2.0,
@@ -7769,17 +7817,17 @@
         },
         "name": "The Price of Devotion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-devotion",
-        "price": 1038.47,
+        "price": 774.88,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 8399.29,
+        "standardPrice": 8504.63,
         "weight": 2
     },
     {
         "art": "ThePriceOfLoyalty",
         "drop": {
             "areas": [],
-            "min_level": 79,
+            "min_level": 68,
             "monsters": [
                 "Metadata/Monsters/VaalArchitect/TempleVaalArchitect13"
             ],
@@ -7787,9 +7835,10 @@
         },
         "name": "The Price of Loyalty",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-loyalty",
+        "price": 44.12,
         "reward": "Skin of the Loyal, Item Level: 25, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 43.6,
+        "standardPrice": 44.14,
         "weight": 4
     },
     {
@@ -7807,7 +7856,7 @@
         },
         "name": "The Price of Prescience",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-prescience",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Vaal Temple Map, Map Tier: 16, Delirium: 100%, Corrupted",
         "stack": 5,
         "standardPrice": 2.0,
@@ -7895,7 +7944,7 @@
         },
         "name": "The Price of Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-protection",
-        "price": 1.9,
+        "price": 1.0,
         "reward": "Elder Guardian Occupied Map, Map Tier: 14 to 16, Modifiers: 8, Corrupted",
         "stack": 5,
         "standardPrice": 2.0,
@@ -7914,13 +7963,13 @@
                 "MapWorldsFloodedMine",
                 "MapWorldsCoves"
             ],
-            "min_level": 23,
+            "min_level": 80,
             "monsters": [],
             "text": ""
         },
         "name": "The Primordial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-primordial",
-        "price": 2.0,
+        "price": 3.1,
         "reward": "Jewel, Primordial",
         "stack": 5,
         "standardPrice": 2.0,
@@ -7939,7 +7988,7 @@
         },
         "name": "The Prince of Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-prince-of-darkness",
-        "price": 10.0,
+        "price": 2.95,
         "reward": "Elegant Hubris",
         "stack": 6,
         "standardPrice": 2.2,
@@ -7960,7 +8009,7 @@
         },
         "name": "The Professor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-professor",
-        "price": 3.0,
+        "price": 4.0,
         "reward": "The Putrid Cloister",
         "stack": 4,
         "standardPrice": 2.0,
@@ -7981,6 +8030,7 @@
         },
         "name": "The Progeny of Lunaris",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-progeny-of-lunaris",
+        "price": 142.18,
         "reward": "Dying Sun",
         "stack": 2,
         "standardPrice": 9.4,
@@ -8049,7 +8099,7 @@
                 "MapWorldsCitadel",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 50,
+            "min_level": 54,
             "monsters": [],
             "text": ""
         },
@@ -8067,7 +8117,7 @@
                 "Map2Tier9_2",
                 "MapTier1_6"
             ],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/Rhoas/MapRhoaBoss",
                 "Metadata/Monsters/Rhoas/MapRhoaSkeletonBoss"
@@ -8097,7 +8147,7 @@
                 "BreachBossChaos",
                 "BreachBossChaos5"
             ],
-            "min_level": 23,
+            "min_level": 46,
             "monsters": [
                 "Metadata/Monsters/Hellion/HellionCommanderBreach",
                 "Metadata/Monsters/Hellion/HellionBreachHowl",
@@ -8139,7 +8189,7 @@
                 "MapWorldsFactory",
                 "MapWorldsPort"
             ],
-            "min_level": 50,
+            "min_level": 55,
             "monsters": [],
             "text": ""
         },
@@ -8155,13 +8205,13 @@
         "art": "TheRisk",
         "drop": {
             "areas": [],
-            "min_level": 49,
+            "min_level": 65,
             "monsters": [],
             "text": "The Risk can drop from the following loot containers: * Diviner's Strongbox * Izaro's Treasure in the Endgame Labyrinth"
         },
         "name": "The Risk",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-risk",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Ventor's Gamble",
         "stack": 3,
         "standardPrice": 2.0,
@@ -8201,12 +8251,13 @@
                 "MapWorldsOrchard",
                 "MapWorldsShore"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Road to Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-road-to-power",
+        "price": 1.0,
         "reward": "Runic One-Hand Weapon, Item Level: 100",
         "stack": 7,
         "standardPrice": 2.0,
@@ -8222,10 +8273,10 @@
         },
         "name": "The Rusted Bard",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-rusted-bard",
-        "price": 10.0,
+        "price": 10.222222222222221,
         "reward": "4x Tainted Mythic Orb",
         "stack": 9,
-        "standardPrice": 6.368888888888889,
+        "standardPrice": 6.6177777777777775,
         "weight": 93
     },
     {
@@ -8257,12 +8308,13 @@
             "areas": [
                 "Incursion_Temple10"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Sacrifice",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sacrifice",
+        "price": 19.0,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
         "standardPrice": 1.0,
@@ -8279,16 +8331,16 @@
                 "MapWorldsPort",
                 "MapWorldsAlleyways"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "The Saint's Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-saints-treasure",
-        "price": 0.4,
+        "price": 0.6000000000000001,
         "reward": "2x Exalted Orb",
         "stack": 10,
-        "standardPrice": 6.438,
+        "standardPrice": 6.654000000000001,
         "weight": 1043
     },
     {
@@ -8303,9 +8355,10 @@
         },
         "name": "The Samurai's Eye",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-samurais-eye",
+        "price": 30.0,
         "reward": "Watcher's Eye",
         "stack": 3,
-        "standardPrice": 27.31,
+        "standardPrice": 29.29,
         "weight": 81
     },
     {
@@ -8328,14 +8381,14 @@
         "price": 1.0,
         "reward": "Wake of Destruction",
         "stack": 9,
-        "standardPrice": 1.0,
+        "standardPrice": 0.95,
         "weight": 17817
     },
     {
         "art": "TheScavenger",
         "drop": {
             "areas": [],
-            "min_level": 47,
+            "min_level": 62,
             "monsters": [
                 "Metadata/Monsters/VultureParasite/VultureParasiteMapBoss",
                 "Metadata/Monsters/GargoyleBoss/GargoyleMapBoss",
@@ -8368,7 +8421,7 @@
         },
         "name": "The Scholar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scholar",
-        "price": 2.666666666666667,
+        "price": 0.26666666666666666,
         "reward": "40x Scroll of Wisdom",
         "stack": 3,
         "standardPrice": 0.13333333333333333,
@@ -8390,16 +8443,16 @@
                 "MapWorldsThicket",
                 "MapWorldsStagnation"
             ],
-            "min_level": 68,
+            "min_level": 35,
             "monsters": [],
             "text": ""
         },
         "name": "The Scout",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scout-divcard",
-        "price": 1.75,
+        "price": 2.625,
         "reward": "7x Exalted Orb",
         "stack": 8,
-        "standardPrice": 28.166249999999998,
+        "standardPrice": 29.111250000000002,
         "weight": 203
     },
     {
@@ -8414,10 +8467,10 @@
         },
         "name": "The Seeker",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-seeker",
-        "price": 0.6666666666666666,
+        "price": 1.0,
         "reward": "3x Orb of Annulment",
         "stack": 9,
-        "standardPrice": 2.8666666666666663,
+        "standardPrice": 2.9766666666666666,
         "weight": 229
     },
     {
@@ -8436,10 +8489,10 @@
         },
         "name": "The Sephirot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sephirot",
-        "price": 49.42727272727272,
+        "price": 64.7,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 182.67272727272726,
+        "standardPrice": 184.96363636363637,
         "weight": 235
     },
     {
@@ -8451,7 +8504,7 @@
                 "MapWorldsBarrows",
                 "MapWorldsUndergroundRiverUnique"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -8475,6 +8528,7 @@
         },
         "name": "The Shieldbearer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-shieldbearer",
+        "price": 141.47,
         "reward": "The Squire",
         "stack": 8,
         "standardPrice": 148.0,
@@ -8544,13 +8598,13 @@
                 "EndGame_Labyrinth_trials_roombas",
                 "EndGame_Labyrinth_trials_arrows"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "Drops in Vaal side areas and Labyrinth Trial areas of area level 80+."
         },
         "name": "The Shortcut",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-shortcut",
-        "price": 15.0,
+        "price": 9.0,
         "reward": "Quicksilver Flask of the Cheetah, Item Level: 100",
         "stack": 1,
         "standardPrice": 15.0,
@@ -8571,13 +8625,13 @@
                 "MapWorldsIceberg",
                 "MapWorldsSiege"
             ],
-            "min_level": 69,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "The Side Quest",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-side-quest",
-        "price": 1.5,
+        "price": 1.0,
         "reward": "20x Scouting Report",
         "stack": 5,
         "standardPrice": 2.0,
@@ -8590,7 +8644,7 @@
                 "MapWorldsOvergrownShrine",
                 "MapWorldsOvergrownRuin"
             ],
-            "min_level": 58,
+            "min_level": 73,
             "monsters": [],
             "text": ""
         },
@@ -8609,13 +8663,13 @@
                 "MapWorldsAtollUnique",
                 "MapWorldsUndergroundSea"
             ],
-            "min_level": 25,
+            "min_level": 33,
             "monsters": [],
             "text": ""
         },
         "name": "The Siren",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-siren",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "The Whispering Ice, Corrupted",
         "stack": 7,
         "standardPrice": 1.0,
@@ -8661,10 +8715,10 @@
         },
         "name": "The Soul",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-soul",
-        "price": 15.0,
+        "price": 11.0,
         "reward": "Soul Taker",
         "stack": 9,
-        "standardPrice": 3.5,
+        "standardPrice": 3.2,
         "weight": 23
     },
     {
@@ -8681,7 +8735,7 @@
         },
         "name": "The Spark and the Flame",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-spark-and-the-flame",
-        "price": 35.0,
+        "price": 44.0,
         "reward": "Berek's Respite",
         "stack": 2,
         "standardPrice": 5.0,
@@ -8693,13 +8747,13 @@
             "areas": [
                 "MapWorldsVaalPyramid"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Spoiled Prince",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-spoiled-prince",
-        "price": 1.4,
+        "price": 1.0,
         "reward": "Dictator's Prophecy Wand, Item Level: 100",
         "stack": 4,
         "standardPrice": 1.0,
@@ -8742,7 +8796,7 @@
                 "MapWorldsCourtyard",
                 "MapWorldsTower"
             ],
-            "min_level": 50,
+            "min_level": 66,
             "monsters": [],
             "text": ""
         },
@@ -8758,7 +8812,7 @@
         "art": "TheStrategist",
         "drop": {
             "areas": [],
-            "min_level": 38,
+            "min_level": 50,
             "monsters": [
                 "Metadata/Monsters/AtlasExiles/AtlasExile4ApparitionUber"
             ],
@@ -8766,7 +8820,7 @@
         },
         "name": "The Strategist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-strategist",
-        "price": 44.31,
+        "price": 49.2,
         "reward": "Inspired Learning, Corrupted",
         "stack": 6,
         "standardPrice": 2.6,
@@ -8828,7 +8882,7 @@
                 "MapWorldsOvergrownShrine",
                 "MapWorldsOvergrownRuin"
             ],
-            "min_level": 60,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
@@ -8850,7 +8904,7 @@
                 "MapWorldsCarcass",
                 "MapWorldsAbomination"
             ],
-            "min_level": 73,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
@@ -8877,7 +8931,7 @@
         },
         "name": "The Survivalist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-survivalist",
-        "price": 0.6766666666666666,
+        "price": 0.42,
         "reward": "7x Orb of Alchemy",
         "stack": 3,
         "standardPrice": 0.023333333333333334,
@@ -8915,13 +8969,13 @@
                 "MapWorldsLaboratory",
                 "MapWorldsTempleUnique"
             ],
-            "min_level": 23,
+            "min_level": 70,
             "monsters": [],
             "text": ""
         },
         "name": "The Thaumaturgist",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-thaumaturgist",
-        "price": 5.0,
+        "price": 2.0,
         "reward": "Shavronne's Revelation, Corrupted",
         "stack": 8,
         "standardPrice": 4.0,
@@ -8935,13 +8989,13 @@
                 "MapWorldsWastePool",
                 "MapWorldsHydra"
             ],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "The Throne",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-throne",
-        "price": 7.0,
+        "price": 3.0,
         "reward": "Kaom's Roots, Corrupted",
         "stack": 2,
         "standardPrice": 2.0,
@@ -9200,10 +9254,10 @@
         },
         "name": "The Transformation",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-transformation",
-        "price": 2.0,
+        "price": 4.6000000000000005,
         "reward": "Tainted Mythic Orb",
         "stack": 5,
-        "standardPrice": 2.866,
+        "standardPrice": 2.978,
         "weight": 283
     },
     {
@@ -9362,13 +9416,13 @@
                 "MapWorldsChimera"
             ],
             "max_level": 77,
-            "min_level": 73,
+            "min_level": 78,
             "monsters": [],
             "text": "Drops from any map area. Has a minimum drop level restriction of 73 Equivalent to T6 maps, Magic monsters in T5 maps, or Rare/Unique monsters in T4 maps. and a maximum drop level restriction of 77 Equivalent to T10 maps, Magic monsters in T9 maps, or Rare/Unique monsters in T8 maps."
         },
         "name": "The Trial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-trial",
-        "price": 1.8,
+        "price": 1.0,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
         "standardPrice": 1.0,
@@ -9383,12 +9437,13 @@
                 "MapWorldsDrySea",
                 "MapWorldsDesert"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Tumbleweed",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tumbleweed",
+        "price": 4.0,
         "reward": "Diamond Ring of Redemption, Item Level: 100, Redeemer Item",
         "stack": 2,
         "standardPrice": 2.0,
@@ -9408,7 +9463,7 @@
         },
         "name": "The Twilight Moon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-twilight-moon",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "The Twilight Temple",
         "stack": 6,
         "standardPrice": 1.0,
@@ -9423,7 +9478,7 @@
                 "MapWorldsTemple",
                 "MapWorldsMoonTempleUnique"
             ],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
@@ -9448,13 +9503,13 @@
                 "MapWorldsGhetto",
                 "MapWorldsArcade"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Tyrant",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tyrant",
-        "price": 1.0,
+        "price": 1.5,
         "reward": "Merciless Weapon, Item Level: 100",
         "stack": 9,
         "standardPrice": 1.0,
@@ -9474,7 +9529,7 @@
         },
         "name": "The Undaunted",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-undaunted",
-        "price": 3.0,
+        "price": 2.0,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
         "standardPrice": 2.0,
@@ -9484,7 +9539,7 @@
         "art": "TheUndisputed",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/BreachBosses/BreachBossChaosMap"
             ],
@@ -9492,6 +9547,7 @@
         },
         "name": "The Undisputed",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-undisputed",
+        "price": 1.1,
         "reward": "Merciless Vaal Axe, Item Level: 100, Elder Item",
         "stack": 8,
         "standardPrice": 5.0,
@@ -9505,7 +9561,7 @@
                 "MapWorldsResidence",
                 "MapWorldsVilla"
             ],
-            "min_level": 68,
+            "min_level": 23,
             "monsters": [],
             "text": ""
         },
@@ -9532,7 +9588,7 @@
         },
         "name": "The Union",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-union",
-        "price": 1.8,
+        "price": 1.0,
         "reward": "10x Gemcutter's Prism",
         "stack": 7,
         "standardPrice": 1.0,
@@ -9581,6 +9637,7 @@
         },
         "name": "The Vast",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-vast",
+        "price": 5.0,
         "reward": "Song of the Sirens",
         "stack": 7,
         "standardPrice": 9.2,
@@ -9595,7 +9652,7 @@
                 "MapWorldsArena",
                 "MapWorldsRacecourse_"
             ],
-            "min_level": 53,
+            "min_level": 71,
             "monsters": [],
             "text": ""
         },
@@ -9617,12 +9674,13 @@
                 "MapWorldsSanctuary",
                 "MapWorldsZiggurat"
             ],
-            "min_level": 23,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Void",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-void",
+        "price": 4.2,
         "reward": "",
         "stack": 1,
         "standardPrice": 3.1,
@@ -9662,13 +9720,13 @@
                 "MapWorldsPromenade",
                 "MapWorldsColonnade"
             ],
-            "min_level": 75,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The Warlord",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-warlord",
-        "price": 2.0,
+        "price": 1.99,
         "reward": "Six-Link Coronal Maul, Item Level: 83",
         "stack": 6,
         "standardPrice": 2.0,
@@ -9681,13 +9739,13 @@
                 "MapWorldsGrotto",
                 "MapWorldsGeode"
             ],
-            "min_level": 52,
+            "min_level": 69,
             "monsters": [],
             "text": ""
         },
         "name": "The Watcher",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-watcher",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Crown of Eyes",
         "stack": 12,
         "standardPrice": 1.0,
@@ -9729,7 +9787,7 @@
         },
         "name": "The Wedding Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wedding-gift",
-        "price": 54.37,
+        "price": 55.5,
         "reward": "Arakaali's Fang",
         "stack": 2,
         "standardPrice": 1.41,
@@ -9741,13 +9799,13 @@
             "areas": [
                 "EndGame_Labyrinth_trials_arrows"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "The White Knight",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-white-knight",
-        "price": 15.0,
+        "price": 9.0,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
         "standardPrice": 10.0,
@@ -9757,7 +9815,7 @@
         "art": "TheWhiteout",
         "drop": {
             "areas": [],
-            "min_level": 51,
+            "min_level": 68,
             "monsters": [
                 "Metadata/Monsters/Cockerel/CockerelBowMapBoss"
             ],
@@ -9765,7 +9823,7 @@
         },
         "name": "The Whiteout",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-whiteout",
-        "price": 1.99,
+        "price": 1.0,
         "reward": "Cospri's Malice",
         "stack": 8,
         "standardPrice": 3.0,
@@ -9800,13 +9858,13 @@
                 "MapWorldsPlateau",
                 "MapWorldsSummit"
             ],
-            "min_level": 68,
+            "min_level": 70,
             "monsters": [],
             "text": ""
         },
         "name": "The Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wind",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Windripper",
         "stack": 7,
         "standardPrice": 1.0,
@@ -9833,7 +9891,7 @@
         "price": 1.0,
         "reward": "Kiara's Determination",
         "stack": 8,
-        "standardPrice": 0.64,
+        "standardPrice": 0.55,
         "weight": 14845
     },
     {
@@ -9871,6 +9929,7 @@
         },
         "name": "The Wolf's Legacy",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolfs-legacy",
+        "price": 2.0,
         "reward": "Vaults of Atziri",
         "stack": 4,
         "standardPrice": 2.0,
@@ -9903,13 +9962,13 @@
                 "MapWorldsLair",
                 "MapWorldsDarkForest"
             ],
-            "min_level": 58,
+            "min_level": 77,
             "monsters": [],
             "text": ""
         },
         "name": "The Wolven King's Bite",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolven-kings-bite",
-        "price": 2.0,
+        "price": 1.0,
         "reward": "Rigwald's Quills",
         "stack": 8,
         "standardPrice": 2.0,
@@ -9986,7 +10045,7 @@
                 "MapWorldsZiggurat",
                 "MapWorldsCitadel"
             ],
-            "min_level": 68,
+            "min_level": 23,
             "monsters": [],
             "text": ""
         },
@@ -10006,7 +10065,7 @@
                 "MapWorldsAcademy",
                 "MapWorldsScriptorium"
             ],
-            "min_level": 36,
+            "min_level": 48,
             "monsters": [],
             "text": ""
         },
@@ -10125,7 +10184,7 @@
         "price": 1.0,
         "reward": "League-Specific Item",
         "stack": 10,
-        "standardPrice": 1.61,
+        "standardPrice": 1.6,
         "weight": 6387
     },
     {
@@ -10138,8 +10197,8 @@
         },
         "name": "Toxic Tidings",
         "ninja": "https://poe.ninja/challenge/divination-cards/toxic-tidings",
-        "price": 1.8,
-        "reward": "Dendrobate, Two-Implicit, Corrupted",
+        "price": 2.3,
+        "reward": "Dendrobate,  Two-Implicit,  Corrupted",
         "stack": 5
     },
     {
@@ -10152,13 +10211,13 @@
                 "MapWorldsPeninsula",
                 "MapWorldsOrchard"
             ],
-            "min_level": 48,
+            "min_level": 68,
             "monsters": [],
             "text": ""
         },
         "name": "Tranquillity",
         "ninja": "https://poe.ninja/challenge/divination-cards/tranquillity",
-        "price": 25.2,
+        "price": 42.5,
         "reward": "Voltaxic Rift",
         "stack": 7,
         "standardPrice": 1.0,
@@ -10195,7 +10254,7 @@
         "art": "Triskaidekaphobia",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 78,
             "monsters": [
                 "Metadata/Monsters/Atziri/Atziri2",
                 "Metadata/Monsters/Atziri/AtziriIncursion"
@@ -10237,13 +10296,13 @@
                 "MapWorldsArena",
                 "MapWorldsColosseum"
             ],
-            "min_level": 68,
+            "min_level": 54,
             "monsters": [],
             "text": ""
         },
         "name": "Unchained",
         "ninja": "https://poe.ninja/challenge/divination-cards/unchained",
-        "price": 1.0,
+        "price": 2.0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 2.0,
@@ -10265,10 +10324,10 @@
         },
         "name": "Unrequited Love",
         "ninja": "https://poe.ninja/challenge/divination-cards/unrequited-love",
-        "price": 1087.4,
+        "price": 878.67,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 23469.79,
+        "standardPrice": 23601.36,
         "weight": 12
     },
     {
@@ -10281,7 +10340,7 @@
         },
         "name": "Vanity",
         "ninja": "https://poe.ninja/challenge/divination-cards/vanity",
-        "price": 2.0,
+        "price": 4.0,
         "reward": "Tabula Rasa, Corrupted",
         "stack": 9,
         "standardPrice": 1.0,
@@ -10325,23 +10384,23 @@
                 "MapWorldsShrine",
                 "MapWorldsCore"
             ],
-            "min_level": 68,
+            "min_level": 23,
             "monsters": [],
             "text": ""
         },
         "name": "Vinia's Token",
         "ninja": "https://poe.ninja/challenge/divination-cards/vinias-token",
-        "price": 0.5,
+        "price": 1.0,
         "reward": "10x Orb of Regret",
         "stack": 5,
-        "standardPrice": 0.92,
+        "standardPrice": 0.96,
         "weight": 12412
     },
     {
         "art": "VoidOfTheElements",
         "drop": {
             "areas": [],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
                 "Metadata/Monsters/AtlasBosses/TheElder/TheElder"
@@ -10350,7 +10409,7 @@
         },
         "name": "Void of the Elements",
         "ninja": "https://poe.ninja/challenge/divination-cards/void-of-the-elements",
-        "price": 8.0,
+        "price": 3.0,
         "reward": "Overpowering Opal Ring, Item Level: 100, Elder Item",
         "stack": 3,
         "standardPrice": 6.0,
@@ -10390,16 +10449,16 @@
             "areas": [
                 "MapWorldsCitadel"
             ],
-            "min_level": 68,
+            "min_level": 75,
             "monsters": [],
             "text": ""
         },
         "name": "Wealth and Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/wealth-and-power",
-        "price": 46.87,
+        "price": 42.0,
         "reward": "Level 4 Enlighten, Corrupted",
         "stack": 11,
-        "standardPrice": 26.0,
+        "standardPrice": 25.5,
         "weight": 30
     },
     {
@@ -10411,31 +10470,32 @@
                 "MapWorldsSilo",
                 "MapWorldsFortress"
             ],
-            "min_level": 80,
+            "min_level": 81,
             "monsters": [],
             "text": "May drop from other \"Forge_Area\" tag maps."
         },
         "name": "Who Asked",
         "ninja": "https://poe.ninja/challenge/divination-cards/who-asked",
-        "price": 1.1,
+        "price": 1.2,
         "reward": "Dictator's Weapon, Item Level: 83, Fractured",
         "stack": 9,
-        "standardPrice": 200.94,
+        "standardPrice": 203.46,
         "weight": 8
     },
     {
         "art": "WintersEmbrace",
         "drop": {
             "areas": [],
-            "min_level": 68,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
         "name": "Winter's Embrace",
         "ninja": "https://poe.ninja/challenge/divination-cards/winters-embrace",
+        "price": 25.0,
         "reward": "Circle of Fear, Three-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 87.44,
+        "standardPrice": 87.65,
         "weight": 35
     }
 ]

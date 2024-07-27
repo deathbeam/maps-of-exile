@@ -1185,7 +1185,7 @@
             "density": 9,
             "layout": 8
         },
-        "shorthand": "l c",
+        "shorthand": "al c",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -2249,7 +2249,7 @@
             "density": 10,
             "layout": 6
         },
-        "shorthand": "cra",
+        "shorthand": "crater",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2357,6 +2357,25 @@
         "type": "map",
         "x": 417,
         "y": 172
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueAzmeri/VoodooKingBoss/VoodooKingBoss2"
+        ],
+        "icon": "/img/icon/crux_of_nothingness.png",
+        "ids": [
+            "AzmeriLeagueBoss"
+        ],
+        "image": "https://www.poewiki.net/images/c/c4/Crux_of_Nothingness_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Crux of Nothingness",
+        "rating": {},
+        "shorthand": "ux",
+        "tags": {},
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -2787,24 +2806,6 @@
         "type": "act area"
     },
     {
-        "icon": "/img/icon/domain_of_timeless_conflict.png",
-        "ids": [
-            "LegionLeague",
-            "LegionLeague2",
-            "LegionLeague3",
-            "LegionLeague4"
-        ],
-        "info": {},
-        "levels": [
-            80
-        ],
-        "name": "Domain of Timeless Conflict",
-        "rating": {},
-        "shorthand": " ti",
-        "tags": {},
-        "type": "unique map"
-    },
-    {
         "boss_ids": [
             "Metadata/Monsters/IncaShadowBoss/BossIncaShadowDoryani"
         ],
@@ -3033,7 +3034,7 @@
             "density": 5,
             "layout": 8
         },
-        "shorthand": "stu",
+        "shorthand": "ary",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -3132,7 +3133,7 @@
             "density": 7,
             "layout": 4
         },
-        "shorthand": "fa",
+        "shorthand": "fac",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3231,7 +3232,7 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "ded",
+        "shorthand": "fl",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -4638,7 +4639,7 @@
         ],
         "name": "Maligaro's Sanctum",
         "rating": {},
-        "shorthand": "gar",
+        "shorthand": "ctu",
         "tags": {},
         "type": "act area"
     },
@@ -6108,26 +6109,18 @@
         "type": "map"
     },
     {
-        "boss_ids": [
-            "Metadata/Monsters/Abberath/Abberath",
-            "Metadata/Monsters/Abberath/Abberath2"
-        ],
         "connected": [
-            "2_6_7_2",
-            "2_6_9",
             "1_1_7_2",
             "1_1_9",
             "1_2_9"
         ],
         "ids": [
-            "1_1_8",
-            "2_6_8"
+            "1_1_8"
         ],
         "image": "https://www.poewiki.net/images/9/9f/Prisoner%27s_Gate_area_screenshot.jpg",
         "info": {},
         "levels": [
-            10,
-            47
+            10
         ],
         "name": "Prisoner's Gate",
         "rating": {},
@@ -6323,6 +6316,23 @@
         "type": "map"
     },
     {
+        "connected": [
+            ""
+        ],
+        "ids": [
+            "2_9_SubareaRefinery"
+        ],
+        "info": {},
+        "levels": [
+            63
+        ],
+        "name": "Refinery Tunnels",
+        "rating": {},
+        "shorthand": " tu",
+        "tags": {},
+        "type": "act area"
+    },
+    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossMeleeSimplified"
@@ -6439,26 +6449,6 @@
         "shorthand": "wr",
         "tags": {},
         "type": "unique map"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/LeagueSanctum/Boss/Lycia2BossMap"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberRelicChambers",
-        "ids": [
-            "MapWorldsSanctuary"
-        ],
-        "info": {},
-        "levels": [
-            84
-        ],
-        "name": "Sanctuary Map",
-        "rating": {},
-        "shorthand": "ctua",
-        "tags": {
-            "boss_not_twinnable": true
-        },
-        "type": "special map"
     },
     {
         "atlas": true,
@@ -6944,7 +6934,7 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "gn",
+        "shorthand": "agn",
         "tags": {
             "abomination_map": true,
             "boss_not_spawned": false,
@@ -6957,6 +6947,23 @@
             "outdoors": true
         },
         "type": "map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueKalguur/VerisiumGuardBoss/VerisiumGuardBoss"
+        ],
+        "ids": [
+            "SettlersBossFallenStar"
+        ],
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Starfall Crater",
+        "rating": {},
+        "shorthand": "fal",
+        "tags": {},
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -7352,27 +7359,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Vendigo/VendigoBoss"
-        ],
-        "connected": [
-            "1_4_town",
-            "1_5_1"
-        ],
-        "ids": [
-            "1_4_7"
-        ],
-        "info": {},
-        "levels": [
-            40
-        ],
-        "name": "The Ascent",
-        "rating": {},
-        "shorthand": "sc",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/Ralakesh/Alira/Alira",
             "Metadata/Monsters/Ralakesh/Greust/Greust",
             "Metadata/Monsters/Ralakesh/Kraityn/Kraityn",
@@ -7402,7 +7388,8 @@
         "connected": [
             "2_8_3",
             "2_8_6",
-            "2_8_4"
+            "2_8_4",
+            "2_8_14"
         ],
         "ids": [
             "2_8_5"
@@ -7479,7 +7466,7 @@
         ],
         "name": "The Beacon",
         "rating": {},
-        "shorthand": "e b",
+        "shorthand": "con",
         "tags": {},
         "type": "act area"
     },
@@ -7563,26 +7550,6 @@
         "name": "The Blood Aqueduct",
         "rating": {},
         "shorthand": "uc",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/GemMonster/IguanaBossPhoenix"
-        ],
-        "connected": [
-            "2_9_5"
-        ],
-        "ids": [
-            "2_9_6"
-        ],
-        "info": {},
-        "levels": [
-            62
-        ],
-        "name": "The Boiling Lake",
-        "rating": {},
-        "shorthand": " bo",
         "tags": {},
         "type": "act area"
     },
@@ -7787,28 +7754,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/AvariusCasticus/AvariusCasticus"
-        ],
-        "connected": [
-            "1_5_4",
-            "1_5_4b"
-        ],
-        "ids": [
-            "1_5_5"
-        ],
-        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
-        "info": {},
-        "levels": [
-            43
-        ],
-        "name": "The Chamber of Innocence",
-        "rating": {},
-        "shorthand": "oc",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/Spiders/SpiderBossSins"
         ],
         "connected": [
@@ -7883,7 +7828,7 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Goatman/GoatmanLeapSlamNavaliBoss"
+            "Metadata/Monsters/Skeletons/SkeletonBossRanged"
         ],
         "connected": [
             "1_1_5",
@@ -8153,62 +8098,6 @@
         "type": "act area"
     },
     {
-        "connected": [
-            "2_9_town",
-            "2_9_3"
-        ],
-        "ids": [
-            "2_9_2"
-        ],
-        "info": {},
-        "levels": [
-            61
-        ],
-        "name": "The Descent",
-        "rating": {},
-        "shorthand": "sc",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
-            "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickerman"
-        ],
-        "connected": [
-            "2_10_3"
-        ],
-        "ids": [
-            "2_10_4"
-        ],
-        "info": {},
-        "levels": [
-            65
-        ],
-        "name": "The Desecrated Chambers",
-        "rating": {},
-        "shorthand": "cra",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "connected": [
-            "1_3_7"
-        ],
-        "ids": [
-            "1_3_9"
-        ],
-        "image": "https://www.poewiki.net/images/f/fe/The_Docks_area_screenshot.jpg",
-        "info": {},
-        "levels": [
-            29
-        ],
-        "name": "The Docks",
-        "rating": {},
-        "shorthand": "ks",
-        "tags": {},
-        "type": "act area"
-    },
-    {
         "boss_ids": [
             "Metadata/Monsters/ChaosElemental/ChaosElementalWorldUnique",
             "Metadata/Monsters/DespairBear/DespairBear"
@@ -8369,28 +8258,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Bull/BullBossFoothills"
-        ],
-        "connected": [
-            "2_9_3",
-            "2_9_6",
-            "2_9_7"
-        ],
-        "ids": [
-            "2_9_5"
-        ],
-        "info": {},
-        "levels": [
-            62
-        ],
-        "name": "The Foothills",
-        "rating": {},
-        "shorthand": "lls",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptain",
             "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireEarthquake",
             "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireFireball",
@@ -8398,7 +8265,8 @@
         ],
         "connected": [
             "2_8_8",
-            "2_8_10"
+            "2_8_10",
+            "2_8_14"
         ],
         "ids": [
             "2_8_9"
@@ -8509,6 +8377,25 @@
         "type": "act area"
     },
     {
+        "connected": [
+            "2_8_9",
+            "2_8_5",
+            "2_8_11"
+        ],
+        "ids": [
+            "2_8_14"
+        ],
+        "info": {},
+        "levels": [
+            58
+        ],
+        "name": "The Hidden Underbelly",
+        "rating": {},
+        "shorthand": " u",
+        "tags": {},
+        "type": "act area"
+    },
+    {
         "boss_ids": [
             "Metadata/Monsters/Frog/FrogGod/SilverFrog"
         ],
@@ -8551,30 +8438,6 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/RootSpiders/RootSpiderHiddenBoss",
-            "Metadata/Monsters/Spiker/SpikerBoss"
-        ],
-        "connected": [
-            "1_3_13",
-            "1_3_17_1",
-            "1_3_18_1"
-        ],
-        "ids": [
-            "1_3_15"
-        ],
-        "image": "https://www.poewiki.net/images/6/6c/The_Imperial_Gardens_area_screenshot.jpg",
-        "info": {},
-        "levels": [
-            30
-        ],
-        "name": "The Imperial Gardens",
-        "rating": {},
-        "shorthand": "ens",
-        "tags": {},
-        "type": "act area"
-    },
-    {
-        "boss_ids": [
             "Metadata/Monsters/Tukohama/Tukohama"
         ],
         "connected": [
@@ -8597,6 +8460,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/Goatman/GoatmanLeapSlamNavaliBoss",
             "Metadata/Monsters/Totems/TotemBossSpark"
         ],
         "connected": [
@@ -8679,7 +8543,7 @@
         ],
         "name": "The Lunaris Concourse",
         "rating": {},
-        "shorthand": "nar",
+        "shorthand": "con",
         "tags": {},
         "type": "act area"
     },
@@ -8847,7 +8711,7 @@
         ],
         "name": "The Mud Flats",
         "rating": {},
-        "shorthand": "ud",
+        "shorthand": "fl",
         "tags": {},
         "type": "act area"
     },
@@ -8874,7 +8738,7 @@
         ],
         "name": "The Northern Forest",
         "rating": {},
-        "shorthand": "ern",
+        "shorthand": " no",
         "tags": {},
         "type": "act area"
     },
@@ -8938,7 +8802,7 @@
         ],
         "name": "The Ossuary",
         "rating": {},
-        "shorthand": "oss",
+        "shorthand": "ary",
         "tags": {},
         "type": "act area"
     },
@@ -9245,26 +9109,6 @@
         "type": "act area"
     },
     {
-        "connected": [
-            "1_3_2",
-            "1_3_5",
-            "1_3_13"
-        ],
-        "ids": [
-            "1_3_10_1"
-        ],
-        "image": "https://www.poewiki.net/images/f/fc/The_Sewers_area_screenshot.png",
-        "info": {},
-        "levels": [
-            26
-        ],
-        "name": "The Sewers",
-        "rating": {},
-        "shorthand": "ewe",
-        "tags": {},
-        "type": "act area"
-    },
-    {
         "boss_ids": [
             "Metadata/Monsters/AtlasBosses/TheElder/TheElderUber",
             "Metadata/Monsters/AtlasBosses/TheShaperBoss",
@@ -9388,7 +9232,8 @@
         ],
         "connected": [
             "2_8_12_1",
-            "2_8_13"
+            "2_8_13",
+            "2_8_14"
         ],
         "ids": [
             "2_8_11"
@@ -9399,7 +9244,7 @@
         ],
         "name": "The Solaris Concourse",
         "rating": {},
-        "shorthand": "ola",
+        "shorthand": "con",
         "tags": {},
         "type": "act area"
     },
@@ -9838,7 +9683,7 @@
         ],
         "name": "The Vaal City",
         "rating": {},
-        "shorthand": "l c",
+        "shorthand": "al c",
         "tags": {},
         "type": "act area"
     },
@@ -10894,7 +10739,7 @@
             "density": 6,
             "layout": 8
         },
-        "shorthand": "rf",
+        "shorthand": "harf",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,

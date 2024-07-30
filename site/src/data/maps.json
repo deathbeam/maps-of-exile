@@ -8458,6 +8458,30 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/RootSpiders/RootSpiderHiddenBoss",
+            "Metadata/Monsters/Spiker/SpikerBoss"
+        ],
+        "connected": [
+            "1_3_13",
+            "1_3_17_1",
+            "1_3_18_1"
+        ],
+        "ids": [
+            "1_3_15"
+        ],
+        "image": "https://www.poewiki.net/images/6/6c/The_Imperial_Gardens_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            30
+        ],
+        "name": "The Imperial Gardens",
+        "rating": {},
+        "shorthand": "ens",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/Tukohama/Tukohama"
         ],
         "connected": [
@@ -9125,6 +9149,26 @@
         "name": "The Sceptre of God",
         "rating": {},
         "shorthand": "ep",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "connected": [
+            "1_3_2",
+            "1_3_5",
+            "1_3_13"
+        ],
+        "ids": [
+            "1_3_10_1"
+        ],
+        "image": "https://www.poewiki.net/images/f/fc/The_Sewers_area_screenshot.png",
+        "info": {},
+        "levels": [
+            26
+        ],
+        "name": "The Sewers",
+        "rating": {},
+        "shorthand": "ewe",
         "tags": {},
         "type": "act area"
     },

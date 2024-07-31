@@ -6109,18 +6109,26 @@
         "type": "map"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Abberath/Abberath",
+            "Metadata/Monsters/Abberath/Abberath2"
+        ],
         "connected": [
+            "2_6_7_2",
+            "2_6_9",
             "1_1_7_2",
             "1_1_9",
             "1_2_9"
         ],
         "ids": [
-            "1_1_8"
+            "1_1_8",
+            "2_6_8"
         ],
         "image": "https://www.poewiki.net/images/9/9f/Prisoner%27s_Gate_area_screenshot.jpg",
         "info": {},
         "levels": [
-            10
+            10,
+            47
         ],
         "name": "Prisoner's Gate",
         "rating": {},
@@ -7379,6 +7387,27 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/Vendigo/VendigoBoss"
+        ],
+        "connected": [
+            "1_4_town",
+            "1_5_1"
+        ],
+        "ids": [
+            "1_4_7"
+        ],
+        "info": {},
+        "levels": [
+            40
+        ],
+        "name": "The Ascent",
+        "rating": {},
+        "shorthand": "sc",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/Ralakesh/Alira/Alira",
             "Metadata/Monsters/Ralakesh/Greust/Greust",
             "Metadata/Monsters/Ralakesh/Kraityn/Kraityn",
@@ -7570,6 +7599,26 @@
         "name": "The Blood Aqueduct",
         "rating": {},
         "shorthand": "uc",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/GemMonster/IguanaBossPhoenix"
+        ],
+        "connected": [
+            "2_9_5"
+        ],
+        "ids": [
+            "2_9_6"
+        ],
+        "info": {},
+        "levels": [
+            62
+        ],
+        "name": "The Boiling Lake",
+        "rating": {},
+        "shorthand": " bo",
         "tags": {},
         "type": "act area"
     },
@@ -7769,6 +7818,28 @@
         "name": "The Caverns",
         "rating": {},
         "shorthand": "ern",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AvariusCasticus/AvariusCasticus"
+        ],
+        "connected": [
+            "1_5_4",
+            "1_5_4b"
+        ],
+        "ids": [
+            "1_5_5"
+        ],
+        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            43
+        ],
+        "name": "The Chamber of Innocence",
+        "rating": {},
+        "shorthand": "oc",
         "tags": {},
         "type": "act area"
     },
@@ -8118,6 +8189,65 @@
         "type": "act area"
     },
     {
+        "connected": [
+            "2_9_town",
+            "2_9_3"
+        ],
+        "ids": [
+            "2_9_2"
+        ],
+        "info": {},
+        "levels": [
+            61
+        ],
+        "name": "The Descent",
+        "rating": {},
+        "shorthand": "sc",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickerman"
+        ],
+        "connected": [
+            "2_10_3"
+        ],
+        "ids": [
+            "2_10_4"
+        ],
+        "info": {},
+        "levels": [
+            65
+        ],
+        "name": "The Desecrated Chambers",
+        "rating": {},
+        "shorthand": "ecr",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/Monkeys/FlameBearerBossDocks"
+        ],
+        "connected": [
+            "1_3_7"
+        ],
+        "ids": [
+            "1_3_9"
+        ],
+        "image": "https://www.poewiki.net/images/f/fe/The_Docks_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            29
+        ],
+        "name": "The Docks",
+        "rating": {},
+        "shorthand": "ks",
+        "tags": {},
+        "type": "act area"
+    },
+    {
         "boss_ids": [
             "Metadata/Monsters/ChaosElemental/ChaosElementalWorldUnique",
             "Metadata/Monsters/DespairBear/DespairBear"
@@ -8273,6 +8403,28 @@
         "name": "The Flooded Depths",
         "rating": {},
         "shorthand": "ep",
+        "tags": {},
+        "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/Bull/BullBossFoothills"
+        ],
+        "connected": [
+            "2_9_3",
+            "2_9_6",
+            "2_9_7"
+        ],
+        "ids": [
+            "2_9_5"
+        ],
+        "info": {},
+        "levels": [
+            62
+        ],
+        "name": "The Foothills",
+        "rating": {},
+        "shorthand": "lls",
         "tags": {},
         "type": "act area"
     },

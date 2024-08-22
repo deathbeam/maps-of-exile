@@ -6151,7 +6151,7 @@
         ],
         "name": "Prisoner's Gate",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": "er'",
         "tags": {},
         "type": "act area"
     },
@@ -6474,6 +6474,24 @@
         "name": "Rewritten Distant Memory",
         "rating": {},
         "shorthand": "wr",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueKalguur/DarnawPirateRaider/PirateCoveBoss"
+        ],
+        "ids": [
+            "SettlersBossPirateCove"
+        ],
+        "image": "https://www.poewiki.net/images/8/8e/Sailor%27s_Folly_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Sailor's Folly",
+        "rating": {},
+        "shorthand": "ail",
         "tags": {},
         "type": "unique map"
     },
@@ -6852,7 +6870,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "ilo",
+        "shorthand": "silo",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -7556,7 +7574,7 @@
         ],
         "name": "The Belly of the Beast",
         "rating": {},
-        "shorthand": "ly",
+        "shorthand": "bel",
         "tags": {},
         "type": "act area"
     },
@@ -9362,7 +9380,7 @@
         ],
         "name": "The Shaper's Realm",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": " re",
         "tags": {
             "abomination_map": true,
             "boss_not_twinnable": true,
@@ -10004,7 +10022,7 @@
         ],
         "name": "The Weaver's Chambers",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": "er'",
         "tags": {},
         "type": "act area"
     },

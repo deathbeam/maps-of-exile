@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { mapLevelToTier } from '../common'
 import './MapImage.css'
 
@@ -30,4 +28,4 @@ const MapImage = ({ icon, level = 0, type = 'map' }) => {
   )
 }
 
-export default memo(MapImage)
+export default MapImage

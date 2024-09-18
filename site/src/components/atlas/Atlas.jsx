@@ -1,5 +1,4 @@
 import { useAtom, useAtomValue } from 'jotai'
-import { memo, useCallback, useEffect, useMemo } from 'react'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import 'reactflow/dist/base.css'
 
@@ -12,6 +11,7 @@ import './Atlas.css'
 const scale = 3
 const offset = 6
 const bgId = 'bg'
+const nodeTypes = { background: BackgroundNode, map: MapNode }
 
 function toNode(map, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones) {
   return {
@@ -97,57 +97,44 @@ const Atlas = ({ selectedMap }) => {
   const parsedSearch = useAtomValue(state.parsedSearch)
   const voidstones = useAtomValue(state.input.voidstones)
 
-  const nodeTypes = useMemo(() => ({ background: BackgroundNode, map: MapNode }), [])
-  const mapsOnAtlas = useMemo(() => maps.filter(m => m.connected.length > 0 && m.atlas), [maps])
-  const matchingNodes = useMemo(
-    () =>
-      mapsOnAtlas
-        .filter(m =>
-          selectedMap
-            ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
-            : filter(parsedSearch, m.search)
-        )
-        .map(m => m.name),
-    [mapsOnAtlas, parsedSearch, selectedMap]
-  )
+  const mapsOnAtlas = maps.filter(m => m.connected.length > 0 && m.atlas)
+  const matchingNodes = mapsOnAtlas
+    .filter(m =>
+      selectedMap
+        ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
+        : filter(parsedSearch, m.search)
+    )
+    .map(m => m.name)
 
-  const fitMatching = useCallback(
-    () =>
-      flow.fitView({
-        nodes: matchingNodes.map(n => ({ id: n }))
-      }),
-    [flow, matchingNodes]
-  )
+  const fitMatching = () =>
+    flow.fitView({
+      nodes: matchingNodes.map(n => ({ id: n }))
+    })
 
-  useEffect(() => {
-    setTimeout(fitMatching, 150)
-  }, [fitMatching])
+  setTimeout(fitMatching, 150)
 
-  const data = useMemo(
-    () => ({
-      nodes: [
-        {
-          id: bgId,
-          type: 'background',
-          position: {
-            x: 0,
-            y: 0
-          },
-          data: {
-            image: '/img/atlas.webp',
-            width: globals.atlas ? globals.atlas.width * scale : 0,
-            height: globals.atlas ? globals.atlas.height * scale : 0
-          },
-          zIndex: -1
-        }
-      ].concat(mapsOnAtlas.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
-      edges: deduplicate(
-        mapsOnAtlas.flatMap(m => toLinks(m)),
-        'id'
-      )
-    }),
-    [mapsOnAtlas, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones]
-  )
+  const data = {
+    nodes: [
+      {
+        id: bgId,
+        type: 'background',
+        position: {
+          x: 0,
+          y: 0
+        },
+        data: {
+          image: '/img/atlas.webp',
+          width: globals.atlas ? globals.atlas.width * scale : 0,
+          height: globals.atlas ? globals.atlas.height * scale : 0
+        },
+        zIndex: -1
+      }
+    ].concat(mapsOnAtlas.map(m => toNode(m, matchingNodes, atlasScore, atlasIcons, atlasLabels, voidstones))),
+    edges: deduplicate(
+      mapsOnAtlas.flatMap(m => toLinks(m)),
+      'id'
+    )
+  }
 
   return (
     <div className="d-none d-lg-block position-fixed atlas">
@@ -190,4 +177,4 @@ const Atlas = ({ selectedMap }) => {
   )
 }
 
-export default memo(Atlas)
+export default Atlas

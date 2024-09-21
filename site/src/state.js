@@ -3,7 +3,7 @@ import { unwrap } from 'jotai/utils'
 
 import atomWithHash from './atoms/atomWithHash'
 import atomWithStore from './atoms/atomWithStore'
-import { calculateScore, filter } from './common'
+import { calculateScore, filter, filterTiers } from './common'
 import { cardArtBase, defaultCardBaseline, globals, mapIconBase, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
@@ -201,6 +201,16 @@ function buildRegex(maps) {
 function filterValues(values, currentSearch) {
   return values
     .filter(v => !currentSearch || filter(currentSearch, v.search))
+    .sort(
+      (a, b) =>
+        Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
+    )
+}
+
+function filterMaps(values, currentSearch, voidstoneCount, mapTiers) {
+  return values
+    .filter(v => !currentSearch || filter(currentSearch, v.search))
+    .filter(v => !mapTiers || mapTiers === '1-16' || filterTiers(v.levels, voidstoneCount, mapTiers))
     .sort(
       (a, b) =>
         Number(filter(currentSearch, b.name.toLowerCase())) - Number(filter(currentSearch, a.name.toLowerCase()))
@@ -505,6 +515,7 @@ function createState() {
 
   const input = {
     search: atomWithStore('searchInput', '', data),
+    mapTiers: atomWithStore('mapTiersInput', '', data),
     sort: atomWithStore('sortInput', ['score'], data),
 
     voidstones: atomWithStore('voidstonesInput', 0, data),
@@ -571,7 +582,7 @@ function createState() {
     )
   )
 
-  const filteredMaps = atom(get => filterValues(get(ratedMaps), get(parsedSearch)))
+  const filteredMaps = atom(get => filterMaps(get(ratedMaps), get(parsedSearch), get(input.voidstones), get(input.mapTiers)))
 
   const mapRegex = atom(get => buildRegex(get(filteredMaps)))
 

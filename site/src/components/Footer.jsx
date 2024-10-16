@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { githubRepo, globals, mfAcademyInvite } from '../constants'
 import './Footer.css'
 
@@ -60,4 +58,4 @@ const Footer = () => {
   )
 }
 
-export default memo(Footer)
+export default Footer

@@ -1,5 +1,4 @@
 import { useAtom } from 'jotai'
-import { memo } from 'react'
 
 import state from '../state'
 
@@ -50,4 +49,4 @@ const Tags = ({ tags }) => {
   })
 }
 
-export default memo(Tags)
+export default Tags

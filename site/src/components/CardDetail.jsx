@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { cardBadge, priceImage } from '../common'
 import { wikiBase } from '../constants'
 import Rating from './Rating'
@@ -76,4 +74,4 @@ const CardDetail = ({ card }) => {
   )
 }
 
-export default memo(CardDetail)
+export default CardDetail

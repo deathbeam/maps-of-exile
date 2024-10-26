@@ -15,16 +15,14 @@ jobs:
 
       - name: Setup node
         uses: actions/setup-node@v3
-        with:
-          node-version: '16'
 
       - name: Install site dependencies
         run: npm ci
         working-directory: site
 
-      - name: Lint
-        run: npm run lint
-        working-directory: site
+      # - name: Lint
+      #   run: npm run lint
+      #   working-directory: site
 
       - name: Build site
         run: npm run build

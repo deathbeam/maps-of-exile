@@ -1,5 +1,3 @@
-import { memo } from 'react'
-
 import { divcordDiscord, wikiBase } from '../../constants'
 
 const CardNotice = ({ card }) => {
@@ -60,4 +58,4 @@ const CardNotice = ({ card }) => {
   return cardNotice
 }
 
-export default memo(CardNotice)
+export default CardNotice

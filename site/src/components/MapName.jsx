@@ -1,11 +1,9 @@
-import { memo } from 'react'
-
 import { mapLevel, mapLevelToTier, tierColor } from '../common'
 import MapImage from './MapImage'
 import Rating from './Rating'
 import Tags from './Tags'
 
-const MapName = ({ map, voidstones, sidebar, cardList }) => {
+const MapName = ({ map, voidstones, sidebar = false, cardList = false }) => {
   const color = `text-${tierColor(map.levels, map.atlas, map.type, voidstones)}`
 
   const name = (
@@ -96,4 +94,4 @@ const MapName = ({ map, voidstones, sidebar, cardList }) => {
   )
 }
 
-export default memo(MapName)
+export default MapName

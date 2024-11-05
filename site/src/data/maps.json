@@ -1,6 +1,24 @@
 [
     {
         "boss_ids": [
+            "Metadata/Monsters/LeagueKalguur/BanditArcher/BanditArcherBoss"
+        ],
+        "ids": [
+            "SettlersBossAlleyway"
+        ],
+        "image": "https://www.poewiki.net/images/5/54/Abandoned_Port_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Abandoned Port",
+        "rating": {},
+        "shorthand": "aba",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSewersMapUber",
             "Metadata/Monsters/Maligaro/MaligaroBoss2MapUber",
             "Metadata/Monsters/Shavronne/ShavronneTowerMapUber_",
@@ -871,6 +889,7 @@
         "shorthand": "asi",
         "tags": {
             "boss_not_twinnable": true,
+            "boss_phases": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
@@ -1093,7 +1112,7 @@
             "density": 6,
             "layout": 4
         },
-        "shorthand": "one",
+        "shorthand": "bone",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -5960,7 +5979,7 @@
             "density": 7,
             "layout": 8
         },
-        "shorthand": "por",
+        "shorthand": "port",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": true,
@@ -6132,7 +6151,7 @@
         ],
         "name": "Prisoner's Gate",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": "er'",
         "tags": {},
         "type": "act area"
     },
@@ -6455,6 +6474,24 @@
         "name": "Rewritten Distant Memory",
         "rating": {},
         "shorthand": "wr",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueKalguur/DarnawPirateRaider/PirateCoveBoss"
+        ],
+        "ids": [
+            "SettlersBossPirateCove"
+        ],
+        "image": "https://www.poewiki.net/images/8/8e/Sailor%27s_Folly_area_screenshot.jpg",
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Sailor's Folly",
+        "rating": {},
+        "shorthand": "ail",
         "tags": {},
         "type": "unique map"
     },
@@ -6833,7 +6870,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "ilo",
+        "shorthand": "silo",
         "tags": {
             "boss_not_spawned": false,
             "boss_not_twinnable": true,
@@ -6983,6 +7020,7 @@
         "ids": [
             "SettlersBossFallenStar"
         ],
+        "image": "https://www.poewiki.net/images/d/d8/Starfall_Crater_area_screenshot.jpg",
         "info": {},
         "levels": [
             83
@@ -7536,7 +7574,7 @@
         ],
         "name": "The Belly of the Beast",
         "rating": {},
-        "shorthand": "ly",
+        "shorthand": "bel",
         "tags": {},
         "type": "act area"
     },
@@ -7765,7 +7803,6 @@
             "1_1_11_2",
             "2_6_13"
         ],
-        "image": "https://www.poewiki.net/images/4/4a/The_Cavern_of_Anger_area_screenshot.jpg",
         "info": {},
         "levels": [
             13,
@@ -8494,7 +8531,7 @@
         ],
         "name": "The Grand Promenade",
         "rating": {},
-        "shorthand": "d p",
+        "shorthand": "ome",
         "tags": {},
         "type": "act area"
     },
@@ -9342,7 +9379,7 @@
         ],
         "name": "The Shaper's Realm",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": " re",
         "tags": {
             "abomination_map": true,
             "boss_not_twinnable": true,
@@ -9984,7 +10021,7 @@
         ],
         "name": "The Weaver's Chambers",
         "rating": {},
-        "shorthand": "r'",
+        "shorthand": "er'",
         "tags": {},
         "type": "act area"
     },

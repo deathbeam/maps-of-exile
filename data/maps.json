@@ -1,5 +1,20 @@
 [
     {
+        "name": "Abandoned Port",
+        "tags": {
+            "boss_not_spawned": null,
+            "boss_phases": null,
+            "boss_rushable": null,
+            "boss_separated": null,
+            "boss_soft_phases": null,
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        }
+    },
+    {
         "name": "Abomination Map",
         "tags": {
             "boss_not_spawned": null,
@@ -351,7 +366,7 @@
         "name": "Basilica Map",
         "tags": {
             "boss_not_spawned": null,
-            "boss_phases": null,
+            "boss_phases": true,
             "boss_rushable": null,
             "boss_separated": null,
             "boss_soft_phases": null,
@@ -2291,6 +2306,21 @@
             80
         ],
         "name": "Rewritten Distant Memory",
+        "tags": {
+            "boss_not_spawned": null,
+            "boss_phases": null,
+            "boss_rushable": null,
+            "boss_separated": null,
+            "boss_soft_phases": null,
+            "delirium_mirror": null,
+            "few_obstacles": null,
+            "league_mechanics": null,
+            "linear": null,
+            "outdoors": null
+        }
+    },
+    {
+        "name": "Sailor's Folly",
         "tags": {
             "boss_not_spawned": null,
             "boss_phases": null,

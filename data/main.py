@@ -99,7 +99,7 @@ def merge(source, destination):
     return destination
 
 
-def get_globals_data(config):
+def get_globals_data(config, globals_extra):
     out = {}
 
     url = config["poedb"]["list"]
@@ -111,28 +111,30 @@ def get_globals_data(config):
     out["atlas"] = {
         "width": float(atlasimage.attrs["width"]),
         "height": float(atlasimage.attrs["height"]),
+        "league": config["league"],
+        "lastUpdate": time.time() * 1000
     }
 
-    url = config["poedb"]["constants"]
-    print(f"Getting game constants from url {url}")
-    r = requests.get(url, allow_redirects=True)
-    soup = BeautifulSoup(r.content, "html.parser")
-    dropoollist = soup.find(id="DropPool").find("table").find("tbody").find_all("tr")
+    # url = config["poedb"]["constants"]
+    # print(f"Getting game constants from url {url}")
+    # r = requests.get(url, allow_redirects=True)
+    # soup = BeautifulSoup(r.content, "html.parser")
+    # dropoollist = soup.find(id="DropPool").find("table").find("tbody").find_all("tr")
+    #
+    # total_droppool = 0
+    #
+    # for row in dropoollist:
+    #     cols = row.find_all("td")
+    #     name = cols[0].text
+    #
+    #     if name == "HeistEquipment":
+    #         continue
+    #
+    #     total_droppool += int(cols[1].text)
+    #
+    # out["droppool_weight"] = total_droppool
 
-    total_droppool = 0
-
-    for row in dropoollist:
-        cols = row.find_all("td")
-        name = cols[0].text
-
-        if name == "HeistEquipment":
-            continue
-
-        total_droppool += int(cols[1].text)
-
-    out["league"] = config["league"]
-    out["lastUpdate"] = time.time() * 1000
-    out["droppool_weight"] = total_droppool
+    merge(globals_extra, out)
     return out
 
 
@@ -925,7 +927,11 @@ def main():
     api_key = os.environ["GOOGLE_API_KEY"]
 
     if fetch_globals:
-        globals = get_globals_data(config)
+        # Get extra global data
+        with open(dir_path + "/globals.json", "r") as f:
+            globals_extra = json.load(f)
+
+        globals = get_globals_data(config, globals_extra)
         with open(dir_path + "/../site/src/data/globals.json", "w") as f:
             f.write(json.dumps(globals, indent=4, cls=DecimalEncoder, sort_keys=True))
 

@@ -100,7 +100,10 @@ def merge(source, destination):
 
 
 def get_globals_data(config, globals_extra):
-    out = {}
+    out = {
+        "league": config["league"],
+        "lastUpdate": time.time() * 1000
+    }
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
@@ -110,9 +113,7 @@ def get_globals_data(config, globals_extra):
 
     out["atlas"] = {
         "width": float(atlasimage.attrs["width"]),
-        "height": float(atlasimage.attrs["height"]),
-        "league": config["league"],
-        "lastUpdate": time.time() * 1000
+        "height": float(atlasimage.attrs["height"])
     }
 
     # url = config["poedb"]["constants"]

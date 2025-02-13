@@ -119,6 +119,13 @@ const filterInputs = atom(get => [
     numberDef: atom('')
   },
   {
+    name: 'Map Tier',
+    tooltip: <>Map tier range used to filter. Depends on voidstones you have.</>,
+    type: 'search',
+    def: state.input.mapTiers,
+    numberDef: atom('')
+  },
+  {
     name: 'Card price source',
     tooltip: <>Source of price data, can be either League or Standard.</>,
     type: 'select',

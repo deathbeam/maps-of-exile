@@ -48,14 +48,14 @@ function App() {
             <button type="button" className="btn-close" onClick={() => setCardPricesAlert(false)} />
           </div>
         )}
-        {newLeagueAlert && (
+        {newLeagueAlert && globals.league && (
           <div className="alert alert-primary mb-0" role="alert">
             <b>New!</b> Site was updated for <b>{globals.league}</b> league. If price data are not reliable yet, switch{' '}
             <b>Card price source</b> to <b>Standard</b>.
             <button type="button" className="btn-close" onClick={() => setNewLeagueAlert(null)} />
           </div>
         )}
-        {newEventAlert && (
+        {newEventAlert && globals.event && (
           <div className="alert alert-primary mb-0" role="alert">
             <b>New!</b> Site was updated for <b>{globals.event}</b> event. If price data are not reliable yet, switch{' '}
             <b>Card price source</b> to <b>Standard</b>.

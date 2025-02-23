@@ -31,7 +31,9 @@ def get_image_path(directory, name, ext):
 
 
 def save_image(directory, name, res):
-    content_type = res.headers["content-type"]
+    content_type = res.headers.get("content-type")
+    if not content_type:
+        return None
     ext = mimetypes.guess_extension(content_type)
     path = get_image_path(directory, name, ext)
     with open(f"{dir_path}/../site/public{path}", "wb") as f:
@@ -100,10 +102,7 @@ def merge(source, destination):
 
 
 def get_globals_data(config, globals_extra):
-    out = {
-        "league": config["league"],
-        "lastUpdate": time.time() * 1000
-    }
+    out = {"league": config["league"], "event": config.get("event"), "lastUpdate": time.time() * 1000}
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
@@ -111,10 +110,7 @@ def get_globals_data(config, globals_extra):
     soup = BeautifulSoup(r.content, "html.parser")
     atlasimage = soup.find(id="AtlasNodeSVG").find("image")
 
-    out["atlas"] = {
-        "width": float(atlasimage.attrs["width"]),
-        "height": float(atlasimage.attrs["height"])
-    }
+    out["atlas"] = {"width": float(atlasimage.attrs["width"]), "height": float(atlasimage.attrs["height"])}
 
     # url = config["poedb"]["constants"]
     # print(f"Getting game constants from url {url}")
@@ -150,6 +146,7 @@ def get_card_data(key, config, card_extra):
         return soup.get_text().replace("16x16px|link=|alt=", "").replace("..", ".")
 
     league = config["league"]
+    event = config.get("event")
 
     print(f"Getting card data from wiki")
     wiki_cards = requests.get(
@@ -269,13 +266,19 @@ def get_card_data(key, config, card_extra):
     patient_weight = card_weights["The Patient"]
     sample_weight = Decimal(patient_weight) / Decimal(patient_chance)
 
-    print(f"Getting card prices for {league} and Standard")
+    print(f"Getting card prices for {league}, {event} and Standard")
     prices = requests.get(config["ninja"]["cardprices"] + league).json()["lines"]
     standard_prices = requests.get(config["ninja"]["cardprices"] + "Standard").json()["lines"]
+    event_prices = {}
+    if event:
+        event_prices = requests.get(config["ninja"]["cardprices"] + event).json()["lines"]
 
-    print(f"Getting currency prices for {league} and Standard")
+    print(f"Getting currency prices for {league}, {event} and Standard")
     currency_prices = requests.get(config["ninja"]["currencyprices"] + league).json()["lines"]
     standard_currency_prices = requests.get(config["ninja"]["currencyprices"] + "Standard").json()["lines"]
+    event_currency_prices = {}
+    if event:
+        event_currency_prices = requests.get(config["ninja"]["currencyprices"] + event).json()["lines"]
 
     def find_reward_price(card, prices, price):
         if price and price > config["card-price-threshold"]:
@@ -298,11 +301,13 @@ def get_card_data(key, config, card_extra):
         name = wiki_card["name"]
         price_card = next(filter(lambda x: x["name"] == name, prices), {})
         standard_price_card = next(filter(lambda x: x["name"] == name, standard_prices), {})
+        event_price_card = next(filter(lambda x: x["name"] == name, event_prices), {})
 
         reward_price = find_reward_price(wiki_card, currency_prices, price_card.get("chaosValue"))
         standard_reward_price = find_reward_price(
             wiki_card, standard_currency_prices, standard_price_card.get("chaosValue")
         )
+        event_reward_price = find_reward_price(wiki_card, event_currency_prices, event_price_card.get("chaosValue"))
 
         if reward_price != price_card.get("chaosValue"):
             print(
@@ -316,6 +321,7 @@ def get_card_data(key, config, card_extra):
             "art": standard_price_card.get("artFilename", price_card.get("artFilename")),
             "price": reward_price,
             "standardPrice": standard_reward_price,
+            "eventPrice": event_reward_price,
             "ninja": config["ninja"]["cardbase"]
             + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
             "drop": wiki_card["drop"],
@@ -706,7 +712,11 @@ def get_map_data(map_data, extra_map_data, config):
                 r = s.get(icon)
                 if r.ok:
                     print(f"Found map icon {icon}")
-                    map_data["icon"] = save_image("icon", map_data["name"], r)
+                    map_image = save_image("icon", map_data["name"], r)
+                    if not map_image:
+                        print(f"Failed to save map icon {icon}")
+                    else:
+                        map_data["icon"] = map_image
 
     if map_data.get("atlas"):
         level = map_data["levels"][0]

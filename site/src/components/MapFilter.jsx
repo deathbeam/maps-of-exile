@@ -124,7 +124,8 @@ const filterInputs = atom(get => [
     type: 'select',
     options: {
       league: 'League',
-      standard: 'Standard'
+      standard: 'Standard',
+      event: 'Event'
     },
     def: state.input.cardPriceSource,
     numberDef: atom('')

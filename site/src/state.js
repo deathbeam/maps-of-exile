@@ -316,7 +316,15 @@ function rateMaps(
         const cardMaxLevel = (card.drop || {}).max_level || 99
         const dropEligible = mapLevel >= cardMinLevel && mapLevel <= cardMaxLevel
         const weight = dropEligible ? card.weight || 0 : 0
-        const price = (cardPriceSource === 'standard' ? card.standardPrice : card.price) || 0
+        let price = 0
+        if (cardPriceSource === 'standard') {
+          price = card.standardPrice || 0
+        } else if (cardPriceSource === 'event') {
+          price = card.eventPrice || 0
+        } else {
+          price = card.price || 0
+        }
+
         const priceEligible = price >= cardMinPrice
         const unknown = !card.weight
 
@@ -430,7 +438,14 @@ function rateCards(
     sort,
     calculateScore(
       foundCards.map(c => {
-        const price = (cardPriceSourceInput === 'standard' ? c.standardPrice : c.price) || 0
+        let price = 0
+        if (cardPriceSourceInput === 'standard') {
+          price = c.standardPrice || 0
+        } else if (cardPriceSourceInput === 'event') {
+          price = c.eventPrice || 0
+        } else {
+          price = c.price || 0
+        }
         const out = {
           ...c,
           drop: c.drop || {},

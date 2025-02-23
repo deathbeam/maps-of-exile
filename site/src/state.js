@@ -543,7 +543,8 @@ function createState() {
 
   const alerts = {
     cardPrices: atomWithStore('cardPricesAlert', true),
-    newLeague: atomWithStore('newLeagueAlert' + globals.league, true)
+    newLeague: atomWithStore('newLeagueAlert' + globals.league, true),
+    newEvent: atomWithStore('newEventAlert' + globals.event, true)
   }
 
   const parsedSearch = atom(

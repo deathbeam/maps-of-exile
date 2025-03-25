@@ -2819,6 +2819,23 @@
         "type": "act area"
     },
     {
+        "ids": [
+            "LegionLeague",
+            "LegionLeague2",
+            "LegionLeague3",
+            "LegionLeague4"
+        ],
+        "info": {},
+        "levels": [
+            80
+        ],
+        "name": "Domain of Timeless Conflict",
+        "rating": {},
+        "shorthand": " ti",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
         "boss_ids": [
             "Metadata/Monsters/IncaShadowBoss/BossIncaShadowDoryani"
         ],
@@ -3243,7 +3260,7 @@
             "density": 9,
             "layout": 6
         },
-        "shorthand": "fl",
+        "shorthand": "ded",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -7540,7 +7557,7 @@
         ],
         "name": "The Beacon",
         "rating": {},
-        "shorthand": "con",
+        "shorthand": "e b",
         "tags": {},
         "type": "act area"
     },
@@ -8763,7 +8780,7 @@
         ],
         "name": "The Lunaris Concourse",
         "rating": {},
-        "shorthand": "con",
+        "shorthand": "nar",
         "tags": {},
         "type": "act area"
     },
@@ -8930,7 +8947,7 @@
         ],
         "name": "The Mud Flats",
         "rating": {},
-        "shorthand": "fl",
+        "shorthand": "ud",
         "tags": {},
         "type": "act area"
     },
@@ -9482,7 +9499,7 @@
         ],
         "name": "The Solaris Concourse",
         "rating": {},
-        "shorthand": "con",
+        "shorthand": "ola",
         "tags": {},
         "type": "act area"
     },

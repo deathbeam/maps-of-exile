@@ -211,6 +211,10 @@
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss1",
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss2"
         ],
+        "connected": [
+            "Overgrown Shrine Map"
+        ],
+        "icon": "Art/2DItems/Maps/musicbox",
         "ids": [
             "MapWorldsOvergrownShrineUnique"
         ],
@@ -229,6 +233,7 @@
         "rating": {},
         "shorthand": "tm",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,
@@ -579,6 +584,14 @@
         "boss_ids": [
             "Metadata/Monsters/Axis/MapAxisGeneralBoss"
         ],
+        "connected": [
+            "Carcass Map",
+            "Dunes Map",
+            "Lair Map",
+            "Relic Chambers Map",
+            "Vaal Pyramid Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Armory",
         "ids": [
             "MapWorldsArmoury"
         ],
@@ -608,6 +621,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "few_obstacles": false,
+            "fortress_map": true,
             "league_mechanics": false,
             "linear": true,
             "outdoors": false
@@ -10297,6 +10311,12 @@
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
         ],
+        "connected": [
+            "Bog Map",
+            "Fungal Hollow Map",
+            "Scriptorium Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TropicalIsland",
         "ids": [
             "MapWorldsTropicalIsland"
         ],
@@ -10319,6 +10339,7 @@
         },
         "shorthand": "sl",
         "tags": {
+            "abomination_map": true,
             "boss_not_spawned": false,
             "boss_phases": false,
             "boss_rushable": false,

@@ -1,14 +1,15 @@
-import { atom } from 'jotai'
 import { useResetAtom } from 'jotai/utils'
+
 import state from '../state'
 
 const ResetAll = () => {
-  const allStateInputs = state.input;
-  const inputAtoms = Object.values(allStateInputs).map(input => atom(input))
-  const resetFns = inputAtoms.map(input => useResetAtom(input.init))
+  const inputAtoms = Object.values(state.input)
+  const resetFns = inputAtoms.map(atom => useResetAtom(atom))
 
   const handleResetAllInputs = () => {
-    resetFns.forEach(reset => reset())
+    if (window.confirm('Are you sure you want to reset all inputs?')) {
+      resetFns.forEach(reset => reset())
+    }
   }
 
   return (

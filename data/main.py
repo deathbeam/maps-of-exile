@@ -102,7 +102,11 @@ def merge(source, destination):
 
 
 def get_globals_data(config, globals_extra):
-    out = {"league": config["league"], "event": config.get("event"), "lastUpdate": time.time() * 1000}
+    out = {
+        "league": config["league"],
+        "event": config.get("event"),
+        "lastUpdate": time.time() * 1000
+    }
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
@@ -322,8 +326,7 @@ def get_card_data(key, config, card_extra):
             "price": reward_price,
             "standardPrice": standard_reward_price,
             "eventPrice": event_reward_price,
-            "ninja": config["ninja"]["cardbase"].replace("{league}", league.lower()) +
-                (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
+            "id": price_card.get("detailsId", standard_price_card.get("detailsId")),
             "drop": wiki_card["drop"],
         }
 

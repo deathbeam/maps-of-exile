@@ -1,6 +1,7 @@
 import globalsData from './data/globals.json'
 
 export const wikiBase = 'https://www.poewiki.net/wiki/'
+export const ninjaBase = 'https://poe.ninja/economy/{league}/divination-cards/'
 export const divcordDiscord = 'https://discord.gg/jsN2gsDUyM'
 export const mapIconBase = 'https://web.poecdn.com/image/'
 export const cardArtBase = 'https://web.poecdn.com/image/divination-card/'

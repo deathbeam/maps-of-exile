@@ -494,7 +494,7 @@ def get_map_ratings(key, config):
 
 def get_map_wiki(config):
     def get_map_wiki_inner(offset):
-        return requests.get(
+        out = requests.get(
             config["wiki"]["api"],
             params={
                 "action": "cargoquery",
@@ -504,10 +504,20 @@ def get_map_wiki(config):
                 "limit": 500,
                 "offset": offset,
                 "tables": "areas",
-                "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
-                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND (areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND (areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
+                "fields":
+                    "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, "
+                    "areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
+                "where":
+                    "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND "
+                    "areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND "
+                    "areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND "
+                    "(areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND "
+                    "(areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
             },
-        ).json()["cargoquery"]
+        ).json()
+        if "cargoquery" not in out:
+            raise Exception("Failed to get map wiki data: " + json.dumps(out, indent=2))
+        return out["cargoquery"]
 
     print(f"Getting map metadata from wiki")
     wiki_maps = []

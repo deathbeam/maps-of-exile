@@ -493,7 +493,7 @@ def get_map_ratings(key, config):
 
 
 def get_map_wiki(config):
-    def get_map_wiki_inner(offset):
+    def get_area_wiki_inner(offset):
         out = requests.get(
             config["wiki"]["api"],
             params={
@@ -519,6 +519,37 @@ def get_map_wiki(config):
             raise Exception("Failed to get map wiki data: " + json.dumps(out, indent=2))
         return out["cargoquery"]
 
+    def get_map_wiki_inner(offset):
+        out = requests.get(
+            config["wiki"]["api"],
+            params={
+                "action": "cargoquery",
+                "format": "json",
+                "smaxage": 0,
+                "maxage": 0,
+                "limit": 500,
+                "offset": offset,
+                "tables": "maps",
+                "fields": "maps.area_id, maps.area_level",
+                "where": "maps.series='" + config["league"] + "'"
+            },
+        ).json()
+        if "cargoquery" not in out:
+            raise Exception("Failed to get map wiki data: " + json.dumps(out, indent=2))
+        return out["cargoquery"]
+
+    print(f"Getting area metadata from wiki")
+    wiki_areas = []
+    cur_offset = 0
+    while True:
+        res = get_area_wiki_inner(cur_offset)
+        if len(res) == 0:
+            break
+        cur_offset += len(res)
+        wiki_areas += res
+    wiki_areas = list(map(lambda x: x["title"], wiki_areas))
+    print(f"Found {len(wiki_areas)} areas")
+
     print(f"Getting map metadata from wiki")
     wiki_maps = []
     cur_offset = 0
@@ -528,8 +559,20 @@ def get_map_wiki(config):
             break
         cur_offset += len(res)
         wiki_maps += res
-    print(f"Found {len(wiki_maps)} areas")
-    return list(map(lambda x: x["title"], wiki_maps))
+    wiki_maps = list(map(lambda x: x["title"], wiki_maps))
+    print(f"Found {len(wiki_maps)} maps")
+
+    for m in wiki_maps:
+        area_id = m.get("area id")
+        area_level = m.get("area level")
+        if not area_id or not area_level:
+            continue
+        area = next(filter(lambda x: x["id"] == area_id, wiki_areas), None)
+        if area:
+            print(f"Updating area {area['id']} with map data")
+            area["area level"] = int(area_level)
+
+    return wiki_areas
 
 
 def get_maps(key, config):

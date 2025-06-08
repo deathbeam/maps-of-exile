@@ -191,8 +191,8 @@ function buildSearch(s) {
 
 function buildRegex(maps) {
   const re = `"${[...new Set(maps.map(m => m.shorthand))].join('|')}"`
-  if (re.length > 50) {
-    let splitMaps = re.substring(0, 49).split('|')
+  if (re.length > 250) {
+    let splitMaps = re.substring(0, 249).split('|')
     return `${splitMaps.splice(0, splitMaps.length - 1).join('|')}"`
   }
   return re

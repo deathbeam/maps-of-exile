@@ -322,8 +322,8 @@ def get_card_data(key, config, card_extra):
             "price": reward_price,
             "standardPrice": standard_reward_price,
             "eventPrice": event_reward_price,
-            "ninja": config["ninja"]["cardbase"]
-            + (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
+            "ninja": config["ninja"]["cardbase"].replace("{league}", league.lower()) +
+                (standard_price_card.get("detailsId", price_card.get("detailsId")) or ""),
             "drop": wiki_card["drop"],
         }
 

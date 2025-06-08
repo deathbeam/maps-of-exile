@@ -46,7 +46,7 @@ data:
     filepath: https://www.poewiki.net/wiki/Special:Redirect/file/
     api: https://www.poewiki.net/w/api.php
   ninja:
-    cardbase: https://poe.ninja/challenge/divination-cards/
+    cardbase: https://poe.ninja/economy/{league}/divination-cards/
     cardprices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
     currencyprices: https://poe.ninja/api/data/currencyoverview?type=Currency&league=
 

@@ -13,10 +13,10 @@
         "eventPrice": 3.0,
         "name": "A Chilling Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-chilling-wind",
-        "price": 4.9,
+        "price": 4.1,
         "reward": "Level 21 Vaal Cold Snap, Quality: +20%, Corrupted",
         "stack": 4,
-        "standardPrice": 5.0,
+        "standardPrice": 18.5,
         "weight": 242
     },
     {
@@ -32,10 +32,10 @@
         "eventPrice": 4.4,
         "name": "A Dab of Ink",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-dab-of-ink",
-        "price": 1.6,
+        "price": 1.0,
         "reward": "The Poet's Pen",
         "stack": 9,
-        "standardPrice": 2.0,
+        "standardPrice": 2.2,
         "weight": 330
     },
     {
@@ -55,10 +55,10 @@
         "eventPrice": 10.0,
         "name": "A Dusty Memory",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-dusty-memory",
-        "price": 6.6,
+        "price": 4.6,
         "reward": "Item, Item Level: 100, Fractured",
         "stack": 5,
-        "standardPrice": 15.0,
+        "standardPrice": 12.9,
         "weight": 394
     },
     {
@@ -74,10 +74,10 @@
         "eventPrice": 95.0,
         "name": "A Familiar Call",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-familiar-call",
-        "price": 14.0,
+        "price": 23.6,
         "reward": "Jewellery of Farrul, Item Level: 100, Shaper + Hunter Item",
         "stack": 3,
-        "standardPrice": 147.14,
+        "standardPrice": 137.67,
         "weight": 5
     },
     {
@@ -97,7 +97,7 @@
         "eventPrice": 15.5,
         "name": "A Fate Worse Than Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-fate-worse-than-death",
-        "price": 9.0,
+        "price": 8.6,
         "reward": "Cortex, Corrupted",
         "stack": 4,
         "standardPrice": 34.0,
@@ -136,10 +136,10 @@
         "eventPrice": 3.4,
         "name": "A Mother's Parting Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-mothers-parting-gift",
-        "price": 4.4,
+        "price": 4.2,
         "reward": "Fertile Mind, Corrupted",
         "stack": 6,
-        "standardPrice": 0.47,
+        "standardPrice": 0.6,
         "weight": 1092
     },
     {
@@ -157,10 +157,10 @@
         "eventPrice": 50.0,
         "name": "A Note in the Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/a-note-in-the-wind",
-        "price": 3.1,
+        "price": 1.9,
         "reward": "Asenath's Mark",
         "stack": 4,
-        "standardPrice": 4.7,
+        "standardPrice": 4.8,
         "weight": 300
     },
     {
@@ -202,7 +202,26 @@
         "price": 4.8,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 8.8,
+        "standardPrice": 8.5,
+        "weight": 95
+    },
+    {
+        "art": "AStonePerfected",
+        "drop": {
+            "areas": [
+                "MapWorldsFloodedMine"
+            ],
+            "min_level": 80,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 7.5,
+        "name": "A Stone Perfected",
+        "ninja": "https://poe.ninja/challenge/divination-cards/a-stone-perfected",
+        "price": 4.8,
+        "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
+        "stack": 5,
+        "standardPrice": 8.5,
         "weight": 95
     },
     {
@@ -219,10 +238,10 @@
         "eventPrice": 6.0,
         "name": "Abandoned Wealth",
         "ninja": "https://poe.ninja/challenge/divination-cards/abandoned-wealth",
-        "price": 10.092,
+        "price": 10.014000000000001,
         "reward": "3x Exalted Orb",
         "stack": 5,
-        "standardPrice": 21.479999999999997,
+        "standardPrice": 21.276,
         "weight": 497
     },
     {
@@ -310,7 +329,7 @@
         "price": 9.0,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 3.8,
+        "standardPrice": 4.4,
         "weight": 128
     },
     {
@@ -330,7 +349,7 @@
         "price": 1.0,
         "reward": "Queen of the Forest",
         "stack": 6,
-        "standardPrice": 2.84,
+        "standardPrice": 2.78,
         "weight": 2106
     },
     {
@@ -347,10 +366,10 @@
         "eventPrice": 14.285714285714286,
         "name": "Alluring Bounty",
         "ninja": "https://poe.ninja/challenge/divination-cards/alluring-bounty",
-        "price": 24.02857142857143,
+        "price": 23.842857142857145,
         "reward": "10x Exalted Orb",
         "stack": 7,
-        "standardPrice": 51.14285714285714,
+        "standardPrice": 50.65714285714286,
         "weight": 163
     },
     {
@@ -366,10 +385,10 @@
         "eventPrice": 1.7,
         "name": "Alone in the Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/alone-in-the-darkness",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Delve Item",
         "stack": 5,
-        "standardPrice": 2.08,
+        "standardPrice": 2.0,
         "weight": 6245
     },
     {
@@ -403,7 +422,7 @@
         },
         "name": "Ambitious Obsession",
         "ninja": "https://poe.ninja/challenge/divination-cards/ambitious-obsession",
-        "price": 124.5,
+        "price": 110.0,
         "reward": "Skittering Delirium Orb",
         "stack": 4,
         "standardPrice": 6.7,
@@ -456,7 +475,7 @@
         "eventPrice": 25.0,
         "name": "Anarchy's Price",
         "ninja": "https://poe.ninja/challenge/divination-cards/anarchys-price",
-        "price": 16.7,
+        "price": 15.6,
         "reward": "Voltaxic Rift, Corrupted",
         "stack": 13,
         "standardPrice": 0.43,
@@ -475,10 +494,10 @@
         "eventPrice": 3.2,
         "name": "Arrogance of the Vaal",
         "ninja": "https://poe.ninja/challenge/divination-cards/arrogance-of-the-vaal",
-        "price": 3.8,
+        "price": 3.1,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
-        "standardPrice": 9.2,
+        "standardPrice": 8.3,
         "weight": 684
     },
     {
@@ -514,10 +533,10 @@
         "eventPrice": 142.86,
         "name": "Assassin's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/assassins-gift",
-        "price": 41.0,
+        "price": 20.0,
         "reward": "Divinarius, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 2354.24
+        "standardPrice": 2202.72
     },
     {
         "art": "AstralProtection",
@@ -533,7 +552,7 @@
         "eventPrice": 5.0,
         "name": "Astral Protection",
         "ninja": "https://poe.ninja/challenge/divination-cards/astral-protection",
-        "price": 2.1,
+        "price": 2.8,
         "reward": "Shield, Shaper Item",
         "stack": 5,
         "standardPrice": 6.0,
@@ -552,10 +571,10 @@
         "eventPrice": 6.0,
         "name": "Atziri's Arsenal",
         "ninja": "https://poe.ninja/challenge/divination-cards/atziris-arsenal",
-        "price": 2.0,
+        "price": 2.3,
         "reward": "Weapon, Corrupted",
         "stack": 4,
-        "standardPrice": 1.2,
+        "standardPrice": 1.15,
         "weight": 891
     },
     {
@@ -574,7 +593,7 @@
         "price": 13.0,
         "reward": "Doryani's Fist, Corrupted",
         "stack": 5,
-        "standardPrice": 3.64,
+        "standardPrice": 2.28,
         "weight": 57
     },
     {
@@ -593,10 +612,10 @@
         "eventPrice": 714.3,
         "name": "Auspicious Ambitions",
         "ninja": "https://poe.ninja/challenge/divination-cards/auspicious-ambitions",
-        "price": 1817.3,
+        "price": 1802.4,
         "reward": "Experimented Item, Item Level: 100, Double-Influenced Item",
         "stack": 4,
-        "standardPrice": 147.14,
+        "standardPrice": 137.67,
         "weight": 151
     },
     {
@@ -615,7 +634,7 @@
         "price": 1.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
-        "standardPrice": 2.56,
+        "standardPrice": 2.78,
         "weight": 3765
     },
     {
@@ -631,7 +650,7 @@
         "eventPrice": 14.42,
         "name": "Azyran's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/azyrans-reward",
-        "price": 8.0,
+        "price": 7.5,
         "reward": "Prismatic Jewel, Corrupted",
         "stack": 9,
         "standardPrice": 9.4,
@@ -651,10 +670,10 @@
         "eventPrice": 19.4,
         "name": "Baited Expectations",
         "ninja": "https://poe.ninja/challenge/divination-cards/baited-expectations",
-        "price": 9.6,
+        "price": 7.0,
         "reward": "Fishing Item",
         "stack": 8,
-        "standardPrice": 9.8,
+        "standardPrice": 10.4,
         "weight": 394
     },
     {
@@ -672,7 +691,7 @@
         "eventPrice": 100.0,
         "name": "Beauty Through Death",
         "ninja": "https://poe.ninja/challenge/divination-cards/beauty-through-death",
-        "price": 141.04,
+        "price": 140.14,
         "reward": "Atziri's Reflection",
         "stack": 5,
         "standardPrice": 68.0,
@@ -756,7 +775,7 @@
         "price": 4.2,
         "reward": "Bestiary Item",
         "stack": 6,
-        "standardPrice": 3.7,
+        "standardPrice": 4.47,
         "weight": 645
     },
     {
@@ -811,10 +830,10 @@
         "eventPrice": 88.0,
         "name": "Broken Promises",
         "ninja": "https://poe.ninja/challenge/divination-cards/broken-promises",
-        "price": 145.38,
+        "price": 139.93,
         "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 123.57,
+        "standardPrice": 115.07,
         "weight": 49
     },
     {
@@ -833,7 +852,7 @@
         "price": 1.2,
         "reward": "Cold Iron Point",
         "stack": 5,
-        "standardPrice": 4.75,
+        "standardPrice": 4.7,
         "weight": 1611
     },
     {
@@ -849,10 +868,10 @@
         "eventPrice": 2914.34,
         "name": "Brother's Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-gift",
-        "price": 926.82,
+        "price": 919.22,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 882.84,
+        "standardPrice": 826.02,
         "weight": 26
     },
     {
@@ -868,10 +887,10 @@
         "eventPrice": 842.87,
         "name": "Brother's Stash",
         "ninja": "https://poe.ninja/challenge/divination-cards/brothers-stash",
-        "price": 84.1,
+        "price": 83.45,
         "reward": "5x Exalted Orb",
         "stack": 1,
-        "standardPrice": 179.0,
+        "standardPrice": 177.3,
         "weight": 57
     },
     {
@@ -891,7 +910,7 @@
         "price": 7.2,
         "reward": "One With Nothing, Corrupted",
         "stack": 5,
-        "standardPrice": 12.6,
+        "standardPrice": 12.9,
         "weight": 214
     },
     {
@@ -908,10 +927,10 @@
         "eventPrice": 20.0,
         "name": "Brush, Paint and Palette",
         "ninja": "https://poe.ninja/challenge/divination-cards/brush-paint-and-palette",
-        "price": 5.0,
+        "price": 4.7,
         "reward": "The Artist",
         "stack": 5,
-        "standardPrice": 5.5,
+        "standardPrice": 6.5,
         "weight": 479
     },
     {
@@ -930,7 +949,7 @@
         "price": 2.0,
         "reward": "Sulphite Scarab",
         "stack": 3,
-        "standardPrice": 10.45,
+        "standardPrice": 10.86,
         "weight": 827
     },
     {
@@ -971,7 +990,7 @@
         "price": 2.7,
         "reward": "Tier 1 Talisman, Corrupted",
         "stack": 5,
-        "standardPrice": 3.22,
+        "standardPrice": 3.46,
         "weight": 1744
     },
     {
@@ -987,7 +1006,7 @@
         "eventPrice": 1.0,
         "name": "Cameria's Cut",
         "ninja": "https://poe.ninja/challenge/divination-cards/camerias-cut",
-        "price": 1.6,
+        "price": 1.0,
         "reward": "Scarab",
         "stack": 2,
         "standardPrice": 5.5,
@@ -1004,7 +1023,7 @@
         "eventPrice": 26.0,
         "name": "Cartographer's Delight",
         "ninja": "https://poe.ninja/challenge/divination-cards/cartographers-delight",
-        "price": 5.5,
+        "price": 5.0,
         "reward": "Map, Map Tier: 5",
         "stack": 3,
         "standardPrice": 1.0,
@@ -1063,7 +1082,27 @@
         "eventPrice": 11.4,
         "name": "Checkmate",
         "ninja": "https://poe.ninja/challenge/divination-cards/checkmate",
-        "price": 4.9,
+        "price": 5.0,
+        "reward": "76x Simulacrum Splinter",
+        "stack": 8,
+        "standardPrice": 21.65,
+        "weight": 362
+    },
+    {
+        "art": "Checkmate",
+        "drop": {
+            "areas": [
+                "MapWorldsMuseum",
+                "MapWorldsScriptorium"
+            ],
+            "min_level": 68,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 11.4,
+        "name": "Checkmate",
+        "ninja": "https://poe.ninja/challenge/divination-cards/checkmate",
+        "price": 5.0,
         "reward": "76x Simulacrum Splinter",
         "stack": 8,
         "standardPrice": 21.65,
@@ -1082,10 +1121,10 @@
         "eventPrice": 2528.62,
         "name": "Choking Guilt",
         "ninja": "https://poe.ninja/challenge/divination-cards/choking-guilt",
-        "price": 1999.03,
+        "price": 1982.64,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 1765.68,
+        "standardPrice": 1528.14,
         "weight": 5
     },
     {
@@ -1124,7 +1163,7 @@
         "price": 6.6,
         "reward": "Farrul Item",
         "stack": 4,
-        "standardPrice": 8.0,
+        "standardPrice": 7.7,
         "weight": 270
     },
     {
@@ -1146,7 +1185,7 @@
         "eventPrice": 16.4,
         "name": "Coveted Possession",
         "ninja": "https://poe.ninja/challenge/divination-cards/coveted-possession",
-        "price": 0.30000000000000004,
+        "price": 0.29444444444444445,
         "reward": "5x Regal Orb",
         "stack": 9,
         "standardPrice": 0.2388888888888889,
@@ -1169,7 +1208,7 @@
         "price": 1.0,
         "reward": "Maw of Mischief",
         "stack": 13,
-        "standardPrice": 1.64,
+        "standardPrice": 1.15,
         "weight": 3090
     },
     {
@@ -1185,7 +1224,7 @@
         "eventPrice": 16.4,
         "name": "Dark Dreams",
         "ninja": "https://poe.ninja/challenge/divination-cards/dark-dreams",
-        "price": 13.6,
+        "price": 28.3,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
         "standardPrice": 10.0,
@@ -1202,7 +1241,7 @@
         "eventPrice": 4.6,
         "name": "Dark Temptation",
         "ninja": "https://poe.ninja/challenge/divination-cards/dark-temptation",
-        "price": 1.0,
+        "price": 0.95,
         "reward": "Obliteration",
         "stack": 5,
         "standardPrice": 1.0,
@@ -1222,7 +1261,7 @@
         "price": 100.0,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
-        "standardPrice": 75.0,
+        "standardPrice": 74.21666666666667,
         "weight": 49
     },
     {
@@ -1239,7 +1278,7 @@
         "eventPrice": 64.0,
         "name": "Deadly Joy",
         "ninja": "https://poe.ninja/challenge/divination-cards/deadly-joy",
-        "price": 20.0,
+        "price": 20.3,
         "reward": "Torrent's Reclamation, Two-Implicit, Corrupted",
         "stack": 6,
         "standardPrice": 9.4,
@@ -1262,7 +1301,7 @@
         "price": 1.8,
         "reward": "Mon'tregul's Grasp",
         "stack": 4,
-        "standardPrice": 1.58,
+        "standardPrice": 1.51,
         "weight": 1092
     },
     {
@@ -1281,7 +1320,7 @@
         "price": 10.0,
         "reward": "Level 21 Trap Gem, Quality: +23%, Corrupted",
         "stack": 7,
-        "standardPrice": 12.0,
+        "standardPrice": 10.97,
         "weight": 214
     },
     {
@@ -1300,10 +1339,10 @@
         "eventPrice": 9.1,
         "name": "Dementophobia",
         "ninja": "https://poe.ninja/challenge/divination-cards/dementophobia",
-        "price": 2.0,
+        "price": 2.4,
         "reward": "10x Delirium Orb",
         "stack": 11,
-        "standardPrice": 9.8,
+        "standardPrice": 9.7,
         "weight": 57
     },
     {
@@ -1323,10 +1362,33 @@
         "eventPrice": 138.29,
         "name": "Demigod's Wager",
         "ninja": "https://poe.ninja/challenge/divination-cards/demigods-wager",
-        "price": 0.6442857142857142,
+        "price": 0.6042857142857143,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 1.857142857142857,
+        "standardPrice": 1.7357142857142858,
+        "weight": 588
+    },
+    {
+        "art": "DemigodsWagergives",
+        "drop": {
+            "areas": [
+                "MapWorldsDefiledCathedral",
+                "MapWorldsCrimsonTownship",
+                "MapWorldsSanctuary"
+            ],
+            "min_level": 35,
+            "monsters": [
+                "Metadata/Monsters/AvariusCasticus/AvariusCasticusDivine"
+            ],
+            "text": ""
+        },
+        "eventPrice": 138.29,
+        "name": "Demigod's Wager",
+        "ninja": "https://poe.ninja/challenge/divination-cards/demigods-wager",
+        "price": 0.6042857142857143,
+        "reward": "Orb of Annulment",
+        "stack": 7,
+        "standardPrice": 1.7357142857142858,
         "weight": 588
     },
     {
@@ -1342,10 +1404,10 @@
         "eventPrice": 285.72,
         "name": "Desecrated Virtue",
         "ninja": "https://poe.ninja/challenge/divination-cards/desecrated-virtue",
-        "price": 363.46,
+        "price": 360.48,
         "reward": "Level 6 Awakened Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 588.56,
+        "standardPrice": 550.68,
         "weight": 41
     },
     {
@@ -1362,7 +1424,7 @@
         "eventPrice": 3.6,
         "name": "Desperate Crusade",
         "ninja": "https://poe.ninja/challenge/divination-cards/desperate-crusade",
-        "price": 6.2,
+        "price": 4.7,
         "reward": "Prism Guardian",
         "stack": 3,
         "standardPrice": 15.2,
@@ -1401,7 +1463,7 @@
         "eventPrice": 4.6,
         "name": "Dialla's Subjugation",
         "ninja": "https://poe.ninja/challenge/divination-cards/diallas-subjugation",
-        "price": 4.14,
+        "price": 4.29,
         "reward": "Support Gem, Quality: +23%, Corrupted",
         "stack": 7,
         "standardPrice": 5.0,
@@ -1439,10 +1501,10 @@
         "eventPrice": 83.33500000000001,
         "name": "Divine Beauty",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-beauty",
-        "price": 106.00916666666667,
+        "price": 105.14000000000001,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 85.83166666666666,
+        "standardPrice": 80.3075,
         "weight": 330
     },
     {
@@ -1456,7 +1518,7 @@
         "eventPrice": 928.59,
         "name": "Divine Justice",
         "ninja": "https://poe.ninja/challenge/divination-cards/divine-justice",
-        "price": 1733.7,
+        "price": 1703.27,
         "reward": "Grand Spectrum, Corrupted",
         "stack": 1,
         "standardPrice": 3.4,
@@ -1498,10 +1560,10 @@
         "eventPrice": 16.0,
         "name": "Doryani's Epiphany",
         "ninja": "https://poe.ninja/challenge/divination-cards/doryanis-epiphany",
-        "price": 48.5,
+        "price": 38.0,
         "reward": "Level 21 Transfigured Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 147.14,
+        "standardPrice": 137.67,
         "weight": 201
     },
     {
@@ -1521,7 +1583,7 @@
         "price": 21.0,
         "reward": "Six-Link Astral Plate, Item Level: 100, Influenced Item",
         "stack": 5,
-        "standardPrice": 4.6,
+        "standardPrice": 7.0,
         "weight": 49
     },
     {
@@ -1564,7 +1626,7 @@
         "price": 52.0,
         "reward": "Body Armour, Item Level: 100, Double-Influenced Item",
         "stack": 2,
-        "standardPrice": 56.5,
+        "standardPrice": 70.07,
         "weight": 1
     },
     {
@@ -1580,10 +1642,10 @@
         "eventPrice": 4.0,
         "name": "Dying Anguish",
         "ninja": "https://poe.ninja/challenge/divination-cards/dying-anguish",
-        "price": 2.6,
+        "price": 2.5,
         "reward": "Level 19 Transfigured Gem, Quality: +19%",
         "stack": 8,
-        "standardPrice": 5.0,
+        "standardPrice": 5.5,
         "weight": 1306
     },
     {
@@ -1626,7 +1688,7 @@
         "price": 1.0,
         "reward": "Granite Flask",
         "stack": 5,
-        "standardPrice": 1.82,
+        "standardPrice": 1.24,
         "weight": 2021
     },
     {
@@ -1678,7 +1740,7 @@
         "eventPrice": 5.0,
         "name": "Eldritch Perfection",
         "ninja": "https://poe.ninja/challenge/divination-cards/eldritch-perfection",
-        "price": 4.0,
+        "price": 3.0,
         "reward": "Item, Item Level: 100, Perfect Eldritch Implicit Modifier",
         "stack": 4,
         "standardPrice": 10.4
@@ -1736,7 +1798,7 @@
         "eventPrice": 3.4,
         "name": "Endless Night",
         "ninja": "https://poe.ninja/challenge/divination-cards/endless-night",
-        "price": 4.5,
+        "price": 4.6,
         "reward": "Maloney's Mechanism",
         "stack": 7,
         "standardPrice": 4.5,
@@ -1755,7 +1817,7 @@
         "eventPrice": 32.5,
         "name": "Etched in Blood",
         "ninja": "https://poe.ninja/challenge/divination-cards/etched-in-blood",
-        "price": 22.0,
+        "price": 30.0,
         "reward": "Rigwald's Quills, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 94.0,
@@ -1772,10 +1834,10 @@
         "eventPrice": 24.0,
         "name": "Eternal Bonds",
         "ninja": "https://poe.ninja/challenge/divination-cards/eternal-bonds",
-        "price": 10.1,
+        "price": 10.0,
         "reward": "Replica Cortex",
         "stack": 4,
-        "standardPrice": 51.5,
+        "standardPrice": 36.0,
         "weight": 66
     },
     {
@@ -1789,7 +1851,7 @@
         "eventPrice": 2.0,
         "name": "Ever-Changing",
         "ninja": "https://poe.ninja/challenge/divination-cards/ever-changing",
-        "price": 0.8333333333333334,
+        "price": 0.8666666666666667,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
         "standardPrice": 1.866666666666667,
@@ -1808,10 +1870,10 @@
         "eventPrice": 314.29,
         "name": "Fateful Meeting",
         "ninja": "https://poe.ninja/challenge/divination-cards/fateful-meeting",
-        "price": 126.35,
+        "price": 126.05,
         "reward": "League-Specific Item, Double-Influenced Item, Item Level: 97, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 50.07,
+        "standardPrice": 49.8,
         "weight": 5
     },
     {
@@ -1832,7 +1894,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/fathers-love",
         "reward": "Sublime Vision",
         "stack": 2,
-        "standardPrice": 15449.7
+        "standardPrice": 14455.35
     },
     {
         "art": "FireOfUnknownOrigin",
@@ -1847,10 +1909,10 @@
         "eventPrice": 1957.18,
         "name": "Fire Of Unknown Origin",
         "ninja": "https://poe.ninja/challenge/divination-cards/fire-of-unknown-origin",
-        "price": 4506.9,
+        "price": 4325.76,
         "reward": "Nimis",
         "stack": 7,
-        "standardPrice": 2059.96
+        "standardPrice": 1826.88
     },
     {
         "art": "ForbiddenPower",
@@ -1869,7 +1931,7 @@
         "price": 2.0,
         "reward": "Balefire, Corrupted",
         "stack": 4,
-        "standardPrice": 3.56,
+        "standardPrice": 3.52,
         "weight": 2769
     },
     {
@@ -1888,7 +1950,7 @@
         "price": 25.0,
         "reward": "Aul's Uprising",
         "stack": 3,
-        "standardPrice": 20.0
+        "standardPrice": 27.0
     },
     {
         "art": "FromBonesToAshes",
@@ -1904,7 +1966,27 @@
         "eventPrice": 31.0,
         "name": "From Bone to Ashes",
         "ninja": "https://poe.ninja/challenge/divination-cards/from-bone-to-ashes",
-        "price": 14.2,
+        "price": 14.8,
+        "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
+        "stack": 8,
+        "standardPrice": 2.25,
+        "weight": 270
+    },
+    {
+        "art": "FromBonesToAshes",
+        "drop": {
+            "areas": [
+                "MapWorldsEstuary",
+                "MapWorldsCaldera"
+            ],
+            "min_level": 55,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 31.0,
+        "name": "From Bone to Ashes",
+        "ninja": "https://poe.ninja/challenge/divination-cards/from-bone-to-ashes",
+        "price": 14.8,
         "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
         "stack": 8,
         "standardPrice": 2.25,
@@ -1940,7 +2022,7 @@
         "eventPrice": 30.0,
         "name": "Gemcutter's Mercy",
         "ninja": "https://poe.ninja/challenge/divination-cards/gemcutters-mercy",
-        "price": 35.0,
+        "price": 31.2,
         "reward": "Exceptional Gem",
         "stack": 3,
         "standardPrice": 20.5,
@@ -1964,7 +2046,7 @@
         "price": 1.0,
         "reward": "Gem, Quality: +20%",
         "stack": 3,
-        "standardPrice": 2.97,
+        "standardPrice": 2.72,
         "weight": 8102
     },
     {
@@ -1981,10 +2063,10 @@
         "eventPrice": 7.0,
         "name": "Gift of Asenath",
         "ninja": "https://poe.ninja/challenge/divination-cards/gift-of-asenath",
-        "price": 13.0,
+        "price": 10.9,
         "reward": "Asenath's Gentle Touch, Two-Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 34.5,
+        "standardPrice": 34.6,
         "weight": 256
     },
     {
@@ -2003,7 +2085,7 @@
         "price": 2.0,
         "reward": "Level 20 Support Gem",
         "stack": 9,
-        "standardPrice": 2.88,
+        "standardPrice": 2.8,
         "weight": 1637
     },
     {
@@ -2045,7 +2127,7 @@
         "price": 1.0,
         "reward": "Summon Raging Spirit, Quality: +20%",
         "stack": 6,
-        "standardPrice": 2.39,
+        "standardPrice": 2.5,
         "weight": 3288
     },
     {
@@ -2059,7 +2141,7 @@
         "eventPrice": 4.1,
         "name": "Guardian's Challenge",
         "ninja": "https://poe.ninja/challenge/divination-cards/guardians-challenge",
-        "price": 3.2,
+        "price": 3.4,
         "reward": "Shaper Guardian Map",
         "stack": 4,
         "standardPrice": 4.6,
@@ -2082,7 +2164,7 @@
         "price": 3.5,
         "reward": "9x Shrieking Essence",
         "stack": 9,
-        "standardPrice": 8.5,
+        "standardPrice": 5.8,
         "weight": 151
     },
     {
@@ -2140,10 +2222,10 @@
         "eventPrice": 3.2,
         "name": "Heterochromia",
         "ninja": "https://poe.ninja/challenge/divination-cards/heterochromia",
-        "price": 1.8,
+        "price": 3.4,
         "reward": "Two-Stone Ring",
         "stack": 2,
-        "standardPrice": 5.7,
+        "standardPrice": 5.8,
         "weight": 1909
     },
     {
@@ -2164,7 +2246,7 @@
         "price": 20.0,
         "reward": "Exceptional Gem, Quality: +1-20%",
         "stack": 3,
-        "standardPrice": 20.0,
+        "standardPrice": 20.2,
         "weight": 85
     },
     {
@@ -2180,10 +2262,10 @@
         "eventPrice": 3.0,
         "name": "Hope",
         "ninja": "https://poe.ninja/challenge/divination-cards/hope",
-        "price": 1.0,
+        "price": 1.1,
         "reward": "Prismatic Ring, Corrupted",
         "stack": 5,
-        "standardPrice": 2.6,
+        "standardPrice": 2.8,
         "weight": 1690
     },
     {
@@ -2199,10 +2281,10 @@
         "eventPrice": 27857.7,
         "name": "House of Mirrors",
         "ninja": "https://poe.ninja/challenge/divination-cards/house-of-mirrors",
-        "price": 31257.56,
+        "price": 30640.8,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 46395.35,
+        "standardPrice": 38938.05,
         "weight": 12
     },
     {
@@ -2238,7 +2320,7 @@
         "price": 1.0,
         "reward": "Tabula Rasa",
         "stack": 9,
-        "standardPrice": 1.6,
+        "standardPrice": 1.9,
         "weight": 6411
     },
     {
@@ -2276,10 +2358,10 @@
         "eventPrice": 7.4,
         "name": "Hunter's Reward",
         "ninja": "https://poe.ninja/challenge/divination-cards/hunters-reward",
-        "price": 7.1,
+        "price": 7.3,
         "reward": "The Taming",
         "stack": 3,
-        "standardPrice": 10.0,
+        "standardPrice": 9.7,
         "weight": 188
     },
     {
@@ -2296,10 +2378,10 @@
         "eventPrice": 314.29,
         "name": "I See Brothers",
         "ninja": "https://poe.ninja/challenge/divination-cards/i-see-brothers",
-        "price": 908.65,
+        "price": 847.13,
         "reward": "2x Fracturing Orb",
         "stack": 2,
-        "standardPrice": 1765.68
+        "standardPrice": 1652.04
     },
     {
         "art": "ImmortalResolve",
@@ -2316,10 +2398,10 @@
         "eventPrice": 1.9,
         "name": "Immortal Resolve",
         "ninja": "https://poe.ninja/challenge/divination-cards/immortal-resolve",
-        "price": 2.4,
+        "price": 2.6,
         "reward": "Six-Linked Body Armour, Influenced Item",
         "stack": 6,
-        "standardPrice": 8.7,
+        "standardPrice": 8.8,
         "weight": 551
     },
     {
@@ -2335,10 +2417,10 @@
         "eventPrice": 100.0,
         "name": "Imperfect Memories",
         "ninja": "https://poe.ninja/challenge/divination-cards/imperfect-memories",
-        "price": 181.66,
+        "price": 180.24,
         "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
-        "standardPrice": 137.43,
+        "standardPrice": 137.67,
         "weight": 41
     },
     {
@@ -2355,7 +2437,7 @@
         "eventPrice": 1.0,
         "name": "Imperial Legacy",
         "ninja": "https://poe.ninja/challenge/divination-cards/imperial-legacy",
-        "price": 0.97,
+        "price": 0.95,
         "reward": "Six-Link Imperial Bow, Item Level: 100",
         "stack": 22,
         "standardPrice": 0.91,
@@ -2406,7 +2488,7 @@
         "price": 20.0,
         "reward": "Forbidden Shako",
         "stack": 9,
-        "standardPrice": 14.9,
+        "standardPrice": 15.7,
         "weight": 66
     },
     {
@@ -2473,6 +2555,27 @@
         "weight": 626
     },
     {
+        "art": "LachrymalNecrosis",
+        "drop": {
+            "areas": [
+                "MapWorldsGeode",
+                "1_5_5",
+                "2_10_4"
+            ],
+            "min_level": 33,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 5.0,
+        "name": "Lachrymal Necrosis",
+        "ninja": "https://poe.ninja/challenge/divination-cards/lachrymal-necrosis",
+        "price": 10.0,
+        "reward": "Jewel, Implicit Modifier: , Corrupted Blood cannot be inflicted on you, Corrupted",
+        "stack": 3,
+        "standardPrice": 16.5,
+        "weight": 626
+    },
+    {
         "art": "LantadorsLostLove",
         "drop": {
             "areas": [
@@ -2514,7 +2617,7 @@
         "price": 2.0,
         "reward": "Mortal Hope",
         "stack": 3,
-        "standardPrice": 1.4,
+        "standardPrice": 1.3,
         "weight": 7132
     },
     {
@@ -2533,7 +2636,7 @@
         "price": 2.0,
         "reward": "Map, Map Tier: 16, Unidentified Corrupted",
         "stack": 4,
-        "standardPrice": 2.8,
+        "standardPrice": 2.9,
         "weight": 3592
     },
     {
@@ -2569,7 +2672,7 @@
         "price": 3.0,
         "reward": "Crystal Sceptre",
         "stack": 2,
-        "standardPrice": 1.4,
+        "standardPrice": 1.3,
         "weight": 626
     },
     {
@@ -2588,7 +2691,7 @@
         "price": 3.0,
         "reward": "Vaal Temple Map, Item Level: 83, Corrupted",
         "stack": 16,
-        "standardPrice": 1.9,
+        "standardPrice": 2.02,
         "weight": 2281
     },
     {
@@ -2604,10 +2707,10 @@
         "eventPrice": 53.0,
         "name": "Lonely Warrior",
         "ninja": "https://poe.ninja/challenge/divination-cards/lonely-warrior",
-        "price": 49.0,
+        "price": 47.0,
         "reward": "Defiance of Destiny",
         "stack": 10,
-        "standardPrice": 294.28
+        "standardPrice": 275.34
     },
     {
         "art": "LostWorlds",
@@ -2620,7 +2723,7 @@
         "eventPrice": 1.6,
         "name": "Lost Worlds",
         "ninja": "https://poe.ninja/challenge/divination-cards/lost-worlds",
-        "price": 1.0,
+        "price": 1.5,
         "reward": "Map, Map Tier: 15",
         "stack": 8,
         "standardPrice": 2.0,
@@ -2639,10 +2742,10 @@
         "eventPrice": 292.86,
         "name": "Love Through Ice",
         "ninja": "https://poe.ninja/challenge/divination-cards/love-through-ice",
-        "price": 363.46,
+        "price": 360.48,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 294.28,
+        "standardPrice": 257.6,
         "weight": 5
     },
     {
@@ -2660,7 +2763,7 @@
         "eventPrice": 0.048,
         "name": "Loyalty",
         "ninja": "https://poe.ninja/challenge/divination-cards/loyalty",
-        "price": 0.06,
+        "price": 0.054,
         "reward": "3x Orb of Fusing",
         "stack": 5,
         "standardPrice": 0.11399999999999999,
@@ -2681,7 +2784,7 @@
         "eventPrice": 0.2285714285714286,
         "name": "Lucky Connections",
         "ninja": "https://poe.ninja/challenge/divination-cards/lucky-connections",
-        "price": 0.28571428571428575,
+        "price": 0.2571428571428571,
         "reward": "20x Orb of Fusing",
         "stack": 7,
         "standardPrice": 0.5428571428571429,
@@ -2700,7 +2803,7 @@
         "eventPrice": 1.1111111111111112,
         "name": "Lucky Deck",
         "ninja": "https://poe.ninja/challenge/divination-cards/lucky-deck",
-        "price": 2.2555555555555555,
+        "price": 2.2222222222222223,
         "reward": "10x Stacked Deck",
         "stack": 9,
         "standardPrice": 2.2222222222222223,
@@ -2719,10 +2822,10 @@
         "eventPrice": 857.16,
         "name": "Luminous Trove",
         "ninja": "https://poe.ninja/challenge/divination-cards/luminous-trove",
-        "price": 735.82,
+        "price": 720.96,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 735.7,
+        "standardPrice": 688.35,
         "weight": 57
     },
     {
@@ -2742,7 +2845,7 @@
         "price": 1.0,
         "reward": "Agate Amulet, Corrupted",
         "stack": 6,
-        "standardPrice": 2.36,
+        "standardPrice": 2.49,
         "weight": 2430
     },
     {
@@ -2762,7 +2865,7 @@
         "eventPrice": 62.0,
         "name": "Magnum Opus",
         "ninja": "https://poe.ninja/challenge/divination-cards/magnum-opus",
-        "price": 61.32,
+        "price": 60.02,
         "reward": "Item, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
         "standardPrice": 100.0,
@@ -2782,7 +2885,7 @@
         "eventPrice": 6.6,
         "name": "Man With Bear",
         "ninja": "https://poe.ninja/challenge/divination-cards/man-with-bear",
-        "price": 3.5,
+        "price": 3.8,
         "reward": "Bestiary Scarab",
         "stack": 3,
         "standardPrice": 3.8,
@@ -2801,10 +2904,10 @@
         "eventPrice": 285.72,
         "name": "Matryoshka",
         "ninja": "https://poe.ninja/challenge/divination-cards/matryoshka",
-        "price": 7450.93,
+        "price": 7389.84,
         "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
         "stack": 8,
-        "standardPrice": 9343.39,
+        "standardPrice": 6167.62,
         "weight": 5
     },
     {
@@ -2824,7 +2927,7 @@
         "price": 9.0,
         "reward": "Eyes of the Greatwolf",
         "stack": 16,
-        "standardPrice": 15.0,
+        "standardPrice": 15.4,
         "weight": 175
     },
     {
@@ -2869,7 +2972,7 @@
         "price": 1.09,
         "reward": "Trypanon",
         "stack": 9,
-        "standardPrice": 1.32,
+        "standardPrice": 1.24,
         "weight": 3456
     },
     {
@@ -2885,7 +2988,7 @@
         "eventPrice": 80.0,
         "name": "Misery in Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/misery-in-darkness",
-        "price": 16.6,
+        "price": 15.0,
         "reward": "Shroud of the Lightless",
         "stack": 6,
         "standardPrice": 35.0,
@@ -2944,7 +3047,7 @@
         "price": 1.0,
         "reward": "4x Scarab",
         "stack": 7,
-        "standardPrice": 3.6,
+        "standardPrice": 3.8,
         "weight": 957
     },
     {
@@ -2966,7 +3069,7 @@
         "price": 0.8,
         "reward": "30x Orb of Scouring",
         "stack": 9,
-        "standardPrice": 1.0333333333333334,
+        "standardPrice": 1.0666666666666667,
         "weight": 2430
     },
     {
@@ -2982,10 +3085,10 @@
         },
         "name": "Nook's Crown",
         "ninja": "https://poe.ninja/challenge/divination-cards/nooks-crown",
-        "price": 6.4,
+        "price": 6.6,
         "reward": "Bone Helmet, Item Level: 100, Elder Item",
         "stack": 4,
-        "standardPrice": 37.0,
+        "standardPrice": 41.0,
         "weight": 20
     },
     {
@@ -3002,10 +3105,10 @@
         "eventPrice": 7.5,
         "name": "Parasitic Passengers",
         "ninja": "https://poe.ninja/challenge/divination-cards/parasitic-passengers",
-        "price": 5.0,
+        "price": 2.6,
         "reward": "10x Incubator, Item Level: 84",
         "stack": 8,
-        "standardPrice": 4.9,
+        "standardPrice": 4.8,
         "weight": 848
     },
     {
@@ -3044,7 +3147,7 @@
         "eventPrice": 36.57,
         "name": "Perfection",
         "ninja": "https://poe.ninja/challenge/divination-cards/perfection",
-        "price": 4.25,
+        "price": 4.5,
         "reward": "Jewellery, Item Level: 100, Shaper Item",
         "stack": 5,
         "standardPrice": 10.0,
@@ -3067,7 +3170,7 @@
         "price": 9.2,
         "reward": "Arakaali's Fang, Corrupted",
         "stack": 8,
-        "standardPrice": 19.2,
+        "standardPrice": 21.5,
         "weight": 26
     },
     {
@@ -3120,10 +3223,10 @@
         "eventPrice": 84.57,
         "name": "Pride of the First Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/pride-of-the-first-ones",
-        "price": 15.5,
+        "price": 16.4,
         "reward": "Farrul's Fur",
         "stack": 7,
-        "standardPrice": 30.5,
+        "standardPrice": 40.6,
         "weight": 85
     },
     {
@@ -3142,7 +3245,7 @@
         "price": 20.0,
         "reward": "One-Hand Weapon, Item Level: 100, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 13.0,
+        "standardPrice": 6.4,
         "weight": 26
     },
     {
@@ -3205,7 +3308,7 @@
         "price": 1.0,
         "reward": "Chaos Orb",
         "stack": 8,
-        "standardPrice": 0.12,
+        "standardPrice": 0.25,
         "weight": 121400
     },
     {
@@ -3223,7 +3326,7 @@
         "eventPrice": 4.0,
         "name": "Rats",
         "ninja": "https://poe.ninja/challenge/divination-cards/rats",
-        "price": 0.92,
+        "price": 0.89,
         "reward": "Rat's Nest",
         "stack": 8,
         "standardPrice": 1.0,
@@ -3268,10 +3371,10 @@
         "eventPrice": 4.1,
         "name": "Rebirth",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-divcard",
-        "price": 25.0,
+        "price": 20.5,
         "reward": "Charan's Sword",
         "stack": 27,
-        "standardPrice": 9.5,
+        "standardPrice": 9.7,
         "weight": 66
     },
     {
@@ -3287,7 +3390,7 @@
         "eventPrice": 20.0,
         "name": "Rebirth and Renewal",
         "ninja": "https://poe.ninja/challenge/divination-cards/rebirth-and-renewal",
-        "price": 7.2,
+        "price": 7.3,
         "reward": "Horned Scarab",
         "stack": 4,
         "standardPrice": 40.0,
@@ -3306,10 +3409,10 @@
         "eventPrice": 14.0,
         "name": "Reckless Ambition",
         "ninja": "https://poe.ninja/challenge/divination-cards/reckless-ambition",
-        "price": 3.2,
+        "price": 3.0,
         "reward": "Omeyocan",
         "stack": 6,
-        "standardPrice": 6.2,
+        "standardPrice": 6.6,
         "weight": 394
     },
     {
@@ -3323,7 +3426,7 @@
         "eventPrice": 94.0,
         "name": "Remembrance",
         "ninja": "https://poe.ninja/challenge/divination-cards/remembrance",
-        "price": 75.6,
+        "price": 76.3,
         "reward": "Precursor's Emblem, Corrupted",
         "stack": 8,
         "standardPrice": 32.5,
@@ -3340,7 +3443,7 @@
         "eventPrice": 2.3,
         "name": "Sambodhi's Vow",
         "ninja": "https://poe.ninja/challenge/divination-cards/sambodhis-vow",
-        "price": 1.0,
+        "price": 1.2,
         "reward": "Mortal Fragment",
         "stack": 3,
         "standardPrice": 2.0,
@@ -3394,10 +3497,10 @@
         "eventPrice": 571.44,
         "name": "Seven Years Bad Luck",
         "ninja": "https://poe.ninja/challenge/divination-cards/seven-years-bad-luck",
-        "price": 545.19,
+        "price": 540.72,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 662.13,
+        "standardPrice": 660.82,
         "weight": 116
     },
     {
@@ -3416,10 +3519,10 @@
         "eventPrice": 2.8,
         "name": "Shard of Fate",
         "ninja": "https://poe.ninja/challenge/divination-cards/shard-of-fate",
-        "price": 1.4,
+        "price": 1.3,
         "reward": "Vivid Jewel",
         "stack": 4,
-        "standardPrice": 1.04,
+        "standardPrice": 1.06,
         "weight": 4155
     },
     {
@@ -3493,7 +3596,7 @@
         "ninja": "https://poe.ninja/challenge/divination-cards/squandered-prosperity",
         "reward": "The Light of Meaning, Corrupted",
         "stack": 5,
-        "standardPrice": 118.71
+        "standardPrice": 111.14
     },
     {
         "art": "StruckbyLightning",
@@ -3530,10 +3633,10 @@
         "eventPrice": 45.0,
         "name": "Succor of the Sinless",
         "ninja": "https://poe.ninja/challenge/divination-cards/succor-of-the-sinless",
-        "price": 171.2,
+        "price": 164.0,
         "reward": "Bottled Faith",
         "stack": 6,
-        "standardPrice": 49.4,
+        "standardPrice": 49.7,
         "weight": 20
     },
     {
@@ -3549,10 +3652,10 @@
         "eventPrice": 28.5,
         "name": "Temperance",
         "ninja": "https://poe.ninja/challenge/divination-cards/temperance",
-        "price": 33.0,
+        "price": 40.0,
         "reward": "Relic, Item Level: 83",
         "stack": 4,
-        "standardPrice": 147.71
+        "standardPrice": 140.14
     },
     {
         "art": "TerribleSecretOfSpace",
@@ -3567,10 +3670,10 @@
         "eventPrice": 33.0,
         "name": "Terrible Secret of Space",
         "ninja": "https://poe.ninja/challenge/divination-cards/terrible-secret-of-space",
-        "price": 15.0,
+        "price": 16.6,
         "reward": "Level 21 Transfigured Golem Gem, Quality: +23%, Corrupted",
         "stack": 8,
-        "standardPrice": 55.0,
+        "standardPrice": 100.0,
         "weight": 214
     },
     {
@@ -3586,10 +3689,10 @@
         "eventPrice": 7.2,
         "name": "The Academic",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-academic",
-        "price": 5.0,
+        "price": 5.4,
         "reward": "Inspired Learning",
         "stack": 8,
-        "standardPrice": 9.2,
+        "standardPrice": 6.0,
         "weight": 242
     },
     {
@@ -3626,7 +3729,7 @@
         "eventPrice": 4.6,
         "name": "The Adventuring Spirit",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-adventuring-spirit",
-        "price": 0.91,
+        "price": 1.0,
         "reward": "Victario's Influence",
         "stack": 6,
         "standardPrice": 1.0,
@@ -3652,7 +3755,7 @@
         "price": 1.0,
         "reward": "Shavronne Item",
         "stack": 8,
-        "standardPrice": 1.66,
+        "standardPrice": 1.48,
         "weight": 6411
     },
     {
@@ -3668,10 +3771,10 @@
         "eventPrice": 4571.52,
         "name": "The Apothecary",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-apothecary",
-        "price": 7269.2,
+        "price": 7245.65,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 5149.9,
+        "standardPrice": 5286.53,
         "weight": 5
     },
     {
@@ -3696,7 +3799,7 @@
         "eventPrice": 5.0,
         "name": "The Archmage's Right Hand",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-archmages-right-hand",
-        "price": 2.0,
+        "price": 4.4,
         "reward": "Glyphic Prophecy Wand, Item Level: 100",
         "stack": 7,
         "standardPrice": 1.0,
@@ -3719,7 +3822,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 12",
         "stack": 10,
-        "standardPrice": 0.93,
+        "standardPrice": 1.0,
         "weight": 12163
     },
     {
@@ -3797,7 +3900,7 @@
         "price": 35.0,
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 104.28,
+        "standardPrice": 98.6,
         "weight": 5
     },
     {
@@ -3814,7 +3917,7 @@
         "eventPrice": 14.5,
         "name": "The Avenger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-avenger",
-        "price": 1.5,
+        "price": 1.4,
         "reward": "Mj\u00f6lner, Corrupted",
         "stack": 12,
         "standardPrice": 5.2,
@@ -3834,7 +3937,7 @@
         "eventPrice": 335.72,
         "name": "The Awakened",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-awakened",
-        "price": 79.5,
+        "price": 70.0,
         "reward": "Jewellery, Item Level: 86, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 10.0,
@@ -3873,7 +3976,7 @@
         "eventPrice": 1.0,
         "name": "The Battle Born",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-battle-born",
-        "price": 0.82,
+        "price": 0.81,
         "reward": "Axe",
         "stack": 5,
         "standardPrice": 1.0,
@@ -3893,7 +3996,7 @@
         "eventPrice": 3.0,
         "name": "The Bear Woman",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bear-woman",
-        "price": 1.21,
+        "price": 1.41,
         "reward": "Fecund Ursine Pelt, Warlord Item",
         "stack": 6,
         "standardPrice": 5.0,
@@ -3917,7 +4020,7 @@
         "price": 2.6,
         "reward": "Belly of the Beast",
         "stack": 6,
-        "standardPrice": 1.0,
+        "standardPrice": 0.9,
         "weight": 1690
     },
     {
@@ -3933,10 +4036,10 @@
         "eventPrice": 4.3,
         "name": "The Betrayal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-betrayal",
-        "price": 2.6,
+        "price": 2.4,
         "reward": "Maligaro's Virtuosity",
         "stack": 9,
-        "standardPrice": 0.6,
+        "standardPrice": 0.65,
         "weight": 2960
     },
     {
@@ -3953,10 +4056,10 @@
         "eventPrice": 15.5,
         "name": "The Bitter Blossom",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bitter-blossom",
-        "price": 9.8,
+        "price": 9.9,
         "reward": "Level 21 Chaos Gem, Quality: +23%, Corrupted",
         "stack": 3,
-        "standardPrice": 47.24,
+        "standardPrice": 43.2,
         "weight": 116
     },
     {
@@ -3977,7 +4080,7 @@
         "eventPrice": 4.7,
         "name": "The Blazing Fire",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-blazing-fire",
-        "price": 0.8,
+        "price": 0.83,
         "reward": "Chin Sol",
         "stack": 6,
         "standardPrice": 0.5,
@@ -3997,7 +4100,7 @@
         "price": 7.0,
         "reward": "Level 21 Transfigured Gem, Corrupted",
         "stack": 4,
-        "standardPrice": 8.6,
+        "standardPrice": 9.0,
         "weight": 2078
     },
     {
@@ -4014,7 +4117,7 @@
         "price": 1.0,
         "reward": "Body Armour",
         "stack": 4,
-        "standardPrice": 1.46,
+        "standardPrice": 1.57,
         "weight": 4447
     },
     {
@@ -4030,10 +4133,10 @@
         "eventPrice": 1.7,
         "name": "The Bones",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-bones",
-        "price": 3.0,
+        "price": 4.4,
         "reward": "Level 21 Vaal Summon Skeletons, Corrupted",
         "stack": 6,
-        "standardPrice": 4.2,
+        "standardPrice": 5.0,
         "weight": 330
     },
     {
@@ -4049,7 +4152,7 @@
         "eventPrice": 10.0,
         "name": "The Brawny Battle Mage",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-brawny-battle-mage",
-        "price": 9.2,
+        "price": 9.1,
         "reward": "Merciless Tornado Wand, Item Level: 100",
         "stack": 5,
         "standardPrice": 10.4,
@@ -4068,7 +4171,7 @@
         "eventPrice": 5.5,
         "name": "The Breach",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-breach",
-        "price": 8.8,
+        "price": 2.3,
         "reward": "Breach Item",
         "stack": 4,
         "standardPrice": 3.8,
@@ -4090,7 +4193,7 @@
         "price": 1.6,
         "reward": "Voll's Devotion, Corrupted",
         "stack": 8,
-        "standardPrice": 13.1,
+        "standardPrice": 11.8,
         "weight": 116
     },
     {
@@ -4127,10 +4230,10 @@
         "eventPrice": 15.5,
         "name": "The Cacophony",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cacophony",
-        "price": 3.2,
+        "price": 3.4,
         "reward": "3x Deafening Essence",
         "stack": 8,
-        "standardPrice": 3.85,
+        "standardPrice": 4.4,
         "weight": 163
     },
     {
@@ -4191,7 +4294,7 @@
         "price": 10.0,
         "reward": "Divination Scarab",
         "stack": 4,
-        "standardPrice": 6.35,
+        "standardPrice": 6.4,
         "weight": 1069
     },
     {
@@ -4234,7 +4337,7 @@
         "price": 4.24,
         "reward": "10x Cartographer's Chisel",
         "stack": 1,
-        "standardPrice": 1.8,
+        "standardPrice": 2.2,
         "weight": 9112
     },
     {
@@ -4304,7 +4407,7 @@
         "eventPrice": 4.2,
         "name": "The Cataclysm",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cataclysm",
-        "price": 2.2,
+        "price": 2.0,
         "reward": "Level 21 Spell Gem, Corrupted",
         "stack": 13,
         "standardPrice": 3.7,
@@ -4327,10 +4430,10 @@
         "eventPrice": 0.08666666666666667,
         "name": "The Catalyst",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-catalyst",
-        "price": 0.20666666666666667,
+        "price": 0.19999999999999998,
         "reward": "Vaal Orb",
         "stack": 3,
-        "standardPrice": 0.30333333333333334,
+        "standardPrice": 0.3,
         "weight": 28603
     },
     {
@@ -4346,10 +4449,10 @@
         "eventPrice": 39.99,
         "name": "The Catch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-catch",
-        "price": 52.0,
+        "price": 28.0,
         "reward": "Fishing Rod, Incubated, Item Level: 99",
         "stack": 18,
-        "standardPrice": 68.21,
+        "standardPrice": 59.07,
         "weight": 33
     },
     {
@@ -4368,10 +4471,10 @@
         "eventPrice": 1.92,
         "name": "The Celestial Justicar",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-celestial-justicar",
-        "price": 1.91,
+        "price": 1.56,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
-        "standardPrice": 3.8,
+        "standardPrice": 4.0,
         "weight": 913
     },
     {
@@ -4388,7 +4491,7 @@
         "price": 3.0,
         "reward": "Opal Ring, Item Level: 100, Shaper Item",
         "stack": 10,
-        "standardPrice": 5.8,
+        "standardPrice": 10.2,
         "weight": 41
     },
     {
@@ -4409,7 +4512,7 @@
         "price": 1.0,
         "reward": "Six-Link Body Armour",
         "stack": 11,
-        "standardPrice": 2.3,
+        "standardPrice": 2.0,
         "weight": 10947
     },
     {
@@ -4425,10 +4528,10 @@
         "eventPrice": 1042.88,
         "name": "The Cheater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-cheater",
-        "price": 908.65,
+        "price": 901.2,
         "reward": "Level 6 Awakened Support Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 1177.12,
+        "standardPrice": 1101.36,
         "weight": 14
     },
     {
@@ -4442,7 +4545,7 @@
         "eventPrice": 15.3,
         "name": "The Chosen",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-chosen",
-        "price": 15.0,
+        "price": 15.5,
         "reward": "Skin of the Lords, Corrupted",
         "stack": 5,
         "standardPrice": 10.0,
@@ -4462,7 +4565,7 @@
         "eventPrice": 3.0,
         "name": "The Coming Storm",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-coming-storm",
-        "price": 1.05,
+        "price": 1.1,
         "reward": "Lightning Coil",
         "stack": 8,
         "standardPrice": 3.0,
@@ -4484,7 +4587,7 @@
         "price": 10.0,
         "reward": "Doryani's Fist",
         "stack": 9,
-        "standardPrice": 1.24,
+        "standardPrice": 1.18,
         "weight": 362
     },
     {
@@ -4504,7 +4607,7 @@
         "price": 1.0,
         "reward": "Unending Hunger",
         "stack": 4,
-        "standardPrice": 1.6,
+        "standardPrice": 1.5,
         "weight": 20
     },
     {
@@ -4540,10 +4643,10 @@
         "eventPrice": 285.72,
         "name": "The Damned",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-damned",
-        "price": 298.04,
+        "price": 288.38,
         "reward": "Soul Ripper",
         "stack": 6,
-        "standardPrice": 20.0,
+        "standardPrice": 22.5,
         "weight": 33
     },
     {
@@ -4579,7 +4682,7 @@
         "eventPrice": 5.0,
         "name": "The Dark Mage",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dark-mage",
-        "price": 1.9,
+        "price": 2.0,
         "reward": "Six-Link Staff, Item Level: 55",
         "stack": 6,
         "standardPrice": 2.0,
@@ -4618,10 +4721,10 @@
         "eventPrice": 7.7,
         "name": "The Deal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-deal",
-        "price": 7.0,
+        "price": 7.4,
         "reward": "Cartography Scarab",
         "stack": 5,
-        "standardPrice": 11.0,
+        "standardPrice": 12.8,
         "weight": 1092
     },
     {
@@ -4638,7 +4741,7 @@
         "eventPrice": 5.0,
         "name": "The Deceiver",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-deceiver",
-        "price": 4.2,
+        "price": 3.4,
         "reward": "Belt of the Deceiver, Corrupted",
         "stack": 4,
         "standardPrice": 1.0,
@@ -4658,7 +4761,7 @@
         "eventPrice": 12.0,
         "name": "The Deep Ones",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-deep-ones",
-        "price": 6.2,
+        "price": 6.4,
         "reward": "Tidebreaker",
         "stack": 5,
         "standardPrice": 16.6,
@@ -4677,10 +4780,10 @@
         "eventPrice": 1142.88,
         "name": "The Demon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demon",
-        "price": 726.92,
+        "price": 720.96,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 576.24,
+        "standardPrice": 532.74,
         "weight": 5
     },
     {
@@ -4696,7 +4799,7 @@
         "eventPrice": 3.4,
         "name": "The Demoness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-demoness",
-        "price": 1.0,
+        "price": 0.91,
         "reward": "Death's Hand",
         "stack": 5,
         "standardPrice": 1.0,
@@ -4719,7 +4822,7 @@
         "price": 58.5,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 50.0,
+        "standardPrice": 80.0,
         "weight": 20
     },
     {
@@ -4736,10 +4839,10 @@
         "eventPrice": 116.57,
         "name": "The Doctor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-doctor",
-        "price": 272.6,
+        "price": 270.36,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 409.05,
+        "standardPrice": 388.23,
         "weight": 20
     },
     {
@@ -4795,7 +4898,7 @@
         "eventPrice": 34.2,
         "name": "The Dragon's Heart",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dragons-heart",
-        "price": 52.7,
+        "price": 50.0,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
         "standardPrice": 20.0,
@@ -4815,7 +4918,7 @@
         "eventPrice": 18.8,
         "name": "The Dreamer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dreamer",
-        "price": 5.0,
+        "price": 5.6,
         "reward": "Chayula Item",
         "stack": 6,
         "standardPrice": 10.0,
@@ -4835,7 +4938,7 @@
         "price": 2.6,
         "reward": "Poorjoy's Asylum",
         "stack": 8,
-        "standardPrice": 1.3,
+        "standardPrice": 1.4,
         "weight": 1331
     },
     {
@@ -4872,7 +4975,7 @@
         "eventPrice": 6.6,
         "name": "The Dungeon Master",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-dungeon-master",
-        "price": 12.8,
+        "price": 13.5,
         "reward": "Belt, Double-Influenced Item",
         "stack": 7,
         "standardPrice": 31.0,
@@ -4933,10 +5036,10 @@
         "eventPrice": 11.0,
         "name": "The Emptiness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-emptiness",
-        "price": 60.0,
+        "price": 48.0,
         "reward": "Vaal Breach, Quality: +6%, Corrupted",
         "stack": 6,
-        "standardPrice": 16.2,
+        "standardPrice": 29.3,
         "weight": 9
     },
     {
@@ -4975,7 +5078,7 @@
         "eventPrice": 1000.02,
         "name": "The Endless Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-endless-darkness",
-        "price": 201.72,
+        "price": 187.45,
         "reward": "Voidforge",
         "stack": 9,
         "standardPrice": 35.0,
@@ -4997,7 +5100,7 @@
         "eventPrice": 2.2,
         "name": "The Endurance",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-endurance",
-        "price": 0.94,
+        "price": 0.88,
         "reward": "Vivid Crimson Jewel",
         "stack": 4,
         "standardPrice": 1.0,
@@ -5017,7 +5120,7 @@
         "eventPrice": 47.2,
         "name": "The Enforcer",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enforcer",
-        "price": 32.0,
+        "price": 29.88,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
         "weight": 20
@@ -5037,10 +5140,10 @@
         "eventPrice": 60.0,
         "name": "The Enlightened",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-enlightened",
-        "price": 65.3,
+        "price": 65.0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 10.9,
+        "standardPrice": 13.5,
         "weight": 26
     },
     {
@@ -5059,7 +5162,7 @@
         "price": 2.8,
         "reward": "Victario's Influence, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 17.5,
+        "standardPrice": 13.0,
         "weight": 411
     },
     {
@@ -5079,10 +5182,10 @@
         "eventPrice": 5.0,
         "name": "The Escape",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-escape",
-        "price": 4.8,
+        "price": 5.0,
         "reward": "Seven-League Step",
         "stack": 5,
-        "standardPrice": 4.9,
+        "standardPrice": 5.9,
         "weight": 551
     },
     {
@@ -5101,7 +5204,7 @@
         "eventPrice": 16.0,
         "name": "The Eternal War",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eternal-war",
-        "price": 29.0,
+        "price": 27.0,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 28.2,
@@ -5124,7 +5227,7 @@
         "price": 2.0,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
-        "standardPrice": 3.6,
+        "standardPrice": 3.4,
         "weight": 497
     },
     {
@@ -5178,10 +5281,10 @@
         "eventPrice": 84.0,
         "name": "The Eye of the Dragon",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-eye-of-the-dragon",
-        "price": 12.9,
+        "price": 22.3,
         "reward": "Jewel, Corrupted",
         "stack": 10,
-        "standardPrice": 4.0,
+        "standardPrice": 4.1,
         "weight": 33
     },
     {
@@ -5201,7 +5304,7 @@
         "price": 1.0,
         "reward": "Lightpoacher",
         "stack": 8,
-        "standardPrice": 1.98,
+        "standardPrice": 1.99,
         "weight": 1356
     },
     {
@@ -5219,7 +5322,7 @@
         "eventPrice": 5.0,
         "name": "The Feast",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-feast",
-        "price": 1.8,
+        "price": 2.0,
         "reward": "Romira's Banquet, Corrupted",
         "stack": 5,
         "standardPrice": 1.0,
@@ -5239,10 +5342,10 @@
         "eventPrice": 47.0,
         "name": "The Fiend",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fiend",
-        "price": 175.38,
+        "price": 174.19,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 191.28,
+        "standardPrice": 137.67,
         "weight": 4
     },
     {
@@ -5258,7 +5361,7 @@
         "eventPrice": 3.45,
         "name": "The Finishing Touch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-finishing-touch",
-        "price": 5.14,
+        "price": 5.0,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
         "standardPrice": 2.5,
@@ -5357,7 +5460,7 @@
         "eventPrice": 37.0,
         "name": "The Forgotten Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forgotten-treasure",
-        "price": 8.6,
+        "price": 10.0,
         "reward": "Leather Belt, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 30.0,
@@ -5399,7 +5502,7 @@
         "eventPrice": 9.0,
         "name": "The Forsaken",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forsaken",
-        "price": 0.82,
+        "price": 0.81,
         "reward": "Umbilicus Immortalis",
         "stack": 7,
         "standardPrice": 1.0,
@@ -5419,10 +5522,10 @@
         "eventPrice": 23.810000000000002,
         "name": "The Fortunate",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fortunate",
-        "price": 30.28833333333333,
+        "price": 30.04,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 24.52333333333333
+        "standardPrice": 22.944999999999997
     },
     {
         "art": "TheForwardGaze",
@@ -5437,10 +5540,10 @@
         "eventPrice": 5.0,
         "name": "The Forward Gaze",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-forward-gaze",
-        "price": 2.9,
+        "price": 3.18,
         "reward": "Replica Item",
         "stack": 6,
-        "standardPrice": 5.5,
+        "standardPrice": 5.25,
         "weight": 1356
     },
     {
@@ -5457,10 +5560,10 @@
         "eventPrice": 14.0,
         "name": "The Fox",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fox",
-        "price": 2.6,
+        "price": 4.2,
         "reward": "Level 20 Gem",
         "stack": 6,
-        "standardPrice": 1.8,
+        "standardPrice": 1.9,
         "weight": 2021
     },
     {
@@ -5477,7 +5580,7 @@
         "eventPrice": 6.5,
         "name": "The Fox in the Brambles",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-fox-in-the-brambles",
-        "price": 6.8,
+        "price": 6.4,
         "reward": "Bramblejack, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 5.25,
@@ -5497,7 +5600,7 @@
         "eventPrice": 2.6,
         "name": "The Gambler",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gambler",
-        "price": 2.8,
+        "price": 4.2,
         "reward": "Divination Card",
         "stack": 5,
         "standardPrice": 1.0,
@@ -5520,7 +5623,7 @@
         "price": 15.8,
         "reward": "Jewel",
         "stack": 4,
-        "standardPrice": 9.4,
+        "standardPrice": 7.4,
         "weight": 116
     },
     {
@@ -5556,7 +5659,7 @@
         "price": 1.6,
         "reward": "Sword, Corrupted",
         "stack": 4,
-        "standardPrice": 1.26,
+        "standardPrice": 1.18,
         "weight": 1209
     },
     {
@@ -5594,7 +5697,7 @@
         "eventPrice": 6.4,
         "name": "The Golden Era",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-golden-era",
-        "price": 4.2,
+        "price": 3.3,
         "reward": "Flaring Eclipse Staff, Item Level: 100",
         "stack": 7,
         "standardPrice": 0.8,
@@ -5611,7 +5714,7 @@
         "eventPrice": 132.57,
         "name": "The Greatest Intentions",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-greatest-intentions",
-        "price": 31.6,
+        "price": 27.0,
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
         "standardPrice": 25.93,
@@ -5630,10 +5733,10 @@
         "eventPrice": 142.86,
         "name": "The Gulf",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-gulf",
-        "price": 57.0,
+        "price": 58.0,
         "reward": "Thread of Hope, Two-Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 68.0,
+        "standardPrice": 67.0,
         "weight": 33
     },
     {
@@ -5674,7 +5777,7 @@
         "eventPrice": 3.6,
         "name": "The Harvester",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-harvester",
-        "price": 0.82,
+        "price": 0.75,
         "reward": "The Harvest",
         "stack": 11,
         "standardPrice": 1.0,
@@ -5703,7 +5806,7 @@
         "price": 0.78,
         "reward": "Lifesprig",
         "stack": 9,
-        "standardPrice": 0.39,
+        "standardPrice": 0.5,
         "weight": 18846
     },
     {
@@ -5737,7 +5840,7 @@
         "price": 21.0,
         "reward": "Machina Mitts, Two-Implicit, Corrupted",
         "stack": 6,
-        "standardPrice": 19.0,
+        "standardPrice": 24.7,
         "weight": 14
     },
     {
@@ -5754,10 +5857,10 @@
         "eventPrice": 0.8333333333333333,
         "name": "The Hoarder",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hoarder",
-        "price": 1.4016666666666666,
+        "price": 1.3908333333333334,
         "reward": "Exalted Orb",
         "stack": 12,
-        "standardPrice": 2.983333333333333,
+        "standardPrice": 2.955,
         "weight": 2706
     },
     {
@@ -5773,7 +5876,7 @@
         "eventPrice": 29.7,
         "name": "The Hook",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-hook",
-        "price": 15.0,
+        "price": 10.0,
         "reward": "Level 21 Transfigured Gem, Quality: +23%, Corrupted",
         "stack": 8,
         "standardPrice": 76.0,
@@ -5810,10 +5913,10 @@
         "eventPrice": 2857.2,
         "name": "The Immortal",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-immortal",
-        "price": 3034.89,
+        "price": 3046.06,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 4855.62,
+        "standardPrice": 4543.11,
         "weight": 20
     },
     {
@@ -5832,7 +5935,7 @@
         "price": 2.8,
         "reward": "The Whispering Ice",
         "stack": 4,
-        "standardPrice": 0.85,
+        "standardPrice": 0.92,
         "weight": 1456
     },
     {
@@ -5851,7 +5954,7 @@
         "eventPrice": 0.6,
         "name": "The Innocent",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-innocent",
-        "price": 0.84,
+        "price": 0.8,
         "reward": "40x Orb of Regret",
         "stack": 10,
         "standardPrice": 2.24,
@@ -5871,7 +5974,7 @@
         "eventPrice": 44.0,
         "name": "The Inoculated",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-inoculated",
-        "price": 0.9,
+        "price": 0.81,
         "reward": "Seraphim's Armour",
         "stack": 4,
         "standardPrice": 1.0,
@@ -5891,10 +5994,10 @@
         "eventPrice": 1414.31,
         "name": "The Insane Cat",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-insane-cat",
-        "price": 1871.82,
+        "price": 1892.52,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 1471.4,
+        "standardPrice": 1376.7,
         "weight": 9
     },
     {
@@ -5914,7 +6017,7 @@
         "price": 2.6,
         "reward": "The Harvest, Corrupted",
         "stack": 3,
-        "standardPrice": 1.0,
+        "standardPrice": 1.35,
         "weight": 1559
     },
     {
@@ -5934,10 +6037,10 @@
         "eventPrice": 0.43333333333333335,
         "name": "The Inventor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-inventor",
-        "price": 1.0333333333333334,
+        "price": 1.0,
         "reward": "10x Vaal Orb",
         "stack": 6,
-        "standardPrice": 1.5166666666666668,
+        "standardPrice": 1.5,
         "weight": 6453
     },
     {
@@ -6038,7 +6141,7 @@
         "price": 1.0,
         "reward": "Bloodthirsty Eternal Sword, Item Level: 66",
         "stack": 5,
-        "standardPrice": 0.5,
+        "standardPrice": 0.6,
         "weight": 42256
     },
     {
@@ -6074,10 +6177,10 @@
         "eventPrice": 2.9,
         "name": "The Landing",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-landing",
-        "price": 4.8,
+        "price": 5.0,
         "reward": "The Beachhead, Map Tier: 15, Corrupted",
         "stack": 5,
-        "standardPrice": 3.96,
+        "standardPrice": 3.75,
         "weight": 957
     },
     {
@@ -6115,7 +6218,7 @@
         "eventPrice": 52.0,
         "name": "The Last Supper",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-last-supper",
-        "price": 72.0,
+        "price": 59.5,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
         "standardPrice": 5.07,
@@ -6137,7 +6240,7 @@
         "price": 23.7,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 136.28,
+        "standardPrice": 130.6,
         "weight": 26
     },
     {
@@ -6156,7 +6259,7 @@
         "eventPrice": 2.4,
         "name": "The Lich",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lich",
-        "price": 3.0,
+        "price": 3.1,
         "reward": "Midnight Bargain, Corrupted",
         "stack": 12,
         "standardPrice": 1.0,
@@ -6176,10 +6279,10 @@
         "eventPrice": 46.0,
         "name": "The Life Thief",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-life-thief",
-        "price": 19.5,
+        "price": 25.4,
         "reward": "Zerphi's Heart",
         "stack": 6,
-        "standardPrice": 6.25,
+        "standardPrice": 10.2,
         "weight": 26
     },
     {
@@ -6196,7 +6299,7 @@
         "eventPrice": 1.7,
         "name": "The Lion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lion",
-        "price": 1.0,
+        "price": 1.1,
         "reward": "Lioneye Item",
         "stack": 5,
         "standardPrice": 2.0,
@@ -6212,7 +6315,23 @@
         },
         "name": "The Long Con",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-long-con",
-        "price": 60.0,
+        "price": 46.5,
+        "reward": "Elderslayer's Exalted Orb",
+        "stack": 4,
+        "standardPrice": 50.4,
+        "weight": 20
+    },
+    {
+        "art": "TheLongCon",
+        "drop": {
+            "areas": [],
+            "min_level": 81,
+            "monsters": [],
+            "text": "This card drops from Izaro's Treasure chests in the Eternal Labyrinth (Uber Lab) and Enriched Eternal Labyrinth."
+        },
+        "name": "The Long Con",
+        "ninja": "https://poe.ninja/challenge/divination-cards/the-long-con",
+        "price": 46.5,
         "reward": "Elderslayer's Exalted Orb",
         "stack": 4,
         "standardPrice": 50.4,
@@ -6249,7 +6368,7 @@
         "eventPrice": 2.6,
         "name": "The Lord in Black",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-lord-in-black",
-        "price": 3.2,
+        "price": 3.4,
         "reward": "Ring of Bameth, Item Level: 83",
         "stack": 6,
         "standardPrice": 1.3,
@@ -6293,7 +6412,7 @@
         "price": 1.0,
         "reward": "Jewellery, Item Level: 79",
         "stack": 2,
-        "standardPrice": 0.98,
+        "standardPrice": 1.0,
         "weight": 66353
     },
     {
@@ -6333,10 +6452,10 @@
         "eventPrice": 26.5,
         "name": "The Mad King",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-mad-king",
-        "price": 27.0,
+        "price": 7.4,
         "reward": "Vaal Aspect",
         "stack": 7,
-        "standardPrice": 8.15,
+        "standardPrice": 9.08,
         "weight": 806
     },
     {
@@ -6372,7 +6491,7 @@
         "price": 1.0,
         "reward": "20x Quality Currency",
         "stack": 5,
-        "standardPrice": 1.0,
+        "standardPrice": 1.2,
         "weight": 8237
     },
     {
@@ -6406,7 +6525,7 @@
         "price": 2.0,
         "reward": "Shield, Corrupted",
         "stack": 5,
-        "standardPrice": 4.0,
+        "standardPrice": 5.0,
         "weight": 1507
     },
     {
@@ -6425,7 +6544,7 @@
         "price": 10.0,
         "reward": "Harbinger Piece",
         "stack": 4,
-        "standardPrice": 1.8,
+        "standardPrice": 1.9,
         "weight": 979
     },
     {
@@ -6498,7 +6617,7 @@
         "price": 1.0,
         "reward": "Jewel of Potency",
         "stack": 6,
-        "standardPrice": 1.04,
+        "standardPrice": 1.03,
         "weight": 5088
     },
     {
@@ -6515,10 +6634,10 @@
         "eventPrice": 15.0,
         "name": "The Nurse",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-nurse",
-        "price": 20.5,
+        "price": 20.8,
         "reward": "The Doctor",
         "stack": 8,
-        "standardPrice": 35.72,
+        "standardPrice": 35.41,
         "weight": 66
     },
     {
@@ -6566,7 +6685,7 @@
         "eventPrice": 7.0,
         "name": "The Obscured",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-obscured",
-        "price": 6.5,
+        "price": 7.0,
         "reward": "Breachstone",
         "stack": 7,
         "standardPrice": 5.0,
@@ -6589,7 +6708,7 @@
         "price": 3.0,
         "reward": "Shavronne's Wrappings",
         "stack": 8,
-        "standardPrice": 4.5,
+        "standardPrice": 4.8,
         "weight": 514
     },
     {
@@ -6605,7 +6724,7 @@
         "eventPrice": 3.4,
         "name": "The Offspring",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-offspring",
-        "price": 7.8,
+        "price": 8.2,
         "reward": "Ryslatha's Coil",
         "stack": 9,
         "standardPrice": 5.0,
@@ -6627,7 +6746,7 @@
         "price": 22.0,
         "reward": "Fishing Rod, Two-Implicit, Corrupted",
         "stack": 12,
-        "standardPrice": 662.13,
+        "standardPrice": 619.52,
         "weight": 14
     },
     {
@@ -6643,10 +6762,10 @@
         "eventPrice": 47.8,
         "name": "The One That Got Away",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-one-that-got-away",
-        "price": 13.2,
+        "price": 12.6,
         "reward": "Replica Bated Breath",
         "stack": 7,
-        "standardPrice": 220.71,
+        "standardPrice": 122.6,
         "weight": 5
     },
     {
@@ -6685,7 +6804,7 @@
         "eventPrice": 4.2,
         "name": "The Opulent",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-opulent",
-        "price": 3.2,
+        "price": 2.9,
         "reward": "Ring, Item Level: 100",
         "stack": 5,
         "standardPrice": 1.0,
@@ -6742,7 +6861,7 @@
         "eventPrice": 5.0,
         "name": "The Patient",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-patient",
-        "price": 4.0,
+        "price": 4.4,
         "reward": "The Nurse",
         "stack": 8,
         "standardPrice": 10.0,
@@ -6781,7 +6900,7 @@
         "eventPrice": 3.4,
         "name": "The Poet",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-poet",
-        "price": 2.0,
+        "price": 4.4,
         "reward": "Blood of Corruption, Corrupted",
         "stack": 9,
         "standardPrice": 1.0,
@@ -6803,7 +6922,7 @@
         "price": 6.9,
         "reward": "Astramentis",
         "stack": 3,
-        "standardPrice": 8.2,
+        "standardPrice": 13.0,
         "weight": 214
     },
     {
@@ -6824,7 +6943,7 @@
         "price": 2.0,
         "reward": "Six-Link Short Bow, Item Level: 50",
         "stack": 6,
-        "standardPrice": 3.03,
+        "standardPrice": 3.07,
         "weight": 3456
     },
     {
@@ -6840,10 +6959,10 @@
         "eventPrice": 3469.46,
         "name": "The Price of Devotion",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-devotion",
-        "price": 5524.59,
+        "price": 6182.23,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 5297.04,
+        "standardPrice": 4859.75,
         "weight": 4
     },
     {
@@ -6881,7 +7000,7 @@
         "eventPrice": 4.6,
         "name": "The Price of Prescience",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-price-of-prescience",
-        "price": 2.4,
+        "price": 2.8,
         "reward": "Vaal Temple Map, Map Tier: 16, Delirium: 100%, Corrupted",
         "stack": 5,
         "standardPrice": 15.5,
@@ -6973,7 +7092,7 @@
         "price": 2.0,
         "reward": "Elder Guardian Occupied Map, Map Tier: 14 to 16, Modifiers: 8, Corrupted",
         "stack": 5,
-        "standardPrice": 3.23,
+        "standardPrice": 3.15,
         "weight": 1209
     },
     {
@@ -6989,7 +7108,7 @@
         "eventPrice": 5.8,
         "name": "The Primordial",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-primordial",
-        "price": 3.3,
+        "price": 4.3,
         "reward": "Jewel, Primordial",
         "stack": 5,
         "standardPrice": 5.4,
@@ -7009,7 +7128,7 @@
         "eventPrice": 5.0,
         "name": "The Prince of Darkness",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-prince-of-darkness",
-        "price": 4.1,
+        "price": 4.4,
         "reward": "Elegant Hubris",
         "stack": 6,
         "standardPrice": 11.0,
@@ -7028,7 +7147,7 @@
         "eventPrice": 6.4,
         "name": "The Professor",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-professor",
-        "price": 2.7,
+        "price": 2.0,
         "reward": "The Putrid Cloister",
         "stack": 4,
         "standardPrice": 10.0,
@@ -7047,10 +7166,10 @@
         "eventPrice": 182.0,
         "name": "The Progeny of Lunaris",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-progeny-of-lunaris",
-        "price": 345.29,
+        "price": 349.67,
         "reward": "Dying Sun",
         "stack": 2,
-        "standardPrice": 33.43,
+        "standardPrice": 18.27,
         "weight": 14
     },
     {
@@ -7087,7 +7206,7 @@
         "price": 1.0,
         "reward": "5x Breachstone Splinter",
         "stack": 5,
-        "standardPrice": 1.3,
+        "standardPrice": 1.5,
         "weight": 2370
     },
     {
@@ -7125,10 +7244,10 @@
         "eventPrice": 29.2,
         "name": "The Rabbit's Foot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-rabbits-foot",
-        "price": 24.5,
+        "price": 26.0,
         "reward": "10x Incursion Vial",
         "stack": 8,
-        "standardPrice": 45.43,
+        "standardPrice": 43.53,
         "weight": 66
     },
     {
@@ -7145,7 +7264,7 @@
         "eventPrice": 3.8,
         "name": "The Rabid Rhoa",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-rabid-rhoa",
-        "price": 5.0,
+        "price": 3.0,
         "reward": "Malicious Gemini Claw, Item Level: 83",
         "stack": 4,
         "standardPrice": 1.1,
@@ -7232,7 +7351,7 @@
         "price": 1.63,
         "reward": "Ventor's Gamble",
         "stack": 3,
-        "standardPrice": 5.0,
+        "standardPrice": 4.6,
         "weight": 4670
     },
     {
@@ -7252,7 +7371,7 @@
         "price": 2.52,
         "reward": "Level 21 Golem Gem, Corrupted",
         "stack": 5,
-        "standardPrice": 4.6,
+        "standardPrice": 4.9,
         "weight": 2078
     },
     {
@@ -7269,7 +7388,7 @@
         "eventPrice": 23.6,
         "name": "The Road to Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-road-to-power",
-        "price": 4.6,
+        "price": 4.4,
         "reward": "Runic One-Hand Weapon, Item Level: 100",
         "stack": 7,
         "standardPrice": 2.0,
@@ -7291,7 +7410,7 @@
         "price": 4.444444444444445,
         "reward": "4x Tainted Mythic Orb",
         "stack": 9,
-        "standardPrice": 8.0,
+        "standardPrice": 8.048888888888888,
         "weight": 175
     },
     {
@@ -7329,10 +7448,10 @@
         "eventPrice": 100.0,
         "name": "The Sacrifice",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sacrifice",
-        "price": 159.52,
+        "price": 159.07,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
-        "standardPrice": 11.0,
+        "standardPrice": 38.4,
         "weight": 49
     },
     {
@@ -7348,10 +7467,10 @@
         "eventPrice": 2.0,
         "name": "The Saint's Treasure",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-saints-treasure",
-        "price": 3.3640000000000003,
+        "price": 3.3380000000000005,
         "reward": "2x Exalted Orb",
         "stack": 10,
-        "standardPrice": 7.16,
+        "standardPrice": 7.0920000000000005,
         "weight": 1024
     },
     {
@@ -7370,7 +7489,7 @@
         "price": 71.0,
         "reward": "Watcher's Eye",
         "stack": 3,
-        "standardPrice": 80.0,
+        "standardPrice": 79.1,
         "weight": 106
     },
     {
@@ -7389,10 +7508,10 @@
         "eventPrice": 1.0,
         "name": "The Scarred Meadow",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scarred-meadow",
-        "price": 0.71,
+        "price": 0.68,
         "reward": "Wake of Destruction",
         "stack": 9,
-        "standardPrice": 0.25,
+        "standardPrice": 0.28,
         "weight": 18548
     },
     {
@@ -7409,10 +7528,10 @@
         "eventPrice": 3.0,
         "name": "The Scavenger",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scavenger",
-        "price": 0.95,
+        "price": 0.91,
         "reward": "Carcass Jack",
         "stack": 8,
-        "standardPrice": 3.0,
+        "standardPrice": 2.2,
         "weight": 2928
     },
     {
@@ -7434,7 +7553,7 @@
         "price": 0.13333333333333333,
         "reward": "40x Scroll of Wisdom",
         "stack": 3,
-        "standardPrice": 0.51,
+        "standardPrice": 0.13333333333333333,
         "weight": 50960
     },
     {
@@ -7451,10 +7570,10 @@
         "eventPrice": 8.75,
         "name": "The Scout",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-scout-divcard",
-        "price": 14.717500000000001,
+        "price": 14.603750000000002,
         "reward": "7x Exalted Orb",
         "stack": 8,
-        "standardPrice": 31.324999999999996,
+        "standardPrice": 31.0275,
         "weight": 285
     },
     {
@@ -7470,10 +7589,10 @@
         "eventPrice": 0.6666666666666666,
         "name": "The Seeker",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-seeker",
-        "price": 1.5033333333333332,
+        "price": 1.4100000000000001,
         "reward": "3x Orb of Annulment",
         "stack": 9,
-        "standardPrice": 4.333333333333333,
+        "standardPrice": 4.05,
         "weight": 242
     },
     {
@@ -7491,10 +7610,10 @@
         "eventPrice": 129.87272727272727,
         "name": "The Sephirot",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sephirot",
-        "price": 120.81,
+        "price": 121.3,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 133.76363636363635,
+        "standardPrice": 125.15454545454544,
         "weight": 188
     },
     {
@@ -7533,7 +7652,7 @@
         "price": 75.0,
         "reward": "The Squire",
         "stack": 8,
-        "standardPrice": 147.14,
+        "standardPrice": 137.67,
         "weight": 20
     },
     {
@@ -7607,10 +7726,10 @@
         "eventPrice": 14.0,
         "name": "The Shortcut",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-shortcut",
-        "price": 9.3,
+        "price": 9.1,
         "reward": "Quicksilver Flask of the Cheetah, Item Level: 100",
         "stack": 1,
-        "standardPrice": 22.4,
+        "standardPrice": 22.8,
         "weight": 163
     },
     {
@@ -7627,7 +7746,7 @@
         "eventPrice": 4.6,
         "name": "The Side Quest",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-side-quest",
-        "price": 2.9,
+        "price": 3.2,
         "reward": "20x Scouting Report",
         "stack": 5,
         "standardPrice": 8.5,
@@ -7647,10 +7766,10 @@
         "eventPrice": 4.1,
         "name": "The Sigil",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-sigil",
-        "price": 0.91,
+        "price": 0.96,
         "reward": "Unassailable Amulet",
         "stack": 3,
-        "standardPrice": 0.95,
+        "standardPrice": 1.0,
         "weight": 8012
     },
     {
@@ -7667,7 +7786,6 @@
         "eventPrice": 3.0,
         "name": "The Siren",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-siren",
-        "price": 10.0,
         "reward": "The Whispering Ice, Corrupted",
         "stack": 7,
         "standardPrice": 1.6,
@@ -7753,7 +7871,7 @@
         "price": 4.5,
         "reward": "Dictator's Prophecy Wand, Item Level: 100",
         "stack": 4,
-        "standardPrice": 2.7,
+        "standardPrice": 2.35,
         "weight": 848
     },
     {
@@ -7795,7 +7913,7 @@
         "eventPrice": 2.8,
         "name": "The Stormcaller",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-stormcaller",
-        "price": 2.0,
+        "price": 1.4,
         "reward": "Agnerod Staff",
         "stack": 4,
         "standardPrice": 1.0,
@@ -7838,7 +7956,7 @@
         "price": 1.0,
         "reward": "Minion Gem, Quality: +20%",
         "stack": 6,
-        "standardPrice": 3.9,
+        "standardPrice": 4.85,
         "weight": 6705
     },
     {
@@ -7979,10 +8097,10 @@
         "eventPrice": 43.6,
         "name": "The Throne",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-throne",
-        "price": 30.6,
+        "price": 27.0,
         "reward": "Kaom's Roots, Corrupted",
         "stack": 2,
-        "standardPrice": 7.4,
+        "standardPrice": 7.7,
         "weight": 175
     },
     {
@@ -7999,7 +8117,7 @@
         "eventPrice": 9.2,
         "name": "The Tinkerer's Table",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tinkerers-table",
-        "price": 1.5,
+        "price": 1.4,
         "reward": "5x Fossil",
         "stack": 5,
         "standardPrice": 10.0,
@@ -8023,7 +8141,7 @@
         "price": 2.0,
         "reward": "10x Oil",
         "stack": 8,
-        "standardPrice": 2.36,
+        "standardPrice": 2.24,
         "weight": 10016
     },
     {
@@ -8065,7 +8183,7 @@
         "price": 1.2,
         "reward": "Wand, Corrupted",
         "stack": 4,
-        "standardPrice": 1.56,
+        "standardPrice": 1.3,
         "weight": 891
     },
     {
@@ -8085,7 +8203,7 @@
         "price": 2.0,
         "reward": "Tainted Mythic Orb",
         "stack": 5,
-        "standardPrice": 3.6,
+        "standardPrice": 3.622,
         "weight": 285
     },
     {
@@ -8105,7 +8223,7 @@
         "price": 1.0,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
-        "standardPrice": 1.0,
+        "standardPrice": 1.1,
         "weight": 5677
     },
     {
@@ -8122,10 +8240,10 @@
         "eventPrice": 150.0,
         "name": "The Tumbleweed",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-tumbleweed",
-        "price": 45.0,
+        "price": 27.5,
         "reward": "Diamond Ring of Redemption, Item Level: 100, Redeemer Item",
         "stack": 2,
-        "standardPrice": 8.95,
+        "standardPrice": 11.2,
         "weight": 26
     },
     {
@@ -8161,7 +8279,7 @@
         "eventPrice": 14.0,
         "name": "The Twins",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-twins",
-        "price": 2.6,
+        "price": 2.4,
         "reward": "Gemini Claw of Celebration, Item Level: 83",
         "stack": 8,
         "standardPrice": 0.34,
@@ -8200,10 +8318,10 @@
         "eventPrice": 4.0,
         "name": "The Undaunted",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-undaunted",
-        "price": 2.5,
+        "price": 2.6,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
-        "standardPrice": 10.0,
+        "standardPrice": 11.0,
         "weight": 935
     },
     {
@@ -8219,10 +8337,10 @@
         "eventPrice": 18.5,
         "name": "The Undisputed",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-undisputed",
-        "price": 9.0,
+        "price": 8.5,
         "reward": "Merciless Vaal Axe, Item Level: 100, Elder Item",
         "stack": 8,
-        "standardPrice": 17.8,
+        "standardPrice": 18.7,
         "weight": 9
     },
     {
@@ -8238,7 +8356,7 @@
         "eventPrice": 7.6,
         "name": "The Unexpected Prize",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-unexpected-prize",
-        "price": 8.1,
+        "price": 3.0,
         "reward": "Attribute Transforming Jewel, Corrupted",
         "stack": 2,
         "standardPrice": 8.3,
@@ -8261,7 +8379,7 @@
         "price": 2.7,
         "reward": "10x Gemcutter's Prism",
         "stack": 7,
-        "standardPrice": 2.9,
+        "standardPrice": 3.8,
         "weight": 5126
     },
     {
@@ -8308,7 +8426,7 @@
         "eventPrice": 100.0,
         "name": "The Vast",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-vast",
-        "price": 23.7,
+        "price": 25.8,
         "reward": "Song of the Sirens",
         "stack": 7,
         "standardPrice": 21.0,
@@ -8354,7 +8472,7 @@
         "price": 2.0,
         "reward": "",
         "stack": 1,
-        "standardPrice": 4.81,
+        "standardPrice": 4.59,
         "weight": 10898
     },
     {
@@ -8395,7 +8513,7 @@
         "eventPrice": 5.0,
         "name": "The Warlord",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-warlord",
-        "price": 2.0,
+        "price": 2.08,
         "reward": "Six-Link Coronal Maul, Item Level: 83",
         "stack": 6,
         "standardPrice": 3.0,
@@ -8417,7 +8535,7 @@
         "price": 1.0,
         "reward": "Crown of Eyes",
         "stack": 12,
-        "standardPrice": 0.92,
+        "standardPrice": 1.0,
         "weight": 3976
     },
     {
@@ -8454,7 +8572,7 @@
         "eventPrice": 25.0,
         "name": "The Wedding Gift",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wedding-gift",
-        "price": 17.5,
+        "price": 18.0,
         "reward": "Arakaali's Fang",
         "stack": 2,
         "standardPrice": 28.2,
@@ -8473,7 +8591,7 @@
         "eventPrice": 26.0,
         "name": "The White Knight",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-white-knight",
-        "price": 13.2,
+        "price": 11.7,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
         "standardPrice": 14.0,
@@ -8532,7 +8650,7 @@
         "eventPrice": 5.0,
         "name": "The Wind",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wind",
-        "price": 1.7,
+        "price": 1.6,
         "reward": "Windripper",
         "stack": 7,
         "standardPrice": 5.0,
@@ -8552,10 +8670,10 @@
         "eventPrice": 2.8,
         "name": "The Witch",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-witch",
-        "price": 1.1,
+        "price": 1.0,
         "reward": "Kiara's Determination",
         "stack": 8,
-        "standardPrice": 0.74,
+        "standardPrice": 0.83,
         "weight": 18076
     },
     {
@@ -8572,10 +8690,10 @@
         "eventPrice": 1.0,
         "name": "The Wolf",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolf",
-        "price": 1.0,
+        "price": 0.95,
         "reward": "Rigwald Item",
         "stack": 5,
-        "standardPrice": 1.9,
+        "standardPrice": 2.0,
         "weight": 6040
     },
     {
@@ -8589,10 +8707,10 @@
         "eventPrice": 4.5,
         "name": "The Wolf's Legacy",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-wolfs-legacy",
-        "price": 3.8,
+        "price": 4.0,
         "reward": "Vaults of Atziri",
         "stack": 4,
-        "standardPrice": 2.75,
+        "standardPrice": 2.5,
         "weight": 1637
     },
     {
@@ -8631,7 +8749,7 @@
         "price": 1.5,
         "reward": "Rigwald's Quills",
         "stack": 8,
-        "standardPrice": 5.9,
+        "standardPrice": 8.6,
         "weight": 378
     },
     {
@@ -8651,7 +8769,7 @@
         "price": 1.8,
         "reward": "Claw, Corrupted",
         "stack": 4,
-        "standardPrice": 2.05,
+        "standardPrice": 1.0,
         "weight": 1533
     },
     {
@@ -8667,10 +8785,10 @@
         "eventPrice": 58.86,
         "name": "The World Eater",
         "ninja": "https://poe.ninja/challenge/divination-cards/the-world-eater",
-        "price": 69.0,
+        "price": 71.0,
         "reward": "Starforge",
         "stack": 8,
-        "standardPrice": 16.0,
+        "standardPrice": 15.0,
         "weight": 24
     },
     {
@@ -8712,7 +8830,7 @@
         "price": 2.0,
         "reward": "Belt",
         "stack": 6,
-        "standardPrice": 2.2,
+        "standardPrice": 2.1,
         "weight": 4373
     },
     {
@@ -8729,7 +8847,7 @@
         "eventPrice": 14.6,
         "name": "Thirst for Knowledge",
         "ninja": "https://poe.ninja/challenge/divination-cards/thirst-for-knowledge",
-        "price": 0.82,
+        "price": 0.86,
         "reward": "Gluttony",
         "stack": 5,
         "standardPrice": 1.0,
@@ -8754,7 +8872,7 @@
         "price": 1.0,
         "reward": "3x Chaos Orb",
         "stack": 7,
-        "standardPrice": 0.77,
+        "standardPrice": 0.89,
         "weight": 25377
     },
     {
@@ -8775,7 +8893,7 @@
         "price": 1.0,
         "reward": "3x Essence",
         "stack": 3,
-        "standardPrice": 1.8,
+        "standardPrice": 2.0,
         "weight": 14119
     },
     {
@@ -8792,7 +8910,7 @@
         "eventPrice": 1.7,
         "name": "Thunderous Skies",
         "ninja": "https://poe.ninja/challenge/divination-cards/thunderous-skies",
-        "price": 1.0,
+        "price": 0.81,
         "reward": "Storm Cloud",
         "stack": 5,
         "standardPrice": 1.0,
@@ -8814,7 +8932,7 @@
         "price": 1.0,
         "reward": "League-Specific Item",
         "stack": 10,
-        "standardPrice": 3.95,
+        "standardPrice": 4.8,
         "weight": 6578
     },
     {
@@ -8833,7 +8951,7 @@
         "price": 9.0,
         "reward": "Dendrobate,  Two-Implicit,  Corrupted",
         "stack": 5,
-        "standardPrice": 95.6
+        "standardPrice": 95.8
     },
     {
         "art": "Tranquillity",
@@ -8852,7 +8970,7 @@
         "price": 50.0,
         "reward": "Voltaxic Rift",
         "stack": 7,
-        "standardPrice": 15.0,
+        "standardPrice": 9.8,
         "weight": 14
     },
     {
@@ -8872,7 +8990,7 @@
         "price": 7.8,
         "reward": "Vaults of Atziri, Corrupted",
         "stack": 7,
-        "standardPrice": 2.0,
+        "standardPrice": 2.09,
         "weight": 1092
     },
     {
@@ -8892,7 +9010,7 @@
         "price": 1.7,
         "reward": "Map, Map Tier: 13, Quality: +13%, Delirium: 100%, Modifiers: 8, Corrupted",
         "stack": 13,
-        "standardPrice": 3.8,
+        "standardPrice": 4.49,
         "weight": 1356
     },
     {
@@ -8911,7 +9029,7 @@
         "price": 3.0,
         "reward": "Pacifism, Corrupted",
         "stack": 3,
-        "standardPrice": 0.33,
+        "standardPrice": 0.4,
         "weight": 588
     },
     {
@@ -8931,7 +9049,7 @@
         "price": 2.0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 9.0,
+        "standardPrice": 7.7,
         "weight": 479
     },
     {
@@ -8945,10 +9063,10 @@
         "eventPrice": 9.9,
         "name": "Underground Forest",
         "ninja": "https://poe.ninja/challenge/divination-cards/underground-forest",
-        "price": 9.075,
+        "price": 8.825,
         "reward": "10x Grand Eldritch Ichor",
         "stack": 4,
-        "standardPrice": 12.975000000000001,
+        "standardPrice": 12.450000000000001,
         "weight": 979
     },
     {
@@ -8967,10 +9085,10 @@
         "eventPrice": 9857.34,
         "name": "Unrequited Love",
         "ninja": "https://poe.ninja/challenge/divination-cards/unrequited-love",
-        "price": 12721.1,
+        "price": 11706.59,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 12506.9,
+        "standardPrice": 11701.95,
         "weight": 1
     },
     {
@@ -8984,10 +9102,10 @@
         "eventPrice": 1.0,
         "name": "Vanity",
         "ninja": "https://poe.ninja/challenge/divination-cards/vanity",
-        "price": 1.2,
+        "price": 1.1,
         "reward": "Tabula Rasa, Corrupted",
         "stack": 9,
-        "standardPrice": 2.0,
+        "standardPrice": 1.6,
         "weight": 1405
     },
     {
@@ -9024,7 +9142,7 @@
         "eventPrice": 0.3,
         "name": "Vinia's Token",
         "ninja": "https://poe.ninja/challenge/divination-cards/vinias-token",
-        "price": 0.42,
+        "price": 0.4,
         "reward": "10x Orb of Regret",
         "stack": 5,
         "standardPrice": 1.12,
@@ -9047,7 +9165,7 @@
         "price": 7.0,
         "reward": "Overpowering Opal Ring, Item Level: 100, Elder Item",
         "stack": 3,
-        "standardPrice": 61.64,
+        "standardPrice": 58.8,
         "weight": 20
     },
     {
@@ -9071,7 +9189,7 @@
         "price": 1.0,
         "reward": "Vaal Gem, Quality: +20%, Corrupted",
         "stack": 9,
-        "standardPrice": 2.67,
+        "standardPrice": 3.07,
         "weight": 6081
     },
     {
@@ -9087,10 +9205,10 @@
         "eventPrice": 142.86,
         "name": "Wealth and Power",
         "ninja": "https://poe.ninja/challenge/divination-cards/wealth-and-power",
-        "price": 181.73,
+        "price": 180.24,
         "reward": "Level 4 Enlighten, Corrupted",
         "stack": 11,
-        "standardPrice": 80.0,
+        "standardPrice": 75.6,
         "weight": 14
     },
     {
@@ -9108,10 +9226,10 @@
         "eventPrice": 46.5,
         "name": "Who Asked",
         "ninja": "https://poe.ninja/challenge/divination-cards/who-asked",
-        "price": 28.5,
+        "price": 33.2,
         "reward": "Dictator's Weapon, Item Level: 83, Fractured",
         "stack": 9,
-        "standardPrice": 72.14
+        "standardPrice": 72.0
     },
     {
         "art": "WintersEmbrace",

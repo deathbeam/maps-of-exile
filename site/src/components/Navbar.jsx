@@ -1,6 +1,7 @@
 import { useAtomValue } from 'jotai'
 
 import state from '../state'
+import ResetAll from './ResetAll'
 
 const getButtonClass = isActive => (isActive ? 'btn btn-primary' : 'btn btn-outline-primary')
 
@@ -14,7 +15,8 @@ const Navbar = ({ close = null }) => {
           <i className="fa-solid fa-fw fa-xmark" />
         </a>
       )}
-      <div className="btn-group ms-auto me-2">
+      <ResetAll />
+      <div className="btn-group me-2">
         <a className={getButtonClass(!route)} href="/#/">
           <i className="fa-solid fa-fw fa-list" /> List
         </a>

@@ -171,7 +171,7 @@ def get_card_data(key, config, card_extra):
         map(
             lambda x: {
                 "name": x["name"],
-                "stack_size": int(x.get("stack size", "1")),
+                "stack_size": int(x.get("stack size", "1") or "1"),
                 "reward": clean_card_text(x.get("description", "") or "", True),
                 "art": x.get("card art", ""),
                 "drop": {
@@ -248,7 +248,10 @@ def get_card_data(key, config, card_extra):
         skip_num = deck_sheet.get("skip", 0)
         print(f"Getting card amounts from {name}")
         url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-        amounts = requests.get(url).json()["values"]
+        amounts = requests.get(url).json()
+        if not "values" in amounts:
+            raise Exception("Failed to get card amounts from " + name + ": " + json.dumps(amounts, indent=2))
+        amounts = amounts["values"]
         for i in range(0, skip_num):
             amounts.pop(0)
         amounts_total = int(amounts.pop(0)[total_col])

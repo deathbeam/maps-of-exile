@@ -784,7 +784,7 @@
         "rating": {
             "boss": 8,
             "density": 1,
-            "layout": 10
+            "layout": 8
         },
         "shorthand": "atol",
         "tags": {
@@ -3810,6 +3810,7 @@
         "y": 196
     },
     {
+        "icon": "Art/2DItems/Maps/HallOfGrandmasters",
         "ids": [
             "MapWorldsPromenadeUnique"
         ],
@@ -3825,6 +3826,7 @@
         "tags": {
             "boss_separated": false,
             "few_obstacles": true,
+            "fortress_map": true,
             "linear": true,
             "outdoors": true
         },
@@ -7250,7 +7252,7 @@
         "name": "Terrace Map",
         "pantheon": "Soul of Yugul",
         "rating": {
-            "boss": 4,
+            "boss": 2,
             "density": 6,
             "layout": 8
         },

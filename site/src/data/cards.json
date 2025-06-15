@@ -100,7 +100,7 @@
         "price": 9.0,
         "reward": "Cortex, Corrupted",
         "stack": 4,
-        "standardPrice": 20.0,
+        "standardPrice": 20.42,
         "weight": 57
     },
     {
@@ -222,7 +222,7 @@
         "price": 9.456,
         "reward": "3x Exalted Orb",
         "stack": 5,
-        "standardPrice": 11.268,
+        "standardPrice": 12.281999999999998,
         "weight": 497
     },
     {
@@ -310,7 +310,7 @@
         "price": 8.5,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 2.2,
+        "standardPrice": 2.5,
         "weight": 128
     },
     {
@@ -330,7 +330,7 @@
         "price": 0.97,
         "reward": "Queen of the Forest",
         "stack": 6,
-        "standardPrice": 1.6,
+        "standardPrice": 1.8,
         "weight": 2106
     },
     {
@@ -350,7 +350,7 @@
         "price": 22.514285714285716,
         "reward": "10x Exalted Orb",
         "stack": 7,
-        "standardPrice": 26.82857142857143,
+        "standardPrice": 29.24285714285714,
         "weight": 163
     },
     {
@@ -406,7 +406,7 @@
         "price": 110.0,
         "reward": "Skittering Delirium Orb",
         "stack": 4,
-        "standardPrice": 3.6,
+        "standardPrice": 3.7,
         "weight": 75
     },
     {
@@ -517,7 +517,7 @@
         "price": 23.0,
         "reward": "Divinarius, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 589.13
+        "standardPrice": 564.92
     },
     {
         "art": "AstralProtection",
@@ -596,7 +596,7 @@
         "price": 1360.63,
         "reward": "Experimented Item, Item Level: 100, Double-Influenced Item",
         "stack": 4,
-        "standardPrice": 129.74,
+        "standardPrice": 141.23,
         "weight": 151
     },
     {
@@ -644,7 +644,7 @@
         "price": 179.03,
         "reward": "1500x Vivid Crystallised Lifeforce",
         "stack": 3,
-        "standardPrice": 280.54
+        "standardPrice": 282.46
     },
     {
         "art": "AzureRage",
@@ -662,7 +662,7 @@
         "price": 1.0,
         "reward": "Punishing Map, Map Tier: 16",
         "stack": 4,
-        "standardPrice": 1.6,
+        "standardPrice": 1.7,
         "weight": 3765
     },
     {
@@ -722,7 +722,7 @@
         "price": 129.52,
         "reward": "Atziri's Reflection",
         "stack": 5,
-        "standardPrice": 20.0,
+        "standardPrice": 20.38,
         "weight": 20
     },
     {
@@ -842,7 +842,7 @@
         "price": 18.8,
         "reward": "Six-Link Harbinger Bow, Item Level: 91",
         "stack": 6,
-        "standardPrice": 9.5,
+        "standardPrice": 9.6,
         "weight": 201
     },
     {
@@ -861,7 +861,7 @@
         "price": 130.0,
         "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 70.08,
+        "standardPrice": 70.43,
         "weight": 49
     },
     {
@@ -880,7 +880,7 @@
         "price": 1.2,
         "reward": "Cold Iron Point",
         "stack": 5,
-        "standardPrice": 1.5,
+        "standardPrice": 1.6,
         "weight": 1611
     },
     {
@@ -899,7 +899,7 @@
         "price": 918.42,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 753.25,
+        "standardPrice": 758.41,
         "weight": 26
     },
     {
@@ -918,7 +918,7 @@
         "price": 78.8,
         "reward": "5x Exalted Orb",
         "stack": 1,
-        "standardPrice": 93.9,
+        "standardPrice": 102.35,
         "weight": 57
     },
     {
@@ -1074,7 +1074,7 @@
         "price": 4.0,
         "reward": "5x Chaos Orb",
         "stack": 1,
-        "standardPrice": 3.8,
+        "standardPrice": 3.9,
         "weight": 4191
     },
     {
@@ -1132,7 +1132,7 @@
         "price": 1915.62,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 1641.16,
+        "standardPrice": 1412.3,
         "weight": 5
     },
     {
@@ -1152,7 +1152,7 @@
         "price": 5.3,
         "reward": "Item, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 13.0,
+        "standardPrice": 13.5,
         "weight": 626
     },
     {
@@ -1171,7 +1171,7 @@
         "price": 5.6,
         "reward": "Farrul Item",
         "stack": 4,
-        "standardPrice": 4.2,
+        "standardPrice": 4.4,
         "weight": 270
     },
     {
@@ -1220,15 +1220,18 @@
         "weight": 3090
     },
     {
+        "art": "Damnation",
         "drop": {
             "areas": [],
-            "min_level": 0,
+            "min_level": 81,
             "monsters": [],
             "text": ""
         },
+        "id": "damnation",
         "name": "Damnation",
-        "reward": "TBA",
-        "stack": 1
+        "reward": "The Original Scripture, Item Level: 83",
+        "stack": 16,
+        "standardPrice": 11298.4
     },
     {
         "art": "DarkDreams",
@@ -1280,7 +1283,7 @@
         "price": 96.33333333333333,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
-        "standardPrice": 6.733333333333333,
+        "standardPrice": 6.416666666666667,
         "weight": 49
     },
     {
@@ -1339,7 +1342,7 @@
         "price": 10.0,
         "reward": "Level 21 Trap Gem, Quality: +23%, Corrupted",
         "stack": 7,
-        "standardPrice": 8.4,
+        "standardPrice": 7.0,
         "weight": 214
     },
     {
@@ -1384,7 +1387,7 @@
         "price": 0.5499999999999999,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 0.11857142857142856,
+        "standardPrice": 0.10714285714285714,
         "weight": 588
     },
     {
@@ -1407,7 +1410,7 @@
         "price": 0.5499999999999999,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 0.11857142857142856,
+        "standardPrice": 0.10714285714285714,
         "weight": 588
     },
     {
@@ -1426,7 +1429,7 @@
         "price": 257.8,
         "reward": "Level 6 Awakened Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 259.5,
+        "standardPrice": 254.21,
         "weight": 41
     },
     {
@@ -1446,7 +1449,7 @@
         "price": 5.0,
         "reward": "Prism Guardian",
         "stack": 3,
-        "standardPrice": 2.2,
+        "standardPrice": 2.6,
         "weight": 128
     },
     {
@@ -1523,7 +1526,7 @@
         "price": 104.43416666666667,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 81.82416666666668,
+        "standardPrice": 82.38416666666667,
         "weight": 330
     },
     {
@@ -1582,7 +1585,7 @@
         "price": 35.0,
         "reward": "Level 21 Transfigured Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 50.0,
+        "standardPrice": 53.0,
         "weight": 201
     },
     {
@@ -1664,7 +1667,7 @@
         "price": 2.8,
         "reward": "Level 19 Transfigured Gem, Quality: +19%",
         "stack": 8,
-        "standardPrice": 3.9,
+        "standardPrice": 3.8,
         "weight": 1306
     },
     {
@@ -1762,7 +1765,7 @@
         "price": 3.0,
         "reward": "Item, Item Level: 100, Perfect Eldritch Implicit Modifier",
         "stack": 4,
-        "standardPrice": 9.0
+        "standardPrice": 10.0
     },
     {
         "art": "EmperorOfPurity",
@@ -1781,7 +1784,7 @@
         "price": 1.09,
         "reward": "Six-Link Holy Chainmail, Item Level: 60",
         "stack": 7,
-        "standardPrice": 1.5,
+        "standardPrice": 1.6,
         "weight": 2078
     },
     {
@@ -1820,7 +1823,7 @@
         "price": 4.5,
         "reward": "Maloney's Mechanism",
         "stack": 7,
-        "standardPrice": 4.6,
+        "standardPrice": 4.8,
         "weight": 394
     },
     {
@@ -1839,7 +1842,7 @@
         "price": 30.0,
         "reward": "Rigwald's Quills, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 23.76,
+        "standardPrice": 23.19,
         "weight": 20
     },
     {
@@ -1856,7 +1859,7 @@
         "price": 10.0,
         "reward": "Replica Cortex",
         "stack": 4,
-        "standardPrice": 25.2,
+        "standardPrice": 24.0,
         "weight": 66
     },
     {
@@ -1873,7 +1876,7 @@
         "price": 0.8,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
-        "standardPrice": 0.13333333333333333,
+        "standardPrice": 0.1,
         "weight": 1186
     },
     {
@@ -1892,7 +1895,7 @@
         "price": 60.0,
         "reward": "League-Specific Item, Double-Influenced Item, Item Level: 97, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 18.4,
+        "standardPrice": 19.4,
         "weight": 5
     },
     {
@@ -1913,7 +1916,7 @@
         "name": "Father's Love",
         "reward": "Sublime Vision",
         "stack": 2,
-        "standardPrice": 18515.64
+        "standardPrice": 18642.36
     },
     {
         "art": "FireOfUnknownOrigin",
@@ -1931,7 +1934,7 @@
         "price": 4475.75,
         "reward": "Nimis",
         "stack": 7,
-        "standardPrice": 784.11
+        "standardPrice": 684.97
     },
     {
         "art": "ForbiddenPower",
@@ -1950,7 +1953,7 @@
         "price": 2.0,
         "reward": "Balefire, Corrupted",
         "stack": 4,
-        "standardPrice": 1.4,
+        "standardPrice": 1.5,
         "weight": 2769
     },
     {
@@ -1988,7 +1991,7 @@
         "price": 18.8,
         "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
         "stack": 8,
-        "standardPrice": 2.09,
+        "standardPrice": 2.08,
         "weight": 270
     },
     {
@@ -2008,7 +2011,7 @@
         "price": 18.8,
         "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
         "stack": 8,
-        "standardPrice": 2.09,
+        "standardPrice": 2.08,
         "weight": 270
     },
     {
@@ -2163,7 +2166,7 @@
         "price": 2.2,
         "reward": "Shaper Guardian Map",
         "stack": 4,
-        "standardPrice": 2.5,
+        "standardPrice": 2.6,
         "weight": 1611
     },
     {
@@ -2250,13 +2253,13 @@
     {
         "drop": {
             "areas": [],
-            "min_level": 0,
+            "min_level": 40,
             "monsters": [],
             "text": ""
         },
         "name": "History",
-        "reward": "TBA",
-        "stack": 1
+        "reward": "2x Hinekora's Lock",
+        "stack": 5
     },
     {
         "art": "Home",
@@ -2276,7 +2279,7 @@
         "price": 22.0,
         "reward": "Exceptional Gem, Quality: +1-20%",
         "stack": 3,
-        "standardPrice": 25.9,
+        "standardPrice": 22.5,
         "weight": 85
     },
     {
@@ -2314,7 +2317,7 @@
         "price": 30256.07,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 39976.95,
+        "standardPrice": 40250.55,
         "weight": 12
     },
     {
@@ -2411,7 +2414,7 @@
         "price": 895.15,
         "reward": "2x Fracturing Orb",
         "stack": 2,
-        "standardPrice": 1683.24
+        "standardPrice": 1694.76
     },
     {
         "art": "ImmortalResolve",
@@ -2450,7 +2453,7 @@
         "price": 179.03,
         "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
         "stack": 5,
-        "standardPrice": 122.22,
+        "standardPrice": 113.86,
         "weight": 41
     },
     {
@@ -2653,13 +2656,13 @@
     {
         "drop": {
             "areas": [],
-            "min_level": 0,
+            "min_level": 64,
             "monsters": [],
             "text": ""
         },
         "name": "Last Stand",
-        "reward": "TBA",
-        "stack": 1
+        "reward": "The Surrender",
+        "stack": 3
     },
     {
         "art": "LeftToFate",
@@ -2786,7 +2789,7 @@
         "price": 358.06,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 350.68,
+        "standardPrice": 353.08,
         "weight": 5
     },
     {
@@ -2847,7 +2850,7 @@
         "price": 2.1444444444444444,
         "reward": "10x Stacked Deck",
         "stack": 9,
-        "standardPrice": 0.16666666666666666,
+        "standardPrice": 0.15555555555555559,
         "weight": 315
     },
     {
@@ -2866,7 +2869,7 @@
         "price": 716.12,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 210.45,
+        "standardPrice": 201.97,
         "weight": 57
     },
     {
@@ -2948,7 +2951,7 @@
         "price": 6445.08,
         "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
         "stack": 8,
-        "standardPrice": 645.24,
+        "standardPrice": 649.66,
         "weight": 5
     },
     {
@@ -3088,7 +3091,7 @@
         "price": 1.0,
         "reward": "4x Scarab",
         "stack": 7,
-        "standardPrice": 1.6,
+        "standardPrice": 23.12,
         "weight": 957
     },
     {
@@ -3129,7 +3132,7 @@
         "price": 6.8,
         "reward": "Bone Helmet, Item Level: 100, Elder Item",
         "stack": 4,
-        "standardPrice": 8.0,
+        "standardPrice": 8.8,
         "weight": 20
     },
     {
@@ -3415,7 +3418,7 @@
         "price": 18.0,
         "reward": "Charan's Sword",
         "stack": 27,
-        "standardPrice": 6.5,
+        "standardPrice": 6.8,
         "weight": 66
     },
     {
@@ -3453,7 +3456,7 @@
         "price": 2.8,
         "reward": "Omeyocan",
         "stack": 6,
-        "standardPrice": 2.91,
+        "standardPrice": 2.92,
         "weight": 394
     },
     {
@@ -3470,19 +3473,19 @@
         "price": 77.0,
         "reward": "Precursor's Emblem, Corrupted",
         "stack": 8,
-        "standardPrice": 18.9,
+        "standardPrice": 20.0,
         "weight": 57
     },
     {
         "drop": {
             "areas": [],
-            "min_level": 0,
+            "min_level": 1,
             "monsters": [],
             "text": ""
         },
         "name": "Runic Luck",
-        "reward": "TBA",
-        "stack": 1
+        "reward": "10x Vendor Refresh Currency",
+        "stack": 4
     },
     {
         "art": "SambodhisVow",
@@ -3498,7 +3501,7 @@
         "price": 2.0,
         "reward": "Mortal Fragment",
         "stack": 3,
-        "standardPrice": 1.3,
+        "standardPrice": 1.2,
         "weight": 5088
     },
     {
@@ -3552,7 +3555,7 @@
         "price": 537.09,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 336.65,
+        "standardPrice": 334.72,
         "weight": 116
     },
     {
@@ -3648,7 +3651,7 @@
         "name": "Squandered Prosperity",
         "reward": "The Light of Meaning, Corrupted",
         "stack": 5,
-        "standardPrice": 42.4
+        "standardPrice": 35.6
     },
     {
         "art": "StruckbyLightning",
@@ -3688,7 +3691,7 @@
         "price": 113.0,
         "reward": "Bottled Faith",
         "stack": 6,
-        "standardPrice": 29.08,
+        "standardPrice": 30.49,
         "weight": 20
     },
     {
@@ -3707,7 +3710,7 @@
         "price": 40.0,
         "reward": "Relic, Item Level: 83",
         "stack": 4,
-        "standardPrice": 140.27
+        "standardPrice": 141.23
     },
     {
         "art": "TerribleSecretOfSpace",
@@ -3764,7 +3767,7 @@
         "price": 3.6,
         "reward": "Atziri Item",
         "stack": 9,
-        "standardPrice": 2.2,
+        "standardPrice": 2.3,
         "weight": 1533
     },
     {
@@ -3826,7 +3829,7 @@
         "price": 7372.46,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 4909.45,
+        "standardPrice": 4943.05,
         "weight": 5
     },
     {
@@ -3882,7 +3885,9 @@
         "drop": {
             "areas": [
                 "MapWorldsColdRiver_",
-                "MapWorldsTempleUnique"
+                "MapWorldsTempleUnique",
+                "1_3_14_2",
+                "2_8_7_2"
             ],
             "min_level": 28,
             "monsters": [],
@@ -3932,7 +3937,7 @@
         "price": 9.5,
         "reward": "Item, Elevated Item, Influenced Item",
         "stack": 5,
-        "standardPrice": 38.54,
+        "standardPrice": 40.0,
         "weight": 20
     },
     {
@@ -3952,7 +3957,7 @@
         "price": 52.5,
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 91.0,
+        "standardPrice": 90.0,
         "weight": 5
     },
     {
@@ -4009,7 +4014,7 @@
         "name": "The Bargain",
         "reward": "Flawless Breachstone",
         "stack": 5,
-        "standardPrice": 5.0,
+        "standardPrice": 4.8,
         "weight": 212
     },
     {
@@ -4051,7 +4056,7 @@
         "price": 1.61,
         "reward": "Fecund Ursine Pelt, Warlord Item",
         "stack": 6,
-        "standardPrice": 1.2,
+        "standardPrice": 1.3,
         "weight": 684
     },
     {
@@ -4169,7 +4174,7 @@
         "price": 1.0,
         "reward": "Body Armour",
         "stack": 4,
-        "standardPrice": 1.58,
+        "standardPrice": 1.67,
         "weight": 4447
     },
     {
@@ -4245,7 +4250,7 @@
         "price": 1.7,
         "reward": "Voll's Devotion, Corrupted",
         "stack": 8,
-        "standardPrice": 7.2,
+        "standardPrice": 7.4,
         "weight": 116
     },
     {
@@ -4266,7 +4271,7 @@
         "price": 1.0,
         "reward": "Jewellery",
         "stack": 6,
-        "standardPrice": 2.0,
+        "standardPrice": 2.1,
         "weight": 6621
     },
     {
@@ -4389,7 +4394,7 @@
         "price": 5.24,
         "reward": "10x Cartographer's Chisel",
         "stack": 1,
-        "standardPrice": 2.91,
+        "standardPrice": 2.92,
         "weight": 9112
     },
     {
@@ -4485,7 +4490,7 @@
         "price": 0.16666666666666666,
         "reward": "Vaal Orb",
         "stack": 3,
-        "standardPrice": 0.03666666666666667,
+        "standardPrice": 0.026666666666666665,
         "weight": 28603
     },
     {
@@ -4504,7 +4509,7 @@
         "price": 28.0,
         "reward": "Fishing Rod, Incubated, Item Level: 99",
         "stack": 18,
-        "standardPrice": 24.0,
+        "standardPrice": 25.8,
         "weight": 33
     },
     {
@@ -4526,7 +4531,7 @@
         "price": 1.53,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
-        "standardPrice": 2.4,
+        "standardPrice": 2.5,
         "weight": 913
     },
     {
@@ -4583,7 +4588,7 @@
         "price": 615.86,
         "reward": "Level 6 Awakened Support Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 589.13,
+        "standardPrice": 593.17,
         "weight": 14
     },
     {
@@ -4698,7 +4703,7 @@
         "price": 204.09,
         "reward": "Soul Ripper",
         "stack": 6,
-        "standardPrice": 46.29,
+        "standardPrice": 40.56,
         "weight": 33
     },
     {
@@ -4757,7 +4762,7 @@
         "price": 1.9,
         "reward": "Severed in Sleep, Corrupted",
         "stack": 6,
-        "standardPrice": 2.0,
+        "standardPrice": 2.1,
         "weight": 346
     },
     {
@@ -4816,7 +4821,7 @@
         "price": 6.8,
         "reward": "Tidebreaker",
         "stack": 5,
-        "standardPrice": 5.0,
+        "standardPrice": 4.3,
         "weight": 128
     },
     {
@@ -4835,7 +4840,7 @@
         "price": 671.36,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 605.97,
+        "standardPrice": 435.98,
         "weight": 5
     },
     {
@@ -4874,7 +4879,7 @@
         "price": 48.2,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 54.0,
+        "standardPrice": 58.0,
         "weight": 20
     },
     {
@@ -4894,7 +4899,7 @@
         "price": 223.79,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 138.51,
+        "standardPrice": 143.29,
         "weight": 20
     },
     {
@@ -4953,7 +4958,7 @@
         "price": 45.0,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
-        "standardPrice": 13.88,
+        "standardPrice": 14.0,
         "weight": 49
     },
     {
@@ -5030,7 +5035,7 @@
         "price": 12.8,
         "reward": "Belt, Double-Influenced Item",
         "stack": 7,
-        "standardPrice": 5.5,
+        "standardPrice": 4.6,
         "weight": 411
     },
     {
@@ -5091,7 +5096,7 @@
         "price": 40.0,
         "reward": "Vaal Breach, Quality: +6%, Corrupted",
         "stack": 6,
-        "standardPrice": 16.0,
+        "standardPrice": 16.5,
         "weight": 9
     },
     {
@@ -5133,7 +5138,7 @@
         "price": 187.98,
         "reward": "Voidforge",
         "stack": 9,
-        "standardPrice": 15.27,
+        "standardPrice": 18.38,
         "weight": 5
     },
     {
@@ -5175,7 +5180,7 @@
         "price": 24.7,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
-        "standardPrice": 13.0,
+        "standardPrice": 13.5,
         "weight": 20
     },
     {
@@ -5238,7 +5243,7 @@
         "price": 5.0,
         "reward": "Seven-League Step",
         "stack": 5,
-        "standardPrice": 4.0,
+        "standardPrice": 4.3,
         "weight": 551
     },
     {
@@ -5280,7 +5285,7 @@
         "price": 1.97,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
-        "standardPrice": 3.3,
+        "standardPrice": 3.2,
         "weight": 497
     },
     {
@@ -5317,7 +5322,7 @@
         "price": 30.0,
         "reward": "Chayula's Flawless Breachstone",
         "stack": 8,
-        "standardPrice": 4.7,
+        "standardPrice": 4.8,
         "weight": 5
     },
     {
@@ -5357,7 +5362,7 @@
         "price": 1.0,
         "reward": "Lightpoacher",
         "stack": 8,
-        "standardPrice": 1.18,
+        "standardPrice": 1.0,
         "weight": 1356
     },
     {
@@ -5398,7 +5403,7 @@
         "price": 179.03,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 140.27,
+        "standardPrice": 141.23,
         "weight": 4
     },
     {
@@ -5417,7 +5422,7 @@
         "price": 4.815,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
-        "standardPrice": 1.35,
+        "standardPrice": 1.4,
         "weight": 411
     },
     {
@@ -5437,7 +5442,7 @@
         "price": 10.0,
         "reward": "Albino Rhoa Feather",
         "stack": 4,
-        "standardPrice": 35.0,
+        "standardPrice": 36.0,
         "weight": 14
     },
     {
@@ -5536,7 +5541,7 @@
         "price": 14.0,
         "reward": "Varunastra",
         "stack": 7,
-        "standardPrice": 2.9,
+        "standardPrice": 3.0,
         "weight": 256
     },
     {
@@ -5578,7 +5583,7 @@
         "price": 29.83833333333333,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 23.378333333333334
+        "standardPrice": 23.53833333333333
     },
     {
         "art": "TheForwardGaze",
@@ -5596,7 +5601,7 @@
         "price": 3.0,
         "reward": "Replica Item",
         "stack": 6,
-        "standardPrice": 3.8,
+        "standardPrice": 4.0,
         "weight": 1356
     },
     {
@@ -5636,7 +5641,7 @@
         "price": 6.2,
         "reward": "Bramblejack, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 3.2,
+        "standardPrice": 4.0,
         "weight": 744
     },
     {
@@ -5676,7 +5681,7 @@
         "price": 16.2,
         "reward": "Jewel",
         "stack": 4,
-        "standardPrice": 2.0,
+        "standardPrice": 1.9,
         "weight": 116
     },
     {
@@ -5770,7 +5775,7 @@
         "price": 3.72,
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 15.13,
+        "standardPrice": 13.54,
         "weight": 5
     },
     {
@@ -5811,7 +5816,7 @@
         "price": 22.0,
         "reward": "Item, Item Level: 100, Elder Item",
         "stack": 4,
-        "standardPrice": 8.2,
+        "standardPrice": 8.1,
         "weight": 49
     },
     {
@@ -5893,7 +5898,7 @@
         "price": 16.0,
         "reward": "Machina Mitts, Two-Implicit, Corrupted",
         "stack": 6,
-        "standardPrice": 9.8,
+        "standardPrice": 9.9,
         "weight": 14
     },
     {
@@ -5913,7 +5918,7 @@
         "price": 1.3133333333333332,
         "reward": "Exalted Orb",
         "stack": 12,
-        "standardPrice": 1.565,
+        "standardPrice": 1.705833333333333,
         "weight": 2706
     },
     {
@@ -5969,7 +5974,7 @@
         "price": 2792.87,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 4628.91,
+        "standardPrice": 4660.59,
         "weight": 20
     },
     {
@@ -6050,7 +6055,7 @@
         "price": 1951.43,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 1402.7,
+        "standardPrice": 1412.3,
         "weight": 9
     },
     {
@@ -6093,7 +6098,7 @@
         "price": 0.8333333333333334,
         "reward": "10x Vaal Orb",
         "stack": 6,
-        "standardPrice": 0.18333333333333335,
+        "standardPrice": 0.13333333333333333,
         "weight": 6453
     },
     {
@@ -6112,7 +6117,7 @@
         "price": 4.61,
         "reward": "Merciless One-Hand Weapon, Item Level: 100",
         "stack": 9,
-        "standardPrice": 4.9,
+        "standardPrice": 4.8,
         "weight": 479
     },
     {
@@ -6213,7 +6218,7 @@
         "price": 1.2,
         "reward": "Kaom's Heart",
         "stack": 8,
-        "standardPrice": 4.42,
+        "standardPrice": 4.22,
         "weight": 533
     },
     {
@@ -6274,7 +6279,7 @@
         "price": 47.2,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
-        "standardPrice": 3.2,
+        "standardPrice": 4.33,
         "weight": 14
     },
     {
@@ -6293,7 +6298,7 @@
         "price": 23.8,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 34.0,
+        "standardPrice": 37.5,
         "weight": 26
     },
     {
@@ -6355,7 +6360,7 @@
         "price": 1.27,
         "reward": "Lioneye Item",
         "stack": 5,
-        "standardPrice": 1.0,
+        "standardPrice": 1.1,
         "weight": 3422
     },
     {
@@ -6559,7 +6564,7 @@
         "name": "The Mayor",
         "reward": "The Light of Meaning",
         "stack": 5,
-        "standardPrice": 18.78
+        "standardPrice": 20.47
     },
     {
         "art": "TheMercenary",
@@ -6690,7 +6695,7 @@
         "price": 21.8,
         "reward": "The Doctor",
         "stack": 8,
-        "standardPrice": 18.78,
+        "standardPrice": 20.47,
         "weight": 66
     },
     {
@@ -6780,7 +6785,7 @@
         "price": 4.4,
         "reward": "Ryslatha's Coil",
         "stack": 9,
-        "standardPrice": 4.9,
+        "standardPrice": 5.0,
         "weight": 300
     },
     {
@@ -6799,7 +6804,7 @@
         "price": 22.0,
         "reward": "Fishing Rod, Two-Implicit, Corrupted",
         "stack": 12,
-        "standardPrice": 67.23,
+        "standardPrice": 74.49,
         "weight": 14
     },
     {
@@ -6818,7 +6823,7 @@
         "price": 12.0,
         "reward": "Replica Bated Breath",
         "stack": 7,
-        "standardPrice": 116.11,
+        "standardPrice": 116.49,
         "weight": 5
     },
     {
@@ -6917,7 +6922,7 @@
         "price": 4.2,
         "reward": "The Nurse",
         "stack": 8,
-        "standardPrice": 4.0,
+        "standardPrice": 4.28,
         "weight": 785
     },
     {
@@ -6996,7 +7001,7 @@
         "price": 2.0,
         "reward": "Six-Link Short Bow, Item Level: 50",
         "stack": 6,
-        "standardPrice": 2.3,
+        "standardPrice": 3.0,
         "weight": 3456
     },
     {
@@ -7015,7 +7020,7 @@
         "price": 6355.56,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 5189.99,
+        "standardPrice": 3078.81,
         "weight": 4
     },
     {
@@ -7145,7 +7150,7 @@
         "price": 2.0,
         "reward": "Elder Guardian Occupied Map, Map Tier: 14 to 16, Modifiers: 8, Corrupted",
         "stack": 5,
-        "standardPrice": 1.9,
+        "standardPrice": 2.0,
         "weight": 1209
     },
     {
@@ -7203,7 +7208,7 @@
         "price": 2.9,
         "reward": "The Putrid Cloister",
         "stack": 4,
-        "standardPrice": 2.9,
+        "standardPrice": 3.0,
         "weight": 201
     },
     {
@@ -7279,7 +7284,7 @@
         "price": 6.0,
         "reward": "Atziri's Acuity",
         "stack": 16,
-        "standardPrice": 7.6,
+        "standardPrice": 7.2,
         "weight": 66
     },
     {
@@ -7404,7 +7409,7 @@
         "price": 1.63,
         "reward": "Ventor's Gamble",
         "stack": 3,
-        "standardPrice": 4.4,
+        "standardPrice": 4.3,
         "weight": 4670
     },
     {
@@ -7424,7 +7429,7 @@
         "price": 2.12,
         "reward": "Level 21 Golem Gem, Corrupted",
         "stack": 5,
-        "standardPrice": 1.0,
+        "standardPrice": 1.09,
         "weight": 2078
     },
     {
@@ -7444,7 +7449,7 @@
         "price": 4.6,
         "reward": "Runic One-Hand Weapon, Item Level: 100",
         "stack": 7,
-        "standardPrice": 2.3,
+        "standardPrice": 2.4,
         "weight": 270
     },
     {
@@ -7463,7 +7468,7 @@
         "price": 4.057777777777778,
         "reward": "4x Tainted Mythic Orb",
         "stack": 9,
-        "standardPrice": 0.5777777777777777,
+        "standardPrice": 0.5155555555555555,
         "weight": 175
     },
     {
@@ -7504,7 +7509,7 @@
         "price": 158.71,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
-        "standardPrice": 9.1,
+        "standardPrice": 9.4,
         "weight": 49
     },
     {
@@ -7523,7 +7528,7 @@
         "price": 3.152,
         "reward": "2x Exalted Orb",
         "stack": 10,
-        "standardPrice": 3.7560000000000002,
+        "standardPrice": 4.094,
         "weight": 1024
     },
     {
@@ -7542,7 +7547,7 @@
         "price": 70.0,
         "reward": "Watcher's Eye",
         "stack": 3,
-        "standardPrice": 18.78,
+        "standardPrice": 20.42,
         "weight": 106
     },
     {
@@ -7626,7 +7631,7 @@
         "price": 13.79,
         "reward": "7x Exalted Orb",
         "stack": 8,
-        "standardPrice": 16.4325,
+        "standardPrice": 17.91125,
         "weight": 285
     },
     {
@@ -7645,7 +7650,7 @@
         "price": 1.2833333333333332,
         "reward": "3x Orb of Annulment",
         "stack": 9,
-        "standardPrice": 0.2766666666666666,
+        "standardPrice": 0.25,
         "weight": 242
     },
     {
@@ -7666,7 +7671,7 @@
         "price": 120.0,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 127.51818181818183,
+        "standardPrice": 128.39090909090908,
         "weight": 188
     },
     {
@@ -7705,7 +7710,7 @@
         "price": 77.0,
         "reward": "The Squire",
         "stack": 8,
-        "standardPrice": 140.27,
+        "standardPrice": 141.23,
         "weight": 20
     },
     {
@@ -7782,7 +7787,7 @@
         "price": 10.0,
         "reward": "Quicksilver Flask of the Cheetah, Item Level: 100",
         "stack": 1,
-        "standardPrice": 13.1,
+        "standardPrice": 13.2,
         "weight": 163
     },
     {
@@ -7884,7 +7889,7 @@
         "price": 35.5,
         "reward": "Soul Taker",
         "stack": 9,
-        "standardPrice": 9.4,
+        "standardPrice": 9.7,
         "weight": 41
     },
     {
@@ -8101,6 +8106,7 @@
             "areas": [
                 "MapWorldsColosseum",
                 "MapWorldsChimera",
+                "1_4_5_1",
                 "1_4_5_2"
             ],
             "min_level": 23,
@@ -8133,7 +8139,7 @@
         "price": 3.8,
         "reward": "Shavronne's Revelation, Corrupted",
         "stack": 8,
-        "standardPrice": 4.5,
+        "standardPrice": 4.4,
         "weight": 116
     },
     {
@@ -8256,7 +8262,7 @@
         "price": 1.8260000000000003,
         "reward": "Tainted Mythic Orb",
         "stack": 5,
-        "standardPrice": 0.26,
+        "standardPrice": 0.23199999999999998,
         "weight": 285
     },
     {
@@ -8374,7 +8380,7 @@
         "price": 2.6,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
-        "standardPrice": 4.8,
+        "standardPrice": 5.0,
         "weight": 935
     },
     {
@@ -8393,7 +8399,7 @@
         "price": 8.5,
         "reward": "Merciless Vaal Axe, Item Level: 100, Elder Item",
         "stack": 8,
-        "standardPrice": 13.5,
+        "standardPrice": 14.5,
         "weight": 9
     },
     {
@@ -8412,7 +8418,7 @@
         "price": 3.0,
         "reward": "Attribute Transforming Jewel, Corrupted",
         "stack": 2,
-        "standardPrice": 3.7,
+        "standardPrice": 3.8,
         "weight": 330
     },
     {
@@ -8482,7 +8488,7 @@
         "price": 25.8,
         "reward": "Song of the Sirens",
         "stack": 7,
-        "standardPrice": 33.0,
+        "standardPrice": 27.14,
         "weight": 9
     },
     {
@@ -8569,7 +8575,7 @@
         "price": 2.0,
         "reward": "Six-Link Coronal Maul, Item Level: 83",
         "stack": 6,
-        "standardPrice": 2.9,
+        "standardPrice": 3.0,
         "weight": 704
     },
     {
@@ -8628,7 +8634,7 @@
         "price": 11.6,
         "reward": "Arakaali's Fang",
         "stack": 2,
-        "standardPrice": 9.5,
+        "standardPrice": 10.0,
         "weight": 57
     },
     {
@@ -8647,7 +8653,7 @@
         "price": 11.7,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
-        "standardPrice": 8.0,
+        "standardPrice": 8.2,
         "weight": 14
     },
     {
@@ -8763,7 +8769,7 @@
         "price": 4.0,
         "reward": "Vaults of Atziri",
         "stack": 4,
-        "standardPrice": 1.0,
+        "standardPrice": 1.1,
         "weight": 1637
     },
     {
@@ -8841,7 +8847,7 @@
         "price": 73.0,
         "reward": "Starforge",
         "stack": 8,
-        "standardPrice": 15.0,
+        "standardPrice": 16.0,
         "weight": 24
     },
     {
@@ -8985,7 +8991,7 @@
         "price": 1.0,
         "reward": "League-Specific Item",
         "stack": 10,
-        "standardPrice": 1.97,
+        "standardPrice": 1.98,
         "weight": 6578
     },
     {
@@ -9004,7 +9010,7 @@
         "price": 3.6,
         "reward": "Dendrobate,  Two-Implicit,  Corrupted",
         "stack": 5,
-        "standardPrice": 50.0
+        "standardPrice": 34.25
     },
     {
         "art": "Tranquillity",
@@ -9023,7 +9029,7 @@
         "price": 50.0,
         "reward": "Voltaxic Rift",
         "stack": 7,
-        "standardPrice": 1.2,
+        "standardPrice": 1.0,
         "weight": 14
     },
     {
@@ -9102,7 +9108,7 @@
         "price": 2.0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 3.4,
+        "standardPrice": 3.6,
         "weight": 479
     },
     {
@@ -9119,7 +9125,7 @@
         "price": 8.5,
         "reward": "10x Grand Eldritch Ichor",
         "stack": 4,
-        "standardPrice": 0.875,
+        "standardPrice": 0.8,
         "weight": 979
     },
     {
@@ -9141,7 +9147,7 @@
         "price": 12532.1,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 13185.38,
+        "standardPrice": 13134.39,
         "weight": 1
     },
     {
@@ -9218,7 +9224,7 @@
         "price": 7.5,
         "reward": "Overpowering Opal Ring, Item Level: 100, Elder Item",
         "stack": 3,
-        "standardPrice": 10.1,
+        "standardPrice": 8.8,
         "weight": 20
     },
     {
@@ -9267,13 +9273,13 @@
     {
         "drop": {
             "areas": [],
-            "min_level": 0,
+            "min_level": 78,
             "monsters": [],
             "text": ""
         },
         "name": "When Currents Blaze",
-        "reward": "TBA",
-        "stack": 1
+        "reward": "Stormfire, Quality: +20%, Corrupted",
+        "stack": 2
     },
     {
         "art": "WhoAsked",
@@ -9308,7 +9314,7 @@
         "price": 2864.48,
         "reward": "Circle of Fear, Three-Implicit, Synthesised",
         "stack": 2,
-        "standardPrice": 23.0,
+        "standardPrice": 10.0,
         "weight": 33
     }
 ]

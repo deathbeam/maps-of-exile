@@ -180,10 +180,10 @@
             "boss": "Two randomly selected Renegade bosses. All use a range of Elemental/Chaos/Physical abilities. Best to consult the Wiki on the mechanics of each possible boss. I will say however Mongrants, The Deafening uses a powerful Spectral Throw which casts powerful Elemental spells below your feet on hit. On several occasion this particular boss has caught me out."
         },
         "levels": [
+            70,
+            73,
+            77,
             81,
-            83,
-            83,
-            83,
             83
         ],
         "name": "Acid Caverns Map",
@@ -267,10 +267,10 @@
             "boss": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles"
         },
         "levels": [
-            82,
-            83,
-            83,
-            83,
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Alleyways Map",
@@ -336,9 +336,9 @@
             "boss": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT. He also have companions/boss guards."
         },
         "levels": [
-            72,
-            75,
-            79,
+            73,
+            76,
+            80,
             83,
             83
         ],
@@ -422,10 +422,10 @@
             "boss": "Viper Strike inflicts Poison. Summons swarms of small spiders. Will periodically enshroud the arena in web, lowering your attack, cast and movement speed as well as your damage. You can drag yourself through the nearby fires to remove the debuff."
         },
         "levels": [
-            75,
-            78,
-            82,
-            83,
+            70,
+            73,
+            77,
+            81,
             83
         ],
         "name": "Arachnid Tomb Map",
@@ -473,8 +473,8 @@
             "boss": "Flammability and Conductivity lower resists so overcap or bring curse removal. Weak elemental spells"
         },
         "levels": [
-            80,
-            83,
+            78,
+            81,
             83,
             83,
             83
@@ -559,10 +559,10 @@
             "boss": "Chaos degen aura and Physical charge attack. Breaking Rhoa nests heals and enrages boss. Boss becomes much more difficult when enraged. Enraged boss drops more loot"
         },
         "levels": [
-            69,
-            72,
-            76,
+            77,
             80,
+            83,
+            83,
             83
         ],
         "name": "Arid Lake Map",
@@ -609,10 +609,10 @@
             "boss": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities."
         },
         "levels": [
-            70,
-            73,
-            77,
-            81,
+            80,
+            83,
+            83,
+            83,
             83
         ],
         "name": "Armoury Map",
@@ -659,9 +659,9 @@
             "boss": "Waves of Animated Weapons until boss appears. Fast but manageable Physical Cyclone and Lacerate attacks. Cascade of weak Physical projectiles."
         },
         "levels": [
-            80,
-            83,
-            83,
+            75,
+            78,
+            82,
             83,
             83
         ],
@@ -709,7 +709,7 @@
             "boss_rushable": "Find the 2 tents, boss spawns in between them"
         },
         "levels": [
-            80,
+            82,
             83,
             83,
             83,
@@ -887,9 +887,9 @@
             "boss": "Act V Avarius. Things to avoid Divine Beam which deals heavy Fire DoT and applies a stacking debuff that lowers Fire resistance (like Scorching Ray). Avoid large circle on the ground that explodes after a duration for massive Fire damage. Most dangerous attack is a slow moving orb that splits into a faster version of smaller projectiles that each deal massive fire damage. Either get to back of the chamber where this is easy to dodge or stand behind one of the large statues (if there's any)."
         },
         "levels": [
+            73,
             76,
-            79,
-            83,
+            80,
             83,
             83
         ],
@@ -932,9 +932,9 @@
             "boss": "Physical Spectral Throw. At 2/3 health Marceus the Defaced (Marketplace) is summoned - strong Lightning Strike attack. At 1/3 health Goddess of Purity (Solaris Temple) is summoned."
         },
         "levels": [
-            74,
-            77,
-            81,
+            72,
+            75,
+            79,
             83,
             83
         ],
@@ -976,7 +976,7 @@
             "boss": "Spams Cold spells. Bring Freeze immunity if you have low health"
         },
         "levels": [
-            81,
+            80,
             83,
             83,
             83,
@@ -1027,9 +1027,9 @@
             "boss": "Act V Kitava except with lower maximum life"
         },
         "levels": [
-            73,
-            76,
-            80,
+            78,
+            81,
+            83,
             83,
             83
         ],
@@ -1078,10 +1078,10 @@
             "boss_rushable": "Door usually can be found close going straight from portal"
         },
         "levels": [
-            70,
-            73,
-            77,
-            81,
+            72,
+            75,
+            79,
+            83,
             83
         ],
         "name": "Bog Map",
@@ -1174,9 +1174,9 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            74,
-            77,
-            81,
+            76,
+            79,
+            83,
             83,
             83
         ],
@@ -1370,10 +1370,10 @@
             "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
         },
         "levels": [
-            71,
-            74,
-            78,
-            82,
+            83,
+            83,
+            83,
+            83,
             83
         ],
         "name": "Canyon Map",
@@ -1455,9 +1455,9 @@
             "boss_rushable": "The boss room is top right along the path"
         },
         "levels": [
-            73,
-            76,
-            80,
+            79,
+            82,
+            83,
             83,
             83
         ],
@@ -1582,6 +1582,31 @@
         "y": 373
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/FragmentOfAnger"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ChambersofImpurity",
+        "ids": [
+            "MapWorldsChambersOfImpurity"
+        ],
+        "info": {},
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
+        "name": "Chambers of Impurity Map",
+        "rating": {},
+        "shorthand": " im",
+        "tags": {
+            "boss_not_twinnable": true,
+            "sanctuary_map": true
+        },
+        "type": "map"
+    },
+    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/VultureParasite/VultureParasiteMapBoss"
@@ -1599,10 +1624,10 @@
             "boss": "Powerful telegraphed Cleave with larger radius. Summons a pack of Infested Vulture."
         },
         "levels": [
-            74,
-            77,
-            81,
-            83,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Channel Map",
@@ -1642,10 +1667,10 @@
             "boss": "Strong Physical attacks. Sunder. Doesn't feel as strong as Uber Labyrinth Argus, also isn't immune to status ailments. Enrages for 8 seconds (turns red) increasing damage, movement speed and attack speed by 100%. Decoy Totem comes in handy for casters and ranged characters."
         },
         "levels": [
-            74,
-            77,
-            81,
-            83,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Chateau Map",
@@ -1738,9 +1763,9 @@
             "boss": "The two Matriarchs throw Magma Orbs which inflict heavy Ignites. Carius has a powerful Chaos degen which follows the character. After one of the bosses die the others enrage gaining damage and health. Recommend killing Carius first."
         },
         "levels": [
-            75,
-            78,
-            82,
+            74,
+            77,
+            81,
             83,
             83
         ],
@@ -1788,9 +1813,9 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            75,
-            78,
-            82,
+            81,
+            83,
+            83,
             83,
             83
         ],
@@ -1837,9 +1862,9 @@
             "boss": "Much stronger than Armoury Gravicius. His Firestorm, Fire trap and Molten Shell abilities hit hard so ensure you have adequate fire mitigation. Gravicius has a large ES pool (cannot be bypassed by Chaos damage). At 2/3 and 1/3 life Gravicius will return to his tent regaining all his ES back. This fight can be long so you may need to portal to get back flask charges."
         },
         "levels": [
-            72,
             75,
-            79,
+            78,
+            82,
             83,
             83
         ],
@@ -1886,10 +1911,10 @@
             "boss": "Quick Physical/Cold attacks. Kneels to heal at 25%/50%/75% health. After healing gains 75% increased attack speed for 6 seconds. AoE Reave has Resolute Technique. Always be wary of spinning blades that contiually spawn, they deal serious Physical DoT. Decoy Totem work wonders in this fight."
         },
         "levels": [
-            73,
+            69,
+            72,
             76,
             80,
-            83,
             83
         ],
         "name": "Colosseum Map",
@@ -1935,9 +1960,9 @@
             "boss": "Shield Charges, leaving behind weak Physical projectiles."
         },
         "levels": [
-            72,
-            75,
-            79,
+            73,
+            76,
+            80,
             83,
             83
         ],
@@ -2037,10 +2062,10 @@
             "boss": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss."
         },
         "levels": [
-            80,
-            83,
-            83,
-            83,
+            70,
+            73,
+            77,
+            81,
             83
         ],
         "name": "Core Map",
@@ -2155,7 +2180,7 @@
             "density": 4,
             "layout": 6
         },
-        "shorthand": "rty",
+        "shorthand": "courtyard",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -2172,6 +2197,31 @@
         "type": "map",
         "x": 755,
         "y": 363
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/FragmentOfIgnorance/FragmentOfIgnorance__"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CourtyardofWasting",
+        "ids": [
+            "MapWorldsCourtyardOfWasting"
+        ],
+        "info": {},
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
+        "name": "Courtyard of Wasting Map",
+        "rating": {},
+        "shorthand": " wa",
+        "tags": {
+            "boss_not_twinnable": true,
+            "citadel_map": true
+        },
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -2316,8 +2366,8 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            78,
-            81,
+            83,
+            83,
             83,
             83,
             83
@@ -2385,7 +2435,7 @@
             "boss": "Bosses have Phylacteral Link, which means only one can be damaged at a time (indicated by shiny aura around boss). Burning Man has Righteous Fire and throws Fire projectiles which leave a powerful Burning Ground. On death the Burning Man explodes for massive Fire damage that always Ignites so stand clear. Pikerivet has a Physical Cascade attack. The Pocked Goliath has a powerful short-range Ground Slam and spawns Miners. The small arena can make this boss fight hard to manoeuvre, however ranged characters may be able to offscreen from certain positions."
         },
         "levels": [
-            83,
+            80,
             83,
             83,
             83,
@@ -2507,10 +2557,10 @@
             "boss": "Same as Lair Rigwald but more frustrating. He teleports more often giving you even less time to get damage in. Each platform comes with a bonus effect such as summoning adds or ground effects. Watch out for the spinning Essence Drain that does a lot of Chaos DoT."
         },
         "levels": [
-            69,
-            72,
-            76,
-            80,
+            71,
+            74,
+            78,
+            82,
             83
         ],
         "name": "Dark Forest Map",
@@ -2595,10 +2645,10 @@
             "boss": "Boss has strong Physical Cleave and telegraphed projectile. Also fires three weak Physical projectiles. Summons slow moving statues that deal massive Physical damage. Summons several beams, either in a line from the back of the room, or in a circle from the centre of the room. These beams inflict a massive Physical DoT that lasts two seconds."
         },
         "levels": [
+            70,
             73,
-            76,
-            80,
-            83,
+            77,
+            81,
             83
         ],
         "name": "Defiled Cathedral Map",
@@ -2683,8 +2733,8 @@
             "boss": "Tail Strike inflicts debuff causing you to create Caustic Clouds at your location, move around to remove the debuff. Burrows towards your location. Charged Tail Slam that can easily one shot. In Phase 2 boss gains new abilities. Quicksand in arena will slow your movement speed. Boss will become invulnerable and Sunder towards you from the centre of the arena while summoning poisonous scorpions. At low life boss will start diving around dealing significant Physical damage. Keep mobile when this is happening."
         },
         "levels": [
-            80,
-            83,
+            76,
+            79,
             83,
             83,
             83
@@ -2733,8 +2783,8 @@
             "boss": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these."
         },
         "levels": [
-            77,
-            80,
+            76,
+            79,
             83,
             83,
             83
@@ -2816,7 +2866,7 @@
             "boss": "The map is basically an escort gauntlet map. At the end of every escort pillars, you can pick one out from the three options presented. Make sure to not misclick as the options can impact the difficulty of the boss fight."
         },
         "levels": [
-            81
+            72
         ],
         "name": "Doryani's Machinarium",
         "rating": {},
@@ -2938,10 +2988,10 @@
             "boss": "Physical Slam has low accuracy but hits hard. Watch out for spikes coming out of the ground"
         },
         "levels": [
-            69,
-            72,
-            76,
-            80,
+            79,
+            82,
+            83,
+            83,
             83
         ],
         "name": "Dungeon Map",
@@ -3012,9 +3062,9 @@
             "boss": "Fire and Cold Spells. Avoid standing in Fire/Icestorms. Casts four fire/ice balls which are hard to avoid. At 66% and 33% health summons Flarus and Frosis. Sumter disappears until they are killed. The fire golem and ice golem have low health and don't provide much threat."
         },
         "levels": [
-            73,
-            76,
+            77,
             80,
+            83,
             83,
             83
         ],
@@ -3201,10 +3251,10 @@
             "boss": "Summon tornadoes, Earthquake attack. Very easy to kill just make sure to keep your distance from the tornado."
         },
         "levels": [
-            69,
-            72,
-            76,
-            80,
+            81,
+            83,
+            83,
+            83,
             83
         ],
         "name": "Flooded Mine Map",
@@ -3253,10 +3303,10 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            74,
+            70,
+            73,
             77,
             81,
-            83,
             83
         ],
         "name": "Forbidden Woods Map",
@@ -3395,10 +3445,10 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
+            71,
+            74,
             78,
-            81,
-            83,
-            83,
+            82,
             83
         ],
         "name": "Foundry Map",
@@ -3442,10 +3492,10 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            69,
             72,
-            76,
-            80,
+            75,
+            79,
+            83,
             83
         ],
         "name": "Frozen Cabins Map",
@@ -3565,10 +3615,10 @@
             "boss": "More powerful version of Grotto boss. In addition to Chaos-storm and Ground Slam summons large whirlwinds which deal Chaos DoT. Pocked miners can release powerful Chaos Sentinels from the walls. Fight can be difficult due to small size of room."
         },
         "levels": [
-            79,
-            82,
-            83,
-            83,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Geode Map",
@@ -3614,9 +3664,9 @@
             "boss": "Powerful Lightning Strike that inflicts Vulnerability on hit. Summons Shocked Miscreations which Lightning Warp. Pays to bring shock removal."
         },
         "levels": [
-            80,
-            83,
-            83,
+            72,
+            75,
+            79,
             83,
             83
         ],
@@ -3657,9 +3707,9 @@
             "boss": "Five unique Goatmen begin the fight, take care they do not all leap on you at once. Rekt'ar performs a powerful telegraphed Leap Slam. After jumping for a while Rek'tar will rest giving time to finish him off."
         },
         "levels": [
-            80,
-            83,
-            83,
+            74,
+            77,
+            81,
             83,
             83
         ],
@@ -3779,8 +3829,8 @@
             "boss": "Chaos-storm and Ground Slam attack. Summons Pocked Miners after a time."
         },
         "levels": [
-            78,
-            81,
+            77,
+            80,
             83,
             83,
             83
@@ -3818,7 +3868,7 @@
             "boss": "Probably the most unique out of all the unique maps. GGG has immortalized players who had purchased a Grandmaster supporter pack in the game by allowing them to add a character of theirs (mirrored gear and all) into this map. You fight about 30 waves of 5 grandmasters at a time. As you progress the waves become more difficult. The map is split into four halls which contain 50 grandmasters. At the end of each hall is a Grandmaster\u2019s Cache which are comparable to Izaro\u2019s chests at the end of Uber Labyrinth.\nThe fact of reality is that 90% of builds cannot complete this map. For example, many of the grandmasters are running Chaos Innoculation so pure chaos damage builds are ineffective. Some grandmasters do too much damage or are too tanky (Aegis Aurora + Max Block) for the majority of characters to kill. Do not do this map on Hardcore (seriously it is probably harder than the Shaper). If in Softcore try this map out for fun and see how far you can get. There are many caveats for a lot of the grandmasters which can\u2019t all be covered here. \nA few tips. Builds that use traps, mines or even Explosive Arrow can preload their abilities while the exiles are still immune. The super tank chracters with high regen/block can be partially countered with the block reduction support and frost bomb (to lower regen). Secondary damage can't be blocked so abilities like Scorching Ray are also extremely strong here. Watch out for some of the Necromancer exiles with buff zombies that leave poison clouds on death - these cloud will one shot you."
         },
         "levels": [
-            73
+            78
         ],
         "name": "Hall of Grandmasters",
         "rating": {},
@@ -3931,10 +3981,10 @@
             "boss": "Group of Mutewind Warbands led by one of three Mutewind bosses. All use a variety of Cold based abilities"
         },
         "levels": [
-            70,
-            73,
             77,
-            81,
+            80,
+            83,
+            83,
             83
         ],
         "name": "Iceberg Map",
@@ -4083,9 +4133,9 @@
             "boss": "Spiders continually spawn during fight. The boss appears after a while and uses a strong Ethereal Knives ability. The boss is relatively weak, with Flicker Striking spiders representing the real danger in this fight."
         },
         "levels": [
-            75,
             78,
-            82,
+            81,
+            83,
             83,
             83
         ],
@@ -4177,10 +4227,10 @@
             "boss": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead."
         },
         "levels": [
-            75,
-            78,
-            82,
-            83,
+            70,
+            73,
+            77,
+            81,
             83
         ],
         "name": "Laboratory Map",
@@ -4345,10 +4395,10 @@
             "boss": "Too many phases/abilities to explain. Consult an Act X Kitava guide. Small arena with lots of dangerous mechanics happening at once is a recipe for disaster. Luckily the boss has relatively little health so if your build has enough damage you can trivally go from phase to phase."
         },
         "levels": [
-            69,
-            72,
+            73,
             76,
             80,
+            83,
             83
         ],
         "name": "Lava Lake Map",
@@ -4392,9 +4442,9 @@
             "boss": "Mirror Arrow and Blink Arrow. The real boss is the one that moves around, the copies will always stay still."
         },
         "levels": [
-            77,
+            73,
+            76,
             80,
-            83,
             83,
             83
         ],
@@ -4567,8 +4617,8 @@
             "boss": "Spawns Eyes, Physical Cleave at close range, large Ball Lightning that you should avoid. Spinning Lightning Beam deals massive Lightning damage. If it does not one-shot you it also inflicts a powerful Physical Bleed they must be instantly removed. As this fight is mechanical it is usually not too bad. However, it becomes extremely dangerous with map mods like double boss, boss attack/cast speed or multiple projectiles."
         },
         "levels": [
-            77,
             80,
+            83,
             83,
             83,
             83
@@ -4723,10 +4773,10 @@
             "boss": "Act 8 Quay fight. Aggressive zombies spawn in waves until Tolman is released. Tolman detonates corpses. Red circle summons powerful enraged zombies."
         },
         "levels": [
-            71,
-            74,
-            78,
-            82,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Mausoleum Map",
@@ -4860,10 +4910,10 @@
             "boss_rushable": "Rush to the center"
         },
         "levels": [
-            71,
-            74,
-            78,
-            82,
+            77,
+            80,
+            83,
+            83,
             83
         ],
         "name": "Mesa Map",
@@ -4904,9 +4954,9 @@
             "boss": "Summons five Lightning Warp totems which create Shocking Ground. Ignore them during the fight as the boss will just resummon them. Keep mobile so they do not all stack on top of you at once. The boss will periodically use a laser beam that deals considerable continuous Lightning damage. Take cover behind one of the pillars in the chamber to interrupt the beam. The beam is on a 20 second cooldown so use the downtime as an opportunity to quickly finish the boss."
         },
         "levels": [
-            75,
-            78,
-            82,
+            74,
+            77,
+            81,
             83,
             83
         ],
@@ -5135,8 +5185,8 @@
             "boss": "In this map it pays to be fast. After nine minutes (6 if in a group) a 10 second countdown will be initiated. Any players remaining in the map after those 10 seconds are automatically killed. The map consists of 6 rooms. Each room contain a variety of monsters that must all be killed before moving through to the next room. The monster level of each subsequent room is increased by one.\nAfter completing the 5th room Oba states you are a mighty adventurer. At this point the clock stops and the map will no longer become deadly. Venture into the 6th room to find a small area with 5 strongboxes; 2 rare Ornate strongboxes and a unique Jeweller\u2019s, Gemcutter\u2019s and Arcanist\u2019s strongbox."
         },
         "levels": [
-            79,
-            82,
+            77,
+            80,
             83,
             83,
             83
@@ -5222,8 +5272,8 @@
             "boss": "Mortar of Fire based projectiles that can shotgun the player. Summons skeletons and places offerings which deal Chaos or Fire DoT. Channels a laser beam that deals significant Fire DoT. Run behind a pillar to interrupt the beam. Green circle teleports players standing in it - potentially onto labynith traps on around the arena."
         },
         "levels": [
-            83,
-            83,
+            78,
+            81,
             83,
             83,
             83
@@ -5388,8 +5438,8 @@
             "boss": "Both phases of Dominus. First phase ensure you keep out of his one-shot \"Touch of God\" slam and channelled Lightning beam. Second phase stay in Proximity Shield to prevent Blood Rain damage. You will probably need to tank his Physical attacks. Ensure you have means to remove the Bleed from his Cleave attack."
         },
         "levels": [
-            76,
-            79,
+            82,
+            83,
             83,
             83,
             83
@@ -5432,8 +5482,8 @@
             "boss_rushable": "Roughly a square, just go diagonal. Or hug the edge of square"
         },
         "levels": [
-            80,
-            83,
+            76,
+            79,
             83,
             83,
             83
@@ -5512,10 +5562,10 @@
             "boss": "Other allies cannot die aura. Summons Stone Golems adds. Double boss is no longer a puzzle as the allies cannot die aura no longer affects the other boss."
         },
         "levels": [
-            70,
-            73,
-            77,
             81,
+            83,
+            83,
+            83,
             83
         ],
         "name": "Peninsula Map",
@@ -5557,9 +5607,9 @@
             "boss": "Try not to stand in more than one curse aura (Vulnerability being particulary dangerous). Avoid strong physical projectiles."
         },
         "levels": [
-            73,
             76,
-            80,
+            79,
+            83,
             83,
             83
         ],
@@ -5605,8 +5655,8 @@
             "boss": "The boss arena has three areas, as 2/3 and 1/3 health it will teleport to the next area. During the fight small spikes will appear from the ground. You will have to traverse a trap gauntlet to get to the next area. With sufficient regen or life leech, you won't have any problem."
         },
         "levels": [
-            78,
-            81,
+            80,
+            83,
             83,
             83,
             83
@@ -5782,10 +5832,10 @@
             "boss": "Atoll boss, along with another totem that uses a variety of Lightning spells. Once one is killed the other will restore to full health, gaining new abilities and more damage. For melee characters I advise killing Purina first (cold one) and for ranged characters killing Poporo (lightning one) first. Purina maintains a powerful Ice Nova that can one shot. Poporo has an extremely powerful Vaal Storm Call which you need to get out of asap."
         },
         "levels": [
-            72,
-            75,
-            79,
-            83,
+            71,
+            74,
+            78,
+            82,
             83
         ],
         "name": "Plateau Map",
@@ -5988,9 +6038,9 @@
             "boss": "The game randomly selects one to six rogue exiles. These are not like usual Rogue Exiles. They have much more health and deal much more damage. Do not engage them all at once as certain combinations can output substantial burst damage. Try to isolate each exile one by one."
         },
         "levels": [
+            74,
             77,
-            80,
-            83,
+            81,
             83,
             83
         ],
@@ -6038,9 +6088,9 @@
             "boss": "Telegraphed projectile attack. Stay out of Donut Slam which can one shot. Summons Volatile Cores which explode on contact and trigger other Volatile Cores to also explode. At half health goes invulenerable and summons melee adds. During this phase boulders spawn from the four corners and spiral towards the center hole. Stay vigilant to avoid these as they deal massive amounts of quick physical damage."
         },
         "levels": [
-            79,
-            82,
-            83,
+            74,
+            77,
+            81,
             83,
             83
         ],
@@ -6210,9 +6260,9 @@
             "boss": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal."
         },
         "levels": [
-            74,
-            77,
-            81,
+            72,
+            75,
+            79,
             83,
             83
         ],
@@ -6258,10 +6308,10 @@
             "boss": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap."
         },
         "levels": [
+            68,
+            71,
             75,
-            78,
-            82,
-            83,
+            79,
             83
         ],
         "name": "Ramparts Map",
@@ -6499,10 +6549,10 @@
             "boss": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die."
         },
         "levels": [
-            68,
-            71,
             75,
-            79,
+            78,
+            82,
+            83,
             83
         ],
         "name": "Scriptorium Map",
@@ -6569,10 +6619,10 @@
             "boss": "Creates three stone monoliths that apply up to 5 stacking debuffs (Green reduces your damage, Purple makes you slower, Red makes you take increased damage). Destroying the corresponding monolith removes the debuff. Do not kill them all though as when damaged Doedre will cast an arena wide physical AoE that will quickly kill you unless you take cover behind one of the monoliths. From 75% life Doedre will transform until a familiar form where she will only fire slow Physical projectiles and use a teleport slam that deals significant damage."
         },
         "levels": [
-            83,
-            83,
-            83,
-            83,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Sepulchre Map",
@@ -6638,9 +6688,9 @@
             "boss": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy."
         },
         "levels": [
-            77,
-            80,
-            83,
+            75,
+            78,
+            82,
             83,
             83
         ],
@@ -6781,10 +6831,10 @@
             "boss": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain."
         },
         "levels": [
-            68,
             71,
-            75,
-            79,
+            74,
+            78,
+            82,
             83
         ],
         "name": "Siege Map",
@@ -6833,9 +6883,9 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            75,
             78,
-            82,
+            81,
+            83,
             83,
             83
         ],
@@ -6883,10 +6933,10 @@
             "boss": "Alira from the Burial Chambers map, this time without the Soul Eater ability. Again, avoid standing on Desecrated Ground or on corpses as the boss uses Detonate Dead. After some time a large zombie called 'Avatar of Rot' will appear from the cauldron. This zombie deals modest melee Physical damage."
         },
         "levels": [
+            71,
             74,
-            77,
-            81,
-            83,
+            78,
+            82,
             83
         ],
         "name": "Spider Forest Map",
@@ -7146,8 +7196,8 @@
             "boss": "Several abilities, most of which are not threatening. Attacks are a combination of Physical and Chaos. Purple laser beams explode for Lightning damage. Watch out for Arakaali's Laser Barrage which can do significant Lightning damage if you don't get out of the way."
         },
         "levels": [
+            79,
             82,
-            83,
             83,
             83,
             83
@@ -7243,10 +7293,10 @@
             "boss": "Leap Slam. Charge attack. Powerful telegraphed \"Cone Strike' deals Physical and Cold damage. After 90% life summons Mercury totems that summon piercing projectiles which explode for Cold damage after 3 seconds (only one totem active at a time). Every 5% life lost a small invulnerable white orb is spawned which chills and applies cold DoT on contact. At 2/3 and 1/3 health Yugul disappears summoning several weak clones of Yugul that use basic melee attacks."
         },
         "levels": [
-            82,
-            83,
-            83,
-            83,
+            68,
+            71,
+            75,
+            79,
             83
         ],
         "name": "Terrace Map",
@@ -7485,7 +7535,7 @@
         "levels": [
             72,
             77,
-            83
+            82
         ],
         "name": "The Beachhead",
         "rating": {},
@@ -8598,7 +8648,7 @@
         ],
         "name": "The Imperial Fields",
         "rating": {},
-        "shorthand": "eld",
+        "shorthand": " im",
         "tags": {},
         "type": "act area"
     },
@@ -8622,7 +8672,7 @@
         ],
         "name": "The Imperial Gardens",
         "rating": {},
-        "shorthand": "ens",
+        "shorthand": " im",
         "tags": {},
         "type": "act area"
     },
@@ -9942,7 +9992,7 @@
             "boss": "Defeat the four mini-bosses (all have modest Lightning based abilities) located in each of the four corners. After they are all dead you will be able to face the Avatar of Thunder in his arena at the centre of the map. There are four boss phases and three add phases. During the boss phases, the Avatar will use a Physical Cyclone and a Physical/Lightning Earthquake. The Avatar will also charge up and then explode for massive Lightning AoE damage that always Shocks (but will most likely one-shot) - get out of the way when this happens. Three beams of light will also travel around the arena - these beams deal Lightning DoT and always Shock. In each of the add phases the Avatar will teleport out and summon one of his four guardians defeated previously. Each subsuquent add phase has an extra mini boss you have to kill (so one, then two, then three). Overall a long fight, but a large arena, so plenty of room to kite and avoid the dangerous boss abilities."
         },
         "levels": [
-            72
+            75
         ],
         "name": "The Vinktar Square",
         "rating": {},
@@ -10033,6 +10083,31 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/FragmentOfIgnorance/FragmentOfIgnorance__"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TheatreofLies",
+        "ids": [
+            "MapWorldsTheatreOfLies"
+        ],
+        "info": {},
+        "levels": [
+            68,
+            71,
+            75,
+            79,
+            83
+        ],
+        "name": "Theatre of Lies Map",
+        "rating": {},
+        "shorthand": "atr",
+        "tags": {
+            "boss_not_twinnable": true,
+            "ziggurat_map": true
+        },
+        "type": "map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/Thicket",
@@ -10091,8 +10166,8 @@
             "boss": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus."
         },
         "levels": [
-            76,
-            79,
+            83,
+            83,
             83,
             83,
             83
@@ -10142,8 +10217,8 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            76,
             79,
+            82,
             83,
             83,
             83
@@ -10216,7 +10291,7 @@
         ],
         "name": "Trial of Lingering Pain",
         "rating": {},
-        "shorthand": " li",
+        "shorthand": "eri",
         "tags": {},
         "type": "special map"
     },
@@ -10286,10 +10361,10 @@
             "boss": "Has 'allies deal substantial extra physical damage' aura. Summons Blood Apes and frenzies allies, summons a magic pack of Blood Apes at 75%, and spawns two unique Blood Apes at 50% health. Boss itself is slow and does little damage."
         },
         "levels": [
-            69,
-            72,
-            76,
-            80,
+            75,
+            78,
+            82,
+            83,
             83
         ],
         "name": "Tropical Island Map",
@@ -10623,10 +10698,10 @@
             "boss": "Powerful Physical Slam attacks. Summons Animated Weapons and Guardians throughout the fight. Standing on the gold piles grants 50% more damage to yourself. Don't leave the fight too long as the boss will disappear placing yellow circles all over the ground that explode for massive Physical damage. Killing the boss quickly also rewards you with bonus loot from the nearby gold piles."
         },
         "levels": [
-            71,
-            74,
+            75,
             78,
             82,
+            83,
             83
         ],
         "name": "Vault Map",
@@ -10705,10 +10780,10 @@
             "boss": "Stay out of Chilling Totem beams and off Shocking Ground. When channelling his Lightning beam run in a circle around the boss. Avoid 'Touch of God' slam - it will most likely one shot you."
         },
         "levels": [
-            79,
-            82,
-            83,
-            83,
+            69,
+            72,
+            76,
+            80,
             83
         ],
         "name": "Villa Map",
@@ -10790,8 +10865,8 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            76,
-            79,
+            82,
+            83,
             83,
             83,
             83
@@ -10839,8 +10914,8 @@
             "boss": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable."
         },
         "levels": [
-            77,
-            80,
+            82,
+            83,
             83,
             83,
             83
@@ -10888,9 +10963,9 @@
             "boss": "Weak Ice Spear attack. Places Ice Traps that create Chilled Ground. Periodically summon Ice Golems of varying rarity. After losing enough health the boss will become frozen, gaining immunity and Ice Thorns, which reflects Cold damage back to the attacker. Do not attack during this phase. As with the Scriptorium and Promenade bosses fast attacking builds can kill themselves very quickly if they are not observant."
         },
         "levels": [
-            78,
+            74,
+            77,
             81,
-            83,
             83,
             83
         ],
@@ -10975,9 +11050,9 @@
             "boss": "Weak lightning spells, and summons 6 Flood Orbs with Cyclone skill. Boss is tanky with the purple shield as it gives 50% reduced damage taken."
         },
         "levels": [
-            73,
-            76,
-            80,
+            75,
+            78,
+            82,
             83,
             83
         ],

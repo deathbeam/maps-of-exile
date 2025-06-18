@@ -30,7 +30,11 @@
         ],
         "info": {},
         "levels": [
-            84
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Abomination Map",
         "rating": {},
@@ -38,7 +42,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "special map"
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -530,7 +534,7 @@
             "density": 9,
             "layout": 2
         },
-        "shorthand": "ren",
+        "shorthand": "aren",
         "tags": {
             "boss_separated": true,
             "few_obstacles": true,
@@ -719,7 +723,7 @@
         "rating": {
             "boss": 6,
             "density": 5,
-            "layout": 8
+            "layout": 10
         },
         "shorthand": "ash",
         "tags": {
@@ -1731,7 +1735,11 @@
         ],
         "info": {},
         "levels": [
-            84
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Citadel Map",
         "rating": {},
@@ -1739,7 +1747,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "special map"
+        "type": "map"
     },
     {
         "atlas": true,
@@ -1874,7 +1882,7 @@
             "density": 7,
             "layout": 6
         },
-        "shorthand": "lon",
+        "shorthand": "nna",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3414,7 +3422,11 @@
         ],
         "info": {},
         "levels": [
-            84
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Fortress Map",
         "rating": {},
@@ -3422,7 +3434,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "special map"
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3837,9 +3849,9 @@
         ],
         "name": "Grotto Map",
         "rating": {
-            "boss": 8,
+            "boss": 6,
             "density": 8,
-            "layout": 8
+            "layout": 6
         },
         "shorthand": "ott",
         "tags": {
@@ -4755,6 +4767,24 @@
         "type": "map"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueBetrayal/BetrayalCatarina1",
+            "Metadata/Monsters/LeagueBetrayal/BetrayalCatarina2"
+        ],
+        "ids": [
+            "BetrayalMastermindFight"
+        ],
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Mastermind's Lair",
+        "rating": {},
+        "shorthand": "erm",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Zombies/ZombieBossTolmanMap"
@@ -4890,6 +4920,20 @@
         "type": "special map"
     },
     {
+        "ids": [
+            "MapWorldsMemoryTear"
+        ],
+        "info": {},
+        "levels": [
+            84
+        ],
+        "name": "Memory Tear",
+        "rating": {},
+        "shorthand": " tea",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
         "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak"
@@ -4983,6 +5027,63 @@
         "type": "map",
         "x": 471,
         "y": 263
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/IgnoranceBoss/IgnoranceBoss"
+        ],
+        "ids": [
+            "MapWorldsMemoryBoss2"
+        ],
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Moment of Loneliness",
+        "rating": {},
+        "shorthand": " lo",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/BenevolenceBoss"
+        ],
+        "ids": [
+            "MapWorldsMemoryBoss3"
+        ],
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Moment of Reverence",
+        "rating": {},
+        "shorthand": "eve",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/AtlasMemory/AngerBoss"
+        ],
+        "ids": [
+            "MapWorldsMemoryBoss1"
+        ],
+        "info": {},
+        "levels": [
+            83
+        ],
+        "name": "Moment of Trauma",
+        "rating": {},
+        "shorthand": "aum",
+        "tags": {
+            "boss_not_twinnable": true
+        },
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -6220,7 +6321,7 @@
             "density": 4,
             "layout": 8
         },
-        "shorthand": "ome",
+        "shorthand": "pro",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6519,7 +6620,11 @@
         ],
         "info": {},
         "levels": [
-            84
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Sanctuary Map",
         "rating": {},
@@ -6527,7 +6632,7 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "special map"
+        "type": "map"
     },
     {
         "atlas": true,
@@ -7603,7 +7708,7 @@
         ],
         "name": "The Belly of the Beast Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "bel",
         "tags": {},
         "type": "act area"
     },
@@ -7625,7 +7730,7 @@
         ],
         "name": "The Belly of the Beast Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "bel",
         "tags": {},
         "type": "act area"
     },
@@ -7909,7 +8014,7 @@
         ],
         "name": "The Chamber of Sins Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -7935,7 +8040,7 @@
         ],
         "name": "The Chamber of Sins Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8060,7 +8165,7 @@
         ],
         "name": "The Coward's Trial",
         "rating": {},
-        "shorthand": "d'",
+        "shorthand": "cow",
         "tags": {
             "boss_not_spawned": true,
             "boss_phases": true,
@@ -8156,7 +8261,7 @@
         ],
         "name": "The Crypt Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8177,7 +8282,7 @@
         ],
         "name": "The Crypt Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8538,7 +8643,7 @@
         ],
         "name": "The Grand Promenade",
         "rating": {},
-        "shorthand": "ome",
+        "shorthand": "pro",
         "tags": {},
         "type": "act area"
     },
@@ -8761,7 +8866,7 @@
         ],
         "name": "The Lower Prison",
         "rating": {},
-        "shorthand": "lowe",
+        "shorthand": " lo",
         "tags": {},
         "type": "act area"
     },
@@ -8809,7 +8914,7 @@
         ],
         "name": "The Lunaris Temple Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8834,7 +8939,7 @@
         ],
         "name": "The Lunaris Temple Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8897,7 +9002,7 @@
         ],
         "name": "The Mines Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -8920,7 +9025,7 @@
         ],
         "name": "The Mines Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -9166,7 +9271,7 @@
         ],
         "name": "The Refinery",
         "rating": {},
-        "shorthand": " re",
+        "shorthand": "e r",
         "tags": {},
         "type": "act area"
     },
@@ -9186,7 +9291,7 @@
         ],
         "name": "The Reliquary",
         "rating": {},
-        "shorthand": " re",
+        "shorthand": "e r",
         "tags": {},
         "type": "act area"
     },
@@ -9384,7 +9489,7 @@
         ],
         "name": "The Shaper's Realm",
         "rating": {},
-        "shorthand": " re",
+        "shorthand": "alm",
         "tags": {
             "abomination_map": true,
             "boss_not_twinnable": true,
@@ -9529,14 +9634,16 @@
         ],
         "name": "The Solaris Temple Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
     {
         "boss_ids": [
             "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris",
-            "Metadata/Monsters/Statue/GoldStatueLargeBossFemale"
+            "Metadata/Monsters/Guardians/GuardianBossHeadCold",
+            "Metadata/Monsters/Guardians/GuardianBossHeadFire",
+            "Metadata/Monsters/Guardians/GuardianBossHeadLightning"
         ],
         "connected": [
             "2_8_12_1",
@@ -9553,7 +9660,7 @@
         ],
         "name": "The Solaris Temple Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -9679,7 +9786,7 @@
         ],
         "name": "The Temple of Decay Level 1",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -9700,7 +9807,7 @@
         ],
         "name": "The Temple of Decay Level 2",
         "rating": {},
-        "shorthand": "ev",
+        "shorthand": "eve",
         "tags": {},
         "type": "act area"
     },
@@ -10083,7 +10190,7 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/AtlasMemory/FragmentOfIgnorance/FragmentOfIgnorance__"
+            "Metadata/Monsters/AtlasMemory/FragmentOfBenevolence"
         ],
         "icon": "Art/2DItems/Maps/Atlas2Maps/New/TheatreofLies",
         "ids": [
@@ -11115,7 +11222,11 @@
         ],
         "info": {},
         "levels": [
-            84
+            68,
+            71,
+            75,
+            79,
+            83
         ],
         "name": "Ziggurat Map",
         "rating": {},
@@ -11123,6 +11234,6 @@
         "tags": {
             "boss_not_twinnable": true
         },
-        "type": "special map"
+        "type": "map"
     }
 ]

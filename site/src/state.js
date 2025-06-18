@@ -522,7 +522,7 @@ function createState() {
     search: atomWithStore('searchInput', '', data),
     sort: atomWithStore('sortInput', ['score'], data),
 
-    voidstones: atomWithStore('voidstonesInput', 0, data),
+    voidstones: atomWithStore('voidstonesInput', 4, data),
     cardDisplay: atomWithStore('cardDisplayInput', 'drop', data),
     mapDisplay: atomWithStore('mapDisplayInput', 'atlas+unique+special', data),
 

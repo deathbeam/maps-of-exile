@@ -149,6 +149,39 @@ def get_card_data(key, config, card_extra):
             e.decompose()
         return soup.get_text().replace("16x16px|link=|alt=", "").replace("..", ".")
 
+    def get_poedb_card_drops(card_name):
+        print(f"Getting PoEDB card data for {card_name}")
+        url = config["poedb"]["base"] + urllib.parse.quote(card_name.replace(" ", "_").replace("'", "").strip())
+
+        try:
+            r = requests.get(url)
+            r.raise_for_status()
+            soup = BeautifulSoup(r.content, "html.parser")
+            dropped_by = []
+            for td in soup.find_all("td"):
+                if td.text.strip() == "Dropped by":
+                    next_td = td.find_next_sibling("td")
+                    if next_td:
+                        for a in next_td.find_all("a"):
+                            name = a.text.strip()
+                            if name:
+                                dropped_by.append(name)
+                    break
+            return sorted(dropped_by)
+        except Exception as e:
+            print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
+            return []
+
+    # Get maps for area mapping
+    maps = get_maps(key, config)
+    atlas_maps = []
+    atlas_name_to_id = {}
+    for m in maps:
+        if m.get("atlas"):
+            for id in m["ids"]:
+                atlas_maps.append(id)
+                atlas_name_to_id[m["name"]] = id
+
     league = config["league"]
     event = config.get("event")
 
@@ -306,6 +339,23 @@ def get_card_data(key, config, card_extra):
     out = []
     for wiki_card in wiki_cards:
         name = wiki_card["name"]
+
+        # Combine poedb atlas drops with wiki drops
+        poedb_drops = get_poedb_card_drops(name)
+        original_areas = sorted(list(wiki_card["drop"]["areas"]))
+        map_drops = []
+        for area in original_areas:
+            if area in atlas_maps:
+                continue
+            map_drops.append(area)
+        for map_name in poedb_drops:
+            area = atlas_name_to_id.get(map_name)
+            if area and area not in map_drops:
+                map_drops.append(area)
+        if map_drops != original_areas:
+            print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
+        wiki_card["drop"]["areas"] = map_drops
+
         price_card = next(filter(lambda x: x["name"] == name, prices), {})
         standard_price_card = next(filter(lambda x: x["name"] == name, standard_prices), {})
         event_price_card = next(filter(lambda x: x["name"] == name, event_prices), {})

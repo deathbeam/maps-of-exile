@@ -38,7 +38,7 @@ const Map = ({ map }) => {
             <MapConnected connected={map.connected} />
           </td>
           <td>
-            <MapCards cards={map.cards} />
+            <MapCards cards={map.cards} rating={map.sort.card} />
           </td>
         </>
       ) : (

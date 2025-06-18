@@ -1,10 +1,9 @@
 import CardRateTooltip from './CardRateTooltip'
 import MapCard from './MapCard'
 import './MapCards.css'
+import Rating from './Rating'
 
-const MapCards = ({ cards, sidebar = false, tooltipTop = false }) => {
-  const total = Math.round(cards.reduce((a, b) => a + b.value, 0) * 100) / 100
-
+const MapCards = ({ cards, rating, sidebar = false, tooltipTop = false }) => {
   return (
     <div className={sidebar ? '' : 'd-lg-flex flex-row'}>
       <div className="map-card-price">
@@ -16,18 +15,7 @@ const MapCards = ({ cards, sidebar = false, tooltipTop = false }) => {
                 <CardRateTooltip key={c.name} card={c} />
               ))}
           </span>
-          {sidebar ? (
-            <>
-              <div className="ms-1">
-                <b>{total}</b> <img src="/img/chaos.png" alt="" width="16" className="me-1" /> per map
-              </div>
-              <hr />
-            </>
-          ) : (
-            <>
-              <small>{total}</small> <img src="/img/chaos.png" alt="" width="16" className="me-1" />
-            </>
-          )}
+          <Rating rating={rating} label={sidebar ? 'Card' : ''} sidebar={sidebar} />
         </span>
       </div>
       <div>

@@ -770,7 +770,7 @@ def get_map_data(map_data, extra_map_data, config):
     r = s.get(url)
     soup = BeautifulSoup(r.content, "html.parser")
     tabs = soup.find("div", class_="tab-content")
-    maptabs = tabs and tabs.findChildren("div", recursive=False)
+    maptabs = tabs and tabs.find_all("div", recursive=False)
     maptabs = maptabs or []
 
     level_found = False

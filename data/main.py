@@ -167,7 +167,7 @@ def get_card_data(key, config, card_extra):
                             if name:
                                 dropped_by.append(name)
                     break
-            return sorted(dropped_by)
+            return dropped_by
         except Exception as e:
             print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
             return []
@@ -177,7 +177,7 @@ def get_card_data(key, config, card_extra):
     atlas_maps = []
     atlas_name_to_id = {}
     for m in maps:
-        if m.get("atlas"):
+        if m.get("type") == "map" or m.get("atlas"):
             for id in m["ids"]:
                 atlas_maps.append(id)
                 atlas_name_to_id[m["name"]] = id
@@ -352,6 +352,7 @@ def get_card_data(key, config, card_extra):
             area = atlas_name_to_id.get(map_name)
             if area and area not in map_drops:
                 map_drops.append(area)
+        map_drops = sorted(map_drops)
         if map_drops != original_areas:
             print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
         wiki_card["drop"]["areas"] = map_drops

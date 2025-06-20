@@ -233,7 +233,6 @@ def get_card_data(key, config, card_extra):
     )
     print(f"Found {len(wiki_cards)} cards")
 
-    card_chances = {}
     card_weights = {}
 
     weight_threshold = config["weights"]["overwrite-threshold"]
@@ -270,41 +269,6 @@ def get_card_data(key, config, card_extra):
         print(
             f"Making assumption for weight for {card} based on mapping to {mapping['card']} weight with multiplier {mapping['mult']}, setting it to {card_weights[card]}"
         )
-
-    deck_threshold = config["decks"]["overwrite-threshold"]
-    for deck_sheet in config["decks"]["sheets"]:
-        id = deck_sheet["sheet-id"]
-        name = deck_sheet["sheet-name"]
-        key_col = deck_sheet["key"]
-        value_col = deck_sheet["value"]
-        total_col = deck_sheet["total"]
-        skip_num = deck_sheet.get("skip", 0)
-        print(f"Getting card amounts from {name}")
-        url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
-        amounts = requests.get(url).json()
-        if not "values" in amounts:
-            raise Exception("Failed to get card amounts from " + name + ": " + json.dumps(amounts, indent=2))
-        amounts = amounts["values"]
-        for i in range(0, skip_num):
-            amounts.pop(0)
-        amounts_total = int(amounts.pop(0)[total_col])
-        for card in amounts:
-            if not card:
-                continue
-            name = card[key_col].strip()
-            value = int(card[value_col])
-            original_chance = card_chances.get(name, 0)
-            new_chance = Decimal(value) / Decimal(amounts_total)
-            percent_change = abs(
-                (new_chance - original_chance) / original_chance * 100 if original_chance else deck_threshold
-            )
-
-            if percent_change >= deck_threshold:
-                card_chances[name] = new_chance
-
-    patient_chance = card_chances["The Patient"]
-    patient_weight = card_weights["The Patient"]
-    sample_weight = Decimal(patient_weight) / Decimal(patient_chance)
 
     print(f"Getting card prices for {league}, {event} and Standard")
     prices = requests.get(config["ninja"]["cardprices"] + league).json()["lines"]
@@ -384,20 +348,7 @@ def get_card_data(key, config, card_extra):
             "drop": wiki_card["drop"],
         }
 
-        chance_card = card_chances.get(name)
         weight_card = card_weights.get(name)
-
-        if chance_card:
-            new_weight = math.floor((sample_weight * chance_card) / Decimal(math.exp(2 / 3)))
-
-            percent_change = abs((new_weight - weight_card) / weight_card * 100 if weight_card else deck_threshold)
-
-            if percent_change >= deck_threshold:
-                old_weight = weight_card or 0
-                weight_card = new_weight
-                print(
-                    f"Making assumption for weight for {name} with chance {chance_card} based on sample chance {patient_chance} and weight {patient_weight}, setting it to {weight_card} from {old_weight}"
-                )
 
         if weight_card:
             card["weight"] = weight_card
@@ -545,7 +496,7 @@ def get_map_ratings(key, config):
 
     for rating in ratings:
         if rating["density_unreliable"]:
-            print("Density rating is unreliable for " + rating["name"])
+            print(f"Density rating is unreliable for {rating['name']}")
     return ratings
 
 

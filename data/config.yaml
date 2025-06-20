@@ -67,11 +67,15 @@ data:
     sheet-name: Compact Data (new atlas)
     sheet-range: C3:G140
   weights:
-    overwrite-threshold: 300
     sheets:
       - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
         sheet-name: Weights
         key: 0
         value: 11
         fallback: 10
+        skip: 2
+      - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
+        sheet-name: 3.25
+        key: 5
+        value: 32
         skip: 2

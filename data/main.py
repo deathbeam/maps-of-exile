@@ -235,13 +235,12 @@ def get_card_data(key, config, card_extra):
 
     card_weights = {}
 
-    weight_threshold = config["weights"]["overwrite-threshold"]
     for weight_sheet in config["weights"]["sheets"]:
         id = weight_sheet["sheet-id"]
         name = weight_sheet["sheet-name"]
         key_col = weight_sheet["key"]
         value_col = weight_sheet["value"]
-        fallback_col = weight_sheet["fallback"]
+        fallback_col = weight_sheet.get("fallback")
         skip_num = weight_sheet.get("skip", 0)
         print(f"Getting card weights from {name}")
         url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
@@ -249,26 +248,22 @@ def get_card_data(key, config, card_extra):
         for i in range(0, skip_num):
             weights.pop(0)
         for card in weights:
-            name = card[key_col].strip()
-            value = int(card[value_col])
+            card_name = card[key_col].strip()
+            if value_col >= len(card) or not card_name:
+                continue
+            card_value = card[value_col].strip()
+            if card_value == '':
+                continue
+            value = int(float(card[value_col]))
+            if value == 0 and fallback_col:
+                value = int(float(card[fallback_col]))
             if value == 0:
-                value = int(card[fallback_col])
-            original_value = card_weights.get(name, 0)
-            percent_change = abs(
-                (value - original_value) / original_value * 100 if original_value else weight_threshold
-            )
+                continue
 
-            if percent_change >= weight_threshold:
-                card_weights[name] = value
-
-    for card, mapping in config.get("mappings", {}).items():
-        card_weight = card_weights.get(mapping["card"], 0)
-        if not card_weight:
-            continue
-        card_weights[card] = card_weight * mapping["mult"]
-        print(
-            f"Making assumption for weight for {card} based on mapping to {mapping['card']} weight with multiplier {mapping['mult']}, setting it to {card_weights[card]}"
-        )
+            original_value = card_weights.get(card_name, 0)
+            if original_value == 0:
+                print(f"Setting weight for {card_name} to {value} from {name} sheet")
+                card_weights[card_name] = value
 
     print(f"Getting card prices for {league}, {event} and Standard")
     prices = requests.get(config["ninja"]["cardprices"] + league).json()["lines"]

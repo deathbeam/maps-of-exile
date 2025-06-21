@@ -391,12 +391,15 @@ function rateMaps(
       const layoutValue = (map.rating.layout || 0) * layoutInput
       const densityValue = (map.rating.density || 0) * densityInput
       const bossValue = (map.rating.boss || 0) * bossInput
-      let cardValue = 0
-
+      let cardRating = 0
       for (let card of map.cards) {
-        cardValue += (card.score / 10) * cardInput
+        cardRating += card.score
       }
 
+      cardRating = cardRating / 10.0
+      const cardValue = cardRating * cardInput
+
+      map.rating.card = cardRating
       map.value = layoutValue + densityValue + bossValue + cardValue
       map.sort = {
         layout: layoutValue,

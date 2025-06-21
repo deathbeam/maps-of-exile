@@ -23,7 +23,7 @@ const Map = ({ map }) => {
       <Rating rating={map.rating.density} label="Density" tooltip={map.info.density} sidebar={true} />
       <MapBoss names={map.boss_names} rating={map.rating.boss} tooltip={map.info.boss} label="Boss" sidebar={true} />
       <hr />
-      <MapCards cards={map.cards} rating={map.sort.card} sidebar={true} tooltipTop={!!map.image} />
+      <MapCards cards={map.cards} rating={map.rating.card} sidebar={true} tooltipTop={!!map.image} />
     </>
   )
 }

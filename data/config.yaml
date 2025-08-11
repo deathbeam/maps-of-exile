@@ -70,12 +70,15 @@ data:
     sheets:
       - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
         sheet-name: Weights
-        key: 0
-        value: 11
-        fallback: 10
-        skip: 2
+        key: patch
+        value: "3.26"
+        header_row: 0
+        data_row: 2
       - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
-        sheet-name: 3.25
-        key: 5
-        value: 32
-        skip: 2
+        sheet-name: 3.26
+        override: 1000
+        key: name
+        value: Gold Low Weight
+        value2: Gold High Weight
+        header_row: 0
+        data_row: 2

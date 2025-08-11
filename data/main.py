@@ -238,30 +238,37 @@ def get_card_data(key, config, card_extra):
     for weight_sheet in config["weights"]["sheets"]:
         id = weight_sheet["sheet-id"]
         name = weight_sheet["sheet-name"]
+        header_row = weight_sheet.get("header_row", 0)
+        data_row = weight_sheet.get("data_row", 1)
         key_col = weight_sheet["key"]
         value_col = weight_sheet["value"]
-        fallback_col = weight_sheet.get("fallback")
-        skip_num = weight_sheet.get("skip", 0)
+        value_2_col = weight_sheet.get("value2", value_col)
+        override = weight_sheet.get("override", 0)
         print(f"Getting card weights from {name}")
         url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}?key={key}"
         weights = requests.get(url).json()["values"]
-        for i in range(0, skip_num):
-            weights.pop(0)
-        for card in weights:
-            card_name = card[key_col].strip()
-            if value_col >= len(card) or not card_name:
+        headers = weights[header_row]
+        print(headers)
+        key_col_idx = headers.index(key_col) if isinstance(key_col, str) else key_col
+        value_col_idx = headers.index(value_col) if isinstance(value_col, str) else value_col
+        value_2_col_idx = headers.index(value_2_col) if isinstance(value_2_col, str) else value_2_col
+        for card in weights[data_row:]:
+            card_name = card[key_col_idx].strip()
+            if value_col_idx >= len(card) or value_2_col_idx >= len(card) or not card_name:
                 continue
-            card_value = card[value_col].strip()
+            card_value = card[value_col_idx].strip()
             if card_value == '':
                 continue
-            value = int(float(card[value_col]))
-            if value == 0 and fallback_col:
-                value = int(float(card[fallback_col]))
-            if value == 0:
+            card_value_2 = card[value_2_col_idx].strip()
+            if card_value_2 == '':
+                card_value_2 = card_value
+            try:
+                value = (int(float(card_value)) + int(float(card_value_2))) / 2
+            except ValueError:
+                print(f"Invalid value for {card_name} in {name} sheet: {card_value}, {card_value_2}")
                 continue
-
             original_value = card_weights.get(card_name, 0)
-            if original_value == 0:
+            if original_value <= override:
                 print(f"Setting weight for {card_name} to {value} from {name} sheet")
                 card_weights[card_name] = value
 

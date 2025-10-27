@@ -2319,6 +2319,7 @@
         "boss_ids": [
             "Metadata/Monsters/Banshee/BansheeMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sanctuary",
         "ids": [
             "MapWorldsCrimsonTemple"
         ],
@@ -2351,7 +2352,8 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "outdoors": false
+            "outdoors": false,
+            "sanctuary_map": true
         },
         "type": "map"
     },

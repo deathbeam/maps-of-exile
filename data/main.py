@@ -741,6 +741,10 @@ def get_map_data(map_data, extra_map_data, config):
         for row in rows:
             cols = row.find_all("td")
             name = cols[0].text.strip().lower()
+            if not name:
+                continue
+            if len(cols) < 2:
+                continue
             value = cols[1]
             if name == "level" and not level_found and map_data.get("atlas"):
                 level = int(value.text.strip())

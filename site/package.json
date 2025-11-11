@@ -11,22 +11,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "bootstrap": "5.3.6",
-    "jotai": "^2.12.5",
-    "react": "^19.1.0",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "bootstrap": "5.3.8",
+    "jotai": "^2.15.1",
+    "react": "^19.2.0",
     "react-compiler-runtime": "^19.1.0-rc.2",
-    "react-dom": "^19.1.0",
-    "react-select": "^5.10.1",
+    "react-dom": "^19.2.0",
+    "react-select": "^5.10.2",
     "reactflow": "^11.11.4"
   },
   "devDependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@vitejs/plugin-react": "^4.5.1",
+    "@trivago/prettier-plugin-sort-imports": "^6.0.0",
+    "@vitejs/plugin-react": "^5.1.0",
     "babel-plugin-react-compiler": "^19.1.0-rc.2",
     "browserslist-to-esbuild": "^2.1.1",
-    "prettier": "^3.5.3",
-    "vite": "^6.3.5"
+    "prettier": "^3.6.2",
+    "vite": "^7.2.2"
   },
   "browserslist": {
     "production": [

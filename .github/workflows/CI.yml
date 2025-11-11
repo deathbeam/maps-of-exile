@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v3
 
       - name: Install site dependencies
-        run: npm ci
+        run: npm install
         working-directory: site
 
       # - name: Lint

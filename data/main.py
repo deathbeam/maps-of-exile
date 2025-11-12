@@ -279,8 +279,6 @@ def get_card_data(key, config, card_extra):
     if event:
         event_prices = requests.get(config["ninja"]["cardprices"] + event).json()["lines"]
 
-    print(f"Getting currency prices for {league}, {event} and Standard")
-
     out = []
     for wiki_card in wiki_cards:
         name = wiki_card["name"]

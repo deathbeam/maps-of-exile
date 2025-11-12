@@ -33,9 +33,6 @@ data:
     - Primeval City
     - Labyrinth_Airlock
 
-  # Card price to currency override threshold
-  card-price-threshold: 100
-
   # Links
   poedb:
     base: https://poedb.tw/us/
@@ -48,7 +45,6 @@ data:
   ninja:
     cardbase: https://poe.ninja/economy/{league}/divination-cards/
     cardprices: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
-    currencyprices: https://poe.ninja/api/data/currencyoverview?type=Currency&league=
 
   # Sheets
   metadata:

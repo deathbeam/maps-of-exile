@@ -24,7 +24,6 @@ const Routes = () => {
 }
 
 function App() {
-  const [cardPricesAlert, setCardPricesAlert] = useAtom(state.alerts.cardPrices)
   const [newLeagueAlert, setNewLeagueAlert] = useAtom(state.alerts.newLeague)
   const [newEventAlert, setNewEventAlert] = useAtom(state.alerts.newEvent)
 
@@ -41,13 +40,6 @@ function App() {
         <span className="d-none d-md-inline">Data incorrect or missing? Open an issue</span>
       </a>
       <div className="position-fixed end-0 bottom-0 m-2 on-top d-flex flex-column gap-2">
-        {cardPricesAlert && (
-          <div className="alert alert-primary mb-0" role="alert">
-            <b>New!</b> Currency cards under <b>100c</b> are now priced based on <b>poe.ninja</b> currency values to
-            improve accuracy.
-            <button type="button" className="btn-close" onClick={() => setCardPricesAlert(false)} />
-          </div>
-        )}
         {newLeagueAlert && globals.league && (
           <div className="alert alert-primary mb-0" role="alert">
             <b>New!</b> Site was updated for <b>{globals.league}</b> league. If price data are not reliable yet, switch{' '}

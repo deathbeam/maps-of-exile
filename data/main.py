@@ -280,27 +280,6 @@ def get_card_data(key, config, card_extra):
         event_prices = requests.get(config["ninja"]["cardprices"] + event).json()["lines"]
 
     print(f"Getting currency prices for {league}, {event} and Standard")
-    currency_prices = requests.get(config["ninja"]["currencyprices"] + league).json()["lines"]
-    standard_currency_prices = requests.get(config["ninja"]["currencyprices"] + "Standard").json()["lines"]
-    event_currency_prices = {}
-    if event:
-        event_currency_prices = requests.get(config["ninja"]["currencyprices"] + event).json()["lines"]
-
-    def find_reward_price(card, prices, price):
-        if price and price > config["card-price-threshold"]:
-            return price
-        reward = card["reward"]
-        stack = card["stack_size"]
-        if not reward or reward == "":
-            return price
-        match = re.match(r"(\d+x)?([\s\w]+)", reward)
-        count = match.group(1)
-        cur = match.group(2).strip()
-
-        for p in prices:
-            if p["currencyTypeName"] == cur:
-                return p["chaosEquivalent"] * ((int(count.replace("x", "").strip()) if count else 1) / stack)
-        return price
 
     out = []
     for wiki_card in wiki_cards:
@@ -327,16 +306,9 @@ def get_card_data(key, config, card_extra):
         standard_price_card = next(filter(lambda x: x["name"] == name, standard_prices), {})
         event_price_card = next(filter(lambda x: x["name"] == name, event_prices), {})
 
-        reward_price = find_reward_price(wiki_card, currency_prices, price_card.get("chaosValue"))
-        standard_reward_price = find_reward_price(
-            wiki_card, standard_currency_prices, standard_price_card.get("chaosValue")
-        )
-        event_reward_price = find_reward_price(wiki_card, event_currency_prices, event_price_card.get("chaosValue"))
-
-        if reward_price != price_card.get("chaosValue"):
-            print(
-                f"Adjusting reward price for {name} to {reward_price} instead of {price_card.get('chaosValue')}. Reward: {wiki_card['reward']}, Stack: {wiki_card['stack_size']}"
-            )
+        reward_price = price_card.get("chaosValue")
+        standard_reward_price = standard_price_card.get("chaosValue")
+        event_reward_price = event_price_card.get("chaosValue")
 
         card = {
             "name": name,

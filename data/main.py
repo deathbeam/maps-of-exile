@@ -272,12 +272,19 @@ def get_card_data(key, config, card_extra):
                 print(f"Setting weight for {card_name} to {value} from {name} sheet")
                 card_weights[card_name] = value
 
+    print(f"Getting card overviews for {league}, {event} and Standard")
+    overviews = {
+        "league": requests.get(config["ninja"]["cardoverview"] + league).json()["lines"],
+        "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()["lines"],
+        "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"] if event else [],
+    }
+
     print(f"Getting card prices for {league}, {event} and Standard")
-    prices = requests.get(config["ninja"]["cardprices"] + league).json()["lines"]
-    standard_prices = requests.get(config["ninja"]["cardprices"] + "Standard").json()["lines"]
-    event_prices = {}
-    if event:
-        event_prices = requests.get(config["ninja"]["cardprices"] + event).json()["lines"]
+    prices = {
+        "league": requests.get(config["ninja"]["cardprices"] + league).json()["lines"],
+        "standard": requests.get(config["ninja"]["cardprices"] + "Standard").json()["lines"],
+        "event": requests.get(config["ninja"]["cardprices"] + event).json()["lines"] if event else [],
+    }
 
     out = []
     for wiki_card in wiki_cards:
@@ -300,23 +307,32 @@ def get_card_data(key, config, card_extra):
             print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
         wiki_card["drop"]["areas"] = map_drops
 
-        price_card = next(filter(lambda x: x["name"] == name, prices), {})
-        standard_price_card = next(filter(lambda x: x["name"] == name, standard_prices), {})
-        event_price_card = next(filter(lambda x: x["name"] == name, event_prices), {})
+        overview_card = next(filter(lambda x: x["name"] == name, overviews["standard"]), None)
+        if not overview_card:
+            overview_card = next(filter(lambda x: x["name"] == name, overviews["league"]), {})
+        overview_art = overview_card.get("artFilename")
+        overview_id = overview_card.get("detailsId")
 
-        reward_price = price_card.get("chaosValue")
-        standard_reward_price = standard_price_card.get("chaosValue")
-        event_reward_price = event_price_card.get("chaosValue")
+        league_price_card = next(filter(lambda x: x["id"] == overview_id, prices["league"]), {}).get("primaryValue")
+        if not league_price_card:
+            print(f"Price for card {name} with id {overview_id} not found, trying trade price")
+            league_price_card = next(filter(lambda x: x["name"] == name, overviews["league"]), {}).get("chaosValue")
+        standard_price_card = next(filter(lambda x: x["id"] == overview_id, prices["standard"]), {}).get("primaryValue")
+        if not standard_price_card:
+            standard_price_card = next(filter(lambda x: x["name"] == name, overviews["standard"]), {}).get("chaosValue")
+        event_price_card = next(filter(lambda x: x["id"] == overview_id, prices["event"]), {}).get("primaryValue")
+        if not event_price_card:
+            event_price_card = next(filter(lambda x: x["name"] == name, overviews["event"]), {}).get("chaosValue")
 
         card = {
             "name": name,
             "stack": wiki_card["stack_size"],
             "reward": wiki_card["reward"],
-            "art": standard_price_card.get("artFilename", price_card.get("artFilename")),
-            "price": reward_price,
-            "standardPrice": standard_reward_price,
-            "eventPrice": event_reward_price,
-            "id": price_card.get("detailsId", standard_price_card.get("detailsId")),
+            "art": overview_art,
+            "price": league_price_card,
+            "standardPrice": standard_price_card,
+            "eventPrice": event_price_card,
+            "id": overview_id,
             "drop": wiki_card["drop"],
         }
 

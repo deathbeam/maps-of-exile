@@ -314,12 +314,15 @@ def get_card_data(key, config, card_extra):
         overview_id = overview_card.get("detailsId")
 
         league_price_card = next(filter(lambda x: x["id"] == overview_id, prices["league"]), {}).get("primaryValue")
+        league_price_card = league_price_card or 0
         event_price_card = next(filter(lambda x: x["id"] == overview_id, prices["event"]), {}).get("primaryValue")
+        event_price_card = event_price_card or 0
 
         # For standard, fallback
         standard_price_card = next(filter(lambda x: x["id"] == overview_id, prices["standard"]), {}).get("primaryValue")
         if not standard_price_card:
             standard_price_card = next(filter(lambda x: x["name"] == name, overviews["standard"]), {}).get("chaosValue")
+        standard_price_card = standard_price_card or 0
 
         card = {
             "name": name,

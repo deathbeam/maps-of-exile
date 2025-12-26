@@ -149,6 +149,10 @@ def get_card_data(key, config, card_extra):
             e.decompose()
         return soup.get_text().replace("16x16px|link=|alt=", "").replace("..", ".")
 
+    def name_to_id(name):
+        # Lowercase, replace spaces with hyphens, remove other non-alphanumeric
+        return re.sub(r"[^a-z0-9\-]", "", re.sub(r"[ ]+", "-", name.lower()))
+
     def get_poedb_card_drops(card_name):
         print(f"Getting PoEDB card data for {card_name}")
         url = config["poedb"]["base"] + urllib.parse.quote(card_name.replace(" ", "_").replace("'", "").strip())
@@ -158,6 +162,15 @@ def get_card_data(key, config, card_extra):
             r.raise_for_status()
             soup = BeautifulSoup(r.content, "html.parser")
             dropped_by = []
+            art_id = None
+
+            # Extract art id from div with class 'icon'
+            icon_div = soup.find("div", class_="icon")
+            if icon_div and "background-image" in icon_div.get("style", ""):
+                style = icon_div["style"]
+                url = style.split("url('")[1].split("')")[0]
+                art_id = url.split("/")[-1].replace(".png", "")
+
             for td in soup.find_all("td"):
                 if td.text.strip() == "Dropped by":
                     next_td = td.find_next_sibling("td")
@@ -167,10 +180,10 @@ def get_card_data(key, config, card_extra):
                             if name:
                                 dropped_by.append(name)
                     break
-            return dropped_by
+            return dropped_by, art_id
         except Exception as e:
             print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
-            return []
+            return [], None
 
     # Get maps for area mapping
     maps = get_maps(key, config)
@@ -291,7 +304,7 @@ def get_card_data(key, config, card_extra):
         name = wiki_card["name"]
 
         # Combine poedb atlas drops with wiki drops
-        poedb_drops = get_poedb_card_drops(name)
+        poedb_drops, art_id = get_poedb_card_drops(name)
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
         map_drops = []
         for area in original_areas:
@@ -307,11 +320,8 @@ def get_card_data(key, config, card_extra):
             print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
         wiki_card["drop"]["areas"] = map_drops
 
-        overview_card = next(filter(lambda x: x["name"] == name, overviews["standard"]), None)
-        if not overview_card:
-            overview_card = next(filter(lambda x: x["name"] == name, overviews["league"]), {})
-        overview_art = overview_card.get("artFilename")
-        overview_id = overview_card.get("detailsId")
+        overview_art = art_id
+        overview_id = name_to_id(name)
 
         league_price_card = next(filter(lambda x: x["id"] == overview_id, prices["league"]), {}).get("primaryValue")
         league_price_card = league_price_card or 0

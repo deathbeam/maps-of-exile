@@ -44,8 +44,10 @@ def save_image(directory, name, res):
 def find_shortest_substring(entry, entries):
     # If entry doesnt have regex ^ and $ appended, append them
     regexedEntry = entry
-    if not entry.startswith("^") or not entry.endswith("$"):
-        regexedEntry = "^" + entry + "$"
+    if not entry.startswith("^"):
+        regexedEntry = "^" + regexedEntry
+    if not entry.endswith("$"):
+        regexedEntry = regexedEntry + "$"
     substring_set = set()
 
     for i in range(len(regexedEntry)):
@@ -320,8 +322,7 @@ def get_card_data(key, config, card_extra):
     out = []
     for wiki_card in wiki_cards:
         name = wiki_card["name"]
-
-        # Combine poedb atlas drops witz wiki drops
+        # Combine poedb atlas drops with wiki drops
         poedb_drops, art_id, flavour_text = get_poedb_card_drops(name)
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
         map_drops = []
@@ -670,9 +671,9 @@ def get_maps(key, config):
             div_cards = json.load(file)
             for card in div_cards:
                 out_names.append(card["name"].lower())
-                for part in card["flavourText"].split("<br/>"):
+                for part in card.get("flavourText", "").split("<br/>"):
                     out_names.append(part.strip().lower())
-                for reward in card["reward"].split(","):
+                for reward in card.get("reward", "").split(","):
                     out_names.append(reward.strip().lower())
     except Exception as e:
         print(f"Failed to load divination card data for creating unique shorthands: {e}")

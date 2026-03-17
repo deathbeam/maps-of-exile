@@ -9,6 +9,7 @@ import html
 import urllib
 from decimal import Decimal
 from math import ceil
+from pathlib import Path
 from wikitextparser import remove_markup
 
 import requests
@@ -26,7 +27,9 @@ class DecimalEncoder(json.JSONEncoder):
 
 
 def get_image_path(directory, name, ext):
-    name = re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
+    name = (
+        re.sub(r"[^a-zA-Z0-9 ]", "", name).replace(" Map", "").lower().replace(" ", "_")
+    )
     return f"/img/{directory}/{name}{ext}"
 
 
@@ -51,9 +54,9 @@ def find_shortest_substring(entry, entries):
 
     shortest_substring = ""
     for substring in sorted(list(substring_set)):
-        if (shortest_substring == "" or len(substring) < len(shortest_substring)) and sum(
-            1 for e in entries if substring in e
-        ) == 1:
+        if (
+            shortest_substring == "" or len(substring) < len(shortest_substring)
+        ) and sum(1 for e in entries if substring in e) == 1:
             shortest_substring = substring
 
     if not shortest_substring:
@@ -105,16 +108,45 @@ def get_globals_data(config, globals_extra):
     out = {
         "league": config["league"],
         "event": config.get("event"),
-        "lastUpdate": time.time() * 1000
+        "lastUpdate": time.time() * 1000,
     }
 
+    # Use Atlas of Worlds page for the SVG
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
     r = requests.get(url, allow_redirects=True)
     soup = BeautifulSoup(r.content, "html.parser")
-    atlasimage = soup.find(id="AtlasNodeSVG").find("image")
+    atlassvg = soup.find(id="AtlasNodeSVG")
 
-    out["atlas"] = {"width": float(atlasimage.attrs["width"]), "height": float(atlasimage.attrs["height"])}
+    if not atlassvg:
+        raise Exception(f"Could not find AtlasNodeSVG element on {url}")
+
+    atlasimage = atlassvg.find("image")
+    if not atlasimage:
+        raise Exception(f"Could not find image element in AtlasNodeSVG on {url}")
+
+    # Extract the atlas image URL from the xlink:href attribute
+    atlas_image_url = atlasimage.attrs.get("xlink:href") or atlasimage.attrs.get("href")
+    if not atlas_image_url:
+        raise Exception(f"Could not find image URL in AtlasNodeSVG on {url}")
+
+    # Download the atlas image
+    print(f"Downloading atlas image from {atlas_image_url}")
+    img_response = requests.get(atlas_image_url, allow_redirects=True)
+    if img_response.status_code != 200:
+        raise Exception(f"Failed to download atlas image from {atlas_image_url}")
+
+    # Save to site/public/img/atlas.webp
+    atlas_path = Path(__file__).parent.parent / "site" / "public" / "img" / "atlas.webp"
+    atlas_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(atlas_path, "wb") as f:
+        f.write(img_response.content)
+    print(f"Atlas image saved to {atlas_path}")
+
+    out["atlas"] = {
+        "width": float(atlasimage.attrs["width"]),
+        "height": float(atlasimage.attrs["height"]),
+    }
 
     # url = config["poedb"]["constants"]
     # print(f"Getting game constants from url {url}")
@@ -155,7 +187,9 @@ def get_card_data(key, config, card_extra):
 
     def get_poedb_card_drops(card_name):
         print(f"Getting PoEDB card data for {card_name}")
-        url = config["poedb"]["base"] + urllib.parse.quote(card_name.replace(" ", "_").replace("'", "").strip())
+        url = config["poedb"]["base"] + urllib.parse.quote(
+            card_name.replace(" ", "_").replace("'", "").strip()
+        )
 
         try:
             r = requests.get(url)
@@ -238,7 +272,9 @@ def get_card_data(key, config, card_extra):
                         )
                     ),
                     "min_level": int(x.get("drop level", "0") or "0"),
-                    "max_level": int(x.get("drop level maximum")) if x.get("drop level maximum") else None,
+                    "max_level": int(x.get("drop level maximum"))
+                    if x.get("drop level maximum")
+                    else None,
                 },
             },
             map(lambda x: x["title"], wiki_cards),
@@ -263,22 +299,32 @@ def get_card_data(key, config, card_extra):
         headers = weights[header_row]
         print(headers)
         key_col_idx = headers.index(key_col) if isinstance(key_col, str) else key_col
-        value_col_idx = headers.index(value_col) if isinstance(value_col, str) else value_col
-        value_2_col_idx = headers.index(value_2_col) if isinstance(value_2_col, str) else value_2_col
+        value_col_idx = (
+            headers.index(value_col) if isinstance(value_col, str) else value_col
+        )
+        value_2_col_idx = (
+            headers.index(value_2_col) if isinstance(value_2_col, str) else value_2_col
+        )
         for card in weights[data_row:]:
             card_name = card[key_col_idx].strip()
-            if value_col_idx >= len(card) or value_2_col_idx >= len(card) or not card_name:
+            if (
+                value_col_idx >= len(card)
+                or value_2_col_idx >= len(card)
+                or not card_name
+            ):
                 continue
             card_value = card[value_col_idx].strip()
-            if card_value == '':
+            if card_value == "":
                 continue
             card_value_2 = card[value_2_col_idx].strip()
-            if card_value_2 == '':
+            if card_value_2 == "":
                 card_value_2 = card_value
             try:
                 value = (int(float(card_value)) + int(float(card_value_2))) / 2
             except ValueError:
-                print(f"Invalid value for {card_name} in {name} sheet: {card_value}, {card_value_2}")
+                print(
+                    f"Invalid value for {card_name} in {name} sheet: {card_value}, {card_value_2}"
+                )
                 continue
             original_value = card_weights.get(card_name, 0)
             if original_value <= override:
@@ -287,16 +333,26 @@ def get_card_data(key, config, card_extra):
 
     print(f"Getting card overviews for {league}, {event} and Standard")
     overviews = {
-        "league": requests.get(config["ninja"]["cardoverview"] + league).json()["lines"],
-        "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()["lines"],
-        "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"] if event else [],
+        "league": requests.get(config["ninja"]["cardoverview"] + league).json()[
+            "lines"
+        ],
+        "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()[
+            "lines"
+        ],
+        "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"]
+        if event
+        else [],
     }
 
     print(f"Getting card prices for {league}, {event} and Standard")
     prices = {
         "league": requests.get(config["ninja"]["cardprices"] + league).json()["lines"],
-        "standard": requests.get(config["ninja"]["cardprices"] + "Standard").json()["lines"],
-        "event": requests.get(config["ninja"]["cardprices"] + event).json()["lines"] if event else [],
+        "standard": requests.get(config["ninja"]["cardprices"] + "Standard").json()[
+            "lines"
+        ],
+        "event": requests.get(config["ninja"]["cardprices"] + event).json()["lines"]
+        if event
+        else [],
     }
 
     out = []
@@ -323,15 +379,23 @@ def get_card_data(key, config, card_extra):
         overview_art = art_id
         overview_id = name_to_id(name)
 
-        league_price_card = next(filter(lambda x: x["id"] == overview_id, prices["league"]), {}).get("primaryValue")
+        league_price_card = next(
+            filter(lambda x: x["id"] == overview_id, prices["league"]), {}
+        ).get("primaryValue")
         league_price_card = league_price_card or 0
-        event_price_card = next(filter(lambda x: x["id"] == overview_id, prices["event"]), {}).get("primaryValue")
+        event_price_card = next(
+            filter(lambda x: x["id"] == overview_id, prices["event"]), {}
+        ).get("primaryValue")
         event_price_card = event_price_card or 0
 
         # For standard, fallback
-        standard_price_card = next(filter(lambda x: x["id"] == overview_id, prices["standard"]), {}).get("primaryValue")
+        standard_price_card = next(
+            filter(lambda x: x["id"] == overview_id, prices["standard"]), {}
+        ).get("primaryValue")
         if not standard_price_card:
-            standard_price_card = next(filter(lambda x: x["name"] == name, overviews["standard"]), {}).get("chaosValue")
+            standard_price_card = next(
+                filter(lambda x: x["name"] == name, overviews["standard"]), {}
+            ).get("chaosValue")
         standard_price_card = standard_price_card or 0
 
         card = {
@@ -392,7 +456,9 @@ def get_monsters(config):
     wiki_monsters = list(map(lambda x: x["title"], wiki_monsters))
     out = {}
     for monster in wiki_monsters:
-        out[monster.get("metadata id").strip()] = html.unescape(monster.get("name")).strip()
+        out[monster.get("metadata id").strip()] = html.unescape(
+            monster.get("name")
+        ).strip()
     return out
 
 
@@ -429,7 +495,8 @@ def get_map_meta(key, config):
             out = out + list(
                 map(
                     lambda x: {
-                        "name": x[1].strip().replace(" Map", "").replace("’", "'") + " Map",
+                        "name": x[1].strip().replace(" Map", "").replace("’", "'")
+                        + " Map",
                         "tags": {
                             "boss_separated": x[12].strip() == "o",
                             "few_obstacles": x[11].strip() == "o",
@@ -458,9 +525,11 @@ def get_map_ratings(key, config):
         map(
             lambda x: {
                 "name": x[0].strip().replace("Bazzar", "Bazaar"),
-                "layout": rescale(int(x[1]), 0, 5, 10),
-                "density": rescale(int(x[2]), 0, 5, 10),
-                "boss": rescale(int(x[4]), 0, 5, 10),
+                "layout": rescale(int(x[1]) if x[1].strip() else 0, 0, 5, 10),
+                "density": rescale(int(x[2]) if x[2].strip() else 0, 0, 5, 10),
+                "boss": rescale(
+                    int(float(x[4].replace(",", "."))) if x[4].strip() else 0, 0, 5, 10
+                ),
                 "density_unreliable": True,
             },
             ratings,
@@ -510,15 +579,13 @@ def get_map_wiki(config):
                 "limit": 500,
                 "offset": offset,
                 "tables": "areas",
-                "fields":
-                    "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, "
-                    "areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
-                "where":
-                    "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND "
-                    "areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND "
-                    "areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND "
-                    "(areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND "
-                    "(areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
+                "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, "
+                "areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
+                "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND "
+                "areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND "
+                "areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND "
+                "(areas.is_map_area OR areas.is_unique_map_area OR areas.act != 11 AND "
+                "(areas.id LIKE '1_%' OR areas.id LIKE '2_%') OR areas.id LIKE '%Labyrinth%')",
             },
         ).json()
         if "cargoquery" not in out:
@@ -537,7 +604,7 @@ def get_map_wiki(config):
                 "offset": offset,
                 "tables": "maps",
                 "fields": "maps.area_id, maps.area_level",
-                "where": "maps.series='" + config["league"] + "'"
+                "where": "maps.series='" + config["league"] + "'",
             },
         ).json()
         if "cargoquery" not in out:
@@ -602,7 +669,10 @@ def get_maps(key, config):
         is_map_area = m.get("is map area", "0") != "0"
         is_unique_map_area = m.get("is unique map area", "0") != "0"
         is_act_area = (
-            not is_unique_map_area and not is_map_area and act < 11 and (id.startswith("1_") or id.startswith("2_"))
+            not is_unique_map_area
+            and not is_map_area
+            and act < 11
+            and (id.startswith("1_") or id.startswith("2_"))
         )
 
         if not is_act_area and any(x in name or x in id for x in config["ignored"]):
@@ -624,7 +694,8 @@ def get_maps(key, config):
             "ids": [id],
             "levels": [level],
             "name": name,
-            "poedb": config["poedb"]["base"] + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
+            "poedb": config["poedb"]["base"]
+            + urllib.parse.quote(name.replace(" ", "_").replace("'", "").strip()),
             "type": map_type,
         }
 
@@ -632,7 +703,9 @@ def get_maps(key, config):
             out_map["connected"] = (m.get("connection ids", "") or "").split(",")
 
         if m.get("boss monster ids"):
-            out_map["boss_ids"] = sorted(list(set(filter(None, m["boss monster ids"].split(",")))))
+            out_map["boss_ids"] = sorted(
+                list(set(filter(None, m["boss monster ids"].split(","))))
+            )
 
         existing_map = cleaned_maps.get(name)
         if existing_map:
@@ -645,7 +718,9 @@ def get_maps(key, config):
     out_names = list(map(lambda x: x["name"].lower(), out_names))
 
     # Add flavor text and map tab text to make sure map's shorthand doesn't trigger these
-    out_names.append("travel to this map by using it in a personal map device. maps can only be used once")
+    out_names.append(
+        "travel to this map by using it in a personal map device. maps can only be used once"
+    )
     out_names.append("atlas bonus complete")
 
     url = config["poedb"]["list"]
@@ -653,22 +728,28 @@ def get_maps(key, config):
     r = requests.get(url, allow_redirects=True)
     soup = BeautifulSoup(r.content, "html.parser")
     mapssvg = soup.find(id="AtlasNodeSVG")
-    maplinks = mapssvg.find_all("a")
 
+    if not mapssvg:
+        raise Exception(f"Could not find AtlasNodeSVG element on {url}")
+
+    maplinks = mapssvg.find_all("a")
     map_positions = []
     for maplink in maplinks:
         txt = maplink.find("text")
-        map_positions.append(
-            {
-                "name": txt.text.strip(),
-                "x": int(txt.attrs["x"]),
-                "y": int(txt.attrs["y"]),
-            }
-        )
+        if txt:
+            map_positions.append(
+                {
+                    "name": txt.text.strip(),
+                    "x": int(txt.attrs["x"]),
+                    "y": int(txt.attrs["y"]),
+                }
+            )
 
     for m in out:
         name = m["name"]
-        m["shorthand"] = find_shortest_substring(name.replace(" Map", "").lower(), out_names)
+        m["shorthand"] = find_shortest_substring(
+            name.replace(" Map", "").lower(), out_names
+        )
         m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}
@@ -676,15 +757,21 @@ def get_maps(key, config):
         existing_meta = next(filter(lambda x: x["name"] == name, meta), None)
         if existing_meta:
             merge(existing_meta, m)
-        existing_rating = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None)
+        existing_rating = next(
+            filter(lambda x: x["name"] == name.replace(" Map", ""), map_ratings), None
+        )
         if existing_rating:
             existing_rating = existing_rating.copy()
             if existing_rating["density_unreliable"]:
-                m["info"]["density"] = "Missing exact mob count, density rating might be unreliable"
+                m["info"]["density"] = (
+                    "Missing exact mob count, density rating might be unreliable"
+                )
             existing_rating.pop("name")
             existing_rating.pop("density_unreliable")
             m["rating"] = existing_rating
-        existing_position = next(filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None)
+        existing_position = next(
+            filter(lambda x: x["name"] == name.replace(" Map", ""), map_positions), None
+        )
         if existing_position:
             m["atlas"] = True
             m["x"] = existing_position["x"]
@@ -705,7 +792,11 @@ def get_map_data(map_data, extra_map_data, config):
 
     # Wiki image
     print(f"Getting wiki image data for {map_data['name']}")
-    image_path = config["wiki"]["filepath"] + map_data["name"].replace(" ", "_") + "_area_screenshot"
+    image_path = (
+        config["wiki"]["filepath"]
+        + map_data["name"].replace(" ", "_")
+        + "_area_screenshot"
+    )
     r = s.get(image_path + ".png", allow_redirects=False)
     if r.status_code != 301:
         r = s.get(image_path + ".jpg", allow_redirects=False)
@@ -748,9 +839,13 @@ def get_map_data(map_data, extra_map_data, config):
                     level_found = True
                     map_data["levels"][0] = level
             elif name == "atlas linked":
-                map_data["connected"] = sorted(list(set(map(lambda x: x.text.strip(), value.find_all("a")))))
+                map_data["connected"] = sorted(
+                    list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
+                )
             elif name == "the pantheon":
-                map_data["pantheon"] = next(map(lambda x: x.text.strip(), value.find_all("a")))
+                map_data["pantheon"] = next(
+                    map(lambda x: x.text.strip(), value.find_all("a"))
+                )
             elif name == "tags":
                 for v in value.text.strip().split(","):
                     v = v.strip()
@@ -759,7 +854,9 @@ def get_map_data(map_data, extra_map_data, config):
                     elif v == "no_boss":
                         map_data.pop("boss_ids", None)
                     elif v.startswith("map_drops_can_upgrade_to_"):
-                        map_data["tags"][v.replace("map_drops_can_upgrade_to_", "") + "_map"] = True
+                        map_data["tags"][
+                            v.replace("map_drops_can_upgrade_to_", "") + "_map"
+                        ] = True
             elif name == "icon" and "icon" not in map_data:
                 v = value.text.strip()
                 if "SkillIcons" not in v:
@@ -783,19 +880,14 @@ def get_map_data(map_data, extra_map_data, config):
 
     if map_data.get("atlas"):
         level = map_data["levels"][0]
-        map_data["levels"] = [
-            level,
-            min(level + 3, 83),
-            min(level + 7, 83),
-            min(level + 11, 83),
-            min(level + 15, 83),
-        ]
+        map_data["levels"] = [level, max(level, 83)]
     elif map_data.get("type") == "map":
         level = map_data["levels"][0]
-        map_data["levels"] = [68, 71, 75, 79, 83]
+        map_data["levels"] = [level]
 
-    # Merge existing data
-    existing = next(filter(lambda x: x["name"] == map_data["name"], extra_map_data), None)
+    existing = next(
+        filter(lambda x: x["name"] == map_data["name"], extra_map_data), None
+    )
     if existing:
         merge(existing, map_data)
     return map_data
@@ -822,7 +914,9 @@ def get_maps_template(maps, existing_maps, overwrite=False):
         }
 
         existing_map = next(
-            filter(lambda x: x["name"] == map["name"], existing_maps if overwrite else out),
+            filter(
+                lambda x: x["name"] == map["name"], existing_maps if overwrite else out
+            ),
             None,
         )
         if existing_map:
@@ -946,7 +1040,11 @@ def get_issue_template(maps):
             10,
         )
     )
-    body.append(number_input("Boss rating", "Map boss rating. If you dont know simply leave at None.", 10))
+    body.append(
+        number_input(
+            "Boss rating", "Map boss rating. If you dont know simply leave at None.", 10
+        )
+    )
 
     body.append(
         checkbox_input(
@@ -1021,7 +1119,9 @@ def main():
 
         cards = get_card_data(api_key, config, card_extra)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
-            f.write(json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True))
+            f.write(
+                json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)
+            )
 
     if fetch_maps:
         # Get basic map data
@@ -1036,12 +1136,16 @@ def main():
         # Create GitHub template
         issue_template = get_issue_template(maps)
         with open(dir_path + "/../.github/ISSUE_TEMPLATE/map_data.yml", "w") as f:
-            f.write(yaml.dump(issue_template, default_flow_style=False, sort_keys=False))
+            f.write(
+                yaml.dump(issue_template, default_flow_style=False, sort_keys=False)
+            )
 
         # Write detailed map data
         maps = list(map(lambda x: get_map_data(x, map_extra, config), maps))
         with open(dir_path + "/../site/src/data/maps.json", "w") as f:
-            f.write(json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True))
+            f.write(
+                json.dumps(clean(maps), indent=4, cls=DecimalEncoder, sort_keys=True)
+            )
 
 
 if __name__ == "__main__":

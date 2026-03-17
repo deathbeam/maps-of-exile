@@ -133,17 +133,6 @@ const filterInputs = atom(get => [
     numberDef: atom('')
   },
   {
-    name: 'Card value source',
-    tooltip: <>How card value is calculated, either based on card map drops or card value from kirac missions.</>,
-    type: 'select',
-    options: {
-      map: 'Map drops',
-      kirac: 'Kirac missions'
-    },
-    def: state.input.cardValueSource,
-    numberDef: atom('')
-  },
-  {
     name: 'Minimum card price',
     tooltip: (
       <>

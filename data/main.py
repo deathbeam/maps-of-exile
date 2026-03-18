@@ -125,23 +125,19 @@ def get_globals_data(config, globals_extra):
     if not atlasimage:
         raise Exception(f"Could not find image element in AtlasNodeSVG on {url}")
 
-    # Extract the atlas image URL from the xlink:href attribute
-    atlas_image_url = atlasimage.attrs.get("xlink:href") or atlasimage.attrs.get("href")
-    if not atlas_image_url:
-        raise Exception(f"Could not find image URL in AtlasNodeSVG on {url}")
-
     # Download the atlas image
-    print(f"Downloading atlas image from {atlas_image_url}")
-    img_response = requests.get(atlas_image_url, allow_redirects=True)
-    if img_response.status_code != 200:
-        raise Exception(f"Failed to download atlas image from {atlas_image_url}")
-
-    # Save to site/public/img/atlas.webp
-    atlas_path = Path(__file__).parent.parent / "site" / "public" / "img" / "atlas.webp"
-    atlas_path.parent.mkdir(parents=True, exist_ok=True)
-    with open(atlas_path, "wb") as f:
-        f.write(img_response.content)
-    print(f"Atlas image saved to {atlas_path}")
+    # atlas_image_url = atlasimage.attrs.get("xlink:href") or atlasimage.attrs.get("href")
+    # if not atlas_image_url:
+    #     raise Exception(f"Could not find image URL in AtlasNodeSVG on {url}")
+    # print(f"Downloading atlas image from {atlas_image_url}")
+    # img_response = requests.get(atlas_image_url, allow_redirects=True)
+    # if img_response.status_code != 200:
+    #     raise Exception(f"Failed to download atlas image from {atlas_image_url}")
+    # atlas_path = Path(__file__).parent.parent / "site" / "public" / "img" / "atlas.webp"
+    # atlas_path.parent.mkdir(parents=True, exist_ok=True)
+    # with open(atlas_path, "wb") as f:
+    #     f.write(img_response.content)
+    # print(f"Atlas image saved to {atlas_path}")
 
     out["atlas"] = {
         "width": float(atlasimage.attrs["width"]),

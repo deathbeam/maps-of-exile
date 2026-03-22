@@ -10257,19 +10257,16 @@
             "Orchard Map",
             "Untainted Paradise"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TropicalIsland",
         "ids": [
             "MapWorldsTropicalIsland"
         ],
-        "image": "https://www.poewiki.net/images/5/55/Tropical_Island_Map_area_screenshot.jpg",
-        "info": {
-            "boss": "Has 'allies deal substantial extra physical damage' aura. Summons Blood Apes and frenzies allies, summons a magic pack of Blood Apes at 75%, and spawns two unique Blood Apes at 50% health. Boss itself is slow and does little damage."
-        },
+        "image": "https://www.poewiki.net/images/6/6f/Tropical_Island_area_screenshot.jpg",
+        "info": {},
         "levels": [
             75,
             83
         ],
-        "name": "Tropical Island Map",
+        "name": "Tropical Island",
         "rating": {
             "boss": 10,
             "density": 5,
@@ -10277,19 +10274,9 @@
         },
         "shorthand": "sl",
         "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": false,
-            "boss_separated": false,
-            "boss_soft_phases": false,
-            "delirium_mirror": true,
-            "few_obstacles": true,
-            "league_mechanics": true,
-            "linear": true,
-            "nightmare_boss_map": true,
-            "outdoors": true
+            "nightmare_boss_map": true
         },
-        "type": "map",
+        "type": "special map",
         "x": 353,
         "y": 471
     },

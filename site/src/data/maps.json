@@ -3293,6 +3293,11 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueHeist/Boss/UnbreakableMk1Map"
         ],
+        "connected": [
+            "Absence of Value and Meaning",
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberSilo",
         "ids": [
             "MapWorldsFortress"
         ],
@@ -3304,7 +3309,9 @@
         "name": "Fortress Map",
         "rating": {},
         "shorthand": "fortress",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 889,
         "y": 134

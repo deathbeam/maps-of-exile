@@ -27,15 +27,20 @@ function parseValue(val, ref) {
   return val
 }
 
-export default function atomWithStore(name, def, data) {
+export default function atomWithStore(name, def, data, validator) {
   const getInitialValue = () => {
     if (data && data[name]) {
-      return parseValue(data[name])
+      const val = parseValue(data[name])
+      return validator ? validator(val, def) : val
     }
 
     try {
       const item = localStorage.getItem(name)
-      return item && item !== '' ? parseValue(JSON.parse(item), def) : def
+      if (item && item !== '') {
+        const val = parseValue(JSON.parse(item), def)
+        return validator ? validator(val, def) : val
+      }
+      return def
     } catch (e) {
       console.warn(e)
       return def

@@ -10,7 +10,7 @@ data:
     - Harbinger's Isle
     - Synthesised Map
     # Reliquary key areas
-    - ' Reliquary'
+    - " Reliquary"
     # Azurite mine areas
     - Delve_
     # Simulacrum areas
@@ -36,7 +36,7 @@ data:
   # Links
   poedb:
     base: https://poedb.tw/us/
-    list: https://poedb.tw/us/Maps
+    list: https://poedb.tw/us/Atlas_of_Worlds
     constants: https://poedb.tw/us/GameConstants
   wiki:
     base: https://www.poewiki.net/wiki/
@@ -58,7 +58,7 @@ data:
   ratings:
     sheet-id: 1fIs8sdvgZG7iVouPdtFkbRx5kv55_xVja8l19yubyRU
     sheet-name: 2.Atlas
-    sheet-range: AH4:AL149
+    sheet-range: AH4:AM149
   density:
     sheet-id: 10ssi9lOJvDOo3G8Iq5xRyDv6-nbCJSxJhB5ANtaUn6w
     sheet-name: Compact Data (new atlas)

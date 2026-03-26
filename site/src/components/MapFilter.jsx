@@ -105,15 +105,17 @@ const filterInputs = atom(get => [
     numberDef: atom('')
   },
   {
-    name: 'Atlas voidstones',
-    tooltip: <>How many voidstones you have. Used for marking cards as droppable or not and determining map tiers.</>,
+    name: 'Voidstone applied',
+    tooltip: (
+      <>
+        Whether you have a voidstone applied to the current region. Used for marking cards as droppable or not and
+        determining map tiers (all atlas maps become T16 with voidstone).
+      </>
+    ),
     type: 'select',
     options: {
-      0: '0 voidstones',
-      1: '1 voidstone',
-      2: '2 voidstones',
-      3: '3 voidstones',
-      4: '4 voidstones'
+      0: 'No voidstone',
+      1: 'Voidstone applied'
     },
     def: state.input.voidstones,
     numberDef: atom('')
@@ -128,17 +130,6 @@ const filterInputs = atom(get => [
       event: 'Event'
     },
     def: state.input.cardPriceSource,
-    numberDef: atom('')
-  },
-  {
-    name: 'Card value source',
-    tooltip: <>How card value is calculated, either based on card map drops or card value from kirac missions.</>,
-    type: 'select',
-    options: {
-      map: 'Map drops',
-      kirac: 'Kirac missions'
-    },
-    def: state.input.cardValueSource,
     numberDef: atom('')
   },
   {

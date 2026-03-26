@@ -276,7 +276,6 @@ function rateMaps(
   cardBaselineNumber,
   cardMinPrice,
   cardPriceSource,
-  cardValueSource,
   cardDisplay,
   mapDisplay,
   voidstones,
@@ -352,21 +351,12 @@ function rateMaps(
       }
 
       for (let card of mapCards) {
-        if (cardValueSource === 'kirac') {
-          card.source = 'kirac mission'
-          card.totalWeight = bossWeight
-          card.dropPoolItems = 1
-          const rate = card.weight / card.totalWeight
-          card.value = map.type !== 'map' ? 0 : card.stack * card.price * rate
-          card.rate = map.type === 'map' && calcRate(rate, card.price, card.stack)
-        } else {
-          card.source = 'map'
-          card.totalWeight = globals.droppool_weight + (card.boss ? bossWeight : mapWeight)
-          card.dropPoolItems = 1 / (cardWeightBaseline / card.totalWeight) / (card.boss ? 10 : 1)
-          const rate = (card.weight / card.totalWeight) * card.dropPoolItems
-          card.value = card.price * rate
-          card.rate = calcRate(rate, card.price, 1)
-        }
+        card.source = 'map'
+        card.totalWeight = globals.droppool_weight + (card.boss ? bossWeight : mapWeight)
+        card.dropPoolItems = 1 / (cardWeightBaseline / card.totalWeight) / (card.boss ? 10 : 1)
+        const rate = (card.weight / card.totalWeight) * card.dropPoolItems
+        card.value = card.price * rate
+        card.rate = calcRate(rate, card.price, 1)
 
         if (card.price < cardMinPrice) {
           card.value = 0
@@ -525,7 +515,7 @@ function createState() {
     search: atomWithStore('searchInput', '', data),
     sort: atomWithStore('sortInput', ['score'], data),
 
-    voidstones: atomWithStore('voidstonesInput', 4, data),
+    voidstones: atomWithStore('voidstonesInput', 1, data, (val, def) => (val > 1 ? def : val)),
     cardDisplay: atomWithStore('cardDisplayInput', 'drop', data),
     mapDisplay: atomWithStore('mapDisplayInput', 'atlas+unique+special', data),
 
@@ -537,7 +527,6 @@ function createState() {
     cardBaselineNumber: atomWithStore('cardBaselineNumberInput', 1, data),
     cardMinPrice: atomWithStore('cardMinPriceInput', 10, data),
     cardPriceSource: atomWithStore('cardPriceSourceInput', 'league', data),
-    cardValueSource: atomWithStore('cardValueSourceInput', 'map', data),
 
     atlasScore: atomWithStore('atlasScore', false, data),
     atlasIcons: atomWithStore('atlasIcons', true, data),
@@ -581,7 +570,6 @@ function createState() {
       get(input.cardBaselineNumber),
       get(input.cardMinPrice),
       get(input.cardPriceSource),
-      get(input.cardValueSource),
       get(input.cardDisplay),
       get(input.mapDisplay),
       get(input.voidstones),

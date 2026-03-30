@@ -769,20 +769,16 @@
             "Relic Chambers Map",
             "Whakawairua Tuahu"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Atoll",
         "ids": [
             "MapWorldsAtoll"
         ],
-        "image": "https://www.poewiki.net/images/6/6f/Atoll_Map_area_screenshot.png",
-        "info": {
-            "boss": "Very strong Cold spells. Summons small totems that cast Frostbolts. Bring Freeze immunity to avoid being frozen. Boss has a deadly Ice Nova that can one shot certain characters. Ice Nova is used approximately every 10 seconds and is signalled when the boss starts releasing icy sparks (will not cast other spells).",
-            "boss_rushable": "Follow right wall"
-        },
+        "image": "https://www.poewiki.net/images/7/75/Atoll_area_screenshot.png",
+        "info": {},
         "levels": [
             73,
             83
         ],
-        "name": "Atoll Map",
+        "name": "Atoll",
         "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 8,
@@ -791,19 +787,9 @@
         },
         "shorthand": "atol",
         "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": true,
-            "boss_separated": true,
-            "boss_soft_phases": false,
-            "delirium_mirror": true,
-            "few_obstacles": true,
-            "league_mechanics": false,
-            "linear": true,
-            "nightmare_boss_map": true,
-            "outdoors": true
+            "nightmare_boss_map": true
         },
-        "type": "map",
+        "type": "special map",
         "x": 434,
         "y": 392
     },
@@ -5750,38 +5736,23 @@
             "Metadata/Monsters/Totems/TotemMapBossColdPlateau",
             "Metadata/Monsters/Totems/TotemMapBossLightningPlateau"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plateau",
         "ids": [
             "MapWorldsPlateau"
         ],
-        "image": "https://www.poewiki.net/images/0/01/Plateau_Map_area_screenshot.jpg",
-        "info": {
-            "boss": "Atoll boss, along with another totem that uses a variety of Lightning spells. Once one is killed the other will restore to full health, gaining new abilities and more damage. For melee characters I advise killing Purina first (cold one) and for ranged characters killing Poporo (lightning one) first. Purina maintains a powerful Ice Nova that can one shot. Poporo has an extremely powerful Vaal Storm Call which you need to get out of asap."
-        },
+        "image": "https://www.poewiki.net/images/c/cb/Plateau_area_screenshot.jpg",
+        "info": {},
         "levels": [
             76
         ],
-        "name": "Plateau Map",
+        "name": "Plateau",
         "rating": {
             "boss": 6,
             "density": 3,
             "layout": 8
         },
         "shorthand": "lat",
-        "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": false,
-            "boss_separated": true,
-            "boss_soft_phases": true,
-            "delirium_mirror": true,
-            "few_obstacles": true,
-            "league_mechanics": false,
-            "linear": true,
-            "nightmare_boss_map": true,
-            "outdoors": true
-        },
-        "type": "map"
+        "tags": {},
+        "type": "special map"
     },
     {
         "atlas": true,

@@ -1120,7 +1120,7 @@ def main():
 
     args = sys.argv
     fetch_globals = False
-    fetch_monsters = True
+    fetch_monsters = False
     fetch_cards = True
     fetch_maps = True
     overwrite = True
@@ -1164,7 +1164,6 @@ def main():
             card_extra = json.load(f)
 
         cards = get_card_data(api_key, config, card_extra)
-        clean_cards = clean(cards)
         with open(dir_path + "/../site/src/data/cards.json", "w") as f:
             f.write(
                 json.dumps(clean(cards), indent=4, cls=DecimalEncoder, sort_keys=True)

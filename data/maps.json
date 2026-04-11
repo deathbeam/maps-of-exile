@@ -336,24 +336,6 @@
         }
     },
     {
-        "info": {
-            "boss_rushable": "Follow right wall"
-        },
-        "name": "Atoll Map",
-        "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": true,
-            "boss_separated": null,
-            "boss_soft_phases": false,
-            "delirium_mirror": true,
-            "few_obstacles": null,
-            "league_mechanics": false,
-            "linear": null,
-            "outdoors": null
-        }
-    },
-    {
         "levels": [
             80
         ],
@@ -2299,21 +2281,6 @@
         }
     },
     {
-        "name": "Plateau Map",
-        "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": false,
-            "boss_separated": null,
-            "boss_soft_phases": true,
-            "delirium_mirror": true,
-            "few_obstacles": null,
-            "league_mechanics": false,
-            "linear": null,
-            "outdoors": null
-        }
-    },
-    {
         "name": "Plaza Map",
         "rating": {
             "boss": 2
@@ -3233,21 +3200,6 @@
             "delirium_mirror": null,
             "few_obstacles": null,
             "league_mechanics": null,
-            "linear": null,
-            "outdoors": null
-        }
-    },
-    {
-        "name": "Tropical Island Map",
-        "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": false,
-            "boss_separated": null,
-            "boss_soft_phases": false,
-            "delirium_mirror": true,
-            "few_obstacles": null,
-            "league_mechanics": true,
             "linear": null,
             "outdoors": null
         }

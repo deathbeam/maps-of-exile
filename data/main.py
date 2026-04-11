@@ -45,11 +45,17 @@ def save_image(directory, name, res):
 
 
 def find_shortest_substring(entry, entries):
+    # If entry doesnt have regex ^ and $ appended, append them
+    regexedEntry = entry
+    if not entry.startswith("^"):
+        regexedEntry = "^" + regexedEntry
+    if not entry.endswith("$"):
+        regexedEntry = regexedEntry + "$"
     substring_set = set()
 
-    for i in range(len(entry)):
-        for j in range(i + 1, len(entry) + 1):
-            substring = entry[i:j]
+    for i in range(len(regexedEntry)):
+        for j in range(i + 1, len(regexedEntry) + 1):
+            substring = regexedEntry[i:j]
             substring_set.add(substring)
 
     shortest_substring = ""
@@ -201,6 +207,20 @@ def get_card_data(key, config, card_extra):
                 url = style.split("url('")[1].split("')")[0]
                 art_id = url.split("/")[-1].replace(".png", "")
 
+            # Extract flavour text and clean it for use to make regex's later
+            flavour_div = soup.find("div", class_="FlavourText")
+            flavour_text = ""
+            if flavour_div:
+                # If decode_contents fails, it's a pure string with no <br> in it, keeping <br> for shorthand regex calculations
+                flavour_text = flavour_div.decode_contents()
+            
+            if flavour_text:
+                flavour_text = flavour_text.replace("{", "").replace("}", "") # Remove {, } from flavour text
+                # Remove <size:xx> and </size:xx> from flavour text
+                flavour_text = re.sub(r"</?size:[0-9]+>", "", flavour_text)
+                
+                
+
             for td in soup.find_all("td"):
                 if td.text.strip() == "Dropped by":
                     next_td = td.find_next_sibling("td")
@@ -210,7 +230,7 @@ def get_card_data(key, config, card_extra):
                             if name:
                                 dropped_by.append(name)
                     break
-            return dropped_by, art_id
+            return dropped_by, art_id, flavour_text
         except Exception as e:
             print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
             return [], None
@@ -354,9 +374,8 @@ def get_card_data(key, config, card_extra):
     out = []
     for wiki_card in wiki_cards:
         name = wiki_card["name"]
-
         # Combine poedb atlas drops with wiki drops
-        poedb_drops, art_id = get_poedb_card_drops(name)
+        poedb_drops, art_id, flavour_text = get_poedb_card_drops(name)
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
         map_drops = []
         for area in original_areas:
@@ -404,6 +423,7 @@ def get_card_data(key, config, card_extra):
             "eventPrice": event_price_card,
             "id": overview_id,
             "drop": wiki_card["drop"],
+            "flavourText": flavour_text,
         }
 
         weight_card = card_weights.get(name)
@@ -516,6 +536,7 @@ def get_map_ratings(key, config):
     range = config["ratings"]["sheet-range"]
     print(f"Getting map ratings from {name}")
     url = f"https://sheets.googleapis.com/v4/spreadsheets/{id}/values/{name}!{range}?key={key}"
+    # Sheet's current columns are Map Name, Layout, Mob Density, Div Cards, Boss, Total
     ratings = requests.get(url).json()["values"]
     ratings = list(
         map(
@@ -711,13 +732,42 @@ def get_maps(key, config):
     out = sorted(list(cleaned_maps.values()), key=lambda x: x["name"])
     # Filter out act areas (you can't search for them)
     out_names = list(filter(lambda x: x["type"] != "act area", out))
-    out_names = list(map(lambda x: x["name"].lower(), out_names))
+    out_names = list(map(lambda x: x["name"].lower().replace(" map", ""), out_names))
 
-    # Add flavor text and map tab text to make sure map's shorthand doesn't trigger these
-    out_names.append(
-        "travel to this map by using it in a personal map device. maps can only be used once"
-    )
-    out_names.append("atlas bonus complete")
+    # Add divination cards since atlas search matches map on div cards and their flavor text
+    try:
+        with open(f"{dir_path}/../site/src/data/cards.json", 'r', encoding='utf-8') as file:
+            div_cards = json.load(file)
+            for card in div_cards:
+                out_names.append(card["name"].lower())
+                for part in card.get("flavourText", "").split("<br/>"):
+                    out_names.append(part.strip().lower())
+                for reward in card.get("reward", "").split(","):
+                    out_names.append(reward.strip().lower())
+    except Exception as e:
+        print(f"Failed to load divination card data for creating unique shorthands: {e}")
+
+    
+    # Add the boss names since atlas search matches map based on their bosses (for Panthreons to work)
+    try:
+        with open(f"{dir_path}/../site/src/data/monsters.json", 'r', encoding='utf-8') as file:
+            monsters_json = json.load(file)
+            not_act_areas_map = list(filter(lambda x: x["type"] != "act area" and "boss_ids" in x, out))
+            
+            map_boss_keys = []
+            for item in not_act_areas_map:
+                for boss_id in item.get("boss_ids", []):
+                    map_boss_keys.append(boss_id)
+
+            monsters_json = {k: v for k, v in monsters_json.items() if any(boss_id in k for boss_id in map_boss_keys)}
+            monsters = list(set(monsters_json.values())) # Deduplicates
+            monsters = list(map(lambda x: x.lower(), monsters))
+            out_names.extend(monsters)
+    except Exception as e:
+        print(f"Failed to load monster data for creating unique shorthands: {e}")
+        
+    # Append regex ^ and $ to each out_name for more options on finding shortest substring
+    out_names = list(map(lambda x: "^" + x + "$", out_names))
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
@@ -1071,9 +1121,9 @@ def main():
     args = sys.argv
     fetch_globals = False
     fetch_monsters = False
-    fetch_cards = False
-    fetch_maps = False
-    overwrite = False
+    fetch_cards = True
+    fetch_maps = True
+    overwrite = True
 
     if len(args) > 1:
         if "overwrite" in args[1]:

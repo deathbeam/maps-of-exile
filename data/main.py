@@ -327,18 +327,18 @@ def get_card_data(key, config, card_extra):
                 print(f"Setting weight for {card_name} to {value} from {name} sheet")
                 card_weights[card_name] = value
 
-    print(f"Getting card overviews for {league}, {event} and Standard")
-    overviews = {
-        "league": requests.get(config["ninja"]["cardoverview"] + league).json()[
-            "lines"
-        ],
-        "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()[
-            "lines"
-        ],
-        "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"]
-        if event
-        else [],
-    }
+    # print(f"Getting card overviews for {league}, {event} and Standard")
+    # overviews = {
+    #     "league": requests.get(config["ninja"]["cardoverview"] + league).json()[
+    #         "lines"
+    #     ],
+    #     "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()[
+    #         "lines"
+    #     ],
+    #     "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"]
+    #     if event
+    #     else [],
+    # }
 
     print(f"Getting card prices for {league}, {event} and Standard")
     prices = {
@@ -388,10 +388,10 @@ def get_card_data(key, config, card_extra):
         standard_price_card = next(
             filter(lambda x: x["id"] == overview_id, prices["standard"]), {}
         ).get("primaryValue")
-        if not standard_price_card:
-            standard_price_card = next(
-                filter(lambda x: x["name"] == name, overviews["standard"]), {}
-            ).get("chaosValue")
+        # if not standard_price_card:
+        #     standard_price_card = next(
+        #         filter(lambda x: x["name"] == name, overviews["standard"]), {}
+        #     ).get("chaosValue")
         standard_price_card = standard_price_card or 0
 
         card = {

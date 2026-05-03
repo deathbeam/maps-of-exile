@@ -2091,7 +2091,6 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasMemory/FragmentOfIgnorance/FragmentOfIgnorance__"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CourtyardofWasting",
         "ids": [
             "MapWorldsCourtyardOfWasting"
         ],
@@ -2099,14 +2098,11 @@
         "levels": [
             80
         ],
-        "name": "Courtyard of Wasting Map",
+        "name": "Courtyard of Wasting",
         "rating": {},
         "shorthand": " wa",
-        "tags": {
-            "boss_not_twinnable": true,
-            "nightmare_boss_map": true
-        },
-        "type": "map"
+        "tags": {},
+        "type": "special map"
     },
     {
         "atlas": true,
@@ -10459,19 +10455,16 @@
             "Silo Map",
             "Vaal Temple Map"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalPyramid",
         "ids": [
             "MapWorldsVaalPyramid"
         ],
-        "image": "https://www.poewiki.net/images/1/1c/Vaal_Pyramid_Map_area_screenshot.jpg",
-        "info": {
-            "boss": "Bosses spawn one at a time, after a delay of around 5-10 seconds. The first boss, the Whipping Miscreation is most dangerous inflicting Vulnerabililty and dealing massive Physical damage. The Tentacle Miscareation buffs nearby enemies and shoots easily avoidable projectiles. The Reaver has a large AoE but doesn't deal substantial damage. Try to kill each boss before the next spawns."
-        },
+        "image": "https://www.poewiki.net/images/2/2e/Vaal_Pyramid_area_screenshot.jpg",
+        "info": {},
         "levels": [
             75,
             83
         ],
-        "name": "Vaal Pyramid Map",
+        "name": "Vaal Pyramid",
         "rating": {
             "boss": 4,
             "density": 8,
@@ -10479,19 +10472,9 @@
         },
         "shorthand": "yr",
         "tags": {
-            "boss_not_spawned": false,
-            "boss_phases": false,
-            "boss_rushable": false,
-            "boss_separated": true,
-            "boss_soft_phases": true,
-            "delirium_mirror": false,
-            "few_obstacles": false,
-            "league_mechanics": false,
-            "linear": false,
-            "nightmare_boss_map": true,
-            "outdoors": false
+            "nightmare_boss_map": true
         },
-        "type": "map",
+        "type": "special map",
         "x": 851,
         "y": 557
     },

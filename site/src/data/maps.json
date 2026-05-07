@@ -1519,22 +1519,19 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasMemory/FragmentOfAnger"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ChambersofImpurity",
         "ids": [
             "MapWorldsChambersOfImpurity"
         ],
+        "image": "https://www.poewiki.net/images/a/ad/Chambers_of_Impurity_area_screenshot.jpg",
         "info": {},
         "levels": [
             80
         ],
-        "name": "Chambers of Impurity Map",
+        "name": "Chambers of Impurity",
         "rating": {},
         "shorthand": " im",
-        "tags": {
-            "boss_not_twinnable": true,
-            "nightmare_boss_map": true
-        },
-        "type": "map"
+        "tags": {},
+        "type": "special map"
     },
     {
         "boss_ids": [
@@ -2094,6 +2091,7 @@
         "ids": [
             "MapWorldsCourtyardOfWasting"
         ],
+        "image": "https://www.poewiki.net/images/e/ee/Courtyard_of_Wasting_area_screenshot.jpg",
         "info": {},
         "levels": [
             80
@@ -4901,6 +4899,7 @@
             "MapWorldsMemoryBoss2",
             "MapWorldsMemoryBoss2_Uber"
         ],
+        "image": "https://www.poewiki.net/images/6/6f/Moment_of_Loneliness_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,

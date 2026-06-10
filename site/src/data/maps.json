@@ -2406,12 +2406,6 @@
         "boss_ids": [
             "Metadata/Monsters/Talisman/TalismanWolfKingMapBoss"
         ],
-        "connected": [
-            "Lava Chamber Map",
-            "Orchard Map",
-            "Volcano Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DarkForest",
         "ids": [
             "MapWorldsDarkForest"
         ],
@@ -2433,7 +2427,6 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3079,6 +3072,13 @@
         "boss_ids": [
             "Metadata/Monsters/RockGolem/RockGolemMapBoss"
         ],
+        "connected": [
+            "Arid Lake Map",
+            "Cemetery Map",
+            "Crimson Township Map",
+            "Mud Geyser Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Cavern",
         "ids": [
             "MapWorldsFloodedMine"
         ],
@@ -3106,6 +3106,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -4333,12 +4334,6 @@
         "boss_ids": [
             "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
         ],
-        "connected": [
-            "Castle Ruins Map",
-            "Mineral Pools Map",
-            "Sulphur Vents Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Lookout",
         "ids": [
             "MapWorldsLookout"
         ],
@@ -4360,7 +4355,6 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -7324,7 +7318,6 @@
         "ids": [
             "1_4_6_1"
         ],
-        "image": "https://www.poewiki.net/images/1/19/The_Belly_of_the_Beast_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             38
@@ -7346,7 +7339,6 @@
         "ids": [
             "1_4_6_2"
         ],
-        "image": "https://www.poewiki.net/images/9/9a/The_Belly_of_the_Beast_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             39
@@ -7369,7 +7361,6 @@
         "ids": [
             "FaridunLeagueBoss"
         ],
-        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -7432,7 +7423,6 @@
         "ids": [
             "2_6_15"
         ],
-        "image": "https://www.poewiki.net/images/3/31/The_Brine_King%27s_Reef_area_screenshot.jpg",
         "info": {},
         "levels": [
             50
@@ -7475,7 +7465,6 @@
         "ids": [
             "2_10_5"
         ],
-        "image": "https://www.poewiki.net/images/f/f0/The_Canals_area_screenshot.jpg",
         "info": {},
         "levels": [
             66
@@ -7493,7 +7482,6 @@
         "ids": [
             "1_3_6"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Catacombs_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7518,7 +7506,6 @@
             "1_5_8",
             "2_10_1"
         ],
-        "image": "https://www.poewiki.net/images/f/f2/The_Cathedral_Rooftop_area_screenshot.jpg",
         "info": {},
         "levels": [
             45,
@@ -7586,7 +7573,6 @@
         "ids": [
             "1_1_11_1"
         ],
-        "image": "https://www.poewiki.net/images/a/a0/The_Cavern_of_Wrath_area_screenshot.jpg",
         "info": {},
         "levels": [
             12
@@ -7608,7 +7594,6 @@
         "ids": [
             "1_2_14_2"
         ],
-        "image": "https://www.poewiki.net/images/5/5b/The_Caverns_area_screenshot.jpg",
         "info": {},
         "levels": [
             22
@@ -7630,7 +7615,6 @@
         "ids": [
             "1_5_5"
         ],
-        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
         "info": {},
         "levels": [
             43
@@ -7681,7 +7665,6 @@
             "1_2_6_2",
             "2_7_5_2"
         ],
-        "image": "https://www.poewiki.net/images/e/e4/The_Chamber_of_Sins_Level_2_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             16,
@@ -7704,7 +7687,6 @@
         "ids": [
             "1_3_1"
         ],
-        "image": "https://www.poewiki.net/images/2/26/The_City_of_Sarn_area_screenshot.jpg",
         "info": {},
         "levels": [
             23
@@ -9691,10 +9673,6 @@
         "boss_ids": [
             "Metadata/Monsters/Viking/VikingBossVinktarsSquare"
         ],
-        "connected": [
-            "Courthouse Map"
-        ],
-        "icon": "Art/2DItems/Maps/TheVinktarSquare",
         "ids": [
             "MapWorldsCourtyardUnique"
         ],
@@ -9702,7 +9680,7 @@
             "boss": "Defeat the four mini-bosses (all have modest Lightning based abilities) located in each of the four corners. After they are all dead you will be able to face the Avatar of Thunder in his arena at the centre of the map. There are four boss phases and three add phases. During the boss phases, the Avatar will use a Physical Cyclone and a Physical/Lightning Earthquake. The Avatar will also charge up and then explode for massive Lightning AoE damage that always Shocks (but will most likely one-shot) - get out of the way when this happens. Three beams of light will also travel around the arena - these beams deal Lightning DoT and always Shock. In each of the add phases the Avatar will teleport out and summon one of his four guardians defeated previously. Each subsuquent add phase has an extra mini boss you have to kill (so one, then two, then three). Overall a long fight, but a large arena, so plenty of room to kite and avoid the dangerous boss abilities."
         },
         "levels": [
-            75,
+            68,
             83
         ],
         "name": "The Vinktar Square",
@@ -9712,7 +9690,6 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map",
@@ -9969,6 +9946,7 @@
         "ids": [
             "EndGame_Labyrinth_trials_roombas"
         ],
+        "image": "https://www.poewiki.net/images/6/65/Trial_of_Lingering_Pain_area_screenshot.png",
         "info": {},
         "levels": [
             75,
@@ -9999,6 +9977,7 @@
         "ids": [
             "EndGame_Labyrinth_trials_arrows"
         ],
+        "image": "https://www.poewiki.net/images/5/53/Trial_of_Stinging_Doubt_area_screenshot.png",
         "info": {},
         "levels": [
             75,
@@ -10039,6 +10018,7 @@
         "ids": [
             "MapWorldsTropicalIsland"
         ],
+        "image": "https://www.poewiki.net/images/6/6f/Tropical_Island_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10069,6 +10049,7 @@
             "BreachBossCold4",
             "BreachBossCold5"
         ],
+        "image": "https://www.poewiki.net/images/9/96/Tul%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             74,
@@ -10116,6 +10097,7 @@
         "ids": [
             "MapWorldsUndergroundRiver"
         ],
+        "image": "https://www.poewiki.net/images/3/38/Underground_River_Map_area_screenshot.jpg",
         "info": {
             "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage."
         },
@@ -10161,6 +10143,7 @@
         "ids": [
             "MapWorldsUndergroundSea"
         ],
+        "image": "https://www.poewiki.net/images/3/36/Underground_Sea_Map_area_screenshot.jpg",
         "info": {
             "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
             "boss_rushable": "Boss either up from spawn or up and to the left"
@@ -10211,6 +10194,7 @@
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
+        "image": "https://www.poewiki.net/images/d/d6/Untainted_Paradise_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10235,6 +10219,7 @@
             "BreachBossPhysical4",
             "BreachBossPhysical5"
         ],
+        "image": "https://www.poewiki.net/images/c/c2/Uul-Netol%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             78,
@@ -10264,6 +10249,7 @@
         "ids": [
             "MapWorldsVaalPyramid"
         ],
+        "image": "https://www.poewiki.net/images/2/2e/Vaal_Pyramid_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10297,6 +10283,7 @@
         "ids": [
             "MapWorldsVaalTemple"
         ],
+        "image": "https://www.poewiki.net/images/f/f1/Vaal_Temple_Map_area_screenshot.jpg",
         "info": {
             "boss": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
             "density": "Missing exact mob count, density rating might be unreliable"
@@ -10369,6 +10356,7 @@
         "ids": [
             "MapWorldsVaalPyramidUnique"
         ],
+        "image": "https://www.poewiki.net/images/6/65/Vaults_of_Atziri_area_screenshot.jpg",
         "info": {
             "boss": "A map with no monsters whatsoever (although Tormented Spirits and Rogue Exiles can still spawn for some reason \u2013 who knows how they got into Atziri\u2019s vault?). This map contains only chests with 1800-2000% increased item rarity. Simply walk around the two large rooms and loot every chest. At the centre of the second room is a chest that contains large amounts of Sacrifice Fragments and Vaal skill gems."
         },
@@ -10439,6 +10427,7 @@
         "ids": [
             "MapWorldsVolcano"
         ],
+        "image": "https://www.poewiki.net/images/1/14/Volcano_Map_area_screenshot.jpg",
         "info": {
             "boss": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage."
         },
@@ -10478,6 +10467,7 @@
         "ids": [
             "MapWorldsWastePool"
         ],
+        "image": "https://www.poewiki.net/images/7/78/Waste_Pool_Map_area_screenshot.jpg",
         "info": {
             "boss": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
             "boss_rushable": "Follow the outer wall"
@@ -10521,6 +10511,7 @@
         "ids": [
             "MapWorldsWasteland"
         ],
+        "image": "https://www.poewiki.net/images/b/b4/Wasteland_Map_area_screenshot.jpg",
         "info": {
             "boss": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable."
         },
@@ -10603,6 +10594,7 @@
         "ids": [
             "MapWorldsStrandUnique"
         ],
+        "image": "https://www.poewiki.net/images/3/35/Whakawairua_Tuahu_area_screenshot.jpg",
         "info": {
             "boss": "You arrive on a misty island similar to the Ship Graveyard and start with reduced light radius. Killing monsters increases your light radius and also your IIR and IIQ. Not killing monsters causes you light radius to fall. Once you have cleared the island make your way to the cave at the top of the island.\nInside the cave activate the Vaal seal. A Shade of an Exile will spawn depending on your class. This exile can be fast and dangerous so take caution in avoiding their attacks. After you have killed the exile you face the true boss of this map, the most annoying boss in all Path of Exile. I don\u2019t really want to ruin the surprise so play and find out."
         },
@@ -10645,6 +10637,7 @@
         "ids": [
             "MapWorldsWharf"
         ],
+        "image": "https://www.poewiki.net/images/4/4a/Wharf_Map_area_screenshot.jpg",
         "info": {
             "boss": "Weak lightning spells, and summons 6 Flood Orbs with Cyclone skill. Boss is tanky with the purple shield as it gives 50% reduced damage taken."
         },
@@ -10687,6 +10680,7 @@
             "BreachBossFire4",
             "BreachBossFire5"
         ],
+        "image": "https://www.poewiki.net/images/e/e9/Xoph%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             74,

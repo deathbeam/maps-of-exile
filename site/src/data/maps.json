@@ -1268,6 +1268,7 @@
         "ids": [
             "MapWorldsCaldera"
         ],
+        "image": "https://www.poewiki.net/images/f/fd/Caldera_Map_area_screenshot.jpg",
         "info": {
             "boss": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health."
         },
@@ -1311,6 +1312,7 @@
         "ids": [
             "MapWorldsCanyon"
         ],
+        "image": "https://www.poewiki.net/images/1/1d/Canyon_Map_area_screenshot.png",
         "info": {
             "boss": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
             "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
@@ -1356,6 +1358,7 @@
         "ids": [
             "MapWorldsCarcass"
         ],
+        "image": "https://www.poewiki.net/images/d/d1/Carcass_Map_area_screenshot.png",
         "info": {
             "boss": "Keep out of way of the giant Ball Lightning which will hang about the edge of the arena. At 75/50/25% health the Trinity runs off leaving 6 Scorpions that deal a high amount of physical damage if you let them all attack you at once."
         },
@@ -1394,6 +1397,7 @@
         "ids": [
             "MapWorldsCastleRuins"
         ],
+        "image": "https://www.poewiki.net/images/f/fb/Castle_Ruins_Map_area_screenshot.png",
         "info": {
             "boss": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
             "boss_rushable": "The boss room is top right along the path"
@@ -2441,6 +2445,10 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/SkeletonBossMapWest4"
         ],
+        "connected": [
+            "Mausoleum Map"
+        ],
+        "icon": "Art/2DItems/Maps/DeathandTaxes",
         "ids": [
             "MapWorldsNecropolisUnique"
         ],
@@ -2448,7 +2456,7 @@
             "boss": "At the start of the map run along the walkways past all the orange portals. At the last platform running over portal will spawn the boss, the Avatar. In his first three forms the Avatar will use a range of powerful elemental spells of a single element. After killing each form the Avatar will become immune to all damage and start chasing the player. At this point you must kite the Avatar back the way you came to the orange portal on the next platform. Along the way animated weapons will spawn which can be used to regain flask charges. The Avatar has massive AoE, so watch out for the Flameblasts, Ice Nova (almost the whole screen) and Storm Calls. On the last platform, the Avatar will go from using a single element to using all three concurrently, effectively making the fight thrice as difficult. Pop all your flasks and kill him fast or he will kill you. Retreat behind the pillars if you need to recuperate but beware of his Ice Nova which has massive range."
         },
         "levels": [
-            68,
+            79,
             83
         ],
         "name": "Death and Taxes",
@@ -2464,6 +2472,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -4332,6 +4341,12 @@
         "boss_ids": [
             "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
         ],
+        "connected": [
+            "Castle Ruins Map",
+            "Mineral Pools Map",
+            "Sulphur Vents Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Lookout",
         "ids": [
             "MapWorldsLookout"
         ],
@@ -4353,6 +4368,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6369,6 +6385,9 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasInvaders/DoomMonsters/DoomBoss_"
         ],
+        "connected": [
+            "Siege Map"
+        ],
         "ids": [
             "MapWorldsPrimordialBoss1"
         ],
@@ -6380,7 +6399,9 @@
         "name": "Seething Chyme",
         "rating": {},
         "shorthand": "chy",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "unique map",
         "x": 366,
         "y": 706
@@ -6582,6 +6603,14 @@
         "boss_ids": [
             "Metadata/Monsters/Tukohama/TukohamaMap"
         ],
+        "connected": [
+            "Cage Map",
+            "Domain of Timeless Conflict",
+            "Frozen Cabins Map",
+            "Moon Temple Map",
+            "Seething Chyme"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Boulevard",
         "ids": [
             "MapWorldsSiege"
         ],
@@ -6593,6 +6622,7 @@
             83
         ],
         "name": "Siege Map",
+        "pantheon": "Soul of Tukohama",
         "rating": {
             "boss": 6,
             "density": 8,
@@ -6601,6 +6631,7 @@
         "shorthand": "eg",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -6609,6 +6640,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6628,6 +6660,7 @@
         "ids": [
             "MapWorldsSilo"
         ],
+        "image": "https://www.poewiki.net/images/a/a7/Silo_Map_area_screenshot.jpg",
         "info": {
             "density": "Missing exact mob count, density rating might be unreliable"
         },
@@ -6667,6 +6700,7 @@
         "ids": [
             "MapWorldsSpiderForest"
         ],
+        "image": "https://www.poewiki.net/images/c/c3/Spider_Forest_Map_area_screenshot.jpg",
         "info": {
             "boss": "Alira from the Burial Chambers map, this time without the Soul Eater ability. Again, avoid standing on Desecrated Ground or on corpses as the boss uses Detonate Dead. After some time a large zombie called 'Avatar of Rot' will appear from the cauldron. This zombie deals modest melee Physical damage."
         },
@@ -6735,6 +6769,7 @@
         "ids": [
             "MapWorldsStagnation"
         ],
+        "image": "https://www.poewiki.net/images/1/1d/Stagnation_Map_area_screenshot.jpg",
         "info": {
             "density": "Missing exact mob count, density rating might be unreliable"
         },
@@ -6768,6 +6803,7 @@
         "ids": [
             "SettlersBossFallenStar"
         ],
+        "image": "https://www.poewiki.net/images/d/d8/Starfall_Crater_area_screenshot.jpg",
         "info": {},
         "levels": [
             83
@@ -6794,6 +6830,7 @@
         "ids": [
             "MapWorldsStrand"
         ],
+        "image": "https://www.poewiki.net/images/5/51/Strand_Map_area_screenshot.jpg",
         "info": {
             "boss": "Kraityn can hit hard and fast. In particular watch out for his Blade Flurry. Calaf is fairly unthreatening as well as being easy to kite."
         },
@@ -6830,9 +6867,17 @@
         "boss_ids": [
             "Metadata/Monsters/GemMonster/IguanaBossPhoenixMap"
         ],
+        "connected": [
+            "Lookout Map",
+            "Mineral Pools Map",
+            "Pen Map",
+            "Terrace Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Corrosion",
         "ids": [
             "MapWorldsSulphurVents"
         ],
+        "image": "https://www.poewiki.net/images/5/5f/Sulphur_Vents_Map_area_screenshot.jpg",
         "info": {
             "boss": "Telegraphed Flamethrower and Petrify attacks, keep behind the boss. Weak projectile barrage. After killing boss, petrified monsters are freed."
         },
@@ -6857,6 +6902,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6915,6 +6961,7 @@
         "ids": [
             "MapWorldsSunkenCity"
         ],
+        "image": "https://www.poewiki.net/images/3/35/Sunken_City_Map_area_screenshot.jpg",
         "info": {
             "boss": "Several abilities, most of which are not threatening. Attacks are a combination of Physical and Chaos. Purple laser beams explode for Lightning damage. Watch out for Arakaali's Laser Barrage which can do significant Lightning damage if you don't get out of the way."
         },
@@ -6946,6 +6993,7 @@
         "ids": [
             "MapWorldsTemple"
         ],
+        "image": "https://www.poewiki.net/images/5/5f/Temple_Map_area_screenshot.jpg",
         "info": {
             "boss": "Scorching Ray, debuffs Fire resistance. Casts Bladefall. Throws Fire based projectile that splits into smaller ones. Sun orb casts a fire laser that leaves Burning Ground."
         },
@@ -7345,7 +7393,6 @@
         "ids": [
             "FaridunLeagueBoss"
         ],
-        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -7408,7 +7455,6 @@
         "ids": [
             "2_6_15"
         ],
-        "image": "https://www.poewiki.net/images/3/31/The_Brine_King%27s_Reef_area_screenshot.jpg",
         "info": {},
         "levels": [
             50
@@ -7451,7 +7497,6 @@
         "ids": [
             "2_10_5"
         ],
-        "image": "https://www.poewiki.net/images/f/f0/The_Canals_area_screenshot.jpg",
         "info": {},
         "levels": [
             66
@@ -7469,7 +7514,6 @@
         "ids": [
             "1_3_6"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Catacombs_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7494,7 +7538,6 @@
             "1_5_8",
             "2_10_1"
         ],
-        "image": "https://www.poewiki.net/images/f/f2/The_Cathedral_Rooftop_area_screenshot.jpg",
         "info": {},
         "levels": [
             45,
@@ -7562,7 +7605,6 @@
         "ids": [
             "1_1_11_1"
         ],
-        "image": "https://www.poewiki.net/images/a/a0/The_Cavern_of_Wrath_area_screenshot.jpg",
         "info": {},
         "levels": [
             12
@@ -7584,7 +7626,6 @@
         "ids": [
             "1_2_14_2"
         ],
-        "image": "https://www.poewiki.net/images/5/5b/The_Caverns_area_screenshot.jpg",
         "info": {},
         "levels": [
             22
@@ -7606,7 +7647,6 @@
         "ids": [
             "1_5_5"
         ],
-        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
         "info": {},
         "levels": [
             43
@@ -7657,7 +7697,6 @@
             "1_2_6_2",
             "2_7_5_2"
         ],
-        "image": "https://www.poewiki.net/images/e/e4/The_Chamber_of_Sins_Level_2_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             16,
@@ -7680,7 +7719,6 @@
         "ids": [
             "1_3_1"
         ],
-        "image": "https://www.poewiki.net/images/2/26/The_City_of_Sarn_area_screenshot.jpg",
         "info": {},
         "levels": [
             23
@@ -7702,7 +7740,6 @@
         "ids": [
             "1_1_6"
         ],
-        "image": "https://www.poewiki.net/images/5/51/The_Climb_area_screenshot.jpg",
         "info": {},
         "levels": [
             7

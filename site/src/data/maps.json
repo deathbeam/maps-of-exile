@@ -1268,6 +1268,7 @@
         "ids": [
             "MapWorldsCaldera"
         ],
+        "image": "https://www.poewiki.net/images/f/fd/Caldera_Map_area_screenshot.jpg",
         "info": {
             "boss": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health."
         },
@@ -1311,6 +1312,7 @@
         "ids": [
             "MapWorldsCanyon"
         ],
+        "image": "https://www.poewiki.net/images/1/1d/Canyon_Map_area_screenshot.png",
         "info": {
             "boss": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
             "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
@@ -1356,6 +1358,7 @@
         "ids": [
             "MapWorldsCarcass"
         ],
+        "image": "https://www.poewiki.net/images/d/d1/Carcass_Map_area_screenshot.png",
         "info": {
             "boss": "Keep out of way of the giant Ball Lightning which will hang about the edge of the arena. At 75/50/25% health the Trinity runs off leaving 6 Scorpions that deal a high amount of physical damage if you let them all attack you at once."
         },
@@ -1394,6 +1397,7 @@
         "ids": [
             "MapWorldsCastleRuins"
         ],
+        "image": "https://www.poewiki.net/images/f/fb/Castle_Ruins_Map_area_screenshot.png",
         "info": {
             "boss": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
             "boss_rushable": "The boss room is top right along the path"
@@ -1434,6 +1438,7 @@
         "ids": [
             "MapWorldsCells"
         ],
+        "image": "https://www.poewiki.net/images/4/43/Cells_Map_area_screenshot.jpg",
         "info": {
             "boss": "Avoid large Ball Lightning and spray of small Lightning projectiles. Boss will lay a small circle on the ground then ghost Brutus will appear slamming the area for massive Physical/Lightning damage. Boss also summons small lightning orb minions and books which explode after a time."
         },
@@ -1478,6 +1483,7 @@
         "ids": [
             "MapWorldsCemetery"
         ],
+        "image": "https://www.poewiki.net/images/8/8e/Cemetery_Map_area_screenshot.jpg",
         "info": {
             "boss": "Deals strong Physical melee attacks. Avoid telegraphed slam and dark patches of ground that deal DoT. Boss will channel for several seconds summoning short lived Physical projectiles from all directions.  As boss loses life player gains stack of Despair debuff (unremovable) which slows you, reduces your light radius and increases damage taken. Therefore the boss becomes much more deadly as the fight progresses, pays to try to save burst damage/flasks for towards the end of the fight."
         },
@@ -1786,7 +1792,6 @@
         "boss_ids": [
             "Metadata/Monsters/Daresso/DaressoMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Colosseum",
         "ids": [
             "MapWorldsColosseum"
         ],
@@ -1813,7 +1818,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -2480,12 +2484,6 @@
         "boss_ids": [
             "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickermanMap"
         ],
-        "connected": [
-            "Acton's Nightmare",
-            "Cold River Map",
-            "Mineral Pools Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DefiledCathedral",
         "ids": [
             "MapWorldsDefiledCathedral"
         ],
@@ -2505,7 +2503,6 @@
         "shorthand": "cat",
         "tags": {
             "boss_not_spawned": false,
-            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
@@ -2514,7 +2511,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -3304,6 +3300,11 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/Pirate/BrutalPirateLordBoss"
         ],
+        "connected": [
+            "Lava Lake Map",
+            "Siege Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/FrozenCabins",
         "ids": [
             "MapWorldsFrozenCabins"
         ],
@@ -3329,7 +3330,8 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "league_mechanics": false,
-            "linear": true
+            "linear": true,
+            "nightmare_boss_map": true
         },
         "type": "map",
         "x": 346,
@@ -4039,7 +4041,6 @@
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBossVoid"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Laboratory",
         "ids": [
             "MapWorldsLaboratory"
         ],
@@ -4066,7 +4067,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -4163,6 +4163,13 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
         ],
+        "connected": [
+            "Arcade Map",
+            "Courthouse Map",
+            "Dark Forest Map",
+            "Grotto Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crematorium",
         "ids": [
             "MapWorldsLavaChamber"
         ],
@@ -4174,6 +4181,7 @@
             83
         ],
         "name": "Lava Chamber Map",
+        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 6,
             "density": 4,
@@ -4184,6 +4192,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -5976,7 +5985,6 @@
         "ids": [
             "MapWorldsPromenade"
         ],
-        "image": "https://www.poewiki.net/images/f/ff/Promenade_Map_area_screenshot.jpg",
         "info": {
             "boss": "Avenger deals simple Physical Cleave and Double Strike attacks. Mage casts weak Sparks and Conductivity auras on the ground. The Mage also will cast a large, slow-moving Ball Lightning that deals heavy damage so stand clear. The Mage casts Lightning Thorns on the Avenger which reflects Lightning damage back to the attacker. Again, this is extremely dangerous for fast attacking builds so always pay attention (the mage does not cast it on herself so it is usually safest to kill her first)."
         },
@@ -6024,7 +6032,6 @@
         "ids": [
             "MapWorldsRacecourse_"
         ],
-        "image": "https://www.poewiki.net/images/d/dc/Racecourse_Map_area_screenshot.jpg",
         "info": {
             "boss": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal."
         },
@@ -6064,7 +6071,6 @@
         "ids": [
             "MapWorldsRamparts"
         ],
-        "image": "https://www.poewiki.net/images/b/b0/Ramparts_Map_area_screenshot.jpg",
         "info": {
             "boss": "Casts Ethereal Knives and Bear Trap. Be careful of being immobilized by a Bear Trap."
         },
@@ -6167,7 +6173,6 @@
         "ids": [
             "MapWorldsRelicChambers"
         ],
-        "image": "https://www.poewiki.net/images/8/84/Relic_Chambers_Map_area_screenshot.jpg",
         "info": {
             "boss": "Recommend turning off curses when facing this boss. When cursed the boss releases a powerful projectile nova which can one shot (damage type based on colour of curse gem). Boss is trivial otherwise"
         },
@@ -6214,7 +6219,6 @@
         "ids": [
             "MapWorldsResidence"
         ],
-        "image": "https://www.poewiki.net/images/4/40/Residence_Map_area_screenshot.jpg",
         "info": {
             "boss": "Throws powerful Lightning and Fire traps. Beware of Bear trap that can immobilize you, allowing the boss to spam traps at your location."
         },
@@ -6279,7 +6283,6 @@
         "ids": [
             "SettlersBossPirateCove"
         ],
-        "image": "https://www.poewiki.net/images/8/8e/Sailor%27s_Folly_area_screenshot.jpg",
         "info": {},
         "levels": [
             83
@@ -6321,7 +6324,6 @@
         "ids": [
             "MapWorldsMemoryVault4"
         ],
-        "image": "https://www.poewiki.net/images/2/2e/Scholar%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
             84
@@ -6340,7 +6342,6 @@
         "ids": [
             "MapWorldsScriptorium"
         ],
-        "image": "https://www.poewiki.net/images/f/f3/Scriptorium_Map_area_screenshot.jpg",
         "info": {
             "boss": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die."
         },
@@ -6380,7 +6381,6 @@
         "ids": [
             "MapWorldsPrimordialBoss1"
         ],
-        "image": "https://www.poewiki.net/images/a/af/Seething_Chyme_area_screenshot.png",
         "info": {},
         "levels": [
             83,
@@ -6402,14 +6402,6 @@
             "Metadata/Monsters/Doedre/DoedreSoul2Map",
             "Metadata/Monsters/Doedre/DoedreSoulMap"
         ],
-        "connected": [
-            "Coral Ruins Map",
-            "Hallowed Ground",
-            "Lava Lake Map",
-            "Mesa Map",
-            "Park Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sepulchre",
         "ids": [
             "MapWorldsSepulchre"
         ],
@@ -6431,7 +6423,6 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6450,7 +6441,6 @@
         "ids": [
             "2_6_7_2"
         ],
-        "image": "https://www.poewiki.net/images/f/f3/Shavronne%27s_Tower_area_screenshot.jpg",
         "info": {},
         "levels": [
             47
@@ -6476,7 +6466,6 @@
         "ids": [
             "MapWorldsShipyard"
         ],
-        "image": "https://www.poewiki.net/images/d/de/Shipyard_Map_area_screenshot.jpg",
         "info": {
             "boss": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy."
         },
@@ -6516,7 +6505,6 @@
         "ids": [
             "MapWorldsShore"
         ],
-        "image": "https://www.poewiki.net/images/5/58/Shore_Map_area_screenshot.jpg",
         "info": {
             "boss": "Weak Spectral Throw and Summon Raging Spirits. At 50% health summons a Tormented Bootlegger which when absorbed causes Belcer to throw fire bombs and gain Power Charges. At 25% health summons a Tormented Buccaneer which when absorbed grants Belcer Vaal Spectral Throw and Frenzy Charges. Belcer and his ghosts don't have too much health so it is usually rare to feel the full effect of these augmented abilities.",
             "boss_rushable": "Usually to your character's right, so if top side of map spawn go top left"
@@ -6560,7 +6548,6 @@
         "ids": [
             "MapWorldsShrine"
         ],
-        "image": "https://www.poewiki.net/images/9/9f/Shrine_Map_area_screenshot.jpg",
         "info": {
             "boss": "Weak Arc and Ball Lightning. Stay out of Vaal Storm Call. Some builds can tank her fire form, if not just kite. In ice form take cover behind the pillars as her Ice Shot does significant damage."
         },
@@ -6608,7 +6595,6 @@
         "ids": [
             "MapWorldsSiege"
         ],
-        "image": "https://www.poewiki.net/images/7/7d/Siege_Map_area_screenshot.jpg",
         "info": {
             "boss": "Summons totems that cast Fire projectiles, periodically marks an area on the ground which all totems fire at. Telegraphed Physical Sunder. Telegraphed spinning Physical/Fire Slam that can one shot. Central totem casts Scorching Ray which lowers Fire resistance. A 50% life summons four Tukohama's Protection which makes Tukohama invulnerable until all four are slain."
         },
@@ -6655,7 +6641,6 @@
         "ids": [
             "MapWorldsSilo"
         ],
-        "image": "https://www.poewiki.net/images/a/a7/Silo_Map_area_screenshot.jpg",
         "info": {
             "density": "Missing exact mob count, density rating might be unreliable"
         },
@@ -6695,7 +6680,6 @@
         "ids": [
             "MapWorldsSpiderForest"
         ],
-        "image": "https://www.poewiki.net/images/c/c3/Spider_Forest_Map_area_screenshot.jpg",
         "info": {
             "boss": "Alira from the Burial Chambers map, this time without the Soul Eater ability. Again, avoid standing on Desecrated Ground or on corpses as the boss uses Detonate Dead. After some time a large zombie called 'Avatar of Rot' will appear from the cauldron. This zombie deals modest melee Physical damage."
         },
@@ -7146,6 +7130,7 @@
         "ids": [
             "1_4_1"
         ],
+        "image": "https://www.poewiki.net/images/5/5b/The_Aqueduct_area_screenshot.jpg",
         "info": {},
         "levels": [
             33
@@ -7166,6 +7151,7 @@
         "ids": [
             "1_3_17_2"
         ],
+        "image": "https://www.poewiki.net/images/1/1f/The_Archives_area_screenshot.jpg",
         "info": {},
         "levels": [
             31
@@ -7256,6 +7242,7 @@
         "ids": [
             "1_3_7"
         ],
+        "image": "https://www.poewiki.net/images/a/ab/The_Battlefront_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7276,6 +7263,7 @@
             "MapWorldsHarbingerLow",
             "MapWorldsHarbingerMid"
         ],
+        "image": "https://www.poewiki.net/images/b/ba/The_Beachhead_area_screenshot.jpg",
         "info": {},
         "levels": [
             72,
@@ -7296,6 +7284,7 @@
         "ids": [
             "2_6_14"
         ],
+        "image": "https://www.poewiki.net/images/1/1a/The_Beacon_area_screenshot.jpg",
         "info": {},
         "levels": [
             49
@@ -7338,6 +7327,7 @@
         "ids": [
             "1_4_6_1"
         ],
+        "image": "https://www.poewiki.net/images/1/19/The_Belly_of_the_Beast_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             38
@@ -7359,6 +7349,7 @@
         "ids": [
             "1_4_6_2"
         ],
+        "image": "https://www.poewiki.net/images/9/9a/The_Belly_of_the_Beast_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             39
@@ -7381,6 +7372,7 @@
         "ids": [
             "FaridunLeagueBoss"
         ],
+        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -10257,6 +10249,12 @@
             "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
             "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
         ],
+        "connected": [
+            "Burial Chambers Map",
+            "Factory Map",
+            "Silo Map",
+            "Vaal Temple Map"
+        ],
         "ids": [
             "MapWorldsVaalPyramid"
         ],
@@ -10272,7 +10270,9 @@
             "layout": 2
         },
         "shorthand": "yr",
-        "tags": {},
+        "tags": {
+            "nightmare_boss_map": true
+        },
         "type": "special map",
         "x": 851,
         "y": 557
@@ -10597,7 +10597,6 @@
         "ids": [
             "MapWorldsStrandUnique"
         ],
-        "image": "https://www.poewiki.net/images/3/35/Whakawairua_Tuahu_area_screenshot.jpg",
         "info": {
             "boss": "You arrive on a misty island similar to the Ship Graveyard and start with reduced light radius. Killing monsters increases your light radius and also your IIR and IIQ. Not killing monsters causes you light radius to fall. Once you have cleared the island make your way to the cave at the top of the island.\nInside the cave activate the Vaal seal. A Shade of an Exile will spawn depending on your class. This exile can be fast and dangerous so take caution in avoiding their attacks. After you have killed the exile you face the true boss of this map, the most annoying boss in all Path of Exile. I don\u2019t really want to ruin the surprise so play and find out."
         },
@@ -10640,7 +10639,6 @@
         "ids": [
             "MapWorldsWharf"
         ],
-        "image": "https://www.poewiki.net/images/4/4a/Wharf_Map_area_screenshot.jpg",
         "info": {
             "boss": "Weak lightning spells, and summons 6 Flood Orbs with Cyclone skill. Boss is tanky with the purple shield as it gives 50% reduced damage taken."
         },
@@ -10683,7 +10681,6 @@
             "BreachBossFire4",
             "BreachBossFire5"
         ],
-        "image": "https://www.poewiki.net/images/e/e9/Xoph%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             74,

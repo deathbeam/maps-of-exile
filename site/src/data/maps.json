@@ -240,6 +240,10 @@
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss1",
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss2"
         ],
+        "connected": [
+            "Defiled Cathedral Map"
+        ],
+        "icon": "Art/2DItems/Maps/musicbox",
         "ids": [
             "MapWorldsOvergrownShrineUnique"
         ],
@@ -248,7 +252,7 @@
             "boss": "The map is filled with skeletons that will not lie down. The Restless Dead map mod means that monsters come back to life 10 seconds after being killed unless their corpse is removed (via shatter or corpse explosion for example). The resurrected skeletons don\u2019t provide and experience or drop any loot. Bosses can resurrect any monster, even each other. This means the fight can go on unless you kill both bosses at approximately the same time or theo stopped reviving the other."
         },
         "levels": [
-            68,
+            79,
             83
         ],
         "name": "Acton's Nightmare",
@@ -264,6 +268,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -1627,6 +1632,11 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueExpedition/ApparitionBoss/ApparitionExpeditionMap"
         ],
+        "connected": [
+            "Cortex",
+            "The Shaper's Realm"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberPrimordialBlocks",
         "ids": [
             "MapWorldsCitadel"
         ],
@@ -1638,7 +1648,9 @@
         "name": "Citadel Map",
         "rating": {},
         "shorthand": "del",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 831,
         "y": 130
@@ -2171,13 +2183,6 @@
         "boss_ids": [
             "Metadata/Monsters/Banshee/BansheeMapBoss"
         ],
-        "connected": [
-            "Doryani's Machinarium",
-            "Forking River Map",
-            "Ivory Temple Map",
-            "Pit Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sanctuary",
         "ids": [
             "MapWorldsCrimsonTemple"
         ],
@@ -2206,7 +2211,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -3238,12 +3242,6 @@
         "boss_ids": [
             "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
         ],
-        "connected": [
-            "Crater Map",
-            "Gardens Map",
-            "Ivory Temple Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ThaumaturgyDungeon",
         "ids": [
             "MapWorldsFoundry"
         ],
@@ -3269,8 +3267,7 @@
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
-            "league_mechanics": false,
-            "nightmare_boss_map": true
+            "league_mechanics": false
         },
         "type": "map",
         "x": 736,
@@ -3799,6 +3796,11 @@
             "Metadata/Monsters/Wb/WbColdLeader2",
             "Metadata/Monsters/Wb/WbColdLeader3"
         ],
+        "connected": [
+            "Maze Map",
+            "Primordial Pool Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Iceberg",
         "ids": [
             "MapWorldsIceberg"
         ],
@@ -3820,6 +3822,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4493,10 +4496,6 @@
         "boss_ids": [
             "Metadata/Monsters/Viking/VikingMapBoss"
         ],
-        "connected": [
-            "Crater Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Marshes",
         "ids": [
             "MapWorldsMarshes"
         ],
@@ -4524,7 +4523,6 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4829,9 +4827,7 @@
         "name": "Moment of Reverence",
         "rating": {},
         "shorthand": "eve",
-        "tags": {
-            "boss_not_twinnable": true
-        },
+        "tags": {},
         "type": "unique map",
         "x": 146,
         "y": 117
@@ -6232,16 +6228,11 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian4__"
         ],
-        "connected": [
-            "Cortex"
-        ],
-        "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
         "ids": [
             "Synthesis_MapGuardian4"
         ],
         "info": {},
         "levels": [
-            68,
             83,
             80
         ],
@@ -6918,6 +6909,7 @@
         "boss_ids": [
             "Metadata/Monsters/VaalSpiderGod/ArakaaliMap"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SunkenCity",
         "ids": [
             "MapWorldsSunkenCity"
         ],
@@ -6935,9 +6927,11 @@
         },
         "shorthand": "ken",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -7214,6 +7208,7 @@
         "ids": [
             "1_3_7"
         ],
+        "image": "https://www.poewiki.net/images/a/ab/The_Battlefront_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7234,6 +7229,7 @@
             "MapWorldsHarbingerLow",
             "MapWorldsHarbingerMid"
         ],
+        "image": "https://www.poewiki.net/images/b/ba/The_Beachhead_area_screenshot.jpg",
         "info": {},
         "levels": [
             72,
@@ -7254,6 +7250,7 @@
         "ids": [
             "2_6_14"
         ],
+        "image": "https://www.poewiki.net/images/1/1a/The_Beacon_area_screenshot.jpg",
         "info": {},
         "levels": [
             49
@@ -7296,6 +7293,7 @@
         "ids": [
             "1_4_6_1"
         ],
+        "image": "https://www.poewiki.net/images/1/19/The_Belly_of_the_Beast_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             38
@@ -7317,6 +7315,7 @@
         "ids": [
             "1_4_6_2"
         ],
+        "image": "https://www.poewiki.net/images/9/9a/The_Belly_of_the_Beast_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             39
@@ -7339,6 +7338,7 @@
         "ids": [
             "FaridunLeagueBoss"
         ],
+        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -7401,6 +7401,7 @@
         "ids": [
             "2_6_15"
         ],
+        "image": "https://www.poewiki.net/images/3/31/The_Brine_King%27s_Reef_area_screenshot.jpg",
         "info": {},
         "levels": [
             50
@@ -7443,6 +7444,7 @@
         "ids": [
             "2_10_5"
         ],
+        "image": "https://www.poewiki.net/images/f/f0/The_Canals_area_screenshot.jpg",
         "info": {},
         "levels": [
             66
@@ -7460,6 +7462,7 @@
         "ids": [
             "1_3_6"
         ],
+        "image": "https://www.poewiki.net/images/b/ba/The_Catacombs_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7484,6 +7487,7 @@
             "1_5_8",
             "2_10_1"
         ],
+        "image": "https://www.poewiki.net/images/f/f2/The_Cathedral_Rooftop_area_screenshot.jpg",
         "info": {},
         "levels": [
             45,
@@ -7551,6 +7555,7 @@
         "ids": [
             "1_1_11_1"
         ],
+        "image": "https://www.poewiki.net/images/a/a0/The_Cavern_of_Wrath_area_screenshot.jpg",
         "info": {},
         "levels": [
             12
@@ -7572,6 +7577,7 @@
         "ids": [
             "1_2_14_2"
         ],
+        "image": "https://www.poewiki.net/images/5/5b/The_Caverns_area_screenshot.jpg",
         "info": {},
         "levels": [
             22
@@ -7593,6 +7599,7 @@
         "ids": [
             "1_5_5"
         ],
+        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
         "info": {},
         "levels": [
             43
@@ -7643,6 +7650,7 @@
             "1_2_6_2",
             "2_7_5_2"
         ],
+        "image": "https://www.poewiki.net/images/e/e4/The_Chamber_of_Sins_Level_2_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             16,
@@ -7665,6 +7673,7 @@
         "ids": [
             "1_3_1"
         ],
+        "image": "https://www.poewiki.net/images/2/26/The_City_of_Sarn_area_screenshot.jpg",
         "info": {},
         "levels": [
             23
@@ -7686,6 +7695,7 @@
         "ids": [
             "1_1_6"
         ],
+        "image": "https://www.poewiki.net/images/5/51/The_Climb_area_screenshot.jpg",
         "info": {},
         "levels": [
             7
@@ -7713,6 +7723,7 @@
             "1_1_2",
             "2_6_2"
         ],
+        "image": "https://www.poewiki.net/images/e/ea/The_Coast_%28Act_1%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             2,
@@ -7761,6 +7772,7 @@
         "ids": [
             "MapWorldsCursedCryptUnique"
         ],
+        "image": "https://www.poewiki.net/images/1/15/The_Coward%27s_Trial_area_screenshot.jpg",
         "info": {},
         "levels": [
             77,
@@ -7793,6 +7805,7 @@
         "ids": [
             "1_3_3_1"
         ],
+        "image": "https://www.poewiki.net/images/3/3c/The_Crematorium_area_screenshot.jpg",
         "info": {},
         "levels": [
             25
@@ -9433,7 +9446,6 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
         ],
-        "icon": "Art/2DItems/Maps/TrialmasterMap",
         "ids": [
             "MapWorldsUltimatumBossArena"
         ],
@@ -10047,11 +10059,16 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
         ],
+        "connected": [
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "ids": [
             "Synthesis_MapGuardian3"
         ],
         "info": {},
         "levels": [
+            68,
             83,
             80
         ],
@@ -10394,7 +10411,6 @@
         "ids": [
             "MapWorldsVolcano"
         ],
-        "image": "https://www.poewiki.net/images/1/14/Volcano_Map_area_screenshot.jpg",
         "info": {
             "boss": "Summons small totems that use Lightning Warp and Magma Orb. Casts Elemental Equilibrium on you so overcap resistances. Totems however don't dish out too much damage."
         },
@@ -10430,10 +10446,10 @@
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSewersMap"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/WastePool",
         "ids": [
             "MapWorldsWastePool"
         ],
-        "image": "https://www.poewiki.net/images/7/78/Waste_Pool_Map_area_screenshot.jpg",
         "info": {
             "boss": "Doedre has two attacks: firstly firing three Physical projectiles, secondly a teleported warp dealing a large amount of Physical damage. While the room is red, small red balls spawn, exploding for minor Physical damage but inflicting a stacking debuff (up to 10) which causes you to take increased damage. While the room is green, zombies will continuously spawn - when slain these zombies inflict a stacking debuff causing you to deal less damage. While the room is purple, small purple areas spawn which deal Chaos DoT and slow your character. At any point during the fight you can pull the valve to removes all debuffs and ground effects - changing the room to the next colour but also giving Doedre a buff (depending on the colour). The room always starts red, then green, the purple.",
             "boss_rushable": "Follow the outer wall"
@@ -10450,6 +10466,7 @@
         "shorthand": "te ",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": true,
             "boss_separated": true,
@@ -10458,6 +10475,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -10475,7 +10493,6 @@
         "ids": [
             "MapWorldsWasteland"
         ],
-        "image": "https://www.poewiki.net/images/b/b4/Wasteland_Map_area_screenshot.jpg",
         "info": {
             "boss": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable."
         },
@@ -10558,7 +10575,6 @@
         "ids": [
             "MapWorldsStrandUnique"
         ],
-        "image": "https://www.poewiki.net/images/3/35/Whakawairua_Tuahu_area_screenshot.jpg",
         "info": {
             "boss": "You arrive on a misty island similar to the Ship Graveyard and start with reduced light radius. Killing monsters increases your light radius and also your IIR and IIQ. Not killing monsters causes you light radius to fall. Once you have cleared the island make your way to the cave at the top of the island.\nInside the cave activate the Vaal seal. A Shade of an Exile will spawn depending on your class. This exile can be fast and dangerous so take caution in avoiding their attacks. After you have killed the exile you face the true boss of this map, the most annoying boss in all Path of Exile. I don\u2019t really want to ruin the surprise so play and find out."
         },
@@ -10601,7 +10617,6 @@
         "ids": [
             "MapWorldsWharf"
         ],
-        "image": "https://www.poewiki.net/images/4/4a/Wharf_Map_area_screenshot.jpg",
         "info": {
             "boss": "Weak lightning spells, and summons 6 Flood Orbs with Cyclone skill. Boss is tanky with the purple shield as it gives 50% reduced damage taken."
         },
@@ -10644,7 +10659,6 @@
             "BreachBossFire4",
             "BreachBossFire5"
         ],
-        "image": "https://www.poewiki.net/images/e/e9/Xoph%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             74,

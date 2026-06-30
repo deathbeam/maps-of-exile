@@ -199,12 +199,6 @@
             "Metadata/Monsters/Wb/WbChaosLeader8",
             "Metadata/Monsters/Wb/WbLeader4Minion"
         ],
-        "connected": [
-            "Alleyways Map",
-            "Dig Map",
-            "Hive Colony"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SulphurVents",
         "ids": [
             "MapWorldsAcidLakes"
         ],
@@ -227,7 +221,6 @@
             "boss_separated": false,
             "few_obstacles": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -2183,6 +2176,13 @@
         "boss_ids": [
             "Metadata/Monsters/Banshee/BansheeMapBoss"
         ],
+        "connected": [
+            "Doryani's Machinarium",
+            "Forking River Map",
+            "Ivory Temple Map",
+            "Pit Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sanctuary",
         "ids": [
             "MapWorldsCrimsonTemple"
         ],
@@ -2211,6 +2211,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -2290,7 +2291,6 @@
             "Metadata/Monsters/Miner/MinerLanternMapBoss",
             "Metadata/Monsters/MinerLarge/MinerLargeMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CrystalOre",
         "ids": [
             "MapWorldsCrystalOre"
         ],
@@ -2317,7 +2317,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -2327,11 +2326,6 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossMelee"
         ],
-        "connected": [
-            "Ashen Wood Map",
-            "Dig Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crypt",
         "ids": [
             "MapWorldsCursedCrypt"
         ],
@@ -2359,7 +2353,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -3017,6 +3010,14 @@
         "boss_ids": [
             "Metadata/Monsters/Ralakesh/Greust/GreustMap"
         ],
+        "connected": [
+            "Beach Map",
+            "Courtyard Map",
+            "Lair Map",
+            "Plaza Map",
+            "Strand Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Fields",
         "ids": [
             "MapWorldsFields"
         ],
@@ -3029,6 +3030,7 @@
             83
         ],
         "name": "Fields Map",
+        "pantheon": "Soul of Ralakesh",
         "rating": {
             "boss": 6,
             "density": 4,
@@ -3037,6 +3039,7 @@
         "shorthand": "eld",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": true,
             "boss_separated": true,
@@ -3045,6 +3048,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3242,6 +3246,12 @@
         "boss_ids": [
             "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
         ],
+        "connected": [
+            "Crater Map",
+            "Gardens Map",
+            "Ivory Temple Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ThaumaturgyDungeon",
         "ids": [
             "MapWorldsFoundry"
         ],
@@ -3267,7 +3277,8 @@
             "boss_separated": true,
             "boss_soft_phases": false,
             "delirium_mirror": false,
-            "league_mechanics": false
+            "league_mechanics": false,
+            "nightmare_boss_map": true
         },
         "type": "map",
         "x": 736,
@@ -4496,6 +4507,10 @@
         "boss_ids": [
             "Metadata/Monsters/Viking/VikingMapBoss"
         ],
+        "connected": [
+            "Crater Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Marshes",
         "ids": [
             "MapWorldsMarshes"
         ],
@@ -4523,6 +4538,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4827,7 +4843,9 @@
         "name": "Moment of Reverence",
         "rating": {},
         "shorthand": "eve",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "unique map",
         "x": 146,
         "y": 117
@@ -5630,12 +5648,6 @@
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
         ],
-        "connected": [
-            "Bramble Valley Map",
-            "Fields Map",
-            "Lair Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plaza",
         "ids": [
             "MapWorldsPlaza"
         ],
@@ -5663,7 +5675,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6228,11 +6239,16 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian4__"
         ],
+        "connected": [
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
         "ids": [
             "Synthesis_MapGuardian4"
         ],
         "info": {},
         "levels": [
+            68,
             83,
             80
         ],
@@ -7869,6 +7885,7 @@
         "ids": [
             "1_2_5_1"
         ],
+        "image": "https://www.poewiki.net/images/e/e3/The_Crypt_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             17
@@ -9446,6 +9463,7 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
         ],
+        "icon": "Art/2DItems/Maps/TrialmasterMap",
         "ids": [
             "MapWorldsUltimatumBossArena"
         ],

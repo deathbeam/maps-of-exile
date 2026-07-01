@@ -199,6 +199,12 @@
             "Metadata/Monsters/Wb/WbChaosLeader8",
             "Metadata/Monsters/Wb/WbLeader4Minion"
         ],
+        "connected": [
+            "Alleyways Map",
+            "Dig Map",
+            "Hive Colony"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SulphurVents",
         "ids": [
             "MapWorldsAcidLakes"
         ],
@@ -221,6 +227,7 @@
             "boss_separated": false,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -1261,6 +1268,7 @@
         "ids": [
             "MapWorldsCaldera"
         ],
+        "image": "https://www.poewiki.net/images/f/fd/Caldera_Map_area_screenshot.jpg",
         "info": {
             "boss": "Fire Leap Slam that always ignites. Powerful Physical/Fire slam that may one shot. Summons Archers and Raging Spirits when damaged. Not too much health."
         },
@@ -1304,6 +1312,7 @@
         "ids": [
             "MapWorldsCanyon"
         ],
+        "image": "https://www.poewiki.net/images/1/1d/Canyon_Map_area_screenshot.png",
         "info": {
             "boss": "Both bosses are deadly. When one dies the other enrages gaining damage and health. Pitbull inflicts a deadly Bleed. Chicken fires Poison Arrow and Vaal Rain of Arrows which can prevent you from moving. Recommend kill the Chicken first then kite the Pitbull.",
             "boss_rushable": "Straight path, can hug wall to get to boss with less fighting"
@@ -2291,6 +2300,7 @@
             "Metadata/Monsters/Miner/MinerLanternMapBoss",
             "Metadata/Monsters/MinerLarge/MinerLargeMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CrystalOre",
         "ids": [
             "MapWorldsCrystalOre"
         ],
@@ -2317,6 +2327,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -2326,6 +2337,11 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossMelee"
         ],
+        "connected": [
+            "Ashen Wood Map",
+            "Dig Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crypt",
         "ids": [
             "MapWorldsCursedCrypt"
         ],
@@ -2353,6 +2369,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -4154,13 +4171,6 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
         ],
-        "connected": [
-            "Arcade Map",
-            "Courthouse Map",
-            "Dark Forest Map",
-            "Grotto Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crematorium",
         "ids": [
             "MapWorldsLavaChamber"
         ],
@@ -4172,7 +4182,6 @@
             83
         ],
         "name": "Lava Chamber Map",
-        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 6,
             "density": 4,
@@ -4183,7 +4192,6 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -5648,6 +5656,12 @@
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
         ],
+        "connected": [
+            "Bramble Valley Map",
+            "Fields Map",
+            "Lair Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plaza",
         "ids": [
             "MapWorldsPlaza"
         ],
@@ -5675,6 +5689,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6193,13 +6208,6 @@
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
         ],
-        "connected": [
-            "Forking River Map",
-            "Primordial Pool Map",
-            "Vaults of Atziri",
-            "Wharf Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Residence",
         "ids": [
             "MapWorldsResidence"
         ],
@@ -6227,7 +6235,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6790,13 +6797,6 @@
             "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn",
             "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
         ],
-        "connected": [
-            "Courtyard Map",
-            "Fields Map",
-            "Mao Kun",
-            "Relic Chambers Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Strand",
         "ids": [
             "MapWorldsStrand"
         ],
@@ -6824,7 +6824,6 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -7885,7 +7884,6 @@
         "ids": [
             "1_2_5_1"
         ],
-        "image": "https://www.poewiki.net/images/e/e3/The_Crypt_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             17

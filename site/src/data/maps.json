@@ -1358,6 +1358,7 @@
         "ids": [
             "MapWorldsCarcass"
         ],
+        "image": "https://www.poewiki.net/images/d/d1/Carcass_Map_area_screenshot.png",
         "info": {
             "boss": "Keep out of way of the giant Ball Lightning which will hang about the edge of the arena. At 75/50/25% health the Trinity runs off leaving 6 Scorpions that deal a high amount of physical damage if you let them all attack you at once."
         },
@@ -1396,6 +1397,7 @@
         "ids": [
             "MapWorldsCastleRuins"
         ],
+        "image": "https://www.poewiki.net/images/f/fb/Castle_Ruins_Map_area_screenshot.png",
         "info": {
             "boss": "Strong physical attacks. Gains Frenzy charges with Frenzy. Flicker Strikes. Throws Smoke Mines that deal Physical and Fire damage. After 75% health uses a very powerful Blade Flurry attack, keep out.",
             "boss_rushable": "The boss room is top right along the path"
@@ -4171,6 +4173,13 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
         ],
+        "connected": [
+            "Arcade Map",
+            "Courthouse Map",
+            "Dark Forest Map",
+            "Grotto Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crematorium",
         "ids": [
             "MapWorldsLavaChamber"
         ],
@@ -4182,6 +4191,7 @@
             83
         ],
         "name": "Lava Chamber Map",
+        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 6,
             "density": 4,
@@ -4192,6 +4202,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6208,6 +6219,13 @@
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
         ],
+        "connected": [
+            "Forking River Map",
+            "Primordial Pool Map",
+            "Vaults of Atziri",
+            "Wharf Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Residence",
         "ids": [
             "MapWorldsResidence"
         ],
@@ -6235,6 +6253,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6797,6 +6816,13 @@
             "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn",
             "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
         ],
+        "connected": [
+            "Courtyard Map",
+            "Fields Map",
+            "Mao Kun",
+            "Relic Chambers Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Strand",
         "ids": [
             "MapWorldsStrand"
         ],
@@ -6824,6 +6850,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -7223,7 +7250,6 @@
         "ids": [
             "1_3_7"
         ],
-        "image": "https://www.poewiki.net/images/a/ab/The_Battlefront_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7244,7 +7270,6 @@
             "MapWorldsHarbingerLow",
             "MapWorldsHarbingerMid"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Beachhead_area_screenshot.jpg",
         "info": {},
         "levels": [
             72,
@@ -7265,7 +7290,6 @@
         "ids": [
             "2_6_14"
         ],
-        "image": "https://www.poewiki.net/images/1/1a/The_Beacon_area_screenshot.jpg",
         "info": {},
         "levels": [
             49
@@ -7308,7 +7332,6 @@
         "ids": [
             "1_4_6_1"
         ],
-        "image": "https://www.poewiki.net/images/1/19/The_Belly_of_the_Beast_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             38
@@ -7330,7 +7353,6 @@
         "ids": [
             "1_4_6_2"
         ],
-        "image": "https://www.poewiki.net/images/9/9a/The_Belly_of_the_Beast_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             39
@@ -7353,7 +7375,6 @@
         "ids": [
             "FaridunLeagueBoss"
         ],
-        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -7416,7 +7437,6 @@
         "ids": [
             "2_6_15"
         ],
-        "image": "https://www.poewiki.net/images/3/31/The_Brine_King%27s_Reef_area_screenshot.jpg",
         "info": {},
         "levels": [
             50
@@ -7459,7 +7479,6 @@
         "ids": [
             "2_10_5"
         ],
-        "image": "https://www.poewiki.net/images/f/f0/The_Canals_area_screenshot.jpg",
         "info": {},
         "levels": [
             66
@@ -7477,7 +7496,6 @@
         "ids": [
             "1_3_6"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Catacombs_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7502,7 +7520,6 @@
             "1_5_8",
             "2_10_1"
         ],
-        "image": "https://www.poewiki.net/images/f/f2/The_Cathedral_Rooftop_area_screenshot.jpg",
         "info": {},
         "levels": [
             45,
@@ -7570,7 +7587,6 @@
         "ids": [
             "1_1_11_1"
         ],
-        "image": "https://www.poewiki.net/images/a/a0/The_Cavern_of_Wrath_area_screenshot.jpg",
         "info": {},
         "levels": [
             12
@@ -7592,7 +7608,6 @@
         "ids": [
             "1_2_14_2"
         ],
-        "image": "https://www.poewiki.net/images/5/5b/The_Caverns_area_screenshot.jpg",
         "info": {},
         "levels": [
             22
@@ -7614,7 +7629,6 @@
         "ids": [
             "1_5_5"
         ],
-        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
         "info": {},
         "levels": [
             43
@@ -7665,7 +7679,6 @@
             "1_2_6_2",
             "2_7_5_2"
         ],
-        "image": "https://www.poewiki.net/images/e/e4/The_Chamber_of_Sins_Level_2_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             16,
@@ -7688,7 +7701,6 @@
         "ids": [
             "1_3_1"
         ],
-        "image": "https://www.poewiki.net/images/2/26/The_City_of_Sarn_area_screenshot.jpg",
         "info": {},
         "levels": [
             23
@@ -7710,7 +7722,6 @@
         "ids": [
             "1_1_6"
         ],
-        "image": "https://www.poewiki.net/images/5/51/The_Climb_area_screenshot.jpg",
         "info": {},
         "levels": [
             7
@@ -7738,7 +7749,6 @@
             "1_1_2",
             "2_6_2"
         ],
-        "image": "https://www.poewiki.net/images/e/ea/The_Coast_%28Act_1%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             2,
@@ -7787,7 +7797,6 @@
         "ids": [
             "MapWorldsCursedCryptUnique"
         ],
-        "image": "https://www.poewiki.net/images/1/15/The_Coward%27s_Trial_area_screenshot.jpg",
         "info": {},
         "levels": [
             77,
@@ -7820,7 +7829,6 @@
         "ids": [
             "1_3_3_1"
         ],
-        "image": "https://www.poewiki.net/images/3/3c/The_Crematorium_area_screenshot.jpg",
         "info": {},
         "levels": [
             25
@@ -9744,6 +9752,7 @@
             "1_2_9",
             "2_6_9"
         ],
+        "image": "https://www.poewiki.net/images/4/49/The_Western_Forest_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             17,
@@ -9809,6 +9818,7 @@
         "ids": [
             "MapWorldsThicket"
         ],
+        "image": "https://www.poewiki.net/images/9/91/Thicket_Map_area_screenshot.jpg",
         "info": {
             "boss": "Summons small monkeys and frenzies allies. Physical Sunder attack. Will periodically start spamming Sunder which can dish out extreme physical damage if caught unaware. Just kite the boss in a circle when this starts happening."
         },
@@ -9854,6 +9864,7 @@
         "ids": [
             "MapWorldsTower"
         ],
+        "image": "https://www.poewiki.net/images/6/68/Tower_Map_area_screenshot.jpg",
         "info": {
             "boss": "Phase 1, immune Shavronne fires Lightning projectiles and Storm Calls. Brutus deals Physical damage using a \"Wall Hook\" charge and triple Ground Slam. When damaged Shavronne empowers Brutus giving his attacks double damage (half as Lightning damage). At 35% Shavronne swaps with Brutus. She fires Lightning projectiles, summons minions that cast Arc and targets a large circle dealing severe Lightning damage and shocking the player. In Phase 3 you face a permanently empowered Brutus."
         },
@@ -9894,6 +9905,7 @@
         "ids": [
             "MapWorldsToxicSewer"
         ],
+        "image": "https://www.poewiki.net/images/7/73/Toxic_Sewer_Map_area_screenshot.jpg",
         "info": {
             "boss": "Physical Leap Slam. Cast green spears which do significant Chaos damage. Spawn spiders which release Caustic Clouds (Chaos DoT).",
             "boss_rushable": "Follow the outer wall"
@@ -9927,6 +9939,7 @@
         "ids": [
             "EndGame_Labyrinth_trials_lava_#"
         ],
+        "image": "https://www.poewiki.net/images/f/f0/Trial_of_Burning_Rage_area_screenshot.png",
         "info": {},
         "levels": [
             75,
@@ -9957,6 +9970,7 @@
         "ids": [
             "EndGame_Labyrinth_trials_roombas"
         ],
+        "image": "https://www.poewiki.net/images/6/65/Trial_of_Lingering_Pain_area_screenshot.png",
         "info": {},
         "levels": [
             75,
@@ -9987,6 +10001,7 @@
         "ids": [
             "EndGame_Labyrinth_trials_arrows"
         ],
+        "image": "https://www.poewiki.net/images/5/53/Trial_of_Stinging_Doubt_area_screenshot.png",
         "info": {},
         "levels": [
             75,
@@ -10027,6 +10042,7 @@
         "ids": [
             "MapWorldsTropicalIsland"
         ],
+        "image": "https://www.poewiki.net/images/6/6f/Tropical_Island_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10057,6 +10073,7 @@
             "BreachBossCold4",
             "BreachBossCold5"
         ],
+        "image": "https://www.poewiki.net/images/9/96/Tul%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             74,
@@ -10104,6 +10121,7 @@
         "ids": [
             "MapWorldsUndergroundRiver"
         ],
+        "image": "https://www.poewiki.net/images/3/38/Underground_River_Map_area_screenshot.jpg",
         "info": {
             "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage."
         },
@@ -10149,6 +10167,7 @@
         "ids": [
             "MapWorldsUndergroundSea"
         ],
+        "image": "https://www.poewiki.net/images/3/36/Underground_Sea_Map_area_screenshot.jpg",
         "info": {
             "boss": "Same as Act 1 fight. First phase avoid Merveil's cold spells. Second phase can be hectic. Watch out for the Heir of Flame and Storm when they arrive. Stay out of geysers which do large amounts of Cold damage.",
             "boss_rushable": "Boss either up from spawn or up and to the left"
@@ -10199,6 +10218,7 @@
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
+        "image": "https://www.poewiki.net/images/d/d6/Untainted_Paradise_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10223,6 +10243,7 @@
             "BreachBossPhysical4",
             "BreachBossPhysical5"
         ],
+        "image": "https://www.poewiki.net/images/c/c2/Uul-Netol%27s_Domain_area_screenshot.jpg",
         "info": {},
         "levels": [
             78,
@@ -10252,6 +10273,7 @@
         "ids": [
             "MapWorldsVaalPyramid"
         ],
+        "image": "https://www.poewiki.net/images/2/2e/Vaal_Pyramid_area_screenshot.jpg",
         "info": {},
         "levels": [
             75,
@@ -10285,6 +10307,7 @@
         "ids": [
             "MapWorldsVaalTemple"
         ],
+        "image": "https://www.poewiki.net/images/f/f1/Vaal_Temple_Map_area_screenshot.jpg",
         "info": {
             "boss": "Same as the trio from the Apex of Sacrifice/Alluring Abyss. Check a guide on these areas for detailed mechanics.",
             "density": "Missing exact mob count, density rating might be unreliable"

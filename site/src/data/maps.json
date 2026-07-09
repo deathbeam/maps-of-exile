@@ -7246,7 +7246,6 @@
         "ids": [
             "1_3_7"
         ],
-        "image": "https://www.poewiki.net/images/a/ab/The_Battlefront_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7267,7 +7266,6 @@
             "MapWorldsHarbingerLow",
             "MapWorldsHarbingerMid"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Beachhead_area_screenshot.jpg",
         "info": {},
         "levels": [
             72,
@@ -7288,7 +7286,6 @@
         "ids": [
             "2_6_14"
         ],
-        "image": "https://www.poewiki.net/images/1/1a/The_Beacon_area_screenshot.jpg",
         "info": {},
         "levels": [
             49
@@ -7331,7 +7328,6 @@
         "ids": [
             "1_4_6_1"
         ],
-        "image": "https://www.poewiki.net/images/1/19/The_Belly_of_the_Beast_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             38
@@ -7353,7 +7349,6 @@
         "ids": [
             "1_4_6_2"
         ],
-        "image": "https://www.poewiki.net/images/9/9a/The_Belly_of_the_Beast_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             39
@@ -7369,10 +7364,13 @@
         "boss_ids": [
             "Metadata/Monsters/FaridunLeague/FaridunSareshBoss/Saresh_"
         ],
+        "connected": [
+            "Cage Map"
+        ],
+        "icon": "Art/2DItems/Currency/Faridun/FaridunBossKey",
         "ids": [
             "FaridunLeagueBoss"
         ],
-        "image": "https://www.poewiki.net/images/c/ce/The_Black_Barya_area_screenshot.jpg",
         "info": {},
         "levels": [
             83,
@@ -7435,7 +7433,6 @@
         "ids": [
             "2_6_15"
         ],
-        "image": "https://www.poewiki.net/images/3/31/The_Brine_King%27s_Reef_area_screenshot.jpg",
         "info": {},
         "levels": [
             50
@@ -7478,7 +7475,6 @@
         "ids": [
             "2_10_5"
         ],
-        "image": "https://www.poewiki.net/images/f/f0/The_Canals_area_screenshot.jpg",
         "info": {},
         "levels": [
             66
@@ -7496,7 +7492,6 @@
         "ids": [
             "1_3_6"
         ],
-        "image": "https://www.poewiki.net/images/b/ba/The_Catacombs_area_screenshot.jpg",
         "info": {},
         "levels": [
             27
@@ -7521,7 +7516,6 @@
             "1_5_8",
             "2_10_1"
         ],
-        "image": "https://www.poewiki.net/images/f/f2/The_Cathedral_Rooftop_area_screenshot.jpg",
         "info": {},
         "levels": [
             45,
@@ -7589,7 +7583,6 @@
         "ids": [
             "1_1_11_1"
         ],
-        "image": "https://www.poewiki.net/images/a/a0/The_Cavern_of_Wrath_area_screenshot.jpg",
         "info": {},
         "levels": [
             12
@@ -7611,7 +7604,6 @@
         "ids": [
             "1_2_14_2"
         ],
-        "image": "https://www.poewiki.net/images/5/5b/The_Caverns_area_screenshot.jpg",
         "info": {},
         "levels": [
             22
@@ -7633,7 +7625,6 @@
         "ids": [
             "1_5_5"
         ],
-        "image": "https://www.poewiki.net/images/1/16/The_Chamber_of_Innocence_area_screenshot.jpg",
         "info": {},
         "levels": [
             43
@@ -7684,7 +7675,6 @@
             "1_2_6_2",
             "2_7_5_2"
         ],
-        "image": "https://www.poewiki.net/images/e/e4/The_Chamber_of_Sins_Level_2_%28Act_2%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             16,
@@ -7707,7 +7697,6 @@
         "ids": [
             "1_3_1"
         ],
-        "image": "https://www.poewiki.net/images/2/26/The_City_of_Sarn_area_screenshot.jpg",
         "info": {},
         "levels": [
             23
@@ -7729,7 +7718,6 @@
         "ids": [
             "1_1_6"
         ],
-        "image": "https://www.poewiki.net/images/5/51/The_Climb_area_screenshot.jpg",
         "info": {},
         "levels": [
             7
@@ -7757,7 +7745,6 @@
             "1_1_2",
             "2_6_2"
         ],
-        "image": "https://www.poewiki.net/images/e/ea/The_Coast_%28Act_1%29_area_screenshot.jpg",
         "info": {},
         "levels": [
             2,
@@ -7799,13 +7786,16 @@
         "boss_ids": [
             "Metadata/Monsters/Necromancer/NecromancerUniqueMapBoss"
         ],
+        "connected": [
+            "Burial Chambers Map"
+        ],
+        "icon": "Art/2DItems/Maps/UndeadSiege",
         "ids": [
             "MapWorldsCursedCryptUnique"
         ],
-        "image": "https://www.poewiki.net/images/1/15/The_Coward%27s_Trial_area_screenshot.jpg",
         "info": {},
         "levels": [
-            68,
+            77,
             83
         ],
         "name": "The Coward's Trial",
@@ -7817,7 +7807,8 @@
             "boss_rushable": false,
             "boss_soft_phases": false,
             "delirium_mirror": false,
-            "league_mechanics": false
+            "league_mechanics": false,
+            "nightmare_boss_map": true
         },
         "type": "unique map",
         "x": 838,
@@ -7834,7 +7825,6 @@
         "ids": [
             "1_3_3_1"
         ],
-        "image": "https://www.poewiki.net/images/3/3c/The_Crematorium_area_screenshot.jpg",
         "info": {},
         "levels": [
             25
@@ -7898,7 +7888,6 @@
         "ids": [
             "1_2_5_1"
         ],
-        "image": "https://www.poewiki.net/images/e/e3/The_Crypt_Level_1_area_screenshot.jpg",
         "info": {},
         "levels": [
             17
@@ -7919,7 +7908,6 @@
         "ids": [
             "1_2_5_2"
         ],
-        "image": "https://www.poewiki.net/images/f/f6/The_Crypt_Level_2_area_screenshot.jpg",
         "info": {},
         "levels": [
             18
@@ -8779,6 +8767,10 @@
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreUniqueMap"
         ],
+        "connected": [
+            "Dungeon Map"
+        ],
+        "icon": "Art/2DItems/Maps/PutridCloister",
         "ids": [
             "MapWorldsMuseumUnique"
         ],
@@ -8786,7 +8778,7 @@
             "boss": "Man have I underestimated this map before. You are inflicted with 5 unremovable curses; Vulnerability, Flammability, Frostbite, Conductivity and Projectile Weakness. Make sure your elemental resistances are adequately overcapped and you have Bleed removal before entering. Pieties miscreations occupy the zone - they are fast and can burst you down quickly. You face Act 5 Doedre 3 times. She isn't too difficult, just dodge her telegraphed projectiles. Watch out as throughout the fight various miscreations will continually spawn. Each boss will drop a lot of Divination cards (not zone dependent), similar to a Diviner's Strongbox. You may just hit big if you are lucky."
         },
         "levels": [
-            68,
+            76,
             83
         ],
         "name": "The Putrid Cloister",
@@ -8796,6 +8788,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -9016,7 +9009,7 @@
         ],
         "info": {},
         "levels": [
-            83,
+            1,
             83
         ],
         "name": "The Sacred Grove",
@@ -9092,6 +9085,12 @@
             "Metadata/Monsters/AtlasBosses/TheShaperBoss",
             "Metadata/Monsters/AtlasBosses/TheShaperBossUberElder"
         ],
+        "connected": [
+            "Citadel Map",
+            "Forge of the Phoenix Map",
+            "Lair of the Hydra Map"
+        ],
+        "icon": "Art/2DItems/Maps/AtlasMaps/Atlas",
         "ids": [
             "MapWorldsElderArenaUber",
             "MapWorldsShapersRealm"
@@ -9104,7 +9103,10 @@
         "name": "The Shaper's Realm",
         "rating": {},
         "shorthand": "alm",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true,
+            "nightmare_boss_map": true
+        },
         "type": "unique map",
         "x": 806,
         "y": 179
@@ -9340,6 +9342,9 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
         ],
+        "connected": [
+            "Necropolis Map"
+        ],
         "ids": [
             "Incursion_Temple1",
             "Incursion_Temple10",
@@ -9460,6 +9465,7 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
         ],
+        "icon": "Art/2DItems/Maps/TrialmasterMap",
         "ids": [
             "MapWorldsUltimatumBossArena"
         ],
@@ -9542,6 +9548,10 @@
             "Metadata/Monsters/LunarisSolaris/LunarisUniqueMap",
             "Metadata/Monsters/LunarisSolaris/SolarisUniqueMap"
         ],
+        "connected": [
+            "Moon Temple Map"
+        ],
+        "icon": "Art/2DItems/Maps/Celestial",
         "ids": [
             "MapWorldsMoonTempleUnique"
         ],
@@ -9549,7 +9559,7 @@
             "boss": "Large Temple, half owned by Solaris Fanatics (Fire damage) and half by Lunaris Fanatics (Cold damage). On each side are three floor buttons that when pressed summon Solaris/Lunaris mobs and the Sun/Moon Orb from Act 8. These orbs can use some of Solaris and Lunaris' more powerful abilities like the cascade of falling rocks. You will also see the unique mini-bosses from Act 8: Nightbringer Lucius, Regulus, Dawn and Dusk. At the end of the map you can choose to face either Lunaris or Solaris as the final boss. They both deal high amounts of hard to avoid damage but have little health."
         },
         "levels": [
-            68,
+            76,
             83
         ],
         "name": "The Twilight Temple",
@@ -9559,6 +9569,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -9672,6 +9683,10 @@
         "boss_ids": [
             "Metadata/Monsters/Viking/VikingBossVinktarsSquare"
         ],
+        "connected": [
+            "Courthouse Map"
+        ],
+        "icon": "Art/2DItems/Maps/TheVinktarSquare",
         "ids": [
             "MapWorldsCourtyardUnique"
         ],
@@ -9679,7 +9694,7 @@
             "boss": "Defeat the four mini-bosses (all have modest Lightning based abilities) located in each of the four corners. After they are all dead you will be able to face the Avatar of Thunder in his arena at the centre of the map. There are four boss phases and three add phases. During the boss phases, the Avatar will use a Physical Cyclone and a Physical/Lightning Earthquake. The Avatar will also charge up and then explode for massive Lightning AoE damage that always Shocks (but will most likely one-shot) - get out of the way when this happens. Three beams of light will also travel around the arena - these beams deal Lightning DoT and always Shock. In each of the add phases the Avatar will teleport out and summon one of his four guardians defeated previously. Each subsuquent add phase has an extra mini boss you have to kill (so one, then two, then three). Overall a long fight, but a large arena, so plenty of room to kite and avoid the dangerous boss abilities."
         },
         "levels": [
-            68,
+            75,
             83
         ],
         "name": "The Vinktar Square",
@@ -9689,6 +9704,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map",
@@ -9772,6 +9788,7 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasMemory/FragmentOfBenevolence"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TheatreofLies",
         "ids": [
             "MapWorldsTheatreOfLies"
         ],
@@ -9782,13 +9799,17 @@
         "name": "Theatre of Lies Map",
         "rating": {},
         "shorthand": "atr",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true,
+            "nightmare_boss_map": true
+        },
         "type": "map"
     },
     {
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Thicket",
         "ids": [
             "MapWorldsThicket"
         ],
@@ -9815,6 +9836,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -9825,6 +9847,14 @@
             "Metadata/Monsters/Brute/BruteTowerMap_",
             "Metadata/Monsters/Shavronne/ShavronneTowerMap"
         ],
+        "connected": [
+            "Arena Map",
+            "Cemetery Map",
+            "Mud Geyser Map",
+            "Olmec's Sanctum",
+            "Wharf Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Tower",
         "ids": [
             "MapWorldsTower"
         ],
@@ -9844,6 +9874,7 @@
         "shorthand": "tower",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -9852,6 +9883,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -9862,6 +9894,7 @@
         "boss_ids": [
             "Metadata/Monsters/Spiders/MapSpiderBossSins"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sewer",
         "ids": [
             "MapWorldsToxicSewer"
         ],
@@ -9889,6 +9922,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -9988,6 +10022,12 @@
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
         ],
+        "connected": [
+            "Arachnid Tomb Map",
+            "Grave Trough Map",
+            "Orchard Map",
+            "Untainted Paradise"
+        ],
         "ids": [
             "MapWorldsTropicalIsland"
         ],
@@ -10003,7 +10043,9 @@
             "layout": 10
         },
         "shorthand": "sl",
-        "tags": {},
+        "tags": {
+            "nightmare_boss_map": true
+        },
         "type": "special map",
         "x": 353,
         "y": 471
@@ -10037,11 +10079,16 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
         ],
+        "connected": [
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "ids": [
             "Synthesis_MapGuardian3"
         ],
         "info": {},
         "levels": [
+            68,
             83,
             80
         ],
@@ -10057,6 +10104,7 @@
         "boss_ids": [
             "Metadata/Monsters/DropBear/DropBearMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundRiver",
         "ids": [
             "MapWorldsUndergroundRiver"
         ],
@@ -10083,6 +10131,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -10093,6 +10142,14 @@
             "Metadata/Monsters/Seawitch/MapBossMerveil2",
             "Metadata/Monsters/seawitchillusion/MapBossMerveil"
         ],
+        "connected": [
+            "Arena Map",
+            "Coves Map",
+            "Dunes Map",
+            "Overgrown Shrine Map",
+            "Summit Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundSea",
         "ids": [
             "MapWorldsUndergroundSea"
         ],
@@ -10105,6 +10162,7 @@
             83
         ],
         "name": "Underground Sea Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 6,
             "density": 9,
@@ -10121,6 +10179,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -10137,12 +10196,16 @@
             "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
             "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
         ],
+        "connected": [
+            "Tropical Island Map"
+        ],
+        "icon": "Art/2DItems/Maps/UniqueMap2",
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
         "info": {},
         "levels": [
-            81,
+            75,
             83
         ],
         "name": "Untainted Paradise",
@@ -10184,6 +10247,12 @@
             "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
             "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
         ],
+        "connected": [
+            "Burial Chambers Map",
+            "Factory Map",
+            "Silo Map",
+            "Vaal Temple Map"
+        ],
         "ids": [
             "MapWorldsVaalPyramid"
         ],
@@ -10199,7 +10268,9 @@
             "layout": 2
         },
         "shorthand": "yr",
-        "tags": {},
+        "tags": {
+            "nightmare_boss_map": true
+        },
         "type": "special map",
         "x": 851,
         "y": 557
@@ -10211,6 +10282,10 @@
             "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
             "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3Map"
         ],
+        "connected": [
+            "Vaal Pyramid Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalTempleBase",
         "ids": [
             "MapWorldsVaalTemple"
         ],
@@ -10231,6 +10306,7 @@
         "shorthand": "al t",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
@@ -10239,6 +10315,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "special map",
@@ -10249,6 +10326,7 @@
         "boss_ids": [
             "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Vault",
         "ids": [
             "MapWorldsVault"
         ],
@@ -10269,12 +10347,17 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
     },
     {
         "atlas": true,
+        "connected": [
+            "Residence Map"
+        ],
+        "icon": "Art/2DItems/Maps/UniqueMap1",
         "ids": [
             "MapWorldsVaalPyramidUnique"
         ],
@@ -10282,7 +10365,7 @@
             "boss": "A map with no monsters whatsoever (although Tormented Spirits and Rogue Exiles can still spawn for some reason \u2013 who knows how they got into Atziri\u2019s vault?). This map contains only chests with 1800-2000% increased item rarity. Simply walk around the two large rooms and loot every chest. At the centre of the second room is a chest that contains large amounts of Sacrifice Fragments and Vaal skill gems."
         },
         "levels": [
-            68,
+            75,
             83
         ],
         "name": "Vaults of Atziri",
@@ -10298,6 +10381,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -10308,6 +10392,7 @@
         "boss_ids": [
             "Metadata/Monsters/Pope/PopeMapBoss1"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Villa",
         "ids": [
             "MapWorldsVilla"
         ],
@@ -10328,6 +10413,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -10337,6 +10423,11 @@
         "boss_ids": [
             "Metadata/Monsters/Totems/PuiTotemMapBoss_"
         ],
+        "connected": [
+            "Dark Forest Map",
+            "Grotto Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Volcano",
         "ids": [
             "MapWorldsVolcano"
         ],
@@ -10364,6 +10455,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10374,6 +10466,7 @@
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSewersMap"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/WastePool",
         "ids": [
             "MapWorldsWastePool"
         ],
@@ -10393,6 +10486,7 @@
         "shorthand": "te ",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": true,
             "boss_separated": true,
@@ -10401,6 +10495,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -10410,6 +10505,11 @@
         "boss_ids": [
             "Metadata/Monsters/Voll/VollMapBoss"
         ],
+        "connected": [
+            "Ashen Wood Map",
+            "Shipyard Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wasteland",
         "ids": [
             "MapWorldsWasteland"
         ],
@@ -10437,6 +10537,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10448,6 +10549,11 @@
         "boss_ids": [
             "Metadata/Monsters/IceElemental/IceElementalMapBoss"
         ],
+        "connected": [
+            "Belfry Map",
+            "Shrine Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Waterways",
         "ids": [
             "MapWorldsWaterways"
         ],
@@ -10459,6 +10565,7 @@
             83
         ],
         "name": "Waterways Map",
+        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -10469,6 +10576,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10480,6 +10588,10 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/DarkSeaWitch"
         ],
+        "connected": [
+            "Atoll Map"
+        ],
+        "icon": "Art/2DItems/Maps/UniqueMapEye",
         "ids": [
             "MapWorldsStrandUnique"
         ],
@@ -10487,7 +10599,7 @@
             "boss": "You arrive on a misty island similar to the Ship Graveyard and start with reduced light radius. Killing monsters increases your light radius and also your IIR and IIQ. Not killing monsters causes you light radius to fall. Once you have cleared the island make your way to the cave at the top of the island.\nInside the cave activate the Vaal seal. A Shade of an Exile will spawn depending on your class. This exile can be fast and dangerous so take caution in avoiding their attacks. After you have killed the exile you face the true boss of this map, the most annoying boss in all Path of Exile. I don\u2019t really want to ruin the surprise so play and find out."
         },
         "levels": [
-            68,
+            71,
             83
         ],
         "name": "Whakawairua Tuahu",
@@ -10503,6 +10615,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map",
@@ -10514,6 +10627,13 @@
         "boss_ids": [
             "Metadata/Monsters/LightningGolem/LightningGolemMapBoss"
         ],
+        "connected": [
+            "Mud Geyser Map",
+            "Racecourse Map",
+            "Residence Map",
+            "Tower Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wharf",
         "ids": [
             "MapWorldsWharf"
         ],
@@ -10541,6 +10661,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10590,6 +10711,11 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueBetrayal/BetrayalCatarinaMapBoss"
         ],
+        "connected": [
+            "Absence of Patience and Wisdom",
+            "Absence of Symmetry and Harmony"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMausoleum",
         "ids": [
             "MapWorldsZiggurat"
         ],
@@ -10601,7 +10727,9 @@
         "name": "Ziggurat Map",
         "rating": {},
         "shorthand": "gg",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 146,
         "y": 825

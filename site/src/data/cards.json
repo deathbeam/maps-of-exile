@@ -3,7 +3,7 @@
         "art": "AChillingWind",
         "drop": {
             "areas": [
-                "MapWorldsFrozenCabins",
+                "MapWorldsColdRiver_",
                 "MapWorldsSummit"
             ],
             "min_level": 72,
@@ -13,7 +13,7 @@
         "eventPrice": 0,
         "id": "a-chilling-wind",
         "name": "A Chilling Wind",
-        "price": 0,
+        "price": 6.27,
         "reward": "Level 21 Vaal Cold Snap, Quality: +20%, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -23,7 +23,7 @@
         "art": "ADabOfInk",
         "drop": {
             "areas": [
-                "MapWorldsCourthouse"
+                "MapWorldsMuseum"
             ],
             "min_level": 23,
             "monsters": [],
@@ -32,7 +32,7 @@
         "eventPrice": 0,
         "id": "a-dab-of-ink",
         "name": "A Dab of Ink",
-        "price": 0,
+        "price": 7.12,
         "reward": "The Poet's Pen",
         "stack": 9,
         "standardPrice": 0,
@@ -55,7 +55,7 @@
         "eventPrice": 0,
         "id": "a-dusty-memory",
         "name": "A Dusty Memory",
-        "price": 5,
+        "price": 3.89,
         "reward": "Item, Item Level: 100, Fractured",
         "stack": 5,
         "standardPrice": 0,
@@ -99,7 +99,7 @@
         "eventPrice": 0,
         "id": "a-fate-worse-than-death",
         "name": "A Fate Worse Than Death",
-        "price": 2.08,
+        "price": 3.68,
         "reward": "Cortex, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -109,7 +109,7 @@
         "art": "AModestRequest",
         "drop": {
             "areas": [
-                "MapWorldsPrimordialPool"
+                "MapWorldsBelfry"
             ],
             "min_level": 68,
             "monsters": [],
@@ -118,7 +118,7 @@
         "eventPrice": 0,
         "id": "a-modest-request",
         "name": "A Modest Request",
-        "price": 25,
+        "price": 12,
         "reward": "Megalomaniac, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -149,7 +149,6 @@
         "drop": {
             "areas": [
                 "2_9_4",
-                "MapWorldsDrySea",
                 "MapWorldsDunesUnique"
             ],
             "min_level": 23,
@@ -169,7 +168,7 @@
         "art": "ASeaOfBlue",
         "drop": {
             "areas": [
-                "MapWorldsTortureChamber"
+                "MapWorldsExcavation"
             ],
             "min_level": 23,
             "monsters": [],
@@ -178,7 +177,7 @@
         "eventPrice": 0,
         "id": "a-sea-of-blue",
         "name": "A Sea of Blue",
-        "price": 2,
+        "price": 0.4222,
         "reward": "13x Orb of Alteration",
         "stack": 3,
         "standardPrice": 0,
@@ -188,7 +187,8 @@
         "art": "AStonePerfected",
         "drop": {
             "areas": [
-                "MapWorldsCoves"
+                "MapWorldsGrotto",
+                "MapWorldsWaterways"
             ],
             "min_level": 80,
             "monsters": [],
@@ -197,7 +197,7 @@
         "eventPrice": 0,
         "id": "a-stone-perfected",
         "name": "A Stone Perfected",
-        "price": 1,
+        "price": 25.19,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -207,7 +207,8 @@
         "art": "AbandonedWealth",
         "drop": {
             "areas": [
-                "MapWorldsUndergroundSea"
+                "MapWorldsShoreUnique",
+                "MapWorldsVaalPyramidUnique"
             ],
             "min_level": 35,
             "monsters": [],
@@ -216,7 +217,7 @@
         "eventPrice": 0,
         "id": "abandoned-wealth",
         "name": "Abandoned Wealth",
-        "price": 95,
+        "price": 1,
         "reward": "3x Exalted Orb",
         "stack": 5,
         "standardPrice": 0,
@@ -226,7 +227,8 @@
         "art": "Acclimatisation",
         "drop": {
             "areas": [
-                "MapWorldsDrySea"
+                "MapWorldsDunes",
+                "MapWorldsDunesUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -235,7 +237,7 @@
         "eventPrice": 0,
         "id": "acclimatisation",
         "name": "Acclimatisation",
-        "price": 0,
+        "price": 0.6547,
         "reward": "20x Orb of Alteration",
         "stack": 2,
         "standardPrice": 0,
@@ -303,7 +305,7 @@
         "eventPrice": 0,
         "id": "akils-prophecy",
         "name": "Akil's Prophecy",
-        "price": 0,
+        "price": 1.8,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -313,7 +315,7 @@
         "art": "AliviasGrace",
         "drop": {
             "areas": [
-                "MapWorldsBurialChambers",
+                "MapWorldsForbiddenWoods",
                 "MapWorldsJungleValley"
             ],
             "min_level": 59,
@@ -323,7 +325,7 @@
         "eventPrice": 0,
         "id": "alivias-grace",
         "name": "Alivia's Grace",
-        "price": 0,
+        "price": 1,
         "reward": "Queen of the Forest",
         "stack": 6,
         "standardPrice": 0,
@@ -342,7 +344,7 @@
         "eventPrice": 0,
         "id": "alluring-bounty",
         "name": "Alluring Bounty",
-        "price": 0.2,
+        "price": 0.625,
         "reward": "10x Exalted Orb",
         "stack": 7,
         "standardPrice": 0,
@@ -361,7 +363,7 @@
         "eventPrice": 0,
         "id": "alone-in-the-darkness",
         "name": "Alone in the Darkness",
-        "price": 0,
+        "price": 0.9545,
         "reward": "Delve Item",
         "stack": 5,
         "standardPrice": 0,
@@ -382,7 +384,7 @@
         "eventPrice": 0,
         "id": "altered-perception",
         "name": "Altered Perception",
-        "price": 0,
+        "price": 9.13,
         "reward": "Simulacrum",
         "stack": 3,
         "standardPrice": 0,
@@ -392,7 +394,8 @@
         "art": "AmbitiousObsession",
         "drop": {
             "areas": [
-                "MapWorldsSummit"
+                "MapWorldsDesertSpring",
+                "MapWorldsSunkenCity"
             ],
             "min_level": 68,
             "monsters": [],
@@ -463,7 +466,9 @@
     {
         "art": "Apocalypse",
         "drop": {
-            "areas": [],
+            "areas": [
+                "MapWorldsMazeUnique"
+            ],
             "min_level": 82,
             "monsters": [],
             "text": ""
@@ -471,8 +476,8 @@
         "eventPrice": 0,
         "id": "apocalypse",
         "name": "Apocalypse",
-        "price": 14.79,
-        "reward": "Eyes of the Greatwolf, Item Level: 82, One Corruption Implicit",
+        "price": 31.68,
+        "reward": "Eyes of the Greatwolf, Item Level: 82, One Corruption Implicit, Corrupted",
         "stack": 2,
         "standardPrice": 0
     },
@@ -489,7 +494,7 @@
         "eventPrice": 0,
         "id": "arrogance-of-the-vaal",
         "name": "Arrogance of the Vaal",
-        "price": 3.5,
+        "price": 1.24,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -501,7 +506,7 @@
             "areas": [
                 "1_3_5",
                 "2_8_8",
-                "MapWorldsArcade"
+                "MapWorldsCitySquare"
             ],
             "min_level": 23,
             "monsters": [],
@@ -510,7 +515,7 @@
         "eventPrice": 0,
         "id": "assassins-favour",
         "name": "Assassin's Favour",
-        "price": 0,
+        "price": 0.9038,
         "reward": "Dagger",
         "stack": 9,
         "standardPrice": 0,
@@ -527,7 +532,7 @@
         "eventPrice": 0,
         "id": "assassins-gift",
         "name": "Assassin's Gift",
-        "price": 0,
+        "price": 14.56,
         "reward": "Divinarius, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -539,7 +544,6 @@
             "areas": [
                 "MapWorldsCourtyardOfWasting",
                 "MapWorldsHydra",
-                "MapWorldsMesa",
                 "MapWorldsMinotaur",
                 "MapWorldsPhoenix"
             ],
@@ -550,7 +554,7 @@
         "eventPrice": 0,
         "id": "astral-protection",
         "name": "Astral Protection",
-        "price": 0,
+        "price": 2.55,
         "reward": "Shield, Shaper Item",
         "stack": 5,
         "standardPrice": 0,
@@ -559,7 +563,9 @@
     {
         "art": "AtzirisArmory",
         "drop": {
-            "areas": [],
+            "areas": [
+                "MapWorldsMazeUnique"
+            ],
             "min_level": 23,
             "monsters": [],
             "text": ""
@@ -567,7 +573,7 @@
         "eventPrice": 0,
         "id": "atziris-arsenal",
         "name": "Atziri's Arsenal",
-        "price": 0,
+        "price": 1,
         "reward": "Weapon, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -584,7 +590,7 @@
         "eventPrice": 0,
         "id": "audacity",
         "name": "Audacity",
-        "price": 0,
+        "price": 3,
         "reward": "Doryani's Fist, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -618,7 +624,8 @@
         "art": "AvianPursuit",
         "drop": {
             "areas": [
-                "MapWorldsBrambleValley"
+                "MapWorldsBrambleValley",
+                "MapWorldsStagnation"
             ],
             "min_level": 68,
             "monsters": [],
@@ -627,7 +634,7 @@
         "eventPrice": 0,
         "id": "avian-pursuit",
         "name": "Avian Pursuit",
-        "price": 8.37,
+        "price": 4.52,
         "reward": "1,500x Vivid Crystallised Lifeforce",
         "stack": 3,
         "standardPrice": 0,
@@ -637,8 +644,8 @@
         "art": "AzureRage",
         "drop": {
             "areas": [
-                "MapWorldsShipyard",
-                "MapWorldsWharf"
+                "MapWorldsAridLake",
+                "MapWorldsTropicalIsland"
             ],
             "min_level": 81,
             "monsters": [],
@@ -657,7 +664,7 @@
         "art": "AzyransReward",
         "drop": {
             "areas": [
-                "MapWorldsArena"
+                "MapWorldsGraveyard"
             ],
             "min_level": 80,
             "monsters": [],
@@ -666,7 +673,7 @@
         "eventPrice": 0,
         "id": "azyrans-reward",
         "name": "Azyran's Reward",
-        "price": 0,
+        "price": 30.08,
         "reward": "Prismatic Jewel, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -676,8 +683,8 @@
         "art": "BaitedExpectations",
         "drop": {
             "areas": [
-                "MapWorldsDunes",
-                "MapWorldsTropicalIslandUnique"
+                "MapWorldsDesert",
+                "MapWorldsDunes"
             ],
             "min_level": 23,
             "monsters": [],
@@ -686,7 +693,7 @@
         "eventPrice": 0,
         "id": "baited-expectations",
         "name": "Baited Expectations",
-        "price": 59.67,
+        "price": 0,
         "reward": "Fishing Item",
         "stack": 8,
         "standardPrice": 0,
@@ -709,7 +716,7 @@
         "eventPrice": 0,
         "id": "beauty-through-death",
         "name": "Beauty Through Death",
-        "price": 0,
+        "price": 57.6,
         "reward": "Atziri's Reflection",
         "stack": 5,
         "standardPrice": 0,
@@ -719,8 +726,7 @@
         "art": "Bijoux",
         "drop": {
             "areas": [
-                "MapWorldsDig",
-                "MapWorldsExcavation"
+                "MapWorldsCrystalOre"
             ],
             "min_level": 81,
             "monsters": [],
@@ -729,7 +735,7 @@
         "eventPrice": 0,
         "id": "bijoux",
         "name": "Bijoux",
-        "price": 0,
+        "price": 5.16,
         "reward": "Cluster Jewel, Item Level: 84",
         "stack": 3,
         "standardPrice": 0,
@@ -741,8 +747,7 @@
             "areas": [
                 "1_5_7",
                 "2_10_8",
-                "MapWorldsArachnidTomb",
-                "MapWorldsMausoleum"
+                "MapWorldsMuseum"
             ],
             "min_level": 23,
             "monsters": [],
@@ -751,7 +756,7 @@
         "eventPrice": 0,
         "id": "blind-venture",
         "name": "Blind Venture",
-        "price": 0,
+        "price": 1,
         "reward": "Ring, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -761,7 +766,7 @@
         "art": "BoonofJustice",
         "drop": {
             "areas": [
-                "MapWorldsChateau"
+                "MapWorldsOrchard"
             ],
             "min_level": 73,
             "monsters": [],
@@ -770,7 +775,7 @@
         "eventPrice": 0,
         "id": "boon-of-justice",
         "name": "Boon of Justice",
-        "price": 0,
+        "price": 0.2857,
         "reward": "Offering to the Goddess",
         "stack": 6,
         "standardPrice": 0,
@@ -789,7 +794,7 @@
         "eventPrice": 0,
         "id": "boon-of-the-first-ones",
         "name": "Boon of the First Ones",
-        "price": 0,
+        "price": 1,
         "reward": "Bestiary Item",
         "stack": 6,
         "standardPrice": 0,
@@ -799,7 +804,7 @@
         "art": "BoundByFlame",
         "drop": {
             "areas": [
-                "MapWorldsGraveyard"
+                "MapWorldsTribunal"
             ],
             "min_level": 1,
             "monsters": [],
@@ -808,7 +813,7 @@
         "eventPrice": 0,
         "id": "bound-by-flame",
         "name": "Bound by Flame",
-        "price": 0,
+        "price": 1.77,
         "reward": "Level 21 Flame Link, Quality: +20%",
         "stack": 2,
         "standardPrice": 0
@@ -817,8 +822,7 @@
         "art": "BoundlessRealms",
         "drop": {
             "areas": [
-                "MapWorldsBeach",
-                "MapWorldsShipyard"
+                "MapWorldsStrand"
             ],
             "min_level": 58,
             "monsters": [],
@@ -837,7 +841,7 @@
         "art": "BowyersDream",
         "drop": {
             "areas": [
-                "MapWorldsAshenWood"
+                "MapWorldsGraveyard"
             ],
             "min_level": 81,
             "monsters": [],
@@ -853,31 +857,6 @@
         "weight": 155.5
     },
     {
-        "art": "BrokenPromises",
-        "drop": {
-            "areas": [
-                "MapWorldsArcade",
-                "MapWorldsCitySquare",
-                "Synthesis_MapBoss",
-                "Synthesis_MapGuardian1",
-                "Synthesis_MapGuardian2",
-                "Synthesis_MapGuardian3",
-                "Synthesis_MapGuardian4"
-            ],
-            "min_level": 81,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "broken-promises",
-        "name": "Broken Promises",
-        "price": 162.5,
-        "reward": "Diamond Ring, Item Level: 87, Two-Implicit, Synthesised",
-        "stack": 2,
-        "standardPrice": 684.4,
-        "weight": 44.5
-    },
-    {
         "art": "BrokenTruce",
         "drop": {
             "areas": [],
@@ -890,7 +869,7 @@
         "eventPrice": 0,
         "id": "broken-truce",
         "name": "Broken Truce",
-        "price": 0,
+        "price": 0.5,
         "reward": "Cold Iron Point",
         "stack": 5,
         "standardPrice": 0,
@@ -900,8 +879,7 @@
         "art": "BrotherGift",
         "drop": {
             "areas": [
-                "MapWorldsNecropolis",
-                "MapWorldsTortureChamberUnique"
+                "MapWorldsCemetery"
             ],
             "min_level": 35,
             "monsters": [],
@@ -910,7 +888,7 @@
         "eventPrice": 0,
         "id": "brothers-gift",
         "name": "Brother's Gift",
-        "price": 1703,
+        "price": 355.8,
         "reward": "5x Divine Orb",
         "stack": 1,
         "standardPrice": 0,
@@ -920,6 +898,7 @@
         "art": "BrothersStash",
         "drop": {
             "areas": [
+                "MapWorldsCemetery",
                 "MapWorldsGraveTrough"
             ],
             "min_level": 35,
@@ -929,7 +908,7 @@
         "eventPrice": 0,
         "id": "brothers-stash",
         "name": "Brother's Stash",
-        "price": 4,
+        "price": 3.8,
         "reward": "5x Exalted Orb",
         "stack": 1,
         "standardPrice": 0,
@@ -939,9 +918,7 @@
         "art": "BrotherhoodInExile",
         "drop": {
             "areas": [
-                "MapWorldsAcidLakes",
-                "MapWorldsCursedCrypt",
-                "MapWorldsDungeon"
+                "MapWorldsOrchard"
             ],
             "min_level": 68,
             "monsters": [],
@@ -950,7 +927,7 @@
         "eventPrice": 0,
         "id": "brotherhood-in-exile",
         "name": "Brotherhood in Exile",
-        "price": 0,
+        "price": 2.57,
         "reward": "One With Nothing, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -960,7 +937,8 @@
         "art": "BrushPaintAndPalette",
         "drop": {
             "areas": [
-                "MapWorldsSepulchre"
+                "MapWorldsCore",
+                "MapWorldsMuseumUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -969,7 +947,7 @@
         "eventPrice": 0,
         "id": "brush-paint-and-palette",
         "name": "Brush, Paint and Palette",
-        "price": 0,
+        "price": 3.29,
         "reward": "The Artist",
         "stack": 5,
         "standardPrice": 0,
@@ -979,7 +957,7 @@
         "art": "BuriedTreasure",
         "drop": {
             "areas": [
-                "MapWorldsDig"
+                "MapWorldsCrystalOre"
             ],
             "min_level": 68,
             "monsters": [],
@@ -998,8 +976,8 @@
         "art": "BurningBlood",
         "drop": {
             "areas": [
-                "MapWorldsLighthouse",
-                "MapWorldsVolcano"
+                "MapWorldsCaldera",
+                "MapWorldsSilo"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1008,7 +986,7 @@
         "eventPrice": 0,
         "id": "burning-blood",
         "name": "Burning Blood",
-        "price": 1,
+        "price": 37.5,
         "reward": "Xoph's Blood, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -1018,7 +996,8 @@
         "art": "CallToTheFirstOnes",
         "drop": {
             "areas": [
-                "MapWorldsBrambleValley"
+                "MapWorldsArachnidNest",
+                "MapWorldsForbiddenWoods"
             ],
             "min_level": 23,
             "monsters": [],
@@ -1027,8 +1006,8 @@
         "eventPrice": 0,
         "id": "call-to-the-first-ones",
         "name": "Call to the First Ones",
-        "price": 0,
-        "reward": "Tier 1 Talisman, Corrupted",
+        "price": 1,
+        "reward": "Talisman",
         "stack": 5,
         "standardPrice": 0,
         "weight": 1636.0
@@ -1046,7 +1025,7 @@
         "eventPrice": 0,
         "id": "camerias-cut",
         "name": "Cameria's Cut",
-        "price": 0,
+        "price": 1,
         "reward": "Scarab",
         "stack": 2,
         "standardPrice": 0,
@@ -1073,7 +1052,8 @@
         "art": "ChaoticDisposition",
         "drop": {
             "areas": [
-                "MapWorldsVaalPyramidUnique"
+                "MapWorldsMineralPools",
+                "MapWorldsVault"
             ],
             "min_level": 23,
             "monsters": [],
@@ -1082,10 +1062,10 @@
         "eventPrice": 0,
         "id": "chaotic-disposition",
         "name": "Chaotic Disposition",
-        "price": 13.42,
+        "price": 4.24,
         "reward": "5x Chaos Orb",
         "stack": 1,
-        "standardPrice": 3,
+        "standardPrice": 0,
         "weight": 4202.0
     },
     {
@@ -1101,7 +1081,7 @@
         "eventPrice": 0,
         "id": "chasing-risk",
         "name": "Chasing Risk",
-        "price": 0,
+        "price": 5,
         "reward": "Synthesis Item",
         "stack": 4,
         "standardPrice": 0,
@@ -1111,7 +1091,7 @@
         "art": "Checkmate",
         "drop": {
             "areas": [
-                "MapWorldsPark"
+                "MapWorldsCourthouse"
             ],
             "min_level": 68,
             "monsters": [],
@@ -1139,7 +1119,7 @@
         "eventPrice": 0,
         "id": "choking-guilt",
         "name": "Choking Guilt",
-        "price": 3328,
+        "price": 50.64,
         "reward": "Stranglegasp",
         "stack": 6,
         "standardPrice": 0,
@@ -1149,8 +1129,8 @@
         "art": "CostlyCurio",
         "drop": {
             "areas": [
-                "MapWorldsDefiledCathedral",
-                "MapWorldsMaze"
+                "MapWorldsEstuary",
+                "MapWorldsTortureChamber"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1159,7 +1139,7 @@
         "eventPrice": 0,
         "id": "costly-curio",
         "name": "Costly Curio",
-        "price": 12.96,
+        "price": 3,
         "reward": "Item, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 0,
@@ -1178,7 +1158,7 @@
         "eventPrice": 0,
         "id": "council-of-cats",
         "name": "Council of Cats",
-        "price": 0,
+        "price": 5.5,
         "reward": "Farrul Item",
         "stack": 4,
         "standardPrice": 0,
@@ -1191,7 +1171,7 @@
                 "1_3_6",
                 "1_5_6",
                 "2_10_9",
-                "MapWorldsTempleUnique",
+                "MapWorldsCursedCryptUnique",
                 "MapWorldsTortureChamberUnique"
             ],
             "min_level": 23,
@@ -1211,8 +1191,7 @@
         "art": "CursedWords",
         "drop": {
             "areas": [
-                "MapWorldsCemetery",
-                "MapWorldsGraveyard"
+                "MapWorldsGraveTrough"
             ],
             "min_level": 68,
             "monsters": [],
@@ -1221,7 +1200,7 @@
         "eventPrice": 0,
         "id": "cursed-words",
         "name": "Cursed Words",
-        "price": 10,
+        "price": 11.79,
         "reward": "Maw of Mischief",
         "stack": 13,
         "standardPrice": 0,
@@ -1231,7 +1210,7 @@
         "art": "Damnation",
         "drop": {
             "areas": [
-                "MapWorldsCrimsonTownship",
+                "MapWorldsGraveyard",
                 "MapWorldsSanctuary"
             ],
             "min_level": 81,
@@ -1241,7 +1220,7 @@
         "eventPrice": 0,
         "id": "damnation",
         "name": "Damnation",
-        "price": 289332,
+        "price": 50,
         "reward": "The Original Scripture, Item Level: 83",
         "stack": 16,
         "standardPrice": 0,
@@ -1260,7 +1239,7 @@
         "eventPrice": 0,
         "id": "dark-dreams",
         "name": "Dark Dreams",
-        "price": 0,
+        "price": 1.33,
         "reward": "Bone Helmet, Elder Item",
         "stack": 4,
         "standardPrice": 0,
@@ -1277,7 +1256,7 @@
         "eventPrice": 0,
         "id": "dark-temptation",
         "name": "Dark Temptation",
-        "price": 0,
+        "price": 0.3143,
         "reward": "Obliteration",
         "stack": 5,
         "standardPrice": 0,
@@ -1294,18 +1273,17 @@
         "eventPrice": 0,
         "id": "darker-half",
         "name": "Darker Half",
-        "price": 20.25,
+        "price": 24.82,
         "reward": "5x Eldritch Chaos Orb",
         "stack": 3,
-        "standardPrice": 50,
+        "standardPrice": 0,
         "weight": 28.5
     },
     {
         "art": "DeadlyJoy",
         "drop": {
             "areas": [
-                "MapWorldsCoralRuins",
-                "MapWorldsSpiderLair"
+                "MapWorldsArcade"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1324,8 +1302,8 @@
         "art": "Death",
         "drop": {
             "areas": [
-                "MapWorldsBog",
-                "MapWorldsMarshes"
+                "MapWorldsInfestedValley",
+                "MapWorldsToxicSewer"
             ],
             "min_level": 68,
             "monsters": [],
@@ -1353,7 +1331,7 @@
         "eventPrice": 0,
         "id": "deathly-designs",
         "name": "Deathly Designs",
-        "price": 0,
+        "price": 1.65,
         "reward": "Level 21 Trap Gem, Quality: +23%, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -1375,7 +1353,7 @@
         "eventPrice": 0,
         "id": "dementophobia",
         "name": "Dementophobia",
-        "price": 11,
+        "price": 1,
         "reward": "10x Delirium Orb",
         "stack": 11,
         "standardPrice": 0,
@@ -1385,8 +1363,8 @@
         "art": "DemigodsWagergives",
         "drop": {
             "areas": [
-                "MapWorldsCrimsonTemple",
-                "MapWorldsLookout"
+                "MapWorldsBelfry",
+                "MapWorldsTemple"
             ],
             "min_level": 35,
             "monsters": [
@@ -1397,7 +1375,7 @@
         "eventPrice": 0,
         "id": "demigods-wager",
         "name": "Demigod's Wager",
-        "price": 1,
+        "price": 0,
         "reward": "Orb of Annulment",
         "stack": 7,
         "standardPrice": 0,
@@ -1416,17 +1394,18 @@
         "eventPrice": 0,
         "id": "desecrated-virtue",
         "name": "Desecrated Virtue",
-        "price": 1892,
+        "price": 20,
         "reward": "Level 4 Exceptional Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 7528,
+        "standardPrice": 5310,
         "weight": 26.0
     },
     {
         "art": "DesperateCrusade",
         "drop": {
             "areas": [
-                "MapWorldsOrchard"
+                "MapWorldsChannel",
+                "MapWorldsWaterways"
             ],
             "min_level": 68,
             "monsters": [],
@@ -1435,7 +1414,7 @@
         "eventPrice": 0,
         "id": "desperate-crusade",
         "name": "Desperate Crusade",
-        "price": 0,
+        "price": 1,
         "reward": "Prism Guardian",
         "stack": 3,
         "standardPrice": 0,
@@ -1445,8 +1424,7 @@
         "art": "DestinedtoCrumble",
         "drop": {
             "areas": [
-                "MapWorldsCourthouse",
-                "MapWorldsPlaza"
+                "MapWorldsLaboratory"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1455,7 +1433,7 @@
         "eventPrice": 0,
         "id": "destined-to-crumble",
         "name": "Destined to Crumble",
-        "price": 0.002,
+        "price": 0.8235,
         "reward": "Body Armour, Item Level: 100",
         "stack": 5,
         "standardPrice": 0,
@@ -1470,7 +1448,8 @@
                 "2_8_12_1",
                 "2_8_12_2",
                 "2_8_13",
-                "MapWorldsHauntedMansion"
+                "MapWorldsPark",
+                "MapWorldsRelicChambers"
             ],
             "min_level": 23,
             "monsters": [],
@@ -1479,7 +1458,7 @@
         "eventPrice": 0,
         "id": "diallas-subjugation",
         "name": "Dialla's Subjugation",
-        "price": 9.96,
+        "price": 0.8148,
         "reward": "Support Gem, Quality: +23%, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -1508,8 +1487,7 @@
         "art": "DivineBeauty",
         "drop": {
             "areas": [
-                "MapWorldsAtollUnique",
-                "MapWorldsMineralPools"
+                "MapWorldsAtollUnique"
             ],
             "min_level": 35,
             "monsters": [],
@@ -1518,10 +1496,10 @@
         "eventPrice": 0,
         "id": "divine-beauty",
         "name": "Divine Beauty",
-        "price": 260.6,
+        "price": 48.85,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 342.2,
+        "standardPrice": 531.0,
         "weight": 501.5
     },
     {
@@ -1535,11 +1513,29 @@
         "eventPrice": 0,
         "id": "divine-justice",
         "name": "Divine Justice",
-        "price": 533.3,
+        "price": 222.4,
         "reward": "Grand Spectrum, Corrupted",
         "stack": 1,
         "standardPrice": 0,
         "weight": 2.0
+    },
+    {
+        "art": "DivineShard",
+        "drop": {
+            "areas": [
+                "MapWorldsColdRiver_"
+            ],
+            "min_level": 0,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 0,
+        "id": "divine-shard",
+        "name": "Divine Shard",
+        "price": 1.25,
+        "reward": "Divine Vessel",
+        "stack": 2,
+        "standardPrice": 5310
     },
     {
         "art": "DoedresMadness",
@@ -1548,8 +1544,8 @@
                 "1_4_6_3",
                 "2_8_2_2",
                 "2_9_10_2",
-                "MapWorldsCore",
-                "MapWorldsMudGeyser"
+                "MapWorldsMuseumUnique",
+                "MapWorldsPhantasmagoria"
             ],
             "min_level": 23,
             "monsters": [],
@@ -1558,7 +1554,7 @@
         "eventPrice": 0,
         "id": "doedres-madness",
         "name": "Doedre's Madness",
-        "price": 0,
+        "price": 1,
         "reward": "Doedre Item",
         "stack": 9,
         "standardPrice": 0,
@@ -1578,7 +1574,7 @@
         "eventPrice": 0,
         "id": "doryanis-epiphany",
         "name": "Doryani's Epiphany",
-        "price": 4.29,
+        "price": 10.56,
         "reward": "Level 21 Transfigured Gem, Quality: +20%, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -1588,6 +1584,7 @@
         "art": "DrapedInDreams",
         "drop": {
             "areas": [
+                "MapWorldsArachnidTomb",
                 "MapWorldsCore"
             ],
             "min_level": 81,
@@ -1597,7 +1594,7 @@
         "eventPrice": 0,
         "id": "draped-in-dreams",
         "name": "Draped in Dreams",
-        "price": 0,
+        "price": 9.01,
         "reward": "Six-Link Astral Plate, Item Level: 100, Influenced Item",
         "stack": 5,
         "standardPrice": 0,
@@ -1659,7 +1656,7 @@
         "eventPrice": 0,
         "id": "dying-anguish",
         "name": "Dying Anguish",
-        "price": 3,
+        "price": 1.62,
         "reward": "Level 19 Transfigured Gem, Quality: +19%",
         "stack": 8,
         "standardPrice": 0,
@@ -1689,8 +1686,8 @@
                 "2_9_3",
                 "2_9_4",
                 "2_9_5",
-                "MapWorldsDunes",
-                "MapWorldsDunesUnique"
+                "MapWorldsDesert",
+                "MapWorldsDunes"
             ],
             "min_level": 27,
             "monsters": [],
@@ -1699,7 +1696,7 @@
         "eventPrice": 0,
         "id": "earth-drinker",
         "name": "Earth Drinker",
-        "price": 0,
+        "price": 2.75,
         "reward": "Granite Flask",
         "stack": 5,
         "standardPrice": 0,
@@ -1709,7 +1706,7 @@
         "art": "EchoesOfLove",
         "drop": {
             "areas": [
-                "MapWorldsCore"
+                "MapWorldsArachnidTomb"
             ],
             "min_level": 54,
             "monsters": [],
@@ -1718,7 +1715,7 @@
         "eventPrice": 0,
         "id": "echoes-of-love",
         "name": "Echoes of Love",
-        "price": 14,
+        "price": 0,
         "reward": "Fidelitas' Spike,  Two-Implicit,  Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -1753,10 +1750,10 @@
         "eventPrice": 0,
         "id": "eldritch-perfection",
         "name": "Eldritch Perfection",
-        "price": 5,
+        "price": 2.04,
         "reward": "Item, Item Level: 100, Perfect Eldritch Implicit Modifier",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 4,
         "weight": 64.0
     },
     {
@@ -1765,8 +1762,8 @@
             "areas": [
                 "2_7_5_1",
                 "2_7_5_2",
-                "MapWorldsBoneCryptUnique",
-                "MapWorldsOvergrownShrineUnique"
+                "MapWorldsNecropolisUnique",
+                "MapWorldsOvergrownShrine"
             ],
             "min_level": 60,
             "monsters": [],
@@ -1775,7 +1772,7 @@
         "eventPrice": 0,
         "id": "emperor-of-purity",
         "name": "Emperor of Purity",
-        "price": 0,
+        "price": 3.69,
         "reward": "Six-Link Holy Chainmail, Item Level: 60",
         "stack": 7,
         "standardPrice": 0,
@@ -1787,9 +1784,8 @@
             "areas": [
                 "1_3_15",
                 "2_8_4",
-                "MapWorldsCourtyard",
-                "MapWorldsOrchard",
-                "MapWorldsTerrace"
+                "MapWorldsPlaza",
+                "MapWorldsResidence"
             ],
             "min_level": 23,
             "monsters": [],
@@ -1798,10 +1794,10 @@
         "eventPrice": 0,
         "id": "emperors-luck",
         "name": "Emperor's Luck",
-        "price": 1,
+        "price": 0.7297,
         "reward": "5x Currency",
         "stack": 5,
-        "standardPrice": 3,
+        "standardPrice": 4,
         "weight": 49357.0
     },
     {
@@ -1815,18 +1811,36 @@
         "eventPrice": 0,
         "id": "endless-night",
         "name": "Endless Night",
-        "price": 0,
+        "price": 1.45,
         "reward": "Maloney's Mechanism",
         "stack": 7,
         "standardPrice": 0,
         "weight": 553.0
     },
     {
+        "art": "EnergySword",
+        "drop": {
+            "areas": [
+                "MapWorldsCourtyardUnique",
+                "MapWorldsTower"
+            ],
+            "min_level": 0,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 0,
+        "id": "energy-sword",
+        "name": "Energy Sword",
+        "price": 42.88,
+        "reward": "Ephemeral Edge",
+        "stack": 3,
+        "standardPrice": 0
+    },
+    {
         "art": "EtchedInBlood",
         "drop": {
             "areas": [
-                "MapWorldsCrimsonTemple",
-                "MapWorldsLair"
+                "MapWorldsDarkForest"
             ],
             "min_level": 77,
             "monsters": [],
@@ -1852,7 +1866,7 @@
         "eventPrice": 0,
         "id": "eternal-bonds",
         "name": "Eternal Bonds",
-        "price": 0,
+        "price": 3.03,
         "reward": "Replica Cortex",
         "stack": 4,
         "standardPrice": 0,
@@ -1862,6 +1876,7 @@
         "art": "EverChanging",
         "drop": {
             "areas": [
+                "MapWorldsFactory",
                 "MapWorldsFoundry"
             ],
             "min_level": 68,
@@ -1871,7 +1886,7 @@
         "eventPrice": 0,
         "id": "ever-changing",
         "name": "Ever-Changing",
-        "price": 0,
+        "price": 1.5,
         "reward": "10x Orb of Unmaking",
         "stack": 3,
         "standardPrice": 0,
@@ -1890,7 +1905,7 @@
         "eventPrice": 0,
         "id": "fateful-meeting",
         "name": "Fateful Meeting",
-        "price": 30,
+        "price": 0,
         "reward": "League-Specific Item, Double-Influenced Item, Item Level: 97, Two-Implicit, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -1912,7 +1927,7 @@
         "eventPrice": 0,
         "id": "fathers-love",
         "name": "Father's Love",
-        "price": 0,
+        "price": 533.8,
         "reward": "Sublime Vision",
         "stack": 2,
         "standardPrice": 0,
@@ -1922,7 +1937,8 @@
         "art": "FireOfUnknownOrigin",
         "drop": {
             "areas": [
-                "MapWorldsGhetto"
+                "MapWorldsGhetto",
+                "MapWorldsPier"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1931,7 +1947,7 @@
         "eventPrice": 0,
         "id": "fire-of-unknown-origin",
         "name": "Fire Of Unknown Origin",
-        "price": 1331,
+        "price": 741.3,
         "reward": "Nimis",
         "stack": 7,
         "standardPrice": 0,
@@ -1941,8 +1957,8 @@
         "art": "ForbiddenPower",
         "drop": {
             "areas": [
-                "MapWorldsHauntedMansion",
-                "MapWorldsMoonTempleUnique"
+                "MapWorldsMoonTempleUnique",
+                "MapWorldsPark"
             ],
             "min_level": 60,
             "monsters": [],
@@ -1961,7 +1977,7 @@
         "art": "Friendship",
         "drop": {
             "areas": [
-                "MapWorldsExcavation"
+                "MapWorldsCrystalOre"
             ],
             "min_level": 81,
             "monsters": [],
@@ -1970,7 +1986,7 @@
         "eventPrice": 0,
         "id": "friendship",
         "name": "Friendship",
-        "price": 0,
+        "price": 35.59,
         "reward": "Aul's Uprising",
         "stack": 3,
         "standardPrice": 0,
@@ -1980,8 +1996,8 @@
         "art": "FromBonesToAshes",
         "drop": {
             "areas": [
-                "MapWorldsLavaLake",
-                "MapWorldsSiege"
+                "MapWorldsEstuary",
+                "MapWorldsVolcano"
             ],
             "min_level": 55,
             "monsters": [],
@@ -1990,7 +2006,7 @@
         "eventPrice": 0,
         "id": "from-bone-to-ashes",
         "name": "From Bone to Ashes",
-        "price": 30,
+        "price": 0,
         "reward": "Ngamahu's Flame, Two-Implicit, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -2000,7 +2016,6 @@
         "art": "FurtherInvention",
         "drop": {
             "areas": [
-                "MapWorldsFoundry",
                 "MapWorldsSilo"
             ],
             "min_level": 81,
@@ -2027,7 +2042,7 @@
         "eventPrice": 0,
         "id": "gemcutters-mercy",
         "name": "Gemcutter's Mercy",
-        "price": 2.68,
+        "price": 17.0,
         "reward": "Empower, Enhance or Enlighten",
         "stack": 3,
         "standardPrice": 0,
@@ -2038,7 +2053,7 @@
         "drop": {
             "areas": [
                 "1_3_13",
-                "MapWorldsMoonTempleUnique"
+                "MapWorldsPromenade"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2047,7 +2062,7 @@
         "eventPrice": 0,
         "id": "gemcutters-promise",
         "name": "Gemcutter's Promise",
-        "price": 1,
+        "price": 1.23,
         "reward": "Gem, Quality: +20%",
         "stack": 3,
         "standardPrice": 0,
@@ -2057,7 +2072,7 @@
         "art": "GiftOfAsenath",
         "drop": {
             "areas": [
-                "MapWorldsDunes",
+                "MapWorldsDesert",
                 "MapWorldsDunesUnique"
             ],
             "min_level": 75,
@@ -2067,7 +2082,7 @@
         "eventPrice": 0,
         "id": "gift-of-asenath",
         "name": "Gift of Asenath",
-        "price": 10,
+        "price": 11.84,
         "reward": "Asenath's Gentle Touch, Two-Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -2077,6 +2092,7 @@
         "art": "GiftOfTheGemlingQueen",
         "drop": {
             "areas": [
+                "MapWorldsFactory",
                 "MapWorldsTempleUnique"
             ],
             "min_level": 70,
@@ -2086,7 +2102,7 @@
         "eventPrice": 0,
         "id": "gift-of-the-gemling-queen",
         "name": "Gift of the Gemling Queen",
-        "price": 0,
+        "price": 1,
         "reward": "Level 20 Support Gem",
         "stack": 9,
         "standardPrice": 0,
@@ -2116,8 +2132,7 @@
         "art": "GraveKnowledge",
         "drop": {
             "areas": [
-                "MapWorldsCursedCryptUnique",
-                "MapWorldsNecropolis"
+                "MapWorldsCursedCryptUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2126,7 +2141,7 @@
         "eventPrice": 0,
         "id": "grave-knowledge",
         "name": "Grave Knowledge",
-        "price": 0,
+        "price": 1,
         "reward": "Summon Raging Spirit, Quality: +20%",
         "stack": 6,
         "standardPrice": 0,
@@ -2143,7 +2158,7 @@
         "eventPrice": 0,
         "id": "guardians-challenge",
         "name": "Guardian's Challenge",
-        "price": 0,
+        "price": 2.17,
         "reward": "Shaper Guardian Map",
         "stack": 4,
         "standardPrice": 0,
@@ -2153,8 +2168,7 @@
         "art": "HarmonyOfSouls",
         "drop": {
             "areas": [
-                "MapWorldsCore",
-                "MapWorldsSepulchre"
+                "MapWorldsCells"
             ],
             "min_level": 68,
             "monsters": [],
@@ -2173,6 +2187,7 @@
         "art": "HauntingShadows",
         "drop": {
             "areas": [
+                "MapWorldsFoundry",
                 "MapWorldsSilo"
             ],
             "min_level": 68,
@@ -2182,7 +2197,7 @@
         "eventPrice": 0,
         "id": "haunting-shadows",
         "name": "Haunting Shadows",
-        "price": 0,
+        "price": 1.33,
         "reward": "Metamorph Item",
         "stack": 4,
         "standardPrice": 0,
@@ -2195,7 +2210,7 @@
                 "1_2_14_3",
                 "2_7_12_1",
                 "2_7_12_2",
-                "MapWorldsMaze",
+                "MapWorldsPhantasmagoria",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 23,
@@ -2205,7 +2220,7 @@
         "eventPrice": 0,
         "id": "her-mask",
         "name": "Her Mask",
-        "price": 0.025,
+        "price": 0,
         "reward": "Sacrifice Fragment",
         "stack": 4,
         "standardPrice": 0,
@@ -2215,7 +2230,7 @@
         "art": "Heterochromia",
         "drop": {
             "areas": [
-                "MapWorldsLighthouse",
+                "MapWorldsLavaLake",
                 "MapWorldsTheatreOfLies"
             ],
             "min_level": 23,
@@ -2225,10 +2240,10 @@
         "eventPrice": 0,
         "id": "heterochromia",
         "name": "Heterochromia",
-        "price": 0,
+        "price": 2.98,
         "reward": "Two-Stone Ring",
         "stack": 2,
-        "standardPrice": 0,
+        "standardPrice": 4,
         "weight": 1747.0
     },
     {
@@ -2242,17 +2257,18 @@
         "eventPrice": 0,
         "id": "history",
         "name": "History",
-        "price": 79383,
+        "price": 866.4,
         "reward": "2x Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 264450,
         "weight": 1.5
     },
     {
         "art": "Home",
         "drop": {
             "areas": [
-                "MapWorldsChateau"
+                "MapWorldsCitySquare",
+                "MapWorldsSiege"
             ],
             "min_level": 38,
             "monsters": [],
@@ -2261,8 +2277,8 @@
         "eventPrice": 0,
         "id": "home",
         "name": "Home",
-        "price": 5.58,
-        "reward": "Empower, Enhance or Enlighten, Quality: +1-20%",
+        "price": 22.73,
+        "reward": "Exceptional Support Gem, Quality: +1-20%",
         "stack": 3,
         "standardPrice": 0,
         "weight": 105.0
@@ -2271,7 +2287,8 @@
         "art": "Hope",
         "drop": {
             "areas": [
-                "MapWorldsLavaLake"
+                "MapWorldsCaldera",
+                "MapWorldsEstuary"
             ],
             "min_level": 30,
             "monsters": [],
@@ -2299,10 +2316,10 @@
         "eventPrice": 0,
         "id": "house-of-mirrors",
         "name": "House of Mirrors",
-        "price": 126776,
+        "price": 2406,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 154368,
+        "standardPrice": 250433,
         "weight": 1.5
     },
     {
@@ -2316,7 +2333,7 @@
         "eventPrice": 0,
         "id": "hubris",
         "name": "Hubris",
-        "price": 0,
+        "price": 0.7059,
         "reward": "Ring",
         "stack": 5,
         "standardPrice": 0,
@@ -2328,8 +2345,7 @@
             "areas": [
                 "1_4_1",
                 "2_9_1",
-                "MapWorldsShipyard",
-                "MapWorldsWaterways"
+                "MapWorldsForkingRiver"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2338,7 +2354,7 @@
         "eventPrice": 0,
         "id": "humility",
         "name": "Humility",
-        "price": 0,
+        "price": 0.8058,
         "reward": "Tabula Rasa",
         "stack": 9,
         "standardPrice": 0,
@@ -2352,7 +2368,7 @@
                 "2_6_12",
                 "2_8_1",
                 "MapWorldsForkingRiver",
-                "MapWorldsIceberg"
+                "MapWorldsFrozenCabins"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2361,7 +2377,7 @@
         "eventPrice": 0,
         "id": "hunters-resolve",
         "name": "Hunter's Resolve",
-        "price": 0,
+        "price": 0.9178,
         "reward": "Bow",
         "stack": 8,
         "standardPrice": 0,
@@ -2383,7 +2399,7 @@
         "eventPrice": 0,
         "id": "hunters-reward",
         "name": "Hunter's Reward",
-        "price": 20.33,
+        "price": 16.15,
         "reward": "The Taming",
         "stack": 3,
         "standardPrice": 0,
@@ -2393,7 +2409,8 @@
         "art": "ISeeBrothers",
         "drop": {
             "areas": [
-                "MapWorldsOvergrownShrineUnique"
+                "MapWorldsArcade",
+                "MapWorldsPlateau"
             ],
             "min_level": 68,
             "monsters": [],
@@ -2402,7 +2419,7 @@
         "eventPrice": 0,
         "id": "i-see-brothers",
         "name": "I See Brothers",
-        "price": 117,
+        "price": 61.68,
         "reward": "2x Fracturing Orb",
         "stack": 2,
         "standardPrice": 0,
@@ -2412,7 +2429,7 @@
         "art": "ImmortalResolve",
         "drop": {
             "areas": [
-                "MapWorldsCarcass"
+                "MapWorldsPhantasmagoria"
             ],
             "min_level": 68,
             "monsters": [],
@@ -2421,7 +2438,7 @@
         "eventPrice": 0,
         "id": "immortal-resolve",
         "name": "Immortal Resolve",
-        "price": 0,
+        "price": 4.64,
         "reward": "Six-Linked Body Armour, Influenced Item",
         "stack": 6,
         "standardPrice": 0,
@@ -2446,8 +2463,8 @@
         "eventPrice": 0,
         "id": "imperfect-memories",
         "name": "Imperfect Memories",
-        "price": 74.36,
-        "reward": "Jewellery, Item Level: 100, Three-Implicit, Synthesised",
+        "price": 3,
+        "reward": "Astrolabe",
         "stack": 5,
         "standardPrice": 0,
         "weight": 44.5
@@ -2456,8 +2473,8 @@
         "art": "ImperialLegacy",
         "drop": {
             "areas": [
-                "MapWorldsDrySea",
-                "MapWorldsDunesUnique"
+                "MapWorldsDesert",
+                "MapWorldsDesertSpring"
             ],
             "min_level": 81,
             "monsters": [],
@@ -2466,7 +2483,7 @@
         "eventPrice": 0,
         "id": "imperial-legacy",
         "name": "Imperial Legacy",
-        "price": 0.5,
+        "price": 0.3333,
         "reward": "Six-Link Imperial Bow, Item Level: 100",
         "stack": 22,
         "standardPrice": 0,
@@ -2489,7 +2506,8 @@
                 "2_8_6",
                 "2_8_8",
                 "2_8_9",
-                "MapWorldsGhetto"
+                "MapWorldsPromenade",
+                "MapWorldsRamparts"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2498,7 +2516,7 @@
         "eventPrice": 0,
         "id": "jack-in-the-box",
         "name": "Jack in the Box",
-        "price": 0,
+        "price": 0.7368,
         "reward": "Item",
         "stack": 4,
         "standardPrice": 0,
@@ -2515,7 +2533,7 @@
         "eventPrice": 0,
         "id": "judging-voices",
         "name": "Judging Voices",
-        "price": 3.89,
+        "price": 0,
         "reward": "Forbidden Shako",
         "stack": 9,
         "standardPrice": 0,
@@ -2539,7 +2557,7 @@
         "eventPrice": 0,
         "id": "justified-ambition",
         "name": "Justified Ambition",
-        "price": 0,
+        "price": 1.44,
         "reward": "Synthesis Map",
         "stack": 5,
         "standardPrice": 0,
@@ -2559,7 +2577,7 @@
         "eventPrice": 0,
         "id": "keepers-corruption",
         "name": "Keeper's Corruption",
-        "price": 0,
+        "price": 4,
         "reward": "Eldritch Bone Helmet (Concentrated Effect), Item Level: 89, Elder Item",
         "stack": 7,
         "standardPrice": 0,
@@ -2571,7 +2589,8 @@
             "areas": [
                 "1_5_5",
                 "2_10_4",
-                "MapWorldsCoves"
+                "MapWorldsGrotto",
+                "MapWorldsWaterways"
             ],
             "min_level": 33,
             "monsters": [],
@@ -2580,10 +2599,10 @@
         "eventPrice": 0,
         "id": "lachrymal-necrosis",
         "name": "Lachrymal Necrosis",
-        "price": 23.54,
+        "price": 7.81,
         "reward": "Jewel, Implicit Modifier: , Corrupted Blood cannot be inflicted on you, Corrupted",
         "stack": 3,
-        "standardPrice": 20,
+        "standardPrice": 0,
         "weight": 808.0
     },
     {
@@ -2596,8 +2615,7 @@
                 "2_6_2",
                 "2_6_3",
                 "2_6_4",
-                "MapWorldsReef",
-                "MapWorldsStrand"
+                "MapWorldsBeach"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2606,7 +2624,7 @@
         "eventPrice": 0,
         "id": "lantadors-lost-love",
         "name": "Lantador's Lost Love",
-        "price": 0,
+        "price": 1,
         "reward": "Two-Stone Ring",
         "stack": 7,
         "standardPrice": 0,
@@ -2625,7 +2643,7 @@
         "eventPrice": 0,
         "id": "last-hope",
         "name": "Last Hope",
-        "price": 1,
+        "price": 0.7727,
         "reward": "Mortal Hope",
         "stack": 3,
         "standardPrice": 0,
@@ -2635,7 +2653,8 @@
         "art": "LastStand",
         "drop": {
             "areas": [
-                "MapWorldsSiege"
+                "MapWorldsArsenal",
+                "MapWorldsMalformation"
             ],
             "min_level": 64,
             "monsters": [],
@@ -2644,7 +2663,7 @@
         "eventPrice": 0,
         "id": "last-stand",
         "name": "Last Stand",
-        "price": 0,
+        "price": 5,
         "reward": "The Surrender",
         "stack": 3,
         "standardPrice": 0,
@@ -2654,8 +2673,8 @@
         "art": "LeftToFate",
         "drop": {
             "areas": [
-                "MapWorldsFrozenCabins",
-                "MapWorldsIceberg"
+                "MapWorldsChannel",
+                "MapWorldsGraveTrough"
             ],
             "min_level": 78,
             "monsters": [],
@@ -2664,7 +2683,7 @@
         "eventPrice": 0,
         "id": "left-to-fate",
         "name": "Left to Fate",
-        "price": 0,
+        "price": 0.875,
         "reward": "Map, Map Tier: 16, Unidentified Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -2681,16 +2700,17 @@
         "eventPrice": 0,
         "id": "lethean-temptation",
         "name": "Lethean Temptation",
-        "price": 21.57,
+        "price": 125.8,
         "reward": "Nebulis",
         "stack": 6,
-        "standardPrice": 0,
+        "standardPrice": 1062,
         "weight": 105.0
     },
     {
         "art": "LigthAndTruth",
         "drop": {
             "areas": [
+                "MapWorldsIvoryTemple",
                 "MapWorldsPalace"
             ],
             "min_level": 31,
@@ -2700,7 +2720,7 @@
         "eventPrice": 0,
         "id": "light-and-truth",
         "name": "Light and Truth",
-        "price": 0,
+        "price": 16.75,
         "reward": "Crystal Sceptre",
         "stack": 2,
         "standardPrice": 0,
@@ -2710,7 +2730,8 @@
         "art": "LingeringRemnants",
         "drop": {
             "areas": [
-                "MapWorldsMudGeyser"
+                "MapWorldsCoralRuins",
+                "MapWorldsRamparts"
             ],
             "min_level": 78,
             "monsters": [],
@@ -2719,7 +2740,7 @@
         "eventPrice": 0,
         "id": "lingering-remnants",
         "name": "Lingering Remnants",
-        "price": 0,
+        "price": 1.17,
         "reward": "Vaal Temple Map, Corrupted",
         "stack": 16,
         "standardPrice": 1,
@@ -2729,7 +2750,7 @@
         "art": "LonelyWarrior",
         "drop": {
             "areas": [
-                "MapWorldsMudGeyser",
+                "MapWorldsCaldera",
                 "MapWorldsVolcano"
             ],
             "min_level": 75,
@@ -2739,7 +2760,7 @@
         "eventPrice": 0,
         "id": "lonely-warrior",
         "name": "Lonely Warrior",
-        "price": 92.57,
+        "price": 103.6,
         "reward": "Defiance of Destiny",
         "stack": 10,
         "standardPrice": 0,
@@ -2775,7 +2796,7 @@
         "eventPrice": 0,
         "id": "love-through-ice",
         "name": "Love Through Ice",
-        "price": 1824,
+        "price": 92.04,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -2786,7 +2807,7 @@
         "drop": {
             "areas": [
                 "2_7_6",
-                "MapWorldsSprings"
+                "MapWorldsUndergroundRiverUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2795,7 +2816,7 @@
         "eventPrice": 0,
         "id": "loyalty",
         "name": "Loyalty",
-        "price": 0.002,
+        "price": 0,
         "reward": "3x Orb of Fusing",
         "stack": 5,
         "standardPrice": 0,
@@ -2805,7 +2826,7 @@
         "art": "LuckyBastion",
         "drop": {
             "areas": [
-                "MapWorldsSiege"
+                "MapWorldsPromenade"
             ],
             "min_level": 51,
             "monsters": [],
@@ -2814,7 +2835,7 @@
         "eventPrice": 0,
         "id": "lucky-bastion",
         "name": "Lucky Bastion",
-        "price": 0,
+        "price": 622.7,
         "reward": "Svalinn",
         "stack": 6,
         "standardPrice": 0
@@ -2825,8 +2846,8 @@
             "areas": [
                 "1_3_9",
                 "2_8_8",
-                "MapWorldsMarshes",
-                "MapWorldsWharf"
+                "MapWorldsPier",
+                "MapWorldsPort"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2835,7 +2856,7 @@
         "eventPrice": 0,
         "id": "lucky-connections",
         "name": "Lucky Connections",
-        "price": 0,
+        "price": 1,
         "reward": "20x Orb of Fusing",
         "stack": 7,
         "standardPrice": 0,
@@ -2854,7 +2875,7 @@
         "eventPrice": 0,
         "id": "lucky-deck",
         "name": "Lucky Deck",
-        "price": 0,
+        "price": 1.5,
         "reward": "10x Stacked Deck",
         "stack": 9,
         "standardPrice": 0,
@@ -2873,18 +2894,17 @@
         "eventPrice": 0,
         "id": "luminous-trove",
         "name": "Luminous Trove",
-        "price": 1248,
+        "price": 57.71,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 2124,
         "weight": 64.0
     },
     {
         "art": "LysahsRespite",
         "drop": {
             "areas": [
-                "MapWorldsStrandUnique",
-                "MapWorldsUndergroundSea"
+                "MapWorldsMineralPools"
             ],
             "min_level": 23,
             "monsters": [],
@@ -2893,40 +2913,17 @@
         "eventPrice": 0,
         "id": "lysahs-respite",
         "name": "Lysah's Respite",
-        "price": 5.4,
+        "price": 1,
         "reward": "Agate Amulet, Corrupted",
         "stack": 6,
         "standardPrice": 0,
         "weight": 1976.0
     },
     {
-        "art": "MagnumOpus",
-        "drop": {
-            "areas": [
-                "Synthesis_MapBoss",
-                "Synthesis_MapGuardian1",
-                "Synthesis_MapGuardian2",
-                "Synthesis_MapGuardian3",
-                "Synthesis_MapGuardian4"
-            ],
-            "min_level": 81,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "magnum-opus",
-        "name": "Magnum Opus",
-        "price": 35.21,
-        "reward": "Item, Item Level: 100, Three-Implicit, Synthesised",
-        "stack": 5,
-        "standardPrice": 1369,
-        "weight": 64.0
-    },
-    {
         "art": "ManWithBear",
         "drop": {
             "areas": [
-                "MapWorldsCemetery"
+                "MapWorldsMarshes"
             ],
             "min_level": 68,
             "monsters": [],
@@ -2935,7 +2932,7 @@
         "eventPrice": 0,
         "id": "man-with-bear",
         "name": "Man With Bear",
-        "price": 0,
+        "price": 1,
         "reward": "Bestiary Scarab",
         "stack": 3,
         "standardPrice": 0,
@@ -2945,7 +2942,8 @@
         "art": "Matryoshka",
         "drop": {
             "areas": [
-                "MapWorldsGardens"
+                "MapWorldsGardens",
+                "MapWorldsPort"
             ],
             "min_level": 81,
             "monsters": [],
@@ -2954,8 +2952,8 @@
         "eventPrice": 0,
         "id": "matryoshka",
         "name": "Matryoshka",
-        "price": 100,
-        "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Incubating Talisman Item, Corrupted",
+        "price": 4.7,
+        "reward": " Onyx Amulet, Item Level: 85, Quality: +20%, Influenced Item, Four Anointments, Corrupted",
         "stack": 8,
         "standardPrice": 0,
         "weight": 1.5
@@ -2964,7 +2962,8 @@
         "art": "RussiaDivinationCard",
         "drop": {
             "areas": [
-                "MapWorldsDarkForest"
+                "MapWorldsArachnidNest",
+                "MapWorldsBrambleValley"
             ],
             "min_level": 82,
             "monsters": [],
@@ -2973,18 +2972,17 @@
         "eventPrice": 0,
         "id": "mawr-blaidd",
         "name": "Mawr Blaidd",
-        "price": 19.26,
+        "price": 2.2,
         "reward": "Eyes of the Greatwolf",
         "stack": 16,
-        "standardPrice": 0,
+        "standardPrice": 1062,
         "weight": 274.5
     },
     {
         "art": "MercilessArmament",
         "drop": {
             "areas": [
-                "MapWorldsPromenade",
-                "MapWorldsRacecourse_"
+                "MapWorldsArsenal"
             ],
             "min_level": 81,
             "monsters": [],
@@ -2993,7 +2991,7 @@
         "eventPrice": 0,
         "id": "merciless-armament",
         "name": "Merciless Armament",
-        "price": 7,
+        "price": 5.29,
         "reward": "Merciless Two-Hand Weapon, Item Level: 100",
         "stack": 4,
         "standardPrice": 0,
@@ -3007,8 +3005,7 @@
                 "1_5_7",
                 "2_10_8",
                 "2_10_9",
-                "MapWorldsCursedCrypt",
-                "MapWorldsMausoleum"
+                "MapWorldsTortureChamberUnique"
             ],
             "min_level": 40,
             "monsters": [],
@@ -3017,7 +3014,7 @@
         "eventPrice": 0,
         "id": "might-is-right",
         "name": "Might is Right",
-        "price": 65.88,
+        "price": 0,
         "reward": "Trypanon",
         "stack": 9,
         "standardPrice": 0,
@@ -3038,7 +3035,7 @@
         "eventPrice": 0,
         "id": "misery-in-darkness",
         "name": "Misery in Darkness",
-        "price": 0,
+        "price": 4,
         "reward": "Shroud of the Lightless",
         "stack": 6,
         "standardPrice": 0,
@@ -3050,8 +3047,8 @@
             "areas": [
                 "1_4_7",
                 "2_9_2",
-                "MapWorldsColdRiver_",
-                "MapWorldsFrozenCabins"
+                "MapWorldsFrozenCabins",
+                "MapWorldsIceberg"
             ],
             "min_level": 23,
             "monsters": [],
@@ -3069,7 +3066,13 @@
     {
         "art": "Monochrome",
         "drop": {
-            "areas": [],
+            "areas": [
+                "Synthesis_MapBoss",
+                "Synthesis_MapGuardian1",
+                "Synthesis_MapGuardian2",
+                "Synthesis_MapGuardian3",
+                "Synthesis_MapGuardian4"
+            ],
             "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/AtlasMemory/IgnoranceBoss/IgnoranceBoss"
@@ -3079,7 +3082,7 @@
         "eventPrice": 0,
         "id": "monochrome",
         "name": "Monochrome",
-        "price": 53.27,
+        "price": 8.43,
         "reward": "Valdo's Puzzle Box",
         "stack": 3,
         "standardPrice": 0,
@@ -3089,6 +3092,7 @@
         "art": "MoreIsNeverEnough",
         "drop": {
             "areas": [
+                "MapWorldsDesertSpring",
                 "MapWorldsReef"
             ],
             "min_level": 68,
@@ -3098,10 +3102,10 @@
         "eventPrice": 0,
         "id": "more-is-never-enough",
         "name": "More is Never Enough",
-        "price": 0,
+        "price": 0.602,
         "reward": "4x Scarab",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 23257.0
     },
     {
@@ -3112,8 +3116,7 @@
                 "1_5_7",
                 "2_10_8",
                 "2_10_9",
-                "MapWorldsMausoleum",
-                "MapWorldsSepulchre"
+                "MapWorldsMausoleum"
             ],
             "min_level": 23,
             "monsters": [],
@@ -3122,7 +3125,7 @@
         "eventPrice": 0,
         "id": "no-traces",
         "name": "No Traces",
-        "price": 2,
+        "price": 0.9333,
         "reward": "30x Orb of Scouring",
         "stack": 9,
         "standardPrice": 0,
@@ -3144,7 +3147,7 @@
         "eventPrice": 0,
         "id": "nooks-crown",
         "name": "Nook's Crown",
-        "price": 0,
+        "price": 6,
         "reward": "Bone Helmet, Item Level: 100, Elder Item",
         "stack": 4,
         "standardPrice": 0,
@@ -3155,7 +3158,7 @@
         "drop": {
             "areas": [
                 "MapWorldsFortress",
-                "MapWorldsTortureChamber"
+                "MapWorldsMuseum"
             ],
             "min_level": 81,
             "monsters": [],
@@ -3164,7 +3167,7 @@
         "eventPrice": 0,
         "id": "one-last-score",
         "name": "One Last Score",
-        "price": 165.1,
+        "price": 13,
         "reward": "Experimented Jewellery, Item Level: 86",
         "stack": 5,
         "standardPrice": 0
@@ -3173,7 +3176,7 @@
         "art": "Outfoxed",
         "drop": {
             "areas": [
-                "MapWorldsLair",
+                "MapWorldsBeach",
                 "MapWorldsZiggurat"
             ],
             "min_level": 81,
@@ -3183,36 +3186,17 @@
         "eventPrice": 0,
         "id": "outfoxed",
         "name": "Outfoxed",
-        "price": 0,
+        "price": 98.42,
         "reward": "Veiled Exalted Orb",
         "stack": 2,
         "standardPrice": 0
     },
     {
-        "art": "ParasiticPassengers",
-        "drop": {
-            "areas": [
-                "MapWorldsCarcass"
-            ],
-            "min_level": 81,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "parasitic-passengers",
-        "name": "Parasitic Passengers",
-        "price": 3,
-        "reward": "10x Incubator, Item Level: 84",
-        "stack": 8,
-        "standardPrice": 0,
-        "weight": 728.5
-    },
-    {
         "art": "PeacefulMoments",
         "drop": {
             "areas": [
-                "MapWorldsOrchard",
-                "MapWorldsPlaza"
+                "MapWorldsConservatory",
+                "MapWorldsOrchard"
             ],
             "min_level": 68,
             "monsters": [],
@@ -3221,11 +3205,29 @@
         "eventPrice": 0,
         "id": "peaceful-moments",
         "name": "Peaceful Moments",
-        "price": 9.86,
+        "price": 9.5,
         "reward": "Timeless Jewel",
         "stack": 5,
         "standardPrice": 0,
         "weight": 274.5
+    },
+    {
+        "art": "PearlsBeforeSwine",
+        "drop": {
+            "areas": [
+                "MapWorldsGraveTrough"
+            ],
+            "min_level": 0,
+            "monsters": [],
+            "text": ""
+        },
+        "eventPrice": 0,
+        "id": "pearls-before-swine",
+        "name": "Pearls Before Swine",
+        "price": 15,
+        "reward": "Progenesis",
+        "stack": 3,
+        "standardPrice": 0
     },
     {
         "art": "Perfection",
@@ -3267,7 +3269,7 @@
         "eventPrice": 0,
         "id": "poisoned-faith",
         "name": "Poisoned Faith",
-        "price": 0,
+        "price": 3.24,
         "reward": "Arakaali's Fang, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -3284,7 +3286,7 @@
         "eventPrice": 0,
         "id": "prejudice",
         "name": "Prejudice",
-        "price": 8,
+        "price": 3.29,
         "reward": "Item, Influenced Item",
         "stack": 7,
         "standardPrice": 0,
@@ -3294,7 +3296,8 @@
         "art": "PrideBeforeTheFall",
         "drop": {
             "areas": [
-                "MapWorldsTribunal"
+                "MapWorldsEstuary",
+                "MapWorldsVolcano"
             ],
             "min_level": 68,
             "monsters": [],
@@ -3303,7 +3306,7 @@
         "eventPrice": 0,
         "id": "pride-before-the-fall",
         "name": "Pride Before the Fall",
-        "price": 0,
+        "price": 37.26,
         "reward": "Kaom's Heart, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -3313,8 +3316,8 @@
         "art": "PrideOfTheFirstOnes",
         "drop": {
             "areas": [
-                "MapWorldsBurialChambers",
-                "MapWorldsSprings"
+                "MapWorldsTropicalIsland",
+                "MapWorldsUndergroundRiverUnique"
             ],
             "min_level": 80,
             "monsters": [],
@@ -3323,7 +3326,7 @@
         "eventPrice": 0,
         "id": "pride-of-the-first-ones",
         "name": "Pride of the First Ones",
-        "price": 0,
+        "price": 19.5,
         "reward": "Farrul's Fur",
         "stack": 7,
         "standardPrice": 0,
@@ -3342,7 +3345,7 @@
         "eventPrice": 0,
         "id": "prometheus-armoury",
         "name": "Prometheus' Armoury",
-        "price": 0,
+        "price": 1,
         "reward": "One-Hand Weapon, Item Level: 100, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 0,
@@ -3352,8 +3355,8 @@
         "art": "Prosperity",
         "drop": {
             "areas": [
-                "MapWorldsHauntedMansion",
-                "MapWorldsRelicChambers"
+                "MapWorldsPalace",
+                "MapWorldsResidence"
             ],
             "min_level": 81,
             "monsters": [],
@@ -3372,8 +3375,8 @@
         "art": "RainTempter",
         "drop": {
             "areas": [
-                "MapWorldsPlaza",
-                "MapWorldsPromenade"
+                "MapWorldsGardens",
+                "MapWorldsPlaza"
             ],
             "min_level": 68,
             "monsters": [],
@@ -3394,7 +3397,8 @@
             "areas": [
                 "2_7_2",
                 "2_8_10",
-                "MapWorldsCastleRuins"
+                "MapWorldsBoneCryptUnique",
+                "MapWorldsPlateau"
             ],
             "min_level": 23,
             "monsters": [],
@@ -3403,7 +3407,7 @@
         "eventPrice": 0,
         "id": "rain-of-chaos",
         "name": "Rain of Chaos",
-        "price": 0,
+        "price": 0.1042,
         "reward": "Chaos Orb",
         "stack": 8,
         "standardPrice": 0,
@@ -3424,7 +3428,7 @@
         "eventPrice": 0,
         "id": "rats",
         "name": "Rats",
-        "price": 0.125,
+        "price": 0,
         "reward": "Rat's Nest",
         "stack": 8,
         "standardPrice": 0,
@@ -3469,7 +3473,7 @@
         "eventPrice": 0,
         "id": "rebirth",
         "name": "Rebirth",
-        "price": 51,
+        "price": 1.52,
         "reward": "Charan's Sword",
         "stack": 27,
         "standardPrice": 0,
@@ -3479,8 +3483,7 @@
         "art": "RebirthAndRenewal",
         "drop": {
             "areas": [
-                "MapWorldsCemetery",
-                "MapWorldsNecropolisUnique"
+                "MapWorldsTortureChamberUnique"
             ],
             "min_level": 81,
             "monsters": [],
@@ -3489,7 +3492,7 @@
         "eventPrice": 0,
         "id": "rebirth-and-renewal",
         "name": "Rebirth and Renewal",
-        "price": 9.36,
+        "price": 2.36,
         "reward": "Horned Scarab",
         "stack": 4,
         "standardPrice": 0,
@@ -3518,7 +3521,10 @@
     {
         "art": "TheReflectionOfTheHeart",
         "drop": {
-            "areas": [],
+            "areas": [
+                "MapWorldsRelicChambers",
+                "MapWorldsTortureChamber"
+            ],
             "min_level": 60,
             "monsters": [],
             "text": ""
@@ -3542,7 +3548,7 @@
         "eventPrice": 0,
         "id": "remembrance",
         "name": "Remembrance",
-        "price": 83.18,
+        "price": 3,
         "reward": "Precursor's Emblem, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -3553,7 +3559,7 @@
         "drop": {
             "areas": [
                 "MapWorldsCitadel",
-                "MapWorldsWasteland"
+                "MapWorldsExcavation"
             ],
             "min_level": 1,
             "monsters": [],
@@ -3562,7 +3568,7 @@
         "eventPrice": 0,
         "id": "runic-luck",
         "name": "Runic Luck",
-        "price": 1,
+        "price": 2.06,
         "reward": "10x Vendor Refresh Currency",
         "stack": 4,
         "standardPrice": 0,
@@ -3579,10 +3585,10 @@
         "eventPrice": 0,
         "id": "sambodhis-vow",
         "name": "Sambodhi's Vow",
-        "price": 2,
+        "price": 0.9677,
         "reward": "Mortal Fragment",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 3,
         "weight": 4506.0
     },
     {
@@ -3598,7 +3604,7 @@
         "eventPrice": 0,
         "id": "sambodhis-wisdom",
         "name": "Sambodhi's Wisdom",
-        "price": 1.8,
+        "price": 2.59,
         "reward": "Tabula Rasa, Two-Implicit, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -3608,7 +3614,7 @@
         "art": "ScholarOfTheSeas",
         "drop": {
             "areas": [
-                "MapWorldsReef"
+                "MapWorldsStrandUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -3617,7 +3623,7 @@
         "eventPrice": 0,
         "id": "scholar-of-the-seas",
         "name": "Scholar of the Seas",
-        "price": 0,
+        "price": 0.5,
         "reward": "Mao Kun",
         "stack": 7,
         "standardPrice": 0,
@@ -3628,7 +3634,7 @@
         "drop": {
             "areas": [
                 "2_10_4",
-                "MapWorldsDefiledCathedral",
+                "MapWorldsBasilica",
                 "MapWorldsTheatreOfLies"
             ],
             "min_level": 35,
@@ -3638,10 +3644,10 @@
         "eventPrice": 0,
         "id": "seven-years-bad-luck",
         "name": "Seven Years Bad Luck",
-        "price": 3517,
+        "price": 82.39,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 4197,
+        "standardPrice": 7264,
         "weight": 73.0
     },
     {
@@ -3650,8 +3656,8 @@
             "areas": [
                 "2_7_5_1",
                 "2_7_5_2",
-                "MapWorldsOvergrownShrine",
-                "MapWorldsShrine"
+                "MapWorldsNecropolisUnique",
+                "MapWorldsOvergrownShrineUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -3660,7 +3666,7 @@
         "eventPrice": 0,
         "id": "shard-of-fate",
         "name": "Shard of Fate",
-        "price": 0,
+        "price": 1.52,
         "reward": "Vivid Jewel",
         "stack": 4,
         "standardPrice": 0,
@@ -3679,7 +3685,7 @@
         "eventPrice": 0,
         "id": "silence-and-frost",
         "name": "Silence and Frost",
-        "price": 0,
+        "price": 5.5,
         "reward": "The Pandemonius",
         "stack": 7,
         "standardPrice": 0
@@ -3695,7 +3701,7 @@
         "eventPrice": 0,
         "id": "societys-remorse",
         "name": "Society's Remorse",
-        "price": 0,
+        "price": 0.9326,
         "reward": "10x Orb of Alteration",
         "stack": 1,
         "standardPrice": 0,
@@ -3717,7 +3723,7 @@
         "eventPrice": 0,
         "id": "something-dark",
         "name": "Something Dark",
-        "price": 12,
+        "price": 6.48,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
         "standardPrice": 0,
@@ -3727,6 +3733,7 @@
         "art": "BaronCat",
         "drop": {
             "areas": [
+                "MapWorldsChateau",
                 "MapWorldsResidence"
             ],
             "min_level": 81,
@@ -3736,7 +3743,7 @@
         "eventPrice": 0,
         "id": "squandered-prosperity",
         "name": "Squandered Prosperity",
-        "price": 193.3,
+        "price": 46.38,
         "reward": "The Light of Meaning, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -3746,8 +3753,8 @@
         "art": "StruckbyLightning",
         "drop": {
             "areas": [
-                "MapWorldsCourtyardUnique",
-                "MapWorldsTerrace"
+                "MapWorldsColonnade",
+                "MapWorldsStagnation"
             ],
             "min_level": 75,
             "monsters": [],
@@ -3777,7 +3784,7 @@
         "eventPrice": 0,
         "id": "succor-of-the-sinless",
         "name": "Succor of the Sinless",
-        "price": 0,
+        "price": 27.9,
         "reward": "Bottled Faith",
         "stack": 6,
         "standardPrice": 0,
@@ -3787,7 +3794,7 @@
         "art": "Temperance",
         "drop": {
             "areas": [
-                "MapWorldsMaze",
+                "MapWorldsMuseum",
                 "MapWorldsSanctuary"
             ],
             "min_level": 81,
@@ -3797,7 +3804,7 @@
         "eventPrice": 0,
         "id": "temperance",
         "name": "Temperance",
-        "price": 0,
+        "price": 2,
         "reward": "Relic, Item Level: 83",
         "stack": 4,
         "standardPrice": 0,
@@ -3807,7 +3814,8 @@
         "art": "TerribleSecretOfSpace",
         "drop": {
             "areas": [
-                "MapWorldsFloodedMine"
+                "MapWorldsGeode",
+                "MapWorldsWaterways"
             ],
             "min_level": 72,
             "monsters": [],
@@ -3816,7 +3824,7 @@
         "eventPrice": 0,
         "id": "terrible-secret-of-space",
         "name": "Terrible Secret of Space",
-        "price": 0,
+        "price": 3,
         "reward": "Level 21 Transfigured Golem Gem, Quality: +23%, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -3826,7 +3834,7 @@
         "art": "TheAcademic",
         "drop": {
             "areas": [
-                "MapWorldsIvoryTemple",
+                "MapWorldsLaboratory",
                 "MapWorldsTheatreOfLies"
             ],
             "min_level": 50,
@@ -3836,7 +3844,7 @@
         "eventPrice": 0,
         "id": "the-academic",
         "name": "The Academic",
-        "price": 0,
+        "price": 50.25,
         "reward": "Inspired Learning",
         "stack": 8,
         "standardPrice": 0,
@@ -3846,6 +3854,7 @@
         "art": "TheAdmirer",
         "drop": {
             "areas": [
+                "MapWorldsVaalPyramidUnique",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 75,
@@ -3855,7 +3864,7 @@
         "eventPrice": 0,
         "id": "the-admirer",
         "name": "The Admirer",
-        "price": 30,
+        "price": 6.4,
         "reward": "Atziri Item",
         "stack": 9,
         "standardPrice": 0,
@@ -3865,7 +3874,8 @@
         "art": "TheAdventuringSpirit",
         "drop": {
             "areas": [
-                "MapWorldsAshenWood"
+                "MapWorldsBrambleValley",
+                "MapWorldsJungleValley"
             ],
             "min_level": 52,
             "monsters": [],
@@ -3887,7 +3897,7 @@
                 "1_4_6_3",
                 "2_6_7_2",
                 "2_9_10_2",
-                "MapWorldsCarcass"
+                "MapWorldsTower"
             ],
             "min_level": 23,
             "monsters": [],
@@ -3896,7 +3906,7 @@
         "eventPrice": 0,
         "id": "the-aesthete",
         "name": "The Aesthete",
-        "price": 0,
+        "price": 1,
         "reward": "Shavronne Item",
         "stack": 8,
         "standardPrice": 0,
@@ -3906,7 +3916,7 @@
         "art": "TheApothecary",
         "drop": {
             "areas": [
-                "MapWorldsDefiledCathedral"
+                "MapWorldsCage"
             ],
             "min_level": 75,
             "monsters": [],
@@ -3915,10 +3925,10 @@
         "eventPrice": 0,
         "id": "the-apothecary",
         "name": "The Apothecary",
-        "price": 14899,
+        "price": 2738,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 10722,
+        "standardPrice": 28675,
         "weight": 9.0
     },
     {
@@ -3932,7 +3942,7 @@
         "eventPrice": 0,
         "id": "the-archmages-right-hand",
         "name": "The Archmage's Right Hand",
-        "price": 0,
+        "price": 1,
         "reward": "Glyphic Prophecy Wand, Item Level: 100",
         "stack": 7,
         "standardPrice": 0,
@@ -3942,7 +3952,6 @@
         "art": "TheArenaChampion",
         "drop": {
             "areas": [
-                "MapWorldsCanyon",
                 "MapWorldsPit"
             ],
             "min_level": 73,
@@ -3964,8 +3973,8 @@
             "areas": [
                 "1_3_14_2",
                 "2_8_7_2",
-                "MapWorldsCrimsonTemple",
-                "MapWorldsCrimsonTownship"
+                "MapWorldsMoonTempleUnique",
+                "MapWorldsTempleUnique"
             ],
             "min_level": 28,
             "monsters": [],
@@ -3974,7 +3983,7 @@
         "eventPrice": 0,
         "id": "the-army-of-blood",
         "name": "The Army of Blood",
-        "price": 0.0006002,
+        "price": 0.8333,
         "reward": "Bloodbond",
         "stack": 6,
         "standardPrice": 0,
@@ -3993,7 +4002,7 @@
         "eventPrice": 0,
         "id": "the-artist",
         "name": "The Artist",
-        "price": 12.34,
+        "price": 16.73,
         "reward": "Level 4 Enhance, Corrupted",
         "stack": 11,
         "standardPrice": 0,
@@ -4012,7 +4021,7 @@
         "eventPrice": 0,
         "id": "the-aspirant",
         "name": "The Aspirant",
-        "price": 10,
+        "price": 5.54,
         "reward": "Item, Elevated Item, Influenced Item",
         "stack": 5,
         "standardPrice": 0,
@@ -4021,7 +4030,13 @@
     {
         "art": "TheAstromancer",
         "drop": {
-            "areas": [],
+            "areas": [
+                "Synthesis_MapBoss",
+                "Synthesis_MapGuardian1",
+                "Synthesis_MapGuardian2",
+                "Synthesis_MapGuardian3",
+                "Synthesis_MapGuardian4"
+            ],
             "min_level": 81,
             "monsters": [
                 "Metadata/Monsters/LeagueHeist/Science/ThaumaturgistFemaleMiniBoss",
@@ -4032,7 +4047,7 @@
         "eventPrice": 0,
         "id": "the-astromancer",
         "name": "The Astromancer",
-        "price": 41,
+        "price": 0,
         "reward": "The Eternity Shroud, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -4042,8 +4057,8 @@
         "art": "TheAvenger",
         "drop": {
             "areas": [
-                "MapWorldsCitadel",
-                "MapWorldsMineralPools"
+                "MapWorldsAtollUnique",
+                "MapWorldsCitadel"
             ],
             "min_level": 60,
             "monsters": [],
@@ -4063,7 +4078,8 @@
         "drop": {
             "areas": [
                 "MapWorldsCourtyardOfWasting",
-                "MapWorldsPalace"
+                "MapWorldsGardens",
+                "MapWorldsHauntedMansion"
             ],
             "min_level": 81,
             "monsters": [],
@@ -4084,7 +4100,7 @@
             "areas": [
                 "1_4_4_1",
                 "1_4_4_3",
-                "MapWorldsTribunal"
+                "MapWorldsLavaLake"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4093,7 +4109,7 @@
         "eventPrice": 0,
         "id": "the-battle-born",
         "name": "The Battle Born",
-        "price": 0,
+        "price": 0.5,
         "reward": "Axe",
         "stack": 5,
         "standardPrice": 0,
@@ -4103,6 +4119,7 @@
         "art": "TheBearWoman",
         "drop": {
             "areas": [
+                "MapWorldsBasilica",
                 "MapWorldsChateau"
             ],
             "min_level": 81,
@@ -4133,7 +4150,7 @@
         "eventPrice": 0,
         "id": "the-beast",
         "name": "The Beast",
-        "price": 0,
+        "price": 1.05,
         "reward": "Belly of the Beast",
         "stack": 6,
         "standardPrice": 0,
@@ -4143,8 +4160,7 @@
         "art": "TheBetrayal",
         "drop": {
             "areas": [
-                "MapWorldsMesa",
-                "MapWorldsStrand"
+                "MapWorldsBurialChambers"
             ],
             "min_level": 75,
             "monsters": [],
@@ -4153,7 +4169,7 @@
         "eventPrice": 0,
         "id": "the-betrayal",
         "name": "The Betrayal",
-        "price": 0,
+        "price": 1,
         "reward": "Maligaro's Virtuosity",
         "stack": 9,
         "standardPrice": 0,
@@ -4163,7 +4179,7 @@
         "art": "TheBitterBlossom",
         "drop": {
             "areas": [
-                "MapWorldsAridLake"
+                "MapWorldsSulphurVents"
             ],
             "min_level": 72,
             "monsters": [],
@@ -4172,7 +4188,7 @@
         "eventPrice": 0,
         "id": "the-bitter-blossom",
         "name": "The Bitter Blossom",
-        "price": 3,
+        "price": 4.96,
         "reward": "Level 21 Chaos Gem, Quality: +23%, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -4189,8 +4205,8 @@
                 "2_10_5",
                 "2_10_6",
                 "2_10_7",
-                "MapWorldsBelfry",
-                "MapWorldsHauntedMansion"
+                "MapWorldsHauntedMansion",
+                "MapWorldsLookout"
             ],
             "min_level": 62,
             "monsters": [],
@@ -4199,7 +4215,7 @@
         "eventPrice": 0,
         "id": "the-blazing-fire",
         "name": "The Blazing Fire",
-        "price": 0,
+        "price": 0.5,
         "reward": "Chin Sol",
         "stack": 6,
         "standardPrice": 0,
@@ -4216,7 +4232,7 @@
         "eventPrice": 0,
         "id": "the-blessing-of-moosh",
         "name": "The Blessing of Moosh",
-        "price": 168,
+        "price": 1.62,
         "reward": "Level 21 Transfigured Gem, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -4233,7 +4249,7 @@
         "eventPrice": 0,
         "id": "the-body",
         "name": "The Body",
-        "price": 0,
+        "price": 1.22,
         "reward": "Body Armour",
         "stack": 4,
         "standardPrice": 0,
@@ -4252,7 +4268,7 @@
         "eventPrice": 0,
         "id": "the-bones",
         "name": "The Bones",
-        "price": 0,
+        "price": 1,
         "reward": "Level 21 Vaal Summon Skeletons, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -4271,7 +4287,7 @@
         "eventPrice": 0,
         "id": "the-brawny-battle-mage",
         "name": "The Brawny Battle Mage",
-        "price": 0,
+        "price": 2.28,
         "reward": "Merciless Tornado Wand, Item Level: 100",
         "stack": 5,
         "standardPrice": 0,
@@ -4290,7 +4306,7 @@
         "eventPrice": 0,
         "id": "the-breach",
         "name": "The Breach",
-        "price": 0,
+        "price": 6.34,
         "reward": "Breach Item",
         "stack": 4,
         "standardPrice": 0,
@@ -4300,7 +4316,7 @@
         "art": "TheBrittleEmperor",
         "drop": {
             "areas": [
-                "MapWorldsWasteland"
+                "MapWorldsOvergrownShrine"
             ],
             "min_level": 70,
             "monsters": [],
@@ -4309,7 +4325,7 @@
         "eventPrice": 0,
         "id": "the-brittle-emperor",
         "name": "The Brittle Emperor",
-        "price": 0,
+        "price": 3,
         "reward": "Voll's Devotion, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -4319,7 +4335,7 @@
         "art": "TheCache",
         "drop": {
             "areas": [
-                "MapWorldsVaalPyramidUnique"
+                "MapWorldsVault"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4328,7 +4344,7 @@
         "eventPrice": 0,
         "id": "the-cache",
         "name": "The Cache",
-        "price": 0,
+        "price": 1,
         "reward": "Jewellery",
         "stack": 6,
         "standardPrice": 0,
@@ -4338,8 +4354,7 @@
         "art": "TheCacophony",
         "drop": {
             "areas": [
-                "MapWorldsMineralPools",
-                "MapWorldsSepulchre"
+                "MapWorldsCemetery"
             ],
             "min_level": 68,
             "monsters": [],
@@ -4409,7 +4424,7 @@
         "eventPrice": 0,
         "id": "the-card-sharp",
         "name": "The Card Sharp",
-        "price": 2,
+        "price": 1.5,
         "reward": "Divination Scarab",
         "stack": 4,
         "standardPrice": 0,
@@ -4521,7 +4536,7 @@
                 "1_2_14_3",
                 "2_7_12_1",
                 "2_7_12_2",
-                "MapWorldsMaze",
+                "MapWorldsVaalPyramid",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 23,
@@ -4541,8 +4556,7 @@
         "art": "TheCatch",
         "drop": {
             "areas": [
-                "MapWorldsForkingRiver",
-                "MapWorldsStrand"
+                "MapWorldsBeach"
             ],
             "min_level": 81,
             "monsters": [],
@@ -4551,8 +4565,8 @@
         "eventPrice": 0,
         "id": "the-catch",
         "name": "The Catch",
-        "price": 46,
-        "reward": "Fishing Rod, Incubated, Item Level: 99",
+        "price": 1,
+        "reward": "Fishing Rod, Item Level: 99",
         "stack": 18,
         "standardPrice": 0,
         "weight": 15.5
@@ -4562,8 +4576,7 @@
         "drop": {
             "areas": [
                 "MapWorldsBoneCryptUnique",
-                "MapWorldsCursedCrypt",
-                "MapWorldsOvergrownShrine"
+                "MapWorldsMausoleum"
             ],
             "min_level": 47,
             "monsters": [],
@@ -4572,7 +4585,7 @@
         "eventPrice": 0,
         "id": "the-celestial-justicar",
         "name": "The Celestial Justicar",
-        "price": 1,
+        "price": 6.39,
         "reward": "Six-Link Astral Plate",
         "stack": 6,
         "standardPrice": 0,
@@ -4589,7 +4602,7 @@
         "eventPrice": 0,
         "id": "the-celestial-stone",
         "name": "The Celestial Stone",
-        "price": 0,
+        "price": 28,
         "reward": "Opal Ring, Item Level: 100, Shaper Item",
         "stack": 10,
         "standardPrice": 0,
@@ -4603,8 +4616,8 @@
                 "1_5_2",
                 "2_6_7_1",
                 "2_6_7_2",
-                "MapWorldsDungeon",
-                "MapWorldsPen"
+                "MapWorldsCells",
+                "MapWorldsCemeteryUnique"
             ],
             "min_level": 38,
             "monsters": [],
@@ -4613,7 +4626,7 @@
         "eventPrice": 0,
         "id": "the-chains-that-bind",
         "name": "The Chains that Bind",
-        "price": 8.92,
+        "price": 3.25,
         "reward": "Six-Link Body Armour",
         "stack": 11,
         "standardPrice": 0,
@@ -4630,7 +4643,7 @@
         "eventPrice": 0,
         "id": "the-chosen",
         "name": "The Chosen",
-        "price": 53,
+        "price": 61.37,
         "reward": "Skin of the Lords, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -4640,9 +4653,8 @@
         "art": "TheComingStorm",
         "drop": {
             "areas": [
-                "MapWorldsCourtyardUnique",
                 "MapWorldsLookout",
-                "MapWorldsTerrace"
+                "MapWorldsStagnation"
             ],
             "min_level": 60,
             "monsters": [],
@@ -4661,7 +4673,7 @@
         "art": "TheConduit",
         "drop": {
             "areas": [
-                "MapWorldsPalace"
+                "MapWorldsIvoryTemple"
             ],
             "min_level": 69,
             "monsters": [],
@@ -4680,8 +4692,7 @@
         "art": "TheCraving",
         "drop": {
             "areas": [
-                "MapWorldsGraveTrough",
-                "MapWorldsTortureChamberUnique"
+                "MapWorldsOvergrownShrineUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4690,7 +4701,7 @@
         "eventPrice": 0,
         "id": "the-craving",
         "name": "The Craving",
-        "price": 90,
+        "price": 4.97,
         "reward": "Unending Hunger",
         "stack": 4,
         "standardPrice": 0,
@@ -4709,7 +4720,7 @@
         "eventPrice": 0,
         "id": "the-cursed-king",
         "name": "The Cursed King",
-        "price": 0,
+        "price": 1.4,
         "reward": "Rigwald's Curse",
         "stack": 8,
         "standardPrice": 0,
@@ -4719,7 +4730,7 @@
         "art": "TheDamned",
         "drop": {
             "areas": [
-                "MapWorldsVaalPyramidUnique",
+                "MapWorldsVaalPyramid",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 68,
@@ -4729,7 +4740,7 @@
         "eventPrice": 0,
         "id": "the-damned",
         "name": "The Damned",
-        "price": 34.36,
+        "price": 47.12,
         "reward": "Soul Ripper",
         "stack": 6,
         "standardPrice": 0,
@@ -4739,7 +4750,7 @@
         "art": "TheDapperProdigy",
         "drop": {
             "areas": [
-                "MapWorldsResidence"
+                "MapWorldsPalace"
             ],
             "min_level": 81,
             "monsters": [],
@@ -4748,7 +4759,7 @@
         "eventPrice": 0,
         "id": "the-dapper-prodigy",
         "name": "The Dapper Prodigy",
-        "price": 66,
+        "price": 9.82,
         "reward": "Six-Link Body Armour, Item Level: 100",
         "stack": 6,
         "standardPrice": 0,
@@ -4758,8 +4769,8 @@
         "art": "TheDarkMage",
         "drop": {
             "areas": [
-                "MapWorldsBoneCryptUnique",
-                "MapWorldsOvergrownShrine"
+                "MapWorldsNecropolisUnique",
+                "MapWorldsSpiderLair"
             ],
             "min_level": 50,
             "monsters": [],
@@ -4768,7 +4779,7 @@
         "eventPrice": 0,
         "id": "the-dark-mage",
         "name": "The Dark Mage",
-        "price": 10,
+        "price": 1,
         "reward": "Six-Link Staff, Item Level: 55",
         "stack": 6,
         "standardPrice": 0,
@@ -4778,7 +4789,8 @@
         "art": "TheDarkestDream",
         "drop": {
             "areas": [
-                "MapWorldsSulphurVents"
+                "MapWorldsSulphurVents",
+                "MapWorldsToxicSewer"
             ],
             "min_level": 68,
             "monsters": [],
@@ -4787,7 +4799,7 @@
         "eventPrice": 0,
         "id": "the-darkest-dream",
         "name": "The Darkest Dream",
-        "price": 1,
+        "price": 1.6,
         "reward": "Severed in Sleep, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -4806,7 +4818,7 @@
         "eventPrice": 0,
         "id": "the-deal",
         "name": "The Deal",
-        "price": 0,
+        "price": 1,
         "reward": "Cartography Scarab",
         "stack": 5,
         "standardPrice": 0,
@@ -4816,7 +4828,7 @@
         "art": "TheDeceiver",
         "drop": {
             "areas": [
-                "MapWorldsCanyon"
+                "MapWorldsPit"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4825,7 +4837,7 @@
         "eventPrice": 0,
         "id": "the-deceiver",
         "name": "The Deceiver",
-        "price": 0,
+        "price": 1,
         "reward": "Belt of the Deceiver, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -4835,7 +4847,8 @@
         "art": "TheDeepOnes",
         "drop": {
             "areas": [
-                "MapWorldsShoreUnique"
+                "MapWorldsShoreUnique",
+                "MapWorldsStrandUnique"
             ],
             "min_level": 65,
             "monsters": [],
@@ -4844,7 +4857,7 @@
         "eventPrice": 0,
         "id": "the-deep-ones",
         "name": "The Deep Ones",
-        "price": 5,
+        "price": 1.75,
         "reward": "Tidebreaker",
         "stack": 5,
         "standardPrice": 0,
@@ -4854,7 +4867,6 @@
         "art": "TheDemon",
         "drop": {
             "areas": [
-                "MapWorldsBelfry",
                 "MapWorldsTribunal"
             ],
             "min_level": 75,
@@ -4864,7 +4876,7 @@
         "eventPrice": 0,
         "id": "the-demon",
         "name": "The Demon",
-        "price": 665.5,
+        "price": 895.0,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
         "standardPrice": 0,
@@ -4874,8 +4886,8 @@
         "art": "TheDemoness",
         "drop": {
             "areas": [
-                "MapWorldsBrambleValley",
-                "MapWorldsStrandUnique"
+                "MapWorldsArachnidNest",
+                "MapWorldsForbiddenWoods"
             ],
             "min_level": 72,
             "monsters": [],
@@ -4884,7 +4896,7 @@
         "eventPrice": 0,
         "id": "the-demoness",
         "name": "The Demoness",
-        "price": 0,
+        "price": 1,
         "reward": "Death's Hand",
         "stack": 5,
         "standardPrice": 0,
@@ -4894,8 +4906,8 @@
         "art": "TheDestination",
         "drop": {
             "areas": [
-                "MapWorldsPark",
-                "MapWorldsWaterways"
+                "MapWorldsAtoll",
+                "MapWorldsChannel"
             ],
             "min_level": 81,
             "monsters": [],
@@ -4904,17 +4916,17 @@
         "eventPrice": 0,
         "id": "the-destination",
         "name": "The Destination",
-        "price": 67.73,
+        "price": 6,
         "reward": "Watcher's Eye, Two-Implicit, Corrupted",
         "stack": 9,
-        "standardPrice": 0,
+        "standardPrice": 21123,
         "weight": 16.0
     },
     {
         "art": "TheDoctor",
         "drop": {
             "areas": [
-                "MapWorldsMuseumUnique"
+                "MapWorldsBurialChambers"
             ],
             "min_level": 75,
             "monsters": [],
@@ -4923,18 +4935,17 @@
         "eventPrice": 0,
         "id": "the-doctor",
         "name": "The Doctor",
-        "price": 190.2,
+        "price": 1196,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 1369,
+        "standardPrice": 0,
         "weight": 15.5
     },
     {
         "art": "TheDoppelganger",
         "drop": {
             "areas": [
-                "MapWorldsAshenWood",
-                "MapWorldsAtollUnique"
+                "MapWorldsStrandUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4943,7 +4954,7 @@
         "eventPrice": 0,
         "id": "the-doppelganger",
         "name": "The Doppelganger",
-        "price": 1.02,
+        "price": 0.5909,
         "reward": "Mirror Arrow, Quality: +20%",
         "stack": 2,
         "standardPrice": 0,
@@ -4954,7 +4965,8 @@
         "drop": {
             "areas": [
                 "2_7_6",
-                "MapWorldsSprings"
+                "MapWorldsSprings",
+                "MapWorldsUndergroundRiverUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -4963,7 +4975,7 @@
         "eventPrice": 0,
         "id": "the-dragon",
         "name": "The Dragon",
-        "price": 1,
+        "price": 0.4867,
         "reward": "Coruscating Elixir",
         "stack": 4,
         "standardPrice": 0,
@@ -4982,7 +4994,7 @@
         "eventPrice": 0,
         "id": "the-dragons-heart",
         "name": "The Dragon's Heart",
-        "price": 111.9,
+        "price": 38.62,
         "reward": "Level 4 Empower, Corrupted",
         "stack": 11,
         "standardPrice": 0,
@@ -5002,7 +5014,7 @@
         "eventPrice": 0,
         "id": "the-dreamer",
         "name": "The Dreamer",
-        "price": 4,
+        "price": 4.28,
         "reward": "Chayula Item",
         "stack": 6,
         "standardPrice": 0,
@@ -5029,7 +5041,8 @@
         "art": "TheDrunkenAristocrat",
         "drop": {
             "areas": [
-                "MapWorldsResidence"
+                "MapWorldsBazaar",
+                "MapWorldsPier"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5048,8 +5061,8 @@
         "art": "TheDungeonMaster",
         "drop": {
             "areas": [
-                "MapWorldsDungeon",
-                "MapWorldsPen"
+                "MapWorldsCells",
+                "MapWorldsColonnade"
             ],
             "min_level": 81,
             "monsters": [],
@@ -5058,18 +5071,18 @@
         "eventPrice": 0,
         "id": "the-dungeon-master",
         "name": "The Dungeon Master",
-        "price": 10,
+        "price": 0,
         "reward": "Belt, Double-Influenced Item",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 53102,
         "weight": 429.5
     },
     {
         "art": "TheEasyStroll",
         "drop": {
             "areas": [
-                "MapWorldsCourtyard",
-                "MapWorldsPlaza"
+                "MapWorldsPlaza",
+                "MapWorldsTerrace"
             ],
             "min_level": 78,
             "monsters": [],
@@ -5078,7 +5091,7 @@
         "eventPrice": 0,
         "id": "the-easy-stroll",
         "name": "The Easy Stroll",
-        "price": 0,
+        "price": 1,
         "reward": "Map, Map Tier: 15, Modifiers: 8, Corrupted",
         "stack": 2,
         "standardPrice": 0,
@@ -5100,7 +5113,7 @@
         "eventPrice": 0,
         "id": "the-eldritch-decay",
         "name": "The Eldritch Decay",
-        "price": 0,
+        "price": 5.81,
         "reward": "Uber Elder Fragment",
         "stack": 4,
         "standardPrice": 0,
@@ -5110,8 +5123,8 @@
         "art": "TheEncroachingDarkness",
         "drop": {
             "areas": [
-                "MapWorldsCursedCryptUnique",
-                "MapWorldsNecropolisUnique"
+                "MapWorldsNecropolisUnique",
+                "MapWorldsVaalPyramidUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -5120,7 +5133,7 @@
         "eventPrice": 0,
         "id": "the-encroaching-darkness",
         "name": "The Encroaching Darkness",
-        "price": 0,
+        "price": 1.29,
         "reward": "Map, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -5139,10 +5152,10 @@
         "eventPrice": 0,
         "id": "the-endless-darkness",
         "name": "The Endless Darkness",
-        "price": 221.8,
+        "price": 166.8,
         "reward": "Voidforge",
         "stack": 9,
-        "standardPrice": 684.4,
+        "standardPrice": 0,
         "weight": 15.5
     },
     {
@@ -5154,7 +5167,7 @@
                 "1_4_3_3",
                 "2_9_7",
                 "2_9_8",
-                "MapWorldsDig"
+                "MapWorldsGeode"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5163,7 +5176,7 @@
         "eventPrice": 0,
         "id": "the-endurance",
         "name": "The Endurance",
-        "price": 2,
+        "price": 1.66,
         "reward": "Vivid Crimson Jewel",
         "stack": 4,
         "standardPrice": 0,
@@ -5174,7 +5187,7 @@
         "drop": {
             "areas": [
                 "MapWorldsCemeteryUnique",
-                "MapWorldsPen"
+                "MapWorldsMesa"
             ],
             "min_level": 81,
             "monsters": [],
@@ -5183,7 +5196,7 @@
         "eventPrice": 0,
         "id": "the-enforcer",
         "name": "The Enforcer",
-        "price": 0,
+        "price": 3.5,
         "reward": "Spiked Gloves of the Conquest (Culling Strike), Item Level: 86, Warlord Item",
         "stack": 4,
         "standardPrice": 0,
@@ -5193,9 +5206,10 @@
         "art": "TheEnlightened",
         "drop": {
             "areas": [
-                "MapWorldsCrimsonTownship",
+                "MapWorldsBelfry",
+                "MapWorldsRelicChambers",
                 "MapWorldsSanctuary",
-                "MapWorldsShrine"
+                "MapWorldsZiggurat"
             ],
             "min_level": 68,
             "monsters": [],
@@ -5204,7 +5218,7 @@
         "eventPrice": 0,
         "id": "the-enlightened",
         "name": "The Enlightened",
-        "price": 21.25,
+        "price": 43.63,
         "reward": "Level 3 Enlighten",
         "stack": 6,
         "standardPrice": 0,
@@ -5214,7 +5228,7 @@
         "art": "TheEnthusiasts",
         "drop": {
             "areas": [
-                "MapWorldsGhetto"
+                "MapWorldsAlleyways"
             ],
             "min_level": 54,
             "monsters": [],
@@ -5223,7 +5237,7 @@
         "eventPrice": 0,
         "id": "the-enthusiasts",
         "name": "The Enthusiasts",
-        "price": 13.91,
+        "price": 4.44,
         "reward": "Victario's Influence, Two-Implicit, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -5243,7 +5257,7 @@
         "eventPrice": 0,
         "id": "the-escape",
         "name": "The Escape",
-        "price": 4,
+        "price": 6.73,
         "reward": "Seven-League Step",
         "stack": 5,
         "standardPrice": 0,
@@ -5265,7 +5279,7 @@
         "eventPrice": 0,
         "id": "the-eternal-war",
         "name": "The Eternal War",
-        "price": 29.22,
+        "price": 11.02,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -5284,7 +5298,7 @@
         "eventPrice": 0,
         "id": "the-ethereal",
         "name": "The Ethereal",
-        "price": 665.5,
+        "price": 14.34,
         "reward": "Six-Link Vaal Regalia",
         "stack": 7,
         "standardPrice": 0,
@@ -5306,7 +5320,7 @@
         "eventPrice": 0,
         "id": "the-everlasting",
         "name": "The Everlasting",
-        "price": 12.03,
+        "price": 9.75,
         "reward": "Originator Incarnation Item",
         "stack": 3,
         "standardPrice": 0
@@ -5315,8 +5329,8 @@
         "art": "TheExplorer",
         "drop": {
             "areas": [
-                "MapWorldsDarkForest",
-                "MapWorldsJungleValley"
+                "MapWorldsArachnidNest",
+                "MapWorldsBrambleValley"
             ],
             "min_level": 58,
             "monsters": [],
@@ -5344,10 +5358,10 @@
         "eventPrice": 0,
         "id": "the-eye-of-terror",
         "name": "The Eye of Terror",
-        "price": 9983,
+        "price": 1442,
         "reward": "Mageblood,  Foulborn",
         "stack": 8,
-        "standardPrice": 9581,
+        "standardPrice": 16356,
         "weight": 7.5
     },
     {
@@ -5355,8 +5369,8 @@
         "drop": {
             "areas": [
                 "2_9_6",
-                "MapWorldsBog",
-                "MapWorldsMudGeyser"
+                "MapWorldsAridLake",
+                "MapWorldsPrimordialPool"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5365,7 +5379,7 @@
         "eventPrice": 0,
         "id": "the-eye-of-the-dragon",
         "name": "The Eye of the Dragon",
-        "price": 4,
+        "price": 11.32,
         "reward": "Jewel, Corrupted",
         "stack": 10,
         "standardPrice": 0,
@@ -5376,7 +5390,7 @@
         "drop": {
             "areas": [
                 "MapWorldsFloodedMine",
-                "MapWorldsMarshes"
+                "MapWorldsReef"
             ],
             "min_level": 68,
             "monsters": [],
@@ -5385,7 +5399,7 @@
         "eventPrice": 0,
         "id": "the-fathomless-depths",
         "name": "The Fathomless Depths",
-        "price": 0,
+        "price": 1,
         "reward": "Lightpoacher",
         "stack": 8,
         "standardPrice": 0,
@@ -5397,7 +5411,7 @@
             "areas": [
                 "2_8_2_1",
                 "2_8_2_2",
-                "MapWorldsSulphurVents"
+                "MapWorldsInfestedValley"
             ],
             "min_level": 56,
             "monsters": [],
@@ -5417,7 +5431,7 @@
         "drop": {
             "areas": [
                 "MapWorldsChambersOfImpurity",
-                "MapWorldsTempleUnique"
+                "MapWorldsFoundry"
             ],
             "min_level": 75,
             "monsters": [],
@@ -5426,7 +5440,7 @@
         "eventPrice": 0,
         "id": "the-fiend",
         "name": "The Fiend",
-        "price": 332.8,
+        "price": 798.1,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
         "standardPrice": 0,
@@ -5445,7 +5459,7 @@
         "eventPrice": 0,
         "id": "the-finishing-touch",
         "name": "The Finishing Touch",
-        "price": 2,
+        "price": 0.9904,
         "reward": "1x Fertile Catalyst",
         "stack": 2,
         "standardPrice": 0,
@@ -5455,8 +5469,8 @@
         "art": "TheFishmonger",
         "drop": {
             "areas": [
-                "MapWorldsGrotto",
-                "MapWorldsWharf"
+                "MapWorldsForkingRiver",
+                "MapWorldsShipyard"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5465,7 +5479,7 @@
         "eventPrice": 0,
         "id": "the-fishmonger",
         "name": "The Fishmonger",
-        "price": 0,
+        "price": 9.22,
         "reward": "Albino Rhoa Feather",
         "stack": 4,
         "standardPrice": 0,
@@ -5498,8 +5512,8 @@
         "art": "TheFlorasGift",
         "drop": {
             "areas": [
-                "MapWorldsGardens",
-                "MapWorldsPark"
+                "MapWorldsConservatory",
+                "MapWorldsPlaza"
             ],
             "min_level": 60,
             "monsters": [],
@@ -5508,7 +5522,7 @@
         "eventPrice": 0,
         "id": "the-floras-gift",
         "name": "The Flora's Gift",
-        "price": 0,
+        "price": 1,
         "reward": "Five-Link Staff, Item Level: 66",
         "stack": 5,
         "standardPrice": 0,
@@ -5525,7 +5539,7 @@
         "eventPrice": 0,
         "id": "the-fool",
         "name": "The Fool",
-        "price": 0,
+        "price": 1,
         "reward": "20x Orb of Chance",
         "stack": 4,
         "standardPrice": 0,
@@ -5535,8 +5549,8 @@
         "art": "TheForbiddenFruit",
         "drop": {
             "areas": [
-                "MapWorldsGardens",
-                "MapWorldsOrchard"
+                "MapWorldsConservatory",
+                "MapWorldsTerrace"
             ],
             "min_level": 81,
             "monsters": [],
@@ -5545,7 +5559,7 @@
         "eventPrice": 0,
         "id": "the-forbidden-fruit",
         "name": "The Forbidden Fruit",
-        "price": 81.08,
+        "price": 19.04,
         "reward": "Uber Pinnacle Fragment",
         "stack": 1,
         "standardPrice": 0
@@ -5554,8 +5568,8 @@
         "art": "TheForgottenTreasure",
         "drop": {
             "areas": [
-                "MapWorldsChambersOfImpurity",
-                "MapWorldsRelicChambers"
+                "MapWorldsBasilica",
+                "MapWorldsChambersOfImpurity"
             ],
             "min_level": 81,
             "monsters": [],
@@ -5564,7 +5578,7 @@
         "eventPrice": 0,
         "id": "the-forgotten-treasure",
         "name": "The Forgotten Treasure",
-        "price": 10,
+        "price": 3,
         "reward": "Leather Belt, Double-Influenced Item",
         "stack": 6,
         "standardPrice": 0,
@@ -5574,7 +5588,8 @@
         "art": "TheFormlessSea",
         "drop": {
             "areas": [
-                "MapWorldsStrandUnique"
+                "MapWorldsShoreUnique",
+                "MapWorldsStrand"
             ],
             "min_level": 64,
             "monsters": [],
@@ -5583,7 +5598,7 @@
         "eventPrice": 0,
         "id": "the-formless-sea",
         "name": "The Formless Sea",
-        "price": 0,
+        "price": 3.64,
         "reward": "Varunastra",
         "stack": 7,
         "standardPrice": 0,
@@ -5593,8 +5608,7 @@
         "art": "TheForsaken",
         "drop": {
             "areas": [
-                "MapWorldsCursedCryptUnique",
-                "MapWorldsNecropolis"
+                "MapWorldsMausoleum"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5613,7 +5627,7 @@
         "art": "TheFortunate",
         "drop": {
             "areas": [
-                "MapWorldsBeach",
+                "MapWorldsDunes",
                 "MapWorldsFields"
             ],
             "min_level": 35,
@@ -5623,10 +5637,10 @@
         "eventPrice": 0,
         "id": "the-fortunate",
         "name": "The Fortunate",
-        "price": 62.56,
+        "price": 14.2,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 100,
+        "standardPrice": 120,
         "weight": 1238.0
     },
     {
@@ -5642,7 +5656,7 @@
         "eventPrice": 0,
         "id": "the-forward-gaze",
         "name": "The Forward Gaze",
-        "price": 27.73,
+        "price": 2.29,
         "reward": "Replica Item",
         "stack": 6,
         "standardPrice": 0,
@@ -5652,7 +5666,8 @@
         "art": "TheFox",
         "drop": {
             "areas": [
-                "MapWorldsMesa"
+                "MapWorldsFields",
+                "MapWorldsSunkenCity"
             ],
             "min_level": 68,
             "monsters": [],
@@ -5661,7 +5676,7 @@
         "eventPrice": 0,
         "id": "the-fox",
         "name": "The Fox",
-        "price": 0,
+        "price": 0.5833,
         "reward": "Level 20 Gem",
         "stack": 6,
         "standardPrice": 0,
@@ -5671,8 +5686,8 @@
         "art": "TheFoxInTheBrambles",
         "drop": {
             "areas": [
-                "MapWorldsBrambleValley",
-                "MapWorldsGardens"
+                "MapWorldsGardens",
+                "MapWorldsTerrace"
             ],
             "min_level": 54,
             "monsters": [],
@@ -5681,7 +5696,7 @@
         "eventPrice": 0,
         "id": "the-fox-in-the-brambles",
         "name": "The Fox in the Brambles",
-        "price": 0,
+        "price": 1,
         "reward": "Bramblejack, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -5691,7 +5706,8 @@
         "art": "TheGambler",
         "drop": {
             "areas": [
-                "MapWorldsShoreUnique"
+                "MapWorldsMineralPools",
+                "MapWorldsVault"
             ],
             "min_level": 23,
             "monsters": [],
@@ -5700,7 +5716,7 @@
         "eventPrice": 0,
         "id": "the-gambler",
         "name": "The Gambler",
-        "price": 1.75,
+        "price": 1.33,
         "reward": "Divination Card",
         "stack": 5,
         "standardPrice": 0,
@@ -5710,7 +5726,7 @@
         "art": "GarishPower",
         "drop": {
             "areas": [
-                "MapWorldsCursedCrypt",
+                "MapWorldsOvergrownShrine",
                 "MapWorldsOvergrownShrineUnique"
             ],
             "min_level": 23,
@@ -5720,7 +5736,7 @@
         "eventPrice": 0,
         "id": "the-garish-power",
         "name": "The Garish Power",
-        "price": 2,
+        "price": 27.94,
         "reward": "Jewel",
         "stack": 4,
         "standardPrice": 0,
@@ -5737,7 +5753,7 @@
         "eventPrice": 0,
         "id": "the-gemcutter",
         "name": "The Gemcutter",
-        "price": 0,
+        "price": 1,
         "reward": "Gemcutter's Prism",
         "stack": 3,
         "standardPrice": 0,
@@ -5759,15 +5775,14 @@
         "price": 0,
         "reward": "Sword, Corrupted",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 10,
         "weight": 1422.0
     },
     {
         "art": "TheGladiator",
         "drop": {
             "areas": [
-                "MapWorldsPit",
-                "MapWorldsRacecourse_"
+                "MapWorldsColosseum"
             ],
             "min_level": 67,
             "monsters": [],
@@ -5776,7 +5791,7 @@
         "eventPrice": 0,
         "id": "the-gladiator",
         "name": "The Gladiator",
-        "price": 0,
+        "price": 1,
         "reward": "Nightmare Bascinet",
         "stack": 5,
         "standardPrice": 0,
@@ -5786,7 +5801,7 @@
         "art": "TheGoldenEra",
         "drop": {
             "areas": [
-                "MapWorldsFactory"
+                "MapWorldsFoundry"
             ],
             "min_level": 81,
             "monsters": [],
@@ -5812,7 +5827,7 @@
         "eventPrice": 0,
         "id": "the-greatest-intentions",
         "name": "The Greatest Intentions",
-        "price": 20,
+        "price": 8,
         "reward": "The Saviour, Two-Implicit, Corrupted",
         "stack": 10,
         "standardPrice": 0,
@@ -5831,7 +5846,7 @@
         "eventPrice": 0,
         "id": "the-gulf",
         "name": "The Gulf",
-        "price": 110,
+        "price": 38.14,
         "reward": "Thread of Hope, Two-Implicit, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -5853,7 +5868,7 @@
         "eventPrice": 0,
         "id": "the-hale-heart",
         "name": "The Hale Heart",
-        "price": 0,
+        "price": 2.33,
         "reward": "Item, Item Level: 100, Elder Item",
         "stack": 4,
         "standardPrice": 0,
@@ -5865,7 +5880,8 @@
             "areas": [
                 "2_7_2",
                 "2_8_10",
-                "MapWorldsCastleRuins"
+                "MapWorldsBoneCryptUnique",
+                "MapWorldsPlateau"
             ],
             "min_level": 37,
             "monsters": [],
@@ -5874,7 +5890,7 @@
         "eventPrice": 0,
         "id": "the-harvester",
         "name": "The Harvester",
-        "price": 0.5,
+        "price": 0,
         "reward": "The Harvest",
         "stack": 11,
         "standardPrice": 0,
@@ -5900,7 +5916,7 @@
         "eventPrice": 0,
         "id": "the-hermit",
         "name": "The Hermit",
-        "price": 0,
+        "price": 1,
         "reward": "Lifesprig",
         "stack": 9,
         "standardPrice": 0,
@@ -5917,7 +5933,7 @@
         "eventPrice": 0,
         "id": "the-heroic-shot",
         "name": "The Heroic Shot",
-        "price": 0,
+        "price": 14.49,
         "reward": "17x Chromatic Orb",
         "stack": 1,
         "standardPrice": 0,
@@ -5934,7 +5950,7 @@
         "eventPrice": 0,
         "id": "the-hive-of-knowledge",
         "name": "The Hive of Knowledge",
-        "price": 0,
+        "price": 1,
         "reward": "Machina Mitts, Two-Implicit, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -5944,8 +5960,8 @@
         "art": "TheHoarder",
         "drop": {
             "areas": [
-                "MapWorldsShoreUnique",
-                "MapWorldsVaalPyramidUnique"
+                "MapWorldsMineralPools",
+                "MapWorldsVault"
             ],
             "min_level": 35,
             "monsters": [],
@@ -5973,7 +5989,7 @@
         "eventPrice": 0,
         "id": "the-hook",
         "name": "The Hook",
-        "price": 25.92,
+        "price": 4.95,
         "reward": "Level 21 Transfigured Gem, Quality: +23%, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -5983,6 +5999,7 @@
         "art": "TheHunger",
         "drop": {
             "areas": [
+                "MapWorldsCore",
                 "MapWorldsPrimordialPool"
             ],
             "min_level": 38,
@@ -5992,7 +6009,7 @@
         "eventPrice": 0,
         "id": "the-hunger",
         "name": "The Hunger",
-        "price": 0,
+        "price": 1,
         "reward": "Taste of Hate",
         "stack": 9,
         "standardPrice": 0,
@@ -6011,10 +6028,10 @@
         "eventPrice": 0,
         "id": "the-immortal",
         "name": "The Immortal",
-        "price": 12676,
+        "price": 247.8,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 25614,
+        "standardPrice": 32379,
         "weight": 21.0
     },
     {
@@ -6041,8 +6058,7 @@
         "drop": {
             "areas": [
                 "1_5_5",
-                "MapWorldsDefiledCathedral",
-                "MapWorldsMausoleum",
+                "MapWorldsTemple",
                 "MapWorldsTheatreOfLies"
             ],
             "min_level": 23,
@@ -6052,7 +6068,7 @@
         "eventPrice": 0,
         "id": "the-innocent",
         "name": "The Innocent",
-        "price": 0,
+        "price": 2.71,
         "reward": "40x Orb of Regret",
         "stack": 10,
         "standardPrice": 0,
@@ -6062,8 +6078,7 @@
         "art": "TheInoculated",
         "drop": {
             "areas": [
-                "MapWorldsArachnidTomb",
-                "MapWorldsPrimordialPool"
+                "MapWorldsAridLake"
             ],
             "min_level": 73,
             "monsters": [],
@@ -6092,7 +6107,7 @@
         "eventPrice": 0,
         "id": "the-insane-cat",
         "name": "The Insane Cat",
-        "price": 2662,
+        "price": 680.2,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -6103,7 +6118,7 @@
         "drop": {
             "areas": [
                 "MapWorldsAbomination",
-                "MapWorldsPrimordialPool"
+                "MapWorldsMalformation"
             ],
             "min_level": 37,
             "monsters": [],
@@ -6112,7 +6127,7 @@
         "eventPrice": 0,
         "id": "the-insatiable",
         "name": "The Insatiable",
-        "price": 0.3333,
+        "price": 1.5,
         "reward": "The Harvest, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -6125,7 +6140,7 @@
                 "1_2_14_3",
                 "2_7_12_1",
                 "2_7_12_2",
-                "MapWorldsFoundry",
+                "MapWorldsVaalPyramidUnique",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 23,
@@ -6135,7 +6150,7 @@
         "eventPrice": 0,
         "id": "the-inventor",
         "name": "The Inventor",
-        "price": 0,
+        "price": 0.7111,
         "reward": "10x Vaal Orb",
         "stack": 6,
         "standardPrice": 0,
@@ -6164,7 +6179,8 @@
         "art": "TheJewellersBoon",
         "drop": {
             "areas": [
-                "MapWorldsGrotto"
+                "MapWorldsExcavation",
+                "MapWorldsMalformation"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6173,7 +6189,7 @@
         "eventPrice": 0,
         "id": "the-jewellers-boon",
         "name": "The Jeweller's Boon",
-        "price": 0,
+        "price": 1.05,
         "reward": "Five-Linked Body Armour, Influenced Item",
         "stack": 5,
         "standardPrice": 0,
@@ -6185,7 +6201,8 @@
             "areas": [
                 "2_10_5",
                 "2_10_6",
-                "MapWorldsCitySquare"
+                "MapWorldsCage",
+                "MapWorldsHauntedMansion"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6194,7 +6211,7 @@
         "eventPrice": 0,
         "id": "the-journalist",
         "name": "The Journalist",
-        "price": 0,
+        "price": 0.9,
         "reward": "Helmet, Double-Veiled Item",
         "stack": 10,
         "standardPrice": 0,
@@ -6204,7 +6221,7 @@
         "art": "TheJourney",
         "drop": {
             "areas": [
-                "MapWorldsLavaLake"
+                "MapWorldsStrand"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6213,7 +6230,7 @@
         "eventPrice": 0,
         "id": "the-journey",
         "name": "The Journey",
-        "price": 0,
+        "price": 4.83,
         "reward": "Journey Tattoo",
         "stack": 4,
         "standardPrice": 0,
@@ -6223,8 +6240,7 @@
         "art": "TheKingsBlade",
         "drop": {
             "areas": [
-                "MapWorldsCanyon",
-                "MapWorldsPit"
+                "MapWorldsColosseum"
             ],
             "min_level": 60,
             "monsters": [],
@@ -6233,7 +6249,7 @@
         "eventPrice": 0,
         "id": "the-kings-blade",
         "name": "The King's Blade",
-        "price": 0,
+        "price": 0.5,
         "reward": "Bloodthirsty Eternal Sword, Item Level: 66",
         "stack": 5,
         "standardPrice": 0,
@@ -6243,7 +6259,7 @@
         "art": "TheKingsHeart",
         "drop": {
             "areas": [
-                "MapWorldsVolcano"
+                "MapWorldsCaldera"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6252,17 +6268,17 @@
         "eventPrice": 0,
         "id": "the-kings-heart",
         "name": "The King's Heart",
-        "price": 0,
+        "price": 29.26,
         "reward": "Kaom's Heart",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 62,
         "weight": 553.0
     },
     {
         "art": "TheLake",
         "drop": {
             "areas": [
-                "MapWorldsStrand"
+                "MapWorldsTropicalIsland"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6271,7 +6287,7 @@
         "eventPrice": 0,
         "id": "the-lake",
         "name": "The Lake",
-        "price": 2795,
+        "price": 14.06,
         "reward": "Reflecting Mist",
         "stack": 8,
         "standardPrice": 0
@@ -6280,6 +6296,7 @@
         "art": "TheLastLaugh",
         "drop": {
             "areas": [
+                "MapWorldsPort",
                 "MapWorldsPromenade"
             ],
             "min_level": 56,
@@ -6289,7 +6306,7 @@
         "eventPrice": 0,
         "id": "the-last-laugh",
         "name": "The Last Laugh",
-        "price": 1,
+        "price": 4.31,
         "reward": "Replica Dragonfang's Flight, Corrupted",
         "stack": 5,
         "standardPrice": 0
@@ -6298,8 +6315,7 @@
         "art": "TheLastOneStanding",
         "drop": {
             "areas": [
-                "MapWorldsArena",
-                "MapWorldsRacecourse_"
+                "MapWorldsColosseum"
             ],
             "min_level": 80,
             "monsters": [],
@@ -6308,7 +6324,7 @@
         "eventPrice": 0,
         "id": "the-last-one-standing",
         "name": "The Last One Standing",
-        "price": 0,
+        "price": 16.5,
         "reward": "Atziri's Disfavour",
         "stack": 10,
         "standardPrice": 0,
@@ -6318,7 +6334,7 @@
         "art": "TheLastSupper",
         "drop": {
             "areas": [
-                "MapWorldsPen",
+                "MapWorldsCage",
                 "MapWorldsTortureChamber"
             ],
             "min_level": 58,
@@ -6328,7 +6344,7 @@
         "eventPrice": 0,
         "id": "the-last-supper",
         "name": "The Last Supper",
-        "price": 6.06,
+        "price": 126.5,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
         "standardPrice": 0,
@@ -6338,8 +6354,7 @@
         "art": "TheLeviathan",
         "drop": {
             "areas": [
-                "MapWorldsCoralRuins",
-                "MapWorldsPort"
+                "MapWorldsStrand"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6348,7 +6363,7 @@
         "eventPrice": 0,
         "id": "the-leviathan",
         "name": "The Leviathan",
-        "price": 0,
+        "price": 7.38,
         "reward": "Maven Item, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -6358,8 +6373,8 @@
         "art": "TheLich",
         "drop": {
             "areas": [
-                "MapWorldsGraveyard",
-                "MapWorldsNecropolis"
+                "MapWorldsMausoleum",
+                "MapWorldsTortureChamberUnique"
             ],
             "min_level": 40,
             "monsters": [
@@ -6380,8 +6395,7 @@
         "art": "TheLifeThief",
         "drop": {
             "areas": [
-                "MapWorldsBelfry",
-                "MapWorldsCitySquare"
+                "MapWorldsBelfry"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6390,7 +6404,7 @@
         "eventPrice": 0,
         "id": "the-life-thief",
         "name": "The Life Thief",
-        "price": 0,
+        "price": 7.5,
         "reward": "Zerphi's Heart",
         "stack": 6,
         "standardPrice": 0,
@@ -6400,7 +6414,7 @@
         "art": "TheLion",
         "drop": {
             "areas": [
-                "MapWorldsLavaLake"
+                "MapWorldsTribunal"
             ],
             "min_level": 23,
             "monsters": [],
@@ -6409,7 +6423,7 @@
         "eventPrice": 0,
         "id": "the-lion",
         "name": "The Lion",
-        "price": 0,
+        "price": 6.77,
         "reward": "Lioneye Item",
         "stack": 5,
         "standardPrice": 0,
@@ -6426,7 +6440,7 @@
         "eventPrice": 0,
         "id": "the-long-con",
         "name": "The Long Con",
-        "price": 0,
+        "price": 10.8,
         "reward": "Elderslayer's Exalted Orb",
         "stack": 4,
         "standardPrice": 0,
@@ -6436,8 +6450,8 @@
         "art": "TheLongWatch",
         "drop": {
             "areas": [
-                "MapWorldsAlleyways",
-                "MapWorldsBeach"
+                "MapWorldsForkingRiver",
+                "MapWorldsIceberg"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6475,7 +6489,8 @@
         "art": "TheLordofCelebration",
         "drop": {
             "areas": [
-                "MapWorldsPalace"
+                "MapWorldsIvoryTemple",
+                "MapWorldsTemple"
             ],
             "min_level": 77,
             "monsters": [],
@@ -6494,8 +6509,7 @@
         "art": "TheLover",
         "drop": {
             "areas": [
-                "MapWorldsAtollUnique",
-                "MapWorldsStrandUnique"
+                "MapWorldsAtollUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6504,7 +6518,7 @@
         "eventPrice": 0,
         "id": "the-lover",
         "name": "The Lover",
-        "price": 0,
+        "price": 1,
         "reward": "Jewellery, Item Level: 79",
         "stack": 2,
         "standardPrice": 0,
@@ -6517,7 +6531,6 @@
                 "2_8_13",
                 "2_8_7_1_",
                 "2_8_7_2",
-                "MapWorldsMoonTemple",
                 "MapWorldsShrine"
             ],
             "min_level": 37,
@@ -6537,7 +6550,7 @@
         "art": "TheMadKing",
         "drop": {
             "areas": [
-                "MapWorldsLair"
+                "MapWorldsReef"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6546,7 +6559,7 @@
         "eventPrice": 0,
         "id": "the-mad-king",
         "name": "The Mad King",
-        "price": 175,
+        "price": 2.6,
         "reward": "Vaal Aspect",
         "stack": 7,
         "standardPrice": 0
@@ -6564,7 +6577,7 @@
         "eventPrice": 0,
         "id": "the-magma-crab",
         "name": "The Magma Crab",
-        "price": 0,
+        "price": 1.66,
         "reward": "Level 21 Vaal Molten Shell, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -6581,7 +6594,7 @@
         "eventPrice": 0,
         "id": "the-master-artisan",
         "name": "The Master Artisan",
-        "price": 0,
+        "price": 1.4,
         "reward": "20x Quality Currency",
         "stack": 5,
         "standardPrice": 0,
@@ -6592,7 +6605,7 @@
         "drop": {
             "areas": [
                 "MapWorldsArcade",
-                "MapWorldsSiege"
+                "MapWorldsCitySquare"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6601,7 +6614,7 @@
         "eventPrice": 0,
         "id": "the-mayor",
         "name": "The Mayor",
-        "price": 43.09,
+        "price": 47.06,
         "reward": "The Light of Meaning",
         "stack": 5,
         "standardPrice": 0,
@@ -6611,7 +6624,6 @@
         "art": "TheMercenary",
         "drop": {
             "areas": [
-                "MapWorldsCrimsonTemple",
                 "MapWorldsSprings"
             ],
             "min_level": 23,
@@ -6621,7 +6633,7 @@
         "eventPrice": 0,
         "id": "the-mercenary",
         "name": "The Mercenary",
-        "price": 0,
+        "price": 1.07,
         "reward": "Shield, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -6631,7 +6643,7 @@
         "art": "TheMessenger",
         "drop": {
             "areas": [
-                "MapWorldsPort"
+                "MapWorldsReef"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6640,7 +6652,7 @@
         "eventPrice": 0,
         "id": "the-messenger",
         "name": "The Messenger",
-        "price": 0,
+        "price": 1.12,
         "reward": "Harbinger Item",
         "stack": 4,
         "standardPrice": 0,
@@ -6672,7 +6684,7 @@
         "eventPrice": 0,
         "id": "the-metalsmiths-gift",
         "name": "The Metalsmith's Gift",
-        "price": 0,
+        "price": 0.4667,
         "reward": "Prismatic Ring",
         "stack": 6,
         "standardPrice": 0,
@@ -6683,7 +6695,7 @@
         "drop": {
             "areas": [
                 "MapWorldsAridLake",
-                "MapWorldsAtollUnique"
+                "MapWorldsStagnation"
             ],
             "min_level": 75,
             "monsters": [],
@@ -6692,7 +6704,7 @@
         "eventPrice": 0,
         "id": "the-minds-eyes",
         "name": "The Mind's Eyes",
-        "price": 1,
+        "price": 1.06,
         "reward": "Astral Projector",
         "stack": 7,
         "standardPrice": 0,
@@ -6702,7 +6714,8 @@
         "art": "TheMiracle",
         "drop": {
             "areas": [
-                "MapWorldsAcidLakes"
+                "MapWorldsArcade",
+                "MapWorldsBazaar"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6711,10 +6724,10 @@
         "eventPrice": 0,
         "id": "the-miracle",
         "name": "The Miracle",
-        "price": 0,
+        "price": 150,
         "reward": "Awakened Exceptional Gem",
         "stack": 3,
-        "standardPrice": 0
+        "standardPrice": 212410
     },
     {
         "art": "TheMountain",
@@ -6722,7 +6735,6 @@
             "areas": [
                 "1_4_7",
                 "2_9_2",
-                "MapWorldsColdRiver_",
                 "MapWorldsSummit"
             ],
             "min_level": 23,
@@ -6732,7 +6744,7 @@
         "eventPrice": 0,
         "id": "the-mountain",
         "name": "The Mountain",
-        "price": 0,
+        "price": 1,
         "reward": "Jewel of Potency",
         "stack": 6,
         "standardPrice": 0,
@@ -6743,7 +6755,7 @@
         "drop": {
             "areas": [
                 "MapWorldsAbomination",
-                "MapWorldsTower"
+                "MapWorldsCore"
             ],
             "min_level": 75,
             "monsters": [],
@@ -6752,7 +6764,7 @@
         "eventPrice": 0,
         "id": "the-nurse",
         "name": "The Nurse",
-        "price": 15.5,
+        "price": 137.0,
         "reward": "The Doctor",
         "stack": 8,
         "standardPrice": 0,
@@ -6762,8 +6774,7 @@
         "art": "TheOath",
         "drop": {
             "areas": [
-                "MapWorldsAcidLakes",
-                "MapWorldsLighthouse"
+                "MapWorldsCourthouse"
             ],
             "min_level": 62,
             "monsters": [],
@@ -6772,7 +6783,7 @@
         "eventPrice": 0,
         "id": "the-oath",
         "name": "The Oath",
-        "price": 70,
+        "price": 1,
         "reward": "Death's Oath",
         "stack": 6,
         "standardPrice": 0,
@@ -6783,7 +6794,7 @@
         "drop": {
             "areas": [
                 "MapWorldsAbomination",
-                "MapWorldsTower"
+                "MapWorldsCells"
             ],
             "min_level": 47,
             "monsters": [],
@@ -6792,7 +6803,7 @@
         "eventPrice": 0,
         "id": "the-offering",
         "name": "The Offering",
-        "price": 0,
+        "price": 1,
         "reward": "Shavronne's Wrappings",
         "stack": 8,
         "standardPrice": 0,
@@ -6802,7 +6813,7 @@
         "art": "TheOffspring",
         "drop": {
             "areas": [
-                "MapWorldsAridLake"
+                "MapWorldsInfestedValley"
             ],
             "min_level": 32,
             "monsters": [],
@@ -6811,7 +6822,7 @@
         "eventPrice": 0,
         "id": "the-offspring",
         "name": "The Offspring",
-        "price": 0,
+        "price": 20.65,
         "reward": "Ryslatha's Coil",
         "stack": 9,
         "standardPrice": 0,
@@ -6821,8 +6832,8 @@
         "art": "TheOldMan",
         "drop": {
             "areas": [
-                "MapWorldsForkingRiver",
-                "MapWorldsPort"
+                "MapWorldsAtoll",
+                "MapWorldsChannel"
             ],
             "min_level": 54,
             "monsters": [],
@@ -6841,8 +6852,7 @@
         "art": "TheOneThatGotAway",
         "drop": {
             "areas": [
-                "MapWorldsCoralRuins",
-                "MapWorldsPort"
+                "MapWorldsBeach"
             ],
             "min_level": 50,
             "monsters": [],
@@ -6861,8 +6871,8 @@
         "art": "TheOneWithAll",
         "drop": {
             "areas": [
-                "MapWorldsBoneCryptUnique",
-                "MapWorldsGraveTrough"
+                "MapWorldsCemetery",
+                "MapWorldsGraveyard"
             ],
             "min_level": 23,
             "monsters": [],
@@ -6871,7 +6881,7 @@
         "eventPrice": 0,
         "id": "the-one-with-all",
         "name": "The One With All",
-        "price": 0,
+        "price": 1.37,
         "reward": "Le Heup of All, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -6881,8 +6891,8 @@
         "art": "TheOpulecent",
         "drop": {
             "areas": [
-                "MapWorldsIvoryTemple",
-                "MapWorldsRelicChambers"
+                "MapWorldsBasilica",
+                "MapWorldsTemple"
             ],
             "min_level": 81,
             "monsters": [],
@@ -6891,7 +6901,7 @@
         "eventPrice": 0,
         "id": "the-opulent",
         "name": "The Opulent",
-        "price": 0,
+        "price": 1,
         "reward": "Ring, Item Level: 100",
         "stack": 5,
         "standardPrice": 0,
@@ -6901,7 +6911,7 @@
         "art": "ThePackLeader",
         "drop": {
             "areas": [
-                "MapWorldsColdRiver_",
+                "MapWorldsFrozenCabins",
                 "MapWorldsSummit"
             ],
             "min_level": 64,
@@ -6911,7 +6921,7 @@
         "eventPrice": 0,
         "id": "the-pack-leader",
         "name": "The Pack Leader",
-        "price": 0,
+        "price": 1,
         "reward": "Alpha's Howl",
         "stack": 6,
         "standardPrice": 0,
@@ -6922,8 +6932,8 @@
         "drop": {
             "areas": [
                 "2_8_8",
-                "MapWorldsWaterways",
-                "MapWorldsWharf"
+                "MapWorldsPier",
+                "MapWorldsShipyard"
             ],
             "min_level": 57,
             "monsters": [],
@@ -6932,7 +6942,7 @@
         "eventPrice": 0,
         "id": "the-pact",
         "name": "The Pact",
-        "price": 0,
+        "price": 5.55,
         "reward": "Pledge of Hands",
         "stack": 9,
         "standardPrice": 0,
@@ -6942,8 +6952,7 @@
         "art": "ThePatient",
         "drop": {
             "areas": [
-                "MapWorldsArsenal",
-                "MapWorldsTower"
+                "MapWorldsColonnade"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6952,7 +6961,7 @@
         "eventPrice": 0,
         "id": "the-patient",
         "name": "The Patient",
-        "price": 6.43,
+        "price": 17.14,
         "reward": "The Nurse",
         "stack": 8,
         "standardPrice": 0,
@@ -6962,8 +6971,7 @@
         "art": "ThePenitent",
         "drop": {
             "areas": [
-                "MapWorldsCemeteryUnique",
-                "MapWorldsLavaChamber"
+                "MapWorldsCemeteryUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -6982,7 +6990,7 @@
         "art": "ThePoet",
         "drop": {
             "areas": [
-                "MapWorldsAlleyways"
+                "MapWorldsPark"
             ],
             "min_level": 23,
             "monsters": [],
@@ -6991,7 +6999,7 @@
         "eventPrice": 0,
         "id": "the-poet",
         "name": "The Poet",
-        "price": 0,
+        "price": 1,
         "reward": "Blood of Corruption, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -7002,7 +7010,7 @@
         "drop": {
             "areas": [
                 "MapWorldsChambersOfImpurity",
-                "MapWorldsFoundry"
+                "MapWorldsLaboratory"
             ],
             "min_level": 23,
             "monsters": [],
@@ -7011,7 +7019,7 @@
         "eventPrice": 0,
         "id": "the-polymath",
         "name": "The Polymath",
-        "price": 0,
+        "price": 9.6,
         "reward": "Astramentis",
         "stack": 3,
         "standardPrice": 0,
@@ -7022,8 +7030,7 @@
         "drop": {
             "areas": [
                 "2_8_4",
-                "MapWorldsFields",
-                "MapWorldsTerrace"
+                "MapWorldsConservatory"
             ],
             "min_level": 38,
             "monsters": [],
@@ -7032,7 +7039,7 @@
         "eventPrice": 0,
         "id": "the-porcupine",
         "name": "The Porcupine",
-        "price": 48.81,
+        "price": 1.86,
         "reward": "Six-Link Short Bow, Item Level: 50",
         "stack": 6,
         "standardPrice": 0,
@@ -7051,7 +7058,7 @@
         "eventPrice": 0,
         "id": "the-price-of-devotion",
         "name": "The Price of Devotion",
-        "price": 11314,
+        "price": 880.3,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -7070,7 +7077,7 @@
         "eventPrice": 0,
         "id": "the-price-of-loyalty",
         "name": "The Price of Loyalty",
-        "price": 66.13,
+        "price": 46.26,
         "reward": "Skin of the Loyal, Item Level: 25, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -7092,7 +7099,7 @@
         "eventPrice": 0,
         "id": "the-price-of-prescience",
         "name": "The Price of Prescience",
-        "price": 0,
+        "price": 1,
         "reward": "Vaal Temple Map, Delirium: 100%, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -7191,7 +7198,8 @@
         "art": "ThePrimordial",
         "drop": {
             "areas": [
-                "MapWorldsGrotto"
+                "MapWorldsFloodedMine",
+                "MapWorldsTortureChamber"
             ],
             "min_level": 80,
             "monsters": [],
@@ -7200,7 +7208,7 @@
         "eventPrice": 0,
         "id": "the-primordial",
         "name": "The Primordial",
-        "price": 0.5,
+        "price": 25.59,
         "reward": "Jewel, Primordial",
         "stack": 5,
         "standardPrice": 0,
@@ -7210,7 +7218,8 @@
         "art": "ThePrinceOfDarkness",
         "drop": {
             "areas": [
-                "MapWorldsCarcass"
+                "MapWorldsMalformation",
+                "MapWorldsPrimordialPool"
             ],
             "min_level": 68,
             "monsters": [],
@@ -7219,7 +7228,7 @@
         "eventPrice": 0,
         "id": "the-prince-of-darkness",
         "name": "The Prince of Darkness",
-        "price": 31,
+        "price": 7.03,
         "reward": "Elegant Hubris",
         "stack": 6,
         "standardPrice": 0,
@@ -7229,7 +7238,7 @@
         "art": "TheProfessor",
         "drop": {
             "areas": [
-                "MapWorldsRelicChambers"
+                "MapWorldsShipyard"
             ],
             "min_level": 68,
             "monsters": [],
@@ -7238,7 +7247,7 @@
         "eventPrice": 0,
         "id": "the-professor",
         "name": "The Professor",
-        "price": 0,
+        "price": 3.26,
         "reward": "The Putrid Cloister",
         "stack": 4,
         "standardPrice": 0,
@@ -7248,8 +7257,8 @@
         "art": "TheProgenyofLunaris",
         "drop": {
             "areas": [
-                "MapWorldsMoonTemple",
-                "MapWorldsMoonTempleUnique"
+                "MapWorldsShrine",
+                "MapWorldsTempleUnique"
             ],
             "min_level": 81,
             "monsters": [],
@@ -7258,7 +7267,7 @@
         "eventPrice": 0,
         "id": "the-progeny-of-lunaris",
         "name": "The Progeny of Lunaris",
-        "price": 67,
+        "price": 355.8,
         "reward": "Dying Sun",
         "stack": 2,
         "standardPrice": 0,
@@ -7268,7 +7277,7 @@
         "art": "TheQueen",
         "drop": {
             "areas": [
-                "MapWorldsMazeUnique"
+                "MapWorldsVaalPyramid"
             ],
             "min_level": 80,
             "monsters": [],
@@ -7287,8 +7296,8 @@
         "art": "TheRabbitsFoot",
         "drop": {
             "areas": [
-                "MapWorldsCursedCryptUnique",
-                "MapWorldsGraveyard"
+                "MapWorldsBoneCryptUnique",
+                "MapWorldsCursedCryptUnique"
             ],
             "min_level": 54,
             "monsters": [],
@@ -7297,7 +7306,7 @@
         "eventPrice": 0,
         "id": "the-rabbits-foot",
         "name": "The Rabbit's Foot",
-        "price": 0,
+        "price": 19.33,
         "reward": "10x Incursion Vial",
         "stack": 8,
         "standardPrice": 0,
@@ -7307,7 +7316,7 @@
         "art": "TheRabidRhoa",
         "drop": {
             "areas": [
-                "MapWorldsBog"
+                "MapWorldsArachnidTomb"
             ],
             "min_level": 81,
             "monsters": [],
@@ -7347,7 +7356,7 @@
         "eventPrice": 0,
         "id": "the-realm",
         "name": "The Realm",
-        "price": 0,
+        "price": 2.89,
         "reward": "Portal, Quality: +1-20%",
         "stack": 5,
         "standardPrice": 0,
@@ -7359,7 +7368,7 @@
             "areas": [
                 "2_8_9",
                 "2_9_9",
-                "MapWorldsCrimsonTownship"
+                "MapWorldsPort"
             ],
             "min_level": 55,
             "monsters": [],
@@ -7368,7 +7377,7 @@
         "eventPrice": 0,
         "id": "the-return-of-the-rat",
         "name": "The Return of the Rat",
-        "price": 0,
+        "price": 1,
         "reward": "Tavukai",
         "stack": 3,
         "standardPrice": 0,
@@ -7385,7 +7394,7 @@
         "eventPrice": 0,
         "id": "the-risk",
         "name": "The Risk",
-        "price": 0,
+        "price": 1.65,
         "reward": "Ventor's Gamble",
         "stack": 3,
         "standardPrice": 0,
@@ -7395,7 +7404,8 @@
         "art": "TheRiteofElements",
         "drop": {
             "areas": [
-                "MapWorldsCoves"
+                "MapWorldsGeode",
+                "MapWorldsGrotto"
             ],
             "min_level": 72,
             "monsters": [],
@@ -7404,7 +7414,7 @@
         "eventPrice": 0,
         "id": "the-rite-of-elements",
         "name": "The Rite of Elements",
-        "price": 2,
+        "price": 1.25,
         "reward": "Level 21 Golem Gem, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -7414,8 +7424,8 @@
         "art": "TheRoadToPower",
         "drop": {
             "areas": [
-                "MapWorldsCastleRuins",
-                "MapWorldsCitadel"
+                "MapWorldsCitadel",
+                "MapWorldsDarkForest"
             ],
             "min_level": 81,
             "monsters": [],
@@ -7443,7 +7453,7 @@
         "eventPrice": 0,
         "id": "the-rusted-bard",
         "name": "The Rusted Bard",
-        "price": 0,
+        "price": 2.41,
         "reward": "4x Tainted Mythic Orb",
         "stack": 9,
         "standardPrice": 0,
@@ -7456,7 +7466,8 @@
                 "1_4_7",
                 "2_9_2",
                 "2_9_5",
-                "MapWorldsArsenal"
+                "MapWorldsAlleyways",
+                "MapWorldsRamparts"
             ],
             "min_level": 23,
             "monsters": [],
@@ -7465,7 +7476,7 @@
         "eventPrice": 0,
         "id": "the-ruthless-ceinture",
         "name": "The Ruthless Ceinture",
-        "price": 0,
+        "price": 1,
         "reward": "Meginord's Girdle, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -7482,7 +7493,7 @@
         "eventPrice": 0,
         "id": "the-sacrifice",
         "name": "The Sacrifice",
-        "price": 8,
+        "price": 10,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
         "standardPrice": 0,
@@ -7501,7 +7512,7 @@
         "eventPrice": 0,
         "id": "the-saints-treasure",
         "name": "The Saint's Treasure",
-        "price": 0.1,
+        "price": 0,
         "reward": "2x Exalted Orb",
         "stack": 10,
         "standardPrice": 0,
@@ -7520,7 +7531,7 @@
         "eventPrice": 0,
         "id": "the-samurais-eye",
         "name": "The Samurai's Eye",
-        "price": 0,
+        "price": 42.32,
         "reward": "Watcher's Eye",
         "stack": 3,
         "standardPrice": 0,
@@ -7552,8 +7563,7 @@
         "art": "TheScavenger",
         "drop": {
             "areas": [
-                "MapWorldsChateau",
-                "MapWorldsWasteland"
+                "MapWorldsChateau"
             ],
             "min_level": 62,
             "monsters": [],
@@ -7562,7 +7572,7 @@
         "eventPrice": 0,
         "id": "the-scavenger",
         "name": "The Scavenger",
-        "price": 0,
+        "price": 1,
         "reward": "Carcass Jack",
         "stack": 8,
         "standardPrice": 0,
@@ -7574,7 +7584,7 @@
             "areas": [
                 "1_3_17_1",
                 "1_3_17_2",
-                "MapWorldsCourthouse"
+                "MapWorldsLaboratory"
             ],
             "min_level": 23,
             "monsters": [],
@@ -7583,7 +7593,7 @@
         "eventPrice": 0,
         "id": "the-scholar",
         "name": "The Scholar",
-        "price": 0,
+        "price": 1,
         "reward": "40x Scroll of Wisdom",
         "stack": 3,
         "standardPrice": 0,
@@ -7593,7 +7603,7 @@
         "art": "TheScout",
         "drop": {
             "areas": [
-                "MapWorldsBurialChambers"
+                "MapWorldsTropicalIsland"
             ],
             "min_level": 35,
             "monsters": [],
@@ -7602,7 +7612,7 @@
         "eventPrice": 0,
         "id": "the-scout",
         "name": "The Scout",
-        "price": 0,
+        "price": 1,
         "reward": "7x Exalted Orb",
         "stack": 8,
         "standardPrice": 0,
@@ -7619,7 +7629,7 @@
         "eventPrice": 0,
         "id": "the-seeker",
         "name": "The Seeker",
-        "price": 3,
+        "price": 1.12,
         "reward": "3x Orb of Annulment",
         "stack": 9,
         "standardPrice": 0,
@@ -7629,7 +7639,7 @@
         "art": "TheSephirot",
         "drop": {
             "areas": [
-                "MapWorldsIvoryTemple"
+                "MapWorldsPalace"
             ],
             "min_level": 35,
             "monsters": [
@@ -7640,16 +7650,18 @@
         "eventPrice": 0,
         "id": "the-sephirot",
         "name": "The Sephirot",
-        "price": 484.5,
+        "price": 77.85,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 405,
+        "standardPrice": 531.0,
         "weight": 340.5
     },
     {
         "art": "TheShepherdsSandals",
         "drop": {
-            "areas": [],
+            "areas": [
+                "MapWorldsSprings"
+            ],
             "min_level": 81,
             "monsters": [],
             "text": ""
@@ -7657,7 +7669,7 @@
         "eventPrice": 0,
         "id": "the-shepherds-sandals",
         "name": "The Shepherd's Sandals",
-        "price": 96.33,
+        "price": 3.11,
         "reward": "Boots, Item Level: 100, Two-Implicit, Corrupted",
         "stack": 3,
         "standardPrice": 0,
@@ -7676,7 +7688,7 @@
         "eventPrice": 0,
         "id": "the-shieldbearer",
         "name": "The Shieldbearer",
-        "price": 23.77,
+        "price": 138.4,
         "reward": "The Squire",
         "stack": 8,
         "standardPrice": 0,
@@ -7753,7 +7765,7 @@
         "eventPrice": 0,
         "id": "the-shortcut",
         "name": "The Shortcut",
-        "price": 2,
+        "price": 18.14,
         "reward": "Quicksilver Flask of the Cheetah, Item Level: 100",
         "stack": 1,
         "standardPrice": 0,
@@ -7763,7 +7775,7 @@
         "art": "TheSideQuest",
         "drop": {
             "areas": [
-                "MapWorldsCastleRuins"
+                "MapWorldsAlleyways"
             ],
             "min_level": 68,
             "monsters": [],
@@ -7772,7 +7784,7 @@
         "eventPrice": 0,
         "id": "the-side-quest",
         "name": "The Side Quest",
-        "price": 45.41,
+        "price": 6.84,
         "reward": "Incarnation Echo",
         "stack": 5,
         "standardPrice": 0,
@@ -7782,7 +7794,8 @@
         "art": "TheSigil",
         "drop": {
             "areas": [
-                "MapWorldsCourtyard"
+                "MapWorldsCitySquare",
+                "MapWorldsForbiddenWoods"
             ],
             "min_level": 73,
             "monsters": [],
@@ -7791,7 +7804,7 @@
         "eventPrice": 0,
         "id": "the-sigil",
         "name": "The Sigil",
-        "price": 0,
+        "price": 1,
         "reward": "Unassailable Amulet",
         "stack": 3,
         "standardPrice": 0,
@@ -7801,8 +7814,8 @@
         "art": "TheSillyBoy",
         "drop": {
             "areas": [
-                "MapWorldsNecropolisUnique",
-                "MapWorldsSpiderLair"
+                "MapWorldsBazaar",
+                "MapWorldsSiege"
             ],
             "min_level": 81,
             "monsters": [],
@@ -7811,7 +7824,7 @@
         "eventPrice": 0,
         "id": "the-silly-boy",
         "name": "The Silly Boy",
-        "price": 25.71,
+        "price": 4.89,
         "reward": "6x Horned Scarab",
         "stack": 9,
         "standardPrice": 0
@@ -7820,8 +7833,7 @@
         "art": "TheSiren",
         "drop": {
             "areas": [
-                "MapWorldsLavaChamber",
-                "MapWorldsMineralPools"
+                "MapWorldsStrandUnique"
             ],
             "min_level": 33,
             "monsters": [],
@@ -7849,7 +7861,7 @@
         "eventPrice": 0,
         "id": "the-skeleton",
         "name": "The Skeleton",
-        "price": 0,
+        "price": 1,
         "reward": "Level 1 Summon Skeletons, Quality: +23%, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -7859,7 +7871,8 @@
         "art": "TheSlumberingBeast",
         "drop": {
             "areas": [
-                "MapWorldsPark"
+                "MapWorldsBazaar",
+                "MapWorldsChateau"
             ],
             "min_level": 40,
             "monsters": [],
@@ -7868,17 +7881,18 @@
         "eventPrice": 0,
         "id": "the-slumbering-beast",
         "name": "The Slumbering Beast",
-        "price": 41388,
+        "price": 463.2,
         "reward": "Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 68436
+        "standardPrice": 122985
     },
     {
         "art": "TheSoul",
         "drop": {
             "areas": [
                 "MapWorldsAbomination",
-                "MapWorldsMuseumUnique"
+                "MapWorldsMuseumUnique",
+                "MapWorldsPhantasmagoria"
             ],
             "min_level": 68,
             "monsters": [],
@@ -7887,7 +7901,7 @@
         "eventPrice": 0,
         "id": "the-soul",
         "name": "The Soul",
-        "price": 45.86,
+        "price": 66.33,
         "reward": "Soul Taker",
         "stack": 9,
         "standardPrice": 0,
@@ -7897,6 +7911,7 @@
         "art": "TheSparkAndTheFlame",
         "drop": {
             "areas": [
+                "MapWorldsSiege",
                 "MapWorldsVolcano"
             ],
             "min_level": 23,
@@ -7906,7 +7921,7 @@
         "eventPrice": 0,
         "id": "the-spark-and-the-flame",
         "name": "The Spark and the Flame",
-        "price": 3,
+        "price": 19.43,
         "reward": "Berek's Respite",
         "stack": 2,
         "standardPrice": 0,
@@ -7925,7 +7940,7 @@
         "eventPrice": 0,
         "id": "the-spoiled-prince",
         "name": "The Spoiled Prince",
-        "price": 0,
+        "price": 1.86,
         "reward": "Dictator's Prophecy Wand, Item Level: 100",
         "stack": 4,
         "standardPrice": 0,
@@ -7940,8 +7955,8 @@
                 "1_5_4b",
                 "2_10_2",
                 "2_10_3",
-                "MapWorldsLavaChamber",
-                "MapWorldsSilo"
+                "MapWorldsLavaLake",
+                "MapWorldsSulphurVents"
             ],
             "min_level": 23,
             "monsters": [],
@@ -7950,7 +7965,7 @@
         "eventPrice": 0,
         "id": "the-standoff",
         "name": "The Standoff",
-        "price": 0,
+        "price": 1,
         "reward": "Rustic Sash",
         "stack": 3,
         "standardPrice": 0,
@@ -7960,8 +7975,7 @@
         "art": "TheStormcaller",
         "drop": {
             "areas": [
-                "MapWorldsCoralRuins",
-                "MapWorldsLookout"
+                "MapWorldsCoralRuins"
             ],
             "min_level": 66,
             "monsters": [],
@@ -7989,7 +8003,7 @@
         "eventPrice": 0,
         "id": "the-strategist",
         "name": "The Strategist",
-        "price": 4.64,
+        "price": 68.08,
         "reward": "Inspired Learning, Corrupted",
         "stack": 6,
         "standardPrice": 0,
@@ -8013,7 +8027,7 @@
         "eventPrice": 0,
         "id": "the-summoner",
         "name": "The Summoner",
-        "price": 0,
+        "price": 0.8721,
         "reward": "Minion Gem, Quality: +20%",
         "stack": 6,
         "standardPrice": 0,
@@ -8026,7 +8040,8 @@
                 "2_8_12_1",
                 "2_8_12_2",
                 "2_8_13",
-                "MapWorldsMoonTempleUnique"
+                "MapWorldsColdRiver_",
+                "MapWorldsPark"
             ],
             "min_level": 49,
             "monsters": [],
@@ -8035,7 +8050,7 @@
         "eventPrice": 0,
         "id": "the-sun",
         "name": "The Sun",
-        "price": 0,
+        "price": 1,
         "reward": "Rise of the Phoenix",
         "stack": 7,
         "standardPrice": 0,
@@ -8045,6 +8060,7 @@
         "art": "TheSurgeon",
         "drop": {
             "areas": [
+                "MapWorldsArachnidTomb",
                 "MapWorldsOvergrownShrine"
             ],
             "min_level": 75,
@@ -8054,7 +8070,7 @@
         "eventPrice": 0,
         "id": "the-surgeon",
         "name": "The Surgeon",
-        "price": 0,
+        "price": 0.8,
         "reward": "Surgeon's Flask",
         "stack": 4,
         "standardPrice": 0,
@@ -8064,8 +8080,7 @@
         "art": "TheSurveyor",
         "drop": {
             "areas": [
-                "MapWorldsCage",
-                "MapWorldsDungeon"
+                "MapWorldsResidence"
             ],
             "min_level": 75,
             "monsters": [],
@@ -8074,7 +8089,7 @@
         "eventPrice": 0,
         "id": "the-surveyor",
         "name": "The Surveyor",
-        "price": 0,
+        "price": 1.4,
         "reward": "Map, Map Tier: 14",
         "stack": 4,
         "standardPrice": 0,
@@ -8085,8 +8100,8 @@
         "drop": {
             "areas": [
                 "2_6_13",
-                "MapWorldsBeach",
-                "MapWorldsUndergroundSea"
+                "MapWorldsMarshes",
+                "MapWorldsPrimordialPool"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8107,8 +8122,7 @@
             "areas": [
                 "1_4_5_1",
                 "1_4_5_2",
-                "MapWorldsArena",
-                "MapWorldsRacecourse_"
+                "MapWorldsPit"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8127,7 +8141,8 @@
         "art": "TheThaumaturgist",
         "drop": {
             "areas": [
-                "MapWorldsFactory"
+                "MapWorldsShrine",
+                "MapWorldsTempleUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8136,7 +8151,7 @@
         "eventPrice": 0,
         "id": "the-thaumaturgist",
         "name": "The Thaumaturgist",
-        "price": 15,
+        "price": 1.21,
         "reward": "Shavronne's Revelation, Corrupted",
         "stack": 8,
         "standardPrice": 0,
@@ -8146,7 +8161,7 @@
         "art": "TheThrone",
         "drop": {
             "areas": [
-                "MapWorldsSulphurVents"
+                "MapWorldsInfestedValley"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8155,7 +8170,7 @@
         "eventPrice": 0,
         "id": "the-throne",
         "name": "The Throne",
-        "price": 0,
+        "price": 2,
         "reward": "Kaom's Roots, Corrupted",
         "stack": 2,
         "standardPrice": 0,
@@ -8165,7 +8180,8 @@
         "art": "TheTinkerersTable",
         "drop": {
             "areas": [
-                "MapWorldsUndergroundRiverUnique"
+                "MapWorldsGrotto",
+                "MapWorldsSpiderLair"
             ],
             "min_level": 33,
             "monsters": [],
@@ -8174,7 +8190,7 @@
         "eventPrice": 0,
         "id": "the-tinkerers-table",
         "name": "The Tinkerer's Table",
-        "price": 2,
+        "price": 1.68,
         "reward": "5x Fossil",
         "stack": 5,
         "standardPrice": 0,
@@ -8184,8 +8200,7 @@
         "art": "TheTirelessExtractor",
         "drop": {
             "areas": [
-                "MapWorldsSilo",
-                "MapWorldsTribunal"
+                "MapWorldsSilo"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8194,7 +8209,7 @@
         "eventPrice": 0,
         "id": "the-tireless-extractor",
         "name": "The Tireless Extractor",
-        "price": 2.99,
+        "price": 0.8976,
         "reward": "10x Oil",
         "stack": 8,
         "standardPrice": 0,
@@ -8206,7 +8221,7 @@
             "areas": [
                 "1_3_18_2",
                 "2_6_7_2",
-                "MapWorldsCage"
+                "MapWorldsTower"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8228,8 +8243,8 @@
                 "1_3_7",
                 "2_8_1",
                 "2_8_11",
-                "MapWorldsLighthouse",
-                "MapWorldsShipyard"
+                "MapWorldsColonnade",
+                "MapWorldsLookout"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8238,7 +8253,7 @@
         "eventPrice": 0,
         "id": "the-traitor",
         "name": "The Traitor",
-        "price": 0,
+        "price": 3.01,
         "reward": "Wand, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -8248,7 +8263,8 @@
         "art": "TheTransformation",
         "drop": {
             "areas": [
-                "MapWorldsCemeteryUnique"
+                "MapWorldsAtollUnique",
+                "MapWorldsHauntedMansion"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8257,7 +8273,7 @@
         "eventPrice": 0,
         "id": "the-transformation",
         "name": "The Transformation",
-        "price": 0,
+        "price": 1.18,
         "reward": "Tainted Mythic Orb",
         "stack": 5,
         "standardPrice": 0,
@@ -8267,7 +8283,8 @@
         "art": "TheTrial",
         "drop": {
             "areas": [
-                "MapWorldsAlleyways"
+                "MapWorldsGhetto",
+                "MapWorldsSiege"
             ],
             "min_level": 78,
             "monsters": [],
@@ -8286,8 +8303,8 @@
         "art": "TheTumbleWeed",
         "drop": {
             "areas": [
-                "MapWorldsDrySea",
-                "MapWorldsDunes"
+                "MapWorldsDesertSpring",
+                "MapWorldsDunesUnique"
             ],
             "min_level": 81,
             "monsters": [],
@@ -8306,8 +8323,7 @@
         "art": "TheTwilightMoon",
         "drop": {
             "areas": [
-                "MapWorldsMoonTemple",
-                "MapWorldsShrine"
+                "MapWorldsMoonTempleUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8316,7 +8332,7 @@
         "eventPrice": 0,
         "id": "the-twilight-moon",
         "name": "The Twilight Moon",
-        "price": 0,
+        "price": 1,
         "reward": "The Twilight Temple",
         "stack": 6,
         "standardPrice": 0,
@@ -8326,7 +8342,8 @@
         "art": "TheTwins",
         "drop": {
             "areas": [
-                "MapWorldsMoonTemple"
+                "MapWorldsColdRiver_",
+                "MapWorldsMoonTempleUnique"
             ],
             "min_level": 81,
             "monsters": [],
@@ -8345,8 +8362,8 @@
         "art": "TheTyrant",
         "drop": {
             "areas": [
-                "MapWorldsArcade",
-                "MapWorldsWasteland"
+                "MapWorldsCoralRuins",
+                "MapWorldsGhetto"
             ],
             "min_level": 81,
             "monsters": [],
@@ -8355,7 +8372,7 @@
         "eventPrice": 0,
         "id": "the-tyrant",
         "name": "The Tyrant",
-        "price": 0,
+        "price": 2,
         "reward": "Merciless Weapon, Item Level: 100",
         "stack": 9,
         "standardPrice": 0,
@@ -8365,8 +8382,7 @@
         "art": "TheUndaunted",
         "drop": {
             "areas": [
-                "MapWorldsAcidLakes",
-                "MapWorldsIceberg"
+                "MapWorldsShipyard"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8375,7 +8391,7 @@
         "eventPrice": 0,
         "id": "the-undaunted",
         "name": "The Undaunted",
-        "price": 16,
+        "price": 1.37,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -8394,10 +8410,10 @@
         "eventPrice": 0,
         "id": "the-undisputed",
         "name": "The Undisputed",
-        "price": 0,
+        "price": 3.83,
         "reward": "Merciless Vaal Axe, Item Level: 100, Elder Item",
         "stack": 8,
-        "standardPrice": 20,
+        "standardPrice": 0,
         "weight": 11.0
     },
     {
@@ -8413,7 +8429,7 @@
         "eventPrice": 0,
         "id": "the-unexpected-prize",
         "name": "The Unexpected Prize",
-        "price": 0,
+        "price": 1.78,
         "reward": "Attribute Transforming Jewel, Corrupted",
         "stack": 2,
         "standardPrice": 0,
@@ -8423,8 +8439,7 @@
         "art": "TheUnion",
         "drop": {
             "areas": [
-                "MapWorldsCemetery",
-                "MapWorldsTortureChamberUnique"
+                "MapWorldsRelicChambers"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8433,7 +8448,7 @@
         "eventPrice": 0,
         "id": "the-union",
         "name": "The Union",
-        "price": 0,
+        "price": 1.44,
         "reward": "10x Gemcutter's Prism",
         "stack": 7,
         "standardPrice": 0,
@@ -8463,7 +8478,7 @@
         "eventPrice": 0,
         "id": "the-valkyrie",
         "name": "The Valkyrie",
-        "price": 0,
+        "price": 1.01,
         "reward": "Nemesis Item",
         "stack": 8,
         "standardPrice": 0,
@@ -8473,8 +8488,8 @@
         "art": "TheVast",
         "drop": {
             "areas": [
-                "MapWorldsCoves",
-                "MapWorldsForkingRiver"
+                "MapWorldsAtoll",
+                "MapWorldsCoralRuins"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8483,7 +8498,7 @@
         "eventPrice": 0,
         "id": "the-vast",
         "name": "The Vast",
-        "price": 5,
+        "price": 4,
         "reward": "Song of the Sirens",
         "stack": 7,
         "standardPrice": 0,
@@ -8493,7 +8508,7 @@
         "art": "TheVisionary",
         "drop": {
             "areas": [
-                "MapWorldsCanyon"
+                "MapWorldsColosseum"
             ],
             "min_level": 71,
             "monsters": [],
@@ -8502,7 +8517,7 @@
         "eventPrice": 0,
         "id": "the-visionary",
         "name": "The Visionary",
-        "price": 0,
+        "price": 1,
         "reward": "Lioneye's Vision",
         "stack": 6,
         "standardPrice": 0,
@@ -8525,10 +8540,10 @@
         "eventPrice": 0,
         "id": "the-void",
         "name": "The Void",
-        "price": 18.81,
+        "price": 2.71,
         "reward": "",
         "stack": 1,
-        "standardPrice": 10,
+        "standardPrice": 0,
         "weight": 6286.5
     },
     {
@@ -8540,7 +8555,7 @@
                 "2_6_7_1",
                 "2_6_7_2",
                 "MapWorldsCemeteryUnique",
-                "MapWorldsLavaChamber"
+                "MapWorldsMarshes"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8559,8 +8574,7 @@
         "art": "TheWarlord",
         "drop": {
             "areas": [
-                "MapWorldsArsenal",
-                "MapWorldsPromenade"
+                "MapWorldsRamparts"
             ],
             "min_level": 81,
             "monsters": [],
@@ -8569,7 +8583,7 @@
         "eventPrice": 0,
         "id": "the-warlord",
         "name": "The Warlord",
-        "price": 0,
+        "price": 1,
         "reward": "Six-Link Coronal Maul, Item Level: 83",
         "stack": 6,
         "standardPrice": 0,
@@ -8579,7 +8593,7 @@
         "art": "TheWatcher",
         "drop": {
             "areas": [
-                "MapWorldsReef"
+                "MapWorldsLair"
             ],
             "min_level": 69,
             "monsters": [],
@@ -8598,8 +8612,8 @@
         "art": "TheWeb",
         "drop": {
             "areas": [
-                "MapWorldsArachnidTomb",
-                "MapWorldsSpiderLair"
+                "MapWorldsJungleValley",
+                "MapWorldsSunkenCity"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8618,7 +8632,8 @@
         "art": "TheWeddingGift",
         "drop": {
             "areas": [
-                "MapWorldsJungleValley"
+                "MapWorldsSpiderLair",
+                "MapWorldsSunkenCity"
             ],
             "min_level": 53,
             "monsters": [],
@@ -8627,7 +8642,7 @@
         "eventPrice": 0,
         "id": "the-wedding-gift",
         "name": "The Wedding Gift",
-        "price": 10,
+        "price": 18.59,
         "reward": "Arakaali's Fang",
         "stack": 2,
         "standardPrice": 0,
@@ -8651,7 +8666,7 @@
         "eventPrice": 0,
         "id": "the-white-knight",
         "name": "The White Knight",
-        "price": 0,
+        "price": 7.81,
         "reward": "Six-Link Astral Plate, Item Level: 100, Crusader Item",
         "stack": 8,
         "standardPrice": 0,
@@ -8661,7 +8676,8 @@
         "art": "TheWhiteout",
         "drop": {
             "areas": [
-                "MapWorldsColdRiver_"
+                "MapWorldsFrozenCabins",
+                "MapWorldsIceberg"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8680,7 +8696,8 @@
         "art": "TheWiltedRose",
         "drop": {
             "areas": [
-                "MapWorldsCourtyard"
+                "MapWorldsOrchard",
+                "MapWorldsTerrace"
             ],
             "min_level": 72,
             "monsters": [],
@@ -8689,7 +8706,7 @@
         "eventPrice": 0,
         "id": "the-wilted-rose",
         "name": "The Wilted Rose",
-        "price": 5,
+        "price": 1.78,
         "reward": "Level 21 Aura Gem, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -8699,7 +8716,8 @@
         "art": "TheWind",
         "drop": {
             "areas": [
-                "MapWorldsFrozenCabins"
+                "MapWorldsAtoll",
+                "MapWorldsPlateau"
             ],
             "min_level": 70,
             "monsters": [],
@@ -8708,7 +8726,7 @@
         "eventPrice": 0,
         "id": "the-wind",
         "name": "The Wind",
-        "price": 1,
+        "price": 1.23,
         "reward": "Windripper",
         "stack": 7,
         "standardPrice": 0,
@@ -8718,7 +8736,7 @@
         "art": "TheWitch",
         "drop": {
             "areas": [
-                "MapWorldsMuseumUnique"
+                "MapWorldsBurialChambers"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8737,7 +8755,7 @@
         "art": "TheWolf",
         "drop": {
             "areas": [
-                "MapWorldsDarkForest"
+                "MapWorldsLair"
             ],
             "min_level": 45,
             "monsters": [],
@@ -8763,7 +8781,7 @@
         "eventPrice": 0,
         "id": "the-wolfs-legacy",
         "name": "The Wolf's Legacy",
-        "price": 0,
+        "price": 1.09,
         "reward": "Vaults of Atziri",
         "stack": 4,
         "standardPrice": 0,
@@ -8773,7 +8791,7 @@
         "art": "TheWolfsShadow",
         "drop": {
             "areas": [
-                "MapWorldsUndergroundRiverUnique"
+                "MapWorldsLair"
             ],
             "min_level": 47,
             "monsters": [],
@@ -8782,7 +8800,7 @@
         "eventPrice": 0,
         "id": "the-wolfs-shadow",
         "name": "The Wolf's Shadow",
-        "price": 0,
+        "price": 1.08,
         "reward": "Hyaon's Fury",
         "stack": 3,
         "standardPrice": 0,
@@ -8792,7 +8810,7 @@
         "art": "TheWolvenKingsBite",
         "drop": {
             "areas": [
-                "MapWorldsUndergroundRiverUnique"
+                "MapWorldsDarkForest"
             ],
             "min_level": 77,
             "monsters": [],
@@ -8813,7 +8831,7 @@
             "areas": [
                 "2_6_8",
                 "MapWorldsLair",
-                "MapWorldsUndergroundRiverUnique"
+                "MapWorldsSummit"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8822,7 +8840,7 @@
         "eventPrice": 0,
         "id": "the-wolverine",
         "name": "The Wolverine",
-        "price": 0,
+        "price": 1.07,
         "reward": "Claw, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -8841,7 +8859,7 @@
         "eventPrice": 0,
         "id": "the-world-eater",
         "name": "The World Eater",
-        "price": 0,
+        "price": 37.2,
         "reward": "Starforge",
         "stack": 8,
         "standardPrice": 0,
@@ -8853,7 +8871,8 @@
             "areas": [
                 "1_5_8",
                 "2_10_6",
-                "MapWorldsBelfry"
+                "MapWorldsLavaLake",
+                "MapWorldsLookout"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8862,10 +8881,10 @@
         "eventPrice": 0,
         "id": "the-wrath",
         "name": "The Wrath",
-        "price": 0.4,
+        "price": 1.03,
         "reward": "10x Chaos Orb",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 6997.0
     },
     {
@@ -8873,8 +8892,7 @@
         "drop": {
             "areas": [
                 "2_7_6",
-                "MapWorldsGraveTrough",
-                "MapWorldsNecropolisUnique"
+                "MapWorldsCursedCryptUnique"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8883,7 +8901,7 @@
         "eventPrice": 0,
         "id": "the-wretched",
         "name": "The Wretched",
-        "price": 0,
+        "price": 1.28,
         "reward": "Belt",
         "stack": 6,
         "standardPrice": 0,
@@ -8893,7 +8911,7 @@
         "art": "ThirstForKnowledge",
         "drop": {
             "areas": [
-                "MapWorldsResidence"
+                "MapWorldsCourthouse"
             ],
             "min_level": 48,
             "monsters": [],
@@ -8902,7 +8920,7 @@
         "eventPrice": 0,
         "id": "thirst-for-knowledge",
         "name": "Thirst for Knowledge",
-        "price": 0,
+        "price": 1,
         "reward": "Gluttony",
         "stack": 5,
         "standardPrice": 0,
@@ -8914,7 +8932,7 @@
             "areas": [
                 "2_8_9",
                 "2_9_9",
-                "MapWorldsFactory"
+                "MapWorldsArsenal"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8923,7 +8941,7 @@
         "eventPrice": 0,
         "id": "three-faces-in-the-dark",
         "name": "Three Faces in the Dark",
-        "price": 0.2,
+        "price": 0.3478,
         "reward": "3x Chaos Orb",
         "stack": 7,
         "standardPrice": 0,
@@ -8933,8 +8951,7 @@
         "art": "ThreeVoices",
         "drop": {
             "areas": [
-                "MapWorldsArena",
-                "MapWorldsCitySquare"
+                "MapWorldsCrystalOre"
             ],
             "min_level": 23,
             "monsters": [],
@@ -8943,10 +8960,10 @@
         "eventPrice": 0,
         "id": "three-voices",
         "name": "Three Voices",
-        "price": 0.03333,
+        "price": 1,
         "reward": "3x Essence",
         "stack": 3,
-        "standardPrice": 1,
+        "standardPrice": 2,
         "weight": 11929.0
     },
     {
@@ -8955,8 +8972,6 @@
             "areas": [
                 "2_6_1",
                 "2_6_7_2",
-                "MapWorldsCourtyardUnique",
-                "MapWorldsLookout",
                 "MapWorldsTower"
             ],
             "min_level": 23,
@@ -8976,8 +8991,8 @@
         "art": "TimeLostRelic",
         "drop": {
             "areas": [
-                "MapWorldsDig",
-                "MapWorldsFloodedMine"
+                "MapWorldsGeode",
+                "MapWorldsMesa"
             ],
             "min_level": 68,
             "monsters": [],
@@ -8986,7 +9001,7 @@
         "eventPrice": 0,
         "id": "time-lost-relic",
         "name": "Time-Lost Relic",
-        "price": 14,
+        "price": 0.7872,
         "reward": "League-Specific Item",
         "stack": 10,
         "standardPrice": 0,
@@ -8996,8 +9011,7 @@
         "art": "ToxicTidings",
         "drop": {
             "areas": [
-                "MapWorldsAridLake",
-                "MapWorldsSulphurVents"
+                "MapWorldsToxicSewer"
             ],
             "min_level": 59,
             "monsters": [],
@@ -9006,7 +9020,7 @@
         "eventPrice": 0,
         "id": "toxic-tidings",
         "name": "Toxic Tidings",
-        "price": 24,
+        "price": 3.95,
         "reward": "Dendrobate,  Two-Implicit,  Corrupted",
         "stack": 5,
         "standardPrice": 0,
@@ -9016,8 +9030,8 @@
         "art": "Tranquillity",
         "drop": {
             "areas": [
-                "MapWorldsAshenWood",
-                "MapWorldsFields"
+                "MapWorldsFields",
+                "MapWorldsMesa"
             ],
             "min_level": 68,
             "monsters": [],
@@ -9026,7 +9040,7 @@
         "eventPrice": 0,
         "id": "tranquillity",
         "name": "Tranquillity",
-        "price": 0,
+        "price": 5.42,
         "reward": "Voltaxic Rift",
         "stack": 7,
         "standardPrice": 0,
@@ -9036,7 +9050,8 @@
         "art": "TreasureHunter",
         "drop": {
             "areas": [
-                "MapWorldsExcavation"
+                "MapWorldsSprings",
+                "MapWorldsUndergroundRiverUnique"
             ],
             "min_level": 68,
             "monsters": [],
@@ -9045,7 +9060,7 @@
         "eventPrice": 0,
         "id": "treasure-hunter",
         "name": "Treasure Hunter",
-        "price": 0,
+        "price": 1.62,
         "reward": "Vaults of Atziri, Corrupted",
         "stack": 7,
         "standardPrice": 0,
@@ -9093,7 +9108,6 @@
         "art": "Unchained",
         "drop": {
             "areas": [
-                "MapWorldsCage",
                 "MapWorldsPit"
             ],
             "min_level": 54,
@@ -9103,7 +9117,7 @@
         "eventPrice": 0,
         "id": "unchained",
         "name": "Unchained",
-        "price": 7.49,
+        "price": 1.66,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
         "standardPrice": 0,
@@ -9113,7 +9127,7 @@
         "art": "UndergroundForest",
         "drop": {
             "areas": [
-                "MapWorldsGrotto"
+                "MapWorldsFloodedMine"
             ],
             "min_level": 78,
             "monsters": [],
@@ -9122,7 +9136,7 @@
         "eventPrice": 0,
         "id": "underground-forest",
         "name": "Underground Forest",
-        "price": 0,
+        "price": 2.89,
         "reward": "10x Grand Eldritch Ichor",
         "stack": 4,
         "standardPrice": 0,
@@ -9134,7 +9148,7 @@
             "areas": [
                 "2_7_12_1",
                 "2_7_12_2",
-                "MapWorldsMazeUnique",
+                "MapWorldsVaalPyramid",
                 "MapWorldsVaalTemple"
             ],
             "min_level": 35,
@@ -9144,10 +9158,10 @@
         "eventPrice": 0,
         "id": "unrequited-love",
         "name": "Unrequited Love",
-        "price": 61241,
+        "price": 879.9,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 85511,
+        "standardPrice": 162281,
         "weight": 4.0
     },
     {
@@ -9161,7 +9175,7 @@
         "eventPrice": 0,
         "id": "vanity",
         "name": "Vanity",
-        "price": 0,
+        "price": 0.9,
         "reward": "Tabula Rasa, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -9177,8 +9191,8 @@
                 "2_8_2_1",
                 "2_9_10_1",
                 "2_9_10_2",
-                "MapWorldsArachnidTomb",
-                "MapWorldsBog"
+                "MapWorldsSulphurVents",
+                "MapWorldsToxicSewer"
             ],
             "min_level": 23,
             "monsters": [],
@@ -9197,7 +9211,7 @@
         "art": "ViniasToken",
         "drop": {
             "areas": [
-                "MapWorldsTempleUnique"
+                "MapWorldsShrine"
             ],
             "min_level": 23,
             "monsters": [],
@@ -9206,7 +9220,7 @@
         "eventPrice": 0,
         "id": "vinias-token",
         "name": "Vinia's Token",
-        "price": 1,
+        "price": 1.25,
         "reward": "10x Orb of Regret",
         "stack": 5,
         "standardPrice": 0,
@@ -9250,7 +9264,7 @@
         "eventPrice": 0,
         "id": "volatile-power",
         "name": "Volatile Power",
-        "price": 0,
+        "price": 1,
         "reward": "Vaal Gem, Quality: +20%, Corrupted",
         "stack": 9,
         "standardPrice": 0,
@@ -9269,7 +9283,7 @@
         "eventPrice": 0,
         "id": "wealth-and-power",
         "name": "Wealth and Power",
-        "price": 150.7,
+        "price": 59.24,
         "reward": "Level 4 Enlighten, Corrupted",
         "stack": 11,
         "standardPrice": 0,
@@ -9279,8 +9293,7 @@
         "art": "WhenCurrentsBlaze",
         "drop": {
             "areas": [
-                "MapWorldsUndergroundSea",
-                "MapWorldsWaterways"
+                "MapWorldsTribunal"
             ],
             "min_level": 78,
             "monsters": [],
@@ -9289,7 +9302,7 @@
         "eventPrice": 0,
         "id": "when-currents-blaze",
         "name": "When Currents Blaze",
-        "price": 0,
+        "price": 1.2,
         "reward": "Stormfire, Quality: +20%, Corrupted",
         "stack": 2,
         "standardPrice": 0,
@@ -9299,7 +9312,8 @@
         "art": "WhoAsked",
         "drop": {
             "areas": [
-                "MapWorldsTortureChamber"
+                "MapWorldsFactory",
+                "MapWorldsFortress"
             ],
             "min_level": 81,
             "monsters": [],
@@ -9308,7 +9322,7 @@
         "eventPrice": 0,
         "id": "who-asked",
         "name": "Who Asked",
-        "price": 0,
+        "price": 8,
         "reward": "Dictator's Weapon, Item Level: 83, Fractured",
         "stack": 9,
         "standardPrice": 0,
@@ -9325,7 +9339,7 @@
         "eventPrice": 0,
         "id": "winters-embrace",
         "name": "Winter's Embrace",
-        "price": 4,
+        "price": 0,
         "reward": "Circle of Fear, Three-Implicit, Synthesised",
         "stack": 2,
         "standardPrice": 0,

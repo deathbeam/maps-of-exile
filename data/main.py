@@ -183,6 +183,7 @@ def get_card_data(key, config, card_extra):
 
     def get_poedb_card_drops(card_name):
         print(f"Getting PoEDB card data for {card_name}")
+        card_name = html.unescape(card_name)
         url = config["poedb"]["base"] + urllib.parse.quote(
             card_name.replace(" ", "_").replace("'", "").strip()
         )
@@ -353,7 +354,7 @@ def get_card_data(key, config, card_extra):
 
     out = []
     for wiki_card in wiki_cards:
-        name = wiki_card["name"]
+        name = html.unescape(wiki_card["name"])
 
         # Combine poedb atlas drops with wiki drops
         poedb_drops, art_id = get_poedb_card_drops(name)
@@ -576,7 +577,7 @@ def get_map_wiki(config):
                 "offset": offset,
                 "tables": "areas",
                 "fields": "areas.name, areas.id, areas.area_level, areas.is_map_area, areas.is_unique_map_area, "
-                "areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page",
+                "areas.monster_ids, areas.boss_monster_ids, areas.connection_ids, areas.act, areas.main_page, areas.tags",
                 "where": "areas.area_level != 0 AND areas.is_legacy_map_area=false AND areas.is_hideout_area=false AND "
                 "areas.is_town_area=false AND areas.is_labyrinth_area=false AND areas.is_labyrinth_airlock_area=false AND "
                 "areas.is_labyrinth_boss_area=false AND areas.is_vaal_area=false AND "
@@ -660,6 +661,7 @@ def get_maps(key, config):
         if main_page:
             name = main_page
 
+        name = html.unescape(name)
         name = re.sub(r"\([^)]+\)", "", name)
         name = name.strip()
         is_map_area = m.get("is map area", "0") != "0"
@@ -679,10 +681,18 @@ def get_maps(key, config):
         if is_unique_map_area:
             map_type = "unique map"
         elif is_map_area:
-            if " Map" not in name or level > 83:
-                map_type = "special map"
-            else:
+            tags = set((m.get("tags") or "").split(","))
+            is_regular_map = (
+                "map" in tags
+                and "unique_map" not in tags
+                and "map_not_on_atlas" not in tags
+            )
+            if is_regular_map and level <= 83:
+                if not name.endswith(" Map"):
+                    name = name + " Map"
                 map_type = "map"
+            else:
+                map_type = "special map"
         elif is_act_area:
             map_type = "act area"
 

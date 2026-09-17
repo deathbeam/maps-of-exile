@@ -2,7 +2,7 @@ import { useAtom, useAtomValue } from 'jotai'
 import ReactFlow, { ControlButton, Controls, Handle, Position, useReactFlow } from 'reactflow'
 import 'reactflow/dist/base.css'
 
-import { deduplicate, filter, mapLevel, ratingColor, tierColor } from '../../common'
+import { deduplicate, filter, filterTiers, mapLevel, ratingColor, tierColor } from '../../common'
 import { globals } from '../../constants'
 import state from '../../state'
 import MapImage from '../MapImage'
@@ -95,6 +95,7 @@ const Atlas = ({ selectedMap }) => {
   const [atlasLabels, setAtlasLabels] = useAtom(state.input.atlasLabels)
   const maps = useAtomValue(state.ratedMaps)
   const parsedSearch = useAtomValue(state.parsedSearch)
+  const mapTiers = useAtomValue(state.input.mapTiers)
   const voidstones = useAtomValue(state.input.voidstones)
 
   const mapsOnAtlas = maps.filter(m => m.connected.length > 0 && m.atlas)
@@ -102,7 +103,7 @@ const Atlas = ({ selectedMap }) => {
     .filter(m =>
       selectedMap
         ? m.name === selectedMap.name || m.connected.map(c => c.name).includes(selectedMap.name)
-        : filter(parsedSearch, m.search)
+        : filter(parsedSearch, m.search) && (!mapTiers || mapTiers === '1-16' || filterTiers(m.levels, voidstones, mapTiers))
     )
     .map(m => m.name)
 

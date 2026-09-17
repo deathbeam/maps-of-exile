@@ -49,6 +49,28 @@ export function filter(search, v) {
   return posMatched && negMatched
 }
 
+/**
+ * 
+ * @param {[Number]} mapLevels Array of 5 numbers representing level
+ * @param {Number} voidstoneCount 0-4
+ * @param {String} currentSearch Number range formatted as "X-Y", or single number
+ * @returns {boolean}
+ */
+export function filterTiers(mapLevels, voidstoneCount, currentSearch) {
+  let lowTier = Number(currentSearch.split('-')[0])
+  let hiTier = Number(currentSearch.split('-')[1])
+
+  if (!lowTier || isNaN(lowTier)) {
+    return false
+  }
+
+  if (!hiTier || isNaN(hiTier)) {
+    return mapLevelToTier(mapLevels[voidstoneCount]) == lowTier
+  }
+
+  return mapLevelToTier(mapLevels[voidstoneCount]) >= lowTier && mapLevelToTier(mapLevels[voidstoneCount]) <= hiTier
+}
+
 export function ratingColor(rating, scale = 1) {
   let color = 'danger'
 

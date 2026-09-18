@@ -10311,12 +10311,6 @@
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
         ],
-        "connected": [
-            "Caldera Map",
-            "Coral Ruins Map",
-            "Sunken City Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TropicalIsland",
         "ids": [
             "MapWorldsTropicalIsland"
         ],
@@ -10345,7 +10339,6 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10382,10 +10375,6 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian3"
         ],
-        "connected": [
-            "Cortex"
-        ],
-        "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "ids": [
             "Synthesis_MapGuardian3"
         ],
@@ -10489,7 +10478,6 @@
             "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
             "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
         ],
-        "icon": "Art/2DItems/Maps/UniqueMap2",
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
@@ -10539,13 +10527,6 @@
             "Metadata/Monsters/DemonModular/DemonFemaleRangedMapBoss1",
             "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
         ],
-        "connected": [
-            "Burial Chambers Map",
-            "Grotto Map",
-            "Tower Map",
-            "Vaal Temple Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalPyramid",
         "ids": [
             "MapWorldsVaalPyramid"
         ],
@@ -10574,7 +10555,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -10588,10 +10568,6 @@
             "Metadata/Monsters/DemonBosses/DemonBoss2/DemonBoss2Map",
             "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3Map"
         ],
-        "connected": [
-            "Vaal Pyramid Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalTempleBase",
         "ids": [
             "MapWorldsVaalTemple"
         ],
@@ -10613,7 +10589,6 @@
         "shorthand": "al t",
         "tags": {
             "boss_not_spawned": false,
-            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
@@ -10622,7 +10597,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "special map",
@@ -10826,7 +10800,6 @@
         "boss_ids": [
             "Metadata/Monsters/Voll/VollMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wasteland",
         "ids": [
             "MapWorldsWasteland"
         ],
@@ -10854,7 +10827,6 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -10864,11 +10836,6 @@
         "boss_ids": [
             "Metadata/Monsters/IceElemental/IceElementalMapBoss"
         ],
-        "connected": [
-            "Arid Lake Map",
-            "Palace Map"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Waterways",
         "ids": [
             "MapWorldsWaterways"
         ],
@@ -10880,7 +10847,6 @@
             83
         ],
         "name": "Waterways Map",
-        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -10891,7 +10857,6 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -10903,10 +10868,6 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/DarkSeaWitch"
         ],
-        "connected": [
-            "Strand Map"
-        ],
-        "icon": "Art/2DItems/Maps/UniqueMapEye",
         "ids": [
             "MapWorldsStrandUnique"
         ],
@@ -10931,7 +10892,6 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
-            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map",
@@ -11020,11 +10980,6 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueBetrayal/BetrayalCatarinaMapBoss"
         ],
-        "connected": [
-            "Absence of Patience and Wisdom",
-            "Absence of Symmetry and Harmony"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMausoleum",
         "ids": [
             "MapWorldsZiggurat"
         ],
@@ -11036,9 +10991,7 @@
         "name": "Ziggurat Map",
         "rating": {},
         "shorthand": "gg",
-        "tags": {
-            "boss_not_twinnable": true
-        },
+        "tags": {},
         "type": "special map",
         "x": 146,
         "y": 825

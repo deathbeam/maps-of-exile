@@ -25,6 +25,11 @@
             "Metadata/Monsters/Shavronne/ShavronneTowerMapUber_",
             "Metadata/Monsters/UnholyTrio/UnholyTrioMapUber"
         ],
+        "connected": [
+            "Absence of Mercy and Empathy",
+            "Eye of the Storm"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMalformation",
         "ids": [
             "MapWorldsAbomination"
         ],
@@ -36,7 +41,9 @@
         "name": "Abomination Map",
         "rating": {},
         "shorthand": "bom",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 777,
         "y": 796
@@ -191,6 +198,7 @@
             "Metadata/Monsters/Wb/WbChaosLeader8",
             "Metadata/Monsters/Wb/WbLeader4Minion"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SulphurVents",
         "ids": [
             "MapWorldsAcidLakes"
         ],
@@ -212,6 +220,7 @@
             "boss_separated": false,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -222,6 +231,10 @@
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss1",
             "Metadata/Monsters/Necromancer/NecromancerTwinUniqueMapBoss2"
         ],
+        "connected": [
+            "Overgrown Shrine Map"
+        ],
+        "icon": "Art/2DItems/Maps/musicbox",
         "ids": [
             "MapWorldsOvergrownShrineUnique"
         ],
@@ -246,6 +259,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -257,6 +271,14 @@
         "boss_ids": [
             "Metadata/Monsters/BlacksmithGolem/BlacksmithGolemMap"
         ],
+        "connected": [
+            "Colonnade Map",
+            "Geode Map",
+            "Primordial Blocks Map",
+            "Strand Map",
+            "Summit Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Alleyways",
         "ids": [
             "MapWorldsAlleyways"
         ],
@@ -285,6 +307,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -296,6 +319,10 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSynthesis/SynthesisSoulstealerGuardian1"
         ],
+        "connected": [
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/SynthesisColdGuardianMap",
         "ids": [
             "Synthesis_MapGuardian1"
         ],
@@ -394,6 +421,11 @@
         "boss_ids": [
             "Metadata/Monsters/Spiders/MapSpiderBossSinsSimplified"
         ],
+        "connected": [
+            "Forking River Map",
+            "Malformation Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arachnid",
         "ids": [
             "MapWorldsArachnidTomb"
         ],
@@ -422,6 +454,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -481,6 +514,7 @@
             "Metadata/Monsters/GladiatorBosses/GladiatorBossLeaderMap",
             "Metadata/Monsters/GladiatorBosses/GladiatorBossSupportMap"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arena",
         "ids": [
             "MapWorldsArena"
         ],
@@ -502,6 +536,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -609,6 +644,10 @@
         "boss_ids": [
             "Metadata/Monsters/AnimatedItem/AnimatedWeaponMapBoss"
         ],
+        "connected": [
+            "Grave Trough Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arsenal",
         "ids": [
             "MapWorldsArsenal"
         ],
@@ -637,6 +676,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -699,6 +739,12 @@
         "boss_ids": [
             "Metadata/Monsters/Totems/TotemMapBossCold"
         ],
+        "connected": [
+            "Factory Map",
+            "Lava Lake Map",
+            "Maelstr\u00f6m of Chaos"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Atoll",
         "ids": [
             "MapWorldsAtoll"
         ],
@@ -728,6 +774,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -805,6 +852,12 @@
             "Metadata/Monsters/AvariusCasticus/AvariusCasticusMap",
             "Metadata/Monsters/AvariusCasticus/AvariusCasticusDivineMap"
         ],
+        "connected": [
+            "Jungle Valley Map",
+            "Lookout Map",
+            "Sulphur Vents Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Basilica",
         "ids": [
             "MapWorldsBasilica"
         ],
@@ -824,10 +877,12 @@
         },
         "shorthand": "asi",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -928,6 +983,12 @@
         "boss_ids": [
             "Metadata/Monsters/KitavaBoss/Kitava1Map"
         ],
+        "connected": [
+            "Bramble Valley Map",
+            "Grave Trough Map",
+            "Temple Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Belfry",
         "ids": [
             "MapWorldsBelfry"
         ],
@@ -948,6 +1009,7 @@
         "shorthand": "bel",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -956,6 +1018,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -966,6 +1029,7 @@
         "boss_ids": [
             "Metadata/Monsters/Rhoas/MapRhoaSkeletonBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Bog",
         "ids": [
             "MapWorldsBog"
         ],
@@ -989,6 +1053,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -997,6 +1062,7 @@
         "boss_ids": [
             "Metadata/Monsters/Necromancer/MapNecromancerBossPrison"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Catacomb",
         "ids": [
             "MapWorldsBoneCrypt"
         ],
@@ -1024,6 +1090,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -1073,6 +1140,13 @@
         "boss_ids": [
             "Metadata/Monsters/BanditLeaderInt/MapBanditLeaderAlira2"
         ],
+        "connected": [
+            "Arcade Map",
+            "Beach Map",
+            "The Utzaal Arena",
+            "Vaal Pyramid Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/BurialChambers",
         "ids": [
             "MapWorldsBurialChambers"
         ],
@@ -1095,6 +1169,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -1735,6 +1810,11 @@
         "boss_ids": [
             "Metadata/Monsters/Daresso/DaressoMapBoss"
         ],
+        "connected": [
+            "Forbidden Woods Map",
+            "Summit Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Colosseum",
         "ids": [
             "MapWorldsColosseum"
         ],
@@ -1763,6 +1843,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -1819,6 +1900,14 @@
         "boss_ids": [
             "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptainMap"
         ],
+        "connected": [
+            "Caldera Map",
+            "Dunes Map",
+            "Port Map",
+            "Shrine Map",
+            "Tropical Island Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CorpseTrench",
         "ids": [
             "MapWorldsCoralRuins"
         ],
@@ -1831,6 +1920,7 @@
             83
         ],
         "name": "Coral Ruins Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 4,
             "density": 6,
@@ -1839,6 +1929,7 @@
         "shorthand": "l r",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": false,
@@ -1847,6 +1938,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -1937,6 +2029,14 @@
             "Metadata/Monsters/Exiles/ExileRanger2Kitava",
             "Metadata/Monsters/Exiles/ExileShadow1Kitava"
         ],
+        "connected": [
+            "Arachnid Nest Map",
+            "Dunes Map",
+            "Mesa Map",
+            "Siege Map",
+            "The Vinktar Square"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Courthouse",
         "ids": [
             "MapWorldsCourthouse"
         ],
@@ -1958,6 +2058,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -2108,6 +2209,7 @@
         "boss_ids": [
             "Metadata/Monsters/Banshee/BansheeMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sanctuary",
         "ids": [
             "MapWorldsCrimsonTemple"
         ],
@@ -2136,6 +2238,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -2316,6 +2419,12 @@
         "boss_ids": [
             "Metadata/Monsters/Talisman/TalismanWolfKingMapBoss"
         ],
+        "connected": [
+            "Arid Lake Map",
+            "Crux of Nothingness",
+            "Factory Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DarkForest",
         "ids": [
             "MapWorldsDarkForest"
         ],
@@ -2337,6 +2446,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -2348,6 +2458,10 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/SkeletonBossMapWest4"
         ],
+        "connected": [
+            "Mausoleum Map"
+        ],
+        "icon": "Art/2DItems/Maps/DeathandTaxes",
         "ids": [
             "MapWorldsNecropolisUnique"
         ],
@@ -2372,6 +2486,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -2421,6 +2536,13 @@
         "boss_ids": [
             "Metadata/Monsters/Kira/KiraMapDesert"
         ],
+        "connected": [
+            "Infested Valley Map",
+            "Mastermind's Lair",
+            "Mausoleum Map",
+            "Residence Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Desert",
         "ids": [
             "MapWorldsDesert"
         ],
@@ -2442,6 +2564,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -2560,6 +2683,9 @@
     },
     {
         "atlas": true,
+        "connected": [
+            "Stagnation Map"
+        ],
         "ids": [
             "LegionLeague",
             "LegionLeague2",
@@ -2616,6 +2742,7 @@
         "boss_ids": [
             "Metadata/Monsters/Spiker/SpikerBull/SpikerBullBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DesertShipGraveyard",
         "ids": [
             "MapWorldsDrySea"
         ],
@@ -2640,6 +2767,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "league_mechanics": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -2759,6 +2887,11 @@
         "boss_ids": [
             "Metadata/Monsters/Bandits/FrostfireMageMapBoss"
         ],
+        "connected": [
+            "Phantasmagoria Map",
+            "Reef Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Estuary",
         "ids": [
             "MapWorldsEstuary"
         ],
@@ -2781,6 +2914,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -2793,6 +2927,13 @@
             "Metadata/Monsters/Handfinger/HandfingerMapBoss",
             "Metadata/Monsters/MineBat/MineBatMapBoss"
         ],
+        "connected": [
+            "Cemetery Map",
+            "City Square Map",
+            "Cold River Map",
+            "Siege Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Excavation",
         "ids": [
             "MapWorldsExcavation"
         ],
@@ -2821,6 +2962,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -2832,6 +2974,9 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasExiles/AtlasExile5",
             "Metadata/Monsters/AtlasExiles/AtlasExile5Throne"
+        ],
+        "connected": [
+            "Abomination Map"
         ],
         "ids": [
             "AtlasExilesBoss5"
@@ -2999,6 +3144,11 @@
             "Metadata/Monsters/SaplingMonster/IcedSaplingHunterBoss",
             "Metadata/Monsters/SaplingMonster/IcedSaplingTricksterBoss"
         ],
+        "connected": [
+            "Colosseum Map",
+            "Marshes Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ForbiddenWoods",
         "ids": [
             "MapWorldsForbiddenWoods"
         ],
@@ -3019,12 +3169,14 @@
         "shorthand": "bid",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3112,6 +3264,11 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueHeist/Boss/UnbreakableMk1Map"
         ],
+        "connected": [
+            "Absence of Value and Meaning",
+            "Cortex"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberSilo",
         "ids": [
             "MapWorldsFortress"
         ],
@@ -3123,7 +3280,9 @@
         "name": "Fortress Map",
         "rating": {},
         "shorthand": "fortress",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 905,
         "y": 167
@@ -3178,6 +3337,13 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/Pirate/BrutalPirateLordBoss"
         ],
+        "connected": [
+            "Bazaar Map",
+            "Flooded Mine Map",
+            "Ramparts Map",
+            "Spider Lair Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/FrozenCabins",
         "ids": [
             "MapWorldsFrozenCabins"
         ],
@@ -3190,6 +3356,7 @@
             83
         ],
         "name": "Frozen Cabins Map",
+        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -3204,7 +3371,8 @@
             "boss_soft_phases": true,
             "delirium_mirror": true,
             "league_mechanics": false,
-            "linear": true
+            "linear": true,
+            "nightmare_boss_map": true
         },
         "type": "map",
         "x": 592,
@@ -3301,6 +3469,12 @@
         "boss_ids": [
             "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss2"
         ],
+        "connected": [
+            "Alleyways Map",
+            "Colonnade Map",
+            "Sulphur Vents Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Quarry",
         "ids": [
             "MapWorldsGeode"
         ],
@@ -3329,6 +3503,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3340,6 +3515,11 @@
         "boss_ids": [
             "Metadata/Monsters/DemonFemale/MapLightningWhipDemonBoss"
         ],
+        "connected": [
+            "Port Map",
+            "Reef Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Ghetto",
         "ids": [
             "MapWorldsGhetto"
         ],
@@ -3361,6 +3541,7 @@
             "boss_separated": false,
             "few_obstacles": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3402,6 +3583,12 @@
         "boss_ids": [
             "Metadata/Monsters/BurnBoss/BurnBoss"
         ],
+        "connected": [
+            "Arsenal Map",
+            "Beach Map",
+            "Belfry Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Burn",
         "ids": [
             "MapWorldsGraveTrough"
         ],
@@ -3420,7 +3607,9 @@
             "layout": 4
         },
         "shorthand": "oug",
-        "tags": {},
+        "tags": {
+            "nightmare_boss_map": true
+        },
         "type": "map",
         "x": 818,
         "y": 356
@@ -3432,6 +3621,11 @@
             "Metadata/Monsters/Skeletons/MapSkeletonBossPrisonMelee",
             "Metadata/Monsters/Skeletons/MapSkeletonBossRanged"
         ],
+        "connected": [
+            "Conservatory Map",
+            "Park Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Graveyard",
         "ids": [
             "MapWorldsGraveyard"
         ],
@@ -3451,9 +3645,11 @@
         },
         "shorthand": "eya",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3465,6 +3661,11 @@
         "boss_ids": [
             "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss"
         ],
+        "connected": [
+            "Forking River Map",
+            "Vaal Pyramid Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Grotto",
         "ids": [
             "MapWorldsGrotto"
         ],
@@ -3493,6 +3694,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -3500,6 +3702,10 @@
         "y": 662
     },
     {
+        "connected": [
+            "Promenade Map"
+        ],
+        "icon": "Art/2DItems/Maps/HallOfGrandmasters",
         "ids": [
             "MapWorldsPromenadeUnique"
         ],
@@ -3516,6 +3722,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map"
@@ -3583,6 +3790,12 @@
             "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossMap",
             "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossXedMap"
         ],
+        "connected": [
+            "Palace Map",
+            "Pier Map",
+            "Pit Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chambers",
         "ids": [
             "MapWorldsHauntedMansion"
         ],
@@ -3605,6 +3818,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -3659,6 +3873,12 @@
             "Metadata/Monsters/Wb/WbColdLeader2",
             "Metadata/Monsters/Wb/WbColdLeader3"
         ],
+        "connected": [
+            "Orchard Map",
+            "Stagnation Map",
+            "The Black Barya"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Iceberg",
         "ids": [
             "MapWorldsIceberg"
         ],
@@ -3680,6 +3900,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -3986,6 +4207,10 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasBosses/HydraBoss"
         ],
+        "connected": [
+            "The Shaper's Realm"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Hydra",
         "ids": [
             "MapWorldsHydra"
         ],
@@ -4002,6 +4227,7 @@
         "shorthand": "yd",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": false,
             "boss_rushable": false,
             "boss_separated": true,
@@ -4010,6 +4236,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "special map",
@@ -4020,6 +4247,7 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crematorium",
         "ids": [
             "MapWorldsLavaChamber"
         ],
@@ -4041,6 +4269,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -4051,6 +4280,14 @@
             "Metadata/Monsters/KitavaBoss/KitavaFinalMap",
             "Metadata/Monsters/KitavaBoss/KitavaFinalHeartMap"
         ],
+        "connected": [
+            "Atoll Map",
+            "Lair Map",
+            "Lookout Map",
+            "Shipyard Map",
+            "Sulphur Vents Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Corpse",
         "ids": [
             "MapWorldsLavaLake"
         ],
@@ -4063,6 +4300,7 @@
             83
         ],
         "name": "Lava Lake Map",
+        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 0,
             "density": 7,
@@ -4070,10 +4308,12 @@
         },
         "shorthand": "a l",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4124,6 +4364,7 @@
             "Metadata/Monsters/Wb/WbFireLeader3",
             "Metadata/Monsters/Wb/WbFireLeader4"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Beacon",
         "ids": [
             "MapWorldsLighthouse"
         ],
@@ -4151,6 +4392,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -4160,6 +4402,12 @@
         "boss_ids": [
             "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
         ],
+        "connected": [
+            "Basilica Map",
+            "Lair Map",
+            "Lava Lake Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Lookout",
         "ids": [
             "MapWorldsLookout"
         ],
@@ -4182,6 +4430,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4425,6 +4674,13 @@
         "boss_ids": [
             "Metadata/Monsters/Zombies/ZombieBossTolmanMap"
         ],
+        "connected": [
+            "Death and Taxes",
+            "Desert Map",
+            "Fields Map",
+            "Mineral Pools Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Mausoleum",
         "ids": [
             "MapWorldsMausoleum"
         ],
@@ -4448,6 +4704,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -4458,6 +4715,7 @@
         "boss_ids": [
             "Metadata/Monsters/IncaShadowBoss/MapBossIncaShadow"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Maze",
         "ids": [
             "MapWorldsMaze"
         ],
@@ -4485,6 +4743,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -4593,6 +4852,12 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossSpark"
         ],
+        "connected": [
+            "Ivory Temple Map",
+            "Mausoleum Map",
+            "Volcano Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/MineralPools",
         "ids": [
             "MapWorldsMineralPools"
         ],
@@ -4605,6 +4870,7 @@
             83
         ],
         "name": "Mineral Pools Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 6,
             "density": 5,
@@ -4621,6 +4887,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4646,7 +4913,9 @@
         "name": "Moment of Loneliness",
         "rating": {},
         "shorthand": " lo",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "unique map",
         "x": 145,
         "y": 255
@@ -4670,7 +4939,9 @@
         "name": "Moment of Reverence",
         "rating": {},
         "shorthand": "eve",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "unique map",
         "x": 146,
         "y": 117
@@ -4693,7 +4964,9 @@
         "name": "Moment of Trauma",
         "rating": {},
         "shorthand": "aum",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "unique map",
         "x": 88,
         "y": 184
@@ -4702,6 +4975,7 @@
         "boss_ids": [
             "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunarisMap"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/LunarisTemple",
         "ids": [
             "MapWorldsMoonTemple"
         ],
@@ -4729,6 +5003,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -4815,6 +5090,7 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/SkeletonLargeMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Necropolis",
         "ids": [
             "MapWorldsNecropolis"
         ],
@@ -4843,12 +5119,17 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
     },
     {
         "atlas": true,
+        "connected": [
+            "Primordial Blocks Map"
+        ],
+        "icon": "Art/2DItems/Maps/oba",
         "ids": [
             "MapWorldsTortureChamberUnique"
         ],
@@ -4873,6 +5154,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -4884,6 +5166,10 @@
         "boss_ids": [
             "Metadata/Monsters/Totems/olmec_totem/MapTotemBossLegendsMain"
         ],
+        "connected": [
+            "Plateau Map"
+        ],
+        "icon": "Art/2DItems/Maps/olmec",
         "ids": [
             "MapWorldsBoneCryptUnique"
         ],
@@ -4908,6 +5194,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "unique map",
@@ -4919,6 +5206,11 @@
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBossSimplified"
         ],
+        "connected": [
+            "Iceberg Map",
+            "Promenade Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Orchard",
         "ids": [
             "MapWorldsOrchard"
         ],
@@ -4947,6 +5239,7 @@
             "few_obstacles": false,
             "league_mechanics": true,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -4997,6 +5290,7 @@
         "boss_ids": [
             "Metadata/Monsters/Maligaro/Maligaro2Map"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/OvergrownRuin",
         "ids": [
             "MapWorldsOvergrownRuin"
         ],
@@ -5016,6 +5310,7 @@
         "shorthand": "n r",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -5024,6 +5319,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -5081,6 +5377,12 @@
             "Metadata/Monsters/Dominusdemon/DominusDemonMapBoss",
             "Metadata/Monsters/Pope/PopeMapBoss2"
         ],
+        "connected": [
+            "Haunted Mansion Map",
+            "Pit Map",
+            "Waterways Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Palace",
         "ids": [
             "MapWorldsPalace"
         ],
@@ -5103,6 +5405,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -5114,6 +5417,11 @@
         "boss_ids": [
             "Metadata/Monsters/Statue/StatueChurchMapBoss"
         ],
+        "connected": [
+            "Graveyard Map",
+            "Infested Valley Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Park",
         "ids": [
             "MapWorldsPark"
         ],
@@ -5137,6 +5445,7 @@
             "boss_separated": false,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5149,6 +5458,7 @@
             "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap2",
             "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap3"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Pen",
         "ids": [
             "MapWorldsPen"
         ],
@@ -5166,9 +5476,11 @@
         },
         "shorthand": "pen",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map"
@@ -5177,6 +5489,7 @@
         "boss_ids": [
             "Metadata/Monsters/MossMonster/MapMossMonsterBossOldFields"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DryPeninsula",
         "ids": [
             "MapWorldsPeninsula"
         ],
@@ -5197,6 +5510,7 @@
             "boss_separated": true,
             "few_obstacles": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -5297,6 +5611,10 @@
         "boss_ids": [
             "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
         ],
+        "connected": [
+            "Dunes Map"
+        ],
+        "icon": "Art/2DItems/Maps/PillarsOfVastiri",
         "ids": [
             "MapWorldsDunesUnique"
         ],
@@ -5321,6 +5639,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "unique map",
@@ -5379,6 +5698,10 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasBosses/ChimeraBoss"
         ],
+        "connected": [
+            "The Shaper's Realm"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chimera",
         "ids": [
             "MapWorldsChimera"
         ],
@@ -5395,6 +5718,7 @@
         "shorthand": "him",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -5403,6 +5727,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "special map",
@@ -5415,6 +5740,14 @@
             "Metadata/Monsters/Totems/TotemMapBossColdPlateau",
             "Metadata/Monsters/Totems/TotemMapBossLightningPlateau"
         ],
+        "connected": [
+            "Caldera Map",
+            "Channel Map",
+            "Desert Spring Map",
+            "Olmec's Sanctum",
+            "Promenade Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plateau",
         "ids": [
             "MapWorldsPlateau"
         ],
@@ -5443,6 +5776,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5454,6 +5788,13 @@
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
         ],
+        "connected": [
+            "Conservatory Map",
+            "Factory Map",
+            "Lair Map",
+            "Residence Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plaza",
         "ids": [
             "MapWorldsPlaza"
         ],
@@ -5482,6 +5823,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5617,6 +5959,7 @@
             "Metadata/Monsters/Exiles/ExileTemplar1MapBoss_",
             "Metadata/Monsters/Exiles/ExileWitch2MapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Precinct",
         "ids": [
             "MapWorldsPrecinct"
         ],
@@ -5644,6 +5987,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -5702,6 +6046,10 @@
         "boss_ids": [
             "Metadata/Monsters/Malachai/MalachaiMapBossSimplified"
         ],
+        "connected": [
+            "Crystal Ore Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/PrimordialPool",
         "ids": [
             "MapWorldsPrimordialPool"
         ],
@@ -5730,6 +6078,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5819,6 +6168,7 @@
             "Metadata/Monsters/Gladiator/GladiatorSwordMapBoss",
             "Metadata/Monsters/Lion/LionColosseumMapBoss"
         ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Racecourse",
         "ids": [
             "MapWorldsRacecourse_"
         ],
@@ -5846,6 +6196,7 @@
             "few_obstacles": true,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map"
@@ -5855,6 +6206,12 @@
         "boss_ids": [
             "Metadata/Monsters/Undying/MapUndyingBoss"
         ],
+        "connected": [
+            "Bazaar Map",
+            "Cells Map",
+            "Frozen Cabins Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Ramparts",
         "ids": [
             "MapWorldsRamparts"
         ],
@@ -5883,6 +6240,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5894,6 +6252,12 @@
         "boss_ids": [
             "Metadata/Monsters/BrineKing/BrineKingMap"
         ],
+        "connected": [
+            "Estuary Map",
+            "Ghetto Map",
+            "Port Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Reef",
         "ids": [
             "MapWorldsReef"
         ],
@@ -5905,6 +6269,7 @@
             83
         ],
         "name": "Reef Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 0,
             "density": 5,
@@ -5912,9 +6277,11 @@
         },
         "shorthand": "eef",
         "tags": {
+            "boss_not_twinnable": true,
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -5943,6 +6310,13 @@
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossMeleeSimplified"
         ],
+        "connected": [
+            "Flooded Mine Map",
+            "Pier Map",
+            "Silo Map",
+            "The Apex of Sacrifice"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Antiquary",
         "ids": [
             "MapWorldsRelicChambers"
         ],
@@ -5971,6 +6345,7 @@
             "few_obstacles": false,
             "league_mechanics": false,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6071,6 +6446,10 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueSanctum/Boss/Lycia2BossMap"
         ],
+        "connected": [
+            "Moment of Reverence"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberRelicChambers",
         "ids": [
             "MapWorldsSanctuary"
         ],
@@ -6082,7 +6461,9 @@
         "name": "Sanctuary Map",
         "rating": {},
         "shorthand": "ctua",
-        "tags": {},
+        "tags": {
+            "boss_not_twinnable": true
+        },
         "type": "special map",
         "x": 204,
         "y": 182
@@ -6360,6 +6741,12 @@
         "boss_ids": [
             "Metadata/Monsters/Tukohama/TukohamaMap"
         ],
+        "connected": [
+            "Cold River Map",
+            "Courthouse Map",
+            "Excavation Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Boulevard",
         "ids": [
             "MapWorldsSiege"
         ],
@@ -6372,6 +6759,7 @@
             83
         ],
         "name": "Siege Map",
+        "pantheon": "Soul of Tukohama",
         "rating": {
             "boss": 6,
             "density": 8,
@@ -6380,6 +6768,7 @@
         "shorthand": "eg",
         "tags": {
             "boss_not_spawned": false,
+            "boss_not_twinnable": true,
             "boss_phases": true,
             "boss_rushable": false,
             "boss_separated": true,
@@ -6388,6 +6777,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6475,6 +6865,12 @@
         "boss_ids": [
             "Metadata/Monsters/Revenant/RevenantMapBoss"
         ],
+        "connected": [
+            "Cells Map",
+            "Flooded Mine Map",
+            "Frozen Cabins Map"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SpiderLair",
         "ids": [
             "MapWorldsSpiderLair"
         ],
@@ -6496,6 +6892,7 @@
             "boss_separated": true,
             "few_obstacles": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": false
         },
         "type": "map",
@@ -6507,6 +6904,14 @@
         "boss_ids": [
             "Metadata/Monsters/BeehiveBehemoth/BeehiveBehemothBoss"
         ],
+        "connected": [
+            "Crater Map",
+            "Domain of Timeless Conflict",
+            "Iceberg Map",
+            "Ivory Temple Map",
+            "Seething Chyme"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Stagnation",
         "ids": [
             "MapWorldsStagnation"
         ],
@@ -6533,6 +6938,7 @@
             "boss_soft_phases": false,
             "delirium_mirror": false,
             "league_mechanics": false,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",
@@ -6563,6 +6969,13 @@
             "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn",
             "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
         ],
+        "connected": [
+            "Alleyways Map",
+            "Marshes Map",
+            "Primordial Blocks Map",
+            "Whakawairua Tuahu"
+        ],
+        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Strand",
         "ids": [
             "MapWorldsStrand"
         ],
@@ -6591,6 +7004,7 @@
             "few_obstacles": true,
             "league_mechanics": true,
             "linear": true,
+            "nightmare_boss_map": true,
             "outdoors": true
         },
         "type": "map",

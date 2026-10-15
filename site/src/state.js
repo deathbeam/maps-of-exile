@@ -22,6 +22,28 @@ function pushTag(info, destination, source, key, name = null, color = null) {
   }
 }
 
+function atlasRegion(map) {
+  if (map.x == null || map.y == null || !globals.atlas) {
+    return null
+  }
+
+  const centerX = globals.atlas.width / 2
+  const centerY = globals.atlas.height / 2
+  const north = map.y < centerY
+  const west = map.x < centerX
+
+  if (north && west) {
+    return 'North West'
+  }
+  if (north && !west) {
+    return 'North East'
+  }
+  if (!north && west) {
+    return 'South West'
+  }
+  return 'South East'
+}
+
 async function prepareMonsters() {
   return (await import('./data/monsters.json')).default
 }
@@ -48,6 +70,8 @@ async function prepareMaps(preparedMonsters, preparedCards) {
     } else if (map.icon && !map.icon.startsWith('/img')) {
       icon = mapIconBase + map.icon + '.png'
     }
+
+    const region = atlasRegion(map)
 
     const mapTags = []
     pushTag(map.info, mapTags, map, 'type', null, 'info')
@@ -108,6 +132,7 @@ async function prepareMaps(preparedMonsters, preparedCards) {
       ...map,
       boss_names: names,
       name: map.name.replace(' Map', ''),
+      region: region,
       icon: icon,
       wiki: wikiBase + map.name.replaceAll(' ', '_'),
       connected: (map.connected || [])
@@ -278,6 +303,7 @@ function rateMaps(
   cardPriceSource,
   cardDisplay,
   mapDisplay,
+  region,
   voidstones,
   sort
 ) {
@@ -304,6 +330,7 @@ function rateMaps(
           return true
       }
     })
+    .filter(m => region === 'all' || m.region === region)
     .map(map => {
       const mapLevel = map.atlas || map.type == 'map' ? map.levels[voidstones] : map.levels[map.levels.length - 1]
       const mapCards = []
@@ -518,6 +545,7 @@ function createState() {
     voidstones: atomWithStore('voidstonesInput', 1, data, (val, def) => (val > 1 ? def : val)),
     cardDisplay: atomWithStore('cardDisplayInput', 'drop', data),
     mapDisplay: atomWithStore('mapDisplayInput', 'atlas+unique+special', data),
+    region: atomWithStore('regionInput', 'all', data),
 
     layout: atomWithStore('layoutInput', 3, data),
     density: atomWithStore('densityInput', 2, data),
@@ -572,6 +600,7 @@ function createState() {
       get(input.cardPriceSource),
       get(input.cardDisplay),
       get(input.mapDisplay),
+      get(input.region),
       get(input.voidstones),
       get(input.sort)
     )

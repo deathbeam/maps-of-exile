@@ -4,7 +4,6 @@ export const wikiBase = 'https://www.poewiki.net/wiki/'
 export const ninjaBase = 'https://poe.ninja/economy/{league}/divination-cards/'
 export const divcordDiscord = 'https://discord.gg/jsN2gsDUyM'
 export const mapIconBase = 'https://web.poecdn.com/image/'
-export const cardArtBase = 'https://web.poecdn.com/image/divination-card/'
 export const defaultCardBaseline = 'The Chains that Bind'
 export const githubRepo = 'https://github.com/deathbeam/maps-of-exile'
 export const issueTemplate = `${githubRepo}/issues/new?labels=map-data&template=map_data.yml&title=Enter+map+name+here`

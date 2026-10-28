@@ -5,6 +5,7 @@ import os
 import re
 import sys
 import time
+import hashlib
 import html
 import urllib
 from decimal import Decimal
@@ -45,24 +46,87 @@ def save_image(directory, name, res):
 
 
 def find_shortest_substring(entry, entries):
-    substring_set = set()
+    anchored = "^" + entry + "$"
+    substrings = sorted(
+        {anchored[i:j] for i in range(len(anchored)) for j in range(i + 1, len(anchored) + 1)},
+        key=lambda s: (len(s), s),
+    )
+    for substring in substrings:
+        if not is_search_literal(substring):
+            continue
+        if count_matches(substring, entries) == 1:
+            return substring
 
-    for i in range(len(entry)):
-        for j in range(i + 1, len(entry) + 1):
-            substring = entry[i:j]
-            substring_set.add(substring)
+    return entry
 
-    shortest_substring = ""
-    for substring in sorted(list(substring_set)):
-        if (
-            shortest_substring == "" or len(substring) < len(shortest_substring)
-        ) and sum(1 for e in entries if substring in e) == 1:
-            shortest_substring = substring
 
-    if not shortest_substring:
-        return entry
+def is_search_literal(substring):
+    body = substring.strip("^$")
+    return bool(body) and all(c.isalnum() or c in " '-" for c in body)
 
-    return shortest_substring
+
+def count_matches(substring, entries):
+    matches = 0
+    for entry in entries:
+        if substring in entry:
+            matches += 1
+            if matches > 1:
+                break
+    return matches
+
+
+def get_card_flavour_texts(config):
+    print(f"Getting card flavour text from wiki")
+    out = requests.get(
+        config["wiki"]["api"],
+        params={
+            "action": "cargoquery",
+            "format": "json",
+            "smaxage": 1,
+            "maxage": 1,
+            "limit": "500",
+            "tables": "items",
+            "fields": "items.name,items.flavour_text",
+            "where": 'items.class_id="DivinationCard" AND items.drop_enabled="1" AND items._pageName NOT LIKE "%User:%"',
+        },
+    ).json()
+    if "cargoquery" not in out:
+        raise Exception("Failed to get card flavour text: " + json.dumps(out, indent=2))
+    texts = []
+    for row in out["cargoquery"]:
+        flavour = html.unescape(row["title"].get("flavour text") or "")
+        texts += [line.strip().lower() for line in re.split(r"<br\s*/?>", flavour)]
+    return texts
+
+
+def get_map_shorthands(maps, config):
+    # Atlas search also matches card names, reward/flavour text and boss names
+    entries = ["^" + m["name"].lower().replace(" map", "") + "$" for m in maps if m["type"] != "act area"]
+
+    with open(f"{dir_path}/../site/src/data/cards.json", "r", encoding="utf-8") as f:
+        for card in json.load(f):
+            entries.append("^" + card["name"].lower() + "$")
+            entries.append("^" + card["reward"].lower() + "$")
+            for part in card["reward"].split(","):
+                entries.append("^" + part.strip().lower() + "$")
+    entries += ["^" + t + "$" for t in get_card_flavour_texts(config)]
+
+    with open(f"{dir_path}/../site/src/data/monsters.json", "r", encoding="utf-8") as f:
+        monsters = json.load(f)
+    boss_ids = {boss_id for m in maps if m["type"] != "act area" for boss_id in m.get("boss_ids") or []}
+    entries += sorted({"^" + name.lower() + "$" for key, name in monsters.items() if any(b in key for b in boss_ids)})
+    entries = sorted(set(entries))
+
+    for m in maps:
+        m["shorthand"] = find_shortest_substring(m["name"].lower().replace(" map", ""), entries)
+
+    for m in maps:
+        if m["type"] == "act area":
+            continue
+        matched = [e for e in entries if re.search(m["shorthand"], e[1:-1])]
+        assert len(matched) == 1, f"Shorthand {m['shorthand']!r} of {m['name']} matches {matched[:5]}"
+
+    return maps
 
 
 def rescale(value, min_value, max_value, scale):
@@ -193,15 +257,6 @@ def get_card_data(key, config, card_extra):
             r.raise_for_status()
             soup = BeautifulSoup(r.content, "html.parser")
             dropped_by = []
-            art_id = None
-
-            # Extract art id from div with class 'icon'
-            icon_div = soup.find("div", class_="icon")
-            if icon_div and "background-image" in icon_div.get("style", ""):
-                style = icon_div["style"]
-                url = style.split("url('")[1].split("')")[0]
-                art_id = url.split("/")[-1].replace(".png", "")
-
             for td in soup.find_all("td"):
                 if td.text.strip() == "Dropped by":
                     next_td = td.find_next_sibling("td")
@@ -211,20 +266,42 @@ def get_card_data(key, config, card_extra):
                             if name:
                                 dropped_by.append(name)
                     break
-            return dropped_by, art_id
+            return dropped_by
         except Exception as e:
             print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
-            return [], None
+            return []
+
+    def get_card_art(wiki_file, card_name):
+        name = html.unescape(wiki_file or "").removeprefix("File:").replace(" ", "_")
+        if name:
+            # MediaWiki upload path: images/<md5[0]>/<md5[:2]>/<name>
+            h = hashlib.md5(name.encode()).hexdigest()
+            return config["wiki"]["base"].replace("/wiki/", "/images/") + f"{h[0]}/{h[:2]}/" + urllib.parse.quote(name)
+
+        # Card art missing on wiki, guess the CDN name (title case) and keep it only if it exists
+        guess = "".join(w[:1].upper() + w[1:] for w in re.findall(r"[A-Za-z0-9]+", re.sub(r"['\u2019]", "", card_name)))
+        url = config["cdn"]["cards"] + guess + ".png"
+        try:
+            return url if requests.head(url).status_code == 200 else None
+        except Exception as e:
+            print(f"Failed to check card art for {card_name}: {e}")
+            return None
+
+    def get_price(entries, card_id):
+        line = next(filter(lambda x: x["id"] == card_id, entries), None)
+        if not line or not line.get("volumePrimaryValue"):
+            return 0
+        return line.get("primaryValue") or 0
 
     # Get maps for area mapping
     maps = get_maps(key, config)
-    atlas_maps = []
     atlas_name_to_id = {}
     for m in maps:
         if m.get("type") == "map" or m.get("atlas"):
             for id in m["ids"]:
-                atlas_maps.append(id)
                 atlas_name_to_id[m["name"]] = id
+                # poedb lists atlas areas without the " Map" suffix
+                atlas_name_to_id[m["name"].replace(" Map", "")] = id
 
     league = config["league"]
     event = config.get("event")
@@ -328,19 +405,6 @@ def get_card_data(key, config, card_extra):
                 print(f"Setting weight for {card_name} to {value} from {name} sheet")
                 card_weights[card_name] = value
 
-    # print(f"Getting card overviews for {league}, {event} and Standard")
-    # overviews = {
-    #     "league": requests.get(config["ninja"]["cardoverview"] + league).json()[
-    #         "lines"
-    #     ],
-    #     "standard": requests.get(config["ninja"]["cardoverview"] + "Standard").json()[
-    #         "lines"
-    #     ],
-    #     "event": requests.get(config["ninja"]["cardoverview"] + event).json()["lines"]
-    #     if event
-    #     else [],
-    # }
-
     print(f"Getting card prices for {league}, {event} and Standard")
     prices = {
         "league": requests.get(config["ninja"]["cardprices"] + league).json()["lines"],
@@ -357,43 +421,24 @@ def get_card_data(key, config, card_extra):
         name = html.unescape(wiki_card["name"])
 
         # Combine poedb atlas drops with wiki drops
-        poedb_drops, art_id = get_poedb_card_drops(name)
+        poedb_drops = get_poedb_card_drops(name)
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
-        map_drops = []
-        for area in original_areas:
-            if area in atlas_maps:
-                continue
-            map_drops.append(area)
+        map_drops = set(original_areas)
         for map_name in poedb_drops:
             area = atlas_name_to_id.get(map_name)
-            if area and area not in map_drops:
-                map_drops.append(area)
+            if area:
+                map_drops.add(area)
         map_drops = sorted(map_drops)
         if map_drops != original_areas:
             print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
         wiki_card["drop"]["areas"] = map_drops
 
-        overview_art = art_id
+        overview_art = get_card_art(wiki_card["art"], name)
         overview_id = name_to_id(name)
 
-        league_price_card = next(
-            filter(lambda x: x["id"] == overview_id, prices["league"]), {}
-        ).get("primaryValue")
-        league_price_card = league_price_card or 0
-        event_price_card = next(
-            filter(lambda x: x["id"] == overview_id, prices["event"]), {}
-        ).get("primaryValue")
-        event_price_card = event_price_card or 0
-
-        # For standard, fallback
-        standard_price_card = next(
-            filter(lambda x: x["id"] == overview_id, prices["standard"]), {}
-        ).get("primaryValue")
-        # if not standard_price_card:
-        #     standard_price_card = next(
-        #         filter(lambda x: x["name"] == name, overviews["standard"]), {}
-        #     ).get("chaosValue")
-        standard_price_card = standard_price_card or 0
+        league_price_card = get_price(prices["league"], overview_id)
+        event_price_card = get_price(prices["event"], overview_id)
+        standard_price_card = get_price(prices["standard"], overview_id)
 
         card = {
             "name": name,
@@ -589,7 +634,7 @@ def get_map_wiki(config):
             raise Exception("Failed to get map wiki data: " + json.dumps(out, indent=2))
         return out["cargoquery"]
 
-    def get_map_wiki_inner(offset):
+    def get_map_tier_inner(offset, series):
         out = requests.get(
             config["wiki"]["api"],
             params={
@@ -599,13 +644,13 @@ def get_map_wiki(config):
                 "maxage": 0,
                 "limit": 500,
                 "offset": offset,
-                "tables": "maps",
-                "fields": "maps.area_id, maps.area_level",
-                "where": "maps.series='" + config["league"] + "'",
+                "tables": "atlas_nodes",
+                "fields": "atlas_nodes.area_id, atlas_nodes.tier_0",
+                "where": "atlas_nodes.series_id='" + series + "'",
             },
         ).json()
         if "cargoquery" not in out:
-            raise Exception("Failed to get map wiki data: " + json.dumps(out, indent=2))
+            raise Exception("Failed to get map tier data: " + json.dumps(out, indent=2))
         return out["cargoquery"]
 
     print(f"Getting area metadata from wiki")
@@ -620,27 +665,45 @@ def get_map_wiki(config):
     wiki_areas = list(map(lambda x: x["title"], wiki_areas))
     print(f"Found {len(wiki_areas)} areas")
 
-    print(f"Getting map metadata from wiki")
-    wiki_maps = []
+    # Current tiers come from the atlas nodes of the newest map series
+    print(f"Getting current map series from wiki")
+    out = requests.get(
+        config["wiki"]["api"],
+        params={
+            "action": "cargoquery",
+            "format": "json",
+            "smaxage": 0,
+            "maxage": 0,
+            "limit": 1,
+            "tables": "map_series",
+            "fields": "map_series.id",
+            "order_by": "map_series.ordinal DESC",
+        },
+    ).json()
+    if "cargoquery" not in out or len(out["cargoquery"]) == 0:
+        raise Exception("Failed to get current map series: " + json.dumps(out, indent=2))
+    series = out["cargoquery"][0]["title"]["id"]
+
+    print(f"Getting map tiers for series {series} from wiki")
+    wiki_tiers = {}
     cur_offset = 0
     while True:
-        res = get_map_wiki_inner(cur_offset)
+        res = get_map_tier_inner(cur_offset, series)
         if len(res) == 0:
             break
         cur_offset += len(res)
-        wiki_maps += res
-    wiki_maps = list(map(lambda x: x["title"], wiki_maps))
-    print(f"Found {len(wiki_maps)} maps")
+        for m in res:
+            area_id = m["title"].get("area id")
+            tier = m["title"].get("tier 0")
+            if area_id and tier:
+                wiki_tiers[area_id] = int(tier)
+    print(f"Found {len(wiki_tiers)} map tiers")
 
-    for m in wiki_maps:
-        area_id = m.get("area id")
-        area_level = m.get("area level")
-        if not area_id or not area_level:
-            continue
-        area = next(filter(lambda x: x["id"] == area_id, wiki_areas), None)
-        if area:
-            print(f"Updating area {area['id']} with map data")
-            area["area level"] = int(area_level)
+    for area in wiki_areas:
+        tier = wiki_tiers.get(area["id"])
+        # Nightmare maps are always tier 17 (area level 84) regardless of atlas node tier
+        if tier and int(area["area level"]) != 84:
+            area["area level"] = tier + 67
 
     return wiki_areas
 
@@ -719,15 +782,7 @@ def get_maps(key, config):
         cleaned_maps[name] = out_map
 
     out = sorted(list(cleaned_maps.values()), key=lambda x: x["name"])
-    # Filter out act areas (you can't search for them)
-    out_names = list(filter(lambda x: x["type"] != "act area", out))
-    out_names = list(map(lambda x: x["name"].lower(), out_names))
-
-    # Add flavor text and map tab text to make sure map's shorthand doesn't trigger these
-    out_names.append(
-        "travel to this map by using it in a personal map device. maps can only be used once"
-    )
-    out_names.append("atlas bonus complete")
+    out = get_map_shorthands(out, config)
 
     url = config["poedb"]["list"]
     print(f"Getting atlas data from url {url}")
@@ -753,9 +808,6 @@ def get_maps(key, config):
 
     for m in out:
         name = m["name"]
-        m["shorthand"] = find_shortest_substring(
-            name.replace(" Map", "").lower(), out_names
-        )
         m["tags"] = {}
         m["rating"] = {}
         m["info"] = {}
@@ -819,7 +871,6 @@ def get_map_data(map_data, extra_map_data, config):
     maptabs = tabs and tabs.find_all("div", recursive=False)
     maptabs = maptabs or []
 
-    level_found = False
     for data in maptabs:
         table = data.find("table")
         if not table:
@@ -839,12 +890,7 @@ def get_map_data(map_data, extra_map_data, config):
             if len(cols) < 2:
                 continue
             value = cols[1]
-            if name == "level" and not level_found and map_data.get("atlas"):
-                level = int(value.text.strip())
-                if level:
-                    level_found = True
-                    map_data["levels"][0] = level
-            elif name == "atlas linked":
+            if name == "atlas linked":
                 map_data["connected"] = sorted(
                     list(set(map(lambda x: x.text.strip(), value.find_all("a"))))
                 )

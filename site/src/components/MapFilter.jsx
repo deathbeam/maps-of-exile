@@ -227,7 +227,7 @@ const filterInputs = atom(get => [
     tooltip: (
       <>
         Generates string that can be copy/pasted to Path of Exile search boxes that will search for the filtered maps.
-        PoE search fields are limited to 50 characters so the string is truncated to fit the top maps based off search
+        PoE search fields are limited to 250 characters so the string is truncated to fit the top maps based off search
         criteria.
       </>
     ),

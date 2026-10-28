@@ -42,9 +42,10 @@ data:
     base: https://www.poewiki.net/wiki/
     filepath: https://www.poewiki.net/wiki/Special:Redirect/file/
     api: https://www.poewiki.net/w/api.php
+  cdn:
+    cards: https://web.poecdn.com/image/divination-card/
   ninja:
     cardbase: https://poe.ninja/economy/{league}/divination-cards/
-    cardoverview: https://poe.ninja/api/data/itemoverview?type=DivinationCard&league=
     cardprices: https://poe.ninja/poe1/api/economy/exchange/current/overview?type=DivinationCard&league=
 
   # Sheets
@@ -68,14 +69,6 @@ data:
       - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
         sheet-name: Weights
         key: patch
-        value: "3.26"
-        header_row: 0
-        data_row: 2
-      - sheet-id: 1PmGES_e1on6K7O5ghHuoorEjruAVb7dQ5m7PGrW7t80
-        sheet-name: 3.26
-        override: 1000
-        key: name
-        value: Gold Low Weight
-        value2: Gold High Weight
+        value: "3.29"
         header_row: 0
         data_row: 2

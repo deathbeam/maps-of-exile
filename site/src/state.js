@@ -4,7 +4,7 @@ import { unwrap } from 'jotai/utils'
 import atomWithHash from './atoms/atomWithHash'
 import atomWithStore from './atoms/atomWithStore'
 import { calculateScore, filter } from './common'
-import { cardArtBase, defaultCardBaseline, globals, mapIconBase, wikiBase } from './constants'
+import { defaultCardBaseline, globals, mapIconBase, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]
@@ -31,7 +31,7 @@ async function prepareCards() {
   return cards.map(card => {
     return {
       ...card,
-      art: cardArtBase + card.art + '.png'
+      art: card.art || null
     }
   })
 }

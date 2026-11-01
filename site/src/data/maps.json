@@ -59,7 +59,6 @@
             "Abomination",
             "Ancient Reliquary"
         ],
-        "icon": "/img/icon/absence_of_mercy_and_empathy.webp",
         "ids": [
             "MavenBoss"
         ],
@@ -85,7 +84,6 @@
             "",
             "Ziggurat"
         ],
-        "icon": "/img/icon/absence_of_patience_and_wisdom.webp",
         "ids": [
             "MapWorldsPrimordialBoss3"
         ],
@@ -599,6 +597,7 @@
         "ids": [
             "MapWorldsMemoryVault3"
         ],
+        "image": "https://www.poewiki.net/images/1/11/Arkhon%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
             84
@@ -1968,7 +1967,7 @@
         "ids": [
             "MapWorldsCore"
         ],
-        "image": "https://www.poewiki.net/images/4/4a/Core_Map_area_screenshot.jpg",
+        "image": "https://www.poewiki.net/images/3/34/Core_area_screenshot.jpg",
         "info": {
             "boss": "The Depraved Trio of Maligaro, Shavronne and Doedre all maintain serious damage but have little health and should make for short work. Phase 1 Malachai avoid the \"Die and be reborn\" one-shot slam. In phase 2 avoid the teleport slam. The main difficulty of this boss comes from the small arena and ease to make a fatal mistake in a long fight. Absolutely manic with some map mods such as extra projectiles or double boss."
         },
@@ -2695,7 +2694,6 @@
         "connected": [
             "Stagnation"
         ],
-        "icon": "/img/icon/domain_of_timeless_conflict.webp",
         "ids": [
             "LegionLeague",
             "LegionLeague2",
@@ -4519,7 +4517,7 @@
         "ids": [
             "MapWorldsMalformation"
         ],
-        "image": "https://www.poewiki.net/images/7/73/Malformation_Map_area_screenshot.jpg",
+        "image": "https://www.poewiki.net/images/b/bc/Malformation_area_screenshot.jpg",
         "info": {
             "boss": "Spawns Eyes, Physical Cleave at close range, large Ball Lightning that you should avoid. Spinning Lightning Beam deals massive Lightning damage. If it does not one-shot you it also inflicts a powerful Physical Bleed they must be instantly removed. As this fight is mechanical it is usually not too bad. However, it becomes extremely dangerous with map mods like double boss, boss attack/cast speed or multiple projectiles."
         },
@@ -4560,7 +4558,6 @@
         "connected": [
             "2_7_5_1"
         ],
-        "icon": "/img/icon/maligaros_sanctum.webp",
         "ids": [
             "2_7_5_map"
         ],
@@ -4918,7 +4915,6 @@
             "Metadata/Monsters/AtlasMemory/IgnoranceBoss/IgnoranceBoss",
             "Metadata/Monsters/AtlasMemory/IgnoranceBoss/IgnoranceBossUBER"
         ],
-        "icon": "/img/icon/moment_of_loneliness.webp",
         "ids": [
             "MapWorldsMemoryBoss2",
             "MapWorldsMemoryBoss2_Uber"
@@ -4945,7 +4941,6 @@
             "Metadata/Monsters/AtlasMemory/BenevolenceBoss",
             "Metadata/Monsters/AtlasMemory/BenevolenceBossUBER"
         ],
-        "icon": "/img/icon/moment_of_reverence.webp",
         "ids": [
             "MapWorldsMemoryBoss3",
             "MapWorldsMemoryBoss3_Uber"
@@ -4972,7 +4967,6 @@
             "Metadata/Monsters/AtlasMemory/AngerBoss",
             "Metadata/Monsters/AtlasMemory/AngerBossUBER"
         ],
-        "icon": "/img/icon/moment_of_trauma.webp",
         "ids": [
             "MapWorldsMemoryBoss1",
             "MapWorldsMemoryBoss1_Uber"
@@ -5291,7 +5285,6 @@
     },
     {
         "atlas": true,
-        "icon": "/img/icon/overgrown_grove.webp",
         "ids": [
             "HarvestLeagueMemoryLine"
         ],
@@ -5551,7 +5544,7 @@
         "ids": [
             "MapWorldsPhantasmagoria"
         ],
-        "image": "https://www.poewiki.net/images/a/a0/Phantasmagoria_Map_area_screenshot.jpg",
+        "image": "https://www.poewiki.net/images/f/fb/Phantasmagoria_area_screenshot.jpg",
         "info": {
             "boss": "Try not to stand in more than one curse aura (Vulnerability being particulary dangerous). Avoid strong physical projectiles."
         },
@@ -5862,7 +5855,6 @@
         "connected": [
             "Volcano"
         ],
-        "icon": "/img/icon/polaric_void.webp",
         "ids": [
             "MapWorldsPrimordialBoss2"
         ],
@@ -6555,7 +6547,6 @@
         "connected": [
             "Stagnation"
         ],
-        "icon": "/img/icon/seething_chyme.webp",
         "ids": [
             "MapWorldsPrimordialBoss1"
         ],
@@ -8719,7 +8710,6 @@
         "connected": [
             "Crystal Ore"
         ],
-        "icon": "/img/icon/the_lightless_hollow.webp",
         "ids": [
             "AbyssLeagueBoss3"
         ],
@@ -9639,7 +9629,6 @@
         "connected": [
             "Cage"
         ],
-        "icon": "/img/icon/the_temple_of_atzoatl.webp",
         "ids": [
             "Incursion_Temple1",
             "Incursion_Temple10",

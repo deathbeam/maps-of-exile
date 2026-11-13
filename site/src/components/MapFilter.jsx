@@ -148,6 +148,20 @@ const filterInputs = atom(get => [
     numberDef: atom('')
   },
   {
+    name: 'Region',
+    tooltip: <>Filter maps by their quadrant on the atlas, based on their position relative to the atlas center.</>,
+    type: 'select',
+    options: {
+      all: 'All regions',
+      'North West': 'North West',
+      'North East': 'North East',
+      'South West': 'South West',
+      'South East': 'South East'
+    },
+    def: state.input.region,
+    numberDef: atom('')
+  },
+  {
     name: 'Average card per map',
     tooltip: (
       <>

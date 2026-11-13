@@ -79,7 +79,7 @@
         "price": 0,
         "reward": "Jewellery of Farrul, Item Level: 100, Shaper + Hunter Item",
         "stack": 3,
-        "standardPrice": 6325
+        "standardPrice": 0
     },
     {
         "art": "https://web.poecdn.com/image/divination-card/AFateWorseThanDeath.png",
@@ -101,7 +101,7 @@
         "price": 0,
         "reward": "Cortex, Corrupted",
         "stack": 4,
-        "standardPrice": 2,
+        "standardPrice": 18,
         "weight": 65.0
     },
     {
@@ -198,7 +198,7 @@
         "price": 0,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 117.0
     },
     {
@@ -306,7 +306,7 @@
         "price": 0,
         "reward": "Elegant Round Shield, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 15,
         "weight": 118.0
     },
     {
@@ -346,7 +346,7 @@
         "price": 0,
         "reward": "10x Exalted Orb",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 7,
         "weight": 1453.0
     },
     {
@@ -404,7 +404,7 @@
         "id": "ambitious-obsession",
         "name": "Ambitious Obsession",
         "price": 0,
-        "reward": "Skittering Delirium Orb",
+        "reward": "Threaded Delirium Orb",
         "stack": 4,
         "standardPrice": 0,
         "weight": 2.0
@@ -459,7 +459,7 @@
         "price": 0,
         "reward": "Voltaxic Rift, Corrupted",
         "stack": 13,
-        "standardPrice": 50,
+        "standardPrice": 70,
         "weight": 4.0
     },
     {
@@ -478,7 +478,7 @@
         "price": 0,
         "reward": "Eyes of the Greatwolf, Item Level: 82, Corrupted",
         "stack": 2,
-        "standardPrice": 2636,
+        "standardPrice": 11526,
         "weight": 5.0
     },
     {
@@ -497,7 +497,7 @@
         "price": 0,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
-        "standardPrice": 197.7,
+        "standardPrice": 0,
         "weight": 610.0
     },
     {
@@ -618,7 +618,7 @@
         "price": 0,
         "reward": "Experimented Item, Item Level: 100, Double-Influenced Item",
         "stack": 4,
-        "standardPrice": 0
+        "standardPrice": 5763
     },
     {
         "art": "https://www.poewiki.net/images/0/0c/Avian_Pursuit_card_art.png",
@@ -637,7 +637,7 @@
         "price": 70,
         "reward": "1,500x Vivid Crystallised Lifeforce",
         "stack": 3,
-        "standardPrice": 11,
+        "standardPrice": 50,
         "weight": 205.0
     },
     {
@@ -676,7 +676,7 @@
         "price": 29.73,
         "reward": "Prismatic Jewel, Corrupted",
         "stack": 9,
-        "standardPrice": 10
+        "standardPrice": 250
     },
     {
         "art": "https://www.poewiki.net/images/3/3a/Baited_Expectations_card_art.png",
@@ -695,7 +695,7 @@
         "price": 0,
         "reward": "Fishing Item",
         "stack": 8,
-        "standardPrice": 30.5,
+        "standardPrice": 411.6,
         "weight": 353.0
     },
     {
@@ -718,7 +718,7 @@
         "price": 0,
         "reward": "Atziri's Reflection",
         "stack": 5,
-        "standardPrice": 16801
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/e/eb/Bijoux_card_art.png",
@@ -736,7 +736,7 @@
         "price": 12,
         "reward": "Cluster Jewel, Item Level: 84",
         "stack": 3,
-        "standardPrice": 3,
+        "standardPrice": 0,
         "weight": 183.0
     },
     {
@@ -757,7 +757,7 @@
         "price": 0,
         "reward": "Ring, Corrupted",
         "stack": 7,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 1879.0
     },
     {
@@ -869,7 +869,7 @@
         "price": 0,
         "reward": "Cold Iron Point",
         "stack": 5,
-        "standardPrice": 36.29,
+        "standardPrice": 130,
         "weight": 1468.0
     },
     {
@@ -888,7 +888,7 @@
         "price": 2982,
         "reward": "5x Divine Orb",
         "stack": 1,
-        "standardPrice": 3163,
+        "standardPrice": 3293,
         "weight": 35.0
     },
     {
@@ -927,7 +927,7 @@
         "price": 0,
         "reward": "One With Nothing, Corrupted",
         "stack": 5,
-        "standardPrice": 9488
+        "standardPrice": 0
     },
     {
         "art": "https://web.poecdn.com/image/divination-card/BrushPaintAndPalette.png",
@@ -946,27 +946,8 @@
         "price": 6,
         "reward": "The Artist",
         "stack": 5,
-        "standardPrice": 790.7,
+        "standardPrice": 0,
         "weight": 641.0
-    },
-    {
-        "art": "https://web.poecdn.com/image/divination-card/BuriedTreasure.png",
-        "drop": {
-            "areas": [
-                "MapWorldsCrystalOre"
-            ],
-            "min_level": 68,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "buried-treasure",
-        "name": "Buried Treasure",
-        "price": 0,
-        "reward": "Sulphite Scarab",
-        "stack": 3,
-        "standardPrice": 1,
-        "weight": 585.0
     },
     {
         "art": "https://web.poecdn.com/image/divination-card/BurningBlood.png",
@@ -1006,25 +987,6 @@
         "stack": 5,
         "standardPrice": 0,
         "weight": 1681.0
-    },
-    {
-        "art": "https://www.poewiki.net/images/a/a1/Cameria%27s_Cut_card_art.png",
-        "drop": {
-            "areas": [],
-            "min_level": 68,
-            "monsters": [
-                "Metadata/Monsters/LeagueBetrayal/BetrayalCameria"
-            ],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "camerias-cut",
-        "name": "Cameria's Cut",
-        "price": 0,
-        "reward": "Scarab",
-        "stack": 2,
-        "standardPrice": 1,
-        "weight": 4919.0
     },
     {
         "art": "https://www.poewiki.net/images/5/55/Cartographer%27s_Delight_card_art.png",
@@ -1068,10 +1030,8 @@
         "drop": {
             "areas": [],
             "min_level": 81,
-            "monsters": [
-                "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
-            ],
-            "text": "Drops from the Vaal Omnitect in areas of level 79 or greater."
+            "monsters": [],
+            "text": ""
         },
         "eventPrice": 0,
         "id": "chasing-risk",
@@ -1116,7 +1076,7 @@
         "price": 150,
         "reward": "Stranglegasp",
         "stack": 6,
-        "standardPrice": 4744
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/1/10/Costly_Curio_card_art.png",
@@ -1135,7 +1095,7 @@
         "price": 0,
         "reward": "Item, Double-Influenced Item",
         "stack": 6,
-        "standardPrice": 1581
+        "standardPrice": 132
     },
     {
         "art": "https://www.poewiki.net/images/8/87/Council_of_Cats_card_art.png",
@@ -1194,7 +1154,7 @@
         "price": 0,
         "reward": "Maw of Mischief",
         "stack": 13,
-        "standardPrice": 0,
+        "standardPrice": 475.0,
         "weight": 3407.0
     },
     {
@@ -1214,7 +1174,7 @@
         "price": 31384,
         "reward": "The Original Scripture, Item Level: 83",
         "stack": 16,
-        "standardPrice": 67235
+        "standardPrice": 72931
     },
     {
         "art": "https://www.poewiki.net/images/1/16/Dark_Dreams_card_art.png",
@@ -1344,7 +1304,7 @@
         "price": 8,
         "reward": "10x Delirium Orb",
         "stack": 11,
-        "standardPrice": 0,
+        "standardPrice": 27,
         "weight": 73.0
     },
     {
@@ -1366,7 +1326,7 @@
         "price": 0,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 3,
         "weight": 1391.0
     },
     {
@@ -1385,7 +1345,7 @@
         "price": 0,
         "reward": "Level 4 Exceptional Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 1581
+        "standardPrice": 2744
     },
     {
         "art": "https://www.poewiki.net/images/4/4d/Desperate_Crusade_card_art.png",
@@ -1423,7 +1383,7 @@
         "price": 0,
         "reward": "Body Armour, Item Level: 100",
         "stack": 5,
-        "standardPrice": 40,
+        "standardPrice": 0,
         "weight": 45947.0
     },
     {
@@ -1486,7 +1446,7 @@
         "price": 248.5,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 395.3,
+        "standardPrice": 422.8,
         "weight": 352.0
     },
     {
@@ -1503,7 +1463,7 @@
         "price": 0,
         "reward": "Grand Spectrum, Corrupted",
         "stack": 1,
-        "standardPrice": 7907
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/3/35/Divine_Shard_card_art.png",
@@ -1564,7 +1524,7 @@
         "price": 79.14,
         "reward": "Level 21 Transfigured Gem, Quality: +20%, Corrupted",
         "stack": 3,
-        "standardPrice": 40,
+        "standardPrice": 791.6,
         "weight": 110.0
     },
     {
@@ -1645,7 +1605,7 @@
         "price": 0,
         "reward": "Level 19 Transfigured Gem, Quality: +19%",
         "stack": 8,
-        "standardPrice": 4.6,
+        "standardPrice": 2.73,
         "weight": 2335.0
     },
     {
@@ -1738,7 +1698,7 @@
         "price": 10,
         "reward": "Item, Item Level: 100, Perfect Eldritch Implicit Modifier",
         "stack": 4,
-        "standardPrice": 0
+        "standardPrice": 50
     },
     {
         "art": "https://www.poewiki.net/images/7/7b/Emperor_of_Purity_card_art.png",
@@ -1759,7 +1719,7 @@
         "price": 0,
         "reward": "Six-Link Holy Chainmail, Item Level: 60",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 352.8,
         "weight": 1885.0
     },
     {
@@ -1781,7 +1741,7 @@
         "price": 0.2,
         "reward": "5x Currency",
         "stack": 5,
-        "standardPrice": 1.18,
+        "standardPrice": 1,
         "weight": 50316.0
     },
     {
@@ -1818,7 +1778,7 @@
         "price": 148,
         "reward": "Ephemeral Edge",
         "stack": 3,
-        "standardPrice": 1581,
+        "standardPrice": 4528,
         "weight": 6.0
     },
     {
@@ -1933,7 +1893,7 @@
         "price": 0,
         "reward": "Nimis",
         "stack": 7,
-        "standardPrice": 12650
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/1/1b/Forbidden_Power_card_art.png",
@@ -2024,7 +1984,7 @@
         "price": 497.1,
         "reward": "Empower, Enhance or Enlighten",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 5,
         "weight": 89.0
     },
     {
@@ -2202,7 +2162,7 @@
         "price": 0,
         "reward": "Sacrifice Fragment",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 9864.0
     },
     {
@@ -2241,7 +2201,7 @@
         "price": 95934,
         "reward": "2x Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 151173
+        "standardPrice": 151875
     },
     {
         "art": "https://www.poewiki.net/images/7/71/Home_card_art.png",
@@ -2260,7 +2220,7 @@
         "price": 0,
         "reward": "Exceptional Support Gem, Quality: +1-20%",
         "stack": 3,
-        "standardPrice": 2372
+        "standardPrice": 10
     },
     {
         "art": "https://www.poewiki.net/images/6/6a/Hope_card_art.png",
@@ -2298,7 +2258,7 @@
         "price": 111017,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 168478,
+        "standardPrice": 180326,
         "weight": 1.0
     },
     {
@@ -2401,7 +2361,7 @@
         "price": 0,
         "reward": "2x Fracturing Orb",
         "stack": 2,
-        "standardPrice": 0,
+        "standardPrice": 1647,
         "weight": 10.0
     },
     {
@@ -2537,7 +2497,7 @@
         "price": 0,
         "reward": "Synthesis Map",
         "stack": 5,
-        "standardPrice": 8,
+        "standardPrice": 0,
         "weight": 434.0
     },
     {
@@ -2579,7 +2539,7 @@
         "price": 0,
         "reward": "Jewel, Implicit Modifier: , Corrupted Blood cannot be inflicted on you, Corrupted",
         "stack": 3,
-        "standardPrice": 21,
+        "standardPrice": 63,
         "weight": 554.0
     },
     {
@@ -2623,7 +2583,7 @@
         "price": 0,
         "reward": "Mortal Hope",
         "stack": 3,
-        "standardPrice": 3,
+        "standardPrice": 3.33,
         "weight": 6200.0
     },
     {
@@ -2718,7 +2678,7 @@
         "price": 1,
         "reward": "Vaal Temple Map, Corrupted",
         "stack": 16,
-        "standardPrice": 3.67,
+        "standardPrice": 3,
         "weight": 1038.0
     },
     {
@@ -2774,7 +2734,7 @@
         "price": 497.1,
         "reward": "Unnatural Instinct, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 8500,
+        "standardPrice": 0,
         "weight": 4.0
     },
     {
@@ -2872,7 +2832,7 @@
         "price": 360,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 4428
+        "standardPrice": 2470
     },
     {
         "art": "https://www.poewiki.net/images/e/e3/Lysah%27s_Respite_card_art.png",
@@ -2894,25 +2854,6 @@
         "weight": 2209.0
     },
     {
-        "art": "https://www.poewiki.net/images/8/87/Man_With_Bear_card_art.png",
-        "drop": {
-            "areas": [
-                "MapWorldsMarshes"
-            ],
-            "min_level": 68,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "man-with-bear",
-        "name": "Man With Bear",
-        "price": 0,
-        "reward": "Bestiary Scarab",
-        "stack": 3,
-        "standardPrice": 1,
-        "weight": 606.0
-    },
-    {
         "art": "https://www.poewiki.net/images/3/38/Matryoshka_card_art.png",
         "drop": {
             "areas": [
@@ -2929,7 +2870,7 @@
         "price": 72,
         "reward": "Item, Vestigial, Item Level: 86",
         "stack": 8,
-        "standardPrice": 1739,
+        "standardPrice": 109.0,
         "weight": 651.0
     },
     {
@@ -2949,7 +2890,7 @@
         "price": 0,
         "reward": "Eyes of the Greatwolf",
         "stack": 16,
-        "standardPrice": 3163,
+        "standardPrice": 1882,
         "weight": 26.0
     },
     {
@@ -3058,28 +2999,8 @@
         "price": 75.11,
         "reward": "Valdo's Puzzle Box",
         "stack": 3,
-        "standardPrice": 53.8,
+        "standardPrice": 30,
         "weight": 462.0
-    },
-    {
-        "art": "https://www.poewiki.net/images/2/22/More_is_Never_Enough_card_art.png",
-        "drop": {
-            "areas": [
-                "MapWorldsDesertSpring",
-                "MapWorldsReef"
-            ],
-            "min_level": 68,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "more-is-never-enough",
-        "name": "More is Never Enough",
-        "price": 1,
-        "reward": "4x Scarab",
-        "stack": 7,
-        "standardPrice": 51.56,
-        "weight": 22641.0
     },
     {
         "art": "https://www.poewiki.net/images/5/5b/No_Traces_card_art.png",
@@ -3143,7 +3064,7 @@
         "price": 500,
         "reward": "Experimented Jewellery, Item Level: 86",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 4116,
         "weight": 4.0
     },
     {
@@ -3182,7 +3103,7 @@
         "price": 0,
         "reward": "Timeless Jewel",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 13.75,
         "weight": 211.0
     },
     {
@@ -3449,7 +3370,7 @@
         "price": 0,
         "reward": "Charan's Sword",
         "stack": 27,
-        "standardPrice": 0
+        "standardPrice": 10
     },
     {
         "art": "https://www.poewiki.net/images/b/bc/Rebirth_and_Renewal_card_art.png",
@@ -3465,9 +3386,9 @@
         "id": "rebirth-and-renewal",
         "name": "Rebirth and Renewal",
         "price": 123.3,
-        "reward": "Horned Scarab",
+        "reward": "Simplex Amulet, Item Level: 86",
         "stack": 4,
-        "standardPrice": 6383,
+        "standardPrice": 2276,
         "weight": 541.0
     },
     {
@@ -3507,7 +3428,7 @@
         "price": 2237,
         "reward": "Kalandra's Touch",
         "stack": 2,
-        "standardPrice": 101.5,
+        "standardPrice": 103,
         "weight": 4.0
     },
     {
@@ -3543,7 +3464,7 @@
         "price": 0,
         "reward": "10x Vendor Refresh Currency",
         "stack": 4,
-        "standardPrice": 4.43,
+        "standardPrice": 1,
         "weight": 1624.0
     },
     {
@@ -3560,7 +3481,7 @@
         "price": 2,
         "reward": "Mortal Fragment",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 5,
         "weight": 4571.0
     },
     {
@@ -3619,7 +3540,7 @@
         "price": 3555,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 5956,
+        "standardPrice": 5596,
         "weight": 52.0
     },
     {
@@ -3701,7 +3622,7 @@
         "price": 0,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 530.0
     },
     {
@@ -3780,7 +3701,7 @@
         "price": 0,
         "reward": "Relic, Item Level: 83",
         "stack": 4,
-        "standardPrice": 10
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/3/35/Terrible_Secret_of_Space_card_art.png",
@@ -3899,7 +3820,7 @@
         "price": 22845,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 29328,
+        "standardPrice": 39079,
         "weight": 8.0
     },
     {
@@ -3978,7 +3899,7 @@
         "price": 0,
         "reward": "Level 4 Enhance, Corrupted",
         "stack": 11,
-        "standardPrice": 790.7,
+        "standardPrice": 0,
         "weight": 36.0
     },
     {
@@ -3997,7 +3918,7 @@
         "price": 0,
         "reward": "Item, Elevated Item, Influenced Item",
         "stack": 5,
-        "standardPrice": 3,
+        "standardPrice": 4,
         "weight": 16.0
     },
     {
@@ -4083,7 +4004,7 @@
         "price": 0,
         "reward": "Axe",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 5438.0
     },
     {
@@ -4143,7 +4064,7 @@
         "price": 0,
         "reward": "Maligaro's Virtuosity",
         "stack": 9,
-        "standardPrice": 5,
+        "standardPrice": 0,
         "weight": 2487.0
     },
     {
@@ -4162,7 +4083,7 @@
         "price": 0,
         "reward": "Level 21 Chaos Gem, Quality: +23%, Corrupted",
         "stack": 3,
-        "standardPrice": 3,
+        "standardPrice": 0,
         "weight": 99.0
     },
     {
@@ -4189,7 +4110,7 @@
         "price": 0,
         "reward": "Chin Sol",
         "stack": 6,
-        "standardPrice": 0.03333,
+        "standardPrice": 0,
         "weight": 11950.0
     },
     {
@@ -4280,7 +4201,7 @@
         "price": 0,
         "reward": "Breach Item",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 203.0
     },
     {
@@ -4337,7 +4258,7 @@
         "price": 0,
         "reward": "3x Deafening Essence",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 179.0
     },
     {
@@ -4374,32 +4295,8 @@
         "price": 0,
         "reward": "Beyond Item",
         "stack": 6,
-        "standardPrice": 1,
-        "weight": 4247.0
-    },
-    {
-        "art": "https://www.poewiki.net/images/4/43/The_Card_Sharp_card_art.png",
-        "drop": {
-            "areas": [],
-            "min_level": 68,
-            "monsters": [
-                "Metadata/Monsters/VaalArchitect/VaalArchitect2",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect8",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect14",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect2MemoryLine",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect8MemoryLine",
-                "Metadata/Monsters/VaalArchitect/VaalArchitect14MemoryLine"
-            ],
-            "text": "Drops from completing a temporal incursion encounter after killing a corresponding Architect."
-        },
-        "eventPrice": 0,
-        "id": "the-card-sharp",
-        "name": "The Card Sharp",
-        "price": 0,
-        "reward": "Divination Scarab",
-        "stack": 4,
         "standardPrice": 0,
-        "weight": 404.0
+        "weight": 4247.0
     },
     {
         "art": "https://www.poewiki.net/images/8/85/The_Carrion_Crow_card_art.png",
@@ -4539,7 +4436,7 @@
         "price": 0,
         "reward": "Fishing Rod, Item Level: 99",
         "stack": 18,
-        "standardPrice": 0,
+        "standardPrice": 14,
         "weight": 14.0
     },
     {
@@ -4775,25 +4672,6 @@
         "weight": 271.0
     },
     {
-        "art": "https://www.poewiki.net/images/4/40/The_Deal_card_art.png",
-        "drop": {
-            "areas": [],
-            "min_level": 68,
-            "monsters": [
-                "Metadata/Monsters/LeagueBetrayal/BetrayalCameria"
-            ],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "the-deal",
-        "name": "The Deal",
-        "price": 0,
-        "reward": "Cartography Scarab",
-        "stack": 5,
-        "standardPrice": 0,
-        "weight": 1027.0
-    },
-    {
         "art": "https://www.poewiki.net/images/c/c2/The_Deceiver_card_art.png",
         "drop": {
             "areas": [
@@ -4848,7 +4726,7 @@
         "price": 0,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 0
+        "standardPrice": 2470
     },
     {
         "art": "https://www.poewiki.net/images/0/0a/The_Demoness_card_art.png",
@@ -4905,7 +4783,7 @@
         "price": 733.8,
         "reward": "Headhunter",
         "stack": 8,
-        "standardPrice": 790.7,
+        "standardPrice": 823.3,
         "weight": 12.0
     },
     {
@@ -4984,7 +4862,7 @@
         "price": 0,
         "reward": "Chayula Item",
         "stack": 6,
-        "standardPrice": 0,
+        "standardPrice": 10.67,
         "weight": 105.0
     },
     {
@@ -5041,7 +4919,7 @@
         "price": 0,
         "reward": "Belt, Double-Influenced Item",
         "stack": 7,
-        "standardPrice": 0
+        "standardPrice": 6
     },
     {
         "art": "https://www.poewiki.net/images/7/7a/The_Easy_Stroll_card_art.png",
@@ -5101,7 +4979,7 @@
         "price": 0,
         "reward": "Map, Corrupted",
         "stack": 8,
-        "standardPrice": 0.1,
+        "standardPrice": 0,
         "weight": 935.0
     },
     {
@@ -5120,7 +4998,7 @@
         "price": 0,
         "reward": "Voidforge",
         "stack": 9,
-        "standardPrice": 0
+        "standardPrice": 987.9
     },
     {
         "art": "https://www.poewiki.net/images/5/59/The_Endurance_card_art.png",
@@ -5143,7 +5021,7 @@
         "price": 0,
         "reward": "Vivid Crimson Jewel",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 5294.0
     },
     {
@@ -5185,7 +5063,7 @@
         "price": 0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 0,
+        "standardPrice": 363.3,
         "weight": 74.0
     },
     {
@@ -5224,7 +5102,7 @@
         "price": 1,
         "reward": "Seven-League Step",
         "stack": 5,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 502.0
     },
     {
@@ -5246,7 +5124,7 @@
         "price": 0,
         "reward": "Timeless Jewel, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 1581,
+        "standardPrice": 15,
         "weight": 14.0
     },
     {
@@ -5288,7 +5166,7 @@
         "price": 0,
         "reward": "Originator Incarnation Item",
         "stack": 3,
-        "standardPrice": 5535
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/9/9f/The_Explorer_card_art.png",
@@ -5326,7 +5204,7 @@
         "price": 9113,
         "reward": "Mageblood,  Foulborn",
         "stack": 8,
-        "standardPrice": 11355,
+        "standardPrice": 15836,
         "weight": 5.0
     },
     {
@@ -5347,7 +5225,7 @@
         "price": 0,
         "reward": "Jewel, Corrupted",
         "stack": 10,
-        "standardPrice": 0,
+        "standardPrice": 20,
         "weight": 54.0
     },
     {
@@ -5407,7 +5285,7 @@
         "price": 932.0,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 3479,
+        "standardPrice": 823.3,
         "weight": 4.0
     },
     {
@@ -5446,7 +5324,7 @@
         "price": 11,
         "reward": "Albino Rhoa Feather",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 16,
         "weight": 16.0
     },
     {
@@ -5506,7 +5384,7 @@
         "price": 0,
         "reward": "20x Orb of Chance",
         "stack": 4,
-        "standardPrice": 3,
+        "standardPrice": 4,
         "weight": 3349.0
     },
     {
@@ -5526,7 +5404,7 @@
         "price": 120,
         "reward": "Uber Pinnacle Fragment",
         "stack": 1,
-        "standardPrice": 0,
+        "standardPrice": 771.8,
         "weight": 272.0
     },
     {
@@ -5604,7 +5482,7 @@
         "price": 58.21,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 72.46,
+        "standardPrice": 75.14,
         "weight": 1289.0
     },
     {
@@ -5623,7 +5501,7 @@
         "price": 0,
         "reward": "Replica Item",
         "stack": 6,
-        "standardPrice": 632.5,
+        "standardPrice": 0,
         "weight": 1079.0
     },
     {
@@ -5703,7 +5581,7 @@
         "price": 0,
         "reward": "Jewel",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 12,
         "weight": 83.0
     },
     {
@@ -5956,7 +5834,7 @@
         "price": 184.4,
         "reward": "Level 21 Transfigured Gem, Quality: +23%, Corrupted",
         "stack": 8,
-        "standardPrice": 165,
+        "standardPrice": 100,
         "weight": 76.0
     },
     {
@@ -5995,7 +5873,7 @@
         "price": 16486,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 21308,
+        "standardPrice": 21420,
         "weight": 14.0
     },
     {
@@ -6074,7 +5952,7 @@
         "price": 0,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 0,
+        "standardPrice": 8233,
         "weight": 1.0
     },
     {
@@ -6197,7 +6075,7 @@
         "price": 0,
         "reward": "Journey Tattoo",
         "stack": 4,
-        "standardPrice": 0
+        "standardPrice": 200
     },
     {
         "art": "https://www.poewiki.net/images/2/29/The_King%27s_Blade_card_art.png",
@@ -6253,7 +6131,7 @@
         "price": 101,
         "reward": "Reflecting Mist",
         "stack": 8,
-        "standardPrice": 5535,
+        "standardPrice": 0,
         "weight": 5.0
     },
     {
@@ -6273,7 +6151,7 @@
         "price": 0,
         "reward": "Replica Dragonfang's Flight, Corrupted",
         "stack": 5,
-        "standardPrice": 1581,
+        "standardPrice": 0,
         "weight": 394.0
     },
     {
@@ -6292,7 +6170,7 @@
         "price": 55,
         "reward": "Atziri's Disfavour",
         "stack": 10,
-        "standardPrice": 0
+        "standardPrice": 20
     },
     {
         "art": "https://www.poewiki.net/images/6/62/The_Last_Supper_card_art.png",
@@ -6311,7 +6189,7 @@
         "price": 0,
         "reward": "Bino's Kitchen Knife",
         "stack": 6,
-        "standardPrice": 0,
+        "standardPrice": 5,
         "weight": 14.0
     },
     {
@@ -6405,7 +6283,7 @@
         "price": 0,
         "reward": "Elderslayer's Exalted Orb",
         "stack": 4,
-        "standardPrice": 25
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/d/d6/The_Long_Watch_card_art.png",
@@ -6523,7 +6401,7 @@
         "price": 7,
         "reward": "Vaal Aspect",
         "stack": 7,
-        "standardPrice": 0
+        "standardPrice": 3
     },
     {
         "art": "https://www.poewiki.net/images/b/b6/The_Magma_Crab_card_art.png",
@@ -6578,7 +6456,7 @@
         "price": 100,
         "reward": "The Light of Meaning",
         "stack": 5,
-        "standardPrice": 0
+        "standardPrice": 30
     },
     {
         "art": "https://www.poewiki.net/images/7/7e/The_Mercenary_card_art.png",
@@ -6615,7 +6493,7 @@
         "price": 0,
         "reward": "Harbinger Item",
         "stack": 4,
-        "standardPrice": 197.7,
+        "standardPrice": 205.8,
         "weight": 596.0
     },
     {
@@ -6647,7 +6525,7 @@
         "price": 0,
         "reward": "Prismatic Ring",
         "stack": 6,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 34650.0
     },
     {
@@ -6687,7 +6565,7 @@
         "price": 0,
         "reward": "Awakened Exceptional Gem",
         "stack": 3,
-        "standardPrice": 56532
+        "standardPrice": 65861
     },
     {
         "art": "https://www.poewiki.net/images/0/0c/The_Mountain_card_art.png",
@@ -6727,7 +6605,7 @@
         "price": 12,
         "reward": "The Doctor",
         "stack": 8,
-        "standardPrice": 3953,
+        "standardPrice": 0,
         "weight": 87.0
     },
     {
@@ -6923,7 +6801,7 @@
         "price": 58.17,
         "reward": "The Nurse",
         "stack": 8,
-        "standardPrice": 33,
+        "standardPrice": 1,
         "weight": 738.0
     },
     {
@@ -7020,7 +6898,7 @@
         "price": 27339,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 27745,
+        "standardPrice": 38831,
         "weight": 1.0
     },
     {
@@ -7190,7 +7068,7 @@
         "price": 0,
         "reward": "Elegant Hubris",
         "stack": 6,
-        "standardPrice": 0,
+        "standardPrice": 150,
         "weight": 140.0
     },
     {
@@ -7250,25 +7128,6 @@
         "standardPrice": 0
     },
     {
-        "art": "https://www.poewiki.net/images/7/70/The_Rabbit%27s_Foot_card_art.png",
-        "drop": {
-            "areas": [
-                "MapWorldsBoneCryptUnique",
-                "MapWorldsCursedCryptUnique"
-            ],
-            "min_level": 54,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "the-rabbits-foot",
-        "name": "The Rabbit's Foot",
-        "price": 0,
-        "reward": "10x Incursion Vial",
-        "stack": 8,
-        "standardPrice": 0
-    },
-    {
         "art": "https://www.poewiki.net/images/7/7d/The_Rabid_Rhoa_card_art.png",
         "drop": {
             "areas": [
@@ -7315,7 +7174,7 @@
         "price": 5,
         "reward": "Portal, Quality: +1-20%",
         "stack": 5,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 828.0
     },
     {
@@ -7353,7 +7212,7 @@
         "price": 2,
         "reward": "Ventor's Gamble",
         "stack": 3,
-        "standardPrice": 8,
+        "standardPrice": 0,
         "weight": 4785.0
     },
     {
@@ -7454,7 +7313,7 @@
         "price": 0,
         "reward": "Six-Link Sacrificial Garb, Item Level: 100",
         "stack": 4,
-        "standardPrice": 1581
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/a/a9/The_Saint%27s_Treasure_card_art.png",
@@ -7611,7 +7470,7 @@
         "price": 308,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 644.2,
+        "standardPrice": 653.8,
         "weight": 249.0
     },
     {
@@ -7630,7 +7489,7 @@
         "price": 0,
         "reward": "Boots, Item Level: 100, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 10,
         "weight": 166.0
     },
     {
@@ -7746,7 +7605,7 @@
         "price": 1,
         "reward": "Incarnation Echo",
         "stack": 5,
-        "standardPrice": 0
+        "standardPrice": 21
     },
     {
         "art": "https://www.poewiki.net/images/8/8a/The_Sigil_card_art.png",
@@ -7767,26 +7626,6 @@
         "stack": 3,
         "standardPrice": 0,
         "weight": 7685.0
-    },
-    {
-        "art": "https://www.poewiki.net/images/4/45/The_Silly_Boy_card_art.png",
-        "drop": {
-            "areas": [
-                "MapWorldsBazaar",
-                "MapWorldsSiege"
-            ],
-            "min_level": 81,
-            "monsters": [],
-            "text": ""
-        },
-        "eventPrice": 0,
-        "id": "the-silly-boy",
-        "name": "The Silly Boy",
-        "price": 6,
-        "reward": "6x Horned Scarab",
-        "stack": 9,
-        "standardPrice": 10,
-        "weight": 162.0
     },
     {
         "art": "https://www.poewiki.net/images/0/03/The_Siren_card_art.png",
@@ -7843,7 +7682,7 @@
         "price": 0,
         "reward": "Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 70086,
+        "standardPrice": 70595,
         "weight": 2.0
     },
     {
@@ -7864,7 +7703,7 @@
         "price": 497.1,
         "reward": "Soul Taker",
         "stack": 9,
-        "standardPrice": 20,
+        "standardPrice": 1262,
         "weight": 20.0
     },
     {
@@ -7884,7 +7723,7 @@
         "price": 0,
         "reward": "Berek's Respite",
         "stack": 2,
-        "standardPrice": 0,
+        "standardPrice": 10,
         "weight": 662.0
     },
     {
@@ -7990,7 +7829,7 @@
         "price": 1,
         "reward": "Minion Gem, Quality: +20%",
         "stack": 6,
-        "standardPrice": 2,
+        "standardPrice": 0,
         "weight": 6052.0
     },
     {
@@ -8256,7 +8095,7 @@
         "price": 0,
         "reward": "Map, Map Tier: 15, Corrupted",
         "stack": 7,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 5923.0
     },
     {
@@ -8354,7 +8193,7 @@
         "price": 0,
         "reward": "Nemesis Item, Corrupted",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 50,
         "weight": 862.0
     },
     {
@@ -8392,7 +8231,7 @@
         "price": 0,
         "reward": "Attribute Transforming Jewel, Corrupted",
         "stack": 2,
-        "standardPrice": 20,
+        "standardPrice": 0,
         "weight": 331.0
     },
     {
@@ -8503,7 +8342,7 @@
         "price": 5,
         "reward": "",
         "stack": 1,
-        "standardPrice": 79.07
+        "standardPrice": 75.99
     },
     {
         "art": "https://www.poewiki.net/images/f/f2/The_Warden_card_art.png",
@@ -8743,7 +8582,7 @@
         "price": 0,
         "reward": "Vaults of Atziri",
         "stack": 4,
-        "standardPrice": 10,
+        "standardPrice": 0,
         "weight": 283.0
     },
     {
@@ -8821,7 +8660,7 @@
         "price": 0,
         "reward": "Starforge",
         "stack": 8,
-        "standardPrice": 790.7
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/d/d2/The_Wrath_card_art.png",
@@ -8842,7 +8681,7 @@
         "price": 0,
         "reward": "10x Chaos Orb",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 7993.0
     },
     {
@@ -8862,7 +8701,7 @@
         "price": 0,
         "reward": "Belt",
         "stack": 6,
-        "standardPrice": 2.5,
+        "standardPrice": 0,
         "weight": 4249.0
     },
     {
@@ -8921,7 +8760,7 @@
         "price": 0,
         "reward": "3x Essence",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 11960.0
     },
     {
@@ -8981,7 +8820,7 @@
         "price": 0,
         "reward": "Dendrobate,  Two-Implicit,  Corrupted",
         "stack": 5,
-        "standardPrice": 790.7,
+        "standardPrice": 49396,
         "weight": 178.0
     },
     {
@@ -9001,7 +8840,7 @@
         "price": 0,
         "reward": "Voltaxic Rift",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 42,
         "weight": 12.0
     },
     {
@@ -9078,7 +8917,7 @@
         "price": 0,
         "reward": "Facebreaker, Two-Implicit, Corrupted",
         "stack": 4,
-        "standardPrice": 790.7,
+        "standardPrice": 449,
         "weight": 388.0
     },
     {
@@ -9119,7 +8958,7 @@
         "price": 50900,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 103711,
+        "standardPrice": 110267,
         "weight": 5.0
     },
     {

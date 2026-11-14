@@ -29,7 +29,6 @@
             "Absence of Mercy and Empathy",
             "Eye of the Storm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMalformation",
         "ids": [
             "MapWorldsAbomination"
         ],
@@ -164,10 +163,17 @@
         "y": 225
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerMaleMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Academy",
+        "connected": [
+            "Mesa",
+            "Oba's Cursed Trove",
+            "Shore",
+            "Strand",
+            "Underground Sea"
+        ],
         "ids": [
             "MapWorldsAcademy"
         ],
@@ -176,7 +182,8 @@
             "boss": "Hexfont, be careful of dangerous curses such as Vulnerability and Silence (for casters). Throws books with Far Shot (more damage the further away you are from the boss). Summons tornadoes that do a lot of quick Physical damage, avoid at all costs."
         },
         "levels": [
-            73
+            73,
+            83
         ],
         "name": "Academy Map",
         "rating": {
@@ -192,7 +199,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 428,
+        "y": 345
     },
     {
         "boss_ids": [
@@ -206,7 +215,6 @@
             "Metadata/Monsters/Wb/WbChaosLeader8",
             "Metadata/Monsters/Wb/WbLeader4Minion"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SulphurVents",
         "ids": [
             "MapWorldsAcidLakes"
         ],
@@ -242,7 +250,6 @@
         "connected": [
             "Overgrown Shrine"
         ],
-        "icon": "Art/2DItems/Maps/musicbox",
         "ids": [
             "MapWorldsOvergrownShrineUnique"
         ],
@@ -275,18 +282,9 @@
         "y": 343
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BlacksmithGolem/BlacksmithGolemMap"
         ],
-        "connected": [
-            "Colonnade",
-            "Geode",
-            "Primordial Blocks",
-            "Strand",
-            "Summit"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Alleyways",
         "ids": [
             "MapWorldsAlleyways"
         ],
@@ -295,8 +293,7 @@
             "boss": "Spectral Throw creates Animated Weapons. Uses Sunder and releases fire spray of projectiles"
         },
         "levels": [
-            71,
-            83
+            71
         ],
         "name": "Alleyways Map",
         "rating": {
@@ -318,9 +315,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 382,
-        "y": 410
+        "type": "map"
     },
     {
         "atlas": true,
@@ -331,7 +326,6 @@
             "",
             "Cortex"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisColdGuardianMap",
         "ids": [
             "Synthesis_MapGuardian1"
         ],
@@ -350,10 +344,16 @@
         "y": 217
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Axis/AxisEliteGuardMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalCity",
+        "connected": [
+            "Dunes",
+            "Fungal Hollow",
+            "Vaults of Atziri",
+            "Waste Pool"
+        ],
         "ids": [
             "MapWorldsAncientCity"
         ],
@@ -361,7 +361,8 @@
             "boss": "Strong Physical Double Strike, Cleave and Leap Slam. Leap Slam leaves Burning Ground which does high amounts of Fire DoT. He also have companions/boss guards."
         },
         "levels": [
-            72
+            72,
+            83
         ],
         "name": "Ancient City Map",
         "rating": {
@@ -377,7 +378,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 735,
+        "y": 471
     },
     {
         "atlas": true,
@@ -385,11 +388,10 @@
             "Metadata/Monsters/Spiders/MapSpiderBossWeaver"
         ],
         "connected": [
-            "Chateau",
-            "Courthouse",
-            "Mesa"
+            "Colonnade",
+            "Crux of Nothingness",
+            "Desert Spring"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ArachnidNest",
         "ids": [
             "MapWorldsArachnidNest"
         ],
@@ -422,19 +424,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 466,
-        "y": 584
+        "x": 446,
+        "y": 311
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Spiders/MapSpiderBossSinsSimplified"
         ],
-        "connected": [
-            "Forking River",
-            "Malformation"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arachnid",
         "ids": [
             "MapWorldsArachnidTomb"
         ],
@@ -443,8 +439,7 @@
             "boss": "Viper Strike inflicts Poison. Summons swarms of small spiders. Will periodically enshroud the arena in web, lowering your attack, cast and movement speed as well as your damage. You can drag yourself through the nearby fires to remove the debuff."
         },
         "levels": [
-            81,
-            83
+            81
         ],
         "name": "Arachnid Tomb Map",
         "rating": {
@@ -466,9 +461,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 764,
-        "y": 680
+        "type": "map"
     },
     {
         "atlas": true,
@@ -477,11 +470,11 @@
             "Metadata/Monsters/Guardians/MapGuardianBossLightning"
         ],
         "connected": [
-            "Burial Chambers",
-            "Malformation",
-            "Tower"
+            "Crimson Temple",
+            "Lava Lake",
+            "Mausoleum",
+            "Volcano"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arcade",
         "ids": [
             "MapWorldsArcade"
         ],
@@ -514,8 +507,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 797,
-        "y": 529
+        "x": 650,
+        "y": 472
     },
     {
         "boss_ids": [
@@ -523,7 +516,6 @@
             "Metadata/Monsters/GladiatorBosses/GladiatorBossLeaderMap",
             "Metadata/Monsters/GladiatorBosses/GladiatorBossSupportMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arena",
         "ids": [
             "MapWorldsArena"
         ],
@@ -556,11 +548,10 @@
             "Metadata/Monsters/Rhoas/MapRhoaBoss"
         ],
         "connected": [
-            "Bramble Valley",
-            "Dark Forest",
-            "Waterways"
+            "Haunted Mansion",
+            "Primordial Pool",
+            "Summit"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/AridLake",
         "ids": [
             "MapWorldsAridLake"
         ],
@@ -573,7 +564,6 @@
             83
         ],
         "name": "Arid Lake Map",
-        "pantheon": "Soul of Arakaali",
         "rating": {
             "boss": 8,
             "density": 7,
@@ -594,29 +584,41 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 553,
-        "y": 310
+        "x": 818,
+        "y": 356
     },
     {
+        "atlas": true,
+        "icon": "/img/icon/arkhons_vault.webp",
         "ids": [
             "MapWorldsMemoryVault3"
         ],
         "image": "https://www.poewiki.net/images/1/11/Arkhon%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
+            84,
             84
         ],
         "name": "Arkhon's Vault",
         "rating": {},
         "shorthand": "rkh",
         "tags": {},
-        "type": "unique map"
+        "type": "unique map",
+        "x": 861,
+        "y": 798
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Axis/MapAxisGeneralBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Armory",
+        "connected": [
+            "Domain of Timeless Conflict",
+            "Excavation",
+            "Moon Temple",
+            "Scriptorium",
+            "Seething Chyme"
+        ],
         "ids": [
             "MapWorldsArmoury"
         ],
@@ -625,7 +627,8 @@
             "boss": "Large Energy Shield pool. Weak Firestorm and Molten Shell abilities."
         },
         "levels": [
-            75
+            75,
+            83
         ],
         "name": "Armoury Map",
         "rating": {
@@ -647,18 +650,14 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 398,
+        "y": 684
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/AnimatedItem/AnimatedWeaponMapBoss"
         ],
-        "connected": [
-            "",
-            "Grave Trough"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Arsenal",
         "ids": [
             "MapWorldsArsenal"
         ],
@@ -667,7 +666,6 @@
             "boss": "Waves of Animated Weapons until boss appears. Fast but manageable Physical Cyclone and Lacerate attacks. Cascade of weak Physical projectiles."
         },
         "levels": [
-            83,
             83
         ],
         "name": "Arsenal Map",
@@ -690,15 +688,12 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 858,
-        "y": 321
+        "type": "map"
     },
     {
         "boss_ids": [
             "Metadata/Monsters/Bandits/MapBanditBowBossFire"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DryWoods",
         "ids": [
             "MapWorldsAshenWood"
         ],
@@ -746,16 +741,9 @@
         "type": "act area"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Totems/TotemMapBossCold"
         ],
-        "connected": [
-            "Factory",
-            "Lava Lake",
-            "Maelstr\u00f6m of Chaos"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Atoll",
         "ids": [
             "MapWorldsAtoll"
         ],
@@ -765,8 +753,7 @@
             "boss_rushable": "Follow right wall"
         },
         "levels": [
-            77,
-            83
+            77
         ],
         "name": "Atoll Map",
         "rating": {
@@ -788,9 +775,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 351,
-        "y": 338
+        "type": "map"
     },
     {
         "atlas": true,
@@ -801,7 +786,6 @@
             "",
             "Cortex"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisFireGuardianMap",
         "ids": [
             "Synthesis_MapGuardian2"
         ],
@@ -821,10 +805,15 @@
         "y": 204
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Beasts/MapBeastBossWhite"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Barrows",
+        "connected": [
+            "Burial Chambers",
+            "City Square",
+            "Residence"
+        ],
         "ids": [
             "MapWorldsBarrows"
         ],
@@ -834,7 +823,8 @@
             "boss_rushable": "Look for door that says arena and not tomb"
         },
         "levels": [
-            72
+            72,
+            83
         ],
         "name": "Barrows Map",
         "rating": {
@@ -856,7 +846,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 419,
+        "y": 653
     },
     {
         "atlas": true,
@@ -865,11 +857,9 @@
             "Metadata/Monsters/AvariusCasticus/AvariusCasticusDivineMap"
         ],
         "connected": [
-            "Jungle Valley",
-            "Lookout",
-            "Sulphur Vents"
+            "Fungal Hollow",
+            "Volcano"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Basilica",
         "ids": [
             "MapWorldsBasilica"
         ],
@@ -898,21 +888,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 302,
-        "y": 484
+        "x": 691,
+        "y": 455
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerMaleMapBossBazaar"
         ],
-        "connected": [
-            "Frozen Cabins",
-            "Overgrown Shrine",
-            "Primordial Blocks",
-            "Ramparts"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Bazaar",
         "ids": [
             "MapWorldsBazaar"
         ],
@@ -921,8 +903,7 @@
             "boss": "Physical Spectral Throw. At 2/3 health Marceus the Defaced (Marketplace) is summoned - strong Lightning Strike attack. At 1/3 health Goddess of Purity (Solaris Temple) is summoned."
         },
         "levels": [
-            71,
-            83
+            71
         ],
         "name": "Bazaar Map",
         "rating": {
@@ -938,22 +919,12 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 532,
-        "y": 369
+        "type": "map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Scavengers/MapScavengerBossHailrake"
         ],
-        "connected": [
-            "Burial Chambers",
-            "Foundry",
-            "Grave Trough",
-            "Temple"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Beach",
         "ids": [
             "MapWorldsBeach"
         ],
@@ -962,11 +933,9 @@
             "boss": "Spams Cold spells. Bring Freeze immunity if you have low health"
         },
         "levels": [
-            80,
-            83
+            80
         ],
         "name": "Beach Map",
-        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 10,
             "density": 3,
@@ -986,9 +955,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 814,
-        "y": 409
+        "type": "map"
     },
     {
         "atlas": true,
@@ -996,11 +963,10 @@
             "Metadata/Monsters/KitavaBoss/Kitava1Map"
         ],
         "connected": [
-            "Bramble Valley",
-            "Grave Trough",
-            "Temple"
+            "Infested Valley",
+            "Tower",
+            "Underground Sea"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Belfry",
         "ids": [
             "MapWorldsBelfry"
         ],
@@ -1034,14 +1000,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 736,
-        "y": 307
+        "x": 320,
+        "y": 448
     },
     {
         "boss_ids": [
             "Metadata/Monsters/Rhoas/MapRhoaSkeletonBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Bog",
         "ids": [
             "MapWorldsBog"
         ],
@@ -1071,10 +1036,17 @@
         "type": "map"
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Necromancer/MapNecromancerBossPrison"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Catacomb",
+        "connected": [
+            "Olmec's Sanctum",
+            "Promenade",
+            "Spider Forest",
+            "Terrace",
+            "Waste Pool"
+        ],
         "ids": [
             "MapWorldsBoneCrypt"
         ],
@@ -1083,7 +1055,8 @@
             "boss": "Resummons nearby minions. Casts Spirit Offering and Vaal Summon Skeletons. Focus on killing the boss over the unique skeletons as these can be revived by the boss."
         },
         "levels": [
-            74
+            74,
+            83
         ],
         "name": "Bone Crypt Map",
         "rating": {
@@ -1105,22 +1078,16 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 711,
+        "y": 590
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/LeagueHarvest/Blue/HarvestBirdBossMapBoss",
             "Metadata/Monsters/LeagueHarvest/Green/HarvestCatBossMapBoss",
             "Metadata/Monsters/LeagueHarvest/Red/HarvestBearBossMapBoss"
         ],
-        "connected": [
-            "Arid Lake",
-            "Belfry",
-            "Temple",
-            "The Sacred Grove"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Bramblefall",
         "ids": [
             "MapWorldsBrambleValley"
         ],
@@ -1129,8 +1096,7 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            80,
-            83
+            80
         ],
         "name": "Bramble Valley Map",
         "rating": {
@@ -1143,9 +1109,7 @@
             "boss_not_twinnable": true,
             "nightmare_boss_map": true
         },
-        "type": "map",
-        "x": 603,
-        "y": 286
+        "type": "map"
     },
     {
         "atlas": true,
@@ -1153,12 +1117,11 @@
             "Metadata/Monsters/BanditLeaderInt/MapBanditLeaderAlira2"
         ],
         "connected": [
-            "Arcade",
-            "Beach",
-            "The Utzaal Arena",
-            "Vaal Pyramid"
+            "Barrows",
+            "City Square",
+            "Lookout",
+            "Palace"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/BurialChambers",
         "ids": [
             "MapWorldsBurialChambers"
         ],
@@ -1185,8 +1148,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 832,
-        "y": 474
+        "x": 368,
+        "y": 618
     },
     {
         "atlas": true,
@@ -1196,9 +1159,8 @@
             "Metadata/Monsters/Lion/LionMapWolfLightningBossRevive"
         ],
         "connected": [
-            "Lair"
+            "Underground River"
         ],
-        "icon": "Art/2DItems/Maps/WolfMap",
         "ids": [
             "MapWorldsUndergroundRiverUnique"
         ],
@@ -1236,12 +1198,11 @@
             "Metadata/Monsters/BlackguardInquisitor/BloodwingMapBoss"
         ],
         "connected": [
-            "Flooded Mine",
-            "Phantasmagoria",
-            "Shrine",
-            "The Temple of Atzoatl"
+            "Crimson Temple",
+            "Crystal Ore",
+            "Grotto",
+            "Spider Lair"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Cage",
         "ids": [
             "MapWorldsCage"
         ],
@@ -1268,8 +1229,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 647,
-        "y": 527
+        "x": 631,
+        "y": 566
     },
     {
         "atlas": true,
@@ -1278,12 +1239,10 @@
             "Metadata/Monsters/KaomWarrior/MapKaruiElder1"
         ],
         "connected": [
-            "Coral Ruins",
-            "Plateau",
-            "Promenade",
-            "Tropical Island"
+            "Fungal Hollow",
+            "Relic Chambers",
+            "Siege"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Abyss",
         "ids": [
             "MapWorldsCaldera"
         ],
@@ -1296,6 +1255,7 @@
             83
         ],
         "name": "Caldera Map",
+        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -1316,15 +1276,14 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 655,
-        "y": 641
+        "x": 692,
+        "y": 362
     },
     {
         "boss_ids": [
             "Metadata/Monsters/Cockerel/CockerelBowMapBoss",
             "Metadata/Monsters/Pitbull/PitbullMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Canyon",
         "ids": [
             "MapWorldsCanyon"
         ],
@@ -1359,10 +1318,14 @@
         "type": "map"
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/UnholyTrio/UnholyTrioMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Carcass",
+        "connected": [
+            "Pen",
+            "Villa"
+        ],
         "ids": [
             "MapWorldsCarcass"
         ],
@@ -1371,7 +1334,8 @@
             "boss": "Keep out of way of the giant Ball Lightning which will hang about the edge of the arena. At 75/50/25% health the Trinity runs off leaving 6 Scorpions that deal a high amount of physical damage if you let them all attack you at once."
         },
         "levels": [
-            82
+            82,
+            83
         ],
         "name": "Carcass Map",
         "rating": {
@@ -1387,13 +1351,20 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 248,
+        "y": 566
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BanditLeaderDexInt/MapBanditLeaderKraityn2"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CastleRuins",
+        "connected": [
+            "Dungeon",
+            "Necropolis",
+            "Simulacrum"
+        ],
         "ids": [
             "MapWorldsCastleRuins"
         ],
@@ -1403,7 +1374,8 @@
             "boss_rushable": "The boss room is top right along the path"
         },
         "levels": [
-            79
+            79,
+            83
         ],
         "name": "Castle Ruins Map",
         "rating": {
@@ -1425,18 +1397,14 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 153,
+        "y": 599
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Shavronne/ShavronneSoulMap"
         ],
-        "connected": [
-            "Ramparts",
-            "Spider Lair"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Cells",
         "ids": [
             "MapWorldsCells"
         ],
@@ -1445,8 +1413,7 @@
             "boss": "Avoid large Ball Lightning and spray of small Lightning projectiles. Boss will lay a small circle on the ground then ghost Brutus will appear slamming the area for massive Physical/Lightning damage. Boss also summons small lightning orb minions and books which explode after a time."
         },
         "levels": [
-            68,
-            83
+            68
         ],
         "name": "Cells Map",
         "rating": {
@@ -1468,9 +1435,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 565,
-        "y": 461
+        "type": "map"
     },
     {
         "atlas": true,
@@ -1479,12 +1444,11 @@
         ],
         "connected": [
             "City Square",
-            "Excavation",
             "Hallowed Ground",
-            "Jungle Valley",
-            "Terrace"
+            "Mineral Pools",
+            "Palace",
+            "Villa"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Cemetery",
         "ids": [
             "MapWorldsCemetery"
         ],
@@ -1546,11 +1510,10 @@
             "Metadata/Monsters/VultureParasite/VultureParasiteMapBoss"
         ],
         "connected": [
-            "Desert Spring",
-            "Malformation",
-            "Plateau"
+            "Coves",
+            "Graveyard",
+            "Underground River"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Channel",
         "ids": [
             "MapWorldsChannel"
         ],
@@ -1576,19 +1539,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 765,
-        "y": 550
+        "x": 247,
+        "y": 472
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/GargoyleBoss/GargoyleMapBoss"
         ],
-        "connected": [
-            "Arachnid Nest",
-            "Fungal Hollow"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chateau",
         "ids": [
             "MapWorldsChateau"
         ],
@@ -1597,8 +1554,7 @@
             "boss": "Strong Physical attacks. Sunder. Doesn't feel as strong as Uber Labyrinth Argus, also isn't immune to status ailments. Enrages for 8 seconds (turns red) increasing damage, movement speed and attack speed by 100%. Decoy Totem comes in handy for casters and ranged characters."
         },
         "levels": [
-            68,
-            83
+            68
         ],
         "name": "Chateau Map",
         "rating": {
@@ -1620,9 +1576,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 435,
-        "y": 535
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -1658,7 +1612,6 @@
             "Cortex",
             "The Shaper's Realm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberPrimordialBlocks",
         "ids": [
             "MapWorldsCitadel"
         ],
@@ -1685,11 +1638,11 @@
             "Metadata/Monsters/StatueFingerMage/StatueFingerMageMonsterMapBoss"
         ],
         "connected": [
+            "Barrows",
+            "Burial Chambers",
             "Cemetery",
-            "Crater",
-            "Excavation"
+            "Mineral Pools"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CitySquare",
         "ids": [
             "MapWorldsCitySquare"
         ],
@@ -1722,8 +1675,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 280,
-        "y": 636
+        "x": 327,
+        "y": 621
     },
     {
         "atlas": true,
@@ -1733,11 +1686,9 @@
         ],
         "connected": [
             "Excavation",
-            "Laboratory",
-            "Siege",
-            "Terrace"
+            "Promenade",
+            "Tenebria"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ColdRiver",
         "ids": [
             "MapWorldsColdRiver_"
         ],
@@ -1768,8 +1719,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 368,
-        "y": 618
+        "x": 595,
+        "y": 702
     },
     {
         "atlas": true,
@@ -1777,11 +1728,10 @@
             "Metadata/Monsters/Axis/MapAxisGeneralBoss2"
         ],
         "connected": [
-            "Alleyways",
-            "Gardens",
-            "Geode"
+            "Arachnid Nest",
+            "Park",
+            "Siege"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Colonnade",
         "ids": [
             "MapWorldsColonnade"
         ],
@@ -1814,8 +1764,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 353,
-        "y": 471
+        "x": 553,
+        "y": 310
     },
     {
         "atlas": true,
@@ -1823,10 +1773,11 @@
             "Metadata/Monsters/Daresso/DaressoMapBoss"
         ],
         "connected": [
-            "Forbidden Woods",
-            "Summit"
+            "Mausoleum",
+            "Mesa",
+            "Silo",
+            "The Proving Grounds"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Colosseum",
         "ids": [
             "MapWorldsColosseum"
         ],
@@ -1859,8 +1810,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 393,
-        "y": 475
+        "x": 536,
+        "y": 417
     },
     {
         "atlas": true,
@@ -1868,10 +1819,9 @@
             "Metadata/Monsters/Exiles/TituciusMapBoss"
         ],
         "connected": [
-            "Graveyard",
-            "Plaza"
+            "Desert",
+            "Factory"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Baths",
         "ids": [
             "MapWorldsConservatory"
         ],
@@ -1904,8 +1854,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 256,
-        "y": 303
+        "x": 204,
+        "y": 397
     },
     {
         "atlas": true,
@@ -1913,13 +1863,9 @@
             "Metadata/Monsters/GemlingLegionnaire/GemlingLegionnaireCaptainMap"
         ],
         "connected": [
-            "Caldera",
-            "Dunes",
             "Port",
-            "Shrine",
-            "Tropical Island"
+            "Reef"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CorpseTrench",
         "ids": [
             "MapWorldsCoralRuins"
         ],
@@ -1932,7 +1878,6 @@
             83
         ],
         "name": "Coral Ruins Map",
-        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 4,
             "density": 6,
@@ -1954,8 +1899,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 598,
-        "y": 649
+        "x": 206,
+        "y": 336
     },
     {
         "atlas": true,
@@ -1964,10 +1909,10 @@
             "Metadata/Monsters/Malachai/MalachaiMapBoss2"
         ],
         "connected": [
-            "Foundry",
-            "Vault"
+            "Overgrown Shrine",
+            "Relic Chambers",
+            "Volcano"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Core",
         "ids": [
             "MapWorldsCore"
         ],
@@ -2000,8 +1945,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 734,
-        "y": 428
+        "x": 637,
+        "y": 396
     },
     {
         "atlas": true,
@@ -2017,7 +1962,7 @@
             "Rewritten Distant Memory",
             "Twisted Distant Memory"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisBossGuardianMap",
+        "icon": "/img/icon/cortex.webp",
         "ids": [
             "Synthesis_MapBoss"
         ],
@@ -2035,20 +1980,11 @@
         "y": 181
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Exiles/ExileMarauder6Kitava",
             "Metadata/Monsters/Exiles/ExileRanger2Kitava",
             "Metadata/Monsters/Exiles/ExileShadow1Kitava"
         ],
-        "connected": [
-            "Arachnid Nest",
-            "Dunes",
-            "Mesa",
-            "Siege",
-            "The Vinktar Square"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Courthouse",
         "ids": [
             "MapWorldsCourthouse"
         ],
@@ -2056,8 +1992,7 @@
             "boss": "Use Physical/Chaos attacks. Watch out for Vulnerability curse and Bleeding. Can deal alot of damage between them very quickly. Bosses do not have too much health."
         },
         "levels": [
-            71,
-            83
+            71
         ],
         "name": "Courthouse Map",
         "rating": {
@@ -2073,9 +2008,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 452,
-        "y": 628
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -2083,7 +2016,6 @@
             "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss1",
             "Metadata/Monsters/Axis/AxisEliteSoldierMapBoss2"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Courtyard",
         "ids": [
             "MapWorldsCourtyard"
         ],
@@ -2135,11 +2067,18 @@
         "type": "special map"
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/GhostPirates/GhostPirateMapBoss2",
             "Metadata/Monsters/RockGolem/TreasureGolemMapBossSimplified"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Coves",
+        "connected": [
+            "Channel",
+            "Racecourse",
+            "Shore",
+            "Tower",
+            "Underground River"
+        ],
         "ids": [
             "MapWorldsCoves"
         ],
@@ -2148,7 +2087,8 @@
             "boss": "Telvar throws Magma Orbs that leave Burning Ground, he also throws barrels which deal Physical damage and spread slowing tar. The stone golem only deals modest melee Physical damage. Not too difficult if you engage each boss separately."
         },
         "levels": [
-            78
+            78,
+            83
         ],
         "name": "Coves Map",
         "rating": {
@@ -2170,7 +2110,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 286,
+        "y": 382
     },
     {
         "atlas": true,
@@ -2178,10 +2120,10 @@
             "Metadata/Monsters/Scavengers/MapScavengerBossWitch"
         ],
         "connected": [
-            "City Square",
-            "Stagnation"
+            "Defiled Cathedral",
+            "Pit",
+            "Strand"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Tribunal",
         "ids": [
             "MapWorldsTribunal"
         ],
@@ -2214,14 +2156,20 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 346,
-        "y": 658
+        "x": 462,
+        "y": 414
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Banshee/BansheeMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sanctuary",
+        "connected": [
+            "Arcade",
+            "Cage",
+            "Shrine",
+            "The Temple of Atzoatl"
+        ],
         "ids": [
             "MapWorldsCrimsonTemple"
         ],
@@ -2231,7 +2179,8 @@
             "boss_rushable": "Straight path from entrance"
         },
         "levels": [
-            81
+            81,
+            83
         ],
         "name": "Crimson Temple Map",
         "rating": {
@@ -2253,13 +2202,14 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 647,
+        "y": 527
     },
     {
         "boss_ids": [
             "Metadata/Monsters/CrimsonPriest/CrimsonPriestBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CrimsonTownship",
         "ids": [
             "MapWorldsCrimsonTownship"
         ],
@@ -2297,7 +2247,7 @@
             "Metadata/Monsters/LeagueAzmeri/VoodooKingBoss/VoodooKingBoss2"
         ],
         "connected": [
-            "Dark Forest"
+            "Arachnid Nest"
         ],
         "icon": "/img/icon/crux_of_nothingness.webp",
         "ids": [
@@ -2325,12 +2275,12 @@
             "Metadata/Monsters/MinerLarge/MinerLargeMapBoss"
         ],
         "connected": [
+            "Cage",
             "Fields",
-            "Museum",
-            "Primordial Pool",
-            "The Lightless Hollow"
+            "Ramparts",
+            "Spider Lair",
+            "Terrace"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/CrystalOre",
         "ids": [
             "MapWorldsCrystalOre"
         ],
@@ -2363,14 +2313,20 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 170,
-        "y": 632
+        "x": 598,
+        "y": 649
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossMelee"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crypt",
+        "connected": [
+            "Grave Trough",
+            "Plateau",
+            "The Coward's Trial",
+            "Vaal Pyramid"
+        ],
         "ids": [
             "MapWorldsCursedCrypt"
         ],
@@ -2379,7 +2335,8 @@
             "boss": "Similar to Relic Chambers boss. Turn off curses when facing this boss - when a curse expires he unleashes a deadly nova (damage type based on colour of curse gem) which can one shot. Without curses this boss is non-threatening. He spawns spiders (including rare ones), inflicts curses (can break curse limit) and deals strong telegraphed Physical attacks."
         },
         "levels": [
-            77
+            77,
+            83
         ],
         "name": "Cursed Crypt Map",
         "rating": {
@@ -2401,7 +2358,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 819,
+        "y": 606
     },
     {
         "boss_ids": [
@@ -2428,16 +2387,9 @@
         "type": "act area"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Talisman/TalismanWolfKingMapBoss"
         ],
-        "connected": [
-            "Arid Lake",
-            "Crux of Nothingness",
-            "Factory"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DarkForest",
         "ids": [
             "MapWorldsDarkForest"
         ],
@@ -2445,8 +2397,7 @@
             "boss": "Same as Lair Rigwald but more frustrating. He teleports more often giving you even less time to get damage in. Each platform comes with a bonus effect such as summoning adds or ground effects. Watch out for the spinning Essence Drain that does a lot of Chaos DoT."
         },
         "levels": [
-            79,
-            83
+            79
         ],
         "name": "Dark Forest Map",
         "rating": {
@@ -2462,9 +2413,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 446,
-        "y": 311
+        "type": "map"
     },
     {
         "atlas": true,
@@ -2472,9 +2421,8 @@
             "Metadata/Monsters/Skeletons/SkeletonBossMapWest4"
         ],
         "connected": [
-            "Mausoleum"
+            "Necropolis"
         ],
-        "icon": "Art/2DItems/Maps/DeathandTaxes",
         "ids": [
             "MapWorldsNecropolisUnique"
         ],
@@ -2507,10 +2455,15 @@
         "y": 518
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/AvariusCasticus/AvariusCasticusWickermanMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DefiledCathedral",
+        "connected": [
+            "Crater",
+            "Mud Geyser",
+            "Underground Sea"
+        ],
         "ids": [
             "MapWorldsDefiledCathedral"
         ],
@@ -2519,7 +2472,8 @@
             "boss": "Boss has strong Physical Cleave and telegraphed projectile. Also fires three weak Physical projectiles. Summons slow moving statues that deal massive Physical damage. Summons several beams, either in a line from the back of the room, or in a circle from the centre of the room. These beams inflict a massive Physical DoT that lasts two seconds."
         },
         "levels": [
-            79
+            79,
+            83
         ],
         "name": "Defiled Cathedral Map",
         "rating": {
@@ -2542,7 +2496,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 403,
+        "y": 437
     },
     {
         "atlas": true,
@@ -2550,12 +2506,11 @@
             "Metadata/Monsters/Kira/KiraMapDesert"
         ],
         "connected": [
-            "Infested Valley",
+            "Conservatory",
             "Mastermind's Lair",
-            "Mausoleum",
-            "Residence"
+            "Necropolis",
+            "Wasteland"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Desert",
         "ids": [
             "MapWorldsDesert"
         ],
@@ -2591,12 +2546,10 @@
             "Metadata/Monsters/Shakari/ShakariMap"
         ],
         "connected": [
-            "Channel",
-            "Plateau",
-            "Sunken City",
-            "Vault"
+            "Arachnid Nest",
+            "Factory",
+            "Racecourse"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Oasis",
         "ids": [
             "MapWorldsDesertSpring"
         ],
@@ -2631,14 +2584,20 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 728,
-        "y": 519
+        "x": 337,
+        "y": 294
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Garukhan/GarukhanMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Dig",
+        "connected": [
+            "",
+            "Infested Valley",
+            "Lookout",
+            "Overgrown Ruin"
+        ],
         "ids": [
             "MapWorldsDig"
         ],
@@ -2647,9 +2606,11 @@
             "boss": "Variety of Physical attacks. Powerful Charged Dash inflicts Maim. Phase Run - invulnerable while phasing. At 2/3 life and 1/3 life summons Sand Goliaths (throw projectiles), Sand Warriors (melee attacks) and Kira who applies Bleed (also drops loot). Constantly summons Sandstorms/Tornadoes that deal large Physical DoT and occupy much of the arena. Keep moving to avoid these."
         },
         "levels": [
-            81
+            81,
+            83
         ],
         "name": "Dig Map",
+        "pantheon": "Soul of Garukhan",
         "rating": {
             "boss": 2,
             "density": 5,
@@ -2670,7 +2631,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 355,
+        "y": 518
     },
     {
         "boss_ids": [
@@ -2697,7 +2660,7 @@
     {
         "atlas": true,
         "connected": [
-            "Stagnation"
+            "Armoury"
         ],
         "icon": "/img/icon/domain_of_timeless_conflict.webp",
         "ids": [
@@ -2725,9 +2688,8 @@
             "Metadata/Monsters/IncaShadowBoss/BossIncaShadowDoryani"
         ],
         "connected": [
-            "Foundry"
+            "Maze"
         ],
-        "icon": "Art/2DItems/Maps/Doryanis",
         "ids": [
             "MapWorldsMazeUnique"
         ],
@@ -2756,7 +2718,6 @@
         "boss_ids": [
             "Metadata/Monsters/Spiker/SpikerBull/SpikerBullBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DesertShipGraveyard",
         "ids": [
             "MapWorldsDrySea"
         ],
@@ -2792,12 +2753,9 @@
             "Metadata/Monsters/ZombieBoss/MapZombieBossHillock"
         ],
         "connected": [
-            "Coral Ruins",
-            "Courthouse",
-            "Pillars of Arun",
-            "Port"
+            "Ancient City",
+            "Maze"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Dunes",
         "ids": [
             "MapWorldsDunes"
         ],
@@ -2810,7 +2768,6 @@
             83
         ],
         "name": "Dunes Map",
-        "pantheon": "Soul of Garukhan",
         "rating": {
             "boss": 10,
             "density": 4,
@@ -2831,14 +2788,20 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 533,
-        "y": 646
+        "x": 734,
+        "y": 428
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Brute/MapBossBrute"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Dungeon",
+        "connected": [
+            "Castle Ruins",
+            "Museum",
+            "The Lightless Hollow",
+            "Thicket"
+        ],
         "ids": [
             "MapWorldsDungeon"
         ],
@@ -2847,7 +2810,8 @@
             "boss": "Physical Slam has low accuracy but hits hard. Watch out for spikes coming out of the ground"
         },
         "levels": [
-            68
+            68,
+            83
         ],
         "name": "Dungeon Map",
         "rating": {
@@ -2869,7 +2833,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 170,
+        "y": 632
     },
     {
         "boss_ids": [
@@ -2897,15 +2863,9 @@
         "type": "unique map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Bandits/FrostfireMageMapBoss"
         ],
-        "connected": [
-            "Phantasmagoria",
-            "Reef"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Estuary",
         "ids": [
             "MapWorldsEstuary"
         ],
@@ -2914,8 +2874,7 @@
             "boss": "Fire and Cold Spells. Avoid standing in Fire/Icestorms. Casts four fire/ice balls which are hard to avoid. At 66% and 33% health summons Flarus and Frosis. Sumter disappears until they are killed. The fire golem and ice golem have low health and don't provide much threat."
         },
         "levels": [
-            68,
-            83
+            68
         ],
         "name": "Estuary Map",
         "rating": {
@@ -2931,9 +2890,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 564,
-        "y": 537
+        "type": "map"
     },
     {
         "atlas": true,
@@ -2942,12 +2899,10 @@
             "Metadata/Monsters/MineBat/MineBatMapBoss"
         ],
         "connected": [
-            "Cemetery",
-            "City Square",
+            "Armoury",
             "Cold River",
-            "Siege"
+            "The Black Barya"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Excavation",
         "ids": [
             "MapWorldsExcavation"
         ],
@@ -2980,8 +2935,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 327,
-        "y": 621
+        "x": 521,
+        "y": 681
     },
     {
         "atlas": true,
@@ -3017,11 +2972,11 @@
             "Metadata/Monsters/GeneralAdus/GeneralAdusMap"
         ],
         "connected": [
-            "Atoll",
-            "Dark Forest",
-            "Plaza"
+            "Conservatory",
+            "Desert Spring",
+            "Reef",
+            "Underground River"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Factory",
         "ids": [
             "MapWorldsFactory"
         ],
@@ -3054,8 +3009,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 337,
-        "y": 294
+        "x": 252,
+        "y": 349
     },
     {
         "atlas": true,
@@ -3064,10 +3019,10 @@
         ],
         "connected": [
             "Crystal Ore",
-            "Mausoleum",
-            "Simulacrum"
+            "Pillars of Arun",
+            "Residence",
+            "Spider Lair"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Fields",
         "ids": [
             "MapWorldsFields"
         ],
@@ -3103,21 +3058,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 153,
-        "y": 599
+        "x": 533,
+        "y": 646
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/RockGolem/RockGolemMapBoss"
         ],
-        "connected": [
-            "Cage",
-            "Frozen Cabins",
-            "Relic Chambers",
-            "Spider Lair"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Cavern",
         "ids": [
             "MapWorldsFloodedMine"
         ],
@@ -3126,8 +3073,7 @@
             "boss": "Summon tornadoes, Earthquake attack. Very easy to kill just make sure to keep your distance from the tornado."
         },
         "levels": [
-            71,
-            83
+            71
         ],
         "name": "Flooded Mine Map",
         "rating": {
@@ -3149,22 +3095,14 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 650,
-        "y": 472
+        "type": "map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/SaplingMonster/IcedSaplingFiendBoss",
             "Metadata/Monsters/SaplingMonster/IcedSaplingHunterBoss",
             "Metadata/Monsters/SaplingMonster/IcedSaplingTricksterBoss"
         ],
-        "connected": [
-            "Colosseum",
-            "Marshes"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ForbiddenWoods",
         "ids": [
             "MapWorldsForbiddenWoods"
         ],
@@ -3173,8 +3111,7 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            68,
-            83
+            68
         ],
         "name": "Forbidden Woods Map",
         "rating": {
@@ -3195,9 +3132,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 436,
-        "y": 462
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3208,7 +3143,6 @@
             "",
             "The Shaper's Realm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Phoenix",
         "ids": [
             "MapWorldsPhoenix"
         ],
@@ -3242,16 +3176,9 @@
         "y": 270
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/DjinnDemon/DjinnDemonMapBoss_"
         ],
-        "connected": [
-            "Arachnid Tomb",
-            "Grotto",
-            "Tower"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ForkingRiver",
         "ids": [
             "MapWorldsForkingRiver"
         ],
@@ -3259,8 +3186,7 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            82,
-            83
+            82
         ],
         "name": "Forking River Map",
         "rating": {
@@ -3272,9 +3198,7 @@
         "tags": {
             "nightmare_boss_map": true
         },
-        "type": "map",
-        "x": 815,
-        "y": 658
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3285,7 +3209,6 @@
             "Absence of Value and Meaning",
             "Cortex"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberSilo",
         "ids": [
             "MapWorldsFortress"
         ],
@@ -3305,17 +3228,9 @@
         "y": 167
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Thaumaturgy/ThaumaturgistBoss"
         ],
-        "connected": [
-            "Beach",
-            "Core",
-            "Doryani's Machinarium",
-            "Temple"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/ThaumaturgyDungeon",
         "ids": [
             "MapWorldsFoundry"
         ],
@@ -3325,8 +3240,7 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            78,
-            83
+            78
         ],
         "name": "Foundry Map",
         "rating": {
@@ -3345,22 +3259,12 @@
             "league_mechanics": false,
             "nightmare_boss_map": true
         },
-        "type": "map",
-        "x": 770,
-        "y": 450
+        "type": "map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Skeletons/Pirate/BrutalPirateLordBoss"
         ],
-        "connected": [
-            "Bazaar",
-            "Flooded Mine",
-            "Ramparts",
-            "Spider Lair"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/FrozenCabins",
         "ids": [
             "MapWorldsFrozenCabins"
         ],
@@ -3369,11 +3273,9 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            70,
-            83
+            70
         ],
         "name": "Frozen Cabins Map",
-        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -3391,9 +3293,7 @@
             "linear": true,
             "nightmare_boss_map": true
         },
-        "type": "map",
-        "x": 592,
-        "y": 417
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3401,11 +3301,11 @@
             "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak2"
         ],
         "connected": [
-            "Chateau",
-            "Gardens",
-            "Mesa"
+            "Ancient City",
+            "Basilica",
+            "Caldera",
+            "Relic Chambers"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/FungalCaverns",
         "ids": [
             "MapWorldsSprings"
         ],
@@ -3423,7 +3323,7 @@
             "density": 2,
             "layout": 8
         },
-        "shorthand": "gal h",
+        "shorthand": "al ho",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -3438,22 +3338,14 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 392,
-        "y": 521
+        "x": 695,
+        "y": 430
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/GemMonster/IguanaMapBoss",
             "Metadata/Monsters/GemMonster/IguanaMapBossChrome"
         ],
-        "connected": [
-            "",
-            "Colonnade",
-            "Fungal Hollow",
-            "Laboratory"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Terrace",
         "ids": [
             "MapWorldsGardens"
         ],
@@ -3461,8 +3353,7 @@
             "boss": "Projectile Barrage which lowers attack and cast speed. Devours nearby corpses healing life. Constantly summons Devourers (including rare ones) which provide the main danger in the fight. If you find your damage is too low to outpace the healing consider bringing a Devouring Totem or other means of corpse removal."
         },
         "levels": [
-            71,
-            83
+            71
         ],
         "name": "Gardens Map",
         "rating": {
@@ -3478,9 +3369,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 355,
-        "y": 518
+        "type": "map"
     },
     {
         "atlas": true,
@@ -3488,11 +3377,10 @@
             "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss2"
         ],
         "connected": [
-            "Alleyways",
-            "Colonnade",
-            "Sulphur Vents"
+            "Iceberg",
+            "Marshes",
+            "Residence"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Quarry",
         "ids": [
             "MapWorldsGeode"
         ],
@@ -3525,19 +3413,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 320,
-        "y": 448
+        "x": 466,
+        "y": 584
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/DemonFemale/MapLightningWhipDemonBoss"
         ],
-        "connected": [
-            "Port",
-            "Reef"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Ghetto",
         "ids": [
             "MapWorldsGhetto"
         ],
@@ -3545,8 +3427,7 @@
             "boss": "Powerful Lightning Strike that inflicts Vulnerability on hit. Summons Shocked Miscreations which Lightning Warp. Pays to bring shock removal."
         },
         "levels": [
-            70,
-            83
+            70
         ],
         "name": "Ghetto Map",
         "rating": {
@@ -3562,15 +3443,12 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 521,
-        "y": 607
+        "type": "map"
     },
     {
         "boss_ids": [
             "Metadata/Monsters/Goatman/GoatmanLeapSlamMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Glacier",
         "ids": [
             "MapWorldsGorge"
         ],
@@ -3602,11 +3480,10 @@
             "Metadata/Monsters/BurnBoss/BurnBoss"
         ],
         "connected": [
-            "Arsenal",
-            "Beach",
-            "Belfry"
+            "Cursed Crypt",
+            "Phantasmagoria",
+            "Sunken City"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Burn",
         "ids": [
             "MapWorldsGraveTrough"
         ],
@@ -3629,8 +3506,8 @@
             "nightmare_boss_map": true
         },
         "type": "map",
-        "x": 818,
-        "y": 356
+        "x": 815,
+        "y": 658
     },
     {
         "atlas": true,
@@ -3640,10 +3517,10 @@
             "Metadata/Monsters/Skeletons/MapSkeletonBossRanged"
         ],
         "connected": [
-            "Conservatory",
-            "Park"
+            "Channel",
+            "Tower",
+            "Villa"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Graveyard",
         "ids": [
             "MapWorldsGraveyard"
         ],
@@ -3671,8 +3548,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 206,
-        "y": 336
+        "x": 302,
+        "y": 484
     },
     {
         "atlas": true,
@@ -3680,11 +3557,10 @@
             "Metadata/Monsters/ChaosElemental/ChaosElementalMapBoss"
         ],
         "connected": [
-            "",
-            "Forking River",
-            "Vaal Pyramid"
+            "Cage",
+            "Ramparts",
+            "Waste Pool"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Grotto",
         "ids": [
             "MapWorldsGrotto"
         ],
@@ -3717,14 +3593,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 865,
-        "y": 662
+        "x": 684,
+        "y": 548
     },
     {
         "connected": [
             "Promenade"
         ],
-        "icon": "Art/2DItems/Maps/HallOfGrandmasters",
         "ids": [
             "MapWorldsPromenadeUnique"
         ],
@@ -3754,7 +3629,6 @@
         "connected": [
             "Cemetery"
         ],
-        "icon": "Art/2DItems/Maps/HallowedGround",
         "ids": [
             "MapWorldsCemeteryUnique"
         ],
@@ -3810,11 +3684,9 @@
             "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBossXedMap"
         ],
         "connected": [
-            "Palace",
-            "Pier",
-            "Pit"
+            "",
+            "Arid Lake"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chambers",
         "ids": [
             "MapWorldsHauntedMansion"
         ],
@@ -3841,8 +3713,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 660,
-        "y": 373
+        "x": 858,
+        "y": 321
     },
     {
         "atlas": true,
@@ -3851,7 +3723,7 @@
             "Metadata/Monsters/BreachBossHandMage/HandMage"
         ],
         "connected": [
-            "Infested Valley"
+            "Wasteland"
         ],
         "icon": "/img/icon/hive_colony.webp",
         "ids": [
@@ -3894,11 +3766,11 @@
             "Metadata/Monsters/Wb/WbColdLeader3"
         ],
         "connected": [
-            "Orchard",
-            "Stagnation",
-            "The Black Barya"
+            "Geode",
+            "Lookout",
+            "Overgrown Ruin",
+            "Residence"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Iceberg",
         "ids": [
             "MapWorldsIceberg"
         ],
@@ -3911,6 +3783,7 @@
             83
         ],
         "name": "Iceberg Map",
+        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 3,
@@ -3925,8 +3798,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 521,
-        "y": 681
+        "x": 399,
+        "y": 590
     },
     {
         "atlas": true,
@@ -3934,11 +3807,10 @@
             "Metadata/Monsters/InsectSpawner/InsectSpawnerParasiteBossMap"
         ],
         "connected": [
-            "Desert",
-            "Hive Colony",
-            "Park"
+            "Belfry",
+            "Dig",
+            "Underground Sea"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Infestation",
         "ids": [
             "MapWorldsInfestedValley"
         ],
@@ -3973,14 +3845,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 169,
-        "y": 396
+        "x": 353,
+        "y": 471
     },
     {
         "boss_ids": [
             "Metadata/Monsters/HarbingerPortal/HarbingerPortalUber"
         ],
-        "icon": "Art/2DItems/Maps/HarbingerUber",
         "ids": [
             "MapWorldsHarbingerUber"
         ],
@@ -3997,18 +3868,10 @@
         "type": "unique map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/MilitaryMapBoss/IvoryTempleMilitaryBoss1",
             "Metadata/Monsters/MilitaryMapBoss/IvoryTempleMilitaryBoss2"
         ],
-        "connected": [
-            "Mineral Pools",
-            "Museum",
-            "Stagnation",
-            "The Twilight Temple"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/IvoryTemple",
         "ids": [
             "MapWorldsIvoryTemple"
         ],
@@ -4017,8 +3880,7 @@
             "boss": "One randomly chosen The Perandus Manor boss, excluding Osmea. Constantly spawns Perandus mobs until boss is dead (RIP GPU). In general, Perandus bosses hit hard so take caution. Boss also has a tonne of health."
         },
         "levels": [
-            80,
-            83
+            80
         ],
         "name": "Ivory Temple Map",
         "rating": {
@@ -4034,9 +3896,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 275,
-        "y": 678
+        "type": "map"
     },
     {
         "atlas": true,
@@ -4044,12 +3904,10 @@
             "Metadata/Monsters/Spiders/MapSpiderBossWeaverSimplified"
         ],
         "connected": [
-            "Basilica",
-            "Cemetery",
-            "Terrace",
-            "Toxic Sewer"
+            "Malformation",
+            "Peninsula",
+            "Spider Lair"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/JungleValley",
         "ids": [
             "MapWorldsJungleValley"
         ],
@@ -4082,8 +3940,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 274,
-        "y": 527
+        "x": 531,
+        "y": 571
     },
     {
         "boss_ids": [
@@ -4130,17 +3988,9 @@
         "type": "act area"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBossVoid"
         ],
-        "connected": [
-            "Cold River",
-            "Gardens",
-            "Mesa",
-            "Terrace"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Laboratory",
         "ids": [
             "MapWorldsLaboratory"
         ],
@@ -4149,8 +3999,7 @@
             "boss": "Black hole Frostbolt leaves Vortex Cold DoT on the ground. Modest Physical Spectral Throw. Avoid telegraphed Slam attack that leaves a massive black hole Vortex dealing significant cold DoT. After losing life boss will teleport to another platform leaving behind a growing Vortex. Keep hopping through portals until the boss is dead."
         },
         "levels": [
-            72,
-            83
+            72
         ],
         "name": "Laboratory Map",
         "rating": {
@@ -4172,22 +4021,12 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 338,
-        "y": 540
+        "type": "map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Talisman/TalismanWolfKingMapBossSimplified"
         ],
-        "connected": [
-            "Caer Blaidd, Wolfpack's Den",
-            "Lava Lake",
-            "Lookout",
-            "Plaza"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Lair",
         "ids": [
             "MapWorldsLair"
         ],
@@ -4196,8 +4035,7 @@
             "boss": "Channels a Barrage of wolf projectiles that do massive Physical damage. While channelling Rigwald takes 50% less damage. Get behind a nearby obstacle to dodge the projectiles. Rigwald also transforms into wolf form for 8 seconds where he becomes immune to damage and can inflicts massive bleeding damage"
         },
         "levels": [
-            77,
-            83
+            77
         ],
         "name": "Lair Map",
         "rating": {
@@ -4219,9 +4057,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 225,
-        "y": 415
+        "type": "map"
     },
     {
         "atlas": true,
@@ -4232,7 +4068,6 @@
             "",
             "The Shaper's Realm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Hydra",
         "ids": [
             "MapWorldsHydra"
         ],
@@ -4269,7 +4104,6 @@
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapSeaWitchBossFirestorm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Crematorium",
         "ids": [
             "MapWorldsLavaChamber"
         ],
@@ -4303,13 +4137,10 @@
             "Metadata/Monsters/KitavaBoss/KitavaFinalHeartMap"
         ],
         "connected": [
-            "Atoll",
-            "Lair",
-            "Lookout",
-            "Shipyard",
-            "Sulphur Vents"
+            "Arcade",
+            "Mausoleum",
+            "Silo"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Corpse",
         "ids": [
             "MapWorldsLavaLake"
         ],
@@ -4322,7 +4153,6 @@
             83
         ],
         "name": "Lava Lake Map",
-        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 0,
             "density": 7,
@@ -4339,14 +4169,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 286,
-        "y": 382
+        "x": 610,
+        "y": 474
     },
     {
         "boss_ids": [
             "Metadata/Monsters/SkeletonSoldier/SkeletonSoldierRangedMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SulphurWastes",
         "ids": [
             "MapWorldsLeyline"
         ],
@@ -4386,7 +4215,6 @@
             "Metadata/Monsters/Wb/WbFireLeader3",
             "Metadata/Monsters/Wb/WbFireLeader4"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Beacon",
         "ids": [
             "MapWorldsLighthouse"
         ],
@@ -4425,11 +4253,11 @@
             "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewingMap"
         ],
         "connected": [
-            "Basilica",
-            "Lair",
-            "Lava Lake"
+            "Burial Chambers",
+            "Dig",
+            "Iceberg",
+            "Palace"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Lookout",
         "ids": [
             "MapWorldsLookout"
         ],
@@ -4456,23 +4284,28 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 247,
-        "y": 472
+        "x": 338,
+        "y": 540
     },
     {
+        "atlas": true,
+        "icon": "/img/icon/machinists_vault.webp",
         "ids": [
             "MapWorldsMemoryVault1"
         ],
         "image": "https://www.poewiki.net/images/3/31/Machinist%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
+            84,
             84
         ],
         "name": "Machinist's Vault",
         "rating": {},
         "shorthand": "st'",
         "tags": {},
-        "type": "unique map"
+        "type": "unique map",
+        "x": 143,
+        "y": 189
     },
     {
         "atlas": true,
@@ -4481,9 +4314,8 @@
             "Metadata/Monsters/seawitchillusion/MapBossMerveilMaelstrom"
         ],
         "connected": [
-            "Atoll"
+            "Racecourse"
         ],
-        "icon": "Art/2DItems/Maps/MaelstromofChaos",
         "ids": [
             "MapWorldsAtollUnique"
         ],
@@ -4516,12 +4348,9 @@
             "Metadata/Monsters/Axis/PietyBeastMapBoss"
         ],
         "connected": [
-            "Arachnid Tomb",
-            "Arcade",
-            "Channel",
-            "Promenade"
+            "Jungle Valley",
+            "Shrine"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Malformation",
         "ids": [
             "MapWorldsMalformation"
         ],
@@ -4554,8 +4383,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 777,
-        "y": 616
+        "x": 564,
+        "y": 537
     },
     {
         "boss_ids": [
@@ -4587,9 +4416,8 @@
             "Metadata/Monsters/Skeletons/SkeletonBossFairgravesTreasure"
         ],
         "connected": [
-            "Shipyard"
+            "Shore"
         ],
-        "icon": "Art/2DItems/Maps/FairgravesMap01",
         "ids": [
             "MapWorldsShoreUnique"
         ],
@@ -4627,11 +4455,9 @@
             "Metadata/Monsters/Viking/VikingMapBoss"
         ],
         "connected": [
-            "Forbidden Woods",
-            "Strand",
-            "Summit"
+            "Geode",
+            "Overgrown Ruin"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Marshes",
         "ids": [
             "MapWorldsMarshes"
         ],
@@ -4664,8 +4490,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 462,
-        "y": 414
+        "x": 435,
+        "y": 535
     },
     {
         "atlas": true,
@@ -4699,12 +4525,11 @@
             "Metadata/Monsters/Zombies/ZombieBossTolmanMap"
         ],
         "connected": [
-            "Death and Taxes",
-            "Desert",
-            "Fields",
-            "Mineral Pools"
+            "Arcade",
+            "Colosseum",
+            "Lava Lake",
+            "Mesa"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Mausoleum",
         "ids": [
             "MapWorldsMausoleum"
         ],
@@ -4732,14 +4557,20 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 181,
-        "y": 532
+        "x": 592,
+        "y": 417
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/IncaShadowBoss/MapBossIncaShadow"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Maze",
+        "connected": [
+            "Doryani's Machinarium",
+            "Dunes",
+            "Summit",
+            "Temple"
+        ],
         "ids": [
             "MapWorldsMaze"
         ],
@@ -4748,7 +4579,8 @@
             "boss": "Same as Act 2 fight. Kite when boss starts shooting laser beams. Avoid telegraphed slam at all costs."
         },
         "levels": [
-            72
+            72,
+            83
         ],
         "name": "Maze Map",
         "rating": {
@@ -4770,7 +4602,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 770,
+        "y": 450
     },
     {
         "atlas": true,
@@ -4781,7 +4615,6 @@
             "",
             "The Shaper's Realm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Minotaur",
         "ids": [
             "MapWorldsMinotaur"
         ],
@@ -4834,12 +4667,11 @@
             "Metadata/Monsters/BanditLeaderStrDex/MapBanditLeaderOak"
         ],
         "connected": [
-            "Arachnid Nest",
-            "Courthouse",
-            "Fungal Hollow",
-            "Laboratory"
+            "Academy",
+            "Colosseum",
+            "Mausoleum",
+            "Overgrown Shrine"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Mesa",
         "ids": [
             "MapWorldsMesa"
         ],
@@ -4853,7 +4685,6 @@
             83
         ],
         "name": "Mesa Map",
-        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 8,
             "density": 3,
@@ -4869,8 +4700,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 399,
-        "y": 590
+        "x": 532,
+        "y": 369
     },
     {
         "atlas": true,
@@ -4878,11 +4709,10 @@
             "Metadata/Monsters/Seawitch/MapSeaWitchBossSpark"
         ],
         "connected": [
-            "Ivory Temple",
-            "Mausoleum",
-            "Volcano"
+            "Cemetery",
+            "City Square",
+            "Scriptorium"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/MineralPools",
         "ids": [
             "MapWorldsMineralPools"
         ],
@@ -4895,7 +4725,7 @@
             83
         ],
         "name": "Mineral Pools Map",
-        "pantheon": "Soul of the Brine King",
+        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 6,
             "density": 5,
@@ -4916,8 +4746,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 208,
-        "y": 610
+        "x": 280,
+        "y": 636
     },
     {
         "atlas": true,
@@ -5000,10 +4830,16 @@
         "y": 184
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/GuardianOfLunaris/GuardianOfLunarisMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/LunarisTemple",
+        "connected": [
+            "Armoury",
+            "Museum",
+            "Sepulchre",
+            "The Twilight Temple"
+        ],
         "ids": [
             "MapWorldsMoonTemple"
         ],
@@ -5012,9 +4848,11 @@
             "boss": "Fires Ice shots which Chill the player. When damaged fires more projectiles including some that home in on the player. The orb casts dark Frostbolts which leave patches of hard to see Vortex on the ground dealing cold DoT."
         },
         "levels": [
-            76
+            76,
+            83
         ],
         "name": "Moon Temple Map",
+        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 8,
@@ -5034,13 +4872,19 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 275,
+        "y": 678
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/RootSpiders/RootSpiderHiddenMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/MudGeyser",
+        "connected": [
+            "Defiled Cathedral",
+            "Pit"
+        ],
         "ids": [
             "MapWorldsMudGeyser"
         ],
@@ -5049,7 +4893,8 @@
             "boss_rushable": "Boss at opposite inner side of doughnut"
         },
         "levels": [
-            75
+            75,
+            83
         ],
         "name": "Mud Geyser Map",
         "rating": {
@@ -5066,7 +4911,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 393,
+        "y": 475
     },
     {
         "atlas": true,
@@ -5074,11 +4921,10 @@
             "Metadata/Monsters/Maligaro/MaligaroMapBoss2"
         ],
         "connected": [
-            "Crystal Ore",
-            "Ivory Temple",
+            "Dungeon",
+            "Moon Temple",
             "The Putrid Cloister"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Museum",
         "ids": [
             "MapWorldsMuseum"
         ],
@@ -5115,10 +4961,16 @@
         "y": 675
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Skeletons/SkeletonLargeMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Necropolis",
+        "connected": [
+            "Castle Ruins",
+            "Death and Taxes",
+            "Desert",
+            "Sepulchre"
+        ],
         "ids": [
             "MapWorldsNecropolis"
         ],
@@ -5128,7 +4980,8 @@
             "boss_rushable": "Straight path from entrance"
         },
         "levels": [
-            79
+            79,
+            83
         ],
         "name": "Necropolis Map",
         "rating": {
@@ -5150,14 +5003,15 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 181,
+        "y": 532
     },
     {
         "atlas": true,
         "connected": [
-            "Primordial Blocks"
+            "Academy"
         ],
-        "icon": "Art/2DItems/Maps/oba",
         "ids": [
             "MapWorldsTortureChamberUnique"
         ],
@@ -5195,9 +5049,8 @@
             "Metadata/Monsters/Totems/olmec_totem/MapTotemBossLegendsMain"
         ],
         "connected": [
-            "Plateau"
+            "Bone Crypt"
         ],
-        "icon": "Art/2DItems/Maps/olmec",
         "ids": [
             "MapWorldsBoneCryptUnique"
         ],
@@ -5230,15 +5083,9 @@
         "y": 606
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBossSimplified"
         ],
-        "connected": [
-            "Iceberg",
-            "Promenade"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Orchard",
         "ids": [
             "MapWorldsOrchard"
         ],
@@ -5247,8 +5094,7 @@
             "boss": "Mortar of Fire based projectiles that can shotgun the player. Summons skeletons and places offerings which deal Chaos or Fire DoT. Channels a laser beam that deals significant Fire DoT. Run behind a pillar to interrupt the beam. Green circle teleports players standing in it - potentially onto labynith traps on around the arena."
         },
         "levels": [
-            78,
-            83
+            78
         ],
         "name": "Orchard Map",
         "rating": {
@@ -5270,9 +5116,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 595,
-        "y": 702
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -5316,10 +5160,15 @@
         "y": 283
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Maligaro/Maligaro2Map"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/OvergrownRuin",
+        "connected": [
+            "Dig",
+            "Iceberg",
+            "Marshes"
+        ],
         "ids": [
             "MapWorldsOvergrownRuin"
         ],
@@ -5328,7 +5177,8 @@
             "boss": "Maligaro deals telegraphed Physical attacks that Maim and Poison. When damaged Maligaro will summon the spider Akaveesh and his sex slave Mun'eh. Akaveesh's projectiles are particularly deadly, dealing large amounts of Chaos damage and leaving Chaos DoT ground. When almost dead Maligaro will assault the player with several clones which must be tanked through."
         },
         "levels": [
-            75
+            75,
+            83
         ],
         "name": "Overgrown Ruin Map",
         "rating": {
@@ -5351,7 +5201,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 392,
+        "y": 521
     },
     {
         "atlas": true,
@@ -5360,10 +5212,9 @@
         ],
         "connected": [
             "Acton's Nightmare",
-            "Bazaar",
-            "Pier"
+            "Core",
+            "Mesa"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/OvergrownShrine",
         "ids": [
             "MapWorldsOvergrownShrine"
         ],
@@ -5376,7 +5227,6 @@
             83
         ],
         "name": "Overgrown Shrine Map",
-        "pantheon": "Soul of Arakaali",
         "rating": {
             "boss": 4,
             "density": 5,
@@ -5407,11 +5257,11 @@
             "Metadata/Monsters/Pope/PopeMapBoss2"
         ],
         "connected": [
-            "Haunted Mansion",
-            "Pit",
-            "Waterways"
+            "Burial Chambers",
+            "Cemetery",
+            "Lookout",
+            "Villa"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Palace",
         "ids": [
             "MapWorldsPalace"
         ],
@@ -5438,8 +5288,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 692,
-        "y": 362
+        "x": 309,
+        "y": 568
     },
     {
         "atlas": true,
@@ -5447,11 +5297,11 @@
             "Metadata/Monsters/Statue/StatueChurchMapBoss"
         ],
         "connected": [
-            "",
-            "Graveyard",
-            "Infested Valley"
+            "Colonnade",
+            "Primordial Pool",
+            "Temple",
+            "The Sacred Grove"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Park",
         "ids": [
             "MapWorldsPark"
         ],
@@ -5479,16 +5329,21 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 147,
-        "y": 323
+        "x": 603,
+        "y": 286
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap",
             "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap2",
             "Metadata/Monsters/TemplarSlaveDriver/TemplarSlaveDriverBossMap3"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Pen",
+        "connected": [
+            "Carcass",
+            "Polaric Void",
+            "Sepulchre"
+        ],
         "ids": [
             "MapWorldsPen"
         ],
@@ -5496,7 +5351,8 @@
             "boss": "Telegraphed Storm Burst attack can shotgun in close proximity. Physical/Lightning Storm Whip release 7 Lightning projectiles. Summons group of magic hounds in first stage. In second stage summons group of rare hounds, along with two unique hounds. These hounds have high life so be careful that you are not overwhelmed."
         },
         "levels": [
-            69
+            69,
+            83
         ],
         "name": "Pen Map",
         "rating": {
@@ -5513,13 +5369,19 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 223,
+        "y": 544
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/MossMonster/MapMossMonsterBossOldFields"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/DryPeninsula",
+        "connected": [
+            "Jungle Valley",
+            "Spider Lair"
+        ],
         "ids": [
             "MapWorldsPeninsula"
         ],
@@ -5527,7 +5389,8 @@
             "boss": "Other allies cannot die aura. Summons Stone Golems adds. Double boss is no longer a puzzle as the allies cannot die aura no longer affects the other boss."
         },
         "levels": [
-            70
+            70,
+            83
         ],
         "name": "Peninsula Map",
         "rating": {
@@ -5543,7 +5406,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 521,
+        "y": 607
     },
     {
         "atlas": true,
@@ -5551,10 +5416,10 @@
             "Metadata/Monsters/Doedre/DoedreMapBoss2"
         ],
         "connected": [
-            "Cage",
-            "Estuary"
+            "",
+            "Grave Trough",
+            "Vaal Pyramid"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Phantasmagoria",
         "ids": [
             "MapWorldsPhantasmagoria"
         ],
@@ -5587,20 +5452,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 602,
-        "y": 520
+        "x": 865,
+        "y": 662
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Undying/CityStalkerMaleMapBossPier"
         ],
-        "connected": [
-            "Haunted Mansion",
-            "Overgrown Shrine",
-            "Relic Chambers"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Pier",
         "ids": [
             "MapWorldsPier"
         ],
@@ -5609,8 +5467,7 @@
             "boss": "The boss arena has three areas, as 2/3 and 1/3 health it will teleport to the next area. During the fight small spikes will appear from the ground. You will have to traverse a trap gauntlet to get to the next area. With sufficient regen or life leech, you won't have any problem."
         },
         "levels": [
-            73,
-            83
+            73
         ],
         "name": "Pier Map",
         "rating": {
@@ -5632,9 +5489,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 637,
-        "y": 396
+        "type": "map"
     },
     {
         "atlas": true,
@@ -5642,9 +5497,8 @@
             "Metadata/Monsters/Statue/StatueChurchMapBossVastiri"
         ],
         "connected": [
-            "Dunes"
+            "Fields"
         ],
-        "icon": "Art/2DItems/Maps/PillarsOfVastiri",
         "ids": [
             "MapWorldsDunesUnique"
         ],
@@ -5682,12 +5536,9 @@
             "Metadata/Monsters/Viking/VikingMapBoss2"
         ],
         "connected": [
-            "Haunted Mansion",
-            "Palace",
-            "Silo",
-            "Vault"
+            "Crater",
+            "Mud Geyser"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Pit1",
         "ids": [
             "MapWorldsPit"
         ],
@@ -5720,8 +5571,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 695,
-        "y": 430
+        "x": 436,
+        "y": 462
     },
     {
         "atlas": true,
@@ -5732,7 +5583,6 @@
             "",
             "The Shaper's Realm"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Chimera",
         "ids": [
             "MapWorldsChimera"
         ],
@@ -5772,13 +5622,10 @@
             "Metadata/Monsters/Totems/TotemMapBossLightningPlateau"
         ],
         "connected": [
-            "Caldera",
-            "Channel",
-            "Desert Spring",
-            "Olmec's Sanctum",
-            "Promenade"
+            "Cursed Crypt",
+            "Sulphur Vents",
+            "Tropical Island"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plateau",
         "ids": [
             "MapWorldsPlateau"
         ],
@@ -5811,21 +5658,13 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 711,
-        "y": 590
+        "x": 797,
+        "y": 529
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Labyrinth/GoddessOfJusticeMapBoss"
         ],
-        "connected": [
-            "Conservatory",
-            "Factory",
-            "Lair",
-            "Residence"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Plaza",
         "ids": [
             "MapWorldsPlaza"
         ],
@@ -5834,8 +5673,7 @@
             "boss": "Same as Orchard boss except with some Spiky Pillar Labyrinth traps. This time when she channels her deadly beam get behind one of the pillars either side of the room."
         },
         "levels": [
-            79,
-            83
+            79
         ],
         "name": "Plaza Map",
         "rating": {
@@ -5857,9 +5695,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 252,
-        "y": 349
+        "type": "map"
     },
     {
         "atlas": true,
@@ -5867,7 +5703,7 @@
             "Metadata/Monsters/AtlasInvaders/BlackStarMonsters/BlackStarBoss"
         ],
         "connected": [
-            "Volcano"
+            "Pen"
         ],
         "icon": "/img/icon/polaric_void.webp",
         "ids": [
@@ -5897,7 +5733,6 @@
         "connected": [
             "Temple"
         ],
-        "icon": "Art/2DItems/Maps/PoorjoysAsylum",
         "ids": [
             "MapWorldsTempleUnique"
         ],
@@ -5939,13 +5774,10 @@
             "Metadata/Monsters/MassSkeleton/MassSkeletonMapBoss5"
         ],
         "connected": [
+            "",
             "Coral Ruins",
-            "Dunes",
-            "Ghetto",
-            "Reef",
-            "Shrine"
+            "Wasteland"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Quay",
         "ids": [
             "MapWorldsPort"
         ],
@@ -5978,8 +5810,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 577,
-        "y": 588
+        "x": 147,
+        "y": 323
     },
     {
         "boss_ids": [
@@ -5991,7 +5823,6 @@
             "Metadata/Monsters/Exiles/ExileTemplar1MapBoss_",
             "Metadata/Monsters/Exiles/ExileWitch2MapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Precinct",
         "ids": [
             "MapWorldsPrecinct"
         ],
@@ -6025,18 +5856,9 @@
         "type": "map"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/ProtoVaal/ProtoVaalMapBoss"
         ],
-        "connected": [
-            "Alleyways",
-            "Bazaar",
-            "Oba's Cursed Trove",
-            "Shipyard",
-            "Strand"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/PrimevalRuins",
         "ids": [
             "MapWorldsTortureChamber"
         ],
@@ -6045,8 +5867,7 @@
             "boss": "Telegraphed projectile attack. Stay out of Donut Slam which can one shot. Summons Volatile Cores which explode on contact and trigger other Volatile Cores to also explode. At half health goes invulenerable and summons melee adds. During this phase boulders spawn from the four corners and spiral towards the center hole. Stay vigilant to avoid these as they deal massive amounts of quick physical damage."
         },
         "levels": [
-            72,
-            83
+            72
         ],
         "name": "Primordial Blocks Map",
         "rating": {
@@ -6069,9 +5890,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 428,
-        "y": 345
+        "type": "map"
     },
     {
         "atlas": true,
@@ -6079,10 +5898,10 @@
             "Metadata/Monsters/Malachai/MalachaiMapBossSimplified"
         ],
         "connected": [
-            "",
-            "Crystal Ore"
+            "Arid Lake",
+            "Park",
+            "Temple"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/PrimordialPool",
         "ids": [
             "MapWorldsPrimordialPool"
         ],
@@ -6115,8 +5934,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 149,
-        "y": 675
+        "x": 736,
+        "y": 307
     },
     {
         "boss_ids": [
@@ -6153,13 +5972,12 @@
             "Metadata/Monsters/Axis/MapEliteSoldierBoss"
         ],
         "connected": [
-            "Caldera",
-            "Malformation",
-            "Orchard",
-            "Plateau",
-            "The Hall of Grandmasters"
+            "Bone Crypt",
+            "Cold River",
+            "Terrace",
+            "The Hall of Grandmasters",
+            "Tropical Island"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Promenade",
         "ids": [
             "MapWorldsPromenade"
         ],
@@ -6196,12 +6014,17 @@
         "y": 665
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Bull/BullMapBoss",
             "Metadata/Monsters/Gladiator/GladiatorSwordMapBoss",
             "Metadata/Monsters/Lion/LionColosseumMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Racecourse",
+        "connected": [
+            "Coves",
+            "Desert Spring",
+            "Maelstr\u00f6m of Chaos"
+        ],
         "ids": [
             "MapWorldsRacecourse_"
         ],
@@ -6210,7 +6033,8 @@
             "boss": "All three bosses deal strong Physical attacks. Helion Leap Slams, Maim's on hit and places Burning Ground on death. Mad Gladiator throws her sword and uses Cleave - both attacks inflicting a strong Bleed. Bull has Ground Slam and Charge attack. Casts thorns on himself (indicated by yellow aura) reflecting 15% of Physical and Elemental damage to the attacker - for some high crit builds this can be lethal."
         },
         "levels": [
-            79
+            79,
+            83
         ],
         "name": "Racecourse Map",
         "rating": {
@@ -6232,7 +6056,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 351,
+        "y": 338
     },
     {
         "atlas": true,
@@ -6240,11 +6066,10 @@
             "Metadata/Monsters/Undying/MapUndyingBoss"
         ],
         "connected": [
-            "Bazaar",
-            "Cells",
-            "Frozen Cabins"
+            "Crystal Ore",
+            "Grotto",
+            "Terrace"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Ramparts",
         "ids": [
             "MapWorldsRamparts"
         ],
@@ -6277,8 +6102,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 536,
-        "y": 417
+        "x": 661,
+        "y": 588
     },
     {
         "atlas": true,
@@ -6286,11 +6111,9 @@
             "Metadata/Monsters/BrineKing/BrineKingMap"
         ],
         "connected": [
-            "Estuary",
-            "Ghetto",
-            "Port"
+            "Coral Ruins",
+            "Factory"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Reef",
         "ids": [
             "MapWorldsReef"
         ],
@@ -6318,8 +6141,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 531,
-        "y": 571
+        "x": 256,
+        "y": 303
     },
     {
         "connected": [
@@ -6344,12 +6167,10 @@
             "Metadata/Monsters/Skeletons/MapSkeletonBossMeleeSimplified"
         ],
         "connected": [
-            "Flooded Mine",
-            "Pier",
-            "Silo",
-            "The Apex of Sacrifice"
+            "Caldera",
+            "Core",
+            "Fungal Hollow"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Antiquary",
         "ids": [
             "MapWorldsRelicChambers"
         ],
@@ -6382,8 +6203,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 648,
-        "y": 435
+        "x": 660,
+        "y": 373
     },
     {
         "atlas": true,
@@ -6391,10 +6212,12 @@
             "Metadata/Monsters/Undying/CityStalkerFemaleMapBoss"
         ],
         "connected": [
-            "Desert",
-            "Plaza"
+            "Barrows",
+            "Fields",
+            "Geode",
+            "Iceberg",
+            "The Vinktar Square"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Residence",
         "ids": [
             "MapWorldsResidence"
         ],
@@ -6427,8 +6250,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 204,
-        "y": 397
+        "x": 452,
+        "y": 628
     },
     {
         "atlas": true,
@@ -6439,7 +6262,6 @@
             "",
             "Cortex"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisGolemGuardianMap",
         "ids": [
             "Synthesis_MapGuardian4"
         ],
@@ -6483,7 +6305,6 @@
         "connected": [
             "Moment of Reverence"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberRelicChambers",
         "ids": [
             "MapWorldsSanctuary"
         ],
@@ -6503,25 +6324,34 @@
         "y": 182
     },
     {
+        "atlas": true,
+        "icon": "/img/icon/scholars_vault.webp",
         "ids": [
             "MapWorldsMemoryVault4"
         ],
         "image": "https://www.poewiki.net/images/2/2e/Scholar%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
+            84,
             84
         ],
         "name": "Scholar's Vault",
         "rating": {},
         "shorthand": "lar'",
         "tags": {},
-        "type": "unique map"
+        "type": "unique map",
+        "x": 145,
+        "y": 785
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Shavronne/ShavronneMapBoss2"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Scriptorium",
+        "connected": [
+            "Armoury",
+            "Mineral Pools"
+        ],
         "ids": [
             "MapWorldsScriptorium"
         ],
@@ -6530,7 +6360,8 @@
             "boss": "Array of Lightning Spells. Casts Lightning Thorns on herself. Fast hitting characters (Cyclone, Blade Flurry, Incinerate etc), must stop attacking while Lightning Thorns is up else they will near instantly die."
         },
         "levels": [
-            76
+            76,
+            83
         ],
         "name": "Scriptorium Map",
         "rating": {
@@ -6552,7 +6383,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 346,
+        "y": 658
     },
     {
         "atlas": true,
@@ -6560,7 +6393,7 @@
             "Metadata/Monsters/AtlasInvaders/DoomMonsters/DoomBoss_"
         ],
         "connected": [
-            "Stagnation"
+            "Armoury"
         ],
         "icon": "/img/icon/seething_chyme.webp",
         "ids": [
@@ -6583,11 +6416,16 @@
         "y": 706
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSoul2Map",
             "Metadata/Monsters/Doedre/DoedreSoulMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sepulchre",
+        "connected": [
+            "Moon Temple",
+            "Necropolis",
+            "Pen"
+        ],
         "ids": [
             "MapWorldsSepulchre"
         ],
@@ -6595,7 +6433,8 @@
             "boss": "Creates three stone monoliths that apply up to 5 stacking debuffs (Green reduces your damage, Purple makes you slower, Red makes you take increased damage). Destroying the corresponding monolith removes the debuff. Do not kill them all though as when damaged Doedre will cast an arena wide physical AoE that will quickly kill you unless you take cover behind one of the monoliths. From 75% life Doedre will transform until a familiar form where she will only fire slow Physical projectiles and use a teleport slam that deals significant damage."
         },
         "levels": [
-            76
+            76,
+            83
         ],
         "name": "Sepulchre Map",
         "rating": {
@@ -6611,7 +6450,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 208,
+        "y": 610
     },
     {
         "boss_ids": [
@@ -6637,19 +6478,11 @@
         "type": "act area"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Wb/WbLightningLeader1",
             "Metadata/Monsters/Wb/WbLightningLeader2",
             "Metadata/Monsters/Wb/WbLightningLeader3"
         ],
-        "connected": [
-            "Lava Lake",
-            "Mao Kun",
-            "Primordial Blocks",
-            "Sulphur Vents"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Shipyard",
         "ids": [
             "MapWorldsShipyard"
         ],
@@ -6658,8 +6491,7 @@
             "boss": "Various Lightning abilities. Watch out for Soothsayers casting Conductivity and keep a Shock removal flask handy."
         },
         "levels": [
-            73,
-            83
+            73
         ],
         "name": "Shipyard Map",
         "rating": {
@@ -6681,15 +6513,19 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 355,
-        "y": 385
+        "type": "map"
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Skeletons/MapSkeletonBossFairgraves"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Shore",
+        "connected": [
+            "Academy",
+            "Coves",
+            "Mao Kun",
+            "Tower"
+        ],
         "ids": [
             "MapWorldsShore"
         ],
@@ -6699,9 +6535,11 @@
             "boss_rushable": "Usually to your character's right, so if top side of map spawn go top left"
         },
         "levels": [
-            75
+            75,
+            83
         ],
         "name": "Shore Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 10,
             "density": 4,
@@ -6721,7 +6559,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 355,
+        "y": 385
     },
     {
         "atlas": true,
@@ -6730,12 +6570,9 @@
             "Metadata/Monsters/Axis/MapPietyShrine"
         ],
         "connected": [
-            "Cage",
-            "Coral Ruins",
-            "Port",
-            "Sunken City"
+            "Crimson Temple",
+            "Malformation"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Shrine",
         "ids": [
             "MapWorldsShrine"
         ],
@@ -6768,8 +6605,8 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 631,
-        "y": 566
+        "x": 602,
+        "y": 520
     },
     {
         "atlas": true,
@@ -6777,11 +6614,9 @@
             "Metadata/Monsters/Tukohama/TukohamaMap"
         ],
         "connected": [
-            "Cold River",
-            "Courthouse",
-            "Excavation"
+            "Caldera",
+            "Colonnade"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Boulevard",
         "ids": [
             "MapWorldsSiege"
         ],
@@ -6816,8 +6651,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 419,
-        "y": 653
+        "x": 622,
+        "y": 335
     },
     {
         "atlas": true,
@@ -6825,10 +6660,9 @@
             "Metadata/Monsters/Vilenta/VilentaMap_"
         ],
         "connected": [
-            "Pit",
-            "Relic Chambers"
+            "Colosseum",
+            "Lava Lake"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/RobotTunnelSilo",
         "ids": [
             "MapWorldsSilo"
         ],
@@ -6861,14 +6695,19 @@
             "nightmare_boss_map": true
         },
         "type": "map",
-        "x": 691,
-        "y": 455
+        "x": 565,
+        "y": 461
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BanditLeaderInt/MapBanditLeaderAlira"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SpiderForest",
+        "connected": [
+            "Bone Crypt",
+            "Tropical Island",
+            "Waste Pool"
+        ],
         "ids": [
             "MapWorldsSpiderForest"
         ],
@@ -6877,9 +6716,11 @@
             "boss": "Alira from the Burial Chambers map, this time without the Soul Eater ability. Again, avoid standing on Desecrated Ground or on corpses as the boss uses Detonate Dead. After some time a large zombie called 'Avatar of Rot' will appear from the cauldron. This zombie deals modest melee Physical damage."
         },
         "levels": [
-            78
+            78,
+            83
         ],
         "name": "Spider Forest Map",
+        "pantheon": "Soul of Arakaali",
         "rating": {
             "boss": 6,
             "density": 4,
@@ -6893,7 +6734,9 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 765,
+        "y": 550
     },
     {
         "atlas": true,
@@ -6901,11 +6744,12 @@
             "Metadata/Monsters/Revenant/RevenantMapBoss"
         ],
         "connected": [
-            "Cells",
-            "Flooded Mine",
-            "Frozen Cabins"
+            "Cage",
+            "Crystal Ore",
+            "Fields",
+            "Jungle Valley",
+            "Peninsula"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SpiderLair",
         "ids": [
             "MapWorldsSpiderLair"
         ],
@@ -6917,6 +6761,7 @@
             83
         ],
         "name": "Spider Lair Map",
+        "pantheon": "Soul of Arakaali",
         "rating": {
             "boss": 8,
             "density": 5,
@@ -6931,22 +6776,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 610,
-        "y": 474
+        "x": 577,
+        "y": 588
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BeehiveBehemoth/BeehiveBehemothBoss"
         ],
-        "connected": [
-            "Crater",
-            "Domain of Timeless Conflict",
-            "Iceberg",
-            "Ivory Temple",
-            "Seething Chyme"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Stagnation",
         "ids": [
             "MapWorldsStagnation"
         ],
@@ -6955,8 +6791,7 @@
             "density": "Missing exact mob count, density rating might be unreliable"
         },
         "levels": [
-            78,
-            83
+            78
         ],
         "name": "Stagnation Map",
         "rating": {
@@ -6976,9 +6811,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 398,
-        "y": 684
+        "type": "map"
     },
     {
         "boss_ids": [
@@ -7005,12 +6838,11 @@
             "Metadata/Monsters/Bandits/MapBanditBossHeavyStrike"
         ],
         "connected": [
-            "Alleyways",
-            "Marshes",
-            "Primordial Blocks",
+            "Academy",
+            "Crater",
+            "Underground Sea",
             "Whakawairua Tuahu"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Strand",
         "ids": [
             "MapWorldsStrand"
         ],
@@ -7052,12 +6884,11 @@
             "Metadata/Monsters/GemMonster/IguanaBossPhoenixMap"
         ],
         "connected": [
-            "Basilica",
-            "Geode",
-            "Lava Lake",
-            "Shipyard"
+            "Plateau",
+            "Summit",
+            "The Utzaal Arena",
+            "Vaal Pyramid"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Corrosion",
         "ids": [
             "MapWorldsSulphurVents"
         ],
@@ -7090,8 +6921,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 289,
-        "y": 426
+        "x": 832,
+        "y": 474
     },
     {
         "atlas": true,
@@ -7100,11 +6931,11 @@
             "Metadata/Monsters/Abberath/AbberathMap"
         ],
         "connected": [
-            "Alleyways",
-            "Colosseum",
-            "Marshes"
+            "Arid Lake",
+            "Maze",
+            "Sulphur Vents",
+            "Temple"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Summit",
         "ids": [
             "MapWorldsSummit"
         ],
@@ -7132,8 +6963,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 403,
-        "y": 437
+        "x": 814,
+        "y": 409
     },
     {
         "atlas": true,
@@ -7141,11 +6972,9 @@
             "Metadata/Monsters/VaalSpiderGod/ArakaaliMap"
         ],
         "connected": [
-            "Desert Spring",
-            "Shrine",
+            "Grave Trough",
             "Tropical Island"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/SunkenCity",
         "ids": [
             "MapWorldsSunkenCity"
         ],
@@ -7174,8 +7003,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 684,
-        "y": 548
+        "x": 764,
+        "y": 680
     },
     {
         "atlas": true,
@@ -7183,13 +7012,12 @@
             "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolarisMap"
         ],
         "connected": [
-            "Beach",
-            "Belfry",
-            "Bramble Valley",
-            "Foundry",
-            "Poorjoy's Asylum"
+            "Maze",
+            "Park",
+            "Poorjoy's Asylum",
+            "Primordial Pool",
+            "Summit"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Temple",
         "ids": [
             "MapWorldsTemple"
         ],
@@ -7202,6 +7030,7 @@
             83
         ],
         "name": "Temple Map",
+        "pantheon": "Soul of Solaris",
         "rating": {
             "boss": 8,
             "density": 8,
@@ -7231,12 +7060,11 @@
             "Metadata/Monsters/Frog/FrogGod/SilverFrogMap"
         ],
         "connected": [
-            "Cemetery",
-            "Cold River",
-            "Jungle Valley",
-            "Laboratory"
+            "Bone Crypt",
+            "Crystal Ore",
+            "Promenade",
+            "Ramparts"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/HighGardens",
         "ids": [
             "MapWorldsTerrace"
         ],
@@ -7271,8 +7099,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 309,
-        "y": 568
+        "x": 655,
+        "y": 641
     },
     {
         "boss_ids": [
@@ -7282,7 +7110,6 @@
             "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3",
             "Metadata/Monsters/IncaShadowBoss/BossIncaShadowAtziri"
         ],
-        "icon": "/img/icon/the_alluring_abyss.webp",
         "ids": [
             "MapAtziri2"
         ],
@@ -7316,7 +7143,6 @@
         "type": "act area"
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Atziri/Atziri",
             "Metadata/Monsters/DemonBosses/DemonBoss1/DemonBoss1",
@@ -7324,26 +7150,19 @@
             "Metadata/Monsters/DemonBosses/DemonBoss3/DemonBoss3",
             "Metadata/Monsters/IncaShadowBoss/BossIncaShadowAtziri"
         ],
-        "connected": [
-            "Relic Chambers"
-        ],
-        "icon": "/img/icon/the_apex_of_sacrifice.webp",
         "ids": [
             "MapAtziri1"
         ],
         "image": "https://www.poewiki.net/images/2/21/The_Apex_of_Sacrifice_area_screenshot.png",
         "info": {},
         "levels": [
-            70,
-            83
+            70
         ],
         "name": "The Apex of Sacrifice",
         "rating": {},
         "shorthand": "ex o",
         "tags": {},
-        "type": "unique map",
-        "x": 679,
-        "y": 479
+        "type": "unique map"
     },
     {
         "boss_ids": [
@@ -7483,7 +7302,6 @@
         "boss_ids": [
             "Metadata/Monsters/HarbingerPortal/HarbingerPortal"
         ],
-        "icon": "Art/2DItems/Maps/HarbingerRed",
         "ids": [
             "MapWorldsHarbingerHigh",
             "MapWorldsHarbingerLow",
@@ -7592,9 +7410,9 @@
             "Metadata/Monsters/FaridunLeague/FaridunSareshBoss/Saresh_"
         ],
         "connected": [
-            "Iceberg"
+            "Excavation"
         ],
-        "icon": "Art/2DItems/Currency/Faridun/FaridunBossKey",
+        "icon": "/img/icon/the_black_barya.webp",
         "ids": [
             "FaridunLeagueBoss"
         ],
@@ -8026,9 +7844,8 @@
             "Metadata/Monsters/Necromancer/NecromancerUniqueMapBoss"
         ],
         "connected": [
-            "Tower"
+            "Cursed Crypt"
         ],
-        "icon": "Art/2DItems/Maps/UndeadSiege",
         "ids": [
             "MapWorldsCursedCryptUnique"
         ],
@@ -8726,7 +8543,7 @@
             "Metadata/Monsters/AbyssTwoLeague/AbyssPinnacleBoss"
         ],
         "connected": [
-            "Crystal Ore"
+            "Dungeon"
         ],
         "icon": "/img/icon/the_lightless_hollow.webp",
         "ids": [
@@ -9059,7 +8876,6 @@
         "connected": [
             "Museum"
         ],
-        "icon": "Art/2DItems/Maps/PutridCloister",
         "ids": [
             "MapWorldsMuseumUnique"
         ],
@@ -9388,7 +9204,7 @@
             "Maze of the Minotaur",
             "Pit of the Chimera"
         ],
-        "icon": "Art/2DItems/Maps/AtlasMaps/Atlas",
+        "icon": "/img/icon/the_shapers_realm.webp",
         "ids": [
             "MapWorldsElderArenaUber",
             "MapWorldsShapersRealm"
@@ -9403,7 +9219,6 @@
         "rating": {},
         "shorthand": "aper'",
         "tags": {
-            "boss_not_twinnable": true,
             "nightmare_boss_map": true
         },
         "type": "unique map",
@@ -9619,7 +9434,7 @@
         ],
         "name": "The Submerged Passage",
         "rating": {},
-        "shorthand": "bm",
+        "shorthand": "merg",
         "tags": {},
         "type": "act area"
     },
@@ -9648,7 +9463,7 @@
             "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
         ],
         "connected": [
-            "Cage"
+            "Crimson Temple"
         ],
         "icon": "/img/icon/the_temple_of_atzoatl.webp",
         "ids": [
@@ -9774,7 +9589,6 @@
         "boss_ids": [
             "Metadata/Monsters/LeagueUltimatum/TrialMaster/TrialMasterBoss"
         ],
-        "icon": "Art/2DItems/Maps/TrialmasterMap",
         "ids": [
             "MapWorldsUltimatumBossArena"
         ],
@@ -9861,9 +9675,8 @@
             "Metadata/Monsters/LunarisSolaris/SolarisUniqueMap"
         ],
         "connected": [
-            "Ivory Temple"
+            "Moon Temple"
         ],
-        "icon": "Art/2DItems/Maps/Celestial",
         "ids": [
             "MapWorldsMoonTempleUnique"
         ],
@@ -9999,9 +9812,8 @@
             "Metadata/Monsters/Viking/VikingBossVinktarsSquare"
         ],
         "connected": [
-            "Courthouse"
+            "Residence"
         ],
-        "icon": "Art/2DItems/Maps/TheVinktarSquare",
         "ids": [
             "MapWorldsCourtyardUnique"
         ],
@@ -10105,7 +9917,6 @@
         "boss_ids": [
             "Metadata/Monsters/AtlasMemory/FragmentOfBenevolence"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TheatreofLies",
         "ids": [
             "MapWorldsTheatreOfLies"
         ],
@@ -10123,10 +9934,14 @@
         "type": "special map"
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2Simplified"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Thicket",
+        "connected": [
+            "",
+            "Dungeon"
+        ],
         "ids": [
             "MapWorldsThicket"
         ],
@@ -10135,7 +9950,8 @@
             "boss": "Summons small monkeys and frenzies allies. Physical Sunder attack. Will periodically start spamming Sunder which can dish out extreme physical damage if caught unaware. Just kite the boss in a circle when this starts happening."
         },
         "levels": [
-            73
+            73,
+            83
         ],
         "name": "Thicket Map",
         "rating": {
@@ -10157,7 +9973,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 149,
+        "y": 675
     },
     {
         "atlas": true,
@@ -10166,12 +9984,11 @@
             "Metadata/Monsters/Shavronne/ShavronneTowerMap"
         ],
         "connected": [
-            "Arcade",
-            "Forking River",
-            "The Coward's Trial",
-            "Vaal Pyramid"
+            "Belfry",
+            "Coves",
+            "Graveyard",
+            "Shore"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Tower",
         "ids": [
             "MapWorldsTower"
         ],
@@ -10205,19 +10022,13 @@
             "outdoors": false
         },
         "type": "map",
-        "x": 819,
-        "y": 606
+        "x": 289,
+        "y": 426
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Spiders/MapSpiderBossSins"
         ],
-        "connected": [
-            "Jungle Valley",
-            "Volcano"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Sewer",
         "ids": [
             "MapWorldsToxicSewer"
         ],
@@ -10227,8 +10038,7 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            77,
-            83
+            77
         ],
         "name": "Toxic Sewer Map",
         "rating": {
@@ -10250,9 +10060,7 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 248,
-        "y": 566
+        "type": "map"
     },
     {
         "ids": [
@@ -10353,11 +10161,11 @@
             "Metadata/Monsters/BloodChieftain/MapMonkeyChiefBloodEnrage2"
         ],
         "connected": [
-            "Caldera",
-            "Coral Ruins",
+            "Plateau",
+            "Promenade",
+            "Spider Forest",
             "Sunken City"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/TropicalIsland",
         "ids": [
             "MapWorldsTropicalIsland"
         ],
@@ -10390,8 +10198,8 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 661,
-        "y": 588
+        "x": 777,
+        "y": 616
     },
     {
         "boss_ids": [
@@ -10427,7 +10235,6 @@
             "",
             "Cortex"
         ],
-        "icon": "Art/2DItems/Maps/SynthesisLightningGuardianMap",
         "ids": [
             "Synthesis_MapGuardian3"
         ],
@@ -10446,10 +10253,16 @@
         "y": 216
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/DropBear/DropBearMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundRiver",
+        "connected": [
+            "Caer Blaidd, Wolfpack's Den",
+            "Channel",
+            "Coves",
+            "Factory"
+        ],
         "ids": [
             "MapWorldsUndergroundRiver"
         ],
@@ -10458,7 +10271,8 @@
             "boss": "Spawns Dropbears. Boss disappears and reappears, in both instances the boss leaves a powerful Earthquake aftershock that can deal serious Physical damage."
         },
         "levels": [
-            74
+            74,
+            83
         ],
         "name": "Underground River Map",
         "rating": {
@@ -10480,14 +10294,23 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 225,
+        "y": 415
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Seawitch/MapBossMerveil2",
             "Metadata/Monsters/seawitchillusion/MapBossMerveil"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UndergroundSea",
+        "connected": [
+            "Academy",
+            "Belfry",
+            "Defiled Cathedral",
+            "Infested Valley",
+            "Strand"
+        ],
         "ids": [
             "MapWorldsUndergroundSea"
         ],
@@ -10497,9 +10320,11 @@
             "boss_rushable": "Boss either up from spawn or up and to the left"
         },
         "levels": [
-            73
+            73,
+            83
         ],
         "name": "Underground Sea Map",
+        "pantheon": "Soul of the Brine King",
         "rating": {
             "boss": 6,
             "density": 9,
@@ -10519,7 +10344,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 382,
+        "y": 410
     },
     {
         "atlas": true,
@@ -10531,7 +10358,7 @@
             "Metadata/Monsters/RootSpiders/RootSpiderHiddenUntaintedColossal",
             "Metadata/Monsters/SandSpitters/SandSpitterUntaintedColossal"
         ],
-        "icon": "Art/2DItems/Maps/UniqueMap2",
+        "icon": "/img/icon/untainted_paradise.webp",
         "ids": [
             "MapWorldsTropicalIslandUnique"
         ],
@@ -10582,12 +10409,11 @@
             "Metadata/Monsters/DemonModular/DemonModularMapBoss1"
         ],
         "connected": [
-            "Burial Chambers",
-            "Grotto",
-            "Tower",
+            "Cursed Crypt",
+            "Phantasmagoria",
+            "Sulphur Vents",
             "Vaal Temple"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalPyramid",
         "ids": [
             "MapWorldsVaalPyramid"
         ],
@@ -10633,7 +10459,6 @@
         "connected": [
             "Vaal Pyramid"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/VaalTempleBase",
         "ids": [
             "MapWorldsVaalTemple"
         ],
@@ -10672,17 +10497,9 @@
         "y": 530
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/RockGolem/TreasureGolemMapBoss"
         ],
-        "connected": [
-            "Core",
-            "Desert Spring",
-            "Pit",
-            "Vaults of Atziri"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Vault",
         "ids": [
             "MapWorldsVault"
         ],
@@ -10690,8 +10507,7 @@
             "boss": "Powerful Physical Slam attacks. Summons Animated Weapons and Guardians throughout the fight. Standing on the gold piles grants 50% more damage to yourself. Don't leave the fight too long as the boss will disappear placing yellow circles all over the ground that explode for massive Physical damage. Killing the boss quickly also rewards you with bonus loot from the nearby gold piles."
         },
         "levels": [
-            76,
-            83
+            76
         ],
         "name": "Vault Map",
         "rating": {
@@ -10707,16 +10523,13 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map",
-        "x": 735,
-        "y": 471
+        "type": "map"
     },
     {
         "atlas": true,
         "connected": [
-            "Vault"
+            "Ancient City"
         ],
-        "icon": "Art/2DItems/Maps/UniqueMap1",
         "ids": [
             "MapWorldsVaalPyramidUnique"
         ],
@@ -10749,10 +10562,16 @@
         "y": 483
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Pope/PopeMapBoss1"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Villa",
+        "connected": [
+            "Carcass",
+            "Cemetery",
+            "Graveyard",
+            "Palace"
+        ],
         "ids": [
             "MapWorldsVilla"
         ],
@@ -10760,7 +10579,8 @@
             "boss": "Stay out of Chilling Totem beams and off Shocking Ground. When channelling his Lightning beam run in a circle around the boss. Avoid 'Touch of God' slam - it will most likely one shot you."
         },
         "levels": [
-            79
+            79,
+            83
         ],
         "name": "Villa Map",
         "rating": {
@@ -10776,7 +10596,9 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 274,
+        "y": 527
     },
     {
         "atlas": true,
@@ -10784,11 +10606,10 @@
             "Metadata/Monsters/Totems/PuiTotemMapBoss_"
         ],
         "connected": [
-            "Mineral Pools",
-            "Polaric Void",
-            "Toxic Sewer"
+            "Arcade",
+            "Basilica",
+            "Core"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Volcano",
         "ids": [
             "MapWorldsVolcano"
         ],
@@ -10822,14 +10643,20 @@
             "outdoors": true
         },
         "type": "map",
-        "x": 223,
-        "y": 544
+        "x": 648,
+        "y": 435
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Doedre/DoedreSewersMap"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/WastePool",
+        "connected": [
+            "Ancient City",
+            "Bone Crypt",
+            "Grotto",
+            "Spider Forest"
+        ],
         "ids": [
             "MapWorldsWastePool"
         ],
@@ -10839,7 +10666,8 @@
             "boss_rushable": "Follow the outer wall"
         },
         "levels": [
-            76
+            76,
+            83
         ],
         "name": "Waste Pool Map",
         "rating": {
@@ -10862,13 +10690,20 @@
             "nightmare_boss_map": true,
             "outdoors": false
         },
-        "type": "map"
+        "type": "map",
+        "x": 728,
+        "y": 519
     },
     {
+        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/Voll/VollMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wasteland",
+        "connected": [
+            "Desert",
+            "Hive Colony",
+            "Port"
+        ],
         "ids": [
             "MapWorldsWasteland"
         ],
@@ -10877,7 +10712,8 @@
             "boss": "Telegraphed Slam and Charge attacks that deal significant Physical damage. Summons undead that release poisonous clouds on death. For ranged characters the boss is easily kitable."
         },
         "levels": [
-            77
+            77,
+            83
         ],
         "name": "Wasteland Map",
         "rating": {
@@ -10899,18 +10735,14 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map"
+        "type": "map",
+        "x": 169,
+        "y": 396
     },
     {
-        "atlas": true,
         "boss_ids": [
             "Metadata/Monsters/IceElemental/IceElementalMapBoss"
         ],
-        "connected": [
-            "Arid Lake",
-            "Palace"
-        ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Waterways",
         "ids": [
             "MapWorldsWaterways"
         ],
@@ -10918,11 +10750,9 @@
             "boss": "Weak Ice Spear attack. Places Ice Traps that create Chilled Ground. Periodically summon Ice Golems of varying rarity. After losing enough health the boss will become frozen, gaining immunity and Ice Thorns, which reflects Cold damage back to the attacker. Do not attack during this phase. As with the Scriptorium and Promenade bosses fast attacking builds can kill themselves very quickly if they are not observant."
         },
         "levels": [
-            77,
-            83
+            77
         ],
         "name": "Waterways Map",
-        "pantheon": "Soul of Lunaris",
         "rating": {
             "boss": 8,
             "density": 6,
@@ -10936,9 +10766,7 @@
             "nightmare_boss_map": true,
             "outdoors": true
         },
-        "type": "map",
-        "x": 622,
-        "y": 335
+        "type": "map"
     },
     {
         "atlas": true,
@@ -10948,7 +10776,6 @@
         "connected": [
             "Strand"
         ],
-        "icon": "Art/2DItems/Maps/UniqueMapEye",
         "ids": [
             "MapWorldsStrandUnique"
         ],
@@ -10984,7 +10811,6 @@
         "boss_ids": [
             "Metadata/Monsters/LightningGolem/LightningGolemMapBoss"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/Wharf",
         "ids": [
             "MapWorldsWharf"
         ],
@@ -11043,19 +10869,24 @@
         "type": "unique map"
     },
     {
+        "atlas": true,
+        "icon": "/img/icon/zealots_vault.webp",
         "ids": [
             "MapWorldsMemoryVault2"
         ],
         "image": "https://www.poewiki.net/images/5/58/Zealot%27s_Vault_area_screenshot.jpg",
         "info": {},
         "levels": [
+            84,
             84
         ],
         "name": "Zealot's Vault",
         "rating": {},
         "shorthand": "ot'",
         "tags": {},
-        "type": "unique map"
+        "type": "unique map",
+        "x": 923,
+        "y": 188
     },
     {
         "atlas": true,
@@ -11066,7 +10897,6 @@
             "Absence of Patience and Wisdom",
             "Absence of Symmetry and Harmony"
         ],
-        "icon": "Art/2DItems/Maps/Atlas2Maps/New/UberMausoleum",
         "ids": [
             "MapWorldsZiggurat"
         ],

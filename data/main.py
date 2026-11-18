@@ -14,6 +14,8 @@ from pathlib import Path
 from wikitextparser import remove_markup
 
 import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 import yaml
 from bs4 import BeautifulSoup
 
@@ -47,7 +49,12 @@ def save_image(session, url, directory, name):
             f.write(r.content)
         return path
     print(f"Failed to download image {url}")
-    old = sorted(Path(public).glob(get_image_path(directory, name, ".*")[1:]))
+    return saved_image(directory, name)
+
+
+def saved_image(directory, name):
+    """Path of the copy saved by an earlier run, if any."""
+    old = sorted(Path(f"{dir_path}/../site/public").glob(get_image_path(directory, name, ".*")[1:]))
     return get_image_path(directory, name, old[0].suffix) if old else None
 
 
@@ -853,6 +860,9 @@ def get_map_data(map_data, extra_map_data, config):
     map_data.pop("poedb")
 
     s = requests.Session()
+    # The wiki rate limits bursts (429), so back off and retry instead of losing images
+    retry = Retry(total=5, backoff_factor=2, status_forcelist=[429, 500, 502, 503, 504], raise_on_status=False)
+    s.mount("https://", HTTPAdapter(max_retries=retry))
 
     # Wiki image
     print(f"Getting wiki image data for {map_data['name']}")
@@ -871,6 +881,10 @@ def get_map_data(map_data, extra_map_data, config):
             save_image(s, r.url + "?width=600", "screenshot", map_data["name"])
             or r.headers["location"]
         )
+    elif r.status_code != 404:
+        print(f"Failed to look up map image for {map_data['name']}: {r.status_code}")
+        if saved_image("screenshot", map_data["name"]):
+            map_data["image"] = saved_image("screenshot", map_data["name"])
 
     # PoeDB map metadata
     print(f"Getting map data for {map_data['name']} from url {url}")

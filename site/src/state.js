@@ -4,7 +4,7 @@ import { unwrap } from 'jotai/utils'
 import atomWithHash from './atoms/atomWithHash'
 import atomWithStore from './atoms/atomWithStore'
 import { calculateScore, filter } from './common'
-import { defaultCardBaseline, globals, mapIconBase, wikiBase } from './constants'
+import { defaultCardBaseline, globals, wikiBase } from './constants'
 
 function pushTag(info, destination, source, key, name = null, color = null) {
   const tag = source[key]
@@ -45,8 +45,6 @@ async function prepareMaps(preparedMonsters, preparedCards) {
       icon = '/img/act.webp'
     } else if (map.name.startsWith('Trial of ')) {
       icon = '/img/labyrinth.webp'
-    } else if (map.icon && !map.icon.startsWith('/img')) {
-      icon = mapIconBase + map.icon + '.png'
     }
 
     const mapTags = []

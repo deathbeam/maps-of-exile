@@ -17,7 +17,7 @@ const MapImage = ({ icon, level = 0, type = 'map' }) => {
   }
 
   let extraClass = ''
-  if (icon.includes('Atlas2Maps')) {
+  if (icon.startsWith('/img/atlas/') || icon.includes('Atlas2Maps')) {
     extraClass = ' map-background'
   }
 

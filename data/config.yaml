@@ -44,6 +44,7 @@ data:
     api: https://www.poewiki.net/w/api.php
   cdn:
     cards: https://web.poecdn.com/image/divination-card/
+    images: https://web.poecdn.com/image/
   ninja:
     cardbase: https://poe.ninja/economy/{league}/divination-cards/
     cardprices: https://poe.ninja/poe1/api/economy/exchange/current/overview?type=DivinationCard&league=

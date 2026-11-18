@@ -34,15 +34,21 @@ def get_image_path(directory, name, ext):
     return f"/img/{directory}/{name}{ext}"
 
 
-def save_image(directory, name, res):
-    content_type = res.headers.get("content-type")
-    if not content_type:
-        return None
-    ext = mimetypes.guess_extension(content_type)
-    path = get_image_path(directory, name, ext)
-    with open(f"{dir_path}/../site/public{path}", "wb") as f:
-        f.write(res.content)
-    return path
+def save_image(session, url, directory, name):
+    """Download url into site/public/img/<directory>, or reuse the last saved copy if that fails."""
+    public = f"{dir_path}/../site/public"
+    r = session.get(url)
+    content_type = r.headers.get("content-type", "").split(";")[0]
+    # Cloudflare challenges come back as 200 text/html, never save those
+    if r.ok and content_type.startswith("image/"):
+        path = get_image_path(directory, name, mimetypes.guess_extension(content_type))
+        os.makedirs(f"{public}/img/{directory}", exist_ok=True)
+        with open(public + path, "wb") as f:
+            f.write(r.content)
+        return path
+    print(f"Failed to download image {url}")
+    old = sorted(Path(public).glob(get_image_path(directory, name, ".*")[1:]))
+    return get_image_path(directory, name, old[0].suffix) if old else None
 
 
 def find_shortest_substring(entry, entries):
@@ -859,9 +865,12 @@ def get_map_data(map_data, extra_map_data, config):
     if r.status_code != 301:
         r = s.get(image_path + ".jpg", allow_redirects=False)
     if r.status_code == 301:
-        loc = r.headers["location"]
-        print(f"Found map image {loc}")
-        map_data["image"] = loc
+        print(f"Found map image {r.headers['location']}")
+        # 600px thumbnail is plenty for the hover tooltip and ~10x smaller than the original
+        map_data["image"] = (
+            save_image(s, r.url + "?width=600", "screenshot", map_data["name"])
+            or r.headers["location"]
+        )
 
     # PoeDB map metadata
     print(f"Getting map data for {map_data['name']} from url {url}")
@@ -909,26 +918,27 @@ def get_map_data(map_data, extra_map_data, config):
                         map_data["tags"][
                             v.replace("map_drops_can_upgrade_to_", "") + "_map"
                         ] = True
-            elif name == "icon" and "icon" not in map_data:
-                v = value.text.strip()
-                if "SkillIcons" not in v:
-                    print(f"Found map icon {v}")
-                    map_data["icon"] = v
+
+    # PoEDB shows the icon either as a table row or as a name/value card
+    if "icon" not in map_data:
+        for n in soup.find_all(["td", "div"], string=lambda t: t and t.strip() == "Icon"):
+            v = n.find_next_sibling()
+            if v and v.text.strip().startswith("Art/") and "SkillIcons" not in v.text:
+                art = v.text.strip()
+                url = config["cdn"]["images"] + art + ".png"
+                print(f"Found map icon {url}")
+                # Atlas2Maps icons are grayscale and need the map background, keep them apart
+                directory = "atlas" if "Atlas2Maps" in art else "icon"
+                map_data["icon"] = save_image(s, url, directory, map_data["name"]) or url
+                break
 
     if "icon" not in map_data:
         val = soup.find(id="MapDeviceRecipes")
-        if val:
-            img_tags = val.find_all("img")
-            if img_tags:
-                icon = img_tags[0]["src"]
-                r = s.get(icon)
-                if r.ok:
-                    print(f"Found map icon {icon}")
-                    map_image = save_image("icon", map_data["name"], r)
-                    if not map_image:
-                        print(f"Failed to save map icon {icon}")
-                    else:
-                        map_data["icon"] = map_image
+        img = val and val.find("img")
+        icon = img and (save_image(s, img["src"], "icon", map_data["name"]) or img["src"])
+        if icon:
+            print(f"Found map icon {icon}")
+            map_data["icon"] = icon
 
     if map_data.get("atlas"):
         level = map_data["levels"][0]

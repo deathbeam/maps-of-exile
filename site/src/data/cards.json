@@ -101,7 +101,7 @@
         "price": 0,
         "reward": "Cortex, Corrupted",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 10,
         "weight": 65.0
     },
     {
@@ -198,7 +198,7 @@
         "price": 0,
         "reward": "Jewel, Primordial, 1-2 Implicit, Corrupted",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 123,
         "weight": 117.0
     },
     {
@@ -478,7 +478,7 @@
         "price": 0,
         "reward": "Eyes of the Greatwolf, Item Level: 82, Corrupted",
         "stack": 2,
-        "standardPrice": 0,
+        "standardPrice": 130,
         "weight": 5.0
     },
     {
@@ -497,7 +497,7 @@
         "price": 0,
         "reward": "Item,  Two-Implicit,  Corrupted",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 610.0
     },
     {
@@ -757,7 +757,7 @@
         "price": 0,
         "reward": "Ring, Corrupted",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 4,
         "weight": 1879.0
     },
     {
@@ -1030,8 +1030,10 @@
         "drop": {
             "areas": [],
             "min_level": 81,
-            "monsters": [],
-            "text": ""
+            "monsters": [
+                "Metadata/Monsters/Atziri/Atziri"
+            ],
+            "text": "Drops from Atziri in the Temple of Atzoatl."
         },
         "eventPrice": 0,
         "id": "chasing-risk",
@@ -1174,7 +1176,7 @@
         "price": 31384,
         "reward": "The Original Scripture, Item Level: 83",
         "stack": 16,
-        "standardPrice": 0
+        "standardPrice": 74867
     },
     {
         "art": "https://www.poewiki.net/images/1/16/Dark_Dreams_card_art.png",
@@ -1326,7 +1328,7 @@
         "price": 0,
         "reward": "Orb of Annulment",
         "stack": 7,
-        "standardPrice": 0,
+        "standardPrice": 3,
         "weight": 1391.0
     },
     {
@@ -1345,7 +1347,7 @@
         "price": 0,
         "reward": "Level 4 Exceptional Support Gem, Quality: +23%, Corrupted",
         "stack": 9,
-        "standardPrice": 4850
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/4/4d/Desperate_Crusade_card_art.png",
@@ -1408,7 +1410,7 @@
         "price": 50,
         "reward": "Support Gem, Quality: +23%, Corrupted",
         "stack": 7,
-        "standardPrice": 404.2,
+        "standardPrice": 283,
         "weight": 1234.0
     },
     {
@@ -1446,7 +1448,7 @@
         "price": 248.5,
         "reward": "7x Divine Orb",
         "stack": 12,
-        "standardPrice": 0,
+        "standardPrice": 325,
         "weight": 352.0
     },
     {
@@ -1481,7 +1483,7 @@
         "price": 175,
         "reward": "Divine Vessel",
         "stack": 2,
-        "standardPrice": 0,
+        "standardPrice": 5,
         "weight": 1235.0
     },
     {
@@ -1741,7 +1743,7 @@
         "price": 0.2,
         "reward": "5x Currency",
         "stack": 5,
-        "standardPrice": 1,
+        "standardPrice": 1.12,
         "weight": 50316.0
     },
     {
@@ -2178,7 +2180,7 @@
         "price": 95934,
         "reward": "2x Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 0
+        "standardPrice": 152175
     },
     {
         "art": "https://www.poewiki.net/images/7/71/Home_card_art.png",
@@ -2197,7 +2199,7 @@
         "price": 0,
         "reward": "Exceptional Support Gem, Quality: +1-20%",
         "stack": 3,
-        "standardPrice": 0
+        "standardPrice": 10
     },
     {
         "art": "https://www.poewiki.net/images/6/6a/Hope_card_art.png",
@@ -2235,7 +2237,7 @@
         "price": 111017,
         "reward": "Mirror of Kalandra",
         "stack": 9,
-        "standardPrice": 179273,
+        "standardPrice": 182956,
         "weight": 1.0
     },
     {
@@ -2516,7 +2518,7 @@
         "price": 0,
         "reward": "Jewel, Implicit Modifier: , Corrupted Blood cannot be inflicted on you, Corrupted",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 20,
         "weight": 554.0
     },
     {
@@ -2636,7 +2638,7 @@
         "price": 1,
         "reward": "Vaal Temple Map, Corrupted",
         "stack": 16,
-        "standardPrice": 0,
+        "standardPrice": 3,
         "weight": 1038.0
     },
     {
@@ -2790,7 +2792,7 @@
         "price": 360,
         "reward": "Voices, Corrupted",
         "stack": 7,
-        "standardPrice": 0
+        "standardPrice": 5929
     },
     {
         "art": "https://www.poewiki.net/images/e/e3/Lysah%27s_Respite_card_art.png",
@@ -2828,7 +2830,7 @@
         "price": 72,
         "reward": "Item, Vestigial, Item Level: 86",
         "stack": 8,
-        "standardPrice": 124,
+        "standardPrice": 0,
         "weight": 651.0
     },
     {
@@ -2957,7 +2959,7 @@
         "price": 75.11,
         "reward": "Valdo's Puzzle Box",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 250,
         "weight": 462.0
     },
     {
@@ -3346,7 +3348,7 @@
         "price": 123.3,
         "reward": "Simplex Amulet, Item Level: 86",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 2441,
         "weight": 541.0
     },
     {
@@ -3481,7 +3483,7 @@
         "price": 3555,
         "reward": "Mirror Shard",
         "stack": 13,
-        "standardPrice": 5373,
+        "standardPrice": 5509,
         "weight": 52.0
     },
     {
@@ -3563,7 +3565,7 @@
         "price": 0,
         "reward": "Blueprint, Area Level: 83, Fully Revealed",
         "stack": 5,
-        "standardPrice": 0,
+        "standardPrice": 81.38,
         "weight": 530.0
     },
     {
@@ -3761,7 +3763,7 @@
         "price": 22845,
         "reward": "Mageblood",
         "stack": 5,
-        "standardPrice": 33776,
+        "standardPrice": 29024,
         "weight": 8.0
     },
     {
@@ -4142,7 +4144,7 @@
         "price": 0,
         "reward": "Breach Item",
         "stack": 4,
-        "standardPrice": 2,
+        "standardPrice": 0,
         "weight": 203.0
     },
     {
@@ -4495,7 +4497,7 @@
         "price": 0,
         "reward": "Soul Ripper",
         "stack": 6,
-        "standardPrice": 1617
+        "standardPrice": 0
     },
     {
         "art": "https://www.poewiki.net/images/9/95/The_Dapper_Prodigy_card_art.png",
@@ -4611,7 +4613,7 @@
         "price": 0,
         "reward": "Headhunter, Two-Implicit, Corrupted",
         "stack": 10,
-        "standardPrice": 0
+        "standardPrice": 13020
     },
     {
         "art": "https://www.poewiki.net/images/0/0a/The_Demoness_card_art.png",
@@ -4948,7 +4950,7 @@
         "price": 0,
         "reward": "Level 3 Enlighten",
         "stack": 6,
-        "standardPrice": 1,
+        "standardPrice": 488.3,
         "weight": 74.0
     },
     {
@@ -5089,7 +5091,7 @@
         "price": 9113,
         "reward": "Mageblood,  Foulborn",
         "stack": 8,
-        "standardPrice": 13962,
+        "standardPrice": 13020,
         "weight": 5.0
     },
     {
@@ -5170,7 +5172,7 @@
         "price": 932.0,
         "reward": "Headhunter, Corrupted",
         "stack": 11,
-        "standardPrice": 808.3,
+        "standardPrice": 0,
         "weight": 4.0
     },
     {
@@ -5269,7 +5271,7 @@
         "price": 0,
         "reward": "20x Orb of Chance",
         "stack": 4,
-        "standardPrice": 0,
+        "standardPrice": 6,
         "weight": 3349.0
     },
     {
@@ -5367,7 +5369,7 @@
         "price": 58.21,
         "reward": "2x Divine Orb",
         "stack": 12,
-        "standardPrice": 101,
+        "standardPrice": 60,
         "weight": 1289.0
     },
     {
@@ -5483,7 +5485,7 @@
         "price": 0,
         "reward": "Gemcutter's Prism",
         "stack": 3,
-        "standardPrice": 0,
+        "standardPrice": 1,
         "weight": 5041.0
     },
     {
@@ -5719,7 +5721,7 @@
         "price": 184.4,
         "reward": "Level 21 Transfigured Gem, Quality: +23%, Corrupted",
         "stack": 8,
-        "standardPrice": 160,
+        "standardPrice": 0,
         "weight": 76.0
     },
     {
@@ -5758,7 +5760,7 @@
         "price": 16486,
         "reward": "House of Mirrors",
         "stack": 10,
-        "standardPrice": 19681,
+        "standardPrice": 21602,
         "weight": 14.0
     },
     {
@@ -5837,7 +5839,7 @@
         "price": 0,
         "reward": "Mageblood, Item Level: 84, Corrupted",
         "stack": 9,
-        "standardPrice": 0,
+        "standardPrice": 5289,
         "weight": 1.0
     },
     {
@@ -5899,7 +5901,7 @@
         "price": 0,
         "reward": "Merciless One-Hand Weapon, Item Level: 100",
         "stack": 9,
-        "standardPrice": 10,
+        "standardPrice": 0,
         "weight": 412.0
     },
     {
@@ -6114,7 +6116,7 @@
         "price": 0,
         "reward": "Midnight Bargain, Corrupted",
         "stack": 12,
-        "standardPrice": 0.7,
+        "standardPrice": 0,
         "weight": 4556.0
     },
     {
@@ -6783,7 +6785,7 @@
         "price": 27339,
         "reward": "Mageblood, Quality: +20%, Two-Implicit, Corrupted",
         "stack": 7,
-        "standardPrice": 52541,
+        "standardPrice": 0,
         "weight": 1.0
     },
     {
@@ -7216,7 +7218,7 @@
         "price": 0,
         "reward": "2x Exalted Orb",
         "stack": 10,
-        "standardPrice": 1,
+        "standardPrice": 0,
         "weight": 10276.0
     },
     {
@@ -7355,7 +7357,7 @@
         "price": 308,
         "reward": "10x Divine Orb",
         "stack": 11,
-        "standardPrice": 500,
+        "standardPrice": 542.5,
         "weight": 249.0
     },
     {
@@ -7374,7 +7376,7 @@
         "price": 0,
         "reward": "Boots, Item Level: 100, Two-Implicit, Corrupted",
         "stack": 3,
-        "standardPrice": 10,
+        "standardPrice": 0,
         "weight": 166.0
     },
     {
@@ -7514,7 +7516,7 @@
         "price": 0,
         "reward": "Hinekora's Lock",
         "stack": 5,
-        "standardPrice": 73851,
+        "standardPrice": 69713,
         "weight": 2.0
     },
     {
@@ -7535,7 +7537,7 @@
         "price": 497.1,
         "reward": "Soul Taker",
         "stack": 9,
-        "standardPrice": 808.3,
+        "standardPrice": 0,
         "weight": 20.0
     },
     {
@@ -7843,7 +7845,7 @@
         "price": 0,
         "reward": "10x Oil",
         "stack": 8,
-        "standardPrice": 0,
+        "standardPrice": 2,
         "weight": 9315.0
     },
     {
@@ -8791,7 +8793,7 @@
         "price": 50900,
         "reward": "19x Mirror Shard",
         "stack": 16,
-        "standardPrice": 97807,
+        "standardPrice": 101992,
         "weight": 5.0
     },
     {

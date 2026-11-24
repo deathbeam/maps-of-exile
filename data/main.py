@@ -244,6 +244,23 @@ def get_globals_data(config, globals_extra):
     return out
 
 
+def get_poedb_map_cards(map_data):
+    # poedb is datamined, the wiki drop areas are stale
+    r = requests.get(map_data["poedb"])
+    r.raise_for_status()
+    soup = BeautifulSoup(r.content, "html.parser")
+    for tr in soup.find_all("tr"):
+        tds = tr.find_all("td", recursive=False)
+        # The separate "Card Tags" row is not the atlas list
+        if len(tds) == 2 and tds[0].get_text(strip=True) == "Divination Card":
+            return {
+                html.unescape(a.text.strip())
+                for a in tds[1].find_all("a", class_="DivinationCard")
+                if a.text.strip()
+            }
+    raise Exception("no Divination Card row")
+
+
 def get_card_data(key, config, card_extra):
     def clean_card_text(text, with_commas=False):
         text = remove_markup(text)
@@ -257,32 +274,6 @@ def get_card_data(key, config, card_extra):
     def name_to_id(name):
         # Lowercase, replace spaces with hyphens, remove other non-alphanumeric
         return re.sub(r"[^a-z0-9\-]", "", re.sub(r"[ ]+", "-", name.lower()))
-
-    def get_poedb_card_drops(card_name):
-        print(f"Getting PoEDB card data for {card_name}")
-        card_name = html.unescape(card_name)
-        url = config["poedb"]["base"] + urllib.parse.quote(
-            card_name.replace(" ", "_").replace("'", "").strip()
-        )
-
-        try:
-            r = requests.get(url)
-            r.raise_for_status()
-            soup = BeautifulSoup(r.content, "html.parser")
-            dropped_by = []
-            for td in soup.find_all("td"):
-                if td.text.strip() == "Dropped by":
-                    next_td = td.find_next_sibling("td")
-                    if next_td:
-                        for a in next_td.find_all("a"):
-                            name = a.text.strip()
-                            if name:
-                                dropped_by.append(name)
-                    break
-            return dropped_by
-        except Exception as e:
-            print(f"Failed to fetch PoEDB card data for {card_name}: {e}")
-            return []
 
     def get_card_art(wiki_file, card_name):
         name = html.unescape(wiki_file or "").removeprefix("File:").replace(" ", "_")
@@ -308,13 +299,21 @@ def get_card_data(key, config, card_extra):
 
     # Get maps for area mapping
     maps = get_maps(key, config)
-    atlas_name_to_id = {}
+    print("Getting atlas card drops from poedb")
+    map_cards = {}
+    covered = set()
     for m in maps:
-        if m.get("type") == "map" or m.get("atlas"):
-            for id in m["ids"]:
-                atlas_name_to_id[m["name"]] = id
-                # poedb lists atlas areas without the " Map" suffix
-                atlas_name_to_id[m["name"].replace(" Map", "")] = id
+        if not m.get("atlas"):
+            continue
+        try:
+            cards = get_poedb_map_cards(m)
+        except Exception as e:
+            print(f"Failed to get poedb cards for {m['name']}: {e}, using wiki data")
+            continue
+        for id in m["ids"]:
+            map_cards[id] = cards
+            covered.add(id)
+    print(f"Got poedb card drops for {len(covered)} atlas areas")
 
     league = config["league"]
     event = config.get("event")
@@ -433,15 +432,12 @@ def get_card_data(key, config, card_extra):
     for wiki_card in wiki_cards:
         name = html.unescape(wiki_card["name"])
 
-        # Combine poedb atlas drops with wiki drops
-        poedb_drops = get_poedb_card_drops(name)
+        # Replace wiki drop areas with poedb ones for atlas areas poedb covers
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
-        map_drops = set(original_areas)
-        for map_name in poedb_drops:
-            area = atlas_name_to_id.get(map_name)
-            if area:
-                map_drops.add(area)
-        map_drops = sorted(map_drops)
+        map_drops = sorted(
+            (set(original_areas) - covered)
+            | {id for id, cards in map_cards.items() if name in cards}
+        )
         if map_drops != original_areas:
             print(f"Adjusted drop areas for {name}: {original_areas} -> {map_drops}")
         wiki_card["drop"]["areas"] = map_drops

@@ -20,6 +20,8 @@ import yaml
 from bs4 import BeautifulSoup
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+# volumePrimaryValue is a chaos amount, so volume / price is the trade count behind a price
+MIN_PRICE_TRADES = 0.5
 
 
 class DecimalEncoder(json.JSONEncoder):
@@ -291,11 +293,14 @@ def get_card_data(key, config, card_extra):
             print(f"Failed to check card art for {card_name}: {e}")
             return None
 
-    def get_price(entries, card_id):
+    def get_price(entries, card_id, min_trades=MIN_PRICE_TRADES):
         line = next(filter(lambda x: x["id"] == card_id, entries), None)
-        if not line or not line.get("volumePrimaryValue"):
+        if not line:
             return 0
-        return line.get("primaryValue") or 0
+        price = line.get("primaryValue") or 0
+        if (line.get("volumePrimaryValue") or 0) < min_trades * price:
+            return 0
+        return price
 
     # Get maps for area mapping
     maps = get_maps(key, config)
@@ -432,7 +437,6 @@ def get_card_data(key, config, card_extra):
     for wiki_card in wiki_cards:
         name = html.unescape(wiki_card["name"])
 
-        # Replace wiki drop areas with poedb ones for atlas areas poedb covers
         original_areas = sorted(list(wiki_card["drop"]["areas"]))
         map_drops = sorted(
             (set(original_areas) - covered)
@@ -446,8 +450,8 @@ def get_card_data(key, config, card_extra):
         overview_id = name_to_id(name)
 
         league_price_card = get_price(prices["league"], overview_id)
-        event_price_card = get_price(prices["event"], overview_id)
-        standard_price_card = get_price(prices["standard"], overview_id)
+        event_price_card = get_price(prices["event"], overview_id, min_trades=0)
+        standard_price_card = get_price(prices["standard"], overview_id, min_trades=0)
 
         card = {
             "name": name,

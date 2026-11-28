@@ -963,7 +963,7 @@
             "density": 3,
             "layout": 10
         },
-        "shorthand": "^beac",
+        "shorthand": "^beach",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -978,6 +978,25 @@
             "outdoors": true
         },
         "type": "map"
+    },
+    {
+        "atlas": true,
+        "icon": "/img/icon/beacon_of_corruption.webp",
+        "ids": [
+            "PlayerAtlasHideout"
+        ],
+        "info": {},
+        "levels": [
+            60,
+            83
+        ],
+        "name": "Beacon of Corruption",
+        "rating": {},
+        "shorthand": "^beaco",
+        "tags": {},
+        "type": "special map",
+        "x": 429,
+        "y": 571
     },
     {
         "atlas": true,
@@ -5681,7 +5700,7 @@
             "density": 10,
             "layout": 4
         },
-        "shorthand": "pit$",
+        "shorthand": "^pit$",
         "tags": {
             "boss_not_spawned": false,
             "boss_phases": false,
@@ -6073,7 +6092,8 @@
     {
         "boss_ids": [
             "Metadata/Monsters/Abberath/Abberath",
-            "Metadata/Monsters/Abberath/Abberath2"
+            "Metadata/Monsters/Abberath/Abberath2",
+            "Metadata/Monsters/Goatman/GoatmanShamanBossPrisonersGate"
         ],
         "connected": [
             "2_6_7_2",
@@ -7213,6 +7233,31 @@
     {
         "atlas": true,
         "boss_ids": [
+            "Metadata/Monsters/Augury/CroneBoss"
+        ],
+        "connected": [
+            "Cold River"
+        ],
+        "icon": "/img/icon/tenebria.webp",
+        "ids": [
+            "AuguryLeagueBoss"
+        ],
+        "info": {},
+        "levels": [
+            83,
+            83
+        ],
+        "name": "Tenebria",
+        "rating": {},
+        "shorthand": "eneb",
+        "tags": {},
+        "type": "unique map",
+        "x": 580,
+        "y": 725
+    },
+    {
+        "atlas": true,
+        "boss_ids": [
             "Metadata/Monsters/Frog/FrogGod/SilverFrogMap"
         ],
         "connected": [
@@ -7282,6 +7327,9 @@
         "type": "unique map"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/IncaShadowBoss/BossIncaShadow"
+        ],
         "connected": [
             "1_2_14_2",
             "1_3_1"
@@ -7480,6 +7528,9 @@
         "type": "unique map"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Statue/BeaconStoneStatueLargeFemaleSpearCampaignBoss"
+        ],
         "connected": [
             "2_6_13",
             "2_6_15"
@@ -7590,6 +7641,9 @@
         "y": 706
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/BloodElemental/BloodElementalAqueductCampaignBoss"
+        ],
         "connected": [
             "2_8_13",
             "2_9_town"
@@ -7651,7 +7705,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/BanditLeaderDexInt/BanditLeaderKraityn"
+            "Metadata/Monsters/BanditLeaderDexInt/BanditLeaderKraityn",
+            "Metadata/Monsters/MossMonster/MossMonsterBossPart2Crossroads"
         ],
         "connected": [
             "2_7_town",
@@ -7674,6 +7729,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Regurgitator/RegurgitatorWithCorpse1CampaignBoss"
+        ],
         "connected": [
             "2_10_2",
             "2_10_6"
@@ -7693,6 +7751,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/BurnBoss/BurnBossCampaignBoss"
+        ],
         "connected": [
             "1_3_5"
         ],
@@ -7712,6 +7773,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monster/KitavaDemon/KitavaDemonPlaguewing",
             "Metadata/Monsters/KitavaBoss/Kitava1"
         ],
         "connected": [
@@ -7737,6 +7799,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Skeletons/SkeletonMeleeKnightElementalLargeSword2CampaignBoss"
+        ],
         "connected": [
             "2_7_8",
             "2_7_11"
@@ -7849,7 +7914,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Spiders/SpiderBossSins"
+            "Metadata/Monsters/Spiders/SpiderBossSins",
+            "Metadata/Monsters/Spiders/SpiderScaleViperStrike4CampaignBoss"
         ],
         "connected": [
             "2_7_2",
@@ -8055,6 +8121,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/Bandits/AnimalPackBoss",
             "Metadata/Monsters/Skeletons/SkeletonMeleeBossCrossroads"
         ],
         "connected": [
@@ -8082,6 +8149,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Spirit/WraithCampaignBoss"
+        ],
         "connected": [
             "2_7_3"
         ],
@@ -8099,6 +8169,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Skeletons/SkeletonLargeCampaignBoss"
+        ],
         "connected": [
             "1_2_15",
             "1_2_5_2"
@@ -8190,6 +8263,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Hellion/HellionIceExplodeOnDeathCampaignBoss"
+        ],
         "connected": [
             "2_9_town",
             "2_9_3"
@@ -8340,6 +8416,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/LeagueSanctum/Boss/TemplarReaperBoss_fellshrine",
             "Metadata/Monsters/MassSkeleton/MassSkeletonBoss2"
         ],
         "connected": [
@@ -8367,6 +8444,23 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/LeagueHellscape/FleshFaction/HellscapeFleshBossFinal"
+        ],
+        "ids": [
+            "BeyondRealmGhorr"
+        ],
+        "info": {},
+        "levels": [
+            1
+        ],
+        "name": "The Fetid Fleshpit",
+        "rating": {},
+        "shorthand": "hp",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
             "Metadata/Monsters/Necromancer/NecromancerBossFetidPool"
         ],
         "connected": [
@@ -8382,7 +8476,7 @@
         ],
         "name": "The Fetid Pool",
         "rating": {},
-        "shorthand": " fet",
+        "shorthand": "etid",
         "tags": {},
         "type": "act area"
     },
@@ -8550,6 +8644,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueHeist/Thug/ThugMelee4EliteSpectreCampaignBoss"
+        ],
         "connected": [
             "2_8_9",
             "2_8_5",
@@ -8680,6 +8777,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Beasts/BeastSkeletonWakeBoss"
+        ],
         "connected": [
             "1_3_15",
             "1_3_17_2"
@@ -8725,6 +8825,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monster/CageSpider/CageSpiderCampaignBoss",
             "Metadata/Monsters/Skeletons/SkeletonBossPrisonMelee"
         ],
         "connected": [
@@ -8773,6 +8874,7 @@
     {
         "boss_ids": [
             "Metadata/Monsters/Axis/AxisBossExperimenter",
+            "Metadata/Monsters/Axis/AxisEliteSoldier4ChampionCampaignBoss",
             "Metadata/Monsters/Brute/BossBrute2"
         ],
         "connected": [
@@ -8940,7 +9042,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/RootSpiders/RootSpiderBoss"
+            "Metadata/Monsters/RootSpiders/RootSpiderBoss",
+            "Metadata/Monsters/Snake/SnakeBossRiverways"
         ],
         "connected": [
             "2_7_7",
@@ -9010,6 +9113,10 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/BoneStalker/BoneStalkerCampaignBoss",
+            "Metadata/Monsters/SkeletonCannon/SkeletonCannon1CampaignBoss"
+        ],
         "connected": [
             "2_10_2",
             "1_5_3b"
@@ -9028,6 +9135,23 @@
         "shorthand": "ssu",
         "tags": {},
         "type": "act area"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueHellscape/PaleFaction/HellscapePaleBossFinal"
+        ],
+        "ids": [
+            "BeyondRealmBeidat"
+        ],
+        "info": {},
+        "levels": [
+            1
+        ],
+        "name": "The Pale",
+        "rating": {},
+        "shorthand": "ale$",
+        "tags": {},
+        "type": "unique map"
     },
     {
         "atlas": true,
@@ -9152,6 +9276,10 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/AnimatedItem/AnimatedBustMelee1CampaignBoss_",
+            "Metadata/Monsters/ReliquaryMonster/ReliquaryMonsterCampaignBoss"
+        ],
         "connected": [
             "2_10_2",
             "1_5_3b"
@@ -9195,7 +9323,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Bandits/AnimalPackBoss"
+            "Metadata/Monsters/Bandits/AnimalPackBoss",
+            "Metadata/Monsters/Bandits/BanditBowBossBlackwood"
         ],
         "connected": [
             "2_6_9",
@@ -9293,6 +9422,9 @@
         "y": 276
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/InsectSpawner/InsectSpawnerCampaignBoss"
+        ],
         "connected": [
             "2_7_12_2",
             "2_8_town"
@@ -9333,6 +9465,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Grappler/GrapplerCampaignBoss"
+        ],
         "connected": [
             "1_3_2",
             "1_3_5",
@@ -9500,6 +9635,7 @@
     },
     {
         "boss_ids": [
+            "Metadata/Monsters/Axis/AxisEliteSoldier3ChampionCampaignBoss_",
             "Metadata/Monsters/Guardians/GuardianBossFire",
             "Metadata/Monsters/Guardians/GuardianBossLightning"
         ],
@@ -9528,9 +9664,7 @@
     {
         "boss_ids": [
             "Metadata/Monsters/GuardianOfSolaris/GuardianOfSolaris",
-            "Metadata/Monsters/Guardians/GuardianBossHeadCold",
-            "Metadata/Monsters/Guardians/GuardianBossHeadFire",
-            "Metadata/Monsters/Guardians/GuardianBossHeadLightning"
+            "Metadata/Monsters/Statue/GoldStatueLargeBossFemale"
         ],
         "connected": [
             "2_8_12_1",
@@ -9601,6 +9735,26 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/LeagueHellscape/DemonFaction/HellscapeDemonBossFinal"
+        ],
+        "ids": [
+            "BeyondRealmKtash"
+        ],
+        "info": {},
+        "levels": [
+            1
+        ],
+        "name": "The Swarmforge",
+        "rating": {},
+        "shorthand": "armf",
+        "tags": {},
+        "type": "unique map"
+    },
+    {
+        "boss_ids": [
+            "Metadata/Monsters/HolyFireElemental/HolyFireElementalCampaignBoss_"
+        ],
         "connected": [
             "1_5_3",
             "1_5_5"
@@ -9622,7 +9776,8 @@
     {
         "atlas": true,
         "boss_ids": [
-            "Metadata/Monsters/LeagueIncursion/VaalSaucerBoss"
+            "Metadata/Monsters/Atziri/Atziri",
+            "Metadata/Monsters/Atziri/Atziri2"
         ],
         "connected": [
             "Crimson Temple"
@@ -9723,7 +9878,8 @@
     },
     {
         "boss_ids": [
-            "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBoss"
+            "Metadata/Monsters/Axis/Cleric/BlackguardClericPureBoss",
+            "Metadata/Monsters/ReligiousTemplar/ReligiousTemplarTwoHandedKitavaCampaignBoss__"
         ],
         "connected": [
             "2_10_2",
@@ -9788,6 +9944,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/ChaosElemental/ChaosElementalBoss"
+        ],
         "connected": [
             "2_9_5",
             "2_9_8"
@@ -9915,6 +10074,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/incaminion/FragmentProjectileSpiralCampaignBoss"
+        ],
         "connected": [
             "2_7_10",
             "2_7_12_1"
@@ -9928,11 +10090,14 @@
         ],
         "name": "The Vaal City",
         "rating": {},
-        "shorthand": "^the vaal ",
+        "shorthand": "e vaal ",
         "tags": {},
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/VaalMonsters/VaalOverseerAreaBoss"
+        ],
         "connected": [
             "1_2_12",
             "1_2_8"
@@ -9952,6 +10117,9 @@
         "type": "act area"
     },
     {
+        "boss_ids": [
+            "Metadata/Monsters/Garukhan/SandWarriorVastiriSpectralThrowCampaignBoss"
+        ],
         "connected": [
             "2_9_2",
             "2_9_4",
